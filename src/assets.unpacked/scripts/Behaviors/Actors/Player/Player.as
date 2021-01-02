@@ -660,7 +660,7 @@ class Player : PlayerBase
 			g_allModifiers.DamageTaken(this, dmg.Attacker, dmgAmnt);
 			m_returningDamage = false;
 
-			if (m_record.IsLocalPlayer() || m_record.items.find("phoenix-feather") != -1))
+			if (m_record.IsLocalPlayer() || m_record.items.find("phoenix-feather") != -1)
 			{
 				int testHealth = m_record.CurrentHealth() - dmgAmnt;
 				while (testHealth <= 0)

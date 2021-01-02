@@ -356,6 +356,7 @@ class PlayerRecord
 		AddVar("hx_dmg_taken", 0.7f);
 		AddVar("hx_dmg_dealt", 1.3f);
 		AddVar("hx_crit_mod", 1.6f);
+		AddVar("hx_evasion_mod", 1.6f);
 		AddVar("hx_luck_mod", 3.0f);
 	}
 
@@ -1014,7 +1015,7 @@ class PlayerRecord
 
 	int MaxMana() {
 		auto mana_mod = IsLocalPlayer() ? GetVarFloat("hx_mana") : 1.0f;
-		return int((classStats.base_mana + float(EffectiveLevel() -1) * classStats.level_mana) * mana_mod;
+		return int((classStats.base_mana + float(EffectiveLevel() -1) * classStats.level_mana) * mana_mod);
 	}
 
 	float HealthRegen() {
@@ -1159,7 +1160,7 @@ class PlayerRecord
 		if (amount <= 0)
 			return;
 
-		if (IsLocalPLayer())
+		if (IsLocalPlayer())
 			amount = int64(amount * GetVarFloat("hx_exp"));
 
 		int64 xpNeeded = 0;
