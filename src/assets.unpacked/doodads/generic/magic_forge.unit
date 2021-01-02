@@ -1,0 +1,110 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="8" />			
+			</collision>
+			
+			<sprite origin="8 25" ulayer="-1" pos="0 0" texture="./magic_forge.png" material="system/default.mats:proj-prop">
+				<frame time="450">48 0 16 32</frame>
+			</sprite>
+			<sprite origin="8 16" ulayer="-2" pos="11 -4" texture="./magic_forge.png" material="system/default.mats:shadow">
+				<frame time="450">0 32 16 31</frame>
+			</sprite>
+		</scene>
+	
+		
+		<scene name="on">	
+			<scene src="shared" />	
+			
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="232 238 12 12" />
+
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="0 40 60 0" />
+					<color value="0 30 55 0" />
+				</colors>
+			</light>				
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="20 10 0 0" />
+				</colors>
+			</light>	
+			<sprite origin="9 15" ulayer="4" pos="11 8" texture="./magic_forge.png" material="system/default.mats:proj-prop">
+				<frame time="450">9 22 5 8</frame>
+			</sprite>
+			
+			
+			<sprite ulayer="2" origin="3 2" pos="0 -4" texture="./magic_forge.png" material="system/default.mats:bright-noxray">
+				
+				<frame time="200">0 0 6 5</frame>
+				<frame time="200">6 0 6 5</frame>
+				<frame time="200">12 0 6 5</frame>
+				<frame time="200">18 0 6 5</frame>
+				<frame time="200">24 0 6 5</frame>
+				<frame time="200">30 0 6 5</frame>
+				<frame time="200">30 0 6 5</frame>
+				<frame time="200">24 0 6 5</frame>
+				<frame time="200">18 0 6 5</frame>
+				<frame time="200">12 0 6 5</frame>
+				<frame time="200">6 0 6 5</frame>
+			</sprite>
+			
+			<sprite ulayer="2" origin="3 7" pos="4 -32" texture="./magic_forge.png" material="system/default.mats:proj-prop">
+				<frame time="200">0 5 6 15</frame>
+				<frame time="200">6 5 6 15</frame>
+				<frame time="200">12 5 6 15</frame>
+				<frame time="200">18 5 6 15</frame>
+				<frame time="200">24 5 6 15</frame>
+				<frame time="200">30 5 6 15</frame>
+				<frame time="200">36 5 6 15</frame>
+			</sprite>
+			<sprite ulayer="2" origin="3 7" pos="-3 -28" texture="./magic_forge.png" material="system/default.mats:proj-prop">
+				
+				<frame time="185">24 5 6 15</frame>
+				<frame time="185">30 5 6 15</frame>
+				<frame time="185">36 5 6 15</frame>
+				<frame time="185">0 5 6 15</frame>
+				<frame time="185">6 5 6 15</frame>
+				<frame time="185">12 5 6 15</frame>
+				<frame time="185">18 5 6 15</frame>
+			</sprite>
+		</scene>
+		<scene name="off">	
+			<scene src="shared" />
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="244 238 12 12" />
+			
+			<sprite origin="4 4" ulayer="4" pos="0 -3" texture="./magic_forge.png" material="system/default.mats:proj-prop">
+				<frame time="450">0 22 9 9</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

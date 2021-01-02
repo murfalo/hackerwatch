@@ -1,0 +1,39 @@
+<effect looping="false" layer="1">
+	<data>
+		<string name="sound">event:/enemy/boss_wisp/ice_break</string>
+	</data>
+	<light> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="false" />
+
+		<size value="saturate(sin((t+0.5)*pi))*32" />
+		
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="5" />
+		<color-a value="0" />
+	</light>	
+	
+	<sprite origin="8 8" ulayer="1" looping="false" texture="actors/mt/bosses/giant_wisp/giant_wisp_ice_hit.png" material="system/default.mats:bright">
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+		<frame time="50">48 16 16 16</frame>
+		<frame time="50">64 16 16 16</frame>
+		<frame time="50">80 16 16 16</frame>
+		<frame time="50">96 16 16 16</frame>
+	</sprite>
+	<sprite origin="8 8" ulayer="0" looping="false" texture="actors/mt/bosses/giant_wisp/giant_wisp_ice_hit.png" material="system/default.mats:glow">
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+		<frame time="50">48 16 16 16</frame>
+		<frame time="50">64 16 16 16</frame>
+		<frame time="50">80 16 16 16</frame>
+		<frame time="50">96 16 16 16</frame>
+	</sprite>
+</effect>

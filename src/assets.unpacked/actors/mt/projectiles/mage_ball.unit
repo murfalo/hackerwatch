@@ -1,0 +1,29 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/lich/hit</string>
+		<string name="fx">actors/projectiles/lich_1_hit.effect</string>
+		
+		<float name="speed">5</float>
+		<int name="ttl">6000</int>
+		<!-- <int name="bounces">3</int> -->
+		<!-- <float name="bounce-speed-mul">0.75</float> -->
+		<!-- <bool name="bounce-on-collide">false</bool> -->
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">15</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<effect src="./mage_ball.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

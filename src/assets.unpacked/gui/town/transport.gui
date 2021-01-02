@@ -1,0 +1,52 @@
+<gui>
+	<sprites>
+		<sprite name="icon-base" texture="gui/icons.png"><frame>236 50 9 8</frame></sprite>
+		<sprite name="icon-current" texture="gui/icons.png"><frame>0 50 8 12</frame></sprite>
+
+%include "gui/dlc_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<grouprect inner="true" width="180" anchor="0.5 0.5" flow="vbox" padding="2 2" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="176" height="18" flow="hbox">
+					<rect width="155" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".town.transport.title" anchor="0.5 0.5" />
+					</rect>
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<spritebutton spriteset="close" func="stop" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="176" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Info text -->
+				<rect width="176" height="32" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<text font="gui/fonts/arial11.fnt" anchor="0.5 0" width="172" align="center" text=".town.transport.info" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="176" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Button list -->
+				<group id="list" inner="true" width="176" flow="vbox" />
+
+				<!-- Template -->
+				<rect id="template" visible="false" width="176" height="22" spriteset="gui/variable/bigwindow_borders.sval">
+					<scaleiconbutton id="button" offset="2 2" width="172" spriteset="scalebutton" font="gui/fonts/arial11.fnt" hint="name" />
+				</rect>
+
+				<!-- Current position template -->
+				<rect id="template-current" visible="false" width="176" height="22" spriteset="gui/variable/headline_borders.sval">
+					<group inner="true" flow="hbox" spacing="4" anchor="0.5 0.5">
+						<sprite src="icon-current" offset="0 2" />
+						<text id="name" font="gui/fonts/arial11.fnt" hint="name" />
+					</group>
+				</rect>
+			</grouprect>
+		</group>
+	</doc>
+</gui>

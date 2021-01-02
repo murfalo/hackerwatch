@@ -1,0 +1,36 @@
+<dict>
+	<string name="name">Dummy</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>0 0 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<dict>
+			<string name="class">Skills::MeleeSwing</string>
+			
+			<int name="cooldown">200</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">...</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0</float>
+			
+			%//<int name="range">35</int>
+			
+			%//<int name="mana-cost">0</int>
+			%//<int name="stamina-cost">3</int>
+			%//<int name="health-cost">0</int>
+			
+			
+			<int name="arc">90</int>
+			<int name="rays">7</int>
+			<int name="dist">18</int>
+			<int name="duration">60</int>
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">15</int>
+			</dict>
+		</dict>
+	</array>
+</dict>

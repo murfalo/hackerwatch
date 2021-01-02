@@ -1,0 +1,30 @@
+<gui>
+	<sprites>
+		<sprite name="inventory-item-frames" texture="gui/playermenu.png"><frame>335 32 64 32</frame></sprite>
+		<sprite name="inventory-item-dot" texture="gui/icons.png"><frame>63 0 4 4</frame></sprite>
+		<sprite name="inventory-item-plus" texture="gui/icons.png"><frame>59 112 5 5</frame></sprite>
+
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="300" height="200" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" color="#000000FF">
+				<!-- Inventory -->
+				<inventoryitem id="inventory-template" width="16" height="16" visible="false" />
+				<inventory id="inventory" offset="0 4" anchor="0.5 0" width="128" height="48" scroll-backdrop-sprite="inventory-item-frames" flow="hboxwrapped" />
+				<scrollbar forid="inventory" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Box -->
+				<rect id="box" width="50" height="50" anchor="0.5 0.5" color="#773300FF" />
+
+				<!-- Play -->
+				<scaleiconbutton id="play" spriteset="scalebutton" width="116" font="gui/fonts/arial11.fnt" anchor="0.5 0.9" text="play" func="play" icon="gold" />
+			</rect>
+		</group>
+	</doc>
+</gui>

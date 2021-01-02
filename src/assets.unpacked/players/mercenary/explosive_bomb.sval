@@ -1,0 +1,29 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="name">.skills.mercenary.explosive-bomb</string>
+	<string name="description">.skills.mercenary.explosive-bomb.merc</string>
+
+	<bool name="default">true</bool>
+
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 24 24 24</vec4>
+	</array>
+	
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::SpawnUnit</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/ranger/bomb_explode</string>
+		
+		<int name="cooldown">250</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">false</bool>
+		<float name="speed-mul">1</float>
+		
+		<int name="mana-cost">25</int>
+		
+		<string name="unit">players/mercenary/explosive_bomb.unit</string>
+	</dict>
+</dict>

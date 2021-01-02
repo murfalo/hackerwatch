@@ -1,0 +1,15 @@
+<unit slot="doodad" layer="-5">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="8 -2" layer="110" texture="gui/minimap.png" frame="0 206 2 6" />
+			<minimap_sprite origin="-6 -2" layer="110" texture="gui/minimap.png" frame="0 206 2 6" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-32 -3 4 32</rect>
+				<rect shoot-through="true" aim-through="true">28 -3 4 32</rect>
+			</collision>
+			<sprite origin="32 5" texture="./bridge_stone.png" material="system/default.mats:floor">
+				<frame>130 0 66 34</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

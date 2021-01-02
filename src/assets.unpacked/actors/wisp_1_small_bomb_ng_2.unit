@@ -1,0 +1,79 @@
+<unit slot="doodad">
+	<behavior class="BombBehavior">
+	
+		<string name="explode-sound">event:/enemy/wisp/death_explosion</string>
+		<int name="delay">600</int>
+		
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/wisp_1_small_bomb.effect</string>
+				
+				<int name="radius">20</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">20</int>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:burning_strong</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">Nova</string>
+				<int name="projectiles">5</int>
+				<float name="proj-dist">8</float>
+				<string name="projectile">actors/projectiles/wisp_1_small_ng.unit</string>
+			</dict>	
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<light pos="0 -2">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="50" />
+				</sizes>
+				<colors>
+					<color value="150 255 150 1 255" />
+				</colors>
+			</light>
+
+			<sprite origin="10 12" looping="true" texture="actors/wisp_1_small_bomb.png" material="system/default.mats:bright">
+				<frame time="50">0 0 20 20</frame>
+				<frame time="50">20 0 20 20</frame>
+				<frame time="50">40 0 20 20</frame>
+				<frame time="50">60 0 20 20</frame>
+				<frame time="50">80 0 20 20</frame>
+				<frame time="50">100 0 20 20</frame>
+				<frame time="50">120 0 20 20</frame>
+				<frame time="50">140 0 20 20</frame>
+				<frame time="50">160 0 20 20</frame>
+				<frame time="50">180 0 20 20</frame>
+				<frame time="50">200 0 20 20</frame>
+				<frame time="50">220 0 20 20</frame>
+				<frame time="50">200 0 20 20</frame>
+				<frame time="100">0 20 20 20</frame>
+				<frame time="100">20 20 20 20</frame>
+				<frame time="100">40 20 20 20</frame>
+				<frame time="100">60 20 20 20</frame>
+				<frame time="100">80 20 20 20</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

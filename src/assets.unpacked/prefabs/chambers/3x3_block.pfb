@@ -1,0 +1,52 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/chambers/crn_ne.unit"><vec2>32 0</vec2><int>3</int></array>
+		<array name="doodads/walls/chambers/crn_se.unit"><vec2>32 32</vec2><int>4</int></array>
+		<array name="doodads/walls/chambers/crn_nw.unit"><vec2>0 0</vec2><int>2</int></array>
+		<array name="doodads/walls/chambers/h_16.unit"><vec2>16 32</vec2><int>6</int><vec2>16 0</vec2><int>7</int></array>
+		<array name="doodads/walls/chambers/v_16.unit"><vec2>32 0</vec2><int>1</int><vec2>0 0</vec2><int>8</int></array>
+		<array name="doodads/walls/chambers/crn_sw.unit"><vec2>0 32</vec2><int>5</int></array>
+		<array name="doodads/special/color_chambers_32.unit"><vec2>8 8</vec2><int>9</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PickedPrefab</string>
+			<int>10</int>
+			<vec3>80 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco3_torch</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/deco_3_wall_torch.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>11</int>
+			<vec3>80 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco3_wall</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/deco_3_wall_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>12</int>
+			<vec3>24 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>10</int><int>11</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

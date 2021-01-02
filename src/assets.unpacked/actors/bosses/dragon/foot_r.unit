@@ -1,0 +1,39 @@
+<unit slot="doodad">
+	
+	<scenes off="off" on="on">
+		
+		
+		<scene name="off">
+			<sprite origin="42 65" ulayer="1" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="75">96 336 26 55</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="44 54" ulayer="1" looping="false" texture="./dragon_shadow.png" material="system/default.mats:actor">
+					<frame time="75">448 48 22 43</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="on">
+			<sprite origin="42 65" ulayer="1" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="150">122 336 26 55</frame>
+				<frame time="500">148 336 26 55</frame>
+				<frame time="75">174 336 26 55</frame>
+				<frame time="75">200 336 26 55</frame>
+				<frame time="75">226 336 26 55</frame>
+				<frame time="75">96 336 26 55</frame>
+			</sprite>
+			
+			<shadow darkness="1">
+				<sprite origin="44 54" ulayer="1" looping="false" texture="./dragon_shadow.png" material="system/default.mats:actor">
+					
+					<frame time="150">470 48 22 43</frame>
+					<frame time="500">492 48 22 43</frame>
+					<frame time="75">514 48 22 43</frame>
+					<frame time="75">536 48 22 43</frame>
+					<frame time="75">558 48 22 43</frame>
+					<frame time="75">448 48 22 43</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

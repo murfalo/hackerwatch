@@ -1,0 +1,61 @@
+<effect looping="true" bounds="50 50">
+	<param name="radius" default="25" />
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="radius * radius / 30/10"
+
+		pos-x="cos(rand(u+27*i*l)*2*pi) * radius * pow(rand(u+67*i*l),0.5)"
+        pos-y="sin(rand(u+27*i*l)*2*pi) * radius * pow(rand(u+67*i*l),0.5)  -10 * it"
+		
+        color-r="0"
+        color-g="0.5 - mod(it+l+rand(u*i), 1)"
+        color-b="1 - mod(it+l+rand(u*i), 1)"
+        color-a="1 - mod(it+l+rand(u*i), 1)"
+	>
+        <frame time="600">0 0 1 1</frame>
+	</sprite> 
+
+	<!-- Ring edge -->
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="effects/effects.mats:fire"
+		num-sprites="radius * radius / 30/10"
+
+		pos-x="cos(i / (radius / 3) * pi*2*l) * lerp(rand(u+101*i*l), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 3) * pi*2*l) * lerp(rand(u+141*i*l), radius - 3, radius+2)  -10 * it"
+		
+		color-r="0"
+        color-g="0.5 - mod(it+l+rand(u*i), 1)"
+        color-b="1 - mod(it+l+rand(u*i), 1)"
+        color-a="1 - mod(it+l+rand(u*i), 1)"
+	>
+        
+        <frame time="600">0 0 1 1</frame>
+	</sprite>
+	
+	
+	
+	
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(t*10, radius * 3 + 10)" />
+
+		<color-r value="0" />
+		<color-g value="0.5" />
+		<color-b value="1.5" />
+		<color-a value="0"/>
+	</light>
+	
+</effect>

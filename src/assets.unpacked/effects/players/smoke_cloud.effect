@@ -1,0 +1,85 @@
+<effect looping="true" layer="1">
+	<param name="radius" default="75" />
+	<param name="ttl" default="10000" />
+	<sprite origin="4 4" looping="true" texture="effects/players/player_effects.png" material="effects/effects.mats:lit"
+	num-sprites="radius * radius / 180"
+
+	pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5) + sin(t*2*pi)*2"
+	pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -30 * it"
+	
+	color-a="0.2"
+	>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="130">26 71 9 9</frame>
+		<frame time="140">35 71 10 9</frame>
+		<frame time="130">26 71 9 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="130">26 71 9 9</frame>
+		<frame time="140">35 71 10 9</frame>
+		<frame time="130">26 71 9 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="130">26 71 9 9</frame>
+		<frame time="140">35 71 10 9</frame>
+		<frame time="130">26 71 9 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+	</sprite>
+	
+	<sprite origin="4 4" looping="true" texture="effects/players/player_effects.png" material="effects/effects.mats:lit"
+	num-sprites="radius * radius / 180"
+
+	pos-x="cos(rand(u+19*i)*2*pi) * radius * pow(rand(u+71*i),0.5) + sin(t*pi)*2"
+	pos-y="sin(rand(u+19*i)*2*pi) * radius * pow(rand(u+71*i),0.5)  -24 * it"
+	
+	color-a="0.5"
+	>
+		<frame time="120">9 71 10 9</frame>
+		<frame time="120">17 71 10 9</frame>
+		<frame time="120">26 71 9 9</frame>
+		<frame time="120">35 71 10 9</frame>
+		<frame time="120">26 71 9 9</frame>
+		<frame time="120">17 71 10 9</frame>
+		<frame time="120">9 71 10 9</frame>
+		<frame time="120">9 71 10 9</frame>
+		<frame time="120">17 71 10 9</frame>
+		<frame time="120">26 71 9 9</frame>
+		<frame time="120">35 71 10 9</frame>
+		<frame time="120">26 71 9 9</frame>
+		<frame time="120">17 71 10 9</frame>
+		<frame time="120">9 71 10 9</frame>
+		<frame time="120">9 71 10 9</frame>
+		<frame time="120">17 71 10 9</frame>
+		<frame time="120">26 71 9 9</frame>
+		<frame time="120">35 71 10 9</frame>
+		<frame time="120">26 71 9 9</frame>
+		<frame time="120">17 71 10 9</frame>
+		<frame time="120">9 71 10 9</frame>
+	</sprite>
+	
+	<sprite origin="4 4" looping="true" texture="effects/players/player_effects.png" material="effects/effects.mats:lit"
+	num-sprites="radius * radius / 180"
+
+	pos-x="cos(rand(u+43*i)*2*pi) * radius * pow(rand(u+107*i),0.5) + sin(t*pi)*2"
+	pos-y="sin(rand(u+43*i)*2*pi) * radius * pow(rand(u+107*i),0.5)  -25 * it"
+	
+	color-a="0.4"
+	>
+		<frame time="150">26 71 9 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="150">26 71 9 9</frame>
+		<frame time="150">17 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">9 71 10 9</frame>
+		<frame time="150">17 71 10 9</frame>
+	</sprite>
+</effect>

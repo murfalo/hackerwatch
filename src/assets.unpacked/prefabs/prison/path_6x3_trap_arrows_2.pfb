@@ -1,0 +1,191 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/trap_shooter_arrow_s.unit">
+			<vec2>64 0</vec2>
+			<int>1</int>
+			<vec2>16 0</vec2>
+			<int>2</int>
+			<vec2>8 0</vec2>
+			<int>3</int>
+			<vec2>24 0</vec2>
+			<int>4</int>
+			<vec2>80 0</vec2>
+			<int>5</int>
+			<vec2>72 0</vec2>
+			<int>6</int>
+			<vec2>32 0</vec2>
+			<int>7</int>
+			<vec2>88 0</vec2>
+			<int>8</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ProjectileShooter</string>
+			<int>9</int>
+			<vec3>33 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>10</int>
+			<vec3>0 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1500</int>
+			</dict>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>11</int>
+			<vec3>25 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>12</int>
+			<vec3>17 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>13</int>
+			<vec3>9 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>14</int>
+			<vec3>0 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>13</int><int>0</int><int>12</int><int>300</int><int>11</int><int>600</int><int>9</int><int>900</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>15</int>
+			<vec3>89 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>16</int>
+			<vec3>96 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1500</int>
+			</dict>
+			<array><int>20</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>17</int>
+			<vec3>81 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>18</int>
+			<vec3>73 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>19</int>
+			<vec3>65 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_poison.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>20</int>
+			<vec3>96 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>15</int><int>0</int><int>17</int><int>300</int><int>18</int><int>600</int><int>19</int><int>900</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>21</int>
+			<vec3>48 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_no_traps</string>
+			<dict>
+				<string name="Flag">fountain_no_traps</string>
+				<array name="OnTrue"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>22</int>
+			<vec3>48 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>10</int><int>16</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

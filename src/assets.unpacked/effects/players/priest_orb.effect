@@ -1,0 +1,28 @@
+<effect looping="true">
+	<sprite origin="2 2" looping="true" texture="./priest_orb.png" material="system/default.mats:glow-both-bright">
+		<frame time="100">0 0 4 4</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="18" />
+
+		<color-r value="4" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+
+</effect>

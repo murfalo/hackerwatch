@@ -1,0 +1,66 @@
+<unit slot="doodad">
+	<scenes default="default" on="on" off="off" off_80="off_80" off_60="off_60" off_40="off_40" off_20="off_20">
+		<scene name="shared">
+			<sprite ulayer="1" layer="-20" origin="9 26" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame>64 136 18 52</frame>
+			</sprite>
+			<sprite ulayer="-1" layer="-20" origin="14 34" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame>64 188 28 68</frame>
+			</sprite>
+		</scene>
+		<scene name="on">
+			<scene src="shared"/>
+			<effect ulayer="0" layer="-20" src="./_custom_bridge_chain_on_n.effect"/>
+			<sprite looping="false" layer="-20" origin="3 22" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="6000">0 0 0 0</frame>
+				<frame>83 93 6 51</frame>
+			</sprite>		
+		</scene>		
+		<scene name="off">
+			<scene src="shared"/>
+			<effect ulayer="0" layer="-20" src="./_custom_bridge_chain_off_n.effect"/>
+			<sprite looping="false" layer="-20" origin="3 22" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="1500">0 0 0 0</frame>
+				<frame>83 0 6 51</frame>
+			</sprite>		
+		</scene>		
+		<scene name="off_80">
+			<scene src="shared"/>
+			<effect ulayer="0" layer="-20" src="./_custom_bridge_chain_off_n_80.effect"/>
+			<sprite looping="false" layer="-20" origin="3 22" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="1200">0 0 0 0</frame>
+				<frame>83 0 6 51</frame>
+			</sprite>		
+		</scene>
+		<scene name="off_60">
+			<scene src="shared"/>
+			<effect ulayer="0" layer="-20" src="./_custom_bridge_chain_off_n_60.effect"/>
+			<sprite looping="false" layer="-20" origin="3 22" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="900">0 0 0 0</frame>
+				<frame>83 0 6 51</frame>
+			</sprite>		
+		</scene>
+		<scene name="off_40">
+			<scene src="shared"/>
+			<effect ulayer="0" layer="-20" src="./_custom_bridge_chain_off_n_40.effect"/>
+			<sprite looping="false" layer="-20" origin="3 22" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="600">0 0 0 0</frame>
+				<frame>83 0 6 51</frame>
+			</sprite>		
+		</scene>
+		<scene name="off_20">
+			<scene src="shared"/>
+			<effect ulayer="0" layer="-20" src="./_custom_bridge_chain_off_n_20.effect"/>
+			<sprite looping="false" layer="-20" origin="3 22" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="300">0 0 0 0</frame>
+				<frame>83 0 6 51</frame>
+			</sprite>		
+		</scene>
+		<scene name="default">
+			<scene src="shared"/>
+			<sprite layer="-20" origin="3 22" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame>83 0 6 51</frame>
+			</sprite>	
+		</scene>								
+	</scenes>
+</unit>

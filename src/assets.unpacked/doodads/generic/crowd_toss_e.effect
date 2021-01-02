@@ -1,0 +1,29 @@
+<effect random-start="false" looping="false" layer="1">
+   	  
+		<param name="row" default="0" />
+		
+		
+		<sprite origin="8 8" layer="-1" texture="./crowd_items.png" material="system/default.mats:shadow"
+			pos-x="t*75-75"
+		>
+			<frame time="1200">96 0 16 16</frame>
+		</sprite>
+		<sprite origin="8 10" looping="false" texture="./crowd_items.png" material="system/default.mats:default"
+			pos-y="sin(t*pi)*-75"
+			pos-x="t*75-75"
+		
+		>	
+		
+			<frame time="120" x="0" y="16 * row" w="16" h="16" />
+			<frame time="120" x="16" y="16 * row" w="16" h="16" />
+			<frame time="120" x="32" y="16 * row" w="16" h="16" />
+			<frame time="120" x="48" y="16 * row" w="16" h="16" />
+			<frame time="120" x="64" y="16 * row" w="16" h="16" />
+			<frame time="120" x="0" y="16 * row" w="16" h="16" />
+			<frame time="120" x="16" y="16 * row" w="16" h="16" />
+			<frame time="120" x="32" y="16 * row" w="16" h="16" />
+			<frame time="120" x="48" y="16 * row" w="16" h="16" />
+			<frame time="120" x="64" y="16 * row" w="16" h="16" />
+			
+		</sprite>
+</effect>

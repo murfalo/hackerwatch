@@ -1,0 +1,46 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/maggot/hit</string>
+		<string name="fx">actors/projectiles/maggot_1_mb_hit.effect</string>
+		<float name="speed">3.75</float>
+		<int name="ttl">1500</int>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">30</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:poison_strong</string>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/projectiles/maggot_poison_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+			<sprite origin="8 8" looping="true" texture="./maggot_1_mb.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 16 16</frame>
+				<frame time="50">16 0 16 16</frame>
+				<frame time="50">32 0 16 16</frame>
+				<frame time="50">48 0 16 16</frame>
+				<frame time="50">0 16 16 16</frame>
+				<frame time="50">16 16 16 16</frame>
+				<frame time="50">32 16 16 16</frame>
+				<frame time="50">48 16 16 16</frame>
+			</sprite>
+			<sprite origin="8 8" looping="true" texture="./maggot_1_mb.png" material="system/default.mats:glow">
+				<frame time="50">0 32 16 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

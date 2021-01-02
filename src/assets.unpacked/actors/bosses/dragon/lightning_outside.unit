@@ -1,0 +1,21 @@
+<unit slot="doodad" layer="-65">
+	<scenes off="off" on="on">
+		<scene name="off">
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="off" align="center" material="system/default.mats:bright"/>
+			<sprite layer="499" origin="16 16" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			<sprite looping="false" origin="32 512" texture="./lightning.png" material="system/default.mats:bright-noxray">
+				<frame time="75">0 0 64 384</frame>
+			</sprite>
+			<sprite looping="false" origin="32 128" texture="./lightning_ext.png" material="system/default.mats:bright-noxray">
+				<frame time="75">0 0 64 256</frame>
+			</sprite>					
+			%endif			
+		</scene>
+		<scene name="on">		
+			<effect src="actors/bosses/dragon/lightning_outside.effect" />	
+		</scene>		
+	</scenes>
+</unit>

@@ -1,0 +1,38 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="on">
+			<!-- <effect layer="1" src="doodads/walls/temple_rich/door_open.effect"/> Add cool shine maybe? -->
+			<sprite layer="3" origin="-12 18" texture="./exit.png" material="system/default.mats:default">
+				<frame>128 109 9 9</frame>
+			</sprite>
+			<light pos="16 -14">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1500" />
+				<overbright value="3"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" /> 
+				<sizes>
+					<size value="20" />
+					<size value="16" />
+				</sizes>
+				<colors>
+					<color value="181 198 204 0" />
+					<color value="181 204 204 0" />
+				</colors>
+			</light>	
+		</scene>
+		
+		<scene name="off">
+			%if EDITOR
+			<sprite layer="4" origin="-12 18" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 8 8</frame>
+			</sprite>
+			%endif
+		</scene>			
+		
+	</scenes>
+</unit>

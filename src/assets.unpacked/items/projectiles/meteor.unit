@@ -1,0 +1,44 @@
+<unit>
+	<behavior class="BombBehavior">
+	
+		<int name="delay">500</int>
+		<int name="delay-random">0</int>
+
+		<string name="spawn-sound">event:/item/item_meteor-fall</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">1000</float>
+				<string name="fx">players/wizard/meteor_hit.effect</string>
+				<int name="radius">45</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+						<int name="magical">50</int>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:burning_strong</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">45</float>
+			<float name="colorr">1</float>
+			<float name="colorg">1</float>
+			<float name="colorb">1</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<effect src="items/projectiles/meteor.effect" />
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

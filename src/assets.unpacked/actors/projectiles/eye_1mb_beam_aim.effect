@@ -1,0 +1,84 @@
+<effect looping="false" bounds="1250 1250">
+	<param name="height" default="0" />
+	<param name="angle" default="0" />
+	<param name="length" default="100" />
+
+	%// Sinus
+	<sprite looping="false" origin="0 4" texture="actors/projectiles/eye_1_mb_beam.png" material="effects/effects.mats:add"
+		angle="angle"
+		
+		pos-x="cos(angle)*13"
+		pos-y="sin(angle)*13"
+		
+		color-r="1.5"
+		color-g="0.2"
+		color-b="0.8"
+		color-a="1.8-t"
+		
+		scale-x="1"
+		scale-y="1.5-t"
+		>
+		<frame time="450" x="t * -15" y="0" w="length-13" h="7" />
+	</sprite>
+
+		
+	%// Post Pixels
+	<sprite looping="false" origin="0 0.5" texture="actors/projectiles/eye_1_mb_beam.png" material="effects/effects.mats:add"
+		angle="angle"
+		
+		pos-x="cos(angle)*17"
+		pos-y="sin(angle)*17"
+		
+		angle="angle"
+		
+		color-r="1.5"
+		color-g="0.2"
+		color-b="0.8"
+		color-a="1.1-t"
+		
+		
+		scale-x="1"
+		scale-y="2.0 * (1 - t)"
+		>
+		<frame time="2000" x="t*-7" y="8" w="length-13" h="1" />
+	</sprite>
+		
+	%// OuterBlue
+	<sprite looping="false" origin="0 1" texture="effects/empty.png" material="effects/effects.mats:default"
+		angle="angle"
+		
+		pos-x="cos(angle)*13"
+		pos-y="sin(angle)*13"
+		
+		color-r="1"
+		color-g="0.054"
+		color-b="0.43"
+		color-a="0.7-t"
+		
+		
+		scale-x="length - 15"
+		scale-y="4.5 * (1 - t)"
+		%//scale-y="3 * (1 - t)"
+		>
+		<frame time="500">0 0 1 2</frame>
+	</sprite>
+
+	%// MainBeam
+	<!-- <sprite looping="false" origin="0 1" texture="effects/empty.png" material="effects/effects.mats:add-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*13"
+		pos-y="sin(angle)*13"
+		
+		color-r="1.8"
+		color-g="0.7"
+		color-b="0.7"
+		color-a="1-t"
+		
+		
+		scale-x="length - 15"
+		scale-y="1 * (1 - t)"
+		>
+		<frame time="1000">0 0 1 2</frame>
+	</sprite> -->
+</effect>

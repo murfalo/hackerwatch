@@ -1,0 +1,14 @@
+%if !EDITOR_SCREENSHOT & TIME_DAY
+<unit layer="95" >
+	<scenes>
+		<scene random-start="true">
+			<sprite origin="256 256" texture="./godray.png" material="./terrain.mats:parallax-godray"> 
+				<frame time="350">0 0 512 512</frame>
+			</sprite>	
+			<sprite origin="200 200" texture="./godray.png" material="./terrain.mats:parallax-godray-mask"> 
+				<frame time="350">512 0 512 512</frame>
+			</sprite>			
+		</scene>			
+	</scenes>
+</unit>
+%endif

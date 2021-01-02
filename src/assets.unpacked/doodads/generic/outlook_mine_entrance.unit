@@ -1,0 +1,25 @@
+<unit slot="doodad">
+	<scenes default="default" razed="razed">
+		<scene name="default">
+			<collision static="true">
+				<rect>16 -64 32 64</rect>
+				<rect>-48 -64 32 64</rect>
+				<rect>-16 -64 32 32</rect>
+			</collision>
+			<sprite origin="48 64" looping="true" texture="./outlook_mine_entrance.png" material="system/default.mats:floor">
+				<frame time="100">0 0 96 67</frame>
+			</sprite>
+		</scene>
+		<scene name="razed">
+			<collision static="true">
+				<rect>-48 -64 96 64</rect>
+			</collision>
+			<sprite origin="48 64" looping="true" texture="./outlook_mine_entrance.png" material="system/default.mats:floor">
+				<frame time="100">0 67 96 67</frame>
+			</sprite>
+			<sprite layer="-3" origin="48 0" looping="true" texture="./outlook_mine_entrance.png" material="system/default.mats:floor">
+				<frame time="100">0 131 96 15</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,66 @@
+<effect looping="true">
+<!-- left -->
+	<sprite origin="8 8" looping="true" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos((rand(i*13+27*il) * 0.2 + 1.15) * pi) * 20 * it"
+		pos-y="(sin((rand(i*13+27*il) * 0.2 + 1.15) * pi) * 20 * it) + 6"
+		color-a="saturate(0.6-it)"
+	
+	>
+		
+		<frame time="400">0 99 16 16</frame>
+		
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it- 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos((rand(i*17+27*il) * 0.2 + 1.15) * pi) * 20 * it"
+		pos-y="(sin((rand(i*17+27*il) * 0.2 + 1.15) * pi) * 20 * it) + 5"
+		color-a="saturate(0.6-it)"
+	
+	>
+		
+		<frame time="400">16 99 16 16</frame>
+		
+	</sprite>
+	<!-- right -->
+	<sprite origin="8 8" looping="true" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos((rand(i*13+27*il) * 0.2 + 1.65) * pi) * 20 * it"
+		pos-y="(sin((rand(i*13+27*il) * 0.2 + 1.65) * pi) * 20 * it) + 5"
+		color-a="saturate(0.6-it)"
+	
+	>
+		
+		<frame time="400">0 99 16 16</frame>
+		
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it"
+		pos-y="(sin((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it) + 6"
+		color-a="saturate(0.6-it)"
+	
+	>
+		
+		<frame time="400">16 99 16 16</frame>
+		
+	</sprite>
+	
+</effect>

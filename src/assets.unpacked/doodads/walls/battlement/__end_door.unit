@@ -1,0 +1,17 @@
+<unit slot="doodad" layer="-9">
+	<scenes closed="closed" open="open">
+		<scene name="shared">
+			<sprite origin="0 0" texture="./__end_door.png" material="system/default.mats:wall">
+				<frame>0 0 63 78</frame>
+			</sprite>
+		</scene>
+		<scene name="closed">
+			<scene src="shared"/>
+			<effect ulayer="2" src="./__end_door_closed.effect"/>
+		</scene>
+		<scene name="open">
+			<scene src="shared"/>
+			<effect ulayer="2" src="./__end_door_open.effect"/>
+		</scene>
+	</scenes>
+</unit>

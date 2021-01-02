@@ -1,0 +1,67 @@
+<!-- <effect looping="true"  -->
+<!-- > -->
+	<!-- <param name="angle" default="0" /> -->
+	<!-- <param name="height" default="0" /> -->
+	
+	<!-- <sprite origin="4 41" looping="true" texture="doodads/generic/trap_icicle.png" material="system/default.mats:projectile" -->
+	
+		<!-- scale-x="0.25" -->
+		<!-- scale-y="0.25" -->
+	
+		<!-- pos-x="0" -->
+		<!-- pos-y="-height" -->
+	
+		<!-- angle="angle+(pi/4)"> -->
+		
+		<!-- <frame time="100">0 0 9 49</frame> -->
+	<!-- </sprite> -->
+	
+	<!-- <sprite origin="4 41" looping="true" texture="doodads/generic/trap_icicle.png" material="system/default.mats:shadow" -->
+	
+		<!-- scale-x="0.25" -->
+		<!-- scale-y="0.25" -->
+	
+		<!-- pos-x="0" -->
+		<!-- pos-y="-height" -->
+	
+		<!-- angle="angle+(pi/4)"> -->
+		
+		<!-- <frame time="100">0 0 9 49</frame> -->
+	<!-- </sprite>	 -->
+<!-- </effect> -->
+
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="0 1" texture="./trap_shooters.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">16 32 16 5</frame>
+	</sprite>
+	<sprite looping="true" origin="0 1" texture="./trap_shooters.png" material="system/default.mats:glow-both-bright"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle"
+		color-a="0.5">
+		
+		<frame time="100">16 32 16 5</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="0 1" texture="./trap_shooters.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">16 32 16 5</frame>
+	</sprite>	
+</effect>

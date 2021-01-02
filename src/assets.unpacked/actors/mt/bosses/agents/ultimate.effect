@@ -1,0 +1,227 @@
+<effect looping="true" layer="120">
+	<param name="radius" default="9" />
+	<param name="height" default="-300" />
+	<param name="animLength" default="1000" />
+
+
+	<param name="ttl" default="1350" />
+	
+	
+<!-- Base ring -->
+	<!-- <sprite origin="10 10" looping="true" texture="./ultimate.png" material="system/default.mats:default-noxray"
+
+		color-r="1"
+		color-g="0"
+		color-b="1"
+		color-a="1"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		scale-x="0.99 + sin(t*pi*2)*0.01"
+		scale-y="0.99 + cos(t*pi*2)*0.01"
+		>
+		<frame time="500">0 0 20 20</frame>
+	</sprite> -->
+	<sprite origin="10 10" looping="true" texture="./ultimate.png" material="system/default.mats:default-noxray"
+		num-sprites="5"
+		color-r="1"
+		color-g="0"
+		color-b="1"
+		color-a="1 - 0.2*i"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength)) - 6*i"
+		scale-x="0.99 - 0.2*i + sin(t*pi*2)*0.01"
+		scale-y="0.99 - 0.2*i + cos(t*pi*2)*0.01"
+		>
+		<frame time="500">0 0 20 20</frame>
+	</sprite>
+<!-- Black Center -->
+	<sprite origin="10 10" looping="true" texture="./ultimate.png" material="system/default.mats:default-noxray"
+		color-r="4"
+		color-g="0"
+		color-b="1"
+		color-a="0.5"
+		scale-x="0.9 + sin(t*pi*4)*0.2"
+		scale-y="0.9 + cos(t*pi*4)*0.2"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		>
+		<frame time="250">20 0 20 20</frame>
+	</sprite><sprite origin="10 10" looping="true" texture="./ultimate.png" material="system/default.mats:default-noxray"
+		color-r="1"
+		color-g="-0.5"
+		color-b="0"
+		color-a="0.5"
+		scale-x="1 + cos(t*pi*4)*0.2"
+		scale-y="1 + sin(t*pi*4)*0.2"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		>
+		<frame time="250">20 0 20 20</frame>
+	</sprite>
+<!-- Shuriken -->
+	<!-- <sprite origin="4.5 4.5" looping="true" texture="./ultimate.png" material="system/default.mats:glow-both-bright"
+
+		color-r="0.3"
+		color-g="0.1"
+		color-b="0.3"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		angle="rand(u+i+23)+t*pi*2"
+		>
+		<frame time="500">46 5 9 9</frame>
+	</sprite> -->
+<!-- glowing ring -->
+	<sprite origin="10 10" looping="true" texture="./ultimate.png" material="system/default.mats:glow-both-bright"
+
+		color-r="1"
+		color-g="0"
+		color-b="1"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		color-a="0.2 + sin((t+l)/3*pi*2)*0.25"
+		>
+		<frame time="500">0 20 20 20</frame>
+	</sprite>
+<!-- white/black blur -->
+	<sprite origin="10 10" looping="true" texture="./ultimate.png" material="system/default.mats:glow-both-bright"
+
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		color-r="-0.5"
+		color-g="-0.5"
+		color-b="-0.5"
+		color-a="0.2"
+		scale-x="0.99 + sin(t*pi*2)*0.01"
+		scale-y="0.99 + cos(t*pi*2)*0.01"
+		angle="rand(u+i+23)-t*pi*2"
+		>
+		<frame time="500">21 20 20 20</frame>
+	</sprite>
+<!-- particles -->
+	<sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		pos-x="cos(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) + cos(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) * (1-it)"
+		pos-y="sin(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) + 1*sin(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) - it*25 + height * saturate(1-(t+l)/(ttl/animLength))"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="1*saturate(10*t+l)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="0.5*saturate(sin(it*pi*2))"
+		>
+		<frame time="50">246 7 3 3</frame>
+	</sprite>
+	<sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="7"
+		pos-x="cos(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) + cos(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) * (1-it)"
+		pos-y="sin(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) + 1*sin(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) - it*10 + height * saturate(1-(t+l)/(ttl/animLength))"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="1*saturate(10*t+l)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="0.5*saturate(sin(it*pi*2))"
+		>
+		<frame time="50">246 7 3 3</frame>
+	</sprite><sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		pos-x="cos(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) + cos(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) * (1-it)"
+		pos-y="sin(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) + 1*sin(rand(u+283*i)*2*pi) * (radius)*0.7 * pow(rand(u+673*i),0.5) - it*100 + height * saturate(1-(t+l)/(ttl/animLength))"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="1*saturate(10*t+l)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="0.5*saturate(sin(it*pi*2))"
+		>
+		<frame time="50">246 7 3 3</frame>
+	</sprite>
+	<sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="5"
+		pos-x="cos(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) + cos(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) * (1-it)"
+		pos-y="sin(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) + 1*sin(rand(u+23*i)*2*pi) * (radius)*0.7 * pow(rand(u+101*i),0.5) - it*80 + height * saturate(1-(t+l)/(ttl/animLength))"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="1*saturate(10*t+l)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="0.5*saturate(sin(it*pi*2))"
+		>
+		<frame time="50">246 7 3 3</frame>
+	</sprite>
+
+	<sprite origin="2.5 2.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="7"
+		pos-x="cos(rand(u+953*i)*2*pi) * (radius)*0.7 * pow(rand(u+479*i),0.5) + cos(rand(u+953*i)*2*pi) * (radius)*0.7 * pow(rand(u+479*i),0.5) * (1-it)"
+		pos-y="sin(rand(u+953*i)*2*pi) * (radius)*0.7 * pow(rand(u+479*i),0.5) + 1*sin(rand(u+953*i)*2*pi) * (radius)*0.7 * pow(rand(u+479*i),0.5) - it*35 + height * saturate(1-(t+l)/(ttl/animLength))"
+		angle="rand(u+i+3)*pi*2*-t"
+		scale-x="1.0-rand(u+i+23)*0.3"
+		scale-y="1.0-rand(u+i+23)*0.3"
+		color-r="1*saturate(10*t+l)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="0.5*saturate(sin(it*pi*2))"
+		>
+		<frame time="50">240 6 5 5</frame>
+	</sprite>
+<!-- Lights -->
+	<light pos-x="0" pos-y="height * saturate(1-(t+l)/(ttl/animLength))">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="30 * saturate(4*t+l) + 1*cos(t*pi*4)" />
+
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="4" />
+		<color-a value="0"/>
+	</light>
+	<light pos-x="0" pos-y="height * saturate(1-(t+l)/(ttl/animLength))">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="48 * saturate(4*t+l) + 1*cos(t*pi*4)" />
+
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+	</light>
+	<light pos-y="height * saturate(1-(t+l)/(ttl/animLength))" pos-x="0"> 
+		<sprite texture="./agent_star/star.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+		<length value="1000" />
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		<angle value="0"/>
+		<size value="70" />
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0.03" />
+	</light>	
+
+</effect>

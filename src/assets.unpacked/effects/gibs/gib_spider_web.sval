@@ -1,0 +1,44 @@
+<dict>
+	<bool name="gore">true</bool>
+	<vec3 name="spread">6 6 3</vec3>
+	
+	<array name="death-gib">
+		<float>0</float>
+		<dict>
+			<int name="min">6</int>
+			<int name="max">10</int>
+			<float name="force">0.4</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">particle_bone</string>
+			<bool name="stay">false</bool>
+		</dict>
+	</array>
+	
+	<array name="hit-gib">
+		<float>0</float>
+		<dict>
+			<int name="min">0</int>
+			<int name="max">2</int>
+			<float name="force">0.1</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">particle_bone</string>
+			<bool name="stay">false</bool>
+		</dict>
+		<dict>
+			<int name="min">0</int>
+			<int name="max">2</int>
+			<float name="force">0.2</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">particle_bone</string>
+			<bool name="stay">false</bool>
+		</dict>
+	</array>
+	
+	<array name="death-effect">
+		<float>0</float>
+		<dict>
+			<int name="chance">1</int>
+			<string name="effect">effects/spider_web_hit.effect</string>
+		</dict>
+	</array>
+</dict>

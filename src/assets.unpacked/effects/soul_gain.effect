@@ -1,0 +1,124 @@
+<effect looping="false" layer="1">
+	<param name="radius" default="12" />
+		
+	
+	%//Particles
+	<variation>
+		<sprite origin="3 3" looping="false" texture="./soul_steal.png" material="system/default.mats:default-noxray"
+			num-sprites="1"
+
+			pos-x="t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			pos-y="t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			
+			color-a="0.5 - t*0.5"
+		>
+			
+			<frame time="80">12 48 6 6</frame>
+			<frame time="80">6 48 6 6</frame>
+			<frame time="80">0 48 6 6</frame>
+			<frame time="80">6 48 6 6</frame>
+			<frame time="80">12 48 6 6</frame>
+			<frame time="80">18 48 6 6</frame>
+		</sprite>
+		
+		<sprite origin="3 3" looping="false" texture="./soul_steal.png" material="system/default.mats:glow-both"
+			num-sprites="1"
+
+			pos-x="t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			pos-y="t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			
+			color-a="1 - t"
+		>
+			
+			<frame time="80">12 48 6 6</frame>
+			<frame time="80">6 48 6 6</frame>
+			<frame time="80">0 48 6 6</frame>
+			<frame time="80">6 48 6 6</frame>
+			<frame time="80">12 48 6 6</frame>
+			<frame time="80">18 48 6 6</frame>
+		</sprite>
+	
+	</variation>
+	<variation>
+		<sprite origin="3 3" looping="false" texture="./soul_steal.png" material="system/default.mats:default-noxray"
+			num-sprites="1"
+
+			pos-x="t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			pos-y="t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			
+			color-a="0.5 - t*0.5"
+		>
+			
+			<frame time="240">12 48 6 6</frame>
+			<frame time="240">18 48 6 6</frame>
+		</sprite>
+		
+		<sprite origin="3 3" looping="false" texture="./soul_steal.png" material="system/default.mats:glow-both"
+			num-sprites="1"
+
+			pos-x="t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			pos-y="t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + min(0,t*t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5))"
+			
+			color-a="1 - t"
+		>
+			
+			<frame time="240">12 48 6 6</frame>
+			<frame time="240">18 48 6 6</frame>
+		</sprite>
+	</variation>
+	
+	%// Flash
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*20" />
+			
+		<color-r value="0.5" />
+		<color-g value="1.5" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="30*(1-t)" />
+			
+		<color-r value="0.5" />
+		<color-g value="1.5" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+</effect>

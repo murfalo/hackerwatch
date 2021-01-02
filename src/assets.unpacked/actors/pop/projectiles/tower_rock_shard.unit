@@ -1,0 +1,38 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">7</float>
+		<bool name="blockable">true</bool>
+		<int name="ttl">400</int>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">15</int>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle projectile="true" radius="1" />
+			</collision>
+		
+			<sprite random-start="true" origin="2 2" looping="true" texture="./tower_rock.png" material="system/default.mats:projectile">
+				<frame time="50">12 0 3 3</frame>
+				<frame time="50">15 0 3 3</frame>
+				<frame time="50">12 3 3 3</frame>
+				<frame time="50">15 3 3 3</frame>
+			</sprite>
+			<shadow>
+				<sprite random-start="true" origin="2 -2" texture="./tower_rock.png">
+				<frame time="50">12 0 3 3</frame>
+				<frame time="50">15 0 3 3</frame>
+				<frame time="50">12 3 3 3</frame>
+				<frame time="50">15 3 3 3</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

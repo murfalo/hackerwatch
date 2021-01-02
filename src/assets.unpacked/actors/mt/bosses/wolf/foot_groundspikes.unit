@@ -1,0 +1,50 @@
+<unit netsync="none">
+	<behavior class="LurkerProjectile">
+		<string name="anim">attack</string>
+		<string name="fx">actors/mt/bosses/wolf/impact_lurker.effect</string>
+		
+		<float name="speed">1.4</float>
+		<int name="ttl">30000</int>
+		<int name="penetration">999</int>
+		
+		<int name="spawn-freq">200</int>
+		<bool name="miss-fx">true</bool>
+		
+		<int name="ignore-at-hardness">1</int>
+		<int name="destroy-at-hardness">4</int>
+		
+		<float name="team-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">30</int>
+				<int name="magical">30</int>
+				<float name="armor-mul">0.9</float>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/boss_wolf/lurker</string>
+			</dict>
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/mt/bosses/wolf/impact_lurker.effect</string>
+			</dict>
+		</array>
+		
+		<float name="jitter">0.2</float>
+	</behavior>	
+	
+	<scenes default="idle">
+		<scene name="idle">
+		<minimap_sprite origin="1 1" texture="gui/minimap.png" frame="34 9 2 2" />	
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="attack">
+			<effect ulayer="2" src="./foot_groundspikes.effect" />	
+		</scene>
+	</scenes>
+</unit>

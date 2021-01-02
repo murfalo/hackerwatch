@@ -1,0 +1,102 @@
+<unit netsync="none" layer="100">
+	<behavior class="SteeringRayProjectile">
+		<string name="anim">idle 8</string>
+		<float name="speed">3.5</float>
+		<int name="ttl">15000</int>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.1</float>
+		<string name="dir-steer">sin(t*7.5)</string>
+		<string name="speed-steer">1</string>
+		<bool name="penetrate-all">true</bool>
+		<string name="hit-snd">event:/enemy/boss_mummy/curse_ball</string>
+		<string name="loop-snd">event:/enemy/boss_mummy/curse_ball-travel</string>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">25</int>
+			</dict>
+			<dict>
+				<string name="class">AddCurse</string>
+				<int name="amount">5</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">items/projectiles/magic_missile_hit.effect</string>
+			</dict>
+		</array>
+		<dict name="effect-params">
+		</dict>
+	</behavior>
+	<scenes start="idle-0">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>
+			<effect ulayer="1" src="actors/pop/bosses/mummy/skull_projectile_swirl.effect" />
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">0 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">9 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">18 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">27 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">36 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">45 0 9 9</frame>
+			</sprite>
+			<effect ulayer="1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">54 0 9 9</frame>
+			</sprite>
+			<effect ulayer="1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./skull_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">63 0 9 9</frame>
+			</sprite>
+			<effect ulayer="1" src="actors/pop/bosses/mummy/skull_projectile_trail.effect" />
+		</scene>
+	</scenes>
+</unit>

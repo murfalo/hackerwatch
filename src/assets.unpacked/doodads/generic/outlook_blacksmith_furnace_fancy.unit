@@ -1,0 +1,112 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			
+			<collision static="true">
+				<circle jam-through="true" offset="-10 -10" radius="16" />			
+			</collision>
+		</scene>
+	
+		
+		<scene name="on">	
+			<scene src="shared" />	
+
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="60 40 0 0" />
+					<color value="55 30 0 0" />
+				</colors>
+			</light>				
+			
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="110 40 0 0" />
+				</colors>
+			</light>	
+		
+			<sprite origin="9 15" ulayer="-1" pos="-13 -22" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="450">454 53 19 31</frame>
+				<frame time="450">435 53 19 31</frame>
+				<frame time="450">454 53 19 31</frame>
+				<frame time="450">473 53 19 31</frame>
+			</sprite>
+			
+			
+			<sprite origin="14 29" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">415 53 20 37</frame>
+			</sprite>
+			<sprite origin="-6 31" layer="-1" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">105 44 9 35</frame>
+			</sprite>
+			<sprite ulayer="2" origin="-1 9" pos="-6 1" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				
+				<frame time="200">134 44 4 7</frame>
+				<frame time="200">114 44 4 7</frame>
+				<frame time="200">118 44 4 7</frame>
+				<frame time="200">122 44 4 7</frame>
+				<frame time="200">126 44 4 7</frame>
+				<frame time="200">130 44 4 7</frame>
+				<frame time="200">126 44 4 7</frame>
+				<frame time="200">122 44 4 7</frame>
+				<frame time="200">118 44 4 7</frame>
+			</sprite>
+			<sprite ulayer="3" origin="-1 9" pos="-4 -1" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				
+				<frame time="200">134 44 4 7</frame>
+				<frame time="200">114 44 4 7</frame>
+				<frame time="200">118 44 4 7</frame>
+				<frame time="200">122 44 4 7</frame>
+				<frame time="200">126 44 4 7</frame>
+				<frame time="200">130 44 4 7</frame>
+				<frame time="200">126 44 4 7</frame>
+				<frame time="200">122 44 4 7</frame>
+				<frame time="200">118 44 4 7</frame>
+			</sprite>
+			
+			<sprite ulayer="2" origin="3 39" pos="-4 0" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="200">114 51 6 15</frame>
+				<frame time="200">120 51 6 15</frame>
+				<frame time="200">126 51 6 15</frame>
+				<frame time="200">132 51 6 15</frame>
+				<frame time="200">138 51 6 15</frame>
+				<frame time="200">144 51 6 15</frame>
+				<frame time="200">150 51 6 15</frame>
+			</sprite>
+		</scene>
+		<scene name="off">	
+			<scene src="shared" />		
+			<sprite origin="14 29" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">415 53 20 37</frame>
+			</sprite>
+			<sprite origin="-6 31" layer="-1" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">105 44 9 35</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

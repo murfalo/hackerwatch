@@ -1,0 +1,272 @@
+<unit netsync="position" save="false">
+	<behavior class="PlayerOwnedSummon">
+		<string name="team">player</string>
+
+		<int name="hp">300</int>
+		<int name="armor">20</int>
+		<int name="resistance">20</int>
+		<float name="block-projectile-chance">0.5</float>
+
+		<string name="death-snd">event:/player/gladiator/reinforcements-death</string>
+		<string name="gore">effects/gibs/gib_guardian_figurine.sval</string>
+
+		<array name="buffs-immune-tags">
+			<string>players</string>
+		</array>
+		
+		<int name="aggro-range">200</int>
+		<int name="ttl">8000</int>
+		<int name="overhead-bossbar-width">16</int>
+		<int name="unit-height">20</int>
+
+		<dict name="movement">
+			<string name="class">MeleeFollowerMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<bool name="flying">false</bool>
+			
+			<float name="speed">2.8</float>
+			<float name="run-back-speed">5.2</float>
+			<float name="roaming">0.2</float>
+			<int name="roaming-distance">30</int>
+			<int name="run-back-distance">100</int>
+			<int name="dist">4</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown">200</int>
+				<int name="castpoint">150</int>
+				<int name="range">26</int>
+				
+				<string name="offset">attack-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<int name="min-radius">8</int>
+						<int name="radius">8</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">30</int>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/player/gladiator/reinforcements-attack</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="100" origin="3 3" texture="gui/minimap.png" frame="320 164 6 6"/>
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" radius="3.5" />
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>0 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>32 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>64 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>96 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>128 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>160 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>192 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame>224 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">0 32 32 32</frame>
+				<frame time="150">0 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">32 32 32 32</frame>
+				<frame time="150">32 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">64 32 32 32</frame>
+				<frame time="150">64 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">96 32 32 32</frame>
+				<frame time="150">96 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">128 32 32 32</frame>
+				<frame time="150">128 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">160 32 32 32</frame>
+				<frame time="150">160 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">192 32 32 32</frame>
+				<frame time="150">192 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="16 19" looping="true" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="150">224 32 32 32</frame>
+				<frame time="150">224 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="12 0"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">0 96 32 32</frame>
+				<frame time="120">0 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="8 6"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">32 96 32 32</frame>
+				<frame time="120">32 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 12"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">64 96 32 32</frame>
+				<frame time="120">64 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-8 6"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">96 96 32 32</frame>
+				<frame time="120">96 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-12 0"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">128 96 32 32</frame>
+				<frame time="120">128 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-8 -10"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">160 96 32 32</frame>
+				<frame time="120">160 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -12"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">192 96 32 32</frame>
+				<frame time="120">192 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="8 -10"/>
+			<sprite origin="16 19" looping="false" texture="./guardian_figurine.png" material="system/default.mats:ally">
+				<frame time="60">224 96 32 32</frame>
+				<frame time="120">224 128 32 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

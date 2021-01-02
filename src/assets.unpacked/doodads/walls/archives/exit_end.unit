@@ -1,0 +1,77 @@
+<unit slot="doodad">
+		<scenes name="default">
+			<scene name="default">
+			<minimap_sprite origin="16 27" texture="gui/minimap.png" frame="72 47 32 31" />
+				<collision static="true">
+					<rect>-64 -96 16 112</rect>
+					<rect>-48 -96 17 84</rect>
+					<rect>48 -96 16 112</rect>
+					<rect>31 -96 17 84</rect>
+					<rect>-31 -96 62 64</rect>
+					<polygon>
+						<point>-31 -12</point>
+						<point>-48 -12</point>
+						<point>-48 16</point>
+					</polygon>
+					<polygon>
+						<point>31 -12</point>
+						<point>48 -12</point>
+						<point>48 16</point>
+					</polygon>
+				</collision>
+				<shadow>
+					<sprite origin="31 66" texture="./exit_special.png" material="system/default.mats:shadow">
+					<frame>145 0 62 13</frame>
+					</sprite>
+					<sprite origin="31 39" texture="./exit_special.png" material="system/default.mats:shadow">
+					<frame>145 13 62 24</frame>
+					</sprite>
+				</shadow>
+				
+				<sprite layer="15" origin="64 96" texture="./exit_special.png" material="system/default.mats:default-noxray">
+					<frame>0 0 128 66</frame>
+				</sprite>
+				<sprite layer="15" origin="31 29" texture="./exit_special.png" material="system/default.mats:default">
+					<frame>33 66 62 18</frame>
+				</sprite>
+				
+				<sprite layer="-10" origin="64 30" texture="./exit_special.png" material="system/default.mats:proj-wall">
+					<frame>0 66 33 46</frame>
+				</sprite>
+				<sprite layer="-10" origin="-31 30" texture="./exit_special.png" material="system/default.mats:proj-wall">
+					<frame>95 66 33 46</frame>
+				</sprite>
+				
+				<sprite layer="-15" origin="48 66" texture="./exit_special.png" material="system/default.mats:floor">
+					<frame>128 37 96 82</frame>
+				</sprite>
+				<sprite origin="49 -17" layer="-10" texture="./exit_special.png" material="system/default.mats:floor">
+					<frame>0 112 98 13</frame>
+				</sprite>
+				<light pos="0 -70">
+					<sprite texture="../exit_light_cone_L.png">
+						<frame>0 0 128 128</frame>
+					</sprite>
+					<length value="50" />
+					<overbright value="20"/>
+					<looping value="true" />
+					<cast-shadows value="false" />
+					<shadow-cast-pos value="0 0" />
+					<shadow-cast-pos-jitter value="0 0 0 0" />
+					<sizes>
+						<size value="300" />
+					</sizes>
+					<colors>
+						<color value="220 200 50 0" />
+					</colors>
+				</light>	
+				<effect ulayer="2" pos="-28 -18" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-35 -8" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-37 2" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-29 4" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-32 12" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-29 20" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-27 32" src="doodads/walls/exit_moth.effect" />
+			</scene>			
+	</scenes>
+</unit>

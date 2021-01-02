@@ -1,0 +1,64 @@
+<gui>
+	<sprites>
+		<sprite name="concept" texture="gui/concept.png"><frame>200 152 200 76</frame></sprite>
+
+		<sprite name="button-stats" texture="gui/widget.png"><frame>227 0 18 18</frame></sprite>
+		<sprite name="button-stats-hover" texture="gui/widget.png"><frame>227 18 18 18</frame></sprite>
+		<sprite name="button-stats-down" texture="gui/widget.png"><frame>227 36 18 18</frame></sprite>
+		<sprite name="button-stats-disabled" texture="gui/widget.png"><frame>227 54 18 18</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="204" height="248" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="200" height="18" offset="2 2" flow="hbox">
+					<!-- Headline -->
+					<rect width="179" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".endofgame.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Stats button -->
+					<spritebutton spriteset="button-stats" func="stats" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="200" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Image -->
+				<sprite offset="2 23" src="concept" />
+
+				<!-- Separator -->
+				<rect width="200" height="3" offset="2 99" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Story -->
+				<scrollrect id="story" offset="2 102" width="186" height="123" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<text font="gui/fonts/arial11.fnt" width="178" offset="4 0" align="center" text=".endofgame.mt.text" />
+				</scrollrect>
+
+				<!-- Scrollbar -->
+				<scrollbar forid="story" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="123" offset="188 102" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="123" offset="199 102" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Separator -->
+				<rect width="200" height="3" offset="2 225" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Restart -->
+				<rect offset="2 228" width="200" height="18" flow="hbox">
+					<rect width="39" height="18" spriteset="gui/variable/headline_hor.sval" />
+					<scalebutton id="button-town" spriteset="scalebutton" func="town" width="122" text=".endofgame.town" font="gui/fonts/arial11.fnt" />
+					<rect width="39" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

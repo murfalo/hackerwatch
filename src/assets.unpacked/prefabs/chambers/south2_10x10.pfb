@@ -1,0 +1,95 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_64.unit">
+			<vec2>0 96</vec2>
+			<int>1</int>
+			<vec2>64 96</vec2>
+			<int>2</int>
+			<vec2>0 32</vec2>
+			<int>3</int>
+			<vec2>64 32</vec2>
+			<int>4</int>
+			<vec2>64 -32</vec2>
+			<int>5</int>
+			<vec2>128 32</vec2>
+			<int>6</int>
+			<vec2>128 96</vec2>
+			<int>7</int>
+			<vec2>64 160</vec2>
+			<int>8</int>
+			<vec2>0 160</vec2>
+			<int>9</int>
+			<vec2>128 160</vec2>
+			<int>10</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>11</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>12</int><int>13</int><int>14</int><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>12</int>
+			<vec3>176 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>treasure</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/south2_10x10_treasure.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>176 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/south2_10x10_loot.pfb</string>
+				<int name="Chance">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>14</int>
+			<vec3>176 168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>treasure2</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/south2_10x10_treasure_2.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>15</int>
+			<vec3>176 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot2</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/south2_10x10_loot_2.pfb</string>
+				<int name="Chance">20</int>
+			</dict>
+		</array>
+	</array>
+</dict>

@@ -1,0 +1,17 @@
+<effect looping="true">
+    <sprite origin="0 0" texture="doodads/generic/trap_fire.png" material="system/default.mats:bright"  num-sprites="15"
+        
+        pos-x="rand(u+i+floor(t+l+rand(u*i))) * 8"
+        pos-y="-5 * mod(t+l+rand(u*i), 1)+rand(u+i+1+floor(t+l+rand(u*i))) * 32"
+        
+        color-r="1- mod(t+l+rand(u*i), 0.5)"
+        color-g="0.5- mod(t+l+rand(u*i), 1)"
+        color-b="0"
+        color-a="1- mod(t+l+rand(u*i), 1)"
+        
+        >
+        <frame time="1000">64 33 1 1</frame>
+    </sprite>  
+  
+      
+</effect>

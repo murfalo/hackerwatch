@@ -1,0 +1,44 @@
+%define TIER3
+%define AGENT_RIME
+%replace AGENTNAME .bestiary.name.agent_rime
+%replace MINIMAPICON "245 250 11 11"
+%replace SPINSKILLTOGGLE rimespinflag
+%replace SWORDBUFF icesword
+%replace AGENTPATH actors/mt/bosses/agents/agent_rime
+%replace BESTIARYOVERRIDE actors/mt/bosses/agents/agent_rime/agent_rime.unit
+
+%replace MOVESPEED 2.7
+%replace MOVEDIST 100
+%replace HEALTHPOTIONS 1
+%replace IMMORTALITYPOTIONS 2
+
+%replace CHARGECD 4000
+%replace CHARGERANGE 140
+%replace CHARGESPEED 7.5
+%replace CHARGETIME 750
+
+%replace AIMINTERCEPTION 15
+%replace SHOOTMINRANGE 24
+%replace SHOOTRANGE 250
+
+%replace SHOOTCD 1400
+%replace SHOOTBURST 5
+%replace SHOOTPROJECTILES 1
+%replace SHOOTSPREAD 0
+
+%replace SHOOTNIGHTCD 700
+%replace SHOOTNIGHTBURST 5
+%replace SHOOTNIGHTPROJECTILES 1
+%replace SHOOTNIGHTSPREAD 0
+
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+		%include "actors/mt/bosses/agents/_agent_base.inc"
+		<array name="skills">
+			%include "actors/mt/bosses/agents/_agent_skills.inc"
+		</array>
+	</behavior>
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		%include "actors/mt/bosses/agents/_agent_gfx.inc"
+	</scenes>
+</unit>

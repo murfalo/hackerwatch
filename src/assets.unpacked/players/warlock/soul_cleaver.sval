@@ -1,0 +1,51 @@
+<dict>
+	<string name="name">.skills.warlock.soul-cleaver</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>192 144 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+
+			<dict name="modifier">
+				<string name="class">Modifiers::WarlockCleaverModifier</string>
+				<string name="buff">players/buffs.sval:soul-cleaver-1</string>
+			</dict>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+
+			<dict name="modifier">
+				<string name="class">Modifiers::WarlockCleaverModifier</string>
+				<string name="buff">players/buffs.sval:soul-cleaver-2</string>
+			</dict>
+		</dict>
+
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+
+			<dict name="modifier">
+				<string name="class">Modifiers::WarlockCleaverModifier</string>
+				<string name="buff">players/buffs.sval:soul-cleaver-3</string>
+			</dict>
+		</dict>
+
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+
+			<dict name="modifier">
+				<string name="class">Modifiers::WarlockCleaverModifier</string>
+				<string name="buff">players/buffs.sval:soul-cleaver-4</string>
+			</dict>
+		</dict>
+	</array>
+</dict>

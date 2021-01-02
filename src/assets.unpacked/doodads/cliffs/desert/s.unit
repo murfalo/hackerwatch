@@ -1,0 +1,28 @@
+<unit slot="doodad" layer="-50">
+	<scenes default="1 2 3">
+		<scene name="shared">
+			<minimap_sprite origin="0 4" texture="gui/minimap.png" frame="0 0 8 4" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -24 32 24</rect>
+			</collision>
+		</scene>
+		<scene name="1">
+			<scene src="shared"/>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 0 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="2">
+			<scene src="shared"/>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>32 0 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="3">
+			<scene src="shared"/>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>64 0 32 32</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

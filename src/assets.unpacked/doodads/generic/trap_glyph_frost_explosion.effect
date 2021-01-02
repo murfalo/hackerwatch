@@ -1,0 +1,25 @@
+<effect looping="false" bounds="512 512">
+	<sprite origin="32 32" texture="./trap_glyph_frost.png" material="system/default.mats:glow-both-bright"
+		angle="-pi * (t+l) * 0.1 / 20"
+		scale-x="1+t/4"
+		scale-y="1+t/4"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="max(1-t*t,0)"
+	>
+		<frame time="200">0 0 64 64</frame>
+	</sprite>
+	
+	<sprite origin="32 32" texture="./trap_glyph_frost.png" material="system/default.mats:glow-both-bright"
+		angle="-pi * (t+l) * 2 / 20"
+		pos-y="10 * -t"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1-t"
+	>
+		<frame time="200">128 0 64 64</frame>
+	</sprite>
+	
+</effect>

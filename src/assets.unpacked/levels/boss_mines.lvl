@@ -1,0 +1,6208 @@
+<dict>
+	<array name="prefabs"></array>
+	<array name="scripts">
+		<array><string>LevelStart</string><int>919</int><vec3>-192 168 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>920</int>
+			<vec3>57 -293 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>921</int>
+			<vec3>376 -664 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss1_killed</string>
+			<dict>
+				<string name="Flag">boss1_killed</string>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>922</int>
+			<vec3>-64 -864 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>slam</string>
+			<dict>
+				<array name="#Units"><int>942</int><string>LastSpawned</string></array>
+				<string name="EventName">stalactites</string>
+			</dict>
+			<array><int>999</int><int>0</int><int>1021</int><int>0</int><int>1100</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>923</int>
+			<vec3>-96 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1072</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>924</int>
+			<vec3>104 -864 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactites</string>
+			<dict>
+				<array name="ToExecute">
+					<int>1124</int>
+					<int>1116</int>
+					<int>1117</int>
+					<int>1127</int>
+					<int>1119</int>
+					<int>1118</int>
+					<int>1150</int>
+					<int>1151</int>
+					<int>1149</int>
+					<int>1120</int>
+					<int>1121</int>
+					<int>1125</int>
+					<int>1152</int>
+					<int>1129</int>
+					<int>1126</int>
+					<int>1128</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>925</int>
+			<vec3>-159 -306 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<array name="DropTrigger"><int>1046</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>926</int>
+			<vec3>-29 -317 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1041</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>927</int>
+			<vec3>134 -365 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<array name="DropTrigger"><int>1069</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>928</int>
+			<vec3>98 -143 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1061</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>929</int>
+			<vec3>62 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>930</int>
+			<vec3>14 -133 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1061</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>931</int>
+			<vec3>-36 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<array name="DropTrigger"><int>1072</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>932</int>
+			<vec3>-96 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1046</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>933</int>
+			<vec3>40 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<array name="DropTrigger"><int>1055</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>934</int>
+			<vec3>96 -419 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1083</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>935</int>
+			<vec3>-6 -66 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>936</int>
+			<vec3>-92 -257 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1046</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>937</int>
+			<vec3>155 -289 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1069</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>UnlockShortcut</string>
+			<int>938</int>
+			<vec3>368 -616 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Targets"><int>1006</int><string>AllInside</string></array>
+				<int name="Shortcut">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>939</int>
+			<vec3>208 -624 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>BossKilled</string>
+			<dict>
+				<array name="#Units"><int>942</int><string>LastSpawned</string></array>
+			</dict>
+			<array>
+				<int>1005</int>
+				<int>0</int>
+				<int>1029</int>
+				<int>0</int>
+				<int>1027</int>
+				<int>0</int>
+				<int>1081</int>
+				<int>1000</int>
+				<int>1000</int>
+				<int>0</int>
+				<int>921</int>
+				<int>0</int>
+				<int>938</int>
+				<int>0</int>
+				<int>1103</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>940</int>
+			<vec3>208 -784 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>1080</int><int>1169</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>941</int>
+			<vec3>-360 -864 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>942</int><string>LastSpawned</string></array>
+				<string name="Name">GOLEM</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>942</int>
+			<vec3>0 -240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnGolem</string>
+			<dict>
+				<string name="UnitType">actors/bosses/golem/golem_rock.unit</string>
+			</dict>
+			<array><int>941</int><int>0</int><int>945</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>943</int>
+			<vec3>-360 -744 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>382</int></array>
+			</dict>
+			<array>
+				<int>944</int>
+				<int>0</int>
+				<int>942</int>
+				<int>900</int>
+				<int>1026</int>
+				<int>0</int>
+				<int>1087</int>
+				<int>350</int>
+				<int>1088</int>
+				<int>150</int>
+				<int>1086</int>
+				<int>0</int>
+				<int>1030</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>944</int>
+			<vec3>-360 -680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnAnim</string>
+			<dict>
+				<array name="Units"><int>435</int></array>
+				<string name="State">spawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>945</int>
+			<vec3>-360 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DestroyCorpse</string>
+			<dict>
+				<array name="Units"><int>435</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>946</int>
+			<vec3>504 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>947</int>
+			<vec3>496 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>948</int>
+			<vec3>520 -232 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>949</int>
+			<vec3>512 -208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>950</int>
+			<vec3>525 -329 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>951</int>
+			<vec3>520 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>952</int>
+			<vec3>528 -272 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>953</int>
+			<vec3>536 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>954</int>
+			<vec3>296 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>955</int>
+			<vec3>280 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>956</int>
+			<vec3>328 16 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>957</int>
+			<vec3>312 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>958</int>
+			<vec3>376 -56 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>959</int>
+			<vec3>352 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>960</int>
+			<vec3>352 -16 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>961</int>
+			<vec3>360 -40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>962</int>
+			<vec3>-368 -40 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>963</int>
+			<vec3>-352 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>964</int>
+			<vec3>-328 -24 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>965</int>
+			<vec3>-384 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>966</int>
+			<vec3>-392 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>967</int>
+			<vec3>-408 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>968</int>
+			<vec3>-424 -88 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>969</int>
+			<vec3>-432 -104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>970</int>
+			<vec3>-480 -152 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>971</int>
+			<vec3>-488 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>972</int>
+			<vec3>-496 -200 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>973</int>
+			<vec3>-496 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>974</int>
+			<vec3>-488 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>975</int>
+			<vec3>-480 -304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>976</int>
+			<vec3>-496 -248 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>977</int>
+			<vec3>-496 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>978</int>
+			<vec3>-440 -384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>979</int>
+			<vec3>-456 -360 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>980</int>
+			<vec3>-392 -456 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>981</int>
+			<vec3>-432 -400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>982</int>
+			<vec3>-360 -464 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>983</int>
+			<vec3>-376 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>984</int>
+			<vec3>-424 -424 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>985</int>
+			<vec3>-408 -440 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>986</int>
+			<vec3>488 -400 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>987</int>
+			<vec3>504 -376 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>988</int>
+			<vec3>448 -424 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>989</int>
+			<vec3>472 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>990</int>
+			<vec3>376 -456 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>991</int>
+			<vec3>424 -432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>992</int>
+			<vec3>400 -432 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>993</int>
+			<vec3>384 -440 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>994</int>
+			<vec3>-128 -688 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bats 1</string>
+			<dict>
+				<array name="ToExecute">
+					<int>979</int>
+					<int>978</int>
+					<int>981</int>
+					<int>980</int>
+					<int>984</int>
+					<int>983</int>
+					<int>985</int>
+					<int>982</int>
+					<int>987</int>
+					<int>986</int>
+					<int>989</int>
+					<int>988</int>
+					<int>991</int>
+					<int>992</int>
+					<int>993</int>
+					<int>990</int>
+					<int>953</int>
+					<int>950</int>
+					<int>952</int>
+					<int>951</int>
+					<int>949</int>
+					<int>948</int>
+					<int>946</int>
+					<int>947</int>
+					<int>955</int>
+					<int>954</int>
+					<int>957</int>
+					<int>956</int>
+					<int>959</int>
+					<int>960</int>
+					<int>961</int>
+					<int>958</int>
+					<int>968</int>
+					<int>966</int>
+					<int>969</int>
+					<int>967</int>
+					<int>964</int>
+					<int>965</int>
+					<int>962</int>
+					<int>963</int>
+					<int>970</int>
+					<int>971</int>
+					<int>973</int>
+					<int>972</int>
+					<int>975</int>
+					<int>974</int>
+					<int>977</int>
+					<int>976</int>
+				</array>
+				<int name="NumToExecute">10</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>995</int>
+			<vec3>-176 -880 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.8</string>
+			<dict>
+				<array name="#Units"><int>942</int><string>LastSpawned</string></array>
+				<float name="Value">0.8</float>
+			</dict>
+			<array><int>996</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>996</int>
+			<vec3>-176 -816 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>1100</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>997</int>
+			<vec3>-240 -880 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.4</string>
+			<dict>
+				<array name="#Units"><int>942</int><string>LastSpawned</string></array>
+				<float name="Value">0.4</float>
+			</dict>
+			<array><int>998</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>998</int>
+			<vec3>-240 -816 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>979</int>
+					<int>978</int>
+					<int>981</int>
+					<int>980</int>
+					<int>983</int>
+					<int>984</int>
+					<int>985</int>
+					<int>982</int>
+					<int>987</int>
+					<int>986</int>
+					<int>989</int>
+					<int>988</int>
+					<int>991</int>
+					<int>992</int>
+					<int>993</int>
+					<int>990</int>
+					<int>953</int>
+					<int>950</int>
+					<int>952</int>
+					<int>951</int>
+					<int>948</int>
+					<int>949</int>
+					<int>946</int>
+					<int>947</int>
+					<int>958</int>
+					<int>961</int>
+					<int>959</int>
+					<int>956</int>
+					<int>960</int>
+					<int>957</int>
+					<int>954</int>
+					<int>955</int>
+					<int>963</int>
+					<int>962</int>
+					<int>965</int>
+					<int>964</int>
+					<int>967</int>
+					<int>966</int>
+					<int>969</int>
+					<int>968</int>
+					<int>971</int>
+					<int>970</int>
+					<int>973</int>
+					<int>972</int>
+					<int>975</int>
+					<int>974</int>
+					<int>977</int>
+					<int>976</int>
+				</array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array><string>AddScreenShake</string><int>999</int><vec3>0 -224 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>CheckFlag</string>
+			<int>1000</int>
+			<vec3>-680 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>glass_walkways</string>
+			<dict>
+				<array name="OnTrue"><int>1002</int><int>1001</int></array>
+				<string name="Flag">glass_walkways</string>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>1001</int>
+			<vec3>-648 -304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units">
+					<int>891</int>
+					<int>899</int>
+					<int>910</int>
+					<int>898</int>
+					<int>896</int>
+					<int>909</int>
+					<int>906</int>
+					<int>900</int>
+					<int>897</int>
+					<int>894</int>
+					<int>907</int>
+					<int>904</int>
+					<int>892</int>
+					<int>902</int>
+					<int>893</int>
+					<int>905</int>
+					<int>903</int>
+					<int>895</int>
+					<int>908</int>
+					<int>911</int>
+					<int>901</int>
+				</array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleCollision</string>
+			<int>1002</int>
+			<vec3>-712 -304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>463</int><int>560</int></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1003</int>
+			<vec3>144 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1066</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1004</int>
+			<vec3>-144 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite</string>
+			<dict>
+				<array name="DropTrigger"><int>1058</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GiveCharacterTitle</string>
+			<int>1005</int>
+			<vec3>304 -624 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Targets"><int>1006</int><string>AllInside</string></array>
+				<int name="TitleIndex">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>1006</int>
+			<vec3>304 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>381</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>1007</int>
+			<vec3>-696 -488 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>116</int></array>
+			</dict>
+			<array><int>1009</int><int>0</int><int>1008</int><int>0</int><int>1095</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1008</int>
+			<vec3>-696 -560 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>329</int><int>336</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>1009</int>
+			<vec3>-424 -572 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>1010</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>1010</int>
+			<vec3>-696 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest_2x2_b</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/chest_2x2_b.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1011</int>
+			<vec3>-48 -1056 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8</string>
+			<dict>
+				<array name="Scripts"><int>1018</int></array>
+				<int name="TriggerTimes">8</int>
+			</dict>
+			<array><int>1012</int><int>0</int><int>1013</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>1012</int>
+			<vec3>-48 -1200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Variables"><int>1019</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1013</int>
+			<vec3>80 -1056 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>1018</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>1014</int>
+			<vec3>144 -1008 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RandomDelay</string>
+			<dict>
+				<array name="ToExecute"><int>1017</int><int>1015</int><int>1016</int><int>1025</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1015</int>
+			<vec3>128 -944 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>50</string>
+			<array><int>924</int><int>50</int><int>1037</int><int>50</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1016</int>
+			<vec3>176 -944 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>100</string>
+			<array><int>924</int><int>100</int><int>1037</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1017</int>
+			<vec3>80 -944 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0</string>
+			<array><int>924</int><int>0</int><int>1037</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1018</int>
+			<vec3>80 -1136 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">200</int>
+			</dict>
+			<array><int>1023</int><int>0</int><int>1014</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>1019</int><vec3>80 -1200 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>CheckVariables</string>
+			<int>1020</int>
+			<vec3>80 -1264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>1024</int></array>
+				<array name="Variable"><int>1019</int></array>
+				<int name="Value">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1021</int>
+			<vec3>-16 -960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Stalactites</string>
+			<array><int>1011</int><int>0</int><int>1123</int><int>0</int><int>1031</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>1022</int>
+			<vec3>16 -1200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>1019</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>1020</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1023</int>
+			<vec3>16 -1136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1022</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1024</int>
+			<vec3>144 -1200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<array name="Scripts"><int>1018</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1025</int>
+			<vec3>224 -944 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>150</string>
+			<array><int>924</int><int>150</int><int>1037</int><int>150</int></array>
+		</array>
+		<array>
+			<string>ExploreMinimap</string>
+			<int>1026</int>
+			<vec3>8 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Radius">300</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1027</int>
+			<vec3>416 -592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1028</int>
+			<vec3>-184 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/mines</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetStat</string>
+			<int>1029</int>
+			<vec3>352 -568 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="ValueInt">1</int>
+				<int name="ActionType">1</int>
+				<string name="Name">boss-1-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1030</int>
+			<vec3>-232 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1031</int>
+			<vec3>-80 -1008 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>934</int>
+					<int>1036</int>
+					<int>1032</int>
+					<int>1033</int>
+					<int>1034</int>
+					<int>1035</int>
+					<int>1128</int>
+					<int>1124</int>
+					<int>1116</int>
+					<int>1127</int>
+					<int>1119</int>
+					<int>1117</int>
+					<int>1118</int>
+					<int>1150</int>
+					<int>1151</int>
+					<int>1149</int>
+					<int>1120</int>
+					<int>1125</int>
+					<int>1121</int>
+					<int>1152</int>
+					<int>1129</int>
+					<int>1126</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1032</int>
+			<vec3>3 149 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>entrance</string>
+			<dict>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1033</int>
+			<vec3>-8 240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>entrance</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1034</int>
+			<vec3>-136 240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>entrance</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1035</int>
+			<vec3>-192 192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>entrance</string>
+			<dict>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1036</int>
+			<vec3>1 48 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>entrance</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>1037</int>
+			<vec3>192 -864 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactites_entrance</string>
+			<dict>
+				<array name="ToExecute"><int>1036</int><int>1032</int><int>1033</int><int>1034</int><int>1035</int><int>1038</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1038</int>
+			<vec3>-80 280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>entrance</string>
+			<dict>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1039</int>
+			<vec3>-42 -422 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>509</int></array>
+			</dict>
+			<array><int>1040</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1040</int>
+			<vec3>-34 -323 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1041</int>
+			<vec3>-49 -477 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1039</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1042</int>
+			<vec3>272 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>528</int></array>
+			</dict>
+			<array><int>1043</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1043</int>
+			<vec3>130 -231 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1044</int>
+			<vec3>-219 -369 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>521</int></array>
+			</dict>
+			<array><int>1045</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1045</int>
+			<vec3>-130 -317 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1046</int>
+			<vec3>-279 -403 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1047</int><int>1044</int><int>1049</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1047</int>
+			<vec3>-221 -328 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>507</int></array>
+			</dict>
+			<array><int>1048</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1048</int>
+			<vec3>-108 -303 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1049</int>
+			<vec3>-257 -343 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>517</int></array>
+			</dict>
+			<array><int>1050</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1050</int>
+			<vec3>-131 -293 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1051</int>
+			<vec3>116 -454 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<dict>
+				<array name="DropTrigger"><int>1084</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1052</int>
+			<vec3>107 -487 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1085</int></array>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1053</int>
+			<vec3>21 -451 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>515</int></array>
+			</dict>
+			<array><int>1054</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1054</int>
+			<vec3>41 -359 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1055</int>
+			<vec3>13 -515 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1053</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1056</int>
+			<vec3>-235 -178 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>512</int></array>
+			</dict>
+			<array><int>1057</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1057</int>
+			<vec3>-129 -187 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1058</int>
+			<vec3>-298 -181 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1056</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1059</int>
+			<vec3>156 -78 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>525</int></array>
+			</dict>
+			<array><int>1060</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1060</int>
+			<vec3>57 -146 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1061</int>
+			<vec3>224 -37 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1062</int><int>1059</int><int>1064</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1062</int>
+			<vec3>165 -35 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>523</int></array>
+			</dict>
+			<array><int>1063</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1063</int>
+			<vec3>43 -123 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1064</int>
+			<vec3>193 -65 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>520</int></array>
+			</dict>
+			<array><int>1065</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1065</int>
+			<vec3>71 -134 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1066</int>
+			<vec3>333 -201 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1042</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1067</int>
+			<vec3>238 -375 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>526</int></array>
+			</dict>
+			<array><int>1068</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1068</int>
+			<vec3>129 -332 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1069</int>
+			<vec3>294 -393 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1067</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1070</int>
+			<vec3>-197 -85 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>516</int></array>
+			</dict>
+			<array><int>1071</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1071</int>
+			<vec3>-72 -158 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1072</int>
+			<vec3>-255 -75 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1070</int></array>
+				<float name="ChanceToExecute">0.1</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1073</int>
+			<vec3>129 -400 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<dict>
+				<array name="DropTrigger"><int>1082</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1074</int>
+			<vec3>124 -408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1075</int>
+			<vec3>89 -404 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1076</int>
+			<vec3>105 -428 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1077</int>
+			<vec3>113 -451 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1078</int>
+			<vec3>108 -479 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>1079</int>
+			<vec3>384 -853 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactites_exit</string>
+			<dict>
+				<array name="ToExecute"><int>1073</int><int>934</int><int>1051</int><int>1052</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1080</int>
+			<vec3>384 -976 0</vec3>
+			<bool>f</bool>
+			<int>4</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">200</int>
+			</dict>
+			<array><int>1079</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1081</int>
+			<vec3>208 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>delay</string>
+			<array><int>940</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1082</int>
+			<vec3>194 -454 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>518</int></array>
+			</dict>
+			<array><int>1074</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1083</int>
+			<vec3>174 -485 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>510</int><int>514</int></array>
+			</dict>
+			<array><int>1076</int><int>0</int><int>1075</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1084</int>
+			<vec3>211 -506 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>519</int></array>
+			</dict>
+			<array><int>1077</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1085</int>
+			<vec3>173 -538 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>511</int></array>
+			</dict>
+			<array><int>1078</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1086</int>
+			<vec3>-246 -701 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>508</int></array>
+			</dict>
+			<array><int>1090</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1087</int>
+			<vec3>-242 -634 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>527</int></array>
+			</dict>
+			<array><int>1091</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1088</int>
+			<vec3>-286 -671 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>524</int></array>
+			</dict>
+			<array><int>1089</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1089</int>
+			<vec3>-21 -247 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+			<array><int>1092</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1090</int>
+			<vec3>4 -258 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+			<array><int>1093</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1091</int>
+			<vec3>14 -232 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_explode</string>
+			<dict>
+				<float name="ForceXY">1.25</float>
+				<int name="Angle">180</int>
+				<string name="Path">effects/gibs/gib_stalactite_big.sval</string>
+			</dict>
+			<array><int>1094</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1092</int>
+			<vec3>-35 -241 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_sfx</string>
+			<dict>
+				<string name="Sound">event:/enemy/tower/death</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1093</int>
+			<vec3>13 -270 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_sfx</string>
+			<dict>
+				<string name="Sound">event:/enemy/tower/death</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1094</int>
+			<vec3>19 -225 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock_sfx</string>
+			<dict>
+				<string name="Sound">event:/enemy/tower/death</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1095</int>
+			<vec3>-408 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>secret_sfx</string>
+			<dict>
+				<string name="Sound">event:/misc/secret</string>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>1096</int>
+			<vec3>-624 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units">
+					<int>891</int>
+					<int>899</int>
+					<int>910</int>
+					<int>898</int>
+					<int>896</int>
+					<int>909</int>
+					<int>906</int>
+					<int>900</int>
+					<int>897</int>
+					<int>894</int>
+					<int>907</int>
+					<int>904</int>
+					<int>892</int>
+					<int>902</int>
+					<int>893</int>
+					<int>905</int>
+					<int>903</int>
+					<int>895</int>
+					<int>908</int>
+					<int>911</int>
+					<int>901</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1097</int>
+			<vec3>57 -293 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1098</int>
+			<vec3>-688 392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckNG</string>
+			<array><int>1160</int><int>100</int></array>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1099</int>
+			<vec3>-96 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1072</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1100</int>
+			<vec3>-64 -768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnBats</string>
+			<array><int>994</int><int>0</int><int>1154</int><int>0</int><int>1155</int><int>0</int><int>1156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>1101</int>
+			<vec3>-688 176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG2</string>
+			<dict>
+				<array name="OnFalse"><int>1166</int></array>
+				<array name="OnTrue"><int>1161</int></array>
+				<int name="Value">2</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1102</int>
+			<vec3>576 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>1174</int><int>0</int><int>1170</int><int>0</int></array>
+		</array>
+		<array><string>SetBossKilled</string><int>1103</int><vec3>272 -568 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1104</int>
+			<vec3>-36 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<array name="DropTrigger"><int>1072</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1105</int>
+			<vec3>14 -133 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1061</int></array>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1106</int>
+			<vec3>62 -216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1107</int>
+			<vec3>155 -289 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1069</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1108</int>
+			<vec3>-92 -257 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1046</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1109</int>
+			<vec3>-6 -66 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1110</int>
+			<vec3>40 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1055</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1111</int>
+			<vec3>-96 -352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1046</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1112</int>
+			<vec3>-36 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1072</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1113</int>
+			<vec3>98 -143 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1061</int></array>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1114</int>
+			<vec3>134 -365 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<array name="DropTrigger"><int>1069</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1115</int>
+			<vec3>-29 -317 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1041</int></array>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1116</int>
+			<vec3>-357 -1311 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1132</int><int>0</int><int>1107</int><int>0</int><int>937</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1117</int>
+			<vec3>-368 -1237 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1131</int><int>0</int><int>1145</int><int>0</int><int>1003</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1118</int>
+			<vec3>-413 -1165 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>928</int><int>0</int><int>1139</int><int>0</int><int>1113</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1119</int>
+			<vec3>-450 -1238 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1106</int><int>0</int><int>1138</int><int>0</int><int>929</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1120</int>
+			<vec3>-549 -1213 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1104</int><int>0</int><int>1112</int><int>0</int><int>931</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1121</int>
+			<vec3>-657 -1213 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1130</int><int>0</int><int>1144</int><int>0</int><int>1004</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1122</int>
+			<vec3>-816 240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ToggleStalactiteAmount</string>
+			<dict>
+				<array name="Scripts"><int>1011</int><int>1123</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1123</int>
+			<vec3>0 -1056 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>9</string>
+			<dict>
+				<array name="Scripts"><int>1018</int></array>
+				<int name="TriggerTimes">9</int>
+			</dict>
+			<array><int>1012</int><int>0</int><int>1013</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1124</int>
+			<vec3>-378 -1388 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1114</int><int>0</int><int>1140</int><int>0</int><int>927</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1125</int>
+			<vec3>-603 -1280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1133</int><int>0</int><int>1108</int><int>0</int><int>936</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1126</int>
+			<vec3>-542 -1339 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1115</int><int>0</int><int>1141</int><int>0</int><int>926</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1127</int>
+			<vec3>-454 -1315 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1136</int><int>0</int><int>1097</int><int>0</int><int>920</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1128</int>
+			<vec3>-472 -1389 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1147</int><int>0</int><int>1110</int><int>0</int><int>933</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1129</int>
+			<vec3>-608 -1375 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1148</int><int>0</int><int>1111</int><int>0</int><int>932</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1130</int>
+			<vec3>-144 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<array name="DropTrigger"><int>1058</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1131</int>
+			<vec3>144 -216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1066</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1132</int>
+			<vec3>155 -289 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1069</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1133</int>
+			<vec3>-92 -257 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1046</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1134</int>
+			<vec3>-159 -306 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<array name="DropTrigger"><int>1046</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1135</int>
+			<vec3>-96 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1072</int></array>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1136</int>
+			<vec3>57 -293 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1137</int>
+			<vec3>14 -133 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1061</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1138</int>
+			<vec3>62 -216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1139</int>
+			<vec3>98 -143 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1061</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1140</int>
+			<vec3>134 -365 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1069</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1141</int>
+			<vec3>-29 -317 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1041</int></array>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1142</int>
+			<vec3>-159 -306 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1046</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1143</int>
+			<vec3>-848 304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ToggleStalactites</string>
+			<dict>
+				<array name="Scripts">
+					<int>935</int>
+					<int>928</int>
+					<int>930</int>
+					<int>929</int>
+					<int>1003</int>
+					<int>937</int>
+					<int>920</int>
+					<int>933</int>
+					<int>927</int>
+					<int>926</int>
+					<int>932</int>
+					<int>936</int>
+					<int>931</int>
+					<int>923</int>
+					<int>1004</int>
+					<int>925</int>
+					<int>1109</int>
+					<int>1137</int>
+					<int>1139</int>
+					<int>1145</int>
+					<int>1138</int>
+					<int>1097</int>
+					<int>1107</int>
+					<int>1140</int>
+					<int>1110</int>
+					<int>1141</int>
+					<int>1112</int>
+					<int>1108</int>
+					<int>1099</int>
+					<int>1144</int>
+					<int>1142</int>
+					<int>1111</int>
+				</array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1144</int>
+			<vec3>-144 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1058</int></array>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<float name="MaxFallSpeed">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1145</int>
+			<vec3>144 -216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng</string>
+			<dict>
+				<array name="DropTrigger"><int>1066</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1146</int>
+			<vec3>-6 -66 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1147</int>
+			<vec3>40 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<array name="DropTrigger"><int>1055</int></array>
+				<float name="Height">250</float>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1148</int>
+			<vec3>-96 -352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stalactite_ng_2</string>
+			<dict>
+				<float name="Height">250</float>
+				<array name="DropTrigger"><int>1046</int></array>
+				<float name="MaxFallSpeed">0.3</float>
+				<string name="UnitType">doodads/generic/trap_stalactite_large_mine_granite_ng_2.unit</string>
+				<string name="SceneName">falling</string>
+				<float name="InitialFallSpeed">0.02</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1149</int>
+			<vec3>-610 -1150 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>923</int><int>0</int><int>1099</int><int>0</int><int>1135</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1150</int>
+			<vec3>-499 -1153 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>930</int><int>0</int><int>1137</int><int>0</int><int>1105</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1151</int>
+			<vec3>-519 -1086 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>935</int><int>0</int><int>1109</int><int>0</int><int>1146</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1152</int>
+			<vec3>-671 -1329 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DropStalactite</string>
+			<array><int>1134</int><int>0</int><int>1142</int><int>0</int><int>925</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1153</int>
+			<vec3>-848 176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ToggleStalactites</string>
+			<dict>
+				<array name="Scripts">
+					<int>935</int>
+					<int>930</int>
+					<int>928</int>
+					<int>929</int>
+					<int>1003</int>
+					<int>937</int>
+					<int>920</int>
+					<int>933</int>
+					<int>927</int>
+					<int>926</int>
+					<int>932</int>
+					<int>936</int>
+					<int>931</int>
+					<int>923</int>
+					<int>1004</int>
+					<int>925</int>
+					<int>1113</int>
+					<int>1105</int>
+					<int>1146</int>
+					<int>1135</int>
+					<int>1130</int>
+					<int>1104</int>
+					<int>1133</int>
+					<int>1134</int>
+					<int>1148</int>
+					<int>1115</int>
+					<int>1147</int>
+					<int>1136</int>
+					<int>1106</int>
+					<int>1131</int>
+					<int>1132</int>
+					<int>1114</int>
+				</array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>1154</int>
+			<vec3>-80 -688 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bats 2</string>
+			<dict>
+				<array name="ToExecute">
+					<int>979</int>
+					<int>978</int>
+					<int>981</int>
+					<int>980</int>
+					<int>984</int>
+					<int>983</int>
+					<int>985</int>
+					<int>982</int>
+					<int>987</int>
+					<int>986</int>
+					<int>989</int>
+					<int>988</int>
+					<int>991</int>
+					<int>992</int>
+					<int>993</int>
+					<int>990</int>
+					<int>953</int>
+					<int>950</int>
+					<int>952</int>
+					<int>951</int>
+					<int>949</int>
+					<int>948</int>
+					<int>946</int>
+					<int>947</int>
+					<int>955</int>
+					<int>954</int>
+					<int>957</int>
+					<int>956</int>
+					<int>959</int>
+					<int>960</int>
+					<int>961</int>
+					<int>958</int>
+					<int>968</int>
+					<int>966</int>
+					<int>969</int>
+					<int>967</int>
+					<int>964</int>
+					<int>965</int>
+					<int>962</int>
+					<int>963</int>
+					<int>970</int>
+					<int>971</int>
+					<int>973</int>
+					<int>972</int>
+					<int>975</int>
+					<int>974</int>
+					<int>977</int>
+					<int>976</int>
+				</array>
+				<int name="NumToExecute">14</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>1155</int>
+			<vec3>-32 -688 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bats 3</string>
+			<dict>
+				<array name="ToExecute">
+					<int>979</int>
+					<int>978</int>
+					<int>981</int>
+					<int>980</int>
+					<int>984</int>
+					<int>983</int>
+					<int>985</int>
+					<int>982</int>
+					<int>987</int>
+					<int>986</int>
+					<int>989</int>
+					<int>988</int>
+					<int>991</int>
+					<int>992</int>
+					<int>993</int>
+					<int>990</int>
+					<int>953</int>
+					<int>950</int>
+					<int>952</int>
+					<int>951</int>
+					<int>949</int>
+					<int>948</int>
+					<int>946</int>
+					<int>947</int>
+					<int>955</int>
+					<int>954</int>
+					<int>957</int>
+					<int>956</int>
+					<int>959</int>
+					<int>960</int>
+					<int>961</int>
+					<int>958</int>
+					<int>968</int>
+					<int>966</int>
+					<int>969</int>
+					<int>967</int>
+					<int>964</int>
+					<int>965</int>
+					<int>962</int>
+					<int>963</int>
+					<int>970</int>
+					<int>971</int>
+					<int>973</int>
+					<int>972</int>
+					<int>975</int>
+					<int>974</int>
+					<int>977</int>
+					<int>976</int>
+				</array>
+				<int name="NumToExecute">18</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>1156</int>
+			<vec3>16 -688 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bats 4</string>
+			<dict>
+				<array name="ToExecute">
+					<int>979</int>
+					<int>978</int>
+					<int>981</int>
+					<int>980</int>
+					<int>984</int>
+					<int>983</int>
+					<int>985</int>
+					<int>982</int>
+					<int>987</int>
+					<int>986</int>
+					<int>989</int>
+					<int>988</int>
+					<int>991</int>
+					<int>992</int>
+					<int>993</int>
+					<int>990</int>
+					<int>953</int>
+					<int>950</int>
+					<int>952</int>
+					<int>951</int>
+					<int>949</int>
+					<int>948</int>
+					<int>946</int>
+					<int>947</int>
+					<int>955</int>
+					<int>954</int>
+					<int>957</int>
+					<int>956</int>
+					<int>959</int>
+					<int>960</int>
+					<int>961</int>
+					<int>958</int>
+					<int>968</int>
+					<int>966</int>
+					<int>969</int>
+					<int>967</int>
+					<int>964</int>
+					<int>965</int>
+					<int>962</int>
+					<int>963</int>
+					<int>970</int>
+					<int>971</int>
+					<int>973</int>
+					<int>972</int>
+					<int>975</int>
+					<int>974</int>
+					<int>977</int>
+					<int>976</int>
+				</array>
+				<int name="NumToExecute">22</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1157</int>
+			<vec3>-448 384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckPlayers</string>
+			<array><int>1159</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1158</int>
+			<vec3>-528 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleStuff2</string>
+			<dict>
+				<array name="Scripts"><int>994</int><int>1154</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>1159</int>
+			<vec3>-448 320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<array name="OnTrue"><int>1162</int></array>
+				<int name="Function">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>1160</int>
+			<vec3>-688 304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG1</string>
+			<dict>
+				<array name="OnTrue"><int>1101</int></array>
+				<int name="Value">1</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1161</int>
+			<vec3>-768 176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG2</string>
+			<array><int>1153</int><int>0</int><int>1122</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>1162</int>
+			<vec3>-448 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<array name="OnFalse"><int>1158</int></array>
+				<array name="OnTrue"><int>1163</int></array>
+				<int name="Value">2</int>
+				<int name="Function">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>1163</int>
+			<vec3>-448 192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<array name="OnFalse"><int>1164</int></array>
+				<array name="OnTrue"><int>1165</int></array>
+				<int name="Value">4</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1164</int>
+			<vec3>-528 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleStuff3</string>
+			<dict>
+				<array name="Scripts"><int>994</int><int>1155</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1165</int>
+			<vec3>-528 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleStuff4</string>
+			<dict>
+				<array name="Scripts"><int>994</int><int>1156</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1166</int>
+			<vec3>-768 304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG1</string>
+			<array><int>1143</int><int>0</int><int>1122</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>1167</int>
+			<vec3>640 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>384</int></array>
+				<array name="OnCanceled"><int>1102</int></array>
+				<array name="OnAllEntered"><int>1172</int></array>
+			</dict>
+		</array>
+		<array><string>LevelExitNext</string><int>1168</int><vec3>688 -736 0</vec3><bool>f</bool><int>1</int><bool>f</bool></array>
+		<array>
+			<string>UseTrigger</string>
+			<int>1169</int>
+			<vec3>640 -784 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>384</int></array>
+				<int name="IconDisabled">6</int>
+				<int name="Icon">6</int>
+			</dict>
+			<array><int>1168</int><int>0</int><int>1171</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1170</int>
+			<vec3>608 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>1171</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>1171</int>
+			<vec3>592 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">.meta.info.gatherparty</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1172</int>
+			<vec3>704 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>1175</int><int>0</int><int>1173</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1173</int>
+			<vec3>736 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>1168</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1174</int>
+			<vec3>544 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>1168</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1175</int>
+			<vec3>672 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>1171</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1176</int>
+			<vec3>-80 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>elevator</string>
+			<dict>
+				<string name="Prefab">prefabs/mine_granite/elevator.pfb</string>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="system/light_L.png">
+			<array>
+				<vec2>288 -416</vec2>
+				<int>126</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-208 -400</vec2>
+				<int>127</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-432 -160</vec2>
+				<int>128</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -40</vec2>
+				<int>129</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>8 -456</vec2>
+				<int>130</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 -472</vec2>
+				<int>131</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>328 -24</vec2>
+				<int>132</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>136 -8</vec2>
+				<int>133</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-79 -312</vec2>
+				<int>117</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>312 -296</vec2>
+				<int>118</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 16</vec2>
+				<int>119</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-360 -312</vec2>
+				<int>120</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-35 -164</vec2>
+				<int>121</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-296 -168</vec2>
+				<int>122</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>87 -283</vec2>
+				<int>123</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>296 -144</vec2>
+				<int>124</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>464 -264</vec2>
+				<int>125</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0512695 0.212231 0.102242 0.0588235</vec4>
+					<float name="size">500</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/_ledge_black_128.unit">
+			<vec2>-400 -152</vec2>
+			<int>755</int>
+			<vec2>-424 -272</vec2>
+			<int>756</int>
+			<vec2>168 32</vec2>
+			<int>757</int>
+			<vec2>-448 -56</vec2>
+			<int>758</int>
+			<vec2>240 40</vec2>
+			<int>759</int>
+			<vec2>-328 -32</vec2>
+			<int>760</int>
+			<vec2>336 -88</vec2>
+			<int>761</int>
+			<vec2>200 -48</vec2>
+			<int>762</int>
+			<vec2>208 -312</vec2>
+			<int>763</int>
+			<vec2>368 -192</vec2>
+			<int>764</int>
+			<vec2>384 -136</vec2>
+			<int>765</int>
+			<vec2>-368 -280</vec2>
+			<int>766</int>
+			<vec2>-472 -216</vec2>
+			<int>767</int>
+			<vec2>224 -176</vec2>
+			<int>748</int>
+			<vec2>-352 -224</vec2>
+			<int>749</int>
+			<vec2>-496 -120</vec2>
+			<int>750</int>
+			<vec2>248 -216</vec2>
+			<int>751</int>
+			<vec2>376 -248</vec2>
+			<int>752</int>
+			<vec2>-384 -8</vec2>
+			<int>753</int>
+			<vec2>376 -224</vec2>
+			<int>754</int>
+		</array>
+		<array name="doodads/walls/_ledge_black_16.unit">
+			<vec2>152 -440</vec2>
+			<int>391</int>
+			<vec2>152 -424</vec2>
+			<int>399</int>
+			<vec2>136 -448</vec2>
+			<int>398</int>
+			<vec2>192 -312</vec2>
+			<int>397</int>
+			<vec2>136 -432</vec2>
+			<int>390</int>
+			<vec2>168 -424</vec2>
+			<int>395</int>
+			<vec2>192 -328</vec2>
+			<int>394</int>
+			<vec2>136 -416</vec2>
+			<int>393</int>
+			<vec2>192 -336</vec2>
+			<int>392</int>
+			<vec2>152 -448</vec2>
+			<int>401</int>
+			<vec2>168 -448</vec2>
+			<int>396</int>
+			<vec2>168 -440</vec2>
+			<int>400</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_deco_ceiling_support.unit"><vec2>0 144</vec2><int>795</int><vec2>0 32</vec2><int>796</int><vec2>0 64</vec2><int>797</int></array>
+		<array name="doodads/walls/mine_granite/v.unit">
+			<vec2>-128 176</vec2>
+			<int>713</int>
+			<vec2>368 -16</vec2>
+			<int>714</int>
+			<vec2>-256 176</vec2>
+			<int>715</int>
+			<vec2>560 -304</vec2>
+			<int>716</int>
+			<vec2>560 -336</vec2>
+			<int>717</int>
+			<vec2>-32 64</vec2>
+			<int>718</int>
+			<vec2>208 32</vec2>
+			<int>719</int>
+			<vec2>512 -192</vec2>
+			<int>720</int>
+			<vec2>-496 -368</vec2>
+			<int>721</int>
+			<vec2>368 16</vec2>
+			<int>722</int>
+			<vec2>384 -496</vec2>
+			<int>723</int>
+			<vec2>-448 -592</vec2>
+			<int>724</int>
+			<vec2>-320 -512</vec2>
+			<int>725</int>
+			<vec2>-528 -224</vec2>
+			<int>726</int>
+			<vec2>-176 128</vec2>
+			<int>727</int>
+			<vec2>-384 -560</vec2>
+			<int>728</int>
+			<vec2>-400 -32</vec2>
+			<int>729</int>
+			<vec2>-512 -320</vec2>
+			<int>730</int>
+			<vec2>512 -160</vec2>
+			<int>731</int>
+			<vec2>16 64</vec2>
+			<int>732</int>
+			<vec2>464 -112</vec2>
+			<int>733</int>
+			<vec2>-448 -448</vec2>
+			<int>734</int>
+			<vec2>-32 32</vec2>
+			<int>735</int>
+			<vec2>-448 -560</vec2>
+			<int>736</int>
+			<vec2>-528 -256</vec2>
+			<int>737</int>
+			<vec2>-448 -416</vec2>
+			<int>738</int>
+			<vec2>-384 -592</vec2>
+			<int>739</int>
+			<vec2>16 144</vec2>
+			<int>740</int>
+			<vec2>-512 -144</vec2>
+			<int>741</int>
+			<vec2>560 -272</vec2>
+			<int>742</int>
+			<vec2>-32 144</vec2>
+			<int>743</int>
+			<vec2>16 256</vec2>
+			<int>744</int>
+			<vec2>560 -240</vec2>
+			<int>745</int>
+			<vec2>-512 -176</vec2>
+			<int>746</int>
+			<vec2>384 -64</vec2>
+			<int>747</int>
+			<vec2>32 208</vec2>
+			<int>712</int>
+			<vec2>-464 -96</vec2>
+			<int>711</int>
+			<vec2>512 -416</vec2>
+			<int>710</int>
+			<vec2>304 -544</vec2>
+			<int>709</int>
+			<vec2>512 -384</vec2>
+			<int>708</int>
+			<vec2>-160 272</vec2>
+			<int>707</int>
+			<vec2>16 32</vec2>
+			<int>706</int>
+			<vec2>16 112</vec2>
+			<int>705</int>
+		</array>
+		<array name="doodads/walls/mine_granite/h_secret_dst.unit"><vec2>-416 -496</vec2><int>116</int></array>
+		<array name="doodads/walls/mine_granite/_ledge_n.unit">
+			<vec2>-160 -512</vec2>
+			<int>477</int>
+			<vec2>-96 -512</vec2>
+			<int>491</int>
+			<vec2>-120 -88</vec2>
+			<int>492</int>
+			<vec2>-216 -264</vec2>
+			<int>493</int>
+			<vec2>56 -496</vec2>
+			<int>494</int>
+			<vec2>88 -88</vec2>
+			<int>486</int>
+			<vec2>-8 -496</vec2>
+			<int>485</int>
+			<vec2>304 -480</vec2>
+			<int>495</int>
+			<vec2>136 -496</vec2>
+			<int>496</int>
+			<vec2>24 -56</vec2>
+			<int>497</int>
+			<vec2>384 -432</vec2>
+			<int>498</int>
+			<vec2>168 -496</vec2>
+			<int>499</int>
+			<vec2>-328 -448</vec2>
+			<int>500</int>
+			<vec2>-240 -480</vec2>
+			<int>501</int>
+			<vec2>240 -512</vec2>
+			<int>502</int>
+			<vec2>24 -496</vec2>
+			<int>484</int>
+			<vec2>-272 -480</vec2>
+			<int>487</int>
+			<vec2>512 -320</vec2>
+			<int>483</int>
+			<vec2>-400 -440</vec2>
+			<int>482</int>
+			<vec2>208 -512</vec2>
+			<int>481</int>
+			<vec2>-208 -480</vec2>
+			<int>480</int>
+			<vec2>-128 -512</vec2>
+			<int>479</int>
+			<vec2>336 -480</vec2>
+			<int>488</int>
+			<vec2>-56 -528</vec2>
+			<int>489</int>
+			<vec2>432 -416</vec2>
+			<int>490</int>
+			<vec2>464 -416</vec2>
+			<int>478</int>
+			<vec2>-464 -352</vec2>
+			<int>506</int>
+			<vec2>-80 -64</vec2>
+			<int>505</int>
+			<vec2>128 -112</vec2>
+			<int>504</int>
+			<vec2>-360 -448</vec2>
+			<int>503</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_e_8.unit">
+			<vec2>-304 -320</vec2>
+			<int>114</int>
+			<vec2>296 -504</vec2>
+			<int>115</int>
+			<vec2>392 -352</vec2>
+			<int>98</int>
+			<vec2>424 -424</vec2>
+			<int>110</int>
+			<vec2>-384 -376</vec2>
+			<int>99</int>
+			<vec2>248 -64</vec2>
+			<int>113</int>
+			<vec2>-408 -144</vec2>
+			<int>94</int>
+			<vec2>504 -328</vec2>
+			<int>100</int>
+			<vec2>-248 -112</vec2>
+			<int>101</int>
+			<vec2>376 -440</vec2>
+			<int>102</int>
+			<vec2>424 -224</vec2>
+			<int>103</int>
+			<vec2>-224 -296</vec2>
+			<int>96</int>
+			<vec2>248 -440</vec2>
+			<int>104</int>
+			<vec2>-224 -272</vec2>
+			<int>105</int>
+			<vec2>552 -200</vec2>
+			<int>106</int>
+			<vec2>-448 -248</vec2>
+			<int>108</int>
+			<vec2>288 -312</vec2>
+			<int>107</int>
+			<vec2>-24 -520</vec2>
+			<int>109</int>
+			<vec2>328 -168</vec2>
+			<int>111</int>
+			<vec2>-328 -200</vec2>
+			<int>112</int>
+			<vec2>-144 -464</vec2>
+			<int>93</int>
+			<vec2>-264 -416</vec2>
+			<int>95</int>
+			<vec2>88 -488</vec2>
+			<int>97</int>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>32 -144</vec2>
+				<int>381</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">512</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -240</vec2>
+				<int>382</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">70</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_ne_o.unit">
+			<vec2>-32 -536</vec2>
+			<int>150</int>
+			<vec2>440 -232</vec2>
+			<int>151</int>
+			<vec2>200 -416</vec2>
+			<int>152</int>
+			<vec2>184 -352</vec2>
+			<int>153</int>
+			<vec2>264 -448</vec2>
+			<int>154</int>
+			<vec2>-248 -424</vec2>
+			<int>155</int>
+			<vec2>-368 -384</vec2>
+			<int>156</int>
+			<vec2>-128 -472</vec2>
+			<int>157</int>
+			<vec2>216 -288</vec2>
+			<int>166</int>
+			<vec2>-432 -256</vec2>
+			<int>169</int>
+			<vec2>344 -176</vec2>
+			<int>170</int>
+			<vec2>176 -424</vec2>
+			<int>168</int>
+			<vec2>264 -72</vec2>
+			<int>159</int>
+			<vec2>-232 -120</vec2>
+			<int>160</int>
+			<vec2>208 -312</vec2>
+			<int>158</int>
+			<vec2>-312 -208</vec2>
+			<int>161</int>
+			<vec2>-72 -400</vec2>
+			<int>162</int>
+			<vec2>304 -320</vec2>
+			<int>163</int>
+			<vec2>-288 -328</vec2>
+			<int>164</int>
+			<vec2>-392 -152</vec2>
+			<int>165</int>
+			<vec2>408 -360</vec2>
+			<int>167</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_ne.unit">
+			<vec2>424 -432</vec2>
+			<int>437</int>
+			<vec2>88 -496</vec2>
+			<int>438</int>
+			<vec2>296 -512</vec2>
+			<int>439</int>
+			<vec2>-24 -528</vec2>
+			<int>440</int>
+			<vec2>-128 -112</vec2>
+			<int>441</int>
+			<vec2>-200 -200</vec2>
+			<int>442</int>
+			<vec2>-48 -64</vec2>
+			<int>443</int>
+			<vec2>376 -480</vec2>
+			<int>444</int>
+			<vec2>-176 -160</vec2>
+			<int>445</int>
+			<vec2>504 -416</vec2>
+			<int>450</int>
+			<vec2>-152 -120</vec2>
+			<int>451</int>
+			<vec2>552 -320</vec2>
+			<int>448</int>
+			<vec2>-184 -264</vec2>
+			<int>447</int>
+			<vec2>-88 -88</vec2>
+			<int>446</int>
+			<vec2>-24 -56</vec2>
+			<int>449</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_nw.unit">
+			<vec2>-432 -440</vec2>
+			<int>852</int>
+			<vec2>16 -56</vec2>
+			<int>851</int>
+			<vec2>120 -112</vec2>
+			<int>850</int>
+			<vec2>-368 -448</vec2>
+			<int>849</int>
+			<vec2>-296 -480</vec2>
+			<int>848</int>
+			<vec2>176 -376</vec2>
+			<int>847</int>
+			<vec2>-512 -256</vec2>
+			<int>846</int>
+			<vec2>168 -176</vec2>
+			<int>845</int>
+			<vec2>-496 -304</vec2>
+			<int>844</int>
+			<vec2>128 -496</vec2>
+			<int>843</int>
+			<vec2>80 -88</vec2>
+			<int>859</int>
+			<vec2>-480 -352</vec2>
+			<int>860</int>
+			<vec2>192 -216</vec2>
+			<int>854</int>
+			<vec2>-64 -528</vec2>
+			<int>853</int>
+			<vec2>200 -512</vec2>
+			<int>855</int>
+			<vec2>160 -136</vec2>
+			<int>856</int>
+			<vec2>56 -80</vec2>
+			<int>857</int>
+			<vec2>-176 -512</vec2>
+			<int>858</int>
+		</array>
+		<array name="doodads/walls/mine_granite/crn_ne.unit">
+			<vec2>64 32</vec2>
+			<int>637</int>
+			<vec2>-400 -32</vec2>
+			<int>636</int>
+			<vec2>-112 16</vec2>
+			<int>642</int>
+			<vec2>-384 -592</vec2>
+			<int>643</int>
+			<vec2>112 48</vec2>
+			<int>644</int>
+			<vec2>-192 256</vec2>
+			<int>645</int>
+			<vec2>-448 -48</vec2>
+			<int>640</int>
+			<vec2>-272 -512</vec2>
+			<int>654</int>
+			<vec2>-464 -96</vec2>
+			<int>638</int>
+			<vec2>-32 32</vec2>
+			<int>646</int>
+			<vec2>-112 320</vec2>
+			<int>647</int>
+			<vec2>560 -336</vec2>
+			<int>639</int>
+			<vec2>-240 224</vec2>
+			<int>648</int>
+			<vec2>32 208</vec2>
+			<int>634</int>
+			<vec2>-128 176</vec2>
+			<int>650</int>
+			<vec2>-32 144</vec2>
+			<int>651</int>
+			<vec2>512 -432</vec2>
+			<int>652</int>
+			<vec2>432 -448</vec2>
+			<int>653</int>
+			<vec2>-160 272</vec2>
+			<int>655</int>
+			<vec2>-352 -480</vec2>
+			<int>641</int>
+			<vec2>-192 -16</vec2>
+			<int>635</int>
+			<vec2>208 32</vec2>
+			<int>630</int>
+			<vec2>304 -544</vec2>
+			<int>631</int>
+			<vec2>-16 -544</vec2>
+			<int>632</int>
+			<vec2>-512 -176</vec2>
+			<int>633</int>
+			<vec2>384 -496</vec2>
+			<int>649</int>
+		</array>
+		<array name="doodads/special/color_mine_granite_128.unit">
+			<vec2>472 -8</vec2>
+			<int>286</int>
+			<vec2>-168 152</vec2>
+			<int>290</int>
+			<vec2>-376 -536</vec2>
+			<int>287</int>
+			<vec2>136 -552</vec2>
+			<int>295</int>
+			<vec2>-584 8</vec2>
+			<int>288</int>
+			<vec2>296 168</vec2>
+			<int>289</int>
+			<vec2>376 88</vec2>
+			<int>291</int>
+			<vec2>440 -456</vec2>
+			<int>293</int>
+			<vec2>-200 -552</vec2>
+			<int>294</int>
+			<vec2>-632 -72</vec2>
+			<int>292</int>
+		</array>
+		<array name="doodads/walls/mine_granite/exit_dn.unit"><vec2>-224 144</vec2><int>768</int></array>
+		<array name="doodads/walls/mine_granite/v_16.unit">
+			<vec2>-240 144</vec2>
+			<int>144</int>
+			<vec2>-384 -528</vec2>
+			<int>145</int>
+			<vec2>-240 224</vec2>
+			<int>146</int>
+			<vec2>16 96</vec2>
+			<int>147</int>
+			<vec2>-528 -272</vec2>
+			<int>149</int>
+			<vec2>-192 -528</vec2>
+			<int>148</int>
+			<vec2>-448 -528</vec2>
+			<int>134</int>
+			<vec2>-48 112</vec2>
+			<int>135</int>
+			<vec2>-448 -464</vec2>
+			<int>136</int>
+			<vec2>160 32</vec2>
+			<int>137</int>
+			<vec2>-48 192</vec2>
+			<int>138</int>
+			<vec2>-432 -496</vec2>
+			<int>139</int>
+			<vec2>-192 -16</vec2>
+			<int>140</int>
+			<vec2>512 -432</vec2>
+			<int>141</int>
+			<vec2>16 176</vec2>
+			<int>142</int>
+			<vec2>-16 -544</vec2>
+			<int>143</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_deco_floor_rock.unit">
+			<vec2>-25 -248</vec2>
+			<int>524</int>
+			<vec2>55 -148</vec2>
+			<int>525</int>
+			<vec2>130 -328</vec2>
+			<int>526</int>
+			<vec2>15 -231</vec2>
+			<int>527</int>
+			<vec2>128 -229</vec2>
+			<int>528</int>
+			<vec2>-34 -322</vec2>
+			<int>509</int>
+			<vec2>-108 -301</vec2>
+			<int>507</int>
+			<vec2>3 -258</vec2>
+			<int>508</int>
+			<vec2>42 -123</vec2>
+			<int>523</int>
+			<vec2>91 -401</vec2>
+			<int>510</int>
+			<vec2>108 -475</vec2>
+			<int>511</int>
+			<vec2>-128 -188</vec2>
+			<int>512</int>
+			<vec2>-370 -454</vec2>
+			<int>513</int>
+			<vec2>104 -425</vec2>
+			<int>514</int>
+			<vec2>42 -358</vec2>
+			<int>515</int>
+			<vec2>-71 -156</vec2>
+			<int>516</int>
+			<vec2>124 -403</vec2>
+			<int>518</int>
+			<vec2>112 -448</vec2>
+			<int>519</int>
+			<vec2>73 -130</vec2>
+			<int>520</int>
+			<vec2>-133 -312</vec2>
+			<int>521</int>
+			<vec2>138 -207</vec2>
+			<int>522</int>
+			<vec2>-131 -288</vec2>
+			<int>517</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_s_16.unit">
+			<vec2>192 -312</vec2>
+			<int>203</int>
+			<vec2>-152 -368</vec2>
+			<int>201</int>
+			<vec2>-200 -224</vec2>
+			<int>196</int>
+			<vec2>-216 -304</vec2>
+			<int>197</int>
+			<vec2>184 -416</vec2>
+			<int>198</int>
+			<vec2>136 -416</vec2>
+			<int>199</int>
+			<vec2>-128 -376</vec2>
+			<int>202</int>
+			<vec2>160 -424</vec2>
+			<int>200</int>
+		</array>
+		<array name="doodads/special/color_mine_granite_512.unit">
+			<vec2>520 -360</vec2>
+			<int>373</int>
+			<vec2>568 56</vec2>
+			<int>372</int>
+			<vec2>-24 792</vec2>
+			<int>371</int>
+			<vec2>-760 504</vec2>
+			<int>370</int>
+			<vec2>-624 -616</vec2>
+			<int>369</int>
+			<vec2>-344 824</vec2>
+			<int>368</int>
+			<vec2>-72 -568</vec2>
+			<int>366</int>
+			<vec2>-376 -568</vec2>
+			<int>365</int>
+			<vec2>488 792</vec2>
+			<int>367</int>
+			<vec2>-1032 -8</vec2>
+			<int>364</int>
+			<vec2>312 -520</vec2>
+			<int>363</int>
+			<vec2>-1032 504</vec2>
+			<int>380</int>
+			<vec2>392 424</vec2>
+			<int>379</int>
+			<vec2>-661 760</vec2>
+			<int>378</int>
+			<vec2>392 -472</vec2>
+			<int>377</int>
+			<vec2>40 568</vec2>
+			<int>376</int>
+			<vec2>520 296</vec2>
+			<int>375</int>
+			<vec2>-952 -392</vec2>
+			<int>374</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_sw_o.unit">
+			<vec2>-248 -104</vec2>
+			<int>529</int>
+			<vec2>296 -480</vec2>
+			<int>537</int>
+			<vec2>-24 -496</vec2>
+			<int>555</int>
+			<vec2>288 -304</vec2>
+			<int>554</int>
+			<vec2>-264 -408</vec2>
+			<int>553</int>
+			<vec2>424 -416</vec2>
+			<int>552</int>
+			<vec2>424 -216</vec2>
+			<int>551</int>
+			<vec2>-144 -456</vec2>
+			<int>550</int>
+			<vec2>-200 -160</vec2>
+			<int>549</int>
+			<vec2>504 -320</vec2>
+			<int>548</int>
+			<vec2>-88 -64</vec2>
+			<int>547</int>
+			<vec2>-128 -88</vec2>
+			<int>546</int>
+			<vec2>328 -160</vec2>
+			<int>545</int>
+			<vec2>-176 -120</vec2>
+			<int>544</int>
+			<vec2>248 -432</vec2>
+			<int>543</int>
+			<vec2>-152 -112</vec2>
+			<int>542</int>
+			<vec2>-448 -240</vec2>
+			<int>541</int>
+			<vec2>-48 -56</vec2>
+			<int>540</int>
+			<vec2>-208 -200</vec2>
+			<int>539</int>
+			<vec2>-384 -368</vec2>
+			<int>538</int>
+			<vec2>392 -344</vec2>
+			<int>536</int>
+			<vec2>-224 -264</vec2>
+			<int>535</int>
+			<vec2>376 -432</vec2>
+			<int>534</int>
+			<vec2>-304 -312</vec2>
+			<int>533</int>
+			<vec2>-408 -136</vec2>
+			<int>532</int>
+			<vec2>-328 -192</vec2>
+			<int>531</int>
+			<vec2>248 -56</vec2>
+			<int>530</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_s.unit">
+			<vec2>24 -416</vec2>
+			<int>813</int>
+			<vec2>-192 -344</vec2>
+			<int>815</int>
+			<vec2>-16 -408</vec2>
+			<int>814</int>
+			<vec2>-104 -400</vec2>
+			<int>812</int>
+			<vec2>-64 -360</vec2>
+			<int>817</int>
+			<vec2>56 -416</vec2>
+			<int>816</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_w_8.unit">
+			<vec2>-176 -488</vec2>
+			<int>302</int>
+			<vec2>-432 -248</vec2>
+			<int>301</int>
+			<vec2>128 -488</vec2>
+			<int>313</int>
+			<vec2>440 -224</vec2>
+			<int>320</int>
+			<vec2>-312 -200</vec2>
+			<int>307</int>
+			<vec2>264 -64</vec2>
+			<int>300</int>
+			<vec2>408 -352</vec2>
+			<int>303</int>
+			<vec2>-288 -320</vec2>
+			<int>304</int>
+			<vec2>-296 -456</vec2>
+			<int>305</int>
+			<vec2>-512 -184</vec2>
+			<int>306</int>
+			<vec2>-368 -376</vec2>
+			<int>308</int>
+			<vec2>344 -168</vec2>
+			<int>309</int>
+			<vec2>264 -440</vec2>
+			<int>310</int>
+			<vec2>200 -504</vec2>
+			<int>311</int>
+			<vec2>-496 -264</vec2>
+			<int>312</int>
+			<vec2>304 -312</vec2>
+			<int>314</int>
+			<vec2>-480 -312</vec2>
+			<int>315</int>
+			<vec2>-128 -464</vec2>
+			<int>316</int>
+			<vec2>-232 -112</vec2>
+			<int>318</int>
+			<vec2>-248 -416</vec2>
+			<int>319</int>
+			<vec2>-392 -144</vec2>
+			<int>321</int>
+			<vec2>-64 -520</vec2>
+			<int>317</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_deco_floor_support.unit">
+			<vec2>-202 165</vec2>
+			<int>475</int>
+			<vec2>-147 276</vec2>
+			<int>474</int>
+			<vec2>2 59</vec2>
+			<int>473</int>
+			<vec2>0 123</vec2>
+			<int>472</int>
+			<vec2>-408 -552</vec2>
+			<int>471</int>
+			<vec2>16 275</vec2>
+			<int>476</int>
+			<vec2>-140 210</vec2>
+			<int>469</int>
+			<vec2>-200 230</vec2>
+			<int>467</int>
+			<vec2>8 183</vec2>
+			<int>468</int>
+			<vec2>-68 236</vec2>
+			<int>470</int>
+		</array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>-320 -264</vec2>
+				<int>388</int>
+				<dict>
+					<vec2 name="size">192 16</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>112 -504</vec2>
+				<int>384</int>
+				<dict>
+					<vec2 name="size">32 16</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>144 -496</vec2>
+				<int>389</int>
+				<dict>
+					<vec2 name="size">16 16</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-392 -360</vec2>
+				<int>387</int>
+				<dict>
+					<vec2 name="size">16 144</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 -496</vec2>
+				<int>385</int>
+				<dict>
+					<vec2 name="size">16 16</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-304 -296</vec2>
+				<int>383</int>
+				<dict>
+					<vec2 name="size">160 16</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-424 -344</vec2>
+				<int>386</int>
+				<dict>
+					<vec2 name="size">16 176</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_w.unit">
+			<vec2>16 -48</vec2>
+			<int>352</int>
+			<vec2>-480 -344</vec2>
+			<int>351</int>
+			<vec2>192 -208</vec2>
+			<int>350</int>
+			<vec2>168 -168</vec2>
+			<int>349</int>
+			<vec2>128 -448</vec2>
+			<int>355</int>
+			<vec2>-72 -392</vec2>
+			<int>348</int>
+			<vec2>-496 -296</vec2>
+			<int>346</int>
+			<vec2>-432 -400</vec2>
+			<int>347</int>
+			<vec2>-512 -248</vec2>
+			<int>362</int>
+			<vec2>-512 -216</vec2>
+			<int>361</int>
+			<vec2>216 -248</vec2>
+			<int>360</int>
+			<vec2>-432 -432</vec2>
+			<int>359</int>
+			<vec2>16 -16</vec2>
+			<int>358</int>
+			<vec2>216 -280</vec2>
+			<int>357</int>
+			<vec2>128 -480</vec2>
+			<int>356</int>
+			<vec2>184 -344</vec2>
+			<int>354</int>
+			<vec2>200 -408</vec2>
+			<int>353</int>
+		</array>
+		<array name="doodads/walls/mine_granite/x_x.unit"><vec2>-384 -496</vec2><int>92</int></array>
+		<array name="doodads/special/color_mine_granite_32.unit"><vec2>-344 -488</vec2><int>297</int><vec2>-344 -512</vec2><int>298</int><vec2>-376 -504</vec2><int>299</int><vec2>-456 -488</vec2><int>296</int></array>
+		<array name="doodads/walls/mine_granite/_ledge_n_8.unit">
+			<vec2>-296 -312</vec2>
+			<int>190</int>
+			<vec2>-440 -240</vec2>
+			<int>191</int>
+			<vec2>-376 -368</vec2>
+			<int>192</int>
+			<vec2>-488 -304</vec2>
+			<int>193</int>
+			<vec2>416 -432</vec2>
+			<int>194</int>
+			<vec2>288 -512</vec2>
+			<int>195</int>
+			<vec2>400 -344</vec2>
+			<int>173</int>
+			<vec2>-504 -256</vec2>
+			<int>171</int>
+			<vec2>544 -320</vec2>
+			<int>172</int>
+			<vec2>-168 -512</vec2>
+			<int>174</int>
+			<vec2>-136 -456</vec2>
+			<int>175</int>
+			<vec2>336 -160</vec2>
+			<int>176</int>
+			<vec2>256 -432</vec2>
+			<int>177</int>
+			<vec2>432 -216</vec2>
+			<int>178</int>
+			<vec2>296 -304</vec2>
+			<int>179</int>
+			<vec2>256 -56</vec2>
+			<int>180</int>
+			<vec2>-320 -192</vec2>
+			<int>181</int>
+			<vec2>368 -480</vec2>
+			<int>182</int>
+			<vec2>-256 -408</vec2>
+			<int>183</int>
+			<vec2>496 -416</vec2>
+			<int>184</int>
+			<vec2>-424 -440</vec2>
+			<int>185</int>
+			<vec2>-400 -136</vec2>
+			<int>186</int>
+			<vec2>-472 -352</vec2>
+			<int>187</int>
+			<vec2>-16 -496</vec2>
+			<int>188</int>
+			<vec2>-240 -104</vec2>
+			<int>189</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_w_16.unit">
+			<vec2>176 -368</vec2>
+			<int>263</int>
+			<vec2>-296 -472</vec2>
+			<int>264</int>
+			<vec2>-176 -504</vec2>
+			<int>257</int>
+			<vec2>16 16</vec2>
+			<int>258</int>
+			<vec2>56 -72</vec2>
+			<int>259</int>
+			<vec2>120 -104</vec2>
+			<int>260</int>
+			<vec2>-432 -368</vec2>
+			<int>261</int>
+			<vec2>160 -128</vec2>
+			<int>262</int>
+			<vec2>208 -304</vec2>
+			<int>265</int>
+		</array>
+		<array name="doodads/walls/mine_granite/single.unit">
+			<vec2>396 -356</vec2>
+			<int>282</int>
+			<vec2>-444 -252</vec2>
+			<int>285</int>
+			<vec2>-16 -384</vec2>
+			<int>281</int>
+			<vec2>176 -400</vec2>
+			<int>284</int>
+			<vec2>332 -172</vec2>
+			<int>266</int>
+			<vec2>-244 -116</vec2>
+			<int>267</int>
+			<vec2>192 -256</vec2>
+			<int>276</int>
+			<vec2>-380 -380</vec2>
+			<int>271</int>
+			<vec2>-260 -420</vec2>
+			<int>272</int>
+			<vec2>-140 -468</vec2>
+			<int>273</int>
+			<vec2>292 -316</vec2>
+			<int>274</int>
+			<vec2>-160 -240</vec2>
+			<int>275</int>
+			<vec2>252 -68</vec2>
+			<int>279</int>
+			<vec2>428 -228</vec2>
+			<int>278</int>
+			<vec2>-64 -96</vec2>
+			<int>277</int>
+			<vec2>-300 -324</vec2>
+			<int>280</int>
+			<vec2>-404 -148</vec2>
+			<int>283</int>
+			<vec2>252 -444</vec2>
+			<int>268</int>
+			<vec2>-324 -204</vec2>
+			<int>269</int>
+			<vec2>128 -144</vec2>
+			<int>270</int>
+		</array>
+		<array name="doodads/walls/_ledge_black.unit">
+			<vec2>-224 -376</vec2>
+			<int>1</int>
+			<vec2>464 -112</vec2>
+			<int>83</int>
+			<vec2>-88 8</vec2>
+			<int>82</int>
+			<vec2>224 80</vec2>
+			<int>81</int>
+			<vec2>-64 -392</vec2>
+			<int>80</int>
+			<vec2>232 -440</vec2>
+			<int>79</int>
+			<vec2>352 -16</vec2>
+			<int>78</int>
+			<vec2>-104 -440</vec2>
+			<int>77</int>
+			<vec2>288 64</vec2>
+			<int>76</int>
+			<vec2>-48 -408</vec2>
+			<int>75</int>
+			<vec2>-272 0</vec2>
+			<int>74</int>
+			<vec2>24 32</vec2>
+			<int>73</int>
+			<vec2>-416 -32</vec2>
+			<int>72</int>
+			<vec2>184 -448</vec2>
+			<int>71</int>
+			<vec2>-40 -448</vec2>
+			<int>70</int>
+			<vec2>-168 -368</vec2>
+			<int>69</int>
+			<vec2>-240 -16</vec2>
+			<int>68</int>
+			<vec2>80 48</vec2>
+			<int>67</int>
+			<vec2>-16 -440</vec2>
+			<int>66</int>
+			<vec2>-104 -432</vec2>
+			<int>64</int>
+			<vec2>-56 32</vec2>
+			<int>27</int>
+			<vec2>56 -448</vec2>
+			<int>26</int>
+			<vec2>24 -16</vec2>
+			<int>24</int>
+			<vec2>-136 -432</vec2>
+			<int>23</int>
+			<vec2>24 -448</vec2>
+			<int>22</int>
+			<vec2>-64 -360</vec2>
+			<int>21</int>
+			<vec2>-72 -432</vec2>
+			<int>20</int>
+			<vec2>216 -440</vec2>
+			<int>19</int>
+			<vec2>216 -320</vec2>
+			<int>18</int>
+			<vec2>-192 -344</vec2>
+			<int>17</int>
+			<vec2>208 -472</vec2>
+			<int>16</int>
+			<vec2>-8 -416</vec2>
+			<int>15</int>
+			<vec2>-96 -472</vec2>
+			<int>14</int>
+			<vec2>-80 -24</vec2>
+			<int>13</int>
+			<vec2>-64 -424</vec2>
+			<int>12</int>
+			<vec2>-56 -456</vec2>
+			<int>11</int>
+			<vec2>128 64</vec2>
+			<int>10</int>
+			<vec2>-168 -440</vec2>
+			<int>25</int>
+			<vec2>-128 -400</vec2>
+			<int>65</int>
+			<vec2>56 -16</vec2>
+			<int>47</int>
+			<vec2>256 80</vec2>
+			<int>48</int>
+			<vec2>-16 -408</vec2>
+			<int>49</int>
+			<vec2>264 -440</vec2>
+			<int>50</int>
+			<vec2>-200 -344</vec2>
+			<int>51</int>
+			<vec2>112 48</vec2>
+			<int>52</int>
+			<vec2>-432 -32</vec2>
+			<int>53</int>
+			<vec2>-112 -24</vec2>
+			<int>54</int>
+			<vec2>-56 -16</vec2>
+			<int>55</int>
+			<vec2>-448 -48</vec2>
+			<int>56</int>
+			<vec2>-8 -448</vec2>
+			<int>57</int>
+			<vec2>-496 -96</vec2>
+			<int>58</int>
+			<vec2>-480 -96</vec2>
+			<int>59</int>
+			<vec2>416 -64</vec2>
+			<int>60</int>
+			<vec2>-96 -400</vec2>
+			<int>61</int>
+			<vec2>24 16</vec2>
+			<int>62</int>
+			<vec2>-56 16</vec2>
+			<int>63</int>
+			<vec2>-56 -416</vec2>
+			<int>2</int>
+			<vec2>184 -416</vec2>
+			<int>85</int>
+			<vec2>384 -64</vec2>
+			<int>84</int>
+			<vec2>520 -192</vec2>
+			<int>46</int>
+			<vec2>-200 -408</vec2>
+			<int>45</int>
+			<vec2>-224 -408</vec2>
+			<int>44</int>
+			<vec2>216 -288</vec2>
+			<int>43</int>
+			<vec2>56 32</vec2>
+			<int>42</int>
+			<vec2>-96 32</vec2>
+			<int>41</int>
+			<vec2>-40 -440</vec2>
+			<int>40</int>
+			<vec2>-264 -16</vec2>
+			<int>39</int>
+			<vec2>-72 -448</vec2>
+			<int>38</int>
+			<vec2>-64 32</vec2>
+			<int>37</int>
+			<vec2>-176 16</vec2>
+			<int>36</int>
+			<vec2>336 64</vec2>
+			<int>35</int>
+			<vec2>24 -416</vec2>
+			<int>34</int>
+			<vec2>56 -416</vec2>
+			<int>33</int>
+			<vec2>-56 -384</vec2>
+			<int>32</int>
+			<vec2>-304 0</vec2>
+			<int>31</int>
+			<vec2>-144 -384</vec2>
+			<int>30</int>
+			<vec2>-136 -440</vec2>
+			<int>29</int>
+			<vec2>320 64</vec2>
+			<int>28</int>
+			<vec2>256 -472</vec2>
+			<int>3</int>
+			<vec2>-144 -376</vec2>
+			<int>4</int>
+			<vec2>432 -64</vec2>
+			<int>5</int>
+			<vec2>48 16</vec2>
+			<int>6</int>
+			<vec2>240 -472</vec2>
+			<int>7</int>
+			<vec2>512 -192</vec2>
+			<int>8</int>
+			<vec2>480 -112</vec2>
+			<int>9</int>
+		</array>
+		<array name="doodads/generic/glasswalk.unit">
+			<vec2>-376 -280</vec2>
+			<int>894</int>
+			<vec2>-408 -296</vec2>
+			<int>892</int>
+			<vec2>-408 -376</vec2>
+			<int>895</int>
+			<vec2>-296 -280</vec2>
+			<int>896</int>
+			<vec2>-360 -280</vec2>
+			<int>897</int>
+			<vec2>-344 -280</vec2>
+			<int>900</int>
+			<vec2>-280 -280</vec2>
+			<int>898</int>
+			<vec2>-248 -280</vec2>
+			<int>899</int>
+			<vec2>-232 -280</vec2>
+			<int>891</int>
+			<vec2>-408 -344</vec2>
+			<int>905</int>
+			<vec2>-408 -424</vec2>
+			<int>901</int>
+			<vec2>-408 -408</vec2>
+			<int>911</int>
+			<vec2>-264 -280</vec2>
+			<int>910</int>
+			<vec2>-408 -328</vec2>
+			<int>893</int>
+			<vec2>-408 -392</vec2>
+			<int>908</int>
+			<vec2>-408 -360</vec2>
+			<int>903</int>
+			<vec2>-392 -280</vec2>
+			<int>907</int>
+			<vec2>-328 -280</vec2>
+			<int>906</int>
+			<vec2>-408 -280</vec2>
+			<int>904</int>
+			<vec2>-408 -312</vec2>
+			<int>902</int>
+			<vec2>-312 -280</vec2>
+			<int>909</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_e_16.unit">
+			<vec2>552 -216</vec2>
+			<int>464</int>
+			<vec2>-208 -216</vec2>
+			<int>453</int>
+			<vec2>-24 16</vec2>
+			<int>452</int>
+			<vec2>-112 -392</vec2>
+			<int>454</int>
+			<vec2>-128 -104</vec2>
+			<int>455</int>
+			<vec2>504 -344</vec2>
+			<int>456</int>
+			<vec2>-24 -400</vec2>
+			<int>457</int>
+			<vec2>-32 -376</vec2>
+			<int>458</int>
+			<vec2>-88 -80</vec2>
+			<int>459</int>
+			<vec2>-24 -512</vec2>
+			<int>460</int>
+			<vec2>-160 -360</vec2>
+			<int>461</int>
+			<vec2>296 -496</vec2>
+			<int>462</int>
+			<vec2>-224 -288</vec2>
+			<int>463</int>
+		</array>
+		<array name="doodads/special/color_mine_granite_16.unit">
+			<vec2>-56 184</vec2>
+			<int>918</int>
+			<vec2>-120 200</vec2>
+			<int>917</int>
+			<vec2>-88 168</vec2>
+			<int>916</int>
+			<vec2>-120 184</vec2>
+			<int>914</int>
+			<vec2>-120 168</vec2>
+			<int>913</int>
+			<vec2>-56 200</vec2>
+			<int>912</int>
+			<vec2>-104 168</vec2>
+			<int>915</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_deco_wall_support.unit"><vec2>-400 -576</vec2><int>436</int></array>
+		<array name="actors/bosses/golem/golem_rock_spawn.unit"><vec2>0 -240</vec2><int>435</int></array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_se.unit">
+			<vec2>-24 -384</vec2>
+			<int>697</int>
+			<vec2>152 -416</vec2>
+			<int>699</int>
+			<vec2>16 -408</vec2>
+			<int>700</int>
+			<vec2>-32 -360</vec2>
+			<int>698</int>
+			<vec2>-136 -368</vec2>
+			<int>701</int>
+			<vec2>-112 -376</vec2>
+			<int>702</int>
+			<vec2>-160 -344</vec2>
+			<int>704</int>
+			<vec2>-184 -224</vec2>
+			<int>703</int>
+			<vec2>-200 -304</vec2>
+			<int>695</int>
+			<vec2>88 -416</vec2>
+			<int>696</int>
+		</array>
+		<array name="doodads/walls/mine_granite/crn_sw.unit">
+			<vec2>-192 272</vec2>
+			<int>216</int>
+			<vec2>-256 224</vec2>
+			<int>232</int>
+			<vec2>-400 16</vec2>
+			<int>231</int>
+			<vec2>-448 -32</vec2>
+			<int>230</int>
+			<vec2>-512 -96</vec2>
+			<int>229</int>
+			<vec2>304 -496</vec2>
+			<int>227</int>
+			<vec2>-128 224</vec2>
+			<int>226</int>
+			<vec2>-48 144</vec2>
+			<int>225</int>
+			<vec2>208 80</vec2>
+			<int>224</int>
+			<vec2>-272 -496</vec2>
+			<int>223</int>
+			<vec2>-528 -176</vec2>
+			<int>222</int>
+			<vec2>128 -512</vec2>
+			<int>221</int>
+			<vec2>384 -448</vec2>
+			<int>220</int>
+			<vec2>-384 -480</vec2>
+			<int>219</int>
+			<vec2>-176 176</vec2>
+			<int>218</int>
+			<vec2>-464 -48</vec2>
+			<int>217</int>
+			<vec2>-240 256</vec2>
+			<int>208</int>
+			<vec2>64 48</vec2>
+			<int>215</int>
+			<vec2>16 208</vec2>
+			<int>210</int>
+			<vec2>432 -432</vec2>
+			<int>207</int>
+			<vec2>512 -336</vec2>
+			<int>228</int>
+			<vec2>-352 -464</vec2>
+			<int>212</int>
+			<vec2>-192 16</vec2>
+			<int>213</int>
+			<vec2>-160 320</vec2>
+			<int>214</int>
+			<vec2>-448 -496</vec2>
+			<int>206</int>
+			<vec2>-112 32</vec2>
+			<int>209</int>
+			<vec2>112 64</vec2>
+			<int>205</int>
+			<vec2>-112 336</vec2>
+			<int>211</int>
+			<vec2>-16 -512</vec2>
+			<int>204</int>
+		</array>
+		<array name="doodads/walls/mine_granite/crn_se.unit">
+			<vec2>-48 224</vec2>
+			<int>663</int>
+			<vec2>-32 320</vec2>
+			<int>662</int>
+			<vec2>-432 -464</vec2>
+			<int>661</int>
+			<vec2>-32 112</vec2>
+			<int>660</int>
+			<vec2>80 -512</vec2>
+			<int>659</int>
+			<vec2>-240 0</vec2>
+			<int>658</int>
+			<vec2>-288 16</vec2>
+			<int>657</int>
+			<vec2>-80 -528</vec2>
+			<int>656</int>
+			<vec2>16 304</vec2>
+			<int>666</int>
+			<vec2>-32 192</vec2>
+			<int>683</int>
+			<vec2>-64 336</vec2>
+			<int>682</int>
+			<vec2>560 -192</vec2>
+			<int>681</int>
+			<vec2>384 -16</vec2>
+			<int>680</int>
+			<vec2>160 64</vec2>
+			<int>679</int>
+			<vec2>368 64</vec2>
+			<int>678</int>
+			<vec2>-320 -464</vec2>
+			<int>677</int>
+			<vec2>176 -512</vec2>
+			<int>676</int>
+			<vec2>32 256</vec2>
+			<int>675</int>
+			<vec2>-496 -320</vec2>
+			<int>674</int>
+			<vec2>-224 144</vec2>
+			<int>673</int>
+			<vec2>-512 -272</vec2>
+			<int>672</int>
+			<vec2>464 -64</vec2>
+			<int>671</int>
+			<vec2>512 -112</vec2>
+			<int>670</int>
+			<vec2>-240 176</vec2>
+			<int>669</int>
+			<vec2>-448 -368</vec2>
+			<int>668</int>
+			<vec2>-192 -496</vec2>
+			<int>667</int>
+			<vec2>288 80</vec2>
+			<int>665</int>
+			<vec2>256 -528</vec2>
+			<int>664</int>
+		</array>
+		<array name="doodads/special/color_mine_granite_48.unit">
+			<vec2>-232 8</vec2>
+			<int>689</int>
+			<vec2>136 -536</vec2>
+			<int>694</int>
+			<vec2>-56 344</vec2>
+			<int>693</int>
+			<vec2>72 72</vec2>
+			<int>692</int>
+			<vec2>120 88</vec2>
+			<int>691</int>
+			<vec2>168 56</vec2>
+			<int>690</int>
+			<vec2>264 -568</vec2>
+			<int>688</int>
+			<vec2>-232 280</vec2>
+			<int>687</int>
+			<vec2>-72 168</vec2>
+			<int>686</int>
+			<vec2>40 -536</vec2>
+			<int>685</int>
+			<vec2>24 56</vec2>
+			<int>684</int>
+		</array>
+		<array name="doodads/generic/lamp_torch.unit">
+			<vec2>-144 192</vec2>
+			<int>830</int>
+			<vec2>260 -52</vec2>
+			<int>824</int>
+			<vec2>-112 240</vec2>
+			<int>825</int>
+			<vec2>340 -156</vec2>
+			<int>826</int>
+			<vec2>184 -384</vec2>
+			<int>827</int>
+			<vec2>-48 240</vec2>
+			<int>828</int>
+			<vec2>-252 -404</vec2>
+			<int>829</int>
+			<vec2>-8 -368</vec2>
+			<int>836</int>
+			<vec2>260 -428</vec2>
+			<int>831</int>
+			<vec2>436 -212</vec2>
+			<int>840</int>
+			<vec2>-56 -80</vec2>
+			<int>841</int>
+			<vec2>404 -340</vec2>
+			<int>842</int>
+			<vec2>-316 -188</vec2>
+			<int>823</int>
+			<vec2>-236 -100</vec2>
+			<int>822</int>
+			<vec2>300 -300</vec2>
+			<int>821</int>
+			<vec2>-292 -308</vec2>
+			<int>820</int>
+			<vec2>-396 -132</vec2>
+			<int>819</int>
+			<vec2>-216 160</vec2>
+			<int>832</int>
+			<vec2>-372 -364</vec2>
+			<int>818</int>
+			<vec2>200 -240</vec2>
+			<int>833</int>
+			<vec2>-152 -224</vec2>
+			<int>834</int>
+			<vec2>-132 -452</vec2>
+			<int>835</int>
+			<vec2>24 224</vec2>
+			<int>837</int>
+			<vec2>136 -128</vec2>
+			<int>838</int>
+			<vec2>-436 -236</vec2>
+			<int>839</int>
+		</array>
+		<array name="doodads/walls/_ledge_black_64.unit">
+			<vec2>128 -8</vec2>
+			<int>412</int>
+			<vec2>320 -40</vec2>
+			<int>411</int>
+			<vec2>-264 -360</vec2>
+			<int>410</int>
+			<vec2>-240 -56</vec2>
+			<int>409</int>
+			<vec2>312 -376</vec2>
+			<int>408</int>
+			<vec2>176 -72</vec2>
+			<int>407</int>
+			<vec2>-384 16</vec2>
+			<int>406</int>
+			<vec2>88 16</vec2>
+			<int>405</int>
+			<vec2>360 -328</vec2>
+			<int>404</int>
+			<vec2>-216 -16</vec2>
+			<int>403</int>
+			<vec2>-208 -376</vec2>
+			<int>402</int>
+			<vec2>-352 16</vec2>
+			<int>421</int>
+			<vec2>-288 -376</vec2>
+			<int>426</int>
+			<vec2>-192 -8</vec2>
+			<int>425</int>
+			<vec2>304 -104</vec2>
+			<int>424</int>
+			<vec2>-504 -152</vec2>
+			<int>423</int>
+			<vec2>320 -336</vec2>
+			<int>422</int>
+			<vec2>-152 16</vec2>
+			<int>420</int>
+			<vec2>-272 -160</vec2>
+			<int>419</int>
+			<vec2>224 56</vec2>
+			<int>418</int>
+			<vec2>128 40</vec2>
+			<int>417</int>
+			<vec2>-264 -304</vec2>
+			<int>416</int>
+			<vec2>64 24</vec2>
+			<int>415</int>
+			<vec2>-488 -208</vec2>
+			<int>414</int>
+			<vec2>488 -216</vec2>
+			<int>413</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_nw_o.unit">
+			<vec2>16 -416</vec2>
+			<int>238</int>
+			<vec2>328 -176</vec2>
+			<int>237</int>
+			<vec2>-200 -344</vec2>
+			<int>246</int>
+			<vec2>-304 -328</vec2>
+			<int>235</int>
+			<vec2>-408 -152</vec2>
+			<int>234</int>
+			<vec2>-248 -120</vec2>
+			<int>233</int>
+			<vec2>-136 -376</vec2>
+			<int>251</int>
+			<vec2>-448 -256</vec2>
+			<int>236</int>
+			<vec2>-384 -384</vec2>
+			<int>250</int>
+			<vec2>-112 -400</vec2>
+			<int>249</int>
+			<vec2>248 -72</vec2>
+			<int>247</int>
+			<vec2>-328 -208</vec2>
+			<int>248</int>
+			<vec2>392 -360</vec2>
+			<int>245</int>
+			<vec2>424 -232</vec2>
+			<int>244</int>
+			<vec2>-208 -224</vec2>
+			<int>243</int>
+			<vec2>152 -424</vec2>
+			<int>242</int>
+			<vec2>-160 -368</vec2>
+			<int>241</int>
+			<vec2>-144 -472</vec2>
+			<int>240</int>
+			<vec2>-24 -408</vec2>
+			<int>239</int>
+			<vec2>-224 -304</vec2>
+			<int>256</int>
+			<vec2>-32 -384</vec2>
+			<int>255</int>
+			<vec2>248 -448</vec2>
+			<int>253</int>
+			<vec2>-264 -424</vec2>
+			<int>252</int>
+			<vec2>288 -320</vec2>
+			<int>254</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_sw.unit">
+			<vec2>128 -416</vec2>
+			<int>89</int>
+			<vec2>208 -288</vec2>
+			<int>90</int>
+			<vec2>176 -416</vec2>
+			<int>91</int>
+			<vec2>-72 -360</vec2>
+			<int>87</int>
+			<vec2>176 -352</vec2>
+			<int>88</int>
+			<vec2>184 -312</vec2>
+			<int>86</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_s_8.unit">
+			<vec2>-240 -120</vec2>
+			<int>616</int>
+			<vec2>400 -360</vec2>
+			<int>617</int>
+			<vec2>296 -320</vec2>
+			<int>619</int>
+			<vec2>-136 -472</vec2>
+			<int>620</int>
+			<vec2>336 -176</vec2>
+			<int>627</int>
+			<vec2>256 -448</vec2>
+			<int>622</int>
+			<vec2>-440 -256</vec2>
+			<int>623</int>
+			<vec2>-376 -384</vec2>
+			<int>624</int>
+			<vec2>432 -232</vec2>
+			<int>625</int>
+			<vec2>-400 -152</vec2>
+			<int>618</int>
+			<vec2>-256 -424</vec2>
+			<int>628</int>
+			<vec2>256 -72</vec2>
+			<int>626</int>
+			<vec2>-296 -328</vec2>
+			<int>629</int>
+			<vec2>-320 -208</vec2>
+			<int>621</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_crn_se_o.unit">
+			<vec2>-64 -512</vec2>
+			<int>869</int>
+			<vec2>440 -216</vec2>
+			<int>868</int>
+			<vec2>-312 -192</vec2>
+			<int>867</int>
+			<vec2>-496 -256</vec2>
+			<int>866</int>
+			<vec2>304 -304</vec2>
+			<int>864</int>
+			<vec2>-432 -352</vec2>
+			<int>863</int>
+			<vec2>-232 -104</vec2>
+			<int>862</int>
+			<vec2>-368 -440</vec2>
+			<int>861</int>
+			<vec2>192 -176</vec2>
+			<int>889</int>
+			<vec2>344 -160</vec2>
+			<int>890</int>
+			<vec2>216 -216</vec2>
+			<int>887</int>
+			<vec2>56 -56</vec2>
+			<int>865</int>
+			<vec2>-432 -240</vec2>
+			<int>870</int>
+			<vec2>200 -376</vec2>
+			<int>871</int>
+			<vec2>-288 -312</vec2>
+			<int>872</int>
+			<vec2>-128 -456</vec2>
+			<int>873</int>
+			<vec2>-368 -368</vec2>
+			<int>874</int>
+			<vec2>-480 -304</vec2>
+			<int>875</int>
+			<vec2>-248 -408</vec2>
+			<int>876</int>
+			<vec2>120 -88</vec2>
+			<int>877</int>
+			<vec2>264 -432</vec2>
+			<int>878</int>
+			<vec2>-392 -136</vec2>
+			<int>879</int>
+			<vec2>160 -112</vec2>
+			<int>880</int>
+			<vec2>-176 -480</vec2>
+			<int>881</int>
+			<vec2>-296 -448</vec2>
+			<int>882</int>
+			<vec2>264 -56</vec2>
+			<int>883</int>
+			<vec2>200 -496</vec2>
+			<int>884</int>
+			<vec2>168 -136</vec2>
+			<int>885</int>
+			<vec2>80 -80</vec2>
+			<int>886</int>
+			<vec2>408 -344</vec2>
+			<int>888</int>
+		</array>
+		<array name="doodads/walls/mine_granite/_ledge_e.unit">
+			<vec2>88 -480</vec2>
+			<int>810</int>
+			<vec2>-184 -256</vec2>
+			<int>808</int>
+			<vec2>-24 -16</vec2>
+			<int>807</int>
+			<vec2>504 -376</vec2>
+			<int>811</int>
+			<vec2>-200 -336</vec2>
+			<int>809</int>
+			<vec2>-24 -48</vec2>
+			<int>806</int>
+			<vec2>376 -472</vec2>
+			<int>805</int>
+			<vec2>88 -448</vec2>
+			<int>804</int>
+			<vec2>-176 -152</vec2>
+			<int>802</int>
+			<vec2>552 -280</vec2>
+			<int>801</int>
+			<vec2>-200 -192</vec2>
+			<int>800</int>
+			<vec2>504 -408</vec2>
+			<int>799</int>
+			<vec2>552 -248</vec2>
+			<int>798</int>
+			<vec2>552 -312</vec2>
+			<int>803</int>
+		</array>
+		<array name="doodads/walls/mine_granite/x_n.unit"><vec2>-432 -496</vec2><int>466</int></array>
+		<array name="doodads/walls/mine_granite/_ledge_n_16.unit">
+			<vec2>-416 -440</vec2>
+			<int>560</int>
+			<vec2>-144 -112</vec2>
+			<int>559</int>
+			<vec2>272 -512</vec2>
+			<int>558</int>
+			<vec2>-168 -120</vec2>
+			<int>557</int>
+			<vec2>-40 -56</vec2>
+			<int>556</int>
+			<vec2>64 -80</vec2>
+			<int>561</int>
+			<vec2>184 -376</vec2>
+			<int>566</int>
+			<vec2>-288 -480</vec2>
+			<int>565</int>
+			<vec2>-192 -160</vec2>
+			<int>564</int>
+			<vec2>200 -216</vec2>
+			<int>563</int>
+			<vec2>176 -176</vec2>
+			<int>562</int>
+		</array>
+		<array name="doodads/walls/mine_granite/crn_nw.unit">
+			<vec2>-320 -512</vec2>
+			<int>793</int>
+			<vec2>464 -112</vec2>
+			<int>780</int>
+			<vec2>176 -528</vec2>
+			<int>778</int>
+			<vec2>368 -16</vec2>
+			<int>777</int>
+			<vec2>-256 176</vec2>
+			<int>769</int>
+			<vec2>-80 -544</vec2>
+			<int>794</int>
+			<vec2>-48 112</vec2>
+			<int>770</int>
+			<vec2>-32 304</vec2>
+			<int>779</int>
+			<vec2>16 256</vec2>
+			<int>776</int>
+			<vec2>-512 -320</vec2>
+			<int>772</int>
+			<vec2>-64 320</vec2>
+			<int>781</int>
+			<vec2>-496 -368</vec2>
+			<int>782</int>
+			<vec2>-448 -464</vec2>
+			<int>783</int>
+			<vec2>288 64</vec2>
+			<int>784</int>
+			<vec2>-48 192</vec2>
+			<int>785</int>
+			<vec2>-288 0</vec2>
+			<int>787</int>
+			<vec2>-448 -592</vec2>
+			<int>788</int>
+			<vec2>160 32</vec2>
+			<int>789</int>
+			<vec2>-240 -16</vec2>
+			<int>790</int>
+			<vec2>-240 144</vec2>
+			<int>791</int>
+			<vec2>16 32</vec2>
+			<int>792</int>
+			<vec2>-528 -272</vec2>
+			<int>786</int>
+			<vec2>384 -64</vec2>
+			<int>771</int>
+			<vec2>256 -544</vec2>
+			<int>773</int>
+			<vec2>-192 -528</vec2>
+			<int>775</int>
+			<vec2>512 -192</vec2>
+			<int>774</int>
+		</array>
+		<array name="doodads/special/color_mine_granite_64.unit">
+			<vec2>-296 264</vec2>
+			<int>342</int>
+			<vec2>-248 -520</vec2>
+			<int>326</int>
+			<vec2>-552 -344</vec2>
+			<int>344</int>
+			<vec2>-568 -296</vec2>
+			<int>345</int>
+			<vec2>-280 40</vec2>
+			<int>327</int>
+			<vec2>-88 72</vec2>
+			<int>322</int>
+			<vec2>-168 56</vec2>
+			<int>323</int>
+			<vec2>-504 -8</vec2>
+			<int>328</int>
+			<vec2>-440 -520</vec2>
+			<int>329</int>
+			<vec2>24 296</vec2>
+			<int>340</int>
+			<vec2>-88 88</vec2>
+			<int>330</int>
+			<vec2>-184 72</vec2>
+			<int>331</int>
+			<vec2>-264 -520</vec2>
+			<int>332</int>
+			<vec2>-184 56</vec2>
+			<int>333</int>
+			<vec2>-8 -536</vec2>
+			<int>334</int>
+			<vec2>-152 72</vec2>
+			<int>335</int>
+			<vec2>24 184</vec2>
+			<int>324</int>
+			<vec2>-440 -552</vec2>
+			<int>336</int>
+			<vec2>-456 8</vec2>
+			<int>343</int>
+			<vec2>24 120</vec2>
+			<int>337</int>
+			<vec2>-296 152</vec2>
+			<int>338</int>
+			<vec2>-248 72</vec2>
+			<int>325</int>
+			<vec2>-168 360</vec2>
+			<int>339</int>
+			<vec2>-280 120</vec2>
+			<int>341</int>
+		</array>
+		<array name="doodads/walls/mine_granite/h_16.unit">
+			<vec2>-64 -544</vec2>
+			<int>431</int>
+			<vec2>-432 -592</vec2>
+			<int>430</int>
+			<vec2>0 -512</vec2>
+			<int>428</int>
+			<vec2>-176 272</vec2>
+			<int>429</int>
+			<vec2>-400 -496</vec2>
+			<int>427</int>
+			<vec2>-368 -480</vec2>
+			<int>434</int>
+			<vec2>-336 -464</vec2>
+			<int>433</int>
+			<vec2>-48 320</vec2>
+			<int>432</int>
+		</array>
+		<array name="doodads/walls/mine_granite/exit_end.unit"><vec2>80 -512</vec2><int>465</int></array>
+		<array name="doodads/walls/mine_granite/h.unit">
+			<vec2>-160 176</vec2>
+			<int>598</int>
+			<vec2>272 -544</vec2>
+			<int>599</int>
+			<vec2>-480 -368</vec2>
+			<int>600</int>
+			<vec2>320 -496</vec2>
+			<int>601</int>
+			<vec2>-176 16</vec2>
+			<int>602</int>
+			<vec2>-384 16</vec2>
+			<int>603</int>
+			<vec2>336 64</vec2>
+			<int>604</int>
+			<vec2>-112 -528</vec2>
+			<int>605</int>
+			<vec2>-272 0</vec2>
+			<int>606</int>
+			<vec2>256 80</vec2>
+			<int>607</int>
+			<vec2>-96 336</vec2>
+			<int>608</int>
+			<vec2>16 -512</vec2>
+			<int>609</int>
+			<vec2>144 -512</vec2>
+			<int>610</int>
+			<vec2>32 32</vec2>
+			<int>611</int>
+			<vec2>528 -192</vec2>
+			<int>613</int>
+			<vec2>-144 320</vec2>
+			<int>614</int>
+			<vec2>-304 -512</vec2>
+			<int>615</int>
+			<vec2>48 -512</vec2>
+			<int>588</int>
+			<vec2>-496 -96</vec2>
+			<int>612</int>
+			<vec2>480 -432</vec2>
+			<int>587</int>
+			<vec2>352 -496</vec2>
+			<int>586</int>
+			<vec2>-64 32</vec2>
+			<int>585</int>
+			<vec2>400 -64</vec2>
+			<int>584</int>
+			<vec2>-224 -16</vec2>
+			<int>583</int>
+			<vec2>-144 16</vec2>
+			<int>582</int>
+			<vec2>528 -336</vec2>
+			<int>581</int>
+			<vec2>432 -64</vec2>
+			<int>580</int>
+			<vec2>80 48</vec2>
+			<int>579</int>
+			<vec2>-256 -496</vec2>
+			<int>578</int>
+			<vec2>-224 -496</vec2>
+			<int>577</int>
+			<vec2>192 -528</vec2>
+			<int>576</int>
+			<vec2>-16 304</vec2>
+			<int>575</int>
+			<vec2>-48 -544</vec2>
+			<int>574</int>
+			<vec2>448 -432</vec2>
+			<int>589</int>
+			<vec2>304 64</vec2>
+			<int>569</int>
+			<vec2>-96 32</vec2>
+			<int>591</int>
+			<vec2>128 64</vec2>
+			<int>592</int>
+			<vec2>-144 -528</vec2>
+			<int>593</int>
+			<vec2>-224 256</vec2>
+			<int>594</int>
+			<vec2>480 -112</vec2>
+			<int>567</int>
+			<vec2>400 -448</vec2>
+			<int>568</int>
+			<vec2>-432 -32</vec2>
+			<int>570</int>
+			<vec2>176 32</vec2>
+			<int>571</int>
+			<vec2>-416 -592</vec2>
+			<int>572</int>
+			<vec2>-352 16</vec2>
+			<int>573</int>
+			<vec2>-176 -528</vec2>
+			<int>595</int>
+			<vec2>224 -528</vec2>
+			<int>596</int>
+			<vec2>224 80</vec2>
+			<int>590</int>
+			<vec2>-320 16</vec2>
+			<int>597</int>
+		</array>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016f6500000000000000000000007e0c333057000000000000000000694f034f47237d000000000000000061674f654405623f000000000000006f5d712c16662422420000000000002863194e024357686d1e0000000000000508327b103417696065000000000003061374581e1f5075203d000000003a202872371d53223614402f00000000316166100419673e176a1734000000000f54673a7e125414656f2d18000000000000002a4a4f06203d73305000000000000000247c68761e765e1628000000000000427e0c60014b01426e16</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004c000000000000000000000000004c001e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand_rough.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004b1f000000000000000000000000000000000000000000002f691d000000005d3d7a00000000000000000000000000000000000000000007236b25000000004f00000000000000000000000000000000000000000000752f7e00000000002b000000000000000000000000000000000000000000000049194300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_grass_tall.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007500000000000000000000000000000000000000000000000000000000000000650000000000000000000000000000000000000000000000000000000000004c69000000000000000000000000000000000000000000000000000000000000777c</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00006b2f19637d000000000000000000345c15197524447d00000000000000004a0b6b324e022f062f7d262d09000000647b276f607a50110741517129050000313174564c745e2558640f4b4a253f1741724d3356482863027d7878031a424e612977775b1921656a392e1276364031350f254f7744264065597d7d4d0e12316d38540a23726d1d3e536e3762077a67274206257670324e63693b501711491719655c2d683e4c6a1a1464166328191d1e1a4e68694019691004640e5b056851645a44494e6b46576f265c3e3478753120540624343d735a1975596244545a7d5d447a273e30051074367902054c0478585363417742316b421e21183f4d6d70</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025440000000000000000000000000000197b000000000000000000000000000066570000000000000000000000000000002400000000000000000000001838006a1d000000000000000004000000004b62433d00000000000071602200387a13274231000000000070362d7c072741253d00060000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand_rough.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037c000000000000000000000000000067370000000000000000000000000000030a00000000000000000000000000000000000000002b4400000000000000000000000000000000000000000000000000000000000000080a0000000000000000000000000000000000000000007300000000004a00000000000000000000000000000000000000000000000062700000003b000000000000000000000000000000000000000000000000001f00004b000000615b00000000000000000000000000000000000000003400000c00006f00000000000000000000000000004600000052280000000000631b000000000000000000000000000000000000000000000000320000</bytes>
+					<string name="tileset">tilesets/mine_granite_grass_tall.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003c3e000049300000000000000000000000000000000000000000000000000000037c0000313f633e7d3100000000000000000000000000000000000000000000451400007837723a1e7e0f0000000000000000000000000000004e4940306a4640650000466c137d4b5141070000000000000000003b5b69632b051c4d3b20323456000000000000002b7a510000000000137234592e772d6c010a0000000000000000000000000000337b2c000000007d1f767b55000005260e6d00000000000000000000000000006140700000786416537200000000032307450000000000000000000000000010392f0100461e753c5d000000000000000000000000000000000000000000003703641a10712b1b1a00000000000000000000000000000000000000000000005640194a7e26744f0000000000000000000000000000000000000000000000006c1e6055724b000000000000000000000000000000000000000000000000000000221163315e00000000000000000000000000000000000000000000000000000000475f1343000000000000000000000000000000000000000000000000000000001267</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000056554000000000000000000000000001f68401d6a0000000000000000000000062e081d7e4828000000000000000000751b23506201491d00000000000000005f5c147131717a6f6a0000000000000004165406194951387c6900000000000022434f2f083d4f2926327000000000004944750b380c3d4d0a387b0000000000360e4b234a6d6c09603935030000000055363d3d323b4110687a0d6a000000000a681a5e4c6a3a3c0a66651100000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e26000000000000000000000000000013000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand_rough.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000370b0000000000000000000000000000000000000000000000000000000000006f0800000000000000000000000000000000000000000000000000000000000028080000000000000000000000000000000000000000000000000000000000003713060000000000000000000000000000000000000000000000000000000000221923000000000000000000000000000000000000000000000000000000000012313c00000000000000000000000000000000000000000000000000000000004e0f250a00000000000000000000000000000000000000000000000000000000607e7c00000000000000000000000000000000000000000000000000000000004242000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000006b1147254709793c4c15000000000000304c1e71301c512d6d20000000000000024a6c715f54540d4e3b00000000000018252714640373656b630000000000001d085b15577d0c05670e000000000000001b5204041a3b425576000000000000000d6d2d65182f6c0778000000000000000039103d1f706b4d500000000000000000005e0411255f675b0000000000000000000079522f2c722900000000000000000000000000006e110000000000000000000000000000330100000000000000000000000000003c3f0000000000000000000000000000216b00000000000000000000000000004a470000000000000000000000000000692a</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004e000000000000000000000000000000000000000000000000000000000000007100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_grass_tall.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000024320000000000000000000000000000000000000000000000000000000000007e64000000000000000000000000000000000000000000000000000000000000400e000000000000000000000000000000000000000000000000000000000000003e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">37367d6b381e4f01753b1419162e0f25640f75392f7162575d2e19637d3128061528172524257518316c6a0d5a353b117b0d6d2a6a3d1b0c3e4e6e4540017e7e194a52334e67682f7716132a142227590c65057b702359151b19684b23102a50167c0145644212725a7e3d7e4e49545b11033d062e3274565d34394515136218045939010a6679352763287c3408243809437e70335b551619583f69104f3b4b79320a79276b472119486e3f75744d70377b031e7b09321801464e24713b63187e230f60411d78250f3a484077393e34774b585c510d3775404a463400000000645935220d50271b30792a710000000010111a272a4367481469570000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000003c3b766175593737156700000000004f631d294a1a020a6f550f000000002500002855572d2421603b0000000000002d18006e0e30004c67590000000000000042000871517b0009000000000000000000001044131c000000000000000000000000005500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000574760000000000000000000000000005e0000000000000000000000000000344300000000000000000000000000006c750000000000000000000000000000000000000000000000000000001a7617000000000000000000000000327e3c3c00002f72360000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand_rough.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000004400000000000000004d000000000000000000000000000000000000000000000000000000000000006c0000000000000000000000000000000000000000000000000000000000005c57000000000000000000000000000000000000000000000000000000000000250000122c4200000000000000000000000000000000000000000000000000000000004f5300000000000000000000000000000000000000000000000000000000751300000000000000000000000000000000000000000000000000000000000000460d0000007a0000000000000000000000480000000000000000000000000000005f6b00000000000000000000000077004663000000000000000000000000000000000000240000000000000000002811000000000000000000000000000000000000001800570000000000000000000000000000000000000000000000000000000000000f0c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033240e000000000000000000000000000000000000000000000000000000005b5d70700000000000000000000000000000000000000000000000000000000000000900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006f0000000000000000000000000000000000000000000000000000441537350f15340000000000000000000000000000000000000000000000000000000041005b00005e7b0000684d4e0000000000000000000000000000000000000000720d29000c2c2b0000321c1700007d00000000000000000000000000000000003f427241004b0600000045000000660000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_grass_tall.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">1209370a2300000000000000000000000000000000000000000000000000557159036d600f00000000000000000000000000000000000000000000000000526e38647d00000000000000000000000000000000000000000000000000000027746e0a7400000000000000000000000000000000000000000000000000132f5c552b180e4b0000000000000000000000000000000000000000000000004e384e601c3434760000000000000000000000000000000000000000000000634147444f424b735076000000000000000000000000000000000000000000006c6079790000504f6a69000000000000000000000000000000000000000000006a2e730900006b500f43000000000000000000000000000000000000000000507e192d0000003d4c61652c121400000000000000000000000000000000280e251313000000000004694004452b000000000000000000000000000000004b7616660000000000000016472b22295f282d0000000000000000001f0c31666c187e00000000000000000024772b392a3c07212300000000000000691e720e5776000000000000000000000014573577070463137e170000063b7c4d660e751c0000000000000000000000006f0c0e41194c581a490a0000090d033f22151e000000000000000000000000000000000000705f316b1500007405350d4d120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3c1b350c680762777d06785a0000000012322a5e627610772e102400000000007e6a517a0e254c224e433500000000000b3b2305464c557e4c6b4100000000002915473d6465734d775b2c0000000000552a61045801670e3a000000000000002a4d7737496957610c0000000000000072741d3e16545a5400000000000000005e3240642703221700000000000000004b1b6f5045320000000000000000000009600f11176200000000000000000000035a3b733500000000000000000000003d2e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">713d0000000000000000000000000000000000000000000000000000000000001479000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000034000000000000000000000000000000000000000000000000000000000000000700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000093d000000000000000000000000000000750000000000000000000000000000005a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">4b1a68250b6d6a45675b0000000000006961116f0d484f1d054a0000000000000d6b515f110f2814416700000000000000557a5e703574200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000115c000015464a4a0000000000000000000000711f5300000000000000000000000000004761000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_sand_rough.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000002f13000000113b0000000000000000000000000000000000000000000000000000000000000026000000000000000000000000000000000000000000000000000000000000683300000000000000000000000000000000000000000000000000000000000000007525000000000000000000000000000000000000000000000000000000000000664b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/mine_granite_grass_tall.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+	</array>
+</dict>

@@ -1,0 +1,230 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">construct</string>
+		<string name="team">player</string>
+		<int name="hp">500</int>
+		<int name="armor">0</int>
+		<int name="resistance">0</int>
+		<int name="aggro-range">999</int>
+		<float name="mp-scale-fact">1</float>
+		<string name="loot">actors/loot.sval:hero.unit</string>
+		
+		<string name="gore">effects/gibs/gib_iceblock.sval</string>
+		<string name="death-snd">event:/misc/iceblock_break</string>
+
+		<bool name="can-heal">false</bool>
+
+		<bool name="no-buffs">true</bool>
+		<bool name="impenetrable">true</bool>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">true</bool>
+		<bool name="must-see-target">false</bool>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>	
+		
+		<array name="skills">	
+		</array>			
+		
+	</behavior>
+
+	<scenes warlock="warlock1 warlock2 warlock3" ranger="ranger1 ranger2 ranger3" sorcerer="sorcerer1 sorcerer2 sorcerer3" wizard="wizard1 wizard2 wizard3" paladin="paladin1 paladin2 paladin3" priest="priest1 priest2 priest3" thief="thief1 thief2 thief3">
+		
+		<scene name="shared">
+			<minimap_sprite origin="2 2" texture="gui/minimap.png" frame="0 16 4 4" />
+			<data name="health"><int>10000</int></data>
+			<collision static="true">
+				<circle aim-through="true" radius="9" />
+			</collision>				
+			<sprite ulayer="1" origin="9 11" looping="true" texture="./iceblock_small.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 21 19</frame>
+			</sprite>
+			<sprite ulayer="-1" origin="7 12" looping="true" texture="./iceblock_small.png" material="system/default.mats:default-noxray">
+				<frame time="150">21 0 14 14</frame>
+			</sprite>
+			<sprite ulayer="-2" origin="10 8" layer="-15" looping="true" texture="./iceblock_small.png" material="system/default.mats:floor">
+				<frame time="150">24 14 21 18</frame>
+			</sprite>			
+			<sprite ulayer="-3" origin="11 10" layer="-52" looping="true" texture="./iceblock_small.png" material="system/default.mats:floor">
+				<frame time="150">0 19 24 22</frame>
+			</sprite>	
+			
+			<light pos="0 -5">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="3" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="75 150 250 10" />
+				</colors>
+			</light>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="50 125 200 0" />
+				</colors>
+			</light>			
+						
+		</scene>
+		
+		<scene name="paladin1">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="paladin2">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">20 0 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="paladin3">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">40 0 20 18</frame>
+			</sprite>
+		</scene>
+
+		<scene name="wizard1">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 18 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="wizard2">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">20 18 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="wizard3">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">40 18 20 18</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="sorcerer1">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 36 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="sorcerer2">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">20 36 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="sorcerer3">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">40 36 20 18</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="thief1">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 54 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="thief2">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">20 54 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="thief3">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">40 54 20 18</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="warlock1">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">60 0 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="warlock2">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">80 0 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="warlock3">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">100 0 20 18</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranger1">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">60 18 20 18</frame>
+			</sprite>
+		</scene>	
+		<scene name="ranger2">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">80 18 20 18</frame>
+			</sprite>
+		</scene>	
+		<scene name="ranger3">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">100 18 20 18</frame>
+			</sprite>
+		</scene>	
+		
+		<scene name="priest1">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">60 36 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="priest2">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">80 36 20 18</frame>
+			</sprite>
+		</scene>
+		<scene name="priest3">
+			<scene src="shared" />
+			<sprite origin="11 17" looping="true" texture="./iceblock_heroes.png" material="system/default.mats:default-noxray">
+				<frame time="150">100 36 20 18</frame>
+			</sprite>
+		</scene>
+
+	</scenes>
+</unit>

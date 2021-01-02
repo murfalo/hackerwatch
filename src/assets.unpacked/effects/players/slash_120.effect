@@ -1,0 +1,14 @@
+<effect looping="false" layer="2">
+	<param name="angle" default="0" />
+	
+	<sprite looping="false" origin="12 12" texture="./slash.png" material="effects/effects.mats:add-glowing"
+		scale-x="1"
+		scale-y="1"
+		angle="angle"
+		color-a="2*(1-t)"
+		pos-y="-5"
+	>
+		<frame time="25">0 48 24 24</frame>
+		<frame time="25">0 72 24 24</frame>
+	</sprite>
+</effect>

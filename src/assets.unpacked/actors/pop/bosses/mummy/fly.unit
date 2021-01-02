@@ -1,0 +1,82 @@
+<unit netsync="position" slot="actor" layer="100">
+	<behavior class="CompositeActorBehavior">
+		<bool name="counts-as-kill">false</bool>
+		<string name="type">beast</string>
+		<int name="hp">1</int>
+		<float name="evade-physical">0.75</float>
+		<float name="evade-magical">0.75</float>
+		<string name="death-snd">event:/enemy/boss_mummy/flies-death</string>
+		<string name="gore">effects/gibs/gib_bat_1.sval</string>
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">false</bool>
+		<array name="buffs-immune-tags">
+			<string>bleeding</string>
+			<string>confusion</string>
+			<string>debuff</string>
+			<string>disarm</string>
+			<string>root</string>
+			<string>stun</string>
+			%//<string>slow</string>
+			%//<string>fire</string>
+			<string>poison</string>
+		</array>
+		<dict name="movement">
+			<string name="class">CirclingMovement</string>
+			<string name="anim-idle">idle</string>
+			<string name="anim-walk">idle</string>
+			<bool name="flying">true</bool>
+			<float name="speed">2</float>
+			%//<float name="roaming">0.1</float>
+			<int name="dist">10</int>
+		</dict>
+		<array name="skills">
+			<dict>
+				<string name="class">EnemyMeleeStrike</string>
+				<string name="anim">idle</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">400</int>
+				<int name="range">15</int>
+				<int name="arc">90</int>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">10</int>
+					<bool name="melee">true</bool>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">idle</string>
+				<int name="cooldown">15000</int>
+				<int name="castpoint">0</int>
+				<int name="range">9000</int>
+				<bool name="must-see">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 1 1"/>
+			<collision static="false">
+				<circle offset="0 0" sensor="false" shoot-through="false" aim-through="true" radius="7" />
+			</collision>
+			<sprite origin="9 9" looping="true" texture="./fly.png" material="system/default.mats:default-noxray">
+				<frame time="80">0 0 18 18</frame>
+				<frame time="80">18 0 18 18</frame>
+				<frame time="80">36 0 18 18</frame>
+				<frame time="80">54 0 18 18</frame>
+				<frame time="80">72 0 18 18</frame>
+				<frame time="80">90 0 18 18</frame>
+			</sprite>
+			<effect ulayer="-1" src="./fly_swarm.effect"/>
+		</scene>
+	</scenes>
+
+</unit>

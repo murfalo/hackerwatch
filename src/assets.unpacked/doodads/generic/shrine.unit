@@ -1,0 +1,51 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-8 -8 16 16</rect>
+			</collision>
+			<sprite origin="8 28" texture="./shrine.png" material="system/default.mats:default">
+				<frame>0 0 16 36</frame>
+			</sprite>
+			
+			<shadow darkness="1">
+				<rect cast-len="20">-8 -8 16 16</rect>
+			</shadow>
+		</scene>
+		
+		<scene name="on" trigger-snd="event:/misc/shrine">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="48 66 12 12" />
+			<scene src="shared" />
+			<sprite origin="8 28" looping="false" ulayer="5" texture="./shrine.png" material="system/default.mats:bright">
+				<frame time="70">0 36 16 35</frame>
+				<frame time="70">16 36 16 35</frame>
+				<frame time="70">32 36 16 35</frame>
+				<frame time="70">48 36 16 35</frame>
+				<frame time="70">64 36 16 35</frame>
+				<frame time="70">80 36 16 35</frame>
+				<frame time="70">96 36 16 35</frame>
+				<frame time="70">112 36 16 35</frame>
+				<frame time="70">128 36 16 35</frame>
+				<frame time="70">144 36 16 35</frame>
+				<frame time="70">160 36 16 35</frame>
+				<frame time="70">0 72 16 35</frame>
+				<frame time="70">16 72 16 35</frame>
+				<frame time="70">32 72 16 35</frame>
+				<frame time="70">48 72 16 35</frame>
+				<frame time="70">64 72 16 35</frame>
+				<frame time="70">80 72 16 35</frame>
+				<frame time="70">96 72 16 35</frame>
+				<frame time="70">112 72 16 35</frame>
+				<frame time="70">128 72 16 35</frame>
+				<frame time="70">144 72 16 35</frame>
+				<frame time="70">160 72 16 35</frame>
+				<frame time="70">176 72 16 35</frame>	
+			</sprite>
+		</scene>
+		
+		<scene name="off">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="48 54 12 12" />
+			<scene src="shared" />
+		</scene>
+	</scenes>
+</unit>

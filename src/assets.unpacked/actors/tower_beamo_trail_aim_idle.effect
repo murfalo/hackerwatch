@@ -1,0 +1,47 @@
+<effect looping="true" layer="5" bounds="750 750">
+	<param name="angle" default="0" />
+	<param name="height" default="100" />
+	<param name="length" default="600" />
+	
+	
+	%// Aim
+	<sprite origin="0 0.5" texture="effects/white_singlepixel_gradient.png" material="effects/effects.mats:default-glowing"
+		
+		angle="angle"
+		
+		pos-x="cos(angle)"
+		pos-y="sin(angle)-height"
+		
+		color-r="1"
+		color-g="0"
+		color-b="0"
+		color-a="((t*1.2)+18)/20"
+		
+		
+		scale-x="length/64"
+		scale-y="1+(t * 0.2)"
+		>
+		<frame time="200">0 0 64 1</frame>
+	</sprite>
+	
+	%// AimGlow
+	<sprite origin="0 0.5" texture="effects/white_singlepixel_gradient.png" material="effects/effects.mats:default-glow"
+		
+		angle="angle"
+		
+		pos-x="cos(angle)"
+		pos-y="sin(angle)-height"
+		%//pos-y="-height"
+		
+		color-r="1"
+		color-g="0"
+		color-b="0"
+		color-a="((t*1.2)+18)/20"
+		
+		scale-x="length/64"
+		scale-y="1+(t * 0.5)"
+		>
+		<frame time="200">0 0 64 1</frame>
+	</sprite>
+	
+</effect>

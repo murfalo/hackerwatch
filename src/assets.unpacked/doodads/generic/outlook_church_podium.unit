@@ -1,0 +1,26 @@
+<unit slot="doodad">
+	<scenes podium-fancy="1" podium-filthy="2">
+		<scene name="shared">		
+			<collision static="true">
+				<rect>-4 -7 7 10</rect>
+			</collision>	
+			<sprite origin="-3 14" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">269 124 7 17</frame>
+			</sprite>	
+		</scene>
+		
+		<scene name="1">
+			<scene src="shared" />	
+			<sprite origin="4 14" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">276 124 7 17</frame>
+			</sprite>	
+		</scene>
+		<scene name="2">		
+			<scene src="shared" />	
+			<sprite origin="4 14" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">262 124 7 17</frame>
+			</sprite>	
+		</scene>
+		
+	</scenes>
+</unit>

@@ -1,0 +1,179 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="system/system.fnt">
+			<array>
+				<vec2>72 72</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">9x9</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>144 0</vec2>
+				<int>3</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 144</vec2>
+				<int>4</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>144 144</vec2>
+				<int>5</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>17</int>
+			<vec3>-96 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>false</string>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckSpawnDistance</string>
+			<int>7</int>
+			<vec3>-56 72 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">300</int>
+				<int name="Function">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>8</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>10</int><int>11</int><int>12</int><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>9</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>start</string>
+			<array><int>13</int><int>0</int><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>10</int>
+			<vec3>160 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/9x9_block.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>11</int>
+			<vec3>192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block2</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/9x9_block_2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>12</int>
+			<vec3>224 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block3</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/9x9_block_3.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>13</int>
+			<vec3>-64 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rift</string>
+			<dict>
+				<string name="Flag">rift1</string>
+				<array name="OnTrue"><int>16</int></array>
+				<array name="OnFalse"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>14</int>
+			<vec3>160 96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cursed_djinn</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/9x9_cursed_djinn.pfb</string>
+				<int name="Chance">1000</int>
+				<string name="Flag">rift1</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>-96 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>14</int><int>10</int><int>11</int><int>12</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>16</int><vec3>-32 -96 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>true</string></array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

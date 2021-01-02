@@ -1,0 +1,58 @@
+<unit slot="doodad">
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/player/ranger/bomb_explode</string>
+	
+		<int name="delay">1000</int>
+		
+		<dict name="action">
+			<string name="class">Explode</string>
+			<string name="fx">items/projectiles/bomb_explosion.effect</string>
+			
+			<int name="radius">32</int>
+			<float name="dist-scaling">10</float>
+			<float name="team-dmg">0</float>
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="physical">50</int>
+					<int name="magical">50</int>
+				</dict>
+			</array>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<sprite origin="16 19" looping="false" texture="./bomb.png" material="system/default.mats:projectile-player">
+				<frame time="100">0 0 32 32</frame>
+				<frame time="100">32 0 32 32</frame>
+				<frame time="100">64 0 32 32</frame>
+				<frame time="100">96 0 32 32</frame>
+				<frame time="100">128 0 32 32</frame>
+				<frame time="100">160 0 32 32</frame>
+				<frame time="100">0 32 32 32</frame>
+				<frame time="100">32 32 32 32</frame>
+				<frame time="100">64 32 32 32</frame>
+			</sprite>
+
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				
+				<length value="100" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="0 160 0 0" />
+				</colors>
+			</light>
+		</scene>
+	</scenes>
+</unit>

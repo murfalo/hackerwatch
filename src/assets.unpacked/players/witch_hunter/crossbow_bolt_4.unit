@@ -1,0 +1,40 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		
+		<float name="speed">12</float>
+		<int name="ttl">360</int>
+		
+		<int name="penetration">999</int>
+		<float name="penetration-intensity-mul">0.5</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">15</int>
+				<float name="armor-mul">0.8</float>
+			</dict>
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/animations/impact_metal_1.effect</string>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/player/witch_hunter/crossbow_hit</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<collision static="true">
+				<circle offset="0 0" radius="3.5" projectile="true" />
+			</collision>
+			<effect src="players/witch_hunter/crossbow_bolt.effect" />
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,300 @@
+<unit netsync="position" layer="0" save="false">
+	<behavior class="PlayerOwnedSummon">
+	
+		<string name="team">player</string>
+		<string name="type">beast</string>
+		<int name="hp">1</int>
+		<float name="evade-physical">0.75</float>
+		<float name="evade-magical">0.75</float>
+		
+		<string name="death-snd">event:/player/witch_hunter/crow_death</string>
+		<string name="gore">effects/gibs/gib_bat_1.sval</string>
+		
+		<int name="ttl">5000</int>
+		<int name="aggro-range">175</int>
+		<bool name="must-see-target">true</bool>
+		<bool name="no-buffs">true</bool>
+		
+		<dict name="movement">
+			<string name="class">MeleeFollowerMovement</string>
+			<string name="anim-idle">walk 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<bool name="flying">false</bool>
+			<float name="speed">4</float>
+			<float name="run-back-speed">6</float>
+			<float name="roaming">0.3</float>
+			<int name="roaming-distance">30</int>
+			<int name="run-back-distance">125</int>
+		</dict>
+		
+		<array name="skills">
+			<dict>
+				<string name="class">EnemyMeleeStrike</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown">200</int>
+				<int name="castpoint">350</int>
+				<int name="range">20</int>
+				<int name="arc">90</int>
+				
+				<array name="effects">
+					<dict name="effect">
+						<string name="class">Damage</string>
+						<int name="physical">2</int>
+						<bool name="melee">true</bool>
+					</dict>
+					<dict name="effect">
+						<string name="class">SpawnEffect</string>
+						<string name="effect">effects/animations/impact_metal_2.effect</string>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/player/witch_hunter/crow_hit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="100" origin="3 3" texture="gui/minimap.png" frame="240 148 6 6"/>
+			
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="2"/>
+			</collision>
+			
+			<sprite origin="3 -5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>0 8 7 7</frame>
+			</sprite>
+			<!-- <effect layer="1" src="./crow_marker.effect" /> -->
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="350" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="100 100 100 0" />
+				</colors>
+			</light>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">0 0 13 13</frame>
+				<frame time="100">0 13 13 13</frame>
+				<frame time="100">0 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">13 0 13 13</frame>
+				<frame time="100">13 13 13 13</frame>
+				<frame time="100">13 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">26 0 13 13</frame>
+				<frame time="100">26 13 13 13</frame>
+				<frame time="100">26 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">39 0 13 13</frame>
+				<frame time="100">39 13 13 13</frame>
+				<frame time="100">39 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">52 0 13 13</frame>
+				<frame time="100">52 13 13 13</frame>
+				<frame time="100">52 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">65 0 13 13</frame>
+				<frame time="100">65 13 13 13</frame>
+				<frame time="100">65 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">78 0 13 13</frame>
+				<frame time="100">78 13 13 13</frame>
+				<frame time="100">78 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">91 0 13 13</frame>
+				<frame time="100">91 13 13 13</frame>
+				<frame time="100">91 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">0 0 13 13</frame>
+				<frame time="100">0 13 13 13</frame>
+				<frame time="100">0 26 13 13</frame>
+			</sprite>
+		</scene>
+
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">13 0 13 13</frame>
+				<frame time="100">13 13 13 13</frame>
+				<frame time="100">13 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">26 0 13 13</frame>
+				<frame time="100">26 13 13 13</frame>
+				<frame time="100">26 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">39 0 13 13</frame>
+				<frame time="100">39 13 13 13</frame>
+				<frame time="100">39 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">52 0 13 13</frame>
+				<frame time="100">52 13 13 13</frame>
+				<frame time="100">52 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">65 0 13 13</frame>
+				<frame time="100">65 13 13 13</frame>
+				<frame time="100">65 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">78 0 13 13</frame>
+				<frame time="100">78 13 13 13</frame>
+				<frame time="100">78 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="100">91 0 13 13</frame>
+				<frame time="100">91 13 13 13</frame>
+				<frame time="100">91 26 13 13</frame>
+			</sprite>
+		</scene>
+
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">0 39 13 13</frame>
+				<frame time="175">0 52 13 13</frame>d
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">13 39 13 13</frame>
+				<frame time="175">13 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">26 39 13 13</frame>
+				<frame time="175">26 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">39 39 13 13</frame>
+				<frame time="175">39 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">52 39 13 13</frame>
+				<frame time="175">52 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">65 39 13 13</frame>
+				<frame time="175">65 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">78 39 13 13</frame>
+				<frame time="175">78 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="false" texture="players/witch_hunter/crow.png" material="system/default.mats:ally">
+				<frame time="175">91 39 13 13</frame>
+				<frame time="175">91 52 13 13</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,57 @@
+<gui>
+	<sprites>
+		<sprite name="icon-prestige" texture="gui/icons.png"><frame>217 39 9 12</frame></sprite>
+
+		<sprite name="icon-gold-gain" texture="gui/icons.png"><frame>49 52 11 10</frame></sprite>
+		<sprite name="icon-exp" texture="gui/icons.png"><frame>63 17 12 12</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- Info -->
+			<scrollrect id="container" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox" padding="4 1" width="366" height="194">
+				<text font="gui/fonts/arial11.fnt" width="362" text=".town.mercenaryledger.info" />
+
+				<!-- Title table header -->
+				<grouprect id="info" inner="true" flow="vbox" anchor="0.5 0" offset="0 6" padding="2 2" spriteset="gui/variable/bigwindow_borders.sval">
+					<group inner="true" flow="hbox">
+						<rect width="100" height="18" spriteset="gui/variable/headline_hor.sval">
+							<text font="gui/fonts/arial11_bold.fnt" text=".town.mercenaryledger.info.title" anchor="0.5 0.5" />
+						</rect>
+						<rect width="80" height="18" spriteset="gui/variable/headline_hor.sval">
+							<sprite src="icon-prestige" anchor="0.5 0.5" />
+						</rect>
+						<rect width="80" height="18" spriteset="gui/variable/headline_hor.sval">
+							<group inner="true" anchor="0.5 0.5" offset="0 1" flow="hbox" spacing="2">
+								<sprite src="icon-gold-gain" />
+								<sprite src="icon-exp" offset="0 -1" />
+							</group>
+						</rect>
+					</group>
+				</grouprect>
+			</scrollrect>
+
+			<!-- Item templates -->
+			<group id="title-template" visible="false" inner="true" flow="hbox">
+				<rect width="100" height="18" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+					<text id="title" anchor="0.5 0.5" font="gui/fonts/arial11.fnt" hint="name" />
+				</rect>
+				<rect width="80" height="18" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+					<text id="points" anchor="0.5 0.5" font="gui/fonts/arial11.fnt" hint="number-mid" />
+				</rect>
+				<rect width="80" height="18" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+					<text id="goldgain" anchor="0.5 0.5" font="gui/fonts/arial11.fnt" hint="number-mid" />
+				</rect>
+			</group>
+
+			<!-- Separators -->
+			<rect width="3" height="194" offset="366 0" spriteset="gui/variable/3pxbar_vert.sval" />
+			<rect width="3" height="194" offset="377 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="container" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+		</group>
+	</doc>
+</gui>

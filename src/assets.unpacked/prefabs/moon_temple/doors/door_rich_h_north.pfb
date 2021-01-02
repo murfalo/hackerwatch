@@ -1,0 +1,293 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/special/color_temple_rich_32.unit"><vec2>-8 -8</vec2><int>16</int><vec2>8 -8</vec2><int>14</int><vec2>-40 -8</vec2><int>15</int></array>
+		<array name="doodads/walls/temple_rich/h_16.unit"><vec2>32 16</vec2><int>10</int><vec2>16 16</vec2><int>13</int><vec2>-48 16</vec2><int>12</int><vec2>-32 16</vec2><int>11</int></array>
+		<array name="doodads/walls/temple_rich/h.unit"><vec2>-16 16</vec2><int>9</int></array>
+		<array name="system/system.fnt">
+			<array>
+				<vec2>0 16</vec2>
+				<int>2</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">dr_h_n</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_rich/_deco_lamp.unit">
+			<array>
+				<vec2>0 32</vec2>
+				<int>1</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="prefabs/prefab_marker_16.unit">
+			<vec2>0 16</vec2>
+			<int>3</int>
+			<vec2>16 16</vec2>
+			<int>4</int>
+			<vec2>32 16</vec2>
+			<int>5</int>
+			<vec2>-48 16</vec2>
+			<int>6</int>
+			<vec2>-32 16</vec2>
+			<int>7</int>
+			<vec2>-16 16</vec2>
+			<int>8</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnPrefab</string>
+			<int>17</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>door_h</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/doors/door_h_rich.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>18</int>
+			<vec3>-64 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>15</int><int>16</int><int>14</int><int>9</int><int>1</int><int>13</int><int>10</int><int>11</int><int>12</int></array>
+			</dict>
+			<array><int>28</int><int>0</int><int>25</int><int>0</int><int>27</int><int>0</int><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>19</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>create_door</string>
+			<dict>
+				<string name="EventName">create_door</string>
+			</dict>
+			<array>
+				<int>17</int>
+				<int>0</int>
+				<int>24</int>
+				<int>0</int>
+				<int>18</int>
+				<int>0</int>
+				<int>23</int>
+				<int>0</int>
+				<int>34</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>20</int>
+			<vec3>0 32 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_setup</string>
+			<dict>
+				<string name="EventName">room_setup</string>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>21</int>
+			<vec3>-32 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>22</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_cleared</string>
+			<dict>
+				<string name="EventName">room_cleared</string>
+			</dict>
+			<array><int>21</int><int>0</int><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>23</int>
+			<vec3>96 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ClearScripts</string>
+			<dict>
+				<array name="Units"><int>19</int><int>17</int><int>18</int><int>20</int><int>24</int></array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>24</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>door_rich_h</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/doors/door_rich_h.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>25</int>
+			<vec3>-48 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">doodads/walls/temple_rich/crn_se.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>26</int>
+			<vec3>32 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">doodads/walls/temple_rich/crn_sw.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>32 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">doodads/walls/temple_rich/v_16.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>28</int>
+			<vec3>-48 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">doodads/walls/temple_rich/v_16.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>29</int>
+			<vec3>32 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>30</int>
+			<vec3>0 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>31</int><int>32</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>31</int>
+			<vec3>-32 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat_done</string>
+			<dict>
+				<string name="EventName">great_threat_done</string>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>32</int>
+			<vec3>32 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat</string>
+			<dict>
+				<string name="EventName">great_threat</string>
+			</dict>
+			<array><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>33</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>create_door_hidden</string>
+			<dict>
+				<string name="EventName">create_door_hidden</string>
+			</dict>
+			<array><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>34</int>
+			<vec3>0 0 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>door_h_hidden</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/doors/door_h_hidden.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>35</int>
+			<vec3>-128 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>17</int><int>34</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

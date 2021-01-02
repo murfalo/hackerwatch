@@ -1,0 +1,126 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>4 8</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">16</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/pop_writer_quill.unit"><vec2>-6 0</vec2><int>13</int></array>
+		<array name="doodads/generic/pop_writer_book.unit"><vec2>-4 6</vec2><int>14</int></array>
+		<array name="doodads/generic/npc_writer_desert.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_table_book.unit">
+			<array>
+				<vec2>3 1</vec2>
+				<int>5</int>
+				<dict>
+					<string name="start">open-fancy</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/speech_bubble_generic.unit"><vec2>0 0</vec2><int>7</int></array>
+		<array name="doodads/generic/outlook_table_glass.unit">
+			<array>
+				<vec2>4 7</vec2>
+				<int>16</int>
+				<dict>
+					<int name="layer">5</int>
+					<string name="start">goblet</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_table_small.unit"><vec2>1 10</vec2><int>6</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>8</int>
+			<vec3>-48 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mrbookman.1Ra</string>
+				<int name="HeightOffset">1</int>
+				<string name="Title">.dialogue.town.npc.mrbookman.name</string>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>9</int>
+			<vec3>64 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">5</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>10</int>
+			<vec3>0 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>8</int><int>11</int><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>11</int>
+			<vec3>0 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mrbookman.1Rb</string>
+				<int name="HeightOffset">1</int>
+				<string name="Title">.dialogue.town.npc.mrbookman.name</string>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>12</int>
+			<vec3>48 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mrbookman.1Rc</string>
+				<int name="HeightOffset">1</int>
+				<string name="Title">.dialogue.town.npc.mrbookman.name</string>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

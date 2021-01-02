@@ -1,0 +1,50 @@
+<unit slot="doodad">
+	<scenes off="off" on="on" disabled="disabled">
+	
+		<scene name="shared">
+		<collision>
+			<circle radius="15" offset="0 -5"/>
+		</collision>
+		
+		</scene>
+		
+		<scene name="off">
+			<scene src="shared"/>
+			<minimap_sprite origin="8 6" layer="500" texture="gui/minimap.png" frame="88 20 16 10"/>
+			<sprite ulayer="0" origin="17 28" texture="./elevator.png" material="system/default.mats:default-noxray"> <!--bowl -->
+				<frame>0 0 33 39</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="on" trigger-snd="event:/misc/elevator">
+			<scene src="shared"/>
+			<minimap_sprite origin="8 6" layer="500" texture="gui/minimap.png" frame="88 30 16 10"/>
+			<effect ulayer="2" delay="500" src="./glow.effect"/>
+			<effect ulayer="2" pos="0 -10" delay="2000" src="./explosion_snow.effect"/>
+			<sprite ulayer="1" looping="false" origin="17 28" texture="./elevator.png" material="system/default.mats:default-noxray"> <!-- frost -->
+				<frame time="2000"> 0 0 0 0 </frame>
+				<frame time="100"> 91 0 33 36 </frame>
+			</sprite>
+			<sprite ulayer="1" looping="false" origin="17 28" texture="./elevator.png" material="system/default.mats:default-noxray"> <!-- ore -->
+				<frame time="2000">33 0 33 39</frame>
+				<frame time="10">0 0 0 0</frame>
+			</sprite>
+			<sprite ulayer="0" origin="17 28" texture="./elevator.png" material="system/default.mats:default-noxray"> <!--bowl -->
+				<frame>0 0 33 39</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="disabled">
+			<scene src="shared"/>
+			<minimap_sprite origin="8 6" layer="500" texture="gui/minimap.png" frame="88 30 16 10"/>
+			
+			<sprite ulayer="1" looping="false" origin="17 28" texture="./elevator.png" material="system/default.mats:default-noxray"> <!-- frost -->
+				<frame time="100"> 91 0 33 36 </frame>
+			</sprite>
+			<sprite ulayer="0" origin="17 28" texture="./elevator.png" material="system/default.mats:default-noxray"> <!--bowl -->
+				<frame>0 0 33 39</frame>
+			</sprite>
+			
+		</scene>
+	</scenes>
+</unit>

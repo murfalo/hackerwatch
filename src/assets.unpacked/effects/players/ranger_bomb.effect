@@ -1,0 +1,69 @@
+<effect looping="false">
+	<param name="radius" default="0" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_player_bomb.sval</string>
+	</data>	
+	
+	<sprite origin="16 19" looping="false" texture="players/ranger/bomb.png" material="effects/effects.mats:lit">
+		<frame time="50">128 32 32 32</frame>
+		<frame time="50">160 32 32 32</frame>
+		<frame time="33">160 32 32 32</frame>
+		<frame time="33">192 32 32 32</frame>
+		<frame time="33">224 32 32 32</frame>
+	</sprite>
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * radius * t" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0.75" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * radius * 3) + 10" />
+		
+		<color-r value="1 - t" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+	
+</effect>

@@ -1,0 +1,24 @@
+<unit slot="doodad">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">500</int>
+		<int name="ttl">-1</int>
+		
+		<dict name="effect">
+			<string name="class">ApplyBuff</string>
+			<string name="buff">actors/buffs.sval:spider-web</string>
+		</dict>
+	</behavior>		
+	
+	<scenes>
+		<scene>
+			%if EDITOR
+			<sprite layer="4" origin="16 16" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			%endif
+			<collision static="true">
+				<circle sensor="true" aim-through="true" radius="16" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

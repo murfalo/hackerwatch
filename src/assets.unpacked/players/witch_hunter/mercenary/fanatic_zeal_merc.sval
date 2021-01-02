@@ -1,0 +1,29 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">witch_hunter</string>
+	<string name="name">.skills.witch_hunter.fanatic-zeal</string>
+	<string name="description">.skills.witch_hunter.fanatic-zeal.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 192 24 24</vec4>
+	</array>
+
+	<int name="cost">17</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerCrits</string>
+
+			<int name="max-count">10</int>
+			<int name="expire-time">5000</int>
+			<float name="crit-chance">0.02</float>
+
+			<array name="hud-icon">
+				<string>gui/icons_buffs.png</string>
+				<int>100</int><vec4>24 60 12 12</vec4>
+			</array>
+		</dict>
+	</dict>
+</dict>

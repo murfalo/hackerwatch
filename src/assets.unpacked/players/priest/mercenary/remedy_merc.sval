@@ -1,0 +1,21 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">priest</string>
+	<string name="name">.skills.priest.remedy</string>
+	<string name="description">.skills.priest.remedy.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 96 24 24</vec4>
+	</array>
+
+	<int name="cost">18</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<dict name="modifier">
+			<string name="class">Modifiers::HealthGain</string>
+			<float name="scale-all">2</float>
+		</dict>
+	</dict>
+</dict>

@@ -1,0 +1,181 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/trap_turret_flame.unit"><vec2>0 0</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>TimerTrigger</string>
+			<int>2</int>
+			<vec3>0 -80 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">50</int>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>3</int>
+			<vec3>0 -13 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>N</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Direction">270</int>
+				<int name="Spread">40</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>4</int>
+			<vec3>0 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>10</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>5</int>
+			<vec3>112 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>zero clock</string>
+			<dict>
+				<array name="TimerTriggers"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>6</int>
+			<vec3>0 -304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>9</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>7</int>
+			<vec3>0 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>2</int></array>
+				<int name="TriggerTimes">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>8</int>
+			<vec3>0 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">2300</int>
+			</dict>
+			<array><int>7</int><int>0</int><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>9</int>
+			<vec3>-48 -272 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>deactivate</string>
+			<array><int>13</int><int>0</int><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>10</int>
+			<vec3>48 -272 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>activate</string>
+			<array><int>14</int><int>0</int><int>6</int><int>0</int><int>5</int><int>5</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>11</int>
+			<vec3>128 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate all</string>
+			<dict>
+				<string name="EventName">all_traps_activate</string>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>12</int>
+			<vec3>-128 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate all</string>
+			<dict>
+				<string name="EventName">all_traps_deactivate</string>
+			</dict>
+			<array><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>13</int>
+			<vec3>-48 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_timer</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>14</int>
+			<vec3>48 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_timer</string>
+			<dict>
+				<array name="Scripts"><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>15</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>flamethrower_sfx</string>
+			<dict>
+				<string name="Sound">event:/misc/trap_flamethrower</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

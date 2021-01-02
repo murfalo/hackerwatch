@@ -1,0 +1,60 @@
+<unit slot="doodad">
+	<behavior class="StateAnimations">
+		<string name="default">default</string>
+		<array name="transitions">
+			<dict>
+				<string name="from">off</string>
+				<string name="to">disabled</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes default="default" on="on" off="off">	
+		<scene name="default">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true">
+				<circle offset="8 8" radius="8" />
+			</collision>
+			<sprite origin="-16 32" material="system/default.mats:shadow" texture="./base.png">
+				<frame>80 129 16 47</frame>
+			</sprite> 
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:proj-wall">
+				<frame>64 128 16 48</frame>
+			</sprite>
+		</scene>
+		<scene name="on">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true">
+				<circle offset="8 8" radius="8" />
+			</collision>
+			<effect ulayer="1" src="./_custom_single_round_on.effect"/> 
+			<effect ulayer="1" src="./_custom_single_round_spawn_dust.effect"/> 
+			<sprite looping="false" origin="-16 32" material="system/default.mats:shadow" texture="./base.png">
+				<frame time="2001">0 0 0 0</frame>
+				<frame>80 129 16 47</frame>
+			</sprite> 
+			<sprite looping="false" origin="0 32" texture="./base.png" material="system/default.mats:proj-wall">
+				<frame time="2001">0 0 0 0</frame>
+				<frame>64 128 16 48</frame>
+			</sprite>
+		</scene>
+		<scene name="off">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true">
+				<circle offset="8 8" radius="8" />
+			</collision>
+			<effect ulayer="1" src="./_custom_single_round_off.effect"/> 
+			<effect ulayer="1" src="./_custom_single_round_spawn_dust.effect"/> 
+			<sprite layer="-10" looping="false" origin="0 1" texture="./base.png" material="system/default.mats:floor">
+				<frame time="2000">0 0 0 0</frame>
+				<frame time="30">97 111 16 17</frame>
+			</sprite>
+		</scene>
+		<scene name="disabled">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<sprite layer="-10"  origin="0 1" texture="./base.png" material="system/default.mats:floor">
+				<frame>97 111 16 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

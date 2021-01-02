@@ -1,0 +1,23 @@
+<unit slot="doodad">
+	<scenes guard-sw="guard-sw" guard-se="guard-se">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" radius="5" />
+			</collision>
+		</scene>
+
+		<scene name="guard-sw">
+			<scene src="shared" />
+			<sprite origin="8 14" looping="true" texture="doodads/generic/guardian_statue.png" material="system/default.mats:default">
+				<frame>48 0 16 22</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="guard-se">
+			<scene src="shared" />
+			<sprite origin="8 14" looping="true" texture="doodads/generic/guardian_statue.png" material="system/default.mats:default">
+				<frame>36 21 16 22</frame>
+			</sprite>
+		</scene>
+  </scenes>
+</unit>

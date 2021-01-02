@@ -1,0 +1,285 @@
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+			
+		<int name="experience-reward">25</int>		
+		<int name="hp">500</int>
+
+		<int name="aggro-range">350</int>
+
+		<int name="explode-perk-group">4</int>
+		<string name="aggro-snd">event:/enemies/spider/aggro</string>
+		<string name="hurt-snd">event:/enemies/spider/hurt</string>
+		<string name="death-snd">event:/enemies/spider/death</string>
+		<string name="gore">effects/gibs/actors/gib_spider.sval</string>
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			<dict name="footsteps">
+				<string name="walk-snd">event:/enemies/spider/walk</string>
+				<int name="snd-delay">2000</int>
+				<int name="fx-delay">60</int>
+				<int name="feet-distance">15</int>
+				<int name="feet-distance-far">9</int>
+			</dict>
+			
+			<float name="speed">2.0</float>
+		
+		</dict>
+		<array name="skills">
+			<dict>
+				<string name="class">EnemyMeleeStrike</string>
+				<int name="cooldown">500</int>
+				<int name="range">25</int>
+				<string name="anim">attack 8</string>
+				<int name="castpoint">150</int>
+				<string name="snd">event:/enemies/spider/melee</string>
+				<int name="arc">90</int>
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="dmg">20</int>
+					<bool name="melee">true</bool>
+					<string name="dmg-type">pierce</string>
+				</dict>
+			</dict> 
+			<!-- <dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="snd">sound/enemies.sbnk:spider-melee</string>
+
+				<int name="cooldown">2500</int>
+				<int name="castpoint">300</int>
+				<int name="range">175</int>
+				<int name="min-range">50</int>
+				<bool name="good-aim">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/projectiles/elemental_ice_spear.unit</string>
+					</dict>
+				</array>
+			</dict> -->
+		</array>
+		
+		<dict name="effect-params"></dict>
+	</behavior>
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+
+			
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="7" />
+				<circle offset="0 0" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>
+				
+			<shadow>
+				<sprite origin="12 12" texture="doodads/special/shadows.png">
+					<frame>66 0 24 24</frame>
+				</sprite>	
+			</shadow>	
+			<light pos="0 -12">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="10" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 100 150 0" />
+				</colors>
+			</light>  
+		</scene>
+
+	
+		
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">0 240 48 48</frame>
+				<frame time="100">0 288 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">48 240 48 48</frame>
+				<frame time="100">48 288 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">96 240 48 48</frame>
+				<frame time="100">96 288 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">144 240 48 48</frame>
+				<frame time="100">144 288 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">192 240 48 48</frame>
+				<frame time="100">192 288 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">240 240 48 48</frame>
+				<frame time="100">240 288 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">288 240 48 48</frame>
+				<frame time="100">288 288 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">336 240 48 48</frame>
+				<frame time="100">336 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">0 48 48 48</frame>
+				<frame time="100">0 96 48 48</frame>
+				<frame time="100">0 144 48 48</frame>
+				<frame time="100">0 192 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">48 48 48 48</frame>
+				<frame time="100">48 96 48 48</frame>
+				<frame time="100">48 144 48 48</frame>
+				<frame time="100">48 192 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">96 48 48 48</frame>
+				<frame time="100">96 96 48 48</frame>
+				<frame time="100">96 144 48 48</frame>
+				<frame time="100">96 192 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">144 48 48 48</frame>
+				<frame time="100">144 96 48 48</frame>
+				<frame time="100">144 144 48 48</frame>
+				<frame time="100">144 192 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">192 48 48 48</frame>
+				<frame time="100">192 96 48 48</frame>
+				<frame time="100">192 144 48 48</frame>
+				<frame time="100">192 192 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">240 48 48 48</frame>
+				<frame time="100">240 96 48 48</frame>
+				<frame time="100">240 144 48 48</frame>
+				<frame time="100">240 192 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">288 48 48 48</frame>
+				<frame time="100">288 96 48 48</frame>
+				<frame time="100">288 144 48 48</frame>
+				<frame time="100">288 192 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="100">336 48 48 48</frame>
+				<frame time="100">336 96 48 48</frame>
+				<frame time="100">336 144 48 48</frame>
+				<frame time="100">336 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">0 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">48 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">96 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">144 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">192 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">240 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">288 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="24 24" texture="actors/spider_ice.png" material="system/default.mats:actor">
+				<frame time="2000">336 0 48 48</frame>
+			</sprite>
+		</scene>
+
+	</scenes>
+</unit>

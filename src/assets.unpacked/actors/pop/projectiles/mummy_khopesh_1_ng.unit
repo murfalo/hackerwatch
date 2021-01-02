@@ -1,0 +1,31 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">4.5</float>
+		<int name="ttl">2000</int>
+		<bool name="blockable">true</bool>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.075</float>
+		
+		<string name="fx">actors/pop/projectiles/mummy_khopesh_hit.effect</string>
+		<string name="hit-snd">event:/enemy/mummy/khopesh_hit</string>
+		
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="physical">45</int>
+		</dict>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/pop/projectiles/mummy_khopesh.effect"/>
+			<collision static="false">
+				<circle projectile="true" radius="4"/>
+			</collision>
+		</scene>
+	</scenes>
+</unit>

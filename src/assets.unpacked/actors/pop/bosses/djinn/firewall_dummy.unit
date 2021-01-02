@@ -1,0 +1,67 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">construct</string>
+		<int name="hp">99999</int>
+		<int name="armor">9999</int>
+		<int name="resistance">9999</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">true</bool>
+		
+		<int name="unit-height">14</int>
+		
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">idle</string>
+				<int name="charges">1</int>
+				<int name="cooldown">0</int>
+				<int name="castpoint">500</int>
+				<int name="range">999</int>
+				<bool name="must-see">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/pop/bosses/djinn/fire_area_wall.unit</string>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">0</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" sensor="true" shoot-through="true" aim-through="true" radius="4"/>
+			</collision>
+		</scene>
+
+		<scene name="idle">
+			<scene src="shared" />
+			
+			<sprite origin="16 41" looping="true" texture="actors/pop/bosses/djinn/djinn_firewall.png" material="system/default.mats:bright-noxray">
+				<frame time="100">0 0 32 64</frame>
+				<frame time="100">32 0 32 64</frame>
+				<frame time="100">64 0 32 64</frame>
+				<frame time="100">96 0 32 64</frame>
+				<frame time="100">128 0 32 64</frame>
+			</sprite>
+			
+		</scene>
+
+	</scenes>
+</unit>

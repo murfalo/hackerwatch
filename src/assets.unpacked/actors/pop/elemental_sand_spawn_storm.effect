@@ -1,0 +1,126 @@
+<effect looping="false" bounds="40 40">
+	<param name="radius" default="16" />
+	<param name="ttl" default="1000" />
+	
+<!-- end section -->
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="1800" />
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="(sin(t*2*pi*10)*5+60) * (1-saturate((t-0.98)*1000000))" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0"/>
+			
+	</light>
+	
+	
+	<sprite origin="3 3" looping="true" texture="./elemental_sand_spawn.png" material="system/default.mats:default-noxray"
+		num-sprites="6"
+
+		pos-x="sin(t*pi*2*rand(u+i)*4)*radius*rand(u+i+27)"
+        pos-y="cos(t*pi*2*rand(u+i)*4)*radius*rand(u+i+53)"
+		
+		color-a="saturate(0.5 - sin(t*t*t*t*t))"
+	>
+        
+		<frame time="35">0 112 6 6</frame>
+		<frame time="35">6 112 6 6</frame>
+		<frame time="35">12 112 6 6</frame>
+		<frame time="35">18 112 6 6</frame>
+		<frame time="35">24 112 6 6</frame>
+		<frame time="35">30 112 6 6</frame>
+		<frame time="35">36 112 6 6</frame>
+		<frame time="35">42 112 6 6</frame>
+		<frame time="35">36 112 6 6</frame>
+		<frame time="35">30 112 6 6</frame>
+		<frame time="35">24 112 6 6</frame>
+		<frame time="35">18 112 6 6</frame>
+		<frame time="35">12 112 6 6</frame>
+		<frame time="35">6 112 6 6</frame>
+		<frame time="35">0 112 6 6</frame>
+	</sprite>
+	
+
+	<sprite origin="3 3" looping="true" texture="./elemental_sand_spawn.png" material="system/default.mats:default-noxray"
+		num-sprites="18"
+
+		pos-x="sin(t*pi*2*(rand(u+i)*8-4))*radius*rand(u+i+27)"
+        pos-y="cos(t*pi*2*(rand(u+i)*8-4))*radius*rand(u+i+53)"
+		
+		color-a="0.1"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="100">12 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+	</sprite>
+	
+	
+	
+
+
+	<sprite origin="16 17" looping="false" texture="./elemental_sand_spawn.png" material="system/default.mats:default-noxray"
+	color-a="0.1"
+	>
+		<frame time="50">0 0 32 32</frame>
+		<frame time="50">32 0 32 32</frame>
+		<frame time="50">64 0 32 32</frame>
+		<frame time="50">96 0 32 32</frame>
+		<frame time="50">0 32 32 32</frame>
+		<frame time="50">0 0 32 32</frame>
+		<frame time="50">32 0 32 32</frame>
+		<frame time="50">64 0 32 32</frame>
+		<frame time="50">96 0 32 32</frame>
+		<frame time="50">0 32 32 32</frame>
+		<frame time="50">0 0 32 32</frame>
+		
+		<frame time="50">0 0 0 0</frame>
+	</sprite>
+	 
+	<sprite origin="16 17" layer="1" looping="false" texture="./elemental_sand_spawn.png" material="system/default.mats:glow"
+	color-a="0.1"
+	
+	>
+		<frame time="50">0 0 32 32</frame>
+		<frame time="50">32 0 32 32</frame>
+		<frame time="50">64 0 32 32</frame>
+		<frame time="50">96 0 32 32</frame>
+		<frame time="50">0 32 32 32</frame>
+		<frame time="50">0 0 32 32</frame>
+		<frame time="50">32 0 32 32</frame>
+		<frame time="50">64 0 32 32</frame>
+		<frame time="50">96 0 32 32</frame>
+		<frame time="50">0 32 32 32</frame>
+		
+		<frame time="50">0 0 0 0</frame>
+	</sprite>
+	
+	<!-- END -->
+		<sprite origin="16 17" looping="false" texture="./elemental_sand_spawn.png" material="system/default.mats:default-noxray"
+		color-a="0.1">			
+			<frame time="450">0 0 0 0</frame>
+			<frame time="50">0 32 32 32</frame>
+			<frame time="50">96 32 32 32</frame>
+			<frame time="50">64 32 32 32</frame>
+			<frame time="50">32 32 32 32</frame>
+		</sprite>
+	 
+		<sprite origin="16 17" looping="false" texture="./elemental_sand_spawn.png" material="system/default.mats:glow"
+		color-a="0.1">
+			<frame time="450">0 0 0 0</frame>
+			<frame time="50">0 32 32 32</frame>
+			<frame time="50">96 32 32 32</frame>
+			<frame time="50">64 32 32 32</frame>
+			<frame time="50">32 32 32 32</frame>
+		</sprite>
+</effect>

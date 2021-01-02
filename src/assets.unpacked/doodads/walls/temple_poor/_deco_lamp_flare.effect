@@ -1,0 +1,23 @@
+<effect bounds="64 64">
+	<light pos-x="50" pos-y="50" >
+		<sprite texture="./_deco_lamp_flare_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+
+		<length value="100" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+				
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="rand(u+i)*pi*2"/>
+		
+		<size value="100" />
+		
+		<color-r value="0" />
+		<color-g value="3" />
+		<color-b value="5" />
+	</light>		
+</effect>

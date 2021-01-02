@@ -1,0 +1,80 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle 8</string>
+		<float name="speed">7</float>
+		<bool name="blockable">true</bool>
+		<int name="ttl">400</int>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">15</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-4">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="0.5" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				<frame time="100">0 8 8 8</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				<frame time="100">0 0 8 8</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				<frame time="100">8 0 8 8</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				
+				<frame time="100">16 0 8 8</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				<frame time="100">16 8 8 8</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				<frame time="100">16 16 8 8</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				<frame time="100">8 16 8 8</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./tooth_shard.png" material="system/default.mats:projectile">
+				<frame time="100">0 16 8 8</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

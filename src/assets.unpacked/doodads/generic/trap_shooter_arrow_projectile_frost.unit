@@ -1,0 +1,37 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/misc/trap_arrow_shoot</string>
+		<string name="hit-snd">event:/misc/trap_arrow_hit</string>
+		<string name="fx">effects/animations/impact_ice.effect</string>
+		
+		<float name="speed">5.5</float>	
+		<int name="ttl">3500</int>
+		<bool name="blockable">true</bool>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">45</int>
+			</dict>
+			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:freezing</string>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">2</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="34 9 1 1" />						
+			<effect src="doodads/generic/trap_shooter_arrow_projectile_frost.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,44 @@
+<unit netsync="none">
+	<behavior class="LurkerProjectile">
+		<string name="anim">attack</string>
+		<float name="speed">0.6</float>
+		<float name="speed-delta">0.4</float>
+		<float name="speed-delta-max">4.4</float>
+		
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.1</float>
+		
+		<int name="ttl">1600</int>
+		
+		<int name="spawn-freq">60</int>
+		<bool name="miss-fx">true</bool>
+		
+		<int name="penetration">0</int>
+		<int name="ignore-at-hardness">1</int>
+		<int name="destroy-at-hardness">4</int>
+		
+		<float name="team-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">60</int>
+				<float name="resistance-mul">0.9</float>
+			</dict>
+		</array>
+
+		<float name="jitter">0</float>
+	</behavior>	
+	
+	<scenes default="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="attack">
+			<effect ulayer="2" src="actors/projectiles/battlemage_lurker.effect" />		
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,42 @@
+<effect looping="false">
+	<sprite origin="4 4" looping="false" layer="1" texture="./holy_hit.png" material="system/default.mats:glow-both-bright"
+		color-a="saturate(1-t)"
+		pos-x="rand(u+i+2)*4-2"
+		pos-y="rand(u+i+5)*4-2"
+		scale-x="0.5 + saturate(t*3)*0.5"
+		scale-y="0.5 + saturate(t*3)*0.5"
+		angle="rand(u+i*101)*pi*2"
+		>
+		<frame time="50">0 0 8 8</frame>
+		<frame time="50">8 0 8 8</frame>
+		<frame time="50">16 0 8 8</frame>
+		<frame time="60">24 0 8 8</frame>
+		<frame time="60">0 8 8 8</frame>
+	</sprite>
+	<!-- 
+		<frame time="60">8 8 8 8</frame>
+		<frame time="60">16 8 8 8</frame>
+		<frame time="60">24 8 8 8</frame> -->
+	<light 
+		pos-x="rand(u+i+2)*4-2"
+		pos-y="rand(u+i+5)*4-2"
+	
+	
+	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<length value="100" />
+		<looping value="false" />
+
+		<cast-shadows value="false" />
+
+		<size value="30*(1-t)" />
+
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,29 @@
+<unit slot="item">
+	<behavior class="Pickup">
+		<bool name="bounce">false</bool>
+		<string name="sound">event:/item/coin_silver</string>
+		<string name="pickup-trigger">pickup-money</string>
+		<bool name="global">true</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">GiveGold</string>
+				<bool name="pickup">true</bool>
+				<int name="amount">25</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<sprite origin="1 5" layer="-1" texture="./items_general.png" material="system/default.mats:shadow">
+				<frame>0 35 7 8</frame>
+			</sprite>			
+			<collision static="true">
+				<circle sensor="true" offset="1 -2" radius="6" />
+			</collision>
+			<sprite origin="4 8" texture="./items_general.png" material="items/items.mats:money">
+				<frame time="200">11 11 9 11</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

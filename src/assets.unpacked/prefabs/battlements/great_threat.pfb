@@ -1,0 +1,2859 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">2056</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DangerArea</string>
+			<int>2</int>
+			<vec3>0 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Storm</string>
+			<dict>
+				<string name="Buff">actors/buffs.sval:battlements-storm</string>
+				<int name="Filter">2</int>
+				<int name="Damage">0</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>3</int>
+			<vec3>0 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableStorm</string>
+			<array><int>7</int><int>0</int><int>4</int><int>0</int><int>27</int><int>0</int><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>4</int>
+			<vec3>176 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ThreatSFX</string>
+			<dict>
+				<string name="Sound">event:/ui/greath_threat</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>5</int>
+			<vec3>368 -240 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1min</string>
+			<dict>
+				<int name="Frequency">60000</int>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>6</int>
+			<vec3>-80 -592 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>battlements1</string>
+			<array><int>9</int><int>0</int><int>26</int><int>0</int><int>31</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>7</int>
+			<vec3>176 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>threat_spawned</string>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">.meta.info.threatspawned</string>
+				<int name="FadeTime">500</int>
+				<int name="Time">2000</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>8</int>
+			<vec3>-48 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>9</int>
+			<vec3>-80 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Normal</string>
+			<array><int>19</int><int>240000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>-48 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>11</int>
+			<vec3>400 -400 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3min</string>
+			<array><int>30</int><int>0</int><int>16</int><int>0</int><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>12</int>
+			<vec3>272 -528 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>31</int><int>9</int><int>11</int><int>19</int><int>87</int><int>85</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>13</int>
+			<vec3>32 -528 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>26</int><int>9</int><int>36</int><int>19</int><int>86</int><int>85</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>14</int>
+			<vec3>224 -592 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>fountain_threat_more</string>
+			<dict>
+				<string name="Flag">fountain_threat_more</string>
+				<array name="OnTrue"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>112 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>16</int>
+			<vec3>368 -304 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>5</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>17</int>
+			<vec3>-48 -240 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3min</string>
+			<dict>
+				<int name="Frequency">180000</int>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>18</int>
+			<vec3>-112 -240 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2min</string>
+			<dict>
+				<int name="Frequency">120000</int>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>-80 -400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4min</string>
+			<array><int>8</int><int>0</int><int>20</int><int>0</int><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>20</int>
+			<vec3>-112 -304 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>21</int>
+			<vec3>432 -240 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2min</string>
+			<dict>
+				<int name="Frequency">120000</int>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>22</int>
+			<vec3>144 -664 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>fountain_threat_less</string>
+			<dict>
+				<string name="Flag">fountain_threat_less</string>
+				<array name="OnTrue"><int>23</int></array>
+				<array name="OnFalse"><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>23</int>
+			<vec3>80 -592 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>fountain_threat_more</string>
+			<dict>
+				<string name="Flag">fountain_threat_more</string>
+				<array name="OnFalse"><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>24</int>
+			<vec3>144 -752 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>TimedBasedSpawn</string>
+			<array><int>22</int><int>10</int><int>28</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>25</int>
+			<vec3>176 -304 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>34</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>26</int>
+			<vec3>144 -480 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Less</string>
+			<array><int>36</int><int>300000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>27</int>
+			<vec3>48 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>2</int></array>
+			</dict>
+			<array><int>10</int><int>10000</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>28</int>
+			<vec3>-80 -752 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>lvl_0</string>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnFalse"><int>29</int></array>
+				<array name="OnTrue"><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>29</int>
+			<vec3>-176 -752 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>lvl_1</string>
+			<dict>
+				<string name="Flag">lvl_1</string>
+				<array name="OnTrue"><int>32</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>30</int>
+			<vec3>432 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>31</int>
+			<vec3>400 -480 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>More</string>
+			<array><int>11</int><int>180000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>-176 -680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>temp</string>
+			<array><int>84</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>33</int>
+			<vec3>-80 -680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>temp</string>
+			<array><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>34</int>
+			<vec3>176 -240 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>6min</string>
+			<dict>
+				<int name="Frequency">360000</int>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>35</int>
+			<vec3>112 -240 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4min</string>
+			<dict>
+				<int name="Frequency">240000</int>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>36</int>
+			<vec3>144 -400 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5min</string>
+			<array><int>25</int><int>0</int><int>15</int><int>0</int><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>37</int>
+			<vec3>96 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>north_100</string>
+			<dict>
+				<int name="Direction">90</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">1.05</float>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>38</int>
+			<vec3>176 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>WindSFX</string>
+			<dict>
+				<string name="Sound">event:/misc/wind-great_threat</string>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>39</int>
+			<vec3>48 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>north_80</string>
+			<dict>
+				<int name="Direction">90</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.9</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>40</int>
+			<vec3>0 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>north_60</string>
+			<dict>
+				<int name="Direction">90</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.75</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>41</int>
+			<vec3>-48 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>north_40</string>
+			<dict>
+				<int name="Direction">90</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.6</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>42</int>
+			<vec3>-96 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>north_20</string>
+			<dict>
+				<int name="Direction">90</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.45</float>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>43</int>
+			<vec3>-592 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>battlements_wind_100</string>
+			<dict>
+				<string name="Flag">battlements_wind_100</string>
+				<array name="OnTrue"><int>61</int><int>157</int></array>
+				<array name="OnFalse"><int>52</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>44</int>
+			<vec3>-672 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>battlements_no_wind</string>
+			<dict>
+				<string name="Flag">battlements_no_wind</string>
+				<array name="OnFalse"><int>48</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>45</int>
+			<vec3>-768 176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>Start</string>
+			<array><int>44</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>46</int>
+			<vec3>-496 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>69</int><int>93</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>47</int>
+			<vec3>-336 -32 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>ToggleWind</string>
+			<array>
+				<int>68</int>
+				<int>0</int>
+				<int>69</int>
+				<int>0</int>
+				<int>70</int>
+				<int>0</int>
+				<int>71</int>
+				<int>0</int>
+				<int>57</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>48</int>
+			<vec3>-592 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SetupWind</string>
+			<array><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>49</int>
+			<vec3>-592 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>battlements_wind_20</string>
+			<dict>
+				<string name="Flag">battlements_wind_20</string>
+				<array name="OnTrue"><int>46</int><int>53</int><int>153</int></array>
+				<array name="OnFalse"><int>73</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>50</int>
+			<vec3>-592 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>battlements_wind_40</string>
+			<dict>
+				<string name="Flag">battlements_wind_40</string>
+				<array name="OnFalse"><int>49</int></array>
+				<array name="OnTrue"><int>54</int><int>58</int><int>154</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>51</int>
+			<vec3>-592 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>battlements_wind_60</string>
+			<dict>
+				<string name="Flag">battlements_wind_60</string>
+				<array name="OnTrue"><int>59</int><int>55</int><int>155</int></array>
+				<array name="OnFalse"><int>50</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>52</int>
+			<vec3>-592 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>battlements_wind_80</string>
+			<dict>
+				<string name="Flag">battlements_wind_80</string>
+				<array name="OnTrue"><int>60</int><int>56</int><int>156</int></array>
+				<array name="OnFalse"><int>51</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>53</int>
+			<vec3>-688 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<array name="Scripts"><int>47</int></array>
+				<int name="TriggerTimes">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>54</int>
+			<vec3>-688 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<array name="Scripts"><int>47</int></array>
+				<int name="TriggerTimes">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>55</int>
+			<vec3>-688 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<array name="Scripts"><int>47</int></array>
+				<int name="TriggerTimes">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>56</int>
+			<vec3>-688 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>47</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>57</int>
+			<vec3>384 1112 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enable_100</string>
+			<array>
+				<int>63</int>
+				<int>0</int>
+				<int>78</int>
+				<int>50</int>
+				<int>83</int>
+				<int>0</int>
+				<int>92</int>
+				<int>0</int>
+				<int>106</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>58</int>
+			<vec3>-496 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>70</int><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>59</int>
+			<vec3>-496 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>71</int><int>116</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>60</int>
+			<vec3>-496 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>57</int><int>125</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>61</int>
+			<vec3>-496 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>134</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>62</int>
+			<vec3>-496 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>68</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>63</int>
+			<vec3>416 1176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>battlements_wind_100</string>
+			<dict>
+				<string name="Flag">battlements_wind_100</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>64</int>
+			<vec3>208 1176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>battlements_wind_80</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">battlements_wind_80</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>65</int>
+			<vec3>0 1176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>battlements_wind_60</string>
+			<dict>
+				<string name="Flag">battlements_wind_60</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>66</int>
+			<vec3>-208 1176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>battlements_wind_40</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">battlements_wind_40</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>67</int>
+			<vec3>-416 1176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>battlements_wind_20</string>
+			<dict>
+				<string name="Flag">battlements_wind_20</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>68</int>
+			<vec3>-448 1112 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enable_20</string>
+			<array>
+				<int>67</int>
+				<int>0</int>
+				<int>74</int>
+				<int>50</int>
+				<int>79</int>
+				<int>0</int>
+				<int>88</int>
+				<int>0</int>
+				<int>102</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>69</int>
+			<vec3>-240 1112 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enable_40</string>
+			<array>
+				<int>66</int>
+				<int>0</int>
+				<int>75</int>
+				<int>50</int>
+				<int>80</int>
+				<int>0</int>
+				<int>89</int>
+				<int>0</int>
+				<int>103</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>70</int>
+			<vec3>-32 1112 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enable_60</string>
+			<array>
+				<int>65</int>
+				<int>0</int>
+				<int>76</int>
+				<int>50</int>
+				<int>81</int>
+				<int>0</int>
+				<int>90</int>
+				<int>0</int>
+				<int>104</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>71</int>
+			<vec3>176 1112 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enable_80</string>
+			<array>
+				<int>64</int>
+				<int>0</int>
+				<int>77</int>
+				<int>50</int>
+				<int>82</int>
+				<int>0</int>
+				<int>91</int>
+				<int>0</int>
+				<int>105</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>72</int>
+			<vec3>-688 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<array name="Scripts"><int>47</int></array>
+				<int name="TriggerTimes">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>73</int>
+			<vec3>-592 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>battlements_wind_0</string>
+			<array><int>62</int><int>0</int><int>72</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>74</int>
+			<vec3>-384 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>69</int></array>
+			</dict>
+			<array><int>100</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>75</int>
+			<vec3>-176 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>70</int></array>
+			</dict>
+			<array><int>114</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>76</int>
+			<vec3>32 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>71</int></array>
+			</dict>
+			<array><int>123</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>77</int>
+			<vec3>240 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>57</int></array>
+			</dict>
+			<array><int>132</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>78</int>
+			<vec3>448 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<array><int>140</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>79</int>
+			<vec3>-448 1240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>collapse_bridges_20</string>
+			<dict>
+				<string name="EventName">collapse_bridges_20</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>80</int>
+			<vec3>-240 1240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>collapse_bridges_40</string>
+			<dict>
+				<string name="EventName">collapse_bridges_40</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>81</int>
+			<vec3>-32 1240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>collapse_bridges_60</string>
+			<dict>
+				<string name="EventName">collapse_bridges_60</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>82</int>
+			<vec3>176 1240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>collapse_bridges_80</string>
+			<dict>
+				<string name="EventName">collapse_bridges_80</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>83</int>
+			<vec3>384 1240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>collapse_bridges_100</string>
+			<dict>
+				<string name="EventName">collapse_bridges_100</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>84</int>
+			<vec3>-176 -592 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>battlements2</string>
+			<array><int>85</int><int>0</int><int>86</int><int>0</int><int>87</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>85</int>
+			<vec3>-176 -432 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Normal2</string>
+			<array><int>20</int><int>0</int><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>86</int>
+			<vec3>80 -432 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Less2</string>
+			<array><int>15</int><int>0</int><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>87</int>
+			<vec3>336 -432 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>More2</string>
+			<array><int>16</int><int>0</int><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>88</int>
+			<vec3>-416 1288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wind20</string>
+			<dict>
+				<string name="EventName">wind20</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>89</int>
+			<vec3>-208 1288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wind40</string>
+			<dict>
+				<string name="EventName">wind40</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>90</int>
+			<vec3>0 1288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wind60</string>
+			<dict>
+				<string name="EventName">wind60</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>91</int>
+			<vec3>208 1288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wind80</string>
+			<dict>
+				<string name="EventName">wind80</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>92</int>
+			<vec3>416 1288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wind100</string>
+			<dict>
+				<string name="EventName">wind100</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>93</int>
+			<vec3>-416 1968 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>122</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>94</int>
+			<vec3>-480 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">10000</int>
+				<array name="TimerTriggers"><int>93</int></array>
+			</dict>
+			<array><int>96</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>95</int>
+			<vec3>-416 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>167</int></array>
+			</dict>
+			<array><int>210</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>96</int>
+			<vec3>-480 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>93</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>97</int>
+			<vec3>-416 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">5000</int>
+				<array name="LinkScripts"><int>100</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>98</int>
+			<vec3>-352 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>93</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>99</int>
+			<vec3>-352 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind</string>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>100</int>
+			<vec3>-416 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_20</string>
+			<array><int>98</int><int>0</int><int>38</int><int>0</int><int>127</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>101</int>
+			<vec3>-480 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>42</int>
+					<int>167</int>
+					<int>162</int>
+					<int>192</int>
+					<int>187</int>
+					<int>41</int>
+					<int>166</int>
+					<int>161</int>
+					<int>191</int>
+					<int>186</int>
+					<int>40</int>
+					<int>165</int>
+					<int>160</int>
+					<int>190</int>
+					<int>185</int>
+					<int>39</int>
+					<int>164</int>
+					<int>159</int>
+					<int>189</int>
+					<int>184</int>
+					<int>37</int>
+					<int>163</int>
+					<int>158</int>
+					<int>188</int>
+					<int>183</int>
+				</array>
+			</dict>
+			<array><int>94</int><int>0</int><int>212</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>102</int>
+			<vec3>-448 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>103</int>
+			<vec3>-240 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>42</int>
+					<int>93</int>
+					<int>97</int>
+					<int>100</int>
+					<int>98</int>
+					<int>101</int>
+					<int>94</int>
+					<int>96</int>
+					<int>122</int>
+					<int>113</int>
+					<int>99</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>104</int>
+			<vec3>-32 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>41</int>
+					<int>114</int>
+					<int>111</int>
+					<int>107</int>
+					<int>110</int>
+					<int>108</int>
+					<int>115</int>
+					<int>112</int>
+					<int>143</int>
+					<int>142</int>
+					<int>141</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>105</int>
+			<vec3>176 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>40</int>
+					<int>124</int>
+					<int>118</int>
+					<int>123</int>
+					<int>120</int>
+					<int>121</int>
+					<int>117</int>
+					<int>119</int>
+					<int>116</int>
+					<int>144</int>
+					<int>145</int>
+					<int>146</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>106</int>
+			<vec3>384 1016 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>125</int>
+					<int>129</int>
+					<int>132</int>
+					<int>130</int>
+					<int>133</int>
+					<int>126</int>
+					<int>128</int>
+					<int>39</int>
+					<int>147</int>
+					<int>148</int>
+					<int>149</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>107</int>
+			<vec3>-208 1968 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>143</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>108</int>
+			<vec3>-272 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">10000</int>
+				<array name="TimerTriggers"><int>107</int></array>
+			</dict>
+			<array><int>110</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>109</int>
+			<vec3>-208 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>161</int></array>
+			</dict>
+			<array><int>206</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>110</int>
+			<vec3>-272 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>107</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>111</int>
+			<vec3>-208 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">5000</int>
+				<array name="LinkScripts"><int>114</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>112</int>
+			<vec3>-144 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>107</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>113</int>
+			<vec3>-416 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nowind</string>
+			<array><int>96</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>114</int>
+			<vec3>-208 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_40</string>
+			<array><int>112</int><int>0</int><int>38</int><int>0</int><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>115</int>
+			<vec3>-272 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>41</int>
+					<int>166</int>
+					<int>161</int>
+					<int>191</int>
+					<int>186</int>
+					<int>167</int>
+					<int>42</int>
+					<int>162</int>
+					<int>192</int>
+					<int>187</int>
+					<int>40</int>
+					<int>165</int>
+					<int>160</int>
+					<int>190</int>
+					<int>185</int>
+					<int>39</int>
+					<int>164</int>
+					<int>159</int>
+					<int>189</int>
+					<int>184</int>
+				</array>
+			</dict>
+			<array><int>108</int><int>0</int><int>212</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>116</int>
+			<vec3>0 1968 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>146</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>117</int>
+			<vec3>-64 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">10000</int>
+				<array name="TimerTriggers"><int>116</int></array>
+			</dict>
+			<array><int>119</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>118</int>
+			<vec3>0 336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>40</int></array>
+			</dict>
+			<array><int>211</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>119</int>
+			<vec3>-64 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>116</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>120</int>
+			<vec3>0 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">5000</int>
+				<array name="LinkScripts"><int>123</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>121</int>
+			<vec3>64 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>116</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>122</int>
+			<vec3>-416 1888 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>windchance</string>
+			<dict>
+				<array name="PickedRandoms"><int>99</int><int>113</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>123</int>
+			<vec3>0 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_60</string>
+			<array><int>121</int><int>0</int><int>38</int><int>0</int><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>124</int>
+			<vec3>-64 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>40</int>
+					<int>165</int>
+					<int>160</int>
+					<int>190</int>
+					<int>185</int>
+					<int>42</int>
+					<int>41</int>
+					<int>166</int>
+					<int>167</int>
+					<int>162</int>
+					<int>161</int>
+					<int>191</int>
+					<int>192</int>
+					<int>187</int>
+					<int>186</int>
+					<int>184</int>
+					<int>183</int>
+					<int>188</int>
+					<int>189</int>
+					<int>159</int>
+					<int>158</int>
+					<int>163</int>
+					<int>164</int>
+					<int>39</int>
+					<int>37</int>
+				</array>
+			</dict>
+			<array><int>117</int><int>0</int><int>212</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>125</int>
+			<vec3>208 1968 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>149</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>126</int>
+			<vec3>144 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">10000</int>
+				<array name="TimerTriggers"><int>125</int></array>
+			</dict>
+			<array><int>128</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>127</int>
+			<vec3>-416 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>174</int><int>95</int><int>136</int><int>200</int><int>195</int></array>
+			</dict>
+			<array><int>101</int><int>15000</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>128</int>
+			<vec3>144 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>125</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>129</int>
+			<vec3>208 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">5000</int>
+				<array name="LinkScripts"><int>132</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>130</int>
+			<vec3>272 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>125</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>131</int>
+			<vec3>352 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>37</int>
+					<int>163</int>
+					<int>158</int>
+					<int>188</int>
+					<int>183</int>
+					<int>39</int>
+					<int>164</int>
+					<int>159</int>
+					<int>189</int>
+					<int>184</int>
+					<int>185</int>
+					<int>190</int>
+					<int>160</int>
+					<int>165</int>
+					<int>40</int>
+					<int>41</int>
+					<int>166</int>
+					<int>161</int>
+					<int>191</int>
+					<int>186</int>
+					<int>187</int>
+					<int>192</int>
+					<int>162</int>
+					<int>167</int>
+					<int>42</int>
+				</array>
+			</dict>
+			<array><int>135</int><int>0</int><int>212</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>132</int>
+			<vec3>208 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_80</string>
+			<array><int>130</int><int>0</int><int>38</int><int>0</int><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>133</int>
+			<vec3>144 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>39</int>
+					<int>164</int>
+					<int>159</int>
+					<int>189</int>
+					<int>184</int>
+					<int>37</int>
+					<int>163</int>
+					<int>158</int>
+					<int>188</int>
+					<int>183</int>
+					<int>185</int>
+					<int>190</int>
+					<int>160</int>
+					<int>165</int>
+					<int>40</int>
+					<int>41</int>
+					<int>166</int>
+					<int>161</int>
+					<int>191</int>
+					<int>186</int>
+					<int>187</int>
+					<int>192</int>
+					<int>162</int>
+					<int>167</int>
+					<int>42</int>
+				</array>
+			</dict>
+			<array><int>126</int><int>0</int><int>212</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>134</int>
+			<vec3>416 1968 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>152</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>135</int>
+			<vec3>352 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">10000</int>
+				<array name="TimerTriggers"><int>134</int></array>
+			</dict>
+			<array><int>137</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>136</int>
+			<vec3>-416 336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>42</int></array>
+			</dict>
+			<array><int>211</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>137</int>
+			<vec3>352 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>134</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>138</int>
+			<vec3>416 1760 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">5000</int>
+				<array name="LinkScripts"><int>140</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>139</int>
+			<vec3>480 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>134</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>140</int>
+			<vec3>416 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_100</string>
+			<array><int>139</int><int>0</int><int>38</int><int>0</int><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>141</int>
+			<vec3>-144 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind</string>
+			<array><int>111</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>142</int>
+			<vec3>-208 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nowind</string>
+			<array><int>110</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>143</int>
+			<vec3>-208 1888 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>windchance</string>
+			<dict>
+				<array name="PickedRandoms"><int>141</int><int>142</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>144</int>
+			<vec3>64 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind</string>
+			<array><int>120</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>145</int>
+			<vec3>0 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nowind</string>
+			<array><int>119</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>146</int>
+			<vec3>0 1888 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>windchance</string>
+			<dict>
+				<array name="PickedRandoms"><int>144</int><int>145</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>147</int>
+			<vec3>272 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind</string>
+			<array><int>129</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>148</int>
+			<vec3>208 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nowind</string>
+			<array><int>128</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>149</int>
+			<vec3>208 1888 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>windchance</string>
+			<dict>
+				<array name="PickedRandoms"><int>147</int><int>148</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>150</int>
+			<vec3>480 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind</string>
+			<array><int>138</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>151</int>
+			<vec3>416 1824 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nowind</string>
+			<array><int>137</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>152</int>
+			<vec3>416 1888 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>windchance</string>
+			<dict>
+				<array name="PickedRandoms"><int>150</int><int>151</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>153</int>
+			<vec3>-512 1280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>floor2_collapse</string>
+			<array><int>79</int><int>500</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>154</int>
+			<vec3>-304 1280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>floor2_collapse</string>
+			<array><int>80</int><int>500</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>155</int>
+			<vec3>-80 1280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>floor2_collapse</string>
+			<array><int>81</int><int>500</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>156</int>
+			<vec3>128 1280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>floor2_collapse</string>
+			<array><int>82</int><int>500</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>157</int>
+			<vec3>336 1280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>floor2_collapse</string>
+			<array><int>83</int><int>500</int></array>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>158</int>
+			<vec3>96 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ne_100</string>
+			<dict>
+				<int name="Direction">135</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">1.05</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>159</int>
+			<vec3>48 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ne_80</string>
+			<dict>
+				<int name="Direction">135</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.9</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>160</int>
+			<vec3>0 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ne_60</string>
+			<dict>
+				<int name="Direction">135</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.75</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>161</int>
+			<vec3>-48 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ne_40</string>
+			<dict>
+				<int name="Direction">135</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.6</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>162</int>
+			<vec3>-96 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ne_20</string>
+			<dict>
+				<int name="Direction">135</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.45</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>163</int>
+			<vec3>96 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nw_100</string>
+			<dict>
+				<int name="Direction">45</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">1.05</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>164</int>
+			<vec3>48 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nw_80</string>
+			<dict>
+				<int name="Direction">45</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.9</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>165</int>
+			<vec3>0 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nw_60</string>
+			<dict>
+				<int name="Direction">45</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.75</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>166</int>
+			<vec3>-48 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nw_40</string>
+			<dict>
+				<int name="Direction">45</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.6</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>167</int>
+			<vec3>-96 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nw_20</string>
+			<dict>
+				<int name="Direction">45</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.45</float>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>168</int>
+			<vec3>0 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>170</int><int>169</int><int>118</int><int>199</int><int>194</int></array>
+			</dict>
+			<array><int>124</int><int>15000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>169</int>
+			<vec3>0 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>165</int></array>
+			</dict>
+			<array><int>210</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>170</int>
+			<vec3>0 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>160</int></array>
+			</dict>
+			<array><int>206</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>171</int>
+			<vec3>-208 336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>41</int></array>
+			</dict>
+			<array><int>211</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>172</int>
+			<vec3>-208 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>109</int><int>173</int><int>171</int><int>198</int><int>193</int></array>
+			</dict>
+			<array><int>115</int><int>15000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>173</int>
+			<vec3>-208 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>166</int></array>
+			</dict>
+			<array><int>210</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>174</int>
+			<vec3>-416 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>162</int></array>
+			</dict>
+			<array><int>206</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>175</int>
+			<vec3>208 336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>39</int></array>
+			</dict>
+			<array><int>211</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>176</int>
+			<vec3>208 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>178</int><int>177</int><int>175</int><int>201</int><int>196</int></array>
+			</dict>
+			<array><int>133</int><int>15000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>177</int>
+			<vec3>208 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>164</int></array>
+			</dict>
+			<array><int>210</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>178</int>
+			<vec3>208 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>159</int></array>
+			</dict>
+			<array><int>206</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>179</int>
+			<vec3>416 336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>37</int></array>
+			</dict>
+			<array><int>211</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>180</int>
+			<vec3>416 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>182</int><int>181</int><int>179</int><int>202</int><int>197</int></array>
+			</dict>
+			<array><int>131</int><int>15000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>181</int>
+			<vec3>416 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>163</int></array>
+			</dict>
+			<array><int>210</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>182</int>
+			<vec3>416 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>158</int></array>
+			</dict>
+			<array><int>206</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>183</int>
+			<vec3>96 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e_100</string>
+			<dict>
+				<int name="Direction">180</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">1.05</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>184</int>
+			<vec3>48 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e_80</string>
+			<dict>
+				<int name="Direction">180</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.9</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>185</int>
+			<vec3>0 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e_60</string>
+			<dict>
+				<int name="Direction">180</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.75</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>186</int>
+			<vec3>-48 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e_40</string>
+			<dict>
+				<int name="Direction">180</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.6</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>187</int>
+			<vec3>-96 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e_20</string>
+			<dict>
+				<int name="Direction">180</int>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.45</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>188</int>
+			<vec3>96 176 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>w_100</string>
+			<dict>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">1.05</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>189</int>
+			<vec3>48 176 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>w_80</string>
+			<dict>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.9</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>190</int>
+			<vec3>0 176 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>w_60</string>
+			<dict>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.75</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>191</int>
+			<vec3>-48 176 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>w_40</string>
+			<dict>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.6</float>
+			</dict>
+		</array>
+		<array>
+			<string>Wind</string>
+			<int>192</int>
+			<vec3>-96 176 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>w_20</string>
+			<dict>
+				<int name="Radius">4048</int>
+				<int name="ChangeTime">500</int>
+				<float name="Strength">0.45</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>193</int>
+			<vec3>-208 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>191</int></array>
+			</dict>
+			<array><int>209</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>194</int>
+			<vec3>0 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>190</int></array>
+			</dict>
+			<array><int>209</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>195</int>
+			<vec3>-416 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>192</int></array>
+			</dict>
+			<array><int>209</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>196</int>
+			<vec3>208 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>189</int></array>
+			</dict>
+			<array><int>209</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>197</int>
+			<vec3>416 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>188</int></array>
+			</dict>
+			<array><int>209</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>198</int>
+			<vec3>-208 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>186</int></array>
+			</dict>
+			<array><int>203</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>199</int>
+			<vec3>0 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>185</int></array>
+			</dict>
+			<array><int>203</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>200</int>
+			<vec3>-416 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>187</int></array>
+			</dict>
+			<array><int>203</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>201</int>
+			<vec3>208 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>184</int></array>
+			</dict>
+			<array><int>203</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>202</int>
+			<vec3>416 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>183</int></array>
+			</dict>
+			<array><int>203</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>203</int>
+			<vec3>640 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_e</string>
+			<dict>
+				<string name="EventName">wind_e</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>204</int>
+			<vec3>576 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_s</string>
+			<dict>
+				<string name="EventName">wind_s</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>205</int>
+			<vec3>384 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_off</string>
+			<dict>
+				<string name="EventName">wind_off</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>206</int>
+			<vec3>640 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_ne</string>
+			<dict>
+				<string name="EventName">wind_ne</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>207</int>
+			<vec3>640 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_se</string>
+			<dict>
+				<string name="EventName">wind_se</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>208</int>
+			<vec3>512 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_sw</string>
+			<dict>
+				<string name="EventName">wind_sw</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>209</int>
+			<vec3>512 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_w</string>
+			<dict>
+				<string name="EventName">wind_w</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>210</int>
+			<vec3>512 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_nw</string>
+			<dict>
+				<string name="EventName">wind_nw</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>211</int>
+			<vec3>576 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_n</string>
+			<dict>
+				<string name="EventName">wind_n</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>212</int>
+			<vec3>384 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind_off</string>
+			<array><int>205</int><int>2000</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

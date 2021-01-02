@@ -1,0 +1,37 @@
+<unit slot="doodad">
+	<behavior class="BombBehavior">
+	
+		<string name="explode-sound">event:/enemy/high_priest/fireball</string>
+		<int name="delay">500</int>
+		
+		<dict name="action">
+			<string name="class">Explode</string>
+			<string name="fx">players/wizard/fireball_1_hit.effect</string>
+			
+			<int name="radius">12</int>
+			<float name="dist-scaling">5</float>
+			<float name="team-dmg">0</float>
+			
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="magical">30</int>
+				</dict>
+				<dict>
+					<string name="class">ApplyBuff</string>
+					<string name="buff">actors/buffs.sval:burning_strong</string>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="effect-params">
+			<float name="radius">12</float>
+		</dict>	
+	</behavior>
+
+	<scenes>
+		<scene>
+			<effect src="doodads/generic/trap_indicator.effect" />	
+		</scene>
+	</scenes>
+</unit>

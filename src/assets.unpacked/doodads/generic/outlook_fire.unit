@@ -1,0 +1,291 @@
+<unit slot="doodad" layer="5">
+	<scenes nosmoke="1" smoke="2" green="3" purple="4">
+		<scene name="1" random-start="true">		
+			<sprite ulayer="2" origin="3 10" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="120">0 121 7 13</frame>
+				<frame time="120">7 121 7 13</frame>
+				<frame time="120">14 121 7 13</frame>
+				<frame time="120">21 121 7 13</frame>
+			</sprite>
+			
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="75" />
+				</sizes>
+				<colors>
+					<color value="230 170 50 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="90 40 0 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="22" />
+				</sizes>
+				<colors>
+					<color value="60 20 0 5" />
+					<color value="35 10 0 0" />
+				</colors>
+			</light>				
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="12" />
+				</sizes>
+				<colors>
+					<color value="110 40 0 0" />
+				</colors>
+			</light>	
+		</scene>
+		
+		
+		<scene name="2" random-start="true">	
+			<scene src="1" />
+			
+			
+			<sprite ulayer="3" origin="5 10" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="120">73 34 4 7</frame>
+				<frame time="120">77 34 4 7</frame>
+				<frame time="120">81 34 4 7</frame>
+				<frame time="120">85 34 4 7</frame>
+			</sprite><!-- 
+			<sprite ulayer="3" origin="0 22" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="120">73 34 4 7</frame>
+				<frame time="120">77 34 4 7</frame>
+				<frame time="120">81 34 4 7</frame>
+				<frame time="120">85 34 4 7</frame>
+			</sprite> -->
+			<sprite ulayer="3" origin="-3 12" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="110">73 34 4 7</frame>
+				<frame time="110">77 34 4 7</frame>
+				<frame time="110">81 34 4 7</frame>
+				<frame time="110">85 34 4 7</frame>
+			</sprite> 
+			
+			<sprite ulayer="2" origin="3 19" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="130">114 51 6 15</frame>
+				<frame time="130">120 51 6 15</frame>
+				<frame time="130">126 51 6 15</frame>
+				<frame time="130">132 51 6 15</frame>
+				<frame time="130">138 51 6 15</frame>
+				<frame time="130">144 51 6 15</frame>
+				<frame time="130">150 51 6 15</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="3" random-start="true">		
+			<sprite ulayer="3" origin="3 10" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="120">209 60 7 13</frame>
+				<frame time="120">216 60 7 13</frame>
+				<frame time="120">223 60 7 13</frame>
+				<frame time="120">230 60 7 13</frame>
+			</sprite>
+			
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="75" />
+				</sizes>
+				<colors>
+					<color value="10 180 10 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="0 60 0 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="22" />
+				</sizes>
+				<colors>
+					<color value="0 60 0 5" />
+					<color value="15 40 0 0" />
+				</colors>
+			</light>				
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="12" />
+				</sizes>
+				<colors>
+					<color value="10 100 10 0" />
+				</colors>
+			</light>
+		</scene>
+		<scene name="4" random-start="true">		
+			
+			<sprite ulayer="3" origin="3 10" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="120">221 37 7 13</frame>
+				<frame time="120">228 37 7 13</frame>
+				<frame time="120">235 37 7 13</frame>
+				<frame time="120">242 37 7 13</frame>
+			</sprite>
+			
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="75" />
+				</sizes>
+				<colors>
+					<color value="125 10 125 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="45 0 45 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="22" />
+				</sizes>
+				<colors>
+					<color value="40 0 40 5" />
+					<color value="15 0 15 0" />
+				</colors>
+			</light>				
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="12" />
+				</sizes>
+				<colors>
+					<color value="90 10 90 0" />
+				</colors>
+			</light>	
+		</scene>
+	</scenes>
+</unit>

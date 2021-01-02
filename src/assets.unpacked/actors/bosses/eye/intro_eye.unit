@@ -1,0 +1,29 @@
+<unit>
+	<scenes>
+		<scene>
+			<collision static="false">
+				<circle offset="0 -12" sensor="true" radius="22" />
+			</collision>
+		
+			<sprite origin="23 30" layer="-1" looping="false" texture="./eye.png" material="system/default.mats:shadow">
+				<frame time="2500">0 0 0 0</frame>
+				<frame time="350">0 210 46 46</frame>				
+			</sprite>
+
+			<effect ulayer="1" delay="2500" pos="0 0" src="actors/bosses/eye/smoke_impact_eye.effect" />
+			<!-- <effect ulayer="1" delay="2500" pos="0 0" src="actors/bosses/eye/impact_blood.effect" /> -->
+			<effect src="actors/bosses/eye/eye_fall.effect" />
+			<effect delay="2500" src="actors/bosses/eye/eye_bounce_fall.effect" />
+			
+			<sprite origin="8 13" ulayer="1" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="3000">123 221 16 12</frame>
+			</sprite>
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="3000">49 49 49 49</frame>
+			</sprite>
+		</scene>
+
+	</scenes>
+</unit>

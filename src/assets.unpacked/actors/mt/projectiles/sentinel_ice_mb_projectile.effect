@@ -1,0 +1,82 @@
+<effect looping="true">
+
+	<sprite origin="10 10" looping="true" texture="actors/mt/sentinel_ice_ranged.png" material="system/default.mats:bright-noxray"
+	angle="t*pi*4-pi"
+	scale-x="0.5+0.5*saturate(t+l)"
+	scale-y="0.5+0.5*saturate(t+l)"
+	>
+		<frame time="300">32 432 20 20</frame>
+	</sprite>
+	<sprite origin="10 10" looping="true" texture="actors/mt/sentinel_ice_ranged.png" material="system/default.mats:bright-noxray"
+	angle="t*pi*4"
+	scale-x="0.5+0.5*saturate(t+l)"
+	scale-y="0.5+0.5*saturate(t+l)"
+	>
+		<frame time="300">32 432 20 20</frame>
+	</sprite>
+	<sprite origin="10 10" looping="true" texture="actors/mt/sentinel_ice_ranged.png" material="system/default.mats:glow-both-bright"
+	angle="t*pi*4-pi"
+	scale-x="0.5+0.5*saturate(t+l)"
+	scale-y="0.5+0.5*saturate(t+l)"
+	>
+		<frame time="300">32 432 20 20</frame>
+	</sprite>
+	<sprite origin="10 10" looping="true" texture="actors/mt/sentinel_ice_ranged.png" material="system/default.mats:glow-both-bright"
+	angle="t*pi*4"
+	scale-x="0.5+0.5*saturate(t+l)"
+	scale-y="0.5+0.5*saturate(t+l)"
+	>
+		<frame time="300">32 432 20 20</frame>
+	</sprite>
+	<sprite origin="10 10" looping="true" texture="actors/mt/sentinel_ice_ranged.png" material="system/default.mats:glow-both-bright"
+	angle="t*pi*4"
+	scale-x="0.5+0.5*saturate(t+l)"
+	scale-y="0.5+0.5*saturate(t+l)"
+	>
+		<frame time="300">52 432 20 20</frame>
+	</sprite>
+	<sprite origin="10 10" looping="true" texture="actors/mt/sentinel_ice_ranged.png" material="system/default.mats:glow-both-bright"
+	angle="t*pi*4+pi"
+	scale-x="0.5+0.5*saturate(t+l)"
+	scale-y="0.5+0.5*saturate(t+l)"
+	>
+		<frame time="300">52 432 20 20</frame>
+	</sprite>
+
+	<sprite origin="10 10" looping="true" texture="actors/mt/sentinel_ice_ranged.png" material="system/default.mats:xray"
+	angle="t*pi*4-pi"
+	scale-x="0.5+0.5*saturate(t+l)"
+	scale-y="0.5+0.5*saturate(t+l)"
+	>
+		<frame time="300">32 432 20 20</frame>
+	</sprite>
+	
+	
+	
+	
+	%// Flash
+	<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="50" />
+		<looping value="true" />
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="(40 + 2 * sin((t+l)*pi*2))*saturate(t+l)" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="1.5" />
+		<color-a value="0" />
+	</light> 
+
+	
+</effect>

@@ -1,0 +1,59 @@
+<unit slot="doodad">
+	<scenes open="on" closed="off">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-8 -6 15 12</rect>
+			</collision>
+			<sprite layer="-20" origin="30 30" texture="./altar_vampire_cross.png" material="system/default.mats:default-noxray">
+				<frame>0 0 60 60</frame>
+			</sprite>	
+		</scene>		
+		<scene name="on" trigger-snd="event:/misc/paper">
+			<scene src="shared" />
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="150" />
+					<size value="135" />
+				</sizes>
+				<colors>
+					<color value="254 250 220 0" />
+				</colors>
+			</light>
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="5"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="254 250 220 0" />
+				</colors>
+			</light>
+			<sprite origin="8 15" texture="./altar_vampire_cross.png" material="system/default.mats:default">
+				<frame>60 0 18 21</frame>
+			</sprite>				
+		</scene>			
+		<scene name="off" trigger-snd="event:/item/pickup_cross">
+			<scene src="shared" />
+			<sprite origin="8 15" texture="./altar_vampire_cross.png" material="system/default.mats:default">
+				<frame>78 0 18 21</frame>
+			</sprite>			
+		</scene>									
+	</scenes>
+</unit>

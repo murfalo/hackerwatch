@@ -1,0 +1,105 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle 1</string>
+		<float name="speed">3</float>
+		<int name="ttl">2500</int>
+		<string name="fx">actors/projectiles/altar_sphere_nova_hit.effect</string>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">40</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="1 2 3 4">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>			
+<!--  			<light pos="0 0"> OLD RED LIGHT
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="44" />
+					<size value="46" />
+				</sizes>
+				<colors>
+					<color value="255 150 150 0" />
+				</colors>
+			</light>	 --> 
+			<light pos="0 0"><!--  NEW BLUE LIGHT -->
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="44" />
+					<size value="48" />
+				</sizes>
+				<colors>
+					<color value="255 150 150 0" />
+					<color value="240 160 160 0" />
+				</colors>
+			</light>	
+		</scene>
+		<scene random-start="true" name="1">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./altar_sphere_nova.png" material="system/default.mats:actor">
+				<frame time="30">0 0 8 13</frame>
+				<frame time="30">8 0 8 13</frame>
+				<frame time="30">16 0 8 13</frame>
+				<frame time="30">24 0 8 13</frame>
+				<frame time="30">0 13 8 13</frame>
+				<frame time="30">8 13 8 13</frame>
+			</sprite>		
+		</scene>	
+		<scene random-start="true" name="2">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./altar_sphere_nova.png" material="system/default.mats:actor">
+				<frame time="35">8 13 8 13</frame>
+				<frame time="35">0 13 8 13</frame>
+				<frame time="35">24 0 8 13</frame>
+				<frame time="35">16 0 8 13</frame>
+				<frame time="35">8 0 8 13</frame>
+				<frame time="35">0 0 8 13</frame>
+			</sprite>		
+		</scene>		
+		<scene random-start="true" name="3">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./altar_sphere_nova.png" material="system/default.mats:actor">
+				<frame time="50">0 0 8 13</frame>
+				<frame time="50">8 0 8 13</frame>
+				<frame time="50">16 0 8 13</frame>
+				<frame time="50">24 0 8 13</frame>
+				<frame time="50">0 13 8 13</frame>
+				<frame time="50">8 13 8 13</frame>
+			</sprite>		
+		</scene>	
+		<scene random-start="true" name="4">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./altar_sphere_nova.png" material="system/default.mats:actor">
+				<frame time="65">8 13 8 13</frame>
+				<frame time="65">0 13 8 13</frame>
+				<frame time="65">24 0 8 13</frame>
+				<frame time="65">16 0 8 13</frame>
+				<frame time="65">8 0 8 13</frame>
+				<frame time="65">0 0 8 13</frame>
+			</sprite>		
+		</scene>	
+	</scenes>
+</unit>

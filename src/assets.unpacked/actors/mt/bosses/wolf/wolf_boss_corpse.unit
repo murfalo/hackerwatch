@@ -1,0 +1,94 @@
+<unit slot="actor" netsync="position">
+	<behavior class="Breakable">
+		<string name="break-sound">event:/enemy/boss_wolf/gore</string>
+		<string name="hit-sound">event:/misc/gore_hit</string>
+		<string name="gore">effects/gibs/gib_boss_wolf.sval</string>
+		<bool name="shoot-through">false</bool>
+		<bool name="always-hit-gore">true</bool>
+	</behavior>
+	
+	<scenes start="default" empty="empty" bomb="bomb">
+		<scene name="shared">
+			<data name="health"><int>50</int></data>
+			<collision static="true">
+				<circle offset="0 0" radius="20" />
+			</collision>
+			<shadow>
+				<sprite origin="16 16" texture="doodads/special/shadows.png">
+					<frame>90 0 32 32</frame>
+				</sprite>	
+			</shadow>
+		</scene>
+
+		<scene name="default">
+			<scene src="shared" />
+			<sprite looping="false" origin="40 48" texture="./wolf_boss_death.png" material="system/default.mats:actor">
+				<frame time="50">0 0 80 80</frame>
+				<frame time="50">80 0 80 80</frame>
+				<frame time="50">0 0 80 80</frame>
+				<frame time="50">80 0 80 80</frame>
+				<frame time="50">0 0 80 80</frame>
+				<frame time="50">80 0 80 80</frame>
+				<frame time="50">0 0 80 80</frame>
+				<frame time="50">80 0 80 80</frame>
+				<frame time="50">0 0 80 80</frame>
+				<frame time="50">80 0 80 80</frame>
+				<frame time="50">160 0 80 80</frame>
+				<frame time="50">240 0 80 80</frame>
+				<frame time="50">0 80 80 80</frame>
+				<frame time="550">80 80 80 80</frame>
+				<frame time="1500">160 80 80 80</frame>
+				<frame time="500">432 0 80 80</frame>
+				<frame time="500">432 80 80 80</frame>
+				<frame time="50">240 80 80 80</frame>
+			</sprite>
+			<sprite looping="false" origin="24 45"texture="./wolf_boss_death.png" material="system/default.mats:actor">
+				<frame time="1200">0 0 0 0</frame>
+				<frame time="30">320 0 48 45</frame>
+				<frame time="30">368 0 48 45</frame>
+				<frame time="30">320 45 48 45</frame>
+				<frame time="30">368 45 48 45</frame>
+				<frame time="30">320 90 48 45</frame>
+				<frame time="40">368 90 48 45</frame>
+				<frame time="50">320 135 48 45</frame>
+				<frame time="50">368 135 48 45</frame>
+				<frame time="1">0 0 0 0</frame>
+			</sprite>
+			<effect delay="2700" src="actors/mt/bosses/wolf/smoke_impact_wolf.effect" />
+			<effect src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			
+			
+			<effect pos="-7 -7" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="0 -17" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="0 5" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-2 -7" delay="250" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-7 -22" delay="500" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="7 0" delay="750" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-7 -7" delay="1250" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-6 0" delay="1350" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			
+			<effect pos="7 -12" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="7 -2" delay="1250" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="7 -12" delay="450" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="7 -7" delay="350" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="7 -12" delay="300" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			
+			<effect pos="-1 3" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-12 2" delay="1350" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-12 2" delay="1200" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-7 0" delay="1350" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="12 2" delay="150" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-12 0" delay="850" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-12 2" delay="400" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			
+			<effect pos="-7 -7" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="-7 -17" delay="1500" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			
+			<effect pos="7 -12" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			
+			<effect pos="-1 3" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+			<effect pos="12 2" delay="1150" src="actors/mt/bosses/wolf/wolf_death_blood.effect" />
+		</scene>
+
+	</scenes>
+</unit>

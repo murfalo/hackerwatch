@@ -1,0 +1,56 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">paladin</string>
+	<string name="name">.skills.paladin.charge</string>
+	<string name="description">.skills.paladin.charge.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 0 24 24</vec4>
+	</array>
+
+	<int name="cost">18</int>
+
+	<dict name="skill">
+		<string name="class">Skills::Charge</string>
+		<string name="anim">walk-fast 8</string>
+		<string name="snd">event:/player/paladin/charge</string>
+		<string name="hit-fx">effects/players/charge_dust.effect</string>
+		<string name="dust-fx">effects/players/charge_dust.effect</string>
+		
+		<int name="cooldown">250</int>
+		<int name="castpoint">0</int>
+		
+		<int name="mana-cost">30</int>
+		
+		<int name="speed">12</int>
+		<int name="duration">190</int>
+		
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="physical">75</int>
+		</dict>
+		
+		<bool name="stop-on-hit">true</bool>
+		<dict name="hit-effect">
+			<string name="class">Explode</string>
+				
+			<int name="radius">16</int>
+			<int name="min-radius">16</int>
+			
+			<float name="dist-scaling">1000</float>
+			<float name="team-dmg">0</float>
+			
+			<array name="effects">
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:shield-bash</string>
+				</dict>
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">75</int>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>

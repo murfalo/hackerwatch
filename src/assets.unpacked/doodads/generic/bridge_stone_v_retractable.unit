@@ -1,0 +1,44 @@
+<unit slot="doodad" layer="-5">
+	<scenes open="open" close="close">
+		<scene name="open" trigger-snd="event:/misc/bridge_stone">
+			<minimap_sprite origin="-6 4" layer="110" texture="gui/minimap.png" frame="0 206 2 2" />
+			<minimap_sprite origin="-6 -2" layer="110" texture="gui/minimap.png" frame="0 206 2 2" />
+			<minimap_sprite origin="1 4" layer="110" texture="gui/minimap.png" frame="0 206 18 2" />
+			<minimap_sprite origin="8 4" layer="110" texture="gui/minimap.png" frame="0 206 18 2" />
+			<minimap_sprite origin="8 2" layer="110" texture="gui/minimap.png" frame="24 4 8 4" />
+			<minimap_sprite origin="1 2" layer="110" texture="gui/minimap.png" frame="24 4 8 4" />
+			<minimap_sprite origin="-6 2" layer="110" texture="gui/minimap.png" frame="24 4 2 4" />
+			<minimap_sprite origin="8 -2" layer="110" texture="gui/minimap.png" frame="0 206 18 2" />
+			<minimap_sprite origin="1 -2" layer="110" texture="gui/minimap.png" frame="0 206 18 2" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-32 -19 64 32</rect>
+			</collision>			
+			<sprite origin="32 21" looping="false" texture="./bridge_stone.png" material="system/default.mats:floor">
+				<frame time="75">384 141 64 34</frame>
+				<frame time="200">320 141 64 34</frame>
+				<frame time="75">256 141 64 34</frame>
+				<frame time="75">192 141 64 34</frame>
+				<frame time="75">128 141 64 34</frame>
+				<frame time="75">64 141 64 34</frame>
+				<frame time="75">0 141 64 34</frame>
+			</sprite>
+		</scene>
+		<scene name="close" trigger-snd="event:/misc/bridge_stone">
+			<minimap_sprite origin="8 4" layer="110" texture="gui/minimap.png" frame="32 0 2 8" />
+			<minimap_sprite origin="-6 4" layer="110" texture="gui/minimap.png" frame="32 0 2 8" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-32 -19 4 32</rect>
+				<rect shoot-through="true" aim-through="true">28 -19 4 32</rect>
+			</collision>
+			<sprite origin="32 21" looping="false" texture="./bridge_stone.png" material="system/default.mats:floor">
+				<frame time="75">64 141 64 34</frame>
+				<frame time="75">128 141 64 34</frame>
+				<frame time="75">192 141 64 34</frame>
+				<frame time="75">256 141 64 34</frame>
+				<frame time="200">320 141 64 34</frame>
+				<frame time="75">384 141 64 34</frame>
+				<frame time="75">448 141 64 34</frame>
+			</sprite>
+		</scene>			
+	</scenes>
+</unit>

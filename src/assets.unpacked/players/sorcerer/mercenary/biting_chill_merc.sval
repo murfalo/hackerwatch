@@ -1,0 +1,54 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">sorcerer</string>
+	<string name="name">.skills.sorcerer.biting-chill</string>
+	<string name="description">.skills.sorcerer.biting-chill.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 48 24 24</vec4>
+	</array>
+
+	<int name="cost">14</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hit</string>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs_merc.sval:chill</string>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">spellhit</string>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs_merc.sval:chill</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hit</string>
+				<float name="chance">0.075</float>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs_merc.sval:freeze</string>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">spellhit</string>
+				<float name="chance">0.075</float>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs_merc.sval:freeze</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</dict>

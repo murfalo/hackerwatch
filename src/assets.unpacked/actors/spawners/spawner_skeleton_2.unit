@@ -1,0 +1,152 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.spawner_skeleton_2</string>
+		<string name="beastiary-scene">portrait</string>
+		<vec2 name="beastiary-offset">-1 -5</vec2>
+		<string name="quality">uncommon</string>
+	
+		<string name="type">construct</string>
+		<int name="hp">600</int>
+		<int name="armor">60</int>
+		<int name="resistance">30</int>
+		<int name="experience-reward">150</int>
+		<float name="mp-scale-fact">1</float>
+		
+		<string name="gore">effects/gibs/gib_skeleton_spawner.sval</string>
+		<string name="death-snd">event:/enemy/skeleton/death_spawner</string>
+		<string name="loot">actors/loot.sval:spawner_skeleton_2</string>
+		
+		<bool name="impenetrable">true</bool>
+		<int name="aggro-range">130</int>
+		<float name="debuff-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_static.inc"
+		</array>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">default</string>
+				
+				<array name="conditional">
+					<string>hp</string><string>gt</string><float>0.5</float>
+				</array>
+				
+				<int name="charges">15</int>
+				<bool name="must-see">true</bool>
+				<int name="cooldown">1000</int>
+				<int name="range">210</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>750</int><string>actors/skeleton_2_small.unit</string>
+							<int>250</int><string>actors/skeleton_2.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">default</string>
+				
+				<array name="conditional">
+					<string>hp</string><string>lt</string><float>0.5</float>
+				</array>
+				
+				<int name="charges">15</int>
+				<bool name="must-see">true</bool>
+				<int name="cooldown">500</int>
+				<int name="range">210</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>750</int><string>actors/skeleton_2_small.unit</string>
+							<int>250</int><string>actors/skeleton_2.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ On hit spawn
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>0</int>
+				</array>
+			
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDamaged</string>
+				<int name="charges">15</int>
+				<int name="cooldown">2000</int>
+				
+				<dict name="action">
+					<string name="class">SpawnUnit</string>
+					<array name="units">
+						<int>750</int><string>actors/skeleton_2_small.unit</string>
+						<int>250</int><string>actors/skeleton_2.unit</string>
+					</array>
+					<bool name="aggro">true</bool>
+					<bool name="safe-spawn">true</bool>
+					<int name="spawn-dist">16</int>
+				</dict>
+			</dict>
+			
+			<!-- <dict> -->
+				<!-- <string name="class">CompositeActorAuraSkill</string> -->
+				<!-- <string name="buff">actors/buffs.sval:respawn_skeleton</string> -->
+				<!-- <int name="freq">250</int> -->
+				<!-- <int name="range">80</int> -->
+			<!-- </dict> -->
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/spawners/spawner_skeleton_2_razed.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<minimap_sprite layer="1" origin="3 3" texture="gui/minimap.png" frame="123 5 5 5"/>
+			<collision static="true">
+				<circle offset="-1 0" radius="13" />
+			</collision>
+			<sprite origin="16 16" looping="true" texture="actors/spawners/spawner_skeleton_2.png" material="system/default.mats:actor">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			<sprite origin="32 32" layer="-20" looping="true" texture="actors/spawners/spawner_archer_1.png" material="system/default.mats:floor">
+				<frame>0 32 64 64</frame>
+			</sprite>				
+		</scene>
+		<scene name="portrait">
+			<sprite origin="16 16" looping="true" texture="actors/spawners/spawner_skeleton_2.png" material="system/default.mats:actor">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			<sprite origin="32 32" layer="-20" looping="true" texture="actors/spawners/spawner_archer_1.png" material="system/default.mats:floor">
+				<frame>0 32 64 64</frame>
+			</sprite>		
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,47 @@
+<unit netsync="none">
+	<behavior class="BeamProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">6</float>
+		<int name="ttl">4000</int>
+		<int name="length">500</int>
+		<bool name="blockable">false</bool>
+		<int name="penetration">10000</int>
+		%//<int name="ray-num">2</int>
+		<float name="team-dmg">1</float>
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_power</string>
+			</dict>			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_darkness</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_manableed</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_playerbleed</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_skeletonbleed</string>
+			</dict>			
+		</array>
+		<dict name="effect-params">
+			<float name="height">0</float>
+			<float name="width">6</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="./night_beam.effect" />
+		</scene>
+	</scenes>
+</unit>

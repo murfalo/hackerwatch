@@ -1,0 +1,49 @@
+<unit>
+	<behavior class="BombBehavior">
+		<string name="spawn-sound">event:/enemy/boss_vampire/blade</string>
+		
+		<int name="delay-random">200</int>
+		<int name="delay">500</int>
+
+		<array name="actions">
+			<dict>
+				<string name="class">ShootRandomEnemy</string>
+				<int name="range">500</int>
+				<string name="projectile">actors/bosses/vampire/blade_projectile.unit</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<sprite origin="13 18" loopback="500" looping="true" texture="./blade_projectile.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">0 162 26 36</frame>
+				<frame time="100">26 162 26 36</frame>
+				<frame time="100">52 162 26 36</frame>
+				<frame time="100">78 162 26 36</frame>
+				<frame time="100">104 162 26 36</frame>
+				<frame time="100">130 162 26 36</frame>
+				<frame time="100">156 162 26 36</frame>
+			</sprite>
+			
+			<light pos="0 15">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="255 0 0 0" />
+				</colors>
+			</light>		
+		</scene>
+	</scenes>
+</unit>

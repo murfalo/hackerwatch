@@ -1,0 +1,107 @@
+<unit slot="doodad">
+	<scenes 1="1" 2="2" 3="3" 4="4" 5="5" >
+		<scene name="1">
+			<collision static="true">
+				<polygon shoot-through="true" decompose="2">
+					<point>-10 -17</point>
+					<point>5 -12</point>
+					<point>18 0</point>
+					<point>12 11</point>
+					<point>-6 4</point>
+					<point>-16 -10</point>
+				</polygon>
+			</collision>
+			<shadow>
+				<sprite layer="1" origin="3 19" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+					<frame>0 74 28 17</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="1" origin="9 26" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+				<frame>43 76 31 21</frame>
+			</sprite>
+			<sprite layer="-3" origin="20 26" texture="./wooden_spikes.png" material="system/default.mats:floor">
+				<frame>0 0 42 37</frame>
+			</sprite>
+		</scene>
+	
+		<scene name="2">
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" offset="-1 -1" radius="10"/>
+			</collision>
+			<shadow>
+				<sprite layer="1" origin="0 9" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+					<frame>28 74 15 12</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="1" origin="8 20" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+				<frame>74 76 18 19</frame>
+			</sprite>
+			<sprite layer="-3" origin="13 20" texture="./wooden_spikes.png" material="system/default.mats:floor">
+				<frame>42 0 24 31</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="3">
+			<collision static="true">
+				<polygon shoot-through="true" decompose="2">
+					<point>-2 -11</point>
+					<point>16 -7</point>
+					<point>14 7</point>
+					<point>-1 10</point>
+					<point>-16 7</point>
+					<point>-18 -6</point>
+				</polygon>
+			</collision>
+			<shadow>
+				<sprite layer="1" origin="11 17" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+					<frame>46 62 31 14</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="1" origin="14 18" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+				<frame>77 61 28 15</frame>
+			</sprite>
+			<sprite layer="-3" origin="19 20" texture="./wooden_spikes.png" material="system/default.mats:floor">
+				<frame>66 0 37 33</frame>
+			</sprite>
+		</scene>		
+		<scene name="4">
+			<collision static="true">
+				<polygon shoot-through="true" decompose="2">
+					<point>-5 -11</point>
+					<point>10 -15</point>
+					<point>17 -4</point>
+					<point>7 8</point>
+					<point>-11 11</point>
+					<point>-18 1</point>
+				</polygon>
+			</collision>
+			<shadow>
+				<sprite layer="1" origin="12 19" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+					<frame>64 33 34 28</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="1" origin="22 22" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+				<frame>92 76 31 20</frame>
+			</sprite>
+			<sprite layer="-3" origin="22 22" texture="./wooden_spikes.png" material="system/default.mats:floor">
+				<frame>0 37 41 37</frame>
+			</sprite>
+		</scene>		
+		<scene name="5">
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" offset="-1 -1" radius="10"/>
+			</collision>
+			<shadow>
+				<sprite layer="1" origin="12 16" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+					<frame>0 91 23 24</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="1" origin="12 19" texture="./wooden_spikes.png" material="system/default.mats:default-noxray">
+				<frame>23 97 18 17</frame>
+			</sprite>
+			<sprite layer="-3" origin="13 19" texture="./wooden_spikes.png" material="system/default.mats:floor">
+				<frame>41 31 23 31</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

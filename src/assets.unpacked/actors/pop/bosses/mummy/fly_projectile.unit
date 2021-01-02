@@ -1,0 +1,36 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">0.5</float>
+		<float name="speed-delta">0.5</float>
+		<float name="speed-delta-max">5</float>
+		<int name="ttl">5000</int>
+		<string name="hit-snd">event:/enemy/boss_mummy/flies-hit</string>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">10</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<array name="units">
+					<int>200</int><string>actors/pop/bosses/mummy/fly.unit</string>
+				</array>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<bool name="aggro">true</bool>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>
+
+			<effect ulayer="-1" src="./fly_swarm.effect"/>
+		</scene>
+	</scenes>
+</unit>

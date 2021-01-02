@@ -1,0 +1,77 @@
+<effect looping="false" layer="-1">
+	<param name="radius" default="32" />
+	<data>
+		<string name="sound">event:/item/chapel_blast</string>
+	</data>	
+
+	<sprite origin="32 32" looping="false" texture="./divine_judgement.png" material="system/default.mats:bright"
+	
+		angle="floor(rand(u)*4) * (pi/2)"
+	
+		color-r="( 2.0+rand(u+23)*0.5 )*(1-t)"
+		color-g="( 2.0+rand(u+23)*0.5 )*(1-t)"
+		color-b="( 0.5+rand(u+23)*0.5 )*(1-t)"
+		color-a="saturate(cos(pow(t,4)*pi)-0.6)"
+		>
+	
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">192 0 64 64</frame>
+		<frame time="50">0 64 64 64</frame>
+		<frame time="50">64 64 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" looping="false" texture="./divine_judgement.png" material="system/default.mats:glow-both-bright"
+	
+		angle="floor(rand(u)*4) * (pi/2)"
+	
+		color-r="( 2.0+rand(u+23)*0.5 )*(1-t)"
+		color-g="( 2.0+rand(u+23)*0.5 )*(1-t)"
+		color-b="( 0.5+rand(u+23)*0.5 )*(1-t)"
+		color-a="saturate(cos(pow(t,4)*pi)-0.6)"
+		>
+	
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">192 0 64 64</frame>
+		<frame time="50">0 64 64 64</frame>
+		<frame time="50">64 64 64 64</frame>
+	</sprite>
+	
+	
+	<sprite origin="0 0" looping="false" texture="effects/empty.png" material="system/default.mats:bright-noxray"
+		num-sprites="radius * (rand(u+i)+0.5)"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5) - 18 * sin(t*pi/2) + 0.2"
+		
+        color-r="1.5-1*t"
+        color-g="1.5-1.5*t"
+        color-b="saturate(1-t*2)"
+        color-a="saturate(1-t)"
+		scale-y="4-t*3"
+	>
+        <frame time="300">0 0 1 1</frame>
+	</sprite>	
+
+	
+	<light pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="max(sin(2 * pi * t),0)*100" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0.25" />
+		<color-a value="0/255" />
+	</light>
+</effect>

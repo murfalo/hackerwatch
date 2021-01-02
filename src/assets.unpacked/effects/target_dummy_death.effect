@@ -1,0 +1,47 @@
+<effect looping="false">
+	<sprite random-start="true" origin="8 8" looping="false" texture="doodads/generic/target_dummy.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="6"
+		
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) + 6"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5)-11+t*11"
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+		<frame time="150">110 0 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 8 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 0 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 8 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 0 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 8 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+
+	</sprite>
+	
+	<sprite random-start="true" origin="8 8" looping="false" texture="doodads/generic/target_dummy.png" material="system/default.mats:shadow"
+	
+		num-sprites="6"
+		
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) + 6"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 8 * pow(rand(u+37*i),0.5)"
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+		<frame time="150">110 0 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 8 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 0 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 8 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 0 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+		<frame time="150">110 8 6 4</frame>
+		<frame time="150">110 4 6 4</frame>
+
+	</sprite>
+</effect>

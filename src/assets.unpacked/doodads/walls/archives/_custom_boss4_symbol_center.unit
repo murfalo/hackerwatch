@@ -1,0 +1,36 @@
+<unit slot="doodad" layer="-10" >
+	<scenes off="off" on="on">
+		<scene name="shared">
+			<sprite ulayer="1" origin="32 32" texture="./_custom_boss4_symbols.png" material="system/default.mats:floor">
+				<frame>57 0 63 63</frame>
+			</sprite>
+		</scene>
+		<scene name="off">
+			<scene src="shared" />
+		</scene>
+		<scene name="on">
+			<scene src="shared" />
+			<sprite ulayer="10" origin="29 30" texture="./_custom_boss4_symbols.png" material="system/default.mats:bright">
+				<frame>60 63 56 56</frame>
+			</sprite>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1250" />
+				<overbright value="3" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="70" />
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="230 36 45 10" />
+				</colors>
+			</light>
+		</scene>
+	</scenes>
+</unit>

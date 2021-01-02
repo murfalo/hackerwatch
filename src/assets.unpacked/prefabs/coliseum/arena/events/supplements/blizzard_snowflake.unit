@@ -1,0 +1,98 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="type">construct</string>
+		<int name="hp">5000</int>
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+		<int name="armor">500</int>
+		<int name="resistance">500</int>
+		
+		<string name="gore">effects/gibs/gib_frostball.sval</string>
+
+		<int name="aggro-range">9999</int>
+		<bool name="must-see-target">false</bool>
+		<bool name="no-buffs">true</bool>
+		<bool name="targetable">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<float name="wind-scale">0</float>
+
+		<dict name="movement">
+			<string name="class">TornadoMovement</string>
+			<string name="anim-idle">idle</string>
+			<string name="anim-walk">idle</string>
+
+			<float name="min-speed">1.5</float>
+			<float name="max-speed">4</float>
+			<float name="turn-speed">1</float>
+			<float name="time-scaler">4000</float>
+			<int name="min-targeting-cooldown">1000</int>
+			<int name="max-targeting-cooldown">2000</int>
+			<int name="target-offset">60</int>
+			<int name="repulsion-strength">100</int>
+			<int name="repulsion-radius">30</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<array name="conditional">
+					<string>flag</string><string>is</string><string>arena_blizzard_destroy</string>
+				</array>
+
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">idle</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">50</int>
+				
+				<int name="range">9999</int>
+				<bool name="must-see">false</bool>
+
+				<dict name ="action">
+					<string name="class">Suicide</string>
+				</dict>
+			</dict>
+		
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">idle</string>
+
+				<int name="cooldown">10000</int>
+				<int name="castpoint">50</int>
+				
+				<int name="range">9999</int>
+				<bool name="must-see">false</bool>
+
+				<dict name ="action">
+					<string name="class">Suicide</string>
+				</dict>
+			</dict>
+		
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<bool name="friendly">false</bool>
+				<string name="buff">actors/buffs.sval:dragon_freezing_frostball</string>
+				<int name="freq">200</int>
+				<int name="range">22</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle sensor="true" aim-through="true" radius="0.5" charge-through="true" />
+			</collision>
+			
+			<effect src="actors/bosses/dragon/snowflake.effect" />
+			<effect pos="0 -4" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="500" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="700" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="350" src="effects/blizzard.effect" />
+			<effect src="actors/projectiles/snow_area.effect" /> 
+			<effect pos="0 -4" src="actors/elemental_ice_dust.effect" /> 
+		</scene>
+	</scenes>
+</unit>

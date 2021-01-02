@@ -1,0 +1,163 @@
+<dict>
+	<string name="name">.skills.thief.grappling-hook</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 72 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::GrappleHook</string>
+			
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+			
+			<string name="chain-fx">effects/players/chain_link.effect</string>
+			<string name="dust-fx">effects/players/charge_dust.effect</string>
+			<string name="hit-snd">event:/player/thief/chain_hit</string>
+			<string name="miss-snd">event:/player/thief/chain_miss</string>
+			<string name="anim">walk-fast 8</string>
+			
+			<int name="mana-cost">8</int>
+			
+			<int name="speed">14</int>
+			<int name="range">125</int>
+			
+			<dict name="hit-effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:grapple-1</string>
+			</dict>
+			<dict name="effect">
+				<string name="class">Explode</string>
+				
+				<int name="radius">18</int>
+				<int name="min-radius">18</int>
+				
+				<float name="dist-scaling">1000</float>
+				<float name="team-dmg">0</float>
+				
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:grapple-1</string>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::GrappleHook</string>
+			
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+			
+			<string name="chain-fx">effects/players/chain_link.effect</string>
+			<string name="dust-fx">effects/players/charge_dust.effect</string>
+			<string name="hit-snd">event:/player/thief/chain_hit</string>
+			<string name="miss-snd">event:/player/thief/chain_miss</string>
+			<string name="anim">walk-fast 8</string>
+			
+			<int name="mana-cost">7</int>
+			
+			<int name="speed">14</int>
+			<int name="range">150</int>
+			
+			<dict name="hit-effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:grapple-2</string>
+			</dict>
+			<dict name="effect">
+				<string name="class">Explode</string>
+				
+				<int name="radius">18</int>
+				<int name="min-radius">18</int>
+				
+				<float name="dist-scaling">1000</float>
+				<float name="team-dmg">0</float>
+				
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:grapple-2</string>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::GrappleHook</string>
+			
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+			
+			<string name="chain-fx">effects/players/chain_link.effect</string>
+			<string name="dust-fx">effects/players/charge_dust.effect</string>
+			<string name="hit-snd">event:/player/thief/chain_hit</string>
+			<string name="miss-snd">event:/player/thief/chain_miss</string>
+			<string name="anim">walk-fast 8</string>
+			
+			<int name="mana-cost">6</int>
+			
+			<int name="speed">14</int>
+			<int name="range">175</int>
+			
+			<dict name="hit-effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:grapple-3</string>
+			</dict>
+			<dict name="effect">
+				<string name="class">Explode</string>
+				
+				<int name="radius">18</int>
+				<int name="min-radius">18</int>
+				
+				<float name="dist-scaling">1000</float>
+				<float name="team-dmg">0</float>
+				
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:grapple-3</string>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::GrappleHook</string>
+			
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+			
+			<string name="chain-fx">effects/players/chain_link.effect</string>
+			<string name="dust-fx">effects/players/charge_dust.effect</string>
+			<string name="hit-snd">event:/player/thief/chain_hit</string>
+			<string name="miss-snd">event:/player/thief/chain_miss</string>
+			<string name="anim">walk-fast 8</string>
+			
+			<int name="mana-cost">5</int>
+			
+			<int name="speed">14</int>
+			<int name="range">200</int>
+			
+			<dict name="hit-effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:grapple-4</string>
+			</dict>
+			<dict name="effect">
+				<string name="class">Explode</string>
+				
+				<int name="radius">18</int>
+				<int name="min-radius">18</int>
+				
+				<float name="dist-scaling">1000</float>
+				<float name="team-dmg">0</float>
+				
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:grapple-4</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>

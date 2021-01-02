@@ -1,0 +1,95 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>16 24</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">32 16</vec2>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PlayMusic</string>
+			<int>2</int>
+			<vec3>40 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/prison</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>3</int>
+			<vec3>40 -40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Music">event:/music/prison</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>4</int>
+			<vec3>-64 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnTrue"><int>5</int></array>
+				<array name="OnFalse"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>5</int>
+			<vec3>-16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>start</string>
+			<dict>
+				<string name="UnitType">doodads/walls/prison/exit_start.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>6</int>
+			<vec3>-16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">doodads/walls/prison/exit_dn.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>7</int>
+			<vec3>-64 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>prison_enter on</string>
+			<dict>
+				<int name="State">3</int>
+				<string name="Flag">prison_enter</string>
+			</dict>
+		</array>
+	</array>
+</dict>

@@ -1,0 +1,94 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/trap_shooter_arrow_s.unit"><vec2>60 0</vec2><int>1</int><vec2>44 0</vec2><int>2</int><vec2>36 0</vec2><int>3</int><vec2>52 0</vec2><int>4</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ProjectileShooter</string>
+			<int>5</int>
+			<vec3>61 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>6</int>
+			<vec3>48 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>5</int><int>0</int><int>7</int><int>0</int><int>8</int><int>0</int><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>7</int>
+			<vec3>53 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>8</int>
+			<vec3>45 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>9</int>
+			<vec3>37 3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>10</int>
+			<vec3>-96 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_no_traps</string>
+			<dict>
+				<string name="Flag">fountain_no_traps</string>
+				<array name="OnTrue"><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>11</int>
+			<vec3>-32 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>6</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

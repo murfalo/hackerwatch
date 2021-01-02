@@ -1,0 +1,20 @@
+<unit slot="doodad" layer="-52">
+	<scenes default="1" snow="s1">
+		<scene name="1">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -16 8 16</rect>
+			</collision>
+			<sprite origin="0 16" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 70 16 16</frame>
+			</sprite>
+		</scene>		
+		<scene name="s1">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -16 8 16</rect>
+			</collision>
+			<sprite origin="0 16" layer="51" texture="./base.png" material="system/default.mats:floor">
+				<frame>96 150 16 16</frame>
+			</sprite>
+		</scene>	
+	</scenes>
+</unit>

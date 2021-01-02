@@ -1,0 +1,340 @@
+<loader>Statues::LoadStatues</loader>
+<dict>
+	<dict name="ice-mage">
+		<string name="name">.shop.statues.ice-mage.name</string>
+		<string name="desc">.shop.statues.ice-mage.desc?build=7.5&upgrade=+5</string>
+		<string name="desc-upgrade">.shop.statues.ice-mage.desc-upgrade?upgrade=+5</string>
+		<string name="use-text">.shop.statues.ice-mage.lore</string>
+
+		<string name="achievement">statue_ice_mage</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">ice_mage</string>
+		<string name="scene-small">ice_mage_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hit</string>
+			<float name="chance">0.075</float>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:statue-frozen</string>
+			</dict>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueFilteredDamage</string>
+			<array name="tags">
+				<string>frozen</string>
+			</array>
+
+			<float name="mul-add">0.05</float>
+		</dict>
+	</dict>
+	
+	<dict name="fire-mage">
+		<string name="name">.shop.statues.fire-mage.name</string>
+		<string name="desc">.shop.statues.fire-mage.desc?build=20&upgrade=5</string>
+		<string name="desc-upgrade">.shop.statues.fire-mage.desc-upgrade?upgrade=+5</string>
+		<string name="use-text">.shop.statues.fire-mage.lore</string>
+
+		<string name="achievement">statue_fire_mage</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">fire_mage</string>
+		<string name="scene-small">fire_mage_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Speed</string>
+			<float name="skill-mul">1.2</float>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueManaDamage</string>
+			<float name="mana-mul">0.05</float>
+		</dict>
+	</dict>
+	
+	<dict name="assassin">
+		<string name="name">.shop.statues.assassin.name</string>
+		<string name="desc">.shop.statues.assassin.desc?build=5&upgrade=+5</string>
+		<string name="desc-upgrade">.shop.statues.assassin.desc-upgrade?upgrade=+5</string>
+		<string name="use-text">.shop.statues.assassin.lore</string>
+
+		<string name="achievement">statue_assassin</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">assassin</string>
+		<string name="scene-small">assassin_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">evade</string>
+			<int name="timeout">10</int>
+			<bool name="target-self">false</bool>
+			
+			<string name="fx">effects/players/assassin_statue.effect</string>
+			<dict name="effect">
+				<string name="class">Decimate</string>
+				<float name="amount">0.05</float>
+			</dict>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueFilteredDamage</string>
+			<array name="tags">
+				<string>stun</string>
+				<string>disarm</string>
+			</array>
+
+			<float name="mul-add">0.05</float>
+		</dict>
+	</dict>
+	
+	<dict name="warrior">
+		<string name="name">.shop.statues.warrior.name</string>
+		<string name="desc">.shop.statues.warrior.desc?build=100&upgrade=0.5</string>
+		<string name="desc-upgrade">.shop.statues.warrior.desc-upgrade?upgrade=0.5</string>
+		<string name="use-text">.shop.statues.warrior.lore</string>
+
+		<string name="achievement">statue_warrior</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">warrior</string>
+		<string name="scene-small">warrior_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Combo</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">attack</string>
+				<int name="counter">5</int>
+				<float name="chance">1</float>
+				
+				<bool name="target-self">true</bool>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">players/combo_blast.effect</string>
+						<int name="radius">64</int>
+						<float name="dist-scaling">1000</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="magical">100</int>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/player/combo/blast</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueCombo</string>
+			<int name="maintain-time">500</int>
+		</dict>
+	</dict>
+	
+	<dict name="paladin">
+		<string name="name">.shop.statues.paladin.name</string>
+		<string name="desc">.shop.statues.paladin.desc?build=20&upgrade=5</string>
+		<string name="desc-upgrade">.shop.statues.paladin.desc-upgrade?upgrade=+5</string>
+		<string name="use-text">.shop.statues.paladin.lore</string>
+
+		<string name="achievement">statue_paladin</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">paladin</string>
+		<string name="scene-small">paladin_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::BlockProjectile</string>
+			<int name="arc">360</int>
+			<float name="chance">0.2</float>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueArmorPower</string>
+			<float name="mul">0.05</float>
+		</dict>
+	</dict>
+	
+ 	<dict name="priest">
+		<string name="name">.shop.statues.priest.name</string>
+		<string name="desc">.shop.statues.priest.desc?build=20&upgrade=5</string>
+		<string name="desc-upgrade">.shop.statues.priest.desc-upgrade?upgrade=5</string>
+		<string name="use-text">.shop.statues.priest.lore</string>
+
+		<string name="achievement">statue_priest</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">priest</string>
+		<string name="scene-small">priest_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">pickup-mana</string>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:statue-priest</string>
+			</dict>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueArmorPower</string>
+			<float name="mul-resistance">0.05</float>
+		</dict>
+	</dict>
+	
+	<dict name="plague-doctor">
+		<string name="name">.shop.statues.plague-doctor.name</string>
+		<string name="desc">.shop.statues.plague-doctor.desc?build=20&dur=4&upgrade=+10</string>
+		<string name="desc-upgrade">.shop.statues.plague-doctor.desc-upgrade?upgrade=+10</string>
+		<string name="use-text">.shop.statues.plague-doctor.lore</string>
+
+		<string name="achievement">statue_plague_doctor</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">plague_doctor</string>
+		<string name="scene-small">plague_doctor_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">kill</string>
+			<float name="chance">0.2</float>
+			
+			<dict name="effect">
+				<string name="class">SpawnUnit</string>
+				<string name="unit">players/projectiles/plague_doctor_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueFilteredDamage</string>
+			<array name="tags">
+				<string>poison</string>
+			</array>
+
+			<float name="mul-add">0.1</float>
+		</dict>
+	</dict>
+	
+	<dict name="ranger">
+		<string name="name">.shop.statues.ranger.name</string>
+		<string name="desc">.shop.statues.ranger.desc?build=20&chance=50&damage=10&upgrade=4</string>
+		<string name="desc-upgrade">.shop.statues.ranger.desc-upgrade?upgrade=4</string>
+		<string name="use-text">.shop.statues.ranger.lore</string>
+
+		<string name="achievement">statue_ranger</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">ranger</string>
+		<string name="scene-small">ranger_portrait</string>
+		
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="attack-mul">1.2</float>
+			</dict>
+		
+			<dict>
+				<string name="class">Modifiers::StatueTriggerEffect</string>
+				<string name="trigger">attack</string>
+				<float name="chance">0.5</float>
+
+				<float name="add-per-level">0.4</float>
+				
+				<!-- <int name="weapon-info">1</int> -->
+				
+				<bool name="target-self">true</bool>
+				<int name="timeout">10</int>
+
+				<dict name="effect">
+					<string name="class">ShootProjectileFan</string>
+					<string name="projectile">players/projectiles/archer_arrow.unit</string>
+					<int name="dist">5</int>	
+					<int name="projectiles">2</int>
+					<int name="spread">10</int>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	 <dict name="red-priest">
+		<string name="name">.shop.statues.red-priest.name</string>
+		<string name="desc">.shop.statues.red-priest.desc?build=10&upgrade=+5</string>
+		<string name="desc-upgrade">.shop.statues.red-priest.desc-upgrade?upgrade=+5</string>
+		<string name="use-text">.shop.statues.red-priest.lore</string>
+
+		<string name="achievement">statue_red_priest</string>
+
+		<int name="cost">100</int>
+
+		<string name="unit">doodads/generic/desert_statues.unit</string>
+		<string name="scene">red_priest</string>
+		<string name="scene-small">red_priest_portrait</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::EnemyBuffFilter</string>
+			<array name="tags">
+				<string>burning</string>
+			</array>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hit</string>
+					<float name="chance">0.1</float>
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">items/buffs.sval:bleeding</string>
+					</dict>
+				</dict>
+				
+				<dict name="modifier">
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">spellhit</string>
+					<float name="chance">0.1</float>
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">items/buffs.sval:bleeding</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<dict name="inc-modifier">
+			<string name="class">Modifiers::StatueFilteredDamage</string>
+			<array name="tags">
+				<string>burning</string>
+			</array>
+
+			<float name="mul-add">0.05</float>
+		</dict>
+	</dict>
+</dict>

@@ -1,0 +1,38 @@
+<effect looping="true" layer="1">
+	<!-- 
+	<sprite origin="12 12" texture="./_custom_boss4_symbols.png" material="system/default.mats:bright"			
+	color-a="max(0.05,cos(pi*t*2)*0.1+0.1)"
+	>
+		<frame time="4000">0 46 23 23</frame>
+	</sprite> -->
+	
+	<sprite origin="7 8" texture="./_custom_boss4_symbols.png" material="system/default.mats:bright"			
+	color-r="max(0.05,cos(pi*t*2)*0.1+0.1)"
+	color-g="max(0.05,cos(pi*t*2)*0.1+0.1)"
+	color-b="0"
+	color-a="max(0.05,cos(pi*t*2)*0.2+0.2)"
+	>
+		<frame time="4000">33 47 13 12</frame>
+	</sprite>
+
+	<light pos="0 0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="4000" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="10+45*saturate(cos(pi*t*2))" />
+		
+		<color-r value="saturate(cos(pi*t*2))*0.25" />
+		<color-g value="saturate(cos(pi*t*2))*0.25" />
+		<color-b value="0/125" />
+		<color-a value="0/255" />
+	</light>
+</effect>

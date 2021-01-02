@@ -1,0 +1,133 @@
+<effect looping="false">
+	
+	%//Particles
+	
+	<sprite origin="3 3" looping="false" texture="./dagger_projectile.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 5* pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 5* pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - t"
+	>
+        
+		<frame time="100">6 32 6 6</frame>
+		<frame time="100">12 32 6 6</frame>
+		<frame time="200">18 32 6 6</frame>
+		<frame time="200">24 32 6 6</frame>
+		<frame time="200">30 32 6 6</frame>
+		<frame time="100">36 32 6 6</frame>
+		<frame time="100">42 32 6 6</frame>
+	</sprite>
+	
+	
+	<sprite origin="3 3" looping="false" texture="./dagger_projectile.png" material="system/default.mats:glow"
+		num-sprites="2"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 5* pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 5* pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 5 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - t"
+	>
+        
+		<frame time="100">6 32 6 6</frame>
+		<frame time="100">12 32 6 6</frame>
+		<frame time="200">18 32 6 6</frame>
+		<frame time="200">24 32 6 6</frame>
+		<frame time="200">30 32 6 6</frame>
+		<frame time="100">36 32 6 6</frame>
+		<frame time="100">42 32 6 6</frame>
+	</sprite>
+	
+	<!--
+	<sprite origin="3 3" looping="false" texture="./dagger_projectile.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - t"
+	>
+        
+		<frame time="100">6 32 6 6</frame>
+		<frame time="200">12 32 6 6</frame>
+		<frame time="100">18 32 6 6</frame>
+		<frame time="100">24 32 6 6</frame>
+		<frame time="100">30 32 6 6</frame>
+		<frame time="200">36 32 6 6</frame>
+		<frame time="100">42 32 6 6</frame>
+	</sprite>
+	 
+	<sprite origin="3 3" looping="false" texture="./dagger_projectile.png" material="system/default.mats:glow"
+		num-sprites="1"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 5 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - t"
+	>
+        
+		<frame time="100">6 32 6 6</frame>
+		<frame time="200">12 32 6 6</frame>
+		<frame time="100">18 32 6 6</frame>
+		<frame time="100">24 32 6 6</frame>
+		<frame time="100">30 32 6 6</frame>
+		<frame time="200">36 32 6 6</frame>
+		<frame time="100">42 32 6 6</frame>
+	</sprite>
+	 -->
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="20 * t" />
+		
+		<color-r value="0" />
+		<color-g value="1.5" />
+		<color-b value="1" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * 25) + 10" />
+		
+		<color-r value="0" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="1 - t" />
+		<color-a value="0" />
+	</light>
+	
+</effect>

@@ -1,0 +1,49 @@
+<unit netsync="none">
+	<behavior class="LurkerProjectile">
+		<string name="anim">attack</string>
+		<float name="speed">1</float>
+		<float name="speed-delta">0.15</float>
+		<float name="speed-delta-max">3.3</float>
+		
+		<int name="ttl">5000</int>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.075</float>	
+		
+		<int name="spawn-freq">60</int>
+		<bool name="miss-fx">true</bool>
+		
+		<int name="penetration">0</int>
+		<int name="ignore-at-hardness">1</int>
+		<int name="destroy-at-hardness">4</int>
+		
+		<float name="team-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">70</int>
+			</dict>
+
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/bosses/wraith/wraith_scythe_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+
+		<float name="jitter">0.1</float>
+	</behavior>	
+	
+	<scenes default="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="6.5" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="attack">
+			<effect ulayer="2" src="actors/bosses/wraith/wraith_scythe_lurker.effect" />		
+		</scene>
+	</scenes>
+</unit>

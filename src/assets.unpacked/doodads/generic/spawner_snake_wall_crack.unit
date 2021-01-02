@@ -1,0 +1,24 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="off">
+			<sprite origin="8 21" looping="false" texture="./spawner_snake_wall_crack.png" material="system/default.mats:proj-prop">
+				<frame time="75">0 0 16 41</frame>
+			</sprite>				
+		</scene>
+		
+		<scene name="on">
+			<sprite origin="8 21" looping="false" texture="./spawner_snake_wall_crack.png" material="system/default.mats:proj-prop">
+				<frame time="75">16 0 16 41</frame>
+				<frame time="75">32 0 16 41</frame>
+				<frame time="75">48 0 16 41</frame>
+				<frame time="75">0 41 16 41</frame>
+				<frame time="75">16 41 16 41</frame>
+				<frame time="75">32 41 16 41</frame>
+				<frame time="75">48 41 16 41</frame>
+				<frame time="75">0 82 16 41</frame>
+				<frame time="75">16 82 16 41</frame>
+				<frame time="75">0 0 16 41</frame>
+			</sprite>				
+		</scene>
+	</scenes>
+</unit>

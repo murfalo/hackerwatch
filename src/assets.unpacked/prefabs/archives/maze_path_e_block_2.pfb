@@ -1,0 +1,276 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/special/color_archives_16.unit">
+			<vec2>8 56</vec2>
+			<int>1</int>
+			<vec2>24 56</vec2>
+			<int>2</int>
+			<vec2>72 8</vec2>
+			<int>3</int>
+			<vec2>72 24</vec2>
+			<int>4</int>
+			<vec2>72 -8</vec2>
+			<int>5</int>
+			<vec2>8 -24</vec2>
+			<int>6</int>
+			<vec2>72 -24</vec2>
+			<int>7</int>
+			<vec2>72 56</vec2>
+			<int>8</int>
+			<vec2>72 40</vec2>
+			<int>9</int>
+			<vec2>56 56</vec2>
+			<int>10</int>
+			<vec2>40 56</vec2>
+			<int>11</int>
+		</array>
+		<array name="doodads/walls/archives/crn_nw.unit"><vec2>0 64</vec2><int>12</int></array>
+		<array name="doodads/generic/container_barrel_b.unit"><vec2>59 5</vec2><int>36</int></array>
+		<array name="doodads/special/color_archives_8.unit"><vec2>20 -32</vec2><int>38</int><vec2>68 -32</vec2><int>37</int></array>
+		<array name="doodads/generic/container_vase.unit"><vec2>27 19</vec2><int>35</int><vec2>36 9</vec2><int>34</int><vec2>41 3</vec2><int>33</int></array>
+		<array name="doodads/walls/archives/crn_se.unit"><vec2>64 64</vec2><int>14</int><vec2>16 0</vec2><int>15</int></array>
+		<array name="doodads/walls/archives/v.unit"><vec2>64 -16</vec2><int>16</int><vec2>64 16</vec2><int>17</int></array>
+		<array name="doodads/walls/archives/h.unit"><vec2>16 64</vec2><int>23</int></array>
+		<array name="doodads/walls/archives/crn_sw.unit"><vec2>0 0</vec2><int>20</int></array>
+		<array name="doodads/walls/archives/h_16.unit"><vec2>48 64</vec2><int>24</int></array>
+		<array name="doodads/walls/archives/_deco_floor_tile.unit"><vec2>48 0</vec2><int>29</int><vec2>32 0</vec2><int>27</int><vec2>32 16</vec2><int>28</int></array>
+		<array name="doodads/walls/archives/_deco_floor_tile_small.unit"><vec2>8 24</vec2><int>26</int><vec2>8 16</vec2><int>25</int></array>
+		<array name="doodads/walls/archives/_deco_blackboard.unit"><vec2>56 0</vec2><int>21</int><vec2>40 0</vec2><int>22</int></array>
+		<array name="doodads/walls/archives/_deco_floor_tile_broken.unit"><vec2>48 16</vec2><int>19</int><vec2>16 16</vec2><int>18</int></array>
+		<array name="doodads/walls/archives/_deco_pillar_1.unit"><vec2>16 16</vec2><int>13</int></array>
+		<array name="doodads/walls/archives/_deco_pillar_2.unit"><vec2>16 16</vec2><int>30</int></array>
+		<array name="doodads/generic/lamp_torch.unit"><vec2>40 0</vec2><int>31</int><vec2>56 0</vec2><int>32</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnPrefab</string>
+			<int>39</int>
+			<vec3>48 16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>tele_dest</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/teleport_dest.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>40</int>
+			<vec3>104 120 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>TeleDestChance</string>
+			<dict>
+				<array name="ToExecute"><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>41</int>
+			<vec3>-160 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>42</int><int>44</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>42</int>
+			<vec3>40 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/button.pfb</string>
+			</dict>
+			<array><int>51</int><int>0</int><int>48</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>43</int>
+			<vec3>-128 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>archives_button_1</string>
+			<dict>
+				<string name="Flag">archives_button_1</string>
+				<array name="OnTrue"><int>47</int></array>
+				<array name="OnFalse"><int>41</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>44</int>
+			<vec3>56 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/button.pfb</string>
+			</dict>
+			<array><int>50</int><int>0</int><int>49</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>45</int>
+			<vec3>-96 320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<array><int>43</int><int>100</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>46</int>
+			<vec3>-32 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>no_button</string>
+			<dict>
+				<int name="Chance">70</int>
+			</dict>
+			<array><int>54</int><int>0</int><int>51</int><int>0</int><int>50</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>47</int>
+			<vec3>-64 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>archives_no_button</string>
+			<dict>
+				<string name="Flag">archives_no_button</string>
+				<array name="OnFalse"><int>52</int></array>
+				<array name="OnTrue"><int>46</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitCount</string>
+			<int>48</int>
+			<vec3>128 -104 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>32</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitCount</string>
+			<int>49</int>
+			<vec3>-32 -104 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>22</int><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>50</int>
+			<vec3>80 -104 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>32</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>51</int>
+			<vec3>16 -104 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>22</int><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>52</int>
+			<vec3>-64 192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>53</int><int>46</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>53</int>
+			<vec3>-96 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>54</int>
+			<vec3>48 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>55</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>55</int>
+			<vec3>56 176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>deco2_torch</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/deco_2_wall_torch.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitCount</string>
+			<int>56</int>
+			<vec3>-80 16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>30</int><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>57</int>
+			<vec3>-80 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<dict>
+				<float name="ChanceToDestroy">0.4</float>
+				<array name="Units"><int>36</int><int>34</int><int>33</int><int>35</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

@@ -1,0 +1,53 @@
+<unit netsync="none" layer="1">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">3</float>
+		<int name="ttl">1000</int>
+		
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.05</float>	
+		<bool name="blockable">false</bool>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:freezing_strong</string>
+			</dict>
+			
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">effects/explosion_snow.effect</string>
+				
+				<int name="min-radius">20</int>
+				<int name="radius">20</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">75</int>
+						<int name="magical">75</int>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">Nova</string>
+				
+				<float name="proj-dist">18</float>
+				<int name="projectiles">21</int>
+				<string name="projectile">actors/projectiles/ice_troll_shaman_snowbomb_shard.unit</string>
+			</dict>
+		</array>
+		<dict name="effect-params">
+			<int name="ttl">1000</int>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<effect src="./ice_troll_shaman_snowbomb.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="11" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

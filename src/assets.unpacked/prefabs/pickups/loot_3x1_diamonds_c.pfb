@@ -1,0 +1,68 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="items/money_diamond_blue_small.unit"><vec2>40 8</vec2><int>1</int><vec2>8 8</vec2><int>2</int></array>
+		<array name="items/money_diamond_blue_large.unit"><vec2>24 8</vec2><int>3</int></array>
+		<array name="items/money_diamond_red_small.unit"><vec2>40 8</vec2><int>4</int><vec2>8 8</vec2><int>5</int></array>
+		<array name="items/money_diamond_red_large.unit"><vec2>24 8</vec2><int>6</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>RandomPicker</string>
+			<int>7</int>
+			<vec3>24 142 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="PickedRandoms"><int>9</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>8</int>
+			<vec3>-8 94 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>9</int>
+			<vec3>56 94 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>10</int>
+			<vec3>56 46 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int><int>3</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>11</int>
+			<vec3>-8 46 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>4</int><int>6</int><int>5</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

@@ -1,0 +1,115 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/trap_turret_flame.unit"><vec2>0 0</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>TimerTrigger</string>
+			<int>2</int>
+			<vec3>0 -80 0</vec3>
+			<bool>t</bool>
+			<int>20</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">50</int>
+			</dict>
+			<array><int>5</int><int>0</int><int>4</int><int>0</int><int>6</int><int>0</int><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>3</int>
+			<vec3>0 -13 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>N</string>
+			<dict>
+				<int name="Direction">270</int>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile.unit</string>
+				<int name="Spread">40</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>4</int>
+			<vec3>0 13 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>S</string>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile.unit</string>
+				<int name="Spread">40</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>5</int>
+			<vec3>13 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>E</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile.unit</string>
+				<int name="Spread">40</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>6</int>
+			<vec3>-13 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>W</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile.unit</string>
+				<int name="Direction">180</int>
+				<int name="Spread">40</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>7</int>
+			<vec3>0 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>2</int></array>
+				<int name="TriggerTimes">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>8</int>
+			<vec3>0 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">2300</int>
+			</dict>
+			<array><int>7</int><int>0</int><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>9</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>flamethrower_sfx</string>
+			<dict>
+				<string name="Sound">event:/misc/trap_flamethrower</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

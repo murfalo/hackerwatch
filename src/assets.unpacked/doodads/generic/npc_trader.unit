@@ -1,0 +1,23 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle offset="0 0" radius="4" />			
+			</collision>
+			<sprite origin="6 15" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">194 300 11 15</frame>
+			</sprite>
+		</scene>
+		<scene name="off">
+			<scene src="shared"/>
+			<minimap_sprite origin="6 6" layer="90" texture="gui/minimap.png" frame="244 214 12 12" />
+		</scene>
+		<scene name="on">
+			<scene src="shared"/>
+			<minimap_sprite origin="6 6" layer="90" texture="gui/minimap.png" frame="232 214 12 12" />
+		</scene>
+	</scenes>
+</unit>

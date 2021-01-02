@@ -1,0 +1,62 @@
+<unit>
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">200</int>
+		<int name="ttl">10000</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:slippery</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes idle="idle">
+		<scene name="idle">
+			<minimap_sprite origin="2 2" texture="gui/minimap.png" frame="0 16 4 4" />
+			
+			<collision static="true">
+				<circle sensor="true" radius="14" />
+			</collision>
+			<effect src="./ice_patch.effect" layer="-14"/>
+<!-- 			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="3" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="75 150 250 10" />
+				</colors>
+			</light>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="50 125 200 0" />
+				</colors>
+			</light> -->
+		</scene>
+	</scenes>
+</unit>

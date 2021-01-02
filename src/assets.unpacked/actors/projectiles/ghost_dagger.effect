@@ -1,0 +1,35 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="4 4" texture="./ghost_dagger.png" material="system/default.mats:projectile"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle">
+		<frame time="100">16 8 8 8</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="4 4" texture="./ghost_dagger.png" material="system/default.mats:shadow"
+		pos-x="0"
+		pos-y="0"
+		angle="angle">
+		<frame time="100">16 8 8 8</frame>
+	</sprite>	
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="40" />
+		<color-r value="0" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="0/255" />
+	</light>	
+</effect>

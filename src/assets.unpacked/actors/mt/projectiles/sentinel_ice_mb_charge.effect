@@ -1,0 +1,53 @@
+<effect looping="false">
+
+	<param name="angle" default="0" />
+	
+	
+	<sprite looping="false" origin="8 11" texture="./sentinel_ice_mb_muzzle.png" material="system/default.mats:bright-noxray"
+	angle="angle"
+	>		
+		<frame time="40">0 0 38 17</frame>
+		<frame time="40">38 0 38 17</frame>
+
+		<frame time="40">76 0 38 17</frame>
+		<frame time="40">0 17 38 17</frame>
+		<frame time="40">38 17 38 17</frame>
+		<frame time="40">76 17 38 17</frame>
+		<frame time="40">76 0 38 17</frame>
+		<frame time="40">0 17 38 17</frame>
+		<frame time="40">38 17 38 17</frame>
+		<frame time="40">76 17 38 17</frame>
+		<frame time="40">76 0 38 17</frame>
+		<frame time="40">0 17 38 17</frame>
+		<frame time="40">38 17 38 17</frame>
+		<frame time="40">76 17 38 17</frame>
+		<frame time="40">76 0 38 17</frame>
+	</sprite>
+	
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="700" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="20" />
+			
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+		
+</effect>

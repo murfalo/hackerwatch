@@ -1,0 +1,1032 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name="system/system.fnt">
+			<array>
+				<vec2>288 -64</vec2>
+				<int>2</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">LONG</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-352 -64</vec2>
+				<int>3</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">MID</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -64</vec2>
+				<int>4</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">ROUND</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -64</vec2>
+				<int>5</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">MID/SIDES</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -64</vec2>
+				<int>6</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">SIDES</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-544 -64</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">ALL</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>128 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_round_1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_round_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>8</int>
+			<vec3>0 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_sides_1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_sides_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>9</int>
+			<vec3>-608 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>72</int><int>69</int><int>7</int><int>11</int><int>79</int><int>80</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>10</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>2</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs">
+					<int>7</int>
+					<int>11</int>
+					<int>69</int>
+					<int>71</int>
+					<int>70</int>
+					<int>72</int>
+					<int>73</int>
+					<int>8</int>
+					<int>78</int>
+					<int>79</int>
+					<int>80</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>11</int>
+			<vec3>256 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_long_1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_long_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>12</int>
+			<vec3>-128 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>yes</string>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>13</int>
+			<vec3>-192 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>no</string>
+			<array><int>75</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>14</int>
+			<vec3>256 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_b6</string>
+			<dict>
+				<string name="EventName">disable_b6</string>
+			</dict>
+			<array><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>256 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>79</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>16</int>
+			<vec3>-256 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>79</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>17</int>
+			<vec3>-128 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>77</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>18</int>
+			<vec3>0 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>69</int><int>72</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>19</int>
+			<vec3>128 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>77</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>20</int>
+			<vec3>-256 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_b2</string>
+			<dict>
+				<string name="EventName">disable_b2</string>
+			</dict>
+			<array><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>21</int>
+			<vec3>384 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>80</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>22</int>
+			<vec3>-256 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>79</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>23</int>
+			<vec3>-128 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_c3</string>
+			<dict>
+				<string name="EventName">disable_c3</string>
+			</dict>
+			<array><int>53</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>24</int>
+			<vec3>384 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_c7</string>
+			<dict>
+				<string name="EventName">disable_c7</string>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>25</int>
+			<vec3>-384 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>80</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>26</int>
+			<vec3>384 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_a7</string>
+			<dict>
+				<string name="EventName">disable_a7</string>
+			</dict>
+			<array><int>39</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>27</int>
+			<vec3>128 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_b5</string>
+			<dict>
+				<string name="EventName">disable_b5</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>28</int>
+			<vec3>256 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_a6</string>
+			<dict>
+				<string name="EventName">disable_a6</string>
+			</dict>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>29</int>
+			<vec3>-256 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_a2</string>
+			<dict>
+				<string name="EventName">disable_a2</string>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>30</int>
+			<vec3>-128 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_a3</string>
+			<dict>
+				<string name="EventName">disable_a3</string>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>31</int>
+			<vec3>0 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_a4</string>
+			<dict>
+				<string name="EventName">disable_a4</string>
+			</dict>
+			<array><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>32</int>
+			<vec3>-384 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_b1</string>
+			<dict>
+				<string name="EventName">disable_b1</string>
+			</dict>
+			<array><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>33</int>
+			<vec3>128 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>69</int><int>73</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>34</int>
+			<vec3>128 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_a5</string>
+			<dict>
+				<string name="EventName">disable_a5</string>
+			</dict>
+			<array><int>19</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>35</int>
+			<vec3>0 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>69</int><int>72</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>36</int>
+			<vec3>-128 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>69</int><int>73</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>37</int>
+			<vec3>0 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_b4</string>
+			<dict>
+				<string name="EventName">disable_b4</string>
+			</dict>
+			<array><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>38</int>
+			<vec3>256 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>78</int><int>77</int><int>79</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>39</int>
+			<vec3>384 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>80</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>40</int>
+			<vec3>-128 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_b3</string>
+			<dict>
+				<string name="EventName">disable_b3</string>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>41</int>
+			<vec3>384 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_b7</string>
+			<dict>
+				<string name="EventName">disable_b7</string>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>42</int>
+			<vec3>384 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>80</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>43</int>
+			<vec3>-256 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>78</int><int>77</int><int>79</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>44</int>
+			<vec3>-384 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>80</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>45</int>
+			<vec3>-384 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_a1</string>
+			<dict>
+				<string name="EventName">disable_a1</string>
+			</dict>
+			<array><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>46</int>
+			<vec3>256 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_c6</string>
+			<dict>
+				<string name="EventName">disable_c6</string>
+			</dict>
+			<array><int>55</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>47</int>
+			<vec3>-256 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_c2</string>
+			<dict>
+				<string name="EventName">disable_c2</string>
+			</dict>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>48</int>
+			<vec3>-384 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>80</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>49</int>
+			<vec3>128 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_c5</string>
+			<dict>
+				<string name="EventName">disable_c5</string>
+			</dict>
+			<array><int>51</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>50</int>
+			<vec3>-384 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_c1</string>
+			<dict>
+				<string name="EventName">disable_c1</string>
+			</dict>
+			<array><int>48</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>51</int>
+			<vec3>128 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>77</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>52</int>
+			<vec3>0 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>69</int><int>72</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>53</int>
+			<vec3>-128 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>77</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>54</int>
+			<vec3>0 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_c4</string>
+			<dict>
+				<string name="EventName">disable_c4</string>
+			</dict>
+			<array><int>52</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>55</int>
+			<vec3>256 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>73</int><int>79</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>56</int>
+			<vec3>-96 -1152 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_nw</string>
+			<dict>
+				<string name="EventName">disable_nw</string>
+			</dict>
+			<array><int>64</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>57</int>
+			<vec3>96 -1152 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_ne</string>
+			<dict>
+				<string name="EventName">disable_ne</string>
+			</dict>
+			<array><int>63</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>58</int>
+			<vec3>-96 -992 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_sw</string>
+			<dict>
+				<string name="EventName">disable_sw</string>
+			</dict>
+			<array><int>66</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>59</int>
+			<vec3>96 -992 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_se</string>
+			<dict>
+				<string name="EventName">disable_se</string>
+			</dict>
+			<array><int>67</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>60</int>
+			<vec3>192 -1056 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_e</string>
+			<dict>
+				<string name="EventName">disable_e</string>
+			</dict>
+			<array><int>62</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>61</int>
+			<vec3>-192 -1056 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_w</string>
+			<dict>
+				<string name="EventName">disable_w</string>
+			</dict>
+			<array><int>65</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>62</int>
+			<vec3>192 -992 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>71</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>63</int>
+			<vec3>96 -1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>11</int><int>70</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>64</int>
+			<vec3>-96 -1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>11</int><int>70</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>65</int>
+			<vec3>-192 -992 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>71</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>66</int>
+			<vec3>-96 -928 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>11</int><int>70</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>67</int>
+			<vec3>96 -928 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>11</int><int>70</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>68</int>
+			<vec3>0 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>setup_obstacles</string>
+			<dict>
+				<string name="EventName">setup_obstacles</string>
+			</dict>
+			<array><int>10</int><int>0</int><int>74</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>69</int>
+			<vec3>-384 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_mid_1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_mid_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>70</int>
+			<vec3>256 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pit_long_1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pit_long_1.pfb</string>
+				<string name="Flag">pit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>71</int>
+			<vec3>0 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pit_sides_1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pit_sides_1.pfb</string>
+				<string name="Flag">pit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>72</int>
+			<vec3>-384 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_mid_2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_mid_2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>73</int>
+			<vec3>-384 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_mid_3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_mid_3.pfb</string>
+				<string name="Flag">pillars_mid</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>74</int>
+			<vec3>-160 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>teleports</string>
+			<dict>
+				<string name="Flag">teleports</string>
+				<array name="OnFalse"><int>13</int></array>
+				<array name="OnTrue"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>75</int>
+			<vec3>-192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>70</int><int>69</int><int>72</int><int>77</int><int>78</int></array>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>76</int>
+			<vec3>-608 -416 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_pillars</string>
+			<dict>
+				<string name="EventName">disable_pillars</string>
+			</dict>
+			<array><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>77</int>
+			<vec3>-320 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pit_mid_2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pit_mid_2.pfb</string>
+				<string name="Flag">pit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>78</int>
+			<vec3>-320 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pit_mid_1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pit_mid_1.pfb</string>
+				<string name="Flag">pit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>79</int>
+			<vec3>-384 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_mid_4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_mid_4.pfb</string>
+				<string name="Flag">pillars_mid</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>80</int>
+			<vec3>-384 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pillars_mid_5</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/obstacles/obstacle_pillars_mid_5.pfb</string>
+				<string name="Flag">pillars_mid</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

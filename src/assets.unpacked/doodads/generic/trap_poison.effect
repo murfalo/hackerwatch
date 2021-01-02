@@ -1,0 +1,19 @@
+<effect looping="true">
+	<sprite looping="true" origin="16 16" texture="./trap_poison.png" material="system/default.mats:floor">
+		<frame time="300">160 0 32 32</frame>
+		<frame time="300">192 0 32 32</frame>
+		<frame time="300">224 0 32 32</frame>
+	</sprite>
+	
+	<sprite origin="0 0" looping="true" texture="effects/empty.png" material="system/default.mats:floor"
+		num-sprites="25"
+		pos-x="cos(rand(u+27*i)*2*pi) * 13 * pow(rand(u+67*i),0.5)"
+		pos-y="sin(rand(u+27*i)*2*pi) * 13 * pow(rand(u+67*i),0.5)"
+		color-r="0.25"
+		color-g="1"
+		color-b="0.25"
+		color-a="floor(sin(it*pi*2)+1)*0.125"
+		>
+		<frame time="100">0 0 2 2</frame>
+	</sprite>
+</effect>

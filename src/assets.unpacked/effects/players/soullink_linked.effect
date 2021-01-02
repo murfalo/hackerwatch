@@ -1,0 +1,54 @@
+<effect looping="false" layer="5">
+	<param name="radius" default="8" />
+	<param name="posy" default="-15" />
+
+	<sprite origin="12 7" looping="false" layer="1" texture="./soullink_break.png" material="system/default.mats:glow-both-bright"
+		pos-y="5"
+		color-a="saturate(sin(t*pi*2)-pow(t,4))"
+		>
+		<frame time="1500">0 0 23 13</frame>
+	</sprite>
+	
+	
+	<sprite origin="2 1" looping="false" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		num-sprites="1"
+		pos-x="cos(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+2693+(i+l)),0.5)"
+        pos-y="sin(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+2693+(i+l)),0.5) + posy *1.5 - posy * t"
+		
+		color-a="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+		>
+		<frame time="100">0 48 4 3</frame>
+		<frame time="100">4 48 4 3</frame>
+		<frame time="100">8 48 4 3</frame>
+		<frame time="100">12 48 4 3</frame>
+		<frame time="100">16 48 4 3</frame>
+		<frame time="100">12 48 4 3</frame>
+		<frame time="100">8 48 4 3</frame>
+		<frame time="100">4 48 4 3</frame>
+	</sprite>	
+	<light pos-y="-15*t">
+		<sprite texture="system/light_cone_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="500"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="t*60" />
+			
+		<color-r value="3-t*3" />
+		<color-g value="3-t*3" />
+		<color-b value="2-t*2" />
+		<color-a value="0"/>
+		
+	</light>
+</effect>

@@ -1,0 +1,215 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">2048 2048</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="prefabs/prefab_marker_64.unit">
+			<vec2>-416 -32</vec2>
+			<int>3</int>
+			<vec2>-32 -160</vec2>
+			<int>4</int>
+			<vec2>-160 -32</vec2>
+			<int>5</int>
+			<vec2>96 -32</vec2>
+			<int>6</int>
+			<vec2>-176 208</vec2>
+			<int>7</int>
+			<vec2>-32 208</vec2>
+			<int>8</int>
+			<vec2>112 -272</vec2>
+			<int>9</int>
+			<vec2>384 -208</vec2>
+			<int>10</int>
+			<vec2>-288 -32</vec2>
+			<int>11</int>
+			<vec2>384 144</vec2>
+			<int>12</int>
+			<vec2>424 -152</vec2>
+			<int>13</int>
+			<vec2>352 -32</vec2>
+			<int>14</int>
+			<vec2>112 208</vec2>
+			<int>15</int>
+			<vec2>-392 -248</vec2>
+			<int>16</int>
+			<vec2>448 -32</vec2>
+			<int>17</int>
+			<vec2>256 -272</vec2>
+			<int>18</int>
+			<vec2>448 -80</vec2>
+			<int>19</int>
+			<vec2>256 208</vec2>
+			<int>20</int>
+			<vec2>-512 -80</vec2>
+			<int>21</int>
+			<vec2>-512 16</vec2>
+			<int>22</int>
+			<vec2>424 88</vec2>
+			<int>23</int>
+			<vec2>-32 96</vec2>
+			<int>24</int>
+			<vec2>-488 88</vec2>
+			<int>25</int>
+			<vec2>-320 208</vec2>
+			<int>26</int>
+			<vec2>-512 -32</vec2>
+			<int>27</int>
+			<vec2>-32 -32</vec2>
+			<int>28</int>
+			<vec2>-392 184</vec2>
+			<int>29</int>
+			<vec2>-32 -272</vec2>
+			<int>30</int>
+			<vec2>328 -248</vec2>
+			<int>31</int>
+			<vec2>448 16</vec2>
+			<int>32</int>
+			<vec2>-448 -208</vec2>
+			<int>33</int>
+			<vec2>-448 144</vec2>
+			<int>34</int>
+			<vec2>224 -32</vec2>
+			<int>35</int>
+			<vec2>-320 -272</vec2>
+			<int>36</int>
+			<vec2>-488 -152</vec2>
+			<int>37</int>
+			<vec2>328 184</vec2>
+			<int>38</int>
+			<vec2>-176 -272</vec2>
+			<int>2</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ToggleScripts</string>
+			<int>39</int>
+			<vec3>-48 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>45</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>40</int>
+			<vec3>48 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate</string>
+			<array><int>42</int><int>0</int><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>41</int>
+			<vec3>-48 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>event_deactivate</string>
+			<dict>
+				<string name="EventName">event_deactivate</string>
+			</dict>
+			<array><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>42</int>
+			<vec3>48 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>45</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>43</int>
+			<vec3>48 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wither_activate</string>
+			<dict>
+				<string name="EventName">wither_activate</string>
+			</dict>
+			<array><int>40</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>44</int>
+			<vec3>-48 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate</string>
+			<array><int>39</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>45</int>
+			<vec3>0 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Filter">4</int>
+				<bool name="CanKill">f</bool>
+				<int name="Frequency">5450</int>
+				<int name="Damage">0</int>
+				<string name="Buff">actors/buffs.sval:wither</string>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>46</int>
+			<vec3>240 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>event_finished</string>
+			<dict>
+				<string name="EventName">event_finished</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>47</int>
+			<vec3>144 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMin">15000</int>
+				<int name="TimeMax">30000</int>
+				<array name="LinkScripts"><int>46</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

@@ -1,0 +1,34 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">8</float>
+		<int name="ttl">500</int>
+		
+		<string name="hit-snd">event:/player/gladiator/gladius-hit</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">16</int>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">players/gladiator/gladius_area_2.unit</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="players/gladiator/gladius.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2.5" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

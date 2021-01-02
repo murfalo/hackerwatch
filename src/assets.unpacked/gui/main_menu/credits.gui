@@ -1,0 +1,67 @@
+﻿<gui>
+	<sprites>
+		<sprite name="crackshell" texture="./menu.png">
+			<frame>0 70 129 46</frame>
+		</sprite>
+		<sprite name="crackshell-pop" texture="./menu.png">
+			<frame>0 193 129 46</frame>
+		</sprite>
+		<sprite name="crackshell-wh" texture="./menu.png">
+			<frame>129 70 129 46</frame>
+		</sprite>
+		<sprite name="crackshell-mt" texture="./menu.png">
+			<frame>129 193 133 48</frame>
+		</sprite>
+		<sprite name="engine" texture="./menu.png">
+			<frame>120 79 84 28</frame>
+		</sprite>
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			%//<menu_text_logo anchor="0.5 0.5" offset="0 -120" text=".menu.credits" />
+			<scrollrect id="credits" flow="vbox" autoscroll-limits="false" width="400" height="350" offset="0 0" anchor="0.5 0.5">	
+				
+				<text text="DEVELOPERS" color="#ff0000" anchor="0.5 0" offset="0 20" font="gui/fonts/code2003_20_bold.fnt" />
+				<text text="Jochum 'Hipshot' Skoglund" anchor="0.5 0" offset="0 10" font="gui/fonts/arial11.fnt" />				
+				<text text="Niklas 'Myran' Myrberg" anchor="0.5 0" font="gui/fonts/arial11.fnt" />				
+				<text text="Victor Ankarberg" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Melissa 'Miss' Geels" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Jonas 'Ozzi' Gustafsson" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				
+				<text text="Additional Programming" anchor="0.5 0" offset="0 10" font="gui/fonts/arial11_bold.fnt" />
+				<text text="Martin Arredal" anchor="0.5 0" font="gui/fonts/arial11.fnt" />					
+				
+				<text text="Additional Design" anchor="0.5 0" offset="0 10" font="gui/fonts/arial11_bold.fnt" />
+				<text text="Zebastian Brax" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Oskar Törnros" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				
+				<text text="Additional Art" anchor="0.5 0" offset="0 10" font="gui/fonts/arial11_bold.fnt" />
+				<text text="Jonatan Pöljö" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Adam Sellerfors" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				
+				<text text="Community Manager" anchor="0.5 0" offset="0 10" font="gui/fonts/arial11_bold.fnt" />
+				<text text="Yasen 'Roy O'Bannon' Stavrev" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				
+				<text text="Voice Acting" anchor="0.5 0" offset="0 10" font="gui/fonts/arial11_bold.fnt" />
+				<text text="Tamara Ryan" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Micah Blakeslee" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+
+				<text text="Music" anchor="0.5 0" offset="0 10" font="gui/fonts/arial11_bold.fnt" />
+				<text text="Two Feathers Studios" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Nicole Marie T" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Tobias 'Demolite' Brinke" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Jonathan Grover" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="Michael Chait" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+
+				<text text="FMOD Studio by Firelight Technologies" anchor="0.5 0" offset="0 30" font="gui/fonts/arial11_bold.fnt" />
+				
+				<sprite id="crackshell" src="crackshell" anchor="0.5 0" offset="0 30"/>
+				<text text="www.crackshell.dk" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				<text text="@realcrackshell" anchor="0.5 0" font="gui/fonts/arial11.fnt" />
+				
+			</scrollrect>
+		</group></group>
+	</doc>
+</gui>
+ 

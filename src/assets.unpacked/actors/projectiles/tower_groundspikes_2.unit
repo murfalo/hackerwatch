@@ -1,0 +1,37 @@
+<unit netsync="none">
+	<behavior class="LurkerProjectile">
+		<string name="anim">attack</string>
+		<float name="speed">4.5</float>
+		<int name="spawn-freq">60</int>
+				
+		<int name="ttl">2000</int>
+		
+		<bool name="miss-fx">true</bool>
+		
+		<int name="penetration">1000</int>
+		<int name="ignore-at-hardness">1</int>
+		<int name="destroy-at-hardness">4</int>
+		
+		<float name="team-dmg">0</float>
+		
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="physical">50</int>
+		</dict>
+		
+		<dict name="effect-params">
+		</dict>
+	</behavior>	
+	
+	<scenes default="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="attack">
+			<effect ulayer="2" src="actors/projectiles/tower_groundspikes_2.effect" />		
+		</scene>
+	</scenes>
+</unit>

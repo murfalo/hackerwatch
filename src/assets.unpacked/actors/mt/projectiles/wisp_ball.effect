@@ -1,0 +1,25 @@
+<effect>	
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite origin="4 4" looping="false" texture="actors/mt/wisp_frost.png" material="system/default.mats:projectile"
+	
+		
+	pos-x="0"
+	pos-y="-height"		
+		
+	angle="(t+l)*pi*80*-1"
+	>
+		<frame time="100000">24 56 8 8</frame>
+	</sprite>
+	
+	<sprite origin="4 4" looping="false" texture="actors/mt/wisp_frost.png" material="system/default.mats:glow-both-bright"
+	
+	pos-x="0"
+	pos-y="-height"		
+		
+	angle="(t+l)*pi*80*-1"
+	>
+		<frame time="100000">24 56 8 8</frame>
+	</sprite>
+</effect>

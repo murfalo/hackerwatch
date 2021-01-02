@@ -1,0 +1,56 @@
+<unit layer="-1">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">4000</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:drain_strong</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:darkness</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes default="visible">
+		<scene name="shared">
+			<collision static="true">
+				<polygon shoot-through="true" aim-through="true" sensor="true">
+					<point>-32 0</point>
+					<point>0 -32</point>
+					<point>32 0</point>
+					<point>0 32</point>
+				</polygon>
+			</collision>	
+		</scene>
+
+		<scene name="visible">
+			<scene src="shared" />
+			
+			<effect src="actors/projectiles/lich_1_mb_glyph_rotating.effect" /><!-- 
+			<effect src="actors/projectiles/lich_1_mb_glyph_spawned.effect" /> -->
+			
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="25" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="110" />
+				</sizes>
+				<colors>
+					<color value="80 20 0 0" />
+				</colors>
+			</light>				
+		</scene>
+	</scenes>
+</unit>

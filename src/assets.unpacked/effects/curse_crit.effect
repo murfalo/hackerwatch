@@ -1,0 +1,36 @@
+<effect looping="false">
+	<param name="angle"/>
+
+	<sprite looping="false" origin="16 16" texture="./curse_crit.png" material="system/default.mats:bright-noxray"
+		angle="rand(u)*pi*2"
+		>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">0 32 32 32</frame>
+		<frame time="40">32 32 32 32</frame>
+		<frame time="40">64 32 32 32</frame>
+		<frame time="40">96 32 32 32</frame>
+	</sprite>
+	
+	
+	<light pos-y="0" pos-x="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+			<frame time="100">0 0 0 0</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		<size value="max(0,t * 60 * 3) + 10" />
+		
+		<color-r value="0" />
+		<color-g value="(5 - t*5)" />
+		<color-b value="(5 - t*5)" />
+		<color-a value="0" />
+	</light>
+</effect>

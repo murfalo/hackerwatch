@@ -1,0 +1,575 @@
+<dict>
+	<array name="tiles">
+		<dict>
+			<vec2 name="pos">0 0</vec2>
+			<array name="datasets">
+				<dict>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045161b451943015c58257c04470e1e1c2c110000000000000000000000000000700000000000000000000000000000000069000000000000000000000000000055000000000000000000000000000000002600000000000000000000000000005b0000000000000000000000000000000016000000000000000000000000000045000000000000000000000000000000004b00000000000000000000000000000600000000000000000000000000000000650000000000000000000000000000550000000000000000000000000000000019000000000000000000000000000002000000000000000000000000000000004600000000000000000000000000000a0000000000000000000000000000000004000000000000000000000000000065000000000000000000000000000000001a00000000000000000000000000006c000000000000000000000000000000001900000000000000000000000000007a000000000000000000000000000000007c00000000000000000000000000001e0000000000000000000000000000000070000000000000000000000000000051000000000000000000000000000000004e00000000000000000000000000003b000000000000000000000000000000005600000000000000000000000000002200000000000000000000000000000000580000000000000000000000000000400000000000000000000000000000000039000000000000000000000000000042457562052c4e24056e214615391c203f48000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>LastEnemyKilledTrigger</string>
+			<int>1</int>
+			<vec3>64 -352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>7</int><int>0</int><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>2</int>
+			<vec3>-64 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>3</int>
+			<vec3>256 -352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ClearScripts</string>
+			<dict>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRangedRect</string>
+			<int>4</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_setup</string>
+			<dict>
+				<string name="EventName">room_setup</string>
+				<int name="Height">256</int>
+				<int name="Width">256</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>5</int>
+			<vec3>-64 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>RoomSetup</string>
+			<array><int>4</int><int>0</int><int>24</int><int>0</int><int>2</int><int>0</int><int>36</int><int>500</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>6</int>
+			<vec3>0 -96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_activate</string>
+			<dict>
+				<string name="EventName">room_activate</string>
+			</dict>
+			<array><int>5</int><int>0</int><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>7</int>
+			<vec3>64 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>RoomCleared</string>
+			<array><int>32</int><int>0</int><int>37</int><int>0</int><int>10</int><int>0</int><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>8</int>
+			<vec3>0 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NoEnemies</string>
+			<array><int>25</int><int>0</int><int>7</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventRangedRect</string>
+			<int>9</int>
+			<vec3>0 56 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_enemy</string>
+			<dict>
+				<string name="EventName">spawn_enemy</string>
+				<int name="Height">144</int>
+				<int name="Width">256</int>
+				<array name="OnExecutedNothing"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRangedRect</string>
+			<int>10</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_cleared</string>
+			<dict>
+				<string name="EventName">room_cleared</string>
+				<int name="Width">256</int>
+				<int name="Height">256</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>11</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lighting_rich</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/lighting/lighting_256x256_rich.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRangedRect</string>
+			<int>12</int>
+			<vec3>0 -56 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_enemy</string>
+			<dict>
+				<string name="EventName">spawn_enemy</string>
+				<int name="Width">256</int>
+				<int name="Height">144</int>
+				<array name="OnExecutedNothing"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>13</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>room_clear_sfx</string>
+			<dict>
+				<string name="Sound">event:/misc/mt_room_clear</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRangedRect</string>
+			<int>14</int>
+			<vec3>56 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_enemy</string>
+			<dict>
+				<string name="EventName">spawn_enemy</string>
+				<int name="Height">256</int>
+				<int name="Width">144</int>
+				<array name="OnExecutedNothing"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>15</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_activate</string>
+			<dict>
+				<string name="EventName">room_activate</string>
+			</dict>
+			<array><int>5</int><int>0</int><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>16</int>
+			<vec3>0 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_activate</string>
+			<dict>
+				<string name="EventName">room_activate</string>
+			</dict>
+			<array><int>5</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>17</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_activate</string>
+			<dict>
+				<string name="EventName">room_activate</string>
+			</dict>
+			<array><int>5</int><int>0</int><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventRangedRect</string>
+			<int>18</int>
+			<vec3>-56 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_enemy</string>
+			<dict>
+				<string name="EventName">spawn_enemy</string>
+				<int name="Width">144</int>
+				<int name="Height">256</int>
+				<array name="OnExecutedNothing"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>19</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_door</string>
+			<dict>
+				<int name="Radius">24</int>
+				<string name="EventName">great_threat_door</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>20</int>
+			<vec3>320 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>GreatThreat</string>
+			<array><int>19</int><int>0</int><int>23</int><int>0</int><int>22</int><int>0</int><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>21</int>
+			<vec3>448 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat_done</string>
+			<dict>
+				<string name="EventName">great_threat_done</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>22</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_door</string>
+			<dict>
+				<int name="Radius">24</int>
+				<string name="EventName">great_threat_door</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>23</int>
+			<vec3>0 -96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_door</string>
+			<dict>
+				<int name="Radius">24</int>
+				<string name="EventName">great_threat_door</string>
+			</dict>
+		</array>
+		<array>
+			<string>ExploreMinimapRect</string>
+			<int>24</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Height">256</int>
+				<int name="Width">256</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>25</int>
+			<vec3>0 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>26</int>
+			<vec3>-288 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>act_0</string>
+			<dict>
+				<string name="Flag">act_0</string>
+				<array name="OnTrue"><int>27</int></array>
+				<array name="OnFalse"><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>27</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lighting_poor</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/lighting/lighting_256x256_poor.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>28</int>
+			<vec3>-288 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>SetupLighting</string>
+			<array><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>29</int>
+			<vec3>-288 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>act_1</string>
+			<dict>
+				<string name="Flag">act_1</string>
+				<array name="OnTrue"><int>30</int></array>
+				<array name="OnFalse"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>30</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lighting_common</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/lighting/lighting_256x256_common.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>31</int>
+			<vec3>-288 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>act_2</string>
+			<dict>
+				<string name="Flag">act_2</string>
+				<array name="OnTrue"><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>32</int>
+			<vec3>128 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0</string>
+			<dict>
+				<array name="Scripts">
+					<int>9</int>
+					<int>18</int>
+					<int>12</int>
+					<int>14</int>
+					<int>6</int>
+					<int>15</int>
+					<int>16</int>
+					<int>17</int>
+					<int>23</int>
+					<int>22</int>
+					<int>38</int>
+					<int>19</int>
+					<int>1</int>
+					<int>36</int>
+				</array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>33</int>
+			<vec3>480 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>allow_great_threat off</string>
+			<dict>
+				<string name="Flag">allow_great_threat</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>34</int>
+			<vec3>256 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>allow_great_threat on</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">allow_great_threat</string>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>35</int>
+			<vec3>128 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>room_count</string>
+			<dict>
+				<string name="EventName">room_count</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>36</int>
+			<vec3>256 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat ?</string>
+			<dict>
+				<string name="Flag">great_threat</string>
+				<array name="OnFalse"><int>34</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>37</int>
+			<vec3>384 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat ?</string>
+			<dict>
+				<string name="Flag">great_threat</string>
+				<array name="OnTrue"><int>43</int></array>
+			</dict>
+			<array><int>42</int><int>0</int><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>38</int>
+			<vec3>0 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_door</string>
+			<dict>
+				<int name="Radius">24</int>
+				<string name="EventName">great_threat_door</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>39</int>
+			<vec3>320 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat</string>
+			<dict>
+				<string name="EventName">great_threat</string>
+			</dict>
+			<array><int>20</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>40</int>
+			<vec3>512 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat off</string>
+			<dict>
+				<string name="Flag">great_threat</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>41</int>
+			<vec3>256 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>42</int>
+			<vec3>384 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>43</int>
+			<vec3>480 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>GreatThreatDone</string>
+			<array><int>21</int><int>0</int><int>40</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

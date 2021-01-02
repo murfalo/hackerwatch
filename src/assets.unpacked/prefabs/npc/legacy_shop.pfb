@@ -1,0 +1,55 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/npc_legacy_shop_cart.unit"><vec2>-16 0</vec2><int>3</int></array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">24</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/npc_legacy_shop.unit"><vec2>0 0</vec2><int>4</int></array>
+		<array name="doodads/generic/speech_bubble_legacy.unit"><vec2>0 0</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>OpenInterface</string>
+			<int>5</int>
+			<vec3>32 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Class">LegacyShop</string>
+				<bool name="MakeRoot">t</bool>
+				<string name="Filename">gui/town/legacyshop.gui</string>
+				<array name="#ForPlayer"><int>6</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>6</int>
+			<vec3>-32 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">4</int>
+				<array name="Areas"><int>2</int></array>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

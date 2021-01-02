@@ -1,0 +1,118 @@
+<effect looping="true">
+	<param name="aim_angle" default="0" />
+
+	<!-- masks -->
+	<sprite looping="true" origin="128 128" mask="2" texture="./medusas_charm_mask1.png" material="system/default.mats:default-noxray"
+		pos-x="cos(aim_angle)*64*t"
+		pos-y="sin(aim_angle)*64*t"
+		scale-x="0.1"
+		scale-y="0.1"
+		angle="aim_angle"
+		
+	>
+        <frame time="500">0 0 512 512</frame>
+	</sprite>
+	<sprite looping="true" origin="128 128" mask="1" texture="./medusas_charm_mask2.png" material="system/default.mats:default-noxray"
+
+		pos-x="cos(aim_angle)*64*t + cos(aim_angle)*12*t"
+		pos-y="sin(aim_angle)*64*t + sin(aim_angle)*12*t"
+		scale-x="0.1"
+		scale-y="0.1"
+		angle="aim_angle"
+		
+	>
+        <frame time="1000">0 0 512 512</frame>
+	</sprite>
+	
+	
+	<!-- bright inner -->
+	<sprite looping="true" origin="0 128" texture="./medusas_charm_wave.png" material="system/default.mats:bright-noxray"
+		
+		color-r="0"
+		color-g="saturate(sin(t*pi*2)*1)"
+		color-b="saturate(sin(t*pi*2)*0.5)"
+		color-a="saturate(sin(t*pi*2)*0.05)"
+		
+		scale-x="0.1 * t*5"
+		scale-y="0.1 * t*5"
+		
+		
+		angle="aim_angle"
+	>
+        <frame time="2000">0 0 128 256</frame>
+	</sprite>
+	
+	
+	<sprite looping="true" origin="0 128" masked="1" texture="./medusas_charm_wave.png" material="system/default.mats:bright-noxray"
+		
+		color-r="saturate(sin(t*pi*2)*0.1)"
+		color-g="saturate(sin(t*pi*2)*0.5)"
+		color-b="saturate(sin(t*pi*2)*0.25)"
+		color-a="saturate(sin(t*pi*2)*0.1)"
+		
+		scale-x="0.1 * t*5"
+		scale-y="0.1 * t*5"
+		
+		
+		angle="aim_angle"
+	>
+        <frame time="2000">0 0 128 256</frame>
+	</sprite>
+	
+	
+	<!-- dark outer-->
+	
+	<sprite looping="true" origin="0 128" masked="1" texture="./medusas_charm_wave.png" material="system/default.mats:bright-noxray"
+		
+		color-r="10/255"
+		color-g="45/255"
+		color-b="20/255"
+		color-a="saturate(sin(t*pi*2)*0.1)"
+		
+		scale-x="0.5"
+		scale-y="0.5"
+		
+		angle="aim_angle"
+	>
+        <frame time="2000">0 0 128 256</frame>
+	</sprite>
+	<sprite looping="true" origin="0 128" masked="2" texture="./medusas_charm_wave.png" material="system/default.mats:bright-noxray"
+		
+		color-r="0/255"
+		color-g="45/255"
+		color-b="0/255"
+		color-a="saturate(sin(t*pi*2)*0.1)"
+		
+		scale-x="0.3+0.1*t"
+		scale-y="0.3+0.1*t"
+		
+		angle="aim_angle"
+	>
+        <frame time="2000">0 0 128 256</frame>
+	</sprite>
+
+	<light 
+		pos-x="cos(aim_angle)*128*t"
+		pos-y="sin(aim_angle)*128*t">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="2000" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="50*(1-t)" />
+
+		<color-r value="saturate(0.5-2*t)" />
+		<color-g value="saturate(1.25*(1-2*t))" />
+		<color-b value="saturate(0.5-2*t)" />
+		<color-a value="0"/>
+	</light>
+</effect>

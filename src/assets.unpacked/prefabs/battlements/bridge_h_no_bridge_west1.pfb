@@ -1,0 +1,176 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/battlement/_wall_e.unit">
+			<vec2>0 128</vec2>
+			<int>11</int>
+			<vec2>0 0</vec2>
+			<int>15</int>
+			<vec2>0 32</vec2>
+			<int>14</int>
+			<vec2>0 64</vec2>
+			<int>13</int>
+			<vec2>0 96</vec2>
+			<int>12</int>
+		</array>
+		<array name="doodads/special/_minimap_dark_48.unit"><vec2>16 0</vec2><int>35</int><vec2>16 -32</vec2><int>34</int><vec2>16 -80</vec2><int>33</int></array>
+		<array name="doodads/generic/lamp_brazier.unit"><vec2>0 -112</vec2><int>9</int><vec2>0 -16</vec2><int>10</int></array>
+		<array name="doodads/walls/battlement/_ledge_high_v_16.unit">
+			<vec2>12 -104</vec2>
+			<int>3</int>
+			<vec2>12 -24</vec2>
+			<int>4</int>
+			<vec2>12 -40</vec2>
+			<int>5</int>
+			<vec2>12 -56</vec2>
+			<int>6</int>
+			<vec2>12 -72</vec2>
+			<int>7</int>
+			<vec2>12 -88</vec2>
+			<int>8</int>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_se.unit"><vec2>12 -4</vec2><int>2</int></array>
+		<array name="doodads/walls/battlement/_custom_floor_tile_16.unit">
+			<vec2>0 -40</vec2>
+			<int>16</int>
+			<vec2>0 -24</vec2>
+			<int>17</int>
+			<vec2>0 -120</vec2>
+			<int>18</int>
+			<vec2>0 -104</vec2>
+			<int>19</int>
+			<vec2>0 -88</vec2>
+			<int>20</int>
+			<vec2>0 -72</vec2>
+			<int>21</int>
+			<vec2>0 -56</vec2>
+			<int>22</int>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_ne.unit"><vec2>12 -124</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnPrefab</string>
+			<int>23</int>
+			<vec3>-12 -88 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>loot_1x3_f</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_1x3_f.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>24</int>
+			<vec3>-36 116 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NoBridgeLoot</string>
+			<dict>
+				<string name="EventName">NoBridgeLoot</string>
+			</dict>
+			<array><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>25</int>
+			<vec3>-64 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>10</int><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>26</int>
+			<vec3>-36 60 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>27</int>
+			<vec3>48 120 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NoBridgeGargoyles</string>
+			<dict>
+				<string name="EventName">NoBridgeGargoyles</string>
+			</dict>
+			<array><int>28</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>28</int>
+			<vec3>48 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>29</int><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>29</int>
+			<vec3>16 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gargoyle_w</string>
+			<dict>
+				<string name="Prefab">prefabs/battlements/gargoyle_w.pfb</string>
+			</dict>
+			<array><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>30</int>
+			<vec3>128 -36 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>31</int>
+			<vec3>12 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tower_e</string>
+			<dict>
+				<string name="UnitType">doodads/walls/battlement/_custom_tower_e.unit</string>
+			</dict>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>32</int>
+			<vec3>132 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>7</int><int>8</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

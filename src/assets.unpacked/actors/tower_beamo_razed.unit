@@ -1,0 +1,19 @@
+<unit slot="doodad">
+
+	<scenes>
+		<scene>
+<!-- 			<collision static="true">
+				<circle offset="0 0" radius="8" />
+			</collision> -->
+			<shadow>
+				<sprite origin="9 10" texture="actors/tower_beamo_razed.png" material="system/default.mats:shadow">
+				<frame>19 0 19 19</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="-20" origin="9 10" texture="actors/tower_beamo_razed.png" material="system/default.mats:floor">
+				<frame>0 0 19 19</frame>
+			</sprite>
+		</scene>
+	</scenes>
+
+</unit>

@@ -1,0 +1,72 @@
+<effect layer="0" looping="false" bounds="2048 2048" >
+
+
+	
+	<sprite looping="false" origin="36 56" texture="actors/bosses/eye/eye_death.png" material="system/default.mats:actor">
+		<frame time="70">0 0 80 74</frame>
+		<frame time="70">80 0 80 74</frame>
+		<frame time="70">160 0 80 74</frame>
+		<frame time="70">0 74 80 74</frame>
+		<frame time="70">80 74 80 74</frame>
+		<frame time="70">160 74 80 74</frame>
+		<frame time="70">0 148 80 74</frame>
+		<frame time="70">80 148 80 74</frame>
+		<frame time="70">160 148 80 74</frame>
+		<frame time="300">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite looping="false" origin="36 56" texture="actors/bosses/eye/eye_death.png" material="system/default.mats:bright-noxray">
+		<frame time="70">0 256 80 74</frame>
+		<frame time="70">80 256 80 74</frame>
+		<frame time="70">160 256 80 74</frame>
+		<frame time="70">0 330 80 74</frame>
+		<frame time="70">80 330 80 74</frame>
+		<frame time="70">160 330 80 74</frame>
+		<frame time="70">0 404 80 74</frame>
+		<frame time="70">80 404 80 74</frame>
+		<frame time="70">160 404 80 74</frame>
+		<frame time="50">256 0 80 74</frame>
+		<frame time="50">336 0 80 74</frame>
+		<frame time="50">416 0 80 74</frame>
+		<frame time="50">256 74 80 74</frame>
+		<frame time="50">336 74 80 74</frame>
+		<frame time="50">416 74 80 74</frame>
+		<frame time="50">256 148 80 74</frame>
+		<frame time="50">336 148 80 74</frame>
+	</sprite>            
+	
+	
+	<!-- <light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="128 * t" />
+		<length value="70" />
+		<color-r value="1" />
+		<color-g value="3" />
+		<color-b value="2" />
+		<color-a value="0/255" />
+	</light>  -->
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="1100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="pow((sin( (pi * t)/1.5) ),50) * 150" />
+		<length value="70" />
+		<color-r value="1" />
+		<color-g value="2" />
+		<color-b value="1" />
+		<color-a value="0/255" />
+	</light>	
+</effect>

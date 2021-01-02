@@ -1,0 +1,55 @@
+<unit slot="doodad">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">1900</int>
+		<int name="actor-filter">2</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<int name="radius">28</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">25</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" shoot-through="true" aim-through="true" radius="16" sensor="true" />
+			</collision>
+		</scene>
+		<scene name="visible">
+			<scene src="shared" />
+			
+			<effect src="actors/pop/bosses/djinn/djinn_firewall.effect" />
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="3" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="150 0 200 0" />
+				</colors>
+			</light>  			
+		</scene>
+	</scenes>
+</unit>
+
+

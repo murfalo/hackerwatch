@@ -1,0 +1,73 @@
+<unit layer="20" netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="type">construct</string>
+		<int name="hp">5000</int>
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+		<int name="armor">500</int>
+		<int name="resistance">500</int>
+		
+		<string name="gore">effects/gibs/gib_frostball.sval</string>
+
+		<int name="aggro-range">1000</int>
+		<bool name="must-see-target">false</bool>
+		<bool name="no-buffs">true</bool>
+		<bool name="targetable">false</bool>
+		<float name="wind-scale">0</float>
+
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle</string>
+			<string name="anim-walk">idle</string>
+			
+			<bool name="flying">true</bool>
+			<float name="speed">1.5</float>
+			<float name="rot-speed">2</float>
+			<int name="dist">1</int>
+			<int name="stagger-threshold">0</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<bool name="friendly">false</bool>
+				<string name="buff">actors/buffs.sval:dragon_freezing_frostball</string>
+				<int name="freq">200</int>
+				<int name="range">22</int>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">idle</string>
+
+				<int name="cooldown">7500</int>
+				<int name="castpoint">50</int>
+				
+				<int name="range">1000</int>
+				<bool name="must-see">false</bool>
+
+				<array name="actions">
+					<dict name ="action">
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle sensor="true" aim-through="true" radius="0.5" charge-through="true" />
+			</collision>
+			
+			<effect src="actors/bosses/dragon/snowflake.effect" />
+			<effect pos="0 -4" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="500" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="700" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="350" src="effects/blizzard.effect" />
+			<effect src="actors/projectiles/snow_area.effect" /> 
+			<effect pos="0 -4" src="actors/elemental_ice_dust.effect" /> 
+		</scene>
+	</scenes>
+</unit>

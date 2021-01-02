@@ -1,0 +1,64 @@
+<effect looping="true" wpos-track="2">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<param name="speed" default="2" />
+	
+
+	<sprite origin="8 8" looping="true" texture="./shade_ball.png" material="system/default.mats:default-noxray"
+		num-sprites="10+rand(u)*5"
+		scale-x="saturate(1.2-it*1.2)"
+		scale-y="saturate(1.2-it*1.2)"
+		pos-x="cos(rand(u+21*i)*2*pi) * 2 * pow(rand(u+73*i),0.5) - (sin(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5))*0.9*it*rand(u+i) - cos(angle)*30*speed*it*saturate(t+l)"
+		pos-y="sin(rand(u+21*i)*2*pi) * 2 * pow(rand(u+73*i),0.5) - (cos(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5))*0.9*it*rand(u+i) - sin(angle)*30*speed*it*saturate(t+l)"
+		color-r="saturate(sin(pow(it,2)*pi))"
+		color-g="saturate(sin(pow(it,2)*pi))"
+		color-b="saturate(sin(pow(it,2)*pi))"		
+		color-a="0.4*saturate(1-it)"
+	
+	>
+		<frame time="50">96 0 16 16</frame>
+	</sprite>
+
+	<sprite origin="6 8" looping="true" texture="./shade_ball.png" material="system/default.mats:projectile"
+		color-a="0.8">
+		<frame time="70">0 0 12 16</frame>
+		<frame time="70">12 0 12 16</frame>
+		<frame time="70">24 0 12 16</frame>
+		<frame time="70">36 0 12 16</frame>
+		<frame time="70">48 0 12 16</frame>
+		<frame time="70">60 0 12 16</frame>
+	</sprite>
+	
+	<sprite origin="6 8" looping="true" texture="./shade_ball.png" material="system/default.mats:bright-noxray"
+		color-a="0.8"
+		angle="pi/2">
+		<frame time="70">36 0 12 16</frame>
+		<frame time="70">48 0 12 16</frame>
+		<frame time="70">60 0 12 16</frame>
+		<frame time="70">0 0 12 16</frame>
+		<frame time="70">12 0 12 16</frame>
+		<frame time="70">24 0 12 16</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="23+5*saturate(sin(t*pi*2))" />
+
+		<color-r value="1+1*saturate(sin(t*pi*2))" />
+		<color-g value="0" />
+		<color-b value="2+1*saturate(sin(t*pi*2))" />
+		<color-a value="0"/>
+	</light>
+</effect>

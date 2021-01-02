@@ -1,0 +1,64 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<int name="ttl">5000</int>
+		<float name="speed-delta">5</float>
+		<float name="speed-delta-max">15</float>
+		<bool name="blockable">false</bool>
+		
+		<string name="hit-snd">event:/enemy/elemental_ice/hit</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">40</int>
+				<int name="magical">40</int>
+				<float name="armor-mul">0.8</float>
+				<float name="resistance-mul">0.8</float>
+			</dict>
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/mt/bosses/agents/agent_rime/spear_night_impact.effect</string>
+			</dict>
+			<dict>
+				<string name="class">Decimate</string>
+				<float name="amount">0.1</float>
+			</dict>
+			<dict>
+				<string name="class">Nova</string>
+				<int name="projectiles">12</int>
+				<float name="proj-dist">8</float>
+				<string name="projectile">actors/mt/bosses/agents/agent_rime/spear_night_shard.unit</string>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="./spear_night.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="5" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="150 0 255 0" />
+				</colors>
+			</light>						
+		</scene>
+	</scenes>
+</unit>

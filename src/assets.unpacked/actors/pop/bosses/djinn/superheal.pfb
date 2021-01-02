@@ -1,0 +1,191 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="actors/pop/bosses/djinn/testhp.unit"><vec2>0 0</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>2</int>
+			<vec3>-208 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>healed</string>
+			<dict>
+				<string name="EventName">healed</string>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>3</int>
+			<vec3>-112 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>4</int>
+			<vec3>-64 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">hp75</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>5</int>
+			<vec3>0 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="Value">0.5</float>
+				<int name="Function">4</int>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>6</int>
+			<vec3>64 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">hp25</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>7</int>
+			<vec3>-208 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="EventName">superhealstart</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>8</int>
+			<vec3>-64 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="Value">0.75</float>
+				<int name="Function">4</int>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>9</int>
+			<vec3>160 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>10</int><int>0</int><int>12</int><int>2000</int><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>10</int>
+			<vec3>160 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">superhealstop</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>11</int>
+			<vec3>64 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="Value">0.25</float>
+				<int name="Function">4</int>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>12</int>
+			<vec3>-208 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units">
+					<int>9</int>
+					<int>8</int>
+					<int>5</int>
+					<int>11</int>
+					<int>10</int>
+					<int>4</int>
+					<int>13</int>
+					<int>6</int>
+					<int>7</int>
+					<int>2</int>
+					<int>3</int>
+				</array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>13</int>
+			<vec3>0 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">hp50</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>14</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Sound">event:/enemy/boss_genie/superheal</string>
+			</dict>
+		</array>
+		<array>
+			<string>StopSound</string>
+			<int>15</int>
+			<vec3>0 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Sounds"><int>14</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

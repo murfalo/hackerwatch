@@ -1,0 +1,29 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">thief</string>
+	<string name="name">.skills.thief.vicious-cuts</string>
+	<string name="description">.skills.thief.vicious-cuts.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>168 72 24 24</vec4>
+	</array>
+
+	<int name="cost">25</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hit</string>
+				<float name="chance">0.1</float>
+				<string name="fx">effects/players/decimating_strike.effect</string>
+				<dict name="effect">
+					<string name="class">Decimate</string>
+					<float name="amount">0.05</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</dict>

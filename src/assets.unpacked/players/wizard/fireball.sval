@@ -1,0 +1,124 @@
+<dict>
+	<string name="name">.skills.wizard.fireball</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>0 120 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/wizard/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/wizard/fireball_1.unit</string>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/wizard/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/wizard/fireball_2.unit</string>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/wizard/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/wizard/fireball_3.unit</string>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/wizard/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/wizard/fireball_4.unit</string>
+		</dict>
+		
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/wizard/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/wizard/fireball_5.unit</string>
+		</dict>
+		
+		<!-- Level 6 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/wizard/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/wizard/fireball_6.unit</string>
+		</dict>
+	</array>
+	
+	<!-- Mercenary primary -->
+	<string name="mercenary-primary-description">.skills.wizard.fireball.merc</string>
+	<dict name="mercenary-primary">
+		<string name="class">Skills::ShootProjectile</string>
+		
+		<int name="cooldown">500</int>
+		<int name="castpoint">0</int>
+		
+		<string name="snd">event:/player/wizard/attack</string>
+		<string name="anim">attack 8</string>
+		<float name="speed-mul">0.05</float>
+		<bool name="blocking">false</bool>
+		
+		<int name="dist">5</int>
+		<string name="projectile">players/wizard/fireball_6.unit</string>
+	</dict>
+</dict>

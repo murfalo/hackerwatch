@@ -1,0 +1,32 @@
+<unit slot="doodad">
+	<scenes temple_poor="temple_poor" temple_common="temple_common" temple_rich="temple_rich">	
+		<scene name="shared">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true" nav-block="true">
+				<circle offset="8 8" radius="6" />
+				<circle offset="8 8" radius="16" sensor="true"/>
+			</collision>
+			<sprite looping="false" ulayer="-1" origin="-14 27" material="system/default.mats:shadow" texture="./trap_pillar_spikes.png">
+				<frame>48 0 16 36</frame>
+			</sprite> 
+		</scene>
+		<scene name="temple_poor">
+			<scene src="shared"/>
+			<sprite origin="0 32" texture="./trap_pillar_spikes.png" material="system/default.mats:proj-wall">
+				<frame>0 0 16 48</frame>
+			</sprite>
+		</scene>		
+		<scene name="temple_common">
+			<scene src="shared"/>
+			<sprite origin="0 32" texture="./trap_pillar_spikes.png" material="system/default.mats:proj-wall">
+				<frame>16 0 16 48</frame>
+			</sprite>
+		</scene>		
+		<scene name="temple_rich">
+			<scene src="shared"/>
+			<sprite origin="0 32" texture="./trap_pillar_spikes.png" material="system/default.mats:proj-wall">
+				<frame>32 0 16 48</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

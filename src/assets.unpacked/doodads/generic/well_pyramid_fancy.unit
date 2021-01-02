@@ -1,0 +1,68 @@
+<unit slot="doodad">
+	<scenes>	
+		<scene>
+			<sprite origin="14 59" texture="./well_pyramid_fancy.png" material="system/default.mats:proj-wall">
+				<frame>0 0 53 72</frame>
+			</sprite>					
+		</scene>							
+	</scenes>
+</unit>
+
+<unit slot="doodad">
+	<scenes default="on" off="off">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-11 -11 22 22</rect>
+			</collision>
+			<shadow>
+				<sprite origin="-8 46" texture="./well_pyramid_fancy.png">
+					<frame>48 72 32 55</frame>
+				</sprite>
+			</shadow>
+		</scene>		
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 10 9 10" />
+			<sprite origin="13 61" looping="true" texture="./well_pyramid_fancy.png" material="system/default.mats:default">
+				<frame time="100">0 0 24 72</frame>
+				<frame time="100">24 0 24 72</frame>
+				<frame time="100">48 0 24 72</frame>
+				<frame time="100">72 0 24 72</frame>
+			</sprite>		
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="4"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="20 160 180 0" />
+					<color value="20 160 180 0" />
+				</colors>
+			</light>						
+		</scene>
+		<scene name="off">
+			<scene src="shared" />	
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 20 9 10" />
+			<sprite origin="13 61" looping="true" loopback="300" texture="./well_pyramid_fancy.png" material="system/default.mats:default">
+				<frame time="100">96 0 24 72</frame>
+				<frame time="100">120 0 24 72</frame>
+				<frame time="100">144 0 24 72</frame>
+				<frame time="100">168 0 24 72</frame>
+				<frame time="100">192 0 24 72</frame>
+				<frame time="100">0 72 24 72</frame>
+				<frame time="100">24 72 24 72</frame>
+			</sprite>
+				
+		</scene>
+		
+		
+	</scenes>
+</unit>

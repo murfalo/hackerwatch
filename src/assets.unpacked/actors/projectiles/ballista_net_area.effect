@@ -1,0 +1,22 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="8" />
+	
+	<sprite looping="true" origin="16 15" layer="-2" texture="actors/projectiles/ballista_net.png" material="system/default.mats:default"
+	
+		pos-x="0"
+		pos-y="0"
+		>
+		<frame time="200">64 96 32 32</frame>
+	</sprite>
+	<sprite looping="true" origin="16 16" layer="-1" texture="actors/projectiles/ballista_net.png" material="system/default.mats:floor"
+	
+		pos-x="0"
+		pos-y="0"
+		>
+		<frame time="200">64 32 32 32</frame>
+	</sprite>
+		
+	
+</effect>

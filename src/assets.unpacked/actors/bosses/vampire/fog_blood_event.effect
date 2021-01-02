@@ -1,0 +1,20 @@
+<effect looping="true" layer="600" bounds="1500 1500">
+	<sprite looping="true" ulayer="0" origin="128 128" texture="./fog_blood.png" material="effects/effects.mats:add"
+		num-sprites="100"
+		
+		angle="rand(il*43 + i*31)"
+		
+		color-r="3"
+		color-g="0"	
+		color-b="0"	
+		color-a="rand(il*89 + i*17) * saturate(t + l) * 0.08 * saturate(3 - (t + l))"
+		
+		pos-x="cos(rand(61*il+i*23)*pi/2-pi/4) * lerp(it, 512, -512) * sign(rand(37*il+i*13) - 0.5)"
+		pos-y="sin(rand(61*il+i*23)*pi/2-pi/4) * 512"
+		
+		scale-x="rand(il*23 + i*41) + 0.25"
+		scale-y="rand(il*23 + i*41) + 0.25"
+	>
+		<frame time="3000">0 0 256 256</frame> 
+	</sprite>
+</effect>

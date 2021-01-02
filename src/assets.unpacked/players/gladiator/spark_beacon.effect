@@ -1,0 +1,26 @@
+<effect looping="false" 
+>
+<!-- 
+	<sprite origin="12 12" looping="false" texture="players/gladiator/spark.png" material="system/default.mats:bright-noxray"
+	pos-y="t*-128"
+	
+	>
+		<frame time="40">0 24 24 24</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">24 24 24 24</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">48 24 24 24</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">72 24 24 24</frame>
+		<frame time="40">0 0 0 0</frame>
+	</sprite> -->
+	
+	<sprite looping="false" origin="40 189" texture="./lightning.png" material="system/default.mats:bright-noxray"
+	color-g="1+rand(u+i)*1"
+	>
+		<frame time="40">0 412 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">90 412 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+	</sprite>
+</effect>

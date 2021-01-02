@@ -1,0 +1,23 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="42 9 4 2" />
+<!-- 			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="41 8 3 2" />
+			<minimap_sprite origin="-3 0" texture="gui/minimap.png" frame="48 8 1 2" /> -->
+			%if EDITOR 
+			<sprite origin="-13 -8" layer="-21" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 3 4</frame>
+			</sprite>
+			<sprite origin="0 -8" layer="-21" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 3 4</frame>
+			</sprite>
+			%endif
+			<sprite origin="0 0" layer="-20" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>88 48 16 8</frame>
+			</sprite>
+			<sprite origin="0 -8" layer="-19" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>88 56 16 4</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

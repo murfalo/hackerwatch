@@ -1,0 +1,77 @@
+<effect looping="true" wpos-track="20">
+	<param name="angle" default="0" />
+	<param name="height" default="-4" />
+	<param name="old_tl" default="0" />
+	
+
+	%// Trail
+
+	<trail texture="./trail_blade.png" material="effects/effects.mats:lit">
+		<pos-x value="(rand(u+i+2)*6-3)*t + wposx(i)" />
+		<pos-y value="(rand(u+i+3)*6-3)*t + wposy(i)-height" />
+		
+		<length value="750" />
+		<looping value="true" />
+		
+		<segments value="7" />
+		<size value="11 * (1 - i / 17)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-30" />
+		<uv-l-y value="10" />
+		
+		<uv-r-x value="i*2 + (t+l)*-30" />
+		<uv-r-y value="20" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="2.6" />
+		<color-a value="0.5" />
+	</trail>
+	
+	<trail texture="./trail_blade.png" material="effects/effects.mats:lit">
+		<pos-x value="(rand(u+i+0)*8-4)*t + wposx(i)" />
+		<pos-y value="(rand(u+i+1)*8-4)*t + wposy(i)-height" />
+		
+		<length value="1500" />
+		<looping value="true" />
+		
+		<segments value="7" />
+		<size value="9 * (1 - i / 50)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-30" />
+		<uv-l-y value="0" />
+		
+		<uv-r-x value="i*2 + (t+l)*-30" />
+		<uv-r-y value="10" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0.2" />
+	</trail>
+	
+	<!--
+	<trail texture="./trail_blade.png" material="effects/effects.mats:lit">
+		<pos-x value="(rand(u+i+0)*10-5)*t + wposx(i)" />
+		<pos-y value="(rand(u+i+1)*10-5)*t + wposy(i)-height" />
+		
+		<length value="2500" />
+		<looping value="true" />
+		
+		<segments value="20" />
+		<size value="50 * (1 - i / 50)" />
+		
+		<uv-l-x value="i*2 + (old_tl/1000)*-100" />
+		<uv-l-y value="0" />
+		
+		<uv-r-x value="i*2 + (old_tl/1000)*-100" />
+		<uv-r-y value="10" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0.1*(t+l)" />
+	</trail>
+-->
+	
+</effect>

@@ -1,0 +1,36 @@
+<unit slot="doodad">
+	<behavior class="Chest">
+		<int name="lock">0</int>
+		<string name="loot">doodads/chests.sval:bronze</string>
+		<string name="open-snd">event:/misc/open_chest_bronze</string>
+	</behavior>
+
+<scenes default="default" desert="desert">
+	<scene name="shared">
+		<minimap_sprite layer="10" origin="4 4" texture="gui/minimap.png" frame="42 0 8 8" />
+	</scene>
+	<scene name="default">
+			<scene src="shared" />
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="0 0" radius="12" />
+				<circle sensor="false" shoot-through="true" aim-through="true" offset="0 0" radius="6" />
+			</collision>			
+			<sprite origin="6 12" texture="./chests.png" material="system/default.mats:proj-prop">
+				<frame time="50">16 0 16 16</frame>
+			</sprite>
+		</scene>
+	<scene name="desert">
+			<scene src="shared" />
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="0 0" radius="12" />
+				<circle sensor="false" shoot-through="true" aim-through="true" offset="0 0" radius="6" />
+			</collision>			
+			<sprite origin="6 8" texture="./chests.png" material="system/default.mats:proj-prop">
+				<frame time="50">12 16 12 11</frame>
+			</sprite>
+			<sprite origin="10 6" layer="-5" texture="./chests.png" material="system/default.mats:floor">
+				<frame time="50">80 0 20 16</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

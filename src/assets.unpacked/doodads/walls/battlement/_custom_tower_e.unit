@@ -1,0 +1,14 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="1 4" texture="gui/minimap.png" frame="226 2 2 12"/>	
+			<collision static="true">
+				<rect>-4 -4 32 32</rect>
+				<rect shoot-through="true" aim-through="true">-4 -16 8 48</rect>
+			</collision>				
+			<sprite origin="6 28" texture="./_custom_tower.png" material="system/default.mats:default">
+				<frame>64 0 32 72</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

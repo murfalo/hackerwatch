@@ -1,0 +1,111 @@
+<gui>
+	<sprites>
+		<sprite name="icon-house" texture="gui/icons.png"><frame>52 0 11 12</frame></sprite>
+		<sprite name="icon-house-create" texture="gui/icons.png"><frame>98 104 13 12</frame></sprite>
+		<sprite name="icon-edit" texture="gui/icons.png"><frame>82 112 12 12</frame></sprite>
+		<sprite name="icon-delete" texture="gui/icons.png"><frame>22 76 9 12</frame></sprite>
+		<sprite name="icon-copy" texture="gui/icons.png"><frame>94 116 11 12</frame></sprite>
+		<sprite name="icon-mods" texture="gui/icons.png"><frame>82 112 12 12</frame></sprite>
+
+		<sprite name="button-slots" texture="gui/widget.png"><frame>328 0 18 18</frame></sprite>
+		<sprite name="button-slots-hover" texture="gui/widget.png"><frame>328 18 18 18</frame></sprite>
+		<sprite name="button-slots-down" texture="gui/widget.png"><frame>328 36 18 18</frame></sprite>
+		<sprite name="button-slots-disabled" texture="gui/widget.png"><frame>328 54 18 18</frame></sprite>
+
+		<sprite name="state-slot" texture="gui/widget.png"><frame>203 204 282 26</frame></sprite>
+		<sprite name="state-current" texture="gui/widget.png"><frame>203 230 282 26</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<!-- Window -->
+			<rect width="300" height="205" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="296" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="275" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mainmenu.slots.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="296" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect offset="2 23" width="296" height="176" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Slots -->
+					<scrollrect id="slots" width="282" height="159" flow="vbox" />
+
+					<!-- Separators -->
+					<rect width="3" height="159" offset="282 0" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect width="3" height="159" offset="293 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Scrollbar -->
+					<scrollbar forid="slots" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="296" height="3" offset="2 182" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Button bar -->
+				<rect width="296" height="18" offset="2 185" flow="hbox">
+					<rect width="106" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- OK -->
+					<scalebutton spriteset="scalebutton" func="back" font="gui/fonts/arial11.fnt" text=".menu.ok" width="84" />
+
+					<rect width="106" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+
+			<!-- Slot template -->
+			<rect id="template" width="282" height="26" visible="false" color="#333333ff">
+				<!-- States -->
+				<rect id="state-empty" visible="false" width="282" height="26" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+				<sprite id="state-slot" visible="false" src="state-slot" />
+				<sprite id="state-current" visible="false" src="state-current" />
+
+				<group inner="true" offset="9 0" anchor="0 0.5" flow="hbox" spacing="2">
+					<!-- Name -->
+					<text id="name" font="gui/fonts/arial11.fnt" anchor="0 0.5" />
+
+					<!-- Modded icon -->
+					<sprite id="modded" visible="false" src="icon-mods" offset="0 1" />
+				</group>
+
+				<!-- Options -->
+				<rect id="buttons" width="92" height="18" offset="186 4" flow="hbox" flow-flip="true">
+					<!-- Delete button -->
+					<scalebutton id="delete" spriteset="scalebutton" func="delete" tooltip=".mainmenu.slots.delete" enabled="false" width="23">
+						<sprite src="icon-delete" anchor="0.5 0.5" />
+					</scalebutton>
+
+					<!-- Clone button -->
+					<scalebutton id="clone" spriteset="scalebutton" func="clone" tooltip=".mainmenu.slots.clone" width="23">
+						<sprite src="icon-copy" anchor="0.5 0.5" />
+					</scalebutton>
+
+					<!-- Edit button -->
+					<scalebutton id="edit" spriteset="scalebutton" func="edit" tooltip=".mainmenu.slots.edit" width="23">
+						<sprite src="icon-edit" anchor="0.5 0.5" />
+					</scalebutton>
+
+					<!-- Switch button -->
+					<scalebutton id="switch" spriteset="scalebutton" func="switch" tooltip=".mainmenu.slots.switch" enabled="false" width="23">
+						<sprite src="icon-house" anchor="0.5 0.5" />
+					</scalebutton>
+				</rect>
+			</rect>
+		</group></group>
+	</doc>
+</gui>

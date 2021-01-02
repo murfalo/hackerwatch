@@ -1,0 +1,33 @@
+<unit netsync="none" layer="20">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">16</float>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>
+		<bool name="penetrate-all">true</bool>
+		
+		<float name="team-dmg">0</float>
+		<float name="self-dmg">0</float>
+		
+		<int name="ttl">2000</int>
+		
+		<array name="effects">
+
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle projectile="true" radius="5" />
+			</collision>
+		
+			<effect src="actors/bosses/vampire/bat_projectile.effect" />
+			<effect src="actors/bosses/vampire/bat_area.effect" />
+		</scene>
+	</scenes>
+</unit>

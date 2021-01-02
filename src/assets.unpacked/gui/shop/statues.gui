@@ -1,0 +1,68 @@
+<gui>
+	<sprites>
+		<sprite name="frame-icon" texture="gui/widget.png"><frame>99 0 26 26</frame></sprite>
+		<sprite name="icon-pedestal" texture="gui/widget.png"><frame>99 52 24 24</frame></sprite>
+		<sprite name="item-dot" texture="gui/icons.png"><frame>63 0 4 4</frame></sprite>
+		<sprite name="item-plus" texture="gui/icons.png"><frame>59 112 5 5</frame></sprite>
+
+		<sprite name="icon-build" texture="gui/icons.png"><frame>101 79 14 12</frame></sprite>
+		<sprite name="icon-switch" texture="gui/icons.png"><frame>83 79 18 12</frame></sprite>
+		<sprite name="icon-clear" texture="gui/icons.png"><frame>98 69 10 10</frame></sprite>
+		<sprite name="icon-upgrade" texture="gui/icons.png"><frame>83 69 15 10</frame></sprite>
+
+		<sprite name="ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<rect width="162" height="167" flow="vbox">
+
+			<!-- List -->
+			<rect id="list" width="162" height="167" inner="true" flow="hbox" />
+
+			<!-- Template -->
+			<rect id="template" visible="false" width="54" height="167">
+				<!-- Vertical separators -->
+				<rect width="3" height="167" offset="0 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="167" offset="51 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Preview -->
+				<rect width="48" height="101" offset="3 0" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Unit -->
+					<clip width="48" height="101">
+						<unit id="preview" width="48" height="101" unit-offset="0 10" />
+					</clip>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="48" height="3" offset="3 101" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Switch button -->
+				<scalebutton id="switch-button" spriteset="scalebutton" width="48" offset="3 104">
+					<sprite id="icon" src="icon-build" anchor="0.5 0.5" />
+				</scalebutton>
+
+				<!-- Separator -->
+				<rect width="48" height="3" offset="3 122" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Upgrade button -->
+				<scalebutton id="upgrade-button" spriteset="scalebutton" width="48" offset="3 125">
+					<sprite id="icon" src="icon-upgrade" anchor="0.5 0.5" />
+				</scalebutton>
+
+				<!-- Separator -->
+				<rect width="48" height="3" offset="3 143" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Clear button -->
+				<scalebutton id="clear-button" spriteset="scalebutton" width="48" offset="3 146" tooltip=".shop.statues.remove">
+					<sprite id="icon" src="icon-clear" anchor="0.5 0.5" />
+				</scalebutton>
+
+				<!-- Separator -->
+				<rect width="48" height="3" offset="3 164" spriteset="gui/variable/3pxbar_hor.sval" />
+			</rect>
+
+		</rect>
+	</doc>
+</gui>

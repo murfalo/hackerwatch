@@ -1,0 +1,40 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">wizard</string>
+	<string name="name">.skills.wizard.fire-breath</string>
+	<string name="description">.skills.wizard.fire-breath.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 120 24 24</vec4>
+	</array>
+
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::SpewProjectiles</string>
+		<string name="anim">channeling 8</string>
+		<string name="snd-hold">event:/player/wizard/breath</string>
+
+		<int name="cooldown">250</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">true</bool>
+		<float name="speed-mul">0</float>
+
+		<int name="mana-cost">9</int>
+
+		<int name="interval">200</int>
+		<int name="spew-interval">40</int>
+		<int name="spread">10</int>
+		<int name="dist">5</int>
+		<int name="projectiles">1</int>
+		<string name="projectile">players/wizard/mercenary/breath_merc.unit</string>
+		
+		<int name="effect-interval">1000</int>
+		<int name="effect-dist">130</int>
+		<!-- <dict name="effect"> -->
+			<!-- <string name="class">Skills::ScorchEarth</string> -->
+			<!-- <string name="scene">25</string> -->
+		<!-- </dict> -->
+	</dict>
+</dict>

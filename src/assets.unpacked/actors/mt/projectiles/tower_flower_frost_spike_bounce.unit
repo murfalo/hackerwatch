@@ -1,0 +1,35 @@
+<unit netsync="none">
+	<behavior class="BounceProjectile">
+	<string name="anim">idle</string>
+		<float name="speed">3</float>
+		<int name="ttl">250</int>
+		<int name="floor-bounces">2</int>
+		<float name="floor-bounce-intensity-mul">1</float>
+		<int name="floor-bounce-height">0</int>
+		<bool name="blockable">false</bool>
+
+		<int name="penetration">1000</int>
+
+		<array name="miss-effects">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/projectiles/tower_flower_frost_spike.unit</string>
+				<bool name="safe-spawn">true</bool>
+				<bool name="players-in-sight">true</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene>
+			<sprite origin="7 13" looping="true" texture="./tower_flower_frost_spike.png" material="system/default.mats:projectile">
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

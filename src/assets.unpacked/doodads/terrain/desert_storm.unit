@@ -1,0 +1,12 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif	
+			<effect src="./desert_storm.effect" />
+		</scene>
+	</scenes>
+</unit>

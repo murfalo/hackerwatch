@@ -1,0 +1,42 @@
+<effect looping="false" bounds="750 750">
+	<param name="angle" default="0" />
+	<param name="length" default="100" />
+	<param name="height" default="10" />
+
+		<sprite looping="true" origin="0 0.5" texture="actors/tower_beamo_trail.png" material="effects/effects.mats:add"
+		angle="angle"
+		
+		pos-x="cos(angle)*18"
+		pos-y="sin(angle)*18-height"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		
+		
+		scale-x="275 / 20"
+		scale-y="1.5"
+		>
+		<frame time="175" x="(1-t) * 35" y="10" w="20 * (length-18) / 275" h="1" />
+	</sprite>
+	
+	<sprite looping="true" origin="0 2.5" texture="actors/tower_beamo_trail.png" material="effects/effects.mats:add-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*18"
+		pos-y="sin(angle)*18-height"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		
+		
+		scale-x="275 / 20"
+		scale-y="1.2"
+		>
+		<frame time="175" x="(1-t) * 35" y="12" w="20 * (length-18) / 275" h="5" />
+	</sprite>
+	
+</effect>

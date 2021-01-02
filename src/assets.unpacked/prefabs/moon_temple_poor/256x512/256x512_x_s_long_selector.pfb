@@ -1,0 +1,220 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_64.unit">
+			<vec2>192 0</vec2>
+			<int>2</int>
+			<vec2>64 448</vec2>
+			<int>3</int>
+			<vec2>0 448</vec2>
+			<int>4</int>
+			<vec2>64 192</vec2>
+			<int>5</int>
+			<vec2>192 128</vec2>
+			<int>6</int>
+			<vec2>128 448</vec2>
+			<int>7</int>
+			<vec2>128 320</vec2>
+			<int>8</int>
+			<vec2>128 384</vec2>
+			<int>9</int>
+			<vec2>192 320</vec2>
+			<int>10</int>
+			<vec2>128 128</vec2>
+			<int>11</int>
+			<vec2>0 320</vec2>
+			<int>12</int>
+			<vec2>64 320</vec2>
+			<int>13</int>
+			<vec2>192 192</vec2>
+			<int>14</int>
+			<vec2>192 448</vec2>
+			<int>15</int>
+			<vec2>0 384</vec2>
+			<int>16</int>
+			<vec2>64 384</vec2>
+			<int>17</int>
+			<vec2>192 64</vec2>
+			<int>18</int>
+			<vec2>0 64</vec2>
+			<int>19</int>
+			<vec2>64 64</vec2>
+			<int>20</int>
+			<vec2>0 192</vec2>
+			<int>21</int>
+			<vec2>0 128</vec2>
+			<int>22</int>
+			<vec2>64 128</vec2>
+			<int>23</int>
+			<vec2>0 0</vec2>
+			<int>24</int>
+			<vec2>64 0</vec2>
+			<int>25</int>
+			<vec2>128 0</vec2>
+			<int>26</int>
+			<vec2>0 256</vec2>
+			<int>27</int>
+			<vec2>64 256</vec2>
+			<int>28</int>
+			<vec2>128 256</vec2>
+			<int>29</int>
+			<vec2>192 256</vec2>
+			<int>30</int>
+			<vec2>128 192</vec2>
+			<int>31</int>
+			<vec2>192 384</vec2>
+			<int>32</int>
+			<vec2>128 64</vec2>
+			<int>1</int>
+		</array>
+		<array name="system/system.fnt">
+			<array>
+				<vec2>256 0</vec2>
+				<int>34</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 256</vec2>
+				<int>35</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">256x512_x_s_long</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>36</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 512</vec2>
+				<int>37</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>256 512</vec2>
+				<int>38</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>240 416</vec2>
+				<int>39</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">o</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 416</vec2>
+				<int>40</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">o</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 16</vec2>
+				<int>33</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">o</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>41</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="IncludeTilesets">t</bool>
+				<array name="PickedPrefabs"><int>43</int><int>46</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>42</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>41</int><int>0</int><int>45</int><int>0</int><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>43</int>
+			<vec3>-64 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_poor/256x512/256x512_x_s_long_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>44</int>
+			<vec3>-96 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>42</int><int>41</int><int>43</int><int>45</int><int>46</int></array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>45</int>
+			<vec3>128 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>setup</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/setup_256x512.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>46</int>
+			<vec3>-64 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_poor/256x512/256x512_x_s_long_2.pfb</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

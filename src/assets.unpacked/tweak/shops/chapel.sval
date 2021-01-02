@@ -1,0 +1,537 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::ChapelShop</string>
+
+	<string name="id">chapel</string>
+	<string name="name">.shop.chapel</string>
+	<bool name="stars-visible">false</bool>
+
+	<array name="rows">
+		<!-- First row -->
+		<array>
+
+			<!-- Attack mul -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-attack-mul</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>0 0 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">1</int>
+%endif
+						<int name="cost-gold">10000</int>
+
+						<string name="name">.shop.chapel.path.attack.name</string>
+						<string name="desc">.shop.chapel.path.attack.desc?attack=25</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::Damage</string>
+							<float name="attack-mul">1.25</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Damage taken mul -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-dmg-taken-mul</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>24 0 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">1</int>
+%endif
+						<int name="cost-gold">10000</int>
+
+						<string name="name">.shop.chapel.path.defense.name</string>
+						<string name="desc">.shop.chapel.path.defense.desc?taken=15</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::Armor</string>
+							<float name="dmg-taken-mul">0.85</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Spell mul -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-spell-mul</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>48 0 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">1</int>
+%endif
+						<int name="cost-gold">10000</int>
+
+						<string name="name">.shop.chapel.path.spell.name</string>
+						<string name="desc">.shop.chapel.path.spell.desc?spell=25</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::Damage</string>
+							<float name="spell-mul">1.25</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+		</array>
+
+		<!-- Second row -->
+		<array>
+
+			<!-- Ignore armor -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-armor-pierce</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>72 0 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">3</int>
+%endif
+						<int name="cost-gold">20000</int>
+
+						<string name="name">.shop.chapel.blessing.armor-pierce.name</string>
+						<string name="desc">.shop.chapel.blessing.armor-pierce.desc?pierce=20</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::ArmorPierce</string>
+							<float name="armor">0.8</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Health regen -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-health-regen</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>96 0 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">3</int>
+%endif
+						<int name="cost-gold">20000</int>
+
+						<string name="name">.shop.chapel.blessing.health-regen.name</string>
+						<string name="desc">.shop.chapel.blessing.health-regen.desc?regen=100</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::Regen</string>
+							<float name="health-mul">2</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Mana regen -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-mana-regen</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>0 24 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">3</int>
+%endif
+						<int name="cost-gold">20000</int>
+
+						<string name="name">.shop.chapel.blessing.mana-regen.name</string>
+						<string name="desc">.shop.chapel.blessing.mana-regen.desc?regen=100</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::Regen</string>
+							<float name="mana-mul">2</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Ignore resistance -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-resistance-pierce</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>24 24 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">3</int>
+%endif
+						<int name="cost-gold">20000</int>
+
+						<string name="name">.shop.chapel.blessing.resistance-pierce.name</string>
+						<string name="desc">.shop.chapel.blessing.resistance-pierce.desc?pierce=20</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::ArmorPierce</string>
+							<float name="resistance">0.8</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+		</array>
+
+		<!-- Third row -->
+		<array>
+
+			<!-- Attack crit damage -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-attack-crit-damage</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>48 24 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">5</int>
+%endif
+						<int name="cost-gold">50000</int>
+
+						<string name="name">.shop.chapel.symbol.attack-crit.name</string>
+						<string name="desc">.shop.chapel.symbol.attack-crit.desc?damage=100</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::CriticalMul</string>
+							<float name="mul">2</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Lifesteal -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-lifesteal</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>72 24 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">5</int>
+%endif
+						<int name="cost-gold">50000</int>
+
+						<string name="name">.shop.chapel.symbol.lifesteal.name</string>
+						<string name="desc">.shop.chapel.symbol.lifesteal.desc?lsteal=2.5</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::Lifestealing</string>
+							<float name="lifesteal">0.025</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Damage return -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-return-damage</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>96 24 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">5</int>
+%endif
+						<int name="cost-gold">50000</int>
+
+						<string name="name">.shop.chapel.symbol.return-damage.name</string>
+						<string name="desc">.shop.chapel.symbol.return-damage.desc?return=250</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::Thorns</string>
+							<float name="physical">1.25</float>
+							<float name="magical">1.25</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Cheaper Spells -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-cheaper-spells</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>0 48 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">5</int>
+%endif
+						<int name="cost-gold">50000</int>
+
+						<string name="name">.shop.chapel.symbol.spell-cost.name</string>
+						<string name="desc">.shop.chapel.symbol.spell-cost.desc?cost=25</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::SpellCost</string>
+							<float name="mana-mul">0.75</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<!-- Spell crit damage -->
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-spell-crit-damage</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>24 48 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">5</int>
+%endif
+						<int name="cost-gold">50000</int>
+
+						<string name="name">.shop.chapel.symbol.spell-crit.name</string>
+						<string name="desc">.shop.chapel.symbol.spell-crit.desc?damage=100</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::CriticalMul</string>
+							<float name="spell-mul">2</float>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</array>
+
+		<!-- Fourth row -->
+		<array>
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-attack1</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>48 48 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">7</int>
+%endif
+						<int name="cost-gold">100000</int>
+
+						<string name="name">.shop.chapel.divine.hammer.name</string>
+						<string name="desc">.shop.chapel.divine.hammer.desc?dmg=25&cd=0.3</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::TriggerEffect</string>
+							<string name="trigger">attack</string>
+							<float name="chance">1</float>
+							<bool name="use-attack-speed">true</bool>
+
+							<int name="weapon-info">1</int>
+
+							<bool name="target-self">true</bool>
+							<int name="timeout">300</int>
+
+							<array name="effects">
+								<dict name="effect">
+									<string name="class">ShootProjectile</string>
+									<string name="projectile">players/projectiles/divine_hammer.unit</string>
+									<int name="dist">5</int>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-attack2</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>72 48 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">7</int>
+%endif
+						<int name="cost-gold">100000</int>
+
+						<string name="name">.shop.chapel.divine.bomb.name</string>
+						<string name="desc">.shop.chapel.divine.bomb.desc?dmg=125&cd=1</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::TriggerEffect</string>
+							<string name="trigger">attack</string>
+							<float name="chance">1</float>
+							<bool name="use-attack-speed">true</bool>
+
+							<int name="weapon-info">1</int>
+
+							<bool name="target-self">true</bool>
+							<int name="timeout">1000</int>
+
+							<dict name="effect">
+								<string name="class">SpawnUnit</string>
+								<string name="unit">players/projectiles/holy_handgrenade.unit</string>
+								<bool name="safe-spawn">false</bool>
+								<int name="spawn-dist">0</int>
+							</dict>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-attack3</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>96 48 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">7</int>
+%endif
+						<int name="cost-gold">100000</int>
+
+						<string name="name">.shop.chapel.divine.blast.name</string>
+						<string name="desc">.shop.chapel.divine.blast.desc?dmg=10&cd=0.25</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::TriggerEffect</string>
+							<string name="trigger">attack</string>
+							<float name="chance">1</float>
+							<bool name="use-attack-speed">true</bool>
+
+							<int name="weapon-info">1</int>
+
+							<bool name="target-self">true</bool>
+							<int name="timeout">250</int>
+
+							<array name="effects">
+								<dict name="effect">
+									<string name="class">HitscanSpreadFan</string>
+									<int name="range">26</int>
+									<int name="rays">32</int>
+									<int name="spread">360</int>
+									<bool name="only-hit-targets-once">true</bool>
+
+									<!-- <bool name="miss-fx">true</bool> -->
+									<!-- <string name="shoot-fx">players/projectiles/divine_ray_beam.effect</string> -->
+									<!-- <string name="hit-fx">players/projectiles/divine_ray_beam.effect</string> -->
+
+									<dict name="effect">
+										<string name="class">Damage</string>
+										<int name="magical">12</int>
+									</dict>
+								</dict>
+
+								<dict>
+									<string name="class">SpawnEffect</string>
+									<string name="effect">players/projectiles/divine_judgement.effect</string>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">Upgrades::ChapelUpgrade</string>
+				<string name="id">chapel-attack4</string>
+
+				<array name="icon">
+					<string>gui/icon_chapel.png</string><int>100</int><vec4>0 72 24 24</vec4>
+				</array>
+
+				<array name="steps">
+					<dict>
+%if HARDCORE
+						<int name="restrict-player-title-min">7</int>
+%endif
+						<int name="cost-gold">100000</int>
+
+						<string name="name">.shop.chapel.divine.strike.name</string>
+						<string name="desc">.shop.chapel.divine.strike.desc?dmg=12&cd=0.01</string>
+
+						<dict name="modifier">
+							<string name="class">Modifiers::TriggerEffect</string>
+							<string name="trigger">attack</string>
+							<float name="chance">1</float>
+							<bool name="use-attack-speed">true</bool>
+
+							<int name="weapon-info">1</int>
+
+							<bool name="target-self">true</bool>
+							<int name="timeout">10</int>
+
+							<array name="effects">
+								<dict name="effect">
+									<string name="class">HitscanRandomEnemy</string>
+									<int name="range">120</int>
+
+									<string name="shoot-fx">players/projectiles/divine_ray_beam.effect</string>
+
+									<dict name="effect">
+										<string name="class">Damage</string>
+										<int name="magical">12</int>
+									</dict>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</array>
+</dict>

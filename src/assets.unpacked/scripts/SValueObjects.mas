@@ -1,0 +1,14 @@
+%include "scripts/SValueObjects.inc"
+
+void Execute()
+{
+	AddWithId("DungeonProperties");
+
+	AddWithId("PlayerFrame");
+	AddWithId("PlayerComboStyle");
+	AddWithId("PlayerCorpseGravestone");
+
+	AddWithId("MercenaryUpgradeDef");
+
+	AddWithId("TransportPoint", true);
+}

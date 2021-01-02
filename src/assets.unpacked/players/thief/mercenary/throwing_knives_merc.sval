@@ -1,0 +1,30 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">thief</string>
+	<string name="name">.skills.thief.throwing-knives</string>
+	<string name="description">.skills.thief.throwing-knives.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 72 24 24</vec4>
+	</array>
+
+	<int name="cost">14</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ShootProjectileFan</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/thief/fan_of_knives</string>
+		
+		<int name="cooldown">250</int>
+		<int name="castpoint">0</int>
+		
+		<int name="mana-cost">25</int>
+
+		<int name="dist">5</int>
+		<int name="projectiles">10</int>
+		<int name="spread">70</int>
+		
+		<string name="projectile">players/thief/mercenary/dagger_merc.unit</string>
+	</dict>
+</dict>

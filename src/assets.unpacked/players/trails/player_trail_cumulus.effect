@@ -1,0 +1,23 @@
+<effect looping="false">
+	
+	<sprite origin="8 8" looping="false" texture="./player_trails.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="3+rand(u)*2"
+		scale-x="saturate(0.8-t*0.8)"
+		scale-y="saturate(0.8-t*0.8)"		
+		pos-x="cos(rand(u+21*i)*2*pi) * 3 * pow(rand(u+73*i),0.5) - (sin(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5))*0.9*t*rand(u+i)"
+        pos-y="sin(rand(u+21*i)*2*pi) * 3 * pow(rand(u+73*i),0.5) - (cos(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5))*0.9*t*rand(u+i)"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+	
+	>
+		
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="499">0 0 16 16</frame>
+		
+	</sprite>
+	
+</effect>

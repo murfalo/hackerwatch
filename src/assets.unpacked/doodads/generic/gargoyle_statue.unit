@@ -1,0 +1,84 @@
+<unit slot="doodad" layer="10">
+	<scenes e-off="e" n-off="n" w-off="w" s-off="s" e-on="e-on" n-on="n-on" w-on="w-on" s-on="s-on" >
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" radius="8" />
+			</collision>
+		</scene>
+
+		<scene name="e">
+			<scene src="shared" />
+			<sprite origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>0 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>0 0 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="n">
+			<scene src="shared" />
+			<sprite origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>32 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>32 0 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="w">
+			<scene src="shared" />
+			<sprite origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>64 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>64 0 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="s">
+			<scene src="shared" />
+			<sprite origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>96 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>96 0 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="e-on">
+			<scene src="shared" />
+			<sprite origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>0 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>0 32 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="n-on">
+			<scene src="shared" />
+			<sprite origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>32 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>32 32 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="w-on">
+			<scene src="shared" />
+			<sprite origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>64 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="17 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>64 32 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="s-on">
+			<scene src="shared" />
+			<sprite origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:shadow">
+				<frame>96 64 32 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="16 20" looping="true" texture="doodads/generic/gargoyle_statue.png" material="system/default.mats:default-noxray">
+				<frame>96 32 32 32</frame>
+			</sprite>
+		</scene>
+  </scenes>
+</unit>

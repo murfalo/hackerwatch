@@ -1,0 +1,23 @@
+<effect looping="false" layer="1">
+
+	<data>
+		<string name="gore">effects/gibs/doodads/china_brown.sval</string>
+	</data>	
+
+	<sprite looping="false" origin="12.5 3.5" texture="./puzzle_constellation_marker.png" material="system/default.mats:glow-both-bright"
+		angle="rand(u+i+149)*pi*2"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1-t"
+		pos-x="rand(u+i+149)*pi*2+2"
+		pos-y="rand(u+i+149)*pi*2+3"
+>
+		<frame time="50">32 32 25 7</frame>
+		<frame time="50">57 32 25 7</frame>
+		<frame time="50">82 32 25 7</frame>
+		<frame time="50">107 32 25 7</frame>
+		<frame time="50">132 32 25 7</frame>
+	</sprite>		
+	
+</effect>

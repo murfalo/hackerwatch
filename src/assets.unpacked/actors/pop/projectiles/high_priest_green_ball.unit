@@ -1,0 +1,32 @@
+<unit netsync="none">
+	<behavior class="SteeringRayProjectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/lich/hit</string>
+		<string name="fx">actors/projectiles/lich_1_hit.effect</string>
+		
+		<float name="speed">4</float>
+		<int name="ttl">2800</int>
+		
+		<string name="dir-steer">saturate((t-1.5)*50)*pi</string>
+		<string name="speed-steer">(-sin(saturate(t*2-2.5)*pi))*4</string>
+		
+			<!-- <string name="dir-steer">t*20</string> -->
+		<!-- <string name="speed-steer">(-sin(saturate(t*2-2.5)*pi))*4</string> -->
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">40</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<effect src="actors/pop/projectiles/high_priest_green_ball.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

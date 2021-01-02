@@ -1,0 +1,43 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect width="280" height="200" spriteset="gui/variable/bigwindow_borders.sval" anchor="0.5 0.5" padding="2 2" flow="vbox">
+				<!-- Header -->
+				<rect width="276" height="18" flow="hbox">
+					<!-- Text -->
+					<rect width="255" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mainmenu.mercenaryinfo.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="276" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Container -->
+				<rect width="276" height="175" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Info -->
+					<scrollrect id="info" width="265" height="175" flow="vbox" padding="4 1" spacing="6">
+						<text font="gui/fonts/arial11.fnt" width="257" text=".town.mercenaryledger.info" />
+					</scrollrect>
+
+					<!-- Separator -->
+					<rect width="3" height="175" offset="265 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Scrollbar -->
+					<scrollbar forid="info" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+			</rect>
+		</group></group>
+	</doc>
+</gui>

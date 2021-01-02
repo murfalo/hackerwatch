@@ -1,0 +1,51 @@
+<effect looping="false" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="6" />
+	<param name="radius" default="6" />
+	<param name="ttl" default="10000" />
+<!-- 
+	<data>
+		<string name="gore">effects/gibs/gib_burrow_spawner.sval</string>
+	</data>	 -->
+	<sprite looping="true" origin="4 18" texture="./guardian_figurine.png" material="system/default.mats:bright-noxray"
+	
+		pos-x="rand(u*t)*1.5-1"
+		pos-y="0+t*18"
+		scale-x="1"
+		scale-y="1"
+	>
+		
+        <frame time="1000" x="43" y="163" w="9" h="18-t*18" />
+	</sprite>
+	
+<sprite origin="1.5 1.5" looping="true" texture="./guardian_figurine.png" material="system/default.mats:default-noxray"
+		num-sprites="5"
+
+		pos-x="it*it*cos(rand(u+13*i*l)*2*pi) * radius * pow(rand(u+37*i*l),0.5) - cos(rand(u+13*i*l)*2*pi) * radius * pow(rand(u+37*i*l),0.5) - it*cos(rand(u+13*i*l)*2*pi) * radius * pow(rand(u+37*i*l),0.5)"
+        pos-y="sin(it*it*it*it*it)*rand(i*l)*-5"
+		scale-x="1 + rand(u+i*l*101)*0.5"
+		scale-y="1 + rand(u+i*l*101)*0.5"
+		
+		color-a="1 - t"
+	>
+        
+		<frame time="250">64 176 3 3</frame>
+	</sprite>
+	
+	
+<sprite origin="2 2" looping="true" texture="./guardian_figurine.png" material="system/default.mats:default-noxray"
+		num-sprites="5"
+
+		pos-x="cos(rand(u+27*i*l)*2*pi) * radius * pow(rand(u+67*i*l),0.5) + sin(it*2*pi)*2"
+		pos-y="-5 * it"
+		
+		scale-x="1 + rand(u+i*l*101)*0.5"
+		scale-y="1 + rand(u+i*l*101)*0.5"
+		color-a="1 - t"
+	>
+        
+		<frame time="250">68 176 4 4</frame>
+	</sprite>
+	
+</effect>

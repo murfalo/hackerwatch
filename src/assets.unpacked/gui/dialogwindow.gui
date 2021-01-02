@@ -1,0 +1,27 @@
+<gui>
+	<sprites>
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="230" height="102" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" border="0 0 0 191" borderwidth="512" bordertype="outer">
+				<!-- Question -->
+				<rect width="226" height="76" offset="2 2" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<text id="question" smooth="false" font="gui/fonts/arial11.fnt" width="200" align="center" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Text input -->
+				<rect visible="false" width="218" height="23" offset="2 48" color="#09242FFF">
+					<textinput id="input" offset="4 4" width="210" height="15" font="gui/fonts/arial11.fnt" func="yes" />
+				</rect>
+
+				<!-- Buttons -->
+				<rect width="226" height="22" offset="2 78" spriteset="gui/variable/headline_borders.sval">
+					<scalebutton spriteset="scalebutton" anchor="0.2 0" offset="0 2" id="yes" func="yes" font="gui/fonts/arial11.fnt" text="XXX" width="72" />
+					<scalebutton spriteset="scalebutton" anchor="0.8 0" offset="0 2" id="no" func="no" font="gui/fonts/arial11.fnt" text="XXX" width="72" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

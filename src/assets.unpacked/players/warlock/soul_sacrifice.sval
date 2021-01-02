@@ -1,0 +1,67 @@
+<dict>
+	<string name="name">.skills.warlock.soul-sacrifice</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 144 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+	
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">kill</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">GiveMana</string>
+					<int name="mana">1</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">kill</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">GiveMana</string>
+					<int name="mana">2</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">kill</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">GiveMana</string>
+					<int name="mana">3</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">kill</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">GiveMana</string>
+					<int name="mana">4</int>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>

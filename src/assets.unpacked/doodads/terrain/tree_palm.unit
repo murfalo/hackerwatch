@@ -1,0 +1,59 @@
+<unit slot="doodad">
+	<scenes default="1 2" shadowed="s1 s2">
+		<scene name="shared">
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="240 123 10 11" />
+			<collision static="true">
+				<circle offset="0.5 0" radius="5.5" />
+			</collision>
+		</scene>
+		
+		<scene name="1">
+			<scene src="shared"/>
+			<sprite origin="29 77" texture="./tree_palm.png" material="system/default.mats:proj-wall">
+				<frame>0 0 59 82</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite wall-project="adaptive" origin="-5 94" texture="./tree_palm.png">
+					<frame>59 0 58 95</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="2">
+			<scene src="shared"/>
+			<sprite origin="24 73" texture="./tree_palm.png" material="system/default.mats:proj-wall">
+				<frame>0 82 47 78</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite wall-project="adaptive" origin="-4 78" texture="./tree_palm.png">
+					<frame>47 95 50 78</frame>
+				</sprite> 
+			</shadow>
+		</scene>	
+		
+		
+		<scene name="s1">
+			<scene src="shared"/>
+			<sprite origin="29 77" texture="./tree_palm.png" material="system/default.mats:floor">
+				<frame>0 0 59 82</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite wall-project="adaptive" origin="-5 94" texture="./tree_palm.png">
+					<frame>59 0 58 95</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="s2">
+			<scene src="shared"/>
+			<sprite origin="24 73" texture="./tree_palm.png" material="system/default.mats:floor">
+				<frame>0 82 47 78</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite wall-project="adaptive" origin="-4 78" texture="./tree_palm.png">
+					<frame>47 95 50 78</frame>
+				</sprite> 
+			</shadow>
+		</scene>						
+	</scenes>
+</unit>

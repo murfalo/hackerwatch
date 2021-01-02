@@ -1,0 +1,19 @@
+<effect looping="true" layer="-1">
+	
+	<param name="color_r" default="1" />
+	<param name="color_g" default="0" />
+	<param name="color_b" default="0" />
+	
+	<sprite origin="32 32" texture="./buff_circle_32.png" material="system/default.mats:glow-both-bright"
+		
+		angle="pi * (t+l) * 2 / 20"
+		
+		color-r="color_r"
+		color-g="color_g"
+		color-b="color_b"
+		%//color-a="sin(pi*(t+l)/20)*0.25"
+		color-a="0.25"
+	>
+		<frame time="100">0 0 64 64</frame>
+	</sprite>
+</effect>

@@ -1,0 +1,40 @@
+<effect looping="true" layer="100">
+	<param name="radius" default="24" />
+	<!-- <param name="posy" default="-5" /> -->
+	<!-- <variation>
+		<sprite origin="4 4.5" looping="true" texture="./giant_wisp.png" material="system/default.mats:glow-both-bright"
+		scale-x="0.5 + rand(u+i + 6373) * 0.25"
+		scale-y="0.5 + rand(u+i + 6373) * 0.25"
+		pos-x="cos(pi * 2) * 20 * sin(pi*2 + 5*pi/5*2)"
+		pos-y="cos(pi * 2) * 20 * cos(pi*2 + 5*pi/5*2)"
+		angle="pi * 4 * it + pi/2"
+		
+		>
+			<frame time="1500">177 64 8 9</frame>
+		</sprite>
+	</variation>
+	<variation>
+		<sprite origin="4.5 4.5" looping="true" texture="./giant_wisp.png" material="system/default.mats:glow-both-bright"
+		scale-x="0.5 + rand(u+i + 6373) * 0.25"
+		scale-y="0.5 + rand(u+i + 6373) * 0.25"
+		pos-x="cos(pi * 2) * 20 * sin(pi*2 + 5*pi/5*2)"
+		pos-y="cos(pi * 2) * 20 * cos(pi*2 + 5*pi/5*2)"
+		angle="pi * 4 * it + pi/2"
+		
+		>
+			<frame time="1500">186 64 9 9</frame>
+		</sprite>
+	</variation>  -->
+	
+	
+	
+	<sprite origin="24 24" looping="true" texture="./giant_wisp.png" material="system/default.mats:glow-both-bright"
+	scale-x="1.2 + sin(t*pi*2)*0.025"
+	scale-y="1.2 + sin(t*pi*2)*0.025"
+	color-a="1"
+	angle="-t*pi*2"
+	
+	>
+		<frame time="700">192 80 48 48</frame>
+	</sprite>
+</effect>

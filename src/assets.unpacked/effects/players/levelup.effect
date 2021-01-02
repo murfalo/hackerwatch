@@ -1,0 +1,95 @@
+<effect>
+	<sprite looping="false" origin="17 20" layer="1" texture="effects/players/player_level_up.png" material="system/default.mats:bright-noxray">
+		<frame time="90">0 0 34 35</frame>
+		<frame time="90">34 0 34 35</frame>
+		<frame time="90">68 0 34 35</frame>
+		<frame time="90">102 0 34 35</frame>
+		<frame time="90">136 0 34 35</frame>
+		<frame time="90">170 0 34 35</frame>
+		<frame time="90">204 0 34 35</frame>
+	</sprite>
+	
+		%//STAR GLOWING
+<!-- 	<sprite looping="false" origin="5 38" texture="effects/generic/player_level_up.png" material="system/default.mats:bright-noxray-glowing">
+		<frame time="300">0 0 0 0</frame>
+		<frame time="100">0 137 11 15</frame>
+		<frame time="100">11 137 11 15</frame>
+		<frame time="100">22 137 11 15</frame>
+		<frame time="100">33 137 11 15</frame>
+		<frame time="150">44 137 11 15</frame>
+		<frame time="100">0 152 11 15</frame>
+		<frame time="100">22 152 11 15</frame>
+		<frame time="100">11 152 11 15</frame>
+		<frame time="100">44 137 11 15</frame>
+		<frame time="100">154 137 11 15</frame>
+		<frame time="100">143 137 11 15</frame>
+		<frame time="100">132 137 11 15</frame>
+		<frame time="100">121 137 11 15</frame>
+		<frame time="100">110 137 11 15</frame>
+		<frame time="100">109 137 11 15</frame>
+		<frame time="100">88 137 11 15</frame>
+		<frame time="100">121 137 11 15</frame>
+		<frame time="100">77 137 11 15</frame>
+		<frame time="100">66 137 11 15</frame>
+		<frame time="1000">44 137 11 15</frame>
+		<frame time="100">33 137 11 15</frame>
+		<frame time="100">22 137 11 15</frame>
+		<frame time="100">11 137 11 15</frame>
+		<frame time="100">0 137 11 15</frame>	
+	</sprite> -->
+	%//STAR
+	<sprite looping="false" origin="6 30" texture="effects/players/player_level_up.png" material="system/default.mats:bright-noxray">
+		<frame time="300">0 0 0 0</frame>
+		<frame time="100">0 35 11 15</frame>
+		<frame time="100">11 35 11 15</frame>
+		<frame time="100">22 35 11 15</frame>
+		<frame time="100">33 35 11 15</frame>
+		<frame time="150">44 35 11 15</frame>
+		<frame time="100">0 50 11 15</frame>
+		<frame time="100">22 50 11 15</frame>
+		<frame time="100">11 50 11 15</frame>
+		<frame time="100">44 35 11 15</frame>
+		<frame time="100">154 35 11 15</frame>
+		<frame time="100">143 35 11 15</frame>
+		<frame time="100">132 35 11 15</frame>
+		<frame time="100">121 35 11 15</frame>
+		<frame time="100">110 35 11 15</frame>
+		<frame time="100">99 35 11 15</frame>
+		<frame time="100">88 35 11 15</frame>
+		<frame time="100">121 35 11 15</frame>
+		<frame time="100">77 35 11 15</frame>
+		<frame time="100">66 35 11 15</frame>
+		<frame time="1000">44 35 11 15</frame>
+		<frame time="100">33 35 11 15</frame>
+		<frame time="100">22 35 11 15</frame>
+		<frame time="100">11 35 11 15</frame>
+		<frame time="100">0 35 11 15</frame>	
+	</sprite>
+
+		
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+	%//<length value="700" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="1400*t" />
+			
+		<color-r value="max(0, 5*(0.2-t)) * 3*(1-t)" />
+		<color-g value="max(0, 5*(0.2-t)) * 1.5*(1-t)" />
+		<color-b value="max(0, 5*(0.2-t)) * 0.5*(1-t)" />
+		<color-a value="0"/>
+		
+	</light>
+
+</effect>

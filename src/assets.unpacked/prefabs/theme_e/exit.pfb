@@ -1,0 +1,41 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/env/anatolia_outside.env</string>
+	</dict>
+	<dict name="units">
+		<array name="hw/doodads/generic/marker_exit.unit"><vec2>0 16</vec2><int>1</int></array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>16 24</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">32 16</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="hw/doodads/theme_e/e_exit_h_dn.unit"><vec2>0 0</vec2><int>3</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>4</int>
+			<vec3>56 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>2</int></array>
+				<array name="OnAllEntered"><int>5</int></array>
+			</dict>
+		</array>
+		<array><string>LevelExitNext</string><int>5</int><vec3>56 28 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+	</array>
+</dict>

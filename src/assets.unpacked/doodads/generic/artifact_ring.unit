@@ -1,0 +1,29 @@
+<unit slot="doodad">
+	<scenes>			
+		<scene>
+			<sprite layer="-1" origin="4 4" texture="./artifacts.png" material="system/default.mats:item-objective">
+				<frame>18 0 8 8</frame>
+			</sprite>	
+			<effect pos="0 2" src="./artifact_particles.effect" />
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1500" />
+				<overbright value="3"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" /> 
+				<sizes>
+					<size value="24" />
+					<size value="16" />
+				</sizes>
+				<colors>
+					<color value="181 198 204 0" />
+					<color value="181 204 204 0" />
+				</colors>
+			</light>			
+		</scene>									
+	</scenes>
+</unit>

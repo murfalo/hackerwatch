@@ -1,0 +1,63 @@
+<gui>
+	<sprites>
+		<sprite name="icon-legacy" texture="gui/icons.png"><frame>233 24 12 13</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- List container -->
+			<rect width="380" height="194">
+				<!-- List -->
+				<scrollrect id="list" width="366" height="194" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox" />
+
+				<!-- Separators -->
+				<rect width="3" height="194" offset="366 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="194" offset="377 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+			</rect>
+
+			<!-- Legacy points template -->
+			<rect id="template-points" visible="false" width="366" height="39">
+				<text font="gui/fonts/arial11.fnt" anchor="0.5 0" text=".guildhall.stats.companylegacypoints" />
+				<group inner="true" flow="hbox" spacing="2" anchor="0.5 0" offset="0 18">
+					<sprite src="icon-legacy" />
+					<text id="amount" font="gui/fonts/arial11.fnt" offset="1 -2" hint="number-high" />
+				</group>
+				<rect width="366" height="3" spriteset="gui/variable/3pxbar_hor.sval" offset="0 36" />
+			</rect>
+
+			<!-- Empty stats template -->
+			<rect id="template-stats-empty" visible="false" width="366" height="36">
+				<text text=".guildhall.stats.empty" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+			</rect>
+
+			<!-- Stats header template -->
+			<rect id="template-stats-header" visible="false" width="366" height="18" flow="hbox">
+				<rect width="281" height="18" spriteset="gui/variable/headline_hor.sval">
+					<text id="category" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+				</rect>
+				<rect width="85" height="18" spriteset="gui/variable/headline_hor.sval">
+					<text id="column2" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".guildhall.stats.lifetime" />
+				</rect>
+			</rect>
+
+			<!-- Stats separator template -->
+			<rect id="template-stats-separator" visible="false" offset="0 2" width="366" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- Separator template -->
+			<rect id="template-separator" visible="false" width="366" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- Stats template -->
+			<rect id="template-stats" visible="false" width="366" height="18">
+				<text id="name" font="gui/fonts/arial11.fnt" offset="4 0" />
+				<rect width="85" height="15" offset="281 0">
+					<text id="value" font="gui/fonts/arial11.fnt" anchor="0.5 0" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

@@ -1,0 +1,303 @@
+<unit netsync="position" save="false" slot="actor">
+	<behavior class="PlayerOwnedSummon">
+	
+		<string name="team">player</string>
+
+		<string name="type">beast</string>
+		<int name="hp">600</int>
+		<int name="armor">30</int>
+		<int name="resistance">30</int>
+		
+		<int name="overhead-bossbar-width">16</int>
+		<int name="ttl">15000</int>
+		<float name="block-projectile-chance">0.5</float>
+		<bool name="use-player-colors">true</bool>
+
+		<string name="gore">effects/gibs/gib_secutor.sval</string>
+		<string name="death-snd">event:/player/gladiator/reinforcements-death</string>
+		
+		<array name="buffs-immune-tags">
+			<string>players</string>
+		</array>
+		
+		<int name="aggro-range">200</int>
+
+		<dict name="movement">
+			<string name="class">MeleeFollowerMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<float name="speed">3.2</float>
+			<float name="run-back-speed">5.2</float>
+			<float name="roaming">0.3</float>
+			<int name="roaming-distance">40</int>
+			<int name="run-back-distance">100</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown">200</int>
+				<int name="castpoint">150</int>
+				<int name="range">26</int>
+				
+				<string name="offset">attack-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<int name="min-radius">8</int>
+						<int name="radius">8</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">50</int>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/player/gladiator/reinforcements-attack</string>
+					</dict>
+				</array>				
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict name="effect">
+						<string name="class">SpawnEffect</string>
+						<string name="effect">players/gladiator/pit_fighter_death.effect</string>
+					</dict>	
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="100" origin="3 3" texture="gui/minimap.png" frame="240 148 6 6"/>
+		
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="3.5" charge-through="true" />
+			</collision>
+			<sprite origin="6 5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>16 12 11 11</frame>
+			</sprite>
+		</scene>
+	
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>0 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>24 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>48 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>72 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>96 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>120 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>144 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame>168 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">0 24 24 24</frame>
+				<frame time="125">0 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">24 24 24 24</frame>
+				<frame time="125">24 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">48 24 24 24</frame>
+				<frame time="125">48 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">72 24 24 24</frame>
+				<frame time="125">72 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">96 24 24 24</frame>
+				<frame time="125">96 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">120 24 24 24</frame>
+				<frame time="125">120 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">144 24 24 24</frame>
+				<frame time="125">144 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+		<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">168 24 24 24</frame>
+				<frame time="125">168 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="14 0"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">0 72 24 24</frame>
+				<frame time="120">0 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="10 -10"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">24 72 24 24</frame>
+				<frame time="120">24 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -14"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">48 72 24 24</frame>
+				<frame time="120">48 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-10 -10"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">72 72 24 24</frame>
+				<frame time="120">72 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-14 0"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">96 72 24 24</frame>
+				<frame time="120">96 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-10 10"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">120 72 24 24</frame>
+				<frame time="120">120 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 14"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">144 72 24 24</frame>
+				<frame time="120">144 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="10 10"/>
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="60">168 72 24 24</frame>
+				<frame time="120">168 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="death">
+			<scene src="shared" />
+
+			<sprite origin="12 14" looping="false" texture="players/gladiator/pit_fighter.tif" material="system/default.mats:ally">
+				<frame time="125">192 0 24 24</frame>
+				<frame time="125">216 0 24 24</frame>
+				<frame time="125">192 24 24 24</frame>
+				<frame time="125">216 24 24 24</frame>
+				<frame time="125">192 48 24 24</frame>
+				<frame time="125">216 48 24 24</frame>
+				<frame time="175">192 72 24 24</frame>
+				<frame time="550">216 72 24 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

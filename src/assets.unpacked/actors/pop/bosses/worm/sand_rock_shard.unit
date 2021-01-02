@@ -1,0 +1,47 @@
+<unit netsync="none">
+	<behavior class="TossProjectile">
+		<string name="anim">idle</string>
+		<int name="anim-num">1</int>
+		<string name="fx">actors/pop/bosses/worm/sand_rock_shard_hit.effect</string>
+		
+		<float name="speed">3.7</float>
+		<int name="ttl">650</int>
+		<bool name="blockable">true</bool>
+		<float name="arc-height">4</float>
+		<bool name="on-target">false</bool>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">30</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/pop/bosses/worm/sand_rock_shard_hit.effect</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle-0">
+			<collision static="false">
+				<circle projectile="true" radius="3" />
+			</collision>
+		
+			<sprite origin="3 3" looping="true" texture="./sand_rock_shard.png" material="system/default.mats:actor">
+				<frame time="50">0 0 6 6</frame>
+				<frame time="50">6 0 6 6</frame>
+				<frame time="50">12 0 6 6</frame>
+				<frame time="50">18 0 6 6</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="3 -3" looping="true" texture="./sand_rock_shard.png">
+					<frame time="50">0 0 6 6</frame>
+					<frame time="50">6 0 6 6</frame>
+					<frame time="50">12 0 6 6</frame>
+					<frame time="50">18 0 6 6</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

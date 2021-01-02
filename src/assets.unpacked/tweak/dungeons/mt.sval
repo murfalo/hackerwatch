@@ -1,0 +1,55 @@
+<loader>DungeonProperties::LoadSingle</loader>
+<dict>
+	<string name="class">MoonDungeonProperties</string>
+
+	<string name="id">mt</string>
+	<string name="name">.dlc.mt</string>
+
+	<string name="str-char-info-ngp">.charinfo.ngp.moon</string>
+	<string name="str-notify-char-ngp">.hud.newngp.char.moon</string>
+
+	<string name="town-spawn">mercenary_camp</string>
+	<bool name="moon">true</bool>
+
+	<array name="flags">
+		<string>dlc_mt</string>
+	</array>
+
+	<string name="dlc-req">mt</string>
+	
+	<array name="area-names">
+		<string>.world.mt</string>
+		<string>.world.mt</string>
+		<string>.world.mt</string>
+	</array>
+
+	<array name="act-names">
+		<string>.world.mt.acts.0</string>
+		<string>.world.mt.acts.1</string>
+		<string>.world.mt.acts.2</string>
+	</array>
+
+	<string name="status-prefix">mt_</string>
+	<string name="discord-state">In Moon Temple</string>
+	<array name="discord-act-images">
+		<string>act_mt_0</string>
+		<string>act_mt_1</string>
+		<string>act_mt_2</string>
+	</array>
+
+	<array name="levels">
+		%//<array><string>LevelFile</string><int>Act</int><int>Level</int><string>Theme</string><int>Size (amount of 256x256 sections to place)</int></array>
+	
+		<array><string>levels/generated_mt.lvl</string><int>0</int><int>0</int><string>moon_temple_poor</string><int>28</int></array>
+		<array><string>levels/generated_mt.lvl</string><int>0</int><int>1</int><string>moon_temple_poor</string><int>30</int></array>
+		<array><string>levels/boss_giant_wisp.lvl</string><int>0</int><int>2</int></array>
+		
+		<array><string>levels/generated_mt.lvl</string><int>1</int><int>0</int><string>moon_temple_common</string><int>40</int></array>
+		<array><string>levels/generated_mt.lvl</string><int>1</int><int>1</int><string>moon_temple_common</string><int>42</int></array>
+		<array><string>levels/boss_wolf.lvl</string><int>1</int><int>2</int></array>
+		
+		<array><string>levels/generated_mt.lvl</string><int>2</int><int>0</int><string>moon_temple_rich</string><int>54</int></array>
+		<array><string>levels/generated_mt.lvl</string><int>2</int><int>1</int><string>moon_temple_rich</string><int>56</int></array>
+		<array><string>levels/boss_agents.lvl</string><int>2</int><int>2</int></array>
+	</array>
+</dict>

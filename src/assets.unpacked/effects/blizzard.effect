@@ -1,0 +1,97 @@
+<effect looping="true">
+	<param name="radius" default="12" />
+<!-- radius / 3 -->
+	
+	%//Particles
+<!-- 	
+	<sprite origin="3 3" looping="true" texture="./explosion_bomb.png" material="system/default.mats:default-noxray"
+		num-sprites="1"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)+sin(t*pi*2)*radius"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)+cos(t*pi*2)*radius"
+
+	>
+        
+		<frame time="50">30 112 6 6</frame>
+		<frame time="50">24 112 6 6</frame>
+		<frame time="50">18 112 6 6</frame>
+		<frame time="50">12 112 6 6</frame>
+		<frame time="50">18 112 6 6</frame>
+		<frame time="50">24 112 6 6</frame>
+		<frame time="150">30 112 6 6</frame>
+		<frame time="150">24 112 6 6</frame>
+		<frame time="150">18 112 6 6</frame>
+		<frame time="150">12 112 6 6</frame>
+		<frame time="150">18 112 6 6</frame>
+		<frame time="150">24 112 6 6</frame>
+		<frame time="100">30 112 6 6</frame>
+		<frame time="100">24 112 6 6</frame>
+		<frame time="100">18 112 6 6</frame>
+		<frame time="100">12 112 6 6</frame>
+		<frame time="100">18 112 6 6</frame>
+		<frame time="100">24 112 6 6</frame>
+	</sprite> -->
+	<sprite origin="3 3" looping="true" texture="./particles_snow.png" material="system/default.mats:default-noxray"
+		num-sprites="5"
+
+		pos-x="cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5) + sin(t*pi*2)*radius*rand(i)"
+		pos-y="sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5) + cos(t*pi*2)*radius*rand(i)"
+		color-a="saturate(sin(t*t*pi*2))*rand(i)*0.8+0.2"
+		scale-x="0.9"
+		scale-y="0.9"
+		angle="rand(i+u)*t*pi*2"
+	>
+        
+		<frame time="800">24 112 6 6</frame>
+	</sprite>
+	<sprite origin="3 3" looping="true" texture="./particles_snow.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+7*i)*2*pi) * radius * pow(rand(u+139*i),0.5) + sin(t*pi*2)*radius*rand(i)"
+		pos-y="sin(rand(u+7*i)*2*pi) * radius * pow(rand(u+139*i),0.5) + cos(t*pi*2)*radius*rand(i)"
+		color-a="saturate(sin(t*t*pi*2))*rand(i)*0.6+0.2"
+		scale-x="0.9"
+		scale-y="0.9"
+		angle="rand(i+u)*t*pi*2"
+	>
+        
+		<frame time="700">24 112 6 6</frame>
+	</sprite>
+	<sprite origin="3 3" looping="true" texture="./particles_snow.png" material="system/default.mats:default-noxray"
+		num-sprites="6"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2) + sin(t*pi*2)*radius*(rand(i)*-1)"
+		pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2) + cos(t*pi*2)*radius*(rand(i)*-1)"
+		scale-x="0.9"
+		scale-y="0.9"
+		color-a="saturate(sin(t*t*pi*2))*rand(i)*0.4+0.2"
+		angle="rand(i+u)*t*pi*2"
+	>
+        
+		<frame time="500">24 112 6 6</frame>
+	</sprite>
+	
+	
+	<!-- 
+	<sprite origin="3 3" looping="true" texture="./explosion_bomb.png" material="system/default.mats:default-noxray"
+		num-sprites="6"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="200">12 112 6 6</frame>
+		<frame time="100">18 112 6 6</frame>
+		<frame time="100">24 112 6 6</frame>
+		<frame time="100">30 112 6 6</frame>
+		<frame time="200">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+	 -->
+	
+	
+</effect>

@@ -1,0 +1,126 @@
+<unit netsync="none">
+	<behavior class="BounceProjectile">
+	<string name="anim">idle 8</string>
+		<float name="speed">4</float>
+		<int name="ttl">300</int>
+		<int name="floor-bounces">5</int>
+		<float name="floor-bounce-intensity-mul">1</float>
+		<int name="floor-bounce-height">10</int>
+		<bool name="blockable">false</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/bosses/agents/agent_decay/rottenpart_impact.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">16</int>
+				<float name="dist-scaling">1000</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">40</int>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:poison_strong</string>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_agents/shoot_decay-bounce</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<array name="miss-effects">
+			<dict >
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_decay/rottenpart_puddle.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/bosses/agents/agent_decay/rottenpart_impact.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">16</int>
+				<float name="dist-scaling">1000</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">35</int>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_agents/shoot_decay-bounce</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/boss_agents/shoot_decay-bounce</string>
+			</dict>
+		</array>
+		<dict name="effect-params">
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="shared">
+			<effect ulayer="-1" src="./rottenpart_trail.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>	
+			<sprite origin="3.5 3.5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>0 8 7 7</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">0 0 16 16</frame>
+			</sprite>		
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">16 0 16 16</frame>
+			</sprite>		
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">32 0 16 16</frame>
+			</sprite>		
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">48 0 16 16</frame>
+			</sprite>			
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">64 0 16 16</frame>
+			</sprite>		
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">80 0 16 16</frame>
+			</sprite>			
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">96 0 16 16</frame>
+			</sprite>			
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="8 8" looping="true" texture="./rottenpart.png" material="system/default.mats:projectile">
+				<frame time="25">112 0 16 16</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

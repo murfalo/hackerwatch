@@ -1,0 +1,25 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="3 1.5" texture="./vampire_2_crossbow_bolt.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 9 3</frame>
+		<frame time="100">0 3 9 3</frame>
+	</sprite>
+	<sprite looping="true" origin="3 1.5" texture="./vampire_2_crossbow_bolt.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 9 3</frame>
+		<frame time="100">0 3 9 3</frame>
+	</sprite>
+</effect>

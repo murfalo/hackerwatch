@@ -1,0 +1,141 @@
+<unit slot="doodad">
+	<behavior class="PlayerGravestoneBehavior">
+	</behavior>
+
+	<scenes 1="1" 2="2" 3="3" 4="4" 5="5" 6="6" 7="7" 8="8">
+		<scene name="1">
+			<shadow>
+				<sprite origin="-2 9" texture="./grave_mercenary.png">
+					<frame time="100">0 30 7 10</frame>
+				</sprite>
+			</shadow>
+			<collision static="true">		
+				<circle radius="3" offset="0 0"/>			
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite origin="5 13" texture="./grave_mercenary.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 0 10 14</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="2">
+			<shadow>
+				<sprite origin="3 6" texture="./grave_mercenary.png">
+					<frame time="100">7 34 8 10</frame>
+				</sprite>
+			</shadow>	
+			<collision static="true">		
+				<rect shoot-through="true">
+					-4 -4 8 9
+				</rect>
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite layer="-5" origin="4 5" texture="./grave_mercenary.png" material="system/default.mats:floor">
+				<frame time="100">10 0 8 10</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="3">
+			<shadow>
+				<sprite origin="-2 8" texture="./grave_mercenary.png">
+					<frame time="100">15 34 4 12</frame>
+				</sprite>
+			</shadow>
+			<collision static="true">	
+				<circle shoot-through="true" radius="4.5" offset="0.5 -3"/>	
+				<rect shoot-through="true">
+					-4 -4 9 9
+				</rect>
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite layer="-5" origin="4 8" texture="./grave_mercenary.png" material="system/default.mats:floor">
+				<frame time="100">18 0 9 13</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="4">
+			<shadow>
+				<sprite origin="-5 10" texture="./grave_mercenary.png">
+					<frame time="100">19 34 4 11</frame>
+				</sprite>
+			</shadow>
+			<collision static="true">		
+				<rect>
+					-4 -1 9 2
+				</rect>
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite origin="4 12" texture="./grave_mercenary.png" material="system/default.mats:proj-prop">
+				<frame time="100">27 0 9 13</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="5">
+			<shadow>
+				<sprite origin="-3 15" texture="./grave_mercenary.png">
+					<frame time="100">23 37 8 16</frame>
+				</sprite>
+			</shadow>	
+			<collision static="true">		
+				<rect>
+					-6 -1 12 2
+				</rect>
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite origin="6 15" texture="./grave_mercenary.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 14 12 16</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="6">
+			<shadow>
+				<sprite origin="-6 13" texture="./grave_mercenary.png">
+					<frame time="100">31 37 8 16</frame>
+				</sprite>
+			</shadow>
+			<collision static="true">		
+				<rect>
+					-7 -2 14 5
+				</rect>
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite origin="7 18" texture="./grave_mercenary.png" material="system/default.mats:proj-prop">
+				<frame time="100">12 13 14 21</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="7">
+			<shadow>
+				<sprite origin="-6 15" texture="./grave_mercenary.png">
+					<frame time="100">39 37 10 19</frame>
+				</sprite>
+			</shadow>
+			<collision static="true">		
+				<rect>
+					-7 -4 14 8
+				</rect>
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite origin="8 20" texture="./grave_mercenary.png" material="system/default.mats:proj-prop">
+				<frame time="100">26 13 16 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="8">
+			<shadow>
+				<sprite origin="-6 22" texture="./grave_mercenary.png">
+					<frame time="100">49 32 12 26</frame>
+				</sprite>
+			</shadow>
+			<collision static="true">		
+				<rect>
+					-8 -5 16 9
+				</rect>
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite origin="8 28" texture="./grave_mercenary.png" material="system/default.mats:proj-prop">
+				<frame time="100">42 0 16 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

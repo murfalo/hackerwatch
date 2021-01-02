@@ -1,0 +1,36 @@
+<unit>
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/lich/hit</string>
+		<string name="fx">doodads/generic/trap_beam_projectile_impact.effect</string>
+		
+		<int name="ttl">10000</int>
+		<float name="speed">2.5</float>
+		
+		<int name="bounces">999</int>
+		<float name="bounce-speed-mul">1</float>
+		<bool name="bounce-on-collide">true</bool>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">50</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:darkness</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="doodads/generic/trap_beam_projectile.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>
+
+

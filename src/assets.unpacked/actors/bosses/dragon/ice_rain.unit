@@ -1,0 +1,40 @@
+<unit>
+	<behavior class="BombBehavior">
+		<int name="delay">0</int>
+		<int name="delay-random">0</int>
+
+		<string name="gore">effects/gibs/gib_ice_rain.sval</string>
+		%//<string name="spawn-sound">event:/misc/icerain</string>
+		%//<string name="explode-sound">event:/enemy/tower/death</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">4</float>
+ 				<string name="fx">actors/bosses/dragon/ice_rain_explosion.effect</string>
+				<int name="radius">16</int>
+				<float name="team-dmg">0</float>
+					<array name="effects">
+						<dict>
+							<string name="class">Damage</string>
+							<int name="physical">50</int>
+						</dict>
+					</array>
+			</dict>
+		</array>
+		<dict name="effect-params">
+			<float name="radius">18</float>
+		</dict>
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">
+		</scene>
+		<scene name="falling">
+			<sprite layer="120" origin="4 41" texture="./ice_rain.png" material="actors/bosses/dragon/dragon.mats:icerain">
+				<frame time="50">0 0 9 49</frame>
+			</sprite>	
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,424 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.djinn_ranged</string>
+		<vec2 name="beastiary-offset">0 16</vec2>
+		<string name="quality">uncommon</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">aberration</string>
+		<int name="hp">1000</int>
+		<int name="armor">40</int>
+		<int name="resistance">70</int>
+		<int name="experience-reward">130</int>
+		<float name="mp-scale-fact">0.65</float>
+		
+		<int name="unit-height">24</int>
+		
+		<string name="death-snd">event:/enemy/djinn/death</string>
+		<string name="gore">effects/gibs/gib_djinn.sval</string>
+		<string name="loot">actors/loot.sval:djinn</string>
+
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">false</bool>
+		<float name="debuff-scale">0.66</float>
+		<float name="wind-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_flying.inc"
+		</array>
+		
+		<dict name="movement">
+			<string name="class">DjinnMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">idle 8</string>
+			<string name="anim-blink">empty</string>
+			<string name="blink-fx">actors/pop/djinn_teleport.effect</string>
+			
+			<float name="speed">2.8</float>
+			<int name="min-dist">70</int>
+			<int name="dist">110</int>
+			<int name="max-blink-dis">100</int>
+			<int name="min-blink-dis">60</int>	
+			<int name="blink-delay">1000</int>
+			<int name="blink-cooldown">1000</int>
+		</dict>
+		
+		<array name="skills">
+			%// Normal ranged
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>2</int>
+				</array>
+				
+				<string name="class">CompositeActorBurstSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="snd">event:/enemy/mb_eye/summon</string>
+				
+				<int name="burst">2</int>
+				<int name="cooldown-start">100</int>
+				<int name="cooldown">1750</int>
+				<int name="castpoint">450</int>
+				<int name="range">130</int>
+				<string name="offset">shoot-pos</string>
+				
+				<bool name="good-aim">true</bool>
+				<float name="aim-interception">12</float>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="spread">20</int>
+						<string name="projectile">actors/pop/projectiles/djinn_sphere.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+2 ranged
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>2</int>
+				</array>
+				
+				<string name="class">CompositeActorBurstSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="snd">event:/enemy/mb_eye/summon</string>
+				
+				<int name="burst">3</int>
+				<int name="cooldown-start">100</int>
+				<int name="cooldown">1750</int>
+				<int name="castpoint">450</int>
+				<int name="range">130</int>
+				<string name="offset">shoot-pos</string>
+				
+				<bool name="good-aim">true</bool>
+				<float name="aim-interception">12</float>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="spread">20</int>
+						<string name="projectile">actors/pop/projectiles/djinn_sphere_ng.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">effects/explosion_djinn.effect</string>
+					</dict>	
+				</array>	
+			</dict>	
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" radius="7" />
+				<circle offset="0 -10" sensor="true" aim-through="true" shoot-through="false" radius="7" />
+			</collision>
+			
+			<sprite ulayer="-1" origin="16 12" looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both">
+				<frame time="100">0 93 32 22</frame>
+				<frame time="100">32 93 32 22</frame>
+				<frame time="100">64 93 32 22</frame>
+				<frame time="100">96 93 32 22</frame>
+			</sprite>
+			<light pos="0 -3">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="100" />
+				</sizes>
+				<colors>
+					<color value="110 20 255 0" />
+				</colors>
+			</light>
+			<light pos="0 -3">
+				<sprite texture="items/projectiles/magic_missile_L.png">
+					<frame>0 0 256 256</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="25" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="72" />
+				</sizes>
+				<colors>
+					<color value="110 20 255 0" />
+					<color value="30 0 100 0" />
+				</colors>
+			</light>
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<looping value="true" />
+				<overlay value="false" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 10" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="150" />
+				</sizes>
+				<colors>
+					<color value="110 20 150 0" />
+				</colors>
+			</light>
+		</scene>
+		<scene name="attack-shared-back">
+			<sprite ulayer="-1" origin="0 0"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame time="450">168 93 8 8</frame>
+				<frame time="100">0 0 0 0</frame>
+				<frame time="60">128 93 8 8</frame>
+				<frame time="60">136 93 8 8</frame>
+				<frame time="60">144 93 8 8</frame>
+				<frame time="60">152 93 8 8</frame>
+				<frame time="60">160 93 8 8</frame>
+				<frame time="60">168 93 8 8</frame>
+			</sprite>
+			<light layer="1" pos="4 4">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="10" />
+				<looping value="false" />
+				<overlay value="true" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 0 0 0" />
+					<color value="200 0 205 10" />
+				</colors>
+			</light>
+		</scene>
+		<scene name="attack-shared-front">
+			<sprite ulayer="1" origin="0 0"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame time="450">168 93 8 8</frame>
+				<frame time="100">0 0 0 0</frame>
+				<frame time="60">128 93 8 8</frame>
+				<frame time="60">136 93 8 8</frame>
+				<frame time="60">144 93 8 8</frame>
+				<frame time="60">152 93 8 8</frame>
+				<frame time="60">160 93 8 8</frame>
+				<frame time="60">168 93 8 8</frame>
+			</sprite>
+			<light layer="1" pos="4 4">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="10" />
+				<looping value="false" />
+				<overlay value="true" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 0 0 0" />
+					<color value="200 0 205 10" />
+				</colors>
+			</light>
+		</scene>
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>0 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="-1" origin="-4 20"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+			<sprite ulayer="-2" origin="-5 18"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>128 101 5 3</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>31 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="1" origin="-3 14"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>62 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="1"  origin="3 16"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>93 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="1"  origin="6 16"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>124 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="-1" origin="11 18" looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+			<sprite ulayer="-2" origin="7 18"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>128 104 5 4</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>155 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="-1" origin="6 20"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>186 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="-1" origin="3 25"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame>217 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="-1"  origin="-3 21"  looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both-bright">
+				<frame>168 93 8 8</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-0">
+			<scene src="shared" />
+			<scene pos="4 -20" src="attack-shared-back" />
+			<locator name="shoot-pos" pos="10 -10"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">0 0 31 31</frame>
+				<frame time="225">0 31 31 31</frame>
+				<frame time="100">0 62 31 31</frame>
+				<frame time="180">0 0 31 31</frame>
+				<frame time="180">0 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="-2" origin="-5 18"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="810">128 101 5 3</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-1">
+			<scene src="shared" />
+			<scene pos="3 -14" src="attack-shared-front" />
+			<locator name="shoot-pos" pos="8 -8"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">31 0 31 31</frame>
+				<frame time="225">31 31 31 31</frame>
+				<frame time="100">31 62 31 31</frame>
+				<frame time="180">31 0 31 31</frame>
+				<frame time="180">31 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-2">
+			<scene src="shared" />
+			<scene pos="-3 -16" src="attack-shared-front" />
+			<locator name="shoot-pos" pos="0 -4"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">62 0 31 31</frame>
+				<frame time="225">62 31 31 31</frame>
+				<frame time="100">62 62 31 31</frame>
+				<frame time="180">62 0 31 31</frame>
+				<frame time="180">62 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-3">
+			<scene src="shared" />
+			<scene pos="-6 -16" src="attack-shared-front" />
+			<locator name="shoot-pos" pos="-8 -8"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">93 0 31 31</frame>
+				<frame time="225">93 31 31 31</frame>
+				<frame time="100">93 62 31 31</frame>
+				<frame time="180">93 0 31 31</frame>
+				<frame time="180">93 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-4">
+			<scene src="shared" />
+			<scene pos="-11 -18" src="attack-shared-back" />
+			<locator name="shoot-pos" pos="-10 -10"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">124 0 31 31</frame>
+				<frame time="225">124 31 31 31</frame>
+				<frame time="100">124 62 31 31</frame>
+				<frame time="180">124 0 31 31</frame>
+				<frame time="180">124 31 31 31</frame>
+			</sprite>
+			<sprite ulayer="-2" origin="7 18"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="810">128 104 5 4</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-5">
+			<scene src="shared" />
+			<scene pos="-6 -20" src="attack-shared-back" />
+			<locator name="shoot-pos" pos="-7 -16"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">155 0 31 31</frame>
+				<frame time="225">155 31 31 31</frame>
+				<frame time="100">155 62 31 31</frame>
+				<frame time="180">155 0 31 31</frame>
+				<frame time="180">155 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-6">
+			<scene src="shared" />
+			<scene pos="-3 -25" src="attack-shared-back" />
+			<locator name="shoot-pos" pos="0 -20"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">186 0 31 31</frame>
+				<frame time="225">186 31 31 31</frame>
+				<frame time="100">186 62 31 31</frame>
+				<frame time="180">186 0 31 31</frame>
+				<frame time="180">186 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-7">
+			<scene src="shared" />
+			<scene pos="3 -21" src="attack-shared-back" />
+			<locator name="shoot-pos" pos="7 -16"/>
+			<sprite origin="15 28"  looping="false" texture="./djinn_ranged.png" material="system/default.mats:actor-genie">
+				<frame time="225">217 0 31 31</frame>
+				<frame time="225">217 31 31 31</frame>
+				<frame time="100">217 62 31 31</frame>
+				<frame time="180">217 0 31 31</frame>
+				<frame time="180">217 31 31 31</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="empty">
+		</scene>
+	</scenes>
+</unit>

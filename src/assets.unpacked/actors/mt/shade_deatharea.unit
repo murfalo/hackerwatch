@@ -1,0 +1,32 @@
+<unit slot="doodad" layer="-25">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">75</int>
+		<int name="ttl">2500</int>
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_darkness</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_manableed</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_playerbleed</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_skeletonbleed</string>
+			</dict>
+		</array>
+	</behavior>
+	<scenes>
+		<scene>
+			<effect src="./shade_deatharea.effect" />
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" radius="12" sensor="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

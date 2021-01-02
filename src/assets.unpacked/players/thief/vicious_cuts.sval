@@ -1,0 +1,65 @@
+<dict>
+	<string name="name">.skills.thief.vicious-cuts</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>168 72 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hit</string>
+					<float name="chance">0.05</float>
+					<string name="fx">effects/players/decimating_strike.effect</string>
+					<dict name="effect">
+						<string name="class">Decimate</string>
+						<float name="amount">0.05</float>
+					</dict>
+				</dict>
+				<!-- <dict> -->
+					<!-- <string name="class">Modifiers::TriggerEffect</string> -->
+					<!-- <string name="trigger">hitspell</string> -->
+					<!-- <float name="chance">0.02</float> -->
+					<!-- <string name="fx">effects/players/decimating_strike.effect</string> -->
+					<!-- <dict name="effect"> -->
+						<!-- <string name="class">Decimate</string> -->
+						<!-- <float name="amount">0.05</float> -->
+					<!-- </dict> -->
+				<!-- </dict> -->
+			</array>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hit</string>
+					<float name="chance">0.1</float>
+					<string name="fx">effects/players/decimating_strike.effect</string>
+					<dict name="effect">
+						<string name="class">Decimate</string>
+						<float name="amount">0.05</float>
+					</dict>
+				</dict>
+				<!-- <dict> -->
+					<!-- <string name="class">Modifiers::TriggerEffect</string> -->
+					<!-- <string name="trigger">hitspell</string> -->
+					<!-- <float name="chance">0.05</float> -->
+					<!-- <string name="fx">effects/players/decimating_strike.effect</string> -->
+					<!-- <dict name="effect"> -->
+						<!-- <string name="class">Decimate</string> -->
+						<!-- <float name="amount">0.05</float> -->
+					<!-- </dict> -->
+				<!-- </dict> -->
+			</array>
+		</dict>
+	</array>
+</dict>

@@ -1,0 +1,62 @@
+<effect looping="true" material="effects/effects.mats:no-height">
+	<param name="size" default="128" />
+
+<!-- 	
+	<sprite looping="true" origin="64 64" texture="system/light_hard_L.png" mask="1" material="system/default.mats:bright"
+	pos-x="0"
+	pos-y="0"
+	>
+		<frame time="100">0 0 128 128</frame>
+	</sprite> -->
+	
+	
+	<light pos="0 0"> 
+		<sprite texture="system/light_hard.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="500" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		
+		<size value="(min(1,(t+t + l)) * size)*0.98" />
+		
+		<color-r value="0" />
+		<color-g value="-0.5" />
+		<color-b value="-0.5" />
+		<color-a value="0/255" />
+	</light>	
+	
+	<light pos="0 0"> 
+		<sprite texture="system/light_hard.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="500" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		
+		<size value="min(1,(t+t + l)) * size" />
+		
+		<color-r value="0" />
+		<color-g value="0.5" />
+		<color-b value="0.5" />
+		<color-a value="0/255" />
+	</light>	
+</effect>

@@ -1,0 +1,137 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::ItemShop</string>
+
+	<string name="id">generalstore</string>
+	<string name="name">.shop.generalstore</string>
+
+	<!-- Item types -->
+	<array name="items">
+		<!-- Level 1 -->
+		<dict>
+			<float name="cost-scale">1.0</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>common</string>
+			</array>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<float name="cost-scale">0.95</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>uncommon</string>
+			</array>
+		</dict>
+
+		<!-- Level 3 -->
+		<dict>
+			<float name="cost-scale">0.9</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>common</string>
+				<string>uncommon</string>
+			</array>
+		</dict>
+
+		<!-- Level 4 -->
+		<dict>
+			<float name="cost-scale">0.85</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>uncommon</string>
+				<string>rare</string>
+			</array>
+		</dict>
+
+		<!-- Level 5 -->
+		<dict>
+			<float name="cost-scale">0.8</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>uncommon</string>
+				<string>uncommon</string>
+				<string>rare</string>
+			</array>
+		</dict>
+		
+		<!-- Level 6 -->
+		<dict>
+			<float name="cost-scale">0.75</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>common</string>
+				<string>uncommon</string>
+				<string>uncommon</string>
+				<string>rare</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- Upgrades that are always there -->
+	<array name="upgrades">
+		<!-- Bronze key -->
+		<dict>
+			<string name="class">Upgrades::KeyUpgrade</string>
+			<string name="id">key-bronze</string>
+			<bool name="small">true</bool>
+			
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.generalstore.keybronze.name</string>
+					<string name="desc">.shop.generalstore.keybronze.desc</string>
+				
+					<int name="cost-gold">100</int>
+					<int name="lock">0</int>
+					<int name="amount">1</int>
+					<array name="icon"><string>gui/icons_others.png</string><int>100</int><vec4>0 24 24 24</vec4></array>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Silver key -->
+		<dict>
+			<string name="class">Upgrades::KeyUpgrade</string>
+			<string name="id">key-silver</string>
+			<bool name="small">true</bool>
+
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.generalstore.keysilver.name</string>
+					<string name="desc">.shop.generalstore.keysilver.desc</string>
+				
+					<int name="cost-gold">250</int>
+					<int name="lock">1</int>
+					<int name="amount">1</int>
+					<array name="icon"><string>gui/icons_others.png</string><int>100</int><vec4>24 24 24 24</vec4></array>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Gold key -->
+		<dict>
+			<string name="class">Upgrades::KeyUpgrade</string>
+			<string name="id">key-gold</string>
+			<bool name="small">true</bool>
+
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.generalstore.keygold.name</string>
+					<string name="desc">.shop.generalstore.keygold.desc</string>
+				
+					<int name="cost-gold">500</int>
+					<int name="lock">2</int>
+					<int name="amount">1</int>
+					<array name="icon"><string>gui/icons_others.png</string><int>100</int><vec4>48 24 24 24</vec4></array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

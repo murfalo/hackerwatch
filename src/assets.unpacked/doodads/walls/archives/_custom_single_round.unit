@@ -1,0 +1,18 @@
+<unit slot="doodad">
+	<scenes>	
+		<scene>
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true">
+				<circle offset="8 8" radius="8" />
+			</collision>
+			<shadow>
+				<sprite origin="-15 30" texture="./base.png" material="system/default.mats:default">
+					<frame>64 130 16 39</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:proj-wall">
+				<frame>48 128 16 48</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

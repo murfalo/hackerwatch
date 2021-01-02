@@ -1,0 +1,68 @@
+<effect looping="false">
+
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	
+		<sprite looping="false" origin="9 10" texture="effects/animations/impact_ice.png" 
+		material="system/default.mats:bright-noxray"
+		angle="rand(u)*pi">
+			<frame time="50">0 0 18 21</frame>		
+			<frame time="50">18 0 18 21</frame>		
+			<frame time="50">36 0 18 21</frame>		
+			<frame time="50">0 21 18 21</frame>		
+			<frame time="50">18 21 18 21</frame>		
+			<frame time="50">36 21 18 21</frame>		
+		</sprite>
+		
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="32" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="48" />
+			
+		<color-r value="0" />
+		<color-g value="0.35" />
+		<color-b value="0.5" />
+		<color-a value="0"/>
+		
+	</light>			
+		
+</effect>

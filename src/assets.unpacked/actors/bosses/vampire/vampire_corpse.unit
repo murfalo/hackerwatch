@@ -1,0 +1,25 @@
+<unit slot="doodad">
+	<scenes start="default">
+		
+		
+		<scene name="default">		
+			<sprite origin="32 38" looping="false" texture="./vampire_death.png" material="system/default.mats:actor">
+				<frame time="70">0 0 64 64</frame>
+				<frame time="70">64 0 64 64</frame>
+				<frame time="70">0 0 64 64</frame>
+				<frame time="70">64 0 64 64</frame>
+				<frame time="70">128 0 64 64</frame>
+				<frame time="70">192 0 64 64</frame>
+				<frame time="70">0 64 64 64</frame>
+				<frame time="70">64 64 64 64</frame>
+				<frame time="70">128 64 64 64</frame>
+				<frame time="70">192 64 64 64</frame>
+				<frame time="70">0 128 64 64</frame>
+			</sprite>	
+			<sprite looping="false" layer="-1" delay="400" origin="32 32" texture="./decal_blood.png" material="effects/effects.mats:blood-decal-vampire">				
+				<frame time="30">0 0 0 0</frame>
+				<frame time="100">0 0 64 64</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

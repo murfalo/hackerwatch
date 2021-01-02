@@ -1,0 +1,65 @@
+<unit netsync="position" slot="doodad">
+	<scenes on="on" off="off" empty="empty" cooldown="cooldown">
+		<scene name="shared">
+			 <sprite layer="-11" origin="30 30" texture="./chambers_safe_area.png" material="system/default.mats:default"> 
+				<frame time="100">0 55 60 60</frame>
+			</sprite>
+		</scene>
+		<scene name="on">
+			<scene src="shared"/>
+ 			<sprite loopback="100" ulayer="2" layer="-11" origin="12 13" texture="./chambers_safe_area.png" material="system/default.mats:glow-both-bright"> 
+				<frame time="100">72 29 24 24</frame>
+				<frame time="100">48 0 24 24</frame>
+				<frame time="100">96 29 24 24</frame>
+			</sprite>
+			<sprite layer="-11" origin="14 15" texture="./chambers_safe_area.png" material="system/default.mats:floor"> <!-- base -->
+				<frame>0 0 28 29"</frame>
+			</sprite>
+			<sprite ulayer="1" layer="-11" origin="10 12" texture="./chambers_safe_area.png" material="system/default.mats:floor"> <!-- cross -->
+				<frame>28 0 20 21"</frame>
+			</sprite>
+			<effect src="actors/bosses/vampire/safe_area_light_base.effect" />
+			<effect delay="50" src="actors/bosses/vampire/safe_area_light_base.effect" />
+			
+			<effect delay="0" src="actors/bosses/vampire/safe_area_light.effect" />
+			
+			<effect delay="250" src="actors/bosses/vampire/safe_area_light.effect" />
+			
+			<effect delay="500" src="actors/bosses/vampire/safe_area_light.effect" />
+			
+			<effect delay="750" src="actors/bosses/vampire/safe_area_light.effect" />
+		</scene>
+		<scene random-start="true" name="off">
+			<scene src="shared"/>
+			<sprite ulayer="1" layer="-11" origin="12 13" texture="./chambers_safe_area.png" material="system/default.mats:glow-both-bright"> <!-- effect -->
+				<frame time="1000">0 29 24 24</frame>
+				<frame time="100">24 29 24 24</frame>
+				<frame time="100">48 29 24 24</frame>
+				<frame time="300">72 29 24 24</frame>
+				<frame time="100">48 29 24 24</frame>
+				<frame time="100">24 29 24 24</frame>
+			</sprite>
+			<sprite layer="-11" origin="14 15" texture="./chambers_safe_area.png" material="system/default.mats:floor"> <!-- base -->
+				<frame>0 0 28 29"</frame>
+			</sprite>
+			<sprite ulayer="2" layer="-11" origin="10 12" texture="./chambers_safe_area.png" material="system/default.mats:floor"> <!-- cross -->
+				<frame>28 0 20 21"</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="cooldown">
+			<scene src="shared"/>
+			<sprite layer="-11" origin="14 15" texture="./chambers_safe_area.png" material="system/default.mats:floor"> <!-- base -->
+				<frame>0 0 28 29"</frame>
+			</sprite>
+			<sprite ulayer="2" layer="-11" origin="10 12" texture="./chambers_safe_area.png" material="system/default.mats:floor"> <!-- cross -->
+				<frame>28 0 20 21"</frame>
+			</sprite>
+		</scene>
+		<scene name="empty">
+			<scene src="shared"/>
+			<sprite layer="-11" origin="14 15" texture="./chambers_safe_area.png" material="system/default.mats:floor">
+				<frame>0 0 28 29"</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

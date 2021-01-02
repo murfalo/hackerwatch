@@ -1,0 +1,175 @@
+<unit slot="doodad" >
+	<scenes default="default" ranger="ranger" warrior="warrior" paladin="paladin" ice_mage="ice_mage" fire_mage="fire_mage" plague_doctor="plague_doctor" assassin="assassin" red_priest="red_priest" priest="priest">
+		
+		<scene name="shared">
+			<sprite layer="-20" origin="15 15" texture="./desert_statues.png" material="system/default.mats:floor">
+				<frame>0 0 31 31</frame>
+			</sprite>
+			
+			<collision static="true">
+				<circle radius="14" />
+				<circle radius="18" sensor="true" />
+			</collision>
+		</scene>
+
+		<scene name="default">
+			<scene src="shared"/>
+			<sprite layer="-20" origin="15 15" texture="./desert_statues.png" material="system/default.mats:floor">
+				<frame>0 0 31 31</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="warrior">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="4 71" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>219 0 37 74</frame>
+				</sprite>	
+			</shadow>
+			<sprite origin="13 60" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>115 51 31 67</frame>
+			</sprite>
+		</scene>
+		<scene name="warrior_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>119 61 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="paladin">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="4 51" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>175 63 32 57</frame>
+				</sprite>	
+			</shadow>
+			<sprite origin="10 45" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>128 0 19 51</frame>
+			</sprite>
+		</scene>
+		<scene name="paladin_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>127 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranger">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="-6 52" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>0 31 29 42</frame>
+				</sprite>	
+			</shadow>
+			<sprite origin="18 44" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>31 0 33 51</frame>
+			</sprite>
+		</scene>
+		<scene name="ranger_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>39 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ice_mage">
+			<scene src="shared"/>
+ 			<shadow>
+				<sprite origin="9 56" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>175 0 44 62</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="15 44" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>64 0 34 51</frame>
+			</sprite>
+		</scene>
+		<scene name="ice_mage_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>74 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="fire_mage">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="3 51" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>146 62 29 61</frame>
+				</sprite>	
+			</shadow> 
+			<sprite origin="16 44" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>57 51 30 52</frame>
+			</sprite>
+		</scene>
+		<scene name="fire_mage_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>57 51 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="plague_doctor">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="-5 40" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>147 0 28 40</frame>
+				</sprite>	
+			</shadow> 
+			<sprite origin="10 35" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>98 0 30 45</frame>
+			</sprite>
+		</scene>
+		<scene name="plague_doctor_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>103 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="assassin">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="3 40" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>207 74 24 49</frame>
+				</sprite>	
+			</shadow> 
+			<sprite origin="13 32" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>29 51 28 41</frame>
+			</sprite>
+		</scene>
+		<scene name="assassin_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>29 52 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="priest">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="-6 46" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>0 73 28 49</frame>
+				</sprite>
+			</shadow> 
+			<sprite origin="10 39" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>87 51 27 48</frame>
+			</sprite>
+		</scene>
+		<scene name="priest_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>88 51 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="red_priest">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="-6 41" texture="./desert_statues.png" material="system/default.mats:default">
+					<frame>65 103 19 37</frame>
+				</sprite>	
+			</shadow> 
+			<sprite origin="22 44" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>28 103 37 52</frame>
+			</sprite>
+		</scene>
+		<scene name="red_priest_portrait">
+			<sprite origin="12 12" texture="./desert_statues.png" material="system/default.mats:default">
+				<frame>37 104 24 24</frame>
+			</sprite>
+		</scene>
+  </scenes>
+</unit>

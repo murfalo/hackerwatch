@@ -1,0 +1,59 @@
+<effect looping="true" layer="-1">
+	<param name="radius" default="35" />
+	
+	
+
+	<sprite origin="48 48" looping="true" loopback="125" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		color-a="0.8*saturate(t+l)"
+		angle="rand(u+i+11)*pi*2"
+		>
+		<frame time="1000">0 96 96 96</frame>
+	</sprite>
+	
+
+	<sprite origin="8 8" looping="true" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="10"
+		scale-x="2"
+		scale-y="2"
+		pos-x="-cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+        pos-y="-sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+		angle="rand(u+i+101)*pi*2"
+		color-a="0.5*saturate(t+l)"
+	>
+        
+		<frame time="500">224 16 16 16</frame>
+	
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="10"
+		scale-x="2"
+		scale-y="2"
+		pos-x="-cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="-sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		angle="rand(u+i+101)*pi*2"
+		color-a="0.5*saturate(t+l)"
+	>
+        
+		<frame time="500">208 16 16 16</frame>
+	
+	</sprite>
+
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="true" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="140 *saturate(t+l)" />
+		
+		<color-r value="0.5" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0/255" />
+	</light>	
+</effect>

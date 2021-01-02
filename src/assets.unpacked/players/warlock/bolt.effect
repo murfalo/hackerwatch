@@ -1,0 +1,138 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	
+	<sprite looping="true" ulayer="0" origin="5 5" texture="./bolt.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height">
+		
+		<frame time="100">0 0 11 10</frame>
+		<frame time="100">11 0 11 10</frame>
+		<frame time="100">22 0 11 10</frame>
+		<frame time="100">33 0 11 10</frame>
+		<frame time="100">44 0 11 10</frame>
+		<frame time="100">55 0 11 10</frame>
+		<frame time="100">66 0 11 10</frame>
+		<frame time="100">77 0 11 10</frame>
+		<frame time="100">88 0 11 10</frame>
+		<frame time="100">99 0 11 10</frame>
+	</sprite>
+	<variation>
+		<sprite looping="true" ulayer="1" origin="6 6" texture="./bolt.png" material="system/default.mats:bright-noxray"
+		
+			pos-x="0"
+			pos-y="-height">
+			
+			<frame time="80">0 10 12 13</frame>
+			<frame time="80">12 10 12 13</frame>
+			<frame time="80">24 10 12 13</frame>
+			<frame time="80">36 10 12 13</frame>
+			<frame time="80">48 10 12 13</frame>
+			<frame time="80">60 10 12 13</frame>
+			<frame time="80">72 10 12 13</frame>
+			<frame time="80">84 10 12 13</frame>
+			<frame time="80">96 10 12 13</frame>
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite looping="true" ulayer="1" origin="6 7" texture="./bolt.png" material="system/default.mats:bright-noxray"
+		
+			pos-x="0"
+			pos-y="-height"
+			>
+			
+			<frame time="105">0 23 12 14</frame>
+			<frame time="105">12 23 12 14</frame>
+			<frame time="105">24 23 12 14</frame>
+			<frame time="105">36 23 12 14</frame>
+			<frame time="105">48 23 12 14</frame>
+			<frame time="105">60 23 12 14</frame>
+			<frame time="105">72 23 12 14</frame>
+			<frame time="105">84 23 12 14</frame>
+			<frame time="105">96 23 12 14</frame>
+			
+			<frame time="250">0 0 0 0</frame>
+		</sprite>
+	
+	</variation>
+	
+	<variation>
+		<sprite looping="true" ulayer="1" origin="8 6" texture="./bolt.png" material="system/default.mats:bright-noxray"
+		
+			pos-x="0"
+			pos-y="-height"
+			>
+			
+			<frame time="75">0 37 15 12</frame>
+			<frame time="75">15 37 15 12</frame>
+			<frame time="75">30 37 15 12</frame>
+			<frame time="75">45 37 15 12</frame>
+			<frame time="75">60 37 15 12</frame>
+			<frame time="75">75 37 15 12</frame>
+			<frame time="75">90 37 15 12</frame>
+			<frame time="75">105 37 15 12</frame>
+		</sprite> 
+
+	</variation>
+	<variation>
+	
+		<sprite looping="true" ulayer="1" origin="6 6" texture="./bolt.png" material="system/default.mats:bright-noxray"
+		
+			pos-x="0"
+			pos-y="-height">
+			
+			<frame time="50">0 10 12 13</frame>
+			<frame time="50">12 10 12 13</frame>
+			<frame time="50">24 10 12 13</frame>
+			<frame time="50">36 10 12 13</frame>
+			<frame time="50">48 10 12 13</frame>
+			<frame time="50">60 10 12 13</frame>
+			<frame time="50">72 10 12 13</frame>
+			<frame time="50">84 10 12 13</frame>
+			<frame time="50">96 10 12 13</frame>
+		</sprite>
+		<sprite looping="true" ulayer="1" origin="8 6" texture="./bolt.png" material="system/default.mats:bright-noxray"
+		
+			pos-x="0"
+			pos-y="-height"
+			>
+			
+			<frame time="250">0 0 0 0</frame>
+			<frame time="75">0 37 15 12</frame>
+			<frame time="75">15 37 15 12</frame>
+			<frame time="75">30 37 15 12</frame>
+			<frame time="75">45 37 15 12</frame>
+			<frame time="75">60 37 15 12</frame>
+			<frame time="75">75 37 15 12</frame>
+			<frame time="75">90 37 15 12</frame>
+			<frame time="75">105 37 15 12</frame>
+		</sprite> 
+
+	</variation>
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="24 * (sin((t+l) *5)/4 + 1.0 + rand(t)/5)" />
+
+		<color-r value="0" />
+		<color-g value="0.5" />
+		<color-b value="1" />
+		<color-a value="0"/>
+	</light>
+</effect>

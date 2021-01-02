@@ -1,0 +1,245 @@
+<loader>AddItemFile</loader>
+<dict>
+	<dict name="descending-destruction">
+		<string name="name">.item.descending-destruction.name</string>
+		<string name="desc">.item.descending-destruction.desc?chance=10</string>
+		<string name="quality">legendary</string>
+		<int name="cost">100000</int>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>60 108 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hit</string>
+			<bool name="target-self">false</bool>
+			<int name="timeout">50</int>
+			<float name="chance">0.1</float>
+			<dict name="effect">
+				<string name="class">SpawnUnit</string>
+				<string name="unit">items/projectiles/meteor.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="dragons-tail">
+		<string name="name">.item.dragons-tail.name</string>
+		<string name="desc">.item.dragons-tail.desc?num=+1&gold=1000</string>
+		<string name="quality">legendary</string>
+		<int name="cost">100000</int>
+		<string name="dlc">mt</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>168 12 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::GoldFever</string>
+			<float name="mul-add">0.00001</float> <!-- 100,000 = x2 -->
+		</dict>
+	</dict>
+	
+	<dict name="medusas-charm">
+		<string name="name">.item.medusas-charm.name</string>
+		<string name="desc">.item.medusas-charm.desc?slow=50&stun=6&armor=50</string>
+		<string name="quality">legendary</string>
+		<int name="cost">100000</int>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>48 36 12 12</vec4>
+		</array>
+		
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Buff</string>
+				<string name="buff">items/buffs.sval:medusas-effect</string>
+			</dict>
+		
+			<dict>
+				<string name="class">Modifiers::AuraCone</string>
+				<int name="range">175</int>
+				<int name="freq">150</int>
+				<int name="arc">55</int>
+				<string name="buff">items/buffs.sval:medusas-charm-1</string>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::EnemyBuffFilter</string>
+				<array name="tags">
+					<string>medusa</string>
+				</array>
+
+				<dict name="modifier">
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">false</bool>
+
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">items/buffs.sval:medusas-charm-2</string>
+					</dict>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+
+	<dict name="sphere-of-heroes">
+		<string name="name">.item.sphere-of-heroes.name</string>
+		<string name="desc">.item.sphere-of-heroes.desc?cutoff=50</string>
+		<string name="quality">legendary</string>
+		<int name="cost">100000</int>
+		
+		<string name="required-flag">unlock_combo</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>72 180 12 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Combo</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">attack</string>
+				<float name="chance">1</float>
+				
+				<bool name="target-self">true</bool>
+				<int name="timeout">10</int>
+
+				<array name="effects">
+					<dict name="effect">
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">items/projectiles/sphere_of_heroes.unit</string>
+						<int name="dist">10</int>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="spirit-cloak">
+		<string name="name">.item.spirit-cloak.name</string>
+		<string name="desc">.item.spirit-cloak.desc?dur=3&sec=10</string>
+		<string name="quality">legendary</string>
+		<int name="cost">100000</int>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>96 36 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hurt</string>
+			<bool name="target-self">true</bool>
+			<int name="timeout">10000</int>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:spirit-cloak</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="soul-taker">
+		<string name="name">.item.soul-taker.name</string>
+		<string name="desc">.item.soul-taker.desc</string>
+		<string name="quality">legendary</string>
+		<int name="cost">100000</int>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>108 48 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">kill</string>
+			<dict name="effect">
+				<string name="class">KillSameType</string>
+				<int name="range">200</int>
+				<string name="fx">effects/soul_implosion.effect</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<!-- <dict name="talons-of-the-earth"> -->
+		<!-- <string name="name">Talons of the Earth</string> -->
+		<!-- <string name="desc">All Skill hits have a 5% chance to spawn an earth spike dealing 100 Physical damage.</string> -->
+		<!-- <string name="quality">legendary</string> -->
+		
+		<!-- <bool name="has-blueprints">false</bool> -->
+		
+		<!-- <array name="icon"> -->
+			<!-- <string>items/items.png</string> -->
+			<!-- <int>100</int><vec4>24 96 12 12</vec4> -->
+		<!-- </array> -->
+
+		<!-- <array name="modifiers"> -->
+			<!-- <dict> -->
+				<!-- <string name="class">Modifiers::TriggerEffect</string> -->
+				<!-- <string name="trigger">spellhit</string> -->
+				<!-- <bool name="target-self">false</bool> -->
+				<!-- <int name="timeout">0</int> -->
+				<!-- <float name="chance">0.075</float> -->
+				
+				<!-- <string name="fx">items/projectiles/earth_talon.effect</string> -->
+				
+				<!-- <array name="effects"> -->
+					<!-- <dict> -->
+						<!-- <string name="class">PlaySound</string> -->
+						<!-- <string name="sound">event:/enemy/golem_sand/hit_rock</string> -->
+					<!-- </dict> -->
+					
+					<!-- <dict> -->
+						<!-- <string name="class">Explode</string> -->
+						
+						<!-- <int name="radius">8</int> -->
+						<!-- <float name="dist-scaling">1000</float> -->
+						<!-- <float name="team-dmg">0</float> -->
+						<!-- <bool name="raycast-check">false</bool> -->
+						<!-- <array name="effects"> -->
+							<!-- <dict> -->
+								<!-- <string name="class">Damage</string> -->
+								<!-- <int name="physical">100</int> -->
+							<!-- </dict> -->
+						<!-- </array> -->
+					<!-- </dict> -->
+				<!-- </array> -->
+			<!-- </dict> -->
+		<!-- </array> -->
+	<!-- </dict> -->
+	
+	<dict name="wand-of-chaos">
+		<string name="name">.item.wand-of-chaos.name</string>
+		<string name="desc">.item.wand-of-chaos.desc?time=2</string>
+		<string name="quality">legendary</string>
+		<int name="cost">100000</int>
+		
+		<string name="dlc">pop</string>
+
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 108 12 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::TimedTriggerEffect</string>
+			<float name="chance">1</float>
+			<int name="freq">2000</int>
+			
+			<dict name="effect">
+				<string name="class">ShootRandomEnemy</string>
+				<int name="range">120</int>
+				<string name="projectile">items/projectiles/wand_of_chaos.unit</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>

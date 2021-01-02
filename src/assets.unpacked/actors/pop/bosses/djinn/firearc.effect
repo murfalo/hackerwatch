@@ -1,0 +1,90 @@
+<effect looping="true" wpos-track="15">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<param name="speed" default="0" />
+	
+	<trail texture="./firearc_trail.png" material="system/default.mats:glow-both-bright">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)" />
+		
+		<length value="70" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="20" />
+		
+		
+		<uv-l-x value="45 * (8 - i) / 15" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="45 * (8 - i) / 15" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail> 
+	
+	
+	<trail texture="./firearc_trail.png" material="system/default.mats:glow-both-bright">
+		<pos-x value="wposx(i)+cos(angle+pi/2)*13" />
+		<pos-y value="wposy(i)+sin(angle+pi/2)*13" />
+		
+		<length value="70" />
+		<looping value="true" />
+		
+		<segments value="7" />
+		<size value="1.5" />
+		
+		
+		<uv-l-x value="85 * (4 - i) / 7" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="85 * (4 - i) / 7" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail> 
+	
+	
+	<trail texture="./firearc_trail.png" material="system/default.mats:glow-both-bright">
+		<pos-x value="wposx(i)+cos(angle-pi/2)*13" />
+		<pos-y value="wposy(i)+sin(angle-pi/2)*13" />
+		
+		<length value="70" />
+		<looping value="true" />
+		
+		<segments value="7" />
+		<size value="1.5" />
+		
+		
+		<uv-l-x value="85 * (4 - i) / 7" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="85* (4 - i) / 7" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail> 
+	<sprite looping="true" origin="12 16" texture="./firearc.png" material="system/default.mats:glow-both-bright"
+
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+		
+		<frame time="33">16 0 16 32</frame>
+	</sprite>
+
+	
+</effect>

@@ -1,0 +1,46 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">6.2</float>
+		<int name="range">80</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">40</string>
+			</dict>
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/wizard/fireball_5_hit.effect</string>
+				<!-- <int name="radius">11</int> -->
+				<int name="radius">32</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">20</int>
+					</dict>					
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/player/wizard/fireball</string>
+			</dict>				
+		</array>
+		
+		<string name="fx">players/wizard/trail_fireball_fade.effect</string>
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="./fireball_6.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

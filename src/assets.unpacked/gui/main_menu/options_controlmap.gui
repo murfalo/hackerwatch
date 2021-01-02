@@ -1,0 +1,68 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/main_menu/slider_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect width="365" height="271" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="361" height="18" offset="2 2" flow="hbox">
+					<!-- Headline -->
+					<rect width="340" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".mainmenu.gameoptions.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="361" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Settings container -->
+				<scrollrect id="options-list" width="347" height="228" offset="2 23" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox">
+					<!-- Category -->
+					<group inner="true">
+						<rect width="347" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+						<grouprect id="controls" inner="true" flow="vbox" offset="0 3" padding="4 3" spacing="2" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+					</group>
+				</scrollrect>
+
+				<!-- Scrollbar -->
+				<scrollbar forid="options-list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="228" offset="349 23" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="228" offset="360 23" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Bottom bar -->
+				<rect width="361" height="18" offset="2 251" flow="hbox">
+					<rect width="63" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Defaults -->
+					<scalebutton spriteset="scalebutton" width="96" height="18" font="gui/fonts/arial11.fnt" func="reset-controls" text=".menu.defaults" />
+
+					<rect width="42" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Accept -->
+					<scalebutton spriteset="scalebutton" width="96" height="18" font="gui/fonts/arial11.fnt" func="apply-controls" text=".menu.accept" />
+
+					<rect width="64" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+
+			<!-- Control template -->
+			<rect id="template" visible="false" width="340" height="18">
+				<text id="name" offset="0 1" font="gui/fonts/arial11.fnt" text="..." color="#FFFFFFFF" />
+				<menu_control_input id="button" textoffset="-1 0" font="gui/fonts/arial11.fnt" width="250" height="16" anchor="1 0" align="right" func="" />
+			</rect>
+		</group></group>
+	</doc>
+</gui>

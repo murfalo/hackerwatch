@@ -1,0 +1,41 @@
+<effect looping="false" bounds="1024 1024">
+	<sprite ulayer="1" looping="false" origin="13 26" texture="./elevator.png" material="system/default.mats:glow"
+	color-r="0.1*t"
+	color-g="0.3*t"
+	color-b="1"
+	color-a="0.3*t"
+	>
+		<frame time="1500" x="66" y="0" w="25" h="27" />
+	</sprite>
+	<sprite ulayer="1" looping="false" origin="17 28" texture="./elevator.png" material="system/default.mats:default-noxray"
+	color-r="1"
+	color-g="1"
+	color-b="1"
+	color-a="1*t"
+	>
+		<frame time="1500" x="91" y="0" w="33" h="36" />
+	</sprite>
+	<light pos-x="0" pos-y="-10">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="1500" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="130*t" />
+		
+		<color-r value="0" />
+		<color-g value="0.2" />
+		<color-b value="1" />
+		<color-a value="0.1*t" />
+	</light>
+</effect>

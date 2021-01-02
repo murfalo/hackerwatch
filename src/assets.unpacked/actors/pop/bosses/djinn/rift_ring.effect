@@ -1,0 +1,129 @@
+<effect looping="true" layer="-1">
+	<param name="radius" default="26" />
+
+	
+	<!-- black bg -->
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:floor"	
+	scale-x="saturate(0.6+(t+l))"
+	scale-y="saturate(0.6+(t+l))"
+	color-a="saturate(0.6+(t+l))"
+	
+	
+	>
+		<frame time="150">0 0 64 64</frame>
+	</sprite>
+	
+	<!-- orange edge -->
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u+149) * pi * 2 - rand(u+2)*pi*(t+l)"
+	
+	scale-x="saturate(0.5+(t+l))"
+	scale-y="saturate(0.5+(t+l))"
+	
+	color-r="saturate(t*2)"
+	color-g="saturate(t*2)"
+	color-b="saturate(t*2)"
+	
+	color-a="saturate(0.5+0.5*(t+l))"
+	>
+		<frame time="150">192 0 64 64</frame>
+	</sprite>
+	
+
+	<!-- yellow lines  -->
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u+i+23) * pi * 2 + rand(u+i+51)*pi*(t+l)"
+	
+	scale-x="saturate(0.5+(t+l))"
+	scale-y="saturate(0.5+(t+l))"
+	color-r="saturate(t*2)"
+	color-g="saturate(t*2)"
+	color-b="saturate(t*2)"
+	color-a="saturate(0.5+0.5*(t+l))"
+	>
+		<frame time="150">0 64 64 64</frame>
+	</sprite>
+	
+	<!-- criss cross -->
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u+i+49) * pi * 2 + 0.5*pi*(t+l)"
+	
+	scale-x="saturate(0.5+(t+l))"
+	scale-y="saturate(0.5+(t+l))"
+	color-r="saturate(t*2)"
+	color-g="saturate(t*2)"
+	color-b="saturate(t*2)"
+	color-a="saturate(0.5+0.5*(t+l))"
+	>
+		<frame time="150">64 64 64 64</frame>
+	</sprite>
+	
+	<!-- base vortex -->
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u) * pi * 2 - pi*(t+l)"
+	
+	scale-x="saturate(0.5+(t+l))"
+	scale-y="saturate(0.5+(t+l))"
+	color-r="saturate(t*2)"
+	color-g="saturate(t*2)"
+	color-b="saturate(t*2)"
+	color-a="saturate(saturate(0.5+0.5*(t+l)) - saturate(sin(pi*2*t)))"
+	>
+		<frame time="150">128 0 64 64</frame>
+	</sprite>
+	
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u+i) * pi * 2 - pi*(t+l)"
+	
+	scale-x="saturate(0.5+(t+l))"
+	scale-y="saturate(0.5+(t+l))"
+	color-r="saturate(t*2)"
+	color-g="saturate(t*2)"
+	color-b="saturate(t*2)"
+	color-a="saturate(saturate(0.5+0.5*(t+l)) - saturate(cos(pi*2*t)))"
+	>
+		<frame time="150">128 64 64 64</frame>
+	</sprite>
+	
+	
+	
+	<!-- white copy of above-->
+
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u+149) * pi * 2 - rand(u+2)*pi*(t+l)"
+	
+	color-a="saturate(pow(t,10))"
+	>
+		<frame time="1000">192 128 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u+i+23) * pi * 2 + rand(u+i+51)*pi*(t+l)"
+	
+	color-a="saturate(pow(t,10))"
+	>
+		<frame time="1000">0 192 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u+i+49) * pi * 2 + 0.5*pi*(t+l)"
+	
+	color-a="saturate(pow(t,10))"
+	>
+		<frame time="1000">64 192 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u) * pi * 2 - pi*(t+l)"
+	
+	color-a="saturate(pow(t,10))"
+	>
+		<frame time="1000">128 128 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" ulayer="0" looping="true" texture="./riftbomb.png" material="system/default.mats:bright-noxray"
+	angle="rand(u) * pi * 2 - pi*(t+l)"
+	
+	color-a="saturate(pow(t,10))"
+	>
+		<frame time="1000">128 192 64 64</frame>
+	</sprite>
+	
+	
+</effect>

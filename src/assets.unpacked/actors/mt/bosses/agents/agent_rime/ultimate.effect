@@ -1,0 +1,80 @@
+<effect looping="true" layer="120">
+	<param name="radius" default="35" />
+	
+	
+	
+	<sprite origin="9 9" looping="true" texture="./ultimate.png" material="system/default.mats:bright-noxray"
+		color-b="2"
+		pos-y="-300 * saturate(1-(t+l))"
+		>
+		<frame time="30">0 0 18 18</frame>
+		<frame time="30">18 0 18 18</frame>
+		<frame time="30">36 0 18 18</frame>
+		<frame time="30">54 0 18 18</frame>
+		<frame time="30">72 0 18 18</frame>
+		<frame time="30">90 0 18 18</frame>
+		<frame time="30">108 0 18 18</frame>
+		<frame time="30">0 18 18 18</frame>
+		<frame time="30">18 18 18 18</frame>
+		<frame time="30">36 18 18 18</frame>
+		<frame time="30">54 18 18 18</frame>
+		<frame time="30">72 18 18 18</frame>
+		<frame time="30">90 18 18 18</frame>
+		<frame time="30">108 18 18 18</frame>
+		<frame time="30">0 36 18 18</frame>
+		<frame time="30">0 0 18 18</frame>
+		<frame time="30">18 0 18 18</frame>
+		<frame time="30">36 0 18 18</frame>
+		<frame time="30">54 0 18 18</frame>
+		<frame time="30">72 0 18 18</frame>
+		<frame time="30">90 0 18 18</frame>
+		<frame time="30">108 0 18 18</frame>
+		<frame time="30">0 18 18 18</frame>
+		<frame time="30">18 18 18 18</frame>
+		<frame time="30">36 18 18 18</frame>
+		<frame time="30">54 18 18 18</frame>
+		<frame time="30">72 18 18 18</frame>
+		<frame time="30">90 18 18 18</frame>
+		<frame time="30">108 18 18 18</frame>
+		<frame time="30">0 36 18 18</frame>
+		<frame time="30">0 0 18 18</frame>
+		<frame time="30">18 0 18 18</frame>
+		<frame time="30">36 0 18 18</frame>
+		<frame time="30">54 0 18 18</frame>
+		<frame time="30">72 0 18 18</frame>
+		<frame time="30">90 0 18 18</frame>
+		<frame time="30">108 0 18 18</frame>
+		<frame time="30">0 18 18 18</frame>
+		<frame time="30">18 18 18 18</frame>
+		<frame time="30">36 18 18 18</frame>
+		<frame time="30">54 18 18 18</frame>
+		<frame time="30">72 18 18 18</frame>
+		<frame time="30">90 18 18 18</frame>
+		<frame time="30">108 18 18 18</frame>
+		<frame time="30">0 36 18 18</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="-300 * saturate(1-(t+l))">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="32 * saturate(4*t+l) + 1*cos(t*pi*4)" />
+
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="4" />
+		<color-a value="0"/>
+	</light>
+
+</effect>

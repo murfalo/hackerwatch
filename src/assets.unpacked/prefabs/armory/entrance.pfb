@@ -1,0 +1,96 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>16 24</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">32 16</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/armory/_deco_floor_tile_red.unit"><vec2>24 16</vec2><int>2</int><vec2>16 16</vec2><int>3</int><vec2>8 16</vec2><int>4</int><vec2>0 16</vec2><int>5</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PlayMusic</string>
+			<int>6</int>
+			<vec3>40 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/armory</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>7</int>
+			<vec3>40 -40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Music">event:/music/armory</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>8</int>
+			<vec3>-64 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnTrue"><int>9</int></array>
+				<array name="OnFalse"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>9</int>
+			<vec3>-16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>start</string>
+			<dict>
+				<string name="UnitType">doodads/walls/armory/exit_start.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>10</int>
+			<vec3>-16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">doodads/walls/armory/exit_dn.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>11</int>
+			<vec3>-64 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>armory_enter on</string>
+			<dict>
+				<int name="State">3</int>
+				<string name="Flag">armory_enter</string>
+			</dict>
+		</array>
+	</array>
+</dict>

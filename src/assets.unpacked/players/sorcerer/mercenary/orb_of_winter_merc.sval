@@ -1,0 +1,28 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">sorcerer</string>
+	<string name="name">.skills.sorcerer.orb-of-winter</string>
+	<string name="description">.skills.sorcerer.orb-of-winter.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 48 24 24</vec4>
+	</array>
+
+	<int name="cost">25</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ShootProjectileFan</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/sorcerer/orb_summon</string>
+		
+		<int name="cooldown">10000</int>
+		<int name="castpoint">250</int>
+		<float name="speed-mul">0</float>
+		
+		<int name="mana-cost">180</int>
+		
+		<int name="dist">5</int>
+		<string name="projectile">players/sorcerer/mercenary/orb_merc.unit</string>
+	</dict>
+</dict>

@@ -1,0 +1,80 @@
+<effect looping="true">
+	<param name="angle" default="2" />
+	<param name="height" default="0" />
+	<param name="cR" default="1" />
+	<param name="cG" default="0" />
+	<param name="cB" default="0.8" />
+	
+	
+	<sprite looping="true" origin="5 1.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+	
+		angle="angle">
+		
+		<frame time="500">0 0 7 3</frame>
+	</sprite>
+	<sprite looping="true" origin="4.5 4.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		scale-x="1-sin(t*pi)*0.5"
+		scale-y="1-sin(t*pi)*0.5"
+		
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+		color-a="0.5"
+		
+		angle="pi*2*t" >
+		
+		<frame time="500">49 1 9 9</frame>
+	</sprite>
+	
+	
+	<sprite looping="true" origin="4.5 4.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+		num-sprites="3"
+		pos-x="t*(cos(angle)*-15)*i"
+		pos-y="t*(sin(angle)*-15)*i-height"
+		scale-x="1-t"
+		scale-y="1-t"
+		
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+		color-a="saturate(0.5 * floor(i+1*t))*(1-t)"
+		
+		angle="pi*2*t*1-i" >
+		
+		<frame time="500">49 1 9 9</frame>
+	</sprite>
+	
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="12" />
+
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+	</light>
+</effect>

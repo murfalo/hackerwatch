@@ -1,0 +1,93 @@
+<effect looping="true">
+	<sprite origin="0 0" looping="true" texture="./gargoyle_bolt.png" material="system/default.mats:bright-noxray"
+		angle="rand(u + l*7) * 2 * pi"
+	>
+		<frame time="55">0 0 28 16</frame>
+		<frame time="55">28 0 28 16</frame>
+		<frame time="55">56 0 28 16</frame>
+		<frame time="55">84 0 28 16</frame>
+		<frame time="55">112 0 28 16</frame>
+		<frame time="55">140 0 28 16</frame>
+		<frame time="55">168 0 28 16</frame>
+		<frame time="55">196 0 28 16</frame>
+		<frame time="55">224 0 28 16</frame>
+		<frame time="55">252 0 28 16</frame>
+		<frame time="55">280 0 28 16</frame>
+		<frame time="650">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="20 0" looping="true" texture="./gargoyle_bolt.png" material="system/default.mats:bright-noxray"
+		angle="rand(u + l*51) * 2 * pi"
+	>
+		<frame time="35">0 16 20 37</frame>
+		<frame time="35">20 16 20 37</frame>
+		<frame time="35">40 16 20 37</frame>
+		<frame time="35">60 16 20 37</frame>
+		<frame time="35">80 16 20 37</frame>
+		<frame time="35">100 16 20 37</frame>
+		<frame time="35">120 16 20 37</frame>
+		<frame time="35">140 16 20 37</frame>
+		<frame time="35">160 16 20 37</frame>
+		<frame time="35">180 16 20 37</frame>
+		<frame time="35">200 16 20 37</frame>
+		<frame time="35">220 16 20 37</frame>
+		<frame time="350">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="21 26" looping="true" texture="./gargoyle_bolt.png" material="system/default.mats:bright-noxray"
+		angle="rand(u + l*37) * 2 * pi"
+	>
+		<frame time="40">0 53 21 26</frame>
+		<frame time="40">21 53 21 26</frame>
+		<frame time="40">42 53 21 26</frame>
+		<frame time="40">63 53 21 26</frame>
+		<frame time="40">84 53 21 26</frame>
+		<frame time="40">105 53 21 26</frame>
+		<frame time="40">126 53 21 26</frame>
+		<frame time="40">147 53 21 26</frame>
+		<frame time="40">168 53 21 26</frame>
+		<frame time="40">189 53 21 26</frame>
+		<frame time="40">210 53 21 26</frame>
+		<frame time="40">231 53 21 26</frame>
+		<frame time="750">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="21 26" looping="true" texture="./gargoyle_bolt.png" material="system/default.mats:bright-noxray"
+		angle="rand(u + l*41) * 2 * pi"
+	>
+		<frame time="40">0 53 21 26</frame>
+		<frame time="40">21 53 21 26</frame>
+		<frame time="40">42 53 21 26</frame>
+		<frame time="40">63 53 21 26</frame>
+		<frame time="40">84 53 21 26</frame>
+		<frame time="40">105 53 21 26</frame>
+		<frame time="40">126 53 21 26</frame>
+		<frame time="40">147 53 21 26</frame>
+		<frame time="40">168 53 21 26</frame>
+		<frame time="40">189 53 21 26</frame>
+		<frame time="40">210 53 21 26</frame>
+		<frame time="40">231 53 21 26</frame>
+		<frame time="750">0 0 0 0</frame>
+	</sprite>
+	
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="80 * (sin((t+l) *5)/4 + 1.0 + rand(t)/5)" />
+
+		<color-r value="0" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0"/>
+	</light>
+</effect>

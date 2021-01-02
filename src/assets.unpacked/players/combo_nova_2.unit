@@ -1,0 +1,101 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle 8</string>
+		<float name="speed">6</float>
+		<int name="ttl">1000</int>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">24</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-4">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="5 10" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">0 13 13 13</frame>
+			</sprite>
+			<sprite origin="5 10" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">0 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="0 7" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 13 13</frame>
+			</sprite>
+			<sprite origin="0 7" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">0 39 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="6 7" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">13 0 13 13</frame>
+			</sprite>
+			<sprite origin="6 7" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">13 39 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="6 7" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">26 0 13 13</frame>
+			</sprite>
+			<sprite origin="6 7" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">26 39 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="7 10" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">26 13 13 13</frame>
+			</sprite>
+			<sprite origin="7 10" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">26 52 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="5 12" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">26 26 13 13</frame>
+			</sprite>
+			<sprite origin="5 12" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">26 65 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="6 13" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">13 26 13 13</frame>
+			</sprite>
+			<sprite origin="6 13" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">13 65 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="1 12" looping="true" texture="./combo_nova_2.png" material="system/default.mats:projectile">
+				<frame time="50">0 26 13 13</frame>
+			</sprite>
+			<sprite origin="1 12" looping="true" texture="./combo_nova_2.png" material="system/default.mats:glow">
+				<frame time="50">0 65 13 13</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,77 @@
+<dict>
+	<string name="name">.skills.priest.aura-of-purification</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 96 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::TempBuffAoe</string>
+
+			<string name="anim">cast 8</string>
+			<string name="aura-fx">effects/players/aura_of_purification.effect</string>
+			<string name="snd">event:/player/priest/aura</string>
+			
+			<float name="speed-mul">1</float>
+			
+			<int name="cooldown">12000</int>
+			<int name="castpoint">0</int>
+			<int name="active-time">6000</int>
+
+			<int name="mana-cost">50</int>
+
+			<int name="range">70</int>
+			<string name="buff">players/buffs.sval:aura-debuff-1</string>
+			<string name="buff-team">players/buffs.sval:aura-buff-1</string>
+			<int name="interval">250</int>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::TempBuffAoe</string>
+
+			<string name="anim">cast 8</string>
+			<string name="aura-fx">effects/players/aura_of_purification.effect</string>
+			<string name="snd">event:/player/priest/aura</string>
+			
+			<float name="speed-mul">1</float>
+			
+			<int name="cooldown">12000</int>
+			<int name="castpoint">0</int>
+			<int name="active-time">7000</int>
+
+			<int name="mana-cost">60</int>
+
+			<int name="range">70</int>
+			<string name="buff">players/buffs.sval:aura-debuff-2</string>
+			<string name="buff-team">players/buffs.sval:aura-buff-2</string>
+			<int name="interval">250</int>
+		</dict>
+
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::TempBuffAoe</string>
+
+			<string name="anim">cast 8</string>
+			<string name="aura-fx">effects/players/aura_of_purification.effect</string>
+			<string name="snd">event:/player/priest/aura</string>
+			
+			<float name="speed-mul">1</float>
+			
+			<int name="cooldown">12000</int>
+			<int name="castpoint">0</int>
+			<int name="active-time">8000</int>
+
+			<int name="mana-cost">70</int>
+
+			<int name="range">70</int>
+			<string name="buff">players/buffs.sval:aura-debuff-3</string>
+			<string name="buff-team">players/buffs.sval:aura-buff-3</string>
+			<int name="interval">250</int>
+		</dict>
+	</array>
+</dict>

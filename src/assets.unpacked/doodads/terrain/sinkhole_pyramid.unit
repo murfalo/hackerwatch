@@ -1,0 +1,40 @@
+<unit slot="doodad" layer="-10">
+	<scenes close="close" open="open">
+		<scene name="close">	
+			<sprite looping="false" origin="46 46" texture="./sinkhole_pyramid.png" material="system/default.mats:floor">
+				<frame time="90">50 404 92 92</frame>
+			</sprite>		
+		</scene>
+		<scene name="open">
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="224 118 9 9" />			
+			<collision>
+				<circle radius="28" shoot-through="1"/>
+			</collision>
+			<effect src="./sinkhole_pyramid.effect"/>
+			<sprite loopback="1000" origin="46 46" texture="./sinkhole_pyramid.png" material="system/default.mats:floor">
+				<frame time="1000">0 0 0 0</frame>
+				<frame time="90">0 0 92 92</frame>
+				<frame time="90">92 0 92 92</frame>
+				<frame time="90">184 0 92 92</frame>
+				<frame time="90">276 0 92 92</frame>
+				<frame time="90">368 0 92 92</frame>
+				<frame time="90">0 92 92 92</frame>
+				<frame time="90">92 92 92 92</frame>
+				<frame time="90">184 92 92 92</frame>
+				<frame time="90">276 92 92 92</frame>
+				<frame time="90">368 92 92 92</frame>
+				<frame time="90">0 184 92 92</frame>
+				<frame time="90">92 184 92 92</frame>
+				<frame time="90">184 184 92 92</frame>
+				<frame time="90">276 184 92 92</frame>
+				<frame time="90">368 184 92 92</frame>
+				<frame time="90">0 276 92 92</frame>
+			</sprite>
+			<effect pos="-70 -4" src="doodads/terrain/world_midway_torch.effect" />
+			<effect pos="-18 -4" src="doodads/terrain/world_midway_torch.effect" />
+			<effect pos="36 -4" src="doodads/terrain/world_midway_torch.effect" />
+			<effect pos="90 -4" src="doodads/terrain/world_midway_torch.effect" />
+			<effect pos="0 30" src="doodads/terrain/world_midway.effect" />
+		</scene>
+	</scenes>
+</unit>

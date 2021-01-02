@@ -1,0 +1,68 @@
+<effect looping="false">
+	<sprite origin="15 13" looping="false" texture="./rottenpart_impact.png" material="system/default.mats:bright-noxray"
+		scale-x="0.9 + rand(u+i*4003)*0.1"
+		scale-y="0.9 + rand(u+i*4003)*0.1"
+		>
+		<frame time="30">0 0 30 21</frame>
+		<frame time="30">30 0 30 21</frame>
+		<frame time="30">60 0 30 21</frame>
+		<frame time="30">90 0 30 21</frame>
+		<frame time="30">0 21 30 21</frame>
+		<frame time="30">30 21 30 21</frame>
+		<frame time="40">60 21 30 21</frame>
+		<frame time="40">90 21 30 21</frame>
+		<frame time="40">0 42 30 21</frame>
+		<frame time="50">30 42 30 21</frame>
+		<frame time="50">60 42 30 21</frame>
+		<frame time="60">90 42 30 21</frame>
+	</sprite>
+	<sprite origin="2.5 2" looping="false" texture="./rottenpart_impact.png" material="system/default.mats:bright-noxray"
+		num-sprites="rand(u+i*101)*5"
+		angle="floor(sin(t*pi*2))*pi"
+		pos-x="rand(u+i*23)*10 - 5 + t*(rand(u+i*23)*10 - 5)"
+		pos-y="(t*rand(u+i*11)*-60 + pow(t,4)*rand(u+i*11)*30)"
+		>
+		<frame time="50">0 96 5 4</frame>
+		<frame time="50">5 96 5 4</frame>
+		<frame time="50">10 96 5 4</frame>
+		<frame time="50">15 96 5 4</frame>
+		<frame time="50">20 96 5 4</frame>
+		<frame time="50">25 96 5 4</frame>
+		<frame time="50">30 96 5 4</frame>
+		<frame time="50">35 96 5 4</frame>
+	</sprite>
+	<sprite origin="15 13" looping="false" texture="./rottenpart_impact.png" material="system/default.mats:glow-both-bright"
+		scale-x="0.9 + rand(u+i*4003)*0.1"
+		scale-y="0.9 + rand(u+i*4003)*0.1"
+		color-a="0.5"
+		>
+		<frame time="30">0 0 30 21</frame>
+		<frame time="30">30 0 30 21</frame>
+		<frame time="30">60 0 30 21</frame>
+		<frame time="30">90 0 30 21</frame>
+		<frame time="30">0 21 30 21</frame>
+		<frame time="30">30 21 30 21</frame>
+		<frame time="40">60 21 30 21</frame>
+		<frame time="40">90 21 30 21</frame>
+		<frame time="40">0 42 30 21</frame>
+		<frame time="50">30 42 30 21</frame>
+		<frame time="50">60 42 30 21</frame>
+		<frame time="60">90 42 30 21</frame>
+	</sprite>
+	<sprite origin="2.5 2" looping="false" texture="./rottenpart_impact.png" material="system/default.mats:glow-both-bright"
+		num-sprites="rand(u+i*101)*5"
+		angle="floor(sin(t*pi*2))*pi"
+		pos-x="rand(u+i*23)*10 - 5 + t*(rand(u+i*23)*10 - 5)"
+		pos-y="(t*rand(u+i*11)*-60 + pow(t,4)*rand(u+i*11)*30)"
+		color-a="0.5"
+		>
+		<frame time="50">0 96 5 4</frame>
+		<frame time="50">5 96 5 4</frame>
+		<frame time="50">10 96 5 4</frame>
+		<frame time="50">15 96 5 4</frame>
+		<frame time="50">20 96 5 4</frame>
+		<frame time="50">25 96 5 4</frame>
+		<frame time="50">30 96 5 4</frame>
+		<frame time="50">35 96 5 4</frame>
+	</sprite>
+</effect>

@@ -1,0 +1,132 @@
+<effect looping="false" bounds="750 750" layer="20000">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<param name="length" default="100" />
+	<param name="radius" default="22" />
+	
+
+	
+	%// Aim
+	
+	<sprite looping="false" origin="0 0.5" texture="./net_aim.png" material="effects/effects.mats:add-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9-height"
+		
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0.5"
+		color-a="1-t"
+		
+		
+		scale-x="(length+radius)/32"
+		scale-y="2+(1-t)"
+	>
+		<frame time="500" x="0" y="1" w="32" h="1" />
+	</sprite>
+	
+	<sprite looping="false" origin="0 0.5" texture="./net_aim.png" material="effects/effects.mats:add"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9-height"
+		
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0.5"
+		color-a="1"
+		
+		
+		scale-x="(length+radius)/32"
+		scale-y="1"
+	>
+		<frame time="500" x="0" y="1" w="32" h="1" />
+	</sprite>
+	
+	<sprite looping="true" origin="0 0.5" texture="./net_aim.png" material="effects/effects.mats:add"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9-height"
+		
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0.5"
+		color-a="1"
+		
+		
+		scale-x="(length+radius)/32"
+		scale-y="1"
+	>
+		<frame time="500" x="0" y="1" w="32" h="1" />
+	</sprite>
+	
+	
+	<sprite looping="true" origin="0 5" texture="./net_aim.png" material="effects/effects.mats:add-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*9+(length+radius)*cos(angle)"
+		pos-y="sin(angle)*9-height+(length+radius)*sin(angle)"
+		
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0.5"
+		color-a="1-t"
+		
+		
+		scale-x="1+(0.1*t)"
+		scale-y="1+(0.1*t)"
+	>
+		<frame time="500" x="3" y="19" w="10" h="10" />
+	</sprite>
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="false" />
+		<length value="250" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="(1-t)*90" />
+
+		<color-r value="3" />
+		<color-g value="2" />
+		<color-b value="6" />
+		<color-a value="0"/>
+	</light>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="false" />
+		<length value="500" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="(1-t)*50" />
+
+		<color-r value="3" />
+		<color-g value="2" />
+		<color-b value="1" />
+		<color-a value="0"/>
+	</light>
+</effect>
+
+

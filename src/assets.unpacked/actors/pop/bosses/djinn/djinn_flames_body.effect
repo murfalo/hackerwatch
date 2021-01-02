@@ -1,0 +1,80 @@
+<effect looping="true" layer="-1">
+	<param name="dt" default="0.01" />
+
+	
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+	
+		num-sprites="6"
+		
+		scale-x="saturate(rand(u+i+23) + 0.5)"
+		scale-y="saturate(rand(u+i+23) + 0.5)"
+		pos-x="rand(u+i)*18 - 9 + sin(t*pi)*8*rand(u+i)" 
+		pos-y="cos(-pi*2+39)*18 * (1-t) - 25*t + rand(u+i+23)*15 - 30"
+		color-a="saturate(sin(t*pi))"
+	
+	>
+		
+		<frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+		
+	</sprite>
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+	
+		num-sprites="6"
+		
+		scale-x="saturate(rand(u+i+23) + 0.5)"
+		scale-y="saturate(rand(u+i+23) + 0.5)"
+		pos-x="rand(u+i)*18 - 9 + sin(t*-pi)*8*rand(u+i-23)" 
+		pos-y="cos(-pi*2+39)*18 * (1-t) - 25*t + rand(u+i+23)*15 - 30"
+		color-a="saturate(sin(t*pi))"
+	
+	>
+		
+		<frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+		
+	</sprite>
+	<sprite origin="5 17" pos-y="-35" looping="true" texture="./djinn.png" material="effects/effects.mats:fire">
+		
+		<frame time="100">512 656 11 34</frame>
+		<frame time="100">523 656 11 34</frame>
+		<frame time="100">534 656 11 34</frame>
+		<frame time="100">545 656 11 34</frame>
+		<frame time="100">556 656 11 34</frame>
+		<frame time="100">567 656 11 34</frame>
+		<frame time="100">578 656 11 34</frame>
+		<frame time="100">589 656 11 34</frame>
+		<frame time="100">600 656 11 34</frame>
+		<frame time="100">611 656 11 34</frame>
+		<frame time="100">622 656 11 34</frame>
+		
+	</sprite>
+	<sprite origin="5 17" looping="true" texture="./djinn.png" material="effects/effects.mats:fire"
+
+	pos-x="rand(u+i+l+23)*10-10" 
+	pos-y="rand(u+i+l+23)*20-40"
+	
+	
+	>
+		
+		<frame time="50">512 656 11 34</frame>
+		<frame time="50">523 656 11 34</frame>
+		<frame time="50">534 656 11 34</frame>
+		<frame time="50">545 656 11 34</frame>
+		<frame time="50">556 656 11 34</frame>
+		<frame time="50">567 656 11 34</frame>
+		<frame time="50">578 656 11 34</frame>
+		<frame time="50">589 656 11 34</frame>
+		<frame time="50">600 656 11 34</frame>
+		<frame time="50">611 656 11 34</frame>
+		<frame time="50">622 656 11 34</frame>
+		
+	</sprite>
+	
+</effect>

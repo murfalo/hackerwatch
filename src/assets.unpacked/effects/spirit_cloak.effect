@@ -1,0 +1,93 @@
+<effect>
+	<sprite looping="false" layer="2" origin="12 12" texture="effects/spirit_cloak.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="0.75"
+		color-g="0.75"
+		color-b="1"
+		angle="pi*t*10"
+	>
+	
+		<frame time="75">24 24 24 24</frame>
+		<frame time="2725">0 24 24 24</frame> 
+		<frame time="75">96 0 24 24</frame>
+		<frame time="75">72 0 24 24</frame>
+		<frame time="75">48 0 24 24</frame>
+		<frame time="75">24 0 24 24</frame>
+		<frame time="125">0 0 24 24</frame>
+	</sprite>
+	<sprite looping="false" layer="2" origin="12 12" texture="effects/spirit_cloak.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="0.75"
+		color-g="0.75"
+		color-b="1"
+		color-a="0.5"
+		angle="pi*t*10"
+	>
+	
+		<frame time="225">0 0 0 0</frame>
+		<frame time="75">24 24 24 24</frame>
+		<frame time="2500">0 24 24 24</frame> 
+		<frame time="75">96 0 24 24</frame>
+		<frame time="75">72 0 24 24</frame>
+		<frame time="75">48 0 24 24</frame>
+		<frame time="75">24 0 24 24</frame>
+		<frame time="100">0 0 24 24</frame>
+	</sprite>
+	<!-- 	
+		<frame time="150">0 0 24 24</frame>
+		<frame time="150">24 0 24 24</frame>
+		<frame time="150">48 0 24 24</frame>
+		<frame time="150">72 0 24 24</frame>
+		<frame time="150">96 0 24 24</frame>
+		<frame time="150">0 24 24 24</frame> 
+		-->
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="1225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="(sin(t*2)*180)*(1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="1400"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="250*(1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

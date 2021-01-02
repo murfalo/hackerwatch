@@ -1,0 +1,41 @@
+<effect looping="false" layer="1">
+
+	<data>
+		<string name="gore">effects/gibs/doodads/china_brown.sval</string>
+	</data>	
+
+	<sprite looping="false" origin="12.5 3.5" texture="./puzzle_constellation_marker.png" material="system/default.mats:glow-both-bright"
+		angle="rand(u+i+23)*pi*2"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1-t"
+		pos-x="rand(u+i+67)*pi*3-6"
+		pos-y="rand(u+i+67)*pi*3-4"
+>
+		<frame time="50">32 32 25 7</frame>
+		<frame time="50">57 32 25 7</frame>
+		<frame time="50">82 32 25 7</frame>
+		<frame time="50">107 32 25 7</frame>
+		<frame time="50">132 32 25 7</frame>
+	</sprite>		
+	
+  	<sprite origin="3 3" looping="false" texture="players/ranger/explosion_bomb_ranger.png" material="system/default.mats:default-noxray"
+		num-sprites="1"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 18 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 18 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 18 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 18 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 18 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 18 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="100">12 112 6 6</frame>
+		<frame time="200">18 112 6 6</frame>
+		<frame time="200">24 112 6 6</frame>
+		<frame time="200">30 112 6 6</frame>
+		<frame time="100">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+</effect>

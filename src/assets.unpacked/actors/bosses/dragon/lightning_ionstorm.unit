@@ -1,0 +1,50 @@
+<unit layer="500">
+	<behavior class="BombBehavior">
+		<string name="spawn-sound">event:/misc/lightning</string>
+		%//<string name="explode-sound">event:/misc/lightning</string>
+		
+		<string name="gore">effects/gibs/gib_lightning.sval</string>		
+		
+		<int name="delay-random">0</int>
+		<int name="delay">500</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>		
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/bosses/dragon/lightning_ionstorm.effect</string>
+				<int name="radius">10</int>
+				<float name="dist-scaling">10</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">55</int>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:lightning_confusion</string>
+					</dict>		
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:lightning_burning</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">12</float>
+		</dict>		
+		
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">
+			<minimap_sprite origin="1 1" texture="gui/minimap.png" frame="34 9 2 2" />	
+			<effect src="doodads/generic/trap_indicator.effect" />	
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,70 @@
+<effect layer="0" looping="true" 
+%if GFX_VFX_HIGH
+wpos-track="10"
+%endif
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+%if GFX_VFX_HIGH
+	%// TRAIL
+	<trail texture="effects/empty.png" material="system/default.mats:projectile">
+		
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="10" />
+		<size value="20-i/1.5" />
+
+		<uv-x value="0" />
+		<uv-y value="0" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="0.35" />
+		<color-a value="max(0,(8.2-i)/35)" />
+		%//<color-a value="max(0, 1-t)" />
+	</trail>
+%endif
+
+	%// Moonblade
+	<sprite looping="true" origin="10 10" texture="actors/bosses/wraith/wraith_mage_nova.png" material="system/default.mats:projectile"
+	
+		angle="floor(15*(t+l) / (pi/8)) * (pi/8)"
+		pos-x="0"
+		pos-y="-height"
+		>
+		<frame time="1000">0 0 20 20</frame>
+	</sprite>
+	
+	%// LIGHT
+	<light pos-y="-height">
+		<sprite looping="true" texture="system/light_concentrated_L.png">
+			<frame time="150"> 0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 800) * 400" />
+		
+		<size value="(sin(t+l)*5)+60" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="0.25" />
+		<color-a value="0/255" />
+	</light>
+	
+</effect>

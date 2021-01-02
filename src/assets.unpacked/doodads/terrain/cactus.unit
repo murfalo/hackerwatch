@@ -1,0 +1,90 @@
+<unit slot="doodad">
+	<scenes default="1a 1a 1a 1a 1a 1b 2a 2a 2a 2a 2b 3a 3a 3a 3a 3b">	
+		<scene name="shared">
+			<collision>
+				<circle offset="-0.5" radius="2.5"/>
+			</collision>
+		</scene>
+		<scene name="1a">
+			<scene src="shared"/>
+			<sprite origin="3 15" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>0 0 6 17</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite project="true" origin="3 15"  texture="./cactus.png">
+					<frame>0 0 6 17</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		<scene name="1b">
+			<scene src="shared"/>
+			<sprite ulayer="1" origin="2 15" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>41 0 3 3</frame>
+			</sprite>
+			<sprite origin="3 15" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>0 0 6 17</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite project="true" origin="3 15"  texture="./cactus.png">
+					<frame>0 0 6 17</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		<scene name="2a">
+			<scene src="shared"/>
+			<sprite origin="8 26" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>6 0 13 28</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite project="true" origin="8 26"  texture="./cactus.png">
+					<frame>6 0 13 28</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		<scene name="2b">
+			<scene src="shared"/>
+			<sprite origin="8 26" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>6 0 13 28</frame>
+			</sprite>
+			<sprite ulayer="1" origin="-3 24" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>44 0 3 3</frame>
+			</sprite>
+			<sprite ulayer="1" origin="8 20" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>41 0 3 3</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite project="true" origin="8 26"  texture="./cactus.png">
+					<frame>6 0 13 28</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		<scene name="3a">
+			<scene src="shared"/>
+			<sprite origin="14 30"  texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>19 0 22 32</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite project="true" origin="14 30"  texture="./cactus.png">
+					<frame>19 0 22 32</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		<scene name="3b">
+			<scene src="shared"/>
+			<sprite origin="14 30"  texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>19 0 22 32</frame>
+			</sprite>
+			<sprite ulayer="1" origin="9 28" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>44 0 3 3</frame>
+			</sprite>
+			<sprite ulayer="1" origin="2 30" texture="./cactus.png" material="system/default.mats:proj-wall-noxray">
+				<frame>41 0 3 3</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite project="true" origin="14 30"  texture="./cactus.png">
+					<frame>19 0 22 32</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

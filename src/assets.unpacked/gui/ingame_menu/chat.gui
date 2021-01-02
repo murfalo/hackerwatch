@@ -1,0 +1,19 @@
+<gui>
+	<sprites>
+	</sprites>
+	<doc>
+		<group>
+			<transform id="transform" scale="1.0">
+				<game_chat id="gamechat" anchor="0.05 0.8" width="35%" height="190">
+					<rect id="chat-box" visible="false" color="#0000007F" width="100%" height="170">
+						<text id="chat-template" font="gui/fonts/arial14.fnt" width="100%" visible="false" />
+						<scrollrect id="chat-list" width="100%" height="170" flow="vbox" />
+					</rect>
+					<rect id="chat-input-box" color="#0000007F" visible="false" offset="0 170" width="100%" height="20">
+						<textinput id="chat-input" priorityfocus="true" width="100%" height="20" font="gui/fonts/arial14.fnt" func="sendchat" func-cancel="cancelchat" />
+					</rect>
+				</game_chat>
+			</transform>
+		</group>
+	</doc>
+</gui>

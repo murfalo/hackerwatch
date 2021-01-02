@@ -1,0 +1,28 @@
+<effect looping="true">
+	<sprite origin="10 14" looping="true" layer="1" texture="./../player_effects.png" material="system/default.mats:bright-noxray"
+		color-a="0.66 + 0.33 * sin(t + l)">
+		<frame time="250">19 51 19 19</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="64" />
+
+		<color-r value="0" />
+		<color-g value="2" />
+		<color-b value="2" />
+		<color-a value="0"/>
+	</light>
+</effect>

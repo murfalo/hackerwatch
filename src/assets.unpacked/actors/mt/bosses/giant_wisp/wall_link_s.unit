@@ -1,0 +1,43 @@
+<unit slot="doodad">
+	<scenes start="default">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="123 0 5 5"/>
+
+			<collision static="true">
+				<circle offset="0 -1" radius="4" shoot-through="true"/>
+			</collision>
+			<sprite ulayer="1" origin="0 32" texture="./wall_link.png" material="system/default.mats:shadow">
+				<frame >57 0 8 35</frame>
+			</sprite>
+			<sprite layer="-10" origin="9 1" texture="./wall_link.png" material="system/default.mats:floor">
+				<frame >21 36 20 12</frame>
+			</sprite>
+			<light pos="0 -1">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="0.5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="255 0 0 0" />
+				</colors>
+			</light>
+		</scene>
+		
+		<scene name="default">
+			<scene src="shared" />
+			<sprite origin="11 38" looping="true" texture="./wall_link.png" material="system/default.mats:proj-wall">
+				<frame time="100">0 0 21 41</frame>
+			</sprite>
+		</scene>
+
+	</scenes>
+</unit>

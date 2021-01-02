@@ -1,0 +1,102 @@
+<unit>
+	<behavior class="PlayerOwnedSummon">
+		<string name="team">player</string>
+	
+		<int name="hp">700</int>
+		<string name="type">construct</string>
+		
+		<int name="armor">30</int>
+		<int name="resistance">30</int>
+		
+		<int name="overhead-bossbar-width">16</int>
+		<int name="ttl">7500</int>
+		<float name="block-projectile-chance">0</float>
+		
+		<string name="gore">effects/gibs/gib_pyre.sval</string>
+		<string name="death-snd">event:/player/witch_hunter/pyre_death</string>
+		
+		<bool name="targeting">true</bool>
+		<bool name="targetable">true</bool>
+		<bool name="no-buffs">true</bool>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+		
+		<array name="skills">
+			<dict>
+				<string name="class">ConstantSoundSkill</string>
+				<bool name="only-walking">false</bool>
+				<string name="sound">event:/player/witch_hunter/pyre_loop</string>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<string name="buff">players/buffs.sval:pyre</string>
+				<bool name="friendly">false</bool>
+				<int name="freq">250</int>
+				<int name="range">60</int>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDamaged</string>
+				<int name="cooldown">100</int>
+
+				<dict name="action">
+					<string name="class">Explode</string>
+					<string name="fx">players/witch_hunter/pyre_blast.effect</string>
+					<float name="self-dmg">0</float>
+					<float name="team-dmg">0</float>
+					<int name="radius">32</int>
+					<float name="dist-scaling">1000</float>
+					
+					<array name="effects">
+						<dict>
+							<string name="class">Damage</string>
+							<int name="magical">120</int>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</array>
+		
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<collision static="true">
+				<circle offset="0 0" radius="4" />
+			</collision>
+			
+			<sprite origin="16 20" loopback="400" looping="true" texture="./pyre.png" material="system/default.mats:bright-noxray">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">0 0 32 32</frame>
+				<frame time="100">32 0 32 32</frame>
+				<frame time="100">64 0 32 32</frame>
+				<frame time="100">96 0 32 32</frame>
+				<frame time="100">0 32 32 32</frame>
+			</sprite>
+			<sprite origin="16 20" loopback="400" looping="true" texture="./pyre.png" material="system/default.mats:xray-ally">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">0 0 32 32</frame>
+				<frame time="100">32 0 32 32</frame>
+				<frame time="100">64 0 32 32</frame>
+				<frame time="100">96 0 32 32</frame>
+				<frame time="100">0 32 32 32</frame>
+			</sprite>
+			
+			<effect layer="1" src="./pyre.effect" />
+			
+			<!-- 
+			<shadow>
+				<sprite origin="0 8" texture="./pyre.png">
+					<frame>77 0 6 11</frame>
+				</sprite>
+			</shadow>		
+			<sprite layer="-10"origin="8 3" looping="true" texture="./pyre.png" material="system/default.mats:floor">
+				<frame>78 12 16 10</frame>
+			</sprite> -->
+		</scene>
+  </scenes>
+</unit>

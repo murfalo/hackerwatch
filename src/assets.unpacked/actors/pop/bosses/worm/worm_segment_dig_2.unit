@@ -1,0 +1,64 @@
+<unit slot="actor" save="false">
+	<behavior class="BossWormSegment">
+		<int name="ttl">9000</int>
+		<int name="move-dist">32</int>
+
+		<string name="type">beast</string>
+		<int name="hp">10000</int>
+		<int name="armor">1000</int>
+		<int name="resistance">1000</int>
+		
+		<bool name="no-buffs">true</bool>
+		<bool name="impenetrable">true</bool>
+		<bool name="targeting">false</bool>
+		
+		<bool name="crosshair-colors">false</bool>
+		<bool name="floating-hurt">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle"></string>
+		</dict>
+
+		<array name="skills">
+		</array>
+		
+		<dict name="effect-params" />
+	</behavior>
+	
+	<scenes default="1 2 3">
+		<scene name="shared">
+			<effect src="./dust.effect"/>
+			<effect delay="500" src="./dust.effect"/>
+			<effect delay="1000" src="./dust.effect"/>
+			<effect delay="1500" src="./dust.effect"/>
+			<!-- <effect delay="1280" src="./dust_big.effect"/> -->
+			
+			<collision static="true" nav-block="false">
+				<circle offset="0 0" radius="16" charge-through="false" ignore-non-player="true" />
+			</collision>
+		</scene>
+	
+		<scene name="1">
+			<scene src="shared" />
+			<sprite looping="false" origin="32 38" texture="./worm_segment.png" material="system/default.mats:default-noxray">
+				<frame time="8750">64 0 64 64</frame>
+				<frame time="250">0 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="2">
+			<scene src="shared" />
+			<sprite looping="false"  origin="32 38" texture="./worm_segment.png" material="system/default.mats:default-noxray">
+				<frame time="8750">64 64 64 64</frame>
+				<frame time="250">0 64 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="3">
+			<scene src="shared" />
+			<sprite looping="false"  origin="32 38" texture="./worm_segment.png" material="system/default.mats:default-noxray">
+				<frame time="8750">64 128 64 64</frame>
+				<frame time="250">0 128 64 64</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,91 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		%//<float name="speed">6</float>
+		<float name="speed-delta">0.45</float>
+		<float name="speed-delta-max">8</float>				
+		<int name="ttl">1150</int>
+		<int name="penetration">1000</int>
+
+		<array name="effects">
+
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:nerys-bleedingmana</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:nerys-bleeding</string>
+			</dict>			
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/pop/bosses/djinn/ice_troll_club_hit_red.effect</string>
+			</dict>
+		</array>
+		
+		<array name="miss-effects">
+<!--			<dict>
+				<string name="class">SpawnUnit</string>
+				<array name="units">
+					<int>1000</int><string>actors/pop/bosses/djinn/bomb_spawner.unit</string>
+				</array>
+			</dict>-->
+			<dict>
+				<string name="class">SpawnPrefab</string>
+				<string name="prefab">actors/pop/bosses/djinn/testfirewall_small.pfb</string>
+				<bool name="safe-spawn">false</bool>
+			</dict>			
+		</array>
+		
+			
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="9" projectile="true" />
+			</collision>	
+			<effect src="./teleport_round_small.effect" />
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="4" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="100 0 255 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="3" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="100 0 255 0" />
+				</colors>
+			</light> 			
+		</scene>				
+	</scenes>
+</unit>

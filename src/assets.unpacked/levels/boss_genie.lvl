@@ -1,0 +1,3071 @@
+<dict>
+	<array name="prefabs"><string>actors/pop/bosses/djinn/bomb.pfb</string><vec3>16 -16 0</vec3></array>
+	<array name="scripts">
+		<array><string>LevelStart</string><int>49</int><vec3>175 146 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>50</int>
+			<vec3>-24 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>51</int>
+			<vec3>432 208 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>075</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.75</float>
+			</dict>
+			<array><int>85</int><int>0</int><int>172</int><int>0</int><int>131</int><int>0</int><int>227</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>52</int>
+			<vec3>560 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>25</string>
+			<dict>
+				<string name="EventName">25</string>
+			</dict>
+			<array><int>203</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>53</int>
+			<vec3>432 80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>050</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>81</int><int>0</int><int>172</int><int>0</int><int>131</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>54</int>
+			<vec3>-28 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>55</int>
+			<vec3>16 -144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>dst normal</string>
+			<dict>
+				<array name="#Units">
+					<int>95</int>
+					<string>AllSpawned</string>
+					<int>74</int>
+					<string>AllSpawned</string>
+					<int>50</int>
+					<string>AllSpawned</string>
+					<int>67</int>
+					<string>AllSpawned</string>
+					<int>61</int>
+					<string>AllSpawned</string>
+					<int>109</int>
+					<string>AllSpawned</string>
+					<int>114</int>
+					<string>AllSpawned</string>
+					<int>59</int>
+					<string>AllSpawned</string>
+					<int>111</int>
+					<string>AllSpawned</string>
+					<int>73</int>
+					<string>AllSpawned</string>
+					<int>76</int>
+					<string>AllSpawned</string>
+					<int>96</int>
+					<string>AllSpawned</string>
+					<int>68</int>
+					<string>AllSpawned</string>
+					<int>63</int>
+					<string>AllSpawned</string>
+					<int>78</int>
+					<string>AllSpawned</string>
+					<int>54</int>
+					<string>AllSpawned</string>
+					<int>90</int>
+					<string>AllSpawned</string>
+					<int>110</int>
+					<string>AllSpawned</string>
+					<int>105</int>
+					<string>AllSpawned</string>
+					<int>106</int>
+					<string>AllSpawned</string>
+					<int>102</int>
+					<string>AllSpawned</string>
+					<int>70</int>
+					<string>AllSpawned</string>
+					<int>92</int>
+					<string>AllSpawned</string>
+					<int>56</int>
+					<string>AllSpawned</string>
+					<int>89</int>
+					<string>AllSpawned</string>
+					<int>84</int>
+					<string>AllSpawned</string>
+					<int>88</int>
+					<string>AllSpawned</string>
+					<int>113</int>
+					<string>AllSpawned</string>
+					<int>72</int>
+					<string>AllSpawned</string>
+					<int>100</int>
+					<string>AllSpawned</string>
+					<int>91</int>
+					<string>AllSpawned</string>
+					<int>65</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>56</int>
+			<vec3>-156 100 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>57</int>
+			<vec3>-480 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>58</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>58</int>
+			<vec3>-640 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<string name="Text">.meta.info.gatherparty.genie</string>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>59</int>
+			<vec3>216 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>60</int>
+			<vec3>-352 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>191</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>61</int>
+			<vec3>100 180 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>62</int>
+			<vec3>-464 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">dead</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>63</int>
+			<vec3>100 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>64</int>
+			<vec3>-80 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>heal</string>
+			<dict>
+				<string name="Flag">heal</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>69</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>65</int>
+			<vec3>168 136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>66</int>
+			<vec3>928 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<vec4 name="Color">1 0.501961 0 1</vec4>
+				<bool name="Override">t</bool>
+				<string name="Text">superheal anim</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>67</int>
+			<vec3>60 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>68</int>
+			<vec3>140 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>69</int>
+			<vec3>-80 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>172</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>70</int>
+			<vec3>-184 28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>71</int>
+			<vec3>-736 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<array name="Scripts"><int>190</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>72</int>
+			<vec3>-192 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>73</int>
+			<vec3>224 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>74</int>
+			<vec3>-68 180 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>75</int>
+			<vec3>16 -336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>destroy lamp</string>
+			<dict>
+				<array name="Units"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>76</int>
+			<vec3>220 -100 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>77</int>
+			<vec3>16 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Shooters Normal</string>
+			<dict>
+				<array name="LinkScripts">
+					<int>91</int>
+					<int>67</int>
+					<int>61</int>
+					<int>109</int>
+					<int>65</int>
+					<int>114</int>
+					<int>59</int>
+					<int>111</int>
+					<int>89</int>
+					<int>73</int>
+					<int>76</int>
+					<int>96</int>
+					<int>84</int>
+					<int>68</int>
+					<int>63</int>
+					<int>78</int>
+					<int>88</int>
+					<int>54</int>
+					<int>90</int>
+					<int>110</int>
+					<int>113</int>
+					<int>105</int>
+					<int>106</int>
+					<int>102</int>
+					<int>72</int>
+					<int>70</int>
+					<int>92</int>
+					<int>56</int>
+					<int>100</int>
+					<int>95</int>
+					<int>74</int>
+					<int>50</int>
+				</array>
+				<int name="TimeMax">678</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>78</int>
+			<vec3>56 -220 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>79</int>
+			<vec3>432 -176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>010</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.1</float>
+			</dict>
+			<array><int>82</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>80</int>
+			<vec3>432 -48 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>025</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.25</float>
+			</dict>
+			<array><int>52</int><int>0</int><int>172</int><int>0</int><int>131</int><int>0</int><int>101</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>81</int>
+			<vec3>560 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>50</string>
+			<dict>
+				<string name="EventName">50</string>
+			</dict>
+			<array><int>202</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>82</int>
+			<vec3>560 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10</string>
+			<dict>
+				<string name="EventName">10</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>83</int>
+			<vec3>-112 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<array name="Units"><int>17</int></array>
+				<string name="State">on</string>
+			</dict>
+			<array><int>141</int><int>0</int><int>231</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>84</int>
+			<vec3>168 -164 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>85</int>
+			<vec3>560 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>75</string>
+			<dict>
+				<string name="EventName">75</string>
+			</dict>
+			<array><int>201</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>86</int>
+			<vec3>120 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int></array>
+				<string name="State">on</string>
+			</dict>
+			<array><int>198</int><int>0</int><int>235</int><int>250</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>87</int>
+			<vec3>16 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/djinn.unit</string>
+			</dict>
+			<array><int>93</int><int>0</int><int>75</int><int>0</int><int>83</int><int>0</int><int>77</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>88</int>
+			<vec3>16 -228 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>89</int>
+			<vec3>228 -12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>90</int>
+			<vec3>-68 -208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>91</int>
+			<vec3>20 196 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>92</int>
+			<vec3>-176 68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>93</int>
+			<vec3>-192 -240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>87</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>186</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>94</int>
+			<vec3>-128 736 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">1</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>95</int>
+			<vec3>-104 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>96</int>
+			<vec3>196 -136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>97</int>
+			<vec3>-416 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>58</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>98</int>
+			<vec3>440 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>99</int>
+			<vec3>-512 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>176</int><int>0</int><int>57</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>100</int>
+			<vec3>-136 132 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>101</int>
+			<vec3>352 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Flag">arc_stage3</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>102</int>
+			<vec3>-188 -60 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>103</int>
+			<vec3>992 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>171</int><int>192</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>104</int>
+			<vec3>1088 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>142</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>105</int>
+			<vec3>-156 -132 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>106</int>
+			<vec3>-176 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>107</int>
+			<vec3>-464 -12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+			</dict>
+			<array>
+				<int>108</int>
+				<int>6000</int>
+				<int>62</int>
+				<int>0</int>
+				<int>115</int>
+				<int>3170</int>
+				<int>55</int>
+				<int>0</int>
+				<int>185</int>
+				<int>3170</int>
+				<int>197</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>OpenInterface</string>
+			<int>108</int>
+			<vec3>-560 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EndOfBeta</string>
+			<dict>
+				<bool name="MakeRoot">t</bool>
+				<string name="Class">EndOfGame</string>
+				<string name="Filename">gui/endofgamepop.gui</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>109</int>
+			<vec3>132 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>110</int>
+			<vec3>-100 -188 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>111</int>
+			<vec3>220 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>112</int>
+			<vec3>1088 736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>170</int></array>
+			</dict>
+			<array><int>104</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>113</int>
+			<vec3>-128 -164 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>114</int>
+			<vec3>196 104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/djinn/tower_pyramid_laser_drain.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>115</int>
+			<vec3>-464 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>storm off</string>
+			<dict>
+				<array name="Units"><int>17</int></array>
+				<bool name="ResetTime">f</bool>
+				<string name="State">off</string>
+			</dict>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>116</int>
+			<vec3>960 608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>75</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<float name="AmountFactor">0.01</float>
+				<int name="Amount">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>117</int>
+			<vec3>1152 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>superhealstop</string>
+			<dict>
+				<string name="EventName">superhealstop</string>
+			</dict>
+			<array>
+				<int>122</int>
+				<int>1000</int>
+				<int>129</int>
+				<int>2000</int>
+				<int>119</int>
+				<int>0</int>
+				<int>121</int>
+				<int>0</int>
+				<int>77</int>
+				<int>0</int>
+				<int>208</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckActorHealth</string>
+			<int>118</int>
+			<vec3>1104 112 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>100</string>
+			<dict>
+				<array name="#Actors"><int>87</int><string>AllSpawned</string></array>
+				<array name="OnTrue"><int>133</int></array>
+				<int name="Function">3</int>
+				<float name="Value">1</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>119</int>
+			<vec3>1232 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>151</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>120</int>
+			<vec3>960 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>151</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>121</int>
+			<vec3>1232 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>170</int><int>171</int><int>130</int><int>192</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>122</int>
+			<vec3>1152 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<bool name="CanKill">f</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/pop/bosses/djinn/buffs.sval:cancel</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>123</int>
+			<vec3>960 800 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">hp75</string>
+			</dict>
+			<array><int>147</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>124</int>
+			<vec3>64 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>blink</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">blink</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>125</int>
+			<vec3>16 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>skills</string>
+			<array>
+				<int>124</int>
+				<int>0</int>
+				<int>126</int>
+				<int>0</int>
+				<int>127</int>
+				<int>0</int>
+				<int>128</int>
+				<int>0</int>
+				<int>64</int>
+				<int>0</int>
+				<int>204</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>126</int>
+			<vec3>-80 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>whirl</string>
+			<dict>
+				<string name="Flag">whirl</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>127</int>
+			<vec3>-32 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>arc</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">arc</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>128</int>
+			<vec3>-80 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sword</string>
+			<dict>
+				<string name="Flag">sword</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>129</int>
+			<vec3>1072 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>169</int><int>172</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>130</int>
+			<vec3>944 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">500</int>
+			</dict>
+			<array><int>118</int><int>0</int><int>199</int><int>0</int><int>200</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>131</int>
+			<vec3>848 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>130</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>132</int>
+			<vec3>1296 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<vec4 name="Color">1 0.964706 0 1</vec4>
+				<bool name="Override">t</bool>
+				<string name="Text">superheal complete</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>133</int>
+			<vec3>1216 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>healed</string>
+			<dict>
+				<string name="EventName">healed</string>
+			</dict>
+			<array><int>132</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>134</int>
+			<vec3>1256 464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">bomb-frequent</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>135</int>
+			<vec3>-960 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>230</int><int>0</int><int>233</int><int>0</int><int>207</int><int>5000</int><int>206</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>136</int>
+			<vec3>0 736 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">2+</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitSceneChangedTrigger</string>
+			<int>137</int>
+			<vec3>536 376 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="TextFilterType">4</int>
+				<string name="TextFilter">blink-exit</string>
+			</dict>
+			<array><int>138</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>138</int>
+			<vec3>440 376 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitSceneChangedTrigger</string>
+			<int>139</int>
+			<vec3>536 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="TextFilterType">4</int>
+				<string name="TextFilter">testblinksword</string>
+			</dict>
+			<array><int>98</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckUnitType</string>
+			<int>140</int>
+			<vec3>336 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>orcBlasterSub</string>
+			<dict>
+				<array name="OnEqual"><int>181</int></array>
+				<string name="UnitType">actors/pop/djinn_ranged.unit</string>
+				<array name="#Units"><int>180</int><string>LastExited</string></array>
+				<int name="Type">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>141</int>
+			<vec3>-112 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_genie</string>
+			</dict>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>142</int>
+			<vec3>1024 608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>50</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<float name="AmountFactor">0.005</float>
+				<int name="Amount">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>143</int>
+			<vec3>1088 800 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">hp25</string>
+			</dict>
+			<array><int>112</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>144</int>
+			<vec3>-224 560 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Flag">stopspawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>145</int>
+			<vec3>128 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>add</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>149</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>146</int>
+			<vec3>128 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+				<int name="Filter">4</int>
+			</dict>
+			<array><int>148</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>147</int>
+			<vec3>960 736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>116</int></array>
+			</dict>
+			<array><int>120</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckUnitType</string>
+			<int>148</int>
+			<vec3>128 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>orcBlasterAdd</string>
+			<dict>
+				<array name="OnEqual"><int>145</int></array>
+				<string name="UnitType">actors/pop/djinn_melee.unit</string>
+				<array name="#Units"><int>146</int><string>LastEntered</string></array>
+				<int name="Type">1</int>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>149</int><vec3>40 528 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>enemyCount</string></array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>150</int>
+			<vec3>1024 800 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">hp50</string>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>151</int>
+			<vec3>896 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>100</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<float name="AmountFactor">0.005</float>
+				<int name="Amount">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>152</int>
+			<vec3>192 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+				<int name="Filter">4</int>
+				<int name="Event">2</int>
+			</dict>
+			<array><int>165</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>153</int>
+			<vec3>-128 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>156</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>154</int>
+			<vec3>0 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>155</int>
+			<vec3>1024 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>116</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>156</int>
+			<vec3>-64 496 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SP</string>
+			<dict>
+				<array name="OnTrue"><int>160</int></array>
+				<array name="Variable"><int>149</int></array>
+				<array name="OnFalse"><int>161</int></array>
+				<int name="Function">4</int>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>157</int>
+			<vec3>-376 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>158</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDamagedTrigger</string>
+			<int>158</int>
+			<vec3>-376 -296 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>164</int><int>0</int><int>157</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>159</int>
+			<vec3>-224 496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Flag">stopspawn</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>160</int>
+			<vec3>-160 496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>t</string>
+			<array><int>159</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>161</int>
+			<vec3>-160 560 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>f</string>
+			<array><int>144</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>162</int>
+			<vec3>1024 736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>142</int></array>
+			</dict>
+			<array><int>155</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>163</int>
+			<vec3>192 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subtract</string>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>149</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>164</int>
+			<vec3>-472 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckUnitType</string>
+			<int>165</int>
+			<vec3>192 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>orcBlasterSub</string>
+			<dict>
+				<array name="OnEqual"><int>163</int></array>
+				<string name="UnitType">actors/pop/djinn_melee.unit</string>
+				<array name="#Units"><int>152</int><string>LastExited</string></array>
+				<int name="Type">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>166</int>
+			<vec3>-64 560 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Coop</string>
+			<dict>
+				<array name="OnTrue"><int>160</int></array>
+				<array name="Variable"><int>149</int></array>
+				<array name="OnFalse"><int>161</int></array>
+				<int name="Function">4</int>
+				<int name="Value">6</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>167</int>
+			<vec3>-64 736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnFalse"><int>94</int><int>153</int></array>
+				<array name="OnTrue"><int>136</int><int>154</int></array>
+				<int name="Value">2</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>168</int>
+			<vec3>-64 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>167</int><int>100</int></array>
+		</array>
+		<array>
+			<string>UnitSceneChangedTrigger</string>
+			<int>169</int>
+			<vec3>992 384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="TextFilterType">4</int>
+				<string name="TextFilter">superheal</string>
+			</dict>
+			<array><int>103</int><int>0</int><int>66</int><int>0</int><int>55</int><int>0</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>170</int>
+			<vec3>1088 608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>25</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<float name="AmountFactor">0.0025</float>
+				<int name="Amount">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>171</int>
+			<vec3>992 512 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">250</int>
+			</dict>
+			<array><int>170</int><int>0</int><int>142</int><int>0</int><int>116</int><int>0</int><int>151</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>172</int>
+			<vec3>992 320 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Flag">superheal</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>173</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>173</int>
+			<vec3>928 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<vec4 name="Color">0.490196 0.941176 0.788235 1</vec4>
+				<string name="Text">superheal flag</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>174</int>
+			<vec3>-384 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>97</int><int>0</int><int>60</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>175</int>
+			<vec3>-448 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>8</int></array>
+				<array name="OnAllEntered"><int>174</int></array>
+				<array name="OnCanceled"><int>99</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>176</int>
+			<vec3>-544 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>191</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>177</int>
+			<vec3>272 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>add</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>149</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>178</int>
+			<vec3>272 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+				<int name="Filter">4</int>
+			</dict>
+			<array><int>179</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckUnitType</string>
+			<int>179</int>
+			<vec3>272 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>orcBlasterAdd</string>
+			<dict>
+				<array name="OnEqual"><int>177</int></array>
+				<string name="UnitType">actors/pop/djinn_ranged.unit</string>
+				<array name="#Units"><int>178</int><string>LastEntered</string></array>
+				<int name="Type">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>180</int>
+			<vec3>336 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+				<int name="Event">2</int>
+				<int name="Filter">4</int>
+			</dict>
+			<array><int>140</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>181</int>
+			<vec3>336 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subtract</string>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>149</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>182</int>
+			<vec3>176 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>off</string>
+			<dict>
+				<array name="Units">
+					<int>47</int>
+					<int>41</int>
+					<int>38</int>
+					<int>46</int>
+					<int>40</int>
+					<int>44</int>
+					<int>36</int>
+					<int>45</int>
+					<int>48</int>
+					<int>39</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>183</int>
+			<vec3>184 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<array name="Units">
+					<int>47</int>
+					<int>41</int>
+					<int>38</int>
+					<int>46</int>
+					<int>39</int>
+					<int>48</int>
+					<int>45</int>
+					<int>36</int>
+					<int>44</int>
+					<int>40</int>
+				</array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>184</int>
+			<vec3>128 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<array name="Units"><int>42</int><int>43</int><int>37</int></array>
+			</dict>
+			<array><int>183</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>185</int>
+			<vec3>128 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<array name="Units"><int>42</int><int>43</int><int>37</int></array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>183</int><int>0</int><int>182</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>186</int>
+			<vec3>-368 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>south path collision</string>
+			<dict>
+				<array name="Units"><int>9</int></array>
+				<int name="State">1</int>
+			</dict>
+			<array><int>188</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>187</int>
+			<vec3>-368 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>south lock</string>
+			<dict>
+				<array name="Units"><int>11</int><int>2</int></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>188</int>
+			<vec3>-368 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>south lock</string>
+			<dict>
+				<array name="Units"><int>11</int><int>2</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>189</int>
+			<vec3>-80 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>86</int><int>0</int><int>87</int><int>1500</int></array>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>190</int>
+			<vec3>-640 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>StartBoss</string>
+			<dict>
+				<array name="Areas"><int>7</int></array>
+			</dict>
+			<array><int>191</int><int>0</int><int>58</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>191</int>
+			<vec3>-640 280 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>start</string>
+			<array><int>71</int><int>0</int><int>189</int><int>0</int><int>184</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>192</int>
+			<vec3>1152 464 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>bomb</string>
+			<dict>
+				<int name="Frequency">250</int>
+			</dict>
+			<array><int>134</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>193</int>
+			<vec3>384 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss9_killed</string>
+			<dict>
+				<string name="Flag">boss9_killed</string>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>194</int>
+			<vec3>448 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetStat</string>
+			<int>195</int>
+			<vec3>320 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="ValueInt">1</int>
+				<int name="ActionType">1</int>
+				<string name="Name">boss-9-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetBossKilled</string>
+			<int>196</int>
+			<vec3>256 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="BossNumber">9</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>197</int>
+			<vec3>352 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>BossKilled</string>
+			<array>
+				<int>196</int>
+				<int>0</int>
+				<int>195</int>
+				<int>0</int>
+				<int>193</int>
+				<int>0</int>
+				<int>194</int>
+				<int>0</int>
+				<int>236</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>198</int>
+			<vec3>16 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/boss_genie/spawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckActorHealth</string>
+			<int>199</int>
+			<vec3>1104 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>75</string>
+			<dict>
+				<array name="#Actors"><int>87</int><string>AllSpawned</string></array>
+				<array name="OnTrue"><int>133</int></array>
+				<int name="Function">3</int>
+				<float name="Value">0.75</float>
+			</dict>
+		</array>
+		<array>
+			<string>CheckActorHealth</string>
+			<int>200</int>
+			<vec3>1104 -16 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>50</string>
+			<dict>
+				<array name="#Actors"><int>87</int><string>AllSpawned</string></array>
+				<array name="OnTrue"><int>133</int></array>
+				<int name="Function">3</int>
+				<float name="Value">0.5</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>201</int>
+			<vec3>640 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>118</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>202</int>
+			<vec3>640 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>199</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>203</int>
+			<vec3>640 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>200</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>204</int>
+			<vec3>-32 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>support</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">support</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>205</int>
+			<vec3>-1056 -320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">60000</int>
+			</dict>
+			<array><int>135</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>206</int>
+			<vec3>-960 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<vec4 name="Color">0.878431 0 1 1</vec4>
+				<string name="Text">frequent</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>207</int>
+			<vec3>-960 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>232</int><int>0</int><int>231</int><int>0</int><int>228</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>208</int>
+			<vec3>1328 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Variables"><int>209</int></array>
+				<int name="Value">1</int>
+				<int name="Function">2</int>
+			</dict>
+			<array><int>210</int><int>0</int><int>211</int><int>0</int><int>212</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>209</int><vec3>1424 384 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>CheckVariables</string>
+			<int>210</int>
+			<vec3>1536 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>213</int></array>
+				<array name="Variable"><int>209</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>211</int>
+			<vec3>1536 336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>214</int></array>
+				<array name="Variable"><int>209</int></array>
+				<int name="Value">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>212</int>
+			<vec3>1536 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>215</int></array>
+				<array name="Variable"><int>209</int></array>
+				<int name="Value">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>213</int>
+			<vec3>1616 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">heal1</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>214</int>
+			<vec3>1616 336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Flag">heal2</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>215</int>
+			<vec3>1616 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">heal3</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>216</int>
+			<vec3>432 272 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>080</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.8</float>
+			</dict>
+			<array><int>217</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>217</int>
+			<vec3>496 272 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<vec4 name="Color">1 1 1 1</vec4>
+				<bool name="Override">t</bool>
+				<string name="Text">80</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>218</int>
+			<vec3>432 144 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>060</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.6</float>
+			</dict>
+			<array><int>219</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>219</int>
+			<vec3>496 144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<vec4 name="Color">1 1 1 1</vec4>
+				<bool name="Override">t</bool>
+				<string name="Text">60</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>220</int>
+			<vec3>432 16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>040</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.4</float>
+			</dict>
+			<array><int>221</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>221</int>
+			<vec3>496 16 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<vec4 name="Color">1 1 1 1</vec4>
+				<bool name="Override">t</bool>
+				<string name="Text">40</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>222</int>
+			<vec3>432 -112 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>020</string>
+			<dict>
+				<array name="#Units"><int>87</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.2</float>
+			</dict>
+			<array><int>223</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>223</int>
+			<vec3>496 -112 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<vec4 name="Color">1 1 1 1</vec4>
+				<bool name="Override">t</bool>
+				<string name="Text">20</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>224</int>
+			<vec3>-672 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bomb</string>
+			<dict>
+				<int name="Frequency">2000</int>
+			</dict>
+			<array><int>225</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>225</int>
+			<vec3>-592 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">bomb-less</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>226</int>
+			<vec3>-592 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">bomb-frequent</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>227</int>
+			<vec3>352 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">arc_stage2</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>228</int>
+			<vec3>-960 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<vec4 name="Color">0.878431 0 1 1</vec4>
+				<string name="Text">less</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>229</int>
+			<vec3>-672 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bomb</string>
+			<dict>
+				<int name="Frequency">100</int>
+			</dict>
+			<array><int>226</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>230</int>
+			<vec3>-784 -400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>229</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>231</int>
+			<vec3>-784 -304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>224</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>232</int>
+			<vec3>-784 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>229</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>233</int>
+			<vec3>-784 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>224</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>234</int>
+			<vec3>-88 104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/genie</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>235</int>
+			<vec3>16 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Path">effects/gibs/gib_lamp.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>236</int>
+			<vec3>384 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>player immortality</string>
+			<dict>
+				<array name="#Units"><int>237</int><string>AllInside</string></array>
+				<bool name="CanKill">f</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">players/buffs.sval:immortality</string>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>237</int>
+			<vec3>384 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="doodads/terrain/desert_patch_small.unit"><vec2>-37 18</vec2><int>14</int><vec2>-70 -84</vec2><int>15</int><vec2>-86 -21</vec2><int>16</int></array>
+		<array name="doodads/terrain/desert_patch.unit">
+			<array>
+				<vec2>95 79</vec2>
+				<int>19</int>
+				<dict>
+					<int name="layer">-36</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-61 -126</vec2>
+				<int>20</int>
+				<dict>
+					<int name="layer">-36</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-106 -50</vec2>
+				<int>18</int>
+				<dict>
+					<int name="layer">-36</int>
+				</dict>
+			</array>
+		</array>
+		<array name="system/light_L.png">
+			<array>
+				<vec2>-80 -96</vec2>
+				<int>41</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0423114 0.0144438 0.0144438 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -48</vec2>
+				<int>42</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.184475 0.132868 0.0722719 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-80 -96</vec2>
+				<int>43</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.184475 0.132868 0.0722719 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-3 248</vec2>
+				<int>44</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.274677 0.00518152 0.00560539 0.0666667</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-296 -79</vec2>
+				<int>45</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.274677 0.00518152 0.00560539 0.0666667</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>322 -91</vec2>
+				<int>46</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.274677 0.00518152 0.00560539 0.0666667</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-32 64</vec2>
+				<int>47</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.017642 0.00477695 0.00477695 0.0313726</vec4>
+					<float name="size">400</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 -296</vec2>
+				<int>48</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.274677 0.00518152 0.00560539 0.0666667</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-237 135</vec2>
+				<int>36</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.274677 0.00518152 0.00560539 0.0666667</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-32 64</vec2>
+				<int>37</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.119538 0.0781874 0.031896 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -48</vec2>
+				<int>38</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0528607 0.0168074 0.0168074 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>167 -298</vec2>
+				<int>39</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.274677 0.00518152 0.00560539 0.0666667</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>234 138</vec2>
+				<int>40</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.274677 0.00518152 0.00560539 0.0666667</vec4>
+					<float name="size">600</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/_ledge_black_512.unit">
+			<vec2>528 -536</vec2>
+			<int>24</int>
+			<vec2>-1008 504</vec2>
+			<int>25</int>
+			<vec2>-1008 -8</vec2>
+			<int>26</int>
+			<vec2>528 360</vec2>
+			<int>27</int>
+			<vec2>-824 1008</vec2>
+			<int>28</int>
+			<vec2>528 -152</vec2>
+			<int>21</int>
+			<vec2>-496 -528</vec2>
+			<int>30</int>
+			<vec2>-1008 -520</vec2>
+			<int>31</int>
+			<array>
+				<vec2>200 872</vec2>
+				<int>22</int>
+				<dict>
+					<int name="layer">-40</int>
+				</dict>
+			</array>
+			<vec2>16 -528</vec2>
+			<int>23</int>
+			<vec2>-312 1008</vec2>
+			<int>29</int>
+		</array>
+		<array name="actors/pop/bosses/djinn/djinn_lamp.unit"><vec2>16 -16</vec2><int>6</int></array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>792 -32</vec2>
+				<int>1</int>
+				<dict>
+					<vec2 name="size">1024 1536</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 472</vec2>
+				<int>2</int>
+				<dict>
+					<vec2 name="size">560 528</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-792 -32</vec2>
+				<int>3</int>
+				<dict>
+					<vec2 name="size">1024 1536</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -536</vec2>
+				<int>4</int>
+				<dict>
+					<vec2 name="size">560 528</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 32</vec2>
+				<int>5</int>
+				<dict>
+					<vec2 name="size">512 512</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_genie_storm.unit">
+			<array>
+				<vec2>16 -16</vec2>
+				<int>17</int>
+				<dict>
+					<string name="start">disable</string>
+				</dict>
+			</array>
+		</array>
+		<array name="gui/fonts/font_arial14.fnt">
+			<array>
+				<vec2>-464 -160</vec2>
+				<int>35</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">f</bool>
+					<int name="layer">1000</int>
+					<string name="text">Death instance</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 -712</vec2>
+				<int>34</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">f</bool>
+					<int name="layer">1000</int>
+					<string name="text">Regular</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 -616</vec2>
+				<int>32</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">f</bool>
+					<int name="layer">1000</int>
+					<string name="text">Ultimate</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 -520</vec2>
+				<int>33</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">f</bool>
+					<int name="layer">1000</int>
+					<string name="text">Special</string>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>16 -16</vec2>
+				<int>7</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">24</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -16</vec2>
+				<int>8</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">120</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Freeform">
+			<array>
+				<vec2>16 -16</vec2>
+				<int>9</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points">
+						<vec2>-176 0</vec2>
+						<vec2>-176 16</vec2>
+						<vec2>-172 39</vec2>
+						<vec2>-218 50</vec2>
+						<vec2>-202 99</vec2>
+						<vec2>-158 166</vec2>
+						<vec2>-91 219</vec2>
+						<vec2>-18 244</vec2>
+						<vec2>30 249</vec2>
+						<vec2>94 237</vec2>
+						<vec2>144 211</vec2>
+						<vec2>179 177</vec2>
+						<vec2>194 153</vec2>
+						<vec2>153 130</vec2>
+						<vec2>152 88</vec2>
+						<vec2>168 56</vec2>
+						<vec2>176 16</vec2>
+						<vec2>176 0</vec2>
+						<vec2>264 0</vec2>
+						<vec2>264 320</vec2>
+						<vec2>-296 320</vec2>
+						<vec2>-296 0</vec2>
+					</array>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -16</vec2>
+				<int>10</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points">
+						<vec2>264 -256</vec2>
+						<vec2>264 0</vec2>
+						<vec2>176 0</vec2>
+						<vec2>176 -16</vec2>
+						<vec2>168 -48</vec2>
+						<vec2>152 -88</vec2>
+						<vec2>136 -112</vec2>
+						<vec2>112 -136</vec2>
+						<vec2>72 -160</vec2>
+						<vec2>48 -168</vec2>
+						<vec2>16 -176</vec2>
+						<vec2>0 -176</vec2>
+						<vec2>-16 -176</vec2>
+						<vec2>-48 -168</vec2>
+						<vec2>-72 -160</vec2>
+						<vec2>-112 -136</vec2>
+						<vec2>-136 -112</vec2>
+						<vec2>-152 -88</vec2>
+						<vec2>-168 -48</vec2>
+						<vec2>-176 -16</vec2>
+						<vec2>-176 0</vec2>
+						<vec2>-296 0</vec2>
+						<vec2>-296 -256</vec2>
+					</array>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -16</vec2>
+				<int>11</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points">
+						<vec2>-176 0</vec2>
+						<vec2>-176 16</vec2>
+						<vec2>-168 56</vec2>
+						<vec2>-152 88</vec2>
+						<vec2>-120 128</vec2>
+						<vec2>-72 160</vec2>
+						<vec2>-16 176</vec2>
+						<vec2>0 176</vec2>
+						<vec2>16 176</vec2>
+						<vec2>72 160</vec2>
+						<vec2>120 128</vec2>
+						<vec2>152 88</vec2>
+						<vec2>168 56</vec2>
+						<vec2>176 16</vec2>
+						<vec2>176 0</vec2>
+						<vec2>264 0</vec2>
+						<vec2>264 224</vec2>
+						<vec2>-296 224</vec2>
+						<vec2>-296 0</vec2>
+					</array>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>40 120</vec2>
+				<int>12</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points">
+						<vec2>-149 -13</vec2>
+						<vec2>-107 19</vec2>
+						<vec2>-67 36</vec2>
+						<vec2>-9 39</vec2>
+						<vec2>32 31</vec2>
+						<vec2>78 9</vec2>
+						<vec2>110 -22</vec2>
+						<vec2>128 -48</vec2>
+						<vec2>129 -6</vec2>
+						<vec2>116 12</vec2>
+						<vec2>94 35</vec2>
+						<vec2>65 53</vec2>
+						<vec2>22 65</vec2>
+						<vec2>-37 63</vec2>
+						<vec2>-89 44</vec2>
+						<vec2>-124 19</vec2>
+						<vec2>-147 -4</vec2>
+						<vec2>-160 -19</vec2>
+					</array>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_genie_room.unit"><vec2>16 -16</vec2><int>13</int></array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/prison_3.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="LevelName">.level.boss.nerys</string>
+		<string name="LevelNameShort">.level.boss.nerys.short</string>
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2e25036e00000000000000000000000000000000000000000000457c4b091957435c660f74513c4d00000000000000000000000000000000711a3b587c075715796173245f731e2c4462000000000000000000000000614a374d4907154e4b27153b116340642d4a5e2a3a090000000000000000000d095c6311466263462b674d1b7304104723461c47721936580000000000005e57122e304642794b0a71285324697320356622486c2d0f435e3100000000527c6a3e70171a66615e3b7e244c6328341233032b41595b191528095e00</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000063792f205b4800000000000000000000000000000000000000005a235a510d2545641f682013370d1857000000000000000000000000006a474e200869011b144b4f7b6557374d42014f550600000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b0000000000000000000000000000000000000000000000000000000000001576000000000000000000000000000000000000000000000000000000000000784c00000000000000000000000000000000000000000000000000000000001c747600000000000000000000000000000000000000000000000000000000007d2e730000000000000000000000000000000000000000000000000000000000727c7d000000000000000000000000000000000000000000000000000000000279027e00000000000000000000000000000000000000000000000000000000671b0a7a00000000000000000000000000000000000000000000000000000000772b282a00000000000000000000000000000000000000000000000000000000681b542100000000000000000000000000000000000000000000000000000000627e417c00000000000000000000000000000000000000000000000000000000012921180000000000000000000000000000000000000000000000000000000016661968000000000000000000000000000000000000000000000000000000006e744f7c00000000000000000000000000000000000000000000000000000000311c114f000000000000000000000000000000000000000000000000000000003f404c090000000000000000000000000000000000000000000000000000000055234461000000000000000000000000000000000000000000000000000000003b434a7b00000000000000000000000000000000000000000000000000000000000925750000000000000000000000000000000000000000000000000000000000551703000000000000000000000000000000000000000000000000000000000023607b0000000000000000000000000000000000000000000000000000000000001b4f0000000000000000000000000000000000000000000000000000000000003345000000000000000000000000000000000000000000000000000000000000005d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b0000000000000000000000000000000000000000000000000000000000000067000000000000000000000000000000000000000000000000000000000000114d00000000000000000000000000000000000000000000000000000000000039660000000000000000000000000000000000000000000000000000000000001e1d00000000000000000000000000000000000000000000000000000000000002550000000000000000000000000000000000000000000000000000000000006a460000000000000000000000000000000000000000000000000000000000002a660000000000000000000000000000000000000000000000000000000000006d4a00000000000000000000000000000000000000000000000000000000000058550000000000000000000000000000000000000000000000000000000000001b0f0000000000000000000000000000000000000000000000000000000000001c24000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">001f024f02637a427e5213180f27627a5d764d250478554005115a0369742d5c644602750254424b300b7b1f14726e0851525a205664583a417161217029324b082d0f734328097e040b312d635a575b26664d34055b54704f2d245c500f39320d0b02671b6a237229684302471a65496051395d42323a113870012e430166545a381c5d720a092e433d6332715c0e4d562f575643222a3c353c5e135a65345539037c794119423915061b733f503b0856462507481c3733654e594e616731652c6c1e76753045192a136d5f1f7d471e602d03481f7a6c6a5948193e4d1902546b772741500c3125753b075c1633410e0e40046d435a2d2c2c797043546e171f1b6366692f723a6b3d240d663014690a3b2e5e73495b2a5e7506510978590f46135809051074112e565234210429756e446d3f3f5c3733701b56675b27220f2d6440195b6f6859121d4837130308271f466213217c69776c052a2c1a22154e185d05356810471d5e166f1e0f3d2a0d4c227d0c365b5414250d047e39786c23506b52547c044b4d523a12420c264349163d2b06335b454f2d30545c522470753130627d4b192f6e7864324f6a3b381b39170b2263780e261906725846047a7b30142b7c6a7e78691c4e15440b2c69514d442e191a11483e762243310254311769691e227a4e594b3e5e177e3768146d027c7604201a4113573a766322356222635a51472727565a3d49382f35101c086d19413f4b73336d62055c2f723517483d656d64443038690a2e4f71642e5e03721d67650749374d2d0521282f4573087829752a1a6e50681f644c02535326453760480228467254661d5f39093e170c32104a3d0f350e3a05372b62547a450d3c1c2e2651250b25110707526470523c5c7c43776312525e68547d3f5f254a273b5e5650561e02662e0e0759660922750c1e72653c5c7b23037e130c4a3e414b500a13051b4f3a22481903115350053060046e154b5d7b112e0f4f5f1e3d33761b426d5f32101e6b39200377174d1671097667285e1b383b75491b3c0717362755624813175d197814056b3d3e4d3b39134240555e1c35106278157a28067d4131602d6e73104d440204351f22103d5c10380e58566a257972387e51124d106c094256716e1e015a154004153e29611a322c7d03645d56326842065f6a6667670b686c60263a6f6f2e306d214641023e1a061d2c0b3b10034850432b5a12241c5c41081d2e4e35561e6c542d78336a591d000e2341230c5c4113780e6078131d5b6e3076624c034d0f1d702c5c662f1a0000002e755f545d223b28405e2956365e332f31227c4e344c311c485e4c1a0000000000002c06236d764f20707953155202083d575211125e1b6a564d6900000000000000001010466630606f1868056e07647a0e125e4e4a5359215f00000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000543b3d177b446a0a577727756416516149411b445d27182a1300000000006f315c013212706e3b375e6602773f435c632c771c380c7266792668000000652c6f0677095b197a095c4b513c7e3f19581237787822632a3d7c631544002912053e4a465d243a65622a3a6f59164e24173b3b0c2a7164250e491d277a620e3f0c5e3d40142e6b3a452f435b4b21682d6e2367216c6224382416386701040e1b482e5e4b20713b0677782d7d711f763a0b196952197123660f700b754e04251f716e2e212c195d2a0e0d270c6d10615f451146722a4538337054485b466b3c047d111b6a4f200f05020d476d050d1357376e051d636a546045756d7564136f365e673d4b7577385b395b3f2b6f26333a0c5b4753230d6456277e776d795e363b48565357736c25031d1673764b134a37671c5b25510d7263215e435a6102560a6f75415951292e5523782b68715a061b23265e0e2c216f2a206e323e7a1b0b450842583e1d16702418714c660e62213b58271a015e09110b6f3d375411522933674a0f181c254f366753505c3350303e2a390a7d0d7377661a49702853013b057c19597775071d12466c08503e0d650d4607715f6e785d38353a7b2a4569725f427c1d1c6e42341a5e422d2e235366170150687d4b18433e2204106f13261d3308321f160f5171587d2a155867695a420f6361291e0a53775f113018612e286e27551b6f073a763b22493d566d275a107b2d0624313a7e4a5f5b2c3422425a3d713b1b461476683d412c6230585955593e776559695a06142048192a050b443e2f575e695f1f524758354d4a653e0a380a605d546e784564203a5a4c0b43257c1c6a4501752d72594c4c550575153b481f2f1f1739304c112d45566b165f25337e1f350a01504a154c664b1c2f537117115841283d037259260b3202083a4c213715204b240e31464357757a611f776576303b16742e045d28187c334f672f0b4e06241c222a0d79211f595472474e2973765a1e04447a387a3e244114005b3c462b3674127005347b275d5d6902585360544269464b455770507a3f120000604c3f717d1415201d3a1a501873097004496c435b4c0e227040075d73440000005a2442470e4c7573095a2b055b18547b62640d17133e3f3b2f046d220d0000005a1812321f10203d14342725382c406958094c1e43151f50125b21747700000000615f5a36796d52751d4b0b735451123d0e5d612a2d4d382b38215a000000000000002b0d76440d78333757650d176a22724978462f5f6c13116f0000000000000000007e2b324c562d40297c60176f75653440574c766e086e00000000000000000000001f4667492d0b282b540575447b5b133d5a1641000000000000000000000000000000555b5f596b684262055a6652360d2e00000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000003a000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000000c350000000000000000000000000000000000000000000000000000000000007c0b33000000000000000000000000000000000000000000000000000000000020140a0000000000000000000000000000000000000000000000000000000000365f42560000000000000000000000000000000000000000000000000000000019354e380000000000000000000000000000000000000000000000000000000043711e220000000000000000000000000000000000000000000000000000000018357a46000000000000000000000000000000000000000000000000000000003c43253a25000000000000000000000000000000000000000000000000000000722f43192b0000000000000000000000000000000000000000000000000000006a451c16010000000000000000000000000000000000000000000000000000003b1f04132b0000000000000000000000000000000000000000000000000000002c261457690000000000000000000000000000000000000000000000000000001874134a2e0000000000000000000000000000000000000000000000000000004745125d44000000000000000000000000000000000000000000000000000000524e12512a000000000000000000000000000000000000000000000000000000033f271f58000000000000000000000000000000000000000000000000000000761a3319000000000000000000000000000000000000000000000000000000001f28081e00000000000000000000000000000000000000000000000000000000017a646b00000000000000000000000000000000000000000000000000000000524f5b00000000000000000000000000000000000000000000000000000000001c010400000000000000000000000000000000000000000000000000000000000c42000000000000000000000000000000000000000000000000000000000000170d000000000000000000000000000000000000000000000000000000000000540000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000007800000000000000000000000000000000000000000000000000000000000000492f00000000000000000000000000000000000000000000000000000000000070035f0000000000000000000000000000000000000000000000000000000000140c6600000000000000000000000000000000000000000000000000000000007761236d00000000000000000000000000000000000000000000000000000000317b0d43000000000000000000000000000000000000000000000000000000000d184b2c00000000000000000000000000000000000000000000000000000000756839167d0000000000000000000000000000000000000000000000000000007d3c063251000000000000000000000000000000000000000000000000000000113d08121700000000000000000000000000000000000000000000000000000055375d454d000000000000000000000000000000000000000000000000000000606e561771000000000000000000000000000000000000000000000000000000457172731c000000000000000000000000000000000000000000000000000000473671257c0000000000000000000000000000000000000000000000000000005a4a040c36000000000000000000000000000000000000000000000000000000375e6d7a000000000000000000000000000000000000000000000000000000007254350300000000000000000000000000000000000000000000000000000000562c795e000000000000000000000000000000000000000000000000000000003e0a65630000000000000000000000000000000000000000000000000000000063335100000000000000000000000000000000000000000000000000000000001d280000000000000000000000000000000000000000000000000000000000005f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000031605e6543350452186c265e301259546b0675000000000000000000000000000000400f0f37426a5d6f077d5f4e61741300000000000000000000000000000000000000005331267647222b3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000113d790d56013a2f58000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+	</array>
+</dict>

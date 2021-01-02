@@ -1,0 +1,97 @@
+<effect looping="false" layer="-1">
+	<param name="radius" default="12" />
+	
+	
+	<sprite origin="20 28" looping="false" texture="effects/explosion_snow.png" material="system/default.mats:bright-noxray"
+	angle="rand(u)*2">
+		<frame time="50">0 0 43 53</frame>
+		<frame time="50">43 0 43 53</frame>
+		<frame time="50">86 0 43 53</frame>
+		<frame time="50">129 0 43 53</frame>
+		<frame time="50">172 0 43 53</frame>
+		<frame time="50">0 53 43 53</frame>
+		<frame time="50">43 53 43 53</frame>
+		<frame time="50">86 53 43 53</frame>
+		<frame time="50">129 53 43 53</frame>
+		<frame time="50">172 53 43 53</frame>
+	</sprite>
+
+	<sprite origin="8 8" looping="true" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="10"
+		angle="rand(u+i+23)*pi*2"
+		pos-x="- it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="- it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+		color-a="0.5 - (0.5*t)"
+	>
+		<frame time="150">208 0 16 16</frame>
+	</sprite>
+
+	<sprite origin="8 8" looping="true" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="10"
+
+		pos-x="- it*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+        pos-y="- it*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+		angle="rand(u+i+101)*pi*2"
+		color-a="0.5 - (0.5*t)"
+	>
+        
+		<frame time="150">224 0 16 16</frame>
+	
+	</sprite>
+
+
+
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 40 * t" />
+		
+		<color-r value="0" />
+		<color-g value="0.8" />
+		<color-b value="1" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * 40 * 3) + 10" />
+		
+		<color-r value="0" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="1 - t" />
+		<color-a value="0" />
+	</light>
+</effect>

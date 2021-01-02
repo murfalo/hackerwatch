@@ -1,0 +1,191 @@
+<unit slot="doodad">
+	
+	<scenes idle="idle" on="on" off="off" left="left" right="right">
+		
+		
+		<scene name="idle">
+			<sprite origin="121 168" ulayer="1" looping="false" texture="./dragon_wings.png" material="system/default.mats:actor">
+				<frame time="75">1024 0 240 214</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="109 155" ulayer="0" looping="false" texture="./dragon_wings_shadow.png" material="system/default.mats:actor">
+					<frame time="75">0 0 244 189</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="on">
+			<sprite origin="121 168" ulayer="1" loopback="600" looping="true" texture="./dragon_wings.png" material="system/default.mats:actor">
+				<frame time="75">1024 0 240 214</frame>
+				<frame time="75">1264 0 240 214</frame>
+				<frame time="75">1504 0 240 214</frame>
+				<frame time="75">1744 0 240 214</frame>
+				<frame time="75">1024 214 240 214</frame>
+				<frame time="75">1264 214 240 214</frame>
+				<frame time="75">1504 214 240 214</frame>
+				<frame time="75">1744 214 240 214</frame>
+				
+				<frame time="75">0 0 240 214</frame>
+				<frame time="75">240 0 240 214</frame>
+				<frame time="75">480 0 240 214</frame>
+				<frame time="75">720 0 240 214</frame>
+				
+				<frame time="75">0 214 240 214</frame>
+				<frame time="75">240 214 240 214</frame>
+				<frame time="75">480 214 240 214</frame>
+				<frame time="75">720 214 240 214</frame>
+				
+				<frame time="75">0 428 240 214</frame>
+				<frame time="75">240 428 240 214</frame>
+				<frame time="75">480 428 240 214</frame>
+				<frame time="75">720 428 240 214</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="109 155" ulayer="0" loopback="600" looping="true" texture="./dragon_wings_shadow.png" material="system/default.mats:actor">
+					<frame time="75">0 0 244 189</frame>
+					<frame time="75">244 0 244 189</frame>
+					<frame time="75">488 1 244 189</frame>
+					<frame time="75">732 1 244 189</frame>
+					<frame time="75">0 190 244 189</frame>
+					<frame time="75">244 190 244 189</frame>
+					<frame time="75">489 188 244 189</frame>
+					<frame time="75">731 192 244 189</frame>
+					
+					<frame time="75">1 379 244 189</frame>				
+					<frame time="75">245 379 244 189</frame>
+					<frame time="75">489 378 244 189</frame>
+					<frame time="75">733 379 244 189</frame>
+					
+					
+					<frame time="75">1 568 244 189</frame>			
+					<frame time="75">245 568 244 189</frame>
+					<frame time="75">489 568 244 189</frame>
+					<frame time="75">733 568 244 189</frame>
+					
+					<frame time="75">1 757 244 189</frame>			
+					<frame time="75">245 757 244 189</frame>
+					<frame time="75">489 757 244 189</frame>
+					<frame time="75">733 757 244 189</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="off">
+			<sprite origin="121 168" ulayer="1" looping="false" texture="./dragon_wings.png" material="system/default.mats:actor">
+				<frame time="75">1744 214 240 214</frame>
+				<frame time="75">1504 214 240 214</frame>
+				<frame time="75">1264 214 240 214</frame>
+				<frame time="75">1024 214 240 214</frame>
+				<frame time="75">1744 0 240 214</frame>
+				<frame time="75">1504 0 240 214</frame>
+				<frame time="75">1264 0 240 214</frame>
+				<frame time="75">1024 0 240 214</frame>
+			</sprite>
+			
+			<shadow darkness="1">
+				<sprite origin="109 155" ulayer="0" looping="false" texture="./dragon_wings_shadow.png" material="system/default.mats:actor">
+					
+					<frame time="75">731 192 244 189</frame>
+					<frame time="75">489 188 244 189</frame>
+					<frame time="75">244 190 244 189</frame>
+					<frame time="75">0 190 244 189</frame>
+					<frame time="75">732 1 244 189</frame>
+					<frame time="75">488 1 244 189</frame>
+					<frame time="75">244 0 244 189</frame>
+					<frame time="75">0 0 244 189</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="right">
+			<sprite origin="121 168" ulayer="1" looping="false" texture="./dragon_wings.png" material="system/default.mats:actor">
+				<frame time="75">1024 0 120 214</frame>
+				<frame time="75">1264 0 120 214</frame>
+				<frame time="75">1504 0 120 214</frame>
+				<frame time="75">1744 0 120 214</frame>
+				<frame time="75">1024 214 120 214</frame>
+				
+				<frame time="1000">1264 214 120 214</frame>
+				
+				<frame time="75">1024 214 120 214</frame>
+				<frame time="75">1744 0 120 214</frame>
+				<frame time="75">1504 0 120 214</frame>
+				<frame time="75">1264 0 120 214</frame>
+				<frame time="75">1024 0 120 214</frame>
+				
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="109 155" ulayer="0" looping="false" texture="./dragon_wings_shadow.png" material="system/default.mats:actor">
+					<frame time="75">0 0 122 189</frame>
+					<frame time="75">244 0 122 189</frame>
+					<frame time="75">488 1 122 189</frame>
+					<frame time="75">732 1 122 189</frame>
+					<frame time="75">0 190 122 189</frame>
+					
+					<frame time="1000">244 190 122 188</frame>
+					
+					<frame time="75">0 190 122 189</frame>
+					<frame time="75">732 1 122 189</frame>
+					<frame time="75">488 1 122 189</frame>
+					<frame time="75">244 0 122 189</frame>
+					<frame time="75">0 0 122 189</frame>
+					
+				</sprite>
+			</shadow>
+			
+			
+			<sprite origin="1 168" ulayer="1" looping="false" texture="./dragon_wings.png" material="system/default.mats:actor">
+				<frame time="75">1144 0 120 214</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="-13 155" ulayer="0" looping="false" texture="./dragon_wings_shadow.png" material="system/default.mats:actor">
+					<frame time="75">122 0 122 189</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		
+		<scene name="left">
+			<sprite origin="1 168" ulayer="1" looping="false" texture="./dragon_wings.png" material="system/default.mats:actor">
+				<frame time="75">1144 0 120 214</frame>
+				<frame time="75">1384 0 120 214</frame>
+				<frame time="75">1624 0 120 214</frame>
+				<frame time="75">1864 0 120 214</frame>
+				<frame time="75">1144 214 120 214</frame>
+				
+				<frame time="1000">1384 214 120 214</frame>
+				
+				
+				<frame time="75">1144 214 120 214</frame>
+				<frame time="75">1864 0 120 214</frame>
+				<frame time="75">1624 0 120 214</frame>
+				<frame time="75">1384 0 120 214</frame>
+				<frame time="75">1144 0 120 214</frame>
+			</sprite>
+			
+			<shadow darkness="1">
+				<sprite origin="-13 155" ulayer="0" looping="false" texture="./dragon_wings_shadow.png" material="system/default.mats:actor">
+					<frame time="75">122 0 122 189</frame>
+					<frame time="75">366 0 122 189</frame>
+					<frame time="75">610 1 122 189</frame>
+					<frame time="75">854 1 122 189</frame>
+					<frame time="75">122 190 122 189</frame>
+					
+					<frame time="1000">366 190 122 189</frame>
+					
+					<frame time="75">122 190 122 189</frame>
+					<frame time="75">854 1 122 189</frame>
+					<frame time="75">610 1 122 189</frame>
+					<frame time="75">366 0 122 189</frame>
+					<frame time="75">122 0 122 189</frame>
+				</sprite>
+			</shadow>
+			
+			
+			<sprite origin="121 168" ulayer="1" looping="false" texture="./dragon_wings.png" material="system/default.mats:actor">
+				<frame time="75">1024 0 120 214</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="109 155" ulayer="0" looping="false" texture="./dragon_wings_shadow.png" material="system/default.mats:actor">
+					<frame time="75">0 0 122 189</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,41 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">warlock</string>
+	<string name="name">.skills.warlock.soul-cleaver</string>
+	<string name="description">.skills.warlock.soul-cleaver.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>192 144 24 24</vec4>
+	</array>
+
+	<int name="cost">16</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">kill</string>
+			<float name="chance">0.25</float>
+
+			<dict name="effect">
+				<string name="class">ExplodeChainLimit</string>
+				<string name="fx">effects/soul_cleave.effect</string>
+				<int name="radius">24</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">LifestealDamage</string>
+						<int name="magical">20</int>
+						<bool name="can-kill">true</bool>
+						<float name="lifesteal">0.1</float>
+						<float name="manasteal">0.2</float>
+						<string name="lifesteal-attacker-effect">effects/soul_gain.effect</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+</dict>

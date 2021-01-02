@@ -1,0 +1,52 @@
+<unit slot="doodad">
+	<scenes n="n" w="w" e="e">
+		<scene name="n">
+			<collision>
+				<circle radius="22" offset="0 0" />
+			</collision>
+			<shadow>
+				<sprite ulayer="0" origin="-11 41" texture="./tent_snow.png" material="system/default.mats:default-noxray">
+					<frame>97 77 19 46</frame>
+				</sprite>
+			</shadow>
+			<sprite ulayer="0" origin="26 45" texture="./tent_snow.png" material="system/default.mats:default-noxray">
+				<frame>0 77 48 66</frame>
+			</sprite>
+			<sprite ulayer="0" origin="26 26" texture="./tent_snow.png" layer="-5" material="system/default.mats:floor">
+				<frame>148 120 47 15</frame>
+			</sprite>
+		</scene>
+		<scene name="w">
+			<collision>
+				<circle radius="22" offset="0 0" />
+			</collision>
+			<shadow>
+				<sprite ulayer="0" origin="-11 41" texture="./tent_snow.png" material="system/default.mats:default-noxray">
+					<frame>97 77 19 46</frame>
+				</sprite>
+			</shadow>
+			<sprite ulayer="0" origin="27 45" texture="./tent_snow.png" material="system/default.mats:default-noxray">
+				<frame>139 0 51 68</frame>
+			</sprite>
+			<sprite ulayer="0" origin="27 24" texture="./tent_snow.png" layer="-5" material="system/default.mats:floor">
+				<frame>97 123 51 34</frame>
+			</sprite>
+		</scene>
+		<scene name="e">
+			<collision>
+				<circle radius="22" offset="0 0" />
+			</collision>
+			<shadow>
+				<sprite ulayer="0" origin="-11 41" texture="./tent_snow.png" material="system/default.mats:default-noxray">
+					<frame>97 77 19 46</frame>
+				</sprite>
+			</shadow>
+			<sprite ulayer="0" origin="21 45" texture="./tent_snow.png" material="system/default.mats:default-noxray">
+				<frame>195 0 48 66</frame>
+			</sprite>
+			<sprite ulayer="0" origin="26 27" texture="./tent_snow.png" layer="-5" material="system/default.mats:floor">
+				<frame>48 114 49 18</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

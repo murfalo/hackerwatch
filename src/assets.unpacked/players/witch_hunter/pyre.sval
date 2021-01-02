@@ -1,0 +1,83 @@
+<dict>
+	<string name="name">.skills.witch_hunter.pyre</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 192 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::StaggeredSpawnUnits</string>
+			
+			<string name="anim">cast 8</string>
+			<int name="castpoint">50</int>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<string name="spawn-fx">players/witch_hunter/pyre_spawn.effect</string>
+			<string name="start-snd">event:/player/witch_hunter/pyre_spawn</string>
+			
+			<int name="cooldown">15000</int>
+			<int name="mana-cost">65</int>
+			
+			<bool name="safe-spawn">true</bool>
+			<string name="unit">players/witch_hunter/pyre_1.unit</string>
+			<int name="duration">50</int>
+			
+			<array name="positions">
+				<vec2>0 0</vec2>
+			</array>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::StaggeredSpawnUnits</string>
+			
+			<string name="anim">cast 8</string>
+			<int name="castpoint">50</int>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<string name="spawn-fx">players/witch_hunter/pyre_spawn.effect</string>
+			<string name="start-snd">event:/player/witch_hunter/pyre_spawn</string>
+			
+			<int name="cooldown">15000</int>
+			<int name="mana-cost">90</int>
+			
+			<bool name="safe-spawn">true</bool>
+			<string name="unit">players/witch_hunter/pyre_2.unit</string>
+			<int name="duration">50</int>
+			
+			<array name="positions">
+				<vec2>0 0</vec2>
+			</array>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::StaggeredSpawnUnits</string>
+			
+			<string name="anim">cast 8</string>
+			<int name="castpoint">50</int>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<string name="spawn-fx">players/witch_hunter/pyre_spawn.effect</string>
+			<string name="start-snd">event:/player/witch_hunter/pyre_spawn</string>
+			
+			<int name="cooldown">15000</int>
+			<int name="mana-cost">115</int>
+			
+			<bool name="safe-spawn">true</bool>
+			<string name="unit">players/witch_hunter/pyre_3.unit</string>
+			<int name="duration">50</int>
+			
+			<array name="positions">
+				<vec2>0 0</vec2>
+			</array>
+		</dict>
+	</array>
+</dict>

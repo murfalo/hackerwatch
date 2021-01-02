@@ -1,0 +1,367 @@
+<unit netsync="none" save="false">
+	<scenes>
+	
+		%//crates
+		<scene name="crate_a" random-start="true">
+			<sprite origin="2 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">25 33 5 5</frame>
+				<frame time="70">30 33 5 5</frame>
+				<frame time="70">35 33 5 5</frame>
+				<frame time="70">40 33 5 5</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 4" texture="./gibs.png">
+					<frame time="70">25 33 5 5</frame>
+					<frame time="70">30 33 5 5</frame>
+					<frame time="70">35 33 5 5</frame>
+					<frame time="70">40 33 5 5</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="crate_b" random-start="true">
+			<sprite origin="2 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">25 38 5 5</frame>
+				<frame time="70">30 38 5 5</frame>
+				<frame time="70">35 38 5 5</frame>
+				<frame time="70">40 38 5 5</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 4" texture="./gibs.png">
+					<frame time="70">25 38 5 5</frame>
+					<frame time="70">30 38 5 5</frame>
+					<frame time="70">35 38 5 5</frame>
+					<frame time="70">40 38 5 5</frame>
+				</sprite>
+			</shadow>
+		</scene>
+
+		<scene name="pot" random-start="true">
+			<sprite origin="2 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="100">57 23 5 5</frame>
+				<frame time="100">62 23 5 5</frame>
+				<frame time="100">67 23 5 5</frame>
+				<frame time="100">72 23 5 5</frame>
+			</sprite>	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 2" texture="./gibs.png">
+					<frame time="100">57 23 5 5</frame>
+					<frame time="100">62 23 5 5</frame>
+					<frame time="100">67 23 5 5</frame>
+					<frame time="100">72 23 5 5</frame>
+				</sprite>
+			</shadow>
+		</scene>		
+
+		<scene name="china_orange" random-start="true">
+			<sprite origin="4 4" texture="./gibs.png" material="effects/effects.mats:china_orange">
+				<frame time="100">0 72 8 8</frame>
+				<frame time="100">8 72 8 8</frame>
+				<frame time="100">16 72 8 8</frame>
+				<frame time="100">24 72 8 8</frame>
+			</sprite>	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="4 3" texture="./gibs.png">
+					<frame time="100">0 72 8 8</frame>
+					<frame time="100">8 72 8 8</frame>
+					<frame time="100">16 72 8 8</frame>
+					<frame time="100">24 72 8 8</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="china_blue" random-start="true">
+			<sprite origin="4 4" texture="./gibs.png" material="effects/effects.mats:china_skyblue">
+				<frame time="100">0 72 8 8</frame>
+				<frame time="100">8 72 8 8</frame>
+				<frame time="100">16 72 8 8</frame>
+				<frame time="100">24 72 8 8</frame>
+			</sprite>	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="4 3" texture="./gibs.png">
+					<frame time="100">0 72 8 8</frame>
+					<frame time="100">8 72 8 8</frame>
+					<frame time="100">16 72 8 8</frame>
+					<frame time="100">24 72 8 8</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="china_gray" random-start="true">
+			<sprite origin="4 4" texture="./gibs.png" material="effects/effects.mats:china_gray">
+				<frame time="100">0 72 8 8</frame>
+				<frame time="100">8 72 8 8</frame>
+				<frame time="100">16 72 8 8</frame>
+				<frame time="100">24 72 8 8</frame>
+			</sprite>	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="4 3" texture="./gibs.png">
+					<frame time="100">0 72 8 8</frame>
+					<frame time="100">8 72 8 8</frame>
+					<frame time="100">16 72 8 8</frame>
+					<frame time="100">24 72 8 8</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="china_brown" random-start="true">
+			<sprite origin="4 4" texture="./gibs.png" material="effects/effects.mats:china_brown">
+				<frame time="100">0 72 8 8</frame>
+				<frame time="100">8 72 8 8</frame>
+				<frame time="100">16 72 8 8</frame>
+				<frame time="100">24 72 8 8</frame>
+			</sprite>	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="4 3" texture="./gibs.png">
+					<frame time="100">0 72 8 8</frame>
+					<frame time="100">8 72 8 8</frame>
+					<frame time="100">16 72 8 8</frame>
+					<frame time="100">24 72 8 8</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		
+		
+		<scene name="particle_crate" random-start="true">
+			<sprite origin="1 1" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">114 1 1 1</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="0 2" texture="./gibs.png">
+					<frame time="70">114 1 1 1</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		
+		<scene name="particle_curse" random-start="true">
+			<sprite origin="1 1" texture="./gibs.png" material="system/default.mats:bright">
+				<frame time="70">105 35 1 1</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="0 2" texture="./gibs.png">
+					<frame time="70">105 35 1 1</frame>
+				</sprite>
+			</shadow>
+		</scene>	
+		
+		<scene name="particle_glyph" random-start="true">
+			<sprite origin="1 1" texture="./gibs.png" material="system/default.mats:bright">
+				<frame time="70">106 0 1 1</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="0 2" texture="./gibs.png">
+					<frame time="70">106 0 1 1</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		
+		<scene name="particle_fire" random-start="true">
+			<sprite origin="1 1" texture="./gibs.png" material="system/default.mats:bright">
+				<frame time="70">160 1 1 1</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="0 2" texture="./gibs.png">
+					<frame time="70">106 0 1 1</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		
+		%// Walls
+		
+		<scene name="chambers_big" random-start="true">
+			<sprite origin="2 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">0 80 5 5</frame>
+				<frame time="70">5 80 5 5</frame>
+				<frame time="70">10 80 5 5</frame>
+				<frame time="70">15 80 5 5</frame>
+			</sprite>   	
+		</scene>
+		<scene name="archives_big" random-start="true">
+			<sprite origin="2 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">0 85 5 5</frame>
+				<frame time="70">5 85 5 5</frame>
+				<frame time="70">10 85 5 5</frame>
+				<frame time="70">15 85 5 5</frame>
+			</sprite>   	
+		</scene>
+		<scene name="armory_big" random-start="true">
+			<sprite origin="2 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">0 90 5 5</frame>
+				<frame time="70">5 90 5 5</frame>
+				<frame time="70">10 90 5 5</frame>
+				<frame time="70">15 90 5 5</frame>
+			</sprite>   	
+		</scene>
+		<scene name="particle_stone" random-start="true">
+			<sprite origin="1 1" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">108 1 1 1</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="0 2" texture="./gibs.png">
+					<frame time="70">108 1 1 1</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="prison_big" random-start="true">
+			<sprite origin="2 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">24 48 5 5</frame>
+				<frame time="70">29 48 5 5</frame>
+				<frame time="70">34 48 5 5</frame>
+				<frame time="70">39 48 5 5</frame>
+			</sprite>   	<!-- 
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 4" texture="./gibs.png">
+					<frame time="70">25 28 4 5</frame>
+					<frame time="70">29 28 4 5</frame>
+					<frame time="70">33 28 4 5</frame>
+					<frame time="70">37 28 4 5</frame>
+				</sprite>
+			</shadow> -->
+		</scene>
+		
+		%//players
+		<scene name="ghost_comet_big" random-start="true">
+			<sprite origin="3 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">24 53 5 5</frame>
+				<frame time="70">29 53 5 5</frame>
+				<frame time="70">34 53 5 5</frame>
+				<frame time="70">39 53 5 5</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 3" texture="./gibs.png">
+					<frame time="70">24 53 5 5</frame>
+					<frame time="70">29 53 5 5</frame>
+					<frame time="70">34 53 5 5</frame>
+					<frame time="70">39 53 5 5</frame>
+				</sprite>
+			</shadow>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="2500" />
+				<overbright value="4" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="0 200 200 0" />
+				</colors>
+			</light>
+		</scene>
+		<scene name="meteor1" random-start="true">
+			<sprite origin="3 3" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">24 59 7 6</frame>
+				<frame time="70">31 59 7 6</frame>
+				<frame time="70">38 59 7 6</frame>
+				<frame time="70">45 59 7 6</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 4" texture="./gibs.png">
+					<frame time="70">24 59 7 6</frame>
+					<frame time="70">31 59 7 6</frame>
+					<frame time="70">38 59 7 6</frame>
+					<frame time="70">45 59 7 6</frame>
+				</sprite>
+			</shadow>
+			
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="2500" />
+				<overbright value="4" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="200 100 0 0" />
+				</colors>
+			</light>
+		</scene>
+		
+		
+		<scene name="meteor2" random-start="true">
+			<sprite origin="3 3" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">52 59 7 6</frame>
+				<frame time="70">59 59 7 6</frame>
+				<frame time="70">66 59 7 6</frame>
+				<frame time="70">73 59 7 6</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 4" texture="./gibs.png">
+					<frame time="70">52 59 7 6</frame>
+					<frame time="70">59 59 7 6</frame>
+					<frame time="70">66 59 7 6</frame>
+					<frame time="70">73 59 7 6</frame>
+				</sprite>
+			</shadow>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="2500" />
+				<overbright value="4" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="200 100 0 0" />
+				</colors>
+			</light>
+		
+		
+		</scene>
+		
+		<scene name="particle_ghost_ice" random-start="true">
+			<sprite origin="1 1" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">118 1 1 1</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="0 2" texture="./gibs.png">
+					<frame time="70">118 1 1 1</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="ice_comet_big" random-start="true">
+			<sprite origin="3 2" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">24 43 5 5</frame>
+				<frame time="70">29 43 5 5</frame>
+				<frame time="70">34 43 5 5</frame>
+				<frame time="70">39 43 5 5</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="2 3" texture="./gibs.png">
+					<frame time="70">24 43 5 5</frame>
+					<frame time="70">29 43 5 5</frame>
+					<frame time="70">34 43 5 5</frame>
+					<frame time="70">39 43 5 5</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="particle_ice" random-start="true">
+			<sprite origin="1 1" texture="./gibs.png" material="effects/effects.mats:gib">
+				<frame time="70">120 0 1 1</frame>
+			</sprite>   	
+			<shadow ignore-at-no-height="true">
+				<sprite origin="0 2" texture="./gibs.png">
+					<frame time="70">120 0 1 1</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

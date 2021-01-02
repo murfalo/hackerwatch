@@ -1,0 +1,548 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+%if BESTIARY
+		<string name="beastiary-name">.bestiary.name.bosses.warden</string>
+		<vec2 name="beastiary-offset">6 3</vec2>
+		<string name="quality">epic</string>
+%else
+		<string name="beastiary-override">actors/bosses/warden/warden.unit</string>
+%endif
+	
+		<string name="type">undead</string>
+		<int name="hp">2500</int>
+		<int name="armor">75</int>
+		<int name="resistance">35</int>
+		<int name="experience-reward">2250</int>
+		<float name="mp-scale-fact">1.25</float>
+		<float name="ngp-scale">1.5</float>
+		
+		<string name="death-snd">event:/enemy/boss_warden/death</string>
+		<string name="gore">effects/gibs/gib_boss_warden.sval</string>
+		<string name="loot">actors/loot.sval:boss_warden</string>
+		
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">false</bool>
+		<int name="aggro-range">1000</int>
+		<int name="unit-height">32</int>
+		<float name="debuff-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_boss.inc"
+		</array>
+		
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<float name="speed">MSPEED</float>
+			<int name="dist">36</int>
+			<int name="stagger-threshold">0</int>
+		</dict>
+		
+		<array name="skills">
+			<dict>
+				<string name="class">WhirlwindSkill</string>
+				
+				<string name="anim">whirlwind</string>
+				<string name="snd">event:/enemy/boss_warden/attack-spin</string>
+
+				<int name="cooldown">12000</int>
+				<int name="cooldown-start">0</int>
+				<int name="castpoint">720</int>
+				<bool name="must-see">false</bool>
+				<int name="range">80</int>
+
+				<float name="acceleration">WHIRLACC</float>
+				<float name="speed">WHIRLSPEED</float>
+				<int name="duration">5000</int>
+				<int name="freq">500</int>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Explode</string>
+						<int name="radius">45</int>
+						<float name="dist-scaling">1000</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">25</int>
+								<float name="armor-mul">0.75</float>
+							</dict>
+						</array>
+					</dict>
+%if !NORMAL
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<string name="projectile">actors/bosses/warden/bomb.unit</string>
+						<int name="dist">30</int>
+						<float name="jitter">5</float>
+						<int name="projectiles">WHIRLBOMBS</int>
+						<int name="spread">360</int>
+					</dict>
+%endif
+				</array>
+			</dict>
+		
+			<dict>
+%if NORMAL
+				<string name="class">CompositeActorSkill</string>
+%else			
+				<string name="class">CompositeActorBurstSkill</string>
+				<int name="burst">ATTACKBURST</int>
+%endif
+				<string name="anim">attack 8</string>
+				<string name="offset">attack-pos</string>
+
+				<int name="cooldown">ATTACKCOOLDOWN</int>
+				<int name="castpoint">ATTACKCASTPOINT</int>
+				<bool name="must-see">false</bool>
+				<int name="range">42</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_warden/attack-club</string>
+					</dict>
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">actors/bosses/warden/warden_club_hit.effect</string>
+						<int name="min-radius">22</int>
+						<int name="radius">22</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">50</int>
+								<float name="armor-mul">0.75</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+				</array>				
+			</dict>
+
+			<dict>
+%if NORMAL
+				<string name="class">CompositeActorSkill</string>
+%else			
+				<string name="class">CompositeActorBurstSkill</string>
+				<int name="burst">BALLISTABURST</int>
+%endif
+				<string name="anim">shoot 8</string>
+				<string name="offset">shoot-pos</string>
+				
+				<int name="cooldown">4000</int>
+				<int name="castpoint">400</int>
+				<int name="range">260</int>
+				<int name="min-range">70</int>
+				<bool name="good-aim">false</bool>
+				<float name="aim-interception">AIMINTERCEPTION</float>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_warden/attack-bow</string>
+					</dict>					
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/bosses/warden/arrow.unit</string>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/bosses/warden/warden_corpse.unit</string>
+					</dict>	
+				</array>	
+			</dict>	
+		</array>	
+		<dict name="effect-params"></dict>
+	</behavior>
+
+	<scenes start="default">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="22" density="100"/>
+			</collision>
+			
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			
+			<shadow>
+				<sprite origin="28 15" texture="doodads/special/shadows.png">
+					<frame>0 73 50 46</frame>
+				</sprite>
+			</shadow>		
+		</scene>
+
+		<scene name="default">
+		  <scene src="shared" />
+		  <sprite origin="42 52" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+			<frame>128 192 64 64</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="whirlwind">
+		  <scene src="shared" />
+			<effect pos="0 10" src="effects/animations/spin_ccw.effect" />
+		  <sprite origin="45 41" loopback="720" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+			<frame time="90">546 74 91 82</frame>
+			<frame time="90">637 74 91 82</frame>
+			<frame time="90">0 74 91 82</frame>
+			<frame time="90">91 74 91 82</frame>
+			<frame time="90">182 74 91 82</frame>
+			<frame time="90">273 74 91 82</frame>
+			<frame time="90">364 74 91 82</frame>
+			<frame time="90">455 74 91 82</frame>
+		  
+			<frame time="45">546 74 91 82</frame>
+			<frame time="45">637 74 91 82</frame>
+			<frame time="45">0 74 91 82</frame>
+			<frame time="45">91 74 91 82</frame>
+			<frame time="45">182 74 91 82</frame>
+			<frame time="45">273 74 91 82</frame>
+			<frame time="45">364 74 91 82</frame>
+			<frame time="45">455 74 91 82</frame>
+		  </sprite>
+		</scene>
+		
+		%// arrow idle
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="15 32" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>0 304 44 58</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="23 38" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>44 304 64 58</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="31 34" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>108 304 55 47</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="41 30" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>163 304 62 50</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="35 32" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>225 304 49 51</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="43 30" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>274 304 70 59</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="30 29" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>344 304 60 59</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="30 30" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>404 304 67 66</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="16 32" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">0 378 53 62</frame>
+				<frame time="100">0 452 53 62</frame>
+				<frame time="100">0 526 53 62</frame>
+				<frame time="100">0 452 53 62</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="24 39" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">83 378 71 67</frame>
+				<frame time="100">83 452 71 67</frame>
+				<frame time="100">83 526 71 67</frame>
+				<frame time="100">83 452 71 67</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="31 34" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">166 378 57 56</frame>
+				<frame time="100">166 452 57 56</frame>
+				<frame time="100">166 526 57 56</frame>
+				<frame time="100">166 452 57 56</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="42 30" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">249 378 67 55</frame>
+				<frame time="100">249 452 67 55</frame>
+				<frame time="100">249 526 67 55</frame>
+				<frame time="100">249 452 67 55</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="41 32" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">332 378 56 53</frame>
+				<frame time="100">332 452 56 53</frame>
+				<frame time="100">332 526 56 53</frame>
+				<frame time="100">332 452 56 53</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="44 30" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">415 378 77 63</frame>
+				<frame time="100">415 452 77 63</frame>
+				<frame time="100">415 526 77 63</frame>
+				<frame time="100">415 452 77 63</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="30 29" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">498 378 62 66</frame>
+				<frame time="100">498 452 62 66</frame>
+				<frame time="100">498 526 62 66</frame>
+				<frame time="100">498 452 62 66</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="30 30" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="100">581 378 72 70</frame>
+				<frame time="100">581 452 72 70</frame>
+				<frame time="100">581 526 72 70</frame>
+				<frame time="100">581 452 72 70</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="24 11"/>
+			<sprite origin="39 44" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">0 675 83 88</frame>
+				<frame time="ATTACKFRAME2">0 763 83 88</frame>
+				<frame time="ATTACKFRAME3">0 851 83 88</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="22 -12"/>
+			<sprite origin="41 46" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">83 675 83 88</frame>
+				<frame time="ATTACKFRAME2">83 763 83 88</frame>
+				<frame time="ATTACKFRAME3">83 851 83 88</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="3 -25"/>
+			<sprite origin="42 46" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">166 675 83 88</frame>
+				<frame time="ATTACKFRAME2">166 763 83 88</frame>
+				<frame time="ATTACKFRAME3">166 851 83 88</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-21 -15"/>
+			<sprite origin="48 49" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">249 675 83 88</frame>
+				<frame time="ATTACKFRAME2">249 763 83 88</frame>
+				<frame time="ATTACKFRAME3">249 851 83 88</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-31 4"/>
+			<sprite origin="43 50" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">332 675 83 88</frame>
+				<frame time="ATTACKFRAME2">332 763 83 88</frame>
+				<frame time="ATTACKFRAME3">332 851 83 88</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-19 22"/>
+			<sprite origin="41 43" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">415 675 83 88</frame>
+				<frame time="ATTACKFRAME2">415 763 83 88</frame>
+				<frame time="ATTACKFRAME3">415 851 83 88</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-2 25"/>
+			<sprite origin="41 47" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">498 675 83 88</frame>
+				<frame time="ATTACKFRAME2">498 763 83 88</frame>
+				<frame time="ATTACKFRAME3">498 851 83 88</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="17 21"/>
+			<sprite origin="40 51" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="ATTACKFRAME1">581 675 83 88</frame>
+				<frame time="ATTACKFRAME2">581 763 83 88</frame>
+				<frame time="ATTACKFRAME3">581 851 83 88</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="shoot-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="22 -11" />
+			<sprite origin="15 32" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 304 44 58</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="43 41" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">0 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">0 230 83 74</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shoot-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 -31" />
+			<sprite origin="23 38" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">44 304 64 58</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="42 38" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">83 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">83 230 83 74</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shoot-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-20 -27" />
+			<sprite origin="31 34" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">108 304 55 47</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="44 39" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">166 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">166 230 83 74</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shoot-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-34 -13" />
+			<sprite origin="41 30" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">163 304 62 50</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			
+			<sprite origin="45 38" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">249 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">249 230 83 74</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shoot-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-20 7" />
+			<sprite origin="35 32" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">225 304 49 51</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="46 39" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">332 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">332 230 83 74</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shoot-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="3 20"/>
+			<sprite origin="43 30" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">274 304 70 59</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="43 37" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">415 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">415 230 83 74</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shoot-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="19 16"/>
+			<sprite origin="30 29" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">344 304 60 59</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="42 40" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">498 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">498 230 83 74</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shoot-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="29 -1" />
+			<sprite origin="30 30" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">404 304 67 66</frame>
+				<frame time="BALLISTAFRAME1">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="44 38" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="BALLISTAFRAME2">581 156 83 74</frame>
+				<frame time="BALLISTAFRAME3">581 230 83 74</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

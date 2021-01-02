@@ -1,0 +1,44 @@
+<effect looping="false" layer="2">
+		<sprite looping="false" origin="6 13" texture="actors/ghost_hit.png" material="system/default.mats:default-noxray">
+			<frame time="70">0 0 12 13</frame>		
+			<frame time="70">12 0 12 13</frame>		
+			<frame time="70">24 0 12 13</frame>		
+			<frame time="70">36 0 12 13</frame>		
+			<frame time="70">48 0 12 13</frame>		
+			<frame time="70">0 13 12 13</frame>		
+		</sprite>
+		<sprite looping="false" origin="6 13" texture="actors/ghost_hit.png" material="system/default.mats:bright-noxray-glowing">
+			<frame time="70">0 0 12 13</frame>		
+			<frame time="70">12 0 12 13</frame>		
+			<frame time="70">24 0 12 13</frame>		
+			<frame time="70">36 0 12 13</frame>		
+			<frame time="70">48 0 12 13</frame>		
+			<frame time="70">0 13 12 13</frame>		
+		</sprite>
+		
+		<light pos-x="0" pos-y="0">
+			<sprite texture="system/light_L.png">
+				<frame time="500">0 0 128 128</frame>
+			</sprite>
+			
+			<length value="200" />
+			<overbright value="15" />
+			
+			<looping value="false" />
+			
+			<cast-shadows value="false" />
+			
+			<shadow-cast-pos-x value="0" />
+			<shadow-cast-pos-y value="0" />
+			
+			<shadow-cast-pos-jitter value="0 0 0 0" />
+			
+			<size value="32*(1-t)" />
+				
+			<color-r value="0" />
+			<color-g value="10*(1-t)" />
+			<color-b value="10*(1-t)" />
+			<color-a value="0"/>
+			
+		</light>
+</effect>

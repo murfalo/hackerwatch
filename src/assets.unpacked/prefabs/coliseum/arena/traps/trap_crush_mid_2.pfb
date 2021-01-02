@@ -1,0 +1,568 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">MainMenu</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name="doodads/generic/trap_crushblock_shadow.unit">
+			<vec2>220 -28</vec2>
+			<int>1</int>
+			<vec2>164 -28</vec2>
+			<int>2</int>
+			<vec2>192 28</vec2>
+			<int>3</int>
+			<vec2>164 28</vec2>
+			<int>4</int>
+			<vec2>220 28</vec2>
+			<int>5</int>
+			<vec2>-220 28</vec2>
+			<int>37</int>
+			<vec2>192 -28</vec2>
+			<int>7</int>
+			<vec2>-220 0</vec2>
+			<int>40</int>
+			<vec2>192 0</vec2>
+			<int>9</int>
+			<vec2>164 0</vec2>
+			<int>10</int>
+			<vec2>220 0</vec2>
+			<int>11</int>
+			<vec2>-192 0</vec2>
+			<int>39</int>
+			<vec2>-164 28</vec2>
+			<int>38</int>
+			<vec2>-192 -28</vec2>
+			<int>32</int>
+			<vec2>-164 -28</vec2>
+			<int>33</int>
+			<vec2>-220 -28</vec2>
+			<int>34</int>
+			<vec2>-192 28</vec2>
+			<int>35</int>
+			<vec2>-164 0</vec2>
+			<int>42</int>
+		</array>
+		<array name="doodads/generic/trap_crushblock.unit">
+			<vec2>192 28</vec2>
+			<int>6</int>
+			<vec2>192 -28</vec2>
+			<int>8</int>
+			<vec2>192 0</vec2>
+			<int>12</int>
+			<vec2>164 0</vec2>
+			<int>13</int>
+			<vec2>220 0</vec2>
+			<int>14</int>
+			<vec2>164 -28</vec2>
+			<int>28</int>
+			<vec2>-192 28</vec2>
+			<int>44</int>
+			<vec2>-164 0</vec2>
+			<int>49</int>
+			<vec2>-192 -28</vec2>
+			<int>51</int>
+			<vec2>-192 0</vec2>
+			<int>55</int>
+			<vec2>-220 0</vec2>
+			<int>56</int>
+			<vec2>-164 -28</vec2>
+			<int>57</int>
+			<vec2>-220 -28</vec2>
+			<int>58</int>
+			<vec2>164 28</vec2>
+			<int>23</int>
+			<vec2>-164 28</vec2>
+			<int>59</int>
+			<vec2>-220 28</vec2>
+			<int>60</int>
+			<vec2>220 28</vec2>
+			<int>26</int>
+			<vec2>220 -28</vec2>
+			<int>36</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>41</int>
+			<vec3>0 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>= 1</string>
+			<dict>
+				<array name="Scripts"><int>53</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>67</int>
+			<vec3>-272 -464 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_a1</string>
+			<dict>
+				<string name="EventName">disable_a1</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>43</int>
+			<vec3>80 304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>52</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>66</int>
+			<vec3>80 -464 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_a5</string>
+			<dict>
+				<string name="EventName">disable_a5</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>45</int>
+			<vec3>80 416 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>activate</string>
+			<array><int>41</int><int>0</int><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>46</int>
+			<vec3>80 496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate all</string>
+			<dict>
+				<string name="EventName">all_traps_activate</string>
+			</dict>
+			<array><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>47</int>
+			<vec3>-80 496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate all</string>
+			<dict>
+				<string name="EventName">all_traps_deactivate</string>
+			</dict>
+			<array><int>53</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>48</int>
+			<vec3>0 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>= 1</string>
+			<dict>
+				<array name="Scripts"><int>45</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>71</int>
+			<vec3>-176 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_b2</string>
+			<dict>
+				<string name="EventName">disable_b2</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>50</int>
+			<vec3>0 -384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Text">trap_crush_mid_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>81</int>
+			<vec3>220 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>52</int>
+			<vec3>80 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units">
+					<int>60</int>
+					<int>44</int>
+					<int>59</int>
+					<int>49</int>
+					<int>55</int>
+					<int>56</int>
+					<int>58</int>
+					<int>51</int>
+					<int>57</int>
+					<int>23</int>
+					<int>6</int>
+					<int>26</int>
+					<int>14</int>
+					<int>12</int>
+					<int>13</int>
+					<int>28</int>
+					<int>8</int>
+					<int>36</int>
+				</array>
+			</dict>
+			<array>
+				<int>54</int>
+				<int>0</int>
+				<int>81</int>
+				<int>0</int>
+				<int>74</int>
+				<int>0</int>
+				<int>15</int>
+				<int>0</int>
+				<int>16</int>
+				<int>0</int>
+				<int>17</int>
+				<int>0</int>
+				<int>18</int>
+				<int>0</int>
+				<int>19</int>
+				<int>0</int>
+				<int>61</int>
+				<int>0</int>
+				<int>22</int>
+				<int>0</int>
+				<int>25</int>
+				<int>0</int>
+				<int>27</int>
+				<int>0</int>
+				<int>20</int>
+				<int>0</int>
+				<int>21</int>
+				<int>0</int>
+				<int>24</int>
+				<int>0</int>
+				<int>29</int>
+				<int>0</int>
+				<int>30</int>
+				<int>0</int>
+				<int>31</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>53</int>
+			<vec3>-80 416 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>deactivate</string>
+			<array><int>48</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>54</int>
+			<vec3>220 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>68</int>
+			<vec3>80 -272 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_c5</string>
+			<dict>
+				<string name="EventName">disable_c5</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>64</int>
+			<vec3>272 -272 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_c7</string>
+			<dict>
+				<string name="EventName">disable_c7</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>70</int>
+			<vec3>-80 -464 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_a3</string>
+			<dict>
+				<string name="EventName">disable_a3</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>74</int>
+			<vec3>192 28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>69</int>
+			<vec3>176 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_b6</string>
+			<dict>
+				<string name="EventName">disable_b6</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>65</int>
+			<vec3>-80 -272 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_c3</string>
+			<dict>
+				<string name="EventName">disable_c3</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>61</int>
+			<vec3>220 28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>62</int>
+			<vec3>-272 -272 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_c1</string>
+			<dict>
+				<string name="EventName">disable_c1</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>63</int>
+			<vec3>272 -464 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_a7</string>
+			<dict>
+				<string name="EventName">disable_a7</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>15</int>
+			<vec3>192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>16</int>
+			<vec3>192 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>17</int>
+			<vec3>164 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>18</int>
+			<vec3>164 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>19</int>
+			<vec3>164 28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>20</int>
+			<vec3>-164 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>21</int>
+			<vec3>-164 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>22</int>
+			<vec3>-192 28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>24</int>
+			<vec3>-164 28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>25</int>
+			<vec3>-192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>27</int>
+			<vec3>-192 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>29</int>
+			<vec3>-220 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>30</int>
+			<vec3>-220 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>31</int>
+			<vec3>-220 28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/traps/supplement/crushblock.pfb</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

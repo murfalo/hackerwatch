@@ -1,0 +1,195 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/lamp_torch.unit"><vec2>56 48</vec2><int>1</int><vec2>8 48</vec2><int>2</int></array>
+		<array name="doodads/walls/prison/single.unit"><vec2>48 32</vec2><int>3</int><vec2>0 32</vec2><int>4</int></array>
+		<array name="doodads/walls/prison/_deco_ceiling_support.unit"><vec2>32 32</vec2><int>5</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PickedPrefab</string>
+			<int>6</int>
+			<vec3>128 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_2x2_a</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_2x2_a.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>7</int>
+			<vec3>16 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>6</int><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>8</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>21</int>
+			<vec3>-32 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>10</int><int>8</int><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>10</int>
+			<vec3>-96 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>11</int>
+			<vec3>32 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>ButtonSpawn</string>
+			<dict>
+				<array name="ToExecute"><int>17</int><int>19</int></array>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>12</int>
+			<vec3>8 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>13</int><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>128 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_3x1_b</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_3x1_b.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>14</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>7</int><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>15</int>
+			<vec3>128 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_3x1_a</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_3x1_a.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>16</int>
+			<vec3>128 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_2x2_b</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_2x2_b.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>17</int>
+			<vec3>56 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>open_cells</string>
+			<dict>
+				<array name="PickedPrefabs"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>18</int>
+			<vec3>-96 56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>button</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/button_cells.pfb</string>
+				<string name="Flag">prison_button</string>
+			</dict>
+			<array><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>19</int>
+			<vec3>8 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>open_cells</string>
+			<dict>
+				<array name="PickedPrefabs"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>20</int>
+			<vec3>-96 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>button</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/button_cells.pfb</string>
+				<string name="Flag">prison_button</string>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array><string>ScriptLink</string><int>9</int><vec3>-32 224 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+	</array>
+</dict>

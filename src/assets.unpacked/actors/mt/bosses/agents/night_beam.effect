@@ -1,0 +1,29 @@
+<effect looping="true" bounds="512 512">
+	<param name="length" default="500"/>
+	<param name="angle" default="0"/>
+	
+	<trail texture="effects/empty.png" material="effects/effects.mats:add">
+		<pos-y value="0 + sin(angle)*i*length*0.5" />
+		<pos-x value="0 + cos(angle)*i*length*0.5" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="4" />
+		<size value="3 + i * length/25" />
+		
+		
+		<uv-l-x value="0" />
+		<uv-l-y value="0 " />
+		
+		<uv-r-x value="1" />
+		<uv-r-y value="1" />d
+	
+		
+		<color-r value="0.25" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0 + sin(i*pi/2)" />
+	</trail> 
+	
+</effect>

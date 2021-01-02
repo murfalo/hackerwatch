@@ -1,0 +1,36 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/player/witch_hunter/crossbow_hit</string>
+		
+		<bool name="blockable">true</bool>
+		
+		<float name="speed">9</float>
+		<int name="ttl">650</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">30</int>
+				<float name="armor-mul">0.9</float>
+			</dict>
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/animations/impact_metal_1.effect</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<collision static="true">
+				<circle offset="0 0" radius="2" projectile="true" />
+			</collision>
+			<effect src="./vampire_2_crossbow_bolt.effect" />
+		</scene>
+	</scenes>
+</unit>

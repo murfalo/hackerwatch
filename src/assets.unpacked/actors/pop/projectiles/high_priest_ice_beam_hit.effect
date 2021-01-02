@@ -1,0 +1,87 @@
+<effect looping="false" layer="1">
+
+	<param name="angle" default="0" />
+	<param name="radius" default="32" />
+
+		<sprite origin="5 11" ulayer="0" texture="./high_priest_ice_beam_hit.png" material="system/default.mats:bright-noxray">
+			<frame time="150">0 16 9 14</frame>
+			<frame time="50">9 16 9 14</frame>
+			<frame time="50">18 16 9 14</frame>
+			<frame time="50">27 16 9 14</frame>
+			<frame time="50">36 16 9 14</frame>
+			<frame time="50">45 16 9 14</frame>
+			<frame time="50">54 16 9 14</frame>
+			<frame time="50">63 16 9 14</frame>
+			<frame time="50">72 16 9 14</frame>
+			<frame time="50">81 16 9 14</frame>
+		</sprite>
+		
+		
+		<sprite origin="12 6" looping="true" texture="./high_priest_ice_beam_hit.png" material="system/default.mats:bright-noxray"
+		num-sprites="3"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * 4 * pow(rand(u+37*i),0.5) + t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * 4 * pow(rand(u+37*i),0.5) + t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+		color-a="1-t"
+		>
+			<frame time="80">0 0 14 12</frame>
+			<frame time="80">14 0 14 12</frame>
+			<frame time="80">28 0 14 12</frame>
+			<frame time="80">42 0 14 12</frame>
+			<frame time="80">56 0 14 12</frame>
+			<frame time="80">70 0 14 12</frame>
+			<frame time="80">84 0 14 12</frame>
+			<frame time="80">98 0 14 12</frame>
+		</sprite>
+		
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*80" />
+			
+		<color-r value="2" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="120*(1-t)" />
+			
+		<color-r value="2" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>	
+</effect>

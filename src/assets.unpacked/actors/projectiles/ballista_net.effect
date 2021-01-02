@@ -1,0 +1,34 @@
+<effect looping="false" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="8" />
+	
+	<sprite looping="false" origin="16 15" layer="-1" texture="actors/projectiles/ballista_net.png" material="system/default.mats:default"
+	
+		pos-x="0"
+		pos-y="0"
+		>
+		<frame time="30">96 32 32 32</frame>
+		<frame time="30">0 64 32 32</frame>
+		<frame time="30">32 64 32 32</frame>
+		<frame time="30">64 64 32 32</frame>
+		<frame time="30">96 64 32 32</frame>
+		<frame time="30">0 96 32 32</frame>
+		<frame time="30">32 96 32 32</frame>
+		<frame time="90">64 96 32 32</frame>
+	</sprite>
+	<sprite looping="false" origin="16 16" layer="1" texture="actors/projectiles/ballista_net.png" material="system/default.mats:default"
+	
+		pos-x="0"
+		pos-y="-height + height*t"
+		>
+		
+		<frame time="30">0 0 32 32</frame>
+		<frame time="30">32 0 32 32</frame>
+		<frame time="30">64 0 32 32</frame>
+		<frame time="30">96 0 32 32</frame>
+		<frame time="30">0 32 32 32</frame>
+		<frame time="30">32 32 32 32</frame>
+		<frame time="120">64 32 32 32</frame>
+	</sprite>
+</effect>

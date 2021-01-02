@@ -1,0 +1,27 @@
+<effect>
+	<light pos-y="128" pos-x="128"> 
+		<sprite texture="./flare2_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="2000" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="t*pi*2"/>
+		
+		<size value="256" />
+		
+%//		<color-r value="12-t*12" />
+		<color-r value="12" />
+		<color-g value="0" />
+		<color-b value="0" />
+	</light>	
+</effect>

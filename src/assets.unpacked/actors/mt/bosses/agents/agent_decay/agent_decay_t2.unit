@@ -1,0 +1,43 @@
+%define TIER2
+%define AGENT_DECAY
+%replace AGENTNAME .bestiary.name.agent_decay
+%replace MINIMAPICON "234 261 11 11"
+%replace SPINSKILLTOGGLE decayspinflag
+%replace SWORDBUFF poisonsword
+%replace AGENTPATH actors/mt/bosses/agents/agent_decay
+%replace BESTIARYOVERRIDE actors/mt/bosses/agents/agent_decay/agent_decay.unit
+
+%replace MOVESPEED 2.7
+%replace HEALTHPOTIONS 1
+%replace IMMORTALITYPOTIONS 3
+
+%replace WHIRLCD 5000
+%replace WHIRLRANGE 50
+%replace WHIRLSPEED 3.2
+%replace WHIRLACC 4
+%replace WHIRLTURNSPEED 0.1
+%replace WHIRLDUR 4000
+
+%replace AIMINTERCEPTION 8
+%replace SHOOTMINRANGE 24
+%replace SHOOTRANGE 120
+
+%replace SHOOTCD 2400
+%replace SHOOTPROJECTILES 1
+%replace SHOOTSPREAD 0
+
+%replace SHOOTNIGHTCD 1200
+%replace SHOOTNIGHTPROJECTILES 1
+%replace SHOOTNIGHTSPREAD 0
+
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+		%include "actors/mt/bosses/agents/_agent_base.inc"
+		<array name="skills">
+			%include "actors/mt/bosses/agents/_agent_skills.inc"
+		</array>
+	</behavior>
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		%include "actors/mt/bosses/agents/_agent_gfx.inc"
+	</scenes>
+</unit>

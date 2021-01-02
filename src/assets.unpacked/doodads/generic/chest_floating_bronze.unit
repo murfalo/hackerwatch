@@ -1,0 +1,25 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="on">
+			<minimap_sprite layer="10" origin="4 4" texture="gui/minimap.png" frame="42 0 8 8" />
+			%if EDITOR 
+			<sprite origin="4 4" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 8 8</frame>
+			</sprite>
+			%endif				
+			<effect src="./chest_floating_bronze.effect" />
+		</scene>
+		<scene name="off">
+			<sprite layer="-5" looping="true" origin="13 11" texture="./chest_floating.png" material="system/default.mats:default" >
+				<frame time="150">72 0 26 28</frame>
+				<frame time="150">72 28 26 28</frame>
+				<frame time="150">72 56 26 28</frame>
+				<frame time="150">72 84 26 28</frame>
+				<frame time="150">98 0 26 28</frame>
+				<frame time="150">98 28 26 28</frame>
+				<frame time="150">98 56 26 28</frame>
+				<frame time="150">98 84 26 28</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

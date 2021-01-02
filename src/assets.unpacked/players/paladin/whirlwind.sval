@@ -1,0 +1,109 @@
+<dict>
+	<string name="name">.skills.paladin.whirlwind</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 0 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::Whirlwind</string>
+			
+			<int name="cooldown">9000</int>
+			<int name="castpoint">0</int>
+			
+			%//<string name="hit-fx">effects/players/charge_dust.effect</string>
+			%//<string name="dust-fx">effects/players/charge_dust.effect</string>
+			%//<string name="snd">event:/player/paladin/charge</string>
+			<string name="snd">event:/player/paladin/spin</string>
+			
+			<string name="anim">whirlwind</string>
+			<float name="speed-mul">1.2</float>
+			
+			<int name="mana-cost">50</int>
+			%//<int name="stamina-cost">3</int>
+			%//<int name="health-cost">0</int>
+			
+			<int name="duration">3000</int>
+			<int name="freq">250</int>
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<int name="min-radius">16</int>
+				<int name="radius">16</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">30</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::Whirlwind</string>
+			
+			<int name="cooldown">9000</int>
+			<int name="castpoint">0</int>
+			
+			%//<string name="hit-fx">effects/players/charge_dust.effect</string>
+			%//<string name="dust-fx">effects/players/charge_dust.effect</string>
+			<string name="snd">event:/player/paladin/spin</string>
+			<string name="anim">whirlwind</string>
+			<float name="speed-mul">1.2</float>
+			
+			<int name="mana-cost">60</int>
+			%//<int name="stamina-cost">3</int>
+			%//<int name="health-cost">0</int>
+			
+			<int name="duration">4000</int>
+			<int name="freq">250</int>
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<int name="min-radius">16</int>
+				<int name="radius">16</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">40</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::Whirlwind</string>
+			
+			<int name="cooldown">9000</int>
+			<int name="castpoint">0</int>
+			
+			%//<string name="hit-fx">effects/players/charge_dust.effect</string>
+			%//<string name="dust-fx">effects/players/charge_dust.effect</string>
+			<string name="snd">event:/player/paladin/spin</string>
+			<string name="anim">whirlwind</string>
+			<float name="speed-mul">1.2</float>
+			
+			<int name="mana-cost">70</int>
+			%//<int name="stamina-cost">3</int>
+			%//<int name="health-cost">0</int>
+			
+			<int name="duration">5000</int>
+			<int name="freq">250</int>
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<int name="min-radius">16</int>
+				<int name="radius">16</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">50</int>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>

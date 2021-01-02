@@ -1,0 +1,15 @@
+<effect looping="false" layer="100" bounds="1024 1024" >
+	<sprite looping="false" origin="1024 1024" texture="./boss_genie_storm.png" material="system/default.mats:default-noxray"
+		color-r="255/255"
+		color-g="0/255"
+		color-b="0/255"
+		color-a="t * t * 1"
+		angle="(t+l) * pi * 0.25 - 0.25 * pi"
+		%//angle="((t+l) * pi * 0.25) + rand(u+i) * pi * 2"
+		scale-x="0.95"
+		scale-y="0.95"
+		pos-y="-40"
+		>
+		<frame time="1500">0 0 2048 2048</frame>
+	</sprite> 	
+</effect>

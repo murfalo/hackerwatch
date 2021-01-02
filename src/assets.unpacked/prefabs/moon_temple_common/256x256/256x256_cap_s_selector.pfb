@@ -1,0 +1,180 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/moon_temple_black.env</string>
+	</dict>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_64.unit">
+			<vec2>0 0</vec2>
+			<int>1</int>
+			<vec2>0 128</vec2>
+			<int>2</int>
+			<vec2>128 128</vec2>
+			<int>3</int>
+			<vec2>128 0</vec2>
+			<int>4</int>
+			<vec2>64 0</vec2>
+			<int>5</int>
+			<vec2>192 0</vec2>
+			<int>6</int>
+			<vec2>192 64</vec2>
+			<int>7</int>
+			<vec2>128 64</vec2>
+			<int>8</int>
+			<vec2>64 64</vec2>
+			<int>9</int>
+			<vec2>0 64</vec2>
+			<int>10</int>
+			<vec2>64 128</vec2>
+			<int>11</int>
+			<vec2>192 128</vec2>
+			<int>12</int>
+			<vec2>0 192</vec2>
+			<int>13</int>
+			<vec2>128 192</vec2>
+			<int>14</int>
+			<vec2>64 192</vec2>
+			<int>15</int>
+			<vec2>192 192</vec2>
+			<int>16</int>
+		</array>
+		<array name="system/system.fnt">
+			<array>
+				<vec2>256 256</vec2>
+				<int>17</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>256 0</vec2>
+				<int>18</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>19</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 256</vec2>
+				<int>20</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">x</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 128</vec2>
+				<int>21</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">256x256_cap_s</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 16</vec2>
+				<int>22</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">o</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PickedPrefab</string>
+			<int>23</int>
+			<vec3>-64 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_common/256x256/256x256_cap_s_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>24</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="IncludeTilesets">t</bool>
+				<array name="PickedPrefabs"><int>23</int><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>25</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>24</int><int>0</int><int>26</int><int>0</int><int>27</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>26</int>
+			<vec3>128 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>setup</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/setup_256x256.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>27</int>
+			<vec3>-96 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ClearScripts</string>
+			<dict>
+				<array name="Units"><int>23</int><int>24</int><int>25</int><int>26</int><int>28</int></array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>28</int>
+			<vec3>-64 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_common/256x256/256x256_cap_s_2.pfb</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

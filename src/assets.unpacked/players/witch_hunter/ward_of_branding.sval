@@ -1,0 +1,91 @@
+<dict>
+	<string name="name">.skills.witch_hunter.brand</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 192 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<string name="anim">cast 8</string>
+			<int name="castpoint">0</int>
+			<float name="speed-mul">0.5</float>
+			<bool name="blocking">true</bool>
+			
+			<string name="fx">players/witch_hunter/ward_of_branding_spawn.effect</string>
+			<string name="snd">event:/player/witch_hunter/brand_spawn</string>
+			
+			<int name="cooldown">500</int>
+			<int name="mana-cost">40</int>
+
+			<string name="unit">players/witch_hunter/ward_of_branding_1.unit</string>
+			<int name="max-count">4</int>
+			<bool name="remove-oldest">true</bool>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<string name="anim">cast 8</string>
+			<int name="castpoint">0</int>
+			<float name="speed-mul">0.5</float>
+			<bool name="blocking">true</bool>
+			
+			<string name="fx">players/witch_hunter/ward_of_branding_spawn.effect</string>
+			<string name="snd">event:/player/witch_hunter/brand_spawn</string>
+			
+			<int name="cooldown">500</int>
+			<int name="mana-cost">45</int>
+
+			<string name="unit">players/witch_hunter/ward_of_branding_2.unit</string>
+			<int name="max-count">6</int>
+			<bool name="remove-oldest">true</bool>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<string name="anim">cast 8</string>
+			<int name="castpoint">0</int>
+			<float name="speed-mul">0.5</float>
+			<bool name="blocking">true</bool>
+			
+			<string name="fx">players/witch_hunter/ward_of_branding_spawn.effect</string>
+			<string name="snd">event:/player/witch_hunter/brand_spawn</string>
+			
+			<int name="cooldown">500</int>
+			<int name="mana-cost">50</int>
+
+			<string name="unit">players/witch_hunter/ward_of_branding_3.unit</string>
+			<int name="max-count">8</int>
+			<bool name="remove-oldest">true</bool>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<string name="anim">cast 8</string>
+			<int name="castpoint">0</int>
+			<float name="speed-mul">0.5</float>
+			<bool name="blocking">true</bool>
+			
+			<string name="fx">players/witch_hunter/ward_of_branding_spawn.effect</string>
+			<string name="snd">event:/player/witch_hunter/brand_spawn</string>
+			
+			<int name="cooldown">500</int>
+			<int name="mana-cost">55</int>
+
+			<string name="unit">players/witch_hunter/ward_of_branding_4.unit</string>
+			<int name="max-count">10</int>
+			<bool name="remove-oldest">true</bool>
+		</dict>
+	</array>
+</dict>

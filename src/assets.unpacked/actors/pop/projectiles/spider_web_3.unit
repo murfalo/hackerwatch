@@ -1,0 +1,50 @@
+<unit slot="doodad" layer="-1">
+	<behavior class="Breakable">
+		<bool name="shoot-through">true</bool>
+		<bool name="walk-through">false</bool>
+		<string name="hit-sound">event:/misc/web-hit</string>	
+		<string name="break-sound">event:/misc/web-break</string>
+		<string name="gore">effects/gibs/gib_spider_web.sval</string>
+		
+		<bool name="scene-switching">true</bool>
+		<bool name="scene-switching-passthrough">false</bool>
+	</behavior>
+
+	<scenes default="default-1">
+		<scene name="shared">
+			<collision static="true">
+				<circle sensor="true" shoot-through="false" aim-through="true" offset="0 0" radius="8"/>
+			</collision>
+		</scene>
+	
+		<scene name="default-1">
+			<scene src="shared" />
+			<effect src="./spider_web_3_spawn.effect" />
+			<sprite origin="16 16" looping="false" texture="doodads/terrain/web.png" material="system/default.mats:floor">
+				<frame time="100">0 0 0 0</frame>
+				<frame time="100">192 0 32 32</frame>
+			</sprite>		
+		</scene>
+		
+		<scene name="default-2">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="false" texture="doodads/terrain/web.png" material="system/default.mats:floor">
+				<frame time="100">192 0 32 32</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="default-3">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="false" texture="doodads/terrain/web.png" material="system/default.mats:floor">
+				<frame time="100">192 0 32 32</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="default-4">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="false" texture="doodads/terrain/web.png" material="system/default.mats:floor">
+				<frame time="100">192 0 32 32</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

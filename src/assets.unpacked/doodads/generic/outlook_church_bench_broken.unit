@@ -1,0 +1,62 @@
+<unit slot="doodad">
+	<scenes big="1 2" small="5" cap-left="3" cap-right="4">
+		<scene name="shared">		
+			<collision static="true">
+				<rect>0 -5 24 9</rect>
+			</collision>	
+			<sprite origin="-9 13" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">236 93 26 3</frame>
+			</sprite>	
+		</scene>
+		<scene name="1">	
+			<scene src="shared" />		
+			<sprite origin="0 10" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">274 110 24 14</frame>
+			</sprite>	
+			
+		</scene>
+		<scene name="2">	
+			<scene src="shared" />		
+			<sprite origin="0 10" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">274 96 24 14</frame>
+			</sprite>	
+			
+		</scene>
+		<scene name="3">		
+			<collision static="true">
+				<rect>-8 -5 12 9</rect>
+			</collision>	
+			<sprite origin="8 10" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">262 96 12 14</frame>
+			</sprite>	
+			<sprite origin="-1 13" ulayer="-1" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">236 90 14 3</frame>
+			</sprite>	
+		</scene>
+		<scene name="4">		
+			<collision static="true">
+				<rect>0 -5 12 9</rect>
+			</collision>	
+			<sprite origin="0 10" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">298 96 12 14</frame>
+			</sprite>	
+			<sprite origin="-9 13" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">236 90 14 3</frame>
+			</sprite>
+			<sprite origin="-12 10" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">245 110 8 14</frame>
+			</sprite>
+		</scene>
+		<scene name="5">		
+			<collision static="true">
+				<rect>0 -5 12 9</rect>
+			</collision>	
+			<sprite origin="0 10" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">277 82 12 14</frame>
+			</sprite>	
+			<sprite origin="-9 13" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">236 90 14 3</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

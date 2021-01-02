@@ -1,0 +1,17 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="12 5" texture="./arrow_bomb.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 24 10</frame>
+		<frame time="100">0 10 24 10</frame>
+		<frame time="100">0 20 24 10</frame>
+	</sprite>
+</effect>

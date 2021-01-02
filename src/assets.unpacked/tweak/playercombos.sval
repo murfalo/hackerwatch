@@ -1,0 +1,154 @@
+<loader>PlayerComboStyle::LoadMultiple</loader>
+<array>
+	<!-- Default (do not remove "owned" bool on this!) -->
+	<dict>
+		<string name="id">default</string>
+
+		<string name="name">.legacyshop.combo.default.name</string>
+		<string name="description">.legacyshop.combo.default.desc</string>
+
+		<bool name="owned">true</bool>
+
+		<array name="sprite">
+			<string>gui/icons_combo.png</string>
+			<int>100</int><vec4>96 0 24 24</vec4>
+		</array>
+
+		<string name="effect">players/combo/combo_standard.effect</string>
+		<array name="projectiles">
+			<string>players/combo/nova/combo_nova_standard_1.unit</string>
+			<string>players/combo/nova/combo_nova_standard_2.unit</string>
+			<string>players/combo/nova/combo_nova_standard_3.unit</string>
+			<string>players/combo/nova/combo_nova_standard_4.unit</string>
+		</array>
+
+		<string name="color">#FF00CCFF</string>
+	</dict>
+
+	<!-- Default (green) -->
+	<dict>
+		<string name="id">default-green</string>
+
+		<string name="name">.legacyshop.combo.default-green.name</string>
+		<string name="description">.legacyshop.combo.default-green.desc</string>
+
+		<int name="legacy-points">100</int>
+
+		<array name="sprite">
+			<string>gui/icons_combo.png</string>
+			<int>100</int><vec4>120 0 24 24</vec4>
+		</array>
+
+		<string name="effect">players/combo/combo_standard.effect</string>
+		<array name="projectiles">
+			<string>players/combo/nova/combo_nova_standard_1.unit</string>
+			<string>players/combo/nova/combo_nova_standard_2.unit</string>
+			<string>players/combo/nova/combo_nova_standard_3.unit</string>
+			<string>players/combo/nova/combo_nova_standard_4.unit</string>
+		</array>
+
+		<string name="color">#00FF00FF</string>
+	</dict>
+
+	<!-- Spin -->
+	<dict>
+		<string name="id">spin</string>
+
+		<string name="name">.legacyshop.combo.spin.name</string>
+		<!-- <string name="description">.legacyshop.combo.spin.desc</string> -->
+
+		<int name="legacy-points">2500</int>
+
+		<array name="sprite">
+			<string>gui/icons_combo.png</string>
+			<int>100</int><vec4>0 0 24 24</vec4>
+		</array>
+
+		<string name="effect">players/combo/combo_spin.effect</string>
+		<array name="projectiles">
+			<string>players/combo/nova/combo_nova_spin_1.unit</string>
+			<string>players/combo/nova/combo_nova_spin_2.unit</string>
+			<string>players/combo/nova/combo_nova_spin_3.unit</string>
+			<string>players/combo/nova/combo_nova_spin_4.unit</string>
+		</array>
+
+		<string name="color">#FFCC4CFF</string>
+	</dict>
+
+	<!-- Lightning -->
+	<dict>
+		<string name="id">lightning</string>
+
+		<string name="name">.legacyshop.combo.lightning.name</string>
+		<!-- <string name="description">.legacyshop.combo.lightning.desc</string> -->
+
+		<int name="legacy-points">500</int>
+
+		<array name="sprite">
+			<string>gui/icons_combo.png</string>
+			<int>100</int><vec4>24 0 24 24</vec4>
+		</array>
+
+		<string name="effect">players/combo/combo_lightning.effect</string>
+		<array name="projectiles">
+			<string>players/combo/nova/combo_nova_lightning_1.unit</string>
+			<string>players/combo/nova/combo_nova_lightning_2.unit</string>
+			<string>players/combo/nova/combo_nova_lightning_3.unit</string>
+			<string>players/combo/nova/combo_nova_lightning_4.unit</string>
+		</array>
+
+		<string name="color">#00FFFFFF</string>
+	</dict>
+
+	<!-- Pulse -->
+	<dict>
+		<string name="id">pulse</string>
+
+		<string name="name">.legacyshop.combo.pulse.name</string>
+		<!-- <string name="description">.legacyshop.combo.pulse.desc</string> -->
+
+		<int name="legacy-points">2500</int>
+
+		<array name="sprite">
+			<string>gui/icons_combo.png</string>
+			<int>100</int><vec4>48 0 24 24</vec4>
+		</array>
+
+		<string name="effect">players/combo/combo_pulse.effect</string>
+		<array name="projectiles">
+			<string>players/combo/nova/combo_nova_pulse_1.unit</string>
+			<string>players/combo/nova/combo_nova_pulse_2.unit</string>
+			<string>players/combo/nova/combo_nova_pulse_3.unit</string>
+			<string>players/combo/nova/combo_nova_pulse_4.unit</string>
+		</array>
+
+		<string name="color">#4C7FFFFF</string>
+	</dict>
+
+	<!-- Field -->
+	<dict>
+		<string name="id">field</string>
+
+		<string name="name">.legacyshop.combo.field.name</string>
+		<!-- <string name="description">.legacyshop.combo.field.desc</string> -->
+
+		<int name="legacy-points">2500</int>
+
+		<array name="sprite">
+			<string>gui/icons_combo.png</string>
+			<int>100</int><vec4>74 0 24 24</vec4>
+		</array>
+
+		<string name="effect">players/combo/combo_field.effect</string>
+		<array name="projectiles">
+			<string>players/combo/nova/combo_nova_field_1.unit</string>
+			<string>players/combo/nova/combo_nova_field_2.unit</string>
+			<string>players/combo/nova/combo_nova_field_3.unit</string>
+			<string>players/combo/nova/combo_nova_field_4.unit</string>
+		</array>
+
+		<!-- <string name="color">#4C7FFFFF</string> -->
+		<!-- <string name="color">#7E1210FF</string> -->
+		<string name="color">#B02420FF</string>
+	</dict>
+</array>

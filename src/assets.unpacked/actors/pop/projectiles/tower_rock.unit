@@ -1,0 +1,51 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+
+		<float name="speed">6</float>
+		<int name="ttl">3000</int>
+		
+		<string name="shoot-snd">event:/enemy/tower_rock/shoot</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">60</int>
+			</dict>
+			<dict>
+				<string name="class">Nova</string>
+				<int name="projectiles">5</int>
+				<float name="proj-dist">8</float>
+				<string name="projectile">actors/pop/projectiles/tower_rock_shard.unit</string>
+			</dict>	
+		</array>		
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<collision static="false">
+			<circle projectile="true" radius="3" />
+		</collision>
+		
+		<scene name="idle">
+			<sprite random-start="true" looping="true" origin="3 4" texture="./tower_rock.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 6 8</frame>
+				<frame time="50">6 0 6 8</frame>
+				<frame time="50">0 8 6 8</frame>
+				<frame time="50">6 8 6 8</frame>
+			</sprite>
+			
+			<shadow>
+				<sprite random-start="true" origin="3 0" texture="./tower_rock.png">
+					<frame time="50">0 0 6 8</frame>
+					<frame time="50">6 0 6 8</frame>
+					<frame time="50">0 8 6 8</frame>
+					<frame time="50">6 8 6 8</frame>
+				</sprite>
+			</shadow>		
+		</scene>
+	</scenes>
+</unit>

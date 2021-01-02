@@ -1,0 +1,75 @@
+<effect looping="true" layer="-1" bounds="50 50">
+
+	<param name="radius" default="40" />
+	<param name="ttl" default="1000" />
+	<!-- symbols -->
+	
+
+	<!-- rotating rings-->
+	<sprite origin="41 41" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		angle="t*pi*2"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*16))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="8000">0 0 82 82</frame>
+	</sprite>
+	<sprite origin="41 41" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		angle="t*pi*-2"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*16))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="10000">82 0 82 82</frame>
+	</sprite>
+	<sprite origin="41 41" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		angle="t*pi*2"
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*16))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="10000">164 0 82 82</frame>
+	</sprite>
+	<sprite origin="41 41" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		angle="(t+l)*pi*-4"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*16))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="8000">164 0 82 82</frame>
+	</sprite>
+	
+	<sprite origin="41 41" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		angle="t*pi*8"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*16))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="15000">0 82 82 82</frame>
+	</sprite>
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(t*10, radius * 3 + 10)" />
+
+		<color-r value="0.5" />
+		<color-g value="2.5 * saturate(cos(t*pi*16+0.5))" />
+		<color-b value="1 * saturate(sin(t*pi*16))" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,1020 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/special/color_archives_64.unit"><vec2>-24 8</vec2><int>12</int><vec2>-8 8</vec2><int>11</int><vec2>-8 40</vec2><int>13</int><vec2>-24 40</vec2><int>14</int></array>
+		<array name="doodads/walls/archives/_deco_blackboard.unit"><vec2>0 80</vec2><int>17</int><vec2>16 80</vec2><int>16</int><vec2>32 80</vec2><int>15</int></array>
+		<array name="doodads/walls/archives/_deco_pillar_2.unit"><vec2>16 80</vec2><int>18</int></array>
+		<array name="doodads/walls/archives/_deco_pillar_1.unit">
+			<vec2>16 80</vec2>
+			<int>10</int>
+			<vec2>0 80</vec2>
+			<int>9</int>
+			<vec2>-11 80</vec2>
+			<int>8</int>
+			<vec2>32 80</vec2>
+			<int>7</int>
+			<vec2>43 80</vec2>
+			<int>6</int>
+		</array>
+		<array name="doodads/walls/archives/_deco_stone_dn.unit"><vec2>16 80</vec2><int>5</int></array>
+		<array name="doodads/walls/archives/_deco_pillar_square_white.unit"><vec2>0 80</vec2><int>20</int><vec2>32 80</vec2><int>19</int><vec2>16 80</vec2><int>21</int></array>
+		<array name="doodads/walls/archives/h.unit"><vec2>16 -32</vec2><int>4</int><vec2>-16 -32</vec2><int>3</int><vec2>16 64</vec2><int>2</int><vec2>-16 64</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>22</int>
+			<vec3>-480 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_1</string>
+			<dict>
+				<string name="EventName">button_1</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>23</int>
+			<vec3>-512 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_1</string>
+			<dict>
+				<string name="Flag">archives_button_1</string>
+				<array name="OnTrue"><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>24</int>
+			<vec3>-480 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>25</int>
+			<vec3>-480 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_1_c</string>
+			<dict>
+				<string name="Flag">archives_button_1_c</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>26</int>
+			<vec3>-480 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_1_c</string>
+			<dict>
+				<string name="Flag">archives_button_1_c</string>
+				<array name="OnFalse"><int>25</int><int>24</int></array>
+				<array name="OnTrue"><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>27</int>
+			<vec3>-368 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_2</string>
+			<dict>
+				<string name="EventName">button_2</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>28</int>
+			<vec3>-400 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_2</string>
+			<dict>
+				<string name="Flag">archives_button_2</string>
+				<array name="OnTrue"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>29</int>
+			<vec3>-368 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>30</int>
+			<vec3>-368 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_2_c</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">archives_button_2_c</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>31</int>
+			<vec3>-368 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_2_c</string>
+			<dict>
+				<string name="Flag">archives_button_2_c</string>
+				<array name="OnFalse"><int>30</int><int>29</int></array>
+				<array name="OnTrue"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>32</int>
+			<vec3>-608 392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>ConnectButton</string>
+			<array><int>23</int><int>200</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>33</int>
+			<vec3>16 184 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ActivateSomething</string>
+			<array><int>75</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>34</int>
+			<vec3>-256 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_3</string>
+			<dict>
+				<string name="EventName">button_3</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>35</int>
+			<vec3>-288 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_3</string>
+			<dict>
+				<string name="Flag">archives_button_3</string>
+				<array name="OnTrue"><int>38</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>36</int>
+			<vec3>-256 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>34</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>37</int>
+			<vec3>-256 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_3_c</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">archives_button_3_c</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>38</int>
+			<vec3>-256 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_3_c</string>
+			<dict>
+				<string name="Flag">archives_button_3_c</string>
+				<array name="OnFalse"><int>37</int><int>36</int></array>
+				<array name="OnTrue"><int>40</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>39</int>
+			<vec3>-144 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_4</string>
+			<dict>
+				<string name="EventName">button_4</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>40</int>
+			<vec3>-176 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_4</string>
+			<dict>
+				<string name="Flag">archives_button_4</string>
+				<array name="OnTrue"><int>43</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>41</int>
+			<vec3>-144 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>42</int>
+			<vec3>-144 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_4_c</string>
+			<dict>
+				<string name="Flag">archives_button_4_c</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>43</int>
+			<vec3>-144 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_4_c</string>
+			<dict>
+				<string name="Flag">archives_button_4_c</string>
+				<array name="OnFalse"><int>42</int><int>41</int></array>
+				<array name="OnTrue"><int>45</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>44</int>
+			<vec3>-32 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_5</string>
+			<dict>
+				<string name="EventName">button_5</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>45</int>
+			<vec3>-64 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_5</string>
+			<dict>
+				<string name="Flag">archives_button_5</string>
+				<array name="OnTrue"><int>48</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>46</int>
+			<vec3>-32 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>44</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>47</int>
+			<vec3>-32 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_5_c</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">archives_button_5_c</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>48</int>
+			<vec3>-32 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_5_c</string>
+			<dict>
+				<string name="Flag">archives_button_5_c</string>
+				<array name="OnFalse"><int>47</int><int>46</int></array>
+				<array name="OnTrue"><int>50</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>49</int>
+			<vec3>80 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_6</string>
+			<dict>
+				<string name="EventName">button_6</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>50</int>
+			<vec3>48 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_6</string>
+			<dict>
+				<string name="Flag">archives_button_6</string>
+				<array name="OnTrue"><int>53</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>51</int>
+			<vec3>80 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>49</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>52</int>
+			<vec3>80 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_6_c</string>
+			<dict>
+				<string name="Flag">archives_button_6_c</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>53</int>
+			<vec3>80 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_6_c</string>
+			<dict>
+				<string name="Flag">archives_button_6_c</string>
+				<array name="OnFalse"><int>52</int><int>51</int></array>
+				<array name="OnTrue"><int>55</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>54</int>
+			<vec3>192 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_7</string>
+			<dict>
+				<string name="EventName">button_7</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>55</int>
+			<vec3>160 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_7</string>
+			<dict>
+				<string name="Flag">archives_button_7</string>
+				<array name="OnTrue"><int>58</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>56</int>
+			<vec3>192 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>54</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>57</int>
+			<vec3>192 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_7_c</string>
+			<dict>
+				<string name="Flag">archives_button_7_c</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>58</int>
+			<vec3>192 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_7_c</string>
+			<dict>
+				<string name="Flag">archives_button_7_c</string>
+				<array name="OnFalse"><int>57</int><int>56</int></array>
+				<array name="OnTrue"><int>60</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>59</int>
+			<vec3>304 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_8</string>
+			<dict>
+				<string name="EventName">button_8</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>60</int>
+			<vec3>272 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_8</string>
+			<dict>
+				<string name="Flag">archives_button_8</string>
+				<array name="OnTrue"><int>63</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>61</int>
+			<vec3>304 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>59</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>62</int>
+			<vec3>304 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_8_c</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">archives_button_8_c</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>63</int>
+			<vec3>304 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_8_c</string>
+			<dict>
+				<string name="Flag">archives_button_8_c</string>
+				<array name="OnFalse"><int>62</int><int>61</int></array>
+				<array name="OnTrue"><int>65</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>64</int>
+			<vec3>416 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_9</string>
+			<dict>
+				<string name="EventName">button_9</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>65</int>
+			<vec3>384 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_9</string>
+			<dict>
+				<string name="Flag">archives_button_9</string>
+				<array name="OnTrue"><int>68</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>66</int>
+			<vec3>416 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>64</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>67</int>
+			<vec3>416 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_9_c</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">archives_button_9_c</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>68</int>
+			<vec3>416 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_9_c</string>
+			<dict>
+				<string name="Flag">archives_button_9_c</string>
+				<array name="OnFalse"><int>67</int><int>66</int></array>
+				<array name="OnTrue"><int>70</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>69</int>
+			<vec3>528 264 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button_10</string>
+			<dict>
+				<string name="EventName">button_10</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>70</int>
+			<vec3>496 392 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_10</string>
+			<dict>
+				<string name="Flag">archives_button_10</string>
+				<array name="OnTrue"><int>73</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>71</int>
+			<vec3>528 328 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>69</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>72</int>
+			<vec3>528 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_10_c</string>
+			<dict>
+				<string name="Flag">archives_button_10_c</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>73</int>
+			<vec3>528 456 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_button_10_c</string>
+			<dict>
+				<string name="Flag">archives_button_10_c</string>
+				<array name="OnFalse"><int>72</int><int>71</int></array>
+				<array name="OnTrue"><int>74</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>74</int><vec3>640 456 0</vec3><bool>t</bool><int>1</int><bool>f</bool><string>NoConnectionFound</string></array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>75</int>
+			<vec3>16 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units">
+					<int>2</int>
+					<int>1</int>
+					<int>14</int>
+					<int>13</int>
+					<int>11</int>
+					<int>12</int>
+					<int>3</int>
+					<int>4</int>
+					<int>6</int>
+					<int>15</int>
+					<int>16</int>
+					<int>20</int>
+					<int>8</int>
+					<int>17</int>
+					<int>5</int>
+					<int>7</int>
+					<int>19</int>
+					<int>18</int>
+					<int>9</int>
+					<int>10</int>
+					<int>21</int>
+				</array>
+			</dict>
+			<array><int>82</int><int>0</int><int>100</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>76</int>
+			<vec3>-8 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button2_passage</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/button2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>77</int>
+			<vec3>32 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>button2_room</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/button2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>78</int>
+			<vec3>-432 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<float name="ChanceToExecute">0.4</float>
+				<array name="ToExecute"><int>86</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>79</int>
+			<vec3>16 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>90</int><int>85</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>80</int>
+			<vec3>16 -272 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<array><int>79</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>81</int>
+			<vec3>-32 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>82</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>82</int>
+			<vec3>0 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>passage</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_hidden_passage.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>83</int>
+			<vec3>-256 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>15</int><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>84</int>
+			<vec3>-560 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>20</int><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>85</int>
+			<vec3>48 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>room</string>
+			<array><int>77</int><int>0</int><int>101</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>86</int>
+			<vec3>-432 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>87</int>
+			<vec3>-304 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>15</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>88</int>
+			<vec3>-528 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>10</int><int>18</int><int>5</int><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>89</int>
+			<vec3>-560 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>84</int><int>95</int><int>94</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>90</int>
+			<vec3>-8 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>passage</string>
+			<array><int>76</int><int>0</int><int>81</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>91</int>
+			<vec3>-336 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>5</int><int>18</int><int>10</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>92</int>
+			<vec3>-352 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>7</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>93</int>
+			<vec3>-304 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>87</int><int>92</int><int>83</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>94</int>
+			<vec3>-512 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>17</int><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>95</int>
+			<vec3>-608 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>17</int><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>96</int>
+			<vec3>-432 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>97</int><int>98</int><int>99</int><int>88</int><int>91</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>97</int>
+			<vec3>-384 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>16</int><int>18</int><int>10</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>98</int>
+			<vec3>-432 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>16</int><int>5</int><int>10</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>99</int>
+			<vec3>-480 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>16</int><int>5</int><int>18</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>100</int>
+			<vec3>0 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>room</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_hidden_room.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>101</int>
+			<vec3>64 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>100</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

@@ -1,0 +1,14 @@
+<unit slot="doodad" layer="-30">
+	<scenes off="off" on="on">
+		<scene name="off" trigger-snd="event:/misc/button_hatch">
+			<sprite origin="8 8" texture="./buttons.png" material="system/default.mats:floor">
+				<frame time="50">0 32 16 16</frame>
+			</sprite>
+		</scene>
+		<scene name="on" trigger-snd="event:/misc/button_hatch">
+			<sprite origin="8 8" texture="./buttons.png" material="system/default.mats:floor">
+				<frame time="50">48 32 16 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

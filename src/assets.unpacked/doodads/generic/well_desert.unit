@@ -1,0 +1,59 @@
+<unit slot="doodad">
+	<scenes default="on" off="off">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" radius="16" />
+			</collision>
+			<sprite origin="16 20" looping="true" texture="./well_desert.png" material="system/default.mats:default-noxray">
+				<frame>0 0 32 36</frame>
+			</sprite>
+			<sprite layer="-20" ulayer="2" origin="-16 12" looping="true" texture="./well_desert.png" material="system/default.mats:default">
+				<frame>32 8 3 17</frame>
+			</sprite>
+			<sprite layer="-20" ulayer="1" origin="20 11" looping="true" texture="./well_desert.png" material="tilesets/grass.mats:desert">
+				<frame>35 0 42 31</frame>
+			</sprite>
+		</scene>		
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 10 9 10" />
+			<sprite ulayer="2" origin="12 12" looping="true" texture="./well_desert.png" material="system/default.mats:default">
+				<frame time="200">77 24 24 20</frame> 
+				<frame time="200">101 24 24 20</frame>
+				<frame time="200">0 44 24 20</frame>
+			</sprite>
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="5"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="0 180 200 0" />
+					<color value="0 170 200 0" />
+				</colors>
+			</light>			
+		</scene>
+		<scene name="off">
+			<scene src="shared" />	
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 20 9 10" />
+			<sprite ulayer="2" origin="12 12" looping="false" texture="./well_desert.png" material="system/default.mats:default">
+				<frame time="200">24 44 24 20</frame>
+				<frame time="200">48 44 24 20</frame>
+				<frame time="200">72 44 24 20</frame>
+				<frame time="200">96 44 24 20</frame>
+				<frame time="200">0 0 0 0</frame>
+			</sprite>
+				
+		</scene>
+		
+		
+	</scenes>
+</unit>

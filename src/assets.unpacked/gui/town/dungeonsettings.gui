@@ -1,0 +1,74 @@
+<gui>
+	<sprites>
+%include "gui/playermenu/charheader_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/main_menu/checkbox_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="218" height="105" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox">
+				<!-- Header -->
+				<rect width="214" height="18" offset="2 2" flow="hbox">
+					<rect width="193" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".town.dungeonsettings.title" anchor="0.5 0.5" />
+					</rect>
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<spritebutton func="close" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="214" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- NG+ -->
+				<rect width="214" height="28" offset="2 0" flow="hbox">
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Left button -->
+					<spritebutton id="ngp-left" func="ngp-prev" spriteset="arrow-left" />
+
+					<!-- Frame -->
+					<sprite src="big-frame">
+						<text id="ngp" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" color="#FFC400FF" />
+						<knobslider width="100%" height="100%" func-increase="ngp-next" func-decrease="ngp-prev" />
+					</sprite>
+
+					<!-- Right button -->
+					<spritebutton id="ngp-right" func="ngp-next" spriteset="arrow-right" />
+
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Description -->
+					<rect width="156" height="28" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<text font="gui/fonts/arial11.fnt" width="152" align="center" anchor="0.5 0.5" offset="0 -1" text=".town.dungeonsettings.ngp" />
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="214" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Downscaling -->
+				<rect width="214" height="28" offset="2 0" flow="hbox" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Checkbox -->
+					<checkbox id="downscaling" func="downscaling-changed" offset="4" anchor="0 0.5" spriteset="checkbox" font="gui/fonts/arial11.fnt" text=".mainmenu.host.downscaling" tooltip=".mainmenu.host.downscaling.description" color="#FFFFFFFF" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="214" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Close button container -->
+				<rect width="214" height="18" flow="hbox" offset="2 0">
+					<rect width="56" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Close button -->
+					<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" text=".menu.close" func="close" />
+
+					<rect width="56" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

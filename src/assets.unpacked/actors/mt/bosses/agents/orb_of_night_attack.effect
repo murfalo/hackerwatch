@@ -1,0 +1,43 @@
+<effect looping="false" layer="1">
+	<data>
+		<string name="sound">event:/enemy/orb_of_night/pulse</string>
+	</data>
+	<param name="radius" default="64" />
+	<param name="angle" default="0" />
+	<sprite origin="64 59" looping="false" texture="./orb_of_night_attack.png" material="system/default.mats:glow-both-bright"
+		color-r="1"
+		color-g="1-t"
+		color-b="1.5"
+		color-a="1-t"
+		scale-x="1*pow(t,0.5)"
+		scale-y="1*pow(t,0.5)"
+		>
+		<frame time="1000">0 0 128 128</frame>
+	</sprite>
+	<sprite origin="5 0.5" looping="false" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="50"
+		color-r="1"
+		color-g="1-t"
+		color-b="1.5"
+		color-a="0.5-0.5*t"
+		angle="2*pi*rand(u+i*953)"
+		scale-y="1.5-t"
+		pos-x="cos(rand(u+953*i)*2*pi) * (radius+10) * pow(rand(u+479*i),0.5)*t"
+		pos-y="sin(rand(u+953*i)*2*pi) * (radius+10) * pow(rand(u+479*i),0.5)*t"
+		>
+		<frame time="1000" x="0" y="0"  w="10*(1-t)" h="1" />
+	</sprite>
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="75" />
+		<looping value="true" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		<size value="min(200 * t*2, 200)" />
+		<color-r value="15- 15*t" />
+		<color-g value="0" />
+		<color-b value="20- 20*t" />
+		<color-a value="0/255" />
+	</light>	
+</effect>

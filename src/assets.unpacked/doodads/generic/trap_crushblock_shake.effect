@@ -1,0 +1,13 @@
+<effect looping="false">
+	<sprite looping="false" origin="12 36" texture="./trap_crushblock.png" material="system/default.mats:default"
+		pos-x="sin(5*(rand(u))+t*2*pi*1)*1.5"
+		pos-y="0">
+		<frame time="300">0 0 24 48</frame>
+	</sprite>
+	<sprite looping="false" origin="5 29" texture="./trap_crushblock.png" material="system/default.mats:bright"
+		color-a="t"
+		pos-x="sin(5*(rand(u))+t*2*pi*1)*1.5"
+		pos-y="0">
+		<frame time="300">25 1 10 10</frame>
+	</sprite>
+</effect>

@@ -1,0 +1,66 @@
+<loader>DungeonProperties::LoadSingle</loader>
+<dict>
+	<string name="class">BaseDungeonProperties</string>
+
+	<string name="id">base</string>
+	<string name="name">.dungeon.base</string>
+
+	<string name="str-char-info-ngp">.charinfo.ngp</string>
+	<string name="str-notify-char-ngp">.hud.newngp.char</string>
+
+	<array name="area-names">
+		<string>.world.mines</string>
+		<string>.world.tower</string>
+		<string>.world.tower</string>
+		<string>.world.tower</string>
+		<string>.world.tower</string>
+		<string>.world.tower</string>
+		<string>.world.tower</string>
+		<string>.world.tower</string>
+	</array>
+
+	<array name="act-names">
+		<string>.world.acts.0</string>
+		<string>.world.acts.1</string>
+		<string>.world.acts.2</string>
+		<string>.world.acts.3</string>
+		<string>.world.acts.4</string>
+		<string>.world.acts.5</string>
+		<string>.world.acts.6</string>
+		<string>.world.acts.7</string>
+	</array>
+
+	<array name="levels">
+		%//<array><string>LevelFile</string><int>Act</int><int>Level</int><string>Theme</string><int>Width</int><int>Height</int></array>
+
+ 		<array><string>levels/generated.lvl</string><int>0</int><int>0</int><string>mines</string><int>1500</int><int>1500</int></array>
+		<array><string>levels/generated.lvl</string><int>0</int><int>1</int><string>mines</string><int>1600</int><int>1600</int></array>
+		<array><string>levels/generated.lvl</string><int>0</int><int>2</int><string>mines</string><int>1700</int><int>1700</int></array>
+		<array><string>levels/boss_mines.lvl</string><int>0</int><int>3</int></array>
+
+		<array><string>levels/generated.lvl</string><int>1</int><int>0</int><string>prison</string><int>1700</int><int>1700</int></array>
+		<array><string>levels/generated.lvl</string><int>1</int><int>1</int><string>prison</string><int>1800</int><int>1800</int></array>
+		<array><string>levels/generated.lvl</string><int>1</int><int>2</int><string>prison</string><int>1900</int><int>1900</int></array>
+		<array><string>levels/boss_prison.lvl</string><int>1</int><int>3</int></array>
+
+		<array><string>levels/generated.lvl</string><int>2</int><int>0</int><string>armory</string><int>1900</int><int>1900</int></array>
+		<array><string>levels/generated.lvl</string><int>2</int><int>1</int><string>armory</string><int>2000</int><int>2000</int></array>
+		<array><string>levels/generated.lvl</string><int>2</int><int>2</int><string>armory</string><int>2100</int><int>2100</int></array>
+		<array><string>levels/boss_armory.lvl</string><int>2</int><int>3</int></array>
+
+		<array><string>levels/generated.lvl</string><int>3</int><int>0</int><string>archives</string><int>1900</int><int>1900</int></array>
+		<array><string>levels/generated.lvl</string><int>3</int><int>1</int><string>archives</string><int>1950</int><int>1950</int></array>
+		<array><string>levels/generated.lvl</string><int>3</int><int>2</int><string>archives</string><int>2000</int><int>2000</int></array>
+		<array><string>levels/boss_archives.lvl</string><int>3</int><int>3</int></array>
+
+		<array><string>levels/generated.lvl</string><int>4</int><int>0</int><string>chambers</string><int>2000</int><int>2600</int></array>
+		<array><string>levels/generated.lvl</string><int>4</int><int>1</int><string>chambers</string><int>2400</int><int>3000</int></array>
+		<array><string>levels/boss_chambers.lvl</string><int>4</int><int>2</int><string>chambers</string></array>
+
+		<array><string>levels/battlements_1.lvl</string><int>5</int><int>0</int><string>battlements</string></array>
+		<array><string>levels/battlements_2.lvl</string><int>5</int><int>1</int><string>battlements</string></array>
+
+		<array><string>levels/bridge.lvl</string><int>6</int><int>0</int></array>
+		<array><string>levels/boss_dragon.lvl</string><int>6</int><int>1</int></array>
+	</array>
+</dict>

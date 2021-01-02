@@ -1,0 +1,34 @@
+<unit netsync="none" layer="1">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">8</float>
+		<int name="ttl">1500</int>
+		<bool name="blockable">false</bool>
+		
+		<string name="hit-snd">event:/enemy/elemental_ice/hit</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">40</int>
+				<int name="magical">40</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:freezing</string>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">8</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="doodads/generic/elemental_ice_spear.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

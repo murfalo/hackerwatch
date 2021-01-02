@@ -1,0 +1,423 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.sentinel_melee</string>
+		<vec2 name="beastiary-offset">0 8</vec2>
+		<string name="quality">uncommon</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">construct</string>
+		<int name="hp">750</int>
+		<int name="armor">100</int>
+		<int name="resistance">40</int>
+		<int name="experience-reward">140</int>
+		<float name="mp-scale-fact">0.65</float>
+		
+		<int name="unit-height">14</int>
+		
+		<string name="death-snd">event:/enemy/sentinel/death</string>
+		<string name="gore">effects/gibs/gib_sentinel.sval</string>
+		<string name="loot">actors/loot.sval:sentinel</string>
+		
+		<int name="aggro-range">5000</int>
+		<bool name="must-see-target">false</bool>
+		<float name="wind-scale">0.5</float>
+
+		<array name="buffs-immune-tags">
+			<string>respawn_ghost</string>
+			<string>bleeding</string>
+		</array>
+
+		<dict name="movement">
+			<string name="class">CirclingMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			
+			<float name="speed">2</float>
+		</dict>
+
+		<array name="skills">
+			%// Melee attack
+			<dict>
+				<string name="class">EnemyMeleeStrike</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown">400</int>
+				<int name="castpoint">550</int>
+				<int name="range">24</int>
+				<int name="arc">160</int>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">120</int>
+					<float name="armor-mul">0.8</float>
+					<bool name="melee">true</bool>
+				</dict>
+			</dict>
+			
+			%// Normal Charge
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+			
+				<string name="class">ChargeStrike</string>
+				<string name="anim">charge 8</string>
+				
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">3000</int>
+				<int name="hold-frame">250</int>
+				
+				<int name="range">80</int>
+				<int name="min-range">50</int>
+
+				<bool name="must-see">true</bool>
+				
+				<float name="speed">4.5</float>
+				<int name="air-time">700</int>
+				<int name="jump-height">0</int>
+				<bool name="glide">false</bool>
+				
+				<int name="ray-num">4</int>
+				<int name="ray-width">12</int>
+				<float name="ray-length">3</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">60</int>
+						<float name="armor-mul">0.8</float>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ Charge
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+			
+				<string name="class">ChargeStrike</string>
+				<string name="anim">charge 8</string>
+				
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">3000</int>
+				<int name="hold-frame">250</int>
+				
+				<int name="range">80</int>
+				<int name="min-range">50</int>
+
+				<bool name="must-see">true</bool>
+				
+				<float name="speed">5.5</float>
+				<int name="air-time">550</int>
+				<int name="jump-height">0</int>
+				<bool name="glide">false</bool>
+				
+				<int name="ray-num">4</int>
+				<int name="ray-width">12</int>
+				<float name="ray-length">3</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">60</int>
+						<float name="armor-mul">0.8</float>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="4" charge-through="true" density="20"/>
+				<circle offset="0 -8" sensor="true" shoot-through="false" aim-through="true" radius="4" />
+			</collision>
+		</scene>
+		
+		<scene name="shared-charge">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="4" charge-through="true" charging="true" density="20"/>
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">0 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">48 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">96 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">144 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">192 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">240 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">288 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">336 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">0 48 48 48</frame>
+				<frame time="150">0 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">48 48 48 48</frame>
+				<frame time="150">48 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">96 48 48 48</frame>
+				<frame time="150">96 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">144 48 48 48</frame>
+				<frame time="150">144 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">192 48 48 48</frame>
+				<frame time="150">192 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">240 48 48 48</frame>
+				<frame time="150">240 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">288 48 48 48</frame>
+				<frame time="150">288 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="150">336 48 48 48</frame>
+				<frame time="150">336 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="charge-0">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 0 144 48 48</frame>
+			
+				<frame time="75">0 48 48 48</frame>
+				<frame time="75">0 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="charge-1">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 48 144 48 48</frame>
+				
+				<frame time="75">48 48 48 48</frame>
+				<frame time="75">48 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-2">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 96 144 48 48</frame>
+				
+				<frame time="75">96 48 48 48</frame>
+				<frame time="75">96 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-3">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 144 144 48 48</frame>
+			
+				<frame time="75">144 48 48 48</frame>
+				<frame time="75">144 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-4">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 192 144 48 48</frame>
+			
+				<frame time="75">192 48 48 48</frame>
+				<frame time="75">192 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-5">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 240 144 48 48</frame>
+			
+				<frame time="75">240 48 48 48</frame>
+				<frame time="75">240 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-6">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 288 144 48 48</frame>
+			
+				<frame time="75">288 48 48 48</frame>
+				<frame time="75">288 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-7">
+			<scene src="shared-charge" />
+			<sprite origin="24 30" loopback="250" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="250"> 336 144 48 48</frame>
+			
+				<frame time="75">336 48 48 48</frame>
+				<frame time="75">336 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 0 144 48 48</frame>
+				<frame time="60"> 0 192 48 48</frame>
+				<frame time="200"> 0 240 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 48 144 48 48</frame>
+				<frame time="60">  48 192 48 48</frame>
+				<frame time="200"> 48 240 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 96 144 48 48</frame>
+				<frame time="60">  96 192 48 48</frame>
+				<frame time="200"> 96 240 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 144 144 48 48</frame>
+				<frame time="60">  144 192 48 48</frame>
+				<frame time="200"> 144 240 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 192 144 48 48</frame>
+				<frame time="60">  192 192 48 48</frame>
+				<frame time="200"> 192 240 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 240 144 48 48</frame>
+				<frame time="60">  240 192 48 48</frame>
+				<frame time="200"> 240 240 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 288 144 48 48</frame>
+				<frame time="60">  288 192 48 48</frame>
+				<frame time="200"> 288 240 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_melee.png" material="system/default.mats:actor">
+				<frame time="500"> 336 144 48 48</frame>
+				<frame time="60">  336 192 48 48</frame>
+				<frame time="200"> 336 240 48 48</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,600 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">MainMenu</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">150</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">18</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>3</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">38</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>4</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">58</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>5</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="system/system.fnt">
+			<array>
+				<vec2>0 -16</vec2>
+				<int>6</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">quicksand</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>7</int>
+			<vec3>0 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>TriggerAmbush</string>
+			<array>
+				<int>8</int>
+				<int>0</int>
+				<int>16</int>
+				<int>0</int>
+				<int>31</int>
+				<int>1800</int>
+				<int>32</int>
+				<int>1000</int>
+				<int>33</int>
+				<int>400</int>
+				<int>35</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>8</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>quicksand</string>
+			<dict>
+				<string name="UnitType">doodads/terrain/quicksand.unit</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+			<array><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>9</int>
+			<vec3>-32 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">3</int>
+				<int name="Value">1</int>
+				<array name="Variable"><int>11</int></array>
+				<array name="OnTrue"><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>-160 256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>13</int></array>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>11</int><vec3>-96 384 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>Players</string></array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>12</int>
+			<vec3>-96 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">500</int>
+				<array name="LinkScripts"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>13</int>
+			<vec3>-96 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">2000</int>
+			</dict>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>14</int>
+			<vec3>-160 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enter</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>21</int><int>0</int><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>-32 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>16</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnGolem</string>
+			<array><int>22</int><int>50</int><int>19</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>17</int>
+			<vec3>-32 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Exit</string>
+			<dict>
+				<int name="Event">2</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>20</int><int>0</int><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>18</int>
+			<vec3>-160 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">1</int>
+				<array name="Variable"><int>11</int></array>
+				<array name="OnTrue"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>19</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>golem_sand</string>
+			<dict>
+				<string name="UnitType">actors/pop/golem_sand.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>20</int>
+			<vec3>-32 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sub</string>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>11</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>21</int>
+			<vec3>-160 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>add</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>11</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>22</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/pop/golem_sand_spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>23</int>
+			<vec3>-256 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+				<int name="TriggerTimes">7</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>24</int>
+			<vec3>-256 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+				<int name="TriggerTimes">6</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>25</int>
+			<vec3>-256 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+				<int name="TriggerTimes">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>26</int>
+			<vec3>-256 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+				<int name="TriggerTimes">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>27</int>
+			<vec3>-352 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>26</int><int>25</int><int>24</int><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>28</int>
+			<vec3>160 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Damage">0</int>
+				<bool name="CanKill">f</bool>
+				<int name="Frequency">250</int>
+				<string name="Buff">actors/buffs.sval:quicksand-3</string>
+				<int name="MagicalDamage">0</int>
+				<array name="Areas"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>29</int>
+			<vec3>160 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Damage">0</int>
+				<bool name="CanKill">f</bool>
+				<int name="Frequency">250</int>
+				<string name="Buff">actors/buffs.sval:quicksand-2</string>
+				<int name="MagicalDamage">0</int>
+				<array name="Areas"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>30</int>
+			<vec3>160 96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Damage">0</int>
+				<bool name="CanKill">f</bool>
+				<int name="Frequency">250</int>
+				<string name="Buff">actors/buffs.sval:quicksand-1</string>
+				<int name="MagicalDamage">0</int>
+				<array name="Areas"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>31</int>
+			<vec3>96 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>slow1</string>
+			<dict>
+				<array name="Scripts"><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>96 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>slow2</string>
+			<dict>
+				<array name="Scripts"><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>33</int>
+			<vec3>96 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>slow3</string>
+			<dict>
+				<array name="Scripts"><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>34</int>
+			<vec3>96 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+			</dict>
+			<array><int>7</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>35</int>
+			<vec3>0 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>10</int><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>36</int>
+			<vec3>-352 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_more_enemies</string>
+			<dict>
+				<string name="Flag">fountain_more_enemies</string>
+				<array name="OnFalse"><int>27</int></array>
+				<array name="OnTrue"><int>23</int><int>49</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>37</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Triggered</string>
+			<array><int>39</int><int>0</int><int>40</int><int>0</int><int>8</int><int>0</int><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>38</int>
+			<vec3>0 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>TriggeredChance</string>
+			<dict>
+				<float name="ChanceToExecute">0.4</float>
+				<array name="ToExecute"><int>37</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>39</int>
+			<vec3>-96 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>34</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>40</int>
+			<vec3>-96 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>28</int><int>29</int><int>30</int><int>10</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>41</int><vec3>160 -224 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>42</int>
+			<vec3>2 20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>golem_sand</string>
+			<dict>
+				<string name="UnitType">actors/pop/golem_sand.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>43</int>
+			<vec3>-28 2 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>golem_sand</string>
+			<dict>
+				<string name="UnitType">actors/pop/golem_sand.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>44</int>
+			<vec3>24 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>golem_sand</string>
+			<dict>
+				<string name="UnitType">actors/pop/golem_sand.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>45</int>
+			<vec3>96 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="NumToExecute">4</int>
+				<array name="ToExecute"><int>43</int><int>44</int><int>42</int><int>46</int><int>41</int><int>48</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>46</int><vec3>160 -160 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>PlaySound</string>
+			<int>47</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/misc/trap_quicksand</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>48</int>
+			<vec3>-6 -28 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>golem_sand</string>
+			<dict>
+				<string name="UnitType">actors/pop/golem_sand.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>49</int>
+			<vec3>-352 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>46</int><int>41</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

@@ -1,0 +1,103 @@
+<effect looping="false">
+	<param name="radius" default="28" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_ice_cube.sval</string>
+		<string name="sound">event:/enemy/ice_shaman_troll/snowball</string>
+	</data>	
+	
+	<variation>
+		<sprite origin="16 21" looping="false" texture="./ultimate_impact.png" material="system/default.mats:bright-noxray"
+		color-a="1"
+		>
+			<frame time="35">0 0 32 32</frame>
+			<frame time="35">32 0 32 32</frame>
+			<frame time="35">64 0 32 32</frame>
+			<frame time="35">96 0 32 32</frame>
+			<frame time="1000">0 32 32 32</frame>
+			<frame time="100">32 32 32 32</frame>
+			<frame time="100">64 32 32 32</frame>
+			<frame time="100">96 32 32 32</frame>
+			<frame time="100">0 64 32 32</frame>
+			<frame time="1000">0 0 0 0</frame>
+		</sprite>
+	</variation>
+	<variation>
+		<sprite origin="16 21" looping="false" texture="./ultimate_impact.png" material="system/default.mats:bright-noxray"
+		color-a="1"
+		>
+			<frame time="35">0 0 32 32</frame>
+			<frame time="1000">32 0 32 32</frame>
+			<frame time="80">0 96 32 32</frame>
+			<frame time="80">32 96 32 32</frame>
+			<frame time="80">64 96 32 32</frame>
+			<frame time="80">96 96 32 32</frame>
+			<frame time="80">0 128 32 32</frame>
+			<frame time="80">32 128 32 32</frame>
+			<frame time="80">64 128 32 32</frame>
+			<frame time="80">96 128 32 32</frame>
+			<frame time="80">0 160 32 32</frame>
+			<frame time="1000">0 0 0 0</frame>
+		</sprite>
+	</variation>
+	<sprite origin="10 10" ulayer="0" texture="./ultimate_impact.png" material="system/default.mats:glow-both-bright"
+		angle="rand(u)*pi*2"
+	>
+		<frame time="50">0 192 20 20</frame>
+		<frame time="50">20 192 20 20</frame>
+		<frame time="50">40 192 20 20</frame>
+		<frame time="50">60 192 20 20</frame>
+		<frame time="50">80 192 20 20</frame>
+		<frame time="50">100 192 20 20</frame>
+	</sprite>
+
+	%// Flash
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="200">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="false" />
+		<length value="200" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="80 * (1-t)" />
+
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="4" />
+		<color-a value="0"/>
+	</light>
+
+	%// fade
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="48 * (1-pow(t,2))" />
+
+		<color-r value="0.5 * (1-pow(t,2))" />
+		<color-g value="0.5 * (1-pow(t,2))" />
+		<color-b value="2 * (1-pow(t,2))" />
+		<color-a value="0"/>
+	</light>
+	
+</effect>

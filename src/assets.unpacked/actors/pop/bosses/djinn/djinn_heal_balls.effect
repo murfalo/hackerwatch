@@ -1,0 +1,40 @@
+<effect looping="true" layer="2">
+	<param name="dt" default="0.01" />
+<!-- left -->
+	<sprite origin="8 8" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.2"
+		scale-y="it- 0.2"
+		pos-x="sin((t-i*dt) * pi * (8 + (t-i*dt)*8)) * (32 - (t-i*dt) * 24)" 
+		pos-y="-1*(t-i*dt) * 68"
+		color-a="saturate(cos((t-i*dt) * pi * (8 + (t-i*dt)*8)) * (2 - (t-i*dt))) * 0.5 * (1-pow(t,10))"
+	
+	>
+		
+		<frame time="3000">464 0 16 16</frame>
+		<frame time="1000">464 16 16 16</frame>
+		
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.2"
+		scale-y="it- 0.2"
+		pos-x="sin((t-i*dt) * pi * (8 + (t-i*dt)*8)) * (32 - (t-i*dt) * 24)" 
+		pos-y="-1*(t-i*dt) * 68"
+		color-a="saturate(sin((t-i*dt) * pi * (8 + (t-i*dt)*8)) * (2 - (t-i*dt)))*0.5"
+	
+	>
+		
+		<frame time="3000">464 0 16 16</frame>
+		<frame time="1000">464 16 16 16</frame>
+		
+	</sprite>
+	
+	
+	
+	
+</effect>

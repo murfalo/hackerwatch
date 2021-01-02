@@ -1,0 +1,50 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">4.5</float>
+		<int name="ttl">1500</int>
+		<string name="hit-snd">event:/enemy/lich/hit</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">25</int>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">items/projectiles/magic_missile_hit.effect</string>
+			</dict>
+		</array>
+		
+		<string name="fx">items/projectiles/projectile_magic_missile_fade.effect</string>
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<effect src="items/projectiles/projectile_magic_missile_big.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="6" projectile="true" />
+			</collision>
+			<sprite origin="16 16" looping="true" texture="./magic_missile_big.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 32 32</frame>
+				<frame time="50">32 0 32 32</frame>
+			</sprite>
+		</scene>
+		
+		%// Big missile //
+		<!-- <scene name="idle">
+			<effect src="items/projectiles/projectile_magic_missile.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="6" projectile="true" />
+			</collision>
+			<sprite origin="16 16" looping="true" texture="./magic_missile.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 32 32</frame>
+				<frame time="50">32 0 32 32</frame>
+			</sprite>
+		</scene> -->
+	</scenes>
+</unit>

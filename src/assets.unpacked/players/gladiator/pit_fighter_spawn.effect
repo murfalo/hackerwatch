@@ -1,0 +1,29 @@
+<effect looping="false" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="6" />
+	<!-- 
+	<sprite looping="true" origin="5 11" texture="./pit_fighter_statue.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+		scale-x="1"
+		scale-y="1"
+	
+		angle="pi*t*4">
+		
+		<frame time="500">1 1 10 23</frame>
+	</sprite>	 -->
+	<sprite looping="true" origin="6 21" texture="./pit_fighter_statue.png" material="system/default.mats:bright-noxray"
+	
+		pos-x="rand(u*t)*1.5-1"
+		pos-y="24+t*-24"
+		scale-x="1"
+		scale-y="1"
+	>
+		
+        <frame time="1000" x="0" y="0" w="11" h="0+t*24" />
+	</sprite>
+	
+	
+</effect>

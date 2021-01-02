@@ -1,0 +1,29 @@
+<unit slot="doodad" layer="-50">
+	<scenes>
+		<scene name="shared">
+			<minimap_sprite origin="0 8" texture="gui/minimap.png" frame="0 0 4 4" />
+			<minimap_sprite origin="0 4" texture="gui/minimap.png" frame="224 16 4 4" />
+		</scene>
+		<scene>
+			<scene src="shared"/>
+			<collision static="true">
+				<polygon shoot-through="true" aim-through="true" decompose="2">
+					<point>0 -24</point>	
+					<point>0 -32</point>						
+					<point>8 -32</point>	
+					<point>16 -24</point>						
+				</polygon>
+				<polygon shoot-through="true" aim-through="true" decompose="2">
+					<point>0 -8</point>	
+					<point>16 -8</point>						
+					<point>16 0</point>	
+					<point>8 0</point>						
+				</polygon>
+				<rect shoot-through="true" aim-through="true">0 -24 16 16</rect>
+			</collision>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>48 80 16 32</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

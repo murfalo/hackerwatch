@@ -1,0 +1,23 @@
+<unit slot="doodad" layer="-20">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">200</int>
+		<int name="ttl">-1</int>
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:dragon_freezing</string>
+			</dict>
+		</array>
+	</behavior>
+	<scenes>
+		<scene >
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="5 8" radius="50" />
+			</collision>			
+			<sprite origin="64 64" ulayer="2" looping="false" texture="./trap_slow_large.png" material="system/default.mats:floor">
+				<frame time="60">0 0 128 128</frame>
+			</sprite>
+
+		</scene>
+	</scenes>
+</unit>

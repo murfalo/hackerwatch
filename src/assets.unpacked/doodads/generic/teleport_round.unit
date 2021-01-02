@@ -1,0 +1,48 @@
+<unit layer="-10" slot="doodad">
+  <scenes open="open" closed="closed">
+	<scene name="open">
+		<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="134 32 10 10" />	 
+		%if GAME
+		<effect src="doodads/generic/teleport_round.effect" />
+		%endif
+		<light pos="0 0">
+			<sprite texture="system/light_L.png">
+				<frame>0 0 128 128</frame>
+			</sprite>
+			<length value="50" />
+			<overbright value="5" />
+			<looping value="true" />
+			<overlay value="true" />
+			<cast-shadows value="false" />
+			<shadow-cast-pos value="0 0" />
+			<shadow-cast-pos-jitter value="0 0 0 0" />
+			<sizes>
+				<size value="128" />
+			</sizes>
+			<colors>
+				<color value="0 150 255 0" />
+			</colors>
+		</light>
+		
+		%if EDITOR
+%//		<text layer="10" pos="-16 -16" font="gui/fonts/arial11.fnt" text="Teleport\nOpen" align="center" material="system/default.mats:bright"/>	
+%//		<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+%//			<frame>0 0 64 64</frame>
+%//		</sprite>
+		<sprite origin="32 32" texture="./teleport_round.png" material="system/default.mats:glow-both">
+			<frame time="125">64 0 64 64</frame>
+		</sprite>
+		%endif
+	</scene>
+
+    <scene name="closed">
+		%if EDITOR
+		<text layer="10" pos="-16 -16" font="gui/fonts/arial11.fnt" text="Teleport\nClosed" align="center" material="system/default.mats:bright"/>	
+		<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+			<frame>0 0 64 64</frame>
+		</sprite>
+		%endif
+    </scene>
+
+  </scenes>
+</unit>

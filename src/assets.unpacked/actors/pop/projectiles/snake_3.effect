@@ -1,0 +1,49 @@
+<effect looping="true" bounds="1024 1024">
+	<param name="angle"/>
+	<param name="height"/>
+	<param name="length"/>
+	<sprite looping="true" origin="0 1" texture=".././tower_pyramid_laser.png" material="system/default.mats:bright-noxray"
+		color-r="0"
+		color-g="0.75"
+		color-b="0"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle"
+		scale-x="length"
+		scale-y="2"
+		>
+		<frame>55 59 1 1</frame>
+	</sprite>
+	<sprite looping="true" origin="0 3" texture=".././tower_pyramid_laser.png" material="system/default.mats:glow"
+		color-r="0"
+		color-g="0.75"
+		color-b="0"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle"
+		scale-x="length/5"
+		scale-y="2"
+		>
+		<frame>42 57 5 5</frame>
+	</sprite>
+	<sprite looping="true" origin="3 3" texture=".././tower_pyramid_laser.png" material="system/default.mats:glow"
+		color-r="0"
+		color-g="0.75"
+		color-b="0"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle"
+		>
+		<frame time="50">49 57 3 5</frame>
+	</sprite>
+	<sprite looping="true" origin="0 3" texture=".././tower_pyramid_laser.png" material="system/default.mats:glow"
+		color-r="0"
+		color-g="0.75"
+		color-b="0"
+		pos-x="cos(angle)*length"
+		pos-y="sin(angle)*length-height"
+		angle="angle+2*pi"
+		>
+		<frame time="50">49 57 3 5</frame>
+	</sprite>
+</effect>

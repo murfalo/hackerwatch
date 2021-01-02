@@ -1,0 +1,17 @@
+<effect looping="true" layer="600" bounds="1500 1500">
+	<sprite looping="true" origin="12 24" texture="./bat_swarm.png" material="system/default.mats:bright-noxray"
+		num-sprites="100"
+	
+		%//angle="rand(17*il+i*41)*pi/2-pi/4"
+		angle="pi/2 + pi/2 * sign(rand(37*il+i*13) - 0.5)"
+		
+		scale-x="1"
+		scale-y="1"
+		color-a="saturate((t+l) *2) * 0.6 * saturate((4 - (t+l)) *3)"
+		
+		pos-x="cos(rand(17*il+i*41)*pi/2-pi/4) * lerp(it, 400 + rand(i*17) * 400, -(400 + rand(i*17) * 400)) * sign(rand(37*il+i*13) - 0.5)"
+		pos-y="sin(rand(17*il+i*41)*pi/2-pi/4) + lerp(rand(17*il+i*41), 350, -350)"
+	>
+		<frame time="1000">80 0 24 45</frame>
+	</sprite>
+</effect>

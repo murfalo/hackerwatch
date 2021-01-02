@@ -1,0 +1,23 @@
+<unit layer="20" netsync="position" save="false">
+		<behavior class="BombBehavior">
+		<int name="delay-random">0</int>
+		<int name="delay">250</int>
+
+		<array name="actions">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">items/projectiles/guardian_figurine.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+		<effect src="items/projectiles/guardian_figurine_spawn.effect" />
+				
+		</scene>
+
+	</scenes>
+</unit>

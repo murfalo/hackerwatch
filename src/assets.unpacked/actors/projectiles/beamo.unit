@@ -1,0 +1,65 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">2.4</float>
+		<bool name="blockable">false</bool>
+		<string name="fx">actors/projectiles/beamo_hit.effect</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">40</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="3.5" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="idle">
+			<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="./beamo.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 12 12</frame>
+				<frame time="50">12 0 12 12</frame>
+				<frame time="50">24 0 12 12</frame>
+				<frame time="50">36 0 12 12</frame>
+				<frame time="50">48 0 12 12</frame>
+				<frame time="50">0 12 12 12</frame>
+			</sprite>
+			
+			<sprite origin="6 6" looping="true" texture="./beamo.png" material="system/default.mats:glow">
+				<frame time="50">12 12 12 12</frame>
+				<frame time="50">24 12 12 12</frame>
+				<frame time="50">36 12 12 12</frame>
+				<frame time="50">48 12 12 12</frame>
+				<frame time="50">0 24 12 12</frame>
+				<frame time="50">12 24 12 12</frame>
+			</sprite>
+			
+			<light pos="0 0" delay="100">
+				<sprite texture="system/light_concentrated_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="100" />
+				<overbright value="10" />
+				<looping value="false" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="0" />
+					<size value="75" />
+				</sizes>
+ 				<colors>
+					<color value="50 0 0 0" />
+					<color value="255 100 100 0" />
+					<color value="50 0 0 0" />
+				</colors> 
+			</light>
+		</scene>
+	</scenes>
+</unit>

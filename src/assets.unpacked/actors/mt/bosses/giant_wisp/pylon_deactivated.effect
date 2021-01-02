@@ -1,0 +1,59 @@
+<effect looping="true">
+
+	<sprite origin="7 13" looping="true" loopback="520" texture="./giant_wisp.png" material="system/default.mats:glow-both-bright"
+	pos-x="(1-saturate(t+l)) * cos(t*pi*2)">		
+		<frame time="120">45 96 14 27</frame>
+		<frame time="100">30 96 14 27</frame>
+		<frame time="100">15 96 14 27</frame>
+		<frame time="100">15 96 14 27</frame>
+		<frame time="100">0 96 14 27</frame>
+		<frame time="10">0 0 0 0</frame>
+	</sprite>	
+	
+	
+
+	<sprite origin="7 13" looping="true" loopback="520" texture="./giant_wisp.png" material="system/default.mats:default"
+	>		
+		<frame time="520">0 0 0 0</frame>
+		<frame time="50">0 96 14 27</frame>
+	</sprite>	
+	
+	<light pos-y="14"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="70" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />	
+		
+		<size value="30 * (1-saturate(t+l))" />
+		
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="3" />
+		<color-a value="0/255" />
+	</light>
+	
+	<light> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="70" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />	
+		
+		<size value="60 * (1 - saturate(t+l))" />
+		
+		<color-r value="3" />
+		<color-g value="3" />
+		<color-b value="3" />
+		<color-a value="0/255" />
+	</light>
+	
+</effect>

@@ -1,0 +1,339 @@
+<unit netsync="position" slot="actor">
+	<behavior class="TransferDamageActor">
+	
+		<string name="type">construct</string>
+		<int name="hp">100000</int>
+		<int name="armor">400</int>
+		<int name="resistance">400</int>
+		
+		<string name="beastiary-override">actors/bosses/wraith/wraith_mage.unit</string>
+		
+		<string name="gore">effects/gibs/gib_statue_wraith_mage.sval</string>
+		<string name="death-snd">event:/enemy/tower/death</string>
+
+		<bool name="counts-as-kill">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">false</bool>
+		<int name="aggro-range">300</int>
+		<float name="debuff-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+			<string>poison</string>
+			<string>confusion</string>
+			<string>debuff</string>
+			<string>disarm</string>
+			<string>root</string>
+			<string>stun</string>
+			<string>slow</string>
+			<string>buff</string>
+			<string>bleeding</string>
+			<string>respawn_ghost</string>
+			<string>freezing</string>
+		</array>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>
+
+		<array name="skills">
+			%// Normal
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>3</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-mage</string>
+					</dict>
+					
+					<dict>
+						<string name="class">Nova</string>
+						<int name="projectiles">9</int>
+						<float name="proj-dist">20</float>
+						<string name="projectile">actors/bosses/wraith/wraith_mage_nova.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_mage</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+3
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>isnt</string><string>wraith_scythe_dead</string>
+					<string>flag</string><string>isnt</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-mage</string>
+					</dict>
+					
+					<dict>
+						<string name="class">Nova</string>
+						<int name="projectiles">9</int>
+						<float name="proj-dist">20</float>
+						<string name="projectile">actors/bosses/wraith/wraith_mage_nova.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_mage</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Scythe dead
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>is</string><string>wraith_scythe_dead</string>
+					<string>flag</string><string>isnt</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-mage</string>
+					</dict>
+					
+					<dict>
+						<string name="class">Nova</string>
+						<int name="projectiles">9</int>
+						<float name="proj-dist">20</float>
+						<string name="projectile">actors/bosses/wraith/wraith_mage_nova_scythe.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_mage</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Staff dead
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>isnt</string><string>wraith_scythe_dead</string>
+					<string>flag</string><string>is</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-mage</string>
+					</dict>
+					
+					<dict>
+						<string name="class">Nova</string>
+						<int name="projectiles">9</int>
+						<float name="proj-dist">20</float>
+						<string name="projectile">actors/bosses/wraith/wraith_mage_nova_staff.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_mage</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Both dead
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>is</string><string>wraith_scythe_dead</string>
+					<string>flag</string><string>is</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-mage</string>
+					</dict>
+					
+					<dict>
+						<string name="class">Nova</string>
+						<int name="projectiles">9</int>
+						<float name="proj-dist">20</float>
+						<string name="projectile">actors/bosses/wraith/wraith_mage_nova_both.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_mage</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="default" spawn="spawn">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="123 0 5 5"/>
+			<collision static="true">
+				<rect>-10 -11 20 20</rect>		
+			</collision>
+			<sprite ulayer="-5" origin="-8 15" texture="actors/bosses/wraith/statue_wraith.png" material="system/default.mats:shadow">
+				<frame>114 15 5 24</frame>
+			</sprite>
+			<light pos="0 -32">0
+				<sprite texture="system/light_cone_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="140 20 140 0" />
+				</colors>
+			</light>				
+		</scene>
+		
+		<scene name="default">
+		<scene src="shared" />
+			<sprite origin="11 44" looping="true" texture="actors/bosses/wraith/statue_wraith.png" material="system/default.mats:wall">
+				<frame>64 0 22 54</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="spawn">
+			<scene src="shared" />
+			
+			<effect ulayer="10" pos="0 -18" src="actors/bosses/wraith/statue_flare.effect" />			
+			
+			<light pos="0 -34">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="8"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="10" />
+				</sizes>
+				<colors>
+					<color value="100 200 230 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 -18">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="10"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="15" />
+				</sizes>
+				<colors>
+					<color value="100 200 230 0" />
+				</colors>
+			</light>
+			
+			<sprite ulayer="-5" origin="11 44" texture="actors/bosses/wraith/statue_wraith.png" material="system/default.mats:wall">
+				<frame>64 0 32 64</frame>
+			</sprite>
+			
+			<sprite origin="5 34" looping="false" texture="actors/bosses/wraith/statue_wraith.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">96 15 9 21</frame>
+				<frame time="150">105 15 9 21</frame>
+				<frame time="150">96 15 9 21</frame>
+				<frame time="150">0 0 0 0</frame>
+				
+				<frame time="100">96 15 9 21</frame>
+				<frame time="100">105 15 9 21</frame>
+				<frame time="100">96 15 9 21</frame>
+				<frame time="100">0 0 0 0</frame>
+				
+				<frame time="50">96 15 9 21</frame>
+				<frame time="50">105 15 9 21</frame>
+				<frame time="50">96 15 9 21</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="50">96 15 9 21</frame>
+				<frame time="1500">105 15 9 21</frame>
+				<frame time="50">96 15 9 21</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="mage-portrait">	
+			<sprite origin="10 10" ulayer="0" looping="false" texture="./wraith.png" material="system/default.mats:actor">					
+				<frame time="75">757 641 20 20</frame>
+			</sprite>			
+		</scene>	
+	</scenes>
+</unit>

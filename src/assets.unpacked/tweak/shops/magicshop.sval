@@ -1,0 +1,433 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::UpgradeShop</string>
+
+	<string name="id">magicshop</string>
+	<string name="name">.shop.magicshop</string>
+
+	<array name="upgrades">
+		<!-- Resistance -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">resistance</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>72 96 24 24</vec4>
+			</array>			
+			<array name="steps">
+				<!-- Tier III -->
+				<!-- Level 1 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.magicshop.resistance-1.name</string>
+					<string name="desc">.shop.magicshop.resistance-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">5</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="cost-gold">3500</int>
+
+					<string name="name">.shop.magicshop.resistance-2.name</string>
+					<string name="desc">.shop.magicshop.resistance-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">10</int>
+					</dict>
+				</dict>
+
+				<!-- Tier IV -->
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">5500</int>
+
+					<string name="name">.shop.magicshop.resistance-3.name</string>
+					<string name="desc">.shop.magicshop.resistance-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">15</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">7500</int>
+
+					<string name="name">.shop.magicshop.resistance-4.name</string>
+					<string name="desc">.shop.magicshop.resistance-4.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">20</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier V -->
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">12500</int>
+
+					<string name="name">.shop.magicshop.resistance-5.name</string>
+					<string name="desc">.shop.magicshop.resistance-5.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">25</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 6 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">17500</int>
+
+					<string name="name">.shop.magicshop.resistance-6.name</string>
+					<string name="desc">.shop.magicshop.resistance-6.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">30</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier VI -->
+				<!-- Level 7 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">25000</int>
+
+					<string name="name">.shop.magicshop.resistance.name?lvl=VII</string>
+					<string name="desc">.shop.magicshop.resistance.desc?amount=+40</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">40</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 8 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">35000</int>
+
+					<string name="name">.shop.magicshop.resistance.name?lvl=VIII</string>
+					<string name="desc">.shop.magicshop.resistance.desc?amount=+50</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="resistance">50</int>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Spell Power -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">spelldamage</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>48 96 24 24</vec4>
+			</array>	
+			<array name="steps">
+				<!-- Tier III -->
+				<!-- Level 1 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.magicshop.spellpower-1.name</string>
+					<string name="desc">.shop.magicshop.spellpower-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">5</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="cost-gold">3500</int>
+
+					<string name="name">.shop.magicshop.spellpower-2.name</string>
+					<string name="desc">.shop.magicshop.spellpower-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">10</int>
+					</dict>
+				</dict>
+
+				<!-- Tier IV -->
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">5500</int>
+
+					<string name="name">.shop.magicshop.spellpower-3.name</string>
+					<string name="desc">.shop.magicshop.spellpower-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">15</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">7500</int>
+
+					<string name="name">.shop.magicshop.spellpower-4.name</string>
+					<string name="desc">.shop.magicshop.spellpower-4.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">20</int>
+					</dict>
+				</dict>
+
+				<!-- Tier V -->
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">12500</int>
+
+					<string name="name">.shop.magicshop.spellpower-5.name</string>
+					<string name="desc">.shop.magicshop.spellpower-5.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">25</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 6 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">17500</int>
+
+					<string name="name">.shop.magicshop.spellpower-6.name</string>
+					<string name="desc">.shop.magicshop.spellpower-6.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">30</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier VI -->
+				<!-- Level 7 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">25000</int>
+
+					<string name="name">.shop.magicshop.spellpower.name?lvl=VII</string>
+					<string name="desc">.shop.magicshop.spellpower.desc?amount=+40</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">40</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 8 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">35000</int>
+
+					<string name="name">.shop.magicshop.spellpower.name?lvl=VIII</string>
+					<string name="desc">.shop.magicshop.spellpower.desc?amount=+50</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="spell-power">50</int>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Spell Crit Chance -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">spellcritchance</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>96 96 24 24</vec4>
+			</array>	
+			<array name="steps">
+				<!-- Tier III -->
+				<!-- Level 1 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="cost-gold">5000</int>
+					
+					<string name="name">.shop.magicshop.spellcritchance-1.name</string>
+					<string name="desc">.shop.magicshop.spellcritchance-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="spell-chance">0.05</float>
+					</dict>
+				</dict>
+			
+				<!-- Tier IV -->
+				<!-- Level 2 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">10000</int>
+					
+					<string name="name">.shop.magicshop.spellcritchance-2.name</string>
+					<string name="desc">.shop.magicshop.spellcritchance-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="spell-chance">0.10</float>
+					</dict>
+				</dict>
+
+				<!-- Tier V -->
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">20000</int>
+					
+					<string name="name">.shop.magicshop.spellcritchance-3.name</string>
+					<string name="desc">.shop.magicshop.spellcritchance-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="spell-chance">0.15</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		
+		<!-- Spell Crit Damage -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">spellcritdamage</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>120 96 24 24</vec4>
+			</array>	
+			<array name="steps">
+				<!-- Tier IV -->
+				<!-- Level 1 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">10000</int>
+					
+					<string name="name">.shop.magicshop.spellcritdamage-1.name</string>
+					<string name="desc">.shop.magicshop.spellcritdamage-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalMul</string>
+						<float name="spell-mul">1.5</float> <!-- 2.5x -->
+					</dict>
+				</dict>
+
+				<!-- Tier V -->
+				<!-- Level 2 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">20000</int>
+					
+					<string name="name">.shop.magicshop.spellcritdamage-2.name</string>
+					<string name="desc">.shop.magicshop.spellcritdamage-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalMul</string>
+						<float name="spell-mul">2</float>	<!-- 3x -->
+					</dict>
+				</dict>
+				
+				<!-- Tier VI -->
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">40000</int>
+					
+					<string name="name">.shop.magicshop.spellcritdamage.name?lvl=III</string>
+					<string name="desc">.shop.magicshop.spellcritdamage.desc?amount=2.5x</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalMul</string>
+						<float name="spell-mul">2.5</float>	<!-- 3.5x -->
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

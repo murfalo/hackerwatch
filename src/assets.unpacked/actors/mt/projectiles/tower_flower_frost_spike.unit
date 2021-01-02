@@ -1,0 +1,48 @@
+<unit>
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/enemy/flower_frost/hit</string>
+		<int name="delay">250</int>
+		<int name="delay-random">120</int>
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<int name="radius">7</int>
+				<int name="min-radius">7</int>
+				<float name="dist-scaling">10</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:freezing</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/mt/projectiles/tower_flower_frost_spike_corpse.effect</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene>
+			<sprite origin="7 13" looping="false" texture="./tower_flower_frost_spike.png" material="system/default.mats:projectile">
+				<frame time="30">0 0 16 18</frame>
+				<frame time="30">16 0 16 18</frame>
+				<frame time="30">32 0 16 18</frame>
+				<frame time="30">48 0 16 18</frame>
+				<frame time="240">64 0 16 18</frame>
+
+				<frame time="1000">112 0 16 18</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

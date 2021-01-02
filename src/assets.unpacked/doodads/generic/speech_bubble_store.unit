@@ -1,0 +1,13 @@
+<unit slot="doodad">
+	<scenes>	
+		<scene>
+			%if TIME_DAY
+			<sprite origin="7 33" texture="./speech_bubbles.png" material="system/default.mats:bright-noxray">
+			%else
+			<sprite origin="7 33" texture="./speech_bubbles.png" material="system/default.mats:default">
+			%endif
+				<frame>13 0 13 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

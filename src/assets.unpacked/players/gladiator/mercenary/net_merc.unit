@@ -1,0 +1,62 @@
+<unit netsync="none">
+	<behavior class="GladiusProjectile">
+		<string name="anim">idle</string>
+		
+		<float name="speed-min">10</float>
+		<float name="speed-max">10</float>
+
+		<int name="penetration-min">1000</int>
+		<int name="penetration-max">1000</int>
+		
+		<int name="bounces">0</int>
+		<float name="bounce-speed-mul">1</float>
+
+		<float name="range-min">0</float>
+		<float name="range-max">130</float>
+		
+		<int name="ttl-min">0</int>
+		<int name="ttl-max">500</int>
+
+		<float name="effect-intensity-min">1.0</float>
+		<float name="effect-intensity-max">1.0</float>
+		
+		<string name="shoot-snd">event:/player/gladiator/net</string>
+		
+		<array name="effects">
+
+		</array>
+		
+		<dict name="destroy-effect">
+			<string name="class">Explode</string>
+			<string name="fx">players/gladiator/net_area.effect</string>
+			<int name="min-radius">32</int>
+			<int name="radius">32</int>
+			
+			<float name="team-dmg">0</float>
+			<array name="effects">
+				<dict>
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs_merc.sval:net</string>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+			<float name="radius">32</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>
+			
+			<sprite looping="false" origin="16 16" layer="1" texture="players/gladiator/net.png" material="system/default.mats:projectile-player">
+				<frame time="30">0 0 32 32</frame>
+				<frame time="1000">0 64 32 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

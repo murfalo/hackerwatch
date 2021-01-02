@@ -1,0 +1,147 @@
+<gui>
+	<sprites>
+		<sprite name="checkbutton" texture="gui/widget.png"><frame>346 0 32 32</frame></sprite>
+		<sprite name="checkbutton-hover" texture="gui/widget.png"><frame>346 32 32 32</frame></sprite>
+		<sprite name="checkbutton-checked" texture="gui/widget.png"><frame>346 64 32 32</frame></sprite>
+
+		<sprite name="buttonfill" texture="gui/widget.png"><frame>378 0 24 24</frame></sprite>
+		<sprite name="item-frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="quality-frame" texture="gui/widget.png"><frame>410 66 14 14</frame></sprite>
+		<sprite name="quality-common" texture="gui/icons.png"><frame>193 57 10 10</frame></sprite>
+		<sprite name="quality-uncommon" texture="gui/icons.png"><frame>193 67 10 10</frame></sprite>
+		<sprite name="quality-rare" texture="gui/icons.png"><frame>193 77 10 10</frame></sprite>
+		<sprite name="quality-epic" texture="gui/icons.png"><frame>193 87 10 10</frame></sprite>
+		<sprite name="quality-legendary" texture="gui/icons.png"><frame>193 97 10 10</frame></sprite>
+
+		<sprite name="item-frames" texture="gui/playermenu.png"><frame>335 32 64 32</frame></sprite>
+		<sprite name="item-dot" texture="gui/icons.png"><frame>63 0 4 4</frame></sprite>
+		<sprite name="item-plus" texture="gui/icons.png"><frame>59 112 5 5</frame></sprite>
+
+		<sprite name="check-item" texture="gui/widget.png"><frame>410 80 16 16</frame></sprite>
+		<sprite name="check-item-hover" texture="gui/widget.png"><frame>426 80 16 16</frame></sprite>
+		<sprite name="check-item-checked" texture="gui/widget.png"><frame>442 80 16 16</frame></sprite>
+
+		<sprite name="wood" texture="gui/shop.png"><frame>0 53 200 72</frame></sprite>
+
+		<sprite name="icon-dice" texture="gui/icons_others.png"><frame>216 48 24 24</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scalablebutton_big_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="204" height="206" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Content -->
+				<rect width="200" height="202" offset="2 2" flow="vbox">
+					<!-- Header -->
+					<rect width="200" height="18" flow="hbox">
+						<!-- Headline -->
+						<rect width="179" height="18" spriteset="gui/variable/headline_hor.sval">
+							<text font="gui/fonts/arial11_bold.fnt" text=".itemdealer.title" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Separator -->
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Close button -->
+						<spritebutton func="close" spriteset="close" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="200" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Info field -->
+					<rect width="200" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11.fnt" text=".itemdealer.prompt" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="200" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Item list -->
+					<scrollrect id="list-items" flow="hboxwrapped" width="192" height="64" scroll-backdrop-sprite="item-frames" />
+
+					<!-- Scrollbar -->
+					<scrollbar forid="list-items" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+					<!-- Separator -->
+					<rect width="200" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Gamble area -->
+					<rect width="200" height="72">
+						<sprite src="wood" />
+
+						<!-- Quality chances list -->
+						<rect id="list-qualities" width="200" height="36" flow="hbox" />
+						<!-- Quality template -->
+						<rect id="template-quality" visible="false" width="40" height="36">
+							<!-- Quality square -->
+							<sprite src="quality-frame" anchor="0.5 0" offset="0 4">
+								<sprite id="quality" src="quality-common" offset="2 2" />
+							</sprite>
+
+							<!-- Percentage -->
+							<text id="percentage" font="gui/fonts/arial11.fnt" anchor="0.5 1" offset="0 -4" text="100%" />
+						</rect>
+
+						<!-- Gamble button -->
+						<scalebutton id="gamble" anchor="0 1" offset="62 -4" spriteset="scalebutton-big" width="32" func="gamble">
+							<sprite src="icon-dice" offset="4 4" />
+						</scalebutton>
+
+						<!-- Final item -->
+						<rect width="32" height="32" anchor="0 1" offset="106 -4" spriteset="gui/variable/bigwindow_borders.sval">
+							<sprite src="item-frame" offset="2 2">
+								<rect id="final-item" width="24" height="24" offset="2 2" color="#202a26FF" shadow="#000000af" shadowsize="2">
+									<!-- Icon -->
+									<sprite id="item-icon" anchor="0.5 0.5" />
+
+									<!-- Attuned plus -->
+									<sprite id="item-attuned" offset="6 6" visible="false" src="item-plus" />
+
+									<!-- Set and quality dots -->
+									<group inner="true" anchor="1 1" offset="-6 -6" flow="hbox">
+										<sprite id="item-set" visible="false" src="item-dot" />
+										<sprite id="item-quality" visible="false" src="item-dot" />
+									</group>
+								</rect>
+							</sprite>
+						</rect>
+					</rect>
+
+					<!-- Separator -->
+					<rect width="200" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Button bar -->
+					<rect width="200" height="18" flow="hbox">
+						<rect width="65" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+						<!-- Close button -->
+						<scalebutton spriteset="scalebutton" width="70" font="gui/fonts/arial11.fnt" text=".itemdealer.close" func="close" />
+
+						<rect width="65" height="18" spriteset="gui/variable/headline_hor.sval" />
+					</rect>
+				</rect>
+
+				<!-- Item template -->
+				<checkbox id="template-item" visible="false" spriteset="check-item" func="item-checked">
+					<!-- Icon -->
+					<sprite id="item-icon" anchor="0.5 0.5" />
+
+					<!-- Attuned plus -->
+					<sprite id="item-attuned" offset="2 2" visible="false" src="item-plus" />
+
+					<!-- Set and quality dots -->
+					<group inner="true" anchor="1 1" offset="-2 -2" flow="hbox">
+						<sprite id="item-set" visible="false" src="item-dot" />
+						<sprite id="item-quality" visible="false" src="item-dot" />
+					</group>
+				</checkbox>
+			</rect>
+		</group>
+	</doc>
+</gui>

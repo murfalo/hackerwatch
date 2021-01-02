@@ -1,0 +1,76 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="3 3" texture="./lich_frost_flames.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="pi*t*2 + angle">
+		
+		<frame time="60">20 119 7 7</frame>
+	</sprite>
+<!-- 	<sprite looping="true" origin="4 1" texture="./lich_frost_flames.png" material="system/default.mats:glow-both-bright"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle"
+		color-a="saturate(sin((t+l)*pi*2))*0.75"
+		>
+		
+		<frame time="75">11 123 8 3</frame>
+	</sprite>
+	 -->
+	<light pos-x="0" pos-y="-1">
+		<sprite texture="system/light_L.png">
+			<frame time="150">0 0 128 128</frame>
+		</sprite>
+		
+	%//<length value="700" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="20" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos-x="0" pos-y="-1">
+		<sprite texture="system/light_L.png">
+			<frame time="150">0 0 128 128</frame>
+		</sprite>
+		
+	%//<length value="700" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="32" />
+			
+		<color-r value="0" />
+		<color-g value="0.35" />
+		<color-b value="0.5" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

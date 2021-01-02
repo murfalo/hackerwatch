@@ -1,0 +1,97 @@
+<effect looping="true">
+
+	<param name="angle" default="0" />
+
+
+<variation>	
+	<sprite origin="8 8" looping="true" texture="./frost_flames.png" material="effects/effects.mats:fire"
+	
+		num-sprites="4"
+		scale-x="max(t - max((t - 0.8) * 5, 0),0)"
+		scale-y="max(t - max((t - 0.8) * 5, 0),0)"
+		angle="rand(u + i) * 2 * pi"
+		pos-x="(rand(29*u+67*i)-0.5)*14* saturate(t*2+0.33)"
+		pos-y="(rand(23*u+97*i)-0.5)*14* saturate(t*2+0.33) - 5"
+	
+	>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">16 54 16 16</frame>
+		<frame time="25">32 54 16 16</frame>
+		<frame time="50">48 54 16 16</frame>
+		<frame time="75">0 38 16 16</frame>
+		<frame time="75">16 38 16 16</frame>
+		<frame time="75">32 38 16 16</frame>
+		<frame time="50">48 38 16 16</frame>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">16 54 16 16</frame>		
+		<frame time="25">0 70 16 16</frame>
+		<frame time="25">16 70 16 16</frame>
+		<frame time="25">32 70 16 16</frame>
+		<frame time="25">48 70 16 16</frame>
+		
+	</sprite>
+
+</variation>
+
+
+
+<variation>	
+	<sprite origin="8 8" looping="true" texture="./frost_flames.png" material="effects/effects.mats:fire"
+	
+		num-sprites="4"
+		
+		scale-x="max(t - max((t - 0.8) * 5, 0),0)"
+		scale-y="max(t - max((t - 0.8) * 5, 0),0)"
+		angle="rand(u + i) * 2 * pi"
+		pos-x="(rand(29*u+67*i)-0.5)*14* saturate(t*2+0.33)"
+		pos-y="(rand(23*u+97*i)-0.5)*14* saturate(t*2+0.33) - 5"
+	
+	>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">16 54 16 16</frame>
+		<frame time="25">32 54 16 16</frame>
+		<frame time="50">48 54 16 16</frame>
+		<frame time="50">0 0 15 19</frame>
+		<frame time="50">15 0 15 19</frame>
+		<frame time="50">30 0 15 19</frame>
+		<frame time="50">45 0 15 19</frame>
+		<frame time="50">0 19 15 19</frame>
+		<frame time="50">15 19 15 19</frame>
+		<frame time="50">30 19 15 19</frame>
+		<frame time="50">45 19 15 19</frame>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">16 54 16 16</frame>		
+		<frame time="25">0 70 16 16</frame>
+		<frame time="25">16 70 16 16</frame>
+		<frame time="25">32 70 16 16</frame>
+		<frame time="25">48 70 16 16</frame>
+		
+	</sprite>
+
+</variation>
+
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="saturate(t*4+0.33)*25" />
+
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="t*2 + 0.33" />
+		<color-a value="0"/>
+	</light>
+</effect>

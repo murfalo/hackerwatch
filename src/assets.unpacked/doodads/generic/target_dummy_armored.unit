@@ -1,0 +1,47 @@
+<unit slot="doodad">
+	<behavior class="CompositeActorBehavior">
+		<int name="hp">10000000</int>
+		<string name="type"></string>
+		
+		<int name="armor">50</int>
+		<int name="resistance">0</int>
+		
+		<bool name="targeting">false</bool>
+		%//<bool name="targetable">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+		
+		<array name="skills" />
+	</behavior>
+	<scenes outlook="outlook" pop="pop">
+		<scene name="outlook">
+			<sprite origin="17 23" looping="true" texture="./target_dummy.png" material="system/default.mats:default-noxray">
+				<frame>48 0 30 26</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="0 8" texture="./target_dummy.png">
+					<frame>94 0 6 11</frame>
+				</sprite>
+			</shadow>		
+			<collision static="true">
+				<circle offset="0 0" radius="5" />
+			</collision>
+		</scene>
+		<scene name="pop">
+			<sprite origin="13 21" looping="true" texture="./target_dummy.png" material="system/default.mats:default-noxray">
+				<frame>42 26 26 24</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="-1 8" texture="./target_dummy.png">
+					<frame>100 0 6  11</frame>
+				</sprite>
+			</shadow>		
+			<collision static="true">
+				<circle offset="0 -1" radius="4" />
+			</collision>
+		</scene>
+  </scenes>
+</unit>

@@ -1,0 +1,24 @@
+<unit slot="doodad">
+	
+<behavior class="Breakable">
+	%//<string name="break-sound">event:/item/break_barrel</string>
+	<string name="corpse">doodads/generic/chest_silver.unit</string>
+	<string name="gore">effects/gibs/doodads/gib_chest_burrow.sval</string>
+	%//<string name="loot">doodads/loot.sval:container</string>
+	<bool name="shoot-through">true</bool>
+</behavior>
+
+<scenes desert="desert">
+	<scene name="desert">
+			<collision static="true">
+				<circle aim-through="true" offset="0 0" radius="6" />
+			</collision>			
+			<sprite origin="6 8" texture="./chests.png" material="system/default.mats:proj-prop">
+				<frame time="50">24 16 12 11</frame>
+			</sprite>
+			<sprite origin="10 6" layer="-5" texture="./chests.png" material="system/default.mats:floor">
+				<frame time="50">80 0 20 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

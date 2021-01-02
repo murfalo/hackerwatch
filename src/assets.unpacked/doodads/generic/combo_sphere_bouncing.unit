@@ -1,0 +1,36 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="on">
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="240 0 10 10" />
+			<collision static="true">
+				<circle offset="0.5 -0.5" radius="4.5" />
+			</collision>
+			<group pos="0 3" >
+				<effect ulayer="0" src="./combo_sphere_bouncing.effect" />
+				<effect ulayer="1" src="./combo_sphere_bouncing_shine.effect" />
+				<effect ulayer="2" src="./combo_sphere_bouncing_ball_1.effect" />
+				<effect ulayer="" src="./combo_sphere_bouncing_ball_2.effect" />
+			</group>
+			<light pos="0 5">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="2600" />
+				<overbright value="2" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="34" />
+				</sizes>
+				<colors>
+					<color value="255 0 255 10" />
+				</colors>
+			</light>	
+		</scene>
+		<scene name="off">
+
+		</scene>
+	</scenes>
+</unit>

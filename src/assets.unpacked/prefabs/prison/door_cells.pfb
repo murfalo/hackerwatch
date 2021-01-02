@@ -1,0 +1,111 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>16 8</vec2>
+				<int>1</int>
+				<dict>
+					<float name="radius">16</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/prison/_custom_h_fence_door.unit"><vec2>0 0</vec2><int>2</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>UseTrigger</string>
+			<int>3</int>
+			<vec3>16 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>5</int><int>0</int><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>4</int>
+			<vec3>-40 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>open</string>
+			<dict>
+				<string name="State">open</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>8</int><int>0</int><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>5</int>
+			<vec3>80 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.elsewhere</string>
+				<float name="AnchorY">0.2</float>
+				<int name="FadeTime">500</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>6</int>
+			<vec3>80 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deniedsfx</string>
+			<dict>
+				<string name="Sound"></string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>7</int>
+			<vec3>-40 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">open_cells</string>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>8</int>
+			<vec3>-40 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>9</int>
+			<vec3>16 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>opensfx</string>
+			<dict>
+				<string name="Sound"></string>
+			</dict>
+		</array>
+	</array>
+</dict>

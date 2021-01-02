@@ -1,0 +1,38 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle-0</string>
+		<float name="speed">6.5</float>
+		<bool name="blockable">false</bool>		
+				
+		<string name="fx">effects/animations/impact_ice.effect</string>
+		<int name="ttl">3000</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">50</int>
+				<int name="magical">50</int>
+				<float name="armor-mul">0.75</float>
+			</dict>
+
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/animations/impact_ice.effect</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle-0">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="34 9 1 1" />	
+			<effect src="actors/bosses/dragon/shard.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

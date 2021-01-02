@@ -1,0 +1,172 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_16.unit"><vec2>0 32</vec2><int>1</int><vec2>0 0</vec2><int>2</int><vec2>0 16</vec2><int>3</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PickedRandom</string>
+			<int>4</int>
+			<vec3>-32 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>NormalLootChance</string>
+			<dict>
+				<int name="Chance">95</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>5</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>7</int><int>8</int><int>9</int><int>10</int><int>13</int><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>6</int>
+			<vec3>32 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpecialLootChance</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>128 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nuggets</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/desert_gold_1x3.pfb</string>
+				<int name="Chance">80</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>8</int>
+			<vec3>-64 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>health_b</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_1x3_health_b.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>9</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mana_b</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_1x3_mana_b.pfb</string>
+				<int name="Chance">40</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>10</int>
+			<vec3>64 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ore_a</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_1x3_ore_a.pfb</string>
+				<int name="Chance">25</int>
+			</dict>
+		</array>
+		<array><string>RandomLoot</string><int>11</int><vec3>8 24 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>RandomPicker</string>
+			<int>12</int>
+			<vec3>0 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>4</int><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>-128 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/desert_chest_1x3.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>14</int>
+			<vec3>192 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/curse_1x3_a.pfb</string>
+				<int name="Chance">25</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>15</int>
+			<vec3>192 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>desert_sarcophagus</string>
+			<dict>
+				<string name="Flag">desert_sarcophagus</string>
+				<array name="OnTrue"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>16</int>
+			<vec3>0 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>15</int><int>0</int><int>12</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>17</int>
+			<vec3>192 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>14</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

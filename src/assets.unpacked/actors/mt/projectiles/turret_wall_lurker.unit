@@ -1,0 +1,67 @@
+<unit netsync="none">
+	<behavior class="LurkerProjectile">
+		<string name="anim">attack</string>
+		<string name="fx">actors/mt/projectiles/turret_wall_lurker_hit.effect</string>
+		<!-- <string name="miss-fx">actors/mt/projectiles/turret_wall_lurker_hit.effect</string> -->
+		<string name="hit-snd">event:/enemy/tower_turret_wall/hit</string>
+		<string name="snd">event:/enemy/tower_turret_wall/hit</string>
+		
+		<float name="speed">3</float>
+		<int name="spawn-freq">90</int>
+
+		<int name="ttl">4000</int>
+		
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.12</float>
+		
+		<bool name="miss-fx">true</bool>
+		
+		<int name="penetration">1000</int>
+		<int name="ignore-at-hardness">1</int>
+		<int name="destroy-at-hardness">4</int>
+		
+		<float name="team-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">50</int>
+				<float name="armor-mul">0.8</float>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/tower_turret_wall/hit</string>
+			</dict>
+		</array>
+
+		<dict name="miss-effect">
+			<string name="class">Explode</string>
+			<!-- <string name="fx"></string> -->
+			<int name="radius">10</int>
+			<int name="min-radius">10</int>
+			<float name="dist-scaling">10</float>
+			<float name="enemy-dmg">1</float>
+
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">50</int>
+				<float name="armor-mul">0.8</float>
+			</dict>
+		</dict>
+		
+		<dict name="effect-params">
+		</dict>
+	</behavior>	
+	
+	<scenes default="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="attack">
+			<effect ulayer="2" src="./turret_wall_lurker.effect" />		
+		</scene>
+	</scenes>
+</unit>

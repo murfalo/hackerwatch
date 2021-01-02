@@ -1,0 +1,70 @@
+<gui>
+	<sprites>
+		<sprite name="skill-points" texture="gui/icons.png"><frame>13 24 13 14</frame></sprite>
+
+		<sprite name="frame-icon" texture="gui/widget.png"><frame>99 0 26 26</frame></sprite>
+
+		<sprite name="icon-clear" texture="gui/icons.png"><frame>98 69 10 10</frame></sprite>
+		<sprite name="icon-set" texture="gui/icons.png"><frame>233 58 12 12</frame></sprite>
+		<sprite name="icon-mana" texture="gui/icons.png"><frame>26 24 9 13</frame></sprite>
+
+		<sprite name="skillbutton" texture="gui/widget.png"><frame>33 130 24 24</frame></sprite>
+		<sprite name="skillbutton-hover" texture="gui/widget.png"><frame>57 130 24 24</frame></sprite>
+		<sprite name="skillbutton-down" texture="gui/widget.png"><frame>81 130 24 24</frame></sprite>
+		<sprite name="skillbutton-disabled" texture="gui/widget.png"><frame>0 162 24 24</frame></sprite>
+
+%include "gui/scalablebutton_big_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group inner="true" flow="hbox">
+			<!-- Active list -->
+			<rect id="list-active" width="198" height="207" flow="vbox" />
+
+			<!-- Separator -->
+			<rect width="3" height="207" spriteset="gui/variable/3pxbar_vert.sval" />
+
+			<rect width="202" height="207">
+				<!-- Available list -->
+				<scrollrect id="list-available" width="191" height="207" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox" />
+				<!-- Separator -->
+				<rect width="3" height="207" offset="191 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<!-- Scrollbar -->
+				<scrollbar forid="list-available" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+			</rect>
+
+			<!-- Header template -->
+			<rect id="template-header" visible="false" width="198" height="18" spriteset="gui/variable/headline_hor.sval">
+				<text id="text" font="gui/fonts/arial11_bold.fnt" hint="name" anchor="0.5 0.5" />
+			</rect>
+
+			<!-- Separator template -->
+			<rect id="template-separator" visible="false" width="198" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- Active template -->
+			<rect id="template-active" visible="false" width="198" height="28" flow="hbox">
+				<!-- Icon -->
+				<rect width="28" height="28" spriteset="gui/variable/headline_borders.sval">
+					<sprite id="icon" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Name -->
+				<rect width="142" height="28" spriteset="gui/variable/headline_borders.sval">
+					<text id="name" font="gui/fonts/arial11.fnt" anchor="0 0.5" offset="6 0" hint="name" />
+				</rect>
+
+				<!-- Switch button -->
+				<rect width="28" height="28" spriteset="gui/variable/headline_borders.sval">
+					<spritebutton id="switch" spriteset="skillbutton" width="28" anchor="0.5 0.5">
+						<sprite id="icon" anchor="0.5 0.5" />
+					</spritebutton>
+				</rect>
+			</rect>
+
+			<!-- Available template -->
+			<shopitem id="template-available" visible="false" spriteset="scalebutton-big" font="gui/fonts/arial11.fnt" hint="name" width="191" />
+		</group>
+	</doc>
+</gui>

@@ -1,0 +1,63 @@
+<effect looping="true" layer="0">
+	<param name="radius" default="13" />
+	<param name="posy" default="-5" />
+	<param name="posx" default="3.5" />
+
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="8"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5) + posx"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -18 * sin(it*pi/2) + 0.2"
+		
+        color-r="3"
+        color-g="0.5-it*0.5"
+        color-b="0"
+        color-a="saturate(1 - it)"
+	>
+        <frame time="400">0 0 1 1</frame>
+	</sprite>	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+
+		pos-x="it*it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + posx"
+		pos-y="it*it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(it*it*it*it*it)*rand(i)*15"
+		
+		color-r="2"
+		color-g="1-it"
+		color-b="0"
+		color-a="saturate(1 - pow(it,2)"
+	>
+		<frame time="700">0 0 1 1</frame>
+	</sprite>	
+	
+	<sprite origin="16 20"  loopback="400" looping="true" texture="./pyre.png" material="system/default.mats:glow-both-bright"
+	
+	color-a="0.2"
+	>
+		<frame time="400">0 0 0 0</frame>
+		<frame time="100">0 0 32 32</frame>
+		<frame time="100">32 0 32 32</frame>
+		<frame time="100">64 0 32 32</frame>
+		<frame time="100">96 0 32 32</frame>
+		<frame time="100">0 32 32 32</frame>
+	</sprite>
+	
+	<light pos-y="4"	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<length value="450" />
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="sin(t*pi*2)*10+70" />
+
+		<color-r value="3+cos(t*pi*2)*0.5" />
+		<color-g value="2+cos(t*pi*2)*0.2" />
+		<color-b value="0.1" />
+		<color-a value="0"/>
+	</light>
+</effect>

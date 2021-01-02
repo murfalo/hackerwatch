@@ -1,0 +1,74 @@
+<unit slot="doodad" layer="-10">
+	<scenes on="on" off="off">
+		<scene name="shared">
+ 			<collision static="true">
+				<polygon offset="0 0" shoot-through="true" decompose="2">
+					<point>-176 0</point>
+					<point>-176 16</point>
+					<point>-160 72</point>
+					<point>-136 112</point>
+					<point>-112 136</point>
+					<point>-72 160</point>
+					<point>-16 176</point>
+					<point>0 176</point>
+					<point>16 176</point>
+					<point>72 160</point>
+					<point>112 136</point>
+					<point>136 112</point>
+					<point>160 72</point>
+					<point>176 16</point>
+					<point>176 0</point>
+					<point>192 0</point>
+					<point>192 16</point>
+					<point>144 144</point>
+					<point>0 192</point>
+					<point>-144 144</point>
+					<point>-192 16</point>
+					<point>-192 0</point>
+				</polygon>
+				<polygon offset="0 0" shoot-through="true" decompose="2">
+					<point>-192 -16</point>
+					<point>-144 -144</point>
+					<point>-16 -192</point>
+					<point>0 -192</point>
+					<point>16 -192</point>
+					<point>144 -144</point>
+					<point>192 -16</point>
+					<point>192 0</point>
+					<point>176 0</point>
+					<point>176 -16</point>
+					<point>160 -72</point>
+					<point>136 -112</point>
+					<point>112 -136</point>
+					<point>72 -160</point>
+					<point>16 -176</point>
+					<point>0 -176</point>
+					<point>-16 -176</point>
+					<point>-72 -160</point>
+					<point>-112 -136</point>
+					<point>-136 -112</point>
+					<point>-160 -72</point>
+					<point>-176 -16</point>
+					<point>-176 0</point>
+					<point>-192 0</point>
+				</polygon>
+			</collision>
+		</scene>
+		<scene name="on">
+			<scene src="shared" />
+			<effect src="./plane.effect" />
+			%if EDITOR
+			<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+		</scene>	
+		<scene name="off">
+			%if EDITOR
+			<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+		</scene>
+	</scenes>
+</unit>

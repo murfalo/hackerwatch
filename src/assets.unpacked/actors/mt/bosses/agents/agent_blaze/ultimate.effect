@@ -1,0 +1,119 @@
+<effect looping="true" layer="120">
+	<param name="radius" default="35" />
+	<param name="height" default="-300" />
+	<param name="ttl" default="1350" />
+	<param name="animLength" default="500" />
+	
+	
+	
+	<sprite origin="7 16" looping="true" texture="./ultimate.png" material="system/default.mats:default-noxray"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		>
+		<frame time="50">112 0 13 19</frame>
+	</sprite>
+	
+	<sprite origin="7 16" looping="true" texture="./ultimate.png" material="system/default.mats:bright-noxray"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		color-a="0.5 * saturate(sin(t*pi*2))"
+		>
+		<frame time="100">112 20 13 19</frame>
+		<frame time="100">112 40 13 19</frame>
+		<frame time="100">112 60 13 19</frame>
+		<frame time="100">112 40 13 19</frame>
+		<frame time="100">112 20 13 19</frame>
+	</sprite>
+	
+	<sprite origin="7 48" looping="true" texture="./ultimate.png" material="system/default.mats:bright-noxray"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		>
+		<frame time="70">0 0 14 48</frame>
+		<frame time="70">14 0 14 48</frame>
+		<frame time="70">28 0 14 48</frame>
+		<frame time="70">42 0 14 48</frame>
+		<frame time="70">56 0 14 48</frame>
+		<frame time="70">70 0 14 48</frame>
+	</sprite>
+
+	<sprite origin="7 48" looping="true" texture="./ultimate.png" material="system/default.mats:default-noxray"
+		pos-y="height * saturate(1-(t+l)/(ttl/animLength))"
+		color-r="3"
+		color-a="0.99"
+		>
+		<frame time="70">0 48 14 48</frame>
+		<frame time="70">14 48 14 48</frame>
+		<frame time="70">28 48 14 48</frame>
+		<frame time="70">42 48 14 48</frame>
+		<frame time="70">56 48 14 48</frame>
+		<frame time="70">70 48 14 48</frame>
+	</sprite>
+	
+
+	<light pos-x="0" pos-y="height * saturate(1-(t+l)/(ttl/animLength))">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="32 * saturate(4*t+l) + 1*cos(t*pi*4)" />
+
+		<color-r value="1" />
+		<color-g value="0.25" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+
+	<light pos-x="0" pos-y="height * saturate(1-(t+l)/(ttl/animLength))-10">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="48 * saturate(4*t+l) + 1*cos(t*pi*4)" />
+
+		<color-r value="3/4" />
+		<color-g value="0.5/4" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	<light pos-x="0" pos-y="height * saturate(1-(t+l)/(ttl/animLength))-25">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="40 * saturate(4*t+l) + 1*cos(t*pi*4)" />
+
+		<color-r value="2/4" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+
+</effect>

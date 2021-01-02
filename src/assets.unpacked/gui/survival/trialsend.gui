@@ -1,0 +1,124 @@
+<gui>
+	<sprites>
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+		<sprite name="exp" texture="gui/icons.png"><frame>63 17 12 12</frame></sprite>
+		<sprite name="points" texture="gui/icons.png"><frame>106 17 12 12</frame></sprite>
+
+		<sprite name="icon-progress-on" texture="gui/icons.png"><frame>91 51 18 18</frame></sprite>
+		<sprite name="icon-progress-off" texture="gui/icons.png"><frame>109 51 18 18</frame></sprite>
+		<sprite name="icon-progress-new" texture="gui/icons.png">
+			<frame time="300">106 33 18 18</frame>
+			<frame time="300">91 51 18 18</frame>
+		</sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="220" height="213" spriteset="gui/variable/bigwindow_borders.sval" anchor="0.5 0.5">
+				<!-- Header -->
+				<rect width="216" height="18" offset="2 2" spriteset="gui/variable/headline_hor.sval">
+					<text font="gui/fonts/arial11_bold.fnt" text=".endoftrials.title" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="216" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Status text -->
+				<rect width="216" height="31" offset="2 23" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<text id="status" align="center" font="gui/fonts/arial11.fnt" text="hello :D" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="216" height="3" offset="2 54" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Reward separators -->
+				<rect width="3" height="112" offset="2 57" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="112" offset="215 57" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Reward header -->
+				<rect width="210" height="18" offset="5 57" spriteset="gui/variable/headline_hor.sval">
+					<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".endoftrials.reward" />
+				</rect>
+
+				<!-- Reward container -->
+				<rect width="210" height="18" offset="5 75" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="hbox">
+					<group inner="true" anchor="0.5 0.5" flow="hbox" spacing="5">
+						<!-- Gold reward -->
+						<group inner="true" flow="hbox" spacing="3">
+							<sprite src="gold" offset="0 3" />
+							<text id="gold" font="gui/fonts/arial11.fnt" />
+						</group>
+
+						<!-- Ore reward -->
+						<group inner="true" flow="hbox" spacing="3">
+							<sprite src="ore" offset="0 3" />
+							<text id="ore" font="gui/fonts/arial11.fnt" />
+						</group>
+
+						<!-- Experience reward -->
+						<group inner="true" flow="hbox" spacing="3">
+							<sprite src="exp" offset="0 2" />
+							<text id="exp" font="gui/fonts/arial11.fnt" />
+						</group>
+
+						<!-- Points reward -->
+						<group inner="true" flow="hbox" spacing="3">
+							<sprite src="points" offset="0 2" />
+							<text id="points" font="gui/fonts/arial11.fnt" />
+						</group>
+					</group>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="210" height="3" offset="5 93" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Progress header -->
+				<rect width="210" height="18" offset="5 96" spriteset="gui/variable/headline_hor.sval">
+					<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".endoftrials.progress" />
+				</rect>
+
+				<!-- Progress container -->
+				<rect width="210" height="55" offset="5 114" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Swords -->
+					<rect width="94" height="18" offset="25 10" flow="hbox" spacing="1">
+						<sprite id="progress-1" src="icon-progress-off" />
+						<sprite id="progress-2" src="icon-progress-off" />
+						<sprite id="progress-3" src="icon-progress-off" />
+						<sprite id="progress-4" src="icon-progress-off" />
+						<sprite id="progress-5" src="icon-progress-off" />
+					</rect>
+
+					<!-- Progress count -->
+					<text id="count" font="gui/fonts/code2003_20_bold.fnt" text="(0/5)" anchor="0.8 0" offset="0 6" />
+
+					<!-- Help text -->
+					<text id="help" font="gui/fonts/arial11.fnt" offset="0 36" anchor="0.5 0" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="216" height="3" offset="2 169" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Continue button -->
+				<rect width="216" height="18" offset="2 172" flow="hbox">
+					<rect width="46" height="18" spriteset="gui/variable/headline_hor.sval" />
+					<scalebutton id="button-continue" spriteset="scalebutton" width="124" font="gui/fonts/arial11.fnt" text=".endoftrials.next" func="continue" />
+					<rect width="46" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="216" height="3" offset="2 190" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Town button -->
+				<rect width="216" height="18" offset="2 193" flow="hbox">
+					<rect width="46" height="18" spriteset="gui/variable/headline_hor.sval" />
+					<scalebutton id="button-town" spriteset="scalebutton" width="124" font="gui/fonts/arial11.fnt" text=".endoftrials.town" func="town" />
+					<rect width="46" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

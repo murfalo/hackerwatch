@@ -1,0 +1,31 @@
+<effect looping="true">	
+	<light pos-y="32" pos-x="32"> 
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="1000" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="(t+l)*pi*2"/>
+		
+		<size value="64" />
+		
+		<color-r value="1 + saturate(t+l)*4" />
+		<color-g value="1 + saturate(t+l)*4" />
+		<color-b value="10 + saturate(t+l)*2" />
+	</light>
+	<sprite ulayer="-1" origin="5 5" looping="true" texture="actors/mt/wisp_frost_exploding.png" material="system/default.mats:actor-noxray"
+	color-a="saturate(t+l)"
+	>
+		<frame >8 21 10 10</frame>
+	</sprite>
+</effect>

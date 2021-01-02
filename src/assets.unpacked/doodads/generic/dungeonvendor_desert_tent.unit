@@ -1,0 +1,23 @@
+<unit slot="doodad">
+	<scenes default="default">
+		<scene name="default">
+			<collision>
+				<rect>-28 -18 55 34</rect>
+			</collision>
+			<shadow>
+				<sprite ulayer="0" origin="13 40" texture="./dungeonvendor_desert_tent.png" material="system/default.mats:default-noxray">
+					<frame time="100">64 0 45 22</frame>
+				</sprite>
+			</shadow>
+			<sprite ulayer="0" origin="32 32" texture="./dungeonvendor_desert_tent.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 64 52</frame>
+			</sprite>
+			<sprite layer="-20" ulayer="2" origin="36 23" texture="./dungeonvendor_desert_tent.png" material="tilesets/grass.mats:desert">
+				<frame time="100">0 52 70 46</frame>
+			</sprite>
+			<sprite layer="-20" ulayer="1" origin="32 21" texture="./dungeonvendor_desert_tent.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 98 64 30</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

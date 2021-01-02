@@ -1,0 +1,31 @@
+<unit netsync="none">
+	<behavior class="BoltShooter">
+		<int name="ttl">450</int>
+		<int name="bolts">8</int>
+		<int name="height">3</int>
+		<int name="spread">4</int>
+		<int name="range">50</int>
+		<float name="consecutive-mul">0.75</float>
+		
+		<string name="fx">effects/players/lightning_bolt.effect</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<int name="radius">1</int>
+				<int name="min-radius">1</int>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">29</int>
+					</dict>
+				</array>
+			</dict>				
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+		</scene>
+	</scenes>
+</unit>

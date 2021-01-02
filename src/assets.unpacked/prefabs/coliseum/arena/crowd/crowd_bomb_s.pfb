@@ -1,0 +1,116 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnEffectParam</string>
+			<int>15</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">doodads/generic/crowd_toss_n.effect</string>
+				<int name="Layer">1</int>
+				<string name="ParamName">row</string>
+				<float name="ParamValue">1</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>32 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>11</int><int>1200</int><int>1</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>21</int>
+			<vec3>0 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>19</int><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>20</int>
+			<vec3>-32 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>10</int><int>1200</int><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>10</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fire_bomb</string>
+			<dict>
+				<string name="UnitType">doodads/generic/crowd_fire_bomb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>6</int>
+			<vec3>-96 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>10</int><string>LastSpawned</string><int>11</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>11</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bomb</string>
+			<dict>
+				<string name="UnitType">doodads/generic/crowd_bomb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>8</int>
+			<vec3>-128 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>15</int><int>1</int><int>11</int><int>19</int><int>21</int><int>20</int><int>10</int></array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffectParam</string>
+			<int>1</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">doodads/generic/crowd_toss_n.effect</string>
+				<int name="Layer">1</int>
+				<string name="ParamName">row</string>
+				<float name="ParamValue">2</float>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

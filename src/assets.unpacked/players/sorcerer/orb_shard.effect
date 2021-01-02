@@ -1,0 +1,30 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="4 1" texture="./projectiles.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+
+		<frame time="100">33 8 9 5</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="true" />
+
+		<size value="saturate(sin(t*pi))*16" />
+		
+		<color-r value="0" />
+		<color-g value="0.5" />
+		<color-b value="2" />
+		<color-a value="0" />
+	</light>
+</effect>

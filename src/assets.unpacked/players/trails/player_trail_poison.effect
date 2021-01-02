@@ -1,0 +1,59 @@
+<effect looping="false">
+	
+	<sprite origin="8 8" looping="false" texture="./player_trails.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="3+rand(u)*2"
+		scale-x="saturate(1.2-t*1.2)"
+		scale-y="saturate(1.2-t*1.2)"
+		pos-x="cos(rand(u+21*i)*2*pi) * 5 * pow(rand(u+73*i),0.5) - (sin(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5))*0.9*t*rand(u+i)"
+        pos-y="sin(rand(u+21*i)*2*pi) * 5 * pow(rand(u+73*i),0.5) - (cos(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5))*0.9*t*rand(u+i) + t*((rand(i)*-15+sin(rand(u+47*i)*2*pi) * 6 * pow(rand(u+467*i),0.5)))"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		color-r="saturate(sin(pow(t,2)*pi))"
+		color-g="2+saturate(sin(pow(t,2)*pi))"
+		color-b="saturate(sin(pow(t,2)*pi))"
+	
+	>
+		
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="499">0 16 16 16</frame>
+		
+	</sprite>
+	
+	<sprite origin="2 2" looping="false" texture="./player_trails.png" material="system/default.mats:bright-noxray"
+	
+		num-sprites="2+rand(u)*2"
+		scale-x="0.5"
+		scale-y="0.5"
+		pos-x="cos(rand(u+21*i)*2*pi) * 3 * pow(rand(u+73*i),0.5)"
+        pos-y="sin(rand(u+21*i)*2*pi) * 3 * pow(rand(u+73*i),0.5) + t*((rand(i)*-15+sin(rand(u+21*i)*2*pi) * 2 * pow(rand(u+73*i),0.5)))"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))*0.7"
+		color-r="0"
+		color-g="3*(1-t)"
+		color-b="0"
+	
+	>
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="248">22 6 4 4</frame>
+		<frame time="248">38 6 4 4</frame>
+		
+	</sprite>
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="1100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="saturate(sin(t*pi*1)-t*2)*70" />
+		<length value="70" />
+		<color-r value="0.0" />
+		<color-g value="0.3" />
+		<color-b value="0.0" />
+		<color-a value="0/255" />
+	</light>
+</effect>

@@ -1,0 +1,34 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">ranger</string>
+	<string name="name">.skills.ranger.flurry-of-arrows</string>
+	<string name="description">.skills.ranger.flurry-of-arrows.merc</string>
+
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 24 24 24</vec4>
+	</array>
+
+	<int name="cost">15</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ArrowFlurry</string>
+
+		<string name="projectile">players/ranger/mercenary/arrow_merc.unit</string>
+
+		<int name="cooldown">750</int>
+		<int name="castpoint">0</int>
+
+		<string name="snd">event:/player/ranger/flurry</string>
+		<string name="anim">flurry</string>
+		<float name="speed-mul">1</float>
+		<bool name="blocking">false</bool>
+
+		<int name="mana-cost">40</int>
+
+		<int name="duration">480</int>
+		<int name="per-revolution">-24</int>
+		<int name="proj-delay">10</int>
+		<int name="proj-dist">5</int>
+	</dict>
+</dict>

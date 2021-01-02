@@ -1,0 +1,64 @@
+<unit slot="doodad" layer="1">
+	<scenes burner="1" flask-1="2" flask-2="3" flask-3="4">
+	
+		
+		<scene name="shared">
+			
+		
+		<collision static="true">
+			<circle jam-through="true" offset="0 0" radius="3.5" />			
+		</collision>
+		</scene>
+		
+		
+
+		<scene  random-start="true" name="1">		
+			<scene src="shared" />
+			<sprite origin="4 9" ulayer="1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">316 9 12 16</frame>
+			</sprite>	
+			
+			
+			<sprite origin="1 0" ulayer="3"  texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="50">8 92 1 3</frame>
+				<frame time="50">9 92 1 3</frame>
+				<frame time="50">10 92 1 3</frame>
+				<frame time="50">11 92 1 3</frame>
+			</sprite>
+			<sprite origin="-6 2" ulayer="2" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="150">328 16 1 4</frame>
+				<frame time="150">329 16 1 4</frame>
+				<frame time="150">330 16 1 4</frame>
+				<frame time="60">331 16 1 4</frame>
+				<frame time="60">332 16 1 4</frame>
+				<frame time="60">333 16 1 4</frame>
+				<frame time="2000">0 0 0 0</frame>
+			</sprite>
+		</scene>
+
+		<scene name="2">		
+			<sprite origin="3 6" ulayer="1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">331 0 6 7</frame>
+			</sprite>			
+		</scene>
+
+		<scene name="3">		
+			<sprite origin="0 2" ulayer="0" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">355 0 2 3</frame>
+			</sprite>		
+			<sprite origin="2 4" ulayer="1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">346 0 3 5</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="4">		
+			<sprite origin="2 5" ulayer="1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">349 0 3 7</frame>
+			</sprite>		
+			<sprite origin="-1 5" ulayer="0" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">352 0 3 7</frame>
+			</sprite>			
+		</scene>
+		
+	</scenes>
+</unit>

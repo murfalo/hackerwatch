@@ -1,0 +1,29 @@
+<effect looping="false">
+	<param name="radius" default="32" />
+	
+	%//Particles
+	<sprite origin="3 3" looping="false" texture="players/ranger/powershot_hit.png" material="system/default.mats:default-noxray"
+		num-sprites="rand(u)-0.8"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-r="0.7 - (0.5*t)"
+		color-g="0"
+		color-b="0 + (0.1*t) "
+		color-a="1 - (1*t)"
+		
+		scale-x="0.75"
+		scale-y="0.75"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="100">12 112 6 6</frame>
+		<frame time="200">18 112 6 6</frame>
+		<frame time="200">24 112 6 6</frame>
+		<frame time="200">30 112 6 6</frame>
+		<frame time="100">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+</effect>

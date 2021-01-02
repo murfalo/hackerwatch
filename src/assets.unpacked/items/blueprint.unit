@@ -1,0 +1,41 @@
+<unit slot="doodad" netsync="none">
+	<behavior class="ForgeBlueprint">
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			<minimap_sprite layer="150" layer="20" origin="6 6" texture="gui/minimap.png" frame="152 9 11 12" />
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="0 0" radius="12" />
+			</collision>
+		</scene>
+
+		<scene name="common">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 0 16 19</frame>
+			</sprite>
+		</scene>
+
+		<scene name="uncommon">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 0 16 19</frame>
+			</sprite>
+		</scene>
+
+		<scene name="rare">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 0 16 19</frame>
+			</sprite>
+		</scene>
+
+		<scene name="legendary">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 0 16 19</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

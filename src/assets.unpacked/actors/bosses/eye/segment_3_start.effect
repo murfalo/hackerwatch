@@ -1,0 +1,36 @@
+<effect looping="false">
+	<sprite looping="true" origin="128 128" texture="./segment_active.png" material="system/default.mats:bright" angle="pi/2"
+		color-r="1"
+		color-g="1-t"
+		color-b="0"
+		color-a="t"
+	>
+		<frame time="1500">0 0 256 256</frame>
+	</sprite>
+    <sprite looping="true" origin="128 128" texture="./segment_start.png" material="system/default.mats:default" angle="pi/2"
+	color-r="1"
+	color-g="1-t"
+	color-b="0"
+	color-a="t">
+        <frame time="1500">0 0 256 256</frame>
+    </sprite>
+    <light pos-x="128" pos-y="128">
+        <sprite texture="./segment_L.png">
+            <frame>0 0 256 256</frame>
+        </sprite>
+
+        <length value="1500" />
+        
+        <looping value="true" />
+        
+        <cast-shadows value="false" />
+        
+        <angle value="pi/2"/>
+        
+        <size value="256" />
+        
+        <color-r value="1*t" />
+        <color-g value="0" />
+        <color-b value="0" />
+    </light>
+</effect>

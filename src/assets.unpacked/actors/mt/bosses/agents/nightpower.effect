@@ -1,0 +1,25 @@
+<effect looping="true" layer="300">
+<param name="radius" default="8" />
+	<sprite origin="0 2" looping="false" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10+5*saturate((t+l)))"
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		pos-y="-1*it*sin(rand(u+13*i))*2*pi) * radius/2"
+		color-r="1"
+		color-g="1"
+		color-b="0.25"
+		color-a="saturate(sin(it*pi))"
+		>
+		<frame time="1500">0 0 1 1</frame>
+	</sprite>
+	<sprite origin="0 2" looping="false" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10+5*saturate((t+l)))"
+		pos-x="it*sin(rand(u+13*i)*2*pi) * radius*2 * pow(rand(u+37*i),0.5)"
+		pos-y="cos(rand(u+13*i)*2*pi) * radius/2 * pow(rand(u+37*i),0.5) + sin(it*pi*2)*radius/4"
+		color-r="1"
+		color-g="1"
+		color-b="0.25"
+		color-a="saturate(sin(it*pi))"
+		>
+		<frame time="1500">0 0 1 1</frame>
+	</sprite>
+</effect>

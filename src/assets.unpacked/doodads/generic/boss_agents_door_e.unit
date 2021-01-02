@@ -1,0 +1,50 @@
+<unit slot="doodad">
+	<scenes open="open" opened="opened" close="close" closed="closed">
+		<scene name="open">
+			<effect src="./boss_agent_door_open_e.effect"/>
+			<sprite looping="false" origin="-11 32" texture="./boss_agents_room.png" material="system/default.mats:default-noxray">
+				<frame time="500">0 0 0 0</frame>
+				<frame time="100">430 777 10 12</frame>
+			</sprite>
+		</scene>		
+		<scene name="opened">
+			<sprite origin="-11 32" texture="./boss_agents_room.png" material="system/default.mats:default-noxray">
+				<frame time="100">430 777 10 12</frame>
+			</sprite>
+		</scene>
+		<scene name="close">
+			<minimap_sprite origin="3 6" texture="gui/minimap.png" frame="224 188 8 8" />
+			<collision static="2">
+				<polygon decompose="2">
+					<point>2 -26</point>
+					<point>26 -2</point>
+					<point>10 14</point>
+					<point>10 8</point>
+					<point>-8 -10</point>
+					<point>-14 -10</point>
+				</polygon>
+			</collision>
+			<effect src="./boss_agent_door_close_e.effect"/>
+			<sprite looping="false"  layer="-5" origin="11 54" texture="./boss_agents_room.png" material="system/default.mats:default-noxray">
+				<frame time="500">0 0 0 0</frame>
+				<frame time="100">440 777 32 61</frame>
+			</sprite>
+		</scene>
+		<scene name="closed">
+			<minimap_sprite origin="3 6" texture="gui/minimap.png" frame="224 188 8 8" />
+			<collision static="2">
+				<polygon decompose="2">
+					<point>2 -26</point>
+					<point>26 -2</point>
+					<point>10 14</point>
+					<point>10 8</point>
+					<point>-8 -10</point>
+					<point>-14 -10</point>
+				</polygon>
+			</collision>
+			<sprite origin="11 54" texture="./boss_agents_room.png" material="system/default.mats:default">
+				<frame time="100">440 777 32 61</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,68 @@
+<dict>
+	<string name="name">.skills.ranger.deadly-aim</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 24 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::CriticalHitTrigger</string>
+					<float name="chance">0.05</float>
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">players/buffs.sval:marked-1</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::CriticalHitTrigger</string>
+					<float name="chance">0.075</float>
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">players/buffs.sval:marked-2</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::CriticalHitTrigger</string>
+					<float name="chance">0.1</float>
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">players/buffs.sval:marked-3</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::CriticalHitTrigger</string>
+					<float name="chance">0.125</float>
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">players/buffs.sval:marked-4</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

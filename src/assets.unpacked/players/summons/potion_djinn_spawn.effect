@@ -1,0 +1,54 @@
+<effect>
+
+	<data>
+		<string name="fx">players/summons/potion_djinn_spawn_dust.effect</string>
+	</data>	
+		
+	<sprite ulayer="-1" origin="9 26" looping="false" texture="./potion_djinn_spawn.png" material="system/default.mats:glow-both">
+		<frame time="70">0 64 18 32</frame>
+		<frame time="70">18 64 18 32</frame>
+		<frame time="70">36 64 18 32</frame>
+		<frame time="70">54 64 18 32</frame>
+		<frame time="70">72 64 18 32</frame>
+		<frame time="70">90 64 18 32</frame>
+		<frame time="70">108 64 18 32</frame>
+		<frame time="70">0 96 18 32</frame>
+	</sprite>
+	
+	<sprite origin="9 26" looping="false" texture="./potion_djinn_spawn.png" material="system/default.mats:default-noxray"
+	
+	pos-y="4"
+	 
+	 >
+		<frame time="70">0 0 18 32</frame>
+		<frame time="70">18 0 18 32</frame>
+		<frame time="70">36 0 18 32</frame>
+		<frame time="70">54 0 18 32</frame>
+		<frame time="70">72 0 18 32</frame>
+		<frame time="70">90 0 18 32</frame>
+		<frame time="70">108 0 18 32</frame>
+		<frame time="70">0 32 18 32</frame>
+	</sprite>
+	
+	<light pos-y="0" pos-x="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="560"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="100 * t" />
+			
+		<color-r value="0" />
+		<color-g value="2.5" />
+		<color-b value="3.13" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

@@ -1,0 +1,43 @@
+<unit slot="doodad">
+	<scenes empty="1" apothecary ="2">
+		<scene name="shared">	
+			<collision static="true">
+				<rect>-7 -2 15 3</rect>
+			</collision>
+		</scene>
+		<scene name="shared-d">	
+			<collision static="true">
+				<circle jam-through="true" offset="0 -3" radius="6.5" />			
+			</collision>
+		</scene>
+		<scene name="1">	
+			<scene src="shared" />	
+			<sprite origin="7 11" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="180">362 0 15 12</frame>
+			</sprite>
+			<sprite origin="-7 11" layer="-1" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="180">377 0 8 12</frame>
+			</sprite>
+		</scene>
+		<scene name="2">	
+			<scene src="shared" />
+
+			
+			<sprite origin="0 10" ulayer="1" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="180">357 0 5 8</frame>
+			</sprite>
+			
+			
+			<sprite origin="4 12" ulayer="1" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="180">359 12 3 11</frame>
+			</sprite>
+			
+			<sprite origin="7 11" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="180">362 0 15 12</frame>
+			</sprite>
+			<sprite origin="-7 11" layer="-1" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="180">377 0 8 12</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

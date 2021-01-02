@@ -1,0 +1,57 @@
+<unit slot="doodad">
+	<behavior class="Breakable">
+		<string name="break-sound">event:/enemy/skeleton/death_spawner</string>
+		<string name="hit-sound">event:/enemy/skeleton/death</string>
+		<string name="gore">effects/gibs/gib_boss_warden_corpse.sval</string>
+		<bool name="shoot-through">false</bool>
+		<bool name="always-hit-gore">true</bool>
+	</behavior>
+	
+	<scenes start="default" empty="empty" bomb="bomb">
+		<scene name="shared">
+			<data name="health"><int>50</int></data>
+			<collision static="true">
+				<circle offset="0 0" radius="20" />
+			</collision>
+			
+			<sprite origin="0 0" pos="-3 12" ulayer="-1" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>63 643 16 12</frame>
+			</sprite>
+			<sprite origin="0 0" pos="-45 -7" ulayer="-1" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>0 643 33 32</frame>
+			</sprite>
+			<sprite origin="0 0" ulayer="-1" pos="15 -7" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>33 643 30 27</frame>
+			</sprite>
+		</scene>
+
+		<scene name="default">
+			<scene src="shared" />
+			<sprite origin="25 28" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>0 600 50 43</frame>
+			</sprite>
+		</scene>
+		<scene name="empty">
+			<scene src="shared" />
+			<sprite origin="25 28" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>50 600 50 43</frame>
+			</sprite>
+		</scene>
+		<scene name="bomb">
+			<scene src="shared" />
+			<sprite origin="25 28" looping="true" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame>100 600 50 43</frame>
+			</sprite>
+			<sprite origin="4 11" looping="false" texture="actors/bosses/warden/warden.png" material="system/default.mats:actor">
+				<frame time="200">160 608 16 32</frame>
+				<frame time="200">176 608 16 32</frame>
+				<frame time="200">192 608 16 32</frame>
+				<frame time="200">208 608 16 32</frame>
+				<frame time="200">160 640 16 32</frame>
+				<frame time="200">176 640 16 32</frame>
+				<frame time="200">192 640 16 32</frame>
+			</sprite>
+		</scene>
+
+	</scenes>
+</unit>

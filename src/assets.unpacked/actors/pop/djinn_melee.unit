@@ -1,0 +1,687 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.djinn_melee</string>
+		<vec2 name="beastiary-offset">0 16</vec2>
+		<string name="quality">uncommon</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">aberration</string>
+		<int name="hp">1000</int>
+		<int name="armor">40</int>
+		<int name="resistance">70</int>
+		<int name="experience-reward">130</int>
+		<float name="mp-scale-fact">0.65</float>
+		
+		<int name="unit-height">24</int>
+		
+		<string name="death-snd">event:/enemy/djinn/death</string>
+		<string name="gore">effects/gibs/gib_djinn.sval</string>
+		<string name="loot">actors/loot.sval:djinn</string>
+
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">false</bool>
+		<float name="debuff-scale">0.66</float>
+		<float name="wind-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_flying.inc"
+		</array>
+		
+		<dict name="movement">
+			<string name="class">DjinnMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">idle 8</string>
+			<string name="anim-blink">empty</string>
+			<string name="blink-fx">actors/pop/djinn_teleport.effect</string>
+			
+			<float name="speed">3.2</float>
+			<int name="dist">10</int>
+			<int name="max-blink-dis">70</int>
+			<int name="min-blink-dis">25</int>
+			<int name="blink-delay">1000</int>
+			<int name="blink-cooldown">1000</int>
+		</dict>
+		
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				<int name="cooldown">500</int>
+				<int name="castpoint">450</int>
+				<int name="range">30</int>
+				<string name="offset">shoot-pos</string>
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/djinn_impact.effect</string>
+						<int name="min-radius">16</int>
+						<int name="radius">16</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="magical">90</int>
+								<float name="resistance-mul">0.9</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/ice_melee_troll/smash</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Normal Charge
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+			
+				<string name="class">ChargeStrike</string>
+				<string name="anim">charge 8</string>
+				
+				<int name="cooldown-start">250</int>
+				<int name="cooldown">2500</int>
+				<int name="hold-frame">400</int>
+				
+				<int name="range">80</int>
+				<int name="min-range">30</int>
+
+				<bool name="must-see">true</bool>
+				
+				<float name="speed">5.5</float>
+				<int name="air-time">650</int>
+				<int name="jump-height">0</int>
+				<bool name="glide">false</bool>
+				
+				<int name="ray-num">5</int>
+				<int name="ray-width">16</int>
+				<float name="ray-length">3</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ Charge
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+			
+				<string name="class">ChargeStrike</string>
+				<string name="anim">charge 8</string>
+				
+				<int name="cooldown-start">250</int>
+				<int name="cooldown">2500</int>
+				<int name="hold-frame">400</int>
+				
+				<int name="range">80</int>
+				<int name="min-range">30</int>
+
+				<bool name="must-see">true</bool>
+				
+				<float name="speed">6.5</float>
+				<int name="air-time">500</int>
+				<int name="jump-height">0</int>
+				<bool name="glide">false</bool>
+				
+				<int name="ray-num">5</int>
+				<int name="ray-width">16</int>
+				<float name="ray-length">3</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+						<float name="armor-mul">0.8</float>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">effects/explosion_djinn.effect</string>
+					</dict>	
+				</array>	
+			</dict>	
+		</array>
+		
+		
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			
+			<sprite ulayer="-1" origin="16 12" looping="true" texture="./djinn_ranged.png" material="system/default.mats:glow-both">
+				<frame time="100">0 93 32 22</frame>
+				<frame time="100">32 93 32 22</frame>
+				<frame time="100">64 93 32 22</frame>
+				<frame time="100">96 93 32 22</frame>
+			</sprite>
+			<light pos="0 -3">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="100" />
+				</sizes>
+				<colors>
+					<color value="110 20 255 0" />
+				</colors>
+			</light>
+			<light pos="0 -3">
+				<sprite texture="items/projectiles/magic_missile_L.png">
+					<frame>0 0 256 256</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="25" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="72" />
+				</sizes>
+				<colors>
+					<color value="110 20 255 0" />
+					<color value="30 0 100 0" />
+				</colors>
+			</light>
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<looping value="true" />
+				<overlay value="false" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 10" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="150" />
+				</sizes>
+				<colors>
+					<color value="110 20 150 0" />
+				</colors>
+			</light>
+		</scene>
+		
+		<scene name="shared-collision">
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" radius="7" />
+				<circle offset="0 -10" sensor="true" aim-through="true" shoot-through="false" radius="7" />
+			</collision>
+		</scene>
+		
+		<scene name="empty">
+		</scene>
+		
+		<scene name="shared-attack">
+			<light pos="0 -10">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="630" />
+				<overbright value="10" />
+				<looping value="false" />
+				<overlay value="true" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 0 0 0" />
+					<color value="150 150 255 10" />
+				</colors>
+			</light>
+		</scene>
+		
+		<scene name="shared-charge">
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" charging="true" radius="7" />
+			</collision>
+			<light pos="0 -10">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="750" />
+				<overbright value="10" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 0 0 0" />
+					<color value="150 150 255 10" />
+				</colors>
+			</light>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">0 217 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">31 217 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">62 217 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">93 217 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">124 217 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">155 217 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">186 217 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<scene src="shared-collision" />
+			<sprite origin="15 28"  looping="true" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">217 217 31 31</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="charge-0">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">0 0 31 31</frame>
+				<frame time="300">0 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">0 0 31 31</frame>
+				<frame time="100">0 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">0 62  31 31</frame>
+				<frame time="100">0 93  31 31</frame>
+				<frame time="100">0 124 31 31</frame>
+				<frame time="100">0 155 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="charge-1">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">31 0 31 31</frame>
+				<frame time="300">31 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">31 0 31 31</frame>
+				<frame time="100">31 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">31 62  31 31</frame>
+				<frame time="100">31 93  31 31</frame>
+				<frame time="100">31 124 31 31</frame>
+				<frame time="100">31 155 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="charge-2">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">62 0 31 31</frame>
+				<frame time="300">62 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">62 0 31 31</frame>
+				<frame time="100">62 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">62 62  31 31</frame>
+				<frame time="100">62 93  31 31</frame>
+				<frame time="100">62 124 31 31</frame>
+				<frame time="100">62 155 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="charge-3">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">93 0 31 31</frame>
+				<frame time="300">93 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">93 0 31 31</frame>
+				<frame time="100">93 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">93 62  31 31</frame>
+				<frame time="100">93 93  31 31</frame>
+				<frame time="100">93 124 31 31</frame>
+				<frame time="100">93 155 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="charge-4">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">124 0 31 31</frame>
+				<frame time="300">124 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">124 0 31 31</frame>
+				<frame time="100">124 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">124 62  31 31</frame>
+				<frame time="100">124 93  31 31</frame>
+				<frame time="100">124 124 31 31</frame>
+				<frame time="100">124 155 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="charge-5">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">155 0 31 31</frame>
+				<frame time="300">155 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">155 0 31 31</frame>
+				<frame time="100">155 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">155 62  31 31</frame>
+				<frame time="100">155 93  31 31</frame>
+				<frame time="100">155 124 31 31</frame>
+				<frame time="100">155 155 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="charge-6">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">186 0 31 31</frame>
+				<frame time="300">186 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">186 0 31 31</frame>
+				<frame time="100">186 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">186 62  31 31</frame>
+				<frame time="100">186 93  31 31</frame>
+				<frame time="100">186 124 31 31</frame>
+				<frame time="100">186 155 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="charge-7">
+			<scene src="shared" />
+			<scene src="shared-charge" />
+			<sprite looping="false" origin="15 28" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="100">217 0 31 31</frame>
+				<frame time="300">217 31 31 31</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:actor-genie">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">217 0 31 31</frame>
+				<frame time="100">217 31 31 31</frame>
+			</sprite>
+			<sprite layer="1" origin="15 28" loopback="400" texture="./djinn_melee_charge.png" material="system/default.mats:glow-both-bright">
+				<frame time="400">0 0 0 0</frame>
+				<frame time="100">217 62  31 31</frame>
+				<frame time="100">217 93  31 31</frame>
+				<frame time="100">217 124 31 31</frame>
+				<frame time="100">217 155 31 31</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-0">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="12 0"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">0 0 31 31</frame>
+				<frame time="150">0 31 31 31</frame>
+				<frame time="150">0 62 31 31</frame>
+				<frame time="60">0 93 31 31</frame>
+				<frame time="60">0 124 31 31</frame>
+				<frame time="60">0 155 31 31</frame>			
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">0 0 31 31</frame>
+				<frame time="150">0 31 31 31</frame>
+				<frame time="150">0 62 31 31</frame>
+				<frame time="60">0 93 31 31</frame>
+				<frame time="60">0 124 31 31</frame>
+				<frame time="60">0 155 31 31</frame>
+				<frame time="60">0 186 31 31</frame>				
+			</sprite>
+		</scene>
+		<scene name="attack-1">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="9 9"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">31 0 31 31</frame>
+				<frame time="150">31 31 31 31</frame>
+				<frame time="150">31 62 31 31</frame>
+				<frame time="60">31 93 31 31</frame>
+				<frame time="60">31 124 31 31</frame>
+				<frame time="60">31 155 31 31</frame>
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">31 0 31 31</frame>
+				<frame time="150">31 31 31 31</frame>
+				<frame time="150">31 62 31 31</frame>
+				<frame time="60">31 93 31 31</frame>
+				<frame time="60">31 124 31 31</frame>
+				<frame time="60">31 155 31 31</frame>
+				<frame time="60">31 186 31 31</frame>	
+			</sprite>
+		</scene>
+		<scene name="attack-2">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="0 12"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">62 0 31 31</frame>
+				<frame time="150">62 31 31 31</frame>
+				<frame time="150">62 62 31 31</frame>
+				<frame time="60">62 93 31 31</frame>
+				<frame time="60">62 124 31 31</frame>
+				<frame time="60">62 155 31 31</frame>
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">62 0 31 31</frame>
+				<frame time="150">62 31 31 31</frame>
+				<frame time="150">62 62 31 31</frame>
+				<frame time="60">62 93 31 31</frame>
+				<frame time="60">62 124 31 31</frame>
+				<frame time="60">62 155 31 31</frame>
+				<frame time="60">62 186 31 31</frame>	
+			</sprite>
+		</scene>
+		<scene name="attack-3">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="-9 9"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">93 0 31 31</frame>
+				<frame time="150">93 31 31 31</frame>
+				<frame time="150">93 62 31 31</frame>
+				<frame time="60">93 93 31 31</frame>
+				<frame time="60">93 124 31 31</frame>
+				<frame time="60">93 155 31 31</frame>
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">93 0 31 31</frame>
+				<frame time="150">93 31 31 31</frame>
+				<frame time="150">93 62 31 31</frame>
+				<frame time="60">93 93 31 31</frame>
+				<frame time="60">93 124 31 31</frame>
+				<frame time="60">93 155 31 31</frame>
+				<frame time="60">93 186 31 31</frame>	
+			</sprite>
+		</scene>
+		<scene name="attack-4">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="-12 0"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">124 0 31 31</frame>
+				<frame time="150">124 31 31 31</frame>
+				<frame time="150">124 62 31 31</frame>
+				<frame time="60">124 93 31 31</frame>
+				<frame time="60">124 124 31 31</frame>
+				<frame time="60">124 155 31 31</frame>
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">124 0 31 31</frame>
+				<frame time="150">124 31 31 31</frame>
+				<frame time="150">124 62 31 31</frame>
+				<frame time="60">124 93 31 31</frame>
+				<frame time="60">124 124 31 31</frame>
+				<frame time="60">124 155 31 31</frame>
+				<frame time="60">124 186 31 31</frame>	
+			</sprite>
+		</scene>
+		<scene name="attack-5">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="-9 -9"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">155 0 31 31</frame>
+				<frame time="150">155 31 31 31</frame>
+				<frame time="150">155 62 31 31</frame>
+				<frame time="60">155 93 31 31</frame>
+				<frame time="60">155 124 31 31</frame>
+				<frame time="60">155 155 31 31</frame>
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">155 0 31 31</frame>
+				<frame time="150">155 31 31 31</frame>
+				<frame time="150">155 62 31 31</frame>
+				<frame time="60">155 93 31 31</frame>
+				<frame time="60">155 124 31 31</frame>
+				<frame time="60">155 155 31 31</frame>
+				<frame time="60">155 186 31 31</frame>	
+			</sprite>
+		</scene>
+		<scene name="attack-6">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="0 -12"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">186 0 31 31</frame>
+				<frame time="150">186 31 31 31</frame>
+				<frame time="150">186 62 31 31</frame>
+				<frame time="60">186 93 31 31</frame>
+				<frame time="60">186 124 31 31</frame>
+				<frame time="60">186 155 31 31</frame>
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">186 0 31 31</frame>
+				<frame time="150">186 31 31 31</frame>
+				<frame time="150">186 62 31 31</frame>
+				<frame time="60">186 93 31 31</frame>
+				<frame time="60">186 124 31 31</frame>
+				<frame time="60">186 155 31 31</frame>
+				<frame time="60">186 186 31 31</frame>	
+			</sprite>
+		</scene>
+		<scene name="attack-7">
+			<scene src="shared" />
+			<scene src="shared-attack" />
+			<scene src="shared-collision" />
+			<locator name="shoot-pos" pos="9 -9"/>
+			<sprite origin="15 28" layer="1" looping="false" texture="./djinn_melee_flash.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">217 0 31 31</frame>
+				<frame time="150">217 31 31 31</frame>
+				<frame time="150">217 62 31 31</frame>
+				<frame time="60">217 93 31 31</frame>
+				<frame time="60">217 124 31 31</frame>
+				<frame time="60">217 155 31 31</frame>
+			</sprite>
+			<sprite origin="15 28"  looping="false" texture="./djinn_melee.png" material="system/default.mats:actor-genie">
+				<frame time="150">217 0 31 31</frame>
+				<frame time="150">217 31 31 31</frame>
+				<frame time="150">217 62 31 31</frame>
+				<frame time="60">217 93 31 31</frame>
+				<frame time="60">217 124 31 31</frame>
+				<frame time="60">217 155 31 31</frame>
+				<frame time="60">217 186 31 31</frame>	
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,58 @@
+<effect looping="true">	
+	<light pos-y="24" pos-x="24"> 
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="1000" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="(t+l)*pi*-2"/>
+		
+		<size value="48" />
+		
+		<color-r value="0.5 + saturate(t+l)*2" />
+		<color-g value="0.5 + saturate(t+l)*2" />
+		<color-b value="5 + saturate(t+l)*1" />
+	</light>
+	<sprite ulayer="-1" origin="8 8" looping="true" texture="./tower_frost_orb.png" material="system/default.mats:actor-noxray"
+	angle="rand(u+i*23)*pi*2"
+
+	>
+		<frame time="100">0 0 16 16</frame>
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+		<frame time="100">64 0 16 16</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="23+5*saturate(sin(t*pi*2))" />
+		
+		<color-r value="0.1 + saturate(t+l)*0.1" />
+		<color-g value="0.1 + saturate(t+l)*0.1" />
+		<color-b value="1 + saturate(t+l)*1" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,214 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.spawner_maggot</string>
+		<string name="beastiary-scene">portrait</string>
+		<vec2 name="beastiary-offset">-1 0</vec2>
+		<string name="quality">uncommon</string>
+	
+		<string name="type">construct</string>
+		<int name="hp">80</int>
+		<int name="armor">40</int>
+		<int name="resistance">15</int>
+		<int name="experience-reward">45</int>
+		<float name="mp-scale-fact">1</float>
+		
+		<string name="gore">effects/gibs/gib_maggot_spawner.sval</string>
+		<string name="death-snd">event:/enemy/maggot/death_spawner</string>
+		<string name="loot">actors/loot.sval:spawner_maggot</string>
+
+		<bool name="impenetrable">true</bool>
+		<int name="aggro-range">130</int>
+		<float name="debuff-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_static.inc"
+		</array>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">default</string>
+				
+				<array name="conditional">
+					<string>hp</string><string>gt</string><float>0.5</float>
+				</array>
+				
+				<int name="charges">15</int>
+				<bool name="must-see">true</bool>
+				<int name="cooldown">1400</int>
+				<int name="range">210</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>500</int><string>actors/maggot_1_small.unit</string>
+							<int>500</int><string>actors/maggot_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">default</string>
+				
+				<array name="conditional">
+					<string>hp</string><string>lt</string><float>0.5</float>
+				</array>
+				
+				<int name="charges">15</int>
+				<bool name="must-see">true</bool>
+				<int name="cooldown">700</int>
+				<int name="range">210</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>500</int><string>actors/maggot_1_small.unit</string>
+							<int>500</int><string>actors/maggot_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ On hit spawn
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>0</int>
+				</array>
+			
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDamaged</string>
+				<int name="charges">15</int>
+				<int name="cooldown">2000</int>
+				
+				<dict name="action">
+					<string name="class">SpawnUnit</string>
+					<array name="units">
+						<int>500</int><string>actors/maggot_1_small.unit</string>
+						<int>500</int><string>actors/maggot_1.unit</string>
+					</array>
+					<bool name="aggro">true</bool>
+					<bool name="safe-spawn">true</bool>
+					<int name="spawn-dist">16</int>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/spawners/spawner_maggot_razed.unit</string>
+					</dict>
+					
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>500</int><string>actors/maggot_1_small.unit</string>
+							<int>500</int><string>actors/maggot_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+					
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>500</int><string>actors/maggot_1_small.unit</string>
+							<int>500</int><string>actors/maggot_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+					
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>500</int><string>actors/maggot_1_small.unit</string>
+							<int>500</int><string>actors/maggot_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+					
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>500</int><string>actors/maggot_1_small.unit</string>
+							<int>500</int><string>actors/maggot_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+					
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>500</int><string>actors/maggot_1_small.unit</string>
+							<int>500</int><string>actors/maggot_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<minimap_sprite layer="1" origin="3 3" texture="gui/minimap.png" frame="123 5 5 5"/>
+			<collision static="true">
+				<polygon>
+					<point>-15 7</point>
+					<point>-9 -5</point>
+					<point>2 -14</point>
+					<point>15 -8</point>
+					<point>13 0</point>
+					<point>3 9</point>
+					<point>-10 14</point>
+				</polygon>
+			</collision>
+			<sprite origin="16 16" looping="true" texture="actors/spawners/spawner_maggot.png" material="system/default.mats:actor">
+				<frame time="1000">0 0 32 32</frame>
+				<frame time="250">32 0 32 32</frame>
+				<frame time="500">64 0 32 32</frame>
+				<frame time="250">32 0 32 32</frame>
+			</sprite>
+			<sprite layer="-20" origin="32 32" looping="true" texture="actors/spawners/spawner_maggot.png" material="system/default.mats:floor">
+				<frame>10 32 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="portrait">
+			<sprite origin="16 16" looping="true" texture="actors/spawners/spawner_maggot.png" material="system/default.mats:actor">
+				<frame time="1000">0 0 32 32</frame>
+				<frame time="250">32 0 32 32</frame>
+				<frame time="500">64 0 32 32</frame>
+				<frame time="250">32 0 32 32</frame>
+			</sprite>
+			<sprite layer="-20" origin="32 32" looping="true" texture="actors/spawners/spawner_maggot.png" material="system/default.mats:floor">
+				<frame>10 32 64 64</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

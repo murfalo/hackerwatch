@@ -1,0 +1,69 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1</int>
+			<vec3>24 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>scorpions</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/ambush_scorpions.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>2</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>scorpions</string>
+			<array><int>1</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>3</int>
+			<vec3>32 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="PickedRandoms"><int>5</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>4</int>
+			<vec3>24 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>snakes</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/ambush_snakes.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>5</int>
+			<vec3>64 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>snakes</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

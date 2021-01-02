@@ -1,0 +1,50 @@
+<unit slot="doodad">
+	<scenes ritual_se="ritual_se" ritual_sw="ritual_sw" ritual_nw="ritual_nw" ritual_ne="ritual_ne">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<collision static="true">
+				<circle offset="0 0" radius="8" aim-through="true" charge-through="false" density="20"/>
+			</collision>
+		</scene>
+		
+		<scene name="ritual_se">
+			<scene src="shared" />
+			<sprite  origin="16 24" texture="./../ritual.png"  material="system/default.mats:actor">
+				<frame time="200">128 0 32 32</frame>
+				<frame time="200">128 32 32 32</frame>
+				<frame time="200">128 64 32 32</frame>
+				<frame time="200">128 96 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ritual_sw">
+			<scene src="shared" />
+			<sprite  origin="16 24" texture="./../ritual.png"  material="system/default.mats:actor">
+				<frame time="200">160 0 32 32</frame>
+				<frame time="200">160 32 32 32</frame>
+				<frame time="200">160 64 32 32</frame>
+				<frame time="200">160 96 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ritual_nw">
+			<scene src="shared" />
+			<sprite  origin="16 24" texture="./../ritual.png"  material="system/default.mats:actor">
+				<frame time="200">192 0 32 32</frame>
+				<frame time="200">192 32 32 32</frame>
+				<frame time="200">192 64 32 32</frame>
+				<frame time="200">192 96 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ritual_ne">
+			<scene src="shared" />
+			<sprite  origin="16 24" texture="./../ritual.png"  material="system/default.mats:actor">
+				<frame time="200">224 0 32 32</frame>
+				<frame time="200">224 32 32 32</frame>
+				<frame time="200">224 64 32 32</frame>
+				<frame time="200">224 96 32 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,89 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+		<minimap_sprite layer="1" origin="100 88" texture="gui/minimap.png" frame="511 0 200 144"/>
+			<collision static="true">
+				<rect>-48 -336 96 32</rect>	
+				<polygon offset="0 0" decompose="2"> <!-- NE -->
+						<point>231 -65</point>
+						<point>219 -96</point>
+						<point>199 -129</point>
+						<point>174 -158</point>
+						<point>145 -183</point>
+						<point>112 -203</point>
+						<point>81 -215</point>
+						<point>48 -222</point>
+						<point>48 -368</point>
+						<point>448 -368</point>
+						<point>448 -32</point>
+						<point>238 -32</point>
+				</polygon>
+				<polygon offset="0 0" decompose="2"> <!-- NW -->
+						<point>-48 -368</point>
+						<point>-48 -222</point>
+						<point>-81 -215</point>
+						<point>-112 -203</point>
+						<point>-145 -183</point>
+						<point>-174 -158</point>
+						<point>-199 -129</point>
+						<point>-219 -96</point>
+						<point>-231 -65</point>
+						<point>-238 -32</point>
+						<point>-448 -32</point>
+						<point>-448 -368</point>
+				</polygon>
+				<polygon offset="0 0" decompose="2"> <!-- SW -->
+						<point>-238 -32</point>
+						<point>-240 1</point>
+						<point>-236 44</point>
+						<point>-226 80</point>
+						<point>-207 119</point>
+						<point>-182 151</point>
+						<point>-153 177</point>
+						<point>-118 200</point>
+						<point>-85 214</point>
+						<point>-48 222</point>
+						<point>-48 368</point>
+						<point>-448 368</point>
+						<point>-448 -32</point>
+				</polygon>
+				<polygon offset="0 0" decompose="2"> <!-- SE -->
+						<point>85 214</point>
+						<point>118 200</point>
+						<point>153 177</point>
+						<point>182 151</point>
+						<point>207 119</point>
+						<point>226 80</point>
+						<point>236 44</point>
+						<point>240 1</point>
+						<point>238 -32</point>
+						<point>448 -32</point>
+						<point>448 368</point>
+						<point>48 368</point>
+						<point>48 222</point>
+				</polygon>
+			</collision>
+
+			<sprite origin="48 315" layer="0" texture="./boss_wisp_room.png" material="system/default.mats:shadow">
+				<frame>896 0 96 93</frame>
+			</sprite>
+			<sprite origin="238 156" layer="0" texture="./boss_wisp_room.png" material="system/default.mats:shadow">
+				<frame>800 120 37 123</frame>
+			</sprite>
+			<sprite origin="-176 24" layer="0" texture="./boss_wisp_room.png" material="system/default.mats:shadow">
+				<frame>837 120 72 197</frame>
+			</sprite>
+			
+			<sprite origin="400 389" layer="-10" texture="./boss_wisp_room.png" material="system/default.mats:default">
+				<frame>0 542 800 360</frame>
+			</sprite>	
+			<sprite origin="48 349" layer="10" texture="./boss_wisp_room.png" material="system/default.mats:default">
+				<frame>800 0 96 103</frame>
+			</sprite>	
+			
+			<sprite origin="400 304" layer="-49" texture="./boss_wisp_room.png" material="system/default.mats:floor">
+				<frame>0 0 800 542</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

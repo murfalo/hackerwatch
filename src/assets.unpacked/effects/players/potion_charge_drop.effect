@@ -1,0 +1,42 @@
+<effect looping="false" layer="2">
+
+
+	<sprite looping="false" origin="6 6" layer="1" texture="effects/players/potion_charge.png" material="system/default.mats:bright-noxray"	
+	color-a="saturate(1-l)"
+	
+	pos-y="-8"
+	>
+		<frame time="1200">0 0 0 0</frame>
+		<frame time="50">0 6 12 13</frame>
+		<frame time="50">12 6 12 13</frame>
+		<frame time="50">24 6 12 13</frame>
+		<frame time="50">36 6 12 13</frame>
+		<frame time="50">48 6 12 13</frame>
+		<frame time="50">0 19 12 13</frame>
+	</sprite>
+
+		
+
+		
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="1200">0 0 0 0</frame>
+			<frame time="250">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="1450" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="30 *(1-pow(t,10))" />
+			
+		<color-r value="saturate(30-pow(t,10))/2" />
+		<color-g value="1-t" />
+		<color-b value="1-t" />
+		<color-a value="0"/>
+		
+	</light>
+
+</effect>

@@ -1,0 +1,87 @@
+<gui>
+	<sprites>
+		<sprite name="icon-legacy" texture="gui/icons.png"><frame>233 24 12 13</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+
+		<sprite name="char-shadow" texture="gui/widget.png"><frame>99 118 12 12</frame></sprite>
+		<sprite name="frame-button" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+		<sprite name="color-star" texture="gui/tailor_color_star.tif"><frame>4 4 11 12</frame></sprite>
+
+		<sprite name="color-star-button" texture="gui/widget.png"><frame>478 0 20 20</frame></sprite>
+		<sprite name="color-star-button-hover" texture="gui/widget.png"><frame>478 20 20 20</frame></sprite>
+		<sprite name="color-star-button-checked" texture="gui/widget.png"><frame>478 40 20 20</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group flow="vbox">
+			<!-- Top bar -->
+			<rect width="296" height="32" spriteset="gui/variable/bigwindow_borders.sval" padding="2 2" flow="hbox">
+				<!-- Portrait -->
+				<sprite src="frame-button">
+					<dyesprite id="face" offset="2 2" />
+				</sprite>
+
+				<!-- Separator -->
+				<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Previews -->
+				<rect width="263" height="28" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<group id="previews" inner="true" anchor="0.5 0">
+						<sprite src="char-shadow" offset="3 12" />
+						<sprite src="char-shadow" offset="23 12" />
+						<sprite src="char-shadow" offset="42 12" />
+						<sprite src="char-shadow" offset="60 12" />
+						<sprite src="char-shadow" offset="79 12" />
+						<sprite src="char-shadow" offset="99 12" />
+						<sprite src="char-shadow" offset="118 12" />
+						<sprite src="char-shadow" offset="137 12" />
+
+						<unit width="16" height="16" offset="2 9" />
+						<unit width="16" height="16" offset="22 9" />
+						<unit width="16" height="16" offset="41 9" />
+						<unit width="16" height="16" offset="60 9" />
+						<unit width="16" height="16" offset="79 9" />
+						<unit width="16" height="16" offset="98 9" />
+						<unit width="16" height="16" offset="117 9" />
+						<unit width="16" height="16" offset="136 9" />
+					</group>
+				</rect>
+			</rect>
+
+			<!-- Separator -->
+			<rect width="296" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- List container -->
+			<rect width="296" height="168">
+				<!-- List -->
+				<scrollrect id="list-categories" width="285" height="168" flow="vbox" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+				<!-- Scrollbar -->
+				<rect width="3" height="168" offset="285 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<scrollbar forid="list-categories" spriteset="scrollbar" offset="3 0" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Template -->
+				<group id="template-category" inner="true" flow="vbox" visible="false">
+					<!-- Header -->
+					<rect width="285" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text id="name" font="gui/fonts/arial11_bold.fnt" hint="name" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Dye list -->
+					<grouprect id="list-dyes" flow="hboxwrapped" padding="5 2" inner="true" width="287" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+				</group>
+
+				<!-- Dye template -->
+				<checkbox id="template-dye" content-height="21" spriteset="color-star-button" visible="false">
+					<!-- Ball sprite -->
+					<dyesprite id="ball" src="color-star" anchor="0.5 0.5" />
+
+					<!-- Owned checkmark -->
+					<sprite id="owned" visible="false" src="icon-check" offset="8 9" />
+				</checkbox>
+			</rect>
+		</group>
+	</doc>
+</gui>

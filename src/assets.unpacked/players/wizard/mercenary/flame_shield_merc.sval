@@ -1,0 +1,46 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">wizard</string>
+	<string name="name">.skills.wizard.flame-shield</string>
+	<string name="description">.skills.wizard.flame-shield.merc</string>
+
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 120 24 24</vec4>
+	</array>
+
+	<int name="cost">14</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<dict name="modifier">
+			<string name="class">Modifiers::FlameShield</string>
+			<float name="dmg-taken-mul">0.5</float>
+			<int name="cooldown">3000</int>
+			<string name="fx">players/wizard/flame_shield.effect</string>
+			<string name="fx-charge">players/wizard/flame_shield_charge.effect</string>
+
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<int name="radius">64</int>
+				<string name="fx">players/wizard/blast_wave.effect</string>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">30</int>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">players/buffs.sval:blast-4</string>
+					</dict>
+				</array>
+			</dict>
+
+			<array name="hud-cooldown">
+				<string>gui/icons_buffs.png</string>
+				<int>100</int><vec4>24 24 12 12</vec4>
+			</array>
+		</dict>
+	</dict>
+</dict>

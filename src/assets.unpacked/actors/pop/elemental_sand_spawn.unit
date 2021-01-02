@@ -1,0 +1,38 @@
+<unit>
+	<behavior class="BombBehavior">
+		<int name="delay">1500</int>
+		<int name="delay-random">0</int>
+<!-- 
+		<string name="spawn-sound">event:/misc/icerain</string> -->
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">4</float>
+ 				<string name="fx">actors/pop/elemental_sand_spawned.effect</string>
+				<int name="min-radius">16</int>
+				<int name="radius">16</int>
+				<float name="team-dmg">0</float>
+			
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<array name="units">
+					<int>1000</int><string>actors/pop/elemental_sand.unit</string>
+				</array>
+				<bool name="aggro">true</bool>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+		
+	</behavior>
+
+	<scenes>
+		<scene>		
+			<effect delay="1000" src="actors/pop/elemental_sand_spawn.effect" />
+			<effect delay="0" pos="0 -10" src="actors/pop/elemental_sand_spawn_storm.effect" />
+		</scene>
+	</scenes>
+</unit>

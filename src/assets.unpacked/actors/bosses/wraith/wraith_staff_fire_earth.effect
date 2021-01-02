@@ -1,0 +1,438 @@
+<effect looping="false" bounds="40 40">
+	<param name="radius" default="30" />
+	<param name="ttl" default="1000" />
+	
+<!-- single particle -->
+	<!-- 
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="radius * radius / 200"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -10 * it"
+		
+        color-r="0"
+        color-g="1.5 - mod(it+l+rand(u*i), 1)"
+        color-b="0"
+        color-a="(1 - mod(it+l+rand(u*i), 1)) * saturate(ttl / 200)"
+	>
+        <frame time="600">0 0 1 1</frame>
+	</sprite> -->
+<!-- explosions -->
+	<sprite origin="3 6" looping="false" texture="actors/bosses/wraith/wraith_staff_area_fire.png" material="effects/effects.mats:fire"
+		num-sprites="10"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+		color-a="1*(1-t)"
+	>
+        
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+        <frame time="45">0 39 6 11</frame>
+        <frame time="45">6 39 6 11</frame>
+        <frame time="45">12 39 6 11</frame>
+        <frame time="45">18 39 6 11</frame>
+        <frame time="45">24 39 6 11</frame>
+        <frame time="45">30 39 6 11</frame>
+        <frame time="45">36 39 6 11</frame>
+        <frame time="45">42 39 6 11</frame>
+        <frame time="45">48 39 6 11</frame>
+        <frame time="45">54 39 6 11</frame>
+        <frame time="45">60 39 6 11</frame>
+		
+		
+	</sprite>
+	
+	<sprite origin="6 7" looping="false" texture="actors/bosses/wraith/wraith_staff_area_fire.png" material="effects/effects.mats:fire"
+		num-sprites="4"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius/1.5 * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius/1.5 * pow(rand(u+37*i),0.5)"
+		
+		color-a="1"
+	>
+        
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+        <frame time="38">87 39 13 15</frame>
+        <frame time="38">100 39 13 15</frame>
+        <frame time="38">113 39 13 15</frame>
+        <frame time="38">126 39 13 15</frame>
+        <frame time="38">139 39 13 15</frame>
+        <frame time="38">152 39 13 15</frame>
+        <frame time="38">165 39 13 15</frame>
+        <frame time="38">178 39 13 15</frame>
+        <frame time="38">191 39 13 15</frame>
+        <frame time="38">204 39 13 15</frame>
+        <frame time="38">217 39 13 15</frame>
+        <frame time="38">230 39 13 15</frame>
+        <frame time="38">243 39 13 15</frame>
+		
+		
+	</sprite>
+	
+	<sprite origin="4 3" looping="false" texture="actors/bosses/wraith/wraith_staff_area_fire.png" material="effects/effects.mats:fire"
+		num-sprites="12"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+		color-a="1*(1-t)"
+	>
+        
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+        <frame time="45">0 56 9 6</frame>
+        <frame time="45">9 56 9 6</frame>
+        <frame time="45">18 56 9 6</frame>
+        <frame time="45">27 56 9 6</frame>
+        <frame time="45">36 56 9 6</frame>
+        <frame time="45">45 56 9 6</frame>
+        <frame time="45">54 56 9 6</frame>
+        <frame time="45">63 56 9 6</frame>
+        <frame time="45">72 56 9 6</frame>
+        <frame time="45">81 56 9 6</frame>
+        <frame time="45">90 56 9 6</frame>
+		
+		
+	</sprite>
+	<!-- Ring edge --><!-- 
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius / 3"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2)"
+		
+		color-a="saturate(t+l) * saturate(ttl / 200)"
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite> -->
+	
+	<!-- 
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(t*10, radius * 3 + 10)" />
+
+		<color-r value="1 * saturate(ttl / 200)" />
+		<color-g value="0.5 * saturate(ttl / 200)" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light> -->
+	
+	
+</effect>

@@ -1,0 +1,619 @@
+<!--
+	Unreliable
+	UnreliableSequenced
+	ReliableUnordered
+	ReliableSequenced
+	ReliableOrdered
+-->
+<network>
+	<message name="SpawnPlayer" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Player ID -->
+		<vec2pos /> <!-- Spawn position -->
+		<int /> <!-- Unit ID -->
+		<int /> <!-- Team ID -->
+	</message>
+
+	<message name="KillPlayer" namespace="PlayerHandler" delivery="ReliableOrdered" />
+	
+	<message name="SpawnPlayerCorpse" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Player ID -->
+		<vec2pos /> <!-- Spawn position -->
+	</message>
+	
+	<message name="AttemptRespawn" namespace="PlayerHandler" delivery="ReliableOrdered" />
+	
+	<message name="ResetPlayerHealthArmor" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Player ID -->
+	</message>
+	
+	<message name="PlayerMove" namespace="PlayerHandler" delivery="UnreliableSequenced">
+		<vec2pos />
+		<vec2dir />
+	</message>
+	
+	<message name="PlayerMoveForce" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<vec2pos />
+		<vec2dir />
+	</message>
+
+	<message name="PlayerDash" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Duration -->
+		<vec2dir /> <!-- Dashing direction -->
+	</message>
+
+	<message name="PlayerDashAbort" namespace="PlayerHandler" delivery="ReliableOrdered" />
+
+	<message name="PlayerShareExperience" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Experience -->
+	</message>
+
+	<message name="UseUnit" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Used -->
+		<unit /> <!-- User -->
+	</message>
+
+	<message name="UseUnitSecure" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Used unit -->
+	</message>
+	
+	<message name="ModifierTriggerEffect" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Verb -->
+		<int /> <!-- Verb ID -->
+		<int /> <!-- Modifier index -->
+		<unit /> <!-- Target -->
+	</message>
+
+	<message name="PlayerLevelUp" namespace="PlayerHandler" delivery="ReliableOrdered" />
+	
+	<message name="PlayerSyncExperience" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Level -->
+		<int64 /> <!-- Experience -->
+	</message>	
+	
+	<message name="PlayerDamage" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- DamageType -->
+		<int /> <!-- Damage -->
+	</message>
+
+	<message name="PlayerDamaged" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- DamageType -->
+		<int /> <!-- Damager -->
+		<int /> <!-- Damage -->
+		<float /> <!-- Total health -->
+		<int /> <!-- Weapon -->
+	</message>
+
+	<message name="PlayerHealed" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Heal amount -->
+		<float /> <!-- Total health -->
+	</message>
+	
+	<message name="HealPlayer" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Heal amount -->
+	</message>
+	
+	<message name="PlayerDied" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Killer player (if exists) -->
+		<int /> <!-- Damage type -->
+		<int /> <!-- Damage amount -->
+		<bool /> <!-- Damage melee -->
+		<int /> <!-- Weapon -->
+	</message>
+
+	<message name="PlayerPickups" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Num pickedup -->
+		<int /> <!-- Num total pickedup -->
+	</message>
+
+	<message name="PlayerJammerDrop" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<vec2pos /> <!-- Position -->
+		<vec2dir /> <!-- Direction -->
+		<unit /> <!-- Jammed unit -->
+		<vec2pos /> <!-- Place pos -->
+	</message>
+
+	<message name="PlayerJammerAttach" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Jammer unit -->
+		<vec2dir /> <!-- Direction -->
+		<unit /> <!-- Jammed unit -->
+		<vec2pos /> <!-- Place pos -->
+	</message>
+
+	<message name="PlayerSyncArmor" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Armor def hash -->
+		<int /> <!-- Armor -->
+	</message>
+
+	<message name="PlayerSyncStats" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<float /> <!-- Health -->
+		<float /> <!-- Mana -->
+	</message>
+
+	<message name="TakeFreeLife" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Peer -->
+		<int /> <!-- Free lives taken -->
+	</message>
+
+	<message name="PlayerActiveSkillActivate" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+		<vec2dir /> <!-- Target -->
+	</message>
+
+	<message name="PlayerActiveSkillDoActivate" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+		<vec2dir /> <!-- Target -->
+		<svalue /> <!-- Params -->
+	</message>
+
+	<message name="PlayerActiveSkillDeactivate" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+	</message>
+
+	<message name="PlayerActiveSkillRelease" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+		<vec2dir /> <!-- Target -->
+	</message>
+
+	<message name="PlayerStackSkillAdd" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+		<int /> <!-- Num -->
+	</message>
+
+	<message name="PlayerStackSkillTake" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+		<int /> <!-- Num -->
+	</message>
+
+	<message name="PlayerShatterActivate" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Enemy -->
+		<svalue /> <!-- Params -->
+	</message>
+
+	<message name="PlayerChargeUnit" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+		<float /> <!-- Charge -->
+		<vec2dir /> <!-- Target -->
+		<int /> <!-- Unit ID -->
+	</message>
+
+	<message name="PlayerFanChargeUnit" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Skill ID -->
+		<float /> <!-- Charge -->
+		<vec2dir /> <!-- Target -->
+		<svalue /> <!-- Unit ID array -->
+	</message>
+
+	<message name="PlayerGiveGold" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Amount of gold -->
+	</message>
+
+	<message name="PlayerGiveOre" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Amount of ore -->
+	</message>
+
+	<message name="PlayerGiveKey" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Lock -->
+		<int /> <!-- Amount of keys -->
+	</message>
+
+	<message name="PlayerGiveDrink" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- ID -->
+	</message>
+
+	<message name="PlayerTakeItem" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<string /> <!-- ID -->
+	</message>
+
+	<message name="PlayerGiveItem" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<string /> <!-- ID -->
+	</message>
+
+	<message name="PlayerItemAttuned" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<string /> <!-- ID -->
+	</message>
+
+	<message name="PlayerGiveUpgrade" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<string /> <!-- ID -->
+		<int /> <!-- Level -->
+	</message>
+
+	<message name="PlayerRespecSkills" namespace="PlayerHandler" delivery="ReliableOrdered" />
+
+	<message name="PlayerUpdateHardcoreSkill" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Index -->
+		<int /> <!-- Hardcore skill ID -->
+	</message>
+
+	<message name="PlayerRespecAttunements" namespace="PlayerHandler" delivery="ReliableOrdered" />
+
+	<message name="PlayerLoadPet" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Current pet -->
+		<int /> <!-- Current pet skin -->
+		<svalue /> <!-- Pet flags -->
+	</message>
+
+	<message name="PlayerTitleModifiers" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<svalue /> <!-- Params -->
+	</message>
+
+	<message name="ProximityTrapEnter" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+	</message>
+
+	<message name="ProximityTrapExit" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+	</message>
+	
+	<message name="ReviveCorpse" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Player ID -->
+	</message>
+
+	<message name="PlayerPing" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<vec2pos /> <!-- Position -->
+	</message>
+
+	<message name="PlayerCombo" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<bool /> <!-- Started -->
+		<int /> <!-- Time -->
+		<int /> <!-- Count -->
+	</message>
+
+	<message name="PlayerPotionCharged" namespace="PlayerHandler" delivery="ReliableOrdered" />
+
+	<message name="PlayerUpdateColors" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<svalue /> <!-- Params -->
+	</message>
+
+	<message name="PlayerChangeClass" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<string /> <!-- New class -->
+	</message>
+
+	<message name="PlayerPotionDjinn" namespace="PlayerHandler" delivery="ReliableOrdered" />
+
+	<message name="PlayerPotionDjinnBegin" namespace="PlayerHandler" delivery="ReliableOrdered" />
+
+	<message name="PlayerArenaClear" namespace="PlayerHandler" delivery="ReliableOrdered" />
+	
+	<message name="SetPetTarget" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<vec2pos /> <!-- Position -->
+		<int /> <!-- State -->
+	</message>
+
+	<message name="BloodAltarReward" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<int /> <!-- Reward ID -->
+	</message>
+
+	<message name="PlayerTransport" namespace="PlayerHandler" delivery="ReliableOrdered">
+		<string /> <!-- Transport ID -->
+		<svalue /> <!-- Params -->
+	</message>
+
+	<message name="SpawnUnit" namespace="UnitHandler" delivery="ReliableOrdered">
+		<int /> <!-- Unit ID -->
+		<int /> <!-- ProducerHash -->
+		<vec2pos /> <!-- Position -->
+	</message>
+
+	<message name="SetOwnedUnit" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Owned Unit -->
+		<unit /> <!-- Owner Unit -->
+		<float /> <!-- Intensity -->
+	</message>
+	
+
+	<message name="SetFountain" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<svalue /> <!-- Data -->
+	</message>
+
+	<message name="DepositFountain" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<int /> <!-- Amount -->
+	</message>
+
+	<message name="SetNgp" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<int /> <!-- NGP -->
+	</message>
+
+	<message name="GameOver" namespace="GameModeHandler" delivery="ReliableOrdered" />
+
+	<message name="ExtraLives" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<int /> <!-- Lives -->
+	</message>
+	
+	<message name="SyncFlag" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<string /> <!-- Flag -->
+		<bool /> <!-- Value -->
+		<bool /> <!-- Persistent -->
+	</message>
+	
+	<message name="SpawnDrinkBarrel" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<vec2pos /> <!-- Position -->
+		<int /> <!-- Quality -->
+	</message>
+	
+	<message name="SpawnItemBlueprint" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<vec2pos /> <!-- Position -->
+		<int /> <!-- Quality -->
+	</message>
+
+	<message name="SpawnDyeBucket" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<vec2pos /> <!-- Position -->
+		<int /> <!-- Quality -->
+	</message>
+
+	<message name="SurvivalCrowdValue" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<float /> <!-- New value -->
+		<float /> <!-- Delta -->
+	</message>
+
+	<message name="PlaySurvivalIntroEffect" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Spawnpoint -->
+	</message>
+
+	<message name="SurvivalCrowdTrigger" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<int /> <!-- ID hash -->
+		<int /> <!-- Delta -->
+	</message>
+
+	<message name="SurvivalCrowdTriggerStat" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<int /> <!-- ID hash -->
+		<int /> <!-- Delta -->
+	</message>
+
+	<message name="TownStatueSet" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<int /> <!-- Slot -->
+		<string /> <!-- Statue ID -->
+	</message>
+
+	<message name="SpawnTownGravestone" namespace="GameModeHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<svalue /> <!-- Character data -->
+	</message>
+
+	<message name="PlayEffect" namespace="UnitHandler" delivery="ReliableOrdered">
+		<int /> <!-- Effect Hash -->
+		<vec2pos /> <!-- Position -->
+	</message>
+
+	<message name="AttachEffect" namespace="UnitHandler" delivery="ReliableOrdered">
+		<int /> <!-- Effect Hash -->
+		<unit /> <!-- Unit -->
+	</message>
+
+	<message name="UnitDamaged" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Damage -->
+		<vec2pos /> <!-- Position -->
+		<vec2dir /> <!-- Direction -->
+	</message>
+	
+	<message name="UnitDecimated" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Health -->
+		<int /> <!-- Mana -->
+	</message>
+	
+	<message name="UnitDamagedBySelf" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Damage -->
+		<vec2pos /> <!-- Position -->
+		<vec2dir /> <!-- Direction -->
+	</message>
+
+	<message name="UnitDelayedBreakable" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+	</message>
+
+	<message name="UnitBuffed" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<unit /> <!-- Owner -->
+		<int /> <!-- BuffHash -->
+		<float /> <!-- Intensity -->
+		<int /> <!-- Weapon -->
+		<int /> <!-- Duration -->
+	</message>
+
+	<message name="UnitTeleported" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<vec2pos /> <!-- New position -->
+	</message>
+
+	<message name="UnitDestroyed" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+	</message>
+	
+	<message name="UnitHealed" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Heal amount -->
+	</message>
+	
+	<message name="UnitKilled" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<unit /> <!-- Attacker -->
+		<int /> <!-- Dmg -->
+		<vec2dir /> <!-- Direction -->
+		<int /> <!-- Weapon -->
+	</message>
+	
+	<message name="UnitTarget" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<unit /> <!-- Target Unit -->
+	</message>
+	
+	<message name="UnitUseSkill" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Skill ID -->
+		<vec2pos /> <!-- Pos -->
+	</message>
+	
+	<message name="UnitUseSkillParam" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Skill ID -->
+		<vec2pos /> <!-- Pos -->
+		<svalue /> <!-- Param -->
+	</message>
+	
+	<message name="UnitUseSSkill" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Skill ID -->
+		<int /> <!-- Stage -->
+		<vec2pos /> <!-- Pos -->
+	</message>
+	
+	<message name="UnitUseSSkillParam" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<int /> <!-- Skill ID -->
+		<int /> <!-- Stage -->
+		<vec2pos /> <!-- Pos -->
+		<svalue /> <!-- Param -->
+	</message>
+
+	<message name="UnitPicked" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<unit /> <!-- Picker Unit -->
+	</message>
+
+	<message name="UnitPickSecure" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<unit /> <!-- Picker Unit -->
+	</message>
+	
+	<message name="UnitPickCallback" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<unit /> <!-- Picker Unit -->
+	</message>
+
+	<message name="UnitMovementBossLichTarget" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Lich unit -->
+		<unit /> <!-- Target unit -->
+	</message>
+
+	<message name="UnitMovementBossVampireTarget" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Vampire unit -->
+		<unit /> <!-- Target unit -->
+		<int /> <!-- Node wait time -->
+	</message>
+
+	<message name="UnitMovementBossWormSwitch" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Worm unit -->
+		<bool /> <!-- Underground -->
+	</message>
+
+	<message name="UnitMovementBossWormTarget" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Worm unit -->
+		<vec2pos /> <!-- Target pos -->
+		<float /> <!-- Direction -->
+	</message>
+
+	<message name="UnitEyeBossWispsAdded" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<svalue /> <!-- Params -->
+	</message>
+
+	<message name="UnitEyeBossWispsSync" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<svalue /> <!-- Params -->
+	</message>
+
+	<message name="VampireBossRoaming" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+	</message>
+
+	<message name="VampireNodeArrived" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+	</message>
+	
+	<message name="DjinnBlink" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<vec2pos /> <!-- Position -->
+	</message>
+	
+	<message name="UnitBombExploded" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Unit -->
+		<svalue /> <!-- Param -->
+	</message>
+
+	<message name="SpawnLoot" namespace="UnitHandler" delivery="ReliableOrdered">
+		<svalue /> <!-- Param -->
+	</message>
+
+	<message name="BoltShooter" namespace="UnitHandler" delivery="ReliableOrdered">
+		<svalue /> <!-- Param -->
+	</message>
+
+	<message name="SurvivalEnemySpawn" namespace="UnitHandler" delivery="ReliableOrdered">
+		<int /> <!-- Unit ID -->
+		<unit /> <!-- Spawn -->
+		<unit /> <!-- Spawn point -->
+		<int /> <!-- Enemy config -->
+	</message>
+
+	<message name="SarcophagusUsed" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Sarcophagus script -->
+	</message>
+
+	<message name="ShowDialogResult" namespace="UnitHandler" delivery="ReliableOrdered">
+		<unit /> <!-- ShowDialog script -->
+		<string /> <!-- Result -->
+	</message>
+
+	
+	<message name="DoSpawnUnitBase" namespace="SpawnUnitBaseHandler" delivery="ReliableOrdered">
+		<int /> <!-- Delay -->
+		<int /> <!-- ProducerHash -->
+		<vec2pos /> <!-- Position -->
+		<string /> <!-- Scene -->
+		<int /> <!-- Layer -->
+		<int /> <!-- Enemy Config -->
+		<int /> <!-- Owner ID -->
+		<float /> <!-- Intensity -->
+		<int /> <!-- Weapon info -->
+	</message>	
+	<message name="SpawnedOwnedUnitEnemy" namespace="SpawnUnitBaseHandler" delivery="ReliableOrdered">
+		<int /> <!-- ProducerHash -->
+		<int /> <!-- Unit ID -->
+		<vec2pos /> <!-- Position -->
+		<string /> <!-- Scene -->
+		<int /> <!-- Layer -->
+		<int /> <!-- Enemy Config -->
+		<unit /> <!-- Owner -->
+		<float /> <!-- Intensity -->
+		<int /> <!-- Weapon info -->
+	</message>
+	<message name="SpawnedOwnedUnit" namespace="SpawnUnitBaseHandler" delivery="ReliableOrdered">
+		<int /> <!-- ProducerHash -->
+		<int /> <!-- Unit ID -->
+		<vec2pos /> <!-- Position -->
+		<string /> <!-- Scene -->
+		<int /> <!-- Layer -->
+		<unit /> <!-- Owner -->
+		<float /> <!-- Intensity -->
+		<int /> <!-- Weapon info -->
+	</message>
+	<message name="SpawnedUnitEnemy" namespace="SpawnUnitBaseHandler" delivery="ReliableOrdered">
+		<int /> <!-- ProducerHash -->
+		<int /> <!-- Unit ID -->
+		<vec2pos /> <!-- Position -->
+		<string /> <!-- Scene -->
+		<int /> <!-- Layer -->
+		<int /> <!-- Enemy Config -->
+	</message>
+	<message name="SpawnedUnit" namespace="SpawnUnitBaseHandler" delivery="ReliableOrdered">
+		<int /> <!-- ProducerHash -->
+		<int /> <!-- Unit ID -->
+		<vec2pos /> <!-- Position -->
+		<string /> <!-- Scene -->
+		<int /> <!-- Layer -->
+	</message>
+	<message name="SpawnedUnitSimple" namespace="SpawnUnitBaseHandler" delivery="ReliableOrdered">
+		<int /> <!-- ProducerHash -->
+		<int /> <!-- Unit ID -->
+		<vec2pos /> <!-- Position -->
+	</message>
+
+	
+	<!-- These messages are for debugging, they are not used in production -->
+	<message name="DebugCompareKills" namespace="DebugHandler" delivery="ReliableOrdered">
+		<int /> <!-- Kills -->
+	</message>
+
+</network>

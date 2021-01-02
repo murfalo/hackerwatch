@@ -1,0 +1,164 @@
+<unit slot="doodad">
+	<behavior class="Breakable">
+		<string name="break-sound">event:/misc/crystal_break</string>
+		<string name="hit-sound">event:/misc/crystal_hit</string>
+		<string name="gore">effects/gibs/doodads/gib_container_crystal.sval</string>
+		<string name="loot">doodads/loot.sval:frost_crystal</string>
+		
+		<bool name="shoot-through">false</bool>
+		<bool name="always-hit-gore">true</bool>
+		
+		<bool name="scene-switching">true</bool>
+		<bool name="scene-switching-passthrough">false</bool>
+	</behavior>
+	
+	<scenes default="a-1 b-1 c-1 d-1">
+		<scene name="shared">
+			<minimap_sprite layer="10" origin="1 1" texture="gui/minimap.png" frame="107 0 3 3" />
+			
+			<!-- <data name="health"><int>10</int></data> -->
+			
+			<collision static="true">
+				<circle offset="0 0" aim-through="true" radius="6" />
+			</collision>
+				
+			<sprite layer="-5"origin="14 14" texture="./container_crystal.png" material="system/default.mats:floor">
+				<frame>88 0 29 28</frame>
+			</sprite>
+			
+ 			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="0.5"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="70" />
+				</sizes>
+				<colors>
+					<color value="5 202 255 1" />
+				</colors>
+			</light>
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="30" />
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="5 202 255 0" />
+				</colors>
+			</light>
+		</scene>
+	
+		<scene name="a-1">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="3 15" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>49 0 15 21</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="6 17" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>0 0 13 23</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="a-2">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="3 15" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>49 0 15 21</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="6 12" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>0 33 13 18</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="b-1">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="-4 14" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>64 0 7 20</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="9 16" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>13 0 15 22</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="b-2">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="-4 14" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>64 0 7 20</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="9 15" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>13 33 15 22</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="c-1">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="-1 13" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>71 0 9 19</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="5 15" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>28 0 10 21</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="c-2">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="-1 13" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>71 0 9 19</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="5 13" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>28 33 11 20</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="d-1">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="-1 7" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>80 0 8 14</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="6 10" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>38 0 11 16</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="d-2">
+			<scene src="shared" />
+			<shadow>
+				<sprite origin="-1 7" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+					<frame>80 0 8 14</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="7 9" texture="./container_crystal.png" material="system/default.mats:proj-prop">
+				<frame>39 33 12 15</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

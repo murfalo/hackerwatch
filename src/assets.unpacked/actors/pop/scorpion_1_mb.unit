@@ -1,0 +1,717 @@
+<unit netsync="position" slot="actor">
+	<behavior class="Miniboss">
+		<string name="beastiary-name">.bestiary.name.scorpion_1_mb</string>
+		<vec2 name="beastiary-offset">0 0</vec2>
+		<string name="quality">rare</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">beast</string>
+		<int name="hp">650</int>
+		<int name="armor">40</int>
+		<int name="resistance">20</int>
+		<int name="experience-reward">275</int>
+		<float name="mp-scale-fact">0.85</float>
+		
+		<int name="overhead-bossbar-width">16</int>
+		<int name="unit-height">14</int>
+		
+		<string name="death-snd">event:/enemy/tick/death</string>
+		<string name="gore">effects/gibs/gib_scorpion_1_mb.sval</string>
+		<string name="loot">actors/loot.sval:scorpion_1_mb</string>
+		
+		<float name="debuff-scale">0.66</float>
+		<float name="wind-scale">0.5</float>
+		<bool name="ignore-hit-effects">true</bool>
+		<bool name="impenetrable">true</bool>
+		<int name="aggro-range">150</int>
+
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_no_respawn.inc"
+			<string>quicksand</string>
+		</array>
+
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			
+			<float name="speed">1.65</float>
+			<int name="dist">20</int>
+			<float name="roaming">0.75</float>
+		</dict>
+
+		<array name="skills">
+			%// Melee
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">pinch 8</string>
+
+				<int name="cooldown">1000</int>
+				<int name="castpoint">550</int>
+				<int name="range">30</int>
+				
+				<string name="offset">attack-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/scorpion_mb_1_impact.effect</string>
+						<int name="min-radius">12</int>
+						<int name="radius">12</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">65</int>
+								<float name="armor-mul">0.8</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/ice_melee_troll/smash</string>
+					</dict>
+				</array>				
+			</dict>
+		
+			%// Normal lurker
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="snd">event:/enemy/scorpion_mb/lurker</string>
+				
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">true</bool>
+				<int name="cooldown-start">200</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">580</int>
+				<int name="min-range">40</int>
+				<int name="range">140</int>
+				<float name="aim-interception">10</float>
+				
+				<dict name="action">
+					<string name="class">ShootProjectile</string>
+					<int name="dist">10</int>
+					<string name="projectile">actors/pop/projectiles/scorpion_groundspikes.unit</string>
+				</dict>
+			</dict>
+
+			%// NG+ Lurker
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+			
+				<string name="class">CompositeActorBurstSkill</string>
+				<string name="anim">attack-fast 8</string>
+				<string name="snd">event:/enemy/scorpion_mb/lurker</string>
+				<int name="burst">4</int>
+				
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">true</bool>
+				<int name="cooldown-start">200</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">250</int>
+				<int name="min-range">40</int>
+				<int name="range">140</int>
+				<float name="aim-interception">10</float>
+				
+				<dict name="action">
+					<string name="class">ShootProjectile</string>
+					<int name="dist">10</int>
+					<int name="spread">15</int>
+					<string name="projectile">actors/pop/projectiles/scorpion_groundspikes.unit</string>
+				</dict>
+			</dict>
+
+			%// Charge
+			<dict>
+				<string name="class">ChargeStrike</string>
+				<string name="anim">charge 8</string>
+				<string name="anim-stop">pinch-fast 8</string>
+				
+				<int name="cooldown-start">2000</int>
+				<int name="cooldown">3000</int>
+				<int name="hold-frame">300</int>
+				
+				<int name="range">80</int>
+				<int name="min-range">50</int>
+				
+				<string name="offset">attack-pos</string>
+				<bool name="must-see">true</bool>
+				
+				<float name="speed">5</float>
+				<int name="air-time">700</int>
+				<int name="jump-height">0</int>
+				<bool name="glide">false</bool>
+				
+				<int name="ray-num">6</int>
+				<int name="ray-width">16</int>
+				<float name="ray-length">6</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">40</int>
+					</dict>
+				</array>
+
+				<array name="finish-effects">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/scorpion_mb_1_impact.effect</string>
+						<int name="min-radius">12</int>
+						<int name="radius">12</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">65</int>
+								<float name="armor-mul">0.8</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/ice_melee_troll/smash</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="119 3 4 5"/>
+			
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="8" charge-through="true" density="20"/>
+			</collision>
+		</scene>
+		
+		<scene name="shared-charge">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			
+			<collision static="false">
+				<circle offset="0 0" radius="8" charging="true" density="20" aim-through="true" charge-through="true"/>
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">0 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">48 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">96 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">144 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">192 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">240 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">288 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="150">336 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">0 48 48 48</frame>
+				<frame time="80">0 96 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">48 48 48 48</frame>
+				<frame time="80">48 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">96 48 48 48</frame>
+				<frame time="80">96 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">144 48 48 48</frame>
+				<frame time="80">144 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">192 48 48 48</frame>
+				<frame time="80">192 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">240 48 48 48</frame>
+				<frame time="80">240 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">288 48 48 48</frame>
+				<frame time="80">288 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="true" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">336 48 48 48</frame>
+				<frame time="80">336 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">0 144 48 48</frame>
+				<frame time="500">0 192 48 48</frame>
+				<frame time="500"> 0 240 48 48</frame>
+				<frame time="80"> 0 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">48 144 48 48</frame>
+				<frame time="500">48 192 48 48</frame>
+				<frame time="500"> 48 240 48 48</frame>
+				<frame time="80"> 48 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">96 144 48 48</frame>
+				<frame time="500">96 192 48 48</frame>
+				<frame time="500"> 96 240 48 48</frame>
+				<frame time="80"> 96 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">144 144 48 48</frame>
+				<frame time="500">144 192 48 48</frame>
+				<frame time="500"> 144 240 48 48</frame>
+				<frame time="80"> 144 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">192 144 48 48</frame>
+				<frame time="500">192 192 48 48</frame>
+				<frame time="500"> 192 240 48 48</frame>
+				<frame time="80"> 192 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">240 144 48 48</frame>
+				<frame time="500">240 192 48 48</frame>
+				<frame time="500"> 240 240 48 48</frame>
+				<frame time="80"> 240 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">288 144 48 48</frame>
+				<frame time="500">288 192 48 48</frame>
+				<frame time="500"> 288 240 48 48</frame>
+				<frame time="80"> 288 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="80">336 144 48 48</frame>
+				<frame time="500">336 192 48 48</frame>
+				<frame time="500"> 336 240 48 48</frame>
+				<frame time="80"> 336 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-0">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">0 144 48 48</frame>
+				<frame time="200">0 192 48 48</frame>
+				<frame time="100"> 0 240 48 48</frame>
+				<frame time="50"> 0 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-1">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">48 144 48 48</frame>
+				<frame time="200">48 192 48 48</frame>
+				<frame time="100"> 48 240 48 48</frame>
+				<frame time="50"> 48 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-2">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">96 144 48 48</frame>
+				<frame time="200">96 192 48 48</frame>
+				<frame time="100"> 96 240 48 48</frame>
+				<frame time="50"> 96 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-3">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">144 144 48 48</frame>
+				<frame time="200">144 192 48 48</frame>
+				<frame time="100"> 144 240 48 48</frame>
+				<frame time="50"> 144 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-4">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">192 144 48 48</frame>
+				<frame time="200">192 192 48 48</frame>
+				<frame time="100"> 192 240 48 48</frame>
+				<frame time="50"> 192 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-5">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">240 144 48 48</frame>
+				<frame time="200">240 192 48 48</frame>
+				<frame time="100"> 240 240 48 48</frame>
+				<frame time="50"> 240 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-6">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">288 144 48 48</frame>
+				<frame time="200">288 192 48 48</frame>
+				<frame time="100"> 288 240 48 48</frame>
+				<frame time="50"> 288 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-fast-7">
+			<scene src="shared" />
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50">336 144 48 48</frame>
+				<frame time="200">336 192 48 48</frame>
+				<frame time="100"> 336 240 48 48</frame>
+				<frame time="50"> 336 288 48 48</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="pinch-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="18 0"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 0 336 48 48</frame>
+				<frame time="250"> 0 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="12 12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 48 336 48 48</frame>
+				<frame time="250"> 48 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 18"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 96 336 48 48</frame>
+				<frame time="250"> 96 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-12 12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 144 336 48 48</frame>
+				<frame time="250"> 144 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-18 0"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 192 336 48 48</frame>
+				<frame time="250"> 192 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-12 -12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 240 336 48 48</frame>
+				<frame time="250"> 240 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -18"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 288 336 48 48</frame>
+				<frame time="250"> 288 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="12 -12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 336 336 48 48</frame>
+				<frame time="250"> 336 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="18 0"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 0 336 48 48</frame>
+				<frame time="250"> 0 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="12 12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 48 336 48 48</frame>
+				<frame time="250"> 48 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 18"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 96 336 48 48</frame>
+				<frame time="250"> 96 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-12 12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 144 336 48 48</frame>
+				<frame time="250"> 144 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-18 0"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 192 336 48 48</frame>
+				<frame time="250"> 192 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-12 -12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 240 336 48 48</frame>
+				<frame time="250"> 240 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -18"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 288 336 48 48</frame>
+				<frame time="250"> 288 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="pinch-fast-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="12 -12"/>
+			<sprite origin="24 24" looping="false" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="50"> 336 336 48 48</frame>
+				<frame time="250"> 336 384 48 48</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="charge-0">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 0 336 48 48</frame>
+				
+				<frame time="30">0 48 48 48</frame>
+				<frame time="30">0 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="charge-1">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 48 336 48 48</frame>
+				
+				<frame time="30">48 48 48 48</frame>
+				<frame time="30">48 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-2">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 96 336 48 48</frame>
+				
+				<frame time="30">96 48 48 48</frame>
+				<frame time="30">96 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-3">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 144 336 48 48</frame>
+				
+				<frame time="30">144 48 48 48</frame>
+				<frame time="30">144 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-4">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 192 336 48 48</frame>
+			
+				<frame time="30">192 48 48 48</frame>
+				<frame time="30">192 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-5">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 240 336 48 48</frame>
+			
+				<frame time="30">240 48 48 48</frame>
+				<frame time="30">240 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-6">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 288 336 48 48</frame>
+			
+				<frame time="30">288 48 48 48</frame>
+				<frame time="30">288 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge-7">
+			<scene src="shared-charge" />
+			<sprite origin="24 24" loopback="300" texture="./scorpion_1_mb.png" material="system/default.mats:actor">
+				<frame time="300"> 336 336 48 48</frame>
+			
+				<frame time="30">336 48 48 48</frame>
+				<frame time="30">336 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+	</scenes>
+</unit>

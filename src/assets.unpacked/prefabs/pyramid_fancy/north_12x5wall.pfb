@@ -1,0 +1,308 @@
+<dict>
+	<array name="tiles">
+		<dict>
+			<vec2 name="pos">0 0</vec2>
+			<array name="datasets">
+				<dict>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000041756f0841071d6c1e685552664c00000000000000000000000000000000000020000000000000000000000000080000000000000000000000000000000000001a0000000000000000000000005d0000000000000000000000000000000000002700000000000000000000000065000000000000000000000000000000000000520000000000000000000000001e000000000000000000000000000000000000460000000000000000000000001c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="system/system.fnt">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">north_12x5wall</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>2</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>3</int><int>5</int><int>6</int><int>9</int><int>12</int><int>18</int><int>20</int><int>22</int><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>3</int>
+			<vec3>192 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_special.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>4</int>
+			<vec3>0 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>start</string>
+			<array><int>7</int><int>0</int><int>14</int><int>0</int><int>2</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>5</int>
+			<vec3>192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_block.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>6</int>
+			<vec3>192 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_loot.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckSpawnDistance</string>
+			<int>7</int>
+			<vec3>96 -40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">300</int>
+				<int name="Function">2</int>
+				<array name="OnTrue"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>8</int>
+			<vec3>96 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>9</int>
+			<vec3>192 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawners</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_spawners.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>344 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>11</int>
+			<vec3>408 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>5</int><int>6</int><int>3</int><int>9</int><int>22</int><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>12</int>
+			<vec3>216 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shop_lvl0</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_shop.pfb</string>
+				<string name="Flag">shop</string>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>13</int>
+			<vec3>280 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>14</int>
+			<vec3>216 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>pyramid_fancy_shop</string>
+			<dict>
+				<string name="Flag">pyramid_fancy_shop</string>
+				<array name="OnFalse"><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>15</int>
+			<vec3>216 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_0</string>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnFalse"><int>19</int></array>
+				<array name="OnTrue"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>16</int>
+			<vec3>344 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_2</string>
+			<dict>
+				<string name="Flag">lvl_2</string>
+				<array name="OnTrue"><int>10</int><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>17</int>
+			<vec3>280 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>pyramid_fancy_shop</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">pyramid_fancy_shop</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>18</int>
+			<vec3>280 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shop_lvl1</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_shop.pfb</string>
+				<string name="Flag">shop</string>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>19</int>
+			<vec3>280 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_1</string>
+			<dict>
+				<string name="Flag">lvl_1</string>
+				<array name="OnTrue"><int>13</int></array>
+				<array name="OnFalse"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>20</int>
+			<vec3>344 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shop_lvl2</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_shop.pfb</string>
+				<string name="Flag">shop</string>
+				<int name="Chance">1000</int>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>21</int>
+			<vec3>216 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>22</int>
+			<vec3>240 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block2</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_block_2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>23</int>
+			<vec3>288 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block3</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/north_12x5wall_block_3.pfb</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

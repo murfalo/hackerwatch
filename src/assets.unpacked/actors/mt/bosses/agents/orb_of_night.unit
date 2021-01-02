@@ -1,0 +1,48 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<int name="hp">999999</int>
+		<int name="resistance">99999</int>
+		<int name="armor">99999</int>
+		<int name="experience-reward">0</int>
+		<bool name="targetable">false</bool>
+		<bool name="must-see-target">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<bool name="no-buffs">true</bool>
+		<int name="aggro-range">3000</int>
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>
+		<array name="skills">
+			<dict>
+				<string name="class">NovaSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>is</string><string>night_beam</string>
+				</array>
+				<string name="fx">actors/mt/bosses/agents/night_beam_attack.effect</string>
+				<string name="fire-snd">event:/enemy/orb_of_night/attack</string>			
+				<string name="anim">default</string>
+				<bool name="must-see">false</bool>
+				<int name="castpoint">0</int>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">6000</int>
+				<int name="min-range">0</int>
+				<int name="range">3000</int>
+				<int name="proj-count">128</int>
+				<string name="projectile">actors/mt/bosses/agents/night_beam.unit</string>
+			</dict>
+		</array>
+	</behavior>
+	<scenes start="default">
+		<scene name="default">
+			<sprite origin="4 4" looping="false" texture="effects/empty.png" material="system/default.mats:invisible">
+				<frame time="100">0 0 8 8</frame>
+			</sprite>
+			<collision static="true">
+				<circle aim-through="true" shoot-through="true" radius="4" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

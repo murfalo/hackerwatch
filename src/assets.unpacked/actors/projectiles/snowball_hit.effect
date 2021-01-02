@@ -1,0 +1,122 @@
+<effect looping="false">
+	<param name="radius" default="28" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_snowball.sval</string>
+		<string name="sound">event:/enemy/ice_shaman_troll/snowball</string>
+	</data>	
+	
+	
+	<sprite origin="16 21" looping="false" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		color-a="1"
+	>
+		<frame time="110">32 0 32 32</frame>
+		<frame time="110">64 0 32 32</frame>
+		<frame time="110">96 0 32 32</frame>
+		<frame time="110">0 32 32 32</frame>
+		<frame time="80">32 32 32 32</frame>
+		<frame time="80">64 32 32 32</frame>
+		<frame time="80">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite origin="2 2" looping="false" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		num-sprites="8"
+
+		pos-x="cos(2*pi*rand(u+i*13))*(pow(t,0.2)*radius+rand(u+i)*5)"
+        pos-y="sin(2*pi*rand(u+i*13))*(pow(t,0.2)*radius+rand(u+i)*5)"
+		
+	>
+        <frame time="60">96 32 4 5</frame>
+        <frame time="60">96 37 4 5</frame>
+        <frame time="60">96 42 4 5</frame>
+        <frame time="60">96 47 4 5</frame>
+        <frame time="300">96 52 4 5</frame>
+        <frame time="300">107 31 3 3</frame>
+	</sprite>
+	
+	<sprite origin="2 2" looping="false" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		num-sprites="8"
+
+		pos-x="cos(2*pi*rand(u+i*59))*(pow(t,0.2)*radius+rand(u+i)*8)"
+        pos-y="sin(2*pi*rand(u+i*59))*(pow(t,0.2)*radius+rand(u+i)*8)"
+		
+	>
+        <frame time="60">100 32 4 5</frame>
+        <frame time="60">100 37 4 5</frame>
+        <frame time="60">100 42 4 5</frame>
+        <frame time="60">100 47 4 5</frame>
+        <frame time="60">100 52 4 5</frame>
+        <frame time="300">100 57 4 5</frame>
+        <frame time="200">107 31 3 3</frame>
+	</sprite>
+	<sprite origin="2 2" looping="false" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		num-sprites="8"
+
+		pos-x="cos(2*pi*rand(u+i*23))*(pow(t,0.2)*radius+rand(u+i)*10)"
+        pos-y="sin(2*pi*rand(u+i*23))*(pow(t,0.2)*radius+rand(u+i)*10)"
+		
+	>
+        <frame time="60">104 32 4 5</frame>
+        <frame time="60">104 37 4 5</frame>
+        <frame time="60">104 42 4 5</frame>
+        <frame time="60">104 47 4 5</frame>
+        <frame time="60">104 52 4 5</frame>
+        <frame time="200">104 57 4 5</frame>
+        <frame time="200">107 31 3 3</frame>
+	</sprite>
+	
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * radius * t" />
+		
+		<color-r value="0.75" />
+		<color-g value="0.8" />
+		<color-b value="1" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * radius * 3) + 10" />
+		
+		<color-r value="0" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="1 - t" />
+		<color-a value="0" />
+	</light>
+	
+</effect>

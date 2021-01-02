@@ -1,0 +1,23 @@
+<effect looping="true">
+	<sprite origin="8 8" looping="true" texture="./projectiles.png" material="system/default.mats:glow-both-bright"
+		scale-x="saturate(t+l+0.25)"
+		scale-y="saturate(t+l+0.25)"
+		>
+		<frame time="250">0 16 16 16</frame>
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="./projectiles.png" material="system/default.mats:glow-both-bright"
+		scale-x="saturate(t+l+0.25)"
+		scale-y="saturate(t+l+0.25)"
+		angle="(t+l)*pi/0.5"
+		>
+		<frame time="250">16 16 16 16</frame>
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="./projectiles.png" material="system/default.mats:bright"
+		scale-x="saturate(t+l+0.25)"
+		scale-y="saturate(t+l+0.25)"
+		angle="(t+l)*pi/0.5"
+		color-a="1-saturate((t+l)/3)"
+		>
+		<frame time="250">32 16 16 16</frame>
+	</sprite>		
+</effect>

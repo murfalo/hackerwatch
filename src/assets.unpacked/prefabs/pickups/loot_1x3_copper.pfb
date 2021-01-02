@@ -1,0 +1,63 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">Campaign</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/env/anatolia_outside.env</string>
+	</dict>
+	<dict name="units">
+		<array name="items/money_copper_2.unit"><vec2>10 6</vec2><int>1</int><vec2>10 24</vec2><int>3</int><vec2>5 29</vec2><int>4</int></array>
+		<array name="items/money_copper_3.unit"><vec2>5 15</vec2><int>10</int><vec2>9 38</vec2><int>11</int></array>
+		<array name="items/money_copper_1.unit">
+			<vec2>3 7</vec2>
+			<int>2</int>
+			<vec2>4 20</vec2>
+			<int>5</int>
+			<vec2>11 11</vec2>
+			<int>6</int>
+			<vec2>3 34</vec2>
+			<int>7</int>
+			<vec2>4 42</vec2>
+			<int>8</int>
+			<vec2>12 30</vec2>
+			<int>9</int>
+			<vec2>10 44</vec2>
+			<int>12</int>
+			<vec2>13 18</vec2>
+			<int>13</int>
+			<vec2>4 3</vec2>
+			<int>14</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>17</int>
+			<vec3>0 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<float name="ChanceToDestroy">0.4</float>
+				<array name="Units">
+					<int>12</int>
+					<int>8</int>
+					<int>11</int>
+					<int>7</int>
+					<int>9</int>
+					<int>4</int>
+					<int>3</int>
+					<int>5</int>
+					<int>13</int>
+					<int>10</int>
+					<int>6</int>
+					<int>2</int>
+					<int>14</int>
+					<int>1</int>
+				</array>
+			</dict>
+		</array>
+	</array>
+</dict>

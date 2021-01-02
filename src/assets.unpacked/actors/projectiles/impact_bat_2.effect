@@ -1,0 +1,65 @@
+<effect layer="1">
+	<sprite looping="false" origin="5.5 5" texture="actors/projectiles/impact_bat_2.png" material="system/default.mats:projectile">
+		<frame time="60"> 0 0 11 10</frame>
+		<frame time="60"> 11 0 11 10</frame>
+		<frame time="60"> 0 10 11 10</frame>
+		<frame time="60"> 11 10 11 10</frame>
+		<frame time="60"> 0 20 11 10</frame>
+		<frame time="60"> 11 20 11 10</frame>
+	</sprite>
+	
+	%// FLASH
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 100) * 400" />
+		
+		<size value="2*(2*t)" />
+		
+		<color-r value="0.5" />
+		<color-g value="0.5" />
+		<color-b value="0.2" />
+		<color-a value="0/255" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="560">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="700" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 800) * 400" />
+		
+		<size value="(t-1)*10" />
+		
+		<color-r value="0.5" />
+		<color-g value="0.5*(1-t)" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+</effect>
+

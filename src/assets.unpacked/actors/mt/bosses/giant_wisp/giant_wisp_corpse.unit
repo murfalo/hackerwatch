@@ -1,0 +1,16 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif			
+			<effect src="actors/mt/bosses/giant_wisp/giant_wisp_death_impact.effect" /> 
+			<effect delay="500" src="actors/mt/bosses/giant_wisp/giant_wisp_snow.effect" /> 
+			<effect delay="500" src="actors/mt/bosses/giant_wisp/giant_wisp_snow2.effect" />
+		</scene>	
+	</scenes>
+</unit>
+
+

@@ -1,0 +1,166 @@
+<gui>
+	<sprites>
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="gold-town" texture="gui/icons.png"><frame>36 0 16 12</frame></sprite>
+		<sprite name="ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+		<sprite name="ore-town" texture="gui/icons.png"><frame>36 12 15 12</frame></sprite>
+		<sprite name="legacy-points" texture="gui/icons.png"><frame>233 24 12 13</frame></sprite>
+
+		<sprite name="button-stats" texture="gui/widget.png"><frame>227 0 18 18</frame></sprite>
+		<sprite name="button-stats-hover" texture="gui/widget.png"><frame>227 18 18 18</frame></sprite>
+		<sprite name="button-stats-down" texture="gui/widget.png"><frame>227 36 18 18</frame></sprite>
+		<sprite name="button-stats-disabled" texture="gui/widget.png"><frame>227 54 18 18</frame></sprite>
+
+<!--
+		<sprite name="exp" texture="gui/icons.png"><frame>63 17 12 12</frame></sprite>
+		<sprite name="time" texture="gui/icons.png"><frame>31 76 13 13</frame></sprite>
+		<sprite name="kills" texture="gui/icons.png"><frame>44 76 12 12</frame></sprite>
+-->
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- Background -->
+			<rect id="background" width="1024" height="1024" color="#00000000" />
+
+			<!-- Container -->
+			<rect anchor="0.5 0.5" width="292" height="270">
+
+				<!-- Content -->
+				<rect id="content" width="292" height="270" visible="true" flow="vbox" padding="2 2" spriteset="gui/variable/bigwindow_borders.sval">
+					<!-- Header -->
+					<rect width="288" height="45" spriteset="gui/variable/headline_borders.sval">
+						<!-- You died -->
+						<text color="#FF0000FF" font="gui/fonts/code2003_20_bold.fnt" text=".gameover.youdied" anchor="0.5 0" offset="0 3" />
+
+						<!-- Your sad life comes to an abrupt end, oh no -->
+						<text id="mock" color="#CD0000FF" font="gui/fonts/arial11.fnt" text=".gameover.mock.0" anchor="0.5 0" offset="0 26" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="288" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Container until buttons -->
+					<rect width="288" height="197" flow="vbox">
+						<!-- Statistics -->
+						<grouprect width="288" inner="true" flow="vbox" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+%if !HARDCORE
+							<rect width="288" height="35">
+								<!-- Gold found -->
+								<rect width="144" height="35" offset="0 0">
+									<group flow="hbox" smooth="false" inner="true" anchor="0.5 0" offset="0 4">
+										<sprite smooth="false" src="gold" />
+										<text smooth="false" offset="2 -3" font="gui/fonts/arial11_bold.fnt" text=".gameover.stats.goldfound" />
+									</group>
+									<text id="gold" text="0" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 16" />
+								</rect>
+
+								<!-- Ore found -->
+								<rect width="144" height="35" offset="144 0">
+									<group flow="hbox" smooth="false" inner="true" anchor="0.5 0" offset="0 4">
+										<sprite smooth="false" src="ore" />
+										<text smooth="false" offset="2 -3" font="gui/fonts/arial11_bold.fnt" text=".gameover.stats.orefound" />
+									</group>
+									<text id="ore" text="0" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 16" />
+								</rect>
+							</rect>
+%else
+							<!-- Mercenary death explanation -->
+							<text font="gui/fonts/arial11.fnt" width="280" align="center" anchor="0.5 0" color="#ffc000" text=".gameover.mercenary" />
+
+							<!-- Legacy points reward -->
+							<rect width="288" height="38">
+								<group flow="hbox" smooth="false" inner="true" anchor="0.5 0" offset="0 8">
+									<sprite smooth="false" src="legacy-points" />
+									<text smooth="false" offset="2 -3" font="gui/fonts/arial11_bold.fnt" text=".gameover.stats.legacypoints" />
+								</group>
+								<text id="legacy-points" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 20" text="12" />
+							</rect>
+%endif
+
+							<rect id="container-resources-stored" visible="false" width="288" height="30">
+								<!-- Gold sent to town -->
+								<rect width="144" height="35" offset="0 0">
+									<group flow="hbox" smooth="false" inner="true" anchor="0.5 0" offset="0 4">
+										<sprite smooth="false" src="gold-town" />
+										<text smooth="false" offset="2 -1" font="gui/fonts/arial11_bold.fnt" text=".gameover.stats.goldstored" />
+									</group>
+									<text id="gold-stored" text="0" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 16" />
+								</rect>
+
+								<!-- Ore sent to town -->
+								<rect width="144" height="35" offset="144 0">
+									<group flow="hbox" smooth="false" inner="true" anchor="0.5 0" offset="0 4">
+										<sprite smooth="false" src="ore-town" />
+										<text smooth="false" offset="2 -1" font="gui/fonts/arial11_bold.fnt" text=".gameover.stats.orestored" />
+									</group>
+									<text id="ore-stored" text="0" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 16" />
+								</rect>
+							</rect>
+
+							<!-- Killer -->
+							<rect id="killer" width="288" height="44">
+								<!-- Killed by text -->
+								<group flow="hbox" inner="true" anchor="0.5 0" offset="0 4">
+									<text smooth="false" offset="2 -2" font="gui/fonts/arial11_bold.fnt" text=".gameover.stats.killer" />
+								</group>
+
+								<group flow="hbox" spacing="4" inner="true" anchor="0.5 0" offset="0 18">
+									<!-- Unit -->
+									<rect width="22" height="22" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+										<clip width="18" height="18" offset="2 2">
+											<unit id="killer-unit" width="18" height="18" anchor="0.5 0.5" />
+										</clip>
+									</rect>
+
+									<!-- Name -->
+									<text id="killer-text" font="gui/fonts/arial11.fnt" offset="0 2" />
+								</group>
+							</rect>
+						</grouprect>
+
+						<!-- Separator -->
+						<rect width="288" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+						<!-- Sentences -->
+						<grouprect fill-rest="true">
+							<scrollrect id="sentences" width="280" height="100%" padding="0 4" flow="vbox" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+							<scrollbar forid="sentences" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+							<text id="sentence-template" visible="false" font="gui/fonts/arial11.fnt" anchor="0.5 0" />
+						</grouprect>
+					</rect>
+
+					<!-- Separator -->
+					<rect width="288" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Buttons -->
+					<rect width="288" height="18" flow="hbox">
+%if HARDCORE
+						<rect width="68" height="18" spriteset="gui/variable/headline_hor.sval" />
+%else
+						<rect width="10" height="18" spriteset="gui/variable/headline_hor.sval" />
+%endif
+
+						<spritebutton spriteset="button-stats" func="stats" />
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+%if !HARDCORE
+						<scalebutton id="button_restart" spriteset="scalebutton" func="restart" width="122" text=".gameover.restart" font="gui/fonts/arial11.fnt" />
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+%endif
+
+						<scalebutton spriteset="scalebutton" func="exit" width="122" text-caps="true" text=".gameover.quit" font="gui/fonts/arial11.fnt" />
+
+%if HARDCORE
+						<rect width="77" height="18" spriteset="gui/variable/headline_hor.sval" />
+%else
+						<rect width="10" height="18" spriteset="gui/variable/headline_hor.sval" />
+%endif
+					</rect>
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

@@ -1,0 +1,37 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/trap_turret_fire.unit"><vec2>0 0</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ProjectileShooter</string>
+			<int>2</int>
+			<vec3>0 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Up</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+				<int name="Direction">270</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>3</int>
+			<vec3>0 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1500</int>
+			</dict>
+			<array><int>2</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

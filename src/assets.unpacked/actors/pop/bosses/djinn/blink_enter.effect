@@ -1,0 +1,101 @@
+<effect looping="false" layer="2">
+	<param name="radius" default="14" />
+
+	
+	
+	<sprite origin="32 81" loopback="200" ulayer="2" looping="true" texture="./djinn.png" material="effects/effects.mats:fire"
+	
+	color-a="saturate(pow(t,4))"
+	>
+		<frame time="100">960 720 64 80</frame>
+		<frame time="100">896 720 64 80</frame>
+		<frame time="100">832 720 64 80</frame>
+		<frame time="50">768 720 64 80</frame>
+		<frame time="50">704 720 64 80</frame>
+		<frame time="50">576 560 64 80</frame>
+		<frame time="50">512 560 64 80</frame>
+		
+		
+	</sprite>
+	
+	
+	<sprite origin="33 56" looping="false" texture="./djinn_blink.png" material="effects/effects.mats:fire">
+        <frame time="50">0 264 66 66</frame > 	
+        <frame time="50">132 198 66 66</frame > 
+        <frame time="50">66 198 66 66</frame >
+        <frame time="50">0 198 66 66</frame >
+        <frame time="50">132 132 66 66</frame >
+        <frame time="50">66 132 66 66</frame >
+        <frame time="50">0 132 66 66</frame >
+        <frame time="100">132 66 66 66</frame >
+        <frame time="100">66 66 66 66</frame >
+        <frame time="100">0 66 66 66</frame >
+        <frame time="100">132 0 66 66</frame >
+        <frame time="100">66 0 66 66</frame >
+        <frame time="100">0 0 66 66</frame >
+		
+		
+	
+	</sprite>
+	<sprite origin="33 56" looping="false" texture="./djinn_blink.png" material="effects/effects.mats:fire"
+	color-a="saturate(1-pow(t,4))"
+	>
+        <frame time="50">132 396 66 66</frame >
+        <frame time="50">66 396 66 66</frame >
+        <frame time="50">0 396 66 66</frame >
+        <frame time="50">132 330 66 66</frame >
+        <frame time="50">66 330 66 66</frame >
+        <frame time="50">0 330 66 66</frame >
+		
+		
+	
+	</sprite>
+	
+	
+	
+	%// Fade
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * radius * 3) + 10" />
+		
+		<color-r value="3 - t" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+			<frame time="10">0 0 0 0</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+
+		<size value="150*(1-t)" />
+		
+		<color-r value="3*(1-t)" />
+		<color-g value="3*(1-t)" />
+		<color-b value="3*(1-t)" />
+		<color-a value="0" />
+	</light>
+</effect>

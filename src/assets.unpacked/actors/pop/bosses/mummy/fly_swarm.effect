@@ -1,0 +1,32 @@
+<effect looping="true" bounds="230 230">
+	<sprite looping="true" origin="9 9" texture="./fly.png" material="system/default.mats:default-noxray"
+		scale-x="saturate(t+l)"
+		scale-y="saturate(t+l)"
+		>
+		<frame time="80">0 0 18 18</frame>
+		<frame time="80">18 0 18 18</frame>
+		<frame time="80">36 0 18 18</frame>
+		<frame time="80">54 0 18 18</frame>
+		<frame time="80">72 0 18 18</frame>
+		<frame time="80">90 0 18 18</frame>
+	</sprite>
+	<sprite looping="true" origin="7 7" texture="./fly.png" material="system/default.mats:default-noxray"
+		angle="sin((t+l)*4)"
+		color-a="0.5"
+		>
+		<frame time="250">0 18 14 14</frame>
+	</sprite>
+	<sprite looping="true" origin="7 7" texture="./fly.png" material="system/default.mats:default-noxray"
+		angle="(t+l)*pi*0.7"
+		color-a="0.5"
+		>
+		<frame time="250">0 18 14 14</frame>
+	</sprite>
+	<sprite looping="false" origin="16 16" texture="./fly_smoke.png" material="system/default.mats:default-noxray"
+		scale-x="saturate(t+l)"
+		scale-y="saturate(t+l)"
+		color-a="0.25"
+		>
+		<frame time="1000">0 0 32 32</frame>
+	</sprite>
+</effect>

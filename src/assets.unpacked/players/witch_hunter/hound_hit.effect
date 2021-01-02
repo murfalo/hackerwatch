@@ -1,0 +1,80 @@
+<effect looping="false" layer="0">
+	<param name="radius" default="36" />
+	
+	<data>
+		<string name="sound">event:/player/witch_hunter/hound_hit</string>
+	</data>
+	
+	<!-- dust particles -->
+	
+	<sprite origin="6 6" looping="false" texture="./hound_hit.png" material="system/default.mats:default-noxray"
+		num-sprites="rand(u)*18"
+
+		pos-x="(max(0,log(t)-t+2))*cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2 - t*(cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="(max(0,log(t)-t+2))*sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2 - t*(sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2) - pow(t,4)*rand(i)*20"
+		
+		color-a="saturate(0.6 - sin(t*t*t*t*t))"
+	>
+        
+		<frame time="50">0 96 12 12</frame>
+		<frame time="50">12 96 12 12</frame>
+		<frame time="100">24 96 12 12</frame>
+		<frame time="100">36 96 12 12</frame>
+		<frame time="100">48 96 12 12</frame>
+		<frame time="100">60 96 12 12</frame>
+		<frame time="100">72 96 12 12</frame>
+		<frame time="100">84 96 12 12</frame>
+	</sprite>
+	<sprite origin="6 6" looping="false" texture="./hound_hit.png" material="system/default.mats:default-noxray"
+		num-sprites="10"
+
+		pos-x="(max(0,log(t)+1.5))*(cos(rand(u+13*i)*2*pi) * 24 * pow(rand(u+37*i),0.5))"
+        pos-y="(max(0,log(t)+1.5))*(sin(rand(u+13*i)*2*pi) * 24 * pow(rand(u+37*i),0.5)) - sin(t*t*t*t*t)*rand(i)*10"
+		
+		color-a="saturate(0.6 - sin(t*t*t*t*t))"
+	>
+        
+		<frame time="50">0 96 12 12</frame>
+		<frame time="50">12 96 12 12</frame>
+		<frame time="100">24 96 12 12</frame>
+		<frame time="100">36 96 12 12</frame>
+		<frame time="100">48 96 12 12</frame>
+		<frame time="100">60 96 12 12</frame>
+		<frame time="100">72 96 12 12</frame>
+		<frame time="100">84 96 12 12</frame>
+	</sprite>
+	
+	<sprite looping="false" origin="24 24" texture="./hound_hit.png" material="system/default.mats:bright-noxray">
+		<frame time="50">0 0 48 48</frame>
+		<frame time="50">48 0 48 48</frame>
+		<frame time="50">96 0 48 48</frame>
+		<frame time="50">144 0 48 48</frame>
+		<frame time="50">192 0 48 48</frame>
+		<frame time="50">0 48 48 48</frame>
+		<frame time="50">48 48 48 48</frame>
+		<frame time="50">96 48 48 48</frame>
+		<frame time="50">144 48 48 48</frame>
+		<frame time="50">192 48 48 48</frame>
+	</sprite>
+	
+	
+	<light pos-y="0"	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<length value="300" />
+		<looping value="false" />
+
+		<cast-shadows value="false" />
+
+		<size value="120-t*120" />
+
+		<color-r value="4-t*4" />
+		<color-g value="2-t*2" />
+		<color-b value="0.1" />
+		<color-a value="0"/>
+	</light>
+	
+
+</effect>

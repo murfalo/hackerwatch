@@ -1,0 +1,1947 @@
+<dict>
+	<array name="prefabs">
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>94 93 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>55 -26 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-62 93 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>102 108 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-47 -75 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-17 39 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-105 52 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-58 -72 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-23 -66 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>37 -39 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-75 67 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-60 -107 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-97 -78 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-96 38 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>24 -44 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-74 13 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-94 -57 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>-85 -64 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>91 -80 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>106 90 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>77 66 0</vec3>
+		<string>actors/pop/bosses/mummy/snake_spawn.pfb</string>
+		<vec3>64 100 0</vec3>
+	</array>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>276</int>
+			<vec3>64 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>283</int><int>0</int><int>294</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>277</int>
+			<vec3>-616 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">400</int>
+			</dict>
+			<array><int>307</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>278</int>
+			<vec3>-64 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>286</int><int>0</int><int>319</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>279</int>
+			<vec3>-48 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<string name="Text">.meta.info.gatherparty</string>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>280</int>
+			<vec3>-512 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>295</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>281</int>
+			<vec3>-243 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+			</dict>
+		</array>
+		<array><string>LevelStart</string><int>282</int><vec3>0 216 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>283</int>
+			<vec3>32 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>279</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>284</int>
+			<vec3>-211 -4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>285</int>
+			<vec3>-664 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">550</int>
+			</dict>
+			<array><int>281</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>286</int>
+			<vec3>-96 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>298</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>287</int>
+			<vec3>-272 -172 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>90</int><int>118</int><int>24</int><int>94</int></array>
+				<string name="State">up</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>288</int>
+			<vec3>-192 -360 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Flag">boss_mummy_dead</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>289</int>
+			<vec3>248 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>297</int><string>AllSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>290</int>
+			<vec3>-248 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ore</string>
+			<dict>
+				<string name="UnitType">items/ore.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>291</int>
+			<vec3>-736 -376 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>303</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>292</int>
+			<vec3>-448 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>puke</string>
+			<dict>
+				<string name="Flag">puke</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>293</int>
+			<vec3>0 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnAllEntered"><int>276</int></array>
+				<array name="OnCanceled"><int>278</int></array>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>294</int>
+			<vec3>96 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>298</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>295</int>
+			<vec3>-227 -3 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>296</int>
+			<vec3>-352 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>skills</string>
+			<array>
+				<int>305</int>
+				<int>0</int>
+				<int>292</int>
+				<int>0</int>
+				<int>315</int>
+				<int>0</int>
+				<int>300</int>
+				<int>0</int>
+				<int>317</int>
+				<int>0</int>
+				<int>316</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>297</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/pop/bosses/mummy/mummy.unit</string>
+			</dict>
+			<array><int>289</int><int>0</int><int>355</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LevelExitNext</string>
+			<int>298</int>
+			<vec3>96 -632 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="StartID">1</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>299</int>
+			<vec3>-96 200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>94</int></array>
+				<string name="State">down</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>300</int>
+			<vec3>-384 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stomp_ranged</string>
+			<dict>
+				<string name="Flag">stomp_ranged</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>301</int>
+			<vec3>-568 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>284</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>302</int>
+			<vec3>-192 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>297</int><string>AllSpawned</string></array>
+			</dict>
+			<array>
+				<int>288</int>
+				<int>500</int>
+				<int>287</int>
+				<int>1000</int>
+				<int>304</int>
+				<int>0</int>
+				<int>341</int>
+				<int>0</int>
+				<int>322</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>303</int>
+			<vec3>-736 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>290</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>304</int>
+			<vec3>-104 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>136</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>305</int>
+			<vec3>-448 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stomp_regular</string>
+			<dict>
+				<string name="Flag">stomp_regular</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>306</int>
+			<vec3>-808 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">500</int>
+			</dict>
+			<array><int>290</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>307</int>
+			<vec3>-230 12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>308</int>
+			<vec3>-225 -22 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>309</int>
+			<vec3>-680 -656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>320</int><int>1</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>310</int>
+			<vec3>-864 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">500</int>
+			</dict>
+			<array><int>308</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>311</int>
+			<vec3>-664 16 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>start</string>
+			<array><int>339</int><int>0</int><int>313</int><int>0</int><int>299</int><int>0</int><int>342</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>312</int>
+			<vec3>-808 -376 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>306</int><int>310</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>313</int>
+			<vec3>-176 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int></array>
+				<string name="State">spawn</string>
+			</dict>
+			<array><int>297</int><int>750</int><int>336</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>314</int>
+			<vec3>-592 -376 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>301</int><int>277</int><int>285</int><int>280</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>315</int>
+			<vec3>-320 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>charge_short</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">charge_short</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>316</int>
+			<vec3>-448 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>curse</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">curse</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>317</int>
+			<vec3>-256 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>charge_long</string>
+			<dict>
+				<string name="Flag">charge_long</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>318</int>
+			<vec3>0 -680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Icon">6</int>
+			</dict>
+			<array><int>279</int><int>0</int><int>298</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>319</int>
+			<vec3>-32 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>279</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>320</int>
+			<vec3>-680 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>no loot flag</string>
+			<dict>
+				<array name="OnFalse"><int>321</int></array>
+				<string name="Flag">fountain_no_loot</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>321</int>
+			<vec3>-680 -496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>312</int><int>0</int><int>291</int><int>0</int><int>314</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>322</int>
+			<vec3>320 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>BossKilled</string>
+			<array>
+				<int>326</int>
+				<int>0</int>
+				<int>329</int>
+				<int>0</int>
+				<int>328</int>
+				<int>0</int>
+				<int>337</int>
+				<int>0</int>
+				<int>357</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>323</int>
+			<vec3>608 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnFalse"><int>352</int><int>338</int></array>
+				<array name="OnTrue"><int>353</int><int>332</int></array>
+				<int name="Value">2</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>324</int>
+			<vec3>-664 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>StartBoss</string>
+			<dict>
+				<array name="Areas"><int>2</int></array>
+			</dict>
+			<array><int>311</int><int>0</int><int>340</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>325</int>
+			<vec3>-568 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>311</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetBossKilled</string>
+			<int>326</int>
+			<vec3>224 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="BossNumber">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>327</int>
+			<vec3>-472 184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>3</int></array>
+				<array name="OnAllEntered"><int>330</int></array>
+				<array name="OnCanceled"><int>331</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>328</int>
+			<vec3>352 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss8_killed</string>
+			<dict>
+				<int name="State">3</int>
+				<string name="Flag">boss8_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetStat</string>
+			<int>329</int>
+			<vec3>288 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="ValueInt">1</int>
+				<int name="ActionType">1</int>
+				<string name="Name">boss-8-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>330</int>
+			<vec3>-408 184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>333</int><int>0</int><int>334</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>331</int>
+			<vec3>-536 184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>325</int><int>0</int><int>335</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>332</int>
+			<vec3>672 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>350</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>333</int>
+			<vec3>-440 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>340</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>334</int>
+			<vec3>-376 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>311</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>335</int>
+			<vec3>-504 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>340</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>336</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/boss_mummy/spawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>337</int>
+			<vec3>416 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>338</int>
+			<vec3>544 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>349</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>339</int>
+			<vec3>-760 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<array name="Scripts"><int>324</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>340</int>
+			<vec3>-664 216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<string name="Text">.meta.info.gatherparty.mummy</string>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>341</int>
+			<vec3>152 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>90</int></array>
+				<string name="State">2</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>342</int>
+			<vec3>96 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>90</int></array>
+				<string name="State">1</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>343</int>
+			<vec3>400 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>345</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>349</int><int>0</int><int>350</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>344</int>
+			<vec3>720 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>startsnakes</string>
+			<dict>
+				<string name="EventName">startsnakes</string>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>345</int><vec3>496 96 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>346</int>
+			<vec3>400 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>345</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>349</int><int>0</int><int>350</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>347</int>
+			<vec3>304 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>snakespawn</string>
+			<dict>
+				<string name="EventName">snakespawn</string>
+			</dict>
+			<array><int>346</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>348</int>
+			<vec3>304 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>snakedeath</string>
+			<dict>
+				<string name="EventName">snakedeath</string>
+			</dict>
+			<array><int>343</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>349</int>
+			<vec3>608 96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SP</string>
+			<dict>
+				<array name="OnFalse"><int>344</int></array>
+				<array name="OnTrue"><int>351</int></array>
+				<array name="Variable"><int>345</int></array>
+				<int name="Function">4</int>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>350</int>
+			<vec3>608 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Coop</string>
+			<dict>
+				<array name="OnFalse"><int>344</int></array>
+				<array name="OnTrue"><int>351</int></array>
+				<array name="Variable"><int>345</int></array>
+				<int name="Function">4</int>
+				<int name="Value">6</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>351</int>
+			<vec3>720 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stopsnakes</string>
+			<dict>
+				<string name="EventName">stopsnakes</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>352</int>
+			<vec3>544 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">1</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>353</int>
+			<vec3>672 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">2+</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>354</int>
+			<vec3>608 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>323</int><int>100</int></array>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>355</int>
+			<vec3>-172 300 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_mummy</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>356</int>
+			<vec3>-68 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/mummy</string>
+			</dict>
+		</array>
+		<array>
+			<string>ClearProjectiles</string>
+			<int>357</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="OnlyTrapProjectiles">f</bool>
+				<int name="Radius">512</int>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="items/money_silver_3.unit"><vec2>-236 -46</vec2><int>135</int></array>
+		<array name="doodads/walls/pyramid_slum/h.unit"><vec2>-16 272</vec2><int>161</int></array>
+		<array name="items/money_gold_2.unit"><vec2>-226 -50</vec2><int>133</int><vec2>210 -61</vec2><int>134</int></array>
+		<array name="doodads/walls/pyramid_slum/_ledge_w_8.unit"><vec2>120 -24</vec2><int>159</int><vec2>120 48</vec2><int>160</int></array>
+		<array name="doodads/walls/pyramid_slum/v.unit"><vec2>-288 -32</vec2><int>155</int><vec2>272 -32</vec2><int>154</int></array>
+		<array name="doodads/walls/pyramid_slum/_ledge_snakes.unit">
+			<vec2>-128 192</vec2>
+			<int>179</int>
+			<vec2>-160 -192</vec2>
+			<int>247</int>
+			<vec2>192 96</vec2>
+			<int>248</int>
+			<vec2>-96 192</vec2>
+			<int>249</int>
+			<vec2>-64 224</vec2>
+			<int>250</int>
+			<vec2>160 96</vec2>
+			<int>251</int>
+			<vec2>128 64</vec2>
+			<int>252</int>
+			<vec2>64 -128</vec2>
+			<int>253</int>
+			<vec2>-96 -160</vec2>
+			<int>254</int>
+			<vec2>128 -32</vec2>
+			<int>255</int>
+			<vec2>64 192</vec2>
+			<int>256</int>
+			<vec2>128 0</vec2>
+			<int>257</int>
+			<vec2>0 -128</vec2>
+			<int>258</int>
+			<vec2>160 -64</vec2>
+			<int>259</int>
+			<vec2>192 -128</vec2>
+			<int>260</int>
+			<vec2>128 -128</vec2>
+			<int>261</int>
+			<vec2>-160 -160</vec2>
+			<int>262</int>
+			<vec2>160 128</vec2>
+			<int>263</int>
+			<vec2>160 32</vec2>
+			<int>264</int>
+			<vec2>-160 0</vec2>
+			<int>265</int>
+			<vec2>192 128</vec2>
+			<int>176</int>
+			<vec2>-192 64</vec2>
+			<int>177</int>
+			<vec2>-160 -32</vec2>
+			<int>178</int>
+			<vec2>160 -128</vec2>
+			<int>204</int>
+			<vec2>32 -128</vec2>
+			<int>180</int>
+			<vec2>-160 160</vec2>
+			<int>181</int>
+			<vec2>-96 224</vec2>
+			<int>182</int>
+			<vec2>-32 192</vec2>
+			<int>183</int>
+			<vec2>64 -160</vec2>
+			<int>184</int>
+			<vec2>-160 128</vec2>
+			<int>185</int>
+			<vec2>-96 -128</vec2>
+			<int>186</int>
+			<vec2>32 192</vec2>
+			<int>187</int>
+			<vec2>128 -64</vec2>
+			<int>188</int>
+			<vec2>-160 192</vec2>
+			<int>189</int>
+			<vec2>-192 128</vec2>
+			<int>190</int>
+			<vec2>-192 32</vec2>
+			<int>191</int>
+			<vec2>32 224</vec2>
+			<int>192</int>
+			<vec2>128 128</vec2>
+			<int>193</int>
+			<vec2>-128 -160</vec2>
+			<int>194</int>
+			<vec2>-160 -128</vec2>
+			<int>195</int>
+			<vec2>-192 -32</vec2>
+			<int>196</int>
+			<vec2>-64 -128</vec2>
+			<int>197</int>
+			<vec2>128 96</vec2>
+			<int>198</int>
+			<vec2>96 192</vec2>
+			<int>199</int>
+			<vec2>-192 160</vec2>
+			<int>200</int>
+			<vec2>128 32</vec2>
+			<int>201</int>
+			<vec2>-224 128</vec2>
+			<int>202</int>
+			<vec2>-192 -64</vec2>
+			<int>203</int>
+			<vec2>96 -128</vec2>
+			<int>266</int>
+			<vec2>-32 -128</vec2>
+			<int>205</int>
+			<vec2>-160 32</vec2>
+			<int>206</int>
+			<vec2>-64 -160</vec2>
+			<int>207</int>
+			<vec2>-160 224</vec2>
+			<int>208</int>
+			<vec2>128 192</vec2>
+			<int>209</int>
+			<vec2>0 192</vec2>
+			<int>210</int>
+			<vec2>160 0</vec2>
+			<int>211</int>
+			<vec2>-224 96</vec2>
+			<int>212</int>
+			<vec2>192 -64</vec2>
+			<int>213</int>
+			<vec2>-128 -128</vec2>
+			<int>214</int>
+			<vec2>-192 192</vec2>
+			<int>215</int>
+			<vec2>-192 -96</vec2>
+			<int>216</int>
+			<vec2>-64 192</vec2>
+			<int>217</int>
+			<vec2>-224 -96</vec2>
+			<int>218</int>
+			<vec2>160 -32</vec2>
+			<int>219</int>
+			<vec2>32 -160</vec2>
+			<int>220</int>
+			<vec2>-224 -32</vec2>
+			<int>221</int>
+			<vec2>-224 192</vec2>
+			<int>222</int>
+			<vec2>-192 -128</vec2>
+			<int>223</int>
+			<vec2>96 224</vec2>
+			<int>224</int>
+			<vec2>-160 96</vec2>
+			<int>225</int>
+			<vec2>-192 0</vec2>
+			<int>226</int>
+			<vec2>160 192</vec2>
+			<int>227</int>
+			<vec2>-160 -64</vec2>
+			<int>228</int>
+			<vec2>96 -160</vec2>
+			<int>229</int>
+			<vec2>192 -32</vec2>
+			<int>230</int>
+			<vec2>160 -96</vec2>
+			<int>231</int>
+			<vec2>128 -192</vec2>
+			<int>232</int>
+			<vec2>160 64</vec2>
+			<int>233</int>
+			<vec2>-160 64</vec2>
+			<int>234</int>
+			<vec2>-224 160</vec2>
+			<int>235</int>
+			<vec2>192 -96</vec2>
+			<int>236</int>
+			<vec2>-224 -128</vec2>
+			<int>237</int>
+			<vec2>128 160</vec2>
+			<int>238</int>
+			<vec2>128 224</vec2>
+			<int>239</int>
+			<vec2>-192 -160</vec2>
+			<int>240</int>
+			<vec2>-192 96</vec2>
+			<int>241</int>
+			<vec2>160 160</vec2>
+			<int>242</int>
+			<vec2>160 -160</vec2>
+			<int>243</int>
+			<vec2>-224 -64</vec2>
+			<int>244</int>
+			<vec2>128 -160</vec2>
+			<int>245</int>
+			<vec2>192 160</vec2>
+			<int>246</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/exit_up.unit">
+			<array>
+				<vec2>-32 -272</vec2>
+				<int>136</int>
+				<dict>
+					<string name="start">disabled</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_crn_se_o.unit">
+			<array>
+				<vec2>120 120</vec2>
+				<int>124</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_e_8.unit"><vec2>-128 -24</vec2><int>174</int><vec2>-128 16</vec2><int>175</int></array>
+		<array name="doodads/walls/pyramid_slum/_ledge_e.unit">
+			<vec2>-128 -72</vec2>
+			<int>162</int>
+			<vec2>-128 -104</vec2>
+			<int>163</int>
+			<array>
+				<vec2>-128 -16</vec2>
+				<int>164</int>
+				<dict>
+					<bool name="physics-active">f</bool>
+				</dict>
+			</array>
+			<vec2>-128 56</vec2>
+			<int>165</int>
+			<vec2>-128 88</vec2>
+			<int>166</int>
+			<vec2>-128 24</vec2>
+			<int>167</int>
+		</array>
+		<array name="doodads/generic/boss_mummy_bridge_n.unit">
+			<array>
+				<vec2>0 -192</vec2>
+				<int>90</int>
+				<dict>
+					<string name="start">initial-down</string>
+					<int name="layer">-1</int>
+				</dict>
+			</array>
+		</array>
+		<array name="actors/pop/bosses/mummy/spawn_mummy.unit"><vec2>0 0</vec2><int>6</int></array>
+		<array name="doodads/walls/pyramid_slum/_ledge_s_8.unit"><vec2>32 -128</vec2><int>125</int><vec2>-24 -128</vec2><int>126</int></array>
+		<array name="system/light_L.png">
+			<array>
+				<vec2>0 0</vec2>
+				<int>114</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.456411 0.55834 0.012983 0.054902</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-164 -9</vec2>
+				<int>110</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0886556 0.107023 0.00972122 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>2 -200</vec2>
+				<int>111</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0886556 0.107023 0.00972122 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>183 -3</vec2>
+				<int>112</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0886556 0.107023 0.00972122 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>1 180</vec2>
+				<int>113</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0886556 0.107023 0.00972122 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_mummy_bridge_e.unit">
+			<array>
+				<vec2>160 32</vec2>
+				<int>24</int>
+				<dict>
+					<string name="start">initial-down</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/lamp_brazier.unit">
+			<array>
+				<vec2>-140 156</vec2>
+				<int>18</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -210</vec2>
+				<int>17</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-208 48</vec2>
+				<int>19</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-208 -46</vec2>
+				<int>20</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>140 -124</vec2>
+				<int>21</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-48 -212</vec2>
+				<int>22</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>210 50</vec2>
+				<int>23</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-140 -124</vec2>
+				<int>12</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>208 -44</vec2>
+				<int>13</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-40 206</vec2>
+				<int>14</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>140 156</vec2>
+				<int>15</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>46 208</vec2>
+				<int>16</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_crn_sw_o.unit">
+			<array>
+				<vec2>-128 120</vec2>
+				<int>121</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_w.unit">
+			<vec2>120 72</vec2>
+			<int>168</int>
+			<array>
+				<vec2>120 -16</vec2>
+				<int>169</int>
+				<dict>
+					<bool name="physics-active">f</bool>
+				</dict>
+			</array>
+			<vec2>120 16</vec2>
+			<int>170</int>
+			<vec2>120 -120</vec2>
+			<int>171</int>
+			<vec2>120 -88</vec2>
+			<int>173</int>
+			<vec2>120 -56</vec2>
+			<int>172</int>
+		</array>
+		<array name="doodads/generic/boss_mummy_room.unit"><vec2>0 0</vec2><int>115</int></array>
+		<array name="doodads/generic/boss_mummy_snakes.unit">
+			<vec2>36 178</vec2>
+			<int>59</int>
+			<vec2>-190 100</vec2>
+			<int>60</int>
+			<vec2>-173 133</vec2>
+			<int>61</int>
+			<vec2>31 -146</vec2>
+			<int>62</int>
+			<vec2>-178 177</vec2>
+			<int>63</int>
+			<vec2>190 113</vec2>
+			<int>64</int>
+			<vec2>-171 -154</vec2>
+			<int>65</int>
+			<vec2>163 95</vec2>
+			<int>87</int>
+			<vec2>-114 -170</vec2>
+			<int>67</int>
+			<vec2>149 -8</vec2>
+			<int>73</int>
+			<vec2>174 -1</vec2>
+			<int>68</int>
+			<vec2>164 -62</vec2>
+			<int>69</int>
+			<vec2>179 66</vec2>
+			<int>70</int>
+			<vec2>66 190</vec2>
+			<int>71</int>
+			<vec2>-30 -143</vec2>
+			<int>72</int>
+			<vec2>89 -162</vec2>
+			<int>74</int>
+			<vec2>61 -141</vec2>
+			<int>75</int>
+			<vec2>-60 -151</vec2>
+			<int>76</int>
+			<vec2>150 63</vec2>
+			<int>77</int>
+			<vec2>-200 145</vec2>
+			<int>78</int>
+			<vec2>188 -71</vec2>
+			<int>79</int>
+			<vec2>-30 175</vec2>
+			<int>80</int>
+			<vec2>-181 -121</vec2>
+			<int>81</int>
+			<vec2>-196 -89</vec2>
+			<int>82</int>
+			<vec2>177 -99</vec2>
+			<int>83</int>
+			<vec2>196 -131</vec2>
+			<int>84</int>
+			<vec2>164 -150</vec2>
+			<int>85</int>
+			<vec2>146 -180</vec2>
+			<int>86</int>
+			<vec2>-142 -162</vec2>
+			<int>66</int>
+			<vec2>179 148</vec2>
+			<int>88</int>
+			<vec2>-177 67</vec2>
+			<int>89</int>
+			<vec2>-163 97</vec2>
+			<int>48</int>
+			<vec2>-88 -151</vec2>
+			<int>49</int>
+			<vec2>-149 201</vec2>
+			<int>50</int>
+			<vec2>180 -32</vec2>
+			<int>51</int>
+			<vec2>118 -159</vec2>
+			<int>52</int>
+			<vec2>-60 185</vec2>
+			<int>53</int>
+			<vec2>-169 -70</vec2>
+			<int>54</int>
+			<vec2>-177 -40</vec2>
+			<int>55</int>
+			<vec2>-150 -18</vec2>
+			<int>56</int>
+			<vec2>-176 -2</vec2>
+			<int>57</int>
+			<vec2>-152 65</vec2>
+			<int>58</int>
+		</array>
+		<array name="doodads/special/color_pyramid_slum_1024.unit">
+			<vec2>-288 -320</vec2>
+			<int>7</int>
+			<vec2>288 256</vec2>
+			<int>8</int>
+			<vec2>-1312 256</vec2>
+			<int>9</int>
+			<vec2>-1088 1280</vec2>
+			<int>10</int>
+			<vec2>-64 1280</vec2>
+			<int>11</int>
+		</array>
+		<array name="doodads/generic/container_pot.unit">
+			<vec2>65 -219</vec2>
+			<int>29</int>
+			<vec2>44 -230</vec2>
+			<int>43</int>
+			<vec2>51 -231</vec2>
+			<int>44</int>
+			<vec2>59 -226</vec2>
+			<int>46</int>
+			<vec2>-32 -246</vec2>
+			<int>47</int>
+			<vec2>-206 40</vec2>
+			<int>26</int>
+			<vec2>-45 -241</vec2>
+			<int>45</int>
+			<vec2>-199 39</vec2>
+			<int>25</int>
+			<vec2>224 -43</vec2>
+			<int>27</int>
+			<vec2>46 -236</vec2>
+			<int>28</int>
+			<vec2>71 -214</vec2>
+			<int>30</int>
+			<vec2>-27 -258</vec2>
+			<int>31</int>
+			<vec2>-39 -246</vec2>
+			<int>32</int>
+			<vec2>-202 47</vec2>
+			<int>33</int>
+			<vec2>-245 -42</vec2>
+			<int>34</int>
+			<vec2>242 -42</vec2>
+			<int>35</int>
+			<vec2>57 -220</vec2>
+			<int>36</int>
+			<vec2>221 -53</vec2>
+			<int>37</int>
+			<vec2>223 -59</vec2>
+			<int>38</int>
+			<vec2>-250 -36</vec2>
+			<int>39</int>
+			<vec2>-32 -252</vec2>
+			<int>40</int>
+			<vec2>214 -69</vec2>
+			<int>41</int>
+			<vec2>235 -40</vec2>
+			<int>42</int>
+		</array>
+		<array name="items/money_silver_2.unit"><vec2>-218 -57</vec2><int>5</int></array>
+		<array name="items/money_silver_1.unit">
+			<vec2>-215 -47</vec2>
+			<int>267</int>
+			<vec2>-237 -39</vec2>
+			<int>272</int>
+			<vec2>208 -32</vec2>
+			<int>271</int>
+			<vec2>-219 -52</vec2>
+			<int>270</int>
+			<vec2>-228 -46</vec2>
+			<int>269</int>
+			<vec2>207 -69</vec2>
+			<int>273</int>
+			<vec2>207 -55</vec2>
+			<int>268</int>
+			<vec2>240 -36</vec2>
+			<int>274</int>
+			<vec2>257 -28</vec2>
+			<int>275</int>
+		</array>
+		<array name="items/money_gold_1.unit">
+			<vec2>218 -42</vec2>
+			<int>148</int>
+			<vec2>211 -57</vec2>
+			<int>145</int>
+			<vec2>-229 -55</vec2>
+			<int>144</int>
+			<vec2>-232 -52</vec2>
+			<int>147</int>
+			<vec2>211 -52</vec2>
+			<int>151</int>
+			<vec2>246 -36</vec2>
+			<int>150</int>
+			<vec2>-224 -56</vec2>
+			<int>149</int>
+			<vec2>215 -59</vec2>
+			<int>146</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_e_16.unit"><vec2>-128 -40</vec2><int>158</int><vec2>-128 -120</vec2><int>157</int></array>
+		<array name="doodads/walls/pyramid_slum/_ledge_n.unit">
+			<array>
+				<vec2>-104 120</vec2>
+				<int>127</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>56 120</vec2>
+				<int>129</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 120</vec2>
+				<int>130</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-16 120</vec2>
+				<int>131</int>
+				<dict>
+					<string name="start">snakes</string>
+					<bool name="physics-active">f</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>88 120</vec2>
+				<int>132</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>24 120</vec2>
+				<int>128</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 -4</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>3</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">100</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="items/money_gold_3.unit"><vec2>214 -47</vec2><int>4</int></array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 -256</vec2>
+				<int>1</int>
+				<dict>
+					<vec2 name="size">32 32</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_crn_nw_o.unit"><vec2>-128 -128</vec2><int>156</int></array>
+		<array name="doodads/generic/boss_mummy_bridge_w.unit">
+			<array>
+				<vec2>-160 32</vec2>
+				<int>118</int>
+				<dict>
+					<string name="start">initial-down</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/container_vase.unit">
+			<vec2>237 -46</vec2>
+			<int>107</int>
+			<vec2>219 -65</vec2>
+			<int>95</int>
+			<vec2>19 198</vec2>
+			<int>96</int>
+			<vec2>35 200</vec2>
+			<int>97</int>
+			<vec2>28 198</vec2>
+			<int>98</int>
+			<vec2>228 -50</vec2>
+			<int>99</int>
+			<vec2>229 -56</vec2>
+			<int>100</int>
+			<vec2>234 -52</vec2>
+			<int>101</int>
+			<vec2>22 202</vec2>
+			<int>102</int>
+			<vec2>232 -44</vec2>
+			<int>106</int>
+			<vec2>252 -33</vec2>
+			<int>103</int>
+			<vec2>-224 -61</vec2>
+			<int>104</int>
+			<vec2>-212 -63</vec2>
+			<int>105</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_w_16.unit"><vec2>120 104</vec2><int>117</int><vec2>120 56</vec2><int>116</int></array>
+		<array name="doodads/walls/pyramid_slum/_ledge_s_16.unit"><vec2>16 -128</vec2><int>152</int><vec2>104 -128</vec2><int>153</int></array>
+		<array name="doodads/generic/boss_mummy_bridge_s.unit">
+			<array>
+				<vec2>0 128</vec2>
+				<int>94</int>
+				<dict>
+					<string name="start">initial-up</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_n_16.unit">
+			<array>
+				<vec2>-32 120</vec2>
+				<int>123</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 120</vec2>
+				<int>122</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_n_8.unit">
+			<vec2>-40 120</vec2>
+			<int>108</int>
+			<array>
+				<vec2>16 120</vec2>
+				<int>109</int>
+				<dict>
+					<string name="start">snakes</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/container_pot_b.unit"><vec2>-214 -70</vec2><int>119</int><vec2>-220 -66</vec2><int>120</int></array>
+		<array name="doodads/special/color_pyramid_slum_32.unit"><vec2>-16 284</vec2><int>93</int><vec2>-312 -16</vec2><int>92</int><vec2>280 -16</vec2><int>91</int></array>
+		<array name="doodads/walls/pyramid_slum/_ledge_s.unit">
+			<array>
+				<vec2>-16 -128</vec2>
+				<int>140</int>
+				<dict>
+					<bool name="physics-active">f</bool>
+				</dict>
+			</array>
+			<vec2>-56 -128</vec2>
+			<int>141</int>
+			<vec2>-88 -128</vec2>
+			<int>143</int>
+			<vec2>40 -128</vec2>
+			<int>142</int>
+			<vec2>72 -128</vec2>
+			<int>139</int>
+			<vec2>-120 -128</vec2>
+			<int>138</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_ledge_crn_ne_o.unit"><vec2>120 -128</vec2><int>137</int></array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/prison_3.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="LevelNameShort">.level.boss.iris.short</string>
+		<string name="LevelName">.level.boss.iris</string>
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000786a2300000000000000000000000000000000000000000000000000000000307229370000000000000000000000000000000000000000000000000000005f746a1e490000000000000000000000000000000000000000000000000000450364223b3a000000000000000000000000000000000000000000000000000030711b22621b</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000435301072043247c1c781e09715e4a7a4b7e730655690e691f2130785155066d020f0c0213057b211a4c0e7e0b72016e0a205144425a052d640f027b4a267d127b5b26424e2b13667a0d7c7a406b24391367707b7121562f26387c216c526c3f1f373076613a666c3c4f197b3b7c740a457d31037c2e2f23100d57433138400a470753502a715e4e506259023e14413937656b6e575b524c1014674171095972</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000064096c0000000000000000000000000000000000000000000000000000006e1f746508797a773f000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004e0000000000000000000000000000000000000000000000000000000000000019761d0000000000000000000000000000000000000000000000000000000000573a1633000000000000000000000000000000000000000000000000000000000a4f646a000000000000000000000000000000000000000000000000000000000627075d62000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000207d7968565e00000000000000000000000000000000000000000000000000000147550555100000000000000000000000000000000000000000000000000000056d5077477200000000000000000000000000000000000000000000000000005f4a2a7d69440000000000000000000000000000000000000000000000000000075b092525650000000000000000000000000000000000000000000000000000250e6975290e00000000000000000000000000000000000000000000000000000029286a164d0000000000000000000000000000000000000000000000000000001553125318000000000000000000000000000000000000000000000000000069230c5961170000000000000000000000000000000000000000000000000000000430205f680000000000000000000000000000000000000000000000000000001e6518242400000000000000000000000000000000000000000000000000000021605f7e760000000000000000000000000000000000000000000000000000002706583856000000000000000000000000000000000000000000000000000000321e5b360700000000000000000000000000000000000000000000000000000050026f5e5f00000000000000000000000000000000000000000000000000000054295c524f000000000000000000000000000000000000000000000000000000003d016b6b000000000000000000000000000000000000000000000000000000006f58221d000000000000000000000000000000000000000000000000000000001716075e0000000000000000000000000000000000000000000000000000000053773c77000000000000000000000000000000000000000000000000000000007102251100000000000000000000000000000000000000000000000000000000003f3a0900000000000000000000000000000000000000000000000000000000005a3a1f0000000000000000000000000000000000000000000000000000000018121942000000000000000000000000000000000000000000000000000000787d4b1f690000000000000000000000000000000000000000000000000000005e4e3c71770000000000000000000000000000000000000000000000000000006c7872435800000000000000000000000000000000000000000000000000000049717e211c0000000000000000000000000000000000000000000000000000005a043a4e19000000000000000000000000000000000000000000000000000000000c1d1e0e000000000000000000000000000000000000000000000000000000005c7d493e00000000000000000000000000000000000000000000000000000000003e467b</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000524a1f00000000000000000000000000000000000000000000000000000000137c3a52000000000000000000000000000000000000000000000000000000006972646e000000000000000000000000000000000000000000000000000000005e700a6b000000000000000000000000000000000000000000000000000000000002743300000000000000000000000000000000000000000000000000000000004c4d3d0000000000000000000000000000000000000000000000000000000000007537000000000000000000000000000000000000000000000000000000000000006b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">231d1c017c1b60152a7b6013652c197e7b554912166552522f327b4558057c1a432d0d02023e376c720b4b22081e6811602f4a3f1607796a6c720f404217600c3e137e0b2f27161647306d7707737c0b6842222975245b3e6d5e625d3402236c35254f3b5416602b053a69333c2c094e4849682e743325395f44010164560d364566561e0d0943211339160920610b38171409135828713240567423472a417e46090410471369281e0c78203e6d041c245c644932181e1c2d25607b356c412d042531701a787d3e7e42304f2d34476a7b0f2f133e20064756250c624476031c764e075d211b360a3152617d79412f624c56452d1836721248686221387a2f043a236d397a4b582e2d2e50403f19553f7c60774d30353f0b324c5b524a643e4752322e4a767537595009757c7b69710f67267672435e46282640016d770a281b7704272f255d702f4b37784d6e3f29614b7e7a63552e47200f3651611f73542a361c3e6b1e5735653c6d39225f4a212644594f6a2c6969473b2c7068327777110b4b7c715f5b3761512a6b09046e2c7d7d77295a4c765733141b7a56565a6116161f5a7d457b431f512371695f01020a7266536d71607015077c3829731e5e6166033e430e16427e46464d185d24085f1c75624d3a2637543f52651d080c7b3d4d12495b5c2b7838741810374d7e723c6f472a6658144d065e757826036e717d6b1d127932374f41623b196b670d720b694576433d091d6068642317414366637369454228645f3e0263257c767b544946447a1e5e6d6f5329544468242763282a0e11516263241d154a317e7e056f5f040e5c63307728703b17286b4d7c14130d3301736f512d48536c34051e504e57026e5e3a0d1e093c400d742460721d432314137e06711f4c185d412a1819055e22241f7e5d7661720e5472631f0c0a2c1b2072422011224a5915644a7338391734600916345b0a4d7e7953461335083133664f626c790b797b480603022278172a1656493439510b2c066817203a2b7a51707e3b1e21742e183966584b6b0f425039764e060948742a302c7a37370c423b1a0f6350615d2b42783b232c6776047d484512630746654d43593b284a5828616210636d60164e440a0f4e402173667d1202153d146267692a4703395e35737b073e750d496a563b16281b6954533f520f01570d69285869107e0f0a5c69613c1e514059397974432d0852150c2a057830031e6a2b725822733a22517b40227405154a0c7a291b19777a03771f355c6e0142275677685e6664625e044c1f467542351d62324d7d15151f6c35644d4b1f064e51564b3c483e1926384d1e6f6846494d1156123d17535a292f1e29020c492d49414056643867272c4b6f27453367796103427128604c4e07316d350e632a6370702d416645146a7142564c305c</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000002966222d7c3e155414690900000000000000000000000000000000000000000020776c2b3161013e7a4a3c00000000000000000000000000000000000000000045167b532e6261275c270f1d000000000000000000000000000000000000000000695e0000784b077a7c6300000000000000000000000000000000000000000000000000000000057b3356000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003a1924000000000000000000000000000000000000000000000a0f6200006d412c74161400000000000000000000000000000000000000000927111b7c005b7665563b1a00000000000000000000000000000000000000001670741b1b6003546d46417400000000000000000000000000000000000000000a1c2b335d3e0d75155e2f000000000000000000000000000000000000000000006e685f2243540428530000000000000000000000000000000000000000000000007c65027b272d25056b000000000000000000000000000000000000000000000025555f5b730f79572b00000000000000000000000000000000000000000000003e156d460d04126a2c0000000000000000000000000000000000000000000000780f1b40463457170000000000000000000000000000000000000000000000094e191b3c1b7d75000000000000000000000000000000000000000000000000564d0b374e0000000000000000000000000000000000000000000000000000001c25743d00000000000000000000000000000000000000000000000000000000747d7344000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000067630228690000000000000000000000000000000000000000000000000000735e7a73704d230000000000000000000000000000000000000000000000000033477a3238046a340000000000000000000000000000000000000000000000005f71784560493400000000000000000000000000000000000000000000000000004e3b39791d24000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">73595a64750000000000000000000000000000000000000000000000000000003f0b0c6c4e000000000000000000000000000000000000000000000000000000776577345a000000000000000000000000000000000000000000000000000000670d29382d0000000000000000000000000000000000000000000000000000006c582c7903000000000000000000000000000000000000000000000000000000042f5d54700000000000000000000000000000000000000000000000000000007e182b7a64000000000000000000000000000000000000000000000000000000580a1d2f580000000000000000000000000000000000000000000000000000007151486f6200000000000000000000000000000000000000000000000000000041165b33680000000000000000000000000000000000000000000000000000007c44691a360000000000000000000000000000000000000000000000000000002240024a470000000000000000000000000000000000000000000000000000007a106e763b0000000000000000000000000000000000000000000000000000000f376327470000000000000000000000000000000000000000000000000000005b0e2a441d000000000000000000000000000000000000000000000000000000404b452863000000000000000000000000000000000000000000000000000000043e7825110000000000000000000000000000000000000000000000000000006e38287b1d0000000000000000000000000000000000000000000000000000000277104f2b0000000000000000000000000000000000000000000000000000007e01745e150000000000000000000000000000000000000000000000000000001d2c06140d0000000000000000000000000000000000000000000000000000007310252b310000000000000000000000000000000000000000000000000000004b3059060100000000000000000000000000000000000000000000000000000004201e5477000000000000000000000000000000000000000000000000000000750d2e7946000000000000000000000000000000000000000000000000000000353c29176a0000000000000000000000000000000000000000000000000000004249725512000000000000000000000000000000000000000000000000000000356611587c00000000000000000000000000000000000000000000000000000004545d40000000000000000000000000000000000000000000000000000000003e3e220500000000000000000000000000000000000000000000000000000000692429280000000000000000000000000000000000000000000000000000000064570c2000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000041000000000000000000000000000000000000000000000000000000000000001a4f000000000000000000000000000000000000000000000000000000000000646c5a0000000000000000000000000000000000000000000000000000000000181177000000000000000000000000000000000000000000000000000000000063730000000000000000000000000000000000000000000000000000000000001e1f000000000000000000000000000000000000000000000000000000000000560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3a203c2268572a175440316937463e1a710b096b23027965352d091902442d330063382c15326d62704355183048667a507e755d21347844693c084516553e54000000005e0c202e3e233072784b104868641360333913403b06270b402c195600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">6b6d600000000000000000000000000000000000000000000000000000000000693f000000000000000000000000000000000000000000000000000000000000460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 512</vec2>
+		</dict>
+	</array>
+</dict>

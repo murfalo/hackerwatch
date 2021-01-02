@@ -1,0 +1,49 @@
+<unit slot="doodad">
+<behavior class="Breakable">
+	<string name="break-sound">event:/item/break_vase</string>
+	<string name="gore-bind">gore</string>
+	<string name="loot">doodads/loot.sval:container_vase</string>
+	<bool name="shoot-through">true</bool>
+</behavior>
+
+<scenes start="1 2 3 4">
+    <scene name="shared">
+		<collision static="true">
+			<circle shoot-through="false" aim-through="true" offset="0 0" radius="4"/>
+		</collision>
+    </scene>
+	
+<!-- gray -->
+	<scene name="1">
+		<data name="gore"><string>effects/gibs/doodads/china_gray.sval</string></data>
+		<scene src="shared" />
+		<sprite origin="3 7" texture="./containers.png" material="system/default.mats:proj-prop">
+			<frame>26 0 8 11</frame>
+		</sprite>
+	</scene>
+<!-- brown -->
+	<scene name="2">
+		<data name="gore"><string>effects/gibs/doodads/china_brown.sval</string></data>
+		<scene src="shared" />
+		<sprite origin="3 7" texture="./containers.png" material="system/default.mats:proj-prop">
+			<frame>26 11 8 11</frame>
+		</sprite>
+	</scene>
+<!-- blue -->
+	<scene name="3">
+		<data name="gore"><string>effects/gibs/doodads/china_blue.sval</string></data>
+		<scene src="shared" />
+		<sprite origin="3 7" texture="./containers.png" material="system/default.mats:proj-prop">
+			<frame>26 22 8 11</frame>
+		</sprite>
+	</scene>
+<!-- orange -->
+	<scene name="4">
+		<data name="gore"><string>effects/gibs/doodads/china_orange.sval</string></data>
+		<scene src="shared" />
+		<sprite origin="3 7" texture="./containers.png" material="system/default.mats:proj-prop">
+			<frame>26 33 8 11</frame>
+		</sprite>
+	</scene>
+  </scenes>
+</unit>

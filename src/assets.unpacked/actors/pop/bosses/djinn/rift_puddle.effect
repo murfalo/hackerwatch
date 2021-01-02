@@ -1,0 +1,34 @@
+<effect looping="true">
+	<param name="radius" default="26" />
+<variation>
+	<sprite origin="0 0" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="15"
+
+		pos-x="cos(rand(u+149*i)*2*pi) * radius * pow(rand(u+92*i),0.5) - it *(cos(rand(u+149*i)*2*pi) * radius * pow(rand(u+92*i),0.5))"
+        pos-y="sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+67*i),0.5) - it*(sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+67*i),0.5))"
+		
+        color-r="1.5"
+        color-g="1-it"
+        color-b="1.5"
+        color-a="saturate(1 - it)"
+	>
+        <frame time="400">0 0 1 1</frame>
+	</sprite>	
+	<sprite origin="0 0" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="15"
+
+		pos-x="cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+443*i),0.5) - it *(cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+443*i),0.5))"
+        pos-y="sin(rand(u+147*i)*2*pi) * radius * pow(rand(u+827*i),0.5) - it*(sin(rand(u+147*i)*2*pi) * radius * pow(rand(u+827*i),0.5))"
+		
+        color-r="1.5"
+        color-g="1-it"
+        color-b="1.5"
+        color-a="saturate(1 - it)"
+	>
+        <frame time="600">0 0 1 1</frame>
+	</sprite>	
+	
+</variation>
+
+	
+</effect>

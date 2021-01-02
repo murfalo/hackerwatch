@@ -1,0 +1,23 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+		
+		<minimap_sprite layer="1" origin="34 32" texture="gui/minimap.png" frame="352 412 68 67"/>
+		
+		<!-- <sprite origin="48 315" layer="0" texture="./boss_wisp_room.png" material="system/default.mats:shadow">
+				<frame>896 0 96 93</frame>
+			</sprite> -->
+			
+			<collision static="true">
+			</collision>
+			
+			<sprite origin="136 32" layer="10" texture="./boss_wisp_room.png" material="system/default.mats:default">
+				<frame>800 581 272 136</frame>
+			</sprite>	
+
+			<sprite origin="136 135" layer="-49" texture="./boss_wisp_room.png" material="system/default.mats:floor">
+				<frame>800 317 272 264</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

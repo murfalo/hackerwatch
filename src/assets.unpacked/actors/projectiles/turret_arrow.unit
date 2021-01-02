@@ -1,0 +1,28 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">5</float>
+		<int name="ttl">2500</int>
+		<bool name="blockable">true</bool>
+		
+		<string name="shoot-snd">event:/misc/trap_arrow_shoot</string>
+		<string name="hit-snd">event:/misc/trap_arrow_hit</string>
+		
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="physical">30</int>
+		</dict>
+
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="doodads/generic/trap_shooter_arrow_projectile_normal.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,62 @@
+<dict>
+	<string name="name">.skills.sorcerer.orb-of-winter</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 48 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::ShootProjectileFan</string>
+			
+			<int name="cooldown">5000</int>
+			<int name="castpoint">250</int>
+			
+			<string name="snd">event:/player/sorcerer/orb_summon</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">0</float>
+			
+			<int name="mana-cost">120</int>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/orb_1.unit</string>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::ShootProjectileFan</string>
+			
+			<int name="cooldown">5000</int>
+			<int name="castpoint">250</int>
+			
+			<string name="snd">event:/player/sorcerer/orb_summon</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">0</float>
+			
+			<int name="mana-cost">150</int>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/orb_2.unit</string>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::ShootProjectileFan</string>
+			
+			<int name="cooldown">5000</int>
+			<int name="castpoint">250</int>
+			
+			<string name="snd">event:/player/sorcerer/orb_summon</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">0</float>
+			
+			<int name="mana-cost">180</int>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/orb_3.unit</string>
+		</dict>
+	</array>
+</dict>

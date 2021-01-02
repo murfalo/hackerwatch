@@ -1,0 +1,110 @@
+<unit slot="doodad" layer="-20">
+	<scenes default="1 2 3 4" desert="d1 d2" snow_transition="st1" snow="s1 s2" snow_ground="sg1 sg2">
+		<scene name="shared">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -40 32 40</rect>
+			</collision>	
+		</scene>			
+		<scene name="1">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 16 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="2">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>32 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>32 16 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="3">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>64 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>64 16 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="4">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>96 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>96 16 32 32</frame>
+			</sprite>
+		</scene>		
+		
+		<scene name="d1">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>128 16 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="d2">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>160 16 32 32</frame>
+			</sprite>
+		</scene>		
+		
+		<scene name="sg1">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 144 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 160 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="sg2">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>32 144 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>32 160 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="s1">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 144 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 192 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="st1">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 144 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 224 32 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="s2">
+			<scene src="shared" />
+			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>32 144 32 32</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>32 192 32 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

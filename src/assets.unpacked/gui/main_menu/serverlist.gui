@@ -1,0 +1,95 @@
+<gui>
+	<sprites>
+		<sprite name="char-shadow" texture="gui/widget.png"><frame>99 118 12 12</frame></sprite>
+
+%include "gui/dlc_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/searchclear_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect width="300" height="222" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="296" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="275" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mainmenu.serverlist.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="296" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect offset="2 23" width="296" height="176" flow="vbox">
+					<!-- Header -->
+					<!--
+					<rect width="296" height="13" flow="hbox">
+						<button font="gui/fonts/arial11.fnt" text=".menu.serverlist.server" textoffset="0 1" width="225" height="13" func="sort name" />
+						<button font="gui/fonts/arial11.fnt" text=".menu.serverlist.scenario" textoffset="0 1" width="160" height="13" func="sort scenario" />
+						<button font="gui/fonts/arial11.fnt" text=".menu.serverlist.players" textoffset="0 1" width="75" height="13" func="sort players" />
+					</rect>
+					-->
+
+					<!-- Filter -->
+					<rect width="296" height="14" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="hbox">
+						<!-- Text input -->
+						<textinput id="filter" offset="2 0" textoffset="1 0" width="277" height="14" font="gui/fonts/arial11.fnt" func-edit="filterlist" />
+
+						<!-- Separator -->
+						<rect width="3" height="14" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Button -->
+						<spritebutton func="filterlist-clear" spriteset="search-clear" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="296" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- List -->
+					<rect width="296" height="159" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<filteredlist id="serverlist" width="288" height="159" spacing="1" flow="vbox" />
+						<scrollbar forid="serverlist" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+					</rect>
+
+					<!-- List template -->
+					<menu_serverlist_item id="serverlist-template" width="288" height="18" visible="false" spriteset="scalebutton" font="gui/fonts/arial11.fnt" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="296" height="3" offset="2 199" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Buttons -->
+				<rect width="296" height="18" offset="2 202" flow="hbox">
+					<!-- Selected character -->
+					<rect width="218" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<clip width="218" height="18">
+							<sprite src="char-shadow" offset="6 8" />
+							<unit id="char-unit" width="18" height="18" offset="4 4" anchor="0 0.5" />
+
+							<text id="char-name" offset="24 0" anchor="0 0.5" font="gui/fonts/arial11.fnt" />
+						</clip>
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Refresh button -->
+					<scalebutton spriteset="scalebutton" func="refresh" font="gui/fonts/arial11.fnt" text=".menu.serverlist.refresh" width="72" />
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+				</rect>
+			</rect>
+		</group></group>
+	</doc>
+</gui>

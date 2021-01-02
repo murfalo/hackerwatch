@@ -1,0 +1,953 @@
+<dict>
+	<array name="prefabs">
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>111 -66 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>22 -110 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>156 13 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-97 -47 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>17 122 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>124 -58 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-70 34 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-121 -72 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-32 -155 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-158 -28 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>56 66 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-4 40 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-95 -74 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>92 80 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-122 13 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-37 -22 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>5 -40 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>65 119 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>130 -84 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>138 33 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-43 86 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-42 -137 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-45 -96 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-40 136 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>80 -95 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>-112 82 0</vec3>
+		<string>prefabs/planeofmagic/spawner.pfb</string>
+		<vec3>118 -19 0</vec3>
+	</array>
+	<array name="scripts">
+		<array>
+			<string>PlayMusic</string>
+			<int>36</int>
+			<vec3>160 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/planeofmagic</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>37</int>
+			<vec3>-320 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>250</string>
+			<dict>
+				<array name="TimerTriggers"><int>67</int></array>
+				<int name="Value">250</int>
+				<int name="Parameter">2</int>
+			</dict>
+			<array><int>50</int><int>0</int><int>69</int><int>0</int></array>
+		</array>
+		<array><string>LevelExitNext</string><int>38</int><vec3>96 688 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>39</int>
+			<vec3>-224 496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>48</int><int>71</int></array>
+			</dict>
+			<array><int>49</int><int>500</int></array>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>40</int>
+			<vec3>-544 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Damage">0</int>
+				<int name="Frequency">5000</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:electricity</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>41</int>
+			<vec3>-336 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">spawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>42</int>
+			<vec3>-384 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">500</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>43</int>
+			<vec3>-416 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array>
+				<int>57</int>
+				<int>10000</int>
+				<int>45</int>
+				<int>15000</int>
+				<int>62</int>
+				<int>17500</int>
+				<int>37</int>
+				<int>19000</int>
+				<int>54</int>
+				<int>250</int>
+			</array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>44</int>
+			<vec3>-512 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">2500</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>45</int>
+			<vec3>-448 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1250</string>
+			<dict>
+				<array name="TimerTriggers"><int>67</int></array>
+				<int name="Value">1250</int>
+				<int name="Parameter">2</int>
+			</dict>
+			<array><int>50</int><int>0</int><int>46</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>46</int>
+			<vec3>-448 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">1250</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>47</int>
+			<vec3>-336 496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>39</int><int>20000</int><int>72</int><int>17000</int></array>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>48</int>
+			<vec3>-64 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Frequency">200</int>
+				<int name="Damage">0</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:teleport_charge</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>49</int>
+			<vec3>96 496 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>52</int></array>
+			</dict>
+			<array><int>38</int><int>500</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>50</int>
+			<vec3>-416 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="TimerTriggers"><int>67</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>51</int>
+			<vec3>-480 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Frequency">2500</int>
+				<int name="Damage">0</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:electricity</string>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>52</int>
+			<vec3>-64 688 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Frequency">5000</int>
+				<int name="Damage">0</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:teleport</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>53</int>
+			<vec3>-336 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">3500</int>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>54</int>
+			<vec3>-416 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>electricity</string>
+			<array>
+				<int>56</int>
+				<int>0</int>
+				<int>61</int>
+				<int>10000</int>
+				<int>63</int>
+				<int>15000</int>
+				<int>64</int>
+				<int>17500</int>
+				<int>58</int>
+				<int>19000</int>
+			</array>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>55</int>
+			<vec3>-416 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Damage">0</int>
+				<int name="Frequency">1250</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:electricity</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>56</int>
+			<vec3>-544 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>40</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>57</int>
+			<vec3>-512 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2500</string>
+			<dict>
+				<array name="TimerTriggers"><int>67</int></array>
+				<int name="Value">2500</int>
+				<int name="Parameter">2</int>
+			</dict>
+			<array><int>50</int><int>0</int><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>58</int>
+			<vec3>-288 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>70</int><int>55</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>59</int>
+			<vec3>104 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Music">event:/music/planeofmagic</string>
+			</dict>
+		</array>
+		<array><string>LevelStart</string><int>60</int><vec3>0 0 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>61</int>
+			<vec3>-480 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>51</int><int>40</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>62</int>
+			<vec3>-384 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>500</string>
+			<dict>
+				<array name="TimerTriggers"><int>67</int></array>
+				<int name="Value">500</int>
+				<int name="Parameter">2</int>
+			</dict>
+			<array><int>50</int><int>0</int><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>63</int>
+			<vec3>-416 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>55</int><int>51</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>64</int>
+			<vec3>-352 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>65</int><int>55</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>65</int>
+			<vec3>-352 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Damage">0</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:electricity</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>66</int>
+			<vec3>-448 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>41</int><int>500</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>67</int>
+			<vec3>-416 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">5000</int>
+			</dict>
+			<array><int>68</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>68</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">doodads/generic/planeofmagic/pulse.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>69</int>
+			<vec3>-320 -368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">250</string>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>70</int>
+			<vec3>-288 48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Damage">0</int>
+				<int name="Frequency">250</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:electricity</string>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>71</int>
+			<vec3>-64 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lock</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Filter">2</int>
+				<int name="Damage">0</int>
+				<int name="Frequency">0</int>
+				<string name="Buff">doodads/generic/planeofmagic/buffs.sval:lock</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>72</int>
+			<vec3>-336 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">stopspawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>73</int>
+			<vec3>-736 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>-4</string>
+			<dict>
+				<array name="Units"><int>20</int><int>24</int><int>21</int><int>17</int><int>19</int><int>18</int><int>23</int><int>25</int><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>74</int>
+			<vec3>-736 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>-3</string>
+			<dict>
+				<array name="Units"><int>11</int><int>10</int><int>12</int><int>13</int><int>8</int><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>75</int>
+			<vec3>-736 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>-2</string>
+			<dict>
+				<array name="Units"><int>15</int><int>14</int><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>76</int>
+			<vec3>-736 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>-1</string>
+			<dict>
+				<array name="Units"><int>5</int><int>3</int><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>77</int>
+			<vec3>-864 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rifts_5</string>
+			<dict>
+				<array name="OnFalse"><int>73</int></array>
+				<string name="Flag">rifts_5</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>78</int>
+			<vec3>-864 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rifts_4</string>
+			<dict>
+				<array name="OnFalse"><int>74</int><int>73</int></array>
+				<string name="Flag">rifts_4</string>
+			</dict>
+			<array><int>77</int><int>10</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>79</int>
+			<vec3>-864 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rifts_3</string>
+			<dict>
+				<array name="OnFalse"><int>75</int><int>74</int><int>73</int></array>
+				<string name="Flag">rifts_3</string>
+			</dict>
+			<array><int>78</int><int>10</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>80</int>
+			<vec3>-864 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rifts_2</string>
+			<dict>
+				<array name="OnFalse"><int>75</int><int>74</int><int>73</int><int>76</int></array>
+				<string name="Flag">rifts_2</string>
+			</dict>
+			<array><int>79</int><int>10</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>81</int>
+			<vec3>-864 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rifts_1</string>
+			<dict>
+				<string name="Flag">rifts_1</string>
+			</dict>
+			<array><int>80</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>82</int>
+			<vec3>-864 -896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>81</int><int>10</int></array>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="system/light_L.png">
+			<array>
+				<vec2>-613 -437</vec2>
+				<int>29</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.116971 0.0159963 0.278894 0.0588235</vec4>
+					<float name="size">2000</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>704 -608</vec2>
+				<int>30</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0865005 0 0.991102 1</vec4>
+					<float name="size">2000</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>326 -585</vec2>
+				<int>28</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.116971 0.0159963 0.278894 0.0588235</vec4>
+					<float name="size">2000</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-608 736</vec2>
+				<int>31</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0865005 0 0.991102 1</vec4>
+					<float name="size">2000</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-182 -34</vec2>
+				<int>32</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.462077 0.0231534 0.708376 0.0470588</vec4>
+					<float name="size">500</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-416 -800</vec2>
+				<int>33</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.552011 0 1 1</vec4>
+					<float name="size">2000</float>
+					<float name="overbright">5</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>759 269</vec2>
+				<int>34</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.116971 0.0159963 0.278894 0.0588235</vec4>
+					<float name="size">2000</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-441 356</vec2>
+				<int>35</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.116971 0.0159963 0.278894 0.0588235</vec4>
+					<float name="size">2000</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-35 188</vec2>
+				<int>27</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.462077 0.0231534 0.708376 0.054902</vec4>
+					<float name="size">500</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>152 -87</vec2>
+				<int>26</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.708376 0.0251869 0.14996 0.0705882</vec4>
+					<float name="size">500</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/planeofmagic/plane-2.unit"><vec2>-56 -385</vec2><int>14</int><vec2>357 -384</vec2><int>15</int><vec2>152 -216</vec2><int>16</int></array>
+		<array name="doodads/generic/planeofmagic/plane-4.unit">
+			<vec2>-688 512</vec2>
+			<int>22</int>
+			<vec2>-976 416</vec2>
+			<int>23</int>
+			<vec2>-560 -672</vec2>
+			<int>24</int>
+			<vec2>-1072 608</vec2>
+			<int>25</int>
+			<vec2>1008 -64</vec2>
+			<int>17</int>
+			<vec2>-1040 224</vec2>
+			<int>18</int>
+			<vec2>-784 320</vec2>
+			<int>19</int>
+			<vec2>-400 -832</vec2>
+			<int>20</int>
+			<vec2>-368 -576</vec2>
+			<int>21</int>
+		</array>
+		<array name="doodads/generic/planeofmagic/plane-1.unit"><vec2>244 112</vec2><int>3</int><vec2>-264 -192</vec2><int>4</int><vec2>509 -32</vec2><int>5</int></array>
+		<array name="doodads/generic/planeofmagic/plane-3.unit">
+			<vec2>1804 -50</vec2>
+			<int>10</int>
+			<vec2>1168 -106</vec2>
+			<int>11</int>
+			<vec2>1520 -584</vec2>
+			<int>12</int>
+			<vec2>-419 778</vec2>
+			<int>13</int>
+			<vec2>-718 211</vec2>
+			<int>8</int>
+			<vec2>-159 -98</vec2>
+			<int>9</int>
+		</array>
+		<array name="doodads/special/bg_black.unit"><vec2>-1024 -1024</vec2><int>6</int></array>
+		<array name="doodads/generic/planeofmagic/plane+1.unit"><vec2>-80 -340</vec2><int>7</int></array>
+		<array name="doodads/generic/planeofmagic/plane.unit"><vec2>0 0</vec2><int>2</int></array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>-4 44</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">300</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/pyramid_slum_3.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="DiscordImage">act_pop_2_plane</string>
+		<string name="LevelNameShort">.level.plane_of_magic.short</string>
+		<string name="LevelName">.level.plane_of_magic</string>
+		<string name="Class">StaticLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000067570000000000000000000000000000000000000000000000000000000000003d55000000000000000000000000000000000000000000000000000000000064572800000000000000000000000000000000000000000000000000000000004e6b670000000000000000000000000000000000000000000000000000000000474d6b0000000000000000000000000000000000000000000000000000000000391c43000000000000000000000000000000000000000000000000000000000001411c00000000000000000000000000000000000000000000000000000000004f7143000000000000000000000000000000000000000000000000000000000003660b0000000000000000000000000000000000000000000000000000000000253b1c0000000000000000000000000000000000000000000000000000000000365076000000000000000000000000000000000000000000000000000000000076102400000000000000000000000000000000000000000000000000000000007e7c2700000000000000000000000000000000000000000000000000000000004c1d6c0000000000000000000000000000000000000000000000000000000000282a20000000000000000000000000000000000000000000000000000000000006117c000000000000000000000000000000000000000000000000000000000070073e0000000000000000000000000000000000000000000000000000000000490a7a000000000000000000000000000000000000000000000000000000000064345f00000000000000000000000000000000000000000000000000000000006c7679</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000056323b007267480000000000000000000000000000000000000000003947145e3a1073134e331b2a36717d784e4700000000000000000000000035400728195208631a203c7113127051347c026a00000000000000000000007d7a610e287e751c4c5c7d7c6570701a2d542e4b530000000000000000465a124959162e1a48322d073e516c3c172b7c0116592f1000000000002c296f5c4d2a5d41525759603472603a600e1a36137945214839560000000d4d72451b76461104795f22114855092d502571466706185a2c736b60000007621411565550480325256f2d62533524023a454559151f600f081b1145004528261e3a5d6d57233d1e1b1f534773436a272a6e0b246320764a437d0b3d63514719033b5928216349441878524f58216470306208662061245b263d791c13504a386429677e4a2c693d424c3c616a282d25581f202f2630186b6f48046d10523c453058470e7a65331c6107335223156f6f35567439451909357c0b4b2c440624207b335e7833262c367b715f0a13386b537d1f1602072156250c2f207a0e280811204314472d2e0e171c02375b2f464675115b15571d481629392435490b202a457a13524a174b1c3734592a6f082e385c2d663b617c155f26433048780e784c1a36646b4373255a227a153a623712446b04381818233b47717237070d0d34231d0551102f16751c5b4844206e1223072e6b3d707a3453646b7c5b361d391d46744e2e187d64136d323e2b1c31466b3c756577751e0949033c5c5d7a5b6d5a406d49383345650d731a146329100d121d631c2009362f21344743155f286b0d5d4f72722b4e7a66471463590c3804241f3164466b647371111875754d572b524c4573726d727b29475c495b36612c1a447b3b44020664516e656e111b654c6931526f1d2d254577204a37020e4042507e356621152e6c15180a33091e402c22565473235f783a77496c4a474a1d3e615d4328544158012577656c4d7e5b05031a230f0d7a06260c022d56152a4d5c3a4c58656154057d784f71126c383f4459570208614542123c434b1a3b4212293f750d7a1c67607d282962441e6543712f742123212d543f6c0f7a49270d1c3e59675e161e5d5d356253101908301a47537528677d1d132160050e3e501f11396b343b50264e73514b0e33742e20477c221921784c6b3a4811415d3c673b6f1805554f190a3f585228352f171f383b24412d0e09060e7653791f0f772342133039355c7e2a6f1b203a1d156174493d057525797c4e4863157d22751504200c354b2a16342324117c496e0b7d452b55035106305a5f2479456827370e7b460d05614e02723323246526071f116f11395d7c1c7b340455535616363f5a1f4c316e156a0602334c5a361c6e38066b446e</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000435b000001177279005b0443276e0000000000000000000000000000000000007c0d1e014563215c233340364636124044557a37057b363e190e6551000000005014350d1b44193c1d6b5e66625002524112590b7772270465626e3b7416513c5e465d4a5c2e09721f5833694e6f74202e2814253a6230185d2315517e14104d2b6a0326035d4b7d710124786c222c387056750d2c020912452e6e5912401c375c415a444a5b1f5f655d50092e1467131e192a60353434391c38161c59687717424b612e712229234554416b3928190b201b260c55280f4f25464c5e2d70747c477203055f5c275b2350670d7a5f3f3d1262157e454f3a223c01336f793014695a39543e2943375e45355a663e741e54453522030b5615667c6b57513b4e201b2b5a567243306315692c114820413f356676271b566b251333456a545f6c1c090b456f2b5f143b3c731b164b697317205c5c37725b3a604b4553123a5751247471651709700f541c716a27744d1a3b1649077e37671c3d5c100d567e540e327311720d731b0f706e0a174f302839231d262b3e511649484f5552431777124c1a4e4133536664554a587c18234c0975065e2a375c771b6e5c644a656e50241a540a6d383b66735d701d2d194b1e5f2845750910605a0f3b406a426557396d0d5d0358484c016d1976623a1f6d45527553041a263238660e4f0464114621015e1573367039090421652c49725142701b6334431239591f48256c7a4a40125f773c422b04442a254624570d69150a2a7d0f11392d744b7101545c085c2a3b2928734b5f566e72060140725c3a6747233f0861390b6f4627164f155d54681f4b330e2946372c795463230a7c0636644c524d3b696c27260f0d40611c56610d217c0c2f27706816746551124426734b4a3d2677520954295c53260e65223d23316e053d41435717033b704d077a761c4621626c54416943011b177d24282c1f07403e37787522056e2c1558010e0d12626c3d3c7669367203037a1f6f7a7715783f0b170f4e0f1e58112e186e55313532310a56573f733b73281b2c46365e166c3a6457766a725c357d3b056e687664582015220d271b543c445d1f14702c66274a5a321c377865432c080175607b221c46383c192e12554b33305f06386c4e09424b141b724b7d4a325d2b5b6b291b560a070b185118474b1d182b1c591d0e73185e586e700650394a3d224244532109560f055041753f586f7212481b1c0a2c6a146c6f3c1c311f762c4063036a10371d3d34456f7e136d45097a0319232f6e09060e136f216025112238780e25250626243b5d5d2524360f275e497274232f2c233e565218485d1a5d204c457405174c72704905540617760e2a04250a2139407b</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c654966426e0000000000000000000000000000000000000000000000000000116441184b0d2f4b00000038795c334d6e563f0000000000000000000000000011374452035a55645b2b170453351837421036536827000000000000000000005d33707e0c252732185f37623e4d7110051a0e3c35337b760000000000000000700277747c420d78216a51680251562d065670102229017b1e00000000000000560b0d3570104c0664590f011b600e5805151a3d3c14067725734f000000000061034341114840510a1c55156579086c0e62764e7a6b2669773c016e000000001f32513f2e18237e7e5f292c1a077e1c30741901624477485c24672303000000234e1228067949500c501a315342262d137e1a664e4f050e7a7c6e6e5600000004406a161a173157145030156b1c52504c77025c1c3649751f4d3244132600004621735e43462f7c036d0e474573713335730f155f42342b6567304f524d0000161a72165e5e384c416729580d65015052070a5d645d2b7245286b13556f72007e100927674b3b3d37686002504a3c3e7b6e20217c3e12684a3e56492b2a30007b153f1c77056745407525651f513c643d5c734d337243771e5f386b712c770005072269557d1f5e473f2b3d7b26786673490b1c0d3b751d6b562961327c76001224213569053e6a471b61691f68566c6015636552691b3d7b356b3544297e003d721d202e29717b3737470479281a1a264c140a453a3b697c4b126c2e7d5d000e7a42244e6d35394364635e666a624c0c066a3f75493f44775e672b592d1c006c1728751f7e730e04305725106b6c5d337d7322702212244c7a210b7c2368004c725f1b73121b784a1e41126006300c2a330a413f0d5709402b3011703f3700762c0d09047c400a50301f642a0d2d1c0e1a5673261e7d49152b38275c0f30000f5f252866202a15222a1b0a4d06406b0b3d7d4647200928165d342f7559190050632d5625706a1103397b30373133053a0775236e3c120f6e177b1004073a002c0e5d4072741f7d252f55704b3b011246506a0b0b2234344a6667612c3132006c4b300a6d63522c223f620f324522215311056d380f40207b5035745f1869007d23311d3f396275470d433009781b511b2941087c196c244e48265401370600022a353766425d59061e72041564213e4f316e0b4719642b16311136081e5e006f6a1d5e7e1607584023584a107944460c3f3d24762a60504e4832143a0a2f34386207547b2a5f4c020a6b26505e14422940451c250b6963015e744c7d20682b</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000001b6045000000000000000000000000000000000000000000000000000000000005223c000000000000000000000000000000000000000000000000000000000062346a0000000000000000000000000000000000000000000000000000000000522b11000000000000000000000000000000000000000000000000000000000067276300000000000000000000000000000000000000000000000000000000004661580000000000000000000000000000000000000000000000000000000000550d42000000000000000000000000000000000000000000000000000000000007501200000000000000000000000000000000000000000000000000000000007050200000000000000000000000000000000000000000000000000000000000001a600000000000000000000000000000000000000000000000000000000000003502000000000000000000000000000000000000000000000000000000000000594b000000000000000000000000000000000000000000000000000000000000673b00000000000000000000000000000000000000000000000000000000000048350000000000000000000000000000000000000000000000000000000000007d46000000000000000000000000000000000000000000000000000000000000663a000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000075000000000000000000000000000000000000000000000000000000000000004d000000000000000000000000000000000000000000000000000000000000005a000000000000000000000000000000000000000000000000000000000000004a000000000000000000000000000000000000000000000000000000000000003e000000000000000000000000000000000000000000000000000000000000006600000000000000000000000000000000000000000000000000000000000000710000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000007500000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000071000000000000000000000000000000000000000000000000000000000000002200000000000000000000000000000000000000000000000000000000000000570000000000000000000000000000000000000000000000000000000000000060</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">12393a450c6b576d1179737d5919792f3812165e444338670b561f7431216f221c7b2938727e5046205a6c57150574030c4d4a6609430c23077e684b1d302c1b14027e3616083617745b301d5e3f2f25723a19661a420405144c54452972616b413c4b7c09766819031a54747a7c0c2d55721943554a344d771b1b0f6d195a313c792d430d395944323655160f4f74192f05473f20397b2b4031735a4472410b5e467121231c181720451a47447c641f0a545f060366532c53703e5e1b4419781e12552416450d142301755250381f4e4277496b6e12071364082e0b3f2d572b6f7229625b4b326d745d6439664e314b770276704b5b434513604f307c334d3e4014736a18663c4f1d4f3c542467113c336b2919635a074163601d4d77751d6a1e680f5953727d64460f46546a38462b283712143a38333f1e1746152d32320721505c741f4f41462c6d3d66572f755d471a6d1a78376a105a38032022384e701322621e12496677742e3d597c305b5c0166424b442a187679430a70407d76607438695734492b391a46380d1b0c06472407157e18563a2f357c6e384913763c520126471c0a4f1e75695d5429125731557a4915670b09750f1d467908786a2763190e2664304a45766057230a2f18602e2c1c643c765f1e0e2f6814161624630e48300a3f17522d02092f782020750729253976511c762f3b06162d09663c121b795872236d57551d717b6f07076150387a6e393b34060d2050211d027a3576785b0a61431d0d4d783f3356590d2207041a720221511165730d11640c5a78752e04413b0c390f3a3f4d496f127d3a543e5e427d74130b3b037b04146b1f3d6d2d68427564653a1946013f1f4f5753364c6f03240e652b4a13177d0f222268620339597837022842342824290c4a165d02117233301f0f09181d04784c5c2f2b35196b1417294d701d2b1f272d0f757e0512475f7c3c6c115b76112d53063f2071503b4f3c7b3310296e7709095f2379040f0c4d4e365407370e722d421e344407742633526176297d0e034148745a6223235c0879145208700f755f0e3b443d617d0b58581f4b604611581c11317b43273e46363e317964074d336a437b5e482d211d11185721434243793845547d45012b0c5a4a687736551c40280122237b53616b1c22472b752e15166d7b6b0e400b566104014573657053261e795e1e743430203324661c6b720b7206234e356e342f0c2b3c655a4c413e38456b1c313e39341b6b713424773541440316475f3c4602656443720f1d3b5c61437a50380d1b3f68654465521b16656b53703e52484c3d752e19683f66496163431b05531a3a5102447c7b4b23790c3d180b4b4f7d706827542e4e57387e7405762b5654401a72104b052e59037d0e3d7d1e1a1427443e04062f792360720b78063f506e34</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">487b0b1d09040d64565e515d11022034670a731c78546e2d54726f4f78351216066b716c7a5d164f25414c2e0c03442555235a7a2406346c24694c717e14272f64727b4b3f187b665b594b614b6a725547166013196c165c7223467e5a424e450f5f7c4e262934612214687278014e323e6a3f2c257627053b28022d1e6c7337686d0e092236790c397c047c1c4c5c742e1b45084f0116451e3c090c0d2249313e0d320a1d055a6b6618452e04716b7208674b5d730e212a05272f593e1e5f162d5d635e2d4202774b75232d02210d263b6632571531716610450c0d71373f2c5751675d2c1729771d642a0245567e52771c64772f7d2c167a4764056c176a352a29580d284b57754318166e44140e70095e251d5d616763152b014e627126602510590f6f131b4a797b7655284006422e7c617c403627721a61767e0550527179445a650f247b5b230f2c731f5c181c353f197c5f6a421b7c3148650624276e1c110b643d6b6a672b42347d31332a2e6d500475317079363b29241f6a7c7761514c7b665c18494b465e09634174277a7a594273612b2e73613f4f4818522013515643672f08072c1e5a0d7374183f390d450b022a09171a44350d3b3438772603350a427504505d5e20756751341b1e24275957686616546f0a753352471754144367776846595129325c4e13651b56770761274d577677615d1b09646565607966721d5b40216f38291c427d017265200863457834606a291b58410f5272332f60125d493f182b2746266d1f2467635717206f0812605e0f730e7c1d5c204c771c3d357018561c2a16021b26624c6c3023133c2f5865601e343f371f2f38215005721b1651272f22272215661e36292b360f0e657568571476657e1e290379205f16176e18052c231d2a783f78385c366e6a7a445e054070613451387903790d2f457e553f555e317c263f362504342770037c44313f4d7a355b2c4b4e5d374f287802255b3a3c556a26090667421c190830311e3f1136551012553d1262151e48545d665b131703305521592b5471531a5c0f477a0b4c03583e191c510e667379014658363f56495b2c3e1c2c1b291e2f657a0a06403f076160384f2a45302c1d414c09330d790b793770293734464a3c513715354f2e1c4c7d0523604d1e1259723b2e553a6861262f3871377863160f131366201b0d427c407d220f4f1c5c4364584e3728610c564e600f0a37590e3b0477314b153941123836315e256f1627150756125d40175e3656504b6670682c3d6004240347197341115f7e620213752b4b4c373d6e5746766d700521473421414a62535517232c1a31492d4b426038104241580a075b4430584106341818571962575574247a195a4c5c4a7a632f3e1e6247322e237c0d30672205261e51381a185b2b044166264b6466337754</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000736172273b2f000000000000000000000000000000000000000000000059575a326f731d63240c0d4f00000000000000000000000000000000000078101c78534345053d18627658474800000000000000000000000000000000337952592762223908715b1a24553c6945000000000000000000000000004b6944052909337379767a406d27181d09693b14000000000000000000000003534a4863383f142b640d7e277b3e155e13140114000000000000000000005e763861657449560d4642176977474f475a4a0f22084b00000000000000003f4d3421784d6d034d2464297e6f410c5d566d733d6c2b3b00000000000000004d674a074f7c2f421a291b273b151b322940232959124b606b0000000000006d504022532269322e3d4d114846101841240560370508236c04000000000058242757412b5a494e492c18641318447a4060224a7b466a71141f00000000003d044c54067d601d121a5643494f5c2e3571401f37071b210848380000000000043d4b7c0e775f4b2630380b650b471d2b6064575e5004165823310000000033365a383f064b6c18467a584b3a110f64740c1c5513610a44192c1500000000343b223b2e65161910510d03606e470c433956722b51482d4116324c000000004d3d13642d70235113697b33665249302b345f5f515e171b7b71581e00000000796221710a513d08346d11364c74343c177166217877311c72662300000000005f765f14196874534c2b0b240507615709323d7e4901560d4b55730000000000136464015436574e137b02605b6d536f133304663847162d2a7674000000000000374e3e0c0e593c0e774b302804250b783c7c2d08435e2a651255000000000000155b4e134d19407b41674956370253552d736d2c5e492f112d00000000000000607c6c4f2d09037b630e45031a241b77506d765d11047a160000000000000000005343125257686f681a6e743e1013606233040d78202f7900000000000000000000185214030646325f0719576c3a2e2072233c5a2b790000000000000000000000003935540f532e3b0702453d5d59101d1b31220000000000000000000000000000003d5167095b63504f0c32362f5b57670000000000000000000000000000000000000051552d1b0d20264c6e0f7e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_noloot.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">5f31031f71433f472372131850702a284d40133e7b294b612b5b3805567b2b14157b2a443b5a70671b4a4c3c7951376f0f1501454d375b671e6a6d1c3d3173195c2079765512133f75410b394e440c3d14134f6a4b672a5e35323859740e4a16325d7c502a5d3c241f497e713d7b5b672e6b6e662072261e716371510d7c15663f786030536657524b3d0b6d7844023c3e1b790743425b51217b5f2c1821156b1b0b4033635e572f5a242e4a51171d271c103930771d2b6a2a7462701b050924314a01715e5f2643117613356e5119214c497a1e66295f25745b055d13350625145b6a3e042a320326635d3c7d480b217e79465e296330603b1b236609624e6f3a7e2c7e300931457744465868426b49477c451e1c482450262f6f4a3a084155781f29074d56416d4b1a03506e145162343f3253121b1f103c726212215f0d07705e16647326635909430d56682b0d2b013e28743605773d7012254a7e623f03222044215440050c0f570c1a5178303a424636084d416004194d33701514582938340d7e51326c4622415c47723c42464d45607a5d253f310767582e554d195f4f6529627470655026607b3c34512f46782c14096a37271917444e4c6e4139011658365643065b2167165f663c703a5a3d6029660f107d766f55271b430a174122201a4c5e1e3d65730f2f5a671e21043b4c0264476771581b414417220c726c325b6271794449762f092b70665150704f05012f1c7353453a135d6d202353575564402d067b60516579050555563f575d43152c51696b767d05194e0a115d6f531b08717e1c0d02411c7b7c3c15143b1f53291d47395427594431461f15357b0b5879795a5f0c045c4e3a43424564461d7b1c0a7264064b79124d320a5443363b384e046b40237c151c707060024c4e1a455a5c7b0b21553e2d02052d617e7a746b171901172f0c65341036402d336c3c224d5b323436682c0f6f4a0e596e4d1658320a385d1c3b4e30662e674e552a46602126420a453160720e033316514e1d6e5c3a5569172d2676032d74301a5a194748526d2b712a223751703d3a2625727252171a30213231406a6907786b101a525d1b3b28285d20671f64372b2253535907761e0f1f731e3d47181a4b26116c34766f2f0b4e6a5e6d246a45026a3c525c636a760d177432083128035e1130473605601b5267466f166f733956445e0b4e7a09375776230a3c516e114224034f0d6e5c7e73437150414e0a5f4e53436236046b724c1d24335d222a377c3d7a7a727e74575553593d0d3b14022e2925126b08670a13793c51527d08394954476e0e30125315421a0871346731152b55506d40613d327369495c1b0f2a211f23257656210208607e0f4065790b25566b5a413e2b0f05497a102e0a352b6c570e43472e32337b17447b2675147e6e4434</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000470000000000000000000000000000000000000000000000000000000000000031000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000005c000000000000000000000000000000000000000000000000000000000000005b00000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039000000000000000000000000000000000000000000000000000000000000004300000000000000000000000000000000000000000000000000000000000000480000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000042110000000000000000000000000000000000000000000000000000000000002977000000000000000000000000000000000000000000000000000000000000052f000000000000000000000000000000000000000000000000000000000000613b00000000000000000000000000000000000000000000000000000000000002170000000000000000000000000000000000000000000000000000000000000c25000000000000000000000000000000000000000000000000000000000000427d000000000000000000000000000000000000000000000000000000000000642100000000000000000000000000000000000000000000000000000000000000650000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">652538500b76385749222006112254316c602c185036750c213c6413282a221c79387771450b16675c766a21585114491f28045f75600454675f3d4a171e3729530248731c09306b114410554b32122354167a1d3277042814102569560a195c1e34495579703f1e706302366951663149220b683e521a581e2e2b72107341110b3e63160a096a31414e485b152a2c4c2c2d4b4a704a7d106423713a607a07533a502c0a2f2f0e6c2c3c015f4273551a1b0c0e7a1d591b0b1941476a0473282a6c4926150a6b195d0d433e577d23480d13456b050571732e3c2a2e2c1b7d6e0b164e0e283336476706525b79083f5060625a0f262a355d2326541171063f5a245c4e7e2714627547251e410d56193104214d313d426e6b79353574337575623e51503a232f0a12660f333d28724b54471e696114030a4d4874722d665914172d6f1d194d4a0e01765155394665081701384c050e0d107b5079495f470a2b08616c3b464a60230c2a405d6d114355354553642a710a5c045c277d2f09686f19723a3b556046142d6b4c595568612d48222d14275359030d40535f50484f5f531432646f2564645517713605103956460b0d2b02434f01153d170b566b2e62251818253a1a445b6c226b310c6e77411f20314e09094a4f68172d0a73326c39775515511b1e5a5966704409161c4018681a42302d1e1f1e6b1d255e59702c341e1a174c304c2960084433715a2f0f2a72742734046e3347226f35231669046b583b216a7e2a644d5a1b125a310f472920784838337c603029314426565c15622c6630447331366e4578586f3c340d760228726f6c6a746937271c335c2a2d6815240029552d22774f0f460f527c2513340c3a434a701d71161545131a3b6359761000004c3926436c17096f0f34716b5337014e137055125524271160377c523c3f000000164159655a335823596e0c2f0b283a02607079500479640e354241330100000000007836133802642369732c10670e29231102043f6265341259726d3d0000000000000000331e664214000000002c491f666932077d624a4b173a4c650000000000000000000000000000000000000c46097d12374d1a267d6918591f0000000000000000000000000000000000000061087b022e0e03792f45012b3d0000000000000000000000000000000000000000690e401b2f0a016647147b5b000000000000000000000000000000000000000000003445081305112357524f0000000000000000000000000000000000000000000000000000024f4b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">511b2709717271324a135e2c43624a7c3e546328123e5c1075772e7d0944576d334638497130282228147c781043287014795c2e1c6d354e0f247c1e030b6c6143721e3806483d3d780c15544b5b3478295a23501f537d134d5908051144482354383f73307314095e1a727d6d323466421139072b7841560b6553520233352d09545f22740b3702426463757467282a512d0d79497e58766a037e0f3c3a7e6757401d5c741478372e335d39076a78742267614107111f56015f4e6169472f10767e58523a57642611574b1716732573375a081c2a6309507c7806694b7b217d61124c7a7d61363f314f78312a537d654f3f1108520959680c014f4d696e69444710672c5e493f6c3605514e3c5962392e296d7565767d44071c6f152851237a075d76395a247a657d0128024247386206424e503d6d55531c47605f4b27151e10546b39467637680874086a072d7e14334a1e7b025a7409747c5806274b014b1c397948251d67742b4e2251695f314f1d51547d2608026e297e335e6c7c73275722270d0f3c21336d591548355b143c536f305f4a602a3b7822204740650b40056f4c0616235e276a715d72630d7b045f421d53025977670968323b521c2c215d2f184e04537b6809454d2426272734763c6f511f3a5c32041603457a34427940334e235c451c2b6451116560394b1320275a6017093f26662235313c187a280f34225462551771752e55681151214e2278496d210c4f300a060c725254576f665e65046701334c0e164c37243f743d3921303304322a556c44725c4d260b703c2f06583d085064240519636f58284f2c200d464805386d6609281b5a41462b095f446a4f422c2b613a591c3661616a495445183a131d261a637e014267035b5c40090476120165426d571d0b17130e4c5e49337737037b1a0c076806445409512c7617091b5022600d76121530534510764a662b33206472622f6128627d3a693020571d563a3c05716c3a215a402c2036236d782130605b011576326f052710483e43167e771356203a727a3c502738217e595c075f76256e53513662750d0f3c2c39447b36385c596c4730431d3a6f3b6d380c5d774d01025668076e4a6b622e076104574815415154463a050320431e530c7b297e4523472b1d4a76613f1e4b3950135e2906586c5d35485f49043b03424e0f52224d05534c010570400f5d3f021109641b3f725c5943040c775e3b480a2f627a306e775e58697e5241005e0600006b7c60674e32091d2d6f4427004700003e1c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">582b50580d502d6b45010953411d7456737b6815344544765b392b2b1e6978656503743d6d60656c430136071b5f0e377e1a296f50243429062449220e5c3916783447453a2a7e476a1b6001743f11747c2a20034a50353a1533252d1f5c4f1b2a4c744558371624697b18596e1a3f0b561616016c2d6468603b0d5c2d225c7a291d4c3b171a4f5064050b1a796b69671208045453361506722c500646383c016b480a2734105c7b2d3454694c3161785f7539540d76546622282f242d516f77604123156a3f4c7c0c07763237574b29245a5964497c646c5d5a5e316e60403c7a2d6505387e1c70700e68233a2e0d483c0821604d191d4c597b59463d7a3f583535671e4f3458605440656d0d2e2103774a320569214c533040465175117a67245e0506324d4e3f633101647b565f50510d0e020c2647127b28783320700d1a0c026b1018056c2257540d6a6b1857153d2a0c11073a503e1c4701283432131541450e1d5f7463556e18271e292f395a274a775e62434f5f4f3c211b271f526a5865385770391a5173020460646f24255d0d5c665b03582245206d0330234b005376603e17103c070c65423850202d3d1e05645316224f5e7151510c672536005e451137760a04136d1d7c4f25544a266760364e564a42226062617c0f026000196f28404f064e34471579744f1a0a264a20421d3d4b1c70472a4e311e6b0400103855786855166f7832313020052d3967576e7719621e78072e7c117e33000060605d085e14244907070526112312703e1244761d25592f0f032418767e000039055f013d0b6607182c3e5a5654414c5473167678126403174a1430370000005053525173466c5d587a5d360b693a5c68121a196c4f262f6d330b711f0000006b0a393e4d115072171e323c227d2a434e77303911425c3d1d747936000000003248150870754e1c45331c486d16115157364c6d4c1f0c3d7b347800000000005c3e103f55717b461a796a413a33706c5d3061250924507567000000000000000d400a5556760e346c527c79550a103a791c2d7b2d7d720700000000000000005b7b1b4647263e797a38520e2172231d3154661f0000000000000000000000003442332c4f611b28405b3075377b0b000000000000000000000000000000000024236f766c12192f2858734b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">7d0000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000002b0000000000000000000000000000000000000000000000000000000000000047000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 512</vec2>
+		</dict>
+	</array>
+</dict>

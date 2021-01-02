@@ -1,0 +1,45 @@
+<effect looping="true">
+	<sprite origin="32 30" looping="true" layer="1" texture="./ghost_priest_aura.png" material="system/default.mats:bright-noxray">
+		<frame time="100">0 0 64 64</frame>
+		<frame time="100">64 0 64 64</frame>
+		<frame time="100">128 0 64 64</frame>
+		<frame time="100">192 0 64 64</frame>
+		<frame time="100">256 0 64 64</frame>
+		<frame time="100">320 0 64 64</frame>
+		<frame time="100">384 0 64 64</frame>
+		<frame time="100">448 0 64 64</frame>
+	</sprite>
+
+	<sprite origin="32 30" looping="true" layer="1" texture="./ghost_priest_aura.png" material="effects/effects.mats:default-glowing">
+		<frame time="100">0 64 64 64</frame>
+		<frame time="100">64 64 64 64</frame>
+		<frame time="100">128 64 64 64</frame>
+		<frame time="100">192 64 64 64</frame>
+		<frame time="100">256 64 64 64</frame>
+		<frame time="100">320 64 64 64</frame>
+		<frame time="100">384 64 64 64</frame>
+		<frame time="100">448 64 64 64</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="saturate(sin(2*pi*t))*90" />
+
+		<color-r value="0" />
+		<color-g value="2" />
+		<color-b value="2" />
+		<color-a value="0"/>
+	</light>
+</effect>

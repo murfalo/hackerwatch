@@ -1,0 +1,43 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="type">aberration</string>
+		<int name="hp">5000</int>
+		<float name="mp-scale-fact">0.85</float>
+		<int name="armor">100</int>
+		<int name="resistance">200</int>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<array name="buffs-immune-tags">
+			<string>bleeding</string>
+			<string>confusion</string>
+			<string>fragility</string>
+			<string>debuff</string>
+			<string>disarm</string>
+			<string>root</string>
+			<string>burning</string>
+			<string>stun</string>
+			<string>slow</string>
+			<string>poison</string>
+		</array>
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+		<array name="skills">
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+			<collision static="true">
+				<circle shoot-through="false" aim-through="true" offset="0 0" radius="11"/>
+			</collision>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,364 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>1</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array>
+				<int>11</int>
+				<int>0</int>
+				<int>20</int>
+				<int>0</int>
+				<int>17</int>
+				<int>0</int>
+				<int>14</int>
+				<int>0</int>
+				<int>2</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>2</int>
+			<vec3>24 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>4</int><int>5</int><int>3</int><int>7</int><int>10</int><int>13</int><int>22</int><int>16</int><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>3</int>
+			<vec3>96 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>well</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/well_small.pfb</string>
+				<string name="Flag">well</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>4</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>scarabs</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/scarabs_3x3.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>5</int>
+			<vec3>-96 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>shrine</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/special_shrine_small.pfb</string>
+				<string name="Flag">shrine</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>6</int>
+			<vec3>160 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>10</int><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>96 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>special_imp</string>
+			<dict>
+				<string name="Prefab">prefabs/special/special_imp.pfb</string>
+				<string name="Flag">special_imp</string>
+				<int name="Chance">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>8</int>
+			<vec3>224 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>desert_imp</string>
+			<dict>
+				<string name="Flag">desert_imp</string>
+				<array name="OnTrue"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>9</int>
+			<vec3>160 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>10</int>
+			<vec3>96 192 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>special_imp_more</string>
+			<dict>
+				<string name="Prefab">prefabs/special/special_imp.pfb</string>
+				<string name="Flag">special_imp</string>
+				<int name="Chance">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>11</int>
+			<vec3>224 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_imps_more</string>
+			<dict>
+				<string name="Flag">fountain_imps_more</string>
+				<array name="OnFalse"><int>8</int></array>
+				<array name="OnTrue"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>12</int>
+			<vec3>160 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>constellation_marker</string>
+			<dict>
+				<string name="Flag">constellation_marker</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>96 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>marker</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/marker_small.pfb</string>
+				<string name="Flag">constellation_marker</string>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckDLC</string>
+			<int>14</int>
+			<vec3>-224 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wh</string>
+			<dict>
+				<string name="DLC">wh</string>
+				<array name="IsOwned"><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>15</int>
+			<vec3>-96 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>blood_altar</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/special_blood_altar_small.pfb</string>
+				<int name="Chance">2</int>
+				<string name="Flag">special_blood_altar</string>
+			</dict>
+			<array><int>24</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>16</int>
+			<vec3>-96 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>item_forge</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/special_item_forge_small.pfb</string>
+				<int name="Chance">2</int>
+				<string name="Flag">special_item_forge</string>
+			</dict>
+			<array><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>17</int>
+			<vec3>-352 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>unlock_anvil</string>
+			<dict>
+				<string name="Flag">unlock_anvil</string>
+				<array name="OnTrue"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>18</int>
+			<vec3>-160 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>19</int>
+			<vec3>-160 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>20</int>
+			<vec3>-224 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_shrines_more</string>
+			<dict>
+				<string name="Flag">fountain_shrines_more</string>
+				<array name="OnTrue"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>21</int>
+			<vec3>-160 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>5</int><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>22</int>
+			<vec3>-96 128 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>shrine_more</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/special_shrine_small.pfb</string>
+				<string name="Flag">shrine</string>
+				<int name="Chance">6</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>23</int>
+			<vec3>-288 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_0</string>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnFalse"><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>24</int>
+			<vec3>-32 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special_blood_altar</string>
+			<dict>
+				<string name="Flag">special_blood_altar</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>25</int>
+			<vec3>-32 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>desert_item_forge</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">desert_item_forge</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>26</int>
+			<vec3>-224 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>desert_item_forge</string>
+			<dict>
+				<string name="Flag">desert_item_forge</string>
+				<array name="OnFalse"><int>18</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

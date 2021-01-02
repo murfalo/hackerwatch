@@ -1,0 +1,46 @@
+<effect looping="false" layer="1" bounds="230 230">
+	<sprite looping="false" origin="64 64" texture="./dust_big.png" material="effects/effects.mats:lit"
+		scale-x="0.6*t*t+0.4"
+		scale-y="0.6*t*t+0.4"
+		
+		color-r="0.737"
+		color-g="0.392"
+		color-b="0.1"
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*0.6"
+	>
+		<frame time="150">256 0 128 128</frame> 
+		<frame time="200">384 0 128 128</frame> 
+		<frame time="500">256 128 128 128</frame>
+		<frame time="500">384 128 128 128</frame> 	
+	</sprite>
+
+	<sprite looping="false" origin="64 64" texture="./dust_big.png" material="effects/effects.mats:lit"
+		scale-x="0.6*t*t+0.4"
+		scale-y="0.6*t*t+0.4"
+		
+		pos-x="(rand(u+10)*80-40)*t"
+		pos-y="(rand(u+10)*80-40)*t"
+		
+		color-r="0.737"
+		color-g="0.392"
+		color-b="0.1"
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*0.3"
+	>
+		<frame time="1200">128 0 128 128</frame> 
+	</sprite>
+
+	<sprite looping="false" origin="64 64" texture="./dust_big.png" material="effects/effects.mats:lit"
+		scale-x="0.6*t*t+0.4"
+		scale-y="0.6*t*t+0.4"
+	
+		pos-x="(rand(u-14)*80-40)*t"
+		pos-y="(rand(u-15)*80-40)*t"
+	
+		color-r="0.737"
+		color-g="0.392"
+		color-b="0.1"
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*0.2"
+	>
+		<frame time="3000">0 128 128 128</frame> 
+	</sprite>	
+</effect>

@@ -1,0 +1,78 @@
+<unit slot="doodad">
+		<scenes off="off" on="on">
+		<scene name="off">
+			<minimap_sprite origin="0 4" texture="gui/minimap.png" frame="224 170 8 4" />
+			<minimap_sprite origin="0 2" texture="gui/minimap.png" frame="224 170 8 6" />
+			<collision static="true">
+				<rect shoot-through="true">0 0 32 16</rect>
+			</collision>
+			
+			<scene pos="0 -40" src="doodads/special/color_pyramid_slum_32.unit:"/> <!-- end ":" is needed for "no scene" /hipshot -->
+			
+			<sprite origin="0 48" texture="./trap_indie.png" material="system/default.mats:proj-wall">
+				<frame>112 0 32 64</frame>
+			</sprite>
+
+			<sprite origin="0 16" layer="-1" looping="false" texture="./trap_indie.png" material="system/default.mats:default">
+				<frame time="50">352 0 32 16</frame>
+				<frame time="50">320 32 32 16</frame>
+				<frame time="50">320 0 32 16</frame>
+				<frame time="50">288 32 32 16</frame>
+				<frame time="50">288 0 32 16</frame>
+			</sprite>
+
+			<sprite origin="0 0" layer="-1" looping="false" texture="./trap_indie.png" material="system/default.mats:proj-wall">
+				<frame time="50">352 16 32 16</frame>
+				<frame time="50">320 48 32 16</frame>
+				<frame time="50">320 16 32 16</frame>
+				<frame time="50">288 48 32 16</frame>
+				<frame time="50">288 16 32 16</frame>
+			</sprite>
+
+			%if EDITOR 
+			<sprite origin="-12 20" layer="10" texture="doodads/special/editor_cross.png" material="system/default.mats:bright">
+				<frame>0 0 8 8</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="on" trigger-snd="event:/misc/trap_indieball-open">
+			<minimap_sprite origin="0 4" texture="gui/minimap.png" frame="224 170 8 4" />
+			<minimap_sprite origin="0 2" texture="gui/minimap.png" frame="224 170 8 6" />
+			<collision static="true">
+				<rect shoot-through="true">0 0 32 16</rect>
+			</collision>
+			
+			<scene pos="0 -40" src="doodads/special/color_pyramid_slum_32.unit:"/>		
+			
+			<sprite origin="0 48" texture="./trap_indie.png" material="system/default.mats:proj-wall">
+				<frame>112 0 32 64</frame>
+			</sprite>
+
+			<sprite origin="0 16" layer="1" texture="./trap_indie.png" material="system/default.mats:wall">
+				<frame>160 0 32 16</frame>
+			</sprite>
+
+			<sprite origin="0 16" layer="-1" looping="false" texture="./trap_indie.png" material="system/default.mats:default">
+				<frame time="50">288 0 32 16</frame>
+				<frame time="50">288 32 32 16</frame>
+				<frame time="50">320 0 32 16</frame>
+				<frame time="50">320 32 32 16</frame>
+				<frame time="50">352 0 32 16</frame>
+			</sprite>
+
+			<sprite origin="0 0" layer="-1" looping="false" texture="./trap_indie.png" material="system/default.mats:proj-wall">
+				<frame time="50">288 16 32 16</frame>
+				<frame time="50">288 48 32 16</frame>
+				<frame time="50">320 16 32 16</frame>
+				<frame time="50">320 48 32 16</frame>
+				<frame time="50">352 16 32 16</frame>
+			</sprite>
+
+			%if EDITOR 
+			<sprite origin="-12 20" layer="10" texture="doodads/special/editor_cross.png" material="system/default.mats:bright">
+				<frame>0 0 8 8</frame>
+			</sprite>
+			%endif
+		</scene>
+	</scenes>
+</unit>

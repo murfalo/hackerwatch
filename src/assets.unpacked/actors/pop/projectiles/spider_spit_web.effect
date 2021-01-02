@@ -1,0 +1,21 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="10" />
+	
+	%// Spiderspit
+	<sprite looping="true" origin="16 6" texture="./spider_spit.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="50">0 33 21 10</frame>
+		<frame time="50">21 33 21 10</frame>
+		<frame time="50">0 43 21 10</frame>
+		<frame time="50">21 43 21 10</frame>
+		<frame time="50">0 53 21 10</frame>
+		<frame time="50">21 53 21 10</frame>
+	</sprite>
+	
+</effect>

@@ -1,0 +1,39 @@
+<effect looping="false" layer="2">
+	<param name="radius" default="8" />
+	<param name="ttl" default="10000" />
+<!-- 
+	<data>
+		<string name="gore">effects/gibs/gib_burrow_spawner.sval</string>
+	</data>	 -->
+
+<!-- particles -->
+
+<sprite origin="19 19" looping="false" texture="./djinn_spawn_dust.png" material="system/default.mats:bright"	
+
+color-r="5"
+color-g="1"
+color-b="8"
+color-a="saturate(1-pow(t,4))"
+
+>
+        
+		<frame time="50">0 0 38 38</frame>
+		<frame time="50">38 0 38 38</frame>
+		<frame time="50">76 0 38 38</frame>
+		<frame time="50">114 0 38 38</frame>
+		<frame time="50">152 0 38 38</frame>
+		<frame time="50">190 0 38 38</frame>
+		<frame time="50">0 38 38 38</frame>
+		<frame time="50">38 38 38 38</frame>
+		<frame time="50">76 38 38 38</frame>
+		<frame time="50">114 38 38 38</frame>
+		<frame time="50">152 38 38 38</frame>
+		<frame time="50">190 38 38 38</frame>
+		<frame time="50">0 76 38 38</frame>
+		<frame time="50">38 76 38 38</frame>
+		<frame time="50">76 76 38 38</frame>
+		<frame time="50">114 76 38 38</frame>
+		<frame time="50">152 76 38 38</frame>
+		<frame time="50">190 76 38 38</frame>
+	</sprite>
+</effect>

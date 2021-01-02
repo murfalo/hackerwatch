@@ -1,0 +1,146 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/outlook_pot.unit">
+			<array>
+				<vec2>18 3</vec2>
+				<int>4</int>
+				<dict>
+					<string name="start">empty</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_alchemist_basket.unit">
+			<array>
+				<vec2>11 20</vec2>
+				<int>2</int>
+				<dict>
+					<string name="start">big-apothecary-empty</string>
+				</dict>
+			</array>
+			<vec2>4 26</vec2>
+			<int>3</int>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">16</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_alchemist_rack.unit"><vec2>8 -15</vec2><int>5</int></array>
+		<array name="doodads/generic/npc_apothecary.unit"><vec2>0 0</vec2><int>6</int></array>
+		<array name="doodads/special/_minimap_town_apo.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>8</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/speech_bubble_info.unit"><vec2>0 0</vec2><int>7</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>9</int>
+			<vec3>-44 -68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Title">.dialogue.town.npc.apothecary.name</string>
+				<string name="Text">.dialogue.town.npc.apothecary.1a</string>
+				<array name="Objects"><int>6</int></array>
+				<array name="#ForPlayer"><int>10</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>10</int>
+			<vec3>52 -68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">5</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>11</int>
+			<vec3>128 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Flag">unlock_apothecary</string>
+				<array name="OnFalse"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>12</int>
+			<vec3>128 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>7</int><int>8</int></array>
+			</dict>
+			<array><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>13</int>
+			<vec3>128 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>9</int><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>14</int>
+			<vec3>-72 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Objects"><int>15</int><string>User</string></array>
+				<string name="Text">.dialogue.player.apothecary</string>
+				<array name="#ForPlayer"><int>15</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>15</int>
+			<vec3>0 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">7</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>14</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

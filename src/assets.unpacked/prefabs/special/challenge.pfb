@@ -1,0 +1,5319 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">ShortcutLevel</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/challange.env</string>
+	</dict>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">24</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">512</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/marker_target_16.unit">
+			<vec2>-64 -24</vec2>
+			<int>3</int>
+			<vec2>64 24</vec2>
+			<int>4</int>
+			<vec2>24 -64</vec2>
+			<int>5</int>
+			<vec2>-24 64</vec2>
+			<int>6</int>
+			<vec2>24 64</vec2>
+			<int>7</int>
+			<vec2>-64 24</vec2>
+			<int>8</int>
+			<vec2>64 -24</vec2>
+			<int>9</int>
+			<vec2>-24 -64</vec2>
+			<int>10</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>11</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a1</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>12</int>
+			<vec3>304 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>57</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>13</int>
+			<vec3>-624 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_a</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>94</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>95</int><int>0</int><int>77</int><int>0</int><int>324</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>14</int>
+			<vec3>240 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>62</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>15</int>
+			<vec3>384 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">off</string>
+				<array name="#Units"><int>58</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>16</int>
+			<vec3>512 -352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.combounlocked</string>
+				<float name="AnchorY">0.2</float>
+				<int name="FadeTime">500</int>
+				<int name="Time">2000</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>17</int>
+			<vec3>384 -352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sequence_complete</string>
+			<dict>
+				<string name="Sound">event:/misc/sequence_complete</string>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>18</int><vec3>-624 64 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>AnnounceText</string>
+			<int>19</int>
+			<vec3>320 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">testing</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>20</int>
+			<vec3>320 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>delay</string>
+			<array><int>72</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>21</int>
+			<vec3>400 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>Start</string>
+			<array><int>20</int><int>1</int></array>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>22</int>
+			<vec3>512 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Music">event:/music/bonus</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>23</int>
+			<vec3>512 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>24</int>
+			<vec3>448 -288 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>25</int>
+			<vec3>448 -352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>unlock_combo</string>
+			<dict>
+				<string name="Flag">unlock_combo</string>
+				<int name="State">4</int>
+			</dict>
+			<array>
+				<int>17</int>
+				<int>0</int>
+				<int>16</int>
+				<int>0</int>
+				<int>15</int>
+				<int>0</int>
+				<int>68</int>
+				<int>0</int>
+				<int>390</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>26</int>
+			<vec3>320 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>unlock_combo</string>
+			<dict>
+				<string name="Flag">unlock_combo</string>
+				<array name="OnTrue"><int>61</int></array>
+				<array name="OnFalse"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>27</int>
+			<vec3>176 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>28</int>
+			<vec3>-384 -848 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">spawn2</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>29</int>
+			<vec3>-536 472 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem8</string>
+			<array><int>313</int><int>0</int><int>291</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>30</int>
+			<vec3>-384 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">spawn4</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>31</int>
+			<vec3>384 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>false</string>
+			<array><int>52</int><int>0</int><int>58</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>32</int>
+			<vec3>304 496 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>103</int>
+					<int>102</int>
+					<int>101</int>
+					<int>75</int>
+					<int>76</int>
+					<int>60</int>
+					<int>27</int>
+					<int>14</int>
+					<int>12</int>
+					<int>112</int>
+					<int>111</int>
+					<int>109</int>
+					<int>116</int>
+					<int>115</int>
+					<int>113</int>
+					<int>382</int>
+				</array>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>33</int><vec3>-624 -544 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>34</int>
+			<vec3>240 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>304</int>
+					<int>300</int>
+					<int>290</int>
+					<int>103</int>
+					<int>75</int>
+					<int>27</int>
+					<int>136</int>
+					<int>132</int>
+					<int>122</int>
+					<int>164</int>
+					<int>160</int>
+					<int>150</int>
+					<int>192</int>
+					<int>188</int>
+					<int>178</int>
+					<int>220</int>
+					<int>216</int>
+					<int>206</int>
+					<int>248</int>
+					<int>244</int>
+					<int>234</int>
+					<int>276</int>
+					<int>272</int>
+					<int>262</int>
+					<int>382</int>
+					<int>383</int>
+					<int>384</int>
+					<int>385</int>
+					<int>386</int>
+					<int>387</int>
+					<int>388</int>
+					<int>389</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>35</int>
+			<vec3>320 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>act_2</string>
+			<dict>
+				<string name="Flag">act_2</string>
+				<array name="OnFalse"><int>59</int></array>
+				<array name="OnTrue"><int>325</int><int>377</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>36</int>
+			<vec3>-888 864 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem7</string>
+			<array><int>285</int><int>0</int><int>263</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>37</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a2</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines2.unit</string>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>38</int><vec3>-624 -688 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>AnnounceText</string>
+			<int>39</int>
+			<vec3>-384 -1008 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">spawn1</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>40</int>
+			<vec3>96 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>challenge_complete</string>
+			<dict>
+				<string name="EventName">challenge_complete</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>41</int>
+			<vec3>24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>42</int>
+			<vec3>-624 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_a</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>98</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>55</int><int>0</int><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>43</int>
+			<vec3>96 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Delay</string>
+			<array><int>40</int><int>0</int><int>26</int><int>0</int><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>44</int>
+			<vec3>-464 -688 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>65</int><string>LastSpawned</string><int>346</int><string>LastSpawned</string><int>338</int><string>LastSpawned</string><int>330</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>73</int><int>0</int><int>51</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>45</int>
+			<vec3>320 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>act_1</string>
+			<dict>
+				<string name="Flag">act_1</string>
+				<array name="OnFalse"><int>35</int></array>
+				<array name="OnTrue"><int>326</int><int>376</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>46</int>
+			<vec3>16 784 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">error</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>47</int>
+			<vec3>0 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sequence_complete</string>
+			<dict>
+				<string name="Sound">event:/misc/sequence_complete</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>48</int>
+			<vec3>-624 -624 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>65</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>53</int><int>0</int><int>321</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>49</int>
+			<vec3>-624 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_a</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>53</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>80</int><int>0</int><int>78</int><int>0</int><int>322</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>50</int><vec3>-624 -1008 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>51</int>
+			<vec3>-544 -688 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>38</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>52</int>
+			<vec3>448 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>53</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a4</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines4.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>54</int>
+			<vec3>-544 -848 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>108</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>55</int>
+			<vec3>0 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ChallengeCompleted</string>
+			<array><int>47</int><int>0</int><int>43</int><int>1000</int><int>317</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>56</int>
+			<vec3>96 720 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>103</int><int>102</int><int>101</int><int>112</int><int>116</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>57</int>
+			<vec3>24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>58</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>combo_sphere</string>
+			<dict>
+				<string name="UnitType">doodads/generic/combo_sphere_bouncing.unit</string>
+				<string name="SceneName">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>59</int>
+			<vec3>320 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>act_3</string>
+			<dict>
+				<string name="Flag">act_3</string>
+				<array name="OnTrue"><int>81</int><int>378</int></array>
+				<array name="OnFalse"><int>34</int><int>375</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>60</int>
+			<vec3>304 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>57</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>61</int>
+			<vec3>320 -288 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>true</string>
+			<array><int>58</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>62</int>
+			<vec3>24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>63</int>
+			<vec3>-624 -944 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_a</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>11</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>37</int><int>0</int><int>319</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>64</int>
+			<vec3>-544 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>18</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>65</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a3</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines3.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>66</int>
+			<vec3>-464 -1008 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>11</int><string>LastSpawned</string><int>327</int><string>LastSpawned</string><int>335</int><string>LastSpawned</string><int>343</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>39</int><int>0</int><int>69</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>67</int>
+			<vec3>96 656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>75</int><int>76</int><int>60</int><int>111</int><int>115</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlatformStat</string>
+			<int>68</int>
+			<vec3>512 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>combo</string>
+			<dict>
+				<int name="ActionType">1</int>
+				<string name="Name">combo</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>69</int>
+			<vec3>-544 -1008 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>50</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>70</int>
+			<vec3>-464 64 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>98</int><string>LastSpawned</string><int>350</int><string>LastSpawned</string><int>342</int><string>LastSpawned</string><int>334</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>82</int><int>0</int><int>64</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>71</int>
+			<vec3>-128 -688 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_wave</string>
+			<dict>
+				<string name="EventName">spawn_wave</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>72</int>
+			<vec3>320 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>act_0</string>
+			<dict>
+				<string name="Flag">act_0</string>
+				<array name="OnFalse"><int>45</int></array>
+				<array name="OnTrue"><int>34</int><int>375</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>73</int>
+			<vec3>-384 -688 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">spawn3</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>74</int>
+			<vec3>96 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>27</int><int>14</int><int>12</int><int>109</int><int>113</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>75</int>
+			<vec3>176 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>76</int>
+			<vec3>240 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>62</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>77</int>
+			<vec3>-256 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave_6</string>
+			<dict>
+				<string name="EventName">wave_6</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>78</int>
+			<vec3>-256 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave_4</string>
+			<dict>
+				<string name="EventName">wave_4</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>79</int>
+			<vec3>-256 -848 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave_2</string>
+			<dict>
+				<string name="EventName">wave_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>80</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a5</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines5.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>81</int>
+			<vec3>240 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>289</int>
+					<int>288</int>
+					<int>305</int>
+					<int>309</int>
+					<int>296</int>
+					<int>301</int>
+					<int>300</int>
+					<int>304</int>
+					<int>303</int>
+					<int>302</int>
+					<int>14</int>
+					<int>12</int>
+					<int>109</int>
+					<int>113</int>
+					<int>60</int>
+					<int>76</int>
+					<int>75</int>
+					<int>103</int>
+					<int>102</int>
+					<int>101</int>
+					<int>121</int>
+					<int>120</int>
+					<int>137</int>
+					<int>141</int>
+					<int>128</int>
+					<int>133</int>
+					<int>132</int>
+					<int>136</int>
+					<int>135</int>
+					<int>134</int>
+					<int>169</int>
+					<int>165</int>
+					<int>162</int>
+					<int>156</int>
+					<int>148</int>
+					<int>149</int>
+					<int>161</int>
+					<int>163</int>
+					<int>164</int>
+					<int>160</int>
+					<int>197</int>
+					<int>193</int>
+					<int>176</int>
+					<int>184</int>
+					<int>190</int>
+					<int>191</int>
+					<int>189</int>
+					<int>177</int>
+					<int>188</int>
+					<int>192</int>
+					<int>225</int>
+					<int>221</int>
+					<int>218</int>
+					<int>212</int>
+					<int>204</int>
+					<int>205</int>
+					<int>217</int>
+					<int>219</int>
+					<int>220</int>
+					<int>216</int>
+					<int>253</int>
+					<int>249</int>
+					<int>246</int>
+					<int>240</int>
+					<int>232</int>
+					<int>233</int>
+					<int>245</int>
+					<int>247</int>
+					<int>248</int>
+					<int>244</int>
+					<int>281</int>
+					<int>277</int>
+					<int>274</int>
+					<int>268</int>
+					<int>260</int>
+					<int>261</int>
+					<int>273</int>
+					<int>275</int>
+					<int>276</int>
+					<int>272</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>82</int>
+			<vec3>-384 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">spawn8</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>83</int>
+			<vec3>-384 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">spawn6</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>84</int>
+			<vec3>-464 -224 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>94</int><string>LastSpawned</string><int>348</int><string>LastSpawned</string><int>340</int><string>LastSpawned</string><int>332</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>83</int><int>0</int><int>86</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>85</int>
+			<vec3>-544 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>92</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>86</int>
+			<vec3>-544 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>93</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>87</int>
+			<vec3>-464 -544 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>53</int><string>LastSpawned</string><int>345</int><string>LastSpawned</string><int>337</int><string>LastSpawned</string><int>329</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>30</int><int>0</int><int>89</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>88</int>
+			<vec3>-384 -80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">spawn7</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>89</int>
+			<vec3>-544 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>33</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>90</int>
+			<vec3>-464 -384 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>80</int><string>LastSpawned</string><int>347</int><string>LastSpawned</string><int>339</int><string>LastSpawned</string><int>331</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>96</int><int>0</int><int>85</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>91</int>
+			<vec3>-624 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_a</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>80</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>94</int><int>0</int><int>323</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>92</int><vec3>-624 -384 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>Variable</string><int>93</int><vec3>-624 -224 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>94</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a6</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines6.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>95</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a7</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines7.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>96</int>
+			<vec3>-384 -384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">spawn5</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>97</int>
+			<vec3>-128 1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnItems</string>
+			<array>
+				<int>316</int>
+				<int>0</int>
+				<int>32</int>
+				<int>200</int>
+				<int>123</int>
+				<int>400</int>
+				<int>151</int>
+				<int>600</int>
+				<int>179</int>
+				<int>800</int>
+				<int>207</int>
+				<int>1000</int>
+				<int>235</int>
+				<int>1200</int>
+				<int>263</int>
+				<int>1400</int>
+				<int>291</int>
+				<int>1600</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>98</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_a8</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_mines8.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>99</int>
+			<vec3>-544 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>106</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>100</int>
+			<vec3>-464 -848 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>37</int><string>LastSpawned</string><int>344</int><string>LastSpawned</string><int>336</int><string>LastSpawned</string><int>328</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>28</int><int>0</int><int>54</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>101</int>
+			<vec3>304 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>57</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>102</int>
+			<vec3>240 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>62</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>103</int>
+			<vec3>176 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>104</int>
+			<vec3>-464 -80 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<int>12000</int>
+			<string>spawnunits</string>
+			<dict>
+				<string name="EventName">spawnunits</string>
+				<array name="#Units"><int>95</int><string>LastSpawned</string><int>349</int><string>LastSpawned</string><int>341</int><string>LastSpawned</string><int>333</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>88</int><int>0</int><int>99</int><int>0</int><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>105</int>
+			<vec3>-624 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_a</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>95</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>98</int><int>0</int><int>36</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>106</int><vec3>-624 -80 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>107</int>
+			<vec3>-624 -784 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_a</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>37</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>65</int><int>0</int><int>79</int><int>0</int><int>320</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>108</int><vec3>-624 -848 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>PickedRandom</string>
+			<int>109</int>
+			<vec3>368 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>110</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>110</int>
+			<vec3>24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>111</int>
+			<vec3>368 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>110</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>112</int>
+			<vec3>368 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>110</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>113</int>
+			<vec3>432 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>114</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>114</int>
+			<vec3>24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>115</int>
+			<vec3>432 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>114</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>116</int>
+			<vec3>432 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>114</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>117</int>
+			<vec3>16 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="Variable"><int>50</int></array>
+				<array name="OnTrue"><int>74</int></array>
+				<array name="OnFalse"><int>118</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>118</int>
+			<vec3>16 656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="Variable"><int>50</int></array>
+				<array name="OnTrue"><int>67</int></array>
+				<array name="OnFalse"><int>119</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>119</int>
+			<vec3>16 720 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="Variable"><int>50</int></array>
+				<array name="OnTrue"><int>56</int></array>
+				<array name="OnFalse"><int>46</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>120</int>
+			<vec3>688 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>127</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>121</int>
+			<vec3>624 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>129</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>122</int>
+			<vec3>560 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>124</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>123</int>
+			<vec3>688 880 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>136</int>
+					<int>135</int>
+					<int>134</int>
+					<int>132</int>
+					<int>133</int>
+					<int>128</int>
+					<int>122</int>
+					<int>121</int>
+					<int>120</int>
+					<int>140</int>
+					<int>139</int>
+					<int>137</int>
+					<int>144</int>
+					<int>143</int>
+					<int>141</int>
+					<int>383</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>124</int>
+			<vec3>64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>125</int>
+			<vec3>400 1168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">error</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>126</int>
+			<vec3>480 1104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>136</int><int>135</int><int>134</int><int>140</int><int>144</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>127</int>
+			<vec3>64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>128</int>
+			<vec3>688 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>127</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>129</int>
+			<vec3>64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>130</int>
+			<vec3>480 1040 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>132</int><int>133</int><int>128</int><int>139</int><int>143</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>131</int>
+			<vec3>480 976 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>122</int><int>121</int><int>120</int><int>137</int><int>141</int><int>383</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>132</int>
+			<vec3>560 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>124</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>133</int>
+			<vec3>624 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>129</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>134</int>
+			<vec3>688 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>127</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>135</int>
+			<vec3>624 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>129</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>136</int>
+			<vec3>560 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>124</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>137</int>
+			<vec3>752 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>138</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>138</int>
+			<vec3>64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>139</int>
+			<vec3>752 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>138</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>140</int>
+			<vec3>752 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>138</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>141</int>
+			<vec3>816 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>142</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>142</int>
+			<vec3>64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>143</int>
+			<vec3>816 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>142</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>144</int>
+			<vec3>816 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>142</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>145</int>
+			<vec3>400 976 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="OnTrue"><int>131</int></array>
+				<array name="OnFalse"><int>146</int></array>
+				<array name="Variable"><int>108</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>146</int>
+			<vec3>400 1040 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="OnTrue"><int>130</int></array>
+				<array name="OnFalse"><int>147</int></array>
+				<array name="Variable"><int>108</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>147</int>
+			<vec3>400 1104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>126</int></array>
+				<array name="OnFalse"><int>125</int></array>
+				<array name="Variable"><int>108</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>148</int>
+			<vec3>688 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>155</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>149</int>
+			<vec3>624 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>157</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>150</int>
+			<vec3>560 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>152</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>151</int>
+			<vec3>688 1392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>164</int>
+					<int>163</int>
+					<int>162</int>
+					<int>160</int>
+					<int>161</int>
+					<int>156</int>
+					<int>150</int>
+					<int>149</int>
+					<int>148</int>
+					<int>168</int>
+					<int>167</int>
+					<int>165</int>
+					<int>172</int>
+					<int>171</int>
+					<int>169</int>
+					<int>384</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>152</int>
+			<vec3>64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>153</int>
+			<vec3>400 1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">error</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>154</int>
+			<vec3>480 1616 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>164</int><int>163</int><int>162</int><int>168</int><int>172</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>155</int>
+			<vec3>64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>156</int>
+			<vec3>688 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>155</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>157</int>
+			<vec3>64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>158</int>
+			<vec3>480 1552 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>160</int><int>161</int><int>156</int><int>167</int><int>171</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>159</int>
+			<vec3>480 1488 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>150</int><int>149</int><int>148</int><int>165</int><int>169</int><int>384</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>160</int>
+			<vec3>560 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>152</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>161</int>
+			<vec3>624 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>157</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>162</int>
+			<vec3>688 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>155</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>163</int>
+			<vec3>624 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>157</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>164</int>
+			<vec3>560 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>152</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>165</int>
+			<vec3>752 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>166</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>166</int>
+			<vec3>64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>167</int>
+			<vec3>752 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>166</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>168</int>
+			<vec3>752 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>166</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>169</int>
+			<vec3>816 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>170</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>170</int>
+			<vec3>64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>171</int>
+			<vec3>816 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>170</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>172</int>
+			<vec3>816 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>170</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>173</int>
+			<vec3>400 1488 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="Variable"><int>38</int></array>
+				<array name="OnTrue"><int>159</int></array>
+				<array name="OnFalse"><int>174</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>174</int>
+			<vec3>400 1552 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="Variable"><int>38</int></array>
+				<array name="OnTrue"><int>158</int></array>
+				<array name="OnFalse"><int>175</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>175</int>
+			<vec3>400 1616 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="Variable"><int>38</int></array>
+				<array name="OnTrue"><int>154</int></array>
+				<array name="OnFalse"><int>153</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>176</int>
+			<vec3>304 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>183</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>177</int>
+			<vec3>240 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>185</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>178</int>
+			<vec3>176 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>179</int>
+			<vec3>304 1776 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>192</int>
+					<int>191</int>
+					<int>190</int>
+					<int>188</int>
+					<int>189</int>
+					<int>184</int>
+					<int>178</int>
+					<int>177</int>
+					<int>176</int>
+					<int>196</int>
+					<int>195</int>
+					<int>193</int>
+					<int>200</int>
+					<int>199</int>
+					<int>197</int>
+					<int>385</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>180</int>
+			<vec3>24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>181</int>
+			<vec3>16 2064 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">error</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>182</int>
+			<vec3>96 2000 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>192</int><int>191</int><int>190</int><int>196</int><int>200</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>183</int>
+			<vec3>24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>184</int>
+			<vec3>304 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>183</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>185</int>
+			<vec3>24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>186</int>
+			<vec3>96 1936 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>188</int><int>189</int><int>184</int><int>195</int><int>199</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>187</int>
+			<vec3>96 1872 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>178</int><int>177</int><int>176</int><int>193</int><int>197</int><int>385</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>188</int>
+			<vec3>176 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>189</int>
+			<vec3>240 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>185</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>190</int>
+			<vec3>304 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>183</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>191</int>
+			<vec3>240 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>185</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>192</int>
+			<vec3>176 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>193</int>
+			<vec3>368 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>194</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>194</int>
+			<vec3>24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>195</int>
+			<vec3>368 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>194</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>196</int>
+			<vec3>368 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>194</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>197</int>
+			<vec3>432 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>198</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>198</int>
+			<vec3>24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>199</int>
+			<vec3>432 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>198</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>200</int>
+			<vec3>432 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>198</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>201</int>
+			<vec3>16 1872 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="OnTrue"><int>187</int></array>
+				<array name="OnFalse"><int>202</int></array>
+				<array name="Variable"><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>202</int>
+			<vec3>16 1936 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="OnTrue"><int>186</int></array>
+				<array name="OnFalse"><int>203</int></array>
+				<array name="Variable"><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>203</int>
+			<vec3>16 2000 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>182</int></array>
+				<array name="OnFalse"><int>181</int></array>
+				<array name="Variable"><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>204</int>
+			<vec3>-336 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>211</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>205</int>
+			<vec3>-400 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>213</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>206</int>
+			<vec3>-464 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>208</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>207</int>
+			<vec3>-336 1776 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>220</int>
+					<int>219</int>
+					<int>218</int>
+					<int>216</int>
+					<int>217</int>
+					<int>212</int>
+					<int>206</int>
+					<int>205</int>
+					<int>204</int>
+					<int>224</int>
+					<int>223</int>
+					<int>221</int>
+					<int>228</int>
+					<int>227</int>
+					<int>225</int>
+					<int>386</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>208</int>
+			<vec3>-24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>209</int>
+			<vec3>-624 2064 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">error</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>210</int>
+			<vec3>-544 2000 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>220</int><int>219</int><int>218</int><int>224</int><int>228</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>211</int>
+			<vec3>-24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>212</int>
+			<vec3>-336 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>211</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>213</int>
+			<vec3>-24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>214</int>
+			<vec3>-544 1936 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>216</int><int>217</int><int>212</int><int>223</int><int>227</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>215</int>
+			<vec3>-544 1872 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>206</int><int>205</int><int>204</int><int>221</int><int>225</int><int>386</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>216</int>
+			<vec3>-464 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>208</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>217</int>
+			<vec3>-400 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>213</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>218</int>
+			<vec3>-336 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>211</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>219</int>
+			<vec3>-400 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>213</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>220</int>
+			<vec3>-464 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>208</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>221</int>
+			<vec3>-272 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>222</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>222</int>
+			<vec3>-24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>223</int>
+			<vec3>-272 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>222</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>224</int>
+			<vec3>-272 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>222</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>225</int>
+			<vec3>-208 1872 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>226</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>226</int>
+			<vec3>-24 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>227</int>
+			<vec3>-208 1936 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>226</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>228</int>
+			<vec3>-208 2000 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>226</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>229</int>
+			<vec3>-624 1872 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="OnTrue"><int>215</int></array>
+				<array name="OnFalse"><int>230</int></array>
+				<array name="Variable"><int>92</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>230</int>
+			<vec3>-624 1936 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="OnTrue"><int>214</int></array>
+				<array name="OnFalse"><int>231</int></array>
+				<array name="Variable"><int>92</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>231</int>
+			<vec3>-624 2000 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>210</int></array>
+				<array name="OnFalse"><int>209</int></array>
+				<array name="Variable"><int>92</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>232</int>
+			<vec3>-720 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>239</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>233</int>
+			<vec3>-784 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>241</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>234</int>
+			<vec3>-848 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>236</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>235</int>
+			<vec3>-720 1392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>248</int>
+					<int>247</int>
+					<int>246</int>
+					<int>244</int>
+					<int>245</int>
+					<int>240</int>
+					<int>234</int>
+					<int>233</int>
+					<int>232</int>
+					<int>252</int>
+					<int>251</int>
+					<int>249</int>
+					<int>256</int>
+					<int>255</int>
+					<int>253</int>
+					<int>387</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>236</int>
+			<vec3>-64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>237</int>
+			<vec3>-1008 1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">error</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>238</int>
+			<vec3>-928 1616 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>248</int><int>247</int><int>246</int><int>252</int><int>256</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>239</int>
+			<vec3>-64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>240</int>
+			<vec3>-720 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>239</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>241</int>
+			<vec3>-64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>242</int>
+			<vec3>-928 1552 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>244</int><int>245</int><int>240</int><int>251</int><int>255</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>243</int>
+			<vec3>-928 1488 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>234</int><int>233</int><int>232</int><int>249</int><int>253</int><int>387</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>244</int>
+			<vec3>-848 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>236</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>245</int>
+			<vec3>-784 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>241</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>246</int>
+			<vec3>-720 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>239</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>247</int>
+			<vec3>-784 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>241</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>248</int>
+			<vec3>-848 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>236</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>249</int>
+			<vec3>-656 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>250</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>250</int>
+			<vec3>-64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>251</int>
+			<vec3>-656 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>250</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>252</int>
+			<vec3>-656 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>250</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>253</int>
+			<vec3>-592 1488 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>254</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>254</int>
+			<vec3>-64 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>255</int>
+			<vec3>-592 1552 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>254</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>256</int>
+			<vec3>-592 1616 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>254</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>257</int>
+			<vec3>-1008 1488 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="OnTrue"><int>243</int></array>
+				<array name="OnFalse"><int>258</int></array>
+				<array name="Variable"><int>93</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>258</int>
+			<vec3>-1008 1552 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="OnTrue"><int>242</int></array>
+				<array name="OnFalse"><int>259</int></array>
+				<array name="Variable"><int>93</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>259</int>
+			<vec3>-1008 1616 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>238</int></array>
+				<array name="OnFalse"><int>237</int></array>
+				<array name="Variable"><int>93</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>260</int>
+			<vec3>-720 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>267</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>261</int>
+			<vec3>-784 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>269</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>262</int>
+			<vec3>-848 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>264</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>263</int>
+			<vec3>-720 880 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>276</int>
+					<int>275</int>
+					<int>274</int>
+					<int>272</int>
+					<int>273</int>
+					<int>268</int>
+					<int>262</int>
+					<int>261</int>
+					<int>260</int>
+					<int>280</int>
+					<int>279</int>
+					<int>277</int>
+					<int>284</int>
+					<int>283</int>
+					<int>281</int>
+					<int>388</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>264</int>
+			<vec3>-64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>265</int>
+			<vec3>-1008 1168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">error</string>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>266</int>
+			<vec3>-928 1104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>276</int><int>275</int><int>274</int><int>280</int><int>284</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>267</int>
+			<vec3>-64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>268</int>
+			<vec3>-720 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>267</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>269</int>
+			<vec3>-64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>270</int>
+			<vec3>-928 1040 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>272</int><int>273</int><int>268</int><int>279</int><int>283</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>271</int>
+			<vec3>-928 976 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>262</int><int>261</int><int>260</int><int>277</int><int>281</int><int>388</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>272</int>
+			<vec3>-848 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>264</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>273</int>
+			<vec3>-784 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>269</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>274</int>
+			<vec3>-720 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>267</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>275</int>
+			<vec3>-784 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>269</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>276</int>
+			<vec3>-848 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>264</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>277</int>
+			<vec3>-656 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>278</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>278</int>
+			<vec3>-64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>279</int>
+			<vec3>-656 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>278</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>280</int>
+			<vec3>-656 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>278</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>281</int>
+			<vec3>-592 976 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>282</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>282</int>
+			<vec3>-64 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>283</int>
+			<vec3>-592 1040 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>282</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>284</int>
+			<vec3>-592 1104 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>282</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>285</int>
+			<vec3>-1008 976 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="OnTrue"><int>271</int></array>
+				<array name="OnFalse"><int>286</int></array>
+				<array name="Variable"><int>106</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>286</int>
+			<vec3>-1008 1040 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="OnTrue"><int>270</int></array>
+				<array name="OnFalse"><int>287</int></array>
+				<array name="Variable"><int>106</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>287</int>
+			<vec3>-1008 1104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>266</int></array>
+				<array name="OnFalse"><int>265</int></array>
+				<array name="Variable"><int>106</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>288</int>
+			<vec3>-336 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>295</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>289</int>
+			<vec3>-400 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>297</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>290</int>
+			<vec3>-464 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>292</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>291</int>
+			<vec3>-336 496 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms">
+					<int>304</int>
+					<int>303</int>
+					<int>302</int>
+					<int>300</int>
+					<int>301</int>
+					<int>296</int>
+					<int>290</int>
+					<int>289</int>
+					<int>288</int>
+					<int>308</int>
+					<int>307</int>
+					<int>305</int>
+					<int>312</int>
+					<int>311</int>
+					<int>309</int>
+					<int>389</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>292</int>
+			<vec3>-24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>293</int>
+			<vec3>-624 784 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">error</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>294</int>
+			<vec3>-544 720 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>304</int><int>303</int><int>302</int><int>308</int><int>312</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>295</int>
+			<vec3>-24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>296</int>
+			<vec3>-336 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<array><int>295</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>297</int>
+			<vec3>-24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>298</int>
+			<vec3>-544 656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>300</int><int>301</int><int>296</int><int>307</int><int>311</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>299</int>
+			<vec3>-544 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>290</int><int>289</int><int>288</int><int>305</int><int>309</int><int>389</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>300</int>
+			<vec3>-464 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>292</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>301</int>
+			<vec3>-400 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>297</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>302</int>
+			<vec3>-336 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>295</int><int>0</int><int>380</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>303</int>
+			<vec3>-400 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>297</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>304</int>
+			<vec3>-464 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">65</int>
+			</dict>
+			<array><int>292</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>305</int>
+			<vec3>-272 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>306</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>306</int>
+			<vec3>-24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>307</int>
+			<vec3>-272 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>306</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>308</int>
+			<vec3>-272 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>306</int><int>0</int><int>381</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>309</int>
+			<vec3>-208 592 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>310</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>310</int>
+			<vec3>-24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>311</int>
+			<vec3>-208 656 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>310</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>312</int>
+			<vec3>-208 720 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+			<array><int>310</int><int>0</int><int>379</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>313</int>
+			<vec3>-624 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier1</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">1</int>
+				<array name="OnTrue"><int>299</int></array>
+				<array name="OnFalse"><int>314</int></array>
+				<array name="Variable"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>314</int>
+			<vec3>-624 656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier2</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">2</int>
+				<array name="OnTrue"><int>298</int></array>
+				<array name="OnFalse"><int>315</int></array>
+				<array name="Variable"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>315</int>
+			<vec3>-624 720 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tier3</string>
+			<dict>
+				<int name="Function">5</int>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>294</int></array>
+				<array name="OnFalse"><int>293</int></array>
+				<array name="Variable"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>316</int>
+			<vec3>-128 1152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CheckRewards</string>
+			<array>
+				<int>117</int>
+				<int>0</int>
+				<int>145</int>
+				<int>0</int>
+				<int>173</int>
+				<int>0</int>
+				<int>201</int>
+				<int>0</int>
+				<int>229</int>
+				<int>0</int>
+				<int>257</int>
+				<int>0</int>
+				<int>285</int>
+				<int>0</int>
+				<int>313</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>317</int>
+			<vec3>0 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>318</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>318</int>
+			<vec3>0 -400 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>killemall</string>
+			<dict>
+				<int name="Damage">0</int>
+				<int name="Frequency">250</int>
+				<int name="Filter">4</int>
+				<string name="Buff">actors/buffs.sval:suicide</string>
+				<array name="Areas"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>319</int>
+			<vec3>144 464 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem1</string>
+			<array><int>117</int><int>0</int><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>320</int>
+			<vec3>488 872 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem2</string>
+			<array><int>145</int><int>0</int><int>123</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>321</int>
+			<vec3>464 1376 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem3</string>
+			<array><int>173</int><int>0</int><int>151</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>322</int>
+			<vec3>152 1752 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem4</string>
+			<array><int>201</int><int>0</int><int>179</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>323</int>
+			<vec3>-456 1736 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem5</string>
+			<array><int>229</int><int>0</int><int>207</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>324</int>
+			<vec3>-880 1360 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnItem6</string>
+			<array><int>257</int><int>0</int><int>235</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>325</int>
+			<vec3>240 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>290</int>
+					<int>289</int>
+					<int>288</int>
+					<int>305</int>
+					<int>296</int>
+					<int>301</int>
+					<int>300</int>
+					<int>304</int>
+					<int>303</int>
+					<int>27</int>
+					<int>14</int>
+					<int>12</int>
+					<int>109</int>
+					<int>60</int>
+					<int>76</int>
+					<int>75</int>
+					<int>103</int>
+					<int>102</int>
+					<int>122</int>
+					<int>121</int>
+					<int>120</int>
+					<int>137</int>
+					<int>128</int>
+					<int>133</int>
+					<int>132</int>
+					<int>136</int>
+					<int>135</int>
+					<int>169</int>
+					<int>165</int>
+					<int>156</int>
+					<int>148</int>
+					<int>149</int>
+					<int>161</int>
+					<int>163</int>
+					<int>164</int>
+					<int>150</int>
+					<int>160</int>
+					<int>197</int>
+					<int>193</int>
+					<int>176</int>
+					<int>184</int>
+					<int>191</int>
+					<int>189</int>
+					<int>177</int>
+					<int>178</int>
+					<int>188</int>
+					<int>192</int>
+					<int>225</int>
+					<int>221</int>
+					<int>212</int>
+					<int>204</int>
+					<int>205</int>
+					<int>217</int>
+					<int>219</int>
+					<int>220</int>
+					<int>216</int>
+					<int>206</int>
+					<int>249</int>
+					<int>240</int>
+					<int>232</int>
+					<int>233</int>
+					<int>245</int>
+					<int>247</int>
+					<int>248</int>
+					<int>244</int>
+					<int>234</int>
+					<int>277</int>
+					<int>268</int>
+					<int>260</int>
+					<int>261</int>
+					<int>273</int>
+					<int>275</int>
+					<int>276</int>
+					<int>272</int>
+					<int>262</int>
+					<int>253</int>
+					<int>281</int>
+					<int>309</int>
+					<int>113</int>
+					<int>141</int>
+					<int>381</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>326</int>
+			<vec3>240 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>290</int>
+					<int>289</int>
+					<int>288</int>
+					<int>301</int>
+					<int>300</int>
+					<int>304</int>
+					<int>27</int>
+					<int>14</int>
+					<int>12</int>
+					<int>76</int>
+					<int>75</int>
+					<int>103</int>
+					<int>122</int>
+					<int>121</int>
+					<int>120</int>
+					<int>133</int>
+					<int>132</int>
+					<int>136</int>
+					<int>148</int>
+					<int>149</int>
+					<int>161</int>
+					<int>164</int>
+					<int>150</int>
+					<int>160</int>
+					<int>176</int>
+					<int>189</int>
+					<int>177</int>
+					<int>178</int>
+					<int>188</int>
+					<int>192</int>
+					<int>204</int>
+					<int>205</int>
+					<int>217</int>
+					<int>220</int>
+					<int>216</int>
+					<int>206</int>
+					<int>232</int>
+					<int>233</int>
+					<int>245</int>
+					<int>248</int>
+					<int>244</int>
+					<int>234</int>
+					<int>260</int>
+					<int>261</int>
+					<int>273</int>
+					<int>276</int>
+					<int>272</int>
+					<int>262</int>
+					<int>380</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>327</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b1</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>328</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b2</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>329</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b4</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison4.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>330</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b3</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison3.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>331</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b5</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison5.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>332</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b6</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison6.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>333</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b7</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison7.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>334</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_b8</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_prison8.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>335</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c1</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>336</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c2</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>337</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c4</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory4.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>338</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c3</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory3.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>339</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c5</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory5.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>340</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c6</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory6.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>341</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c7</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory7.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>342</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_c8</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_armory8.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>343</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d1</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>344</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d2</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>345</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d4</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives4.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>346</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d3</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives3.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>347</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d5</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives5.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>348</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d6</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives6.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>349</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d7</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives7.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>350</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>altar_sphere_d8</string>
+			<dict>
+				<string name="UnitType">actors/special/hellcube/hellcube_archives8.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>351</int>
+			<vec3>-544 -944 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>327</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>328</int><int>0</int><int>319</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>352</int>
+			<vec3>-464 -944 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>335</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>319</int><int>0</int><int>336</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>353</int>
+			<vec3>-384 -944 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>343</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>319</int><int>0</int><int>344</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>354</int>
+			<vec3>-544 -784 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>328</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>79</int><int>0</int><int>320</int><int>0</int><int>330</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>355</int>
+			<vec3>-464 -784 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>336</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>79</int><int>0</int><int>320</int><int>0</int><int>338</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>356</int>
+			<vec3>-384 -784 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>344</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>79</int><int>0</int><int>320</int><int>0</int><int>346</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>357</int>
+			<vec3>-544 -624 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>330</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>321</int><int>0</int><int>329</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>358</int>
+			<vec3>-464 -624 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>338</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>321</int><int>0</int><int>337</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>359</int>
+			<vec3>-384 -624 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>346</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>321</int><int>0</int><int>345</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>360</int>
+			<vec3>-544 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>329</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>78</int><int>0</int><int>322</int><int>0</int><int>331</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>361</int>
+			<vec3>-464 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>337</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>78</int><int>0</int><int>322</int><int>0</int><int>339</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>362</int>
+			<vec3>-384 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>345</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>78</int><int>0</int><int>322</int><int>0</int><int>347</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>363</int>
+			<vec3>-544 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>331</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>323</int><int>0</int><int>332</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>364</int>
+			<vec3>-464 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>339</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>323</int><int>0</int><int>340</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>365</int>
+			<vec3>-384 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>347</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>323</int><int>0</int><int>348</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>366</int>
+			<vec3>-544 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>332</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>77</int><int>0</int><int>324</int><int>0</int><int>333</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>367</int>
+			<vec3>-464 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>340</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>77</int><int>0</int><int>324</int><int>0</int><int>341</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>368</int>
+			<vec3>-384 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>348</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>77</int><int>0</int><int>324</int><int>0</int><int>349</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>369</int>
+			<vec3>-544 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>333</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int><int>334</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>370</int>
+			<vec3>-464 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>341</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int><int>342</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>371</int>
+			<vec3>-384 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>349</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int><int>350</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>372</int>
+			<vec3>-544 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_b</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>334</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>55</int><int>0</int><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>373</int>
+			<vec3>-464 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_c</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>342</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>55</int><int>0</int><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>374</int>
+			<vec3>-384 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>destroyed_d</string>
+			<dict>
+				<string name="EventName">destroyed</string>
+				<array name="#Units"><int>350</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>55</int><int>0</int><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>375</int>
+			<vec3>400 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnSphereA</string>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>376</int>
+			<vec3>400 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnSphereB</string>
+			<array><int>327</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>377</int>
+			<vec3>400 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnSphereC</string>
+			<array><int>335</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>378</int>
+			<vec3>400 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnSphereD</string>
+			<array><int>343</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>379</int>
+			<vec3>0 1088 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>no_more_legendary</string>
+			<dict>
+				<array name="Scripts">
+					<int>309</int>
+					<int>311</int>
+					<int>312</int>
+					<int>281</int>
+					<int>283</int>
+					<int>284</int>
+					<int>253</int>
+					<int>255</int>
+					<int>256</int>
+					<int>225</int>
+					<int>227</int>
+					<int>228</int>
+					<int>197</int>
+					<int>199</int>
+					<int>200</int>
+					<int>169</int>
+					<int>171</int>
+					<int>172</int>
+					<int>141</int>
+					<int>143</int>
+					<int>144</int>
+					<int>116</int>
+					<int>115</int>
+					<int>113</int>
+				</array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>380</int>
+			<vec3>0 960 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>no_more_rare</string>
+			<dict>
+				<array name="Scripts">
+					<int>12</int>
+					<int>60</int>
+					<int>101</int>
+					<int>120</int>
+					<int>128</int>
+					<int>134</int>
+					<int>148</int>
+					<int>156</int>
+					<int>162</int>
+					<int>176</int>
+					<int>184</int>
+					<int>190</int>
+					<int>218</int>
+					<int>204</int>
+					<int>212</int>
+					<int>246</int>
+					<int>240</int>
+					<int>232</int>
+					<int>274</int>
+					<int>268</int>
+					<int>260</int>
+					<int>302</int>
+					<int>296</int>
+					<int>288</int>
+				</array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>381</int>
+			<vec3>0 1024 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>no_more_epic</string>
+			<dict>
+				<array name="Scripts">
+					<int>137</int>
+					<int>139</int>
+					<int>140</int>
+					<int>112</int>
+					<int>111</int>
+					<int>109</int>
+					<int>308</int>
+					<int>307</int>
+					<int>305</int>
+					<int>277</int>
+					<int>279</int>
+					<int>280</int>
+					<int>249</int>
+					<int>251</int>
+					<int>252</int>
+					<int>221</int>
+					<int>223</int>
+					<int>224</int>
+					<int>196</int>
+					<int>195</int>
+					<int>193</int>
+					<int>168</int>
+					<int>167</int>
+					<int>165</int>
+				</array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>382</int>
+			<vec3>240 536 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>62</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>383</int>
+			<vec3>624 920 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>129</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>384</int>
+			<vec3>624 1432 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>157</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>385</int>
+			<vec3>240 1816 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>185</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>386</int>
+			<vec3>-400 1816 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>213</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>387</int>
+			<vec3>-784 1432 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>241</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>388</int>
+			<vec3>-784 920 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>269</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>389</int>
+			<vec3>-400 536 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>uncommon_act1</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>297</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AddNotification</string>
+			<int>390</int>
+			<vec3>448 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.combounlocked</string>
+				<string name="SubtextIcon">icon-combo</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

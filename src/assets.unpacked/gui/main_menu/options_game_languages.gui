@@ -1,0 +1,46 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/main_menu/checkbox_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect width="160" height="160" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="156" height="18" offset="2 2" flow="hbox">
+					<!-- Headline -->
+					<rect width="135" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".mainmenu.languages.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="156" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- List -->
+				<scrollrect id="list-container" offset="2 23" width="142" height="135" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<checkboxgroup id="list" flow="vbox" func="set-language" offset="10 0">
+						<checkbox spriteset="radiobox" font="gui/fonts/arial11.fnt" text="English" value="english" color="#FFFFFFFF" />
+					</checkboxgroup>
+					<checkbox id="template" visible="false" spriteset="radiobox" font="gui/fonts/arial11.fnt" text="XXX" value="xxx" color="#FFFFFFFF" />
+				</scrollrect>
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list-container" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="135" offset="144 23" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="135" offset="155 23" spriteset="gui/variable/3pxbar_vert.sval" />
+			</rect>
+		</group></group>
+	</doc>
+</gui>

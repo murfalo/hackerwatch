@@ -1,0 +1,194 @@
+<dict>
+	<string name="name">.skills.thief.twin-daggers</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>0 72 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::MeleeSwing</string>
+			
+			<int name="cooldown">375</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">effects/players/slash_210.effect</string>
+			<string name="snd">event:/player/thief/knife_swing</string>
+			<string name="hit-snd">event:/player/thief/knife_hit</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.4</float>
+			
+			<int name="arc">210</int>
+			<int name="rays">16</int>
+			<int name="dist">15</int>
+			<int name="duration">300</int>
+			<int name="swings">2</int>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">6</int>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::MeleeSwing</string>
+			
+			<int name="cooldown">375</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">effects/players/slash_210.effect</string>
+			<string name="snd">event:/player/thief/knife_swing</string>
+			<string name="hit-snd">event:/player/thief/knife_hit</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			
+			<int name="arc">210</int>
+			<int name="rays">16</int>
+			<int name="dist">15</int>
+			<int name="duration">300</int>
+			<int name="swings">2</int>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">8</int>
+			</dict>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::MeleeSwing</string>
+			
+			<int name="cooldown">375</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">effects/players/slash_210.effect</string>
+			<string name="snd">event:/player/thief/knife_swing</string>
+			<string name="hit-snd">event:/player/thief/knife_hit</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.6</float>
+			
+			<int name="arc">210</int>
+			<int name="rays">16</int>
+			<int name="dist">15</int>
+			<int name="duration">300</int>
+			<int name="swings">2</int>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">10</int>
+			</dict>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::MeleeSwing</string>
+			
+			<int name="cooldown">375</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">effects/players/slash_210.effect</string>
+			<string name="snd">event:/player/thief/knife_swing</string>
+			<string name="hit-snd">event:/player/thief/knife_hit</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.7</float>
+
+			<int name="arc">210</int>
+			<int name="rays">16</int>
+			<int name="dist">15</int>
+			<int name="duration">300</int>
+			<int name="swings">2</int>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">12</int>
+			</dict>
+		</dict>
+		
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::MeleeSwing</string>
+			
+			<int name="cooldown">375</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">effects/players/slash_210.effect</string>
+			<string name="snd">event:/player/thief/knife_swing</string>
+			<string name="hit-snd">event:/player/thief/knife_hit</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.8</float>
+
+			<int name="arc">210</int>
+			<int name="rays">16</int>
+			<int name="dist">15</int>
+			<int name="duration">300</int>
+			<int name="swings">2</int>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">14</int>
+			</dict>
+		</dict>
+		
+		<!-- Level 6 -->
+		<dict>
+			<string name="class">Skills::MeleeSwing</string>
+			
+			<int name="cooldown">375</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">effects/players/slash_210.effect</string>
+			<string name="snd">event:/player/thief/knife_swing</string>
+			<string name="hit-snd">event:/player/thief/knife_hit</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.9</float>
+
+			<int name="arc">210</int>
+			<int name="rays">16</int>
+			<int name="dist">15</int>
+			<int name="duration">300</int>
+			<int name="swings">2</int>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">16</int>
+			</dict>
+		</dict>
+	</array>
+	
+	<!-- Mercenary primary -->
+	<string name="mercenary-primary-description">.skills.thief.twin-daggers.merc</string>
+	<dict name="mercenary-primary">
+		<string name="class">Skills::MeleeSwing</string>
+		
+		<int name="cooldown">375</int>
+		<int name="castpoint">0</int>
+		
+		<string name="fx">effects/players/slash_210.effect</string>
+		<string name="snd">event:/player/thief/knife_swing</string>
+		<string name="hit-snd">event:/player/thief/knife_hit</string>
+		<string name="anim">attack 8</string>
+		<float name="speed-mul">0.9</float>
+
+		<int name="arc">210</int>
+		<int name="rays">16</int>
+		<int name="dist">15</int>
+		<int name="duration">300</int>
+		<int name="swings">2</int>
+		<bool name="destroy-projectiles">true</bool>
+		
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="physical">16</int>
+		</dict>
+	</dict>
+</dict>

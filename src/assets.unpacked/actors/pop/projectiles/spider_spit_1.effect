@@ -1,0 +1,43 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="10" />
+	
+	%// Spiderspit
+	<sprite looping="true" origin="16 6" texture="./spider_spit.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="50">0 0 22 11</frame>
+		<frame time="50">22 0 22 11</frame>
+		<frame time="50">0 11 22 11</frame>
+		<frame time="50">22 11 22 11</frame>
+		<frame time="50">0 22 22 11</frame>
+		<frame time="50">22 22 22 11</frame>
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<size value="(sin(t*pi)*15+40)" />
+		
+		<color-r value="50/255" />
+		<color-g value="100/255" />
+		<color-b value="4/255" />
+		<color-a value="0" />
+	</light>
+	
+</effect>

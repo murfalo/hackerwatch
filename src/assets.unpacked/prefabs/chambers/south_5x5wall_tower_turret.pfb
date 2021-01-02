@@ -1,0 +1,103 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/chambers/h_16.unit"><vec2>48 48</vec2><int>13</int></array>
+		<array name="doodads/walls/chambers/_deco_floor_carpet_tile.unit">
+			<vec2>16 0</vec2>
+			<int>23</int>
+			<vec2>24 0</vec2>
+			<int>24</int>
+			<vec2>32 0</vec2>
+			<int>25</int>
+			<vec2>40 0</vec2>
+			<int>26</int>
+			<vec2>48 0</vec2>
+			<int>27</int>
+			<vec2>56 0</vec2>
+			<int>28</int>
+			<vec2>56 8</vec2>
+			<int>29</int>
+			<vec2>56 16</vec2>
+			<int>30</int>
+			<vec2>16 8</vec2>
+			<int>31</int>
+		</array>
+		<array name="doodads/generic/trap_turret_flame.unit"><vec2>40 24</vec2><int>14</int></array>
+		<array name="doodads/special/color_chambers_16.unit">
+			<vec2>72 -8</vec2>
+			<int>1</int>
+			<vec2>72 8</vec2>
+			<int>2</int>
+			<vec2>72 24</vec2>
+			<int>3</int>
+			<vec2>-8 24</vec2>
+			<int>4</int>
+			<vec2>-8 8</vec2>
+			<int>5</int>
+			<vec2>-8 -8</vec2>
+			<int>6</int>
+		</array>
+		<array name="doodads/walls/chambers/crn_nw.unit"><vec2>64 0</vec2><int>7</int></array>
+		<array name="doodads/special/color_chambers_32.unit"><vec2>56 56</vec2><int>8</int><vec2>24 56</vec2><int>9</int><vec2>-8 56</vec2><int>10</int></array>
+		<array name="doodads/walls/chambers/v.unit"><vec2>0 0</vec2><int>11</int><vec2>64 0</vec2><int>12</int></array>
+		<array name="doodads/walls/chambers/crn_se.unit"><vec2>64 48</vec2><int>18</int></array>
+		<array name="doodads/walls/chambers/h.unit"><vec2>16 48</vec2><int>15</int></array>
+		<array name="doodads/walls/chambers/crn_ne.unit"><vec2>0 0</vec2><int>17</int></array>
+		<array name="doodads/walls/chambers/crn_sw.unit"><vec2>0 48</vec2><int>16</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>TimerTrigger</string>
+			<int>19</int>
+			<vec3>40 -88 0</vec3>
+			<bool>t</bool>
+			<int>20</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">50</int>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>20</int>
+			<vec3>40 -136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>19</int></array>
+				<int name="TriggerTimes">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>21</int>
+			<vec3>40 5 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>N</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Direction">-90</int>
+				<int name="Spread">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>22</int>
+			<vec3>40 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">2300</int>
+			</dict>
+			<array><int>20</int><int>0</int></array>
+		</array>
+	</array>
+</dict>

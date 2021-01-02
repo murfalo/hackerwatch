@@ -1,0 +1,2426 @@
+<dict>
+	<array name="scripts">
+		<array><string>LevelStart</string><int>527</int><vec3>0 512 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>CheckTimeOfDay</string>
+			<int>528</int>
+			<vec3>-192 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="OnNight"><int>530</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>529</int>
+			<vec3>128 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>430</int></array>
+				<string name="State">open</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>530</int>
+			<vec3>-128 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>67</int><int>66</int><int>70</int><int>73</int><int>68</int><int>69</int><int>71</int><int>72</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>531</int>
+			<vec3>128 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableExit</string>
+			<dict>
+				<array name="Scripts"><int>537</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>532</int>
+			<vec3>128 -200 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>4</int></array>
+			</dict>
+			<array><int>529</int><int>0</int><int>531</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LevelExit</string>
+			<int>533</int>
+			<vec3>240 -16 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Level">levels/boss_dragon.lvl</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>534</int>
+			<vec3>0 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/bridge</string>
+			</dict>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>535</int>
+			<vec3>192 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>7</int></array>
+				<array name="OnCanceled"><int>536</int></array>
+				<array name="OnAllEntered"><int>540</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>536</int>
+			<vec3>128 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>542</int><int>0</int><int>538</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>537</int>
+			<vec3>192 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>7</int></array>
+				<int name="Icon">6</int>
+			</dict>
+			<array><int>539</int><int>0</int><int>533</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>538</int>
+			<vec3>160 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>539</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>539</int>
+			<vec3>144 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">.meta.info.gatherparty</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>540</int>
+			<vec3>256 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>543</int><int>0</int><int>541</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>541</int>
+			<vec3>288 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>533</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>542</int>
+			<vec3>96 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>533</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>543</int>
+			<vec3>224 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>539</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="system/light2_L.png">
+			<array>
+				<vec2>1326 316</vec2>
+				<int>523</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.768151 0.428691 0.00604883 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>1258 -6</vec2>
+				<int>524</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.768151 0.428691 0.00604883 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>904 346</vec2>
+				<int>525</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.768151 0.428691 0.00604883 0</vec4>
+					<float name="size">1000</float>
+					<float name="overbright">10</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>896 123</vec2>
+				<int>526</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.768151 0.428691 0.00604883 0</vec4>
+					<float name="size">1000</float>
+					<float name="overbright">10</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/__end_door.unit"><vec2>-32 -265</vec2><int>430</int></array>
+		<array name="doodads/walls/battlement/_deco_window_wood_big_w.unit"><vec2>100 -228</vec2><int>497</int><vec2>-156 -228</vec2><int>498</int></array>
+		<array name="doodads/walls/battlement/_wall_e.unit">
+			<array>
+				<vec2>176 -176</vec2>
+				<int>404</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -144</vec2>
+				<int>403</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -112</vec2>
+				<int>402</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -592</vec2>
+				<int>401</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -560</vec2>
+				<int>400</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -528</vec2>
+				<int>399</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -496</vec2>
+				<int>398</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -464</vec2>
+				<int>397</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -432</vec2>
+				<int>396</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -400</vec2>
+				<int>395</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -336</vec2>
+				<int>413</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -400</vec2>
+				<int>412</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -304</vec2>
+				<int>414</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -304</vec2>
+				<int>415</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -272</vec2>
+				<int>416</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -144</vec2>
+				<int>425</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -464</vec2>
+				<int>424</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -496</vec2>
+				<int>423</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -528</vec2>
+				<int>422</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -560</vec2>
+				<int>421</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -592</vec2>
+				<int>420</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -176</vec2>
+				<int>419</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -208</vec2>
+				<int>418</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -240</vec2>
+				<int>417</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -336</vec2>
+				<int>411</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 -368</vec2>
+				<int>410</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -432</vec2>
+				<int>409</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -368</vec2>
+				<int>408</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -272</vec2>
+				<int>407</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -240</vec2>
+				<int>406</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 -208</vec2>
+				<int>405</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_deco_window_stone_big.unit">
+			<array>
+				<vec2>-128 -224</vec2>
+				<int>427</int>
+				<dict>
+					<int name="layer">-40</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -224</vec2>
+				<int>426</int>
+				<dict>
+					<int name="layer">-40</int>
+				</dict>
+			</array>
+		</array>
+		<array name="items/health_apple.unit"><vec2>26 473</vec2><int>522</int></array>
+		<array name="doodads/walls/battlement/__end_entrance.unit"><vec2>-72 440</vec2><int>428</int></array>
+		<array name="doodads/walls/battlement/__end_entrance_wall.unit"><vec2>-24 454</vec2><int>429</int></array>
+		<array name="doodads/terrain/world_aridara.unit"><vec2>-2080 464</vec2><int>392</int></array>
+		<array name="doodads/terrain/world_aridara_palm.unit">
+			<vec2>-1232 224</vec2>
+			<int>259</int>
+			<vec2>-1088 304</vec2>
+			<int>260</int>
+			<vec2>-1056 240</vec2>
+			<int>261</int>
+			<vec2>-1104 128</vec2>
+			<int>262</int>
+			<vec2>-1200 720</vec2>
+			<int>263</int>
+			<vec2>-1136 -32</vec2>
+			<int>264</int>
+			<vec2>-1200 448</vec2>
+			<int>265</int>
+			<vec2>-1120 256</vec2>
+			<int>266</int>
+			<vec2>-1168 432</vec2>
+			<int>267</int>
+			<vec2>-1088 208</vec2>
+			<int>268</int>
+			<vec2>-1072 32</vec2>
+			<int>269</int>
+			<vec2>-1200 208</vec2>
+			<int>270</int>
+			<vec2>-1072 160</vec2>
+			<int>271</int>
+			<vec2>-1072 208</vec2>
+			<int>272</int>
+			<vec2>-1168 0</vec2>
+			<int>273</int>
+		</array>
+		<array name="doodads/walls/battlement/__end_bridge.unit"><vec2>-48 120</vec2><int>496</int><vec2>-48 -200</vec2><int>495</int></array>
+		<array name="doodads/special/_minimap_dark_256.unit">
+			<vec2>816 64</vec2>
+			<int>554</int>
+			<vec2>-576 1480</vec2>
+			<int>591</int>
+			<vec2>-832 1480</vec2>
+			<int>590</int>
+			<vec2>-320 1480</vec2>
+			<int>589</int>
+			<vec2>-576 1224</vec2>
+			<int>588</int>
+			<vec2>320 712</vec2>
+			<int>45</int>
+			<vec2>-320 1224</vec2>
+			<int>586</int>
+			<vec2>-832 1224</vec2>
+			<int>585</int>
+			<vec2>-304 472</vec2>
+			<int>184</int>
+			<vec2>48 472</vec2>
+			<int>185</int>
+			<vec2>48 64</vec2>
+			<int>186</int>
+			<vec2>-304 -192</vec2>
+			<int>187</int>
+			<vec2>48 320</vec2>
+			<int>188</int>
+			<vec2>-320 712</vec2>
+			<int>189</int>
+			<vec2>64 712</vec2>
+			<int>190</int>
+			<vec2>-104 840</vec2>
+			<int>191</int>
+			<vec2>-192 -236</vec2>
+			<int>192</int>
+			<vec2>48 -192</vec2>
+			<int>193</int>
+			<vec2>-304 64</vec2>
+			<int>194</int>
+			<vec2>-304 320</vec2>
+			<int>195</int>
+			<vec2>-560 472</vec2>
+			<int>567</int>
+			<vec2>-560 320</vec2>
+			<int>566</int>
+			<vec2>64 1224</vec2>
+			<int>565</int>
+			<vec2>576 1224</vec2>
+			<int>564</int>
+			<vec2>832 1224</vec2>
+			<int>563</int>
+			<vec2>320 1224</vec2>
+			<int>562</int>
+			<vec2>64 968</vec2>
+			<int>561</int>
+			<vec2>576 968</vec2>
+			<int>560</int>
+			<vec2>320 968</vec2>
+			<int>559</int>
+			<vec2>832 968</vec2>
+			<int>558</int>
+			<vec2>816 320</vec2>
+			<int>557</int>
+			<vec2>816 480</vec2>
+			<int>556</int>
+			<vec2>816 -192</vec2>
+			<int>555</int>
+			<vec2>-1088 1480</vec2>
+			<int>592</int>
+			<vec2>560 -448</vec2>
+			<int>593</int>
+			<vec2>560 64</vec2>
+			<int>553</int>
+			<vec2>560 -192</vec2>
+			<int>552</int>
+			<vec2>560 480</vec2>
+			<int>551</int>
+			<vec2>-304 -448</vec2>
+			<int>594</int>
+			<vec2>-1088 1224</vec2>
+			<int>587</int>
+			<vec2>560 320</vec2>
+			<int>550</int>
+			<vec2>304 320</vec2>
+			<int>549</int>
+			<vec2>-192 -492</vec2>
+			<int>595</int>
+			<vec2>48 -448</vec2>
+			<int>596</int>
+			<vec2>64 1480</vec2>
+			<int>597</int>
+			<vec2>576 1480</vec2>
+			<int>598</int>
+			<vec2>832 1480</vec2>
+			<int>599</int>
+			<vec2>320 1480</vec2>
+			<int>600</int>
+			<vec2>-104 1096</vec2>
+			<int>601</int>
+			<vec2>-104 1352</vec2>
+			<int>602</int>
+			<vec2>-104 1608</vec2>
+			<int>603</int>
+			<vec2>816 -448</vec2>
+			<int>604</int>
+			<vec2>-816 -448</vec2>
+			<int>605</int>
+			<vec2>-560 -448</vec2>
+			<int>606</int>
+			<vec2>-1072 -448</vec2>
+			<int>608</int>
+			<vec2>-1072 320</vec2>
+			<int>576</int>
+			<vec2>-1072 -704</vec2>
+			<int>609</int>
+			<vec2>560 -704</vec2>
+			<int>610</int>
+			<vec2>-304 -704</vec2>
+			<int>611</int>
+			<vec2>-192 -748</vec2>
+			<int>612</int>
+			<vec2>48 -704</vec2>
+			<int>613</int>
+			<vec2>816 -704</vec2>
+			<int>614</int>
+			<vec2>-816 -704</vec2>
+			<int>615</int>
+			<vec2>-560 -704</vec2>
+			<int>616</int>
+			<vec2>304 -704</vec2>
+			<int>617</int>
+			<vec2>304 -960</vec2>
+			<int>618</int>
+			<vec2>-1072 -960</vec2>
+			<int>619</int>
+			<vec2>560 -960</vec2>
+			<int>620</int>
+			<vec2>-304 -960</vec2>
+			<int>621</int>
+			<vec2>-192 -1004</vec2>
+			<int>622</int>
+			<vec2>48 -960</vec2>
+			<int>623</int>
+			<vec2>816 -960</vec2>
+			<int>624</int>
+			<vec2>-816 -960</vec2>
+			<int>625</int>
+			<vec2>304 -448</vec2>
+			<int>607</int>
+			<vec2>-560 -960</vec2>
+			<int>626</int>
+			<vec2>304 480</vec2>
+			<int>547</int>
+			<vec2>304 -192</vec2>
+			<int>546</int>
+			<vec2>832 712</vec2>
+			<int>545</int>
+			<vec2>-1088 968</vec2>
+			<int>584</int>
+			<vec2>576 712</vec2>
+			<int>544</int>
+			<vec2>304 64</vec2>
+			<int>548</int>
+			<vec2>-576 968</vec2>
+			<int>583</int>
+			<vec2>-832 968</vec2>
+			<int>582</int>
+			<vec2>-320 968</vec2>
+			<int>581</int>
+			<vec2>-1088 712</vec2>
+			<int>580</int>
+			<vec2>-1072 64</vec2>
+			<int>579</int>
+			<vec2>-1072 -192</vec2>
+			<int>578</int>
+			<vec2>-1072 472</vec2>
+			<int>577</int>
+			<vec2>-816 320</vec2>
+			<int>575</int>
+			<vec2>-816 472</vec2>
+			<int>574</int>
+			<vec2>-816 -192</vec2>
+			<int>573</int>
+			<vec2>-816 64</vec2>
+			<int>572</int>
+			<vec2>-832 712</vec2>
+			<int>571</int>
+			<vec2>-560 64</vec2>
+			<int>570</int>
+			<vec2>-576 712</vec2>
+			<int>569</int>
+			<vec2>-560 -192</vec2>
+			<int>568</int>
+		</array>
+		<array name="doodads/terrain/world_shaftlocke_top.unit"><vec2>664 680</vec2><int>394</int></array>
+		<array name="doodads/generic/chest_ace.unit"><vec2>-18 468</vec2><int>77</int></array>
+		<array name="doodads/generic/lamp_brazier.unit">
+			<array>
+				<vec2>32 -88</vec2>
+				<int>72</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 232</vec2>
+				<int>73</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-32 -88</vec2>
+				<int>71</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-32 232</vec2>
+				<int>70</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 72</vec2>
+				<int>69</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-32 72</vec2>
+				<int>68</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 392</vec2>
+				<int>67</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-32 392</vec2>
+				<int>66</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/__end_entrance_railing.unit"><vec2>-72 532</vec2><int>5</int></array>
+		<array name="doodads/walls/battlement/__end_bridge_snow.unit"><vec2>-40 -104</vec2><int>46</int></array>
+		<array name="doodads/terrain/fog_low.unit">
+			<vec2>346 254</vec2>
+			<int>115</int>
+			<vec2>-45 71</vec2>
+			<int>116</int>
+			<vec2>55 653</vec2>
+			<int>117</int>
+			<vec2>56 858</vec2>
+			<int>118</int>
+			<vec2>222 -162</vec2>
+			<int>119</int>
+			<vec2>-92 536</vec2>
+			<int>91</int>
+			<vec2>56 616</vec2>
+			<int>121</int>
+			<vec2>34 231</vec2>
+			<int>122</int>
+			<vec2>-342 885</vec2>
+			<int>123</int>
+			<vec2>-22 -133</vec2>
+			<int>124</int>
+			<vec2>-162 -85</vec2>
+			<int>125</int>
+			<vec2>83 124</vec2>
+			<int>126</int>
+			<vec2>-285 -102</vec2>
+			<int>127</int>
+			<vec2>-28 399</vec2>
+			<int>128</int>
+			<vec2>-294 723</vec2>
+			<int>78</int>
+			<vec2>-352 176</vec2>
+			<int>79</int>
+			<vec2>107 461</vec2>
+			<int>80</int>
+			<vec2>235 -156</vec2>
+			<int>120</int>
+			<vec2>-50 843</vec2>
+			<int>81</int>
+			<vec2>-232 669</vec2>
+			<int>82</int>
+			<vec2>-74 -28</vec2>
+			<int>83</int>
+			<vec2>80 274</vec2>
+			<int>84</int>
+			<vec2>-384 -16</vec2>
+			<int>85</int>
+			<vec2>63 243</vec2>
+			<int>86</int>
+			<vec2>352 544</vec2>
+			<int>87</int>
+			<vec2>368 432</vec2>
+			<int>88</int>
+			<vec2>38 -77</vec2>
+			<int>89</int>
+			<vec2>-11 208</vec2>
+			<int>90</int>
+			<vec2>-224 -162</vec2>
+			<int>92</int>
+			<vec2>-384 803</vec2>
+			<int>93</int>
+			<vec2>325 54</vec2>
+			<int>94</int>
+			<vec2>-49 302</vec2>
+			<int>95</int>
+			<vec2>-166 789</vec2>
+			<int>96</int>
+			<vec2>204 -130</vec2>
+			<int>97</int>
+			<vec2>267 20</vec2>
+			<int>98</int>
+			<vec2>96 695</vec2>
+			<int>99</int>
+			<vec2>-373 -174</vec2>
+			<int>100</int>
+			<vec2>84 421</vec2>
+			<int>101</int>
+			<vec2>-17 408</vec2>
+			<int>102</int>
+			<vec2>-35 468</vec2>
+			<int>103</int>
+			<vec2>-194 711</vec2>
+			<int>104</int>
+			<vec2>32 32</vec2>
+			<int>105</int>
+			<vec2>-305 775</vec2>
+			<int>106</int>
+			<vec2>352 384</vec2>
+			<int>107</int>
+			<vec2>198 -176</vec2>
+			<int>108</int>
+			<vec2>314 254</vec2>
+			<int>109</int>
+			<vec2>-28 216</vec2>
+			<int>110</int>
+			<vec2>-161 -200</vec2>
+			<int>111</int>
+			<vec2>166 -167</vec2>
+			<int>112</int>
+			<vec2>-59 652</vec2>
+			<int>113</int>
+			<vec2>-26 107</vec2>
+			<int>114</int>
+		</array>
+		<array name="doodads/generic/lamp_torch.unit">
+			<array>
+				<vec2>-38 474</vec2>
+				<int>76</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>44 -204</vec2>
+			<int>75</int>
+			<vec2>-44 -208</vec2>
+			<int>74</int>
+		</array>
+		<array name="doodads/walls/battlement/_deco_window_wood_big_e.unit">
+			<vec2>-92 -228</vec2>
+			<int>2</int>
+			<array>
+				<vec2>164 -228</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">-40</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_wall_16x32.unit">
+			<array>
+				<vec2>160 -144</vec2>
+				<int>434</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -208</vec2>
+				<int>435</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -272</vec2>
+				<int>436</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -176</vec2>
+				<int>437</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -304</vec2>
+				<int>438</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -432</vec2>
+				<int>439</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -112</vec2>
+				<int>440</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -336</vec2>
+				<int>441</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -240</vec2>
+				<int>442</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -144</vec2>
+				<int>443</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -560</vec2>
+				<int>445</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -368</vec2>
+				<int>446</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -464</vec2>
+				<int>447</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -336</vec2>
+				<int>448</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -464</vec2>
+				<int>449</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -496</vec2>
+				<int>450</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -528</vec2>
+				<int>451</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -560</vec2>
+				<int>452</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -592</vec2>
+				<int>453</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -240</vec2>
+				<int>431</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -432</vec2>
+				<int>455</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -592</vec2>
+				<int>456</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -496</vec2>
+				<int>457</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -528</vec2>
+				<int>458</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -400</vec2>
+				<int>459</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -304</vec2>
+				<int>454</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -208</vec2>
+				<int>461</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -176</vec2>
+				<int>462</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -400</vec2>
+				<int>444</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -272</vec2>
+				<int>432</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 -112</vec2>
+				<int>433</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 -368</vec2>
+				<int>460</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/cloud_static_small.unit">
+			<vec2>212 27</vec2>
+			<int>61</int>
+			<vec2>-281 -77</vec2>
+			<int>62</int>
+			<vec2>-32 475</vec2>
+			<int>63</int>
+			<vec2>-93 175</vec2>
+			<int>64</int>
+			<vec2>86 150</vec2>
+			<int>65</int>
+			<vec2>-247 622</vec2>
+			<int>57</int>
+			<vec2>-60 328</vec2>
+			<int>55</int>
+			<vec2>136 -32</vec2>
+			<int>54</int>
+			<vec2>-27 148</vec2>
+			<int>53</int>
+			<vec2>-130 -122</vec2>
+			<int>52</int>
+			<vec2>63 481</vec2>
+			<int>58</int>
+			<array>
+				<vec2>-126 614</vec2>
+				<int>51</int>
+				<dict>
+					<int name="layer">-10</int>
+				</dict>
+			</array>
+			<vec2>42 13</vec2>
+			<int>50</int>
+			<vec2>-103 10</vec2>
+			<int>49</int>
+			<vec2>240 -64</vec2>
+			<int>48</int>
+			<vec2>-124 -54</vec2>
+			<int>47</int>
+			<vec2>83 322</vec2>
+			<int>59</int>
+			<vec2>-397 688</vec2>
+			<int>60</int>
+			<vec2>-95 654</vec2>
+			<int>56</int>
+		</array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 -200</vec2>
+				<int>7</int>
+				<dict>
+					<vec2 name="size">48 48</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>8 -284</vec2>
+				<int>6</int>
+				<dict>
+					<vec2 name="size">192 192</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">f</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_wall_64x64.unit">
+			<vec2>-48 -504</vec2>
+			<int>504</int>
+			<array>
+				<vec2>-128 -336</vec2>
+				<int>505</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<vec2>-128 -528</vec2>
+			<int>506</int>
+			<vec2>-48 -568</vec2>
+			<int>507</int>
+			<array>
+				<vec2>-48 -376</vec2>
+				<int>508</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-128 -272</vec2>
+				<int>509</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<vec2>-128 -592</vec2>
+			<int>510</int>
+			<array>
+				<vec2>64 -272</vec2>
+				<int>511</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 -336</vec2>
+				<int>512</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 -400</vec2>
+				<int>513</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-48 -248</vec2>
+				<int>514</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 -464</vec2>
+				<int>515</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-48 -312</vec2>
+				<int>516</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-128 -144</vec2>
+				<int>517</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 -528</vec2>
+				<int>518</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 -592</vec2>
+				<int>519</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-128 -208</vec2>
+				<int>520</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 -208</vec2>
+				<int>521</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<vec2>-128 -464</vec2>
+			<int>503</int>
+			<array>
+				<vec2>-128 -400</vec2>
+				<int>502</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<vec2>-48 -440</vec2>
+			<int>501</int>
+		</array>
+		<array name="doodads/terrain/snow_chunk.unit">
+			<vec2>-31.9805 342.561</vec2>
+			<int>311</int>
+			<vec2>24.984 283.086</vec2>
+			<int>312</int>
+			<vec2>30.4526 276.842</vec2>
+			<int>313</int>
+			<vec2>14.7105 -94.1058</vec2>
+			<int>314</int>
+			<vec2>-1.3332 -47.1141</vec2>
+			<int>315</int>
+			<vec2>-27.819 42.1416</vec2>
+			<int>316</int>
+			<vec2>0.918494 -95.9679</vec2>
+			<int>317</int>
+			<vec2>-14.1595 11.9307</vec2>
+			<int>318</int>
+			<vec2>-29.6211 346.981</vec2>
+			<int>319</int>
+			<vec2>-30.5897 50.7478</vec2>
+			<int>320</int>
+			<vec2>15.9522 -11.4352</vec2>
+			<int>321</int>
+			<vec2>2.59786 381.318</vec2>
+			<int>322</int>
+			<vec2>18.025 -28.5332</vec2>
+			<int>323</int>
+			<vec2>37.1219 112.133</vec2>
+			<int>324</int>
+			<vec2>23.0919 395.645</vec2>
+			<int>325</int>
+			<vec2>3.48977 334.958</vec2>
+			<int>326</int>
+			<vec2>10.867 146.879</vec2>
+			<int>327</int>
+			<vec2>17.6271 247.669</vec2>
+			<int>328</int>
+			<vec2>32.167 32.5283</vec2>
+			<int>329</int>
+			<vec2>-2.97184 163.158</vec2>
+			<int>330</int>
+			<vec2>32.053 408.756</vec2>
+			<int>331</int>
+			<vec2>-24.2279 334.207</vec2>
+			<int>332</int>
+			<vec2>-19.5872 49.7364</vec2>
+			<int>333</int>
+			<vec2>32.4996 -108.916</vec2>
+			<int>334</int>
+			<vec2>33.5278 383.486</vec2>
+			<int>335</int>
+			<vec2>29.2807 203.803</vec2>
+			<int>336</int>
+			<vec2>-32.7218 418.672</vec2>
+			<int>337</int>
+			<vec2>10.0005 297.597</vec2>
+			<int>338</int>
+			<vec2>30.1493 130.397</vec2>
+			<int>339</int>
+			<vec2>30.3645 125.609</vec2>
+			<int>340</int>
+			<vec2>21.3314 -13.496</vec2>
+			<int>341</int>
+			<vec2>22.9199 -9.90581</vec2>
+			<int>342</int>
+			<vec2>-11.2488 -67.9553</vec2>
+			<int>343</int>
+			<vec2>0.314928 -40.6969</vec2>
+			<int>344</int>
+			<vec2>23.3717 562.077</vec2>
+			<int>345</int>
+			<vec2>35.2591 556.761</vec2>
+			<int>274</int>
+			<vec2>-20.2548 10.1508</vec2>
+			<int>275</int>
+			<vec2>-12.7321 376.601</vec2>
+			<int>276</int>
+			<vec2>-6.55742 366.919</vec2>
+			<int>277</int>
+			<vec2>-19.5918 17.4801</vec2>
+			<int>278</int>
+			<vec2>32.6505 -11.0486</vec2>
+			<int>279</int>
+			<vec2>7.71675 156.205</vec2>
+			<int>280</int>
+			<vec2>14.261 291.092</vec2>
+			<int>281</int>
+			<vec2>-11.3047 283.455</vec2>
+			<int>282</int>
+			<vec2>31.3844 186.272</vec2>
+			<int>283</int>
+			<vec2>6.24117 -90.17</vec2>
+			<int>284</int>
+			<vec2>-9.99842 -47.7998</vec2>
+			<int>285</int>
+			<vec2>33.2951 206.852</vec2>
+			<int>286</int>
+			<vec2>-22.5035 3.92334</vec2>
+			<int>287</int>
+			<vec2>8.85317 249.75</vec2>
+			<int>288</int>
+			<vec2>-3.86584 16.5584</vec2>
+			<int>289</int>
+			<vec2>-9.88432 168.235</vec2>
+			<int>290</int>
+			<vec2>-12.5675 156.526</vec2>
+			<int>291</int>
+			<vec2>-22.3412 -73.081</vec2>
+			<int>292</int>
+			<vec2>-28.7747 5.74171</vec2>
+			<int>293</int>
+			<vec2>28.0009 415.237</vec2>
+			<int>294</int>
+			<vec2>11.8041 299.049</vec2>
+			<int>295</int>
+			<vec2>-35.2544 207.738</vec2>
+			<int>296</int>
+			<vec2>13.1504 -2.78695</vec2>
+			<int>297</int>
+			<vec2>32.5325 195.874</vec2>
+			<int>298</int>
+			<vec2>-24.971 280.685</vec2>
+			<int>299</int>
+			<vec2>13.4287 -8.33925</vec2>
+			<int>300</int>
+			<vec2>-0.070652 -70.5339</vec2>
+			<int>301</int>
+			<vec2>-8.72963 159.269</vec2>
+			<int>302</int>
+			<vec2>33.8617 -116.481</vec2>
+			<int>303</int>
+			<vec2>23.6385 -103.693</vec2>
+			<int>304</int>
+			<vec2>-8.53759 -62.2743</vec2>
+			<int>305</int>
+			<vec2>-0.0692887 -87.3186</vec2>
+			<int>306</int>
+			<vec2>24.7722 183.337</vec2>
+			<int>307</int>
+			<vec2>21.2856 186.95</vec2>
+			<int>308</int>
+			<vec2>-26.9681 -25.6156</vec2>
+			<int>309</int>
+			<vec2>13.3117 257.29</vec2>
+			<int>310</int>
+		</array>
+		<array name="doodads/walls/battlement/_deco_wall_extrude.unit">
+			<array>
+				<vec2>128 -360</vec2>
+				<int>499</int>
+				<dict>
+					<int name="layer">-45</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-128 -360</vec2>
+				<int>500</int>
+				<dict>
+					<int name="layer">-45</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_wall_w.unit">
+			<array>
+				<vec2>-64 -432</vec2>
+				<int>487</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -496</vec2>
+				<int>488</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -464</vec2>
+				<int>490</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -528</vec2>
+				<int>491</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -560</vec2>
+				<int>492</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -240</vec2>
+				<int>493</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -208</vec2>
+				<int>494</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -144</vec2>
+				<int>470</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -592</vec2>
+				<int>489</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -240</vec2>
+				<int>469</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -368</vec2>
+				<int>468</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -432</vec2>
+				<int>471</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -464</vec2>
+				<int>472</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -176</vec2>
+				<int>473</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -400</vec2>
+				<int>474</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -208</vec2>
+				<int>475</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -176</vec2>
+				<int>476</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -112</vec2>
+				<int>477</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -496</vec2>
+				<int>478</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -528</vec2>
+				<int>479</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -560</vec2>
+				<int>480</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -112</vec2>
+				<int>481</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -272</vec2>
+				<int>482</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -592</vec2>
+				<int>467</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -336</vec2>
+				<int>466</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -304</vec2>
+				<int>465</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -272</vec2>
+				<int>464</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -144</vec2>
+				<int>463</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -304</vec2>
+				<int>483</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -336</vec2>
+				<int>484</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -368</vec2>
+				<int>485</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 -400</vec2>
+				<int>486</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/snow.unit"><vec2>-1790 207</vec2><int>3</int></array>
+		<array name="doodads/terrain/cloud_low.unit">
+			<vec2>98 -1085</vec2>
+			<int>41</int>
+			<vec2>36 -1167</vec2>
+			<int>40</int>
+			<vec2>-5 -1061</vec2>
+			<int>39</int>
+			<vec2>220 -966</vec2>
+			<int>38</int>
+			<vec2>-54 -1144</vec2>
+			<int>37</int>
+			<vec2>202 -1069</vec2>
+			<int>36</int>
+			<vec2>84 -988</vec2>
+			<int>35</int>
+			<vec2>-108 -992</vec2>
+			<int>34</int>
+			<vec2>-182 -1094</vec2>
+			<int>33</int>
+		</array>
+		<array name="items/health_cheese.unit"><vec2>33 478</vec2><int>42</int></array>
+		<array name="doodads/walls/battlement/_deco_window_hole_big.unit"><vec2>-44 -252</vec2><int>43</int><vec2>44 -252</vec2><int>44</int></array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 -208</vec2>
+				<int>4</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">100</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/special/_minimap_tower_bridge.unit">
+			<array>
+				<vec2>0 112</vec2>
+				<int>211</int>
+				<dict>
+					<int name="layer">50</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/cloud_static.unit">
+			<vec2>315 -74</vec2>
+			<int>132</int>
+			<vec2>248 352</vec2>
+			<int>133</int>
+			<vec2>292 -179</vec2>
+			<int>134</int>
+			<vec2>437 -337</vec2>
+			<int>135</int>
+			<vec2>-111 -81</vec2>
+			<int>131</int>
+			<array>
+				<vec2>59 762</vec2>
+				<int>136</int>
+				<dict>
+					<int name="layer">-10</int>
+				</dict>
+			</array>
+			<vec2>383 -239</vec2>
+			<int>156</int>
+			<vec2>-125 627</vec2>
+			<int>137</int>
+			<vec2>-249 -154</vec2>
+			<int>138</int>
+			<vec2>-177 897</vec2>
+			<int>139</int>
+			<vec2>443 526</vec2>
+			<int>140</int>
+			<vec2>539 -191</vec2>
+			<int>141</int>
+			<vec2>267 683</vec2>
+			<int>142</int>
+			<vec2>434 -97</vec2>
+			<int>143</int>
+			<vec2>419 357</vec2>
+			<int>144</int>
+			<vec2>171 -76</vec2>
+			<int>145</int>
+			<vec2>-128 965</vec2>
+			<int>154</int>
+			<vec2>-270 -274</vec2>
+			<int>149</int>
+			<vec2>351 79</vec2>
+			<int>146</int>
+			<vec2>361 433</vec2>
+			<int>147</int>
+			<vec2>-4 866</vec2>
+			<int>148</int>
+			<array>
+				<vec2>-209 -211</vec2>
+				<int>150</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-219 -302</vec2>
+				<int>151</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<vec2>335 573</vec2>
+			<int>152</int>
+			<vec2>-392 -197</vec2>
+			<int>153</int>
+			<vec2>305 -389</vec2>
+			<int>129</int>
+			<vec2>320 274</vec2>
+			<int>155</int>
+			<vec2>-260 807</vec2>
+			<int>157</int>
+			<array>
+				<vec2>-83 752</vec2>
+				<int>158</int>
+				<dict>
+					<int name="layer">-10</int>
+				</dict>
+			</array>
+			<vec2>370 160</vec2>
+			<int>159</int>
+			<vec2>541 -220</vec2>
+			<int>160</int>
+			<vec2>380 3</vec2>
+			<int>161</int>
+			<array>
+				<vec2>210 789</vec2>
+				<int>162</int>
+				<dict>
+					<int name="layer">-10</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>286 -246</vec2>
+				<int>163</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>178 671</vec2>
+				<int>130</int>
+				<dict>
+					<int name="layer">-10</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/world_shaftlocke.unit"><vec2>32 384</vec2><int>393</int></array>
+		<array name="doodads/cliffs/granite/___shadow.unit">
+			<vec2>64 -264</vec2>
+			<int>166</int>
+			<vec2>72 -232</vec2>
+			<int>165</int>
+			<vec2>72 -264</vec2>
+			<int>175</int>
+			<vec2>64 -184</vec2>
+			<int>164</int>
+			<vec2>64 -312</vec2>
+			<int>169</int>
+			<vec2>64 -168</vec2>
+			<int>180</int>
+			<vec2>72 -248</vec2>
+			<int>179</int>
+			<vec2>64 -216</vec2>
+			<int>178</int>
+			<vec2>64 -280</vec2>
+			<int>174</int>
+			<vec2>64 -296</vec2>
+			<int>173</int>
+			<vec2>72 -296</vec2>
+			<int>172</int>
+			<vec2>72 -312</vec2>
+			<int>171</int>
+			<vec2>72 -280</vec2>
+			<int>170</int>
+			<vec2>64 -232</vec2>
+			<int>168</int>
+			<vec2>64 -200</vec2>
+			<int>177</int>
+			<vec2>64 -248</vec2>
+			<int>167</int>
+			<vec2>72 -216</vec2>
+			<int>183</int>
+			<vec2>72 -168</vec2>
+			<int>176</int>
+			<vec2>72 -184</vec2>
+			<int>181</int>
+			<vec2>72 -200</vec2>
+			<int>182</int>
+		</array>
+		<array name="doodads/terrain/cloud_high_storm.unit">
+			<vec2>-110 -395</vec2>
+			<int>9</int>
+			<vec2>-3 -285</vec2>
+			<int>10</int>
+			<vec2>-198 -366</vec2>
+			<int>11</int>
+			<vec2>218 -180</vec2>
+			<int>12</int>
+			<vec2>191 -118</vec2>
+			<int>13</int>
+			<vec2>-16 -362</vec2>
+			<int>14</int>
+			<vec2>144 -175</vec2>
+			<int>16</int>
+			<vec2>-1 -234</vec2>
+			<int>17</int>
+			<vec2>-73 -317</vec2>
+			<int>18</int>
+			<vec2>75 -269</vec2>
+			<int>19</int>
+			<vec2>82 -211</vec2>
+			<int>20</int>
+			<vec2>71 -364</vec2>
+			<int>21</int>
+			<vec2>-76 -256</vec2>
+			<int>22</int>
+			<vec2>258 -126</vec2>
+			<int>23</int>
+			<vec2>124 -385</vec2>
+			<int>24</int>
+			<vec2>148 -246</vec2>
+			<int>25</int>
+			<vec2>-39 -409</vec2>
+			<int>26</int>
+			<vec2>270 -201</vec2>
+			<int>27</int>
+			<vec2>201 -212</vec2>
+			<int>28</int>
+			<vec2>-268 -366</vec2>
+			<int>29</int>
+			<vec2>304 -151</vec2>
+			<int>31</int>
+			<vec2>24 -311</vec2>
+			<int>32</int>
+			<vec2>-126 -333</vec2>
+			<int>15</int>
+			<vec2>275 -84</vec2>
+			<int>30</int>
+			<vec2>147 -315</vec2>
+			<int>8</int>
+		</array>
+		<array name="doodads/terrain/cloud_high.unit">
+			<vec2>181 -340</vec2>
+			<int>206</int>
+			<vec2>-101 -358</vec2>
+			<int>205</int>
+			<vec2>-133 -295</vec2>
+			<int>202</int>
+			<vec2>-59 -202</vec2>
+			<int>204</int>
+			<vec2>-89 -261</vec2>
+			<int>203</int>
+			<vec2>7 -246</vec2>
+			<int>196</int>
+			<vec2>70 -243</vec2>
+			<int>197</int>
+			<vec2>-29 -312</vec2>
+			<int>198</int>
+			<vec2>144 -264</vec2>
+			<int>199</int>
+			<vec2>80 432</vec2>
+			<int>200</int>
+			<vec2>91 569</vec2>
+			<int>201</int>
+			<vec2>58 -315</vec2>
+			<int>210</int>
+			<vec2>179 -202</vec2>
+			<int>209</int>
+			<vec2>70 -243</vec2>
+			<int>208</int>
+			<vec2>-183 -349</vec2>
+			<int>207</int>
+		</array>
+		<array name="doodads/terrain/cloud_negative-1.unit">
+			<vec2>260 -118</vec2>
+			<int>243</int>
+			<vec2>-118 433</vec2>
+			<int>242</int>
+			<vec2>111 415</vec2>
+			<int>241</int>
+			<vec2>-291 -139</vec2>
+			<int>240</int>
+			<vec2>-38 137</vec2>
+			<int>235</int>
+			<vec2>-162 -5</vec2>
+			<int>239</int>
+			<vec2>121 40</vec2>
+			<int>245</int>
+			<vec2>90 257</vec2>
+			<int>244</int>
+			<vec2>-237 77</vec2>
+			<int>236</int>
+			<vec2>-103 80</vec2>
+			<int>237</int>
+			<vec2>272 363</vec2>
+			<int>238</int>
+			<vec2>288 159</vec2>
+			<int>229</int>
+			<vec2>75 -63</vec2>
+			<int>212</int>
+			<vec2>168 272</vec2>
+			<int>213</int>
+			<vec2>203 576</vec2>
+			<int>214</int>
+			<vec2>286 88</vec2>
+			<int>215</int>
+			<vec2>54 373</vec2>
+			<int>216</int>
+			<vec2>-56 220</vec2>
+			<int>217</int>
+			<vec2>-71 283</vec2>
+			<int>218</int>
+			<vec2>77 219</vec2>
+			<int>219</int>
+			<vec2>61 104</vec2>
+			<int>220</int>
+			<vec2>-88 555</vec2>
+			<int>221</int>
+			<vec2>-217 514</vec2>
+			<int>222</int>
+			<vec2>303 447</vec2>
+			<int>223</int>
+			<vec2>-210 -70</vec2>
+			<int>224</int>
+			<vec2>-64 -67</vec2>
+			<int>225</int>
+			<vec2>-60 403</vec2>
+			<int>226</int>
+			<vec2>-361 -154</vec2>
+			<int>227</int>
+			<vec2>-196 605</vec2>
+			<int>228</int>
+			<vec2>25 433</vec2>
+			<int>230</int>
+			<vec2>-167 662</vec2>
+			<int>231</int>
+			<vec2>156 508</vec2>
+			<int>232</int>
+			<vec2>112 564</vec2>
+			<int>233</int>
+			<vec2>-239 -112</vec2>
+			<int>234</int>
+		</array>
+		<array name="doodads/terrain/cloud_negative-2.unit">
+			<vec2>-281 630</vec2>
+			<int>247</int>
+			<vec2>-176 171</vec2>
+			<int>248</int>
+			<vec2>-170 534</vec2>
+			<int>249</int>
+			<vec2>-185 557</vec2>
+			<int>246</int>
+			<vec2>-206 208</vec2>
+			<int>256</int>
+			<vec2>-160 273</vec2>
+			<int>258</int>
+			<vec2>-178 634</vec2>
+			<int>257</int>
+			<vec2>-204 317</vec2>
+			<int>255</int>
+			<vec2>-185 365</vec2>
+			<int>254</int>
+			<vec2>-358 521</vec2>
+			<int>253</int>
+			<vec2>-373 608</vec2>
+			<int>252</int>
+			<vec2>-404 290</vec2>
+			<int>251</int>
+			<vec2>-338 573</vec2>
+			<int>250</int>
+		</array>
+		<array name="doodads/walls/battlement/_wall_32x32.unit">
+			<array>
+				<vec2>-160 -528</vec2>
+				<int>380</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -496</vec2>
+				<int>381</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -496</vec2>
+				<int>382</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -528</vec2>
+				<int>383</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -592</vec2>
+				<int>384</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -560</vec2>
+				<int>385</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -560</vec2>
+				<int>386</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -592</vec2>
+				<int>387</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -312</vec2>
+				<int>388</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -216</vec2>
+				<int>390</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -280</vec2>
+				<int>391</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -248</vec2>
+				<int>389</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -472</vec2>
+				<int>350</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -344</vec2>
+				<int>346</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<vec2>96 -144</vec2>
+			<int>347</int>
+			<array>
+				<vec2>16 -376</vec2>
+				<int>348</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -440</vec2>
+				<int>349</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -536</vec2>
+				<int>351</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -568</vec2>
+				<int>352</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<vec2>64 -144</vec2>
+			<int>353</int>
+			<array>
+				<vec2>-160 -176</vec2>
+				<int>354</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -144</vec2>
+				<int>355</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -112</vec2>
+				<int>356</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -112</vec2>
+				<int>357</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -144</vec2>
+				<int>358</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -240</vec2>
+				<int>359</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -176</vec2>
+				<int>360</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -272</vec2>
+				<int>361</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -208</vec2>
+				<int>362</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -208</vec2>
+				<int>363</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -240</vec2>
+				<int>364</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -464</vec2>
+				<int>365</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -272</vec2>
+				<int>366</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -304</vec2>
+				<int>367</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -304</vec2>
+				<int>368</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -336</vec2>
+				<int>369</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -336</vec2>
+				<int>370</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -368</vec2>
+				<int>371</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -368</vec2>
+				<int>372</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -400</vec2>
+				<int>373</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -400</vec2>
+				<int>374</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -432</vec2>
+				<int>375</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 -432</vec2>
+				<int>376</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-160 -464</vec2>
+				<int>377</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -408</vec2>
+				<int>378</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -504</vec2>
+				<int>379</int>
+				<dict>
+					<int name="layer">-50</int>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/boss_dragon_entrance.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000762a520000000000000000000000000000000000000000000000000000000014646c3109000000000000000000000000000000000000000000000000000000162d5c312c000000000000000000000000000000000000000000000000000000461a295b1a000000000000000000000000000000000000000000000000000000314b4b464900000000000000000000000000000000000000000000000000000009147655070000000000000000000000000000000000000000000000000000000352602d2e000000000000000000000000000000000000000000000000000000595b04733d0000000000000000000000000000000000000000000000000000000510472d6b00000000000000000000000000000000000000000000000000000016500972510000000000000000000000000000000000000000000000000000000c64733d400000000000000000000000000000000000000000000000000000005d7a7d2b100000000000000000000000000000000000000000000000000000003c754f0c650000000000000000000000000000000000000000000000000000001020076310000000000000000000000000000000000000000000000000000000701e72447a0000000000000000000000000000000000000000000000000000006a052652150000000000000000000000000000000000000000000000000000005f046b74570000000000000000000000000000000000000000000000000000005a45161951000000000000000000000000000000000000000000000000000000216e0d7106000000000000000000000000000000000000000000000000000000250f786d550000000000000000000000000000000000000000000000000000001474277306000000000000000000000000000000000000000000000000000000343d1c3f520000000000000000000000000000000000000000000000000000007667203d4a0000000000000000000000000000000000000000000000000000002c5926664b0000000000000000000000000000000000000000000000000000003f0d197b6e000000000000000000000000000000000000000000000000000000463a295c1d0000000000000000000000000000000000000000000000000000007935026f660000000000000000000000000000000000000000000000000000000d6d637c24000000000000000000000000000000000000000000000000000000080c7a733b0000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000002f2062172a00000000000000000000000000000000000000000000000000000044087263210000000000000000000000000000000000000000000000000000004c180e4715000000000000000000000000000000000000000000000000000000321434285100000000000000000000000000000000000000000000000000000026623c2d76000000000000000000000000000000000000000000000000000000494877644e00000000000000000000000000000000000000000000000000000042282c7b5d0000000000000000000000000000000000000000000000000000002c17754b3c0000000000000000000000000000000000000000000000000000004370070e1d0000000000000000000000000000000000000000000000000000006758700333000000000000000000000000000000000000000000000000000000201073717c000000000000000000000000000000000000000000000000000000320a2611390000000000000000000000000000000000000000000000000000000a74355d5b0000000000000000000000000000000000000000000000000000003b1c4d7b2800000000000000000000000000000000000000000000000000000044283a6720000000000000000000000000000000000000000000000000000000410d10541f00000000000000000000000000000000000000000000000000000044105229150000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+	</array>
+</dict>

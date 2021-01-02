@@ -1,0 +1,93 @@
+<effect looping="false" layer="-1" bounds="230 230">
+<!-- elemental body -->
+	<sprite origin="17 32" looping="false" texture="./elemental_sand_spawn.png" material="system/default.mats:actor">
+		<frame time="75">128 0 32 32</frame>
+		<frame time="75">160 0 32 32</frame>
+		<frame time="75">192 0 32 32</frame>
+		<frame time="75">224 0 32 32</frame>
+		<frame time="75">128 32 32 32</frame>
+		<frame time="75">160 32 32 32</frame>
+		<frame time="75">192 32 32 32</frame>
+		<frame time="75">224 32 32 32</frame>
+	</sprite>
+  <!-- twister -->
+		<sprite origin="8 16" ulayer="3" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="50">56 0 13 14</frame>
+			<frame time="50">69 0 13 14</frame>
+			<frame time="50">82 0 13 14</frame>
+			<frame time="50">95 0 13 14</frame>
+			<frame time="50">56 14 13 14</frame>
+			<frame time="50">69 14 13 14</frame>
+			<frame time="50">82 14 13 14</frame>
+		</sprite>  
+<!-- dustcircles -->
+	<sprite looping="false" origin="16 14" pos="0 -10" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+		scale-x="1+sin((t+l)*2)*0.05-0.3"
+		scale-y="1+sin((t+l)*2)*0.05-0.3"
+		pos-y="saturate(t+l)*(-5+sin(0.2+(t+l)))"
+		color-a="((0.1+sin((t+l)*2)*0.1) * saturate((t+l))) * saturate((t+l))"
+		angle="3 *((t+l)*pi)"
+		>
+		<frame time="600">64 291 32 27</frame>
+	</sprite>
+	<sprite looping="false" origin="16 14" pos="0 -10" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+		scale-x="1+sin((t+l)*1.5)*0.05"
+		scale-y="1+sin((t+l)*1.5)*0.05"
+		pos-y="saturate(t+l)*(-5+sin(0.5+(t+l)))"
+		color-a="(0.1+sin((t+l)*2)*0.1) * saturate((t+l))"
+		angle="3 *((t+l)*pi)"
+		>
+		<frame time="600">64 291 32 27</frame>
+	</sprite>
+<!-- stones -->
+	<sprite looping="false" origin="16 24" texture="./elemental_sand.png" material="system/default.mats:shadow"
+		scale-x="1+sin((t+l)*2)*0.01"
+		scale-y="1+sin((t+l)*2)*0.01"
+		pos-x="0"
+		pos-y="2"
+		color-a="saturate((t+l))"
+		>
+		<frame time="600">0 41 32 26</frame>
+	</sprite>
+	<sprite looping="false" origin="16 24" texture="./elemental_sand.png" material="system/default.mats:shadow"
+		scale-x="1+sin((t+l)*2)*0.01"
+		scale-y="1+sin((t+l)*2)*0.01"
+		pos-x="0"
+		pos-y="2+sin((t+l)*2)*0.1"
+		color-a="saturate((t+l))"
+		>
+		<frame time="600">32 41 32 26</frame>
+	</sprite>
+	<sprite looping="false" origin="16 24" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+		scale-x="1+sin((t+l)*2)*0.01"
+		scale-y="1+sin((t+l)*2)*0.01"
+		pos-x="0"
+		pos-y="-5*saturate(t+l)"
+		color-a="saturate((t+l))"
+		>
+		<frame time="600">0 41 32 26</frame>
+	</sprite>
+	<sprite looping="false" origin="16 24" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+		scale-x="1+sin((t+l)*2)*0.01"
+		scale-y="1+sin((t+l)*2)*0.01"
+		pos-x="0"
+		pos-y="saturate(t+l)*(-5+sin((t+l)*2)*0.1)"
+		color-a="saturate((t+l))"
+		>
+		<frame time="600">32 41 32 26</frame>
+	</sprite>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</effect>

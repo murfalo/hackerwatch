@@ -1,0 +1,65 @@
+<effect looping="true">
+	
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="2 2" texture="./projectiles.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		>
+		
+		<frame time="100">59 0 5 5</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="-1">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+	%//<length value="700" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="20" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos-x="0" pos-y="-1">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+	%//<length value="700" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="32" />
+			
+		<color-r value="0" />
+		<color-g value="0.35" />
+		<color-b value="0.5" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

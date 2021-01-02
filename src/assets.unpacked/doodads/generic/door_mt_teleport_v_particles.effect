@@ -1,0 +1,122 @@
+<effect looping="true" layer="1">
+	
+	<param name="radius" default="4" />
+<!-- from left -->
+	<sprite origin="2.5 2.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="5"
+		pos-x="cos(rand(u+953*i)*2*pi) * (radius)/3 * pow(rand(u+479*i),0.5) + 0.5*cos(rand(u+953*i)*2*pi) * (radius) * pow(rand(u+479*i),0.5) -5 + rand(il+i+u*3)*it*5"
+		pos-y="sin(rand(u+953*i)*2*pi) * (radius)*4 * pow(rand(u+479*i),0.5) + 0.5*sin(rand(u+953*i)*2*pi) * (radius)*3 * pow(rand(u+479*i),0.5)-30"
+		angle="rand(u+i+3)*pi*2*-t"
+		scale-x="1.0-rand(u+i+23)*0.3"
+		scale-y="1.0-rand(u+i+23)*0.3"
+		color-r="1*saturate(10*t+l)*saturate(it*2)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">240 6 5 5</frame>
+	</sprite>
+	<sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		pos-x="cos(rand(u+283*i)*2*pi) * (radius)/3 * pow(rand(u+673*i),0.5) + 0.5*cos(rand(u+283*i)*2*pi) * (radius) * pow(rand(u+673*i),0.5) -5 + rand(il+i+u*5)*it*5"
+		pos-y="sin(rand(u+283*i)*2*pi) * (radius)*4 * pow(rand(u+673*i),0.5) + 0.5*sin(rand(u+283*i)*2*pi) * (radius)*3 * pow(rand(u+673*i),0.5)-30"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="1*saturate(10*t+l)*saturate(it*2)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">246 7 3 3</frame>
+	</sprite>	
+
+<!-- from right -->
+	<sprite origin="2.5 2.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="5"
+		pos-x="cos(rand(u+23*i)*2*pi) * (radius)/3 * pow(rand(u+101*i),0.5) + 0.5*cos(rand(u+23*i)*2*pi) * (radius) * pow(rand(u+101*i),0.5) + 5 - rand(il+i+u*7)*it*5"
+		pos-y="sin(rand(u+23*i)*2*pi) * (radius)*3 * pow(rand(u+101*i),0.5) + 0.5*sin(rand(u+23*i)*2*pi) * (radius)*3 * pow(rand(u+101*i),0.5)-30"
+		angle="rand(u+i+3)*pi*2*-t"
+		scale-x="1.0-rand(u+i+23)*0.3"
+		scale-y="1.0-rand(u+i+23)*0.3"
+		color-r="1*saturate(10*t+l)*saturate(it*2)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">240 6 5 5</frame>
+	</sprite>
+	<sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		pos-x="cos(rand(u+41*i)*2*pi) * (radius)/3 * pow(rand(u+123*i),0.5) + 0.5*cos(rand(u+41*i)*2*pi) * (radius) * pow(rand(u+123*i),0.5) + 5 - rand(il+i+u*11)*it*5"
+		pos-y="sin(rand(u+41*i)*2*pi) * (radius)*3 * pow(rand(u+123*i),0.5) + 0.5*sin(rand(u+41*i)*2*pi) * (radius)*3 * pow(rand(u+123*i),0.5)-30"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="1*saturate(10*t+l)*saturate(it*2)"
+		color-g="1*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">246 7 3 3</frame>
+	</sprite>	
+	<!-- from top -->
+	<sprite origin="2.5 2.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="3"
+		pos-x="cos(rand(u+23*i)*2*pi) * (radius) * pow(rand(u+101*i),0.5) + 0.5*cos(rand(u+23*i)*2*pi) * (radius)*3 * pow(rand(u+101*i),0.5)"
+		pos-y="sin(rand(u+23*i)*2*pi) * (radius) * pow(rand(u+101*i),0.5) + 0.5*sin(rand(u+23*i)*2*pi) * (radius) * pow(rand(u+101*i),0.5)- 45 + rand(il+i+u*1)*it*35"
+		angle="rand(u+i+3)*pi*2*-t"
+		scale-x="1.0-rand(u+i+23)*0.3"
+		scale-y="1.0-rand(u+i+23)*0.3"
+		color-r="0.5*saturate(10*t+l)*saturate(it*2)"
+		color-g="0.5*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">240 6 5 5</frame>
+	</sprite>
+	<sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		pos-x="cos(rand(u+1031*i)*2*pi) * (radius) * pow(rand(u+263*i),0.5) + 0.5*cos(rand(u+1031*i)*2*pi) * (radius)*3 * pow(rand(u+263*i),0.5)"
+		pos-y="sin(rand(u+1031*i)*2*pi) * (radius) * pow(rand(u+263*i),0.5) + 0.5*sin(rand(u+1031*i)*2*pi) * (radius) * pow(rand(u+263*i),0.5) -45 + rand(il+i+u*2)*it*35"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="0.5*saturate(10*t+l)*saturate(it*2)"
+		color-g="0.5*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">246 7 3 3</frame>
+	</sprite>
+	<!-- from bottom -->
+	<sprite origin="2.5 2.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="3"
+		pos-x="cos(rand(u+41*i)*2*pi) * (radius) * pow(rand(u+123*i),0.5) + 0.5*cos(rand(u+41*i)*2*pi) * (radius)*3 * pow(rand(u+123*i),0.5)"
+		pos-y="sin(rand(u+41*i)*2*pi) * (radius) * pow(rand(u+123*i),0.5) + 0.5*sin(rand(u+41*i)*2*pi) * (radius) * pow(rand(u+123*i),0.5)- 14 - rand(il+i+u*13)*it*35"
+		angle="rand(u+i+3)*pi*2*-t"
+		scale-x="1.0-rand(u+i+23)*0.3"
+		scale-y="1.0-rand(u+i+23)*0.3"
+		color-r="0.5*saturate(10*t+l)*saturate(it*2)"
+		color-g="0.5*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">240 6 5 5</frame>
+	</sprite>
+	<sprite origin="1.5 1.5" looping="true" texture="actors/mt/bosses/agents/agent_star/deatharea.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		pos-x="cos(rand(u+7*i)*2*pi) * (radius) * pow(rand(u+257*i),0.5) + 0.5*cos(rand(u+7*i)*2*pi) * (radius)*3 * pow(rand(u+257*i),0.5)"
+		pos-y="sin(rand(u+7*i)*2*pi) * (radius) * pow(rand(u+257*i),0.5) + 0.5*sin(rand(u+7*i)*2*pi) * (radius) * pow(rand(u+257*i),0.5) -14 - rand(il+i+u*17)*it*35"
+		angle="rand(u+i+3)*pi*2*t"
+		scale-x="1.0+0.5*(rand(u+i+7)-0.5)"
+		scale-y="1.0+0.5*(rand(u+i+7)-0.5)"
+		color-r="0.5*saturate(10*t+l)*saturate(it*2)"
+		color-g="0.5*saturate(10*t+l)"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(it*2)*0.5*saturate(sin(it*pi*2))*saturate(-0.2+t*2+l)"
+		>
+		<frame time="3000">246 7 3 3</frame>
+	</sprite>
+
+</effect>

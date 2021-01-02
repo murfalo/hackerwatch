@@ -1,0 +1,48 @@
+<unit slot="doodad">
+	<scenes default="1 2 3 4">	
+		<scene name="1">
+			<sprite layer="20" origin="0 48" texture="./web.png" material="system/default.mats:default">
+				<frame>0 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./web.png" material="system/default.mats:proj-wall">
+				<frame>0 16 32 32</frame>
+			</sprite>
+			<sprite layer="-20" origin="0 0" texture="./web.png" material="system/default.mats:floor">
+				<frame>0 48 32 7</frame>
+			</sprite>
+		</scene>
+		<scene name="2">
+			<sprite layer="20" origin="0 48" texture="./web.png" material="system/default.mats:default">
+				<frame>32 0 32 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./web.png" material="system/default.mats:proj-wall">
+				<frame>32 16 32 32</frame>
+			</sprite>
+			<sprite layer="-20" origin="0 0" texture="./web.png" material="system/default.mats:floor">
+				<frame>32 48 32 7</frame>
+			</sprite>
+		</scene>
+		<scene name="3">
+			<sprite layer="20" origin="-1 48" texture="./web.png" material="system/default.mats:default">
+				<frame>0 55 32 16</frame>
+			</sprite>
+			<sprite origin="-1 32" texture="./web.png" material="system/default.mats:proj-wall">
+				<frame>0 71 32 32</frame>
+			</sprite>
+			<sprite layer="-20" origin="-1 0" texture="./web.png" material="system/default.mats:floor">
+				<frame>0 103 32 7</frame>
+			</sprite>
+		</scene>	
+		<scene name="4">
+			<sprite layer="20" origin="1 48" texture="./web.png" material="system/default.mats:default">
+				<frame>32 55 32 16</frame>
+			</sprite>
+			<sprite origin="1 32" texture="./web.png" material="system/default.mats:proj-wall">
+				<frame>32 71 32 32</frame>
+			</sprite>
+			<sprite layer="-20" origin="1 0" texture="./web.png" material="system/default.mats:floor">
+				<frame>32 103 32 7</frame>
+			</sprite>
+		</scene>	
+	</scenes>
+</unit>

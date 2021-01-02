@@ -1,0 +1,19 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="off">
+			%if EDITOR
+			<sprite layer="4" origin="0 0" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>48 0 16 16</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="on">
+			<effect src="doodads/generic/door_spawner_magic_pillar.effect" />
+			%if EDITOR
+			<sprite layer="4" origin="0 0" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>48 0 16 16</frame>
+			</sprite>
+			%endif
+		</scene>
+	</scenes>
+</unit>

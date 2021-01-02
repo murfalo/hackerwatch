@@ -1,0 +1,25 @@
+<unit netsync="none" save="false" layer="0">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">3000</int>
+		<int name="radius">18</int>
+		
+		<int name="actor-filter">69</int>
+		
+		<float name="team-dmg">0</float>
+		<float name="self-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">8</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<effect src="players/gladiator/gladius_area.effect" />
+		</scene>
+	</scenes>
+</unit>

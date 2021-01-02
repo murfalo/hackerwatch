@@ -1,0 +1,28 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">5</float>
+		<bool name="blockable">true</bool>
+		<int name="ttl">1000</int>
+		<string name="fx">actors/pop/projectiles/scorpion_stinger_hit.effect</string>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">35</int>
+			</dict>
+		</array>
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<effect src="./scorpion_stinger.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

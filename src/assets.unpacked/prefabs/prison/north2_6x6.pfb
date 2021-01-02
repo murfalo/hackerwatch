@@ -1,0 +1,433 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_64.unit">
+			<vec2>0 -32</vec2>
+			<int>3</int>
+			<vec2>64 32</vec2>
+			<int>2</int>
+			<vec2>32 96</vec2>
+			<int>5</int>
+			<vec2>64 -32</vec2>
+			<int>4</int>
+			<vec2>0 32</vec2>
+			<int>1</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>6</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs">
+					<int>7</int>
+					<int>8</int>
+					<int>13</int>
+					<int>14</int>
+					<int>15</int>
+					<int>19</int>
+					<int>20</int>
+					<int>21</int>
+					<int>22</int>
+					<int>23</int>
+					<int>25</int>
+					<int>29</int>
+					<int>28</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>144 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot1</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/north2_6x6_loot.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>8</int>
+			<vec3>144 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot2</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/north2_6x6_loot_2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>9</int>
+			<vec3>72 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell2</string>
+			<dict>
+				<string name="Flag">cell2</string>
+				<array name="OnFalse"><int>12</int></array>
+				<array name="OnTrue"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>10</int>
+			<vec3>136 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell3</string>
+			<dict>
+				<string name="Flag">cell3</string>
+				<array name="OnFalse"><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>11</int>
+			<vec3>136 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>15</int><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>12</int>
+			<vec3>72 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>14</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>8 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell1_1</string>
+			<dict>
+				<string name="Flag">cell1</string>
+				<string name="Prefab">prefabs/prison/north2_6x6_cell.pfb</string>
+				<int name="Chance">50</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>14</int>
+			<vec3>72 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell1_2</string>
+			<dict>
+				<string name="Flag">cell2</string>
+				<string name="Prefab">prefabs/prison/north2_6x6_cell.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>15</int>
+			<vec3>136 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell1_3</string>
+			<dict>
+				<string name="Flag">cell3</string>
+				<string name="Prefab">prefabs/prison/north2_6x6_cell.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>16</int>
+			<vec3>8 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell1</string>
+			<dict>
+				<string name="Flag">cell1</string>
+				<array name="OnFalse"><int>18</int></array>
+				<array name="OnTrue"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>17</int>
+			<vec3>-128 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array>
+				<int>16</int>
+				<int>0</int>
+				<int>24</int>
+				<int>0</int>
+				<int>30</int>
+				<int>0</int>
+				<int>27</int>
+				<int>0</int>
+				<int>6</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>18</int>
+			<vec3>8 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>13</int><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>19</int>
+			<vec3>-128 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special_shrine</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/north2_6x6_special_shrine.pfb</string>
+				<int name="Chance">5</int>
+				<string name="Flag">special_shrine</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>20</int>
+			<vec3>8 -80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell2_1</string>
+			<dict>
+				<string name="Flag">cell1</string>
+				<string name="Prefab">prefabs/prison/north2_6x6_cell_2.pfb</string>
+				<int name="Chance">50</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>21</int>
+			<vec3>72 -80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell2_2</string>
+			<dict>
+				<string name="Flag">cell2</string>
+				<string name="Prefab">prefabs/prison/north2_6x6_cell_2.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>22</int>
+			<vec3>136 -80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cell2_3</string>
+			<dict>
+				<string name="Flag">cell3</string>
+				<string name="Prefab">prefabs/prison/north2_6x6_cell_2.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>23</int>
+			<vec3>144 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot3</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/north2_6x6_loot_3.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>24</int>
+			<vec3>-256 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_shrines_more</string>
+			<dict>
+				<string name="Flag">fountain_shrines_more</string>
+				<array name="OnTrue"><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>25</int>
+			<vec3>-128 96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special_shrine</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/north2_6x6_special_shrine.pfb</string>
+				<string name="Flag">special_shrine</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>26</int>
+			<vec3>-192 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>25</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckDLC</string>
+			<int>27</int>
+			<vec3>-256 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wh</string>
+			<dict>
+				<string name="DLC">wh</string>
+				<array name="IsOwned"><int>32</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>28</int>
+			<vec3>-128 256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>blood_altar</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/north2_6x6_special_blood_altar.pfb</string>
+				<int name="Chance">3</int>
+				<string name="Flag">special_blood_altar</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>29</int>
+			<vec3>-128 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>item_forge</string>
+			<dict>
+				<string name="Prefab">prefabs/prison/north2_6x6_special_item_forge.pfb</string>
+				<int name="Chance">3</int>
+				<string name="Flag">special_item_forge</string>
+			</dict>
+			<array><int>34</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>30</int>
+			<vec3>-320 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>unlock_anvil</string>
+			<dict>
+				<string name="Flag">unlock_anvil</string>
+				<array name="OnTrue"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>31</int>
+			<vec3>-192 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>-192 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>33</int>
+			<vec3>-64 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special_blood_altar</string>
+			<dict>
+				<string name="Flag">special_blood_altar</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>34</int>
+			<vec3>-64 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>prison_item_forge</string>
+			<dict>
+				<string name="Flag">prison_item_forge</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>35</int>
+			<vec3>-256 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>prison_item_forge</string>
+			<dict>
+				<string name="Flag">prison_item_forge</string>
+				<array name="OnFalse"><int>31</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

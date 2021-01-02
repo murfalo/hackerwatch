@@ -1,0 +1,172 @@
+<effect looping="true" bounds="128 2048" layer="1">
+	<sprite mask="1001" origin="16 32" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 8"
+	scale-x="i/5+0.3"
+	scale-y="i/10+0.3"
+	>
+		<frame time="40">352 0 32 32</frame>
+	</sprite>
+	<sprite masked="1001" origin="16 32" looping="true" texture="./heal_ring.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 8"
+	scale-x="i/5+0.3"
+	scale-y="i/10+0.3"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+	</sprite>
+	
+	<sprite origin="16 32" looping="true" texture="./heal_ring.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 17"
+	pos-x="sin(pi*it*2) * i/5"
+	num-sprites="20"
+	scale-x="i/10+0.3"
+	scale-y="i/10+0.3"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+	</sprite>
+	
+	<!-- <sprite origin="16 45" looping="true" texture="./heal_ring.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-(i/10+0.3*32) + 16"
+	pos-x="sin(pi*it*2)*1"
+	num-sprites="20"
+	scale-x="i/10+0.3"
+	scale-y="i/10+0.3"
+	color-a="0.1"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+	</sprite> -->
+	<!-- <sprite origin="16 38" looping="true" texture="./heal_ring.png" material="system/default.mats:default-noxray"
+		
+	pos-y="32"
+	pos-x="sin(pi*it*2)*2"
+	scale-x="0.6"
+	color-a="0.5"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+	</sprite> -->
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="doodads/walls/pyramid_fancy/_furrow_lightv_L.png">
+			<frame time="500">0 0 256 256</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="256" />
+
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	<light pos-x="0" pos-y="-80">
+		<sprite texture="doodads/walls/pyramid_fancy/_furrow_lightv_L.png">
+			<frame time="500">0 0 256 256</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="256" />
+
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	<light pos-x="0" pos-y="-160">
+		<sprite texture="doodads/walls/pyramid_fancy/_furrow_lightv_L.png">
+			<frame time="500">0 0 256 256</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="280" />
+
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	<light pos-x="0" pos-y="-256">
+		<sprite texture="doodads/walls/pyramid_fancy/_furrow_lightv_L.png">
+			<frame time="500">0 0 256 256</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="300" />
+
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	<light pos-x="0" pos-y="-300">
+		<sprite texture="doodads/walls/pyramid_fancy/_furrow_lightv_L.png">
+			<frame time="500">0 0 256 256</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="330" />
+
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

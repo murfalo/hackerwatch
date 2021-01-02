@@ -1,0 +1,124 @@
+<effect looping="false" layer="1" bounds="1250 1250">
+	<param name="angle" default="0" />
+	<param name="height" default="100" />
+	<param name="length" default="500" />
+	
+	<param name="color_r" default="1" />
+	<param name="color_g" default="0" />
+	<param name="color_b" default="0" />
+
+	
+	%// Charge
+	<!-- <sprite origin="18.5 28" texture="effects/eye_charge.png" material="effects/effects.mats:default-glowing" -->
+		
+		<!-- pos-x="cos(angle)*9" -->
+		<!-- pos-y="sin(angle)*9" -->
+		
+		<!-- color-a="1" -->
+		
+		<!-- > -->
+		<!-- <frame time="50">0 56 37 56</frame> -->
+		<!-- <frame time="50">37 56 37 56</frame> -->
+		<!-- <frame time="50">74 56 37 56</frame> -->
+		<!-- <frame time="50">111 56 37 56</frame> -->
+		<!-- <frame time="50">148 56 37 56</frame> -->
+		<!-- <frame time="50">185 56 37 56</frame> -->
+	<!-- </sprite> -->
+	
+	%// Sinus
+	<sprite looping="false" origin="0 4" texture="actors/pop/projectiles/high_priest_ice_beam.png" material="effects/effects.mats:default-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9"
+	
+		color-a="1.5-t"
+		
+		scale-x="1"
+		scale-y="1.4 - t"
+		>
+		<frame time="850" x="t * -30" y="0" w="length-13" h="7" />
+	</sprite>
+
+		
+	%// Post Pixels
+	<sprite looping="false" origin="0 0.5" texture="actors/pop/projectiles/high_priest_ice_beam.png" material="effects/effects.mats:add"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9"
+		
+		angle="angle"
+
+		color-a="1.1-t"
+		
+		
+		scale-x="1"
+		scale-y="2.0 * (1 - t)"
+		>
+		<frame time="2000" x="t*-7" y="8" w="length-13" h="1" />
+	</sprite>
+	
+	
+	<sprite origin="5 11" ulayer="0" texture="./high_priest_ice_beam_hit.png" material="system/default.mats:bright-noxray"
+		pos-x="cos(angle)*length"
+		pos-y="sin(angle)*length"
+	>
+		<frame time="150">0 16 9 14</frame>
+		<frame time="50">9 16 9 14</frame>
+		<frame time="50">18 16 9 14</frame>
+		<frame time="50">27 16 9 14</frame>
+		<frame time="50">36 16 9 14</frame>
+		<frame time="50">45 16 9 14</frame>
+		<frame time="50">54 16 9 14</frame>
+		<frame time="50">63 16 9 14</frame>
+		<frame time="50">72 16 9 14</frame>
+		<frame time="50">81 16 9 14</frame>
+	</sprite>
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="max(sin(2 * pi * t),0)*140" />
+		
+		<color-r value="3" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+
+	
+	%// MainBeam
+	<sprite looping="false" origin="0 1" texture="effects/empty.png" material="effects/effects.mats:add-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9"
+		
+		color-r="1"
+		color-g="1"
+		color-b="0.2"
+		color-a="0.3*(1-t)"
+		
+		
+		scale-x="length - 15"
+		scale-y="0.5 * (1 - t)"
+		>
+		<frame time="1000">0 0 1 2</frame>
+	</sprite>
+</effect>

@@ -1,0 +1,120 @@
+<unit slot="item">
+	<behavior class="Pickup">
+		<bool name="bounce">true</bool>
+		<string name="sound">event:/item/mana_big</string>
+		<string name="pickup-trigger">pickup-mana</string>
+		<bool name="global">true</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">GiveMana</string>
+				<int name="mana">90</int>
+				<bool name="pickup">true</bool>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<minimap_sprite layer="10" origin="4 4" texture="gui/minimap.png" frame="58 20 9 9" />
+			<sprite origin="4 6" layer="-1" texture="./items_general.png" material="system/default.mats:shadow">
+				<frame>0 51 8 8</frame>
+			</sprite>
+			<collision static="true">
+				<circle sensor="true" offset="0 -2" radius="6" />
+			</collision>
+			<sprite origin="4 8" looping="true" texture="./items_general.png" material="items/items.mats:mana">
+				<frame time="200">20 0 8 8</frame>
+			</sprite>
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 175 175 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="0 255 255 0 0" />
+				</colors>
+			</light>
+			<light pos="-1 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1500" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="10" />
+				</sizes>
+				<colors>
+					<color value="0 255 255 0 0" />
+					<color value="0 400 400 0 0" />
+				</colors>
+			</light>			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="20" />
+				</sizes>
+				<colors>
+					<color value="0 255 255 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -10">
+				<sprite texture="./mana_L.png">
+					<frame>0 0 32 32</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="0 255 255 0 0" />
+				</colors>
+			</light>			
+				
+		</scene>
+	</scenes>
+</unit>

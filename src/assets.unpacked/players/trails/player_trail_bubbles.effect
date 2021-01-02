@@ -1,0 +1,51 @@
+<effect looping="false">
+	
+	<param name="angle" default="1" />
+	
+<!-- 	<sprite origin="7.5 7.5" looping="false" texture="./player_trails.png" material="system/default.mats:bright-noxray"
+	
+		num-sprites="1"
+		scale-x="rand(i)"
+		scale-y="rand(i)"
+		
+		pos-x="cos(rand(u+21*i)*2*pi) * 3 * pow(rand(u+73*i),0.5)"
+        pos-y="sin(rand(u+21*i)*2*pi) * 3 * pow(rand(u+73*i),0.5) + t*((rand(i)*-15+sin(rand(u+21*i)*2*pi) * 2 * pow(rand(u+73*i),0.5)))"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+	
+	>
+		
+		<frame time="10">0 0 0 0</frame>
+		<frame time="650">33 48 15 15</frame>
+		
+	</sprite> -->
+	<sprite origin="7.5 7.5" looping="false" texture="./player_trails.png" material="system/default.mats:bright-noxray"
+	
+		num-sprites="-1+rand(u)*4"
+		scale-x="0.5 + 0.5*rand(i)"
+		scale-y="0.5 + 0.5*rand(i)"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		
+		pos-x="cos(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5) + cos(t*pi*2)*rand(i)*3"
+        pos-y="4+sin(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5) + t*((rand(i)*-15+sin(rand(u+21*i)*2*pi) * 2 * pow(rand(u+73*i),0.5))) + sin(t*pi*2)*rand(i)*3"
+	>
+		
+		<frame time="10">0 0 0 0</frame>
+		<frame time="650">49 49 5 5</frame>
+		
+	</sprite>
+	<sprite origin="7.5 7.5" looping="false" texture="./player_trails.png" material="system/default.mats:bright-noxray"
+	
+		num-sprites="-2+rand(u)*3"
+		scale-x="0.5 + 0.5*rand(i)"
+		scale-y="0.5 + 0.5*rand(i)"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		
+		pos-x="cos(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5) - sin(t*pi*2)*rand(i)*3"
+        pos-y="4+sin(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5) + t*((rand(i)*-15+sin(rand(u+21*i)*2*pi) * 2 * pow(rand(u+73*i),0.5))) + sin(t*pi*2)*rand(i)*6"
+	>
+		
+		<frame time="10">0 0 0 0</frame>
+		<frame time="1250">49 49 5 5</frame>
+		
+	</sprite>
+</effect>

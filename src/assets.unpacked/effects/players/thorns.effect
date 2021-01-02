@@ -1,0 +1,18 @@
+<effect>
+	<param name="angle" default="0" />
+
+	<sprite looping="false" origin="1 1" texture="./player_effects.png" material="effects/effects.mats:lit"
+		pos-x="cos(angle) * t * 18"
+		pos-y="sin(angle) * t * 18"
+		
+		angle="angle"
+		
+		color-r="1"
+		color-g="0.25"
+		color-b="0.25"
+		color-a="saturate((1 - t) * 2)"
+	>
+		<frame time="250">0 111 5 2</frame>
+	</sprite>
+	
+</effect>

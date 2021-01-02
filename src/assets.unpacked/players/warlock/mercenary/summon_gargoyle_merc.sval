@@ -1,0 +1,28 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">warlock</string>
+	<string name="name">.skills.warlock.summon-gargoyle</string>
+	<string name="description">.skills.warlock.summon-gargoyle.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 144 24 24</vec4>
+	</array>
+
+	<int name="cost">18</int>
+
+	<dict name="skill">
+		<string name="class">Skills::DropUnitWarlock</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/warlock/gargoyle</string>
+
+		<int name="cooldown">500</int>
+		<int name="castpoint">0</int>
+		<float name="speed-mul">1</float>
+
+		<int name="mana-cost">75</int>
+
+		<int name="max-count">5</int>
+		<string name="unit">players/warlock/mercenary/gargoyle_merc.unit</string>
+	</dict>
+</dict>

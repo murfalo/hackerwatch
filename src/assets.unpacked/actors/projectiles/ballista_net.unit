@@ -1,0 +1,38 @@
+<unit>
+	<behavior class="BombBehavior">
+		<int name="delay">300</int>
+		<int name="delay-random">0</int>
+		<string name="spawn-sound">event:/enemy/tower_ballista/ballista_net</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<int name="radius">12</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:netted</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/projectiles/ballista_net_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+		</dict>			
+		
+	</behavior>
+	
+	<scenes default="idle">
+		<scene name="idle">
+			<effect src="actors/projectiles/ballista_net.effect" />
+			<effect pos="6 -7" src="effects/animations/dust.effect" />
+		</scene>
+	</scenes>
+</unit>

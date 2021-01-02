@@ -1,0 +1,59 @@
+<gui>
+	<sprites>
+		<sprite name="frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="icon-fountain" texture="gui/icons_others.png"><frame>144 72 24 24</frame></sprite>
+		<sprite name="icon-cursed" texture="gui/icons_others.png"><frame>0 144 24 24</frame></sprite>
+
+		<sprite name="icon-fountain-positive" texture="gui/icons.png"><frame>240 8 8 8</frame></sprite>
+		<sprite name="icon-fountain-negative" texture="gui/icons.png"><frame>248 8 8 8</frame></sprite>
+
+		<sprite name="icon-djinn" texture="gui/icons_others.png"><frame>72 168 24 24</frame></sprite>
+		<sprite name="icon-mtblocks" texture="gui/icons_others.png"><frame>96 168 24 24</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- List -->
+			<scrollrect id="list" width="314" height="233" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox" />
+
+			<!-- Separators -->
+			<rect width="3" height="233" offset="314 0" spriteset="gui/variable/3pxbar_vert.sval" />
+			<rect width="3" height="233" offset="325 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Header template -->
+			<rect id="template-header" visible="false" width="314" height="18" spriteset="gui/variable/headline_hor.sval">
+				<text id="text" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text="stuff" />
+			</rect>
+
+			<!-- Info template -->
+			<rect id="template-info" visible="false" width="314" height="28" flow="hbox">
+				<!-- Icon -->
+				<sprite src="frame">
+					<rect offset="2 2" width="24" height="24" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<clip width="24" height="24">
+							<!-- Sprite icon -->
+							<sprite id="icon" anchor="0.5 0.5" />
+
+							<!-- Unit icon -->
+							<unit id="unit" width="24" height="24" visible="false" />
+						</clip>
+					</rect>
+				</sprite>
+
+				<rect width="286" height="28" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4" flow="hbox" spacing="3">
+					<!-- Text -->
+					<text id="text" font="gui/fonts/arial11.fnt" anchor="0 0.5" offset="6 0" text="stuff" />
+
+					<!-- Text icon -->
+					<sprite id="text-icon" visible="false" anchor="0 0.5" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

@@ -1,0 +1,35 @@
+<unit slot="doodad" layer="-30">
+	<scenes off="off" on="on">
+		<scene name="off" trigger-snd="event:/misc/button_magic">
+			<sprite origin="8 8" texture="./buttons.png" material="system/default.mats:floor">
+				<frame time="50">112 80 16 16</frame>
+			</sprite>
+		</scene>
+		<scene name="on" trigger-snd="event:/misc/button_magic">
+			<sprite origin="8 8" ulayer="1" texture="./buttons.png" material="system/default.mats:bright">
+				<frame time="50">96 80 16 16</frame>
+			</sprite>
+			<sprite origin="8 8" texture="./buttons.png" material="system/default.mats:floor">
+				<frame time="50">112 80 16 16</frame>
+			</sprite>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="0 255 255 0 0" />
+				</colors>
+			</light>
+			
+		</scene>
+	</scenes>
+</unit>

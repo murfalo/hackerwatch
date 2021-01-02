@@ -1,0 +1,25 @@
+<unit slot="doodad">
+	<scenes start="default-1 default-2">
+		<scene random-start="true" name="shared">
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="3.5" />			
+			</collision>
+		</scene>
+
+		<scene random-start="true" name="default-1">
+			<scene src="shared" />
+			<sprite origin="5 14" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">54 0 9 15</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="default-2">
+			<scene src="shared" />
+			<sprite origin="5 14" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">54 64 9 15</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

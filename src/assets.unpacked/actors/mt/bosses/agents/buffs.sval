@@ -1,0 +1,264 @@
+<svals>
+	%// Sword
+	<dict name="starsword">
+		<array name="tags">
+			<string>player_debuff</string>
+		</array>
+		<int name="duration">2000</int>
+		<bool name="debuff">true</bool>
+		<string name="icon">doodads/special/icons/armorbreak.unit</string>
+		<float name="armor-mul">0.5</float>
+	</dict>
+	
+	<dict name="poisonsword">
+		<array name="tags">
+			<string>poison</string>
+			<string>player_debuff</string>
+		</array>
+		<int name="duration">4000</int>
+		<bool name="debuff">true</bool>
+		<float name="speed-mul">0.7</float>
+		<string name="icon">doodads/special/icons/poison.unit</string>
+		<array name="colors">
+			<vec4>0 0.025 0 1</vec4>
+			<vec4>0.3 0.85 0 1</vec4>
+			<vec4>0.6 0.8 1 1</vec4>
+		</array>
+		<dict name="tick">
+			<int name="freq">1000</int>
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="magical">16</int>
+				<bool name="can-kill">false</bool>
+				<bool name="true-strike">true</bool>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="icesword">
+		<array name="tags">
+			<string>player_debuff</string>
+			<string>freezing</string>
+		</array>
+		<int name="duration">3000</int>
+		<bool name="debuff">true</bool>
+		<string name="icon">doodads/special/icons/frost.unit</string>	
+		<float name="speed-mul">0.66</float>
+	</dict>
+	
+	<dict name="firesword">
+		<array name="tags">
+			<string>player_debuff</string>
+			<string>burning</string>
+		</array>
+		<int name="duration">3000</int>
+		<bool name="debuff">true</bool>
+		<string name="icon">doodads/special/icons/burn.unit</string>	
+		<float name="speed-mul">1.25</float>
+		<dict name="tick">
+			<int name="freq">500</int>
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="magical">10</int>
+				<bool name="true-strike">true</bool>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="nightsword"> <!-- NOT USED -->
+		<array name="tags">
+			<string>darkness</string>
+		</array>		
+		<int name="duration">200</int>
+		<bool name="debuff">true</bool>
+		<bool name="darkness">true</bool>
+		<string name="sound">event:/player/darkness</string>
+	</dict>	
+	
+	%// Projectiles
+	<dict name="starburst">
+		<array name="tags">
+			<string>player_debuff</string>
+		</array>
+		<int name="duration">2000</int>
+		<bool name="debuff">true</bool>
+		<string name="icon">doodads/special/icons/weakness.unit</string>	
+		<float name="dmg-taken-mul">1.25</float>
+	</dict>
+	
+	<dict name="starburst_night">
+		<array name="tags">
+			<string>player_debuff</string>
+		</array>
+		<int name="duration">2000</int>
+		<bool name="debuff">true</bool>
+		<string name="icon">doodads/special/icons/resistancebreak.unit</string>
+		<float name="resistance-mul">0.5</float>
+	</dict>	
+	
+	<dict name="fireball_night">
+		<array name="tags">
+			<string>player_debuff</string>
+		</array>
+		<int name="duration">2000</int>
+		<bool name="debuff">true</bool>
+		<string name="icon">doodads/special/icons/bleedingmana.unit</string>
+		<dict name="move">
+			<int name="freq">32</int>
+			<array name="effects">
+				<dict>
+					<string name="class">Decimate</string>
+					<float name="mana">0.05</float>
+					<bool name="can-kill">false</bool>
+					<bool name="true-strike">true</bool>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict name="rottenpart_night">
+		<array name="tags">
+			<string>player_debuff</string>
+		</array>
+		<int name="duration">2000</int>
+		<bool name="debuff">true</bool>
+		<string name="icon">doodads/special/icons/bleeding.unit</string>
+		<dict name="move">
+			<int name="freq">32</int>
+			<array name="effects">
+				<dict>
+					<string name="class">Decimate</string>
+					<float name="amount">0.05</float>
+					<bool name="can-kill">false</bool>
+					<bool name="true-strike">true</bool>
+				</dict>
+			</array>
+		</dict>
+	</dict>	
+
+	
+	%// Misc
+	<dict name="walk">
+		<int name="duration">2500</int>
+%//		<string name="icon">doodads/special/icons/slow.unit</string>
+		<float name="speed-mul">0.25</float>
+	</dict>
+	
+	<dict name="think">
+		<int name="duration">1500</int>
+		%//<string name="icon">doodads/special/icons/slow.unit</string>
+		<float name="speed-mul">0</float>
+	</dict>
+	
+	<dict name="night_power">
+		<array name="tags">
+			<string>notplayer</string>
+			<string>agents</string>
+		</array>
+		<int name="duration">5000</int>
+		<float name="speed-mul">0.75</float>
+		<string name="fx">actors/mt/bosses/agents/nightpower.effect</string>
+		<string name="icon">doodads/special/icons/moon.unit</string>
+		<string name="sound">event:/enemy/boss_agents/nightbuff</string>
+		<array name="colors">
+			<vec4>0.75 0 1 0.1</vec4>
+			<vec4>0.25 0 0.5 0</vec4>
+			<vec4>0 0 0 0</vec4>
+		</array>
+	</dict>
+	
+
+	%//Potion
+	<dict name="potionimmortal">
+		<int name="duration">15000</int>
+		<float name="set-speed">3</float>
+		<string name="fx">actors/mt/bosses/agents/shield.effect</string>
+	</dict>
+	
+
+	%// Night Beam
+	<dict name="night_beam">
+		<array name="tags">
+			<string>notplayer</string>
+		</array>
+	</dict>
+	
+	<dict name="night_beam_darkness">
+		<array name="tags">
+			<string>player</string>
+			<string>darkness</string>
+		</array>
+		<int name="duration">100</int>
+		<bool name="darkness">true</bool>
+		<string name="sound">event:/player/darkness</string>
+	</dict>
+	
+	<dict name="night_beam_manableed">
+		<array name="tags">
+			<string>player</string>
+		</array>
+		<int name="duration">100</int>
+		<string name="icon">doodads/special/icons/bleedingmana.unit</string>
+		<string name="sound">event:/player/mana_drain</string>		
+		<dict name="move">
+			<int name="freq">32</int>
+			<array name="effects">
+				<dict>
+					<string name="class">Decimate</string>
+					<float name="mana">0.05</float>
+					<bool name="can-kill">false</bool>
+					<bool name="true-strike">true</bool>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict name="night_beam_playerbleed">
+		<array name="tags">
+			<string>player</string>
+		</array>
+		<int name="duration">100</int>
+		<string name="icon">doodads/special/icons/bleeding.unit</string>
+		<dict name="move">
+			<int name="freq">32</int>
+			<array name="effects">
+				<dict>
+					<string name="class">Decimate</string>
+					<float name="amount">0.05</float>
+					<bool name="can-kill">false</bool>
+					<bool name="true-strike">true</bool>
+				</dict>
+				<dict name="effect">
+					<string name="class">SpawnEffect</string>
+					<string name="effect">effects/blood_loss.effect</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+
+	<dict name="night_beam_skeletonbleed">
+		<array name="tags">
+			<string>notplayer</string>
+			<string>notagent</string>
+			<string>nightbeamdeath</string>
+		</array>
+		<int name="duration">100</int>
+		<string name="icon">doodads/special/icons/bleeding.unit</string>
+		<dict name="move">
+			<int name="freq">32</int>
+			<array name="effects">
+				<dict>
+					<string name="class">Decimate</string>
+					<float name="amount">0.85</float>
+					<bool name="can-kill">false</bool>
+					<bool name="true-strike">true</bool>
+				</dict>
+				<dict>
+					<string name="class">Damage</string>
+					<int name="magical">50</int>
+					<bool name="true-strike">true</bool>
+				</dict>
+			</array>
+		</dict>
+	</dict>	
+</svals>

@@ -1,0 +1,179 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/terrain/desert_patch_crn_nw.unit"><vec2>16 16</vec2><int>11</int></array>
+		<array name="doodads/special/color_pyramid_slum_16.unit">
+			<vec2>-8 -8</vec2>
+			<int>23</int>
+			<vec2>56 -8</vec2>
+			<int>27</int>
+			<vec2>24 -24</vec2>
+			<int>26</int>
+			<vec2>8 -24</vec2>
+			<int>25</int>
+			<vec2>40 72</vec2>
+			<int>24</int>
+			<vec2>-8 -24</vec2>
+			<int>12</int>
+			<vec2>8 72</vec2>
+			<int>13</int>
+			<vec2>-8 24</vec2>
+			<int>14</int>
+			<vec2>56 72</vec2>
+			<int>15</int>
+			<vec2>-8 56</vec2>
+			<int>16</int>
+			<vec2>40 -24</vec2>
+			<int>17</int>
+			<vec2>-8 40</vec2>
+			<int>18</int>
+			<vec2>56 -24</vec2>
+			<int>19</int>
+			<vec2>24 72</vec2>
+			<int>20</int>
+			<vec2>-8 72</vec2>
+			<int>21</int>
+			<vec2>-8 8</vec2>
+			<int>22</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_deco_ceiling_support.unit"><vec2>32 16</vec2><int>5</int></array>
+		<array name="doodads/generic/lamp_torch.unit"><vec2>68 32</vec2><int>33</int></array>
+		<array name="doodads/terrain/desert_patch.unit"><vec2>36 52</vec2><int>2</int></array>
+		<array name="doodads/walls/pyramid_slum/_deco_h_crack_3.unit"><vec2>32 16</vec2><int>6</int></array>
+		<array name="doodads/walls/pyramid_slum/h_16.unit"><vec2>48 80</vec2><int>7</int></array>
+		<array name="doodads/walls/pyramid_slum/crn_se.unit"><vec2>64 16</vec2><int>34</int></array>
+		<array name="doodads/walls/pyramid_slum/crn_sw.unit"><vec2>0 80</vec2><int>31</int><vec2>48 16</vec2><int>32</int></array>
+		<array name="doodads/walls/pyramid_slum/v.unit"><vec2>0 32</vec2><int>10</int><vec2>0 0</vec2><int>9</int></array>
+		<array name="doodads/walls/pyramid_slum/v_16.unit"><vec2>64 -16</vec2><int>30</int></array>
+		<array name="doodads/walls/pyramid_slum/crn_nw.unit"><vec2>0 0</vec2><int>1</int></array>
+		<array name="doodads/walls/pyramid_slum/h.unit"><vec2>16 80</vec2><int>4</int><vec2>16 0</vec2><int>3</int></array>
+		<array name="doodads/walls/pyramid_slum/crn_ne.unit"><vec2>48 0</vec2><int>28</int><vec2>64 80</vec2><int>29</int></array>
+		<array name="doodads/walls/pyramid_slum/_deco_h_pillar_small.unit"><vec2>56 32</vec2><int>8</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>35</int>
+			<vec3>-68 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>5</int><int>6</int><int>8</int><int>11</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>36</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>41</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>37</int>
+			<vec3>32 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>36</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>45</int>
+			<vec3>-8 104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>44</int>
+			<vec3>32 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>snake_threat</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_slum/snake_threat.pfb</string>
+			</dict>
+			<array><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>40</int>
+			<vec3>-88 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>41</int>
+			<vec3>160 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_2x2</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/slum_loot_2x2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>42</int>
+			<vec3>-88 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>TorchChance</string>
+			<dict>
+				<float name="ChanceToExecute">0.25</float>
+				<array name="ToExecute"><int>40</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>43</int>
+			<vec3>64 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>SnakeThreatChance</string>
+			<dict>
+				<float name="ChanceToExecute">0.2</float>
+				<array name="ToExecute"><int>44</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>46</int>
+			<vec3>32 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<float name="ChanceToExecute">0.75</float>
+				<array name="ToExecute"><int>37</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

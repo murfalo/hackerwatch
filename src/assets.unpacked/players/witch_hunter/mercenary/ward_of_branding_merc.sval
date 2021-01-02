@@ -1,0 +1,31 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">witch_hunter</string>
+	<string name="name">.skills.witch_hunter.brand</string>
+	<string name="description">.skills.witch_hunter.brand.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 192 24 24</vec4>
+	</array>
+
+	<int name="cost">16</int>
+
+	<dict name="skill">
+		<string name="class">Skills::DropUnit</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/witch_hunter/brand_spawn</string>
+		<string name="fx">players/witch_hunter/ward_of_branding_spawn.effect</string>
+		
+		<int name="cooldown">500</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">true</bool>
+		<float name="speed-mul">0.5</float>
+		
+		<int name="mana-cost">55</int>
+
+		<int name="max-count">10</int>
+		<bool name="remove-oldest">true</bool>
+		<string name="unit">players/witch_hunter/mercenary/ward_of_branding_merc.unit</string>
+	</dict>
+</dict>

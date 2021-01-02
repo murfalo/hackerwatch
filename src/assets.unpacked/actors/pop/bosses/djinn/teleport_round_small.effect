@@ -1,0 +1,42 @@
+<effect looping="true">
+	<sprite looping="true" origin="13 13" texture="./magicball.png" material="system/default.mats:glow-both-bright"
+		angle="(t+l)*-pi"
+%//		scale-x="saturate(t+0.5)"
+%//		scale-y="saturate(t+0.5)"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame time="2000">3 19 26 26</frame>
+	</sprite>		
+	<sprite looping="true" origin="8 8" texture="./magicball.png" material="system/default.mats:glow-both-bright"
+		angle="(t+l)*pi"
+%//		scale-x="saturate(t+0.5)"
+%//		scale-y="saturate(t+0.5)"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame time="2000">0 0 16 16</frame>
+	</sprite>		
+	<sprite looping="true" origin="8 8" texture="./magicball.png" material="system/default.mats:glow-both-bright"
+		angle="(t+l)*pi*0.1"
+%//		scale-x="saturate(t+0.5)"
+%//		scale-y="saturate(t+0.5)"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame>16 0 16 16</frame>
+	</sprite>
+	<sprite looping="true" origin="8 8" texture="./magicball.png" material="system/default.mats:bright"
+		angle="(t+l)*pi*0.5"
+%//		scale-x="saturate(t+0.5)"
+%//		scale-y="saturate(t+0.5)"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame>32 0 16 16</frame>
+	</sprite>	
+</effect>

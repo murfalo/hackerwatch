@@ -1,0 +1,61 @@
+<effect looping="false">
+
+	<param name="height" default="8" />
+	<sprite origin="16 21" looping="false" texture="./snowball.png" material="system/default.mats:shadow"
+		color-a="1"
+	>
+		<frame time="450">0 0 0 0</frame>
+		<frame time="500">0 0 32 32</frame>
+	</sprite>
+	<sprite origin="16 21" looping="false" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		color-a="1"
+		pos-y="-height"
+	>
+		<frame time="450">0 0 0 0</frame>
+		<frame time="500">0 0 32 32</frame>
+	</sprite>
+	<sprite origin="16 21" looping="false" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		pos-y="-height"
+	>
+		<frame time="90">0 128 32 32</frame>
+		<frame time="90">32 128 32 32</frame>
+		<frame time="90">64 128 32 32</frame>
+		<frame time="90">96 128 32 32</frame>
+		<frame time="90">0 160 32 32</frame>
+		
+		<frame time="90">0 64 32 32</frame>
+		<frame time="90">32 64 32 32</frame>
+		<frame time="90">64 64 32 32</frame>
+		<frame time="90">96 64 32 32</frame>
+		<frame time="140">0 64 32 32</frame>
+	</sprite>
+	
+	
+	<light pos-x="0" pos-y="-5">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+				
+		<looping value="true" />
+		<length value="500" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="64*sin(t*2*pi)+28" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="3" />
+		<color-a value="0"/>
+	</light> 
+	
+</effect>

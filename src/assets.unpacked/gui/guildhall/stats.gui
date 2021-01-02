@@ -1,0 +1,92 @@
+<gui>
+	<sprites>
+		<sprite name="icon-unknown" texture="gui/icons_others.png"><frame>0 120 24 24</frame></sprite>
+
+		<sprite name="icon-armor" texture="gui/icons.png"><frame>73 42 13 13</frame></sprite>
+		<sprite name="icon-resistance" texture="gui/icons.png"><frame>75 29 14 13</frame></sprite>
+		<sprite name="icon-attack-power" texture="gui/icons.png"><frame>0 38 17 12</frame></sprite>
+		<sprite name="icon-spell-power" texture="gui/icons.png"><frame>29 38 16 12</frame></sprite>
+		<sprite name="icon-health-regen" texture="gui/icons.png"><frame>63 4 14 13</frame></sprite>
+		<sprite name="icon-mana-regen" texture="gui/icons.png"><frame>35 24 11 12</frame></sprite>
+		<sprite name="icon-gold-gain" texture="gui/icons.png"><frame>49 52 11 10</frame></sprite>
+		<sprite name="icon-crit-mul" texture="gui/icons.png"><frame>193 45 12 12</frame></sprite>
+		<sprite name="icon-crit-mul-spell" texture="gui/icons.png"><frame>205 45 12 12</frame></sprite>
+
+%include "gui/guildhall_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="380" height="194" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<!-- List -->
+				<scrollrect id="list" width="366" height="194" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox" />
+
+				<!-- Guild template -->
+				<details id="template-guild" visible="false" func="details-toggled" spriteset="gui/variable/details_borders.sval" arrow-down="arrow-down" arrow-up="arrow-up">
+					<rect id="header" width="358" height="39" flow="vbox">
+						<!-- Your guild -->
+						<rect width="358" height="18" spriteset="gui/variable/headline_hor.sval">
+							<text id="guild-title" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Separator -->
+						<rect width="358" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+						<!-- Reputation bar -->
+						<bar id="reputation-bar" width="358" height="18" value-padding="2 2" spriteset="gui/variable/statsbar/container_hor.sval" spriteset-value="gui/variable/statsbar/value_hor.sval">
+							<text id="text" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+						</bar>
+					</rect>
+					<grouprect id="details" inner="true" width="358" flow="vbox" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+				</details>
+
+				<!-- Classes template -->
+				<rect id="template-classes" visible="false" width="366" height="199" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox">
+					<!-- Header -->
+					<rect width="362" height="18" offset="2 2" spriteset="gui/variable/headline_hor.sval">
+						<text text=".guildhall.stats.classtitles" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="358" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- List -->
+					<rect id="list" offset="2 0" width="362" height="174" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+				</rect>
+
+				<!-- Classes class template -->
+				<rect id="template-classes-class" visible="false" width="40" height="58">
+					<!-- Title -->
+					<text id="title" font="gui/fonts/arial11.fnt" anchor="0.5 0" />
+
+					<!-- Unknown sprite -->
+					<sprite id="unknown" visible="false" src="box" anchor="0.5 0.5">
+						<sprite src="icon-unknown" offset="2 2" />
+					</sprite>
+
+					<!-- Portrait -->
+					<portrait id="portrait" visible="false" anchor="0.5 0.5" />
+
+					<!-- Bonus -->
+					<group id="bonus" double-layout="false" inner="true" height="15" anchor="0.5 1" flow="hbox" spacing="2">
+						<!-- Sprite -->
+						<sprite id="sprite" anchor="0 0.5" />
+
+						<!-- Value -->
+						<text id="value" font="gui/fonts/arial11.fnt" anchor="0 0.5" />
+					</group>
+				</rect>
+
+%include "gui/guildhall_templates.inc"
+
+				<!-- Separators -->
+				<rect width="3" height="194" offset="366 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="194" offset="377 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+			</rect>
+		</group>
+	</doc>
+</gui>

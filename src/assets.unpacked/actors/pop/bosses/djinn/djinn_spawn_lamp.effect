@@ -1,0 +1,26 @@
+<effect>
+
+	<data>
+		<string name="gore">effects/gibs/gib_lamp.sval</string>
+	</data>	
+
+	<sprite looping="true" origin="18 18" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor"
+	
+	color-a="saturate(1-pow(t,2))"
+	>
+
+		<frame time="500">109 481 32 31</frame>
+	</sprite>
+	
+	<shadow>
+				
+		<sprite looping="false" origin="14 17" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor"
+		
+		color-a="saturate(1-pow(t,2))"
+		>
+	
+			<frame time="500">141 484 34 28</frame>
+		</sprite>
+	</shadow>
+	
+</effect>

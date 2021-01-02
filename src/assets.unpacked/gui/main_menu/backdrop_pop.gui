@@ -1,0 +1,117 @@
+<gui>
+<!-- 
+	<sprites>
+		<sprite name="bg0" texture="gui/main_menu/menu_parallax_pop.png"><frame>1397 0 480 300</frame></sprite>
+		<sprite name="bg1" texture="gui/main_menu/menu_parallax_pop.png"><frame>0 757 393 187</frame></sprite>
+		<sprite name="bg2" texture="gui/main_menu/menu_parallax_pop.png"><frame>762 548 480 226</frame></sprite>
+	</sprites> -->
+	<sprites>
+		<sprite name="bird-1" texture="gui/main_menu/pop_backdrop_sand.png">
+		<frame>0 0 256 256</frame>
+		</sprite>
+		<sprite name="bg0" texture="gui/main_menu/menu_parallax_pop.png"><frame>0 0 650 460</frame></sprite>
+		<sprite name="bg1" texture="gui/main_menu/menu_parallax_pop.png"><frame>650 0 650 460</frame></sprite>
+		<sprite name="bg2" texture="gui/main_menu/menu_parallax_pop.png"><frame>1300 0 650 460</frame></sprite>
+		<sprite name="bg3" texture="gui/main_menu/menu_parallax_pop.png"><frame>0 460 650 460</frame></sprite>
+		<sprite name="bg4" texture="gui/main_menu/menu_parallax_pop.png"><frame>650 460 650 460</frame></sprite>
+		<sprite name="bg5" texture="gui/main_menu/menu_parallax_pop.png"><frame>1300 460 650 460</frame></sprite>
+		<sprite name="bg6" texture="gui/main_menu/menu_parallax_pop.png"><frame>0 920 650 460</frame></sprite>
+		<sprite name="bg7" texture="gui/main_menu/menu_parallax_pop.png"><frame>650 920 650 460</frame></sprite>
+		<sprite name="bg8" texture="gui/main_menu/menu_parallax_pop.png"><frame>1300 920 650 460</frame></sprite>
+		<sprite name="bg9" texture="gui/main_menu/menu_parallax_pop.png"><frame>0 1380 650 460</frame></sprite>
+		<sprite name="bg10" texture="gui/main_menu/menu_parallax_pop.png"><frame>650 1380 650 460</frame></sprite>
+		<sprite name="bg11" texture="gui/main_menu/menu_parallax_pop.png"><frame>1300 1380 650 460</frame></sprite>
+		<sprite name="bg12" texture="gui/main_menu/menu_parallax.png"><frame>0 0 0 0</frame></sprite>
+		</sprites>
+
+	<doc>
+		<grouprect id="container" color="#000000FF">
+			<group><sprite src="bg0" anchor="0.5 0.5" /></group>
+			<group><sprite src="bg1" anchor="0.5 0.5" /></group>
+			<group><sprite src="bg2" anchor="0.5 0.5" /></group>
+			<group><sprite src="bg3" anchor="0.5 0.5" /></group>
+			<group><sprite src="bg4" anchor="0.5 0.5" /></group>
+			<group><sprite src="bg5" anchor="0.5 0.5" />
+			
+			
+			</group>
+			<group><sprite src="bg6" anchor="0.5 0.5" /><menu_birds count="1"
+                    anchor="0 0.65" height="100"
+                    bird-time="1500" bird-time-rand="1000"
+                    bird-next-time="50" bird-next-time-rand="30"
+                    flock-size="60" flock-size-rand="10"
+                    flock-time="45000" flock-time-rand="0" 
+					towards-y="-200"
+					bird-flock-start-time="2000"
+					/></group>
+			<group><sprite src="bg7" anchor="0.5 0.5" /></group>
+			<group><menu_birds count="1"
+                    anchor="0 0.65" height="20"
+                    bird-time="1500" bird-time-rand="1000"
+                    bird-next-time="25" bird-next-time-rand="30"
+                    flock-size="30" flock-size-rand="10"
+                    flock-time="45000" flock-time-rand="0" 
+					towards-y="300"
+					bird-flock-start-time="2000"
+					/><sprite src="bg8" anchor="0.5 0.5" /></group>
+			
+			<group><sprite src="bg9" anchor="0.5 0.5" />
+			
+					<sprite src="bg8" anchor="0.5 0.5" />
+					<menu_birds count="1"
+                    anchor="0 0.65" height="25"
+                    bird-time="4000" bird-time-rand="100"
+                    bird-next-time="250" bird-next-time-rand="10"
+                    flock-size="15" flock-size-rand="10"
+                    flock-time="45000" flock-time-rand="0" 
+					towards-y="300"
+					bird-flock-start-time="2000"
+					/>
+					</group>
+			<group><sprite src="bg10" anchor="0.5 0.5" /></group>
+			<group><sprite src="bg11" anchor="0.5 0.5" />
+			
+			
+			</group>
+			<group>
+				<rect width="608" height="372" border="#000000FF" borderwidth="512" bordertype="outer" anchor="0.5 0.5">
+					<sprite src="bg12" anchor="0.5 0.5" offset="0 68" />
+				</rect>
+			</group>
+		</grouprect>
+	</doc>
+</gui>
+<!-- 1: 393 187 -44 +19
+	 2: 196.5 93.5
+-->
+<!-- 
+<gui>
+	<sprites>
+		<sprite name="bg0" texture="gui/main_menu/menu_parallax.png"><frame>1 653 607 371</frame></sprite>
+		<sprite name="bg1" texture="gui/main_menu/menu_parallax.png"><frame>1217 420 607 233</frame></sprite>
+		<sprite name="bg2" texture="gui/main_menu/menu_parallax.png"><frame>1447 294 140 100</frame></sprite>
+		<sprite name="bg3" texture="gui/main_menu/menu_parallax.png"><frame>1368 294 78 61</frame></sprite>
+		<sprite name="bg4" texture="gui/main_menu/menu_parallax.png"><frame>1217 294 150 125</frame></sprite>
+		<sprite name="bg5" texture="gui/main_menu/menu_parallax.png"><frame>609 343 607 261</frame></sprite>
+		<sprite name="bg6" texture="gui/main_menu/menu_parallax.png"><frame>1 343 607 39</frame></sprite>
+		<sprite name="bg7" texture="gui/main_menu/menu_parallax.png"><frame>1082 1 607 292</frame></sprite>
+		<sprite name="bg8" texture="gui/main_menu/menu_parallax.png"><frame>1 1 1080 341</frame></sprite>
+	</sprites>
+
+	<doc>
+		<grouprect id="container" color="#000000FF">
+			<group><sprite src="bg0" anchor="0.5 0.5" /></group>
+			<group><sprite src="bg1" anchor="0.5 0.5" offset="0 -68" /></group>
+			<group><sprite src="bg2" anchor="0.5 0.5" offset="0 -132" /></group>
+			<group><sprite src="bg3" anchor="0.5 0.5" offset="4 -87" /></group>
+			<group><sprite src="bg4" anchor="0.5 0.5" offset="4 -19" /></group>
+			<group><sprite src="bg5" anchor="0.5 0.5" offset="0 -84" /></group>
+			<group>
+				<sprite src="bg6" anchor="0.5 0.5" offset="0 60" />
+			</group>
+			<group><sprite src="bg7" anchor="0.5 0.5" offset="0 68" /></group>
+			<group><sprite src="bg8" anchor="0.5 0.5" offset="-9 44" /></group>
+		</grouprect>
+	</doc>
+</gui>
+ -->

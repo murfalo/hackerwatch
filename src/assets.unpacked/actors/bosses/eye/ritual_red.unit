@@ -1,0 +1,162 @@
+<unit slot="doodad">
+	<scenes off="off" 1="stage-1" 2="stage-2" 3="stage-3" 4="stage-4" 5="stage-5" 6="stage-6" 7="stage-7" 8="stage-8" 9="stage-9" 10="stage-end" >
+	
+		<scene name="off">
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="off" align="center" material="system/default.mats:bright"/>
+			%endif	
+		</scene>
+
+		<scene name="shared-ritual">	
+			<sprite origin="5 29" ulayer="1" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="100">288 0 11 29</frame>	
+				<frame time="100">299 0 11 29</frame>	
+				<frame time="100">310 0 11 29</frame>	
+				<frame time="100">321 0 11 29</frame>	
+				<frame time="100">332 0 11 29</frame>	
+				<frame time="100">343 0 11 29</frame>	
+				<frame time="100">354 0 11 29</frame>	
+				<frame time="100">365 0 11 29</frame>	
+				<frame time="100">376 0 11 29</frame>	
+			</sprite>
+			<light pos="0 -2">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="255 0 0 1" />
+				</colors>
+			</light>
+			
+			<light pos="0 -30">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="255 0 0 1" />
+				</colors>
+			</light>
+		</scene>
+		
+		<scene name="stage-1">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" loopback="800" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="200">480 80 31 28</frame>	
+				<frame time="100">511 80 31 28</frame>	
+				<frame time="100">542 80 31 28</frame>	
+				<frame time="100">573 80 31 28</frame>	
+				<frame time="100">604 80 31 28</frame>	
+				<frame time="100">635 80 31 28</frame>	
+				<frame time="100">666 80 31 28</frame>	
+				<frame time="100">224 73 31 28</frame>	
+			</sprite>			
+		</scene>
+		<scene name="stage-2">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">255 73 31 28</frame>	
+			</sprite>			
+		</scene>
+		<scene name="stage-3">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">286 73 31 28</frame>	
+			</sprite>			
+		</scene>
+		<scene name="stage-4">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">317 73 31 28</frame>	
+			</sprite>			
+		</scene>
+		<scene name="stage-5">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">348 73 31 28</frame>
+			</sprite>			
+		</scene>
+		<scene name="stage-6">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">379 73 31 28</frame>
+			</sprite>			
+		</scene>
+		<scene name="stage-7">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">410 73 31 28</frame>	
+			</sprite>			
+		</scene>
+		<scene name="stage-8">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">441 73 31 28</frame>		
+			</sprite>			
+		</scene>
+		<scene name="stage-9">
+			<scene src="shared-ritual" />
+			<sprite origin="12 54" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">224 101 31 28</frame>			
+			</sprite>			
+		</scene>
+		<scene name="stage-end">
+			<sprite origin="12 54" ulayer="3" looping="false" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				
+				<frame time="100">255 101 31 28</frame>	
+				<frame time="100">286 101 31 28</frame>	
+				<frame time="100">317 101 31 28</frame>	
+				<frame time="100">348 101 31 28</frame>	
+				<frame time="100">379 101 31 28</frame>	
+				<frame time="100">410 101 31 28</frame>	
+				<frame time="100">441 101 31 28</frame>			
+				<frame time="100">224 129 31 28</frame>			
+				<frame time="100">255 129 31 28</frame>	
+				<frame time="100">286 129 31 28</frame>	
+				<frame time="100">317 129 31 28</frame>	
+				<frame time="100">348 129 31 28</frame>	
+				<frame time="100">379 129 31 28</frame>	
+				<frame time="100">410 129 31 28</frame>	
+				<frame time="100">441 129 31 28</frame>			
+				<frame time="100">224 157 31 28</frame>			
+				<frame time="100">255 157 31 28</frame>	
+				<frame time="100">286 157 31 28</frame>	
+				<frame time="100">317 157 31 28</frame>	
+				<frame time="100">348 157 31 28</frame>	
+				<frame time="100">379 157 31 28</frame>	
+				<frame time="100">410 157 31 28</frame>	
+				<frame time="100">441 157 31 28</frame>				
+				<frame time="100">224 185 31 28</frame>			
+				<frame time="100">255 185 31 28</frame>	
+				<frame time="100">286 185 31 28</frame>				
+				<frame time="100">0 0 0 0</frame>				
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

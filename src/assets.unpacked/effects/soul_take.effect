@@ -1,0 +1,119 @@
+<effect layer="10" looping="false">
+	<param name="angle" default="0" />
+	<variation>
+		<sprite looping="false" origin="6 16" texture="./soul_steal.png" material="system/default.mats:default-noxray"
+			pos-y="2"
+			color-a="1-t"
+		>
+			<frame time="75">0 0 11 18</frame>
+			<frame time="75">11 0 11 18</frame>
+			<frame time="75">22 0 11 18</frame>
+			<frame time="75">33 0 11 18</frame>
+			<frame time="75">44 0 11 18</frame>
+			<frame time="75">55 0 11 18</frame>
+			<frame time="75">66 0 11 18</frame>
+			<frame time="75">77 0 11 18</frame>
+			<frame time="75">88 0 11 18</frame>
+			<frame time="75">0 0 0 0</frame>
+		</sprite>
+		<sprite looping="false" origin="6 16" texture="./soul_steal.png" material="system/default.mats:glow"
+			pos-y="2"
+			color-a="1-t"
+		>
+			<frame time="75">0 0 11 18</frame>
+			<frame time="75">11 0 11 18</frame>
+			<frame time="75">22 0 11 18</frame>
+			<frame time="75">33 0 11 18</frame>
+			<frame time="75">44 0 11 18</frame>
+			<frame time="75">55 0 11 18</frame>
+			<frame time="75">66 0 11 18</frame>
+			<frame time="75">77 0 11 18</frame>
+			<frame time="75">88 0 11 18</frame>
+			<frame time="75">0 0 0 0</frame>
+		</sprite>
+	</variation>
+	<variation>
+		<sprite looping="false" origin="6 16" texture="./soul_steal.png" material="system/default.mats:default-noxray"
+			pos-y="2"
+			color-a="1-t"
+		>
+			<frame time="70">0 18 11 18</frame>
+			<frame time="70">11 18 11 18</frame>
+			<frame time="70">22 18 11 18</frame>
+			<frame time="70">33 18 11 18</frame>
+			<frame time="70">44 18 11 18</frame>
+			<frame time="70">55 18 11 18</frame>
+			<frame time="70">66 18 11 18</frame>
+			<frame time="70">77 18 11 18</frame>
+			<frame time="70">88 18 11 18</frame>
+			<frame time="75">0 0 0 0</frame>
+		</sprite>
+		<sprite looping="false" origin="6 16" texture="./soul_steal.png" material="system/default.mats:glow"
+			pos-y="2"
+			color-a="1-t"
+		>
+			<frame time="70">0 18 11 18</frame>
+			<frame time="70">11 18 11 18</frame>
+			<frame time="70">22 18 11 18</frame>
+			<frame time="70">33 18 11 18</frame>
+			<frame time="70">44 18 11 18</frame>
+			<frame time="70">55 18 11 18</frame>
+			<frame time="70">66 18 11 18</frame>
+			<frame time="70">77 18 11 18</frame>
+			<frame time="70">88 18 11 18</frame>
+			<frame time="75">0 0 0 0</frame>
+		</sprite>
+	
+	</variation>
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*20" />
+			
+		<color-r value="0.5" />
+		<color-g value="1.5" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="40*(1-t)" />
+			
+		<color-r value="0.5" />
+		<color-g value="1.5" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

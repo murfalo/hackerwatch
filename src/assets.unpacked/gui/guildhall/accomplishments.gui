@@ -1,0 +1,75 @@
+<gui>
+	<sprites>
+		<sprite name="reputation-points" texture="gui/icons.png"><frame>0 109 12 12</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+
+		<sprite name="char-icon-paladin" texture="gui/icons_faces_waypoint.png"><frame>0 0 14 14</frame></sprite>
+		<sprite name="char-icon-ranger" texture="gui/icons_faces_waypoint.png"><frame>14 0 14 14</frame></sprite>
+		<sprite name="char-icon-sorcerer" texture="gui/icons_faces_waypoint.png"><frame>28 0 14 14</frame></sprite>
+		<sprite name="char-icon-priest" texture="gui/icons_faces_waypoint.png"><frame>42 0 14 14</frame></sprite>
+		<sprite name="char-icon-wizard" texture="gui/icons_faces_waypoint.png"><frame>56 0 14 14</frame></sprite>
+		<sprite name="char-icon-warlock" texture="gui/icons_faces_waypoint.png"><frame>70 0 14 14</frame></sprite>
+		<sprite name="char-icon-thief" texture="gui/icons_faces_waypoint.png"><frame>84 0 14 14</frame></sprite>
+		<sprite name="char-icon-gladiator" texture="gui/icons_faces_waypoint.png"><frame>0 42 14 14</frame></sprite>
+		<sprite name="char-icon-witch_hunter" texture="gui/icons_faces_waypoint.png"><frame>14 42 14 14</frame></sprite>
+
+%include "gui/dlc_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="380" height="194" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<!-- List -->
+				<scrollrect id="list" flow="vbox" width="366" height="194" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="194" offset="366 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="194" offset="377 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Header template -->
+				<rect id="template-header" visible="false" width="366" height="21">
+					<rect width="366" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+					<rect width="366" height="18" spriteset="gui/variable/headline_hor.sval" offset="0 3">
+						<text id="text" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+					</rect>
+				</rect>
+
+				<!-- Bar template -->
+				<rect id="template-bar" visible="false" width="366" height="18">
+					<group inner="true" offset="4 0" flow="hbox" spacing="3">
+						<text id="name" font="gui/fonts/arial11.fnt" />
+						<sprite id="dlc" visible="false" anchor="0 0.5" />
+					</group>
+					<bar id="bar" width="216" height="18" offset="147 0" value-padding="2 2" spriteset="gui/variable/statsbar/container_hor.sval" spriteset-value="gui/variable/statsbar/value_hor.sval">
+						<text id="text" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+					</bar>
+				</rect>
+
+				<!-- Vertical separator template -->
+				<rect id="template-separator" flow-affected="false" visible="false" width="3" height="0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Boss template -->
+				<rect id="template-boss" visible="false" width="366" height="24" spriteset="gui/variable/bigwindow_borders.sval">
+					<rect offset="2 2" width="362" height="20" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<!-- Name -->
+						<rect width="181" height="20">
+							<text id="name" font="gui/fonts/arial11.fnt" anchor="1 0.5" offset="-4 0" />
+						</rect>
+
+						<!-- Classes -->
+						<rect id="classes" offset="181 0" width="181" height="20" flow="hbox" spacing="4" />
+					</rect>
+				</rect>
+
+				<!-- Boss class template -->
+				<sprite id="template-boss-class" visible="false" src="char-icon-paladin" anchor="0 0.5">
+					<sprite id="check" visible="false" src="icon-check" offset="6 7" />
+				</sprite>
+			</rect>
+		</group>
+	</doc>
+</gui>

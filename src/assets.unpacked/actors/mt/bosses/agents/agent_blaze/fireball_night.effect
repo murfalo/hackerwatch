@@ -1,0 +1,104 @@
+<effect looping="true" wpos-track="50">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<trail texture="effects/empty.png" ulayer="1" material="system/default.mats:projectile">
+		
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="10" />
+		<size value="8-i/2" />
+
+		<uv-x value="0" />
+		<uv-y value="0" />
+		
+		<color-r value="0.2" />
+		<color-g value="0" />
+		<color-b value="max(3,3-i)" />
+		<color-a value="(9-i)/75" />
+	</trail>
+	
+	<trail texture="./fireball_night_trail.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="20" />
+		<size value="15 * (1 - i / 100)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-100" />
+		<uv-l-y value="0" />
+		
+		<uv-r-x value="i*2 + (t+l)*-100" />
+		<uv-r-y value="10" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="2" />
+		<color-a value="max(0, (1 - i / 100) * 0.75)" />
+	</trail>
+
+	
+	<trail texture="./fireball_night_trail.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="20" />
+		<size value="18 * (1 - i / 35)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-100" />
+		<uv-l-y value="10" />
+		
+		<uv-r-x value="i*2 + (t+l)*-100" />
+		<uv-r-y value="20" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="max(0,1 - i / 35)" />
+	</trail>
+	
+	<sprite looping="true" origin="8 7" texture="./fireball.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="50">0 32 17 12</frame>
+		<frame time="50">17 32 17 12</frame>
+		<frame time="50">34 32 17 12</frame>
+		<frame time="50">0 44 17 12</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="28" />
+
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="3" />
+		<color-a value="0"/>
+	</light>
+</effect>

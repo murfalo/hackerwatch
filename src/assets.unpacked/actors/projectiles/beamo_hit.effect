@@ -1,0 +1,39 @@
+<effect looping="false">
+
+
+	<sprite origin="8 8" ulayer="0" texture="./beamo_hit.png" material="system/default.mats:bright-noxray"
+		angle="rand(u)*pi*2"
+	>
+		<frame time="50">0 0 16 16</frame>
+		<frame time="50">16 0 16 16</frame>
+		<frame time="50">32 0 16 16</frame>
+		<frame time="50">48 0 16 16</frame>
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+	</sprite>
+	
+	
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="32 * (1-t)" />
+		
+		<color-r value="3" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+	
+	
+
+	
+</effect>

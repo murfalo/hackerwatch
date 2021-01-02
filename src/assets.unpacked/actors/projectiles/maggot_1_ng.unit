@@ -1,0 +1,47 @@
+<unit netsync="none">
+	<behavior class="TossProjectile">
+		<string name="anim">idle</string>
+		<int name="anim-num">1</int>
+	
+		<float name="speed">2.7</float>	
+		<float name="arc-height">8</float>
+		<bool name="blockable">true</bool>
+		<bool name="on-target">false</bool>
+		<string name="hit-snd">event:/enemy/maggot/hit</string>
+		<int name="ttl">900</int>	
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">12</int>
+			</dict>
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/projectiles/impact_maggot_projectile.effect</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:poison_strong</string>
+			</dict>
+		</array>
+		
+		<string name="fx">actors/projectiles/maggot_hit.effect</string>
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+		
+	</behavior>
+	
+	<scenes>
+		<scene name="idle-0">
+			<sprite origin="1 1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>122 0 3 3</frame>
+			</sprite>
+			<effect src="actors/projectiles/maggot_1.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="1.5" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

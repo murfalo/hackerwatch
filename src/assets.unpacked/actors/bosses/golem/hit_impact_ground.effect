@@ -1,0 +1,71 @@
+<effect looping="false">
+	<param name="angle" default="0" />
+	<param name="length" default="100" />
+	
+	//SPARK
+	<sprite looping="false" origin="9 9" texture="./hit_impact_ground.png" material="system/default.mats:bright-noxray"
+	%//angle="angle"
+		
+	%//pos-x="cos(angle)*2"
+	%//pos-y="sin(angle)*2"
+	>
+		<frame time="40"> 0 42 16 16</frame>
+		<frame time="40"> 16 42 16 16</frame>
+		<frame time="40"> 32 42 16 16</frame>
+		<frame time="40"> 48 42 16 16</frame>
+	</sprite>
+	
+	//DUST
+	<sprite looping="false" origin="8 7" texture="./hit_impact_ground.png" material="system/default.mats:bright-noxray"
+	%//angle="angle"
+		
+	%//pos-x="cos(angle)*2"
+	%//pos-y="sin(angle)*2"
+	>
+		<frame time="40"> 0 27 16 15</frame>
+		<frame time="40"> 16 27 16 15</frame>
+		<frame time="40"> 32 27 16 15</frame>
+		<frame time="40"> 48 27 16 15</frame>
+		<frame time="40"> 64 27 16 15</frame>
+		<frame time="40"> 80 27 16 15</frame>
+	</sprite>
+	
+	//Circle
+	<sprite looping="false" origin="13 13" texture="./hit_impact_ground.png" material="system/default.mats:bright-noxray"
+	%//angle="angle"
+		
+	%//pos-x="cos(angle)*2"
+	%//pos-y="sin(angle)*2"
+	>
+		<frame time="40"> 0 0 27 27</frame>
+		<frame time="40"> 27 0 27 27</frame>
+		<frame time="40"> 54 0 27 27</frame>
+		<frame time="40"> 81 0 27 27</frame>
+		<frame time="40"> 96 27 27 27</frame>
+	</sprite>
+
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="720" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="pow((sin((pow(t, 0.15))+1)), 900) * 100" />
+		
+		<color-r value="255/255" />
+		<color-g value="75/255" />
+		<color-b value="10/255" />
+		<color-a value="0/255" />
+	</light>
+	
+</effect>

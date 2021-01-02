@@ -1,0 +1,58 @@
+<unit slot="doodad">
+	<scenes default="default" snow="snow" dirt_cold="dirt_cold" dirt="dirt">
+		<scene name="default">
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="0 20 6 6" />
+			<sprite origin="16 20" texture="./ice_rock.png" material="system/default.mats:default-noxray">
+				<frame>0 35 32 35</frame>
+			</sprite>
+			<collision static="true">
+				<circle offset="0 -1" radius="14" />
+			</collision>
+		</scene>
+		<scene name="snow">
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="0 20 6 6" />
+			<collision static="true">
+				<circle offset="0 -1" radius="14" />
+			</collision>
+			<sprite layer="-5" origin="19 3" texture="./ice_rock.png" material="system/default.mats:floor">
+				<frame>60 0 37 24</frame>
+			</sprite>
+			<sprite ulayer="1" origin="14 1" texture="./ice_rock.png" material="system/default.mats:default-noxray">
+				<frame>32 0 28 17</frame>
+			</sprite>
+			<sprite origin="16 20" texture="./ice_rock.png" material="system/default.mats:default-noxray">
+				<frame>0 0 32 35</frame>
+			</sprite>
+		</scene>
+		<scene name="dirt">
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="0 20 6 6" />
+			<collision static="true">
+				<circle offset="0 -1" radius="14" />
+			</collision>
+			<sprite layer="-5" origin="19 2" texture="./ice_rock.png" material="system/default.mats:floor">
+				<frame>60 24 37 23</frame>
+			</sprite>
+			<sprite ulayer="1" origin="14 1" texture="./ice_rock.png" material="system/default.mats:floor">
+				<frame>32 17 28 16</frame>
+			</sprite>
+			<sprite origin="16 20" texture="./ice_rock.png" material="system/default.mats:floor">
+				<frame>0 35 32 35</frame>
+			</sprite>
+		</scene>
+		<scene name="dirt_cold">
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="0 20 6 6" />
+			<collision static="true">
+				<circle offset="0 -1" radius="14" />
+			</collision>
+			<sprite layer="-5" origin="19 2" texture="./ice_rock.png" material="system/default.mats:floor">
+				<frame>60 47 37 23</frame>
+			</sprite>
+			<sprite ulayer="1" origin="14 1" texture="./ice_rock.png" material="system/default.mats:floor">
+				<frame>32 33 28 16</frame>
+			</sprite>
+			<sprite origin="16 20" texture="./ice_rock.png" material="system/default.mats:floor">
+				<frame>0 0 32 35</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

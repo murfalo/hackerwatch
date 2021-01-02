@@ -1,0 +1,88 @@
+<unit slot="doodad">
+	<scenes start="start" on="on" off="off" floor_on="floor_on" floor_off="floor_off">
+		<scene name="start">
+			<sprite looping="false" origin="7 23" texture="./imp.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="on" trigger-snd="event:/misc/imp_on">
+			<!-- <minimap_sprite origin="6 6" layer="90" texture="gui/minimap.png" frame="60 54 12 12" /> -->
+<!-- 			<collision static="true">
+				<circle offset="0 3" radius="3.5" />			
+			</collision> -->
+			<sprite origin="7 23" loopback="1100" texture="./imp.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 15 30</frame>
+				<frame time="100">15 0 15 30</frame>
+				<frame time="100">30 0 15 30</frame>
+				<frame time="100">45 0 15 30</frame>
+				<frame time="100">60 0 15 30</frame>
+				<frame time="100">75 0 15 30</frame>
+				<frame time="100">90 0 15 30</frame>
+				<frame time="100">105 0 15 30</frame>
+				<frame time="100">0 30 15 30</frame>
+				<frame time="100">15 30 15 30</frame>
+				<frame time="100">30 30 15 30</frame>
+				
+				<frame time="100">45 30 15 30</frame>			
+				<frame time="100">60 30 15 30</frame>
+				<frame time="100">75 30 15 30</frame>
+				<frame time="100">90 30 15 30</frame>
+			</sprite>
+		</scene>
+		<scene name="off" trigger-snd="event:/misc/imp_off">
+			<sprite looping="false" origin="7 23" texture="./imp.png" material="system/default.mats:default-noxray">
+				<frame time="70">105 30 15 30</frame>
+				<frame time="70">0 60 15 30</frame>
+				<frame time="70">15 60 15 30</frame>
+				<frame time="70">30 60 15 30</frame>
+				<frame time="100">45 60 15 30</frame>
+				<frame time="100">60 60 15 30</frame>
+				<frame time="100">75 60 15 30</frame>
+				<frame time="100">90 60 15 30</frame>
+				<frame time="100">105 60 15 30</frame>
+				<frame time="100">0 90 15 30</frame>
+				<frame time="100">15 90 15 30</frame>
+				<frame time="100">30 90 15 30</frame>
+				<frame time="100">45 90 15 30</frame>
+				<frame time="100">60 90 15 30</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		<scene name="floor_on" trigger-snd="event:/misc/imp_on">
+			<!-- <minimap_sprite origin="6 6" layer="90" texture="gui/minimap.png" frame="60 54 12 12" /> -->
+<!-- 			<collision static="true">
+				<circle offset="0 3" radius="3.5" />			
+			</collision> -->
+			<sprite origin="7 19" loopback="1100" texture="./imp_floor.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 15 28</frame>
+				<frame time="100">15 0 15 28</frame>
+				<frame time="100">30 0 15 28</frame>
+				<frame time="100">45 0 15 28</frame>
+				<frame time="100">60 0 15 28</frame>
+				<frame time="100">75 0 15 28</frame>
+				<frame time="100">90 0 15 28</frame>
+				<frame time="100">105 0 15 28</frame>
+				<frame time="100">0 28 15 28</frame>
+				<frame time="100">15 28 15 28</frame>
+				<frame time="100">30 28 15 28</frame>
+				
+				<frame time="100">45 28 15 28</frame>			
+			</sprite>
+		</scene>
+		<scene name="floor_off" trigger-snd="event:/misc/imp_off">
+			<sprite looping="false" origin="7 19" texture="./imp_floor.png" material="system/default.mats:default-noxray">
+				<frame time="100">60 28 15 28</frame>
+				<frame time="100">75 28 15 28</frame>
+				<frame time="100">90 28 15 28</frame>
+				<frame time="100">105 28 15 28</frame>
+				<frame time="100">0 56 15 28</frame>
+
+				<frame time="100">30 0 15 28</frame>
+				<frame time="100">15 0 15 28</frame>
+				<frame time="100">0 0 15 28</frame>	
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

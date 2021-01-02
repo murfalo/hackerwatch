@@ -1,0 +1,41 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="4 10" layer="500" texture="gui/minimap.png" frame="12 1 8 13"/>			
+			<collision static="true">
+				<circle radius="1" offset="4 0"/>
+				<circle radius="1" offset="-4 0"/>
+				<rect>-4 -1 8 2</rect> 
+			</collision>
+			<sprite layer="0" origin="11 44" texture="./exit_special.png" material="system/default.mats:default-noxray">
+				<frame>384 305 22 48</frame>
+			</sprite>	
+			<light pos="0 -40">
+				<sprite texture="../exit_light_cone_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1500" />
+				<overbright value="20"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" /> 
+				
+				<sizes>
+					<size value="150" />
+				</sizes>
+				<colors>
+					<color value="220 200 50 0" />
+					<color value="220 170 50 0" />
+				</colors>
+			</light>	
+			<effect ulayer="2" pos="-26 -30" src="doodads/walls/exit_moth.effect" />
+			<effect ulayer="2" pos="-33 -20" src="doodads/walls/exit_moth.effect" />
+			<effect ulayer="2" pos="-35 -10" src="doodads/walls/exit_moth.effect" />	
+			<effect ulayer="2" pos="-27 -8" src="doodads/walls/exit_moth.effect" />				
+			<effect ulayer="2" pos="-30 0" src="doodads/walls/exit_moth.effect" />	
+			<effect ulayer="2" pos="-27 8" src="doodads/walls/exit_moth.effect" />	
+			<effect ulayer="2" pos="-25 10" src="doodads/walls/exit_moth.effect" />
+		</scene>
+	</scenes>
+</unit>

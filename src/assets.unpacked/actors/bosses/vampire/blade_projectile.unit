@@ -1,0 +1,129 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle 8</string>
+		<float name="speed">0</float>
+		<float name="speed-delta">0.25</float>
+		<float name="speed-delta-max">5</float>
+		<int name="ttl">3000</int>
+		
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.085</float>
+		
+		<string name="hit-snd">event:/enemy/boss_vampire/blade_hit</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">50</int>
+				<!-- <float name="resistance-mul">0.8</float> -->
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:vampire-bleeding</string>
+			</dict>
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/bosses/vampire/blade_hit.effect</string>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+		<string name="fx">actors/bosses/vampire/blade_fade.effect</string>
+	</behavior>
+	
+	<scenes>
+		<scene name="shared">
+			<collision static="false">
+				<circle projectile="true" radius="3" />
+				<circle offset="0 6" projectile="true" radius="3" />
+			</collision>
+			
+			<light pos="0 15">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="255 0 0 0" />
+				</colors>
+			</light>		
+			<effect src="actors/bosses/vampire/trail_blade.effect" />			
+		</scene>
+		
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">0 0 26 36</frame>
+				<frame time="70">0 36 26 36</frame>
+				<frame time="70">0 72 26 36</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">26 0 26 36</frame>
+				<frame time="70">26 36 26 36</frame>
+				<frame time="70">26 72 26 36</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">52 0 26 36</frame>
+				<frame time="70">52 36 26 36</frame>
+				<frame time="70">52 72 26 36</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">78 0 26 36</frame>
+				<frame time="70">78 36 26 36</frame>
+				<frame time="70">78 72 26 36</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">104 0 26 36</frame>
+				<frame time="70">104 36 26 36</frame>
+				<frame time="70">104 72 26 36</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">130 0 26 36</frame>
+				<frame time="70">130 36 26 36</frame>
+				<frame time="70">130 72 26 36</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">156 0 26 36</frame>
+				<frame time="70">156 36 26 36</frame>
+				<frame time="70">156 72 26 36</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="13 18" texture="./blade_projectile.png" material="system/default.mats:actor">
+				<frame time="70">182 0 26 36</frame>
+				<frame time="70">182 36 26 36</frame>
+				<frame time="70">182 72 26 36</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,12 @@
+<effect looping="false" bounds="1024 1024">
+	<sprite mask="1001" looping="false" origin="0 -11" texture="./base.png" material="system/default.mats:proj-wall">
+		<frame time="2000" x="97" y="128" w="16" h="48)"/>
+	</sprite>
+	<sprite masked="1001" layer="-1" pos-x="0-(16*t)" origin="-16 33" texture="./base.png" material="system/default.mats:shadow">
+		<frame time="2000"  x="80" y="128 - (31*t)" w="16 " h="48" />
+	</sprite>
+	<sprite masked="1001" looping="false" origin="0 32" texture="./base.png" material="system/default.mats:proj-wall">
+		<frame time="2000" x="64" y="128 - (31*t)" w="16" h="48)"/>
+	</sprite>
+	
+</effect>

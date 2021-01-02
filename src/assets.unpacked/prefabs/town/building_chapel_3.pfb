@@ -1,0 +1,399 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">MainMenu</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/outlook_church_carpet.unit">
+			<vec2>96 80</vec2>
+			<int>2</int>
+			<vec2>96 100</vec2>
+			<int>3</int>
+			<array>
+				<vec2>96 120</vec2>
+				<int>4</int>
+				<dict>
+					<string name="start">crossing</string>
+				</dict>
+			</array>
+			<vec2>96 60</vec2>
+			<int>5</int>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>96 144</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">24</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_church_chalice.unit"><vec2>80 144</vec2><int>54</int></array>
+		<array name="doodads/generic/outlook_church_platform.unit"><vec2>96 144</vec2><int>20</int></array>
+		<array name="doodads/generic/outlook_church_chandelier.unit">
+			<vec2>47 154</vec2>
+			<int>18</int>
+			<vec2>144 154</vec2>
+			<int>12</int>
+			<array>
+				<vec2>32 146</vec2>
+				<int>13</int>
+				<dict>
+					<string name="start">regular</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 157</vec2>
+				<int>14</int>
+				<dict>
+					<string name="start">regular</string>
+				</dict>
+			</array>
+			<vec2>120 48</vec2>
+			<int>15</int>
+			<array>
+				<vec2>126 156</vec2>
+				<int>16</int>
+				<dict>
+					<string name="start">regular</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>158 146</vec2>
+				<int>17</int>
+				<dict>
+					<string name="start">regular</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/npc_priest.unit"><vec2>104 144</vec2><int>19</int></array>
+		<array name="doodads/generic/outlook_candle.unit">
+			<vec2>81 29</vec2>
+			<int>43</int>
+			<array>
+				<vec2>69 29</vec2>
+				<int>44</int>
+				<dict>
+					<string name="start">cluster</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>75 31</vec2>
+				<int>45</int>
+				<dict>
+					<string name="start">single</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>75 27</vec2>
+				<int>46</int>
+				<dict>
+					<string name="start">single</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_church_podium.unit"><vec2>112 136</vec2><int>11</int></array>
+		<array name="doodads/generic/outlook_church_bench.unit">
+			<array>
+				<vec2>40 84</vec2>
+				<int>36</int>
+				<dict>
+					<string name="start">cap-left</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 84</vec2>
+				<int>37</int>
+				<dict>
+					<string name="start">cap-left</string>
+				</dict>
+			</array>
+			<vec2>44 84</vec2>
+			<int>40</int>
+			<array>
+				<vec2>148 104</vec2>
+				<int>41</int>
+				<dict>
+					<string name="start">cap-right</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>148 84</vec2>
+				<int>38</int>
+				<dict>
+					<string name="start">cap-right</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>40 104</vec2>
+				<int>42</int>
+				<dict>
+					<string name="start">cap-left</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>136 124</vec2>
+				<int>39</int>
+				<dict>
+					<string name="start">cap-left</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>68 84</vec2>
+				<int>27</int>
+				<dict>
+					<string name="start">cap-right</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>68 104</vec2>
+				<int>28</int>
+				<dict>
+					<string name="start">cap-right</string>
+				</dict>
+			</array>
+			<vec2>44 104</vec2>
+			<int>29</int>
+			<array>
+				<vec2>52 124</vec2>
+				<int>30</int>
+				<dict>
+					<string name="start">cap-right</string>
+				</dict>
+			</array>
+			<vec2>124 84</vec2>
+			<int>31</int>
+			<array>
+				<vec2>140 124</vec2>
+				<int>32</int>
+				<dict>
+					<string name="start">cap-right</string>
+				</dict>
+			</array>
+			<vec2>124 104</vec2>
+			<int>33</int>
+			<array>
+				<vec2>48 124</vec2>
+				<int>34</int>
+				<dict>
+					<string name="start">cap-left</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 104</vec2>
+				<int>35</int>
+				<dict>
+					<string name="start">cap-left</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_church_window.unit">
+			<vec2>96 208</vec2>
+			<int>48</int>
+			<vec2>64 208</vec2>
+			<int>47</int>
+			<vec2>32 208</vec2>
+			<int>53</int>
+			<vec2>160 208</vec2>
+			<int>52</int>
+			<vec2>32 64</vec2>
+			<int>51</int>
+			<vec2>160 64</vec2>
+			<int>50</int>
+			<vec2>128 208</vec2>
+			<int>49</int>
+		</array>
+		<array name="doodads/generic/outlook_chair.unit">
+			<array>
+				<vec2>121 24</vec2>
+				<int>6</int>
+				<dict>
+					<string name="start">tier-3</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>71 50</vec2>
+				<int>7</int>
+				<dict>
+					<string name="start">tier-3</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/lamp_torch.unit">
+			<array>
+				<vec2>120 -8</vec2>
+				<int>22</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<vec2>48 64</vec2>
+			<int>26</int>
+			<vec2>120 16</vec2>
+			<int>25</int>
+			<vec2>72 16</vec2>
+			<int>24</int>
+			<vec2>144 64</vec2>
+			<int>23</int>
+			<array>
+				<vec2>72 -8</vec2>
+				<int>21</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/city_outlook_5/crn_sw.unit"><vec2>128 48</vec2><int>9</int><vec2>0 192</vec2><int>8</int></array>
+		<array name="doodads/generic/outlook_table_small.unit">
+			<array>
+				<vec2>76 37</vec2>
+				<int>10</int>
+				<dict>
+					<string name="start">tier-3</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/outlook_table_book.unit">
+			<array>
+				<vec2>79 33</vec2>
+				<int>55</int>
+				<dict>
+					<string name="start">closed-2</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>112 128</vec2>
+				<int>56</int>
+				<dict>
+					<string name="start">closed-2</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/special/env_mask_chapel_outlook_inside.unit"><vec2>8 -24</vec2><int>57</int></array>
+		<array name="doodads/walls/city_outlook_5/crn_se.unit"><vec2>48 48</vec2><int>86</int><vec2>176 192</vec2><int>87</int></array>
+		<array name="doodads/walls/city_outlook_5/h_16.unit"><vec2>112 0</vec2><int>59</int><vec2>64 0</vec2><int>58</int></array>
+		<array name="doodads/walls/city_outlook_5/crn_ne.unit"><vec2>176 48</vec2><int>84</int><vec2>128 0</vec2><int>85</int></array>
+		<array name="doodads/walls/city_outlook_5/h_door.unit">
+			<array>
+				<vec2>80 0</vec2>
+				<int>76</int>
+				<dict>
+					<string name="start">open</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/city_outlook_5/__floor_wood_32.unit"><vec2>80 32</vec2><int>60</int><vec2>112 32</vec2><int>61</int></array>
+		<array name="doodads/walls/city_outlook_5/v_16.unit"><vec2>0 48</vec2><int>63</int><vec2>0 64</vec2><int>65</int></array>
+		<array name="doodads/walls/city_outlook_5/h_window.unit">
+			<vec2>112 192</vec2>
+			<int>79</int>
+			<vec2>48 192</vec2>
+			<int>77</int>
+			<vec2>144 48</vec2>
+			<int>78</int>
+			<vec2>80 192</vec2>
+			<int>80</int>
+			<vec2>16 48</vec2>
+			<int>81</int>
+			<vec2>144 192</vec2>
+			<int>82</int>
+			<vec2>16 192</vec2>
+			<int>83</int>
+		</array>
+		<array name="doodads/walls/city_outlook_5/v.unit">
+			<vec2>0 80</vec2>
+			<int>71</int>
+			<array>
+				<vec2>176 80</vec2>
+				<int>72</int>
+				<dict>
+					<int name="layer">2</int>
+				</dict>
+			</array>
+			<vec2>0 144</vec2>
+			<int>67</int>
+			<array>
+				<vec2>176 112</vec2>
+				<int>66</int>
+				<dict>
+					<int name="layer">2</int>
+				</dict>
+			</array>
+			<vec2>176 144</vec2>
+			<int>68</int>
+			<vec2>48 0</vec2>
+			<int>69</int>
+			<array>
+				<vec2>176 48</vec2>
+				<int>97</int>
+				<dict>
+					<int name="layer">2</int>
+				</dict>
+			</array>
+			<vec2>128 0</vec2>
+			<int>70</int>
+			<vec2>0 112</vec2>
+			<int>73</int>
+		</array>
+		<array name="doodads/walls/city_outlook_5/__floor_wood_64.unit">
+			<vec2>96 144</vec2>
+			<int>88</int>
+			<vec2>32 80</vec2>
+			<int>89</int>
+			<vec2>96 80</vec2>
+			<int>90</int>
+			<vec2>160 80</vec2>
+			<int>91</int>
+			<vec2>160 144</vec2>
+			<int>92</int>
+			<vec2>32 144</vec2>
+			<int>93</int>
+		</array>
+		<array name="doodads/walls/city_outlook_5/crn_nw.unit"><vec2>0 48</vec2><int>74</int><vec2>48 0</vec2><int>75</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ShopArea</string>
+			<int>94</int>
+			<vec3>-32 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Type">3</int>
+				<int name="ShopLevel">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckTimeOfDay</string>
+			<int>95</int>
+			<vec3>96 -168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="OnNight"><int>96</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>96</int>
+			<vec3>96 -104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>22</int><int>21</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

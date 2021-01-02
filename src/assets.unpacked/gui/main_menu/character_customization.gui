@@ -1,0 +1,152 @@
+<gui>
+	<sprites>
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+		<sprite name="arrow-left" texture="gui/widget.png"><frame>33 42 12 28</frame></sprite>
+		<sprite name="arrow-left-hover" texture="gui/widget.png"><frame>45 42 12 28</frame></sprite>
+		<sprite name="arrow-left-down" texture="gui/widget.png"><frame>57 42 12 28</frame></sprite>
+
+		<sprite name="arrow-right" texture="gui/widget.png"><frame>33 70 12 28</frame></sprite>
+		<sprite name="arrow-right-hover" texture="gui/widget.png"><frame>45 70 12 28</frame></sprite>
+		<sprite name="arrow-right-down" texture="gui/widget.png"><frame>57 70 12 28</frame></sprite>
+
+		<sprite name="arrow-up" texture="gui/widget.png"><frame>402 0 38 12</frame></sprite>
+		<sprite name="arrow-up-hover" texture="gui/widget.png"><frame>402 12 38 12</frame></sprite>
+		<sprite name="arrow-up-down" texture="gui/widget.png"><frame>402 24 38 12</frame></sprite>
+
+		<sprite name="arrow-down" texture="gui/widget.png"><frame>440 0 38 12</frame></sprite>
+		<sprite name="arrow-down-hover" texture="gui/widget.png"><frame>440 12 38 12</frame></sprite>
+		<sprite name="arrow-down-down" texture="gui/widget.png"><frame>440 24 38 12</frame></sprite>
+
+		<sprite name="button-voice" texture="gui/widget.png"><frame>33 154 24 28</frame></sprite>
+		<sprite name="button-voice-hover" texture="gui/widget.png"><frame>57 154 24 28</frame></sprite>
+		<sprite name="button-voice-down" texture="gui/widget.png"><frame>81 154 24 28</frame></sprite>
+
+		<sprite name="icon-random" texture="gui/icons.png"><frame>216 27 12 12</frame></sprite>
+
+%include "gui/main_menu/checkbox_sprites.inc"
+%include "gui/main_menu/slider_sprites_big.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect id="container" width="306" height="270" anchor="0.5 0.5" smooth="false" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox" padding="2 2">
+				<!-- Header -->
+				<rect width="302" height="18" flow="hbox">
+					<!-- Text -->
+					<rect width="281" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mainmenu.character.customize.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="302" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Top row -->
+				<rect width="302" height="32" flow="hbox" padding="2 2" spriteset="gui/variable/bigwindow_borders.sval">
+					<!-- Portrait -->
+					<rect width="52" height="28" flow="hbox">
+						<spritebutton spriteset="arrow-left" func="face-left" />
+						<portrait id="portrait" />
+						<spritebutton spriteset="arrow-right" func="face-right" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Voice -->
+					<rect width="100" height="28">
+						<!-- Current voice -->
+						<rect width="76" height="16" spriteset="gui/variable/headline_borders.sval">
+							<text id="voice" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Voice picker buttons -->
+						<spritebutton spriteset="arrow-down" offset="0 16" func="voice-down" />
+						<spritebutton spriteset="arrow-up" offset="38 16" func="voice-up" />
+
+						<!-- Play button -->
+						<spritebutton offset="76 0" spriteset="button-voice" func="play-voice" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Name -->
+					<rect width="140" height="28" spriteset="gui/variable/bigwindow_borders.sval" padding="2 2">
+						<rect width="136" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+						<rect width="136" height="3" offset="0 21" spriteset="gui/variable/3pxbar_hor.sval" />
+
+						<rect width="3" height="18" offset="0 3" spriteset="gui/variable/3pxbar_vert.sval" />
+						<rect width="3" height="18" offset="25 3" spriteset="gui/variable/3pxbar_vert.sval" />
+						<rect width="3" height="18" offset="133 3" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Random button -->
+						<scalebutton spriteset="scalebutton" width="22" offset="3 3" func="random-name">
+							<sprite src="icon-random" anchor="0.5 0.5" />
+						</scalebutton>
+
+						<!-- Name text input -->
+						<rect width="105" height="18" offset="28 3" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<textinput id="name" align="center" width="105" height="15" font="gui/fonts/arial11.fnt" text="" textlimit="20" func-edit="name-changed" />
+						</rect>
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="302" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Tab buttons -->
+				<rect width="302" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<checkboxgroup id="tabs-container" width="302" height="18">
+						<clip id="tabs-clip" width="302" height="18" flow="hbox">
+							<scalebutton spriteset="scalebutton" width="101" font="gui/fonts/arial11.fnt" value="dyes" func="set-tab dyes" text=".mainmenu.character.customize.dyes" />
+							<scalebutton spriteset="scalebutton" width="100" font="gui/fonts/arial11.fnt" value="trails" func="set-tab trails" text=".mainmenu.character.customize.trails" />
+							<scalebutton spriteset="scalebutton" width="101" font="gui/fonts/arial11.fnt" value="frames" func="set-tab frames" text=".mainmenu.character.customize.frames" />
+							<scalebutton spriteset="scalebutton" width="100" font="gui/fonts/arial11.fnt" value="combos" func="set-tab combos" text=".mainmenu.character.customize.combos" />
+							<scalebutton spriteset="scalebutton" width="101" font="gui/fonts/arial11.fnt" value="gravestones" func="set-tab gravestones" text=".mainmenu.character.customize.gravestones" />
+						</clip>
+					</checkboxgroup>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="302" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Tabs container -->
+				<rect width="302" height="168">
+					<!-- Left and right borders -->
+					<rect width="3" height="168" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect width="3" height="168" offset="299 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Tabs -->
+					<rect id="tab-dyes" width="296" height="168" offset="3 0" />
+					<rect id="tab-trails" width="296" height="168" offset="3 0" />
+					<rect id="tab-frames" width="296" height="168" offset="3 0" />
+					<rect id="tab-combos" width="296" height="168" offset="3 0" />
+					<rect id="tab-gravestones" width="296" height="168" offset="3 0" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="302" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Bottom bar -->
+				<rect width="302" height="18" flow="hbox">
+					<rect width="118" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Finish button -->
+					<scaleiconbutton id="finish-button" spriteset="scalebutton" width="66" font="gui/fonts/arial11.fnt" func="finish" />
+
+					<rect width="118" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group></group>
+	</doc>
+</gui>

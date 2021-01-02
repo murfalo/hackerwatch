@@ -1,0 +1,48 @@
+<unit slot="doodad" layer="1">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">-1</int>
+		<int name="actor-filter">2</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">50</int>
+				<float name="resistance-mul">0.9</float>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:darkness</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes off="off" on="on">
+		<scene name="shared">
+%if EDITOR
+			<sprite layer="4" origin="8 8" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 16 16</frame>
+			</sprite>
+%endif	
+			<collision static="true">
+				<circle radius="8" shoot-through="true" aim-through="true" sensor="true"/>
+			</collision>
+		</scene>
+
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite origin="1 1" texture="gui/minimap.png" frame="34 9 2 2" />	
+			<effect src="./trap_beam_node.effect" />
+		</scene>
+
+		<scene name="off">
+			<scene src="shared" />
+			<minimap_sprite origin="1 1" texture="gui/minimap.png" frame="42 9 2 2" />	
+			<sprite layer="4" origin="8 8" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 0 0</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>
+
+

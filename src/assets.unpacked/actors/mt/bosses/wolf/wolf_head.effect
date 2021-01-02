@@ -1,0 +1,30 @@
+<effect looping="false">
+	<data>
+		<string name="gore">effects/gibs/gib_boss_wolf_head.sval</string>
+	</data>
+
+	<sprite origin="0 0" texture="actors/mt/bosses/wolf/wolf_boss_death.png" material="system/default.mats:default">
+		<frame time="2000">0 0 0 0</frame>
+	</sprite>
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<size value="64 * (1-t)" />
+		
+		<color-r value="1" />
+		<color-g value="0.0" />
+		<color-b value="0.0" />
+		<color-a value="0.0" />
+	</light>
+</effect>

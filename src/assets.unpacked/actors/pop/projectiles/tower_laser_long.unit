@@ -1,0 +1,26 @@
+<unit netsync="none">
+	<behavior class="BeamProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">20</float>
+		<int name="ttl">5000</int>
+		<int name="length">10000</int>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>
+
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="magical">30</int>
+			<float name="resistance-mul">0.8</float>
+		</dict>
+
+		<dict name="effect-params">
+			<float name="height">2</float>
+			<float name="width">2</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="./tower_laser.effect" />
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,35 @@
+<effect looping="false">
+	<param name="radius" default="5" />
+	<param name="posy" default="-5" />
+	<param name="posx" default="3.5" />
+	
+<!-- 	
+	<data>
+		<string name="gore">effects/gibs/doodads/gib_secutor_spawn.sval</string>
+	</data>	 -->
+	
+	<sprite origin="4 13" looping="false" texture="./company_banner.png" material="system/default.mats:ally"
+	pos-y="-5 +saturate(t+l)*5"
+	>
+		<frame time="25">0 16 15 15</frame>
+		<frame time="25">15 16 15 15</frame>
+		<frame time="25">0 0 15 15</frame>
+		<frame time="25">15 0 15 15</frame>
+	</sprite>
+
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="20"
+
+		pos-x="it*it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + posx"
+		pos-y="it*it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(it*it*it*it*it)*rand(i)*25"
+		
+		color-r="0"
+		color-g="1-it"
+		color-b="2"
+		color-a="1-t"
+	>
+		<frame time="400">0 0 1 1</frame>
+	</sprite>
+
+</effect>

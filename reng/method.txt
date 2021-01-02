@@ -1,0 +1,60 @@
+The first obstacle: Assets.bin incorrect
+#0  0x00007ffff629bf9f in write () from /usr/lib/libc.so.6
+#1  0x00007ffff622c2bd in _IO_file_write@@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+#2  0x00007ffff622b5f6 in new_do_write () from /usr/lib/libc.so.6
+#3  0x00007ffff622d3a9 in __GI__IO_do_write () from /usr/lib/libc.so.6
+#4  0x00007ffff622c956 in __GI__IO_file_xsputn () from /usr/lib/libc.so.6
+#5  0x00007ffff6217208 in __vfprintf_internal () from /usr/lib/libc.so.6
+#6  0x00007ffff62b8fdb in __printf_chk () from /usr/lib/libc.so.6
+#7  0x00000000005e1d7b in ?? ()
+#8  0x00000000004dfa5c in ?? ()
+#9  0x00000000004dfc4b in ?? ()
+#10 0x00000000004c9bdc in ?? ()
+#11 0x000000000042cd33 in ?? ()
+#12 0x00000000004294a6 in ?? ()
+#13 0x00000000004411ca in ?? ()
+#14 0x0000000000441f5a in ?? ()
+#15 0x000000000040ec53 in ?? ()
+#16 0x00007ffff61d3152 in __libc_start_main () from /usr/lib/libc.so.6
+#17 0x0000000000419761 in ?? ()
+#18 0x00007fffffffe5f8 in ?? ()
+#19 0x000000000000001c in ?? ()
+#20 0x0000000000000001 in ?? ()
+#21 0x00007fffffffe93c in ?? ()
+#22 0x0000000000000000 in ?? ()
+
+Critical branch discovered at 0x004dfa45:
+0x004dfa45 0f 84 f9 f8 ff ff
+0x004dfa40 24404585 e40f84f9 f8ffffbe a86a8a00
+0x004dfa40 -> 0x000dfa40 (address is shifted in hexdump for some reason)
+
+The second obstacle: Tampering detected
+#0  0x00007ffff629bf9f in write () from /usr/lib/libc.so.6
+#1  0x00007ffff622c2bd in _IO_file_write@@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+#2  0x00007ffff622b5f6 in new_do_write () from /usr/lib/libc.so.6
+#3  0x00007ffff622d3a9 in __GI__IO_do_write () from /usr/lib/libc.so.6
+#4  0x00007ffff622c956 in __GI__IO_file_xsputn () from /usr/lib/libc.so.6
+#5  0x00007ffff6217208 in __vfprintf_internal () from /usr/lib/libc.so.6
+#6  0x00007ffff62b8fdb in __printf_chk () from /usr/lib/libc.so.6
+#7  0x00000000005e1d7b in ?? ()
+#8  0x00000000004dfb69 in ?? ()
+#9  0x00000000004dfc4b in ?? ()
+#10 0x00000000004c9bdc in ?? ()
+#11 0x000000000042cd33 in ?? ()
+#12 0x00000000004294a6 in ?? ()
+#13 0x00000000004411ca in ?? ()
+#14 0x0000000000441f5a in ?? ()
+#15 0x000000000040ec53 in ?? ()
+#16 0x00007ffff61d3152 in __libc_start_main () from /usr/lib/libc.so.6
+#17 0x0000000000419761 in ?? ()
+#18 0x00007fffffffe5e8 in ?? ()
+#19 0x000000000000001c in ?? ()
+#20 0x0000000000000001 in ?? ()
+#21 0x00007fffffffe92c in ?? ()
+#22 0x0000000000000000 in ?? ()
+
+Critical branch discovered: 0x004dfb52
+0x4dfb52 (?) 0f 84 10 fb ff ff
+0x4dfb50 85c00f84 10fbffff be786b8a 00bf0200
+0x4dfb50 -> 0x0dfb50 (again, address is shifted in hexdump for some reason)
+

@@ -1,0 +1,490 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/speech_bubble_store.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<int name="layer">2</int>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<float name="radius">12</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/npc_prefect.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>40</int>
+				<dict>
+					<string name="start">se</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/speech_bubble_info.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>4</int>
+				<dict>
+					<int name="layer">2</int>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>5</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.prefect.1Ra</string>
+				<string name="Title">.dialogue.town.npc.prefect.name</string>
+				<array name="Objects"><int>40</int></array>
+				<array name="#ForPlayer"><int>6</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>6</int>
+			<vec3>160 0 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">5</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>7</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>7</int>
+			<vec3>160 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>5</int><int>0</int><int>39</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ShopArea</string>
+			<int>8</int>
+			<vec3>0 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stage1</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Type">5</int>
+				<string name="Category">townhall</string>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>9</int>
+			<vec3>256 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>h money</string>
+			<dict>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>256 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>11</int>
+			<vec3>160 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>12</int>
+			<vec3>160 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>prefect.speech.end</string>
+			<dict>
+				<int name="State">3</int>
+				<string name="Flag">prefect.speech.end</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>13</int>
+			<vec3>352 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Flag">prefect.speech.end</string>
+				<array name="OnFalse"><int>10</int><int>9</int></array>
+				<array name="OnTrue"><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>14</int>
+			<vec3>448 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>20</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TownBuildingLevel</string>
+			<int>15</int>
+			<vec3>320 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>28</int><int>29</int></array>
+				<string name="ID">guildhall</string>
+				<int name="Value">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ShopArea</string>
+			<int>16</int>
+			<vec3>0 -320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stage2</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Type">5</int>
+				<string name="Category">townhall</string>
+				<int name="ShopLevel">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ShopArea</string>
+			<int>17</int>
+			<vec3>0 -384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stage3</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Type">5</int>
+				<string name="Category">townhall</string>
+				<int name="ShopLevel">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ShopArea</string>
+			<int>18</int>
+			<vec3>0 -448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stage4</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Type">5</int>
+				<string name="Category">townhall</string>
+				<int name="ShopLevel">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ShopArea</string>
+			<int>19</int>
+			<vec3>0 -512 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>stage5</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+				<int name="Type">5</int>
+				<string name="Category">townhall</string>
+				<int name="ShopLevel">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>TownBuildingLevel</string>
+			<int>20</int>
+			<vec3>320 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>31</int><int>30</int></array>
+				<string name="ID">guildhall</string>
+				<int name="Value">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>TownBuildingLevel</string>
+			<int>21</int>
+			<vec3>320 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>32</int><int>33</int></array>
+				<string name="ID">guildhall</string>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>TownBuildingLevel</string>
+			<int>22</int>
+			<vec3>320 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>34</int><int>35</int></array>
+				<string name="ID">guildhall</string>
+				<int name="Value">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>23</int>
+			<vec3>448 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>24</int>
+			<vec3>448 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>25</int>
+			<vec3>448 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>13</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>26</int>
+			<vec3>448 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>27</int>
+			<vec3>448 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>28</int>
+			<vec3>224 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>29</int>
+			<vec3>160 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>30</int>
+			<vec3>224 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>16</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>31</int>
+			<vec3>160 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>224 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>8</int><int>16</int><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>33</int>
+			<vec3>160 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>34</int>
+			<vec3>224 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>8</int><int>16</int><int>17</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>35</int>
+			<vec3>160 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TownBuildingLevel</string>
+			<int>36</int>
+			<vec3>320 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>11</int></array>
+				<string name="ID">guildhall</string>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>37</int>
+			<vec3>32 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>h info</string>
+			<dict>
+				<array name="Units"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>38</int>
+			<vec3>-48 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>s money</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>39</int>
+			<vec3>256 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array>
+				<int>27</int>
+				<int>10</int>
+				<int>24</int>
+				<int>10</int>
+				<int>14</int>
+				<int>10</int>
+				<int>23</int>
+				<int>10</int>
+				<int>26</int>
+				<int>10</int>
+				<int>37</int>
+				<int>10</int>
+				<int>38</int>
+				<int>0</int>
+			</array>
+		</array>
+	</array>
+</dict>

@@ -1,0 +1,87 @@
+<unit slot="doodad">
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/item/chapel_bomb</string>
+	
+		<int name="delay">1000</int>
+		
+		<dict name="action">
+			<string name="class">Explode</string>
+			<string name="fx">players/projectiles/explosion_bomb_holy.effect</string>
+			
+			<int name="min-radius">24</int>
+			<int name="radius">24</int>
+
+			<float name="self-dmg">0</float>
+			<float name="team-dmg">0</float>
+			
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="physical">125</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="effect-params">
+			<float name="radius">24</float>
+			<float name="colorr">1</float>
+			<float name="colorg">1</float>
+			<float name="colorb">1</float>
+		</dict>
+	</behavior>
+
+	<scenes default="1 2">
+		<scene name="shared">
+			<effect src="doodads/generic/trap_indicator.effect" />
+		
+
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				
+				<length value="100" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="100 100 50 0" />
+				</colors>
+			</light>
+		</scene>
+		<scene name="1">
+			<scene src="shared" />
+			<sprite origin="5 15" looping="false" texture="./holy_handgrenade.png" material="system/default.mats:projectile-player">
+				<frame time="40">0 0 12 18</frame>
+				<frame time="40">12 0 12 18</frame>
+				<frame time="40">24 0 12 18</frame>
+				<frame time="40">36 0 12 18</frame>
+				<frame time="40">48 0 12 18</frame>
+				<frame time="40">0 18 12 18</frame>
+				<frame time="40">12 18 12 18</frame>
+				<frame time="40">24 18 12 18</frame>
+				<frame time="40">36 18 12 18</frame>
+				<frame time="300">48 18 12 18</frame>
+			</sprite>
+		</scene>
+		<scene name="2">
+			
+			<scene src="shared" />
+			<sprite origin="5 15" looping="false" texture="./holy_handgrenade.png" material="system/default.mats:projectile-player">
+				<frame time="40">0 0 12 18</frame>
+				<frame time="40">12 0 12 18</frame>
+				<frame time="40">24 0 12 18</frame>
+				<frame time="40">36 0 12 18</frame>
+				<frame time="40">48 0 12 18</frame>
+				<frame time="40">0 18 12 18</frame>
+				<frame time="40">12 18 12 18</frame>
+				<frame time="340">24 18 12 18</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

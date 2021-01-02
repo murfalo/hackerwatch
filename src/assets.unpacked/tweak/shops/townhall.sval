@@ -1,0 +1,664 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::UpgradeShop</string>
+
+	<string name="id">townhall</string>
+	<string name="name">.shop.townhall</string>
+
+	<array name="upgrades">
+		<!-- Town Hall -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">townhall</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>72 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 (should always be owned) -->
+				<dict>
+					<int name="cost-ore">1</int>
+
+					<string name="name">.shop.townhall.townhall-1.name</string>
+					<string name="desc">.shop.townhall.townhall-1.desc</string>
+
+					<int name="building-level">1</int>
+				</dict>
+
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">5</int>
+
+					<string name="name">.shop.townhall.townhall-2.name</string>
+					<string name="desc">.shop.townhall.townhall-2.desc</string>
+
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">20</int>
+
+					<string name="name">.shop.townhall.townhall-3.name</string>
+					<string name="desc">.shop.townhall.townhall-3.desc</string>
+
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">40</int>
+
+					<string name="name">.shop.townhall.townhall-4.name</string>
+					<string name="desc">.shop.townhall.townhall-4.desc</string>
+
+					<int name="building-level">4</int>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+					<int name="cost-ore">80</int>
+
+					<string name="name">.shop.townhall.townhall-5.name</string>
+					<string name="desc">.shop.townhall.townhall-5.desc</string>
+
+					<int name="building-level">5</int>
+				</dict>
+
+				<!-- Level 6 -->
+				<dict>
+					<int name="cost-ore">160</int>
+
+					<string name="name">.shop.townhall.townhall.name?lvl=VI</string>
+					<string name="desc">.shop.townhall.townhall.desc?num=6</string>
+
+					<int name="building-level">6</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Treasury should always be owned) -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">treasury</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>192 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">1</int>
+
+					<string name="name">.shop.townhall.treasury-1.name</string>
+					<string name="desc">.shop.townhall.treasury-1.desc</string>
+
+					<int name="building-level">1</int>
+				</dict>
+			
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">20</int>
+
+					<string name="name">.shop.townhall.treasury-2.name</string>
+					<string name="desc">.shop.townhall.treasury-2.desc</string>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="building-level">2</int>
+				</dict>
+
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">40</int>
+
+					<string name="name">.shop.townhall.treasury-3.name</string>
+					<string name="desc">.shop.townhall.treasury-3.desc</string>
+					<int name="restrict-shop-level-min">3</int>
+					<int name="building-level">3</int>
+				</dict>
+
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">80</int>
+
+					<string name="name">.shop.townhall.treasury-4.name</string>
+					<string name="desc">.shop.townhall.treasury-4.desc</string>
+					<int name="restrict-shop-level-min">4</int>
+					<int name="building-level">4</int>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+					<int name="cost-ore">160</int>
+
+					<string name="name">.shop.townhall.treasury.name?lvl=V</string>
+					<string name="desc">.shop.townhall.treasury.desc?num=30000</string>
+					<int name="restrict-shop-level-min">5</int>
+					<int name="building-level">5</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Guild Hall -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">guildhall</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>48 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 should always be owned) -->
+				<dict>
+					<int name="cost-ore">1</int>
+
+					<string name="name">.shop.townhall.guildhall-1.name</string>
+					<string name="desc">.shop.townhall.guildhall-1.desc</string>
+					
+					<int name="building-level">1</int>
+				</dict>
+			
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">10</int>
+
+					<string name="name">.shop.townhall.guildhall-2.name</string>
+					<string name="desc">.shop.townhall.guildhall-2.desc</string>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">30</int>
+
+					<string name="name">.shop.townhall.guildhall-3.name</string>
+					<string name="desc">.shop.townhall.guildhall-3.desc</string>
+					<int name="restrict-shop-level-min">3</int>
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">60</int>
+
+					<string name="name">.shop.townhall.guildhall-4.name</string>
+					<string name="desc">.shop.townhall.guildhall-4.desc</string>
+					<int name="restrict-shop-level-min">4</int>
+					<int name="building-level">4</int>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+					<int name="cost-ore">120</int>
+
+					<string name="name">.shop.townhall.guildhall-5.name</string>
+					<string name="desc">.shop.townhall.guildhall-5.desc</string>
+					<int name="restrict-shop-level-min">5</int>
+					<int name="building-level">5</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- General Store -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">generalstore</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>120 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">5</int>
+
+					<string name="name">.shop.townhall.generalstore-1.name</string>
+					<string name="desc">.shop.townhall.generalstore-1.desc</string>
+
+					<int name="building-level">1</int>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">10</int>
+
+					<string name="name">.shop.townhall.generalstore-2.name</string>
+					<string name="desc">.shop.townhall.generalstore-2.desc</string>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">25</int>
+
+					<string name="name">.shop.townhall.generalstore-3.name</string>
+					<string name="desc">.shop.townhall.generalstore-3.desc</string>
+					<int name="restrict-shop-level-min">3</int>
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">50</int>
+
+					<string name="name">.shop.townhall.generalstore-4.name</string>
+					<string name="desc">.shop.townhall.generalstore-4.desc</string>
+					<int name="restrict-shop-level-min">4</int>
+					<int name="building-level">4</int>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+					<int name="cost-ore">125</int>
+
+					<string name="name">.shop.townhall.generalstore-5.name</string>
+					<string name="desc">.shop.townhall.generalstore-5.desc</string>
+					<int name="restrict-shop-level-min">5</int>
+					<int name="building-level">5</int>
+				</dict>
+				
+				<!-- Level 6 -->
+				<dict>
+					<int name="cost-ore">200</int>
+
+					<string name="name">.shop.townhall.generalstore.name?lvl=VI</string>
+					<string name="desc">.shop.townhall.generalstore-6.desc</string>
+					<int name="restrict-shop-level-min">6</int>
+					<int name="building-level">6</int>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Blacksmith -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">blacksmith</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>0 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">5</int>
+
+					<string name="name">.shop.townhall.blacksmith-1.name</string>
+					<string name="desc">.shop.townhall.blacksmith-1.desc</string>
+
+					<int name="building-level">1</int>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">10</int>
+
+					<string name="name">.shop.townhall.blacksmith-2.name</string>
+					<string name="desc">.shop.townhall.blacksmith-2.desc</string>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">25</int>
+
+					<string name="name">.shop.townhall.blacksmith-3.name</string>
+					<string name="desc">.shop.townhall.blacksmith-3.desc</string>
+					<int name="restrict-shop-level-min">3</int>
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">50</int>
+
+					<string name="name">.shop.townhall.blacksmith-4.name</string>
+					<string name="desc">.shop.townhall.blacksmith-4.desc</string>
+					<int name="restrict-shop-level-min">4</int>
+					<int name="building-level">4</int>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+					<int name="cost-ore">100</int>
+
+					<string name="name">.shop.townhall.blacksmith-5.name</string>
+					<string name="desc">.shop.townhall.blacksmith-5.desc</string>
+					<int name="restrict-shop-level-min">5</int>
+					<int name="building-level">5</int>
+				</dict>
+				
+				<!-- Level 6 -->
+				<dict>
+					<int name="cost-ore">200</int>
+
+					<string name="name">.shop.townhall.blacksmith.name?lvl=VI</string>
+					<string name="desc">.shop.townhall.blacksmith.desc</string>
+					<int name="restrict-shop-level-min">6</int>
+					<int name="building-level">6</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Ore Trader -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">oretrader</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>0 96 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">5</int>
+
+					<string name="name">.shop.townhall.oretrader-1.name</string>
+					<string name="desc">.shop.townhall.oretrader-1.desc</string>
+					
+					<string name="restrict-flag">special_ore</string>
+					<int name="building-level">1</int>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">10</int>
+
+					<string name="name">.shop.townhall.oretrader-2.name</string>
+					<string name="desc">.shop.townhall.oretrader-2.desc</string>
+					
+					<int name="restrict-shop-level-min">2</int>
+					<string name="restrict-flag">special_ore</string>
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">30</int>
+
+					<string name="name">.shop.townhall.oretrader-3.name</string>
+					<string name="desc">.shop.townhall.oretrader-3.desc</string>
+					
+					<int name="restrict-shop-level-min">3</int>
+					<string name="restrict-flag">special_ore</string>
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">60</int>
+
+					<string name="name">.shop.townhall.oretrader.name?lvl=IV</string>
+					<string name="desc">.shop.townhall.oretrader-2.desc</string>
+					
+					<int name="restrict-shop-level-min">4</int>
+					<string name="restrict-flag">special_ore</string>
+					<int name="building-level">4</int>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Apothecary -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">apothecary</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>96 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">5</int>
+
+					<string name="name">.shop.townhall.apothecary-1.name</string>
+					<string name="desc">.shop.townhall.apothecary-1.desc</string>
+					
+					<string name="restrict-flag">unlock_apothecary</string>
+					<int name="building-level">1</int>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">15</int>
+
+					<string name="name">.shop.townhall.apothecary-2.name</string>
+					<string name="desc">.shop.townhall.apothecary-2.desc</string>
+					
+					<int name="restrict-shop-level-min">2</int>
+					<string name="restrict-flag">unlock_apothecary</string>
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">35</int>
+
+					<string name="name">.shop.townhall.apothecary-3.name</string>
+					<string name="desc">.shop.townhall.apothecary-3.desc</string>
+					
+					<int name="restrict-shop-level-min">3</int>
+					<string name="restrict-flag">unlock_apothecary</string>
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">60</int>
+
+					<string name="name">.shop.townhall.apothecary.name?lvl=IV</string>
+					<string name="desc">.shop.townhall.apothecary-2.desc</string>
+					
+					<int name="restrict-shop-level-min">4</int>
+					<string name="restrict-flag">unlock_apothecary</string>
+					<int name="building-level">4</int>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+					<int name="cost-ore">90</int>
+
+					<string name="name">.shop.townhall.apothecary.name?lvl=V</string>
+					<string name="desc">.shop.townhall.apothecary-2.desc</string>
+					
+					<int name="restrict-shop-level-min">5</int>
+					<string name="restrict-flag">unlock_apothecary</string>
+					<int name="building-level">5</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Fountain -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">fountain</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">10</int>
+
+					<string name="name">.shop.townhall.fountain-1.name</string>
+					<string name="desc">.shop.townhall.fountain-1.desc</string>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="building-level">1</int>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">25</int>
+					
+					<string name="name">.shop.townhall.fountain-2.name</string>
+					<string name="desc">.shop.townhall.fountain-2.desc</string>
+					<int name="restrict-shop-level-min">4</int>
+					<int name="building-level">2</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Chapel -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">chapel</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>24 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">15</int>
+
+					<string name="name">.shop.townhall.chapel-1.name</string>
+					<string name="desc">.shop.townhall.chapel-1.desc</string>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="building-level">1</int>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">35</int>
+					
+					<string name="name">.shop.townhall.chapel-2.name</string>
+					<string name="desc">.shop.townhall.chapel-2.desc</string>
+					<int name="restrict-shop-level-min">3</int>
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">135</int>
+					
+					<string name="name">.shop.townhall.chapel-3.name</string>
+					<string name="desc">.shop.townhall.chapel-3.desc</string>
+					<int name="restrict-shop-level-min">5</int>
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">250</int>
+					
+					<string name="name">.shop.townhall.chapel-4.name</string>
+					<string name="desc">.shop.townhall.chapel-4.desc</string>
+					<int name="restrict-shop-level-min">6</int>
+					<int name="building-level">4</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Tavern -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">tavern</string>
+
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>216 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">10</int>
+
+					<string name="name">.shop.townhall.tavern-1.name</string>
+					<string name="desc">.shop.townhall.tavern-1.desc</string>
+					<int name="restrict-shop-level-min">2</int>
+					<string name="restrict-flag">unlock_thief</string>
+					<int name="building-level">1</int>
+				</dict>
+
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">20</int>
+
+					<string name="name">.shop.townhall.tavern-2.name</string>
+					<string name="desc">.shop.townhall.tavern-2.desc</string>
+					<int name="restrict-shop-level-min">3</int>
+					<string name="restrict-flag">unlock_thief</string>
+					<int name="building-level">2</int>
+				</dict>
+
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">40</int>
+
+					<string name="name">.shop.townhall.tavern-3.name</string>
+					<string name="desc">.shop.townhall.tavern-3.desc</string>
+					<int name="restrict-shop-level-min">4</int>
+					<string name="restrict-flag">unlock_thief</string>
+					<int name="building-level">3</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Magic Shop -->
+		<dict>
+			<string name="class">Upgrades::BuildingUpgrade</string>
+			<string name="id">magicshop</string>
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 72 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-ore">30</int>
+
+					<string name="name">.shop.townhall.magicshop-1.name</string>
+					<string name="desc">.shop.townhall.magicshop-1.desc</string>
+					<int name="restrict-shop-level-min">3</int>
+					<string name="restrict-flag">unlock_magicshop</string>
+					<int name="building-level">1</int>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-ore">60</int>
+					
+					<string name="name">.shop.townhall.magicshop-2.name</string>
+					<string name="desc">.shop.townhall.magicshop-2.desc</string>
+					<int name="restrict-shop-level-min">4</int>
+					<string name="restrict-flag">unlock_magicshop</string>
+					<int name="building-level">2</int>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+					<int name="cost-ore">120</int>
+					
+					<string name="name">.shop.townhall.magicshop-3.name</string>
+					<string name="desc">.shop.townhall.magicshop-3.desc</string>
+					<int name="restrict-shop-level-min">5</int>
+					<string name="restrict-flag">unlock_magicshop</string>
+					<int name="building-level">3</int>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="cost-ore">200</int>
+					
+					<string name="name">.shop.townhall.magicshop.name?lvl=IV</string>
+					<string name="desc">.shop.townhall.magicshop-2.desc</string>
+					<int name="restrict-shop-level-min">6</int>
+					<string name="restrict-flag">unlock_magicshop</string>
+					<int name="building-level">4</int>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

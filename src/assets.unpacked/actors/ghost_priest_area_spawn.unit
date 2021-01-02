@@ -1,0 +1,26 @@
+<unit layer="-1">
+	<behavior class="BombBehavior">
+		<string name="spawn-sound">event:/enemy/ghost/drain_area</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">900</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+
+		<array name="actions">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/ghost_priest_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes default="visible">
+		<scene name="visible">
+			<effect src="actors/ghost_priest_area_spawn.effect" />
+		</scene>
+	</scenes>
+</unit>

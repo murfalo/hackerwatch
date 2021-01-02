@@ -1,0 +1,302 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_16.unit"><vec2>16 16</vec2><int>1</int><vec2>16 0</vec2><int>2</int><vec2>0 0</vec2><int>3</int><vec2>0 16</vec2><int>4</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ToggleScripts</string>
+			<int>5</int>
+			<vec3>-96 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckSpawnDistance</string>
+			<int>6</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">220</int>
+				<array name="OnTrue"><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>7</int>
+			<vec3>48 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb_spawn</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">mb_spawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>28</int>
+			<vec3>-96 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_no_traps</string>
+			<dict>
+				<string name="Flag">fountain_no_traps</string>
+				<array name="OnTrue"><int>5</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>9</int>
+			<vec3>-64 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>start</string>
+			<array><int>19</int><int>0</int><int>6</int><int>0</int><int>28</int><int>0</int><int>27</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEnemyGroup</string>
+			<int>10</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Radius">36</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>11</int>
+			<vec3>176 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enemy group</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>12</int>
+			<vec3>96 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>11</int><int>13</int><int>14</int><int>16</int><int>18</int><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>13</int>
+			<vec3>176 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tower</string>
+			<dict>
+				<int name="Chance">15</int>
+			</dict>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>14</int>
+			<vec3>176 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nothing</string>
+			<dict>
+				<int name="Chance">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>248 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>11</int><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>16</int>
+			<vec3>176 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>17</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>18</int>
+			<vec3>96 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb_spawn</string>
+			<dict>
+				<int name="Chance">1000</int>
+			</dict>
+			<array><int>24</int><int>0</int><int>7</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>19</int>
+			<vec3>96 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb_spawn</string>
+			<dict>
+				<string name="Flag">mb_spawn</string>
+				<array name="OnFalse"><int>25</int></array>
+				<array name="OnTrue"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>20</int>
+			<vec3>144 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="OnTrue"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>21</int>
+			<vec3>240 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb_spawn2</string>
+			<dict>
+				<string name="Flag">mb_spawn2</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>22</int>
+			<vec3>192 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb_spawn2</string>
+			<dict>
+				<string name="Flag">mb_spawn2</string>
+				<array name="OnFalse"><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>23</int>
+			<vec3>192 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb_spawn2</string>
+			<dict>
+				<int name="Chance">1000</int>
+			</dict>
+			<array><int>24</int><int>0</int><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>24</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb_spawn</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/miniboss_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>25</int>
+			<vec3>96 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>26</int>
+			<vec3>192 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>27</int>
+			<vec3>16 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>32</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tower</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/tower.pfb</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

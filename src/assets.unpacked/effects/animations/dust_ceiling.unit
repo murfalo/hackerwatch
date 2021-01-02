@@ -1,0 +1,31 @@
+<unit slot="doodad">
+		
+	<scenes>
+		<scene>
+		
+			%if EDITOR
+			<sprite layer="4" origin="16 16" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			%endif
+			<effect src="actors/pop/bosses/worm/dust_big.effect"/>
+			<sprite origin="32 160" layer="5" texture="./roofdust.png" material="system/default.mats:default-noxray">
+				<frame>0 0 64 192</frame>
+				<frame>64 0 64 192</frame>
+				<frame>128 0 64 192</frame>
+				<frame>192 0 64 192</frame>
+				<frame>256 0 64 192</frame>
+				<frame>320 0 64 192</frame>
+				<frame>384 0 64 192</frame>
+				<frame>448 0 64 192</frame>
+				<frame>0 192 64 192</frame>
+				<frame>64 192 64 192</frame>
+				<frame>128 192 64 192</frame>
+				<frame>192 192 64 192</frame>
+			</sprite>
+			<sprite origin="64 64" layer="-20" texture="./roofdust.png" material="system/default.mats:floor">
+				<frame>0 384 128 128</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

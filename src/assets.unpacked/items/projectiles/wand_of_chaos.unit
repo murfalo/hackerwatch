@@ -1,0 +1,29 @@
+<unit netsync="none">
+	<behavior class="BeamProjectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/item/wand_of_chaos</string>
+		
+		<float name="speed">12</float>
+		<int name="ttl">10000</int>
+		<int name="length">100</int>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>
+
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="magical">20</int>
+		</dict>
+
+		<dict name="effect-params">
+			<float name="height">2</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="./wand_of_chaos.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

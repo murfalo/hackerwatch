@@ -1,0 +1,48 @@
+<effect looping="false" layer="-1">
+	<param name="radius" default="35" />
+	
+	
+	
+	<sprite origin="48 48" looping="false" loopback="125" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		color-a="0.5 - 0.5*saturate(t*pi)"
+		scale-x="0.9+saturate(t+l)*0.1"
+		scale-y="0.9+saturate(t+l)*0.1"
+		>
+		<frame time="150">0 0 96 96</frame>
+		<frame time="150">96 0 96 96</frame>
+	</sprite>
+	
+	<sprite origin="48 48" looping="true" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		scale-x="t"
+		scale-y="t"
+		color-a="0.5 - 0.5*saturate(t*pi)"
+		>
+		<frame time="250">0 0 96 96</frame>
+	</sprite>
+
+
+	<sprite origin="8 8" looping="false" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="60"
+		angle="rand(u+i+23)*pi*2"
+		pos-x="- t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="- t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+		color-a="0.2 - (0.2*t)"
+	>
+		<frame time="500">208 0 16 16</frame>
+	</sprite>
+
+	<sprite origin="8 8" looping="false" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="60"
+
+		pos-x="- t*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+        pos-y="- t*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+		angle="rand(u+i+101)*pi*2"
+		color-a="0.2 - (0.2*t)"
+	>
+        
+		<frame time="500">224 0 16 16</frame>
+	
+	</sprite>
+	
+</effect>

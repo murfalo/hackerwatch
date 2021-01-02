@@ -1,0 +1,70 @@
+<effect>	
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite origin="8 8" looping="false" texture="actors/mt/projectiles/wisp_ball_hit.png" material="system/default.mats:projectile"
+	
+		
+	pos-x="0"
+	pos-y="-height"		
+		
+	>
+		<frame time="50">0 0 16 16</frame>
+		<frame time="50">16 0 16 16</frame>
+		<frame time="50">32 0 16 16</frame>
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+	</sprite>
+	<sprite origin="0 0" looping="false" texture="actors/mt/projectiles/wisp_ball_hit.png" material="system/default.mats:projectile"
+		num-sprites="6"
+		
+		pos-x="rand(u+i+23)*t*20*(2-t) - rand(u+i+101)*t*20*(2-t)"
+        pos-y="rand(u+i+149)*t*20*(2-t) - rand(u+i+2)*t*20*(2-t)"
+		color-a="1-saturate(t+l)"
+		color-r="1-saturate(t+l)"
+		color-g="1-saturate(t+l)"
+		
+	>
+		<frame time="500">5 6 1 1</frame>
+	</sprite>
+	<light> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="false" />
+
+		<size value="ceil(saturate(sin((t+0.5)*pi))) * 32" />
+		
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="5" />
+		<color-a value="0" />
+	</light>	
+	
+	<sprite origin="8 8" ulayer="1" looping="false" texture="actors/mt/bosses/giant_wisp/giant_wisp_ice_hit.png" material="system/default.mats:bright"
+	angle="rand(u+i*101)*pi*2"
+	
+	>
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+		<frame time="50">48 16 16 16</frame>
+		<frame time="50">64 16 16 16</frame>
+		<frame time="50">80 16 16 16</frame>
+		<frame time="50">96 16 16 16</frame>
+	</sprite>
+	<sprite origin="8 8" ulayer="0" looping="false" texture="actors/mt/bosses/giant_wisp/giant_wisp_ice_hit.png" material="system/default.mats:glow"
+	angle="rand(u+i*101)*pi*2"
+	>
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+		<frame time="50">48 16 16 16</frame>
+		<frame time="50">64 16 16 16</frame>
+		<frame time="50">80 16 16 16</frame>
+		<frame time="50">96 16 16 16</frame>
+	</sprite>
+</effect>

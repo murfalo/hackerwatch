@@ -1,0 +1,39 @@
+<unit slot="doodad">
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/player/ranger/bomb_explode</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">700</int>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/mercenary/explosion_bomb.effect</string>
+				
+				<int name="radius">30</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">30</int>
+						<int name="magical">30</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">32</float>
+		</dict>
+	</behavior>
+	
+	<scenes start="1">
+		<scene name="1">
+			<effect src="doodads/generic/trap_indicator.effect" />
+			<effect src="doodads/generic/crowd_bomb.effect" />
+		</scene>
+	</scenes>
+</unit>
+
+

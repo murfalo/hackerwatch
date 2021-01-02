@@ -1,0 +1,32 @@
+<effect looping="true" layer="-1">
+
+	
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+	
+		num-sprites="12"
+		
+		scale-x="saturate(rand(u+i+23) + 0.5)"
+		scale-y="saturate(rand(u+i+23) + 0.5)"
+		pos-x="sin(-pi*it*2+39)*18" 
+		pos-y="cos(-pi*it*2+39)*18 - 25"
+		color-a="1"
+	
+	>
+		
+		<frame time="60" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="60" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="60" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="60" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="60" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+		
+	</sprite>
+	
+	
+	<sprite origin="0 0" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray">
+		
+		<frame time="1000">0 0 0 0</frame>
+		
+	</sprite>
+	
+	
+</effect>

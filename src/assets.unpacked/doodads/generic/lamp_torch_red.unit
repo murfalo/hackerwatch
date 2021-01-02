@@ -1,0 +1,102 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			<light pos="0 5">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="150" />
+				</sizes>
+				<colors>
+					<color value="220 50 10 0" />
+				</colors>
+			</light>
+			<light pos="0 -19">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="80 10 0 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 -19">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="50 0 0 15" />
+					<color value="25 0 0 10" />
+				</colors>
+			</light>				
+			
+			<light pos="0 -19">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="100 20 0 15" />
+				</colors>
+			</light>	
+		
+		</scene>
+
+		<scene name="on" random-start="true" >
+			<scene src="shared" />
+			<sprite origin="4 32" texture="./lamp_torch_red.png" material="system/default.mats:default">
+				<frame time="100">0 0 8 24</frame>
+				<frame time="100">8 0 8 24</frame>
+				<frame time="100">16 0 8 24</frame>
+				<frame time="100">24 0 8 24</frame>
+			</sprite>
+			<sprite ulayer="10" origin="4 32" texture="./lamp_torch_red.png" material="system/default.mats:bright">
+				<frame time="100">0 0 8 13</frame>
+				<frame time="100">8 0 8 13</frame>
+				<frame time="100">16 0 8 13</frame>
+				<frame time="100">24 0 8 13</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="off">
+			<sprite origin="2 21" texture="./lamp_torch_red.png" material="system/default.mats:default">
+				<frame time="100">2 51 6 13</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

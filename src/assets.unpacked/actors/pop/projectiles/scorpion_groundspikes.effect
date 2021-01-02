@@ -1,0 +1,121 @@
+<effect looping="false" layer="0">
+
+	<param name="angle" default="0" />
+	<param name="radius" default="8" />
+	
+	<variation>
+		<sprite origin="8 12" ulayer="0" texture="./scorpion_mb_1_lurker.png" material="system/default.mats:bright-noxray"
+		>
+			<frame time="70">0 0 16 16</frame>
+			<frame time="70">16 0 16 16</frame>
+			<frame time="70">32 0 16 16</frame>
+			<frame time="70">48 0 16 16</frame>
+			<frame time="70">0 16 16 16</frame>
+			<frame time="70">16 16 16 16</frame>
+			<frame time="70">32 16 16 16</frame>
+			<frame time="70">48 16 16 16</frame>
+		</sprite>
+		
+		
+		<sprite looping="false" origin="7 11" texture="effects/animations/dust.png" material="system/default.mats:default-noxray">
+			<frame time="70">0 17 13 13</frame>	
+			<frame time="70">13 32 13 13</frame>	
+			<frame time="70">26 32 13 13</frame>	
+			<frame time="70">39 32 13 13</frame>	
+			<frame time="70">52 32 13 13</frame>	
+			<frame time="70">65 32 13 13</frame>	
+			<frame time="70">78 32 13 13</frame>	
+			
+			
+		</sprite>
+	</variation>
+	<variation>
+		<sprite origin="8 12" ulayer="0" texture="./scorpion_mb_1_lurker.png" material="system/default.mats:bright-noxray"
+		>
+			<frame time="70"> 0 32 16 16</frame>
+			<frame time="70">16 32 16 16</frame>
+			<frame time="70">32 32 16 16</frame>
+			<frame time="70">48 32 16 16</frame>
+			<frame time="70"> 0 48 16 16</frame>
+			<frame time="70">16 48 16 16</frame>
+			<frame time="70">32 48 16 16</frame>
+			<frame time="70">48 48 16 16</frame>
+			<frame time="70"> 0 64 16 16</frame>
+			<frame time="70">16 64 16 16</frame>
+		</sprite>
+		
+		
+		<sprite looping="false" origin="6 13" texture="effects/animations/dust.png" material="system/default.mats:default-noxray">
+			<frame time="70">0 17 11 15</frame>			
+			<frame time="70">11 17 11 15</frame>			
+			<frame time="70">22 17 11 15</frame>			
+			<frame time="70">33 17 11 15</frame>			
+			<frame time="70">44 17 11 15</frame>			
+			<frame time="70">55 17 11 15</frame>			
+			<frame time="70">66 17 11 15</frame>			
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite origin="8 12" ulayer="0" texture="./scorpion_mb_1_lurker.png" material="system/default.mats:bright-noxray"
+		>
+			<frame time="70"> 0 80 16 16</frame>
+			<frame time="70">16 80 16 16</frame>
+			<frame time="70">32 80 16 16</frame>
+			<frame time="70">48 80 16 16</frame>
+			<frame time="70"> 0 96 16 16</frame>
+			<frame time="70">16 96 16 16</frame>
+		</sprite>
+		
+		
+		<sprite looping="false" origin="7 11" texture="effects/animations/dust.png" material="system/default.mats:default-noxray">
+			<frame time="70">0 17 13 13</frame>	
+			<frame time="70">13 32 13 13</frame>	
+			<frame time="70">26 32 13 13</frame>	
+			<frame time="70">39 32 13 13</frame>	
+			<frame time="70">52 32 13 13</frame>	
+			<frame time="70">65 32 13 13</frame>	
+			<frame time="70">78 32 13 13</frame>	
+			
+			
+		</sprite>
+	</variation>
+	<variation>
+		<sprite origin="8 12" ulayer="0" texture="./scorpion_mb_1_lurker.png" material="system/default.mats:bright-noxray"
+		>
+			<frame time="70"> 0 80 16 16</frame>
+			<frame time="70">16 80 16 16</frame>
+			<frame time="70">32 80 16 16</frame>
+			<frame time="70">48 80 16 16</frame>
+			<frame time="70"> 0 96 16 16</frame>
+			<frame time="70">16 96 16 16</frame>
+		</sprite>
+		<sprite looping="false" origin="6 13" texture="effects/animations/dust.png" material="system/default.mats:default-noxray">
+			<frame time="70">0 17 11 15</frame>			
+			<frame time="70">11 17 11 15</frame>			
+			<frame time="70">22 17 11 15</frame>			
+			<frame time="70">33 17 11 15</frame>			
+			<frame time="70">44 17 11 15</frame>			
+			<frame time="70">55 17 11 15</frame>			
+			<frame time="70">66 17 11 15</frame>			
+		</sprite>
+	</variation>
+	
+	
+	<sprite origin="4 4" looping="false" texture="effects/empty.png" material="system/default.mats:default-noxray"
+		num-sprites="5"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -8 * sin(t*pi/2) + 0.2"
+		
+        color-r="126/255"
+        color-g="96/255"
+        color-b="24/255"
+        color-a="saturate(1 - t)"
+	>
+        <frame time="400">0 0 1 1</frame>
+	</sprite>	
+
+	
+	
+</effect>

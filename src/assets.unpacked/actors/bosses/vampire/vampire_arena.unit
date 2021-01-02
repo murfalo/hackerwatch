@@ -1,0 +1,120 @@
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-override">actors/bosses/vampire/vampire.unit</string>
+	
+		<string name="type">undead</string>
+		<int name="hp">7500</int>
+		<int name="armor">45</int>
+		<int name="resistance">45</int>
+		<float name="mp-scale-fact">1.25</float>
+
+		<string name="death-snd">event:/enemy/boss_vampire/death</string>
+
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">false</bool>
+		<int name="aggro-range">1000</int>
+		<int name="unit-height">28</int>
+		<float name="debuff-scale">0.5</float>
+		<float name="wind-scale">0</float>
+
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_boss.inc"
+		</array>
+
+		<dict name="movement">
+			<string name="class">RangedMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">bat 8</string>
+
+			<bool name="strafing">false</bool>
+			<float name="speed">6</float>
+			<int name="dist">150</int>
+		</dict>
+
+		<array name="skills">
+			%// Blades
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">sword</string>
+				
+				<string name="start-snd">event:/enemy/boss_vampire/attack-blades</string>
+				
+				<bool name="must-see">false</bool>
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">4000</int>	
+				<int name="castpoint">450</int>
+				<int name="range">999</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">RaiseUnitEvent</string>
+						<string name="name">blade_wall</string>
+					</dict>
+				</array>
+			</dict>
+		
+			%// Rapiers
+			<dict>
+				<string name="class">WhirlNovaSkill</string>
+				<string name="anim">attack-sword 8</string>
+				
+				<string name="start-snd">event:/enemy/boss_vampire/attack-rapiers</string>
+				<string name="fire-snd">event:/enemy/boss_vampire/rapier</string>
+				
+				<int name="cooldown">4000</int>
+				<int name="castpoint">1100</int>
+				<int name="duration">540</int>
+				<int name="min-range">0</int>
+				<int name="range">999</int>
+				
+				<bool name="hold-dir">true</bool>
+				<bool name="must-see">false</bool>
+				<bool name="targeted">true</bool>
+				<int name="angle-offset">-60</int>
+				
+				<string name="projectile">actors/bosses/vampire/rapier_projectile.unit</string>
+				<float name="proj-dist">12</float>
+				<int name="proj-delay">60</int>
+				<int name="per-revolution">27</int>			
+			</dict>
+			
+			%// Death
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/bosses/vampire/vampire_corpse.unit</string>
+					</dict>	
+				</array>	
+			</dict>	
+		</array>	
+		
+		<dict name="effect-params"></dict>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 -2" radius="8" density="100"/>
+			</collision>
+			<sprite origin="9 10" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+                <frame>85 32 19 19</frame>
+            </sprite>
+		</scene>
+		
+		<scene name="shared-bat">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 -2" radius="8" sensor="false" shoot-through="true" aim-through="true" density="100"/>
+			</collision>
+			<sprite origin="9 10" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+                <frame>85 32 19 19</frame>
+            </sprite>
+		</scene>
+
+%include "actors/bosses/vampire/vampire_scenes.inc"
+	</scenes>
+</unit>

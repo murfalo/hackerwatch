@@ -1,0 +1,376 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_64.unit">
+			<vec2>256 160</vec2>
+			<int>20</int>
+			<vec2>256 32</vec2>
+			<int>21</int>
+			<vec2>256 96</vec2>
+			<int>22</int>
+			<vec2>128 272</vec2>
+			<int>23</int>
+			<vec2>272 272</vec2>
+			<int>24</int>
+			<vec2>272 224</vec2>
+			<int>25</int>
+			<vec2>272 160</vec2>
+			<int>26</int>
+			<vec2>272 -32</vec2>
+			<int>27</int>
+			<vec2>192 224</vec2>
+			<int>28</int>
+			<vec2>256 224</vec2>
+			<int>29</int>
+			<vec2>0 224</vec2>
+			<int>30</int>
+			<vec2>192 272</vec2>
+			<int>8</int>
+			<vec2>192 96</vec2>
+			<int>32</int>
+			<vec2>128 224</vec2>
+			<int>33</int>
+			<vec2>128 96</vec2>
+			<int>34</int>
+			<vec2>64 32</vec2>
+			<int>35</int>
+			<vec2>192 32</vec2>
+			<int>36</int>
+			<vec2>0 160</vec2>
+			<int>37</int>
+			<vec2>64 160</vec2>
+			<int>38</int>
+			<vec2>256 -32</vec2>
+			<int>39</int>
+			<vec2>272 96</vec2>
+			<int>40</int>
+			<vec2>272 32</vec2>
+			<int>1</int>
+			<vec2>192 160</vec2>
+			<int>2</int>
+			<vec2>64 272</vec2>
+			<int>3</int>
+			<vec2>64 96</vec2>
+			<int>4</int>
+			<vec2>352 112</vec2>
+			<int>5</int>
+			<vec2>192 -32</vec2>
+			<int>6</int>
+			<vec2>352 128</vec2>
+			<int>7</int>
+			<vec2>256 272</vec2>
+			<int>9</int>
+			<vec2>0 272</vec2>
+			<int>10</int>
+			<vec2>0 96</vec2>
+			<int>11</int>
+			<vec2>128 32</vec2>
+			<int>12</int>
+			<vec2>64 224</vec2>
+			<int>31</int>
+			<vec2>336 128</vec2>
+			<int>13</int>
+			<vec2>128 160</vec2>
+			<int>14</int>
+			<vec2>0 32</vec2>
+			<int>15</int>
+			<vec2>0 -32</vec2>
+			<int>16</int>
+			<vec2>128 -32</vec2>
+			<int>17</int>
+			<vec2>64 -32</vec2>
+			<int>18</int>
+			<vec2>336 112</vec2>
+			<int>19</int>
+		</array>
+		<array name="system/system.fnt">
+			<array>
+				<vec2>416 152</vec2>
+				<int>41</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">west_21x21</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>42</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs">
+					<int>43</int>
+					<int>44</int>
+					<int>45</int>
+					<int>46</int>
+					<int>47</int>
+					<int>51</int>
+					<int>52</int>
+					<int>69</int>
+					<int>70</int>
+					<int>71</int>
+					<int>53</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>43</int>
+			<vec3>160 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest1_1</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest.pfb</string>
+				<string name="Flag">chest_1</string>
+				<int name="Chance">100</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>44</int>
+			<vec3>224 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest1_2</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest.pfb</string>
+				<string name="Flag">chest_2</string>
+				<int name="Chance">50</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>45</int>
+			<vec3>160 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest2_1</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest_2.pfb</string>
+				<string name="Flag">chest_1</string>
+				<int name="Chance">100</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>46</int>
+			<vec3>224 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest2_2</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest_2.pfb</string>
+				<string name="Flag">chest_2</string>
+				<int name="Chance">50</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>47</int>
+			<vec3>160 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>empty</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_empty.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>48</int>
+			<vec3>352 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_chests_more</string>
+			<dict>
+				<string name="Flag">fountain_chests_more</string>
+				<array name="OnTrue"><int>50</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>49</int>
+			<vec3>0 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>48</int><int>0</int><int>57</int><int>0</int><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>50</int>
+			<vec3>352 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>51</int><int>52</int><int>71</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>51</int>
+			<vec3>288 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest1_3</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest.pfb</string>
+				<string name="Flag">chest_3</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>52</int>
+			<vec3>288 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest2_3</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest_2.pfb</string>
+				<string name="Flag">chest_3</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>71</int>
+			<vec3>288 256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest3_3</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest_3.pfb</string>
+				<string name="Flag">chest_3</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>69</int>
+			<vec3>160 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest3_1</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest_3.pfb</string>
+				<string name="Flag">chest_1</string>
+				<int name="Chance">100</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>70</int>
+			<vec3>224 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest3_2</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_chest_3.pfb</string>
+				<string name="Flag">chest_2</string>
+				<int name="Chance">50</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>53</int>
+			<vec3>224 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sarcophagus</string>
+			<dict>
+				<string name="Prefab">prefabs/pyramid_fancy/west_21x21_sarcophagus.pfb</string>
+				<string name="Flag">sarcophagus</string>
+				<int name="Chance">1000</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>54</int>
+			<vec3>160 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>lvl_2</string>
+			<dict>
+				<string name="Flag">lvl_2</string>
+				<array name="OnTrue"><int>55</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>55</int>
+			<vec3>224 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>53</int></array>
+			</dict>
+			<array><int>56</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>56</int>
+			<vec3>288 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>47</int>
+					<int>43</int>
+					<int>44</int>
+					<int>45</int>
+					<int>46</int>
+					<int>69</int>
+					<int>70</int>
+					<int>71</int>
+					<int>52</int>
+					<int>51</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>57</int>
+			<vec3>96 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sarcophagus</string>
+			<dict>
+				<string name="Flag">sarcophagus</string>
+				<array name="OnFalse"><int>54</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

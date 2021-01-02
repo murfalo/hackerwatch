@@ -1,0 +1,58 @@
+<gui>
+	<sprites>
+		<sprite name="portrait-frame" texture="gui/shop.png"><frame>0 258 32 32</frame></sprite>
+		<sprite name="icon-legacy" texture="gui/icons.png"><frame>233 24 12 13</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="218" height="210" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox" padding="2 2">
+				<!-- Header -->
+				<rect width="214" height="18" flow="hbox">
+					<!-- Headline -->
+					<rect width="193" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".town.mercenarygravestone.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="close" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="214" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect width="214" height="185" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Name -->
+					<text id="name" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 2" />
+
+					<!-- Portrait -->
+					<sprite src="portrait-frame" anchor="0.5 0" offset="0 21">
+						<portrait id="portrait" anchor="0.5 0.5" />
+					</sprite>
+
+					<!-- Reached -->
+					<text id="reached" font="gui/fonts/arial11.fnt" anchor="0.5 0" align="center" width="150" offset="0 54" />
+
+					<!-- Stats block -->
+					<rect width="194" height="69" spriteset="gui/variable/headline_borders.sval" anchor="0.5 0" offset="0 104">
+						<!-- Points -->
+						<group inner="true" anchor="0.5 0" offset="0 4" flow="hbox" spacing="2">
+							<text id="earned" font="gui/fonts/arial11.fnt" />
+							<sprite src="icon-legacy" offset="0 2" />
+							<text font="gui/fonts/arial11.fnt" text=".town.mercenarygravestone.earned2" />
+						</group>
+
+						<!-- Stats -->
+						<text id="stats" anchor="0.5 0" offset="0 24" font="gui/fonts/arial11.fnt" align="center" width="186" />
+					</rect>
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

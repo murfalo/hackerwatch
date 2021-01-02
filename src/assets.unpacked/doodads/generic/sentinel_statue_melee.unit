@@ -1,0 +1,41 @@
+<unit slot="doodad">
+	<event type="Destroyed">
+		<spawn_unit unit="actors/pop/sentinel_melee.unit" />
+		<play_sound sound="event:/enemy/sentinel/spawn" />
+	</event>
+
+	<scenes east="east" south="south" west="west" north="north">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="116 0 2 2"/>
+			
+			<collision static="true">
+				<circle offset="0 0" radius="4"/>
+			</collision>
+		</scene>
+
+		<scene name="east">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="actors/pop/sentinel_melee.png" material="system/default.mats:default">
+				<frame time="150">0 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="south">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="actors/pop/sentinel_melee.png" material="system/default.mats:default">
+				<frame time="150">96 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="west">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="actors/pop/sentinel_melee.png" material="system/default.mats:default">
+				<frame time="150">192 0 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="north">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="true" texture="actors/pop/sentinel_melee.png" material="system/default.mats:default">
+				<frame time="150">288 0 48 48</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

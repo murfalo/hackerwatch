@@ -1,0 +1,96 @@
+<effect looping="true" layer="1">
+	<param name="radius" default="72" />
+	
+	
+	<sprite origin="48 48" looping="true" texture="./deatharea.png" material="system/default.mats:floor"
+		scale-x="0.995 + sin(t*pi*4)*0.005"
+		scale-y="0.995 + cos(t*pi*4)*0.005"
+		color-a="0.9"
+		
+		>
+		<frame time="200">0 0 96 96</frame>
+		<frame time="200">96 0 96 96</frame>
+		<frame time="200">0 96 96 96</frame>
+		<frame time="200">96 96 96 96</frame>
+	</sprite>
+	
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		num-sprites="2"
+		pos-x="rand(u+il+i*23)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*101)*cos(pi*2)*radius - radius/2"
+		scale-x="0.8+rand(u+i*23)*0.2"
+		scale-y="0.8+rand(u+i*23)*0.2"
+		color-a="0.9"
+		>
+		<frame time="250">0 208 6 6</frame>
+		<frame time="250">6 208 6 6</frame>
+		<frame time="500">12 208 6 6</frame>
+		<frame time="50">18 208 6 6</frame>
+		<frame time="50">24 208 6 6</frame>
+		<frame time="1500">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		num-sprites="3"
+		pos-x="rand(u+il+i*11)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*43+100)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="50">0 208 6 6</frame>
+		<frame time="50">6 208 6 6</frame>
+		<frame time="50">12 208 6 6</frame>
+		<frame time="30">18 208 6 6</frame>
+		<frame time="30">24 208 6 6</frame>
+		<frame time="1500">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		num-sprites="3"
+		pos-x="rand(u+il+i*13)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*127+100)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="80">0 208 6 6</frame>
+		<frame time="80">6 208 6 6</frame>
+		<frame time="1200">12 208 6 6</frame>
+		<frame time="30">18 208 6 6</frame>
+		<frame time="30">24 208 6 6</frame>
+		<frame time="1500">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		num-sprites="3"
+		pos-x="rand(u+il+i*353)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*31+100)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="200">0 208 6 6</frame>
+		<frame time="200">6 208 6 6</frame>
+		<frame time="300">12 208 6 6</frame>
+		<frame time="30">18 208 6 6</frame>
+		<frame time="30">24 208 6 6</frame>
+		<frame time="100">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		num-sprites="10"
+		pos-x="rand(u+il+i*877)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*1019)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="300">0 208 6 6</frame>
+		<frame time="300">6 208 6 6</frame>
+		<frame time="200">12 208 6 6</frame>
+		<frame time="40">18 208 6 6</frame>
+		<frame time="40">24 208 6 6</frame>
+		<frame time="200">0 0 0 0</frame>
+	</sprite>
+</effect>

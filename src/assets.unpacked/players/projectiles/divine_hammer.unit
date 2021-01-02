@@ -1,0 +1,160 @@
+<unit netsync="none" layer="0">
+	<behavior class="RayProjectile">
+		<string name="anim">idle 8</string>
+		<float name="speed">4.5</float>
+		<int name="ttl">1000</int>
+		
+		<!-- <int name="penetration">999</int> -->
+		
+		<string name="shoot-snd">event:/item/chapel_hammer_throw</string>
+
+<!-- 		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">20</int>
+			</dict>
+			
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">players/projectiles/divine_hammer_break.effect</string>
+			</dict>
+		</array> -->
+		
+		<dict name="effect">
+			<string name="class">Explode</string>
+			<string name="fx">players/projectiles/divine_hammer_break.effect</string>
+
+			<int name="radius">12</int>
+			<float name="dist-scaling">1000</float>
+
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">25</int>
+			</dict>
+		</dict>
+		
+		<dict name="effect-params">
+			<float name="height">4.5</float>
+			<float name="speed">4.5</float>
+			<float name="angle">0</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene name="shared">
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>		
+			
+			<sprite origin="4 0" ulayer="-1" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame>192 0 8 8</frame>
+			</sprite>
+			<effect src="players/projectiles/divine_hammer.effect" />
+			
+		</scene>
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">0 0 23 21</frame>
+				<frame time="50">0 21 23 21</frame>
+				<frame time="50">0 42 23 21</frame>
+				<frame time="50">0 63 23 21</frame>
+				<frame time="50">0 84 23 21</frame>
+				<frame time="50">0 105 23 21</frame>
+				<frame time="50">0 126 23 21</frame>
+				<frame time="50">0 147 23 21</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">23 0 23 21</frame>
+				<frame time="50">23 21 23 21</frame>
+				<frame time="50">23 42 23 21</frame>
+				<frame time="50">23 63 23 21</frame>
+				<frame time="50">23 84 23 21</frame>
+				<frame time="50">23 105 23 21</frame>
+				<frame time="50">23 126 23 21</frame>
+				<frame time="50">23 147 23 21</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">46 0 23 21</frame>
+				<frame time="50">46 21 23 21</frame>
+				<frame time="50">46 42 23 21</frame>
+				<frame time="50">46 63 23 21</frame>
+				<frame time="50">46 84 23 21</frame>
+				<frame time="50">46 105 23 21</frame>
+				<frame time="50">46 126 23 21</frame>
+				<frame time="50">46 147 23 21</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">69 0 23 21</frame>
+				<frame time="50">69 21 23 21</frame>
+				<frame time="50">69 42 23 21</frame>
+				<frame time="50">69 63 23 21</frame>
+				<frame time="50">69 84 23 21</frame>
+				<frame time="50">69 105 23 21</frame>
+				<frame time="50">69 126 23 21</frame>
+				<frame time="50">69 147 23 21</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">92 0 23 21</frame>
+				<frame time="50">92 21 23 21</frame>
+				<frame time="50">92 42 23 21</frame>
+				<frame time="50">92 63 23 21</frame>
+				<frame time="50">92 84 23 21</frame>
+				<frame time="50">92 105 23 21</frame>
+				<frame time="50">92 126 23 21</frame>
+				<frame time="50">92 147 23 21</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">115 0 23 21</frame>
+				<frame time="50">115 21 23 21</frame>
+				<frame time="50">115 42 23 21</frame>
+				<frame time="50">115 63 23 21</frame>
+				<frame time="50">115 84 23 21</frame>
+				<frame time="50">115 105 23 21</frame>
+				<frame time="50">115 126 23 21</frame>
+				<frame time="50">115 147 23 21</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">138 0 23 21</frame>
+				<frame time="50">138 21 23 21</frame>
+				<frame time="50">138 42 23 21</frame>
+				<frame time="50">138 63 23 21</frame>
+				<frame time="50">138 84 23 21</frame>
+				<frame time="50">138 105 23 21</frame>
+				<frame time="50">138 126 23 21</frame>
+				<frame time="50">138 147 23 21</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="12 11" looping="true" texture="./divine_hammer.png" material="system/default.mats:default">
+				<frame time="50">161 0 23 21</frame>
+				<frame time="50">161 21 23 21</frame>
+				<frame time="50">161 42 23 21</frame>
+				<frame time="50">161 63 23 21</frame>
+				<frame time="50">161 84 23 21</frame>
+				<frame time="50">161 105 23 21</frame>
+				<frame time="50">161 126 23 21</frame>
+				<frame time="50">161 147 23 21</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,22 @@
+<unit slot="doodad">
+	<scenes open="open" close="close">
+		<scene name="shared">
+			%if EDITOR 
+			<sprite origin="16 16" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="open">
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="134 32 10 10" />
+		
+			<scene src="shared"/>
+			<effect src="./djinn_rift_open.effect"/>
+			<effect delay="400" src="./djinn_rift.effect"/>
+		</scene>
+		<scene name="close">
+			<scene src="shared"/>
+			<effect src="./djinn_rift_close.effect"/>
+		</scene>
+	</scenes>	
+</unit>

@@ -1,0 +1,96 @@
+<gui>
+	<sprites>
+		<sprite name="logo" texture="./menu.png"><frame>0 0 298 70</frame></sprite>
+		<sprite name="logo-pop" texture="./menu.png"><frame>0 116 214 75</frame></sprite>
+		<sprite name="logo-wh" texture="./menu.png"><frame>298 0 197 65</frame></sprite>
+		<sprite name="logo-mt" texture="./menu.png"><frame>216 116 178 68</frame></sprite>
+
+		<sprite name="icon-single" texture="gui/icons.png"><frame>0 50 8 12</frame></sprite>
+		<sprite name="icon-multi" texture="gui/icons.png"><frame>8 50 29 12</frame></sprite>
+		<sprite name="icon-options" texture="gui/icons.png"><frame>37 50 12 12</frame></sprite>
+		<sprite name="icon-quit" texture="gui/icons.png"><frame>0 62 13 12</frame></sprite>
+
+		<sprite name="icon-discord" texture="gui/icons.png"><frame>22 117 15 11</frame></sprite>
+		<sprite name="icon-wiki" texture="gui/icons.png"><frame>64 112 6 12</frame></sprite>
+
+		<sprite name="button-slots" texture="gui/widget.png"><frame>328 0 18 18</frame></sprite>
+		<sprite name="button-slots-hover" texture="gui/widget.png"><frame>328 18 18 18</frame></sprite>
+		<sprite name="button-slots-down" texture="gui/widget.png"><frame>328 36 18 18</frame></sprite>
+		<sprite name="button-slots-disabled" texture="gui/widget.png"><frame>328 54 18 18</frame></sprite>
+
+		<sprite name="icon-crackshell" texture="gui/icons.png"><frame>245 24 11 11</frame></sprite>
+		<sprite name="icon-crackshell-pop" texture="gui/icons.png"><frame>245 35 11 11</frame></sprite>
+		<sprite name="icon-crackshell-wh" texture="gui/icons.png"><frame>245 46 11 11</frame></sprite>
+		<sprite name="icon-crackshell-mt" texture="gui/icons.png"><frame>245 57 11 11</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/dlc_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<group id="menu">
+				<button id="logo-container" width="298" height="70" anchor="0.5 0.5" offset="0 -75" func="logo">
+					<sprite id="logo" src="logo" />
+				</button>
+
+				<rect width="292" height="18" anchor="0.5 0.9" flow="hbox" spacing="4">
+					<spritebutton spriteset="button-slots" func="slots" tooltip=".menu.profiles" />
+					<scalebutton spriteset="scalebutton" width="64" func="single">
+						<sprite src="icon-single" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton spriteset="scalebutton" width="64" func="multi">
+						<sprite src="icon-multi" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton spriteset="scalebutton" width="64" func="options">
+						<sprite src="icon-options" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton spriteset="scalebutton" width="64" func="quit">
+						<sprite src="icon-quit" anchor="0.5 0.5" />
+					</scalebutton>
+				</rect>
+
+				<group inner="true" flow="vbox" spacing="4" anchor="1 0" offset="-40 40">
+					<scalebutton spriteset="scalebutton" width="32" func="discord" tooltip=".menu.discord">
+						<sprite src="icon-discord" anchor="0.5 0.5" />
+					</scalebutton>
+
+					<scalebutton spriteset="scalebutton" width="32" func="wiki" tooltip=".menu.wiki">
+						<sprite src="icon-wiki" anchor="0.5 0.5" />
+					</scalebutton>
+
+					<scalebutton spriteset="scalebutton" width="32" func="store-crackshell" tooltip=".menu.store">
+						<sprite id="icon-crackshell" src="icon-crackshell" anchor="0.5 0.5" />
+					</scalebutton>
+				</group>
+
+				<group inner="true" flow="hbox" spacing="4" offset="5 4">
+					<scalebutton id="store-dlc-pop" spriteset="scalebutton" width="23" func="store-dlc-pop" tooltip=".menu.store.pop">
+						<sprite src="icon-dlc-pop" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton id="store-dlc-wh" spriteset="scalebutton" width="23" func="store-dlc-wh" tooltip=".menu.store.wh">
+						<sprite src="icon-dlc-wh" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton id="store-dlc-mt" spriteset="scalebutton" width="23" func="store-dlc-mt" tooltip=".menu.store.mt">
+						<sprite src="icon-dlc-mt" anchor="0.5 0.5" />
+					</scalebutton>
+				</group>
+
+				<scalebutton id="multi-test" visible="false" spriteset="scalebutton" width="112" anchor="0 1" offset="10 -10" font="gui/fonts/arial11.fnt" text="multi test host" func="multi-test" />
+
+				<rect id="popup-multiplayer" visible="false" width="112" height="42" anchor="0.5 0.9" offset="-24 -23" flow="vbox" spacing="4">
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.mplayer.clobby" func="multi-host" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.mplayer.slist" func="multi-serverlist" />
+				</rect>
+
+				<rect id="popup-options" visible="false" width="112" height="117" anchor="0.5 0.9" offset="42 -21" flow="vbox" spacing="4">
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.game" func="options-gameplay" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.graphics" func="options-graphics" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.sound" func="options-sound" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.ctrls" func="options-controls" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.credits" func="options-credits" />
+				</rect>
+			</group>
+		</group>
+	</doc>
+</gui>

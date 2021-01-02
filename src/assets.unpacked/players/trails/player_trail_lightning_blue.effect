@@ -1,0 +1,103 @@
+<effect looping="false">
+		
+	<sprite origin="8 8" looping="false" texture="./player_trails.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="3+rand(u)*3"
+		scale-x="saturate(1.2-t*1.2)"
+		scale-y="saturate(1.2-t*1.2)"
+		pos-x="cos(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5)"
+        pos-y="sin(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5)"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		color-r="sin(pow(t,0.8)*pi)"
+		color-g="sin(pow(t,0.8)*pi)"
+		color-b="1"
+	
+	>
+		
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="499">0 16 16 16</frame>
+		
+	</sprite>
+	<variation>
+		<sprite origin="8 8" looping="false" texture="./player_trails.png" material="system/default.mats:bright-noxray"
+		
+			num-sprites="rand(u)*3"
+			scale-x="saturate(0.9-t*0.8)"
+			scale-y="saturate(0.9-t*0.8)"
+			angle="rand(u+i)*pi*2"
+			pos-x="cos(rand(u+21*i)*2*pi) * 8 * pow(rand(u+73*i),0.5)"
+			pos-y="sin(rand(u+21*i)*2*pi) * 8 * pow(rand(u+73*i),0.5)"
+			color-a="1"
+			color-r="sin(pow(t,0.8)*pi)"
+			color-g="sin(pow(t,0.8)*pi)"
+			color-b="1"
+		
+		>
+			
+			
+			<frame time="1">0 0 0 0</frame>
+			<frame time="50">0 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">16 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">32 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">48 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">0 48 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">16 48 16 16</frame>
+			
+		</sprite>
+	</variation>
+	<variation>
+		<sprite origin="8 8" looping="false" texture="./player_trails.png" material="system/default.mats:bright-noxray"
+		
+			num-sprites="1"
+			scale-x="1"
+			scale-y="1"
+			angle="rand(u+i)*pi*2"
+			pos-x="cos(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5)"
+			pos-y="sin(rand(u+21*i)*2*pi) * 4 * pow(rand(u+73*i),0.5)"
+			color-a="1"
+			color-r="sin(pow(t,0.8)*pi)"
+			color-g="sin(pow(t,0.8)*pi)"
+			color-b="1"
+		
+		>
+			
+			
+			<frame time="1">0 0 0 0</frame>
+			<frame time="50">0 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">16 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">32 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">48 32 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">0 48 16 16</frame>
+			<frame time="20">0 0 0 0</frame>
+			<frame time="50">16 48 16 16</frame>
+			
+		</sprite>
+	</variation>
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="1100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="saturate(sin(t*pi*1)-t)*70" />
+		<length value="70" />
+		<color-r value="0.1" />
+		<color-g value="0.1" />
+		<color-b value="0.5" />
+		<color-a value="0/255" />
+	</light>
+</effect>

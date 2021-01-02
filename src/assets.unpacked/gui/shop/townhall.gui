@@ -1,0 +1,97 @@
+<gui>
+	<sprites>
+		<sprite name="building-frame" texture="gui/shop.png"><frame>278 20 35 32</frame></sprite>
+		<sprite name="building-inner-frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="frame-icon" texture="gui/widget.png"><frame>99 0 26 26</frame></sprite>
+
+		<sprite name="ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+		<sprite name="icon-lock" texture="gui/icons.png"><frame>0 100 8 9</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+		<sprite name="icon-unknown" texture="gui/icons_others.png"><frame>0 120 24 24</frame></sprite>
+
+		<sprite name="shop-level-1" texture="gui/icons.png"><frame>13 62 11 14</frame></sprite>
+		<sprite name="shop-level-2" texture="gui/icons.png"><frame>24 62 11 14</frame></sprite>
+		<sprite name="shop-level-3" texture="gui/icons.png"><frame>35 62 11 14</frame></sprite>
+		<sprite name="shop-level-4" texture="gui/icons.png"><frame>46 62 11 14</frame></sprite>
+		<sprite name="shop-level-5" texture="gui/icons.png"><frame>57 62 11 14</frame></sprite>
+		<sprite name="shop-level-6" texture="gui/icons.png"><frame>111 114 11 14</frame></sprite>
+
+%include "gui/scalablebutton_big_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group width="400" inner="true">
+
+			<!-- List of rows -->
+			<group id="row-list" width="400" inner="true" flow="vbox" />
+
+			<!-- Special building separator -->
+			<rect id="special-separator" offset="289 0" width="3" height="137" spriteset="gui/variable/3pxbar_vert.sval" />
+
+			<!-- Available row template -->
+			<rect id="row-template" width="400" height="35" visible="false">
+				<rect width="3" height="32" spriteset="gui/variable/3pxbar_vert.sval" />
+				<sprite src="building-frame" offset="3 0">
+					<sprite src="building-inner-frame" offset="2 2" />
+					<sprite id="icon" offset="4 4">
+						<sprite id="icon-level" src="shop-level-1" anchor="1 1" offset="-2 -2" />
+					</sprite>
+				</sprite>
+				<rect width="3" height="32" offset="35 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="32" offset="38 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="32" offset="41 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="32" offset="292 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect id="building-list" width="350" height="32" offset="44 0" flow="hbox" />
+				<rect width="289" height="3" offset="0 32" spriteset="gui/variable/3pxbar_hor.sval" />
+				<rect width="108" height="3" offset="292 32" spriteset="gui/variable/3pxbar_hor.sval" />
+			</rect>
+
+			<!-- Unavailable row template -->
+			<rect id="row-template-unavailable" width="400" height="35" visible="false">
+				<rect width="3" height="32" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="283" height="32" offset="3 0">
+					<upgradeshopitem id="button" func="buy-item" spriteset="scalebutton-big" width="283" />
+					<sprite id="icon-level" src="shop-level-1" offset="15 12" />
+				</rect>
+				<rect width="3" height="32" offset="286 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="32" offset="292 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="102" height="32" offset="295 0" spriteset="gui/variable/headline_borders.sval" />
+				<rect width="3" height="32" offset="397 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="400" height="3" offset="0 32" spriteset="gui/variable/3pxbar_hor.sval" />
+			</rect>
+
+			<!-- Building button template -->
+			<rect id="building-template" width="35" height="32" visible="false">
+				<upgradeshopitem id="button" func="buy-item" spriteset="scalebutton-big" width="32" />
+				<rect width="3" height="32" offset="32 0" spriteset="gui/variable/3pxbar_vert.sval" />
+			</rect>
+
+			<!-- Building owned template -->
+			<sprite id="building-owned-template" src="building-frame" visible="false">
+				<sprite src="building-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4">
+					<sprite src="icon-check" anchor="1 1" offset="-1 -1" />
+				</sprite>
+			</sprite>
+
+			<!-- Building unavailable template -->
+			<sprite id="building-unavailable-template" src="building-frame" visible="false" tooltip-enabled="false">
+				<sprite src="building-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4">
+					<sprite src="icon-lock" anchor="1 1" offset="-1 -1" />
+				</sprite>
+			</sprite>
+
+			<!-- Building unknown template -->
+			<sprite id="building-unknown-template" src="building-frame" visible="false">
+				<sprite src="building-inner-frame" offset="2 2" />
+				<sprite src="icon-unknown" offset="4 4" />
+			</sprite>
+
+			<!-- Empty building template -->
+			<sprite id="building-empty-template" src="building-frame" visible="false" />
+
+		</group>
+	</doc>
+</gui>

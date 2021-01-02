@@ -1,0 +1,25 @@
+<dict>
+	<string name="name">.skills.wizard.scorched-earth</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>144 120 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::ScorchedEarth</string>
+			<string name="unit">players/wizard/scorched_earth_1.unit</string>
+			<float name="duration-mul">0.5</float>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::ScorchedEarth</string>
+			<string name="unit">players/wizard/scorched_earth_2.unit</string>
+			<float name="duration-mul">1.0</float>
+		</dict>
+	</array>
+</dict>

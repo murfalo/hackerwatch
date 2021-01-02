@@ -1,0 +1,63 @@
+<unit layer="-1">
+	<behavior class="BombBehavior">
+		%//<string name="spawn-sound">event:/misc/bomb-fall</string>
+		%//<string name="explode-sound">event:/enemy/glyph/attack</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">750</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+
+		<array name="actions">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/projectiles/lich_1_mb_glyph_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes default="visible">
+		<scene name="shared">
+			<collision static="true">
+				<polygon shoot-through="true" aim-through="true" sensor="true">
+					<point>-32 0</point>
+					<point>0 -32</point>
+					<point>32 0</point>
+					<point>0 32</point>
+				</polygon>
+			</collision>		
+		</scene>
+
+		<scene name="visible">
+			<scene src="shared" />
+			<!-- 
+			<effect src="actors/projectiles/lich_1_mb_glyph_rotating.effect" /> -->
+			<effect delay="150" src="actors/projectiles/lich_1_mb_glyph_spawn.effect" />
+			<effect delay="225" src="actors/projectiles/lich_1_mb_glyph_spawn.effect" />
+			<effect delay="300" src="actors/projectiles/lich_1_mb_glyph_spawn.effect" />
+			<effect delay="375" src="actors/projectiles/lich_1_mb_glyph_spawn.effect" />
+			
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="25" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="110" />
+				</sizes>
+				<colors>
+					<color value="80 20 0 0" />
+				</colors>
+			</light>				
+		</scene>
+	</scenes>
+</unit>

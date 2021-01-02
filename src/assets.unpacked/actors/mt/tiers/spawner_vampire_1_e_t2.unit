@@ -1,0 +1,10 @@
+%define TIER2
+%define EAST
+
+%replace CORPSE actors/mt/spawners/spawner_vampire_1_razed_e.unit
+%replace LOOT actors/loot.sval:spawner_vampire_1_e
+
+%replace SPAWNCD 1500
+%replace SPAWNCHARGES 15
+
+%include "actors/mt/spawners/spawner_vampire_1.inc"

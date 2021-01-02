@@ -1,0 +1,62 @@
+<unit netsync="none" layer="100">
+	<behavior class="ThrowProjectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/enemy/tower_bomb/shoot</string>
+		<string name="hit-snd">event:/enemy/tower_bomb/hit</string>
+		<string name="fx">actors/mt/projectiles/explosion_snow.effect</string>
+		
+		<string name="speed-calc">2 + (dist / 60)</string>
+		<int name="penetration">1000</int>
+		
+		<bool name="blockable">false</bool>
+		<float name="arc-height">48</float>
+		
+		<array name="miss-effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/projectiles/explosion_snow.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">18</int>
+				<float name="dist-scaling">1000</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">30</int>
+						<int name="magical">30</int>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/tower_bomb/hit</string>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/projectiles/ice_patch.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="0.05" projectile="true" />
+			</collision>
+			<sprite origin="3.5 3.5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>0 8 7 7</frame>
+			</sprite>
+		
+			<effect src="./tower_frost_bomb.effect" />	
+		</scene>	
+	</scenes>
+</unit>

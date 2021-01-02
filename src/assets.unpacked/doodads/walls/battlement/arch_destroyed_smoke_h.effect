@@ -1,0 +1,99 @@
+<effect looping="false" layer="1" bounds="230 230">
+	<sprite looping="false" origin="-5 64" texture="./arch_destroyed_smoke_fast.png" material="effects/effects.mats:lit"
+	
+		pos-y="80*t-50"
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.5"
+	>
+		<frame time="200">0 0 128 128</frame> 
+		<frame time="250">128 0 128 128</frame> 
+		<frame time="300">0 128 128 128</frame>
+		<frame time="350">128 128 128 128</frame> 		
+	</sprite>
+	
+	<sprite looping="false" origin="5 64" texture="./arch_destroyed_smoke_fast.png" material="effects/effects.mats:lit"
+	
+		pos-y="140*t-100"
+	
+	
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.5"
+	>
+		<frame time="200">0 0 128 128</frame> 
+		<frame time="250">128 0 128 128</frame> 
+		<frame time="300">0 128 128 128</frame>
+		<frame time="350">128 128 128 128</frame> 	
+	</sprite>
+	
+	<sprite looping="false" origin="0 64" texture="./arch_destroyed_smoke_fast.png" material="effects/effects.mats:lit"
+	
+		pos-y="120*t"
+	
+	
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.5"
+	>
+		<frame time="250">0 0 128 128</frame> 
+		<frame time="300">128 0 128 128</frame> 
+		<frame time="350">0 128 128 128</frame>
+		<frame time="350">128 128 128 128</frame> 	
+	</sprite>
+
+	
+	<sprite looping="false" origin="-4 64" texture="./arch_destroyed_smoke.png" material="effects/effects.mats:lit"
+	
+		pos-x="(rand(u+10)*80-40)*t"
+		pos-y="(rand(u+10)*80-40)*t"
+	
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*2.0"
+	>
+		<frame time="12000">128 0 128 128</frame> 
+	</sprite>
+
+	<sprite looping="false" origin="-4 64" texture="./arch_destroyed_smoke.png" material="effects/effects.mats:lit"
+	
+		pos-x="(rand(u-14)*80-40)*t"
+		pos-y="(rand(u-15)*80-40)*t-40"
+	
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*2.5"
+	>
+		<frame time="15000">0 128 128 128</frame> 
+	</sprite>
+
+	<sprite looping="false" origin="-4 64" texture="./arch_destroyed_smoke.png" material="effects/effects.mats:lit"
+	
+		pos-x="(rand(u+10)*80-40)*t"
+		pos-y="(rand(u+10)*80-40)*t-100"
+	
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*2.0"
+	>
+		<frame time="12000">128 0 128 128</frame> 
+	</sprite>
+
+	<sprite looping="false" origin="-4 64" texture="./arch_destroyed_smoke.png" material="effects/effects.mats:lit"
+	
+		pos-x="(rand(u-14)*80-40)*t"
+		pos-y="(rand(u-15)*80-40)*t-140"
+	
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*2.5"
+	>
+		<frame time="15000">0 128 128 128</frame> 
+	</sprite>
+
+		<sprite looping="false" origin="-4 64" texture="./arch_destroyed_smoke.png" material="effects/effects.mats:lit"
+		
+			pos-x="(rand(u+6)*80-40)*t"
+			pos-y="(rand(u+7)*80-40)*t"
+		
+			color-a="(sin(t*pi)*(1-pow(t, 0.1))*2.0"
+		>
+			<frame time="12000">128 128 128 128</frame> 
+		</sprite>
+
+		<sprite looping="false" origin="-4 64" texture="./arch_destroyed_smoke.png" material="effects/effects.mats:lit"
+		
+			pos-x="(rand(u-8)*80-40)*t"
+			pos-y="(rand(u-9)*80-40)*t"
+		
+			color-a="(sin(t*pi)*(1-pow(t, 0.1))*2.5"
+		>
+			<frame time="11000">0 128 128 128</frame> 
+		</sprite>
+</effect>

@@ -1,0 +1,60 @@
+<unit netsync="none">
+	<behavior class="SorcererOrbProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">0.66</float>
+		<int name="ttl">6500</int>
+		
+		<string name="loop-snd">event:/player/sorcerer/orb</string>
+		
+		<int name="bounces">1000</int>
+		<float name="bounce-speed-mul">1</float>
+		
+		<int name="delay">500</int>
+		<int name="proj-delay">40</int>
+		<int name="dist">9</int>
+		<float name="rot">1.33</float>
+		
+		<string name="projectile">players/sorcerer/orb_shard_3.unit</string>
+		
+		<array name="effects">
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<string name="fx">players/sorcerer/orb_break.effect</string>
+				<int name="radius">44</int>
+				<float name="dist-scaling">10</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">120</int>
+						<int name="magical">120</int>
+					</dict>				
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/player/sorcerer/orb_break</string>
+			</dict>			
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="players/sorcerer/orb_dust.effect" />
+			<sprite origin="8 8" looping="true" texture="./projectiles.png" material="system/default.mats:projectile-player">
+				<frame time="100">0 21 16 17</frame>
+				<frame time="100">16 21 16 17</frame>
+				<frame time="100">32 21 16 17</frame>
+				<frame time="100">48 21 16 17</frame>
+			</sprite>
+			<sprite ulayer="1" origin="8 8" looping="true" texture="./projectiles.png" material="effects/effects.mats:default-glowing">
+				<frame time="100">0 38 16 17</frame>
+				<frame time="100">16 38 16 17</frame>
+			</sprite>
+		
+			<collision static="false">
+				<circle offset="0 0" radius="6" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

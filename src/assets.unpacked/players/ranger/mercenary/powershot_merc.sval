@@ -1,0 +1,35 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">ranger</string>
+	<string name="name">.skills.ranger.powershot</string>
+	<string name="description">.skills.ranger.powershot.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>168 24 24 24</vec4>
+	</array>
+
+	<int name="cost">25</int>
+
+	<dict name="skill">
+		<string name="class">Skills::FanChargeUnit</string>
+		<string name="anim">channeling 8</string>
+		<string name="snd-hold">event:/player/ranger/powershot_charge</string>
+		<string name="fx">players/ranger/powershot_charge.effect</string>
+		<string name="fx-charged">players/ranger/powershot_charged.effect</string>
+
+		<int name="cooldown">8000</int>
+		<int name="castpoint">30</int>
+		<bool name="blocking">true</bool>
+		<float name="speed-mul">0.5</float>
+		
+		<int name="mana-cost">90</int>
+		
+		<int name="num">3</int>
+		<float name="spread">15</float>
+		<int name="hold-frame">30</int>
+		<int name="charge-max">1000</int>
+		<float name="dist">16</float>
+		<string name="unit">players/ranger/mercenary/powershot_merc.unit</string>
+	</dict>
+</dict>

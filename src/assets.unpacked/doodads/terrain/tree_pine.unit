@@ -1,0 +1,58 @@
+<unit slot="doodad">
+	<scenes default="1 2" snow="s1 s2" fullsnow="fs1" fullsnow_noshadow="fs1_ns">
+		<scene name="shared">
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="81 10 10 10" />
+			<collision static="true">
+				<circle offset="0 -3" radius="20" />
+			</collision>
+			<shadow darkness="1">
+				<sprite project="true" origin="23 75" texture="./tree_pine.png">
+					<frame>0 0 44 77</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="1">
+			<scene src="shared"/>
+			<sprite origin="23 75" texture="./tree_pine.png" material="system/default.mats:proj-wall">
+				<frame>0 0 44 92</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="2">
+			<scene src="shared"/>
+			<sprite origin="23 75" texture="./tree_pine.png" material="system/default.mats:proj-wall">
+				<frame>0 92 44 92</frame>
+			</sprite>
+		</scene>	
+		
+		<scene name="s1">
+			<scene src="shared"/>
+			<sprite origin="23 75" texture="./tree_pine_snow.png" material="system/default.mats:proj-wall">
+				<frame>0 0 44 92</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="s2">
+			<scene src="shared"/>
+			<sprite origin="23 75" texture="./tree_pine_snow.png" material="system/default.mats:proj-wall">
+				<frame>0 92 44 92</frame>
+			</sprite>
+		</scene>		
+		
+		<scene name="fs1">
+			<scene src="shared"/>
+			<sprite origin="23 75" texture="./tree_pine_snow.png" material="system/default.mats:proj-wall">
+				<frame>44 0 44 92</frame>
+			</sprite>
+		</scene>		
+		
+		<scene name="fs1_ns">
+			<scene src="shared"/>
+			<sprite origin="23 75" texture="./tree_pine_snow.png" material="system/default.mats:default">
+				<frame>44 0 44 92</frame>
+			</sprite>
+		</scene>				
+				
+	</scenes>
+</unit>

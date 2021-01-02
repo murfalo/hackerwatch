@@ -1,0 +1,468 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>1</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EyeBoss</string>
+			<dict>
+				<string name="UnitType">actors/bosses/eye/eye_arena.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+			<array><int>15</int><int>0</int><int>24</int><int>0</int><int>18</int><int>0</int></array>
+		</array>
+		<array><string>AddScreenShake</string><int>2</int><vec3>0 -32 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>3</int>
+			<vec3>-496 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisps_normal</string>
+			<dict>
+				<string name="EventName">wisps_normal</string>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>4</int>
+			<vec3>-288 -480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisps_clear</string>
+			<dict>
+				<string name="EventName">wisps_clear</string>
+				<array name="#Units"><int>1</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>9</int><int>0</int><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>5</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>IntroEyeBoss</string>
+			<dict>
+				<string name="UnitType">actors/bosses/eye/intro_eye.unit</string>
+			</dict>
+			<array><int>1</int><int>3000</int><int>2</int><int>2500</int><int>11</int><int>2400</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>6</int>
+			<vec3>192 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>falling</string>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>7</int>
+			<vec3>-288 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_glyphs</string>
+			<dict>
+				<string name="EventName">spawn_glyphs</string>
+				<array name="#Units"><int>1</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>8</int>
+			<vec3>-384 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>watcher_spawn_glyphs</string>
+			<dict>
+				<string name="EventName">watcher_spawn_glyphs</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>9</int>
+			<vec3>-384 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>watcher_clear_glyphs</string>
+			<dict>
+				<string name="EventName">watcher_clear_glyphs</string>
+			</dict>
+		</array>
+		<array>
+			<string>BossEyeWispsSpeed</string>
+			<int>10</int>
+			<vec3>-576 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fast</string>
+			<dict>
+				<float name="NewMultiplier">1.8</float>
+				<int name="OverTime">800</int>
+				<array name="#Boss"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>11</int>
+			<vec3>0 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_spawn_sfx</string>
+			<dict>
+				<string name="Sound">event:/enemy/boss_eye/spawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>12</int>
+			<vec3>-576 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisps_fast</string>
+			<dict>
+				<string name="EventName">wisps_fast</string>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BossEyeWispsClear</string>
+			<int>13</int>
+			<vec3>-192 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>clear wisps</string>
+			<dict>
+				<array name="#Boss"><int>1</int><string>AllSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>14</int>
+			<vec3>192 -448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnEye</string>
+			<array><int>21</int><int>0</int><int>6</int><int>0</int><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BossEyeWispsAdd</string>
+			<int>15</int>
+			<vec3>-384 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>add 5 wisps</string>
+			<dict>
+				<string name="WispUnit">actors/bosses/eye/wisp_ng.unit</string>
+				<int name="Count">5</int>
+				<array name="#Boss"><int>1</int><string>AllSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>16</int>
+			<vec3>128 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_boss</string>
+			<dict>
+				<string name="EventName">spawn_boss</string>
+			</dict>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>17</int>
+			<vec3>256 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_watcher</string>
+			<dict>
+				<string name="EventName">spawn_watcher</string>
+			</dict>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>18</int>
+			<vec3>-128 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>5</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>19</int>
+			<vec3>-288 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>1</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>20</int><int>0</int><int>13</int><int>0</int><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>20</int>
+			<vec3>-288 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_death</string>
+			<dict>
+				<string name="EventName">boss_death</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>21</int>
+			<vec3>192 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Spawn Watcher</string>
+			</dict>
+		</array>
+		<array>
+			<string>BossEyeWispsSpeed</string>
+			<int>22</int>
+			<vec3>-496 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<int name="OverTime">800</int>
+				<float name="NewMultiplier">0.65</float>
+				<array name="#Boss"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>23</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>setup_glyphs</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/spawn/enemy_groups/bosses/boss_watcher_setup_glyphs.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>24</int>
+			<vec3>0 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Name">Warden</string>
+				<array name="#Actors"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>25</int>
+			<vec3>128 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_obstacles</string>
+			<dict>
+				<string name="EventName">disable_obstacles</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>26</int>
+			<vec3>-416 320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.1</string>
+			<dict>
+				<float name="Value">0.1</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>27</int>
+			<vec3>-416 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.8</string>
+			<dict>
+				<float name="Value">0.8</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>31</int><int>0</int><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>28</int>
+			<vec3>-416 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.6</string>
+			<dict>
+				<float name="Value">0.6</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>31</int><int>0</int><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>29</int>
+			<vec3>-416 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.4</string>
+			<dict>
+				<float name="Value">0.4</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>31</int><int>0</int><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>30</int>
+			<vec3>-416 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.2</string>
+			<dict>
+				<float name="Value">0.2</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>31</int><int>0</int><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>31</int>
+			<vec3>-544 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_spawns</string>
+			<dict>
+				<string name="EventName">boss_spawns</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>32</int>
+			<vec3>-416 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.9</string>
+			<dict>
+				<float name="Value">0.9</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>33</int>
+			<vec3>-416 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.7</string>
+			<dict>
+				<float name="Value">0.7</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>34</int>
+			<vec3>-416 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.5</string>
+			<dict>
+				<float name="Value">0.5</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>35</int>
+			<vec3>-416 192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.3</string>
+			<dict>
+				<float name="Value">0.3</float>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CrowdTriggerAction</string>
+			<int>36</int>
+			<vec3>-544 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss-damaged</string>
+			<dict>
+				<string name="Id">boss-damaged</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

@@ -1,0 +1,46 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="shared">		
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="4" />			
+			</collision>
+			<sprite origin="4 13" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">357 118 9 17</frame>
+			</sprite>		
+			<sprite origin="-5 13" layer="-1" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="100">366 118 6 17</frame>
+			</sprite>	
+		</scene>
+		<scene name="off">		
+			<scene src="shared" />
+		</scene>
+		<scene name="on">	
+			<scene src="shared" />	
+			<group pos="0 3" >
+				<effect pos="0 -11" layer="1" ulayer="0" src="./combo_sphere_bouncing.effect" />
+				<effect pos="0 -11" layer="1" ulayer="1" src="./combo_sphere_bouncing_shine.effect" />
+				<effect pos="0 -11" layer="1" ulayer="2" src="./combo_sphere_bouncing_ball_1.effect" />
+				<effect pos="0 -11" layer="1" ulayer="3" src="./combo_sphere_bouncing_ball_2.effect" />
+			</group>
+				<light pos="0 -11">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1250" />
+				<overbright value="1" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="34" />
+					<size value="31" />
+				</sizes>
+				<colors>
+					<color value="128 0 128 5" />
+				</colors>
+			</light>	
+			
+		</scene>
+	</scenes>
+</unit>

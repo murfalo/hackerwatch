@@ -1,0 +1,12 @@
+<unit slot="doodad" layer="300">
+	<scenes>
+		<scene>
+			%if EDITOR 
+			<sprite origin="8 8" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 16 16</frame>
+			</sprite>
+			%endif
+			<effect src="doodads/terrain/bird_swallow.effect" />
+		</scene>
+	</scenes>
+</unit>

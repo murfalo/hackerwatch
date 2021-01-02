@@ -1,0 +1,46 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="name">.skills.mercenary.first-aid</string>
+	<string name="description">.skills.mercenary.first-aid.merc</string>
+	
+	<bool name="default">true</bool>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 216 24 24</vec4>
+	</array>
+
+	<int name="cost">15</int>
+
+	<dict name="skill">
+		<string name="class">Skills::Explode</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/mercenary/first_aid</string>
+		<string name="fx">effects/players/first_aid.effect</string>
+		
+		<int name="cooldown">2500</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">false</bool>
+		<float name="speed-mul">0.5</float>
+
+		<int name="mana-cost">25</int>
+		
+		<int name="min-radius">2</int>
+		<int name="radius">2</int>
+		<float name="self-dmg">1</float>
+		<float name="team-dmg">0</float>
+		<float name="enemy-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Heal</string>
+				<int name="heal">30</int>
+			</dict>
+			<dict>
+				<string name="class">ClearBuffs</string>
+				<bool name="only-debuffs">true</bool>
+				<bool name="target-self">true</bool>
+			</dict>
+		</array>
+	</dict>
+</dict>

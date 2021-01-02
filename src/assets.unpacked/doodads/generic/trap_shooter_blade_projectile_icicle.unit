@@ -1,0 +1,29 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/misc/trap_arrow_shoot</string>
+		<string name="hit-snd">event:/enemy/elemental_ice/hit</string>		
+		<string name="fx">effects/animations/impact_ice.effect</string>
+		
+		<float name="speed">10</float>	
+		<int name="ttl">3500</int>
+		
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="physical">75</int>
+		</dict>
+
+		<dict name="effect-params">
+			<float name="height">2</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="34 9 1 1" />						
+			<effect src="doodads/generic/trap_shooter_blade_projectile_icicle.effect" />
+			<collision static="false">
+				<circle projectile="true" offset="0 0" radius="2" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

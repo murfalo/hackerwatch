@@ -1,0 +1,33 @@
+<unit netsync="none">
+	<behavior class="BossWormSpewChunk">
+		<string name="fx">actors/bosses/scrapjack/explosion_spew_snapjaw.effect</string>
+		
+		<dict name="effect-params">
+			<float name="radius">34</float>
+			<!-- <float name="colorr">1</float> -->
+			<!-- <float name="colorg">1</float> -->
+			<!-- <float name="colorb">1</float> -->
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene>
+			<shadow>
+				<sprite origin="16 16" looping="false" layer="-1" texture="doodads/special/shadows_animation.png">
+					<frame time="100">0 0 32 32</frame>
+					<frame time="100">32 0 32 32</frame>
+					<frame time="100">64 0 32 32</frame>
+					<frame time="100">96 0 32 32</frame>
+					<frame time="100">0 32 32 32</frame>
+					<frame time="100">32 32 32 32</frame>
+					<frame time="100">64 32 32 32</frame>
+					<frame time="100">96 32 32 32</frame>
+					<frame time="100">0 64 32 32</frame>
+				</sprite>
+			</shadow>
+			<effect ulayer="2" pos="0 0" src="actors/pop/bosses/worm/stone.effect" />
+			
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

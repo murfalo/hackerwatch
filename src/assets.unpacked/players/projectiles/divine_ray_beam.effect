@@ -1,0 +1,111 @@
+<effect looping="false" layer="1" bounds="1250 1250">
+	<param name="angle" default="0" />
+	<param name="height" default="100" />
+	<param name="length" default="500" />
+	
+	<param name="color_r" default="1" />
+	<param name="color_g" default="1" />
+	<param name="color_b" default="0" />
+
+	<data>
+		<string name="sound">event:/item/chapel_ray</string>
+	</data>	
+	%// Charge
+	
+	%// Sinus
+	<sprite looping="false" origin="0 4" texture="./divine_ray_beam.png" material="effects/effects.mats:default-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9"
+	
+		color-a="1-t"
+		
+		scale-x="0.9"
+		scale-y="0.9 - t*0.9"
+		>
+		<frame time="425" x="t * -30" y="0" w="length-13" h="7" />
+	</sprite>
+
+		
+	%// Post Pixels
+	<sprite looping="false" origin="0 0.5" texture="./divine_ray_beam.png" material="effects/effects.mats:add"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9"
+		
+		angle="angle"
+
+		color-a="1.1-t"
+		
+		
+		scale-x="1"
+		scale-y="2.0 * (1 - t)"
+		>
+		<frame time="1000" x="t*-7" y="8" w="length-13" h="1" />
+	</sprite>
+	
+	
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="max(sin(2 * pi * t),0)*70" />
+		
+		<color-r value="2" />
+		<color-g value="0.5" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+
+	
+	%// MainBeam
+	<sprite looping="false" origin="0 1" texture="effects/empty.png" material="effects/effects.mats:add-glowing"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9"
+		
+		color-r="1"
+		color-g="1"
+		color-b="0.2"
+		color-a="0.3*(1-t)"
+		
+		
+		scale-x="length - 15"
+		scale-y="0.5 * (1 - t)"
+		>
+		<frame time="500">0 0 1 2</frame>
+	</sprite>
+	<sprite looping="false" origin="0 1" texture="effects/empty.png" material="system/default.mats:projectile"
+		angle="angle"
+		
+		pos-x="cos(angle)*9"
+		pos-y="sin(angle)*9"
+		
+		color-r="1"
+		color-g="1"
+		color-b="0.2"
+		color-a="0.3*(1-t)"
+		
+		
+		scale-x="length - 15"
+		scale-y="0.5 * (1 - t)"
+		>
+		<frame time="500">0 0 1 2</frame>
+	</sprite>
+</effect>

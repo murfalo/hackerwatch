@@ -1,0 +1,30 @@
+<unit slot="item">
+	<behavior class="Pickup">
+		<bool name="bounce">false</bool>
+		<string name="sound">event:/item/health</string>
+		<string name="pickup-trigger">pickup-health</string>
+		<bool name="global">true</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">Heal</string>
+				<int name="heal">50</int>
+				<bool name="pickup">true</bool>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<sprite origin="1 8" layer="-1" texture="./items_general.png" material="system/default.mats:shadow">
+				<frame>16 32 8 11</frame>
+			</sprite>
+			<minimap_sprite layer="10" origin="4 4" texture="gui/minimap.png" frame="49 20 9 9" />
+			<collision static="true">
+				<circle sensor="true" offset="0 -3" radius="6" />
+			</collision>
+			<sprite origin="3 8" looping="true" texture="./items_general.png" material="items/items.mats:food">
+				<frame time="200">46 8 7 11</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

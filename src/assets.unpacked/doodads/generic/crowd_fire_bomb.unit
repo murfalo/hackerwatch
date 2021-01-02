@@ -1,0 +1,105 @@
+<unit>
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/misc/trap_fireball_hit</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">0</int>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				
+				<int name="radius">8</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:burning</string>
+					</dict>
+				</array>
+			</dict>
+		
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">doodads/generic/crowd_fire_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<vec2 name="offset">0 0</vec2>
+				<vec2 name="jitter">4 4</vec2>
+				<int name="delay">60</int>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">doodads/generic/crowd_fire_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<vec2 name="offset">0 0</vec2>
+				<vec2 name="jitter">12 12</vec2>
+				<int name="delay">120</int>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">doodads/generic/crowd_fire_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<vec2 name="offset">0 0</vec2>
+				<vec2 name="jitter">20 20</vec2>
+				<int name="delay">180</int>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">4</float>
+			<float name="radius">32</float>
+		</dict>
+	</behavior>
+	
+	<scenes start="1">
+		<scene name="1">
+			<!-- <effect src="doodads/generic/trap_indicator.effect" /> -->
+			
+			<!-- <effect src="doodads/generic/crowd_fire_bomb.effect" /> -->
+		
+			<light pos="0 3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="3" />
+				<overlay value="true" />				
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="255 150 0 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<overlay value="true" />				
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="255 150 0 0" />
+				</colors>
+			</light>						
+		</scene>
+	</scenes>
+</unit>

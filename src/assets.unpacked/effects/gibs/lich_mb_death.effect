@@ -1,0 +1,57 @@
+<effect looping="false">
+	
+	
+		<sprite looping="false" origin="16 30" texture="./lich_mb_death.png" 
+		material="system/default.mats:actor"
+		>
+			<frame time="100">0 0 32 32</frame>				
+			<frame time="100">32 0 32 32</frame>				
+			<frame time="100">64 0 32 32</frame>				
+			<frame time="700">0 0 0 0</frame>				
+		</sprite>
+	
+		<sprite looping="false" origin="16 30" texture="./lich_mb_death.png" 
+		material="system/default.mats:glow-both-bright"
+		>
+			<frame time="100">0 32 32 32</frame>				
+			<frame time="100">32 32 32 32</frame>				
+			<frame time="100">64 32 32 32</frame>				
+			<frame time="100">96 32 32 32</frame>		
+			<frame time="100">0 64 32 32</frame>				
+			<frame time="100">32 64 32 32</frame>				
+			<frame time="100">64 64 32 32</frame>				
+			<frame time="100">96 64 32 32</frame>	
+			<frame time="100">0 96 32 32</frame>				
+			<frame time="100">32 96 32 32</frame>				
+			<frame time="100">64 96 32 32</frame>				
+		</sprite>
+		
+		
+		<light pos-y="t* -15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 200" />
+		
+		<size value="sin(pi * t)* 80" />
+		
+		<color-r value="4" />
+		<color-g value="0" />
+		<color-b value="3" />
+		<color-a value="0" />
+	</light>
+
+</effect>
+

@@ -1,0 +1,61 @@
+<unit>
+	<behavior class="PlayerOwnedSummon">
+		<string name="team">player</string>
+	
+		<int name="hp">150</int>
+		<string name="type">construct</string>
+		
+		<int name="armor">5</int>
+		
+		<int name="unit-height">22</int>
+		<int name="overhead-bossbar-width">16</int>
+		<int name="ttl">15000</int>
+		<float name="block-projectile-chance">0</float>
+		
+		<string name="gore">effects/gibs/gib_company_banner.sval</string>
+		<string name="death-snd">event:/player/witch_hunter/pyre_death</string>
+		
+		<bool name="targeting">true</bool>
+		<bool name="targetable">true</bool>
+		<bool name="no-buffs">true</bool>
+		<int name="aggro-range">10000</int>
+		<bool name="must-see-target">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+		
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<string name="buff">players/buffs_merc.sval:company-banner</string>
+				<bool name="friendly">true</bool>
+				<int name="freq">250</int>
+				<int name="range">80</int>
+			</dict>
+		</array>
+				
+		<dict name="effect-params">
+		</dict>
+	</behavior>
+	
+	<scenes start="idle">
+		<scene name="idle">
+			<collision static="true">
+				<circle offset="0 0" radius="4" sensor="true" shoot-through="false" aim-through="true" />
+			</collision>
+		
+			<sprite origin="4 13" looping="true" loopback="100"texture="./company_banner.png" material="system/default.mats:ally">
+				<frame time="100">0 0 0 0</frame>
+				<frame time="150">0 0 15 15</frame>
+				<frame time="150">15 0 15 15</frame>
+				<frame time="150">30 0 15 15</frame>
+				<frame time="150">45 0 15 15</frame>
+			</sprite>
+
+			<effect src="players/mercenary/company_banner_area_indicator.effect"/>
+			<effect src="players/mercenary/company_banner_spawn.effect"/>
+		</scene>
+	</scenes>
+</unit>

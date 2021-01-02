@@ -1,0 +1,51 @@
+<effect looping="true" layer="1">
+	
+	<param name="radius" default="4" />
+	<sprite origin="17 6" looping="true" texture="./door_mt_teleport_great_threat.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+		pos-y="-38  + i*18 + rand(u+i+2)*sin(it*2*pi)*0.5"
+		color-a="(0.5+rand(u+i+24)*0.5) * (1-saturate(t+l))"
+		scale-y="0.95 + rand(u+i+71)*sin(t*pi*2)*0.05"
+		>
+		<frame time="100">0 112 34 12</frame>
+		<frame time="100">0 124 34 12</frame>
+		<frame time="100">0 136 34 12</frame>
+		<frame time="100">0 148 34 12</frame>
+	</sprite>
+
+	<sprite origin="17 6" looping="true" texture="./door_mt_teleport_great_threat.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+		pos-y="-26 + 28*i + rand(u+i+2)*sin(it*2*pi)*0.5"
+		color-a="(0.5+rand(u+i+24)*0.5) * (1-saturate(t+l))"
+		scale-y="0.95 + rand(u+i+123)*sin(t*pi*2)*0.05"
+		>
+		<frame time="125">35 136 34 12</frame>
+		<frame time="125">35 148 34 12</frame>
+		<frame time="125">35 112 34 12</frame>
+		<frame time="125">35 124 34 12</frame>
+	</sprite>
+
+	<sprite origin="17 6" looping="true" texture="./door_mt_teleport_great_threat.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+		pos-y="-32  + i*20+ rand(u+i+2)*sin(it*2*pi)*0.5"
+		color-a="(0.5+rand(u+i+24)*0.5) * (1-saturate(t+l))"
+		scale-y="0.95 + rand(u+i+101)*sin(t*pi*2)*0.05"
+		>
+		<frame time="105">35 136 34 12</frame>
+		<frame time="105">35 148 34 12</frame>
+		<frame time="105">35 112 34 12</frame>
+		<frame time="105">35 124 34 12</frame>
+	</sprite>
+	<sprite origin="17 6" looping="true" texture="./door_mt_teleport_great_threat.png" material="system/default.mats:default-noxray"
+		num-sprites="1"
+		pos-y="-6 + rand(u+i+2)*sin(it*2*pi)*0.5"
+		color-a="(0.5+rand(u+i+24)*0.5) * (1-saturate(t+l))"
+		scale-y="0.95 + rand(u+i+23)*sin(t*pi*2)*0.05"
+		>
+		<frame time="120">0 112 34 12</frame>
+		<frame time="120">0 124 34 12</frame>
+		<frame time="120">0 136 34 12</frame>
+		<frame time="120">0 148 34 12</frame>
+	</sprite>
+
+</effect>

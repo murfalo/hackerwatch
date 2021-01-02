@@ -1,0 +1,179 @@
+<effect looping="true" layer="0" wpos-track="9">
+	<param name="angle" default="0" />
+	<param name="radius" default="32" />
+	
+<!-- 	<trail texture="effects/empty.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)" />
+		
+		<length value="400" />
+		<looping value="true" />
+		
+		<segments value="9" />
+		<size value="25 * (1 - i / 7)" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="(min(1, i) * max(0, (0.7 - i / 12) * 0.7))*0.5" />
+	</trail> -->
+	<!-- 
+	<trail texture="effects/empty.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)" />
+		
+		<length value="400" />
+		<looping value="true" />
+		
+		<segments value="9" />
+		<size value="2 * (1 - i / 7)" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="min(1, i) * max(0, (0.7 - i / 12) * 0.7)" />
+	</trail> -->
+	
+	<!-- big bat -->
+	<sprite origin="12 24" looping="true" texture="./bat_swarm.png" material="system/default.mats:bright"
+	angle="angle"
+	scale-x="1"
+	scale-y="1"
+	color-a="0.2"
+	>
+		<frame time="120">80 0 24 45</frame>
+	</sprite>
+	<sprite origin="12 24" looping="true" texture="./bat_swarm.png" material="system/default.mats:glow-both-bright"
+	angle="angle"
+	scale-x="1.5"
+	scale-y="1.5"
+	color-a="0.1"
+	>
+		<frame time="120">80 0 24 45</frame>
+	</sprite>
+	<!-- bats -->
+	<!-- 
+	<sprite origin="6 5" looping="true" texture="./bat_swarm.png" material="system/default.mats:actor"		
+	num-sprites="rand(u)*18"
+	
+	pos-x="cos(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5)"
+	pos-y="sin(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5) + rand(i)*-10 * it"
+	>
+		<frame time="250">0 0 13 16</frame>
+		<frame time="250">13 0 13 16</frame>
+		<frame time="250">26 0 13 16</frame>
+		<frame time="250">13 0 13 16</frame>
+	</sprite> -->
+	
+	
+	
+	<!-- 
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="68" />
+		
+		<color-r value="0.3" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <trail texture="effects/empty.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)" />
+		
+		<length value="400" />
+		<looping value="true" />
+		
+		<segments value="9" />
+		<size value="10 * (1 - i / 14)" />
+		
+		<color-r value="-0.1" />
+		<color-g value="-0.1" />
+		<color-b value="-0.1" />
+		<color-a value="min(1, i) * max(0, (0.7 - i / 6) * 0.33)" />
+	</trail>
+	<trail texture="effects/empty.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)" />
+		
+		<length value="400" />
+		<looping value="true" />
+		
+		<segments value="9" />
+		<size value="5 * (1 - i / 7)" />
+		
+		<color-r value="-0.1" />
+		<color-g value="-0.1" />
+		<color-b value="-0.1" />
+		<color-a value="min(1, i) * max(0, (0.7 - i / 12) * 0.7)" />
+	</trail> -->
+	
+	<!-- 
+	<sprite origin="6 5" looping="true" texture="./bat_swarm.png" material="system/default.mats:actor"		
+	num-sprites="rand(u)*18"
+	
+	pos-x="cos(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5)"
+	pos-y="sin(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5) + rand(i)*-10 * it"
+	>
+		<frame time="250">0 0 13 16</frame>
+		<frame time="250">13 0 13 16</frame>
+		<frame time="250">26 0 13 16</frame>
+		<frame time="250">13 0 13 16</frame>
+	</sprite>
+	<variation>
+		<sprite origin="6 5" looping="true" texture="./bat_swarm.png" material="system/default.mats:actor"		
+		num-sprites="rand(u)*8"
+		
+		pos-x="cos(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5) + rand(i)*-10 * it"
+		>
+			<frame time="250">39 0 13 16</frame>
+			<frame time="250">52 0 13 16</frame>
+			<frame time="250">65 0 13 16</frame>
+			<frame time="250">52 0 13 16</frame>
+		</sprite>
+	
+	</variation>
+	<variation>
+		<sprite origin="3 0" looping="true" texture="./bat_swarm.png" material="system/default.mats:actor"
+		num-sprites="rand(u)*18"
+		
+		pos-x="cos(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * 24 * pow(rand(u+67*i),0.5) + rand(i)*-10 * it"
+		>
+			<frame time="120">39 16 13 16</frame>
+			<frame time="120">52 16 13 16</frame>
+			<frame time="120">65 16 13 16</frame>
+			<frame time="120">52 16 13 16</frame>
+		</sprite>
+	
+	</variation> -->
+</effect>

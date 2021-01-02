@@ -1,0 +1,14 @@
+<effect looping="true" bounds="900 900" material="doodads/terrain/terrain.mats:cloud_negative-1">
+	<sprite origin="128 128" texture="./fog.png" material="doodads/terrain/terrain.mats:fog_low" num-sprites="5"
+				
+		pos-x="sin((rand(u+i) * pi + t+l)*3)*10"
+		
+		color-r="0.75"				
+		color-g="0.75"				
+		color-b="0.75"			
+		color-a="1"		
+		
+		>
+		<frame time="5000">0 0 256 256</frame> 
+	</sprite>
+</effect>

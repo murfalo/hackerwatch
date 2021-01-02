@@ -1,0 +1,100 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="10" />
+	
+	<sprite looping="true" origin="28 8" texture="actors/gargoyle_1.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">480 0 32 16</frame>
+		<frame time="100">480 16 32 16</frame>
+		<frame time="100">480 32 32 16</frame>
+		<frame time="100">480 48 32 16</frame>
+		<frame time="100">480 64 32 16</frame>
+		<frame time="100">480 80 32 16</frame>
+	</sprite>
+	<sprite looping="true" origin="8 8" texture="actors/gargoyle_1.png" material="system/default.mats:bright-noxray-glowing"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">501 0 11 16</frame>
+		<frame time="100">501 16 11 16</frame>
+		<frame time="100">501 32 11 16</frame>
+		<frame time="100">501 48 11 16</frame>
+		<frame time="100">501 64 11 16</frame>
+		<frame time="100">501 80 11 16</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="28 8" texture="actors/gargoyle_1.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+		
+		<frame time="100">480 0 32 16</frame>
+		<frame time="100">480 16 32 16</frame>
+		<frame time="100">480 32 32 16</frame>
+		<frame time="100">480 48 32 16</frame>
+		<frame time="100">480 64 32 16</frame>
+		<frame time="100">480 80 32 16</frame>
+	</sprite>	
+	<light>
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="60" />
+			
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light>
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="100" />
+			
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+</effect>

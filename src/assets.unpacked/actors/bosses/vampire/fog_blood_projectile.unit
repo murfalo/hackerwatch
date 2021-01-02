@@ -1,0 +1,31 @@
+<unit netsync="none" layer="600">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">8</float>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>
+		<bool name="penetrate-all">true</bool>
+		
+		<string name="team-override">enemy</string>		
+		
+		<float name="team-dmg">0</float>
+		<float name="self-dmg">0</float>
+		
+		<int name="ttl">4000</int>
+		
+		<array name="effects">
+		</array>
+		
+	</behavior>
+
+	<scenes>
+		<scene>
+			%if EDITOR
+			<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+			<effect src="actors/bosses/vampire/fog_blood.effect" />
+		</scene>	
+	</scenes>
+</unit>

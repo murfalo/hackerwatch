@@ -1,0 +1,63 @@
+<effect looping="false" layer="-1">
+	<param name="radius" default="12" />
+	
+
+	<sprite origin="16 16" looping="true" texture="./deatharea.png" material="system/default.mats:bright-noxray"
+		angle="rand(u + i) * 2 * pi"
+		scale-x="0.5+0.4*saturate(t*80)-(0.1*t)"
+		scale-y="0.5+0.4*saturate(t*80)-(0.1*t)"
+		color-a="1-(1*pow(t,8))"
+		>
+		<frame time="2500">160 112 32 32</frame>
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="5"
+		scale-x="0.9+rand(u+i+23)"
+		scale-y="0.9+rand(u+i+23)"
+		pos-x="-cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+        pos-y="-sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5) - 0.5*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+101*i),0.5)"
+		angle="rand(u+i+101)*pi*2"
+		color-a="0.5-(0.5*pow(t,8))"
+	>
+        
+		<frame time="2500">224 16 16 16</frame>
+	
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="./deatharea.png" material="system/default.mats:default-noxray"
+		num-sprites="5"
+		scale-x="0.9+0.4*saturate(t*80)-(0.1*t)"
+		scale-y="0.9+0.4*saturate(t*80)-(0.1*t)"
+		pos-x="-cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="-sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - 0.5*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		angle="rand(u+i+101)*pi*2"
+		color-a="0.5-(0.5*pow(t,8))"
+	>
+        
+		<frame time="2500">208 16 16 16</frame>
+	
+	</sprite>
+
+
+
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="true" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="70 * saturate(t+l)" />
+		
+		<color-r value="0.5 - 0.5*saturate(t+l)" />
+		<color-g value="1 - 1*saturate(t+l)" />
+		<color-b value="2 - 2*saturate(t+l)" />
+		<color-a value="0/255" />
+	</light>	
+
+	
+</effect>

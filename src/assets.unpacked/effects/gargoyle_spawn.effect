@@ -1,0 +1,63 @@
+<effect looping="false">
+	<param name="radius" default="0" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_gargoyle.sval</string>
+	</data>	
+	
+	
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 40 * t" />
+		
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="3" />
+		<color-a value="0"/>
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * 40 * 3) + 10" />
+		
+		<color-r value="3-t*3" />
+		<color-g value="0" />
+		<color-b value="3-t*3" />
+		<color-a value="0"/>
+	</light>
+	
+</effect>

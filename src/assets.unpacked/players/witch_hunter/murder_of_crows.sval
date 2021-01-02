@@ -1,0 +1,139 @@
+<dict>
+	<string name="name">.skills.witch_hunter.murder-of-crows</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 192 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">true</bool>
+					<float name="chance">1</float>
+					<int name="timeout">10000</int>
+
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>12 60 12 12</vec4>
+					</array>
+					
+					<array name="effects">
+						<dict>
+							<string name="class">Nova</string>
+							<int name="projectiles">5</int>
+							<float name="proj-dist">6</float>
+							<string name="projectile">players/witch_hunter/crow_projectile.unit</string>
+						</dict>
+						<dict>
+							<string name="class">PlaySound</string>
+							<string name="sound">event:/player/witch_hunter/crows</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">true</bool>
+					<float name="chance">1</float>
+					<int name="timeout">9000</int>
+
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>12 60 12 12</vec4>
+					</array>
+					
+					<array name="effects">
+						<dict>
+							<string name="class">Nova</string>
+							<int name="projectiles">7</int>
+							<float name="proj-dist">6</float>
+							<string name="projectile">players/witch_hunter/crow_projectile.unit</string>
+						</dict>
+						<dict>
+							<string name="class">PlaySound</string>
+							<string name="sound">event:/player/witch_hunter/crows</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">true</bool>
+					<float name="chance">1</float>
+					<int name="timeout">8000</int>
+
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>12 60 12 12</vec4>
+					</array>
+					
+					<array name="effects">
+						<dict>
+							<string name="class">Nova</string>
+							<int name="projectiles">9</int>
+							<float name="proj-dist">6</float>
+							<string name="projectile">players/witch_hunter/crow_projectile.unit</string>
+						</dict>
+						<dict>
+							<string name="class">PlaySound</string>
+							<string name="sound">event:/player/witch_hunter/crows</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">true</bool>
+					<float name="chance">1</float>
+					<int name="timeout">7000</int>
+
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>12 60 12 12</vec4>
+					</array>
+					
+					<array name="effects">
+						<dict>
+							<string name="class">Nova</string>
+							<int name="projectiles">11</int>
+							<float name="proj-dist">6</float>
+							<string name="projectile">players/witch_hunter/crow_projectile.unit</string>
+						</dict>
+						<dict>
+							<string name="class">PlaySound</string>
+							<string name="sound">event:/player/witch_hunter/crows</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

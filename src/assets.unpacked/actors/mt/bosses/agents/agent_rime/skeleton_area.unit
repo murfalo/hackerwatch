@@ -1,0 +1,21 @@
+<unit layer="-1" slot="doodad">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">200</int>
+		<int name="ttl">2500</int>
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:slippery</string>
+			</dict>
+		</array>
+	</behavior>
+	<scenes idle="idle">
+		<scene name="idle">
+			<minimap_sprite origin="2 2" texture="gui/minimap.png" frame="0 16 4 4" />
+			<collision static="true">
+				<circle sensor="true" radius="14" />
+			</collision>
+			<effect src="./skeleton_area.effect" />
+		</scene>
+	</scenes>
+</unit>

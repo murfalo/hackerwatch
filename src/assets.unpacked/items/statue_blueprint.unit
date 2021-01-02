@@ -1,0 +1,67 @@
+<unit slot="doodad" netsync="none">
+	<behavior class="StatueBlueprint">
+	</behavior>
+
+	<scenes start="paladin ranger priest assassin ice-mage plague-doctor warrior fire-mage">
+		<scene name="shared">
+			<minimap_sprite layer="150" layer="20" origin="6 6" texture="gui/minimap.png" frame="240 154 11 12" />
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="0 0" radius="12" />
+			</collision>
+		</scene>
+		<scene name="paladin">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 0 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="ranger">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>17 0 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="priest">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>34 0 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="assassin">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 20 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="ice-mage">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>17 20 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="plague-doctor">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>34 20 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="warrior">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 40 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="fire-mage">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>17 40 17 20</frame>
+			</sprite>
+		</scene>
+		<scene name="red-priest">
+			<scene src="shared" />
+			<sprite origin="8 12" ulayer="-1" texture="./statue_blueprint.png" material="system/default.mats:proj-prop">
+				<frame>0 60 17 20</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

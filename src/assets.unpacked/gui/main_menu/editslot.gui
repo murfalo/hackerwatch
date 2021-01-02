@@ -1,0 +1,87 @@
+<gui>
+	<sprites>
+		<sprite name="icon-folder" texture="gui/icons.png"><frame>78 91 12 11</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scalablebutton_check_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/searchclear_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<!-- Saving prompt -->
+			<group id="saving" visible="false">
+				<text font="gui/fonts/arial11.fnt" anchor="0.5 0.5" text=".mainmenu.editslot.saving" />
+			</group>
+
+			<!-- Window -->
+			<rect id="window" width="390" height="230" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="386" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="365" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mainmenu.editslot.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="386" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect offset="2 23" width="386" height="207" flow="vbox">
+					<!-- Filter -->
+					<rect width="386" height="14" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="hbox">
+						<!-- Text input -->
+						<textinput id="filter" offset="2 0" textoffset="1 0" width="367" height="14" font="gui/fonts/arial11.fnt" func-edit="filterlist" />
+
+						<!-- Separator -->
+						<rect width="3" height="14" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Button -->
+						<spritebutton func="filterlist-clear" spriteset="search-clear" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="386" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Mods list -->
+					<rect width="386" height="167" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<!-- List -->
+						<filteredlist id="mod-list" width="372" height="167" flow="hboxwrapped" />
+
+						<!-- Scrollbar -->
+						<scrollbar forid="mod-list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+						<!-- Separators -->
+						<rect width="3" height="167" offset="372 0" spriteset="gui/variable/3pxbar_vert.sval" />
+						<rect width="3" height="167" offset="383 0" spriteset="gui/variable/3pxbar_vert.sval" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="386" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- OK -->
+					<rect width="386" height="18" flow="hbox">
+						<rect width="132" height="18" spriteset="gui/variable/headline_hor.sval" />
+						<scalebutton spriteset="scalebutton" func="ok" width="122" text=".menu.ok" font="gui/fonts/arial11.fnt" />
+						<rect width="132" height="18" spriteset="gui/variable/headline_hor.sval" />
+					</rect>
+				</rect>
+			</rect>
+
+			<!-- Mod template -->
+			<scalebutton id="mod-template" width="186" height="26" spriteset="check" checkable="true" font="gui/fonts/arial11.fnt" hint="name" textoffset="8 0" visible="false">
+				<sprite id="unpacked" offset="8 0" anchor="0 0.5" src="icon-folder" visible="false" />
+				<text id="author" hint="name" font="gui/fonts/arial11.fnt" offset="-8 0" anchor="1 0.5" />
+			</scalebutton>
+		</group></group>
+	</doc>
+</gui>

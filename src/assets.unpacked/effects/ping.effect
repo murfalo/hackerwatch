@@ -1,0 +1,50 @@
+<effect layer="32000" looping="false" material="effects/effects.mats:no-height">
+	<param name="radius" default="25" />
+	<param name="colorr" default="1" />
+	<param name="colorg" default="1" />
+	<param name="colorb" default="1" />
+
+	
+	<sprite looping="false" origin="64 64" texture="./ping.png" material="system/default.mats:bright-noxray"
+	
+		scale-x="min(2,(t*2 + l)) * (radius/128*2)"
+		scale-y="min(2,(t*2 + l)) * (radius/128*2)"
+		
+		color-r="colorr"
+		color-g="colorg"
+		color-b="colorb"
+		color-a="0.5*(1-t)"
+		
+		>
+		<frame time="750">0 0 128 128</frame>
+	</sprite>
+
+	<sprite looping="false" origin="64 64" texture="./ping.png" material="system/default.mats:bright-noxray"
+	
+		scale-x="min(2,(t*1.5 + l)) * (radius/128*2)"
+		scale-y="min(2,(t*1.5 + l)) * (radius/128*2)"
+		
+		color-r="colorr"
+		color-g="colorg"
+		color-b="colorb"
+		color-a="0.5*(1-t)"
+		
+		>
+		<frame time="375">0 0 128 128</frame>
+	</sprite>
+
+
+	<sprite looping="false" origin="64 64" texture="./ping.png" material="system/default.mats:bright-noxray"
+	
+		scale-x="min(2,(t*1.25 + l)) * (radius/128*2)"
+		scale-y="min(2,(t*1.25 + l)) * (radius/128*2)"
+		
+		color-r="colorr"
+		color-g="colorg"
+		color-b="colorb"
+		color-a="0.5*(1-t)"
+		
+		>
+		<frame time="187">0 0 128 128</frame>
+	</sprite>
+</effect>

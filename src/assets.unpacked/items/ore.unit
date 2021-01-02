@@ -1,0 +1,69 @@
+<unit slot="item">
+	<behavior class="Pickup">
+		<bool name="bounce">false</bool>
+		<string name="sound">event:/item/ore</string>
+		<string name="pickup-trigger">pickup-ore</string>
+		<bool name="global">true</bool>
+		<bool name="is-ore">true</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">GiveOre</string>
+				<int name="amount">1</int>
+				<bool name="pickup">true</bool>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<minimap_sprite layer="10" origin="5 5" texture="gui/minimap.png" frame="81 0 10 10" />
+			<collision static="true">
+				<circle sensor="true" offset="0 -2" radius="6" />
+			</collision>
+			<sprite origin="4 6" layer="-1" texture="./items_general.png" material="system/default.mats:shadow">
+				<frame>0 51 8 8</frame>
+			</sprite>
+			<sprite origin="3 8" ulayer="1" looping="true" texture="./items_general.png" material="items/items.mats:ore_bright">
+				<frame time="200">53 0 6 7</frame>
+			</sprite>
+			<sprite origin="4 8" looping="true" texture="./items_general.png" material="items/items.mats:ore">
+				<frame time="200">45 0 8 8</frame>
+			</sprite>
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="350" />
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="150 150 150 0 0" />
+				</colors>
+			</light>			
+			<light pos="0 -3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="2" />
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="20" />
+					<size value="19" />
+				</sizes>
+				<colors>
+					<color value="255 255 0 0 0" />
+					<color value="300 300 0 0 0" />
+				</colors>
+			</light>			
+		</scene>
+	</scenes>
+</unit>

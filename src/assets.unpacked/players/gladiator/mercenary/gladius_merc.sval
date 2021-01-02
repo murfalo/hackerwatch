@@ -1,0 +1,32 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">gladiator</string>
+	<string name="name">.skills.gladiator.gladius</string>
+	<string name="description">.skills.gladiator.gladius.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 168 24 24</vec4>
+	</array>
+	
+	<int name="cost">18</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ShootProjectileFan</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/gladiator/gladius</string>
+		
+		<int name="cooldown">4000</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">false</bool>
+		<float name="speed-mul">1</float>
+		
+		<int name="mana-cost">50</int>
+		
+		<bool name="add-fan">false</bool>
+		<int name="projectiles">3</int>
+		<int name="spread">15</int>
+		<int name="dist">8</int>
+		<string name="projectile">players/gladiator/mercenary/gladius_merc.unit</string>
+	</dict>
+</dict>

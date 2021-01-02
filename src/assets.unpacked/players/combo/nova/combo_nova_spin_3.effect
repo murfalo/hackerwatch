@@ -1,0 +1,80 @@
+<effect looping="true">
+	<param name="angle" default="2" />
+	<param name="height" default="0" />
+	<param name="cR" default="1" />
+	<param name="cG" default="0" />
+	<param name="cB" default="0.8" />
+	
+	
+	<sprite looping="true" origin="11 3.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+	
+		angle="angle">
+		
+		<frame time="500">0 13 13 7</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="4.5 4.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+		num-sprites="5"
+		pos-x="t*(cos(angle)*-15)*rand(i+l*101)*3 + (rand(u+i+l*72) * 6 - 3) "
+		pos-y="t*(sin(angle)*-15)*rand(i+l*101)*3 + (rand(u+i+l*72) * 6 - 3) -height"
+		scale-x="1-t"
+		scale-y="1-t"
+		
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+		color-a="saturate(0.5 * floor(i+1*t))*(1-t)"
+		
+		angle="pi*2*t*1-i" >
+		
+		<frame time="100">49 1 9 9</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="7 7" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+		num-sprites="3"
+		pos-x="t*(cos(angle)*-30) * rand(u+l+i*569) )-2*cos(angle)"
+		pos-y="t*(sin(angle)*-30) * rand(u+l+i*569) )-2*sin(angle)-height"
+		scale-x="1-t"
+		scale-y="1-t"
+		
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+		color-a="saturate(0.5 * floor(i+1*t))*(1-t)"
+		
+		angle="pi*2*t*1-i" >
+		
+		<frame time="500">47 29 14 14</frame>
+	</sprite>
+	
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="12" />
+
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+	</light>
+</effect>

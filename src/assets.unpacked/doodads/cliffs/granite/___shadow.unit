@@ -1,0 +1,116 @@
+<unit slot="doodad">
+	<scenes v="v" ne="ne" se="se" nw="nw" nw_slim="nw_slim" h="h" h_slim="h_slim" 8="8">
+		<scene name="v">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>0 16 8 16</frame>
+			</sprite>
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>0 16 8 16</frame>
+				</sprite>				
+			</shadow>			
+		</scene>
+				
+		<scene name="ne">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>0 0 8 16</frame>
+			</sprite>
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>0 0 8 16</frame>
+				</sprite>				
+			</shadow>			
+		</scene>
+		
+		
+		<scene name="se">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>8 0 8 16</frame>
+			</sprite>
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>8 0 8 16</frame>
+				</sprite>				
+			</shadow>			
+		</scene>	
+		<scene name="nw">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>16 0 8 16</frame>
+			</sprite>
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>16 0 8 16</frame>
+				</sprite>				
+			</shadow>			
+		</scene>	
+		<scene name="nw_slim">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>16 12 8 4</frame>
+			</sprite>
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>16 12 8 4</frame>
+				</sprite>				
+			</shadow>			
+		</scene>						
+		<scene name="h">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>0 24 8 8</frame>
+			</sprite>
+			<sprite layer="100" origin="-8 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>0 24 8 8</frame>
+			</sprite>			
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>0 24 8 8</frame>
+				</sprite>	
+				<sprite project="false" origin="-8 0" texture="./___shadow.png">
+					<frame>0 24 8 8</frame>
+				</sprite>								
+			</shadow>			
+		</scene>		
+		<scene name="h_slim">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>0 24 8 4</frame>
+			</sprite>
+			<sprite layer="100" origin="-8 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>0 24 8 4</frame>
+			</sprite>			
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>0 24 8 4</frame>
+				</sprite>	
+				<sprite project="false" origin="-8 0" texture="./___shadow.png">
+					<frame>0 24 8 4</frame>
+				</sprite>								
+			</shadow>			
+		</scene>
+
+		<scene name="8">
+			%if EDITOR
+			<sprite layer="100" origin="0 0" texture="./___shadow.png" material="system/default.mats:bright">
+				<frame>0 16 8 8</frame>
+			</sprite>
+			%endif			
+			<shadow caster="directional">
+				<sprite project="false" origin="0 0" texture="./___shadow.png">
+					<frame>0 16 8 8</frame>
+				</sprite>				
+			</shadow>			
+		</scene>		
+	</scenes>
+</unit>

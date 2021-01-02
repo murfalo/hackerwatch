@@ -1,0 +1,68 @@
+<effect looping="true" wpos-track="15">
+
+	<trail texture="./rottenpart_trail.png" material="system/default.mats:bright-noxray">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposyz(i)" />
+		
+		<length value="45" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="22" />
+		
+		
+		<uv-l-x value="45 * (15 - i) / 15" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="45 * (15 - i) / 15" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail>
+	
+	<trail texture="./rottenpart_trail.png" material="system/default.mats:bright-noxray">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposyz(i)" />
+		
+		<length value="45" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="22" />
+		
+		
+		<uv-l-x value="45 * (15 - i) / 15" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="45 * (15 - i) / 15" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="0.5" />
+	</trail>
+	
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="1100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="(cos(pi * 2 * 0.1 * (t+l) + pi)/2 + 0.5) * 20 + 30" />
+		<length value="70" />
+		<color-r value="0" />
+		<color-g value="1" />
+		<color-b value="0.4" />
+		<color-a value="0/255" />
+	</light>
+</effect>

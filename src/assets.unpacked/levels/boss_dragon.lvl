@@ -1,0 +1,5645 @@
+<dict>
+	<array name="prefabs"></array>
+	<array name="scripts">
+		<array>
+			<string>SpawnPrefab</string>
+			<int>924</int>
+			<vec3>0 50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wings</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/wings.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>925</int>
+			<vec3>-704 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind on</string>
+			<dict>
+				<string name="EventName">on</string>
+			</dict>
+			<array>
+				<int>926</int>
+				<int>30000</int>
+				<int>1025</int>
+				<int>3000</int>
+				<int>1074</int>
+				<int>0</int>
+				<int>1131</int>
+				<int>20000</int>
+				<int>1156</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>926</int>
+			<vec3>-704 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind off</string>
+			<dict>
+				<string name="EventName">off</string>
+			</dict>
+			<array><int>1026</int><int>2000</int><int>1159</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>927</int>
+			<vec3>320 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>dead</string>
+			<dict>
+				<string name="EventName">dead</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>928</int>
+			<vec3>-432 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rain</string>
+			<dict>
+				<string name="EventName">rain</string>
+			</dict>
+			<array><int>1094</int><int>0</int><int>1157</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>929</int>
+			<vec3>-672 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1060</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>930</int>
+			<vec3>-45 141 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>931</int>
+			<vec3>-512 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">5000</int>
+			</dict>
+			<array><int>928</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>932</int>
+			<vec3>-77 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>933</int>
+			<vec3>76 380 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>934</int>
+			<vec3>74 257 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>935</int>
+			<vec3>0 50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>icewall</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/ice_wall.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>936</int>
+			<vec3>-320 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>push</string>
+			<dict>
+				<string name="EventName">push</string>
+			</dict>
+			<array>
+				<int>963</int>
+				<int>0</int>
+				<int>1090</int>
+				<int>6000</int>
+				<int>939</int>
+				<int>1000</int>
+				<int>1159</int>
+				<int>15000</int>
+				<int>1160</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>937</int>
+			<vec3>84 195 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>938</int>
+			<vec3>108 408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>939</int>
+			<vec3>-320 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>unlock_shards</string>
+			<dict>
+				<string name="Flag">unlock_shards</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array><string>LevelStart</string><int>940</int><vec3>0 432 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>941</int>
+			<vec3>109 246 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>942</int>
+			<vec3>-208 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<array name="Scripts"><int>1072</int><int>1076</int><int>929</int><int>1060</int><int>944</int><int>1172</int><int>1169</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>943</int>
+			<vec3>-144 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>breakwall</string>
+			<dict>
+				<string name="EventName">breakwall</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>944</int>
+			<vec3>-144 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1072</int><int>0</int><int>1172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>945</int>
+			<vec3>112 217 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>946</int>
+			<vec3>240 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>remove tail</string>
+			<dict>
+				<array name="#Units"><int>972</int><string>AllSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>947</int>
+			<vec3>27 146 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>948</int>
+			<vec3>-512 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>WindInterval</string>
+			<dict>
+				<int name="TimeMax">45000</int>
+				<array name="LinkScripts"><int>925</int></array>
+				<int name="TimeMin">15000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>949</int>
+			<vec3>-41 110 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>950</int>
+			<vec3>26 116 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>951</int>
+			<vec3>49 235 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>952</int>
+			<vec3>0 50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>feets</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/feet.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>953</int>
+			<vec3>0 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>25</string>
+			<dict>
+				<array name="#Units"><int>967</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.25</float>
+			</dict>
+			<array><int>1084</int><int>0</int><int>1117</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>954</int>
+			<vec3>-19 408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>955</int>
+			<vec3>-76 329 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>956</int>
+			<vec3>-60 236 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>957</int>
+			<vec3>44 266 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>958</int>
+			<vec3>82 219 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>959</int>
+			<vec3>101 155 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>960</int>
+			<vec3>89 131 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>961</int>
+			<vec3>32 156 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>962</int>
+			<vec3>12 169 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/iceblock_spawn.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>963</int>
+			<vec3>-512 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>931</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>964</int>
+			<vec3>-51 172 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>965</int>
+			<vec3>-208 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<array name="Scripts"><int>1079</int><int>1081</int><int>1082</int><int>1078</int><int>1080</int><int>1173</int><int>1170</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>966</int>
+			<vec3>58 137 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>967</int>
+			<vec3>0 50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>body</string>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/dragon.unit</string>
+			</dict>
+			<array><int>970</int><int>0</int><int>1024</int><int>10</int></array>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>968</int>
+			<vec3>-224 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EnableBoss</string>
+			<dict>
+				<array name="Areas"><int>15</int></array>
+			</dict>
+			<array><int>971</int><int>0</int><int>973</int><int>0</int><int>1151</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>969</int>
+			<vec3>-224 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>45</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>970</int>
+			<vec3>0 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>45</int></array>
+			</dict>
+			<array>
+				<int>924</int>
+				<int>0</int>
+				<int>972</int>
+				<int>0</int>
+				<int>952</int>
+				<int>0</int>
+				<int>987</int>
+				<int>0</int>
+				<int>986</int>
+				<int>0</int>
+				<int>984</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>971</int>
+			<vec3>-224 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>969</int><int>0</int><int>967</int><int>1050</int><int>936</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>972</int>
+			<vec3>0 50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tail</string>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/dragon_tail.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>973</int>
+			<vec3>0 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/misc/dragon_wake</string>
+			</dict>
+			<array><int>943</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>974</int>
+			<vec3>62 106 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>975</int>
+			<vec3>-16 161 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>976</int>
+			<vec3>-76 150 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>977</int>
+			<vec3>-13 132 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>978</int>
+			<vec3>52 168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>979</int>
+			<vec3>87 157 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>980</int>
+			<vec3>90 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>981</int>
+			<vec3>80 437 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>982</int>
+			<vec3>122 445 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>983</int>
+			<vec3>36 371 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>984</int>
+			<vec3>8 400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>985</int>
+			<vec3>50 408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>986</int>
+			<vec3>20 438 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>987</int>
+			<vec3>-12 457 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>988</int>
+			<vec3>-59 447 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>989</int>
+			<vec3>-73 410 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>990</int>
+			<vec3>-101 439 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>991</int>
+			<vec3>-9 357 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>992</int>
+			<vec3>-23 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>993</int>
+			<vec3>-51 349 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>994</int>
+			<vec3>101 341 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>995</int>
+			<vec3>87 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>996</int>
+			<vec3>59 333 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>997</int>
+			<vec3>15 249 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>998</int>
+			<vec3>1 212 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>999</int>
+			<vec3>-27 241 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1000</int>
+			<vec3>44 219 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1001</int>
+			<vec3>65 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1002</int>
+			<vec3>85 257 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1003</int>
+			<vec3>109 190 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1004</int>
+			<vec3>112 235 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1005</int>
+			<vec3>30 306 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1006</int>
+			<vec3>-10 280 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1007</int>
+			<vec3>-51 282 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1008</int>
+			<vec3>-91 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1009</int>
+			<vec3>-104 290 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1010</int>
+			<vec3>-101 360 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1011</int>
+			<vec3>-47 388 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1012</int>
+			<vec3>-89 217 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1013</int>
+			<vec3>-108 181 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1014</int>
+			<vec3>-59 193 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1015</int>
+			<vec3>-24 181 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1016</int>
+			<vec3>-14 141 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1017</int>
+			<vec3>11 108 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1018</int>
+			<vec3>53 130 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1019</int>
+			<vec3>107 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1020</int>
+			<vec3>-30 100 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1021</int>
+			<vec3>-77 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1022</int>
+			<vec3>-108 124 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1023</int>
+			<vec3>110 279 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>1024</int>
+			<vec3>-1 -197 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>967</int><string>AllSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1025</int>
+			<vec3>-656 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>snowoff</string>
+			<dict>
+				<array name="Units"><int>99</int></array>
+				<string name="State">off</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1026</int>
+			<vec3>-656 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>snowon</string>
+			<dict>
+				<array name="Units"><int>99</int></array>
+				<string name="State">on</string>
+			</dict>
+			<array><int>1071</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1027</int>
+			<vec3>-66 395 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1028</int>
+			<vec3>-98 374 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1029</int>
+			<vec3>-97 404 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1030</int>
+			<vec3>-62 364 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1031</int>
+			<vec3>-34 386 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1032</int>
+			<vec3>-37 415 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1033</int>
+			<vec3>-72 426 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1034</int>
+			<vec3>65 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1035</int>
+			<vec3>33 363 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1036</int>
+			<vec3>34 393 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1037</int>
+			<vec3>69 353 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1038</int>
+			<vec3>97 375 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1039</int>
+			<vec3>94 404 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1040</int>
+			<vec3>59 415 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1041</int>
+			<vec3>8 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1042</int>
+			<vec3>-24 267 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1043</int>
+			<vec3>-23 297 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1044</int>
+			<vec3>12 257 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1045</int>
+			<vec3>40 279 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1046</int>
+			<vec3>37 308 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1047</int>
+			<vec3>2 319 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1048</int>
+			<vec3>-72 247 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1049</int>
+			<vec3>-104 226 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1050</int>
+			<vec3>-103 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1051</int>
+			<vec3>-68 216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1052</int>
+			<vec3>-40 238 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1053</int>
+			<vec3>-43 267 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1054</int>
+			<vec3>-78 278 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1055</int>
+			<vec3>80 226 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1056</int>
+			<vec3>48 205 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1057</int>
+			<vec3>-832 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>normal</string>
+			<dict>
+				<string name="EventName">lightning_normal</string>
+			</dict>
+			<array><int>1154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1058</int>
+			<vec3>0 -736 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="#Units"><int>967</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.1</float>
+			</dict>
+			<array><int>1089</int><int>0</int><int>1118</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1059</int>
+			<vec3>-912 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ionstorm</string>
+			<dict>
+				<string name="EventName">lightning_ionstorm</string>
+			</dict>
+			<array><int>1094</int><int>0</int><int>1155</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1060</int>
+			<vec3>-736 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1059</int><int>0</int><int>1057</int><int>10000</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1061</int>
+			<vec3>72 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>death</string>
+			<dict>
+				<array name="#Units"><int>1114</int><string>AllSpawned</string></array>
+				<string name="State">dead</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1062</int>
+			<vec3>320 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>926</int><int>925</int><int>1025</int><int>1074</int><int>1026</int><int>1071</int><int>928</int><int>936</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1063</int>
+			<vec3>80 81 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1064</int>
+			<vec3>57 68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1065</int>
+			<vec3>36 89 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1066</int>
+			<vec3>-4 86 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1067</int>
+			<vec3>-54 73 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1068</int>
+			<vec3>118 130 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1069</int>
+			<vec3>-106 325 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1070</int>
+			<vec3>49 455 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1071</int>
+			<vec3>-752 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>clouds off</string>
+			<dict>
+				<array name="Units">
+					<int>106</int>
+					<int>105</int>
+					<int>124</int>
+					<int>109</int>
+					<int>126</int>
+					<int>114</int>
+					<int>108</int>
+					<int>125</int>
+					<int>118</int>
+					<int>127</int>
+					<int>103</int>
+					<int>131</int>
+					<int>116</int>
+					<int>135</int>
+					<int>102</int>
+					<int>128</int>
+					<int>132</int>
+					<int>120</int>
+					<int>104</int>
+					<int>129</int>
+					<int>122</int>
+					<int>100</int>
+					<int>111</int>
+					<int>110</int>
+					<int>134</int>
+					<int>121</int>
+					<int>133</int>
+					<int>112</int>
+					<int>117</int>
+					<int>119</int>
+					<int>123</int>
+					<int>130</int>
+					<int>101</int>
+					<int>107</int>
+					<int>115</int>
+					<int>113</int>
+				</array>
+				<string name="State">off</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1072</int>
+			<vec3>-304 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>1076</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1073</int>
+			<vec3>-208 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<array name="Scripts"><int>1084</int><int>1086</int><int>1087</int><int>1083</int><int>1085</int><int>1057</int><int>1167</int><int>1171</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1074</int>
+			<vec3>-752 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>clouds on</string>
+			<dict>
+				<array name="Units">
+					<int>106</int>
+					<int>105</int>
+					<int>124</int>
+					<int>109</int>
+					<int>126</int>
+					<int>114</int>
+					<int>108</int>
+					<int>125</int>
+					<int>118</int>
+					<int>127</int>
+					<int>103</int>
+					<int>131</int>
+					<int>116</int>
+					<int>135</int>
+					<int>102</int>
+					<int>128</int>
+					<int>132</int>
+					<int>120</int>
+					<int>104</int>
+					<int>129</int>
+					<int>122</int>
+					<int>100</int>
+					<int>111</int>
+					<int>110</int>
+					<int>134</int>
+					<int>121</int>
+					<int>133</int>
+					<int>112</int>
+					<int>117</int>
+					<int>119</int>
+					<int>123</int>
+					<int>130</int>
+					<int>101</int>
+					<int>107</int>
+					<int>115</int>
+					<int>113</int>
+				</array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1075</int>
+			<vec3>0 -608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<array name="#Units"><int>967</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>1079</int><int>0</int><int>1115</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1076</int>
+			<vec3>-368 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Ionstorm</string>
+			<dict>
+				<int name="Frequency">30000</int>
+			</dict>
+			<array><int>929</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1077</int>
+			<vec3>0 -544 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>75</string>
+			<dict>
+				<array name="#Units"><int>967</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.75</float>
+			</dict>
+			<array><int>944</int><int>0</int><int>1116</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1078</int>
+			<vec3>-672 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1080</int></array>
+				<float name="ChanceToExecute">0.65</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1079</int>
+			<vec3>-144 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1081</int><int>10</int><int>942</int><int>0</int><int>1173</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1080</int>
+			<vec3>-736 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1059</int><int>0</int><int>1057</int><int>10000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1081</int>
+			<vec3>-304 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>1082</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1082</int>
+			<vec3>-368 -608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Ionstorm</string>
+			<dict>
+				<int name="Frequency">20000</int>
+			</dict>
+			<array><int>1078</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>1083</int>
+			<vec3>-672 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>1085</int></array>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1084</int>
+			<vec3>-144 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1086</int><int>10</int><int>965</int><int>0</int><int>1167</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1085</int>
+			<vec3>-736 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1059</int><int>0</int><int>1057</int><int>10000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1086</int>
+			<vec3>-304 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>1087</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1087</int>
+			<vec3>-368 -672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Ionstorm</string>
+			<dict>
+				<int name="Frequency">12000</int>
+			</dict>
+			<array><int>1083</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1088</int>
+			<vec3>-736 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1059</int><int>0</int><int>1095</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1089</int>
+			<vec3>-144 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>1088</int><int>10</int><int>1073</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1090</int>
+			<vec3>-512 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>931</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>1091</int>
+			<vec3>-688 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RainInterval</string>
+			<dict>
+				<array name="LinkScripts"><int>1092</int></array>
+				<int name="TimeMin">30000</int>
+				<int name="TimeMax">60000</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1092</int>
+			<vec3>-592 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>931</int></array>
+			</dict>
+			<array><int>1093</int><int>20000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1093</int>
+			<vec3>-592 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>931</int></array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>1160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1094</int>
+			<vec3>8 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>laugh</string>
+			<dict>
+				<string name="Sound">event:/enemy/boss_dragon/laugh</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1095</int>
+			<vec3>-736 -816 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>1094</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1096</int>
+			<vec3>93 460 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1097</int>
+			<vec3>112 318 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1098</int>
+			<vec3>21 338 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1099</int>
+			<vec3>-34 59 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lightning</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/lightning.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1100</int>
+			<vec3>33 63 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain_noblock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain_noblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1101</int>
+			<vec3>-25 53 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>rain_noblock</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/icerain_noblock.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>1102</int>
+			<vec3>-416 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="LinkScripts"><int>1104</int><int>1105</int><int>1106</int><int>1107</int><int>1108</int><int>1109</int><int>1110</int><int>1111</int><int>1112</int></array>
+				<int name="TimeMax">10000</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1103</int>
+			<vec3>-512 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>graphics</string>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>1102</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1104</int>
+			<vec3>-208 424 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>12</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1105</int>
+			<vec3>-320 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>10</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1106</int>
+			<vec3>-248 236 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>9</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1107</int>
+			<vec3>-244 116 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>13</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1108</int>
+			<vec3>52 -84 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>7</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1109</int>
+			<vec3>212 136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>14</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1110</int>
+			<vec3>268 188 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1111</int>
+			<vec3>180 280 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>8</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>1112</int>
+			<vec3>160 412 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>11</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>1113</int>
+			<vec3>240 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>BossDead</string>
+			<dict>
+				<array name="#Units"><int>967</int><string>AllSpawned</string></array>
+			</dict>
+			<array>
+				<int>1114</int>
+				<int>0</int>
+				<int>946</int>
+				<int>0</int>
+				<int>1061</int>
+				<int>2000</int>
+				<int>927</int>
+				<int>0</int>
+				<int>1062</int>
+				<int>0</int>
+				<int>1135</int>
+				<int>0</int>
+				<int>1144</int>
+				<int>0</int>
+				<int>1145</int>
+				<int>0</int>
+				<int>1146</int>
+				<int>5000</int>
+				<int>1148</int>
+				<int>0</int>
+				<int>1149</int>
+				<int>0</int>
+				<int>1152</int>
+				<int>0</int>
+				<int>1174</int>
+				<int>0</int>
+				<int>1175</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>1114</int>
+			<vec3>0 50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>corpse</string>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/dragon_death.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1115</int>
+			<vec3>112 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>50</string>
+			<dict>
+				<string name="EventName">50</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1116</int>
+			<vec3>112 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>75</string>
+			<dict>
+				<string name="EventName">75</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1117</int>
+			<vec3>112 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>25</string>
+			<dict>
+				<string name="EventName">25</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1118</int>
+			<vec3>112 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>01</string>
+			<dict>
+				<string name="EventName">01</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1119</int>
+			<vec3>-117 -58 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1120</int>
+			<vec3>-79 -116 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1121</int>
+			<vec3>-31 -82 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1122</int>
+			<vec3>20 -142 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1123</int>
+			<vec3>80 -130 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1124</int>
+			<vec3>126 -92 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1125</int>
+			<vec3>162 -145 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1126</int>
+			<vec3>-159 -114 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1127</int>
+			<vec3>-196 -36 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1128</int>
+			<vec3>194 -54 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1129</int>
+			<vec3>249 -83 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>1130</int>
+			<vec3>-270 -81 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>flake</string>
+			<dict>
+				<string name="Prefab">actors/bosses/dragon/snowflake.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1131</int>
+			<vec3>-912 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disableflakes</string>
+			<dict>
+				<string name="EventName">disableflakes</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>1132</int>
+			<vec3>-912 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enableflakes</string>
+			<dict>
+				<string name="EventName">enableflakes</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>1133</int>
+			<vec3>-832 -560 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>920</int><int>922</int><int>917</int><int>916</int><int>918</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>1134</int>
+			<vec3>-912 -560 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>920</int><int>922</int><int>917</int><int>916</int><int>918</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1135</int>
+			<vec3>0 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>death</string>
+			<dict>
+				<string name="Sound">event:/enemy/boss_dragon/death</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>1136</int>
+			<vec3>256 372 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>43</int></array>
+			</dict>
+			<array><int>1137</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1137</int>
+			<vec3>256 400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>1138</int>
+			<vec3>208 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>42</int></array>
+			</dict>
+			<array><int>1139</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1139</int>
+			<vec3>208 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>1140</int>
+			<vec3>258 458 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>40</int></array>
+			</dict>
+			<array><int>1141</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1141</int>
+			<vec3>258 484 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>1142</int>
+			<vec3>196 232 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>41</int></array>
+			</dict>
+			<array><int>1143</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>1143</int>
+			<vec3>196 264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetBossKilled</string>
+			<int>1144</int>
+			<vec3>512 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="BossNumber">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>1145</int>
+			<vec3>352 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<string name="Flag">boss5_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>OpenInterface</string>
+			<int>1146</int>
+			<vec3>416 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EndOfBeta</string>
+			<dict>
+				<bool name="MakeRoot">t</bool>
+				<string name="Class">EndOfGame</string>
+				<string name="Filename">gui/endofgame.gui</string>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>1147</int>
+			<vec3>480 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>killemall</string>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+				<string name="Buff">actors/buffs.sval:suicide</string>
+				<int name="Damage">0</int>
+				<int name="Frequency">250</int>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1148</int>
+			<vec3>480 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>KillMinions</string>
+			<dict>
+				<array name="Scripts"><int>1147</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1149</int>
+			<vec3>416 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>1094</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>1150</int>
+			<vec3>8 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>dragon_enter</string>
+			<dict>
+				<string name="Flag">dragon_enter</string>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1151</int>
+			<vec3>320 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/dragon</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1152</int>
+			<vec3>320 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1153</int>
+			<vec3>56 520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/dragon</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>1154</int>
+			<vec3>-832 -720 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lightning</string>
+			<dict>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">lightning</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>1155</int>
+			<vec3>-912 -720 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ionstorm</string>
+			<dict>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">ionstorm</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>1156</int>
+			<vec3>-912 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wind</string>
+			<dict>
+				<string name="Text">wind</string>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>1157</int>
+			<vec3>-432 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rain</string>
+			<dict>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">rain</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>1158</int>
+			<vec3>-512 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>WindIntervalNG</string>
+			<dict>
+				<array name="LinkScripts"><int>925</int></array>
+				<int name="TimeMin">10000</int>
+				<int name="TimeMax">30000</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1159</int>
+			<vec3>-448 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>StartWind</string>
+			<array><int>948</int><int>0</int><int>1158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1160</int>
+			<vec3>-656 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>StartRain</string>
+			<array><int>1091</int><int>0</int><int>1161</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>1161</int>
+			<vec3>-624 -144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RainIntervalNG</string>
+			<dict>
+				<int name="TimeMax">45000</int>
+				<array name="LinkScripts"><int>1092</int></array>
+				<int name="TimeMin">15000</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>1162</int>
+			<vec3>-752 528 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG1</string>
+			<dict>
+				<array name="OnTrue"><int>1166</int></array>
+				<int name="Value">1</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1163</int>
+			<vec3>-832 448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG2</string>
+			<array><int>1168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1164</int>
+			<vec3>-832 528 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG1</string>
+			<array><int>1168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1165</int>
+			<vec3>-752 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckNG</string>
+			<array><int>1162</int><int>100</int></array>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>1166</int>
+			<vec3>-752 448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG2</string>
+			<dict>
+				<array name="OnFalse"><int>1164</int></array>
+				<array name="OnTrue"><int>1163</int></array>
+				<int name="Value">2</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1167</int>
+			<vec3>-448 -672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableNG</string>
+			<dict>
+				<array name="Scripts"><int>1171</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1168</int>
+			<vec3>-912 496 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ToggleWeather</string>
+			<dict>
+				<array name="Scripts">
+					<int>1158</int>
+					<int>948</int>
+					<int>1091</int>
+					<int>1161</int>
+					<int>1172</int>
+					<int>1072</int>
+					<int>1173</int>
+					<int>1081</int>
+					<int>1167</int>
+					<int>1086</int>
+				</array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1169</int>
+			<vec3>-512 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>IonstormNG</string>
+			<dict>
+				<int name="Frequency">22000</int>
+			</dict>
+			<array><int>929</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1170</int>
+			<vec3>-512 -608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>IonstormNG</string>
+			<dict>
+				<int name="Frequency">16000</int>
+			</dict>
+			<array><int>1078</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1171</int>
+			<vec3>-512 -672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>IonstormNG</string>
+			<dict>
+				<int name="Frequency">12000</int>
+			</dict>
+			<array><int>1083</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1172</int>
+			<vec3>-448 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableNG</string>
+			<dict>
+				<array name="Scripts"><int>1169</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1173</int>
+			<vec3>-448 -608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableNG</string>
+			<dict>
+				<array name="Scripts"><int>1170</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetStat</string>
+			<int>1174</int>
+			<vec3>512 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="ValueInt">1</int>
+				<int name="ActionType">1</int>
+				<string name="Name">boss-5-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>1175</int>
+			<vec3>448 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>player immortality</string>
+			<dict>
+				<array name="#Units"><int>1176</int><string>AllInside</string></array>
+				<bool name="CanKill">f</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">players/buffs.sval:immortality</string>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>1176</int>
+			<vec3>448 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="doodads/terrain/cloud_dragon_static_small.unit">
+			<vec2>137 -152</vec2>
+			<int>774</int>
+			<vec2>-471 249</vec2>
+			<int>775</int>
+			<vec2>261 177</vec2>
+			<int>772</int>
+			<vec2>-517 405</vec2>
+			<int>773</int>
+			<vec2>-33 544</vec2>
+			<int>776</int>
+		</array>
+		<array name="doodads/terrain/cloud_high_storm.unit">
+			<vec2>-1344 512</vec2>
+			<int>858</int>
+			<vec2>-1632 51</vec2>
+			<int>859</int>
+			<vec2>-1520 547</vec2>
+			<int>860</int>
+			<vec2>-1349 208</vec2>
+			<int>861</int>
+			<vec2>-1696 515</vec2>
+			<int>853</int>
+			<vec2>-1328 435</vec2>
+			<int>863</int>
+			<vec2>-1616 3</vec2>
+			<int>864</int>
+			<vec2>-1360 579</vec2>
+			<int>865</int>
+			<vec2>-1712 435</vec2>
+			<int>866</int>
+			<vec2>-1664 307</vec2>
+			<int>867</int>
+			<vec2>-1760 499</vec2>
+			<int>868</int>
+			<vec2>-1258 176</vec2>
+			<int>869</int>
+			<vec2>-1296 467</vec2>
+			<int>870</int>
+			<vec2>-1327 127</vec2>
+			<int>871</int>
+			<vec2>-1696 403</vec2>
+			<int>872</int>
+			<vec2>-1552 -13</vec2>
+			<int>873</int>
+			<vec2>-1361 85</vec2>
+			<int>874</int>
+			<vec2>-1760 403</vec2>
+			<int>852</int>
+			<vec2>-1728 371</vec2>
+			<int>857</int>
+			<vec2>-1680 67</vec2>
+			<int>862</int>
+			<vec2>-1408 547</vec2>
+			<int>854</int>
+			<vec2>-1271 231</vec2>
+			<int>855</int>
+			<vec2>-1680 195</vec2>
+			<int>856</int>
+		</array>
+		<array name="doodads/terrain/cloud_dragon_negative-1.unit">
+			<vec2>-381 95</vec2>
+			<int>788</int>
+			<vec2>-201 284</vec2>
+			<int>789</int>
+			<vec2>-368 208</vec2>
+			<int>790</int>
+			<vec2>272 456</vec2>
+			<int>791</int>
+			<vec2>280 536</vec2>
+			<int>792</int>
+			<vec2>-449 373</vec2>
+			<int>793</int>
+			<vec2>88 -80</vec2>
+			<int>794</int>
+			<vec2>192 352</vec2>
+			<int>795</int>
+			<vec2>-427 139</vec2>
+			<int>796</int>
+			<vec2>-242 32</vec2>
+			<int>797</int>
+			<vec2>-420 319</vec2>
+			<int>798</int>
+			<vec2>-328 264</vec2>
+			<int>799</int>
+			<vec2>-21 -39</vec2>
+			<int>800</int>
+			<vec2>352 343</vec2>
+			<int>801</int>
+			<vec2>326 498</vec2>
+			<int>802</int>
+			<vec2>216 480</vec2>
+			<int>803</int>
+			<vec2>336 288</vec2>
+			<int>804</int>
+			<vec2>-216 456</vec2>
+			<int>805</int>
+			<vec2>-40 -104</vec2>
+			<int>784</int>
+			<vec2>34 -73</vec2>
+			<int>777</int>
+			<vec2>280 336</vec2>
+			<int>778</int>
+			<vec2>-480 513</vec2>
+			<int>779</int>
+			<vec2>304 232</vec2>
+			<int>780</int>
+			<vec2>396 227</vec2>
+			<int>781</int>
+			<vec2>378 423</vec2>
+			<int>782</int>
+			<vec2>-328 168</vec2>
+			<int>783</int>
+			<vec2>312 40</vec2>
+			<int>785</int>
+			<vec2>-422 188</vec2>
+			<int>786</int>
+			<vec2>-265 348</vec2>
+			<int>787</int>
+		</array>
+		<array name="doodads/special/_minimap_dark_512.unit">
+			<vec2>-648 -24</vec2>
+			<int>77</int>
+			<vec2>-648 488</vec2>
+			<int>78</int>
+			<vec2>-376 -40</vec2>
+			<int>79</int>
+			<vec2>-648 1000</vec2>
+			<int>80</int>
+			<vec2>136 984</vec2>
+			<int>82</int>
+			<vec2>136 472</vec2>
+			<int>83</int>
+			<vec2>136 -40</vec2>
+			<int>84</int>
+			<vec2>-376 1000</vec2>
+			<int>81</int>
+		</array>
+		<array name="doodads/terrain/world_shaftlocke_top.unit">
+			<array>
+				<vec2>608 800</vec2>
+				<int>97</int>
+				<dict>
+					<string name="start">boss</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/cloud_dragon_static.unit">
+			<array>
+				<vec2>221 145</vec2>
+				<int>848</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>60 -88</vec2>
+				<int>847</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>191 617</vec2>
+				<int>846</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-96 -96</vec2>
+				<int>837</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>141 308</vec2>
+				<int>836</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-416 -80</vec2>
+				<int>844</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-368 0</vec2>
+				<int>845</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-142 153</vec2>
+				<int>851</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>365 195</vec2>
+				<int>850</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-108 414</vec2>
+				<int>849</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>268 442</vec2>
+				<int>843</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-196 550</vec2>
+				<int>842</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-321 617</vec2>
+				<int>841</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>144 -208</vec2>
+				<int>835</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-192 -192</vec2>
+				<int>828</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-68 30</vec2>
+				<int>829</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-79 644</vec2>
+				<int>830</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-85 291</vec2>
+				<int>831</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>215 -1</vec2>
+				<int>840</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-489 374</vec2>
+				<int>832</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>384 33</vec2>
+				<int>834</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-210 711</vec2>
+				<int>833</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-352 -240</vec2>
+				<int>839</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -192</vec2>
+				<int>838</int>
+				<dict>
+					<string name="start">on</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/world_aridara.unit">
+			<array>
+				<vec2>-2850 554</vec2>
+				<int>96</int>
+				<dict>
+					<string name="start">boss</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_wall_w.unit">
+			<array>
+				<vec2>-136 616</vec2>
+				<int>901</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-136 712</vec2>
+				<int>900</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-136 520</vec2>
+				<int>907</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-136 488</vec2>
+				<int>903</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-136 552</vec2>
+				<int>905</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-136 584</vec2>
+				<int>904</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-136 648</vec2>
+				<int>906</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-136 680</vec2>
+				<int>902</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_se.unit"><vec2>132 484</vec2><int>898</int></array>
+		<array name="actors/bosses/dragon/dragon_intro.unit">
+			<array>
+				<vec2>0 50</vec2>
+				<int>45</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_ne.unit"><vec2>132 -36</vec2><int>44</int></array>
+		<array name="doodads/walls/battlement/_wall_32x32.unit">
+			<array>
+				<vec2>-104 648</vec2>
+				<int>770</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 552</vec2>
+				<int>771</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 616</vec2>
+				<int>769</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 712</vec2>
+				<int>765</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 488</vec2>
+				<int>764</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 680</vec2>
+				<int>766</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 584</vec2>
+				<int>767</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-104 520</vec2>
+				<int>768</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>15</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">120</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_sw.unit"><vec2>-132 484</vec2><int>899</int></array>
+		<array name="actors/bosses/dragon/iceblock_deco.unit">
+			<vec2>-107 74</vec2>
+			<int>33</int>
+			<vec2>54 29</vec2>
+			<int>34</int>
+			<vec2>39 -7</vec2>
+			<int>35</int>
+			<vec2>116 58</vec2>
+			<int>36</int>
+			<array>
+				<vec2>56 7</vec2>
+				<int>37</int>
+				<dict>
+					<int name="layer">-2</int>
+				</dict>
+			</array>
+			<vec2>-103 25</vec2>
+			<int>19</int>
+			<vec2>-80 14</vec2>
+			<int>38</int>
+			<array>
+				<vec2>61 -10</vec2>
+				<int>39</int>
+				<dict>
+					<int name="layer">-2</int>
+				</dict>
+			</array>
+			<vec2>97 43</vec2>
+			<int>16</int>
+			<vec2>83 6</vec2>
+			<int>17</int>
+			<vec2>-114 97</vec2>
+			<int>18</int>
+			<vec2>-76 39</vec2>
+			<int>20</int>
+			<vec2>106 4</vec2>
+			<int>21</int>
+			<vec2>112 28</vec2>
+			<int>22</int>
+			<vec2>-53 29</vec2>
+			<int>23</int>
+			<vec2>-103 46</vec2>
+			<int>24</int>
+			<vec2>86 -26</vec2>
+			<int>25</int>
+			<vec2>-111 5</vec2>
+			<int>26</int>
+			<vec2>-87 60</vec2>
+			<int>27</int>
+			<vec2>-89 -19</vec2>
+			<int>28</int>
+			<vec2>75 38</vec2>
+			<int>29</int>
+			<vec2>-63 -26</vec2>
+			<int>30</int>
+			<vec2>-111 -28</vec2>
+			<int>31</int>
+			<vec2>-45 1</vec2>
+			<int>32</int>
+		</array>
+		<array name="doodads/terrain/cloud_dragon_negative-2.unit">
+			<vec2>-327 25</vec2>
+			<int>823</int>
+			<vec2>-246 -42</vec2>
+			<int>822</int>
+			<vec2>-365 445</vec2>
+			<int>827</int>
+			<vec2>-177 453</vec2>
+			<int>820</int>
+			<vec2>-366 327</vec2>
+			<int>819</int>
+			<vec2>-235 -123</vec2>
+			<int>818</int>
+			<vec2>-254 446</vec2>
+			<int>817</int>
+			<vec2>-250 20</vec2>
+			<int>816</int>
+			<vec2>-275 402</vec2>
+			<int>821</int>
+			<vec2>-408 499</vec2>
+			<int>814</int>
+			<vec2>-386 392</vec2>
+			<int>813</int>
+			<vec2>-504 460</vec2>
+			<int>815</int>
+			<vec2>-282 201</vec2>
+			<int>812</int>
+			<vec2>-191 -95</vec2>
+			<int>811</int>
+			<vec2>-235 158</vec2>
+			<int>809</int>
+			<vec2>-423 350</vec2>
+			<int>808</int>
+			<vec2>-244 -74</vec2>
+			<int>807</int>
+			<vec2>-300 -83</vec2>
+			<int>806</int>
+			<vec2>-424 440</vec2>
+			<int>810</int>
+			<vec2>-319 -37</vec2>
+			<int>826</int>
+			<vec2>-312 272</vec2>
+			<int>825</int>
+			<vec2>-207 468</vec2>
+			<int>824</int>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_v_16.unit">
+			<vec2>132 144</vec2>
+			<int>136</int>
+			<vec2>-132 240</vec2>
+			<int>137</int>
+			<vec2>-132 384</vec2>
+			<int>138</int>
+			<vec2>132 176</vec2>
+			<int>139</int>
+			<vec2>-132 144</vec2>
+			<int>140</int>
+			<vec2>-132 368</vec2>
+			<int>141</int>
+			<vec2>132 288</vec2>
+			<int>142</int>
+			<vec2>132 448</vec2>
+			<int>143</int>
+			<vec2>-132 0</vec2>
+			<int>144</int>
+			<vec2>-132 416</vec2>
+			<int>145</int>
+			<vec2>132 96</vec2>
+			<int>146</int>
+			<vec2>-132 96</vec2>
+			<int>147</int>
+			<vec2>-132 112</vec2>
+			<int>148</int>
+			<vec2>132 368</vec2>
+			<int>149</int>
+			<vec2>-132 48</vec2>
+			<int>150</int>
+			<vec2>132 384</vec2>
+			<int>151</int>
+			<vec2>-132 288</vec2>
+			<int>152</int>
+			<vec2>132 304</vec2>
+			<int>153</int>
+			<vec2>-132 336</vec2>
+			<int>154</int>
+			<vec2>-132 400</vec2>
+			<int>155</int>
+			<vec2>132 16</vec2>
+			<int>156</int>
+			<vec2>132 80</vec2>
+			<int>157</int>
+			<vec2>-132 432</vec2>
+			<int>158</int>
+			<vec2>132 320</vec2>
+			<int>159</int>
+			<vec2>-132 224</vec2>
+			<int>160</int>
+			<vec2>132 208</vec2>
+			<int>161</int>
+			<vec2>132 272</vec2>
+			<int>162</int>
+			<vec2>132 464</vec2>
+			<int>163</int>
+			<vec2>132 32</vec2>
+			<int>164</int>
+			<vec2>132 256</vec2>
+			<int>165</int>
+			<vec2>-132 448</vec2>
+			<int>166</int>
+			<vec2>132 352</vec2>
+			<int>167</int>
+			<vec2>-132 16</vec2>
+			<int>168</int>
+			<vec2>132 416</vec2>
+			<int>169</int>
+			<vec2>-132 192</vec2>
+			<int>170</int>
+			<vec2>-132 320</vec2>
+			<int>171</int>
+			<vec2>-132 464</vec2>
+			<int>172</int>
+			<vec2>132 432</vec2>
+			<int>173</int>
+			<vec2>132 160</vec2>
+			<int>174</int>
+			<vec2>-132 272</vec2>
+			<int>175</int>
+			<vec2>132 240</vec2>
+			<int>176</int>
+			<vec2>-132 128</vec2>
+			<int>177</int>
+			<vec2>-132 208</vec2>
+			<int>178</int>
+			<vec2>132 64</vec2>
+			<int>179</int>
+			<vec2>132 48</vec2>
+			<int>180</int>
+			<vec2>-132 176</vec2>
+			<int>181</int>
+			<vec2>-132 64</vec2>
+			<int>182</int>
+			<vec2>132 -16</vec2>
+			<int>183</int>
+			<vec2>-132 304</vec2>
+			<int>184</int>
+			<vec2>-132 256</vec2>
+			<int>185</int>
+			<vec2>132 224</vec2>
+			<int>186</int>
+			<vec2>132 336</vec2>
+			<int>187</int>
+			<vec2>132 400</vec2>
+			<int>188</int>
+			<vec2>-132 160</vec2>
+			<int>189</int>
+			<vec2>132 192</vec2>
+			<int>190</int>
+			<vec2>132 128</vec2>
+			<int>191</int>
+			<vec2>132 0</vec2>
+			<int>192</int>
+			<vec2>-132 -16</vec2>
+			<int>193</int>
+			<vec2>132 112</vec2>
+			<int>194</int>
+			<vec2>-132 32</vec2>
+			<int>195</int>
+			<vec2>-132 352</vec2>
+			<int>196</int>
+			<vec2>-132 80</vec2>
+			<int>197</int>
+		</array>
+		<array name="actors/bosses/dragon/lightning_outside.unit">
+			<vec2>271 224</vec2>
+			<int>6</int>
+			<vec2>90 -79</vec2>
+			<int>7</int>
+			<vec2>182 315</vec2>
+			<int>8</int>
+			<vec2>-208 236</vec2>
+			<int>9</int>
+			<vec2>160 446</vec2>
+			<int>11</int>
+			<vec2>-166 424</vec2>
+			<int>12</int>
+			<vec2>-276 357</vec2>
+			<int>10</int>
+			<vec2>213 177</vec2>
+			<int>14</int>
+			<vec2>-248 80</vec2>
+			<int>13</int>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_nw.unit"><vec2>-132 -36</vec2><int>95</int></array>
+		<array name="doodads/special/_minimap_exit_down.unit">
+			<array>
+				<vec2>0 440</vec2>
+				<int>94</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_wall_16x32.unit">
+			<array>
+				<vec2>-120 616</vec2>
+				<int>910</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 488</vec2>
+				<int>909</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 648</vec2>
+				<int>908</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 520</vec2>
+				<int>915</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 680</vec2>
+				<int>914</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 712</vec2>
+				<int>913</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 584</vec2>
+				<int>912</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 552</vec2>
+				<int>911</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/fog_dragon_low.unit">
+			<vec2>272 464</vec2>
+			<int>879</int>
+			<vec2>-232 184</vec2>
+			<int>878</int>
+			<vec2>-296 8</vec2>
+			<int>877</int>
+			<vec2>160 696</vec2>
+			<int>876</int>
+			<vec2>296 384</vec2>
+			<int>875</int>
+			<vec2>272 48</vec2>
+			<int>885</int>
+			<vec2>-268 428</vec2>
+			<int>884</int>
+			<vec2>344 280</vec2>
+			<int>883</int>
+			<vec2>272 -104</vec2>
+			<int>882</int>
+			<vec2>96 160</vec2>
+			<int>881</int>
+			<vec2>-104 -120</vec2>
+			<int>880</int>
+		</array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>176 224</vec2>
+				<int>5</int>
+				<dict>
+					<vec2 name="size">1024 1024</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="actors/bosses/dragon/iceblock_hero_collision_dst.unit"><vec2>64 304</vec2><int>1</int><vec2>24 344</vec2><int>2</int><vec2>46 360</vec2><int>3</int><vec2>-72 272</vec2><int>4</int></array>
+		<array name="doodads/walls/battlement/_wall_64x64.unit">
+			<array>
+				<vec2>56 552</vec2>
+				<int>886</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-8 680</vec2>
+				<int>895</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 680</vec2>
+				<int>887</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>56 680</vec2>
+				<int>888</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>56 616</vec2>
+				<int>889</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-8 552</vec2>
+				<int>890</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 616</vec2>
+				<int>897</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>56 488</vec2>
+				<int>891</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 552</vec2>
+				<int>892</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 488</vec2>
+				<int>896</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-8 488</vec2>
+				<int>893</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-8 616</vec2>
+				<int>894</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/snow_chunk.unit">
+			<vec2>-73.9727 123.283</vec2>
+			<int>254</int>
+			<vec2>4.02599 392.508</vec2>
+			<int>255</int>
+			<vec2>52.6692 86.5614</vec2>
+			<int>256</int>
+			<vec2>116.932 77.8934</vec2>
+			<int>257</int>
+			<vec2>0.486116 388.706</vec2>
+			<int>258</int>
+			<vec2>8.24787 212.974</vec2>
+			<int>259</int>
+			<vec2>66.6978 75.2745</vec2>
+			<int>260</int>
+			<vec2>16.4672 209.081</vec2>
+			<int>261</int>
+			<vec2>94.688 382.498</vec2>
+			<int>262</int>
+			<vec2>21.3315 212.229</vec2>
+			<int>263</int>
+			<vec2>-43.0364 121.066</vec2>
+			<int>264</int>
+			<vec2>-52.6474 445.23</vec2>
+			<int>265</int>
+			<vec2>-93.8745 230.619</vec2>
+			<int>266</int>
+			<vec2>17.8534 202.409</vec2>
+			<int>267</int>
+			<vec2>-37.9253 116.997</vec2>
+			<int>268</int>
+			<vec2>-7.67422 216.991</vec2>
+			<int>269</int>
+			<vec2>-10.9862 221.092</vec2>
+			<int>270</int>
+			<vec2>-15.9732 224.961</vec2>
+			<int>271</int>
+			<vec2>95.8968 248.623</vec2>
+			<int>272</int>
+			<vec2>100.139 245.517</vec2>
+			<int>273</int>
+			<vec2>103.361 247.988</vec2>
+			<int>274</int>
+			<vec2>109.024 247.361</vec2>
+			<int>275</int>
+			<vec2>92.4186 256.555</vec2>
+			<int>276</int>
+			<vec2>-105.055 225.928</vec2>
+			<int>277</int>
+			<vec2>82.1908 263.434</vec2>
+			<int>278</int>
+			<vec2>86.1468 264.458</vec2>
+			<int>279</int>
+			<vec2>-94.0624 190.658</vec2>
+			<int>280</int>
+			<vec2>-31.3061 356.939</vec2>
+			<int>281</int>
+			<vec2>-73.5897 162.351</vec2>
+			<int>282</int>
+			<vec2>-67.9664 165.692</vec2>
+			<int>283</int>
+			<vec2>-68.7353 166.853</vec2>
+			<int>284</int>
+			<vec2>-72.2625 173.121</vec2>
+			<int>285</int>
+			<vec2>-73.9254 180.64</vec2>
+			<int>286</int>
+			<vec2>-85.6674 180.628</vec2>
+			<int>287</int>
+			<vec2>59.2592 81.3039</vec2>
+			<int>288</int>
+			<vec2>77.0956 71.8182</vec2>
+			<int>289</int>
+			<vec2>72.2314 77.3762</vec2>
+			<int>290</int>
+			<vec2>59.691 72.8801</vec2>
+			<int>291</int>
+			<vec2>57.8862 72.8808</vec2>
+			<int>292</int>
+			<vec2>0.323582 155.611</vec2>
+			<int>293</int>
+			<vec2>54.3844 78.0767</vec2>
+			<int>294</int>
+			<vec2>47.711 73.9156</vec2>
+			<int>295</int>
+			<vec2>-16.8079 332.003</vec2>
+			<int>296</int>
+			<vec2>-19.6387 329.629</vec2>
+			<int>297</int>
+			<vec2>-14.2735 331.759</vec2>
+			<int>298</int>
+			<vec2>-10.2739 336.076</vec2>
+			<int>299</int>
+			<vec2>-100.779 227.921</vec2>
+			<int>300</int>
+			<vec2>87.8199 258.388</vec2>
+			<int>301</int>
+			<vec2>-63.1188 20.3334</vec2>
+			<int>302</int>
+			<vec2>5.88875 286.901</vec2>
+			<int>303</int>
+			<vec2>2.55276 286.988</vec2>
+			<int>304</int>
+			<vec2>10.946 274.002</vec2>
+			<int>305</int>
+			<vec2>4.66884 278.7</vec2>
+			<int>306</int>
+			<vec2>0.204146 280.631</vec2>
+			<int>307</int>
+			<vec2>19.1351 409.283</vec2>
+			<int>308</int>
+			<vec2>-71.352 112.689</vec2>
+			<int>309</int>
+			<vec2>-67.6902 113.066</vec2>
+			<int>310</int>
+			<vec2>-67.7437 117.171</vec2>
+			<int>311</int>
+			<vec2>-50.3887 106.58</vec2>
+			<int>312</int>
+			<vec2>-86.8478 124.904</vec2>
+			<int>313</int>
+			<vec2>-81.201 128.689</vec2>
+			<int>314</int>
+			<vec2>116.943 169.523</vec2>
+			<int>315</int>
+			<vec2>110.963 171.117</vec2>
+			<int>316</int>
+			<vec2>-38.9131 80.8075</vec2>
+			<int>317</int>
+			<vec2>-120.422 113.163</vec2>
+			<int>318</int>
+			<vec2>107.376 186.292</vec2>
+			<int>319</int>
+			<vec2>100.841 185.867</vec2>
+			<int>320</int>
+			<vec2>55.2881 207.722</vec2>
+			<int>321</int>
+			<vec2>68.6358 196.023</vec2>
+			<int>322</int>
+			<vec2>83.9277 186.086</vec2>
+			<int>323</int>
+			<vec2>80.0422 193.248</vec2>
+			<int>324</int>
+			<vec2>-58.0459 155.049</vec2>
+			<int>325</int>
+			<vec2>-54.8073 309.945</vec2>
+			<int>326</int>
+			<vec2>4.10326 430.809</vec2>
+			<int>327</int>
+			<vec2>65.167 170.888</vec2>
+			<int>328</int>
+			<vec2>-79.4386 309.669</vec2>
+			<int>329</int>
+			<vec2>105.069 103.713</vec2>
+			<int>330</int>
+			<vec2>102.09 113.014</vec2>
+			<int>331</int>
+			<vec2>103.945 117.593</vec2>
+			<int>332</int>
+			<vec2>102.5 120.827</vec2>
+			<int>333</int>
+			<vec2>-1.58987 211.001</vec2>
+			<int>334</int>
+			<vec2>-116.337 404.187</vec2>
+			<int>335</int>
+			<vec2>-60.8556 461.439</vec2>
+			<int>336</int>
+			<vec2>0.235648 159.667</vec2>
+			<int>337</int>
+			<vec2>-10.4507 186.327</vec2>
+			<int>338</int>
+			<vec2>-47.8549 337.207</vec2>
+			<int>339</int>
+			<vec2>-54.8595 337.977</vec2>
+			<int>340</int>
+			<vec2>-41.6597 327.738</vec2>
+			<int>341</int>
+			<vec2>-53.2691 332.538</vec2>
+			<int>342</int>
+			<vec2>-49.0767 330.388</vec2>
+			<int>343</int>
+			<vec2>-45.8867 327.57</vec2>
+			<int>344</int>
+			<vec2>121.127 42.3654</vec2>
+			<int>345</int>
+			<vec2>-15.5333 220.572</vec2>
+			<int>346</int>
+			<vec2>-20.1517 223.008</vec2>
+			<int>347</int>
+			<vec2>-19.8069 225.766</vec2>
+			<int>348</int>
+			<vec2>-21.7629 232.296</vec2>
+			<int>349</int>
+			<vec2>-18.0416 240.353</vec2>
+			<int>350</int>
+			<vec2>58.222 365.398</vec2>
+			<int>351</int>
+			<vec2>-20.2303 238.444</vec2>
+			<int>352</int>
+			<vec2>-19.1628 249.281</vec2>
+			<int>353</int>
+			<vec2>24.3391 412.987</vec2>
+			<int>354</int>
+			<vec2>27.5618 417.723</vec2>
+			<int>355</int>
+			<vec2>52.6916 429.486</vec2>
+			<int>356</int>
+			<vec2>38.2506 427.987</vec2>
+			<int>357</int>
+			<vec2>52.3033 242.288</vec2>
+			<int>358</int>
+			<vec2>10.5165 401.548</vec2>
+			<int>359</int>
+			<vec2>29.4665 421.664</vec2>
+			<int>360</int>
+			<vec2>125.053 54.5016</vec2>
+			<int>361</int>
+			<vec2>121.9 38.289</vec2>
+			<int>362</int>
+			<vec2>-115.451 264.234</vec2>
+			<int>363</int>
+			<vec2>123.433 32.4793</vec2>
+			<int>364</int>
+			<vec2>122.348 17.3001</vec2>
+			<int>365</int>
+			<vec2>124.625 15.2411</vec2>
+			<int>366</int>
+			<vec2>46.7754 430.182</vec2>
+			<int>367</int>
+			<vec2>105.695 67.081</vec2>
+			<int>368</int>
+			<vec2>107.063 71.2641</vec2>
+			<int>369</int>
+			<vec2>9.44396 172.407</vec2>
+			<int>370</int>
+			<vec2>-68.8889 89.0384</vec2>
+			<int>371</int>
+			<vec2>119.301 -9.01928</vec2>
+			<int>372</int>
+			<vec2>-5.30212 287.289</vec2>
+			<int>373</int>
+			<vec2>1.28377 370.589</vec2>
+			<int>374</int>
+			<vec2>-77.1285 148.351</vec2>
+			<int>375</int>
+			<vec2>-36.058 356.198</vec2>
+			<int>376</int>
+			<vec2>-42.2482 349.006</vec2>
+			<int>377</int>
+			<vec2>16.1379 341.9</vec2>
+			<int>378</int>
+			<vec2>18.575 328.786</vec2>
+			<int>379</int>
+			<vec2>22.9892 329.824</vec2>
+			<int>380</int>
+			<vec2>-52.349 375.366</vec2>
+			<int>381</int>
+			<vec2>28.7445 298.92</vec2>
+			<int>382</int>
+			<vec2>19.8571 304.216</vec2>
+			<int>383</int>
+			<vec2>10.6393 310.175</vec2>
+			<int>384</int>
+			<vec2>16.1317 311.824</vec2>
+			<int>385</int>
+			<vec2>19.3582 312.295</vec2>
+			<int>386</int>
+			<vec2>-106.319 137.985</vec2>
+			<int>387</int>
+			<vec2>27.8877 316.488</vec2>
+			<int>388</int>
+			<vec2>40.433 330.693</vec2>
+			<int>389</int>
+			<vec2>34.7492 323.508</vec2>
+			<int>390</int>
+			<vec2>25.8809 323.372</vec2>
+			<int>391</int>
+			<vec2>22.5367 322.97</vec2>
+			<int>392</int>
+			<vec2>-20.3485 255.642</vec2>
+			<int>393</int>
+			<vec2>13.0394 332.321</vec2>
+			<int>394</int>
+			<vec2>9.61897 336.073</vec2>
+			<int>395</int>
+			<vec2>10.9735 339.496</vec2>
+			<int>396</int>
+			<vec2>8.70883 342.315</vec2>
+			<int>397</int>
+			<vec2>120.65 61.7692</vec2>
+			<int>398</int>
+			<vec2>2.2928 344.295</vec2>
+			<int>399</int>
+			<vec2>-43.8958 371.132</vec2>
+			<int>400</int>
+			<vec2>-118.106 378.319</vec2>
+			<int>401</int>
+			<vec2>-3.13044 346.378</vec2>
+			<int>402</int>
+			<vec2>-31.6729 336.499</vec2>
+			<int>403</int>
+			<vec2>-23.848 336.556</vec2>
+			<int>404</int>
+			<vec2>-21.8331 334.62</vec2>
+			<int>405</int>
+			<vec2>-16.8335 333.418</vec2>
+			<int>406</int>
+			<vec2>-29.3939 117.905</vec2>
+			<int>407</int>
+			<vec2>-44.0034 114.417</vec2>
+			<int>408</int>
+			<vec2>-104.782 297.242</vec2>
+			<int>409</int>
+			<vec2>-45.2744 129.681</vec2>
+			<int>410</int>
+			<vec2>-48.7481 131.449</vec2>
+			<int>411</int>
+			<vec2>-72.7816 145.959</vec2>
+			<int>412</int>
+			<vec2>-65.6415 144.043</vec2>
+			<int>413</int>
+			<vec2>-60.702 139.345</vec2>
+			<int>414</int>
+			<vec2>-30.8938 172.311</vec2>
+			<int>415</int>
+			<vec2>112.248 -10.2177</vec2>
+			<int>416</int>
+			<vec2>120.283 -18.788</vec2>
+			<int>417</int>
+			<vec2>83.9512 -33.0789</vec2>
+			<int>418</int>
+			<vec2>79.4793 -29.3963</vec2>
+			<int>419</int>
+			<vec2>-75.074 296.877</vec2>
+			<int>721</int>
+			<vec2>-63.5566 305.462</vec2>
+			<int>722</int>
+			<vec2>76.6534 169.091</vec2>
+			<int>723</int>
+			<vec2>51.3369 359.834</vec2>
+			<int>724</int>
+			<vec2>58.1916 358.868</vec2>
+			<int>725</int>
+			<vec2>85.1141 367.09</vec2>
+			<int>726</int>
+			<vec2>85.1523 363.335</vec2>
+			<int>727</int>
+			<vec2>-18.7498 228.772</vec2>
+			<int>728</int>
+			<vec2>102.915 379.438</vec2>
+			<int>729</int>
+			<vec2>98.3786 379.04</vec2>
+			<int>730</int>
+			<vec2>-107.699 305.102</vec2>
+			<int>731</int>
+			<vec2>102.385 368.472</vec2>
+			<int>732</int>
+			<vec2>106.275 370.094</vec2>
+			<int>733</int>
+			<vec2>108.985 377.178</vec2>
+			<int>734</int>
+			<vec2>-107.061 144.46</vec2>
+			<int>735</int>
+			<vec2>1.29758 88.1825</vec2>
+			<int>736</int>
+			<vec2>106.546 396.497</vec2>
+			<int>737</int>
+			<vec2>18.3461 172.853</vec2>
+			<int>738</int>
+			<vec2>-36.9303 82.6277</vec2>
+			<int>739</int>
+			<vec2>114.993 360.11</vec2>
+			<int>740</int>
+			<vec2>120.723 366.164</vec2>
+			<int>741</int>
+			<vec2>122.425 367.521</vec2>
+			<int>742</int>
+			<vec2>122.552 371.836</vec2>
+			<int>743</int>
+			<vec2>110.231 320.046</vec2>
+			<int>744</int>
+			<vec2>105.6 313.77</vec2>
+			<int>745</int>
+			<vec2>104.112 311.256</vec2>
+			<int>746</int>
+			<vec2>99.3416 311.755</vec2>
+			<int>747</int>
+			<vec2>99.0237 307.445</vec2>
+			<int>748</int>
+			<vec2>94.7074 308.985</vec2>
+			<int>749</int>
+			<vec2>-28.9057 174.404</vec2>
+			<int>750</int>
+			<vec2>-118.003 420.075</vec2>
+			<int>751</int>
+			<vec2>88.0753 122.546</vec2>
+			<int>752</int>
+			<vec2>80.2205 117.16</vec2>
+			<int>753</int>
+			<vec2>64.731 176.008</vec2>
+			<int>754</int>
+			<vec2>34.5641 68.1248</vec2>
+			<int>755</int>
+			<vec2>-63.565 466.825</vec2>
+			<int>756</int>
+			<vec2>83.1521 130.93</vec2>
+			<int>757</int>
+			<vec2>80.1031 129.744</vec2>
+			<int>758</int>
+			<vec2>-72.3781 309.1</vec2>
+			<int>759</int>
+			<vec2>53.5817 147.229</vec2>
+			<int>760</int>
+			<vec2>63.4849 145.561</vec2>
+			<int>761</int>
+			<vec2>67.8162 144.477</vec2>
+			<int>762</int>
+			<vec2>65.8784 141.545</vec2>
+			<int>763</int>
+			<vec2>-27.9693 286.542</vec2>
+			<int>588</int>
+			<vec2>103.656 116.206</vec2>
+			<int>587</int>
+			<vec2>75.7489 255.509</vec2>
+			<int>586</int>
+			<vec2>95.5572 228.295</vec2>
+			<int>585</int>
+			<vec2>37.8477 71.0179</vec2>
+			<int>584</int>
+			<vec2>83.2704 233.338</vec2>
+			<int>583</int>
+			<vec2>88.2057 231.996</vec2>
+			<int>582</int>
+			<vec2>91.7527 236.071</vec2>
+			<int>581</int>
+			<vec2>85.6798 266.45</vec2>
+			<int>580</int>
+			<vec2>111.596 158.939</vec2>
+			<int>579</int>
+			<vec2>11.2491 429.758</vec2>
+			<int>578</int>
+			<vec2>-21.5219 167.595</vec2>
+			<int>577</int>
+			<vec2>114.525 179.149</vec2>
+			<int>576</int>
+			<vec2>-125.92 112.23</vec2>
+			<int>575</int>
+			<vec2>7.29932 296.495</vec2>
+			<int>574</int>
+			<vec2>105.745 176.555</vec2>
+			<int>573</int>
+			<vec2>-6.33013 158.148</vec2>
+			<int>572</int>
+			<vec2>92.2914 60.376</vec2>
+			<int>571</int>
+			<vec2>-14.0203 155.468</vec2>
+			<int>570</int>
+			<vec2>-19.3683 160.337</vec2>
+			<int>569</int>
+			<vec2>-24.7674 164.066</vec2>
+			<int>568</int>
+			<vec2>24.0931 88.5565</vec2>
+			<int>567</int>
+			<vec2>1.10933 390.602</vec2>
+			<int>566</int>
+			<vec2>-123.752 432.95</vec2>
+			<int>565</int>
+			<vec2>-23.8895 172.98</vec2>
+			<int>564</int>
+			<vec2>-124.85 350.562</vec2>
+			<int>563</int>
+			<vec2>0.455806 354.195</vec2>
+			<int>562</int>
+			<vec2>-33.4899 171.941</vec2>
+			<int>561</int>
+			<vec2>-35.349 169.868</vec2>
+			<int>560</int>
+			<vec2>-30.1688 179.189</vec2>
+			<int>559</int>
+			<vec2>-27.86 183.379</vec2>
+			<int>558</int>
+			<vec2>-29.0615 183.738</vec2>
+			<int>557</int>
+			<vec2>57.178 134.098</vec2>
+			<int>198</int>
+			<vec2>-107.757 429.756</vec2>
+			<int>199</int>
+			<vec2>5.60729 461.48</vec2>
+			<int>200</int>
+			<vec2>-107.074 432.325</vec2>
+			<int>201</int>
+			<vec2>-94.7835 427.792</vec2>
+			<int>202</int>
+			<vec2>-82.4012 398.211</vec2>
+			<int>203</int>
+			<vec2>-20.8538 374.158</vec2>
+			<int>204</int>
+			<vec2>-6.92545 108.552</vec2>
+			<int>205</int>
+			<vec2>-1.83638 117.061</vec2>
+			<int>206</int>
+			<vec2>-17.7091 98.8586</vec2>
+			<int>207</int>
+			<vec2>-28.3739 115.484</vec2>
+			<int>208</int>
+			<vec2>96.0173 300.667</vec2>
+			<int>209</int>
+			<vec2>-6.61864 200.559</vec2>
+			<int>210</int>
+			<vec2>-2.55731 206.257</vec2>
+			<int>211</int>
+			<vec2>113.856 383.577</vec2>
+			<int>212</int>
+			<vec2>-1.8626 201.339</vec2>
+			<int>213</int>
+			<vec2>-9.34713 194.862</vec2>
+			<int>214</int>
+			<vec2>-49.5699 280.048</vec2>
+			<int>215</int>
+			<vec2>-13.7685 193.969</vec2>
+			<int>216</int>
+			<vec2>-16.6945 195.769</vec2>
+			<int>217</int>
+			<vec2>-13.1662 138.41</vec2>
+			<int>218</int>
+			<vec2>7.57008 349.315</vec2>
+			<int>219</int>
+			<vec2>29.7021 67.8339</vec2>
+			<int>220</int>
+			<vec2>-31.3912 186.347</vec2>
+			<int>556</int>
+			<vec2>42.1967 73.7149</vec2>
+			<int>555</int>
+			<vec2>-100.146 325.133</vec2>
+			<int>554</int>
+			<vec2>-103.733 222.996</vec2>
+			<int>553</int>
+			<vec2>-34.3555 196.692</vec2>
+			<int>552</int>
+			<vec2>-31.3739 195.996</vec2>
+			<int>551</int>
+			<vec2>-27.4246 190.805</vec2>
+			<int>550</int>
+			<vec2>87.0055 263.011</vec2>
+			<int>549</int>
+			<vec2>-21.0992 184.716</vec2>
+			<int>548</int>
+			<vec2>4.14852 216.01</vec2>
+			<int>547</int>
+			<vec2>120.928 354.13</vec2>
+			<int>546</int>
+			<vec2>117.839 83.0709</vec2>
+			<int>545</int>
+			<vec2>-53.8789 369.004</vec2>
+			<int>544</int>
+			<vec2>-48.2484 369.318</vec2>
+			<int>543</int>
+			<vec2>-90.7577 183.264</vec2>
+			<int>542</int>
+			<vec2>87.4837 245.555</vec2>
+			<int>541</int>
+			<vec2>-46.2643 365.799</vec2>
+			<int>540</int>
+			<vec2>-57.1693 378.739</vec2>
+			<int>539</int>
+			<vec2>21.3219 425.519</vec2>
+			<int>538</int>
+			<vec2>109.355 365.314</vec2>
+			<int>537</int>
+			<vec2>-50.0722 373.023</vec2>
+			<int>536</int>
+			<vec2>-46.2322 374.082</vec2>
+			<int>535</int>
+			<vec2>-58.573 144.564</vec2>
+			<int>534</int>
+			<vec2>-57.9037 146.448</vec2>
+			<int>533</int>
+			<vec2>38.3757 283.326</vec2>
+			<int>532</int>
+			<vec2>-52.0882 153.877</vec2>
+			<int>531</int>
+			<vec2>-48.0132 155.725</vec2>
+			<int>530</int>
+			<vec2>-61.9958 111.077</vec2>
+			<int>529</int>
+			<vec2>-66.235 105.233</vec2>
+			<int>528</int>
+			<vec2>-70.172 108.477</vec2>
+			<int>527</int>
+			<vec2>-127.501 418.116</vec2>
+			<int>526</int>
+			<vec2>4.14744 163.749</vec2>
+			<int>525</int>
+			<vec2>51.4137 98.3952</vec2>
+			<int>524</int>
+			<vec2>29.2853 91.5852</vec2>
+			<int>523</int>
+			<vec2>58.1183 126.686</vec2>
+			<int>522</int>
+			<vec2>22.4825 85.229</vec2>
+			<int>521</int>
+			<vec2>16.8886 334.421</vec2>
+			<int>520</int>
+			<vec2>-119.649 412.496</vec2>
+			<int>519</int>
+			<vec2>-122.631 405.664</vec2>
+			<int>518</int>
+			<vec2>84.9425 127.471</vec2>
+			<int>517</int>
+			<vec2>33.3841 152.567</vec2>
+			<int>516</int>
+			<vec2>-124.371 394.79</vec2>
+			<int>515</int>
+			<vec2>-124.38 389.096</vec2>
+			<int>514</int>
+			<vec2>-120.715 422.433</vec2>
+			<int>513</int>
+			<vec2>0.190527 453.677</vec2>
+			<int>512</int>
+			<vec2>75.7938 -34.7061</vec2>
+			<int>511</int>
+			<vec2>34.1629 440.736</vec2>
+			<int>510</int>
+			<vec2>24.4926 455.801</vec2>
+			<int>509</int>
+			<vec2>35.4886 451.481</vec2>
+			<int>508</int>
+			<vec2>-81.181 241.795</vec2>
+			<int>590</int>
+			<vec2>-78.555 177.441</vec2>
+			<int>507</int>
+			<vec2>38.7022 460.266</vec2>
+			<int>506</int>
+			<vec2>43.5617 457.681</vec2>
+			<int>505</int>
+			<vec2>-120.955 418.456</vec2>
+			<int>504</int>
+			<vec2>57.2562 443.902</vec2>
+			<int>503</int>
+			<vec2>-112.367 220.82</vec2>
+			<int>591</int>
+			<vec2>-8.32452 179.688</vec2>
+			<int>221</int>
+			<vec2>69.0815 136.87</vec2>
+			<int>592</int>
+			<vec2>-108.398 98.3356</vec2>
+			<int>593</int>
+			<vec2>-84.1625 12.4482</vec2>
+			<int>594</int>
+			<vec2>-68.6204 4.66741</vec2>
+			<int>595</int>
+			<vec2>60.647 440.233</vec2>
+			<int>502</int>
+			<vec2>41.5052 88.8261</vec2>
+			<int>596</int>
+			<vec2>104.39 38.9898</vec2>
+			<int>597</int>
+			<vec2>4.16816 108.837</vec2>
+			<int>501</int>
+			<vec2>18.348 116.059</vec2>
+			<int>500</int>
+			<vec2>108.065 169.28</vec2>
+			<int>598</int>
+			<vec2>59.5796 181.392</vec2>
+			<int>499</int>
+			<vec2>79.0707 263.878</vec2>
+			<int>498</int>
+			<vec2>23.3544 117.748</vec2>
+			<int>497</int>
+			<vec2>11.9351 58.1487</vec2>
+			<int>599</int>
+			<vec2>18.6269 76.0995</vec2>
+			<int>222</int>
+			<vec2>28.491 62.3284</vec2>
+			<int>600</int>
+			<vec2>23.8702 123.748</vec2>
+			<int>496</int>
+			<vec2>-42.315 462.302</vec2>
+			<int>601</int>
+			<vec2>31.9416 62.4581</vec2>
+			<int>602</int>
+			<vec2>-44.1434 158.152</vec2>
+			<int>603</int>
+			<vec2>36.1799 61.159</vec2>
+			<int>604</int>
+			<vec2>29.3126 113.784</vec2>
+			<int>495</int>
+			<vec2>-55.8274 360.053</vec2>
+			<int>605</int>
+			<vec2>65.4589 269.15</vec2>
+			<int>606</int>
+			<vec2>59.4463 275.037</vec2>
+			<int>607</int>
+			<vec2>58.6026 268.372</vec2>
+			<int>608</int>
+			<vec2>84.7219 452.513</vec2>
+			<int>609</int>
+			<vec2>-62.1953 442.747</vec2>
+			<int>610</int>
+			<vec2>48.5326 356.539</vec2>
+			<int>611</int>
+			<vec2>-70.9104 434.725</vec2>
+			<int>612</int>
+			<vec2>-76.7481 445.396</vec2>
+			<int>613</int>
+			<vec2>28.8883 164.625</vec2>
+			<int>494</int>
+			<vec2>-43.1517 410.86</vec2>
+			<int>614</int>
+			<vec2>25.5739 160.378</vec2>
+			<int>493</int>
+			<vec2>-54.8384 423.438</vec2>
+			<int>615</int>
+			<vec2>12.6855 76.9786</vec2>
+			<int>223</int>
+			<vec2>64.0636 452.186</vec2>
+			<int>224</int>
+			<vec2>33.1026 423.576</vec2>
+			<int>492</int>
+			<vec2>7.72072 76.6292</vec2>
+			<int>225</int>
+			<vec2>-6.12347 198.678</vec2>
+			<int>491</int>
+			<vec2>11.3029 78.6546</vec2>
+			<int>226</int>
+			<vec2>-90.3096 226.774</vec2>
+			<int>490</int>
+			<vec2>-51.694 417.022</vec2>
+			<int>616</int>
+			<vec2>-49.2082 412.606</vec2>
+			<int>617</int>
+			<vec2>105.411 349.307</vec2>
+			<int>618</int>
+			<vec2>82.7151 335.918</vec2>
+			<int>619</int>
+			<vec2>-35.1009 191.22</vec2>
+			<int>620</int>
+			<vec2>105.081 329.683</vec2>
+			<int>621</int>
+			<vec2>105.124 324.955</vec2>
+			<int>622</int>
+			<vec2>75.1889 187.502</vec2>
+			<int>623</int>
+			<vec2>15.7148 404.533</vec2>
+			<int>624</int>
+			<vec2>30.7599 354.774</vec2>
+			<int>625</int>
+			<vec2>70.3253 442.176</vec2>
+			<int>626</int>
+			<vec2>-60.2385 296.718</vec2>
+			<int>627</int>
+			<vec2>-64.8959 295.353</vec2>
+			<int>628</int>
+			<vec2>-40.8269 319.796</vec2>
+			<int>629</int>
+			<vec2>30.2511 295.38</vec2>
+			<int>630</int>
+			<vec2>-41.0502 324.128</vec2>
+			<int>631</int>
+			<vec2>-36.8549 328.962</vec2>
+			<int>632</int>
+			<vec2>1.95081 429.84</vec2>
+			<int>633</int>
+			<vec2>-57.7994 289.227</vec2>
+			<int>634</int>
+			<vec2>-52.188 283.559</vec2>
+			<int>635</int>
+			<vec2>-39.8709 80.2178</vec2>
+			<int>636</int>
+			<vec2>-45.3196 286.095</vec2>
+			<int>637</int>
+			<vec2>-46.386 291.25</vec2>
+			<int>638</int>
+			<vec2>-108.04 189.893</vec2>
+			<int>639</int>
+			<vec2>65.1609 174.498</vec2>
+			<int>640</int>
+			<vec2>-72.2863 441.208</vec2>
+			<int>641</int>
+			<vec2>-116.801 304.249</vec2>
+			<int>642</int>
+			<vec2>-9.86017 261.137</vec2>
+			<int>643</int>
+			<vec2>-8.93349 253.246</vec2>
+			<int>644</int>
+			<vec2>-1.91866 253.947</vec2>
+			<int>645</int>
+			<vec2>15.954 82.8455</vec2>
+			<int>227</int>
+			<vec2>1.02411 246.942</vec2>
+			<int>647</int>
+			<vec2>6.38997 243.863</vec2>
+			<int>648</int>
+			<vec2>7.76974 244.728</vec2>
+			<int>649</int>
+			<vec2>73.5785 131.742</vec2>
+			<int>650</int>
+			<vec2>-43.5854 162.506</vec2>
+			<int>651</int>
+			<vec2>-105.877 151.502</vec2>
+			<int>652</int>
+			<vec2>-105.188 127.954</vec2>
+			<int>653</int>
+			<vec2>-110.698 123.888</vec2>
+			<int>654</int>
+			<vec2>95.25 65.2335</vec2>
+			<int>655</int>
+			<vec2>98.4734 61.0513</vec2>
+			<int>656</int>
+			<vec2>123.223 59.6816</vec2>
+			<int>657</int>
+			<vec2>101.22 439.308</vec2>
+			<int>658</int>
+			<vec2>105.444 441.469</vec2>
+			<int>659</int>
+			<vec2>111.309 432.018</vec2>
+			<int>660</int>
+			<vec2>109.012 447.747</vec2>
+			<int>661</int>
+			<vec2>-123.138 368.177</vec2>
+			<int>662</int>
+			<vec2>81.7246 447.797</vec2>
+			<int>663</int>
+			<vec2>72.2541 463.111</vec2>
+			<int>664</int>
+			<vec2>16.7632 259.453</vec2>
+			<int>665</int>
+			<vec2>-95.4996 203.643</vec2>
+			<int>228</int>
+			<vec2>26.1443 155.516</vec2>
+			<int>489</int>
+			<vec2>44.6948 351.013</vec2>
+			<int>488</int>
+			<vec2>20.7628 258.756</vec2>
+			<int>666</int>
+			<vec2>42.308 247.162</vec2>
+			<int>667</int>
+			<vec2>-66.1946 230.057</vec2>
+			<int>589</int>
+			<vec2>54.3883 232.858</vec2>
+			<int>668</int>
+			<vec2>55.857 228.333</vec2>
+			<int>669</int>
+			<vec2>59.3245 227.924</vec2>
+			<int>670</int>
+			<vec2>72.5748 222.519</vec2>
+			<int>671</int>
+			<vec2>63.1203 238.607</vec2>
+			<int>672</int>
+			<vec2>66.4099 197.772</vec2>
+			<int>673</int>
+			<vec2>46.6841 222.398</vec2>
+			<int>674</int>
+			<vec2>16.535 271.959</vec2>
+			<int>675</int>
+			<vec2>98.9626 265.65</vec2>
+			<int>676</int>
+			<vec2>-108.959 402.374</vec2>
+			<int>677</int>
+			<vec2>-96.2231 392.958</vec2>
+			<int>678</int>
+			<vec2>123.151 48.8611</vec2>
+			<int>679</int>
+			<vec2>-92.4353 390.603</vec2>
+			<int>680</int>
+			<vec2>-87.0566 371.296</vec2>
+			<int>681</int>
+			<vec2>-83.7497 366.429</vec2>
+			<int>682</int>
+			<vec2>103.813 371.206</vec2>
+			<int>683</int>
+			<vec2>-81.9986 360.469</vec2>
+			<int>684</int>
+			<vec2>-109.854 377.221</vec2>
+			<int>685</int>
+			<vec2>-114.342 382.845</vec2>
+			<int>686</int>
+			<vec2>-107.105 355.353</vec2>
+			<int>687</int>
+			<vec2>-118.544 344.974</vec2>
+			<int>688</int>
+			<vec2>-121.86 342.297</vec2>
+			<int>689</int>
+			<vec2>-123.956 332.759</vec2>
+			<int>690</int>
+			<vec2>111.833 145.111</vec2>
+			<int>691</int>
+			<vec2>-122.187 320.115</vec2>
+			<int>692</int>
+			<vec2>-122.258 313.435</vec2>
+			<int>693</int>
+			<vec2>-40.8378 360.038</vec2>
+			<int>694</int>
+			<vec2>-38.0953 95.2466</vec2>
+			<int>487</int>
+			<vec2>-52.4273 94.5525</vec2>
+			<int>486</int>
+			<vec2>-48.7737 92.8157</vec2>
+			<int>485</int>
+			<vec2>-47.8346 91.7175</vec2>
+			<int>484</int>
+			<vec2>-43.8347 92.0694</vec2>
+			<int>483</int>
+			<vec2>-32.9099 75.2761</vec2>
+			<int>482</int>
+			<vec2>-47.2325 315.482</vec2>
+			<int>695</int>
+			<vec2>-50.1202 310.291</vec2>
+			<int>696</int>
+			<vec2>60.8029 271.206</vec2>
+			<int>697</int>
+			<vec2>-125.874 304.339</vec2>
+			<int>698</int>
+			<vec2>30.9461 324.106</vec2>
+			<int>699</int>
+			<vec2>71.5896 280.836</vec2>
+			<int>700</int>
+			<vec2>-5.54388 280.532</vec2>
+			<int>701</int>
+			<vec2>90.5831 251.436</vec2>
+			<int>702</int>
+			<vec2>-27.739 74.0879</vec2>
+			<int>481</int>
+			<vec2>-67.6838 442.231</vec2>
+			<int>480</int>
+			<vec2>-121.389 120.057</vec2>
+			<int>479</int>
+			<vec2>-9.29193 422.941</vec2>
+			<int>478</int>
+			<vec2>112.736 362.807</vec2>
+			<int>477</int>
+			<vec2>-82.1283 202.297</vec2>
+			<int>229</int>
+			<vec2>90.1747 73.4603</vec2>
+			<int>476</int>
+			<vec2>-3.96833 386.591</vec2>
+			<int>475</int>
+			<vec2>107.65 142.256</vec2>
+			<int>474</int>
+			<vec2>-3.31304 408.74</vec2>
+			<int>473</int>
+			<vec2>-5.27165 422.04</vec2>
+			<int>472</int>
+			<vec2>-76.9046 202.495</vec2>
+			<int>230</int>
+			<vec2>-2.22541 422.905</vec2>
+			<int>471</int>
+			<vec2>3.9523 72.4866</vec2>
+			<int>470</int>
+			<vec2>115.847 -7.80937</vec2>
+			<int>469</int>
+			<vec2>1.63951 112.327</vec2>
+			<int>468</int>
+			<vec2>-79.8645 210.618</vec2>
+			<int>231</int>
+			<vec2>-4.09556 433.22</vec2>
+			<int>467</int>
+			<vec2>-89.4553 382.99</vec2>
+			<int>466</int>
+			<vec2>1.19379 247.395</vec2>
+			<int>646</int>
+			<vec2>39.1408 353.409</vec2>
+			<int>464</int>
+			<vec2>50.629 350.336</vec2>
+			<int>463</int>
+			<vec2>54.4543 343.348</vec2>
+			<int>462</int>
+			<vec2>52.7449 349.123</vec2>
+			<int>461</int>
+			<vec2>65.83 339.757</vec2>
+			<int>460</int>
+			<vec2>93.8315 245.02</vec2>
+			<int>703</int>
+			<vec2>50.022 358.532</vec2>
+			<int>704</int>
+			<vec2>67.2318 275.567</vec2>
+			<int>705</int>
+			<vec2>-114.224 305.971</vec2>
+			<int>706</int>
+			<vec2>-110.948 306.851</vec2>
+			<int>707</int>
+			<vec2>-107.799 309.7</vec2>
+			<int>708</int>
+			<vec2>71.4622 341.166</vec2>
+			<int>459</int>
+			<vec2>-72.9199 211.656</vec2>
+			<int>232</int>
+			<vec2>-101.122 190.721</vec2>
+			<int>458</int>
+			<vec2>-16.9674 158.34</vec2>
+			<int>457</int>
+			<vec2>13.2836 240.781</vec2>
+			<int>456</int>
+			<vec2>-0.0668851 292.261</vec2>
+			<int>455</int>
+			<vec2>-88.4165 148.265</vec2>
+			<int>454</int>
+			<vec2>-10.3624 419.78</vec2>
+			<int>453</int>
+			<vec2>-12.6878 414.595</vec2>
+			<int>452</int>
+			<vec2>-14.5409 409.878</vec2>
+			<int>451</int>
+			<vec2>-18.5771 413.303</vec2>
+			<int>450</int>
+			<vec2>-108.29 223.178</vec2>
+			<int>233</int>
+			<vec2>-103.682 234.972</vec2>
+			<int>234</int>
+			<vec2>4.00918 427.824</vec2>
+			<int>449</int>
+			<vec2>-92.8282 137.041</vec2>
+			<int>448</int>
+			<vec2>-38.2907 412.874</vec2>
+			<int>447</int>
+			<vec2>30.8594 261.859</vec2>
+			<int>446</int>
+			<vec2>-119.895 273.652</vec2>
+			<int>709</int>
+			<vec2>-114.155 271.364</vec2>
+			<int>710</int>
+			<vec2>-100.242 138.751</vec2>
+			<int>711</int>
+			<vec2>-25.706 207.662</vec2>
+			<int>712</int>
+			<vec2>-95.4773 266.37</vec2>
+			<int>713</int>
+			<vec2>-94.0678 270.34</vec2>
+			<int>714</int>
+			<vec2>-99.9012 285.527</vec2>
+			<int>715</int>
+			<vec2>-96.1216 288.832</vec2>
+			<int>716</int>
+			<vec2>-92.2811 292.227</vec2>
+			<int>717</int>
+			<vec2>-82.2659 280.23</vec2>
+			<int>718</int>
+			<vec2>-78.5021 286.182</vec2>
+			<int>719</int>
+			<vec2>-73.9763 291.925</vec2>
+			<int>720</int>
+			<vec2>-69.7358 474.03</vec2>
+			<int>445</int>
+			<vec2>-71.4829 462.679</vec2>
+			<int>444</int>
+			<vec2>-67.1321 464.988</vec2>
+			<int>443</int>
+			<vec2>88.2154 57.6139</vec2>
+			<int>442</int>
+			<vec2>-26.023 445.298</vec2>
+			<int>441</int>
+			<vec2>-108.821 240.55</vec2>
+			<int>235</int>
+			<vec2>-113.326 245.513</vec2>
+			<int>236</int>
+			<vec2>-115.027 241.465</vec2>
+			<int>237</int>
+			<vec2>-90.6895 218.697</vec2>
+			<int>238</int>
+			<vec2>35.2397 456.369</vec2>
+			<int>239</int>
+			<vec2>20.5671 183.494</vec2>
+			<int>240</int>
+			<vec2>20.3183 176.479</vec2>
+			<int>241</int>
+			<vec2>19.3887 174.059</vec2>
+			<int>242</int>
+			<vec2>21.3604 169.958</vec2>
+			<int>243</int>
+			<vec2>-40.7259 451.388</vec2>
+			<int>440</int>
+			<vec2>-33.6603 460.842</vec2>
+			<int>439</int>
+			<vec2>6.66558 444.184</vec2>
+			<int>438</int>
+			<vec2>2.73442 450.953</vec2>
+			<int>437</int>
+			<vec2>-6.5668 459.186</vec2>
+			<int>436</int>
+			<vec2>-5.82534 449.656</vec2>
+			<int>435</int>
+			<vec2>47.9286 467.043</vec2>
+			<int>434</int>
+			<vec2>-102.22 453.95</vec2>
+			<int>433</int>
+			<vec2>-86.2344 459.584</vec2>
+			<int>432</int>
+			<vec2>-92.068 227.348</vec2>
+			<int>244</int>
+			<vec2>58.7237 148.151</vec2>
+			<int>245</int>
+			<vec2>-2.24018 212.568</vec2>
+			<int>246</int>
+			<vec2>38.3351 166.276</vec2>
+			<int>247</int>
+			<vec2>123.898 343.329</vec2>
+			<int>431</int>
+			<vec2>-1.90534 265.866</vec2>
+			<int>430</int>
+			<vec2>-8.35366 263.926</vec2>
+			<int>429</int>
+			<vec2>-11.9995 261.494</vec2>
+			<int>428</int>
+			<vec2>34.5228 162.022</vec2>
+			<int>248</int>
+			<vec2>-89.9767 190.33</vec2>
+			<int>427</int>
+			<vec2>-17.4135 259.119</vec2>
+			<int>426</int>
+			<vec2>-98.7822 265.17</vec2>
+			<int>425</int>
+			<vec2>-96.522 139.16</vec2>
+			<int>249</int>
+			<vec2>92.0569 98.8712</vec2>
+			<int>424</int>
+			<vec2>109.356 127.065</vec2>
+			<int>423</int>
+			<vec2>-84.2024 134.864</vec2>
+			<int>250</int>
+			<vec2>-84.0419 130.586</vec2>
+			<int>251</int>
+			<vec2>-77.3535 126.085</vec2>
+			<int>252</int>
+			<vec2>78.8016 -35.9723</vec2>
+			<int>422</int>
+			<vec2>-25.9842 186.674</vec2>
+			<int>421</int>
+			<vec2>76.4132 -31.0454</vec2>
+			<int>420</int>
+			<vec2>-75.4791 123.06</vec2>
+			<int>253</int>
+			<vec2>98.1551 293.424</vec2>
+			<int>465</int>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_h_16.unit">
+			<vec2>-64 -36</vec2>
+			<int>47</int>
+			<vec2>0 484</vec2>
+			<int>64</int>
+			<vec2>-80 484</vec2>
+			<int>63</int>
+			<vec2>16 484</vec2>
+			<int>62</int>
+			<vec2>-80 -36</vec2>
+			<int>61</int>
+			<vec2>-96 -36</vec2>
+			<int>60</int>
+			<array>
+				<vec2>32 -36</vec2>
+				<int>59</int>
+				<dict>
+					<int name="layer">-1</int>
+				</dict>
+			</array>
+			<vec2>-48 484</vec2>
+			<int>57</int>
+			<vec2>112 -36</vec2>
+			<int>76</int>
+			<vec2>64 -36</vec2>
+			<int>56</int>
+			<array>
+				<vec2>16 -36</vec2>
+				<int>74</int>
+				<dict>
+					<int name="layer">-1</int>
+				</dict>
+			</array>
+			<vec2>48 -36</vec2>
+			<int>73</int>
+			<vec2>-112 -36</vec2>
+			<int>75</int>
+			<vec2>64 484</vec2>
+			<int>71</int>
+			<vec2>-16 484</vec2>
+			<int>70</int>
+			<vec2>32 484</vec2>
+			<int>58</int>
+			<array>
+				<vec2>0 -36</vec2>
+				<int>69</int>
+				<dict>
+					<int name="layer">-1</int>
+				</dict>
+			</array>
+			<vec2>48 484</vec2>
+			<int>68</int>
+			<vec2>96 -36</vec2>
+			<int>67</int>
+			<vec2>96 484</vec2>
+			<int>66</int>
+			<vec2>-32 484</vec2>
+			<int>55</int>
+			<vec2>-48 -36</vec2>
+			<int>65</int>
+			<array>
+				<vec2>-32 -36</vec2>
+				<int>54</int>
+				<dict>
+					<int name="layer">-1</int>
+				</dict>
+			</array>
+			<vec2>112 484</vec2>
+			<int>53</int>
+			<vec2>-112 484</vec2>
+			<int>52</int>
+			<array>
+				<vec2>-16 -36</vec2>
+				<int>51</int>
+				<dict>
+					<int name="layer">-1</int>
+				</dict>
+			</array>
+			<vec2>-64 484</vec2>
+			<int>50</int>
+			<vec2>80 484</vec2>
+			<int>49</int>
+			<vec2>-96 484</vec2>
+			<int>48</int>
+			<vec2>80 -36</vec2>
+			<int>72</int>
+		</array>
+		<array name="doodads/walls/battlement/_wall_e.unit">
+			<array>
+				<vec2>120 552</vec2>
+				<int>89</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 680</vec2>
+				<int>86</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 584</vec2>
+				<int>87</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 488</vec2>
+				<int>88</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 616</vec2>
+				<int>90</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 520</vec2>
+				<int>91</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 648</vec2>
+				<int>92</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>120 712</vec2>
+				<int>93</int>
+				<dict>
+					<int name="layer">-80</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_dragon_hatch.unit"><vec2>0 440</vec2><int>85</int></array>
+		<array name="doodads/terrain/world_shaftlocke.unit">
+			<array>
+				<vec2>-96 672</vec2>
+				<int>98</int>
+				<dict>
+					<string name="start">boss</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/fog_wind.unit">
+			<vec2>48 -248</vec2>
+			<int>109</int>
+			<vec2>-48 -280</vec2>
+			<int>126</int>
+			<vec2>-48 -88</vec2>
+			<int>106</int>
+			<vec2>48 -152</vec2>
+			<int>105</int>
+			<vec2>-128 -152</vec2>
+			<int>104</int>
+			<vec2>128 -376</vec2>
+			<int>103</int>
+			<vec2>224 -152</vec2>
+			<int>102</int>
+			<vec2>-416 -88</vec2>
+			<int>101</int>
+			<vec2>-128 -440</vec2>
+			<int>100</int>
+			<vec2>-48 -184</vec2>
+			<int>124</int>
+			<vec2>-224 -376</vec2>
+			<int>111</int>
+			<vec2>-320 -344</vec2>
+			<int>112</int>
+			<vec2>-416 -280</vec2>
+			<int>123</int>
+			<vec2>-224 -88</vec2>
+			<int>113</int>
+			<vec2>48 -344</vec2>
+			<int>114</int>
+			<vec2>128 -88</vec2>
+			<int>115</int>
+			<vec2>224 -344</vec2>
+			<int>116</int>
+			<vec2>-320 -440</vec2>
+			<int>117</int>
+			<vec2>128 -184</vec2>
+			<int>118</int>
+			<vec2>-416 -376</vec2>
+			<int>119</int>
+			<vec2>320 -376</vec2>
+			<int>120</int>
+			<vec2>-320 -152</vec2>
+			<int>121</int>
+			<vec2>320 -88</vec2>
+			<int>107</int>
+			<vec2>-48 -376</vec2>
+			<int>108</int>
+			<vec2>-128 -344</vec2>
+			<int>122</int>
+			<vec2>-224 -280</vec2>
+			<int>110</int>
+			<vec2>224 -248</vec2>
+			<int>135</int>
+			<vec2>-224 -184</vec2>
+			<int>134</int>
+			<vec2>-320 -248</vec2>
+			<int>133</int>
+			<vec2>320 -280</vec2>
+			<int>132</int>
+			<vec2>224 -440</vec2>
+			<int>131</int>
+			<vec2>48 -440</vec2>
+			<int>125</int>
+			<vec2>-416 -184</vec2>
+			<int>130</int>
+			<vec2>-128 -248</vec2>
+			<int>129</int>
+			<vec2>320 -184</vec2>
+			<int>128</int>
+			<vec2>128 -280</vec2>
+			<int>127</int>
+		</array>
+		<array name="doodads/terrain/snow_dragon.unit"><vec2>0 256</vec2><int>99</int></array>
+		<array name="actors/bosses/dragon/iceblock_heroes.unit">
+			<array>
+				<vec2>46 360</vec2>
+				<int>43</int>
+				<dict>
+					<string name="start">sorcerer</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 304</vec2>
+				<int>42</int>
+				<dict>
+					<string name="start">priest</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 272</vec2>
+				<int>41</int>
+				<dict>
+					<string name="start">wizard</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>24 344</vec2>
+				<int>40</int>
+				<dict>
+					<string name="start">thief</string>
+				</dict>
+			</array>
+		</array>
+		<array name="system/light_L.png">
+			<array>
+				<vec2>224 -128</vec2>
+				<int>916</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">1 0 0.879622 0</vec4>
+					<float name="size">700</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 560</vec2>
+				<int>922</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">1 0 0.879622 0</vec4>
+					<float name="size">700</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-304 144</vec2>
+				<int>917</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">1 0 0.879622 0</vec4>
+					<float name="size">700</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>105 72</vec2>
+				<int>923</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.00856812 0.0998987 0.730461 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>121 430</vec2>
+				<int>921</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.00856812 0.0998987 0.730461 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-352 528</vec2>
+				<int>920</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">1 0 0.879622 0</vec4>
+					<float name="size">700</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-137 281</vec2>
+				<int>919</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.00856812 0.0998987 0.730461 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>368 272</vec2>
+				<int>918</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">1 0 0.879622 0</vec4>
+					<float name="size">700</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="actors/bosses/dragon/trap_slow_large.unit"><vec2>0 16</vec2><int>46</int></array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/boss_dragon.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000434a74412a35057a237516102043312b000000000000000000000000000000004009207d332d1b01636875450d5a7a180000000000000000000000000000000006757240034c68162072764d362f0871000000000000000000000000000000000a6b2e6b0a450f5a08091658473b730f000000000000000000000000000000000e73666b025d19517e6541032874513e00000000000000000000000000000000380d321a6a101439197734462f4e304100000000000000000000000000000000026279063e203f2a5175127b2a3c476a000000000000000000000000000000003a756c661f7e4206712a647564720e42000000000000000000000000000000002f607250157860027644513451722119000000000000000000000000000000007d162450264c192a426136172633211c000000000000000000000000000000002f0f287b36095e27010a4e3627466e710000000000000000000000000000000014107818411473703638260512077d1200000000000000000000000000000000045379181f112172494532490f25393f00000000000000000000000000000000365c551c2a20672a104c4f116257697700000000000000000000000000000000721b6f5d48390d30684e6e5755746b0e000000000000000000000000000000003040070f4a723c5a21767b510f370e0300000000000000000000000000000000295c271911651e17093c74601c0e1d2c00000000000000000000000000000000137117397a3d173278057d59666208160000000000000000</bytes>
+					<string name="tileset">tilesets/battlement_stone_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006814016b40100600000000000000000000000000000000000000000000000000000e250b0a332300002e4b000000000000000000000000000000000000000000342a3d34626435000024254703067e00000000000000000000000000000000003d176a6465470600000053140600430000000000000000000000000000000000073265054b487e00000000001c6c550000000000000000000000000000000000006e01174b4d535a307b630350186f000000000000000000000000000000000051465c5451594c07307c151a440000000000000000000000000000000000000012545a792353534a506a6a7e1d007800000000000000000000000000000000006d60484700001a3729006d5e00000000000000000000000000000000000000000250094e64006400675700000000000000000000000000000000000000000000007300002a5b22396b000000003a000000000000000000000000000000000000000000000e6d456304320000015000000000000000000000000000000000000000000000004900006000007469573a00000000000000000000000000000000004200001d0000000000000000536c00000000000000000000000000000000000000006a033f0000000000000000000000000000000000000000000000000000000000002c7c0e6e000000000000002b0000000000000000000000000000000000000008140d3700000000000000000000000000000000000000000000000000000023410a5a2000000000043a1f00000000000000000000</bytes>
+					<string name="tileset">tilesets/outlook_snow_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027773800000000000000000000000000000000644e610000000000000000000017056000000000000000000000000000000000130d63000000000000000000006a242100000000000000000000000000000000197a3200000000000000000000330e63000000000000000000000000000000003a263e0000000000000000000041190400000000000000000000000000000000290312000000000000000000006c1b110000000000000000000000000000000071021f000000000000000000003c4e4400000000000000000000000000000000100306000000000000000000000127470000000000000000000000000000000011254e00000000000000000000440d190000000000000000000000000000000016016100000000000000000000144648000000000000000000000000000000002c2e55000000000000000000002e575f000000000000000000000000000000001a44390000000000000000000077094500000000000000000000000000000000433d49000000000000000000000d6e2000000000000000000000000000000000302a480000000000</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000008150c4e2856726c511f534422644544000000000000000000000000000000005d1f224d317650126d7e16497764150d0000000000000000000000000000000040266b3518563723275b230442032654000000000000000000000000000000007a61563415316c1e051f221d4334175f00000000000000000000000000000000552b015e2e2c48731f37252051244b440000000000000000000000000000000009160e4d17642c094d4f3a755909126d000000000000000000000000000000004c470c4c75740659332b061760376051000000000000000000000000000000000a364515351419313150747552324b590000000000000000000000000000000075206734577b770a2b0805142e0c78150000000000000000000000000000000056754f2b092f222f15126c324a60303c00000000000000000000000000000000213c0f452e53186c517c110534691213000000000000000000000000000000007d0d064f6605354e63474c144a152d6700000000000000000000000000000000470c683e5815550c59553b11242e114600000000000000000000000000000000351540117712040837357b6d17795b470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/battlement_stone_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000071300c0b512f0000002a4d23340000000000000000000000000000000000000000003e01634b1600002b0d0000000000000000000000000000000000000000000000003b007716000000000000000000000000000000000000000000000000000019000000452e470000000200000000000000000000000000000000000000007b610e572800021675000000007800000000000000000000000000000000000035073e1a0000004f000000002176000000000000000000000000000000000000003901000000000000000010313c2b00000000000000000000000000000000004327000000297b00000000000047000000000000000000000000000000000000000056562b2a5700003d0000000000000000000000000000000000000000000000510b7473287d520000000000000000000000000000000000000000000000002a5f420b000000165100000028000000000000000000000000000000000000000017100000000000000000000000000000000000000000000000000000000054000000000000000000000700004000000000000000000000000000000000007a2f0700000c00004e0000002d08407a00000000000000000000000000000000521300000000217c070956453173534a560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/outlook_snow_16.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000040107b000000000000000000000000000000004e3b7000000000000000000000022f78000000000000000000000000000000004e445b000000000000000000005f072000000000000000000000000000000000603b1a00000000000000000000192606000000000000000000000000000000007c4a74000000000000000000001e2915000000000000000000000000000000007967380000000000000000000018493e0000000000000000000000000000000042683800000000000000000000070c31000000000000000000000000000000001e72760000000000000000000054227c00000000000000000000000000000000461d0f000000000000000000002e3948000000000000000000000000000000000450650000000000000000000044422000000000000000000000000000000000326570000000000000000000001727400000000000000000000000000000000020034c0000000000000000000039664d000000000000000000000000000000005e025d00000000000000000000413218000000000000000000000000000000002176010000000000000000000071720d00000000000000000000000000000000133f09000000000000000000004a1429000000000000000000000000000000004a263b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/___game_spikes_dst.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+	</array>
+</dict>

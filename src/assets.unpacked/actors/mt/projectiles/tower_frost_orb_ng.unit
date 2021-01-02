@@ -1,0 +1,71 @@
+<unit netsync="none">
+	<behavior class="OrbProjectile">
+		<string name="anim">idle</string>
+		<!-- <string name="loop-snd">event:/player/sorcerer/orb</string> -->
+
+		<float name="speed">2.2</float>
+		<int name="ttl">4000</int>
+		<int name="bounces">1000</int>
+		<float name="bounce-speed-mul">1</float>
+		<bool name="bounce-on-collide">false</bool>
+		
+		<int name="delay">100</int>
+		<int name="proj-delay">90</int>
+		<int name="dist">9</int>
+		<float name="rot">1.33</float>
+		
+		<string name="projectile">actors/mt/projectiles/tower_frost_orb_projectile.unit</string>
+
+		<array name="effects">
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/projectiles/tower_frost_orb_break.effect</string>
+				<int name="radius">16</int>
+				<float name="dist-scaling">10</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">60</int>
+						<int name="magical">60</int>
+					</dict>				
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/tower_frost/hit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+
+		<array name="miss-effects">
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/projectiles/tower_frost_orb_break.effect</string>
+				<int name="radius">16</int>
+				<float name="dist-scaling">10</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">60</int>
+						<int name="magical">60</int>
+					</dict>				
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/tower_frost/hit</string>
+			</dict>			
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect pos="0 0" src="actors/mt/projectiles/tower_frost_orb.effect" />
+		
+			<collision static="false">
+				<circle offset="0 0" radius="2" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

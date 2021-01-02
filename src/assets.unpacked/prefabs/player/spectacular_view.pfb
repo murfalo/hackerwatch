@@ -1,0 +1,88 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">64 32</vec2>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>2</int>
+			<vec3>-64 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Objects"><int>3</int><string>User</string></array>
+				<string name="Text">.dialogue.player.view</string>
+				<int name="HeightOffset">-1</int>
+				<array name="#ForPlayer"><int>3</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>3</int>
+			<vec3>80 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">7</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>4</int>
+			<vec3>80 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>HideSpeechBubble</string>
+			<int>7</int>
+			<vec3>-112 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Bubble"><int>2</int></array>
+				<array name="#ForPlayer"><int>6</int><string>AllInside</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>6</int>
+			<vec3>-144 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Event">2</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>7</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

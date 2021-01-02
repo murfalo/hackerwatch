@@ -1,0 +1,239 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>1</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>medium</string>
+			<array><int>5</int><int>0</int><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>2</int>
+			<vec3>-192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>easy</string>
+			<array><int>12</int><int>0</int><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>3</int>
+			<vec3>-192 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_bat_easy</string>
+			<dict>
+				<string name="EventName">spawn_bat_easy</string>
+			</dict>
+			<array><int>2</int><int>0</int><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>4</int>
+			<vec3>-32 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<int name="NumberPerPlayerMax">8</int>
+				<string name="SpawnPointFilter">outside</string>
+				<int name="NumberToSpawnMin">6</int>
+				<int name="NumberPerPlayer">6</int>
+				<int name="NumberToSpawnMax">8</int>
+				<int name="MaxToSpawn">50</int>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>5</int>
+			<vec3>32 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<int name="NumberPerPlayerMax">6</int>
+				<string name="SpawnPointFilter">outside</string>
+				<int name="NumberToSpawnMin">4</int>
+				<int name="NumberPerPlayer">4</int>
+				<int name="NumberToSpawnMax">6</int>
+				<int name="MaxToSpawn">50</int>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>6</int>
+			<vec3>192 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_bat_hard</string>
+			<dict>
+				<string name="EventName">spawn_bat_hard</string>
+			</dict>
+			<array><int>10</int><int>0</int><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>7</int>
+			<vec3>0 -272 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>kill_everything</string>
+			<dict>
+				<string name="EventName">kill_everything</string>
+			</dict>
+			<array><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>8</int>
+			<vec3>192 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat3</string>
+			<dict>
+				<int name="NumberPerPlayerMax">8</int>
+				<string name="SpawnPointFilter">outside</string>
+				<int name="NumberToSpawnMin">8</int>
+				<int name="NumberPerPlayer">6</int>
+				<int name="NumberToSpawnMax">12</int>
+				<int name="MaxToSpawn">50</int>
+				<string name="UnitType">actors/bat_3.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>9</int>
+			<vec3>-224 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat1</string>
+			<dict>
+				<int name="NumberPerPlayerMax">5</int>
+				<string name="SpawnPointFilter">outside</string>
+				<int name="NumberToSpawnMin">3</int>
+				<int name="NumberPerPlayer">3</int>
+				<int name="NumberToSpawnMax">5</int>
+				<int name="MaxToSpawn">50</int>
+				<string name="UnitType">actors/bat_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>10</int>
+			<vec3>192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hard</string>
+			<array><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>11</int>
+			<vec3>0 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_bat_medium</string>
+			<dict>
+				<string name="EventName">spawn_bat_medium</string>
+			</dict>
+			<array><int>1</int><int>0</int><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>12</int>
+			<vec3>-160 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bat2</string>
+			<dict>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberPerPlayerMax">3</int>
+				<string name="SpawnPointFilter">outside</string>
+				<int name="NumberPerPlayer">2</int>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="MaxToSpawn">50</int>
+				<string name="UnitType">actors/bat_2.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>13</int>
+			<vec3>0 -208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Physical">1000000</int>
+				<array name="#Units">
+					<int>4</int>
+					<string>AllSpawned</string>
+					<int>9</int>
+					<string>AllSpawned</string>
+					<int>8</int>
+					<string>AllSpawned</string>
+					<int>5</int>
+					<string>AllSpawned</string>
+					<int>12</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>14</int>
+			<vec3>192 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">bat_hard</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>15</int>
+			<vec3>0 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">bat_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>16</int>
+			<vec3>-192 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">bat_easy</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

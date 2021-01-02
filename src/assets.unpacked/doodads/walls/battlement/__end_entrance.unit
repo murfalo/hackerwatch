@@ -1,0 +1,98 @@
+<unit slot="doodad" layer="-10">
+	<scenes>
+		<scene>
+		<minimap_sprite origin="0 -4" texture="gui/minimap.png" frame="188 177 36 34" />
+		<!-- Room -->
+		<shadow>
+			<sprite origin="-136 -30" layer="50" texture="./__end_entrance.png" material="system/default.mats:shadow">
+				<frame>48 120 8 66</frame>
+			</sprite>	
+		</shadow>
+		 	<sprite origin="-63 18" layer="50" texture="./__end_entrance.png" material="system/default.mats:default">
+				<frame>55 0 18 16</frame>
+			</sprite>		 
+		 	<sprite origin="-8 -53" layer="50" texture="./__end_entrance.png" material="system/default.mats:default">
+				<frame>128 0 128 89</frame>
+			</sprite>
+			<sprite origin="-8 18" layer="10" texture="./__end_entrance.png" material="system/default.mats:wall">
+				<frame>0 0 128 120</frame>
+			</sprite>	
+			
+ 			<sprite layer="-9" origin="-16 -13" texture="./__end_entrance.png" material="system/default.mats:floor">
+				<frame>128 89 112 89</frame>
+			</sprite>
+		
+		<!-- Tower -->
+			<collision static="true">
+			
+
+				<rect shoot-through="true">38 134 68 8</rect>
+				<rect shoot-through="true">8 49 8 58</rect>
+				<rect shoot-through="true">128 49 8 58</rect>
+				<polygon shoot-through="true">
+					<point>43 15</point>
+					<point>48 22</point>
+					<point>9 49</point>
+					<point>16 54</point>
+				</polygon>
+				<polygon shoot-through="true">
+					<point>101 15</point>
+					<point>96 22</point>
+					<point>135 49</point>
+					<point>128 54</point>
+				</polygon>
+				<polygon shoot-through="true">
+					<point>128 102</point>
+					<point>135 106</point>
+					<point>96 134</point>
+					<point>100 141</point>
+				</polygon>
+				<polygon shoot-through="true">
+					<point>16 102</point>
+					<point>48 134</point>
+					<point>43 141</point>
+					<point>8 102</point>
+				</polygon>
+			
+				<rect shoot-through="true">24 0 10 24</rect>
+				<rect shoot-through="true">110 0 10 24</rect>
+				<rect shoot-through="true">0 48 10 60</rect>
+				<rect shoot-through="true">134 48 10 60</rect>
+				<rect shoot-through="true">40 138 64 10</rect>
+				<polygon shoot-through="true">
+					<point>0 48</point>
+					<point>10 48</point>
+					<point>34 24</point>
+					<point>24 24</point>
+				</polygon>
+				<polygon shoot-through="true">
+					<point>120 24</point>
+					<point>144 48</point>
+					<point>110 24</point>
+					<point>134 48</point>
+				</polygon>
+				<polygon shoot-through="true">
+					<point>0 108</point>
+					<point>40 148</point>
+					<point>40 138</point>
+					<point>10 108</point>
+				</polygon>
+				<polygon shoot-through="true">
+					<point>134 108</point>
+					<point>104 148</point>
+					<point>104 138</point>
+					<point>144 108</point>
+				</polygon>
+			</collision>
+			<sprite layer="51" origin="0 -92" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>122 292 144 76</frame>
+			</sprite>
+			<sprite layer="-10" origin="0 0" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>122 0 144 148</frame>
+			</sprite>
+			<sprite layer="-10" origin="0 -108" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>122 148 144 144</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

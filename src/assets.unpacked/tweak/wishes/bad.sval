@@ -1,0 +1,136 @@
+<loader>Fountain::AddWishFile</loader>
+<array>
+	<dict>
+		<string name="id">more_enemies</string>
+		<int name="level">1</int>
+		<int name="favor">-2</int>
+		<string name="flag">fountain_more_enemies</string>
+	</dict>
+
+	<dict>
+		<string name="id">more_elites</string>
+		<int name="level">1</int>
+		<int name="favor">-4</int>
+		<string name="flag">fountain_elites</string>
+	</dict>
+
+	<dict>
+		<string name="id">bad_pickups</string>
+		<int name="level">1</int>
+		<int name="favor">-1</int>
+	</dict>
+
+	<dict>
+		<string name="id">no_dropped_loot</string>
+		<int name="level">2</int>
+		<int name="favor">-10</int>
+		<string name="flag">fountain_no_loot</string>
+	</dict>
+
+	<dict>
+		<string name="id">no_secrets</string>
+		<int name="level">2</int>
+		<int name="favor">-8</int>
+		<string name="flag">fountain_no_secrets</string>
+	</dict>
+
+	<dict>
+		<string name="id">potion_confuse</string>
+		<int name="level">1</int>
+		<int name="favor">-2</int>
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">potion</string>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:confusion</string>
+			</dict>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">no_wells</string>
+		<int name="level">2</int>
+		<int name="favor">-7</int>
+		<string name="flag">fountain_no_wells</string>
+	</dict>
+
+	<dict>
+		<string name="id">no_shops</string>
+		<int name="level">2</int>
+		<int name="favor">-14</int>
+		<string name="flag">fountain_no_shops</string>
+	</dict>
+
+	<dict>
+		<string name="id">no_ore</string>
+		<int name="level">1</int>
+		<int name="favor">-4</int>
+		<string name="flag">fountain_no_ore</string>
+	</dict>
+	
+	<dict>
+		<string name="id">more_trap_damage</string>
+		<int name="level">1</int>
+		<int name="favor">-2</int>
+	</dict>
+
+	<dict>
+		<string name="id">1_hp</string>
+		<int name="level">2</int>
+		<int name="favor">-10</int>
+	</dict>
+
+	<dict>
+		<string name="id">more_great_threat</string>
+		<int name="level">2</int>
+		<int name="favor">-5</int>
+		<string name="flag">fountain_threat_more</string>
+	</dict>
+
+	<dict>
+		<string name="id">faster_enemies</string>
+		<int name="level">2</int>
+		<int name="favor">-6</int>
+	</dict>
+
+	<dict>
+		<string name="id">minibosses_everywhere</string>
+		<int name="level">2</int>
+		<int name="favor">-5</int>
+		<string name="flag">fountain_minibosses</string>
+	</dict>
+
+%if !HARDCORE
+	<dict>
+		<string name="id">no_elevators</string>
+		<int name="level">2</int>
+		<int name="favor">-6</int>
+		<string name="flag">fountain_no_elevators</string>
+	</dict>
+
+	<dict>
+		<string name="id">no_class_titles</string>
+		<int name="level">2</int>
+		<int name="favor">-5</int>
+	</dict>
+%endif
+	
+	<dict>
+		<string name="id">luck_less</string>
+		<int name="level">1</int>
+		<int name="favor">-2</int>
+		<dict>
+			<string name="class">Modifiers::Luck</string>
+			<float name="add">-3</float>
+		</dict>
+	</dict>
+	
+<!-- 	<dict>
+		<string name="id">no_furnaces</string>
+		<int name="level">2</int>
+		<int name="favor">-4</int>
+		<string name="flag">fountain_no_furnaces</string>
+	</dict> -->
+</array>

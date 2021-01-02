@@ -1,0 +1,26 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">thief</string>
+	<string name="name">.skills.thief.slice-and-dice</string>
+	<string name="description">.skills.thief.slice-and-dice.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 72 24 24</vec4>
+	</array>
+
+	<int name="cost">18</int>
+
+	<dict name="skill">
+		<string name="class">Skills::Fervor</string>
+		<int name="duration">2500</int>
+		<int name="max-stacks">32</int>
+		<bool name="lose-all">true</bool>
+		<float name="stack-speed">0.02</float>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>0 0 12 12</vec4>
+		</array>
+	</dict>
+</dict>

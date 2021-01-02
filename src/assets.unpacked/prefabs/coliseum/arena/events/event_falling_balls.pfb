@@ -1,0 +1,2140 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>1</int>
+			<vec3>256 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>events_deactivate</string>
+			<dict>
+				<string name="EventName">events_deactivate</string>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>2</int>
+			<vec3>-96 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="TimeMax">30000</int>
+				<int name="TimeMin">20000</int>
+				<array name="LinkScripts"><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>3</int>
+			<vec3>-96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>4</int>
+			<vec3>88 -252 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>17</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>5</int>
+			<vec3>64 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>4</int>
+					<int>18</int>
+					<int>20</int>
+					<int>22</int>
+					<int>24</int>
+					<int>26</int>
+					<int>28</int>
+					<int>30</int>
+					<int>32</int>
+					<int>34</int>
+					<int>62</int>
+					<int>65</int>
+					<int>60</int>
+					<int>49</int>
+					<int>58</int>
+					<int>46</int>
+					<int>56</int>
+					<int>44</int>
+					<int>42</int>
+					<int>54</int>
+					<int>40</int>
+					<int>52</int>
+					<int>38</int>
+					<int>50</int>
+					<int>36</int>
+					<int>113</int>
+					<int>104</int>
+					<int>108</int>
+					<int>128</int>
+					<int>130</int>
+					<int>132</int>
+					<int>134</int>
+					<int>136</int>
+					<int>138</int>
+					<int>140</int>
+					<int>142</int>
+					<int>126</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>6</int>
+			<vec3>96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>7</int>
+			<vec3>-256 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Activate</string>
+			<array><int>3</int><int>0</int><int>12</int><int>0</int><int>2</int><int>0</int><int>165</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>8</int>
+			<vec3>0 480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">750</int>
+			</dict>
+			<array><int>11</int><int>0</int><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>9</int>
+			<vec3>-256 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>falling_balls_activate</string>
+			<dict>
+				<string name="EventName">falling_balls_activate</string>
+			</dict>
+			<array><int>14</int><int>0</int><int>7</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>10</int>
+			<vec3>0 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>event_finished</string>
+			<dict>
+				<string name="EventName">event_finished</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>11</int>
+			<vec3>0 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">300</int>
+				<array name="LinkScripts"><int>15</int><int>5</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>12</int>
+			<vec3>-256 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>16</int><int>13</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>13</int>
+			<vec3>0 608 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Finished</string>
+			<array><int>10</int><int>0</int><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>14</int>
+			<vec3>-256 672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">falling balls activated</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>15</int>
+			<vec3>-64 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>79</int>
+					<int>90</int>
+					<int>110</int>
+					<int>106</int>
+					<int>102</int>
+					<int>76</int>
+					<int>88</int>
+					<int>86</int>
+					<int>74</int>
+					<int>100</int>
+					<int>98</int>
+					<int>72</int>
+					<int>84</int>
+					<int>82</int>
+					<int>70</int>
+					<int>96</int>
+					<int>94</int>
+					<int>68</int>
+					<int>80</int>
+					<int>114</int>
+					<int>66</int>
+					<int>92</int>
+					<int>116</int>
+					<int>118</int>
+					<int>122</int>
+					<int>120</int>
+					<int>124</int>
+					<int>160</int>
+					<int>158</int>
+					<int>162</int>
+					<int>144</int>
+					<int>146</int>
+					<int>148</int>
+					<int>150</int>
+					<int>152</int>
+					<int>154</int>
+					<int>156</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>16</int>
+			<vec3>256 480 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Deactivate</string>
+			<array><int>6</int><int>0</int><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>17</int>
+			<vec3>88 -252 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>18</int>
+			<vec3>136 -252 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>19</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>19</int>
+			<vec3>136 -252 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>20</int>
+			<vec3>184 -249 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>21</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>21</int>
+			<vec3>184 -249 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>22</int>
+			<vec3>230 -250 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>23</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>23</int>
+			<vec3>230 -250 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>24</int>
+			<vec3>280 -248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>25</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>25</int>
+			<vec3>280 -248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>26</int>
+			<vec3>330 -246 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>27</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>27</int>
+			<vec3>330 -246 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>28</int>
+			<vec3>382 -235 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>29</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>29</int>
+			<vec3>382 -235 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>30</int>
+			<vec3>425 -204 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>31</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>31</int>
+			<vec3>425 -204 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>32</int>
+			<vec3>481 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>33</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>33</int>
+			<vec3>481 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>34</int>
+			<vec3>491 -97 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>35</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>35</int>
+			<vec3>491 -97 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>36</int>
+			<vec3>69 -124 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>37</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>37</int>
+			<vec3>69 -124 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>38</int>
+			<vec3>117 -124 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>39</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>39</int>
+			<vec3>117 -124 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>40</int>
+			<vec3>165 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>41</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>41</int>
+			<vec3>165 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>42</int>
+			<vec3>211 -122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>43</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>43</int>
+			<vec3>211 -122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>44</int>
+			<vec3>261 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>45</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>45</int>
+			<vec3>261 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>46</int>
+			<vec3>311 -118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>47</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>47</int>
+			<vec3>311 -118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>48</int>
+			<vec3>338 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>49</int>
+			<vec3>338 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>48</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>50</int>
+			<vec3>100 -65 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>51</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>51</int>
+			<vec3>100 -65 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>52</int>
+			<vec3>148 -65 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>53</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>53</int>
+			<vec3>148 -65 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>54</int>
+			<vec3>196 -62 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>55</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>55</int>
+			<vec3>196 -62 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>56</int>
+			<vec3>242 -63 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>57</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>57</int>
+			<vec3>242 -63 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>58</int>
+			<vec3>292 -61 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>59</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>59</int>
+			<vec3>292 -61 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>60</int>
+			<vec3>360 -117 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>61</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>61</int>
+			<vec3>360 -117 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>62</int>
+			<vec3>430 -140 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>63</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>63</int>
+			<vec3>430 -140 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>64</int>
+			<vec3>446 -86 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>65</int>
+			<vec3>446 -86 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>64</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>66</int>
+			<vec3>-353 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>67</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>67</int>
+			<vec3>-353 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>68</int>
+			<vec3>-305 -125 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>69</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>69</int>
+			<vec3>-305 -125 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>70</int>
+			<vec3>-257 -122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>71</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>71</int>
+			<vec3>-257 -122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>72</int>
+			<vec3>-211 -123 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>73</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>73</int>
+			<vec3>-211 -123 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>74</int>
+			<vec3>-161 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>75</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>75</int>
+			<vec3>-161 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>76</int>
+			<vec3>-111 -119 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>77</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>77</int>
+			<vec3>-111 -119 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>78</int>
+			<vec3>-80 -60 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>79</int>
+			<vec3>-80 -60 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>78</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>80</int>
+			<vec3>-322 -66 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>81</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>81</int>
+			<vec3>-322 -66 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>82</int>
+			<vec3>-274 -66 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>83</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>83</int>
+			<vec3>-274 -66 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>84</int>
+			<vec3>-226 -63 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>85</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>85</int>
+			<vec3>-226 -63 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>86</int>
+			<vec3>-180 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>87</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>87</int>
+			<vec3>-180 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>88</int>
+			<vec3>-130 -62 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>89</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>89</int>
+			<vec3>-130 -62 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>90</int>
+			<vec3>-62 -118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>91</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>91</int>
+			<vec3>-62 -118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>92</int>
+			<vec3>-330 -250 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>93</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>93</int>
+			<vec3>-330 -250 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>94</int>
+			<vec3>-282 -250 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>95</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>95</int>
+			<vec3>-282 -250 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>96</int>
+			<vec3>-234 -247 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>97</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>97</int>
+			<vec3>-234 -247 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>98</int>
+			<vec3>-188 -248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>99</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>99</int>
+			<vec3>-188 -248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>100</int>
+			<vec3>-138 -246 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>101</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>101</int>
+			<vec3>-138 -246 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>102</int>
+			<vec3>-88 -244 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>103</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>103</int>
+			<vec3>-88 -244 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>104</int>
+			<vec3>25 -183 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>105</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>105</int>
+			<vec3>25 -183 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>106</int>
+			<vec3>-28 -228 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>107</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>107</int>
+			<vec3>-28 -228 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>108</int>
+			<vec3>37 -237 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>109</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>109</int>
+			<vec3>37 -237 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>110</int>
+			<vec3>-17 -162 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>111</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>111</int>
+			<vec3>-17 -162 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>112</int>
+			<vec3>386 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>113</int>
+			<vec3>386 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>112</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>114</int>
+			<vec3>-376 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>115</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>115</int>
+			<vec3>-376 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>116</int>
+			<vec3>-382 -231 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>117</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>117</int>
+			<vec3>-382 -231 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>118</int>
+			<vec3>-427 -204 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>119</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>119</int>
+			<vec3>-427 -204 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>120</int>
+			<vec3>-464 -165 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>121</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>121</int>
+			<vec3>-464 -165 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>122</int>
+			<vec3>-426 -149 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>123</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>123</int>
+			<vec3>-426 -149 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>124</int>
+			<vec3>-480 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>125</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>125</int>
+			<vec3>-480 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>126</int>
+			<vec3>490 -20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>127</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>127</int>
+			<vec3>490 -20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>128</int>
+			<vec3>75 -14 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>129</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>129</int>
+			<vec3>75 -14 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>130</int>
+			<vec3>123 -14 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>131</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>131</int>
+			<vec3>123 -14 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>132</int>
+			<vec3>171 -11 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>133</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>133</int>
+			<vec3>171 -11 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>134</int>
+			<vec3>217 -12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>135</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>135</int>
+			<vec3>217 -12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>136</int>
+			<vec3>267 -10 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>137</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>137</int>
+			<vec3>267 -10 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>138</int>
+			<vec3>317 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>139</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>139</int>
+			<vec3>317 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>140</int>
+			<vec3>366 -7 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>141</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>141</int>
+			<vec3>366 -7 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>142</int>
+			<vec3>441 -27 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>143</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>143</int>
+			<vec3>441 -27 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>144</int>
+			<vec3>-356 -17 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>145</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>145</int>
+			<vec3>-356 -17 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>146</int>
+			<vec3>-308 -21 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>147</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>147</int>
+			<vec3>-308 -21 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>148</int>
+			<vec3>-260 -18 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>149</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>149</int>
+			<vec3>-260 -18 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>150</int>
+			<vec3>-214 -19 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>151</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>151</int>
+			<vec3>-214 -19 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>152</int>
+			<vec3>-164 -17 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>153</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>153</int>
+			<vec3>-164 -17 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>154</int>
+			<vec3>-114 -15 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>155</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>155</int>
+			<vec3>-114 -15 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>156</int>
+			<vec3>-65 -14 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>157</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>157</int>
+			<vec3>-65 -14 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>158</int>
+			<vec3>-483 -51 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>159</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>159</int>
+			<vec3>-483 -51 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>160</int>
+			<vec3>-445 -35 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>161</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>161</int>
+			<vec3>-445 -35 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>162</int>
+			<vec3>-439 -95 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/indie_ball_falling.unit</string>
+				<string name="SceneName">falling</string>
+			</dict>
+			<array><int>163</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>163</int>
+			<vec3>-439 -95 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>AddScreenShake</string>
+			<int>164</int>
+			<vec3>-96 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>small</string>
+			<dict>
+				<float name="DurationTo">1</float>
+				<int name="Time">1200</int>
+				<float name="Amount">0.33</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>165</int>
+			<vec3>-96 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<array><int>13</int><int>30000</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

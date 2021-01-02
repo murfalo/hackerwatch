@@ -1,0 +1,62 @@
+<unit slot="doodad" >
+	<scenes default="default" cracked="cracked" destroyed="destroyed">
+		<scene name="default">
+			<minimap_sprite origin="0 32" texture="gui/minimap.png" frame="8 182 32 32" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -8 128 8</rect>
+				<rect shoot-through="true" aim-through="true">0 -128 128 8</rect>
+			</collision>
+			<sprite layer="-40" origin="0 136" texture="./arch.png" material="system/default.mats:floor">
+				<frame>0 0 128 256</frame>
+			</sprite>	
+			<sprite layer="10" origin="0 16" texture="./arch.png" material="system/default.mats:default-noxray">
+				<frame>128 776 128 16</frame>
+			</sprite>	
+		</scene>
+		<scene name="cracked">
+			<minimap_sprite origin="0 32" texture="gui/minimap.png" frame="8 182 32 32" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">16 -128 96 128</rect>
+				<rect shoot-through="true" aim-through="true">0 -8 128 8</rect>
+				<rect shoot-through="true" aim-through="true">0 -128 128 8</rect>
+			</collision>
+			<sprite layer="-29" origin="0 120" texture="./arch.png" material="system/default.mats:floor">
+				<frame>128 792 128 104</frame>
+			</sprite>
+			<sprite layer="-40" origin="0 136" texture="./arch.png" material="system/default.mats:floor">
+				<frame>0 0 128 256</frame>
+			</sprite>	
+			<sprite layer="10" origin="0 16" texture="./arch.png" material="system/default.mats:default-noxray">
+				<frame>128 776 128 16</frame>
+			</sprite>	
+		</scene>
+		<scene name="destroyed" trigger-snd="event:/misc/bridge_collapse">
+			<minimap_sprite origin="0 32" texture="gui/minimap.png" frame="40 182 32 32" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">16 -128 96 128</rect>
+				<rect shoot-through="true" aim-through="true">0 -8 128 8</rect>
+				<rect shoot-through="true" aim-through="true">0 -128 128 8</rect>
+			</collision>
+			<effect delay="100" layer="11" src="./arch_destroyed_smoke_h.effect"/>
+			<sprite looping="false" layer="-39" origin="0 136" texture="./arch.png" material="system/default.mats:default">
+				<frame time="100" >128 0 128 256</frame>
+				<frame time="100" >256 0 128 256</frame>
+				<frame time="100" >384 0 128 256</frame>
+				<frame time="100" >0 256 128 256</frame>
+				<frame time="100" >128 256 128 256</frame>
+				<frame time="100" >256 256 128 256</frame>
+				<frame time="100" >384 256 128 256</frame>
+				<frame time="100" >0 512 128 232</frame>
+<!-- 				<frame time="100" >128 512 128 256</frame>
+				<frame time="100" >256 512 128 256</frame>
+				<frame time="100" >384 512 128 256</frame> -->
+			</sprite>		
+			<sprite layer="0" origin="0 16" texture="./arch.png" material="system/default.mats:default-noxray">
+				<frame>128 776 32 16</frame>
+			</sprite>
+			<sprite layer="0" origin="-96 16" texture="./arch.png" material="system/default.mats:default-noxray">
+				<frame>128 776 32 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

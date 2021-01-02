@@ -1,0 +1,38 @@
+<unit>
+	<behavior class="BombBehavior">
+		<!-- <string name="explode-sound">event:/player/ranger/bomb_explode</string> -->
+		
+		<int name="delay-random">0</int>
+		<int name="delay">1000</int>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/bosses/wraith/wraith_staff_area_scythe.effect</string>
+				
+				<int name="radius">30</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/bosses/wraith/wraith_scythe_area_danger.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">
+			<effect src="actors/bosses/wraith/area_indicator_64.effect" />
+		</scene>
+	</scenes>
+</unit>

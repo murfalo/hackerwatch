@@ -1,0 +1,20 @@
+<effect looping="true">
+
+	<sprite looping="true" origin="4 4" texture="./mummy_khopesh.png" material="system/default.mats:shadow"
+		angle="(t+l)*pi"
+		pos-x="0"
+		pos-y="0"
+		>
+		
+		<frame time="150">4 4 8 8</frame>	
+	</sprite>
+	
+	<sprite looping="true" origin="4 4" texture="./mummy_khopesh.png" material="system/default.mats:projectile"
+		angle="(t+l)*pi"
+		pos-x="0"
+		pos-y="-4"
+		>
+		<frame time="150">4 4 8 8</frame>
+	</sprite>
+	
+</effect>

@@ -1,0 +1,160 @@
+<gui>
+	<sprites>
+		<sprite name="backdrop" texture="gui/shop.png"><frame>0 53 396 205</frame></sprite>
+
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+		<sprite name="frame-diff" texture="gui/shop.png"><frame>352 0 36 36</frame></sprite>
+		<sprite name="frame-portrait" texture="gui/shop.png"><frame>313 20 28 28</frame></sprite>
+		<sprite name="portrait-house" texture="gui/icons_faces.png"><frame>0 232 24 24</frame></sprite>
+
+		<sprite name="deck-house" texture="gui/cards.png"><frame>90 429 47 83</frame></sprite>
+		<sprite name="deck-player" texture="gui/cards.png"><frame>137 429 47 83</frame></sprite>
+		<sprite name="deck-shadow" texture="gui/cards.png"><frame>184 429 53 83</frame></sprite>
+
+		<sprite name="card-back-house" texture="gui/cards.png"><frame>45 444 45 68</frame></sprite>
+		<sprite name="card-back-player" texture="gui/cards.png"><frame>0 444 45 68</frame></sprite>
+		<sprite name="card-joker" texture="gui/cards.png"><frame>0 376 45 68</frame></sprite>
+		<sprite name="card-shadow" texture="gui/cards.png"><frame>45 376 45 68</frame></sprite>
+
+		<sprite name="darkness-square" texture="gui/shop.png"><frame>163 258 128 128</frame></sprite>
+		<sprite name="darkness" texture="gui/darkness.png"><frame>0 0 128 128</frame></sprite>
+
+		<sprite name="blueprint-scroll" texture="gui/shop.png"><frame>96 286 23 22</frame></sprite>
+
+		<sprite name="dye-bucket-c1" texture="items/dye_bucket.tif"><frame>0 0 24 24</frame></sprite>
+		<sprite name="dye-bucket-c2" texture="items/dye_bucket.tif"><frame>24 0 24 24</frame></sprite>
+		<sprite name="dye-bucket-u1" texture="items/dye_bucket.tif"><frame>48 0 24 24</frame></sprite>
+		<sprite name="dye-bucket-u2" texture="items/dye_bucket.tif"><frame>72 0 24 24</frame></sprite>
+		<sprite name="dye-bucket-r1" texture="items/dye_bucket.tif"><frame>96 0 24 24</frame></sprite>
+		<sprite name="dye-bucket-r2" texture="items/dye_bucket.tif"><frame>0 24 24 24</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scalablebutton_check_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="400" height="230" spriteset="gui/variable/bigwindow_borders.sval" anchor="0.5 0.5">
+				<!-- Header -->
+				<rect width="396" height="18" offset="2 2" flow="hbox">
+					<rect width="375" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".town.cardgame.title" anchor="0.5 0.5" />
+					</rect>
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<spritebutton spriteset="close" func="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="396" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Backdrop -->
+				<sprite src="backdrop" offset="2 23" />
+
+				<!-- Limits -->
+				<rect width="81" height="205" offset="2 23">
+					<!-- Left border -->
+					<rect width="3" height="205" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Top border -->
+					<rect width="75" height="3" offset="3 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Right border -->
+					<rect width="3" height="205" offset="78 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Set your limits -->
+					<rect width="75" height="40" offset="3 3" spriteset="gui/variable/headline_borders.sval">
+						<text font="gui/fonts/arial11.fnt" width="71" align="center" text=".town.cardgame.setyourlimits" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="75" height="3" offset="3 43" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Limits -->
+					<rect width="75" height="156" offset="3 46">
+						<checkboxgroup id="limits-list" flow="vbox" func="set-limit" />
+						<scalebutton id="limits-template" visible="false" spriteset="check" width="75" font="gui/fonts/arial11.fnt" />
+					</rect>
+
+					<!-- Bottom border -->
+					<rect width="75" height="3" offset="3 202" spriteset="gui/variable/3pxbar_hor.sval" />
+				</rect>
+
+				<!-- Playing field -->
+				<rect width="315" height="205" offset="83 23">
+					<!-- Player deck -->
+					<sprite id="card-player-animator-behind" pixel-perfect="false" visible="false" src="card-back-player" offset="23 70" />
+					<sprite src="deck-shadow" offset="23 55" />
+					<sprite id="card-player-deck" src="deck-player" offset="23 55" />
+					<sprite id="card-player-animator-shadow" pixel-perfect="false" src="card-shadow" visible="false" offset="23 70" />
+					<sprite id="card-player-animator" pixel-perfect="false" visible="false" src="card-back-player" offset="23 70" />
+					<sprite id="card-player" visible="false" offset="81 70" />
+
+					<!-- Difference -->
+					<sprite src="frame-diff" anchor="0.5 0.5">
+						<text id="diff" visible="false" anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" />
+					</sprite>
+
+					<!-- House deck -->
+					<sprite id="card-house-animator-behind" pixel-perfect="false" visible="false" src="card-back-house" offset="23 70" />
+					<sprite src="deck-shadow" offset="244 55" />
+					<sprite id="card-house-deck" src="deck-house" offset="244 55" />
+					<sprite id="card-house-animator-shadow" pixel-perfect="false" src="card-shadow" visible="false" offset="23 70" />
+					<sprite id="card-house-animator" pixel-perfect="false" visible="false" src="card-back-house" offset="23 70" />
+					<sprite id="card-house" visible="false" offset="186 70" />
+
+					<!-- You win! -->
+					<text id="status" visible="false" color="#FF0000FF" font="gui/fonts/code2003_20_bold.fnt" anchor="0.5 0" offset="0 8" />
+
+					<!-- X (X) vs Y (Y) -->
+					<text id="status-battle" font="gui/fonts/arial11.fnt" visible="false" anchor="0.5 0" offset="0 30" />
+
+					<!-- Your X became Y -->
+					<group id="substatus" smooth="false" visible="false" inner="true" offset="0 48" anchor="0.5 0" flow="hbox" spacing="2">
+						<text smooth="false" id="your-x" font="gui/fonts/arial11.fnt" offset="0 -3" />
+						<sprite smooth="false" src="icon-gold" />
+						<text smooth="false" id="became-y" font="gui/fonts/arial11.fnt" offset="0 -3" />
+						<sprite smooth="false" src="icon-gold" />
+					</group>
+
+					<!-- You win a prize -->
+					<text id="prize-text" visible="false" font="gui/fonts/arial11.fnt" text=".town.cardgame.prize" anchor="0.5 0.64" />
+					<sprite id="prize-frame" visible="false" src="frame-portrait" anchor="0.5 0.79">
+						<rect id="prize-background" width="24" height="24" offset="2 2" visible="false" shadow="#000000af" shadowsize="2" />
+						<rect id="prize-blueprint" visible="false" offset="2 2" width="24" height="24" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<sprite src="blueprint-scroll" anchor="0.5 0.5" offset="1 1" />
+						</rect>
+						<sprite id="prize-icon" visible="false" anchor="0.5 0.5" />
+						<dyesprite id="prize-icon-dye" visible="false" anchor="0.5 0.5" />
+					</sprite>
+
+					<!-- Player portrait -->
+					<sprite src="frame-portrait" offset="40 159">
+						<text font="gui/fonts/arial11.fnt" text=".gambling.you" anchor="0.5 0" offset="1 -15" />
+						<dyesprite id="portrait" offset="2 2" />
+					</sprite>
+
+					<!-- House portrait -->
+					<sprite src="frame-portrait" offset="247 159">
+						<text font="gui/fonts/arial11.fnt" text=".gambling.house" anchor="0.5 0" offset="1 -15" />
+						<sprite src="portrait-house" offset="2 2" />
+					</sprite>
+
+					<!-- Flip cards -->
+					<scalebutton id="flip" spriteset="scalebutton" width="116" font="gui/fonts/arial11.fnt" anchor="0.5 0.9" offset="0 3" text=".town.cardgame.flipcards" func="play" />
+
+					<!-- Darkness -->
+					<rect id="darkness" width="315" height="205" visible="false" smooth="false">
+						<clip width="315" height="205">
+							<rect id="darkness-move" width="128" height="128" border="#000000df" borderwidth="256" bordertype="outer">
+								<sprite src="darkness" color="#ffffffdf" anchor="0.5 0.5" />
+							</rect>
+						</clip>
+					</rect>
+
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

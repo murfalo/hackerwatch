@@ -1,0 +1,96 @@
+<dict>
+	<string name="name">.skills.witch_hunter.fanatic-zeal</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 192 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerCrits</string>
+
+				<int name="max-count">4</int>
+				<int name="expire-time">4000</int>
+				<float name="crit-chance">0.025</float>
+
+				<array name="hud-icon">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 60 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerCrits</string>
+
+				<int name="max-count">5</int>
+				<int name="expire-time">5000</int>
+				<float name="crit-chance">0.025</float>
+
+				<array name="hud-icon">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 60 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerCrits</string>
+
+				<int name="max-count">6</int>
+				<int name="expire-time">6000</int>
+				<float name="crit-chance">0.025</float>
+
+				<array name="hud-icon">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 60 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerCrits</string>
+
+				<int name="max-count">7</int>
+				<int name="expire-time">7000</int>
+				<float name="crit-chance">0.025</float>
+
+				<array name="hud-icon">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 60 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerCrits</string>
+
+				<int name="max-count">8</int>
+				<int name="expire-time">8000</int>
+				<float name="crit-chance">0.025</float>
+
+				<array name="hud-icon">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 60 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>

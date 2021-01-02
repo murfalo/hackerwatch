@@ -1,0 +1,63 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			<sprite origin="6 16" texture="./_deco.png" material="system/default.mats:proj-wall-noxray">
+				<frame>0 25 12 12</frame>
+			</sprite>
+		</scene>
+		<scene name="on">
+			<scene src="shared"/>
+			%if EDITOR 
+			<sprite origin="4 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 8 32</frame>
+			</sprite>
+			%endif
+			<effect ulayer="2" pos="0 -10" src="./_deco_lamp_flare.effect" />
+			<light pos="0 -10">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="150" />
+				</sizes>
+				<colors>
+					<color value="150 100 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -10">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="25" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="16" />
+				</sizes>
+				<colors>
+					<color value="150 100 0 0" />
+				</colors>
+			</light>			
+		</scene>
+		
+		<scene name="off">
+			<scene src="shared"/>
+			%if EDITOR 
+			<sprite origin="4 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 8 32</frame>
+			</sprite>
+			%endif
+		</scene>		
+	</scenes>
+</unit>

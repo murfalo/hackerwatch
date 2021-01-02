@@ -1,0 +1,119 @@
+<effect looping="false" layer="-1">
+	<param name="radius" default="48" />
+	<!-- particles -->
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="radius * radius / 50"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -10 * it"
+		
+        color-r="0"
+        color-g="1.0 - mod(it+l+rand(u*i), 1)"
+        color-b="0.5 - mod(it+l+rand(u*i), 0.5)"
+		color-a="max(1-t*t,0)"
+	>
+        <frame time="405">0 0 0 0</frame>
+        <frame time="600">0 0 1 1</frame>
+	</sprite>
+
+	<!-- rings -->
+	<sprite origin="48 48" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:bright"
+	
+	
+	color-b="max(1-t*t,0)"
+	color-a="sin(t*pi)"
+	>
+		<frame time="810">480 256 96 96</frame>
+	</sprite>
+	
+	<!-- <sprite origin="48 48" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:glow" -->
+	
+	<!-- > -->
+		<!-- <frame time="245">0 0 0 0</frame> -->
+		<!-- <frame time="80">96 256 96 96</frame> -->
+		<!-- <frame time="80">192 256 96 96</frame> -->
+		<!-- <frame time="80">288 256 96 96</frame> -->
+		<!-- <frame time="80">384 256 96 96</frame> -->
+	<!-- </sprite> -->
+	
+	<sprite origin="48 48" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:bright"
+	
+	pos-y="10-(20 * t)"
+	color-a="max(1-t*t,0)"
+	>
+		<frame time="405">0 0 0 0</frame>
+		<frame time="405">480 256 96 96</frame>
+	</sprite>
+	<sprite origin="48 48" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:bright"
+	
+	pos-y="20-(40 * t)"
+	color-a="max(1-t*t,0)"
+	>
+		<frame time="405">0 0 0 0</frame>
+		<frame time="405">480 256 96 96</frame>
+	</sprite>
+	
+	<!-- symbol -->
+	<sprite origin="32 32" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:bright"
+	
+	color-a="max(1-t*t,0)"
+	>
+		<frame time="710">0 128 64 64</frame>
+		<frame time="100">256 128 64 64</frame>
+	</sprite>
+	
+	<sprite origin="32 32" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:bright"
+	
+	pos-y="-10+(10 * t)"
+	
+	color-a="max(0.75-t*t,0)"
+	>
+		<frame time="200">0 128 64 64</frame>
+	</sprite>
+	
+		
+	<sprite origin="32 32" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:bright"
+	
+	pos-y="-20+(20 * t)"
+	
+	color-a="max(0.75-t*t,0)"
+	
+	>
+		<frame time="200">0 128 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" looping="false" texture="effects/players/player_effects_new.png" material="system/default.mats:bright"
+	
+	pos-y="-30+(30 * t)"
+	
+	color-a="max(0.75-t*t,0)"
+	
+	>
+		<frame time="200">0 128 64 64</frame>
+	</sprite>
+	
+	<light pos-y="5"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="t *180" />
+		
+		<color-r value="1" />
+		<color-g value="2" />
+		<color-b value="1" />
+		<color-a value="0/255" />
+	</light>
+</effect>

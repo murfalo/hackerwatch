@@ -1,0 +1,54 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="4 8" texture="./sphere_of_heroes_attack.png" material="effects/effects.mats:fire"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-a="1"
+		angle="angle">
+		
+		<frame time="100">0 0 9 15</frame>
+	</sprite>
+	<sprite looping="true" origin="4 8" texture="./sphere_of_heroes_attack.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-a="0.5"
+		angle="angle">
+		
+		<frame time="100">0 0 9 15</frame>
+		<frame time="100">9 0 9 15</frame>
+		<frame time="100">18 0 9 15</frame>
+		<frame time="100">27 0 9 15</frame>
+	</sprite>
+	
+<!-- 	<sprite looping="true" origin="0 1" texture="./sphere_of_heroes_attack.png" material="system/default.mats:player-projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="1+saturate(sin(t))"
+		color-g="saturate(sin(t))"
+		color-b="saturate(sin(t))"
+		color-a="1"
+		angle="angle">
+		
+		<frame time="100">0 0 9 15</frame>
+		<frame time="100">9 0 9 15</frame>
+		<frame time="100">18 0 9 15</frame>
+		<frame time="100">27 0 9 15</frame>
+	</sprite> -->
+	
+	<!-- <sprite looping="true" origin="0 1" texture="./sphere_of_heroes_attack.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 9 15</frame>
+	</sprite>	 -->
+	
+</effect>

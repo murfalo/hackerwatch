@@ -1,0 +1,30 @@
+<effect looping="false" layer="0">
+
+	<param name="angle" default="0" />
+
+%//three spikes
+	<variation>	
+		<sprite origin="7 13" ulayer="0" texture="actors/projectiles/tower_groundspikes.png" material="system/default.mats:projectile"
+			pos-x="cos(angle+pi/2)*(rand(u)*6-3)"
+			pos-y="sin(angle+pi/2)*(rand(u)*6-3)"
+			angle="angle"
+		>
+		<!-- <frame time="40">0 0 16 18</frame>
+		<frame time="40">16 0 16 18</frame>
+		<frame time="40">32 0 16 18</frame>
+		<frame time="40">48 0 16 18</frame>
+		<frame time="40">64 0 16 18</frame> 
+		<frame time="40">80 0 16 18</frame>
+		<frame time="40">96 0 16 18</frame>-->
+		<frame time="120">112 18 16 18</frame>
+		<frame time="40">96 18 16 18</frame>
+		<frame time="40">80 18 16 18</frame> 
+		<frame time="40">64 18 16 18</frame>
+		<frame time="40">48 18 16 18</frame>
+		<frame time="40">32 18 16 18</frame>
+		<frame time="40">16 18 16 18</frame> 
+		<frame time="40">0 18 16 18</frame>
+		</sprite>	
+	</variation>
+
+</effect>

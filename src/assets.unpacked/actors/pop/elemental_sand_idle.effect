@@ -1,0 +1,24 @@
+<effect looping="true" layer="-1" bounds="230 230">
+
+	<sprite looping="true" origin="16 14" texture="./elemental_sand.png" material="system/default.mats:shadow"
+		pos-y="2"
+		angle="sin((t+l)*0.6)*0.1">
+		<frame time="250">0 40 32 27</frame>
+	</sprite>
+	<sprite looping="true" origin="16 14" texture="./elemental_sand.png" material="system/default.mats:shadow"
+		pos-y="2+sin(0.2+(t+l)*1)*1"
+		angle="sin((t+l)*0.2)*0.1">
+		<frame time="250">32 40 32 27</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="16 14" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+		pos-y="-5"
+		angle="sin((t+l)*0.6)*0.1">
+		<frame time="250">0 40 32 27</frame>
+	</sprite>
+	<sprite looping="true" origin="16 14" texture="./elemental_sand.png" material="system/default.mats:default-noxray"
+		pos-y="-5+sin(0.2+(t+l)*1)*1"
+		angle="sin((t+l)*0.2)*0.1">
+		<frame time="250">32 40 32 27</frame>
+	</sprite>
+</effect>

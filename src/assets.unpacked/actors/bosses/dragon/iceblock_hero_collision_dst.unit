@@ -1,0 +1,14 @@
+<unit  slot="doodad">
+	<scenes>
+		<scene>
+			%if EDITOR
+			<sprite layer="4" origin="16 16" texture="doodads/special/editor.png" material="system/default.mats:default">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			%endif
+			<collision static="true">
+				<circle offset="0 0" aim-through="true" radius="6.5" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

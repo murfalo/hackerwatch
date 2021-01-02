@@ -1,0 +1,38 @@
+<unit>
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/player/thief/bomb</string>
+		<int name="delay">0</int>
+		
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">effects/players/smoke_bomb_flash.effect</string>
+				
+				<int name="radius">75</int>
+				<int name="min-radius">75</int>
+				<float name="dist-scaling">1000</float>
+				<float name="team-dmg">0</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">players/buffs.sval:smoke-bomb-1</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">players/thief/smoke_cloud_1.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene>
+
+		</scene>
+	</scenes>
+</unit>

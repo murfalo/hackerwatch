@@ -1,0 +1,44 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">6</float>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>
+		<bool name="penetrate-all">true</bool>
+		
+		<int name="ttl">750</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:darkness</string>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/bat_3.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<bool name="aggro">true</bool>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<sprite origin="6 5" looping="true" texture="actors/bat_3.png" material="system/default.mats:actor">
+				<frame time="250">39 0 13 16</frame>
+				<frame time="250">52 0 13 16</frame>
+				<frame time="250">65 0 13 16</frame>
+				<frame time="250">52 0 13 16</frame>
+			</sprite>
+
+			<collision static="false">
+				<circle projectile="true" radius="3" />
+			</collision>	
+		</scene>
+	</scenes>
+</unit>

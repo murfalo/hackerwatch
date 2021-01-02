@@ -1,0 +1,58 @@
+<gui>
+	<sprites>
+		<sprite name="logo" texture="../main_menu/menu.png"><frame>0 0 298 70</frame></sprite>
+		<sprite name="logo-pop" texture="../main_menu/menu.png"><frame>0 116 214 75</frame></sprite>
+
+		<sprite name="icon-computer" texture="gui/icons.png"><frame>37 112 22 12</frame></sprite>
+		<sprite name="icon-resume" texture="gui/icons.png"><frame>12 88 8 12</frame></sprite>
+		<sprite name="icon-restart" texture="gui/icons.png"><frame>0 88 12 12</frame></sprite>
+		<sprite name="icon-options" texture="gui/icons.png"><frame>37 50 12 12</frame></sprite>
+		<sprite name="icon-quit" texture="gui/icons.png"><frame>0 62 13 12</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<group id="menu">
+				<sprite id="logo" src="logo" offset="0 -70" anchor="0.5 0.5" />
+
+				<rect width="270" height="18" anchor="0.5 0.9" flow="hbox" spacing="4">
+					<scalebutton visible="false" id="players-list" spriteset="scalebutton" width="64" func="options-players">
+						<sprite src="icon-computer" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton spriteset="scalebutton" width="64" func="resume">
+						<sprite src="icon-resume" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton spriteset="scalebutton" width="64" func="restart" tooltip=".menu.restart.tooltip">
+						<sprite src="icon-restart" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton spriteset="scalebutton" width="64" func="options">
+						<sprite src="icon-options" anchor="0.5 0.5" />
+					</scalebutton>
+					<scalebutton spriteset="scalebutton" width="64" func="stop">
+						<sprite src="icon-quit" anchor="0.5 0.5" />
+					</scalebutton>
+				</rect>
+
+				<rect id="popup-restart" visible="false" width="112" height="40" anchor="0.5 0.9" offset="-33 -24" flow="vbox" spacing="4">
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.yes" func="restart-yes" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.no" func="restart-no" />
+				</rect>
+
+				<rect id="popup-options" visible="false" width="112" height="117" anchor="0.5 0.9" offset="33 -21" flow="vbox" spacing="4">
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.game" func="options-gameplay" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.graphics" func="options-graphics" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.sound" func="options-sound" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.o.ctrls" func="options-controls" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.credits" func="options-credits" />
+				</rect>
+
+				<rect id="popup-stop" visible="false" width="112" height="40" anchor="0.5 0.9" offset="100 -24" flow="vbox" spacing="4">
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.yes" func="stop-yes" />
+					<scalebutton spriteset="scalebutton" width="112" font="gui/fonts/arial11.fnt" text=".menu.no" func="stop-no" />
+				</rect>
+			</group>
+		</group>
+	</doc>
+</gui>

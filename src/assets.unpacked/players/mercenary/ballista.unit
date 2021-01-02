@@ -1,0 +1,213 @@
+<unit>
+	<behavior class="PlayerOwnedSummon">
+		<string name="team">player</string>
+		<int name="hp">100</int>
+		<string name="type">construct</string>
+		
+		<!-- <int name="unit-height">22</int> -->
+		<!-- <int name="overhead-bossbar-width">16</int> -->
+		<int name="ttl">12000</int>
+		<float name="block-projectile-chance">0</float>
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+		<string name="evade-fx">effects/players/block_projectile.effect</string>
+		
+		<string name="death-snd">event:/enemy/tower_ballista/death</string>
+		<string name="gore">effects/gibs/gib_company_banner.sval</string>
+		
+		<bool name="targeting">true</bool>
+		<bool name="targetable">false</bool>
+		<bool name="no-buffs">false</bool>
+		<int name="aggro-range">10000</int>
+		<bool name="must-see-target">true</bool>
+		<bool name="shoot-through">true</bool>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_static.inc"
+			<string>players</string>
+			<string>player_debuff</string>
+		</array>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle 8</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<array name="conditional">
+					<string>buff</string><string>has tag</string><string>ballista-manned</string>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				
+				<!-- <string name="offset">attack-pos</string> -->
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">0</int>
+				<int name="castpoint">150</int>
+				<int name="range">150</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<int name="projectiles">3</int>
+						<int name="spread">16</int>
+						<string name="projectile">players/mercenary/ballista_projectile.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<string name="buff">players/buffs_merc.sval:ballista</string>
+				<bool name="friendly">true</bool>
+				<int name="freq">100</int>
+				<int name="range">34</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" radius="0.00001" sensor="true" shoot-through="false" aim-through="true" />
+			</collision>
+		  
+		  <effect src="players/mercenary/ballista_area_indicator.effect"/>
+		 
+		</scene>
+		
+		
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>0 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>24 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>48 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>72 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>96 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>120 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>144 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="true" texture="./ballista.png" material="system/default.mats:ally">
+				<frame>168 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">0 24 24 24</frame>
+				<frame time="100">0 48 24 24</frame>
+				<frame time="300">0 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">24 24 24 24</frame>
+				<frame time="100">24 48 24 24</frame>
+				<frame time="300">24 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">48 24 24 24</frame>
+				<frame time="100">48 48 24 24</frame>
+				<frame time="300">48 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">72 24 24 24</frame>
+				<frame time="100">72 48 24 24</frame>
+				<frame time="300">72 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">96 24 24 24</frame>
+				<frame time="100">96 48 24 24</frame>
+				<frame time="300">96 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">120 24 24 24</frame>
+				<frame time="100">120 48 24 24</frame>
+				<frame time="300">120 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">144 24 24 24</frame>
+				<frame time="100">144 48 24 24</frame>
+				<frame time="300">144 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite origin="12 14" looping="false" texture="./ballista.png" material="system/default.mats:ally">
+				<frame time="150">168 24 24 24</frame>
+				<frame time="100">168 48 24 24</frame>
+				<frame time="300">168 0 24 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

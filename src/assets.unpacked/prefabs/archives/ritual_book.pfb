@@ -1,0 +1,317 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PickedPrefab</string>
+			<int>1</int>
+			<vec3>112 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_blue</string>
+			<dict>
+				<string name="Flag">archives_book_blue</string>
+				<string name="Prefab">prefabs/archives/ritual_book_blue.pfb</string>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>2</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>book</string>
+			<dict>
+				<array name="PickedPrefabs"><int>1</int><int>4</int><int>8</int><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>3</int>
+			<vec3>208 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_blue</string>
+			<dict>
+				<string name="Flag">archives_book_blue</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>4</int>
+			<vec3>112 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_green</string>
+			<dict>
+				<string name="Flag">archives_book_green</string>
+				<string name="Prefab">prefabs/archives/ritual_book_green.pfb</string>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>5</int>
+			<vec3>208 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_green</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">archives_book_green</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>6</int>
+			<vec3>112 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_yellow</string>
+			<dict>
+				<string name="Flag">archives_book_yellow</string>
+				<string name="Prefab">prefabs/archives/ritual_book_yellow.pfb</string>
+			</dict>
+			<array><int>7</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>7</int>
+			<vec3>208 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_yellow</string>
+			<dict>
+				<string name="Flag">archives_book_yellow</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>8</int>
+			<vec3>112 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_red</string>
+			<dict>
+				<string name="Flag">archives_book_red</string>
+				<string name="Prefab">prefabs/archives/ritual_book_red.pfb</string>
+			</dict>
+			<array><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>9</int>
+			<vec3>208 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_red</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">archives_book_red</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>10</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>start</string>
+			<array>
+				<int>11</int>
+				<int>0</int>
+				<int>12</int>
+				<int>0</int>
+				<int>13</int>
+				<int>0</int>
+				<int>14</int>
+				<int>0</int>
+				<int>24</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>11</int>
+			<vec3>-176 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_blue</string>
+			<dict>
+				<string name="Flag">archives_book_blue</string>
+				<array name="OnTrue"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>12</int>
+			<vec3>-80 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_green</string>
+			<dict>
+				<string name="Flag">archives_book_green</string>
+				<array name="OnTrue"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>13</int>
+			<vec3>80 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_red</string>
+			<dict>
+				<string name="Flag">archives_book_red</string>
+				<array name="OnTrue"><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>14</int>
+			<vec3>176 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_book_yellow</string>
+			<dict>
+				<string name="Flag">archives_book_yellow</string>
+				<array name="OnTrue"><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>176 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>6</int></array>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>16</int>
+			<vec3>-176 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>18</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>17</int>
+			<vec3>0 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>18</int></array>
+				<array name="OnFalse"><int>2</int></array>
+				<array name="OnTrue"><int>28</int></array>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>18</int><vec3>-96 -56 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>books</string></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>19</int>
+			<vec3>80 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>8</int></array>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>20</int>
+			<vec3>-80 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>4</int></array>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>21</int>
+			<vec3>-176 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>1</int></array>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>24</int>
+			<vec3>0 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>28</int>
+			<vec3>-64 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>no_books</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">no_books</string>
+			</dict>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>22</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Prefab">prefabs/archives/2x2_special.pfb</string>
+			</dict>
+		</array>
+	</array>
+</dict>

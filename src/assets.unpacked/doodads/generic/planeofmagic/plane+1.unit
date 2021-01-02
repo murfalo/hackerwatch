@@ -1,0 +1,21 @@
+<unit slot="doodad" layer="10">
+	<scenes on="on" off="off">
+		<scene name="on">
+			<effect src="./plane+1.effect" />
+			%if EDITOR
+			<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			<text layer="5" origin="0 0" font="system/system.fnt" text="on\n+1" align="center" material="system/default.mats:bright"/>						
+			%endif
+		</scene>	
+		<scene name="off">
+			%if EDITOR
+			<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			<text layer="5" origin="0 0" font="system/system.fnt" text="+1" align="center" material="system/default.mats:bright"/>									
+			%endif
+		</scene>
+	</scenes>
+</unit>

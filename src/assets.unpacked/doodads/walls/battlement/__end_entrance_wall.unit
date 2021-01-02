@@ -1,0 +1,23 @@
+<unit slot="doodad" layer="-10">
+	<scenes>
+		<scene>
+		
+		<!-- Room -->
+		 	<sprite origin="0 32" layer="10" texture="./__end_entrance.png" material="system/default.mats:wall">
+				<frame>0 120 48 40</frame>
+			</sprite>
+
+		 	<sprite origin="40 32" layer="10" texture="./__end_entrance.png" material="system/default.mats:wall">
+				<frame>0 0 40 40</frame>
+			</sprite>	
+		 	<sprite origin="-48 32" layer="10" texture="./__end_entrance.png" material="system/default.mats:wall">
+				<frame>88 0 40 40</frame>
+			</sprite>					
+		
+			<collision static="true">
+				<rect shoot-through="true">-10 0 25 8</rect>
+				<rect shoot-through="true">33 0 25 8</rect>
+			</collision>	
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,422 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">Town</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/archives_1.env</string>
+	</dict>
+	<dict name="units">
+		<array name="system/light_L.png">
+			<array>
+				<vec2>-136 -80</vec2>
+				<int>3</int>
+				<dict>
+					<int name="cast-shadows">0</int>
+					<float name="size">2000</float>
+					<vec4 name="color">1 1 1 0</vec4>
+					<bool name="overlay">f</bool>
+					<float name="overbright">0.3</float>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>TimerTrigger</string>
+			<int>4</int>
+			<vec3>-32 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>6min</string>
+			<dict>
+				<int name="Frequency">360000</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>5</int>
+			<vec3>0 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnVampire</string>
+			<array><int>8</int><int>0</int><int>9</int><int>0</int><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>6</int>
+			<vec3>256 -448 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>More</string>
+			<array><int>23</int><int>150000</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>7</int>
+			<vec3>-224 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>14</int><int>0</int><int>33</int><int>0</int><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>8</int>
+			<vec3>64 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.threatspawned</string>
+				<float name="AnchorY">0.2</float>
+				<int name="FadeTime">500</int>
+				<int name="Time">2000</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>9</int>
+			<vec3>64 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ThreatSFX</string>
+			<dict>
+				<string name="Sound">event:/ui/greath_threat</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>-32 -128 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>11</int>
+			<vec3>224 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1.5min</string>
+			<dict>
+				<int name="Frequency">90000</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>12</int>
+			<vec3>288 -128 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>13</int>
+			<vec3>0 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10min</string>
+			<array><int>19</int><int>0</int><int>10</int><int>0</int><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>14</int>
+			<vec3>-224 -448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Normal</string>
+			<array><int>31</int><int>300000</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>15</int>
+			<vec3>32 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>lvl_0</string>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnFalse"><int>24</int></array>
+				<array name="OnTrue"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>16</int>
+			<vec3>288 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2min</string>
+			<dict>
+				<int name="Frequency">120000</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>17</int>
+			<vec3>32 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>19</int><int>20</int><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>18</int>
+			<vec3>-192 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4min</string>
+			<dict>
+				<int name="Frequency">240000</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>19</int>
+			<vec3>32 -128 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>20</int>
+			<vec3>-192 -128 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>21</int>
+			<vec3>32 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8min</string>
+			<dict>
+				<int name="Frequency">480000</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>22</int>
+			<vec3>-32 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>10</int><int>26</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>23</int>
+			<vec3>256 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2.5min</string>
+			<array><int>12</int><int>0</int><int>30</int><int>0</int><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>24</int>
+			<vec3>-32 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_1</string>
+			<dict>
+				<string name="Flag">lvl_1</string>
+				<array name="OnTrue"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>25</int>
+			<vec3>64 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_threat_more</string>
+			<dict>
+				<string name="Flag">fountain_threat_more</string>
+				<array name="OnTrue"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>26</int>
+			<vec3>-256 -128 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>27</int>
+			<vec3>-256 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3min</string>
+			<dict>
+				<int name="Frequency">180000</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>28</int>
+			<vec3>-96 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>33</int><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>29</int>
+			<vec3>-64 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_threat_more</string>
+			<dict>
+				<string name="Flag">fountain_threat_more</string>
+				<array name="OnFalse"><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>30</int>
+			<vec3>224 -128 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>31</int>
+			<vec3>-224 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5min</string>
+			<array><int>20</int><int>0</int><int>26</int><int>0</int><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>32</int>
+			<vec3>0 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_threat_less</string>
+			<dict>
+				<string name="Flag">fountain_threat_less</string>
+				<array name="OnTrue"><int>29</int></array>
+				<array name="OnFalse"><int>25</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>33</int>
+			<vec3>0 -448 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Less</string>
+			<array><int>13</int><int>600000</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>34</int>
+			<vec3>0 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>TimedBasedSpawn</string>
+			<array><int>32</int><int>0</int><int>7</int><int>0</int><int>37</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>35</int>
+			<vec3>128 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>6</int><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>36</int>
+			<vec3>0 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_vampire</string>
+			<dict>
+				<string name="EventName">spawn_vampire</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>37</int>
+			<vec3>96 -672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>TEST</string>
+			<array><int>5</int><int>5000</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

@@ -1,0 +1,19 @@
+<effect looping="false">
+
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	
+		<sprite looping="false" origin="6 15" texture="effects/animations/impact_metal.png" 
+		material="system/default.mats:default-noxray"
+		>
+			<frame time="50">0 0 13 14</frame>			
+			<frame time="50">14 0 13 14</frame>			
+			<frame time="50">28 0 13 14</frame>			
+			<frame time="50">41 0 13 14</frame>			
+			<frame time="50">54 0 13 14</frame>			
+		</sprite>
+</effect>
+
+
+<!-- angle="rand(u)*pi" -->

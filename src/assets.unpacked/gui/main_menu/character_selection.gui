@@ -1,0 +1,137 @@
+<gui>
+	<sprites>
+		<sprite name="box" texture="gui/playermenu.png"><frame>337 2 28 28</frame></sprite>
+		<sprite name="box-wide" texture="gui/playermenu.png"><frame>367 0 44 28</frame></sprite>
+		<sprite name="buttoncontainer" texture="gui/main_menu/character_selection.png"><frame>0 0 73 28</frame></sprite>
+
+		<sprite name="smallbutton" texture="gui/widget.png"><frame>78 210 19 18</frame></sprite>
+		<sprite name="smallbutton-hover" texture="gui/widget.png"><frame>97 210 19 18</frame></sprite>
+		<sprite name="smallbutton-down" texture="gui/widget.png"><frame>78 228 19 18</frame></sprite>
+		<sprite name="smallbutton-disabled" texture="gui/widget.png"><frame>97 228 19 18</frame></sprite>
+
+		<sprite name="icon-play" texture="gui/icons.png"><frame>0 76 11 12</frame></sprite>
+		<sprite name="icon-delete" texture="gui/icons.png"><frame>22 76 9 12</frame></sprite>
+		<sprite name="icon-guy" texture="gui/icons.png"><frame>0 50 8 12</frame></sprite>
+
+		<sprite name="char-shadow" texture="gui/widget.png"><frame>99 118 12 12</frame></sprite>
+
+		<sprite name="merc-small-left" texture="gui/widget.png"><frame>378 24 7 24</frame></sprite>
+		<sprite name="merc-small-right" texture="gui/widget.png"><frame>385 24 6 24</frame></sprite>
+
+		<sprite name="merc-left" texture="gui/widget.png"><frame>211 72 14 24</frame></sprite>
+		<sprite name="merc-right" texture="gui/widget.png"><frame>225 72 13 24</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect width="400" height="204" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="396" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="375" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mainmenu.character.select.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect offset="2 20" width="396" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Template -->
+				<checkbox candoubleclick="true" spriteset="gui/variable/button36_check_hor.sval" id="template" disabled-tooltip="true" content-width="382" content-height="36" visible="false">
+					<!-- Unit preview -->
+					<sprite src="box" offset="4 4">
+						<sprite src="char-shadow" offset="8 12" />
+						<unit id="unit" width="18" height="18" anchor="0.6 0.8" />
+						<sprite id="unknown-class" visible="false" src="icon-guy" offset="10 8" />
+
+						<!-- Merc frame -->
+						<group id="merc-frame-unit" visible="false">
+							<sprite src="merc-small-left" offset="2 2" />
+							<sprite src="merc-small-right" anchor="1 0" offset="-2 2" />
+						</group>
+					</sprite>
+
+					<!-- Portrait -->
+					<portrait id="portrait" offset="32 4" />
+
+					<!-- Level -->
+					<sprite src="box-wide" offset="60 4">
+						<text id="level" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" offset="1 0" />
+
+						<!-- Merc frame -->
+						<group id="merc-frame-level" visible="false">
+							<sprite src="merc-left" offset="2 2" />
+							<sprite src="merc-right" anchor="1 0" offset="-2 2" />
+						</group>
+					</sprite>
+
+					<rect width="3" height="28" offset="104 4" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Name -->
+					<rect width="271" height="28" offset="107 4" spriteset="gui/variable/block_borders.sval">
+						<text id="name" font="gui/fonts/arial11.fnt" text="Bob the Ranger" anchor="0.5 0.5" />
+
+						<!-- Merc frame -->
+						<group id="merc-frame-name" visible="false">
+							<sprite src="merc-left" offset="2 2" />
+							<sprite src="merc-right" anchor="1 0" offset="-2 2" />
+						</group>
+					</rect>
+
+					<!-- Separator -->
+					<rect width="382" height="3" offset="0 36" spriteset="gui/variable/3pxbar_hor.sval" />
+				</checkbox>
+
+				<!-- List container -->
+				<rect offset="2 23" width="396" height="158" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- List -->
+					<checkboxgroup id="list" flow="vbox" spacing="3" func="char-changed" func-double="play" dynamic-size="false" width="382" height="158" autoscroll="true" clipping="true" />
+
+					<!-- Scrollbar -->
+					<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+					<!-- Separators -->
+					<rect width="3" height="158" offset="382 0" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect width="3" height="158" offset="393 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				</rect>
+
+				<!-- Bottom bar -->
+				<rect offset="2 181" width="396" height="21">
+					<!-- Separator -->
+					<rect width="396" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Bar -->
+					<rect offset="0 3" width="396" height="18" flow="hbox">
+						<rect width="69" height="18" spriteset="gui/variable/headline_borders.sval" />
+
+						<!-- New character button -->
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+						<scalebutton spriteset="scalebutton" func="new" font="gui/fonts/arial11.fnt" text=".mainmenu.character.select.new" width="132" />
+
+						<!-- Play button -->
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+						<scalebutton id="playbutton" spriteset="scalebutton" func="play" font="gui/fonts/arial11.fnt" text=".mainmenu.character.select.play" width="102" />
+
+						<!-- Delete button -->
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+						<spritebutton spriteset="smallbutton" func="delete">
+							<sprite src="icon-delete" anchor="0.5 0.5" />
+						</spritebutton>
+
+						<rect width="65" height="18" spriteset="gui/variable/headline_borders.sval" />
+					</rect>
+				</rect>
+			</rect>
+		</group></group>
+	</doc>
+</gui>

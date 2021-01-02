@@ -1,0 +1,322 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.snake_3</string>
+		<string name="beastiary-scene">attack-3</string>
+		<vec2 name="beastiary-offset">-2 5</vec2>
+		<string name="quality">uncommon</string>
+		
+		<string name="dlc">pop</string>		
+		
+		<string name="type">beast</string>
+		<int name="hp">120</int>
+		<int name="armor">25</int>
+		<int name="resistance">15</int>
+		<int name="experience-reward">65</int>
+		<float name="mp-scale-fact">0.2</float>
+		
+		<int name="unit-height">14</int>
+		
+		<string name="death-snd">event:/enemy/snake/death</string>
+		<string name="gore">effects/gibs/gib_snake_3.sval</string>
+		<string name="loot">actors/loot.sval:snake</string>
+
+		<int name="aggro-range">150</int>
+		
+		<array name="buffs-immune-tags">
+			<string>respawn_ghost</string>
+			<string>poison</string>
+			<string>quicksand</string>
+			<string>web</string>
+		</array>
+		
+		<dict name="movement">
+			<string name="class">CirclingMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			
+			<float name="speed">2.4</float>
+			<int name="dist">64</int>
+			<float name="roaming">0.75</float>
+		</dict>
+		
+		<array name="skills">
+			%// Normal
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="snd">event:/enemy/snake/spit</string>
+				
+				<int name="cooldown">500</int>
+				<int name="castpoint">500</int>
+				<int name="range">90</int>
+				<bool name="good-aim">false</bool>
+				<string name="offset">shoot-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/projectiles/snake_3.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+			
+				<string name="class">CompositeActorBurstSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="snd">event:/enemy/snake/spit</string>
+				<int name="burst">2</int>
+				
+				<int name="cooldown">500</int>
+				<int name="castpoint">500</int>
+				<int name="range">90</int>
+				<bool name="good-aim">false</bool>
+				<string name="offset">shoot-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="spread">10</int>
+						<string name="projectile">actors/pop/projectiles/snake_3.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<collision static="false">
+				<circle offset="0 0" radius="7" sensor="false" aim-through="true" charge-through="true"/>
+				<circle offset="0 0" radius="10" sensor="true" shoot-through="false" aim-through="true" charge-through="true"/>
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">0 0 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">32 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">64 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">96 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">128 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">160 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">192 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="30">224 0 32 32</frame>
+			</sprite>
+		</scene>
+
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">0 0 32 32</frame>
+				<frame time="80">0 32 32 32</frame>
+				<frame time="80">0 64 32 32</frame>
+				<frame time="80">0 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">32 0 32 32</frame>
+				<frame time="80">32 32 32 32</frame>
+				<frame time="80">32 64 32 32</frame>
+				<frame time="80">32 96 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">64 0 32 32</frame>
+				<frame time="80">64 32 32 32</frame>
+				<frame time="80">64 64 32 32</frame>
+				<frame time="80">64 96 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">96 0 32 32</frame>
+				<frame time="80">96 32 32 32</frame>
+				<frame time="80">96 64 32 32</frame>
+				<frame time="80">96 96 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">128 0 32 32</frame>
+				<frame time="80">128 32 32 32</frame>
+				<frame time="80">128 64 32 32</frame>
+				<frame time="80">128 96 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">160 0 32 32</frame>
+				<frame time="80">160 32 32 32</frame>
+				<frame time="80">160 64 32 32</frame>
+				<frame time="80">160 96 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">192 0 32 32</frame>
+				<frame time="80">192 32 32 32</frame>
+				<frame time="80">192 64 32 32</frame>
+				<frame time="80">192 96 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="80">224 0 32 32</frame>
+				<frame time="80">224 32 32 32</frame>
+				<frame time="80">224 64 32 32</frame>
+				<frame time="80">224 96 32 32</frame>
+			</sprite>
+		</scene>
+		
+		
+		
+		
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="8 -5"/>
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="200">0 128 32 32</frame>
+				<frame time="250">0 160 32 32</frame>
+				<frame time="350">0 192 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="8 -6"/>
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor"> 
+				<frame time="200">32 128 32 32</frame>
+				<frame time="250">32 160 32 32</frame>
+				<frame time="350">32 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="3 -1"/>
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="200">64 128 32 32</frame>
+				<frame time="250">64 160 32 32</frame>
+				<frame time="350">64 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-5 -5"/>
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="200">96 128 32 32</frame>
+				<frame time="250">96 160 32 32</frame>
+				<frame time="350">96 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-8 -5"/>			
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="200">128 128 32 32</frame>
+				<frame time="250">128 160 32 32</frame>
+				<frame time="350">128 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-6 -10"/>
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="200">160 128 32 32</frame>
+				<frame time="250">160 160 32 32</frame>
+				<frame time="350">160 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="3 -10"/>
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="200">192 128 32 32</frame>
+				<frame time="250">192 160 32 32</frame>
+				<frame time="350">192 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="6 -10"/>
+			<sprite origin="16 16" looping="true" texture="./snake_3.png" material="system/default.mats:actor">
+				<frame time="200">224 128 32 32</frame>
+				<frame time="250">224 160 32 32</frame>
+				<frame time="350">224 192 32 32</frame>
+			</sprite>
+		</scene>
+
+	</scenes>
+</unit>

@@ -1,0 +1,178 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="items/money_copper_2.unit"><vec2>26 14</vec2><int>13</int><vec2>9 28</vec2><int>14</int></array>
+		<array name="items/money_copper_3.unit"><vec2>23 26</vec2><int>11</int><vec2>4 14</vec2><int>12</int></array>
+		<array name="items/money_copper_1.unit">
+			<vec2>7 6</vec2>
+			<int>2</int>
+			<vec2>28 5</vec2>
+			<int>3</int>
+			<vec2>12 19</vec2>
+			<int>4</int>
+			<vec2>4 20</vec2>
+			<int>5</int>
+			<vec2>13 24</vec2>
+			<int>6</int>
+			<vec2>3 3</vec2>
+			<int>7</int>
+			<vec2>17 28</vec2>
+			<int>8</int>
+			<vec2>3 29</vec2>
+			<int>9</int>
+			<vec2>29 20</vec2>
+			<int>10</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>16</int>
+			<vec3>16 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<float name="ChanceToDestroy">0.4</float>
+				<array name="Units">
+					<int>14</int>
+					<int>13</int>
+					<int>11</int>
+					<int>12</int>
+					<int>10</int>
+					<int>3</int>
+					<int>8</int>
+					<int>6</int>
+					<int>4</int>
+					<int>9</int>
+					<int>5</int>
+					<int>2</int>
+					<int>7</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>22</int>
+			<vec3>-32 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>23</int><int>24</int><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>23</int>
+			<vec3>-64 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wood</string>
+			<dict>
+				<int name="Chance">75</int>
+			</dict>
+			<array><int>27</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>24</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>bronze</string>
+			<dict>
+				<int name="Chance">25</int>
+			</dict>
+			<array><int>28</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>25</int>
+			<vec3>-32 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>30</int><int>0</int><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>26</int>
+			<vec3>64 -64 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ace</string>
+			<dict>
+				<int name="Chance">3</int>
+			</dict>
+			<array><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>16 12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wood</string>
+			<dict>
+				<string name="UnitType">doodads/generic/chest_wood.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>28</int>
+			<vec3>16 12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bronze</string>
+			<dict>
+				<string name="UnitType">doodads/generic/chest_bronze.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>29</int>
+			<vec3>16 12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ace</string>
+			<dict>
+				<string name="UnitType">doodads/generic/chest_ace.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>30</int>
+			<vec3>64 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_ace_chests</string>
+			<dict>
+				<string name="Flag">fountain_ace_chests</string>
+				<array name="OnTrue"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>31</int>
+			<vec3>64 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>26</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

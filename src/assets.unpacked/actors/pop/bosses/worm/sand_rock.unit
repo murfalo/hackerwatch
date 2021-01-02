@@ -1,0 +1,64 @@
+<unit netsync="none">
+	<behavior class="TossProjectile">
+		<string name="anim">idle</string>
+		<int name="anim-num">1</int>
+
+		<float name="speed">3.2</float>
+		<int name="ttl">500</int>
+		<bool name="blockable">false</bool>
+		<float name="arc-height">7</float>
+		<bool name="on-target">false</bool>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">effects/golem_sand_rock_hit.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">12</int>
+
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">40</int>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Nova</string>
+				<int name="projectiles">5</int>
+				<float name="proj-dist">8</float>
+				<string name="projectile">actors/pop/bosses/worm/nova_rock_shard.unit</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+		</scene>
+	
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="8 8" texture="./sand_rock.png" material="system/default.mats:actor">
+				<frame time="125">0 0 13 13</frame>
+				<frame time="125">13 0 13 13</frame>
+				<frame time="125">26 0 13 13</frame>
+				<frame time="125">39 0 13 13</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="8 8" texture="./sand_rock.png" material="system/default.mats:actor">
+					<frame time="125">0 0 13 13</frame>
+					<frame time="125">13 0 13 13</frame>
+					<frame time="125">26 0 13 13</frame>
+					<frame time="125">39 0 13 13</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

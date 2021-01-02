@@ -1,0 +1,783 @@
+<materials>	
+	<material name="invisible">
+		<color value="255 255 255 0" />
+		<xray-mask value="false" />
+		<glow-mode value="none" />
+		<decal-mode value="none" />
+	</material>	
+	
+	<material name="default">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="default-nodecals">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+		<decal-mode value="none" />
+	</material>	
+	
+	<material name="default-noxray">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<glow-mode value="block" />
+	</material>	
+	
+	<material name="default-noxray-nodecals">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<glow-mode value="block" />
+		<decal-mode value="none" />
+	</material>		
+	
+	<material name="parallax-snow">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-1 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="projectile">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="150 150 150" />
+		<xray value="200 100 100 255" />
+		<xray-mask value="false" />
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="projectile-player">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="150 150 150" />
+		<xray value="100 200 100 255" />
+		<xray-mask value="false" />
+		<decal-mode value="none" />
+	</material>	
+
+	<material name="projectile-glowing">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray value="200 100 100 255" />
+		<xray-mask value="false" />
+		<decal-mode value="none" />
+		<glow-mode value="both" />
+	</material>		
+	
+	<material name="enemy">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="235 235 235"/>			
+		<xray value="255 0 0 255" />
+		<outline value="255 0 0 255" />			
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="enemy-quest">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="235 235 235"/>		
+		<xray value="255 0 255 255" />
+		<outline value="255 0 255 255" />			
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="enemy_clone-quest">
+		<blend-mode value="add" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="0 500 500 255" />
+		<light-influence value="235 235 235"/>		
+		<xray value="255 0 255 255" />
+		<outline value="255 0 255 255" />			
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>		
+	
+	<material name="enemy-noxray">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="235 235 235"/>
+		<outline value="255 0 0 255" />			
+		<decal-mode value="none" />
+		<glow-mode value="block" />		
+	</material>
+	
+	<material name="enemy-noxray-nooutline">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="235 235 235"/>					
+		<decal-mode value="none" />
+		<glow-mode value="block" />		
+	</material>		
+	
+	<material name="enemy-kamikaze">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="235 235 235"/>			
+		<xray value="255 0 0 255" />
+		<outline value="255 0 0 255" />			
+		<decal-mode value="none" />	
+		<glow-mode value="block" />
+	</material>		
+	
+	<material name="enemy-civilian">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="235 235 235"/>		
+		<xray value="0 255 150 255" />
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>	
+	
+	<material name="ooze-glowing">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray value="255 0 0 255" />
+		<decal-mode value="none" />
+		<glow-mode value="both" />
+	</material>
+	
+	<material name="enemy-lava">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="250 250 250" />
+		<xray value="255 0 0 255" />
+		<outline value="255 0 0 255" />			
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>
+
+	
+	<material name="enemy-assassin">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 50" />
+		<xray-mask value="false" />
+		<decal-mode value="none" />
+		<displacement value="false" />
+	</material>	
+	
+	<material name="player">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray value="0 255 0 255" />
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+		<fix-position value="true" />
+	</material>
+	
+	<material name="ally">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray value="255 255 0 255" />
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+		<fix-position value="true" />
+	</material>	
+	
+	<material name="pickup">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<outline value="0 255 255 255" />
+%if EDITOR
+		<xray value="255 255 0 255" />
+%endif
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="pickup-bright-glow">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<outline value="0 255 255 255" />
+%if EDITOR
+		<xray value="255 255 0 255" />
+%endif
+		<decal-mode value="none" />
+		<glow-mode value="both" />		
+	</material>	
+	
+	<material name="pickup-bright">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<outline value="0 255 255 255" />
+%if EDITOR
+		<xray value="255 255 0 255" />
+%endif
+		<decal-mode value="none" />	
+	</material>		
+	
+	<material name="pickup-hw2">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 100 50" />
+		<outline value="230 230 0 50" />
+
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="pickup-pink">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<outline value="255 0 255 255" />
+%if EDITOR
+		<xray value="255 0 255 255" />
+%endif
+		<decal-mode value="none" />
+	</material>	
+	
+	<material name="pickup-pink-xray">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<outline value="255 0 255 255" />
+		<xray value="255 0 255 255" />
+		<decal-mode value="none" />
+	</material>	
+	
+	<material name="proj">
+		<blend-mode value="blend" />
+		<shadow-mode value="proj" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>	
+	
+	<material name="bright">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="bright-nodecals">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />		
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="bright-noglowblock">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+	</material>	
+	
+	<material name="bright-noxray">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="block" />
+	</material>	
+	
+	<material name="bright-noxray-glowing">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="both" />
+	</material>	
+	
+	<material name="bright-noxray-glow">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="only" />
+	</material>	
+	
+	<material name="shadowed">
+		<blend-mode value="blend" />
+		<shadow-mode value="shadowed" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+	</material>
+	
+	<material name="proj-grass">
+		<blend-mode value="blend" />
+		<shadow-mode value="origin proj" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+	</material>	
+
+	<material name="proj-prop">
+		<blend-mode value="blend" />
+		<shadow-mode value="origin proj" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="block" />
+	</material>
+	<material name="proj-wall-noxray">
+		<blend-mode value="blend" />
+		<shadow-mode value="bottom proj" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="proj-wall">
+		<blend-mode value="blend" />
+		<shadow-mode value="bottom proj" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>
+			
+	<material name="low-wall">
+		<blend-mode value="blend" />
+		<shadow-mode value="shadowed" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>
+
+	<material name="wall">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="wall-noxray">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="none" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="floor">
+		<blend-mode value="blend" />
+		<shadow-mode value="shadowed" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<ignore-overlay-color value="true" />
+	</material>
+	
+	<material name="floor-glowblock">
+		<blend-mode value="blend" />
+		<shadow-mode value="shadowed" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<glow-mode value="block"/>
+		<ignore-overlay-color value="true" />
+	</material>
+	
+	<material name="floor-overlay">
+		<blend-mode value="blend" />
+		<shadow-mode value="shadowed" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<ignore-overlay-color value="false" />
+	</material>	
+	
+	<material name="floor-nodecals">
+		<blend-mode value="blend" />
+		<shadow-mode value="shadowed" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="shadow">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="0 0 0 200" />
+		<ignore-height value="true" />
+		<ignore-overlay-color value="true" />
+		<decal-mode value="none" />
+		<xray-mask value="false" />		
+	</material>
+	
+	<material name="shadow-player">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="0 0 0 200" />
+		<ignore-height value="true" />
+		<ignore-overlay-color value="true" />
+		<decal-mode value="none" />
+		<xray-mask value="false" />	
+		<fix-position value="true" />
+	</material>
+	
+	<material name="glow-both-bright">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="both" />		
+	</material>	
+	
+	<material name="glow-both-bright-player">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray value="100 200 100 255" />
+		<glow-mode value="both" />		
+	</material>	
+	
+	<material name="bright-player">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray value="100 200 100 255" />
+	</material>	
+		
+	<material name="glow-both">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="both" />		
+	</material>
+	
+	<material name="glow">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="only" />
+	</material>	
+	
+	<material name="parallax-a">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="-0.25 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="parallax-b">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="-0.10 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="parallax-c">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="-0.18 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="parallax-d">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="-0.21 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="parallax-moon">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.35 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="parallax-space">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-1 -1" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="parallax-planet">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.9 -0.9" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="e4m1_trial_status-green">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="0 255 0 255" />
+		<xray-mask value="false" />
+		<glow-mode value="both" />		
+	</material>	
+
+	<material name="e4m1_trial_status-yellow">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 0 255" />
+		<xray-mask value="false" />
+		<glow-mode value="both" />		
+	</material>	
+	
+	<material name="e4m1_trial_status-red">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 0 0 255" />
+		<xray-mask value="false" />
+		<glow-mode value="both" />		
+	</material>		
+	
+	<material name="target">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="0 0 0 0" />
+		<outline value="0 255 0 255" />
+		<decal-mode value="none" />
+	</material>	
+	
+	<material name="attention">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="0 0 0 0" />
+		<outline value="255 255 0 255" />
+		<decal-mode value="none" />
+	</material>	
+	
+	
+	
+	
+	<material name="player-marker">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />	
+		<ignore-height value="true" />
+	</material>	
+	
+	
+	<material name="debug">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="600 0 600 255" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>	
+
+
+
+	
+	
+	
+	
+
+
+
+	<material name="doodad">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>
+	
+	<material name="effect">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<glow-mode value="both" />
+	</material>
+
+	<material name="gib">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+	</material>
+
+	<material name="actor">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<glow-mode value="block" />
+		<xray value="200 0 0 255" />
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="actor-noxray">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<glow-mode value="block" />
+		<decal-mode value="none" />
+	</material>	
+	
+	<material name="xray">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 0" />
+		<glow-mode value="block" />
+		<xray value="200 0 0 255" />
+	</material>	
+	
+	<material name="xray-ally">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 0" />
+		<glow-mode value="block" />
+		<xray value="255 255 0 255" />
+		<decal-mode value="none" />
+	</material>	
+	
+	<material name="actor-ghost">
+		<blend-mode value="add" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="125 125 125" />
+		<xray value="200 0 0 255" />
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="actor-genie">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<light-influence value="125 125 125" />
+		<glow-mode value="block" />
+		<xray value="255 255 0 255" />
+		<decal-mode value="none" />
+	</material>	
+
+	<material name="item">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+%if EDITOR
+		<outline value="0 230 230 255" />
+		<xray value="255 255 0 255" />
+%endif
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="item-money">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+%if EDITOR
+		<outline value="0 230 230 255" />
+		<xray value="255 255 0 255" />
+%endif
+		<decal-mode value="none" />
+	</material>
+	
+	<material name="item-objective">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<outline value="0 230 230 255" />
+		<xray value="0 255 0 255" />
+		<decal-mode value="none" />
+	</material>		
+	
+	
+</materials>
+

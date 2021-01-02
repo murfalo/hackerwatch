@@ -1,0 +1,85 @@
+<effect looping="false" layer="2">
+	
+	<data>
+		<string name="sound">event:/player/thief/strike</string>
+	</data>	
+	
+	
+	<param name="radius" default="0" />
+	<variation>
+		<sprite origin="11 8" looping="false" texture="./assassin_statue.png" material="system/default.mats:glow-both-bright-player"
+		angle="rand(u+i)*pi*2"
+		color-r="0.1+t*1.5"
+		color-b="1-t*0.5"
+		>
+			<frame time="75">0 0 24 18</frame>
+			<frame time="75">24 0 24 18</frame>
+			<frame time="75">48 0 24 18</frame>
+			<frame time="75">72 0 24 18</frame>
+		</sprite>
+		<sprite origin="11 8" looping="false" texture="./assassin_statue.png" material="system/default.mats:glow-both-bright-player"
+		angle="rand(u+i)*pi*2"
+		color-r="0.1+t*0.5"
+		color-b="1-t*0.5"
+		>
+			<frame time="100">0 0 0 0</frame>
+			<frame time="90">96 0 24 18</frame>
+			<frame time="90">0 18 24 18</frame>
+			<frame time="90">24 18 24 18</frame>
+			<frame time="90">48 18 24 18</frame>
+		</sprite>
+	</variation>
+	
+	
+	<variation>
+		<sprite origin="11 8" looping="false" texture="./assassin_statue.png" material="system/default.mats:glow-both-bright-player"
+		
+		angle="rand(u+i)*pi*2"
+		color-r="0.1+t*0.5"
+		color-b="1-t*0.5"
+		>
+			<frame time="75">96 0 24 18</frame>
+			<frame time="75">0 18 24 18</frame>
+			<frame time="75">24 18 24 18</frame>
+			<frame time="75">48 18 24 18</frame>
+		</sprite>
+		
+		<sprite origin="11 8" looping="false" texture="./assassin_statue.png" material="system/default.mats:glow-both-bright-player"
+		angle="rand(u+i)*pi*2"
+		color-r="0.1"
+		color-b="1-t*0.5"
+		>
+			<frame time="80">0 0 0 0</frame>
+			<frame time="90">0 0 24 18</frame>
+			<frame time="90">24 0 24 18</frame>
+			<frame time="90">48 0 24 18</frame>
+			<frame time="90">72 0 24 18</frame>
+		</sprite>
+</variation>
+
+		<light pos-x="0" pos-y="0">
+			<sprite texture="system/light_L.png">
+				<frame time="100">0 0 128 128</frame>
+			</sprite>
+
+			<looping value="false" />
+			<length value="150" />
+
+			<cast-shadows value="false" />
+
+			<shadow-cast-pos-x value="0" />
+			<shadow-cast-pos-y value="0" />
+
+			<shadow-cast-pos-jitter value="0 0 0 0" />
+
+			<size value="(1-t)*75" />
+
+			<color-r value="0.5+t*0.5" />
+			<color-g value="1" />
+			<color-b value="1" />
+			<color-a value="0"/>
+		</light>
+</effect>
+
+
+

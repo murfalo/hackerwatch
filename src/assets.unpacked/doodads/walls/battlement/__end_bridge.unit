@@ -1,0 +1,51 @@
+<unit slot="doodad" layer="-10">
+	<scenes>
+		<scene>
+			<collision static="true">
+				<rect shoot-through="true">0 0 10 320</rect>
+				<rect shoot-through="true">86 0 10 320</rect>
+			</collision>
+			<sprite origin="0 0" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>0 0 96 332</frame>
+			</sprite>
+			
+			<sprite origin="13 -84" layer="-10" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>96 0 13 48</frame>
+			</sprite>		
+			<sprite origin="13 -120" layer="-50" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>96 48 13 116</frame>
+			</sprite>
+			<sprite origin="13 -244" layer="-10" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>96 0 13 48</frame>
+			</sprite>
+			<sprite origin="13 -280" layer="-50" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>96 48 13 116</frame>
+			</sprite>	
+			
+			<sprite origin="-96 -84" layer="-10" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>109 0 13 48</frame>
+			</sprite>
+			<sprite origin="-96 -120" layer="-50" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>109 48 13 116</frame>
+			</sprite>
+			<sprite origin="-96 -244" layer="-10" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>109 0 13 48</frame>
+			</sprite>
+			<sprite origin="-96 -280" layer="-50" texture="./__end_base.png" material="system/default.mats:floor">
+				<frame>109 48 13 116</frame>
+			</sprite>										
+							
+			%if TIME_DAY							
+							
+			<sprite ulayer="20" origin="11 -250" layer="-50" texture="./__end_base.png" material="system/default.mats:bright">
+				<frame>98 173 11 131</frame>
+			</sprite>	
+			<sprite ulayer="20" origin="11 -100" layer="-50" texture="./__end_base.png" material="system/default.mats:bright">
+				<frame>98 173 11 131</frame>
+			</sprite>													
+						
+			%endif			
+							
+		</scene>
+	</scenes>
+</unit>

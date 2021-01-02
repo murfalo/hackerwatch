@@ -1,0 +1,222 @@
+<dict>
+	<string name="name">.skills.priest.smite</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>0 96 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::ShootRay</string>
+
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+
+			<string name="anim">attack 8</string>
+			<string name="snd">event:/player/priest/smite</string>
+			<string name="hit-snd">event:/player/priest/smite</string>
+			<string name="hit-fx">effects/players/priest_smite.effect</string>
+			
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			<float name="dist">40</float>
+
+			<dict name="action">
+				<string name="class">Explode</string>
+				<int name="min-radius">11</int>
+				<int name="radius">11</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">4</int>
+					<int name="magical">4</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::ShootRay</string>
+
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+
+			<string name="anim">attack 8</string>
+			<string name="snd">event:/player/priest/smite</string>
+			<string name="hit-snd">event:/player/priest/smite</string>
+			<string name="hit-fx">effects/players/priest_smite.effect</string>
+			
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			<float name="dist">40</float>
+
+			<dict name="action">
+				<string name="class">Explode</string>
+				<int name="min-radius">12</int>
+				<int name="radius">12</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">5</int>
+					<int name="magical">5</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::ShootRay</string>
+
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+
+			<string name="anim">attack 8</string>
+			<string name="snd">event:/player/priest/smite</string>
+			<string name="hit-snd">event:/player/priest/smite</string>
+			<string name="hit-fx">effects/players/priest_smite.effect</string>
+			
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			<float name="dist">40</float>
+
+			<dict name="action">
+				<string name="class">Explode</string>
+				<int name="min-radius">13</int>
+				<int name="radius">13</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">6</int>
+					<int name="magical">6</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::ShootRay</string>
+
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+
+			<string name="anim">attack 8</string>
+			<string name="snd">event:/player/priest/smite</string>
+			<string name="hit-snd">event:/player/priest/smite</string>
+			<string name="hit-fx">effects/players/priest_smite.effect</string>
+			
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			<float name="dist">40</float>
+
+			<dict name="action">
+				<string name="class">Explode</string>
+				<int name="min-radius">14</int>
+				<int name="radius">14</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">7</int>
+					<int name="magical">7</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::ShootRay</string>
+
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+
+			<string name="anim">attack 8</string>
+			<string name="snd">event:/player/priest/smite</string>
+			<string name="hit-snd">event:/player/priest/smite</string>
+			<string name="hit-fx">effects/players/priest_smite.effect</string>
+			
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			<float name="dist">40</float>
+
+			<dict name="action">
+				<string name="class">Explode</string>
+				<int name="min-radius">15</int>
+				<int name="radius">15</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">8</int>
+					<int name="magical">8</int>
+				</dict>
+			</dict>
+		</dict>
+		
+		<!-- Level 6 -->
+		<dict>
+			<string name="class">Skills::ShootRay</string>
+
+			<int name="cooldown">250</int>
+			<int name="castpoint">0</int>
+
+			<string name="anim">attack 8</string>
+			<string name="snd">event:/player/priest/smite</string>
+			<string name="hit-snd">event:/player/priest/smite</string>
+			<string name="hit-fx">effects/players/priest_smite.effect</string>
+			
+			<float name="speed-mul">0.05</float>
+			<bool name="blocking">false</bool>
+			<float name="dist">40</float>
+
+			<dict name="action">
+				<string name="class">Explode</string>
+				<int name="min-radius">16</int>
+				<int name="radius">16</int>
+				<float name="dist-scaling">1000</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">9</int>
+					<int name="magical">9</int>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	
+	<!-- Mercenary primary -->
+	<string name="mercenary-primary-description">.skills.priest.smite.merc</string>
+	<dict name="mercenary-primary">
+		<string name="class">Skills::ShootRay</string>
+
+		<int name="cooldown">250</int>
+		<int name="castpoint">0</int>
+
+		<string name="anim">attack 8</string>
+		<string name="snd">event:/player/priest/smite</string>
+		<string name="hit-snd">event:/player/priest/smite</string>
+		<string name="hit-fx">effects/players/priest_smite.effect</string>
+		
+		<float name="speed-mul">0.05</float>
+		<bool name="blocking">false</bool>
+		<float name="dist">40</float>
+
+		<dict name="action">
+			<string name="class">Explode</string>
+			<int name="min-radius">16</int>
+			<int name="radius">16</int>
+			<float name="dist-scaling">1000</float>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">9</int>
+				<int name="magical">9</int>
+			</dict>
+		</dict>
+	</dict>
+</dict>

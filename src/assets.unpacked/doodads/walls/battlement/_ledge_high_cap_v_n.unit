@@ -1,0 +1,16 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="1 2" texture="gui/minimap.png" frame="0 0 2 4"/>	
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-4 -8 8 16</rect>
+			</collision>
+			<shadow darkness="1">
+				<rect cast-len="8">-4 -8 8 16</rect>
+			</shadow>
+			<sprite origin="4 16" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>48 16 8 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

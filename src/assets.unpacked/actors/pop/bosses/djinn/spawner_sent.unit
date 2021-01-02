@@ -1,0 +1,101 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">construct</string>
+		<int name="hp">99999</int>
+		<int name="armor">9999</int>
+		<int name="resistance">9999</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">true</bool>
+		
+		<int name="unit-height">14</int>
+		
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">false</bool>
+		
+		<bool name="crosshair-colors">false</bool>
+		<bool name="floating-hurt">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>stopspawn</string>
+				</array>				
+				<string name="anim">idle</string>
+				<int name="charges">1</int>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">0</int>
+				<int name="castpoint">0</int>
+				<int name="range">999</int>
+				<bool name="must-see">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/djinn/rift.effect</string>
+					</dict>
+				</array>
+			</dict>				
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>stopspawn</string>
+				</array>					
+				<string name="anim">idle</string>
+				<int name="charges">1</int>
+				<int name="cooldown-start">200</int>
+				<int name="cooldown">0</int>
+				<int name="castpoint">0</int>
+				<int name="range">999</int>
+				<bool name="must-see">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>800</int><string>actors/pop/djinn_melee.unit</string>
+							<int>200</int><string>actors/pop/djinn_ranged.unit</string>
+						</array>
+						<bool name="no-loot">true</bool>
+						<bool name="no-experience">true</bool>
+					</dict>
+				</array>
+			</dict>		
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>is</string><string>stopspawn</string>
+				</array>					
+				<string name="anim">idle</string>
+				<int name="charges">1</int>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">0</int>
+				<int name="castpoint">0</int>
+				<int name="range">999</int>
+				<bool name="must-see">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>					
+		</array>
+	</behavior>
+
+	<scenes start="idle">	
+		<scene name="idle">
+			<collision static="true">
+				<circle offset="0 0" sensor="true" shoot-through="true" aim-through="true" radius="4"/>
+			</collision>			
+		</scene>
+
+	</scenes>
+</unit>

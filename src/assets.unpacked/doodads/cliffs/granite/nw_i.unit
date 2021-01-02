@@ -1,0 +1,28 @@
+<unit slot="doodad" layer="-28">
+	<scenes default="1" snow="s1">		
+		<scene name="s1">
+			<collision static="true">
+				<polygon shoot-through="true" aim-through="true" decompose="2">
+					<point>8 -16</point>
+					<point>16 -16</point>
+					<point>16 -8</point>
+				</polygon>
+			</collision>
+			<sprite origin="0 16" layer="8" texture="./base.png" material="system/default.mats:floor">
+				<frame>128 208 16 16</frame>
+			</sprite>
+		</scene>	
+		<scene name="1">
+			<collision static="true">
+				<polygon shoot-through="true" aim-through="true" decompose="2">
+					<point>8 -16</point>
+					<point>16 -16</point>
+					<point>16 -8</point>
+				</polygon>
+			</collision>
+			<sprite origin="0 16" texture="./base.png" material="system/default.mats:floor">
+				<frame>64 128 16 16</frame>
+			</sprite>
+		</scene>	
+	</scenes>
+</unit>

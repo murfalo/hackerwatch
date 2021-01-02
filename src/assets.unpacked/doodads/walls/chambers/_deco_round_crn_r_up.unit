@@ -1,0 +1,50 @@
+<!-- <doodad aobias="0.4" minimap="menus/minimap.xml:round_crn_r_up">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d.png</texture>
+		<origin>0 32</origin>
+		<frame>176 0 48 80</frame>
+	</sprite>		
+
+	<polygon collision="true" shadow="false">
+		<point>20 24</point>
+		<point>20 -24</point>		
+		<point>48 -24</point>					
+		<point>48 40</point>			
+		<point>32 40</point>
+	</polygon>		
+
+	<polygon collision="true" shadow="false">
+		<point>0 16</point>
+		<point>0 -24</point>		
+		<point>20 -24</point>					
+		<point>20 24</point>			
+	</polygon>	
+
+</doodad> -->
+
+<unit slot="doodad">
+
+	<scenes>
+		<scene>
+		<minimap_sprite origin="0 -2" texture="gui/minimap.png" frame="114 131 10 10" />
+			<collision static="true">
+				<polygon>
+					<point>20 24</point>
+					<point>20 0</point>		
+					<point>48 0</point>					
+					<point>48 48</point>			
+					<point>32 48</point>
+				</polygon>
+				<polygon>
+					<point>0 16</point>
+					<point>0 0</point>		
+					<point>20 0</point>					
+					<point>20 24</point>	
+				</polygon>
+			</collision>
+			<sprite ulayer="1" origin="0 32" texture="./_deco.png" material="system/default.mats:proj-wall">
+				<frame>48 103 48 80</frame>
+			</sprite>					
+		</scene>
+	</scenes>
+</unit>

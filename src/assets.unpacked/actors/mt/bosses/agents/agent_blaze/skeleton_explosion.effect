@@ -1,0 +1,63 @@
+<effect looping="false">
+	
+	<param name="radius" default="28" />
+	<sprite looping="false" origin="24 24" texture="./skeleton_explosion.png" material="system/default.mats:default-noxray"
+
+	>		
+		<frame time="75">0 0 0 0</frame>
+		<frame time="50">0 96 48 48</frame>
+		<frame time="50">48 96 48 48</frame>
+		<frame time="50">96 96 48 48</frame>
+		<frame time="50">144 96 48 48</frame>
+		<frame time="50">192 96 48 48</frame>
+		<frame time="50">0 144 48 48</frame>
+		<frame time="50">48 144 48 48</frame>
+		<frame time="50">96 144 48 48</frame>
+		<frame time="50">144 144 48 48</frame>
+		<frame time="50">192 144 48 48</frame>
+		<frame time="50">0 192 48 48</frame>
+	</sprite>
+	
+	<sprite looping="false" origin="24 24" texture="./skeleton_explosion.png" material="system/default.mats:bright-noxray"
+	>		
+		<frame time="75">0 0 48 48</frame>
+		<frame time="50">48 0 48 48</frame>
+		<frame time="50">96 0 48 48</frame>
+		<frame time="50">144 0 48 48</frame>
+		<frame time="50">192 0 48 48</frame>
+		<frame time="50"> 0 48 48 48</frame>
+		<frame time="50">48 48 48 48</frame>
+		<frame time="50">96 48 48 48</frame>
+		<frame time="50">144 48 48 48</frame>
+		<frame time="50">192 48 48 48</frame>
+	</sprite>
+	<sprite looping="false" origin="24 24" texture="./skeleton_explosion.png" material="system/default.mats:bright-noxray"
+	scale-x="1.2*(1-t)"
+	scale-y="1.2*(1-t)"
+	angle="rand(u+i*23-101)*pi*2"
+	>		
+		<frame time="150">0 0 48 48</frame>
+	</sprite>
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<length value="100" />
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="64 * (1-t)" />
+
+		<color-r value="4" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

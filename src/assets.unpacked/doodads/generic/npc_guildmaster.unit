@@ -1,0 +1,61 @@
+<unit slot="doodad">
+	<scenes blue-1="3" blue-2="4" blue-3="7" blue-4="8" red-1="1" red-2="2" green-1="5" green-2="6">
+		
+		<scene random-start="true" name="shared">
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="3.5" />			
+			</collision>
+		</scene>
+		<scene random-start="true" name="1">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">186 0 15 17</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="2">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">201 0 15 17</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="3">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">216 0 15 17</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="4">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">231 0 15 17</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="5">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">186 64 15 17</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="6">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">201 64 15 17</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="7">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">216 64 15 17</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="8">
+			<scene src="shared" />
+			<sprite origin="7 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">231 64 15 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

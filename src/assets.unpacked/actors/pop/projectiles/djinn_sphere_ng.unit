@@ -1,0 +1,101 @@
+<unit netsync="none">
+	<behavior class="BounceProjectile">
+	<string name="anim">idle</string>
+		<float name="speed">4</float>
+		<int name="ttl">400</int>
+
+		<int name="penetration">1000</int>
+		<int name="bounces">1000</int>
+		<float name="bounce-speed-mul">0.75</float>
+		<bool name="bounce-on-collide">false</bool>
+		
+		<int name="floor-bounces">3</int>
+		<float name="floor-bounce-intensity-mul">1</float>
+		<int name="floor-bounce-height">12</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">effects/explosion_mana_bomb.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">16</int>
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="magical">90</int>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/djinn/sphere</string>
+			</dict>
+		</array>
+		
+		<array name="miss-effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">effects/explosion_mana_bomb.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">16</int>
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="magical">90</int>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/djinn/sphere</string>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>			
+			<sprite looping="true" origin="4 4" texture=".././djinn_ranged.png"  material="system/default.mats:glow-both-bright">
+				<frame time="50">168 93 8 8</frame>
+			</sprite>
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="8" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="150 20 255 10" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="100 20 255 0" />
+				</colors>
+			</light>				
+			<shadow>
+				<sprite layer="-1" origin="4 4" texture="doodads/special/shadows.png">
+					<frame>0 0 8 8</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

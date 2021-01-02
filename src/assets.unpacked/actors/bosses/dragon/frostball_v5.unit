@@ -1,0 +1,50 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.125</float>
+		<int name="ttl">7500</int>
+		
+		<float name="speed">1</float>
+		<float name="speed-delta">0.1</float>
+		<float name="speed-delta-max">3</float>
+		
+		<int name="penetration">1000</int>
+		<bool name="penetrate-all">true</bool>
+		
+		<string name="fx">effects/animations/impact_ice.effect</string>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">1</int>
+				<int name="magical">1</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:dragon_freezing_frostball</string>
+			</dict>
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/animations/impact_ice.effect</string>
+			</dict>			
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<minimap_sprite origin="1 1" texture="gui/minimap.png" frame="34 9 2 2" />		
+			<collision static="false">
+				<circle offset="0 0" radius="10" projectile="true" />
+			</collision>
+			
+			<effect src="actors/bosses/dragon/snowflake.effect" />
+			<effect pos="0 -4" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="500" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="700" src="effects/blizzard.effect" />
+			<effect pos="0 -4" delay="350" src="effects/blizzard.effect" />
+			<effect src="actors/projectiles/snow_area.effect" /> 
+			<effect pos="0 -4" src="actors/elemental_ice_dust.effect" /> 
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,20 @@
+<unit slot="doodad">
+	<behavior class="Chest">
+		<int name="lock">3</int>
+		<string name="loot">doodads/chests.sval:ace</string>
+		<string name="open-snd">event:/misc/open_chest_ace</string>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<minimap_sprite layer="10" origin="4 4" texture="gui/minimap.png" frame="66 0 8 8" />
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="0 0" radius="12" />
+				<circle sensor="false" shoot-through="true" aim-through="true" offset="0 0" radius="6" />
+			</collision>			
+			<sprite origin="6 12" texture="./chests.png" material="system/default.mats:proj-prop">
+				<frame time="50">64 0 16 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

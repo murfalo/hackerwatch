@@ -1,0 +1,21 @@
+<effect looping="true" layer="0">
+	<param name="angle" default="-3" />
+	
+	
+	<sprite looping="false" origin="6 6" layer="3" texture="./bat_mb_sonic_wave.png" material="system/default.mats:bright-noxray-glowing"
+		num-sprites="10"
+		color-a="(saturate(1 - i*(t+l)*0.2) * (1-t)) * 0.5"
+		
+		scale-x="saturate(floor(i) / 5 * t)*2"
+		scale-y="saturate(floor(i) / 5 * t)*2"		
+		
+		pos-x="(ceil(i+2)*t*5 - t*6) * cos(angle)"
+		pos-y="(ceil(i+2)*t*5 - t*6) * sin(angle)"
+		
+	>
+		<frame time="1">0 0 0 0</frame>
+		<frame time="500">1 16 12 12</frame>
+		<frame time="1">0 0 0 0</frame>
+	</sprite>
+	
+</effect>

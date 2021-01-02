@@ -1,0 +1,77 @@
+<unit netsync="position">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">undead</string>
+		<int name="hp">99999</int>
+		<int name="armor">1000</int>
+		<int name="resistance">1000</int>
+		<int name="experience-reward">0</int>
+
+		<int name="aggro-range">10000</int>
+		<bool name="impenetrable">false</bool>
+		<bool name="no-buffs">true</bool>
+		<bool name="targetable">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+      
+		<array name="skills">
+			<dict>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>vampire_dead</string>
+					<string>flag</string><string>isnt</string><string>vampire_middle</string>
+					<string>flag</string><string>is</string><string>thrall_res</string>
+				</array>
+
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">empty</string>
+				<string name="start-snd">event:/enemy/thrall/revive</string>
+				
+				<int name="charges">1</int>	
+				<int name="cooldown">10000</int>
+				<int name="castpoint">0</int>
+				<int name="range">9000</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<bool name="aggro">true</bool>
+						<string name="unit">actors/bosses/vampire/thrall_revive.unit</string>
+					</dict>
+
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="idle">
+		<scene name="empty">
+		</scene>
+		<scene name="idle">
+			<effect src="actors/bosses/vampire/thrall_spirit.effect" />
+			<sprite origin="16 24" looping="false" ulayer="2" texture="./thrall_effects.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">0 0 0 0</frame>	
+				<frame time="100">0 0 32 16</frame>	
+				<frame time="100">32 0 32 16</frame>	
+				<frame time="100">64 0 32 16</frame>	
+				<frame time="100">96 0 32 16</frame>	
+				<frame time="100">128 0 32 16</frame>	
+				<frame time="100">0 0 0 0</frame>	
+			</sprite>
+			<sprite origin="16 24" looping="false" texture="./thrall.png" material="system/default.mats:floor">
+				<frame time="100">0 160 32 32</frame>	
+				<frame time="100">32 160 32 32</frame>	
+				<frame time="100">64 160 32 32</frame>	
+				<frame time="100">96 160 32 32</frame>	
+				<frame time="100">128 160 32 32</frame>	
+				<frame time="10000000">160 160 32 32</frame>	
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

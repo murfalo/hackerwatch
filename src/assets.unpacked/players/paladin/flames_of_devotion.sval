@@ -1,0 +1,37 @@
+<dict>
+	<string name="name">.skills.paladin.flames-of-devotion</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>168 0 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::StackDamage</string>
+			<int name="max-stacks">12</int>
+			<int name="duration">1000</int>
+			<int name="magic-damage">1</int>
+
+			<array name="hud">
+				<string>gui/icons_buffs.png</string>
+				<int>100</int><vec4>0 24 12 12</vec4>
+			</array>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::StackDamage</string>
+			<int name="max-stacks">24</int>
+			<int name="duration">1000</int>
+			<int name="magic-damage">1</int>
+
+			<array name="hud">
+				<string>gui/icons_buffs.png</string>
+				<int>100</int><vec4>0 24 12 12</vec4>
+			</array>
+		</dict>
+	</array>
+</dict>

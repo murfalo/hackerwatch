@@ -1,0 +1,32 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="name">.skills.mercenary.company-ballista</string>
+	<string name="description">.skills.mercenary.company-ballista.merc</string>
+
+	<bool name="default">true</bool>
+
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 216 24 24</vec4>
+	</array>
+	
+	<int name="cost">18</int>
+	
+	<dict name="skill">
+		<string name="class">Skills::DropUnit</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/mercenary/ballista_spawn</string>
+		<string name="fx">players/mercenary/ballista_spawn.effect</string>
+		
+		<int name="cooldown">1000</int>
+		<int name="castpoint">50</int>
+		<float name="speed-mul">0</float>
+		<bool name="blocking">true</bool>
+		
+		<int name="mana-cost">45</int>
+
+		<string name="unit">players/mercenary/ballista.unit</string>
+		<int name="max-count">3</int>
+		<bool name="remove-oldest">true</bool>
+	</dict>
+</dict>

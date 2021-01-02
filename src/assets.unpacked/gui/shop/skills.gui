@@ -1,0 +1,87 @@
+<gui>
+	<sprites>
+		<sprite name="skill-frame" texture="gui/shop.png"><frame>278 20 35 32</frame></sprite>
+		<sprite name="skill-inner-frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="frame-icon" texture="gui/widget.png"><frame>99 0 26 26</frame></sprite>
+
+		<sprite name="icon-lock" texture="gui/icons.png"><frame>0 100 8 9</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+
+		<sprite name="icon-mana" texture="gui/icons.png"><frame>26 24 9 13</frame></sprite>
+		<sprite name="skill-points" texture="gui/icons.png"><frame>13 24 13 14</frame></sprite>
+
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scalablebutton_big_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group width="321" inner="true" flow="vbox">
+
+			<!-- List of rows -->
+			<group id="row-list" width="321" inner="true" flow="vbox" />
+
+			<!-- Bottom row -->
+			<rect width="321" height="18" flow="hbox">
+				<rect width="30" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+				<!-- Skillpoints worth -->
+				<rect width="65" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Skillpoints -->
+					<group inner="true" offset="3 0" anchor="0 0.5" flow="hbox" spacing="2" tooltip=".shop.skills.worth.skills">
+						<sprite src="skill-points" offset="0 1">
+							<sprite src="icon-check" anchor="1 1" offset="3 -1" />
+						</sprite>
+						<text id="skillpoints-worth" font="gui/fonts/arial11.fnt" offset="3 0" />
+					</group>
+				</rect>
+
+				<rect width="30" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+				<!-- Respec button -->
+				<scalebutton spriteset="scalebutton" id="respec" func="respec" width="90" text=".shop.skills.respec" font="gui/fonts/arial11.fnt" />
+
+				<rect width="106" height="18" spriteset="gui/variable/headline_hor.sval" />
+			</rect>
+
+			<!-- Row template -->
+			<rect id="row-template" width="321" height="35" visible="false">
+				<rect width="3" height="32" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="70" height="32" offset="3 0" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<text id="rowname" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+				</rect>
+				<rect width="3" height="32" offset="73 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect id="skill-list" width="245" height="32" offset="76 0" flow="hbox" />
+				<rect width="321" height="3" offset="0 32" spriteset="gui/variable/3pxbar_hor.sval" />
+			</rect>
+
+			<!-- Skill button template -->
+			<rect id="skill-template" width="35" height="32" visible="false">
+				<upgradeshopitem id="button" func="buy-item" spriteset="scalebutton-big" width="32" />
+				<rect width="3" height="32" offset="32 0" spriteset="gui/variable/3pxbar_vert.sval" />
+			</rect>
+
+			<!-- Skill owned template -->
+			<sprite id="skill-owned-template" src="skill-frame" visible="false">
+				<sprite src="skill-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4">
+					<sprite src="icon-check" anchor="1 1" offset="-1 -1" />
+				</sprite>
+			</sprite>
+
+			<!-- Skill unavailable template -->
+			<sprite id="skill-unavailable-template" src="skill-frame" visible="false" tooltip-enabled="false">
+				<sprite src="skill-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4">
+					<sprite src="icon-lock" anchor="1 1" offset="-1 -1" />
+				</sprite>
+			</sprite>
+
+			<!-- Empty skill template -->
+			<sprite id="skill-empty-template" src="skill-frame" visible="false" />
+
+		</group>
+	</doc>
+</gui>

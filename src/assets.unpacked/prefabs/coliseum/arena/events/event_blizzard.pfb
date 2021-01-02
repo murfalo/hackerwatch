@@ -1,0 +1,563 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name="prefabs/coliseum/arena/events/supplements/blizzard_snow.unit"><vec2>0 0</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>2</int>
+			<vec3>256 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>events_deactivate</string>
+			<dict>
+				<string name="EventName">events_deactivate</string>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>3</int>
+			<vec3>-96 800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<array><int>14</int><int>30000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>4</int>
+			<vec3>-96 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>9</int></array>
+			</dict>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>5</int>
+			<vec3>608 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>6</int>
+			<vec3>64 544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="NumToExecute">2</int>
+				<array name="ToExecute"><int>5</int><int>19</int><int>28</int><int>24</int><int>27</int><int>32</int><int>31</int><int>30</int><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>7</int>
+			<vec3>96 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>8</int>
+			<vec3>-256 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Activate</string>
+			<array>
+				<int>3</int>
+				<int>0</int>
+				<int>21</int>
+				<int>0</int>
+				<int>39</int>
+				<int>0</int>
+				<int>4</int>
+				<int>0</int>
+				<int>13</int>
+				<int>0</int>
+				<int>40</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>9</int>
+			<vec3>0 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1250</int>
+			</dict>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>10</int>
+			<vec3>-256 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>blizzard_activate</string>
+			<dict>
+				<string name="EventName">blizzard_activate</string>
+			</dict>
+			<array><int>15</int><int>0</int><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>11</int>
+			<vec3>0 896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>event_finished</string>
+			<dict>
+				<string name="EventName">event_finished</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>12</int>
+			<vec3>0 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">750</int>
+				<array name="LinkScripts"><int>16</int><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>13</int>
+			<vec3>-256 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>17</int><int>14</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>14</int>
+			<vec3>0 832 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Finished</string>
+			<array>
+				<int>11</int>
+				<int>0</int>
+				<int>7</int>
+				<int>0</int>
+				<int>22</int>
+				<int>0</int>
+				<int>37</int>
+				<int>0</int>
+				<int>38</int>
+				<int>0</int>
+				<int>41</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>15</int>
+			<vec3>-256 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">blizzard_activated</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>16</int>
+			<vec3>-64 544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="NumToExecute">2</int>
+				<array name="ToExecute"><int>20</int><int>18</int><int>26</int><int>25</int><int>23</int><int>34</int><int>33</int><int>35</int><int>36</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>17</int>
+			<vec3>256 704 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Deactivate</string>
+			<array><int>7</int><int>0</int><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>18</int>
+			<vec3>-736 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>19</int>
+			<vec3>736 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>20</int>
+			<vec3>-128 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>21</int>
+			<vec3>-352 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>22</int>
+			<vec3>128 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>23</int>
+			<vec3>-576 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>24</int>
+			<vec3>608 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>25</int>
+			<vec3>-576 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>26</int>
+			<vec3>-128 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>128 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>28</int>
+			<vec3>128 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>29</int>
+			<vec3>384 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>30</int>
+			<vec3>704 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>31</int>
+			<vec3>704 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>32</int>
+			<vec3>384 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>33</int>
+			<vec3>-704 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>34</int>
+			<vec3>-352 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>35</int>
+			<vec3>-704 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>36</int>
+			<vec3>-352 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/blizzard_snowflake.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>37</int>
+			<vec3>128 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>28</int>
+					<string>AllSpawned</string>
+					<int>32</int>
+					<string>AllSpawned</string>
+					<int>24</int>
+					<string>AllSpawned</string>
+					<int>31</int>
+					<string>AllSpawned</string>
+					<int>19</int>
+					<string>AllSpawned</string>
+					<int>30</int>
+					<string>AllSpawned</string>
+					<int>5</int>
+					<string>AllSpawned</string>
+					<int>29</int>
+					<string>AllSpawned</string>
+					<int>27</int>
+					<string>AllSpawned</string>
+					<int>20</int>
+					<string>AllSpawned</string>
+					<int>36</int>
+					<string>AllSpawned</string>
+					<int>23</int>
+					<string>AllSpawned</string>
+					<int>35</int>
+					<string>AllSpawned</string>
+					<int>18</int>
+					<string>AllSpawned</string>
+					<int>33</int>
+					<string>AllSpawned</string>
+					<int>25</int>
+					<string>AllSpawned</string>
+					<int>34</int>
+					<string>AllSpawned</string>
+					<int>26</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>38</int>
+			<vec3>128 960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>arena_blizzard_destroy</string>
+			<dict>
+				<string name="Flag">arena_blizzard_destroy</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>39</int>
+			<vec3>-352 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>arena_blizzard_destroy off</string>
+			<dict>
+				<string name="Flag">arena_blizzard_destroy</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>40</int>
+			<vec3>-128 1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>arena_blizzard</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena_blizzard.env</string>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>41</int>
+			<vec3>32 1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal sky</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena.env</string>
+			</dict>
+			<array><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>42</int>
+			<vec3>-128 1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_event</string>
+			<dict>
+				<string name="EventName">env_event</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>43</int>
+			<vec3>32 1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_default</string>
+			<dict>
+				<string name="EventName">env_default</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

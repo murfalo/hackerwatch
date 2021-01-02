@@ -1,0 +1,66 @@
+<gui>
+	<sprites>
+		<sprite name="button-frame" texture="gui/shop.png"><frame>278 20 32 32</frame></sprite>
+		<sprite name="button-inner-frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="frame-icon" texture="gui/widget.png"><frame>99 0 26 26</frame></sprite>
+		<sprite name="icon-pedestal" texture="gui/widget.png"><frame>99 52 24 24</frame></sprite>
+
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="icon-unknown" texture="gui/icons_others.png"><frame>24 120 24 24</frame></sprite>
+		<sprite name="icon-lock" texture="gui/icons.png"><frame>0 100 8 9</frame></sprite>
+		<sprite name="icon-unlock" texture="gui/icons.png"><frame>101 91 8 10</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+
+%include "gui/scalablebutton_big_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<rect width="206" height="162" flow="vbox">
+
+			<rect id="row-list" width="206" height="144" flow="vbox" />
+
+			<rect id="row-template" spriteset="gui/variable/headline_borders.sval" width="206" height="36" visible="false">
+				<group id="items" inner="true" flow="hbox" spacing="6" anchor="0.5 0.5" />
+			</rect>
+
+			<rect id="item-container-template" width="32" height="32" border="#FFFFFFFF" bordertype="outer" visible="false" />
+
+			<upgradeshopitem id="item-template" func="buy-item" spriteset="scalebutton-big" icon="icon-pedestal" width="32" visible="false">
+				<sprite id="icon-unlock" visible="false" src="icon-unlock" anchor="1 1" offset="-5 -5" />
+			</upgradeshopitem>
+			<sprite id="item-template-unknown" src="button-frame" visible="false">
+				<sprite src="button-inner-frame" offset="2 2" />
+				<sprite src="icon-unknown" offset="4 4" />
+				<!-- <systext text="Unknown" anchor="0.5 0.5" /> -->
+			</sprite>
+			<sprite id="item-template-owned" src="button-frame" visible="false">
+				<sprite src="button-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4">
+					<sprite src="icon-check" anchor="1 1" offset="-1 -1" />
+				</sprite>
+				<!-- <systext text="Owned" anchor="0.5 0.5" /> -->
+			</sprite>
+			<sprite id="item-template-locked" src="button-frame" visible="false">
+				<sprite src="button-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4" />
+				<!-- <systext text="Locked" anchor="0.5 0.5" /> -->
+			</sprite>
+			<sprite id="item-template-unlocked" src="button-frame" visible="false">
+				<sprite src="button-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4">
+					<sprite src="icon-unlock" anchor="1 1" offset="-1 -1" />
+				</sprite>
+				<!-- <systext text="Unlocked" anchor="0.5 0.5" /> -->
+			</sprite>
+
+			<rect width="206" height="18" flow="hbox">
+				<rect width="40" height="18" spriteset="gui/variable/headline_hor.sval" />
+				<scalebutton spriteset="scalebutton" id="convert" func="convert" width="126" text=".shop.chapel.convert" font="gui/fonts/arial11.fnt" />
+				<rect width="40" height="18" spriteset="gui/variable/headline_hor.sval" />
+			</rect>
+
+		</rect>
+	</doc>
+</gui>

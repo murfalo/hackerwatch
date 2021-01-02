@@ -1,0 +1,34 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">2.85</float>
+		<int name="ttl">4000</int>
+		
+		<string name="hit-snd">event:/misc/trap_fireball_hit</string>
+		<string name="fx">actors/projectiles/lich_1_mb_fireball_hit.effect</string>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.035</float>	
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">60</int>
+				<float name="resistance-mul">0.8</float>
+			</dict>
+		</array>
+		
+		<string name="fx">players/wizard/trail_fireball_fade.effect</string>
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/projectiles/flame_arc.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="5" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

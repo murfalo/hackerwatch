@@ -1,0 +1,12 @@
+<unit slot="doodad" layer="15">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="0 32" layer="100" texture="doodads/test3.png" frame="0 0 32 32" />
+			%if EDITOR			
+			<sprite origin="0 128" texture="doodads/special/colors.png" material="doodads/special/colors.mats:minimap_light">
+				<frame>0 0 128 128</frame>
+			</sprite>
+			%endif			
+		</scene>
+	</scenes>
+</unit>

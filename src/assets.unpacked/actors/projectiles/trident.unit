@@ -1,0 +1,34 @@
+<unit netsync="none" layer="1">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">7</float>
+		<int name="ttl">1500</int>
+		<bool name="blockable">false</bool>
+		
+		<!-- <string name="shoot-snd">event:/enemy/gargoyle/attack-trident</string> -->
+		<string name="hit-snd">event:/enemy/gargoyle/trident_hit</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">90</int>
+				<float name="armor-mul">0.9</float>
+			</dict>
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/projectiles/trident_break.effect</string>
+			</dict>
+		</array>
+		<dict name="effect-params">
+			<float name="height">10</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/projectiles/trident.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

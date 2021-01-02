@@ -1,0 +1,143 @@
+<unit netsync="none" save="false">
+	<behavior class="MiniPetWalking">
+		<string name="anim-idle">idle 8</string>
+		<string name="anim-walk">walk 8</string>
+	
+		<float name="speed">5.5</float>
+		<float name="idle-speed">4</float>
+		
+		<int name="range-idle">50</int>
+		<int name="range-min-idle">20</int>
+		<int name="range-pickup">160</int>
+
+		<int name="pickup-duration">5000</int>
+		<int name="idle-duration">2000</int>
+
+		<int name="idle-delay">100</int>
+		<int name="pickup-delay">30</int>
+
+		<int name="leash-range">180</int>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="idle-0">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>0 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>24 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>48 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>72 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>96 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>120 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>144 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame>168 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">0 24 24 24</frame>
+				<frame time="80">0 48 24 24</frame>
+				<frame time="80">0 72 24 24</frame>
+				<frame time="80">0 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">24 24 24 24</frame>
+				<frame time="80">24 48 24 24</frame>
+				<frame time="80">24 72 24 24</frame>
+				<frame time="80">24 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">48 24 24 24</frame>
+				<frame time="80">48 48 24 24</frame>
+				<frame time="80">48 72 24 24</frame>
+				<frame time="80">48 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">72 24 24 24</frame>
+				<frame time="80">72 48 24 24</frame>
+				<frame time="80">72 72 24 24</frame>
+				<frame time="80">72 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">96 24 24 24</frame>
+				<frame time="80">96 48 24 24</frame>
+				<frame time="80">96 72 24 24</frame>
+				<frame time="80">96 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">120 24 24 24</frame>
+				<frame time="80">120 48 24 24</frame>
+				<frame time="80">120 72 24 24</frame>
+				<frame time="80">120 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">144 24 24 24</frame>
+				<frame time="80">144 48 24 24</frame>
+				<frame time="80">144 72 24 24</frame>
+				<frame time="80">144 96 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<sprite origin="12 12" looping="true" texture="players/pets/cat_lemon.png" material="system/default.mats:default-noxray">
+				<frame time="80">168 24 24 24</frame>
+				<frame time="80">168 48 24 24</frame>
+				<frame time="80">168 72 24 24</frame>
+				<frame time="80">168 96 24 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

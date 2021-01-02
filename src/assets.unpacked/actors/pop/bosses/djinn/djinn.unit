@@ -1,0 +1,1201 @@
+<unit netsync="position" slot="actor" layer="0">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.bosses.djinn</string>
+		<string name="beastiary-scene">idle-3</string>
+		<vec2 name="beastiary-offset">1 37</vec2>
+		<string name="quality">legendary</string>
+		
+		<string name="dlc">pop</string>
+		
+		<string name="type">aberration</string>
+		<int name="hp">30000</int>
+		<int name="armor">100</int>
+		<int name="resistance">200</int>
+		<int name="experience-reward">9500</int>
+		<float name="mp-scale-fact">1.35</float>
+		<float name="ngp-scale">1.5</float>
+
+		<int name="unit-height">52</int>
+		
+		<string name="death-snd">event:/enemy/boss_genie/death</string>
+
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">false</bool>
+		<float name="debuff-scale">0.66</float>
+		<float name="wind-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_boss.inc"
+			<string>fragility</string>
+		</array>
+		
+		<dict name="movement">
+			<string name="class">RangedMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			<int name="min-dist">30</int>
+			<int name="dist">60</int>
+			<float name="speed">3</float>
+		</dict>
+
+		<dict name="effect-params" />
+
+		<array name="skills">
+		
+		%// SWORD
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					
+					<string>flag</string><string>is</string><string>sword</string>
+				</array>
+				<string name="anim">sword 8</string>
+				<string name="start-snd">event:/enemy/boss_genie/sword-raise</string>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">750</int>
+				<int name="castpoint">525</int>
+				<int name="range">64</int>
+				<int name="min-range">0</int>
+				<bool name="good-aim">false</bool>
+				<string name="offset">attack-pos</string>
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">actors/ice_troll_club_hit.effect</string>
+						<int name="min-radius">14</int>
+						<int name="radius">14</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">100</int>
+								<float name="armor-mul">0.35</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_genie/sword</string>
+					</dict>
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/pop/bosses/djinn/fire_area.unit</string>
+						<int name="spawn-dist">0</int>
+						<bool name="safe-spawn">false</bool>
+					</dict>
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">effects/animations/impact_firecrack.effect</string>
+						<bool name="clone-owner-params">true</bool>
+					</dict>
+				</array>
+			</dict>
+						
+		%// ARC RIGHT
+			<dict>
+				<string name="class">CompositeActorBurstSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>isnt</string><string>arc_stage2</string>
+					<string>flag</string><string>isnt</string><string>arc_stage3</string>
+					<string>flag</string><string>isnt</string><string>arc_l</string>
+					
+					<string>flag</string><string>is</string><string>arc</string>
+				</array>
+				<string name="anim">firearc 8</string>
+				<string name="start-snd">event:/enemy/boss_genie/arc-start</string>
+				<string name="offset">shoot-pos</string>
+				<int name="burst">5</int>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">450</int>
+				<int name="min-range">50</int>
+				<int name="range">999</int>
+				<bool name="good-aim">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/bosses/djinn/firearc.unit</string>
+					</dict>
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">arc_r</string>
+					</dict>						
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">true</bool>
+						<string name="flag">arc_l</string>
+					</dict>	
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/djinn/firemuzzle.effect</string>
+						<bool name="clone-owner-params">true</bool>
+					</dict>
+				</array>
+			</dict>
+			
+		%// ARC LEFT
+			<dict>
+				<string name="class">CompositeActorBurstSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>isnt</string><string>arc_stage2</string>
+					<string>flag</string><string>isnt</string><string>arc_stage3</string>
+					<string>flag</string><string>isnt</string><string>arc_r</string>
+					
+					<string>flag</string><string>is</string><string>arc</string>
+				</array>
+				<string name="anim">firearc 8</string>
+				<string name="start-snd">event:/enemy/boss_genie/arc-start</string>
+				<string name="offset">shoot-pos</string>
+				<int name="burst">5</int>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">450</int>
+				<int name="min-range">50</int>
+				<int name="range">999</int>
+				<bool name="good-aim">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/bosses/djinn/firearc2.unit</string>
+					</dict>
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">true</bool>
+						<string name="flag">arc_r</string>
+					</dict>						
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">arc_l</string>
+					</dict>
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/djinn/firemuzzle.effect</string>
+						<bool name="clone-owner-params">true</bool>
+					</dict>
+				</array>
+			</dict>
+			
+		%// MEDIUM ARC RIGHT
+			<dict>
+				<string name="class">SpewSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>is</string><string>arc_stage2</string>
+					<string>flag</string><string>isnt</string><string>arc_stage3</string>
+					%//<string>flag</string><string>is</string><string>heal1</string>
+					<string>flag</string><string>isnt</string><string>arc_l</string>
+					
+					<string>flag</string><string>is</string><string>arc</string>
+				</array>				
+				<string name="anim">firearcburst 8</string>
+				<string name="start-snd">event:/enemy/boss_genie/arc-start</string>
+				<string name="offset">shoot-pos</string>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">450</int>
+				<int name="duration">500</int>
+				<int name="min-range">50</int>
+				<int name="range">999</int>
+				<int name="spread">20</int>
+				<int name="rate">200</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">false</bool>
+				<bool name="hold-dir">true</bool>
+
+				<string name="projectile">actors/pop/bosses/djinn/firearc.unit</string>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">arc_r</string>
+					</dict>						
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">true</bool>
+						<string name="flag">arc_l</string>
+					</dict>
+				</array>
+				
+			</dict>
+			
+		%// MEDIUM ARC LEFT
+			<dict>
+				<string name="class">SpewSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>is</string><string>arc_stage2</string>
+					<string>flag</string><string>isnt</string><string>arc_stage3</string>
+					%//<string>flag</string><string>is</string><string>heal1</string>
+					<string>flag</string><string>isnt</string><string>arc_r</string>
+					
+					<string>flag</string><string>is</string><string>arc</string>
+				</array>				
+				<string name="anim">firearcburst 8</string>
+				<string name="start-snd">event:/enemy/boss_genie/arc-start</string>
+				<string name="offset">shoot-pos</string>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">450</int>
+				<int name="duration">500</int>
+				<int name="min-range">50</int>
+				<int name="range">999</int>
+				<int name="spread">20</int>
+				<int name="rate">200</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">false</bool>
+				<bool name="hold-dir">true</bool>
+
+				<string name="projectile">actors/pop/bosses/djinn/firearc2.unit</string>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">true</bool>
+						<string name="flag">arc_r</string>
+					</dict>						
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">arc_l</string>
+					</dict>	
+				</array>
+				
+			</dict>
+				
+		%// ULTIMATE ARC RIGHT
+			<dict>
+				<string name="class">SpewSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>is</string><string>arc_stage3</string>
+					%//<string>flag</string><string>is</string><string>heal3</string>
+					<string>flag</string><string>isnt</string><string>arc_l</string>
+					
+					<string>flag</string><string>is</string><string>arc</string>
+				</array>
+				<string name="anim">firearcburst 8</string>
+				<string name="start-snd">event:/enemy/boss_genie/arc-start</string>
+				<string name="offset">shoot-pos</string>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">1250</int>
+				<int name="castpoint">450</int>
+				<int name="duration">500</int>
+				<int name="min-range">50</int>
+				<int name="range">999</int>
+				<int name="spread">20</int>
+				<int name="rate">100</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">false</bool>
+				<bool name="hold-dir">true</bool>
+				%//<float name="aim-interception">10</float>
+				<string name="projectile">actors/pop/bosses/djinn/firearc_ultimate.unit</string>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">arc_r</string>
+					</dict>						
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">true</bool>
+						<string name="flag">arc_l</string>
+					</dict>	
+				</array>		
+								
+			</dict>
+			
+		%// ULTIMATE ARC LEFT
+			<dict>
+				<string name="class">SpewSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>is</string><string>arc_stage3</string>
+					%//<string>flag</string><string>is</string><string>heal3</string>
+					<string>flag</string><string>isnt</string><string>arc_r</string>
+					
+					<string>flag</string><string>is</string><string>arc</string>
+				</array>				
+				<string name="anim">firearcburst 8</string>
+				<string name="start-snd">event:/enemy/boss_genie/arc-start</string>
+				<string name="offset">shoot-pos</string>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">1250</int>
+				<int name="castpoint">450</int>
+				<int name="duration">500</int>
+				<int name="min-range">50</int>
+				<int name="range">999</int>
+				<int name="spread">20</int>
+				<int name="rate">100</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">false</bool>
+				<bool name="hold-dir">true</bool>
+				%//<float name="aim-interception">10</float>
+				<string name="projectile">actors/pop/bosses/djinn/firearc_ultimate_l.unit</string>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">true</bool>
+						<string name="flag">arc_r</string>
+					</dict>						
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">arc_l</string>
+					</dict>	
+				</array>
+				
+			</dict>
+			
+		%// WHIRL	
+			<dict>
+				<string name="class">WhirlwindSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					%//<string>flag</string><string>is</string><string>heal1</string>
+					%//<string>hp</string><string>gt</string><float>0.5</float>
+					
+					<string>flag</string><string>is</string><string>whirl</string>
+				</array>				
+				<string name="anim">whirlwind</string>
+				<string name="snd">event:/enemy/boss_warden/attack-spin</string>
+				<int name="cooldown-start">60000</int>
+				<int name="cooldown">60000</int>
+				<int name="castpoint">1300</int>
+
+				<int name="range">75</int>
+
+				<float name="acceleration">0</float>
+				<float name="speed">0</float>
+				<int name="duration">5000</int>
+				<int name="freq">1500</int>
+
+				<array name="effects">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<string name="projectile">actors/pop/bosses/djinn/fireball.unit</string>
+						<int name="dist">0</int>
+						<float name="jitter">0</float>
+						<int name="projectiles">7</int>
+						<int name="spread">360</int>
+					</dict>				
+				</array>
+			</dict>
+			
+		
+			<dict>
+				<string name="class">BlinkStrikeSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>isnt</string><string>heal2</string>
+					
+					<string>flag</string><string>is</string><string>blink</string>
+				</array>
+				<int name="cooldown-start">10000</int>
+				<int name="cooldown">20000</int>
+				<bool name="must-see">false</bool>
+				<string name="anim-blink">blink-exit</string>
+				<string name="anim-melee">testblinksword</string>
+				<string name="anim-hidden">hidden</string>
+				%//<string name="fx-blink-out">doodads/generic/trap_curse_rotating.effect</string>
+				%//<string name="fx-blink-in">doodads/generic/trap_glyph_rotating.effect</string>
+				<string name="snd-blink-out">event:/enemy/boss_genie/blink-out</string>
+				<string name="snd-blink-in">event:/enemy/boss_genie/blink-in</string>				
+				<int name="cast-point-melee">1000</int>
+				<int name="blink-delay">0</int>
+				<int name="blink-delay-random">500</int>
+				<int name="range">999</int>
+				<int name="min-range">0</int>
+				<float name="blink-distance">110</float>
+				<float name="blink-distance-random">0</float>
+				<array name="blink-effects">
+				</array>
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						%//<string name="fx">actors/pop/bosses/djinn/firesplash.effect</string>
+						<int name="min-radius">0</int>
+						<int name="radius">20</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">20</int>
+								<float name="armor-mul">0</float>
+								<float name="resistance-mul">0</float>
+								<bool name="melee">true</bool>
+							</dict>
+							<dict>
+								<string name="class">Decimate</string>
+								<float name="amount">0.5</float>
+							</dict>		
+							<dict>
+								<string name="class">Decimate</string>
+								<float name="mana-max">0.5</float>
+							</dict>					
+						</array>
+					</dict>
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<string name="projectile">actors/pop/bosses/djinn/magicball.unit</string>
+						<float name="jitter">0</float>
+						<int name="projectiles">9</int>
+						<int name="spread">360</int>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_genie/magic-strike</string>
+					</dict>
+				</array>
+			</dict>				
+		
+			<dict>
+				<string name="class">BlinkStrikeSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>superheal</string>
+					<string>flag</string><string>is</string><string>heal2</string>
+					
+					<string>flag</string><string>is</string><string>blink</string>
+				</array>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">5000</int>
+				<bool name="must-see">false</bool>
+				<string name="anim-blink">blink-exit</string>
+				<string name="anim-melee">testblinksword</string>
+				<string name="anim-hidden">hidden</string>
+				%//<string name="fx-blink-out">doodads/generic/trap_curse_rotating.effect</string>
+				%//<string name="fx-blink-in">doodads/generic/trap_glyph_rotating.effect</string>
+				<string name="snd-blink-out">event:/enemy/boss_genie/blink-out</string>
+				<string name="snd-blink-in">event:/enemy/boss_genie/blink-in</string>
+				<int name="cast-point-melee">1000</int>
+				<int name="blink-delay">0</int>
+				<int name="blink-delay-random">500</int>
+				<int name="range">999</int>
+				<int name="min-range">0</int>
+				<float name="blink-distance">110</float>
+				<float name="blink-distance-random">0</float>
+				<array name="blink-effects">
+				</array>
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						%//<string name="fx">actors/pop/bosses/djinn/firesplash.effect</string>
+						<int name="min-radius">0</int>
+						<int name="radius">20</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">20</int>
+								<float name="armor-mul">0</float>
+								<float name="resistance-mul">0</float>
+								<bool name="melee">true</bool>
+							</dict>
+							<dict>
+								<string name="class">Decimate</string>
+								<float name="amount">0.5</float>
+							</dict>		
+							<dict>
+								<string name="class">Decimate</string>
+								<float name="mana-max">0.5</float>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<string name="projectile">actors/pop/bosses/djinn/magicball.unit</string>
+						<float name="jitter">0</float>
+						<int name="projectiles">9</int>
+						<int name="spread">360</int>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_genie/magic-strike</string>
+					</dict>						
+				</array>
+			</dict>		
+				
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<array name="conditional">
+					<string>flag</string><string>is</string><string>superheal</string>
+					
+					<string>flag</string><string>is</string><string>heal</string>
+				</array>
+				<string name="anim">superheal</string>
+				<int name="cooldown-start">0</int>
+				<int name="cooldown">0</int>
+				<int name="castpoint">0</int>
+				<int name="min-range">0</int>
+				<int name="range">999</int>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnPrefab</string>
+						<string name="prefab">actors/pop/bosses/djinn/superheal.pfb</string>
+						<bool name="safe-spawn">false</bool>
+					</dict>
+					<dict>
+						<string name="class">SpawnPrefab</string>
+						<string name="prefab">actors/pop/bosses/djinn/bomb3.pfb</string>
+						<bool name="safe-spawn">false</bool>
+					</dict>					
+%//					<dict>
+%//						<string name="class">SpawnPrefab</string>
+%//						<string name="prefab">actors/pop/bosses/djinn/testfirewall.pfb</string>
+%//						<bool name="safe-spawn">false</bool>
+%//					</dict>					
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">superheal</string>
+					</dict>
+				</array>
+			</dict>	
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/pop/bosses/djinn/djinn_corpse.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1" heal="heal">
+		
+		<scene name="shared-sword-blink">
+			<effect delay="625" src="actors/pop/bosses/djinn/sword.effect" />
+			
+			<sprite origin="18 27" loopback="860" ulayer="3" looping="true" texture="./djinn_fire.png" material="effects/effects.mats:fire">
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">0 0 37 10</frame>
+				<frame time="100">37 0 37 15</frame>
+				<frame time="120">74 0 37 20</frame>
+				<frame time="60">0 37 37 25</frame>
+				<frame time="120">37 37 37 37</frame>
+				
+				<frame time="120">0 0 37 37</frame>
+				<frame time="120">37 0 37 37</frame>
+				<frame time="120">74 0 37 37</frame>
+				<frame time="120">0 37 37 37</frame>
+				<frame time="120">37 37 37 37</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 0" radius="12" aim-through="true" charge-through="true" density="999"/>
+				<circle offset="0 -10" radius="12" sensor="true" shoot-through="false" aim-through="true" charge-through="false"/>
+				<circle offset="0 -20" radius="12" sensor="true" shoot-through="false" aim-through="true" charge-through="false"/>
+			</collision>
+		 
+			<effect delay="0" layer="1" pos="0 3" src="actors/pop/bosses/djinn/djinn_smoke.effect" />
+		  
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="250 0 150 0" />
+				</colors>
+			</light>  			  
+		  
+		</scene>
+		
+		<scene name="shared-blink">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" radius="10" />
+			</collision>
+		</scene>
+		
+<!-- shared scene list end -->
+
+		<scene name="blink-exit">
+			<effect src="actors/pop/bosses/djinn/blink_exit.effect" />
+			<collision static="false">
+				<circle offset="0 0" sensor="true" shoot-through="true" aim-through="true" charge-through="true" radius="10" />
+			</collision>
+			<!-- arms top layer -->
+			<sprite origin="32 33" ulayer="3" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="400">64 0 64 32</frame>
+				<frame time="400">0 0 0 0</frame>
+			</sprite>
+			<!-- djinn main sprite -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="400">128 0 64 80</frame>
+				<frame time="400">0 0 0 0</frame>
+			</sprite>
+			<!-- fire twister -->
+			<sprite origin="18 27" ulayer="2" looping="false" texture="./djinn_fire.png" material="effects/effects.mats:fire">
+				<frame time="100">0 0 37 37</frame>
+				<frame time="100">37 0 37 37</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="idle-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="32 -18" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">0 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">0 0 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="14 -7" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">64 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">64 0 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 8" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">128 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">128 0 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-14 -7" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">192 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">192 0 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-32 -18" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">256 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">256 0 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-18 -42" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">320 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">320 0 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -56" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">384 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">384 0 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="18 -42" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">448 0 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">448 0 64 80</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">0 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">0 560 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">64 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">64 560 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">128 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">128 560 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">192 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">192 560 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">256 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">256 560 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">320 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" layer="2" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">320 560 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">384 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">384 560 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="32 33" layer="2" looping="true" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="75">448 224 64 32</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="75">448 560 64 80</frame>
+			</sprite>
+		</scene>
+		
+		
+%include "actors/pop/bosses/djinn/fireball_attack.inc"	
+
+%include "actors/pop/bosses/djinn/sword_attack.inc"
+
+%include "actors/pop/bosses/djinn/sword_firearc_attack.inc"
+
+
+		<scene name="blinksword-0">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" layer="3" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">0 134 63 67</frame>
+				<frame time="50">0 201 63 67</frame>
+				<frame time="50">0 268 63 67</frame>
+				<frame time="75">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="2" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">0 335 63 67</frame>
+				<frame time="175">0 402 63 67</frame>
+				<frame time="175">0 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">0 96 64 32</frame>
+				<frame time="200">0 128 64 32</frame>
+				<frame time="175">0 160 64 32</frame>
+				<frame time="175">0 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">0 240 64 80</frame>
+				<frame time="200">0 320 64 80</frame>
+				<frame time="175">0 400 64 80</frame>
+				<frame time="175">0 480 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="blinksword-1">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" layer="3" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">63 134 63 67</frame>
+				<frame time="50">63 201 63 67</frame>
+				<frame time="50">63 268 63 67</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="4" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">63 335 63 67</frame>
+				<frame time="175">63 402 63 67</frame>
+				<frame time="175">63 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">64 96 64 32</frame>
+				<frame time="200">64 128 64 32</frame>
+				<frame time="175">64 160 64 32</frame>
+				<frame time="175">64 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">64 240 64 80</frame>
+				<frame time="200">64 320 64 80</frame>
+				<frame time="175">64 400 64 80</frame>
+				<frame time="175">64 480 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="blinksword-2">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" ulayer="5" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">126 134 63 67</frame>
+				<frame time="50">126 201 63 67</frame>
+				<frame time="50">126 268 63 67</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="4" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">126 335 63 67</frame>
+				<frame time="175">126 402 63 67</frame>
+				<frame time="175">126 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">128 96 64 32</frame>
+				<frame time="200">128 128 64 32</frame>
+				<frame time="175">128 160 64 32</frame>
+				<frame time="175">128 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">128 240 64 80</frame>
+				<frame time="200">128 320 64 80</frame>
+				<frame time="175">128 400 64 80</frame>
+				<frame time="175">128 480 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="blinksword-3">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" ulayer="5" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">189 134 63 67</frame>
+				<frame time="50">189 201 63 67</frame>
+				<frame time="50">189 268 63 67</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="4" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">189 335 63 67</frame>
+				<frame time="175">189 402 63 67</frame>
+				<frame time="175">189 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">192 96 64 32</frame>
+				<frame time="200">192 128 64 32</frame>
+				<frame time="175">192 160 64 32</frame>
+				<frame time="175">192 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">192 240 64 80</frame>
+				<frame time="200">192 320 64 80</frame>
+				<frame time="175">192 400 64 80</frame>
+				<frame time="175">192 480 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="blinksword-4">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" ulayer="5" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">252 134 63 67</frame>
+				<frame time="50">252 201 63 67</frame>
+				<frame time="50">252 268 63 67</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="4" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">252 335 63 67</frame>
+				<frame time="175">252 402 63 67</frame>
+				<frame time="175">252 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">256 96 64 32</frame>
+				<frame time="200">256 128 64 32</frame>
+				<frame time="175">256 160 64 32</frame>
+				<frame time="175">256 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">256 240 64 80</frame>
+				<frame time="200">256 320 64 80</frame>
+				<frame time="175">256 400 64 80</frame>
+				<frame time="175">256 480 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="blinksword-5">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" ulayer="5" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">315 134 63 67</frame>
+				<frame time="50">315 201 63 67</frame>
+				<frame time="50">315 268 63 67</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="4" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">315 335 63 67</frame>
+				<frame time="175">315 402 63 67</frame>
+				<frame time="175">315 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">320 96 64 32</frame>
+				<frame time="200">320 128 64 32</frame>
+				<frame time="175">320 160 64 32</frame>
+				<frame time="175">320 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">320 240 64 80</frame>
+				<frame time="200">320 320 64 80</frame>
+				<frame time="175">320 400 64 80</frame>
+				<frame time="175">320 480 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="blinksword-6">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" ulayer="5" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">378 134 63 67</frame>
+				<frame time="50">378 201 63 67</frame>
+				<frame time="50">378 268 63 67</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="4" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">378 335 63 67</frame>
+				<frame time="175">378 402 63 67</frame>
+				<frame time="175">378 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">384 96 64 32</frame>
+				<frame time="200">384 128 64 32</frame>
+				<frame time="175">384 160 64 32</frame>
+				<frame time="175">384 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">384 240 64 80</frame>
+				<frame time="200">384 320 64 80</frame>
+				<frame time="175">384 400 64 80</frame>
+				<frame time="175">384 480 64 80</frame>
+			</sprite>
+		</scene>
+		<scene name="blinksword-7">
+			<scene src="shared-blink" />
+			<scene src="shared-sword-blink" />
+			<effect delay="0" src="actors/pop/bosses/djinn/blink_enter.effect" />
+			<!-- sword fire spawn -->
+			<sprite origin="33 72" ulayer="5" looping="false" texture="./djinn_sword.png" material="effects/effects.mats:fire">
+				<frame time="50">441 134 63 67</frame>
+				<frame time="50">441 201 63 67</frame>
+				<frame time="50">441 268 63 67</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			<!-- sword -->
+			<sprite origin="33 72" ulayer="4" looping="false" texture="./djinn_sword.png" material="system/default.mats:actor">
+				<frame time="150">0 0 0 0</frame>
+				<frame time="475">441 335 63 67</frame>
+				<frame time="175">441 402 63 67</frame>
+				<frame time="175">441 469 63 67</frame>
+			</sprite>
+			<!-- djinn arms (layer sorting) -->
+			<sprite origin="32 33" layer="2" looping="false" texture="./djinn_arms.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">448 96 64 32</frame>
+				<frame time="200">448 128 64 32</frame>
+				<frame time="175">448 160 64 32</frame>
+				<frame time="175">448 192 64 32</frame>
+			</sprite>
+			<!-- djinn -->
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="175">448 240 64 80</frame>
+				<frame time="200">448 320 64 80</frame>
+				<frame time="175">448 400 64 80</frame>
+				<frame time="175">448 480 64 80</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="testblinksword">
+			<collision static="true">
+				<circle offset="0 0" radius="12" aim-through="true" charge-through="true" density="999" />
+				<circle offset="0 -10" radius="12" sensor="true" shoot-through="false" aim-through="true" charge-through="false"/>				
+				<circle offset="0 -20" radius="12" sensor="true" shoot-through="false" aim-through="true" charge-through="false"/>				
+			</collision>
+			<effect delay="350" src="actors/pop/bosses/djinn/blink_enter.effect" />			
+
+		</scene>
+		
+		<scene name="superheal">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="true">
+				<circle offset="0 0" radius="10" aim-through="true" charge-through="true" density="999" />			
+			</collision>			
+			<sprite origin="32 81" ulayer="1" looping="true" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="99999999">640 560 64 80</frame>
+			</sprite>
+			
+			<effect pos="-2 -40" src="actors/pop/bosses/djinn/heal_bolt.effect" />
+			<effect pos="0 -40" src="actors/pop/bosses/djinn/heal_ring.effect" />
+			<effect pos="0 -40" src="actors/pop/bosses/djinn/fx_heal.effect" />
+			<effect delay="0" pos="0 5" src="actors/pop/bosses/djinn/djinn_spin.effect" />
+			<effect delay="0" pos="0 2" src="actors/pop/bosses/djinn/djinn_dust_particles.effect" />
+			<effect delay="0" pos="0 3" src="actors/pop/bosses/djinn/djinn_smoke.effect" />
+			<effect delay="0" pos="0 2" src="actors/pop/bosses/djinn/djinn_heal_balls.effect" />
+			
+			<light pos="0 20">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="7" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="160" />
+				</sizes>
+				<colors>
+					<color value="255 0 75 0" />
+				</colors>
+			</light>  				
+		</scene>
+		
+		
+		<scene name="whirlwind">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="true">
+				<circle offset="0 0" radius="12" aim-through="true" charge-through="true" density="999" />
+				<circle offset="0 -10" radius="12" sensor="true" shoot-through="false" aim-through="true" charge-through="false"/>				
+				<circle offset="0 -20" radius="12" sensor="true" shoot-through="false" aim-through="true" charge-through="false"/>				
+			</collision>
+			<sprite origin="32 81" ulayer="1" looping="false" texture="./djinn.png" material="effects/effects.mats:fire">
+				<frame time="300">0 0 0 0</frame>
+				<frame time="150">896 640 64 80</frame>
+			</sprite>
+			<sprite origin="32 81" ulayer="0" looping="false" texture="./djinn.png" material="system/default.mats:actor">
+				<frame time="150">512 560 64 80</frame>
+				<frame time="150">576 560 64 80</frame>
+			</sprite>
+			<sprite origin="32 81" loopback="650" ulayer="2" looping="true" texture="./djinn.png" material="effects/effects.mats:fire">
+				<frame time="450">0 0 0 0</frame>
+				<frame time="100">704 560 64 80</frame>
+				<frame time="100">768 560 64 80</frame>
+				<frame time="200">832 560 64 80</frame>
+				<frame time="200">896 560 64 80</frame>
+				<frame time="200">960 560 64 80</frame>
+				<frame time="200">896 560 64 80</frame>
+			</sprite>
+			<effect delay="0" pos="0 2" src="actors/pop/bosses/djinn/djinn_fire_balls.effect" />
+			<effect delay="0" pos="0 2" layer="2" src="actors/pop/bosses/djinn/djinn_flames_body.effect" />
+			<effect delay="0" pos="0 2" src="actors/pop/bosses/djinn/djinn_spin_fire.effect" />
+			<effect delay="0" layer="-1" pos="0 3" src="actors/pop/bosses/djinn/djinn_smoke.effect" />
+			<effect delay="0" layer="0" pos="0 3" src="actors/pop/bosses/djinn/djinn_smoke_fire.effect" />
+		</scene>			
+
+		<scene name="hidden">
+<!--			<collision static="false">
+				<circle offset="0 0" sensor="true" shoot-through="true" aim-through="true" charge-through="true" radius="3" />
+			</collision>-->
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>0 0 0 0</frame>
+			</sprite>			
+		</scene>
+		
+	</scenes>
+</unit>
+
+

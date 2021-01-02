@@ -1,0 +1,11 @@
+%define BESTIARY
+%define NORMAL
+%define NORTH
+
+%replace CORPSE actors/mt/spawners/spawner_vampire_1_razed.unit
+%replace LOOT actors/loot.sval:spawner_vampire_1_n
+
+%replace SPAWNCD 2000
+%replace SPAWNCHARGES 10
+
+%include "actors/mt/spawners/spawner_vampire_1.inc"

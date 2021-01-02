@@ -1,0 +1,46 @@
+<unit>
+	<behavior class="BombBehavior">
+		<string name="spawn-sound">event:/enemy/boss_wisp/death</string>
+		<string name="explode-sound">event:/enemy/ice_shaman_troll/snow_bomb_explode</string>
+		<int name="delay">900</int>
+		
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/bosses/dragon/foot_bomb.effect</string>
+				
+				<int name="radius">58</int>
+				<int name="min-radius">58</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">45</int>
+						<int name="magical">45</int>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/giant_wisp/giant_wisp_corpse.unit</string>
+				<bool name="aggro">true</bool>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+		<dict name="effect-params">
+			<float name="radius">60</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene>
+
+			<effect src="actors/mt/bosses/giant_wisp/giant_wisp_death.effect" />
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

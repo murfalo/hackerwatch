@@ -1,0 +1,78 @@
+<effect looping="true" wpos-track="15">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+		
+	<trail texture="./bat_mb_sonic_wave.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="150" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="12 * saturate((1 - i / 12))" />
+		
+		<uv-l-x value="(t+i)*-8" />
+		<uv-l-y value="31" />
+		
+		<uv-r-x value="(t+i)*-8" />
+		<uv-r-y value="44" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="0.6 * (1 - i / 12)" />
+	</trail>
+	
+	<sprite looping="true" origin="7 7" texture="./bat_mb_sonic_wave.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+		scale-x="0.5 + 0.5*sin(t*pi)"
+		scale-y="0.5 + 0.5*sin(t*pi)"
+		color-a="0.5"
+		>
+		
+		<frame time="500">0 0 14 14</frame>
+	</sprite>
+	
+	
+	<sprite looping="true" origin="6 6" texture="./bat_mb_sonic_wave.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+		scale-x="0.25 + 0.25*cos(t*pi)"
+		scale-y="0.25 + 0.25*cos(t*pi)"
+		color-a="0.5"
+		>
+		
+		<frame time="500">1 16 12 12</frame>
+	</sprite>
+	
+	
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="20" />
+
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,35 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	
+	<sprite looping="true" origin="16 16" texture="actors/elemental_ice_ranged.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+		
+		<frame time="100">264 0 32 32</frame>
+		<frame time="100">296 0 32 32</frame>
+		<frame time="100">328 0 32 32</frame>
+		<frame time="100">360 0 32 32</frame>
+		<frame time="100">392 0 32 32</frame>
+	</sprite>	
+	
+	<sprite looping="true" origin="16 16" texture="actors/elemental_ice_ranged.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">264 0 32 32</frame>
+		<frame time="100">296 0 32 32</frame>
+		<frame time="100">328 0 32 32</frame>
+		<frame time="100">360 0 32 32</frame>
+		<frame time="100">392 0 32 32</frame>
+	</sprite>
+	
+</effect>

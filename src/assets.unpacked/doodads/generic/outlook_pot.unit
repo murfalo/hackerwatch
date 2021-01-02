@@ -1,0 +1,305 @@
+<unit slot="doodad">
+	<scenes cooking="1" bonfire="2" pot="3" bbq="4" magic="5" alchemy="6" empty="7" empty-bonfire="8">
+		<scene name="shared">	
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="4" />			
+			</collision>
+			
+			<light pos="0 -2">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="60 40 0 0" />
+					<color value="55 30 0 0" />
+				</colors>
+			</light>				
+			
+			<light pos="0 -2">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="110 40 0 0" />
+				</colors>
+			</light>	
+		</scene>
+		<scene name="shared-x">	
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="4" />			
+			</collision>
+		</scene>
+		<scene name="1" random-start="true">	
+			<scene src="shared" />	
+			<sprite origin="10 12" ulayer="0" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">130 99 20 21</frame>
+			</sprite>
+			<sprite ulayer="1" origin="3 12" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="180">0 121 7 13</frame>
+				<frame time="180">7 121 7 13</frame>
+				<frame time="180">14 121 7 13</frame>
+				<frame time="180">21 121 7 13</frame>
+			</sprite>
+			<sprite origin="6 15" ulayer="2" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">73 41 16 18</frame>
+			</sprite>
+			<sprite ulayer="3" origin="0 18" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="180">73 34 4 7</frame>
+				<frame time="180">77 34 4 7</frame>
+				<frame time="180">81 34 4 7</frame>
+				<frame time="180">85 34 4 7</frame>
+			</sprite>
+			<sprite ulayer="3" origin="3 20" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="200">73 34 4 7</frame>
+				<frame time="200">77 34 4 7</frame>
+				<frame time="200">81 34 4 7</frame>
+				<frame time="200">85 34 4 7</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="2">
+			<scene src="shared" />	
+			<sprite origin="10 12" ulayer="0" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">130 99 20 21</frame>
+			</sprite>
+			<sprite ulayer="1" origin="3 12" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="180">0 121 7 13</frame>
+				<frame time="180">7 121 7 13</frame>
+				<frame time="180">14 121 7 13</frame>
+				<frame time="180">21 121 7 13</frame>
+			</sprite>
+		</scene>
+		<scene name="3">
+			<scene src="shared-x" />	
+			<sprite origin="10 12" ulayer="0" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">130 99 20 21</frame>
+			</sprite>
+			<sprite origin="6 15" ulayer="2" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">73 41 16 18</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="4" random-start="true">	
+			<scene src="shared" />	
+			<sprite origin="10 12" ulayer="0" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">130 99 20 21</frame>
+			</sprite>
+			<sprite ulayer="1" origin="3 12" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="180">0 121 7 13</frame>
+				<frame time="180">7 121 7 13</frame>
+				<frame time="180">14 121 7 13</frame>
+				<frame time="180">21 121 7 13</frame>
+			</sprite>
+			<sprite origin="9 10" ulayer="2" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">165 68 21 10</frame>
+			</sprite>
+			<sprite ulayer="3" origin="0 18" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="180">73 34 4 7</frame>
+				<frame time="180">77 34 4 7</frame>
+				<frame time="180">81 34 4 7</frame>
+				<frame time="180">85 34 4 7</frame>
+			</sprite>
+			<sprite ulayer="3" origin="3 20" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="200">73 34 4 7</frame>
+				<frame time="200">77 34 4 7</frame>
+				<frame time="200">81 34 4 7</frame>
+				<frame time="200">85 34 4 7</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="5" random-start="true">	
+			<scene src="shared-x" />	
+			
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<light pos="-1 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="20 60 0 0" />
+					<color value="30 55 0 0" />
+				</colors>
+			</light>				
+			
+			<light pos="-1 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="20 110 0 0" />
+				</colors>
+			</light>
+			<sprite origin="6 15" ulayer="2" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">187 45 16 18</frame>
+			</sprite>
+			<sprite origin="3 14" ulayer="4" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="60">203 50 5 5</frame>
+				<frame time="60">208 50 5 5</frame>
+				<frame time="60">213 50 5 5</frame>
+				<frame time="60">218 50 5 5</frame>
+				<frame time="60">223 50 5 5</frame>
+				<frame time="60">203 55 5 5</frame>
+				<frame time="60">208 55 5 5</frame>
+				<frame time="60">213 55 5 5</frame>
+				<frame time="60">218 55 5 5</frame>
+				<frame time="60">223 55 5 5</frame>
+			</sprite>
+			<sprite ulayer="3" origin="0 18" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="140">203 43 4 7</frame>
+				<frame time="140">207 43 4 7</frame>
+				<frame time="140">211 43 4 7</frame>
+				<frame time="140">215 43 4 7</frame>
+			</sprite>
+			<sprite ulayer="3" origin="3 20" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="120">203 43 4 7</frame>
+				<frame time="120">207 43 4 7</frame>
+				<frame time="120">211 43 4 7</frame>
+				<frame time="120">215 43 4 7</frame>
+			</sprite>
+		</scene>
+		
+		
+		<scene name="6" random-start="true">	
+			<scene src="shared-x" />	
+			
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<light pos="-1 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="60 60 0 0" />
+					<color value="55 55 0 0" />
+				</colors>
+			</light>				
+			
+			<light pos="-1 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="80 80 0 0" />
+				</colors>
+			</light>
+			<sprite origin="6 15" ulayer="2" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">187 45 16 18</frame>
+			</sprite>
+			<sprite origin="3 14" ulayer="4" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="60">334 11 5 5</frame>
+				<frame time="60">339 11 5 5</frame>
+				<frame time="60">344 11 5 5</frame>
+				<frame time="60">349 11 5 5</frame>
+				<frame time="60">354 11 5 5</frame>
+				<frame time="60">334 16 5 5</frame>
+				<frame time="60">339 16 5 5</frame>
+				<frame time="60">344 16 5 5</frame>
+				<frame time="60">349 16 5 5</frame>
+				<frame time="60">354 16 5 5</frame>
+			</sprite>
+			<sprite ulayer="3" origin="0 18" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="140">335 21 4 7</frame>
+				<frame time="140">339 21 4 7</frame>
+				<frame time="140">343 21 4 7</frame>
+				<frame time="140">347 21 4 7</frame>
+			</sprite>
+			<sprite ulayer="3" origin="3 20" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="120">335 21 4 7</frame>
+				<frame time="120">339 21 4 7</frame>
+				<frame time="120">343 21 4 7</frame>
+				<frame time="120">347 21 4 7</frame>
+			</sprite>
+		</scene>
+		<scene name="7" random-start="true">	
+			<scene src="shared-x" />	
+			
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			
+			<sprite origin="6 15" ulayer="2" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">187 45 16 18</frame>
+			</sprite>
+			
+		</scene>
+		<scene name="8" random-start="true">	
+			<scene src="shared-x" />	
+			
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			
+			<sprite origin="10 12" ulayer="0" layer="-2" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">130 99 20 21</frame>
+			</sprite>
+			<sprite origin="6 15" ulayer="2" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">187 45 16 18</frame>
+			</sprite>
+			
+		</scene>
+	</scenes>
+</unit>

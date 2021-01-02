@@ -1,0 +1,67 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="shared">
+			<sprite origin="0 0" layer="-20" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>56 0 24 24</frame>
+			</sprite>
+		</scene>
+		<scene name="off" trigger-snd="event:/misc/trap_furrow-off">
+			<scene src="shared"/>
+			<!-- X -->
+			<minimap_sprite origin="-3 0" texture="gui/minimap.png" frame="46 8 3 3" />
+			<!-- W -->
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="42 8 3 3" />
+			<minimap_sprite origin="0 -3" texture="gui/minimap.png" frame="42 8 3 1" />
+			<!-- N -->
+			<!-- S -->
+			<minimap_sprite origin="-5 -3" texture="gui/minimap.png" frame="41 9 1 3" />
+			<minimap_sprite origin="-2 -3" texture="gui/minimap.png" frame="41 9 3 3" />
+			<sprite origin="0 -4" looping="false" layer="-15" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>52 80 20 20</frame>
+				<frame>52 144 20 20</frame>
+				<frame>52 208 20 20</frame>
+				<frame>0 0 0 0</frame>
+			</sprite>
+		</scene>	
+		<scene name="on" trigger-snd="event:/misc/trap_furrow-on">
+			<scene src="shared"/>
+			<!-- X -->
+			<minimap_sprite origin="-3 0" texture="gui/minimap.png" frame="38 8 3 3" />
+			<!-- W -->
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="34 8 3 3" />
+			<minimap_sprite origin="0 -3" texture="gui/minimap.png" frame="34 8 3 1" />
+			<!-- N -->
+			<!-- S -->
+			<minimap_sprite origin="-5 -3" texture="gui/minimap.png" frame="33 9 1 3" />
+			<minimap_sprite origin="-2 -3" texture="gui/minimap.png" frame="33 9 3 3" />
+			<light pos="16 16">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="80 40 0 0" />
+				</colors>
+			</light>			
+			<sprite origin="0 -4" looping="false" layer="-15" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>52 208 20 20</frame>
+				<frame>52 144 20 20</frame>
+				<frame>52 80 20 20</frame>
+			</sprite>
+			<sprite origin="0 -4" looping="false" layer="-15" texture="./_furrow.png" material="system/default.mats:xray">
+				<frame>52 208 20 20</frame>
+				<frame>52 144 20 20</frame>
+				<frame>52 80 20 20</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

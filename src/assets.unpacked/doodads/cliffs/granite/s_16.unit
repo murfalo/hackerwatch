@@ -1,0 +1,48 @@
+<unit slot="doodad" layer="-20">
+	<scenes default="1" desert="d1" snow="s1" snow_ground="sg1">
+		<scene name="1">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -40 16 40</rect>
+			</collision>
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 0 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 16 16 32</frame>
+			</sprite>
+		</scene>
+		<scene name="d1">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -40 16 40</rect>
+			</collision>
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>224 0 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>224 16 16 32</frame>
+			</sprite>
+		</scene>
+		<scene name="sg1">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -40 16 40</rect>
+			</collision>
+			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 144 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 160 16 32</frame>
+			</sprite>
+		</scene>
+		<scene name="s1">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -40 16 40</rect>
+			</collision>
+			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 144 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 192 16 32</frame>
+			</sprite>
+		</scene>			
+	</scenes>
+</unit>

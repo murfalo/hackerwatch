@@ -1,0 +1,37 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+	<string name="anim">idle</string>
+		<float name="speed">2.2</float>
+		<int name="ttl">2000</int>
+		<!-- <bool name="seeking">true</bool> -->
+		<!-- <float name="seek-turnspeed">0.1</float> -->
+		<int name="penetration">999</int>
+		<!-- <bool name="penetrate-all">true</bool> -->
+		
+		<array name="miss-effects">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/wisp_frost_exploding.unit</string>
+				<bool name="safe-spawn">false</bool> 
+				<int name="spawn-dist">0</int>
+				<bool name="aggro">true</bool>
+				<bool name="no-loot">true</bool>
+				<bool name="no-experience">true</bool>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/lich_frost/shoot</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>
+			<effect pos="0 0" src="./wisp_spawn_projectile.effect" />
+			
+		</scene>
+	</scenes>
+</unit>

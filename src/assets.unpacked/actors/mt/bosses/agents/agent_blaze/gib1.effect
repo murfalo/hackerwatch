@@ -1,0 +1,35 @@
+<effect looping="true" wpos-track="50">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<sprite origin="3 3" texture="effects/gibs/gibs.png" material="system/default.mats:bright-noxray">
+		<frame time="70">24 59 7 6</frame>
+		<frame time="70">31 59 7 6</frame>
+		<frame time="70">38 59 7 6</frame>
+		<frame time="70">45 59 7 6</frame>
+		<frame time="70">24 59 7 6</frame>
+		<frame time="70">31 59 7 6</frame>
+		<frame time="70">38 59 7 6</frame>
+		<frame time="70">45 59 7 6</frame>
+		<frame time="70">24 59 7 6</frame>
+		<frame time="70">31 59 7 6</frame>
+		<frame time="70">38 59 7 6</frame>
+		<frame time="70">45 59 7 6</frame>
+	</sprite>  
+	<sprite origin="3 3" texture="effects/gibs/gibs.png" material="system/default.mats:glow-both-bright"
+		color-r="1 + saturate(sin(t*pi*2))"
+		color-a="saturate(sin(t*pi*2))*0.5"
+		>
+		<frame time="70">24 59 7 6</frame>
+		<frame time="70">31 59 7 6</frame>
+		<frame time="70">38 59 7 6</frame>
+		<frame time="70">45 59 7 6</frame>
+		<frame time="70">24 59 7 6</frame>
+		<frame time="70">31 59 7 6</frame>
+		<frame time="70">38 59 7 6</frame>
+		<frame time="70">45 59 7 6</frame>
+		<frame time="70">24 59 7 6</frame>
+		<frame time="70">31 59 7 6</frame>
+		<frame time="70">38 59 7 6</frame>
+		<frame time="70">45 59 7 6</frame>
+	</sprite>   
+</effect>

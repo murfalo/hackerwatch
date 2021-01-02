@@ -1,0 +1,16 @@
+<effect layer="120" looping="false">
+	<param name="fall_angle" default="0" />
+	<param name="fall_dist" default="500" />
+	<param name="radius" default="55" />
+	
+	<sprite origin="13 16" looping="false" texture="doodads/generic/trap_indie_ball.png" material="system/default.mats:default-noxray"
+		color-a="saturate(t*5)"
+		
+		pos-x="cos(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+		pos-y="sin(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+		
+		angle="fall_angle"
+	>
+		<frame time="1000">0 0 30 29</frame>
+	</sprite>
+</effect>

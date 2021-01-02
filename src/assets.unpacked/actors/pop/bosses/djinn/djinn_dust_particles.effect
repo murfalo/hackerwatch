@@ -1,0 +1,86 @@
+<effect looping="true" layer="2">
+	<param name="dt" default="0.01" />
+<!-- left -->
+	
+	
+	<sprite origin="8 8" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.2"
+		scale-y="it- 0.2"
+		pos-x="cos((rand(i*13+27*il) * 0.2 + 1.15) * pi) * 20 * it"
+		pos-y="(sin((rand(i*13+27*il) * 0.2 + 1.15) * pi) * 20 * it) + 10"
+		color-a="saturate(1-it - 0.2) * (1-pow(t,10))"
+	
+	>
+		
+		<frame time="400">464 0 16 16</frame>
+		
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it- 0.2"
+		scale-y="it- 0.2"
+		pos-x="cos((rand(i*17+27*il) * 0.2 + 1.15) * pi) * 20 * it"
+		pos-y="(sin((rand(i*17+27*il) * 0.2 + 1.15) * pi) * 20 * it) + 15"
+		color-a="saturate(1-it - 0.2) * (1-pow(t,10))"
+	
+	>
+		
+		<frame time="400">480 0 16 16</frame>
+		
+	</sprite>
+	<!-- right -->
+	<sprite origin="8 8" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.2"
+		scale-y="it- 0.2"
+		pos-x="cos((rand(i*13+27*il) * 0.2 + 1.65) * pi) * 20 * it"
+		pos-y="(sin((rand(i*13+27*il) * 0.2 + 1.65) * pi) * 20 * it) + 15"
+		color-a="saturate(1-it - 0.2)"
+	
+	>
+		
+		<frame time="400">480 0 16 16</frame>
+		
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.2"
+		scale-y="it- 0.2"
+		pos-x="cos((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it"
+		pos-y="(sin((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it) + 10"
+		color-a="saturate(1-it - 0.2)"
+	
+	>
+		
+		<frame time="400">464 0 16 16</frame>
+		
+	</sprite>
+	
+	
+<!--	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="true" />
+
+		<size value="24" />
+		
+		<color-r value="0" />
+		<color-g value="1.25" />
+		<color-b value="2" />
+		<color-a value="0" />
+	</light>-->
+	
+</effect>

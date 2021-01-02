@@ -1,0 +1,27 @@
+<effect looping="false">
+	<light> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="false" />
+
+		<size value="saturate(sin((t+0.5)*pi))*32" />
+		
+		<color-r value="5" />
+		<color-g value="0.25" />
+		<color-b value="5" />
+		<color-a value="0" />
+	</light>	
+	
+	<sprite origin="8 16" looping="false" texture="./magic_missile.png" material="system/default.mats:glow-both">
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+		<frame time="50">48 16 16 16</frame>
+		<frame time="50">64 16 16 16</frame>
+		<frame time="50">80 16 16 16</frame>
+		<frame time="50">96 16 16 16</frame>
+	</sprite>
+</effect>

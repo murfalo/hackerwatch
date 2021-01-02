@@ -1,0 +1,105 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>1</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>2</int><int>3</int><int>7</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>2</int>
+			<vec3>80 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_e_loot.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>3</int>
+			<vec3>80 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_e_block.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>4</int>
+			<vec3>144 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>4</int><int>5</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>5</int>
+			<vec3>208 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_no_teleport</string>
+			<dict>
+				<string name="Flag">archives_no_teleport</string>
+				<array name="OnTrue"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>6</int>
+			<vec3>0 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>5</int><int>0</int><int>1</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>80 56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block2</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_e_block_2.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>8</int>
+			<vec3>80 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tele</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_e_block_tele.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+	</array>
+</dict>

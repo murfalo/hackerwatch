@@ -1,0 +1,9 @@
+<effect looping="true" bounds="1024 1024">
+	<sprite mask="1001" looping="true" origin="0 22" texture="./__end_door.png" material="system/default.mats:wall">
+		<frame>0 78 62 50</frame>
+	</sprite>
+
+	<sprite masked="1001" looping="true" origin="-10 -10" texture="./__end_door.png" material="system/default.mats:default-noxray">
+		<frame time="2000" x="63" y="31 * min(1, t + l)" w="43" h="59" />
+	</sprite>
+</effect>

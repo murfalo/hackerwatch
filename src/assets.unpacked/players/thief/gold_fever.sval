@@ -1,0 +1,27 @@
+<dict>
+	<string name="name">.skills.thief.gold-fever</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>144 72 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::GoldFever</string>
+			<float name="gold-scale">1.5</float>
+			<float name="dmg-per-gold">0.00001</float>
+			<float name="dmg-cap">1</float>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::GoldFever</string>
+			<float name="gold-scale">2</float>
+			<float name="dmg-per-gold">0.00002</float>
+			<float name="dmg-cap">2</float>
+		</dict>
+	</array>
+</dict>

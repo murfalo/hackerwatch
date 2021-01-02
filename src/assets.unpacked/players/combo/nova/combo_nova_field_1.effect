@@ -1,0 +1,103 @@
+<effect looping="true" wpos-track="15">
+	<param name="angle" default="2" />
+	<param name="height" default="0" />
+	<param name="cR" default="1" />
+	<param name="cG" default="0" />
+	<param name="cB" default="0.8" />
+	
+<!-- 		
+	<trail texture="players/combo_nova_trail.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="150" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="6+sin(t*pi*2+i*pi*2) * 6" />
+		
+		<uv-l-x value="(t+i)*8" />
+		<uv-l-y value="13" />
+		
+		<uv-r-x value="(t+i)*8" />
+		<uv-r-y value="19" />
+		
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="1 * (1 - i / 12)" />
+	</trail> -->
+	
+	
+	<sprite looping="true" origin="2 3" texture="./combo_nova_trail.png" material="system/default.mats:projectile-player"
+		num-sprites="1"
+		pos-x="t*(cos(angle)*-25)"
+		pos-y="t*(sin(angle)*-25)-height"
+		scale-x="0.9-t"
+		scale-y="0.9-t"
+		
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+		color-a="saturate(1-1.3*t)"
+		
+		angle="angle" >
+		
+		<frame time="500">0 13 4 6</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="2 3" texture="./combo_nova_trail.png" material="system/default.mats:projectile-player"
+		num-sprites="1"
+		pos-x="t*(cos(angle)*-15)"
+		pos-y="t*(sin(angle)*-15)-height"
+		scale-x="1.2-t"
+		scale-y="1.2-t"
+		
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+		color-a="saturate(1-1.4*t)"
+		
+		angle="angle" >
+		
+		
+		<frame time="500">0 13 4 6</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="2.5 3.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+	
+		angle="angle">
+		
+		<frame time="500">16 64 5 7</frame>
+	</sprite>
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="12" />
+
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,33 @@
+<effect looping="false" layer="1" bounds="1250 1250">
+	<param name="angle" default="0" />
+	<param name="height" default="100" />
+	<param name="length" default="20" />
+	
+	<param name="color_r" default="1" />
+	<param name="color_g" default="1" />
+	<param name="color_b" default="0" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_player_bomb_holy.sval</string>
+	</data>	
+	<sprite origin="2.5 2.5" looping="false" texture="./divine_ray_beam.png" material="system/default.mats:glow-both-bright"
+		num-sprites="6"
+		pos-x="cos(angle) + (cos(angle+(rand(i+103)-rand(i+67))/2)*length)*t+(cos(angle+rand(i+23)-rand(i+67))*length/2)*t+5*rand(i)*cos(angle)"
+		pos-y="sin(angle) + (sin(angle+(rand(i+103)-rand(i+67))/2)*length)*t+(sin(angle+rand(i+23)-rand(i+67))*length/2)*t+5*rand(i)*sin(angle)"
+		angle="rand(i)*pi"
+		
+        color-a="saturate(cos(pow(t,4)*pi))"
+		scale-x="saturate(cos(pow(t,4)*pi))"
+		scale-y="saturate(cos(pow(t,4)*pi))"
+	>
+        <frame time="100">0 10 5 5</frame>
+        <frame time="100">5 10 5 5</frame>
+        <frame time="100">20 10 5 5</frame>
+        <frame time="100">5 10 5 5</frame>
+        <frame time="100">0 10 5 5</frame>
+	</sprite>
+	
+	
+
+	
+</effect>

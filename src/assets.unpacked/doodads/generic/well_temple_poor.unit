@@ -1,0 +1,74 @@
+<unit slot="doodad">
+	<scenes default="on" off="off" frozen="frozen">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" radius="13" />
+			</collision>
+			<shadow>
+				<sprite origin="-5 25" looping="true" texture="./well_temple_poor.png" material="system/default.mats:default-noxray">
+					<frame>102 0 11 17</frame>
+				</sprite>
+			</shadow>
+		</scene>		
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 10 9 10" />
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="3"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="0 180 200 0" />
+					<color value="0 170 200 0" />
+				</colors>
+			</light>
+			<!-- WATER -->
+			<sprite ulayer="1" origin="5 19" looping="true" texture="./well_temple_poor.png" material="system/default.mats:default-noxray">
+				<frame time="80">52 0 10 28</frame>
+				<frame time="80">62 0 10 28</frame>
+				<frame time="80">72 0 10 28</frame>
+				<frame time="80">82 0 10 28</frame>
+				<frame time="80">92 0 10 28</frame>
+			</sprite>
+			<!-- WELL -->
+			<sprite origin="13 33" looping="true" texture="./well_temple_poor.png" material="system/default.mats:default-noxray">
+				<frame>0 0 26 46</frame>
+			</sprite>			
+		</scene>
+		<scene name="off">
+			<scene src="shared" />	
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 20 9 10" />
+			<!-- WATER -->
+			<sprite ulayer="1" origin="5 19" looping="false" texture="./well_temple_poor.png" material="system/default.mats:default-noxray">
+				<frame time="80">52 28 10 28</frame>
+				<frame time="80">62 28 10 28</frame>
+				<frame time="80">72 28 10 28</frame>
+				<frame time="80">82 28 10 28</frame>
+				<frame time="80">92 28 10 28</frame>
+				<frame time="80">0 0 0 0</frame>
+			</sprite>
+			<!-- WELL -->
+			<sprite origin="13 33" looping="true" texture="./well_temple_poor.png" material="system/default.mats:default-noxray">
+				<frame>0 0 26 46</frame>
+			</sprite>	
+		</scene>
+		<scene name="frozen">
+			<scene src="shared" />	
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 20 9 10" />
+			<!-- WELL -->
+			<sprite origin="13 33" looping="true" texture="./well_temple_poor.png" material="system/default.mats:default-noxray">
+				<frame>26 0 26 46</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>
+

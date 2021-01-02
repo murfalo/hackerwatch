@@ -1,0 +1,45 @@
+<unit>
+	<behavior class="BombBehavior">
+	
+		<int name="delay">1350</int>
+		<int name="delay-random">0</int>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">1000</float>
+				<string name="fx">actors/mt/bosses/agents/agent_decay/ultimate_hit.effect</string>
+				<int name="radius">12</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+						<int name="magical">50</int>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:freezing_strong</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">12</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<shadow>
+				<sprite layer="-2" origin="6 6" texture="doodads/special/shadows.png">
+					<frame>18 0 12 12</frame>
+				</sprite>
+			</shadow>			
+			<effect src="./ultimate.effect" />
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

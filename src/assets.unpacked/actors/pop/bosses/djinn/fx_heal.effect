@@ -1,0 +1,75 @@
+<effect looping="true">
+	<light>
+		<sprite texture="actors/special/hellcube/flare4_L.png">
+			<frame>0 0 256 256</frame>
+		</sprite>
+
+		<length value="25" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<angle value="t*pi*2"/>
+		
+		<size value="800*(1-t)" />
+		
+		<color-r value="5 * t" />
+		<color-g value="0" />
+		<color-b value="0" />
+	</light>	
+	<light start="50">
+		<sprite texture="actors/special/hellcube/flare4_L.png">
+			<frame>0 0 256 256</frame>
+		</sprite>
+
+		<length value="50" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<angle value="t*pi*2"/>
+		
+		<size value="200*(1-t)" />
+		
+		<color-r value="6 * sin(t*pi)" />
+		<color-g value="0" />
+		<color-b value="0" />
+	</light>	
+	<light start="100">
+		<sprite texture="actors/special/hellcube/flare4_L.png">
+			<frame>0 0 256 256</frame>
+		</sprite>
+
+		<length value="100" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<angle value="t*pi*2"/>
+		
+		<size value="150*(1-t)" />
+		
+		<color-r value="2 * sin(t*pi)" />
+		<color-g value="0" />
+		<color-b value="0" />
+	</light>		
+	
+</effect>

@@ -1,0 +1,713 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::UpgradeShop</string>
+
+	<string name="id">blacksmith</string>
+	<string name="name">.shop.blacksmith</string>
+
+	<array name="upgrades">
+		<!-- Armor -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">armor</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>24 48 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Tier I -->
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-gold">250</int>
+
+					<string name="name">.shop.blacksmith.armor-1.name</string>
+					<string name="desc">.shop.blacksmith.armor-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">5</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-gold">500</int>
+
+					<string name="name">.shop.blacksmith.armor-2.name</string>
+					<string name="desc">.shop.blacksmith.armor-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">10</int>
+					</dict>
+				</dict>
+
+				<!-- Tier II -->
+				<!-- Level 3 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">1000</int>
+					
+					<string name="name">.shop.blacksmith.armor-3.name</string>
+					<string name="desc">.shop.blacksmith.armor-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">15</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">1500</int>
+
+					<string name="name">.shop.blacksmith.armor-4.name</string>
+					<string name="desc">.shop.blacksmith.armor-4.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">20</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier III -->
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.blacksmith.armor-5.name</string>
+					<string name="desc">.shop.blacksmith.armor-5.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">25</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 6 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">3500</int>
+
+					<string name="name">.shop.blacksmith.armor-6.name</string>
+					<string name="desc">.shop.blacksmith.armor-6.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">30</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier IV -->
+				<!-- Level 7 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">5500</int>
+
+					<string name="name">.shop.blacksmith.armor-7.name</string>
+					<string name="desc">.shop.blacksmith.armor-7.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">35</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 8 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">7500</int>
+
+					<string name="name">.shop.blacksmith.armor-8.name</string>
+					<string name="desc">.shop.blacksmith.armor-8.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">40</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier V -->
+				<!-- Level 9 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">12500</int>
+
+					<string name="name">.shop.blacksmith.armor-9.name</string>
+					<string name="desc">.shop.blacksmith.armor-9.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">45</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 10 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">17500</int>
+
+					<string name="name">.shop.blacksmith.armor-10.name</string>
+					<string name="desc">.shop.blacksmith.armor-10.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">50</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier VI -->
+				<!-- Level 11 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">6</int>
+					<int name="cost-gold">25000</int>
+
+					<string name="name">.shop.blacksmith.armor.name?lvl=XI</string>
+					<string name="desc">.shop.blacksmith.armor.desc?amount=+60</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">60</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 12 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">6</int>
+					<int name="cost-gold">35000</int>
+
+					<string name="name">.shop.blacksmith.armor.name?lvl=XII</string>
+					<string name="desc">.shop.blacksmith.armor.desc?amount=+70</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Armor</string>
+						<int name="armor">70</int>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Weapon Damage -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">damage</string>
+
+			
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>0 48 24 24</vec4>
+			</array>
+			
+			
+			<array name="steps">
+				<!-- Tier I -->
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-gold">250</int>
+
+					<string name="name">.shop.blacksmith.weapon-1.name</string>
+					<string name="desc">.shop.blacksmith.weapon-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">5</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+					<int name="cost-gold">500</int>
+
+					<string name="name">.shop.blacksmith.weapon-2.name</string>
+					<string name="desc">.shop.blacksmith.weapon-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">10</int>
+					</dict>
+				</dict>
+
+				<!-- Tier II -->
+				<!-- Level 3 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">1000</int>
+
+					<string name="name">.shop.blacksmith.weapon-3.name</string>
+					<string name="desc">.shop.blacksmith.weapon-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">15</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">1500</int>
+
+					<string name="name">.shop.blacksmith.weapon-4.name</string>
+					<string name="desc">.shop.blacksmith.weapon-4.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">20</int>
+					</dict>
+				</dict>
+
+				<!-- Tier III -->
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.blacksmith.weapon-5.name</string>
+					<string name="desc">.shop.blacksmith.weapon-5.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">25</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 6 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">3500</int>
+
+					<string name="name">.shop.blacksmith.weapon-6.name</string>
+					<string name="desc">.shop.blacksmith.weapon-6.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">30</int>
+					</dict>
+				</dict>
+
+				<!-- Tier IV -->
+				<!-- Level 7 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">5500</int>
+
+					<string name="name">.shop.blacksmith.weapon-7.name</string>
+					<string name="desc">.shop.blacksmith.weapon-7.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">40</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 8 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">7500</int>
+
+					<string name="name">.shop.blacksmith.weapon-8.name</string>
+					<string name="desc">.shop.blacksmith.weapon-8.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">50</int>
+					</dict>
+				</dict>
+
+				<!-- Tier V -->
+				<!-- Level 9 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">12500</int>
+
+					<string name="name">.shop.blacksmith.weapon-9.name</string>
+					<string name="desc">.shop.blacksmith.weapon-9.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">65</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 10 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">17500</int>
+
+					<string name="name">.shop.blacksmith.weapon-10.name</string>
+					<string name="desc">.shop.blacksmith.weapon-10.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">80</int>
+					</dict>
+				</dict>
+				
+				<!-- Tier VI -->
+				<!-- Level 11 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">6</int>
+					<int name="cost-gold">25000</int>
+
+					<string name="name">.shop.blacksmith.weapon.name?lvl=XI</string>
+					<string name="desc">.shop.blacksmith.weapon.desc?amount=+100</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">100</int>
+					</dict>
+				</dict>
+				
+				<!-- Level 12 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">6</int>
+					<int name="cost-gold">35000</int>
+
+					<string name="name">.shop.blacksmith.weapon.name?lvl=XII</string>
+					<string name="desc">.shop.blacksmith.weapon.desc?amount=+120</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<int name="attack-power">120</int>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Critical Chance -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">criticalchance</string>
+
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>72 48 24 24</vec4>
+			</array>
+
+			<array name="steps">
+				<!-- Tier I -->
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-gold">750</int>
+
+					<string name="name">.shop.blacksmith.criticalchance-1.name</string>
+					<string name="desc">.shop.blacksmith.criticalchance-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="chance">0.025</float>
+					</dict>
+				</dict>
+
+				<!-- Tier II -->
+				<!-- Level 2 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.blacksmith.criticalchance-2.name</string>
+					<string name="desc">.shop.blacksmith.criticalchance-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="chance">0.05</float>
+					</dict>
+				</dict>
+
+				<!-- Tier III -->
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">6000</int>
+
+					<string name="name">.shop.blacksmith.criticalchance-3.name</string>
+					<string name="desc">.shop.blacksmith.criticalchance-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="chance">0.075</float>
+					</dict>
+				</dict>
+
+				<!-- Tier IV -->
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">13000</int>
+
+					<string name="name">.shop.blacksmith.criticalchance-4.name</string>
+					<string name="desc">.shop.blacksmith.criticalchance-4.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="chance">0.1</float>
+					</dict>
+				</dict>
+
+				<!-- Tier V -->
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">30000</int>
+
+					<string name="name">.shop.blacksmith.criticalchance-5.name</string>
+					<string name="desc">.shop.blacksmith.criticalchance-5.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalHit</string>
+						<float name="chance">0.125</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Critical Damage -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">criticaldamage</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>48 48 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Tier III -->
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">6000</int>
+
+					<string name="name">.shop.blacksmith.criticaldamage-1.name</string>
+					<string name="desc">.shop.blacksmith.criticaldamage-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalMul</string>
+						<float name="mul">1.5</float> <!-- 2.5x -->
+					</dict>
+				</dict>
+
+				<!-- Tier IV -->
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">13000</int>
+
+					<string name="name">.shop.blacksmith.criticaldamage-2.name</string>
+					<string name="desc">.shop.blacksmith.criticaldamage-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalMul</string>
+						<float name="mul">2</float> <!-- 3x -->
+					</dict>
+				</dict>
+
+				<!-- Tier V -->
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">30000</int>
+
+					<string name="name">.shop.blacksmith.criticaldamage-3.name</string>
+					<string name="desc">.shop.blacksmith.criticaldamage-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalMul</string>
+						<float name="mul">2.5</float> <!-- 3.5x -->
+					</dict>
+				</dict>
+				
+				<!-- Tier VI -->
+				<!-- Level 6 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">6</int>
+					<int name="cost-gold">60000</int>
+
+					<string name="name">.shop.blacksmith.criticaldamage.name?lvl=IV</string>
+					<string name="desc">.shop.blacksmith.criticaldamage.desc?amount=4x</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::CriticalMul</string>
+						<float name="mul">3</float> <!-- 4x -->
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Move Speed -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">movespeed</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>24 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Tier I -->
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-gold">750</int>
+
+					<string name="name">.shop.blacksmith.movespeed-1.name</string>
+					<string name="desc">.shop.blacksmith.movespeed-1.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Speed</string>
+						<float name="movement">0.1</float>
+					</dict>
+				</dict>
+			
+				<!-- Tier II -->
+				<!-- Level 2 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.blacksmith.movespeed-2.name</string>
+					<string name="desc">.shop.blacksmith.movespeed-2.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Speed</string>
+						<float name="movement">0.2</float>
+					</dict>
+				</dict>
+			
+				<!-- Tier III -->
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">6000</int>
+
+					<string name="name">.shop.blacksmith.movespeed-3.name</string>
+					<string name="desc">.shop.blacksmith.movespeed-3.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Speed</string>
+						<float name="movement">0.3</float>
+					</dict>
+				</dict>
+
+				<!-- Tier IV -->
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">13000</int>
+
+					<string name="name">.shop.blacksmith.movespeed-4.name</string>
+					<string name="desc">.shop.blacksmith.movespeed-4.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Speed</string>
+						<float name="movement">0.4</float>
+					</dict>
+				</dict>
+
+				<!-- Tier V -->
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">30000</int>
+
+					<string name="name">.shop.blacksmith.movespeed-5.name</string>
+					<string name="desc">.shop.blacksmith.movespeed-5.desc</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Speed</string>
+						<float name="movement">0.5</float>
+					</dict>
+				</dict>
+				
+				<!-- Tier VI -->
+				<!-- Level 6 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">4</int>
+%endif
+					<int name="restrict-shop-level-min">6</int>
+					<int name="cost-gold">60000</int>
+
+					<string name="name">.shop.blacksmith.movespeed.name?lvl=VI</string>
+					<string name="desc">.shop.blacksmith.movespeed.desc?amount=+0.6</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Speed</string>
+						<float name="movement">0.6</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

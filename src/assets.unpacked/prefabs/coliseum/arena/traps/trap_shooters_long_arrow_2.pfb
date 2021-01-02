@@ -1,0 +1,713 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name="doodads/generic/trap_shooter_arrow_e.unit">
+			<vec2>168 -152</vec2>
+			<int>1</int>
+			<vec2>264 -152</vec2>
+			<int>2</int>
+			<vec2>72 -152</vec2>
+			<int>3</int>
+			<vec2>-344 168</vec2>
+			<int>75</int>
+			<vec2>168 168</vec2>
+			<int>82</int>
+			<vec2>72 168</vec2>
+			<int>81</int>
+			<vec2>264 168</vec2>
+			<int>80</int>
+			<vec2>-152 168</vec2>
+			<int>76</int>
+			<vec2>-248 168</vec2>
+			<int>74</int>
+			<vec2>-344 -152</vec2>
+			<int>70</int>
+			<vec2>-152 -152</vec2>
+			<int>69</int>
+			<vec2>-248 -152</vec2>
+			<int>68</int>
+		</array>
+		<array name="doodads/walls/arena/_custom_single_round.unit">
+			<vec2>-168 -168</vec2>
+			<int>7</int>
+			<vec2>56 152</vec2>
+			<int>8</int>
+			<vec2>344 -168</vec2>
+			<int>9</int>
+			<vec2>152 -168</vec2>
+			<int>10</int>
+			<vec2>248 -168</vec2>
+			<int>12</int>
+			<vec2>344 152</vec2>
+			<int>13</int>
+			<vec2>56 -168</vec2>
+			<int>14</int>
+			<vec2>-360 152</vec2>
+			<int>15</int>
+			<vec2>-264 -168</vec2>
+			<int>16</int>
+			<vec2>152 152</vec2>
+			<int>17</int>
+			<vec2>-72 152</vec2>
+			<int>18</int>
+			<vec2>-360 -168</vec2>
+			<int>19</int>
+			<vec2>-168 152</vec2>
+			<int>20</int>
+			<vec2>-264 152</vec2>
+			<int>21</int>
+			<vec2>248 152</vec2>
+			<int>22</int>
+			<vec2>-72 -168</vec2>
+			<int>11</int>
+		</array>
+		<array name="doodads/generic/trap_shooter_arrow_w.unit">
+			<vec2>344 -152</vec2>
+			<int>4</int>
+			<vec2>248 -152</vec2>
+			<int>5</int>
+			<vec2>152 -152</vec2>
+			<int>6</int>
+			<vec2>344 168</vec2>
+			<int>84</int>
+			<vec2>152 168</vec2>
+			<int>83</int>
+			<vec2>248 168</vec2>
+			<int>85</int>
+			<vec2>-72 168</vec2>
+			<int>79</int>
+			<vec2>-168 168</vec2>
+			<int>78</int>
+			<vec2>-264 168</vec2>
+			<int>77</int>
+			<vec2>-264 -152</vec2>
+			<int>73</int>
+			<vec2>-168 -152</vec2>
+			<int>72</int>
+			<vec2>-72 -152</vec2>
+			<int>71</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>RandomPicker</string>
+			<int>23</int>
+			<vec3>0 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>37</int><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>24</int>
+			<vec3>0 -384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Text">trap_shooters_long_arrow_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>25</int>
+			<vec3>0 656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>= 1</string>
+			<dict>
+				<array name="Scripts"><int>26</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>26</int>
+			<vec3>80 624 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>activate</string>
+			<array><int>33</int><int>0</int><int>23</int><int>10</int><int>27</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>27</int>
+			<vec3>0 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>= 1</string>
+			<dict>
+				<array name="Scripts"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>28</int>
+			<vec3>80 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate all</string>
+			<dict>
+				<string name="EventName">all_traps_activate</string>
+			</dict>
+			<array><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>29</int>
+			<vec3>-80 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate all</string>
+			<dict>
+				<string name="EventName">all_traps_deactivate</string>
+			</dict>
+			<array><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>30</int>
+			<vec3>-32 368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>phase 1</string>
+			<array>
+				<int>31</int>
+				<int>750</int>
+				<int>42</int>
+				<int>0</int>
+				<int>44</int>
+				<int>0</int>
+				<int>46</int>
+				<int>0</int>
+				<int>64</int>
+				<int>0</int>
+				<int>62</int>
+				<int>0</int>
+				<int>60</int>
+				<int>0</int>
+				<int>53</int>
+				<int>0</int>
+				<int>55</int>
+				<int>0</int>
+				<int>57</int>
+				<int>0</int>
+				<int>47</int>
+				<int>0</int>
+				<int>49</int>
+				<int>0</int>
+				<int>51</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>31</int>
+			<vec3>32 368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>phase 2</string>
+			<array>
+				<int>30</int>
+				<int>750</int>
+				<int>41</int>
+				<int>0</int>
+				<int>43</int>
+				<int>0</int>
+				<int>45</int>
+				<int>0</int>
+				<int>63</int>
+				<int>0</int>
+				<int>61</int>
+				<int>0</int>
+				<int>59</int>
+				<int>0</int>
+				<int>54</int>
+				<int>0</int>
+				<int>56</int>
+				<int>0</int>
+				<int>58</int>
+				<int>0</int>
+				<int>48</int>
+				<int>0</int>
+				<int>50</int>
+				<int>0</int>
+				<int>52</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>-96 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_timer</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>31</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>33</int>
+			<vec3>112 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_timer</string>
+			<dict>
+				<array name="Scripts"><int>30</int><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>34</int>
+			<vec3>-64 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_sw</string>
+			<dict>
+				<string name="EventName">disable_sw</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>35</int>
+			<vec3>-80 624 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>deactivate</string>
+			<array><int>32</int><int>0</int><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>36</int>
+			<vec3>64 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_se</string>
+			<dict>
+				<string name="EventName">disable_se</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>37</int>
+			<vec3>32 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>31</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>38</int>
+			<vec3>64 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_ne</string>
+			<dict>
+				<string name="EventName">disable_ne</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>39</int>
+			<vec3>-32 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>40</int>
+			<vec3>-64 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_nw</string>
+			<dict>
+				<string name="EventName">disable_nw</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>41</int>
+			<vec3>148 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>42</int>
+			<vec3>76 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>43</int>
+			<vec3>244 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>44</int>
+			<vec3>172 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>45</int>
+			<vec3>340 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>46</int>
+			<vec3>268 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>47</int>
+			<vec3>148 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>48</int>
+			<vec3>76 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>49</int>
+			<vec3>244 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>50</int>
+			<vec3>172 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>51</int>
+			<vec3>340 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>52</int>
+			<vec3>268 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>53</int>
+			<vec3>-268 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>54</int>
+			<vec3>-340 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>55</int>
+			<vec3>-172 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>56</int>
+			<vec3>-244 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>57</int>
+			<vec3>-76 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>58</int>
+			<vec3>-148 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>59</int>
+			<vec3>-268 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>60</int>
+			<vec3>-340 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>61</int>
+			<vec3>-172 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>62</int>
+			<vec3>-244 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>63</int>
+			<vec3>-76 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>64</int>
+			<vec3>-148 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_arrow_projectile_normal.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>65</int>
+			<vec3>-320 416 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_obstacles</string>
+			<dict>
+				<string name="EventName">disable_obstacles</string>
+			</dict>
+			<array><int>66</int><int>0</int><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>66</int>
+			<vec3>-320 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units">
+					<int>15</int>
+					<int>21</int>
+					<int>20</int>
+					<int>18</int>
+					<int>8</int>
+					<int>17</int>
+					<int>22</int>
+					<int>13</int>
+					<int>9</int>
+					<int>12</int>
+					<int>10</int>
+					<int>14</int>
+					<int>11</int>
+					<int>7</int>
+					<int>16</int>
+					<int>19</int>
+				</array>
+			</dict>
+			<array><int>67</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>67</int>
+			<vec3>-256 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units">
+					<int>75</int>
+					<int>77</int>
+					<int>74</int>
+					<int>78</int>
+					<int>76</int>
+					<int>79</int>
+					<int>81</int>
+					<int>83</int>
+					<int>82</int>
+					<int>85</int>
+					<int>80</int>
+					<int>84</int>
+					<int>4</int>
+					<int>2</int>
+					<int>5</int>
+					<int>1</int>
+					<int>6</int>
+					<int>3</int>
+					<int>71</int>
+					<int>69</int>
+					<int>72</int>
+					<int>68</int>
+					<int>73</int>
+					<int>70</int>
+				</array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

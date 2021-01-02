@@ -1,0 +1,45 @@
+<effect looping="true">
+	<sprite origin="32 30" looping="true" layer="1" texture="./player_effects.png" material="system/default.mats:bright-noxray">
+		<frame time="100">74 0 64 64</frame>
+		<frame time="100">138 0 64 64</frame>
+		<frame time="100">202 0 64 64</frame>
+		<frame time="100">266 0 64 64</frame>
+		<frame time="100">330 0 64 64</frame>
+		<frame time="100">394 0 64 64</frame>
+		<frame time="100">458 0 64 64</frame>
+		<frame time="100">522 0 64 64</frame>
+	</sprite>
+
+	<sprite origin="32 30" looping="true" layer="1" texture="./player_effects.png" material="effects/effects.mats:default-glowing">
+		<frame time="100">138 64 64 64</frame>
+		<frame time="100">202 64 64 64</frame>
+		<frame time="100">266 64 64 64</frame>
+		<frame time="100">330 64 64 64</frame>
+		<frame time="100">394 64 64 64</frame>
+		<frame time="100">458 64 64 64</frame>
+		<frame time="100">522 64 64 64</frame>
+		<frame time="100">586 64 64 64</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="64" />
+
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

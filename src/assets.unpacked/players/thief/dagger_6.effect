@@ -1,0 +1,56 @@
+<effect looping="true" wpos-track="5">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="3 4" texture="./dagger.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">16 8 8 8</frame>
+	</sprite>
+	
+	<trail texture="effects/empty.png" ulayer="1" material="system/default.mats:default-noxray">
+		
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="500" />
+		<looping value="true" />
+		
+		<segments value="5" />
+		<size value="4-i" />
+
+		<uv-x value="0" />
+		<uv-y value="0" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="(9-i)/175" />
+	</trail>
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="6" />
+
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1.5" />
+		<color-a value="0"/>
+	</light>
+</effect>

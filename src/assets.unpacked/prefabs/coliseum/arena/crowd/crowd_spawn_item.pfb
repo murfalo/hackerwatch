@@ -1,0 +1,2774 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>1</int>
+			<vec3>-128 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_spawn_item</string>
+			<dict>
+				<string name="EventName">crowd_spawn_item</string>
+			</dict>
+			<array><int>2</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>2</int>
+			<vec3>-16 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">2000</int>
+				<array name="LinkScripts"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>3</int>
+			<vec3>88 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>45</int>
+					<int>14</int>
+					<int>16</int>
+					<int>111</int>
+					<int>15</int>
+					<int>18</int>
+					<int>17</int>
+					<int>92</int>
+					<int>44</int>
+					<int>43</int>
+					<int>19</int>
+					<int>112</int>
+					<int>21</int>
+					<int>93</int>
+					<int>20</int>
+					<int>42</int>
+					<int>41</int>
+					<int>23</int>
+					<int>22</int>
+					<int>27</int>
+					<int>24</int>
+					<int>40</int>
+					<int>26</int>
+					<int>25</int>
+					<int>28</int>
+					<int>29</int>
+					<int>39</int>
+					<int>30</int>
+					<int>31</int>
+					<int>32</int>
+					<int>33</int>
+					<int>38</int>
+					<int>35</int>
+					<int>34</int>
+					<int>70</int>
+					<int>37</int>
+					<int>36</int>
+					<int>69</int>
+					<int>71</int>
+					<int>73</int>
+					<int>72</int>
+					<int>74</int>
+					<int>77</int>
+					<int>76</int>
+					<int>75</int>
+					<int>82</int>
+					<int>79</int>
+					<int>80</int>
+					<int>81</int>
+					<int>91</int>
+					<int>83</int>
+					<int>84</int>
+					<int>90</int>
+					<int>85</int>
+					<int>86</int>
+					<int>87</int>
+					<int>88</int>
+					<int>94</int>
+					<int>95</int>
+					<int>97</int>
+					<int>96</int>
+					<int>99</int>
+					<int>98</int>
+					<int>100</int>
+					<int>101</int>
+					<int>107</int>
+					<int>102</int>
+					<int>103</int>
+					<int>105</int>
+					<int>104</int>
+					<int>66</int>
+					<int>65</int>
+					<int>64</int>
+					<int>67</int>
+					<int>106</int>
+					<int>68</int>
+					<int>58</int>
+					<int>57</int>
+					<int>56</int>
+					<int>63</int>
+					<int>60</int>
+					<int>62</int>
+					<int>61</int>
+					<int>59</int>
+					<int>113</int>
+					<int>51</int>
+					<int>108</int>
+					<int>50</int>
+					<int>109</int>
+					<int>9</int>
+					<int>54</int>
+					<int>53</int>
+					<int>55</int>
+					<int>52</int>
+					<int>7</int>
+					<int>10</int>
+					<int>110</int>
+					<int>49</int>
+					<int>5</int>
+					<int>13</int>
+					<int>4</int>
+					<int>48</int>
+					<int>12</int>
+					<int>6</int>
+					<int>47</int>
+					<int>114</int>
+					<int>8</int>
+					<int>11</int>
+					<int>46</int>
+					<int>78</int>
+					<int>117</int>
+					<int>118</int>
+					<int>120</int>
+					<int>119</int>
+					<int>121</int>
+					<int>123</int>
+					<int>122</int>
+					<int>124</int>
+					<int>125</int>
+					<int>126</int>
+					<int>89</int>
+					<int>127</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>4</int>
+			<vec3>118 -251 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>5</int>
+			<vec3>188 -250 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>6</int>
+			<vec3>261 -247 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>7</int>
+			<vec3>463 -149 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>8</int>
+			<vec3>384 -231 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>9</int>
+			<vec3>438 -179 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>10</int>
+			<vec3>413 -208 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>11</int>
+			<vec3>339 -246 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>12</int>
+			<vec3>223 -248 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>13</int>
+			<vec3>181 -207 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>14</int>
+			<vec3>107 -211 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>15</int>
+			<vec3>-66 -247 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>16</int>
+			<vec3>-101 -207 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>17</int>
+			<vec3>-137 -209 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>18</int>
+			<vec3>-142 -251 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>19</int>
+			<vec3>-218 -249 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>20</int>
+			<vec3>-250 -210 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>21</int>
+			<vec3>-295 -251 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>22</int>
+			<vec3>-373 -237 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>23</int>
+			<vec3>-358 -208 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>24</int>
+			<vec3>-410 -217 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>25</int>
+			<vec3>-441 -191 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>26</int>
+			<vec3>-432 -146 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>27</int>
+			<vec3>-387 -196 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>28</int>
+			<vec3>-479 -119 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>29</int>
+			<vec3>-446 -71 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>30</int>
+			<vec3>-486 -81 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>31</int>
+			<vec3>-447 -44 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>32</int>
+			<vec3>-488 -50 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>33</int>
+			<vec3>-489 19 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>34</int>
+			<vec3>-447 36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>35</int>
+			<vec3>-478 91 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>36</int>
+			<vec3>-464 127 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>37</int>
+			<vec3>-438 76 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>38</int>
+			<vec3>-449 -8 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>39</int>
+			<vec3>-487 -13 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>40</int>
+			<vec3>-443 -113 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>41</int>
+			<vec3>-416 -177 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>42</int>
+			<vec3>-463 -159 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>nw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_nw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>176</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>43</int>
+			<vec3>-180 -250 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>44</int>
+			<vec3>-176 -205 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>45</int>
+			<vec3>-100 -250 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>46</int>
+			<vec3>144 -207 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>47</int>
+			<vec3>218 -206 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>48</int>
+			<vec3>154 -250 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>49</int>
+			<vec3>291 -208 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>50</int>
+			<vec3>359 -203 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>51</int>
+			<vec3>435 -123 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>52</int>
+			<vec3>487 -76 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>53</int>
+			<vec3>477 -111 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>54</int>
+			<vec3>415 -151 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>55</int>
+			<vec3>488 -37 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>56</int>
+			<vec3>450 -15 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>57</int>
+			<vec3>452 -53 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>58</int>
+			<vec3>450 23 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>59</int>
+			<vec3>488 -2 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>60</int>
+			<vec3>440 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>61</int>
+			<vec3>490 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>62</int>
+			<vec3>469 114 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>63</int>
+			<vec3>446 149 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>64</int>
+			<vec3>405 154 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>65</int>
+			<vec3>417 177 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>66</int>
+			<vec3>385 196 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>67</int>
+			<vec3>378 176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>68</int>
+			<vec3>427 126 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>69</int>
+			<vec3>-428 113 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>70</int>
+			<vec3>-488 54 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>w</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_w.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>71</int>
+			<vec3>-442 157 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>72</int>
+			<vec3>-418 181 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>73</int>
+			<vec3>-405 149 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>74</int>
+			<vec3>-390 198 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>75</int>
+			<vec3>-363 209 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>76</int>
+			<vec3>-344 183 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>77</int>
+			<vec3>-377 171 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sw</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_sw.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>172</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>78</int>
+			<vec3>-304 185 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>79</int>
+			<vec3>-300 217 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>80</int>
+			<vec3>-259 216 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>81</int>
+			<vec3>-220 216 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>82</int>
+			<vec3>-267 188 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>83</int>
+			<vec3>-184 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>84</int>
+			<vec3>-186 213 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>85</int>
+			<vec3>-150 214 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>86</int>
+			<vec3>-109 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>87</int>
+			<vec3>-116 216 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>88</int>
+			<vec3>-84 214 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>89</int>
+			<vec3>65 215 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>90</int>
+			<vec3>-146 189 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>91</int>
+			<vec3>-227 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>92</int>
+			<vec3>-213 -206 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>93</int>
+			<vec3>-287 -210 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>94</int>
+			<vec3>99 211 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>95</int>
+			<vec3>70 190 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>96</int>
+			<vec3>106 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>97</int>
+			<vec3>126 219 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>98</int>
+			<vec3>165 214 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>99</int>
+			<vec3>143 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>100</int>
+			<vec3>179 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>166</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>101</int>
+			<vec3>248 212 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>102</int>
+			<vec3>213 186 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>103</int>
+			<vec3>282 211 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>104</int>
+			<vec3>347 211 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_se.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>105</int>
+			<vec3>345 186 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>se</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>106</int>
+			<vec3>248 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>107</int>
+			<vec3>210 211 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>108</int>
+			<vec3>388 -179 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>109</int>
+			<vec3>326 -207 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>110</int>
+			<vec3>255 -208 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>111</int>
+			<vec3>78 -252 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>112</int>
+			<vec3>-256 -248 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>113</int>
+			<vec3>447 -89 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ne</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_ne.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>158</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>114</int>
+			<vec3>303 -250 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>156</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>115</int>
+			<vec3>288 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>102</int><int>107</int><int>106</int><int>101</int><int>120</int><int>103</int><int>119</int><int>127</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>116</int>
+			<vec3>288 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_s4</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_s4</string>
+			</dict>
+			<array><int>115</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>117</int>
+			<vec3>-321 -210 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>118</int>
+			<vec3>-334 -249 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>119</int>
+			<vec3>312 212 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>120</int>
+			<vec3>282 187 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>121</int>
+			<vec3>-334 213 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s1</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>170</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>122</int>
+			<vec3>445 54 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>123</int>
+			<vec3>482 69 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_e.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>160</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>124</int>
+			<vec3>-65 -206 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>180</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>125</int>
+			<vec3>72 -208 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>n3</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_n.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>126</int>
+			<vec3>-74 189 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s2</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>168</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>127</int>
+			<vec3>313 189 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>s4</string>
+			<dict>
+				<string name="Prefab">prefabs/coliseum/arena/crowd/crowd_item_s.pfb</string>
+				<float name="JitterX">2</float>
+				<float name="JitterY">2</float>
+			</dict>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>128</int>
+			<vec3>-288 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_n1</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_n1</string>
+			</dict>
+			<array><int>129</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>129</int>
+			<vec3>-288 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>118</int><int>117</int><int>21</int><int>93</int><int>112</int><int>20</int><int>19</int><int>92</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>130</int>
+			<vec3>-128 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_n2</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_n2</string>
+			</dict>
+			<array><int>131</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>131</int>
+			<vec3>-128 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>43</int><int>44</int><int>18</int><int>17</int><int>45</int><int>16</int><int>15</int><int>124</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>132</int>
+			<vec3>128 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_n3</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_n3</string>
+			</dict>
+			<array><int>133</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>133</int>
+			<vec3>128 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>111</int><int>125</int><int>4</int><int>14</int><int>48</int><int>46</int><int>5</int><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>134</int>
+			<vec3>288 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_n4</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_n4</string>
+			</dict>
+			<array><int>135</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>135</int>
+			<vec3>288 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>12</int><int>47</int><int>6</int><int>110</int><int>114</int><int>49</int><int>11</int><int>109</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>136</int>
+			<vec3>-288 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_s1</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_s1</string>
+			</dict>
+			<array><int>137</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>137</int>
+			<vec3>-288 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>76</int><int>121</int><int>78</int><int>79</int><int>82</int><int>80</int><int>91</int><int>81</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>138</int>
+			<vec3>-128 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_s2</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_s2</string>
+			</dict>
+			<array><int>139</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>139</int>
+			<vec3>-128 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>83</int><int>84</int><int>90</int><int>85</int><int>86</int><int>87</int><int>126</int><int>88</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>140</int>
+			<vec3>128 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_s3</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_s3</string>
+			</dict>
+			<array><int>141</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>141</int>
+			<vec3>128 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>95</int><int>89</int><int>96</int><int>94</int><int>99</int><int>97</int><int>100</int><int>98</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>142</int>
+			<vec3>512 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>104</int>
+					<int>105</int>
+					<int>66</int>
+					<int>67</int>
+					<int>65</int>
+					<int>64</int>
+					<int>63</int>
+					<int>68</int>
+					<int>62</int>
+					<int>60</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>143</int>
+			<vec3>512 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_se</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_se</string>
+			</dict>
+			<array><int>142</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>144</int>
+			<vec3>608 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>123</int><int>122</int><int>61</int><int>58</int><int>59</int><int>56</int><int>55</int><int>57</int><int>52</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>145</int>
+			<vec3>608 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_e</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_e</string>
+			</dict>
+			<array><int>144</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>146</int>
+			<vec3>544 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>50</int>
+					<int>8</int>
+					<int>108</int>
+					<int>10</int>
+					<int>54</int>
+					<int>9</int>
+					<int>7</int>
+					<int>51</int>
+					<int>53</int>
+					<int>113</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>147</int>
+			<vec3>544 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_ne</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_ne</string>
+			</dict>
+			<array><int>146</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>148</int>
+			<vec3>-544 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>75</int>
+					<int>77</int>
+					<int>74</int>
+					<int>72</int>
+					<int>73</int>
+					<int>71</int>
+					<int>69</int>
+					<int>36</int>
+					<int>35</int>
+					<int>37</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>149</int>
+			<vec3>-544 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_sw</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_sw</string>
+			</dict>
+			<array><int>148</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>150</int>
+			<vec3>-608 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>70</int><int>34</int><int>33</int><int>38</int><int>39</int><int>31</int><int>32</int><int>29</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>151</int>
+			<vec3>-608 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_w</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_w</string>
+			</dict>
+			<array><int>150</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>152</int>
+			<vec3>-544 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>22</int>
+					<int>23</int>
+					<int>27</int>
+					<int>24</int>
+					<int>25</int>
+					<int>41</int>
+					<int>26</int>
+					<int>42</int>
+					<int>28</int>
+					<int>40</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>153</int>
+			<vec3>-544 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_deactivate_spawn_nw</string>
+			<dict>
+				<string name="EventName">crowd_deactivate_spawn_nw</string>
+			</dict>
+			<array><int>152</int><int>0</int></array>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>154</int>
+			<vec3>136 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeStart">1450</float>
+				<float name="FadeNearEnd">150</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>155</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>155</int>
+			<vec3>184 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>154</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>156</int>
+			<vec3>280 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearEnd">150</float>
+				<float name="FadeStart">1450</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>157</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>157</int>
+			<vec3>328 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>156</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>158</int>
+			<vec3>480 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeStart">1450</float>
+				<float name="FadeNearEnd">150</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>159</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>159</int>
+			<vec3>528 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>158</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>160</int>
+			<vec3>536 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearEnd">150</float>
+				<float name="FadeStart">1450</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>161</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>161</int>
+			<vec3>576 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>160</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>162</int>
+			<vec3>464 200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeStart">1450</float>
+				<float name="FadeNearEnd">150</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>163</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>163</int>
+			<vec3>504 200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>162</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>164</int>
+			<vec3>264 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearEnd">150</float>
+				<float name="FadeStart">1450</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>165</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>165</int>
+			<vec3>304 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>164</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>166</int>
+			<vec3>120 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeStart">1450</float>
+				<float name="FadeNearEnd">150</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>167</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>167</int>
+			<vec3>160 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>168</int>
+			<vec3>-120 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearEnd">150</float>
+				<float name="FadeStart">1450</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>169</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>169</int>
+			<vec3>-80 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>168</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>170</int>
+			<vec3>-280 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeStart">1450</float>
+				<float name="FadeNearEnd">150</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>171</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>171</int>
+			<vec3>-240 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>170</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>172</int>
+			<vec3>-488 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearEnd">150</float>
+				<float name="FadeStart">1450</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>173</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>173</int>
+			<vec3>-536 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>172</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>174</int>
+			<vec3>-528 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeStart">1450</float>
+				<float name="FadeNearEnd">150</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>175</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>175</int>
+			<vec3>-576 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>174</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>176</int>
+			<vec3>-488 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearEnd">150</float>
+				<float name="FadeStart">1450</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>177</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>177</int>
+			<vec3>-536 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>176</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>178</int>
+			<vec3>-272 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeStart">1450</float>
+				<float name="FadeNearEnd">150</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>179</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>179</int>
+			<vec3>-320 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>178</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>180</int>
+			<vec3>-128 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="FadeNearStart">200</float>
+				<float name="FadeEnd">1500</float>
+				<float name="FadeNearEnd">150</float>
+				<float name="FadeStart">1450</float>
+				<string name="Sprite">waypoint-arena-sack</string>
+			</dict>
+			<array><int>181</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>WaypointRemove</string>
+			<int>181</int>
+			<vec3>-176 -296 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="AddScripts"><int>180</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

@@ -1,0 +1,65 @@
+<effect looping="true" layer="5">
+	<param name="radius" default="8" />
+	<param name="posy" default="-3" />
+	<param name="posx" default="5" />
+	<param name="cR" default="1" />
+	<param name="cG" default="0.8" />
+	<param name="cB" default="0.3" />
+	
+	<sprite origin="8 8" looping="true" layer="1" texture="./combo.png" material="system/default.mats:glow-both-bright"
+		pos-y="posy" 
+		color-r="cR"
+		color-g="cG"
+        color-b="cB"
+		color-a="0.05+saturate(cos(t*pi*2))*0.1"
+		>
+		<frame time="50">0 39 16 16</frame>
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" layer="1" texture="./combo.png" material="system/default.mats:glow-both-bright"
+		pos-y="posy" 
+		color-r="cR"
+		color-g="cG"
+        color-b="cB"
+		color-a="0.05+saturate(sin(t*pi*2))*0.1"
+		>
+		<frame time="50">16 39 16 16</frame>
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" layer="1" texture="./combo.png" material="system/default.mats:glow-both-bright"
+		pos-y="posy"
+		angle="t*pi*4"	
+		color-r="cR"
+		color-g="cG - saturate(sin(t*pi*2))*0.5"
+        color-b="cB - saturate(sin(t*pi*2))*0.5"	
+		color-a="0.5+saturate(cos(t*pi*2))*0.1"
+		>
+		<frame time="500">33 39 16 16</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		%//<length value="150" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="64" />
+			
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

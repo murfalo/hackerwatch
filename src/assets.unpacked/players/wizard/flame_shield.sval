@@ -1,0 +1,76 @@
+<dict>
+	<string name="name">.skills.wizard.flame-shield</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 120 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::FlameShield</string>
+				<float name="dmg-taken-mul">0.8</float>
+				<int name="cooldown">7500</int>
+				<string name="fx">players/wizard/flame_shield.effect</string>
+				<string name="fx-charge">players/wizard/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::FlameShield</string>
+				<float name="dmg-taken-mul">0.7</float>
+				<int name="cooldown">6000</int>
+				<string name="fx">players/wizard/flame_shield.effect</string>
+				<string name="fx-charge">players/wizard/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::FlameShield</string>
+				<float name="dmg-taken-mul">0.6</float>
+				<int name="cooldown">4500</int>
+				<string name="fx">players/wizard/flame_shield.effect</string>
+				<string name="fx-charge">players/wizard/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::FlameShield</string>
+				<float name="dmg-taken-mul">0.5</float>
+				<int name="cooldown">3000</int>
+				<string name="fx">players/wizard/flame_shield.effect</string>
+				<string name="fx-charge">players/wizard/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>

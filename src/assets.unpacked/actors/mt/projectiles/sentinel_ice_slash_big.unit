@@ -1,0 +1,52 @@
+<unit netsync="none" layer="100">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		
+		<float name="speed">10</float>
+		
+		<!-- <float name="speed-delta">10</float> -->
+		<!-- <float name="speed-delta-max">8</float> -->
+		
+		<int name="ttl">10000</int>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.05</float>
+		<bool name="penetrate-all">true</bool>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<bool name="miss-fx">true</bool>
+				<string name="fx">actors/mt/projectiles/impact_sentinel_big.effect</string>
+				<int name="radius">24</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">75</int>
+						<float name="resistance-mul">0.75</float>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/player/wizard/fireball</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+			<float name="range">80</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/mt/projectiles/sentinel_ice_slash_big.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>
+
+

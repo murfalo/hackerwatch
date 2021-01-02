@@ -1,0 +1,72 @@
+<unit layer="0">
+	<behavior class="PlayerTripMine">
+		<string name="team">player</string>
+		
+		<int name="ttl">600000</int>
+	
+		<int name="hp">1</int>
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+		<bool name="no-buffs">true</bool>
+		<bool name="must-see-target">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<string name="anim-visible">visible</string>
+		<string name="anim-invisible">invisible</string>
+		
+		<string name="appear-snd">event:/player/witch_hunter/brand_appear</string>
+		
+		<int name="dist-visible">40</int>
+		<int name="dist-trigger">26</int>
+		
+		<dict name="movement">
+			<string name="class">EmptyMovement</string>
+		</dict>
+
+		<array name="skills">	
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">players/witch_hunter/ward_of_branding_bomb_1.unit</string>
+						<bool name="safe-spawn">false</bool>
+						<int name="spawn-dist">0</int>
+					</dict>
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">players/witch_hunter/ward_of_branding_slow.unit</string>
+						<bool name="safe-spawn">false</bool>
+						<int name="spawn-dist">0</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+	</behavior>
+	
+	<scenes default="spawn">
+		<scene name="shared">
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" radius="6" sensor="true" />
+			</collision>		
+		</scene>
+		
+		<scene name="invisible">
+			<scene src="shared" />
+			<effect src="players/witch_hunter/ward_of_branding_invisible.effect" />
+		</scene>
+
+		<scene name="visible">
+			<scene src="shared" />
+			<effect src="players/witch_hunter/ward_of_branding_visible.effect" />
+		</scene>
+		
+		<scene name="spawn">
+			<effect src="players/witch_hunter/ward_of_branding_spawn.effect" />
+		</scene>
+	</scenes>
+</unit>

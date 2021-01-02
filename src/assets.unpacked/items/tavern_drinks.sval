@@ -1,0 +1,1142 @@
+<loader>AddDrinkFile</loader>
+<dict>
+	<!-- Common -->
+	<dict name="a-fools-errand">
+		<string name="name">.drink.a-fools-errand.name</string>
+		<string name="desc">.drink.a-fools-errand.desc?pos=+100&neg=0</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>48 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::GoldGain</string>
+				<float name="scale">2</float>
+			</dict>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Regen</string>
+				<float name="health-mul">0</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="a-strong-arm">
+		<string name="name">.drink.a-strong-arm.name</string>
+		<string name="desc">.drink.a-strong-arm.desc?pos=+25&neg=-15</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>168 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="attack-power">25</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">-15</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="ancient-spirit">
+		<string name="name">.drink.ancient-spirit.name</string>
+		<string name="desc">.drink.ancient-spirit.desc?pos=+20&neg=-10</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>24 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="spell-power">20</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="resistance">-10</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="crazy-eye">
+		<string name="name">.drink.crazy-eye.name</string>
+		<string name="desc">.drink.crazy-eye.desc?pos=10&neg=-20</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>24 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::CriticalHit</string>
+				<float name="chance">0.1</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">-20</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="enchanted-slammer">
+		<string name="name">.drink.enchanted-slammer.name</string>
+		<string name="desc">.drink.enchanted-slammer.desc?pos=+10&neg=2.5</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>192 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="physical-add">10</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">attack</string>
+				<bool name="target-self">true</bool>
+				
+				<dict name="effect">
+					<string name="class">Decimate</string>
+					<float name="mana">0.025</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="ladys-blessing">
+		<string name="name">.drink.ladys-blessing.name</string>
+		<string name="desc">.drink.ladys-blessing.desc?pos=+2&neg=-15</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>72 72 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Regen</string>
+				<float name="health">2</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="spell-power">-15</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="lazy-stroll">
+		<string name="name">.drink.lazy-stroll.name</string>
+		<string name="desc">.drink.lazy-stroll.desc?pos=+50&neg=-0.4</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>0 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Experience</string>
+				<float name="mul">1.5</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="movement">-0.4</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="mellow-mist">
+		<string name="name">.drink.mellow-mist.name</string>
+		<string name="desc">.drink.mellow-mist.desc?pos=-10&neg=-0.4</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>168 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<float name="dmg-taken-mul">0.9</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="movement">-0.4</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="mind-control">
+		<string name="name">.drink.mind-control.name</string>
+		<string name="desc">.drink.mind-control.desc?neg=100</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>144 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::BuffImmune</string>
+				<array name="tags">
+					<string>confusion</string>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::BuffScaling</string>
+				<float name="debuff-scale">2</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="miners-delight">
+		<string name="name">.drink.miners-delight.name</string>
+		<string name="desc">.drink.miners-delight.desc?pos=+100&neg=-75</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>144 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::OreGain</string>
+				<float name="scale">2</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::GoldGain</string>
+				<float name="scale">0.25</float>
+			</dict>
+		</array>
+	</dict>
+
+	<dict name="on-the-run">
+		<string name="name">.drink.on-the-run.name</string>
+		<string name="desc">.drink.on-the-run.desc?pos=+0.4&neg=-25</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>120 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="movement">0.4</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::GoldGain</string>
+				<float name="scale">0.75</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="smelly-old-man">
+		<string name="name">.drink.smelly-old-man.name</string>
+		<string name="desc">.drink.smelly-old-man.desc?pos=+2&neg=-10</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>96 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Regen</string>
+				<float name="mana">2</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::StatsBase</string>
+				<float name="health">-0.1</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="snake-blood">
+		<string name="name">.drink.snake-blood.name</string>
+		<string name="desc">.drink.snake-blood.desc?neg=-25</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>72 120 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::BuffImmune</string>
+				<array name="tags">
+					<string>poison</string>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::HealthGain</string>
+				<float name="scale-all">0.75</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="the-groovy-ghost">
+		<string name="name">.drink.the-groovy-ghost.name</string>
+		<string name="desc">.drink.the-groovy-ghost.desc?pos=+8&neg=-15</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>0 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.08</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="attack-power">-15</int>
+			</dict>
+		</array>
+	</dict>
+
+	<!-- Uncommon -->
+	<dict name="double-thriller">
+		<string name="name">.drink.double-thriller.name</string>
+		<string name="desc">.drink.double-thriller.desc?pos=+75&neg=+25</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>144 72 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">1.75</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<float name="dmg-taken-mul">1.25</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="elemental-bruiser">
+		<string name="name">.drink.elemental-bruiser.name</string>
+		<string name="desc">.drink.elemental-bruiser.desc?pos=+75&neg=+50</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>72 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<float name="spell-mul">1.75</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::SpellCost</string>
+				<float name="mana-mul">1.5</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="homemade-hazard">
+		<string name="name">.drink.homemade-hazard.name</string>
+		<string name="desc">.drink.homemade-hazard.desc?pos=+100&neg=+10</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>48 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::CriticalMul</string>
+				<float name="mul">2</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<float name="dmg-taken-mul">1.1</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="last-stand">
+		<string name="name">.drink.last-stand.name</string>
+		<string name="desc">.drink.last-stand.desc?pos=+30&pos2=-30&neg=+10</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>216 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::MoveFilter</string>
+				<bool name="invert">true</bool>
+				<dict name="modifier">
+					<string name="class">Modifiers::Damage</string>
+					<float name="mul">1.3</float>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::MoveFilter</string>
+				<bool name="invert">true</bool>
+				<dict name="modifier">
+					<string name="class">Modifiers::Armor</string>
+					<float name="dmg-taken-mul">0.7</float>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::MoveFilter</string>
+				<bool name="invert">false</bool>
+				<dict name="modifier">
+					<string name="class">Modifiers::Armor</string>
+					<float name="dmg-taken-mul">1.1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="overflowing-physique">
+		<string name="name">.drink.overflowing-physique.name</string>
+		<string name="desc">.drink.overflowing-physique.desc?pos=50&neg=5</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>72 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::StatsBase</string>
+				<float name="health">0.5</float>
+			</dict>
+		</array>
+		
+		<string name="buff">items/buffs.sval:tavern_move_mana_loss</string>
+	</dict>
+	
+	<dict name="primal-fury">
+		<string name="name">.drink.primal-fury.name</string>
+		<string name="desc">.drink.primal-fury.desc?pos=+33</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>168 120 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Speed</string>
+					<float name="attack-mul">1.33</float>
+				</dict>
+			</dict>
+
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="mana-mul">0</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	 <dict name="slumbering-giant">
+		<string name="name">.drink.slumbering-giant.name</string>
+		<string name="desc">.drink.slumbering-giant.desc?pos=+50&neg=-20</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<string name="dlc">pop</string>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>96 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="attack-power">50</int>
+			</dict>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Speed</string>
+				<float name="attack-mul">0.8</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="starlight-stinger">
+		<string name="name">.drink.starlight-stinger.name</string>
+		<string name="desc">.drink.starlight-stinger.desc?pos=15&neg=-25</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>192 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::CriticalHit</string>
+				<float name="spell-chance">0.15</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::StatsBase</string>
+				<float name="mana">-0.25</float>
+			</dict>
+		</array>
+	</dict>
+	
+	 <dict name="the-cranky-clergyman">
+		<string name="name">.drink.the-cranky-clergyman.name</string>
+		<string name="desc">.drink.the-cranky-clergyman.desc?pos=+25&neg=-25</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<string name="dlc">pop</string>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>0 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<float name="resistance-mul">1.25</float>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="skill-mul">0.75</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="the-hairy-magus">
+		<string name="name">.drink.the-hairy-magus.name</string>
+		<string name="desc">.drink.the-hairy-magus.desc?pos=1&neg=+25</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>144 96 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">spellcrit</string>
+				<float name="chance">1</float>
+				
+				<bool name="target-self">true</bool>
+				<int name="timeout">1</int>
+				
+				<dict name="effect">
+					<string name="class">Decimate</string>
+					<float name="mana">-0.01</float>
+				</dict>
+			</dict>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::SpellCost</string>
+				<float name="mana-mul">1.25</float>
+			</dict>
+		</array>
+	</dict>
+		
+	<dict name="the-last-sin">
+		<string name="name">.drink.the-last-sin.name</string>
+		<string name="desc">.drink.the-last-sin.desc?pos=+100&neg=-33%</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>24 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::CriticalMul</string>
+				<float name="spell-mul">2</float>
+			</dict>
+			<dict name="modifier">
+				<string name="class">Modifiers::Regen</string>
+				<float name="mana-mul">0.66</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="the-outlook-special">
+		<string name="name">.drink.the-outlook-special.name</string>
+		<string name="desc">.drink.the-outlook-special.desc?pos=50&pos2=30&neg=-50</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>216 0 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">pickup-ore</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">items/buffs.sval:tavern_ore_armor</string>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::OreGain</string>
+				<float name="scale">0.5</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="the-safe-bet">
+		<string name="name">.drink.the-safe-bet.name</string>
+		<string name="desc">.drink.the-safe-bet.desc?pos=+20&neg=-5</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<string name="dlc">pop</string>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>48 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<float name="armor-mul">1.2</float>
+				<float name="resistance-mul">1.2</float>
+			</dict>
+		
+			<dict>
+				<string name="class">Modifiers::Luck</string>
+				<float name="add">-5</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="the-smirking-shopkeep">
+		<string name="name">.drink.the-smirking-shopkeep.name</string>
+		<string name="desc">.drink.the-smirking-shopkeep.desc?neg=50</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">2000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>24 96 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::DungeonStoreItems</string>
+				<int name="num">1</int>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::ShopCost</string>
+				<float name="mul">1.5</float>
+			</dict>
+		</array>
+	</dict>
+
+	<!-- Rare -->
+	<dict name="caustic-touch">
+		<string name="name">.drink.caustic-touch.name</string>
+		<string name="desc">.drink.caustic-touch.desc</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>216 96 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">spellhit</string>
+				<bool name="target-self">false</bool>
+				<float name="chance">1</float>
+				
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">items/buffs.sval:poison</string>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">castspell</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">1</int>
+				
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">actors/buffs.sval:poison</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="crimson-death">
+		<string name="name">.drink.crimson-death.name</string>
+		<string name="desc">.drink.crimson-death.desc?pos=5&neg=2.5</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>192 72 24 24</vec4>
+		</array>
+
+		<string name="buff">items/buffs.sval:tavern_crimson_death</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Lifestealing</string>
+				<float name="lifesteal">0.05</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="evil-infusion">
+		<string name="name">.drink.evil-infusion.name</string>
+		<string name="desc">.drink.evil-infusion.desc?pos=5&neg=10</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>192 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Lifestealing</string>
+				<float name="spell-lifesteal">0.05</float>
+			</dict>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">castspell</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">10</int>
+
+				<dict name="effect">
+					<string name="class">Decimate</string>
+					<float name="amount">0.1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="frenetic-eruption">
+		<string name="name">.drink.frenetic-eruption.name</string>
+		<string name="desc">.drink.frenetic-eruption.desc?pos=5&neg=+20</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>216 72 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">crit</string>
+				<float name="chance">0.05</float>
+				
+				<bool name="target-self">true</bool>
+				<int name="timeout">500</int>
+
+				<dict name="effect">
+					<string name="class">GiveCombo</string>
+				</dict>
+			</dict>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">spellcrit</string>
+				<float name="chance">0.05</float>
+				
+				<bool name="target-self">true</bool>
+				<int name="timeout">500</int>
+
+				<dict name="effect">
+					<string name="class">GiveCombo</string>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<bool name="invert">true</bool>
+				<dict name="modifier">
+					<string name="class">Modifiers::Armor</string>
+					<float name="dmg-taken-mul">1.2</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="hammer-time">
+		<string name="name">.drink.hammer-time.name</string>
+		<string name="desc">.drink.hammer-time.desc?pos=+100&neg=5</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>144 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="attack-power">100</int>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::MoveFilter</string>
+				<bool name="invert">true</bool>
+				<dict name="modifier">
+					<string name="class">Modifiers::TimedTriggerEffect</string>
+					<float name="chance">1</float>
+					<bool name="target-self">true</bool>
+					<int name="freq">250</int>
+					
+					<dict name="effect">
+						<string name="class">Decimate</string>
+						<float name="amount">0.05</float>
+					</dict>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="incendiary-demise">
+		<string name="name">.drink.incendiary-demise.name</string>
+		<string name="desc">.drink.incendiary-demise.desc?pos=+40</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>72 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="magical-add">40</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hit</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">actors/buffs.sval:burning</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+
+	<dict name="kinetic-kiss">
+		<string name="name">.drink.kinetic-kiss.name</string>
+		<string name="desc">.drink.kinetic-kiss.desc?pos=2.5</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>96 72 24 24</vec4>
+		</array>
+		
+		<string name="buff">items/buffs.sval:tavern_move_mana</string>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hurt</string>
+				<bool name="target-self">true</bool>
+
+				<dict name="effect">
+					<string name="class">Decimate</string>
+					<float name="mana-max">1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="markhams-moonshine">
+		<string name="name">.drink.markhams-moonshine.name</string>
+		<string name="desc">.drink.markhams-moonshine.desc?pos=+5</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>96 120 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Markham</string>
+				<float name="attack-mul-add">0.05</float>
+				<float name="spell-mul-add">0.05</float>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<bool name="disabled">true</bool>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="perpetual-desire">
+		<string name="name">.drink.perpetual-desire.name</string>
+		<string name="desc">.drink.perpetual-desire.desc?neg=+100</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<string name="dlc">pop</string>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>120 72 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">pickup</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">GiveCombo</string>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<bool name="invert">true</bool>
+				<dict name="modifier">
+					<string name="class">Modifiers::SpellCost</string>
+					<float name="mana-mul">2</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="spilled-blood">
+		<string name="name">.drink.spilled-blood.name</string>
+		<string name="desc">.drink.spilled-blood.desc?neg=-20</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>120 24 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hit</string>
+				<bool name="target-self">false</bool>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">items/buffs.sval:bleeding</string>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::StatsBase</string>
+				<float name="health">-0.2</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="stab-in-the-dark">
+		<string name="name">.drink.stab-in-the-dark.name</string>
+		<string name="desc">.drink.stab-in-the-dark.desc?pos=50&neg=1.5</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>168 72 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::CriticalHit</string>
+				<float name="chance">0.5</float>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">attack</string>
+				<bool name="target-self">true</bool>
+				
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">items/buffs.sval:tavern_darkness</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="the-mad-proposal">
+		<string name="name">.drink.the-mad-proposal.name</string>
+		<string name="desc">.drink.the-mad-proposal.desc?pos=+400</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>120 48 24 24</vec4>
+		</array>
+
+		<string name="buff">items/buffs.sval:tavern_the_mad_proposal</string>
+		
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">5</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="unbalanced-essence">
+		<string name="name">.drink.unbalanced-essence.name</string>
+		<string name="desc">.drink.unbalanced-essence.desc?pos=+100&neg=10</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>48 72 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="spell-power">100</int>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">castspell</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">10</int>
+
+				<dict name="effect">
+					<string name="class">Decimate</string>
+					<float name="mana">0.1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="wicked-sickness">
+		<string name="name">.drink.wicked-sickness.name</string>
+		<string name="desc">.drink.wicked-sickness.desc?pos=+200&neg=-50</string>
+		<string name="quality">rare</string>
+		<int name="cost">5000</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>0 72 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Damage</string>
+					<float name="mul">3</float>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<bool name="invert">true</bool>
+				<dict name="modifier">
+					<string name="class">Modifiers::Damage</string>
+					<float name="mul">0.5</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</dict>

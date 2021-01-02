@@ -1,0 +1,34 @@
+<unit>
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/player/witch_hunter/brand_explode</string>
+		<int name="delay-random">0</int>
+		<int name="delay">1000</int>
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/witch_hunter/ward_of_branding_explosion.effect</string>
+				<int name="radius">30</int>
+				<float name="dist-scaling">1000</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">players/buffs.sval:brand-2</string>
+					</dict>
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">60</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="visible">
+		<scene name="visible">
+			<effect src="players/witch_hunter/ward_of_branding_active.effect" />
+		</scene>
+	</scenes>
+</unit>

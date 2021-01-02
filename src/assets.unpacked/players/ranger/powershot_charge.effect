@@ -1,0 +1,52 @@
+<effect looping="true" bounds="50 50">
+	<param name="radius" default="16" />
+	<param name="ttl" default="200" />
+
+	
+	<!-- from priest -->
+	
+	<sprite origin="1 17" looping="true" texture="effects/players/player_effects.png" material="system/default.mats:bright"
+		num-sprites="min(8*l,30)"
+
+		pos-x="cos(2 * pi * rand(u+il+i*13) ) * ((rand(u+i+il) * 15) + radius - it*radius - rand(u+i+il) * 15)"
+        pos-y="sin(2 * pi * rand(u+il+i*13) ) * ((rand(u+i+il) * 15) + radius - it*radius - rand(u+i+il) * 15)"
+		
+		scale-x="min(0.5*l,0.9)"
+        scale-y="min(0.5*l,0.9)"
+		
+		angle="2*pi*rand(u+il+i*13)+pi/2"
+		
+		
+		color-r="1"
+		color-g="1.5+saturate(floor(l/4))*0.5"
+		color-b="saturate(floor(l/4))*0.7"
+		color-a="saturate(min(l/4,0.8)*1-it)"
+	>
+        <frame time="50">51 46 3 14</frame>
+	</sprite>	
+	
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="250" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="min((t+l)/4,1)*45" />
+
+		<color-r value="1" />
+		<color-g value="2.5  * saturate(ttl / 200)" />
+		<color-b value="1 * saturate(ttl / 200)+min((t+l)/4,1)" />
+		<color-a value="0"/>
+	</light>
+</effect>

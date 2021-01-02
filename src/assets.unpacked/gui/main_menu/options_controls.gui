@@ -1,0 +1,43 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect width="160" height="160" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="156" height="18" offset="2 2" flow="hbox">
+					<!-- Headline -->
+					<rect width="135" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".mainmenu.controls.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="156" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Maps list -->
+				<scrollrect id="maps" width="142" height="135" offset="2 23" flow="vbox" spacing="4" padding="4 4" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="maps" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="135" offset="144 23" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="135" offset="155 23" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Map template -->
+				<scalebutton id="maps-template" spriteset="scalebutton" visible="false" width="134" font="gui/fonts/arial11.fnt" text="XXX" func="cfg-game" />
+			</rect>
+		</group></group>
+	</doc>
+</gui>

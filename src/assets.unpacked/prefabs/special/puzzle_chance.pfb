@@ -1,0 +1,917 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/button_spike.unit"><vec2>0 0</vec2><int>2</int></array>
+		<array name="doodads/generic/puzzle_chance.unit">
+			<vec2>48 48</vec2>
+			<int>12</int>
+			<vec2>-24 -48</vec2>
+			<int>3</int>
+			<vec2>24 -24</vec2>
+			<int>4</int>
+			<vec2>-48 -24</vec2>
+			<int>5</int>
+			<vec2>-48 -48</vec2>
+			<int>6</int>
+			<vec2>24 48</vec2>
+			<int>7</int>
+			<vec2>48 24</vec2>
+			<int>8</int>
+			<vec2>-48 24</vec2>
+			<int>9</int>
+			<vec2>0 24</vec2>
+			<int>10</int>
+			<vec2>24 0</vec2>
+			<int>11</int>
+			<vec2>48 -24</vec2>
+			<int>23</int>
+			<vec2>-24 48</vec2>
+			<int>13</int>
+			<vec2>48 -48</vec2>
+			<int>14</int>
+			<vec2>-24 24</vec2>
+			<int>15</int>
+			<vec2>-48 48</vec2>
+			<int>16</int>
+			<vec2>-24 0</vec2>
+			<int>17</int>
+			<vec2>0 -48</vec2>
+			<int>18</int>
+			<vec2>48 0</vec2>
+			<int>19</int>
+			<vec2>0 48</vec2>
+			<int>20</int>
+			<vec2>-48 0</vec2>
+			<int>21</int>
+			<vec2>-24 -24</vec2>
+			<int>22</int>
+			<vec2>0 -24</vec2>
+			<int>24</int>
+			<vec2>24 -48</vec2>
+			<int>25</int>
+			<vec2>24 24</vec2>
+			<int>26</int>
+		</array>
+		<array name="doodads/generic/marker_target_16.unit"><vec2>-72 0</vec2><int>27</int><vec2>72 0</vec2><int>28</int><vec2>0 -72</vec2><int>29</int><vec2>0 72</vec2><int>30</int></array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">16</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>31</int>
+			<vec3>0 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward3</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>32</int>
+			<vec3>-72 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward4</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>33</int>
+			<vec3>-144 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>36</int><int>0</int><int>70</int><int>0</int><int>73</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>34</int>
+			<vec3>-144 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>75</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>35</int>
+			<vec3>0 -392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>6</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>36</int>
+			<vec3>-144 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ButtonOn</string>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>37</int>
+			<vec3>64 -392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>3</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>38</int>
+			<vec3>128 -392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>18</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>39</int>
+			<vec3>192 -392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>25</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>40</int>
+			<vec3>256 -392 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>14</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>41</int>
+			<vec3>0 -328 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>5</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>42</int>
+			<vec3>64 -328 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>22</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>43</int>
+			<vec3>128 -328 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>24</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>44</int>
+			<vec3>192 -328 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>4</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>45</int>
+			<vec3>256 -328 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>23</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>46</int>
+			<vec3>0 -200 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>9</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>47</int>
+			<vec3>64 -200 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>15</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>48</int>
+			<vec3>128 -200 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>49</int>
+			<vec3>192 -200 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>26</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>50</int>
+			<vec3>256 -200 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>8</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>51</int>
+			<vec3>192 -264 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>11</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>52</int>
+			<vec3>256 -264 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>19</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>53</int>
+			<vec3>0 -264 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>21</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>54</int>
+			<vec3>64 -264 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>17</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>55</int>
+			<vec3>0 -136 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>16</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>56</int>
+			<vec3>64 -136 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>13</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>57</int>
+			<vec3>128 -136 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>20</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>58</int>
+			<vec3>192 -136 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>7</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>59</int>
+			<vec3>256 -136 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>12</int></array>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>60</int><vec3>-224 -352 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>61</int>
+			<vec3>-144 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>60</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>62</int>
+			<vec3>-304 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Check2</string>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">11</int>
+				<array name="OnTrue"><int>68</int></array>
+				<array name="Variable"><int>60</int></array>
+				<array name="OnFalse"><int>63</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>63</int>
+			<vec3>-432 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward1</string>
+			<array><int>71</int><int>250</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>64</int>
+			<vec3>-432 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward2</string>
+			<array><int>72</int><int>500</int><int>76</int><int>250</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>65</int>
+			<vec3>-432 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward3</string>
+			<array><int>31</int><int>750</int><int>80</int><int>500</int><int>76</int><int>250</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>66</int>
+			<vec3>-432 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward4</string>
+			<array><int>32</int><int>1000</int><int>81</int><int>750</int><int>80</int><int>500</int><int>76</int><int>250</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>67</int>
+			<vec3>-304 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Check1</string>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">5</int>
+				<array name="Variable"><int>60</int></array>
+				<array name="OnTrue"><int>62</int></array>
+				<array name="OnFalse"><int>77</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>68</int>
+			<vec3>-303 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Check3</string>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">16</int>
+				<array name="OnTrue"><int>69</int></array>
+				<array name="Variable"><int>60</int></array>
+				<array name="OnFalse"><int>64</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>69</int>
+			<vec3>-304 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Check4</string>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">18</int>
+				<array name="Variable"><int>60</int></array>
+				<array name="OnFalse"><int>65</int></array>
+				<array name="OnTrue"><int>94</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>70</int>
+			<vec3>-304 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CheckReward</string>
+			<array><int>67</int><int>2500</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>71</int>
+			<vec3>0 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward1</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>72</int>
+			<vec3>72 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward2</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>73</int>
+			<vec3>-144 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>74</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>74</int>
+			<vec3>-144 -144 0</vec3>
+			<bool>f</bool>
+			<int>24</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">100</int>
+			</dict>
+			<array><int>34</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>75</int>
+			<vec3>-144 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>35</int>
+					<int>37</int>
+					<int>38</int>
+					<int>39</int>
+					<int>40</int>
+					<int>41</int>
+					<int>42</int>
+					<int>43</int>
+					<int>44</int>
+					<int>45</int>
+					<int>52</int>
+					<int>51</int>
+					<int>54</int>
+					<int>53</int>
+					<int>46</int>
+					<int>47</int>
+					<int>48</int>
+					<int>49</int>
+					<int>50</int>
+					<int>59</int>
+					<int>58</int>
+					<int>57</int>
+					<int>56</int>
+					<int>55</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>76</int>
+			<vec3>-528 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Random1</string>
+			<dict>
+				<array name="ToExecute"><int>78</int><int>86</int><int>90</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>77</int>
+			<vec3>-432 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward0</string>
+			<array><int>79</int><int>250</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>78</int>
+			<vec3>0 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>diamond_red_small</string>
+			<dict>
+				<string name="UnitType">items/money_diamond_red_small.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>79</int>
+			<vec3>-528 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Random0</string>
+			<dict>
+				<array name="ToExecute"><int>82</int><int>85</int><int>89</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>80</int>
+			<vec3>-528 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Random2</string>
+			<dict>
+				<array name="ToExecute"><int>83</int><int>87</int><int>91</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>81</int>
+			<vec3>-528 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Random3</string>
+			<dict>
+				<array name="ToExecute"><int>84</int><int>88</int><int>92</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>82</int>
+			<vec3>0 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>diamond_blue_small</string>
+			<dict>
+				<string name="UnitType">items/money_diamond_blue_small.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>83</int>
+			<vec3>72 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>diamond_blue_large</string>
+			<dict>
+				<string name="UnitType">items/money_diamond_blue_large.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>84</int>
+			<vec3>0 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>diamond_red_large</string>
+			<dict>
+				<string name="UnitType">items/money_diamond_red_large.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>85</int>
+			<vec3>0 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>health_apple</string>
+			<dict>
+				<string name="UnitType">items/health_apple.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>86</int>
+			<vec3>0 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>health_orange</string>
+			<dict>
+				<string name="UnitType">items/health_orange.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>87</int>
+			<vec3>72 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>health_cheese</string>
+			<dict>
+				<string name="UnitType">items/health_cheese.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>88</int>
+			<vec3>0 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>health_meat</string>
+			<dict>
+				<string name="UnitType">items/health_meat.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>89</int>
+			<vec3>0 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mana_shard</string>
+			<dict>
+				<string name="UnitType">items/mana_shard.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>90</int>
+			<vec3>0 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mana_shard</string>
+			<dict>
+				<string name="UnitType">items/mana_shard.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>91</int>
+			<vec3>72 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mana_pyramid</string>
+			<dict>
+				<string name="UnitType">items/mana_pyramid.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>92</int>
+			<vec3>0 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mana_sphere</string>
+			<dict>
+				<string name="UnitType">items/mana_sphere.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>93</int>
+			<vec3>-72 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward5</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>94</int>
+			<vec3>-304 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Check5</string>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">20</int>
+				<array name="Variable"><int>60</int></array>
+				<array name="OnTrue"><int>95</int></array>
+				<array name="OnFalse"><int>66</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>95</int>
+			<vec3>-432 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Reward5</string>
+			<array><int>81</int><int>750</int><int>80</int><int>500</int><int>76</int><int>250</int><int>93</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

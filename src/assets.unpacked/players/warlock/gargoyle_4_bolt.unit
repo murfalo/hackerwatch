@@ -1,0 +1,52 @@
+<unit netsync="none">
+	<behavior class="BoltShooter">
+		<int name="ttl">5000</int>
+		<int name="bolts">15</int>
+		<int name="height">14</int>
+		<int name="spread">3</int>
+		<int name="range">50</int>
+		
+		<string name="fx">effects/players/lightning_bolt.effect</string>
+		
+		<string name="loop-fx">players/warlock/gargoyle_vanish.effect</string>
+		<int name="loop-fx-interval">5000</int>
+		<vec2 name="loop-fx-radius">0 0</vec2>
+		
+		<array name="link-effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">16</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:gargoyle_stun</string>
+			</dict>
+		</array>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<int name="radius">1</int>
+				<int name="min-radius">1</int>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">32</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene>
+			<sprite origin="8 16" texture="./gargoyle.png" material="system/default.mats:player">
+				<frame time="100">65 0 18 16</frame>
+				<frame time="100">83 0 18 16</frame>
+				<frame time="100">101 0 18 16</frame>
+				<frame time="100">65 16 18 16</frame>
+				<frame time="100">83 16 18 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

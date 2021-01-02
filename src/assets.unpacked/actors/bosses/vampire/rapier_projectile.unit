@@ -1,0 +1,43 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">0</float>
+		<float name="speed-delta">0.5</float>
+		<float name="speed-delta-max">10</float>
+		
+		<int name="ttl">3000</int>
+		
+		<string name="shoot-snd">event:/enemy/boss_vampire/rapier</string>
+		<!-- <string name="hit-snd">event:/enemy/boss_vampire/rapier_hit</string> -->
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">75</int>
+				<float name="armor-mul">0.75</float>
+			</dict>
+			
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/bosses/vampire/rapier_break.effect</string>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/boss_vampire/rapier_hit</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/bosses/vampire/rapier_projectile.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="3" />
+			</collision>	
+		</scene>
+	</scenes>
+</unit>

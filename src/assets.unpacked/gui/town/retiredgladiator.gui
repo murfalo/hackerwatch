@@ -1,0 +1,85 @@
+<gui>
+	<sprites>
+		<sprite name="frame-icon" texture="gui/widget.png"><frame>99 0 26 26</frame></sprite>
+		<sprite name="icon-attack-power" texture="gui/icons_others.png"><frame>0 48 24 24</frame></sprite>
+		<sprite name="icon-skill-power" texture="gui/icons_others.png"><frame>48 96 24 24</frame></sprite>
+		<sprite name="icon-armor" texture="gui/icons_others.png"><frame>24 48 24 24</frame></sprite>
+		<sprite name="icon-resistance" texture="gui/icons_others.png"><frame>72 96 24 24</frame></sprite>
+
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="sword-token" texture="gui/icons.png"><frame>106 17 12 12</frame></sprite>
+
+%include "gui/scalablebutton_big_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="274" height="196" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox">
+				<!-- Header -->
+				<rect width="274" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="249" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".retiredgladiator.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="stop" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="270" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Token information -->
+				<rect width="270" height="19" offset="2 0" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<group inner="true" anchor="0.5 0.5" flow="hbox" spacing="2">
+						<text font="gui/fonts/arial11.fnt" text=".retiredgladiator.available.left" />
+						<text id="tokens" font="gui/fonts/arial11_bold.fnt" text="0" />
+						<sprite src="sword-token" offset="0 2" />
+						<text font="gui/fonts/arial11.fnt" text=".retiredgladiator.available.right" />
+					</group>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="270" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect id="list" width="270" height="128" flow="vbox" offset="2 0" />
+
+				<rect id="template" visible="false" width="270" height="32" flow="hbox">
+					<rect width="32" height="32" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+						<text id="level" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+					</rect>
+					<shopitem id="button" spriteset="scalebutton-big" font="gui/fonts/arial11.fnt" width="238" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="270" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Buttom bar -->
+				<rect width="270" height="18" flow="hbox" offset="2 0">
+					<rect width="20" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Spent token count -->
+					<rect width="45" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<group inner="true" flow="hbox" spacing="2" anchor="0.5 0.5">
+							<sprite src="sword-token" offset="0 2" />
+							<text id="tokens-spent" font="gui/fonts/arial11.fnt" text="0" />
+						</group>
+					</rect>
+
+					<rect width="20" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Respec button -->
+					<scalebutton id="respec" spriteset="scalebutton" font="gui/fonts/arial11.fnt" func="respec" width="100" text=".retiredgladiator.respec" />
+
+					<rect width="85" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

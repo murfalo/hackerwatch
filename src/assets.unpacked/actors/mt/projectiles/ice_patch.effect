@@ -1,0 +1,71 @@
+<effect looping="false">
+	<param name="radius" default="0" />
+
+	<sprite origin="20 19" layer="-1" looping="true" texture="./ice_patch.png" material="system/default.mats:floor"
+	angle="rand(u + i) * 2 * pi"
+	scale-x="0.97-(0.03*t)"
+	scale-y="0.97-(0.03*t)"
+	color-a="1-(1*t*t*t*t*t*t*t*t)">
+		<frame time="10000">0 0 41 39</frame>
+	</sprite>	
+
+	
+	<sprite origin="7 7" layer="0" looping="true" texture="./ice_patch.png" material="system/default.mats:floor"
+	color-a="1-t">
+		<frame time="5000">41 0 13 13</frame>
+	</sprite>	
+	
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 40 * t" />
+		
+		<color-r value="0" />
+		<color-g value="0.2" />
+		<color-b value="1" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="10000" />
+		
+		<looping value="false" />
+		<overbright value="0"/>
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="64 - (4*t)" />
+		
+		<color-r value="0"/>
+		<color-g value="0.2-(0.2*t*t)"/>
+		<color-b value="0.6-(0.6*t*t)"/>
+		<color-a value="0.1-(0.1*t*t)"/>
+	</light>
+
+</effect>

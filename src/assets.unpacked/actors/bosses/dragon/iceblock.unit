@@ -1,0 +1,43 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehaviorNoNGPScale">
+	
+		<string name="type">construct</string>
+		<string name="team">player</string>
+		<int name="hp">500</int>
+		<int name="armor">0</int>
+		<int name="resistance">0</int>
+		<int name="aggro-range">999</int>
+		<!-- <float name="mp-scale-fact">1</float> -->
+		
+		<string name="gore">effects/gibs/gib_iceblock.sval</string>
+		<string name="death-snd">event:/misc/iceblock_break</string>
+
+		<bool name="can-heal">false</bool>
+
+		<bool name="no-buffs">true</bool>
+		<bool name="impenetrable">true</bool>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">true</bool>
+		<bool name="must-see-target">false</bool>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>
+		
+		<array name="skills">
+<!--			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				%//<bool name="friendly">false</bool>
+				<string name="buff">actors/buffs.sval:dragon_freezing</string>
+				<int name="freq">200</int>
+				<int name="range">20</int>
+			</dict>	-->		
+		</array>		
+		
+	</behavior>
+
+%include "actors/bosses/dragon/iceblock_base.inc"
+
+</unit>

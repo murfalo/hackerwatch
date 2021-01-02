@@ -1,0 +1,31 @@
+<unit slot="doodad">
+<behavior class="Breakable">
+	<string name="break-sound">event:/item/break_barrel</string>
+	<string name="gore">effects/gibs/doodads/gib_container_crate_b.sval</string>
+	<string name="loot">doodads/loot.sval:container_b</string>
+	<bool name="shoot-through">true</bool>
+</behavior>
+
+<scenes start="1 2">
+    <scene name="shared">
+		<collision static="true">
+			<circle shoot-through="false" aim-through="true" offset="0 0" radius="4"/>
+		</collision>
+    </scene>
+
+	<scene name="1">
+		<scene src="shared" />
+		<sprite origin="3 7" texture="./containers.png" material="system/default.mats:proj-prop">
+			<frame>13 0 11 12</frame>
+		</sprite>
+    </scene>
+	
+	<scene name="2">
+		<scene src="shared" />
+		<sprite origin="3 7" texture="./containers.png" material="system/default.mats:proj-prop">
+			<frame>13 12 11 12</frame>
+		</sprite>
+    </scene>
+</scenes>
+</unit>
+ 

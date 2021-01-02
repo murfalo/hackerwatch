@@ -1,0 +1,127 @@
+<gui>
+	<sprites>
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="icon-unlock" texture="gui/icons.png"><frame>101 91 8 10</frame></sprite>
+
+		<sprite name="petbutton" texture="gui/widget.png"><frame>346 0 32 32</frame></sprite>
+		<sprite name="petbutton-hover" texture="gui/widget.png"><frame>346 32 32 32</frame></sprite>
+		<sprite name="petbutton-checked" texture="gui/widget.png"><frame>346 64 32 32</frame></sprite>
+		<sprite name="petbutton-disabled" texture="gui/widget.png"><frame>378 64 32 32</frame></sprite>
+
+		<sprite name="icon-none" texture="gui/icons_pets.png"><frame>216 48 24 24</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/main_menu/checkbox_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="224" height="236" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="220" height="18" offset="2 2" flow="hbox">
+					<!-- Headline -->
+					<rect width="199" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".town.pets.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="220" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Pets -->
+				<rect width="110" height="190" offset="2 23">
+					<!-- Headline -->
+					<rect width="107" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11.fnt" anchor="0.5 0.5" text=".town.pets.pet" />
+					</rect>
+
+					<!-- Right separator -->
+					<rect width="3" height="190" offset="107 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Pet list -->
+					<rect width="96" height="172" offset="0 18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<checkboxgroup id="list-pets" flow="hboxwrapped" width="96" height="172" func="pet-changed">
+							<checkbox spriteset="petbutton" tooltip-title=".town.pets.none">
+								<sprite src="icon-none" offset="4 4" />
+							</checkbox>
+						</checkboxgroup>
+					</rect>
+
+					<!-- Scrollbar -->
+					<rect width="3" height="172" offset="96 18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<scrollbar forid="list-pets" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="3" height="190" offset="112 23" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Skin -->
+				<rect width="107" height="82" offset="115 23">
+					<!-- Headline -->
+					<rect width="107" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11.fnt" anchor="0.5 0.5" text=".town.pets.skin" />
+					</rect>
+
+					<!-- Skin list -->
+					<rect width="96" height="64" offset="0 18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<checkboxgroup id="list-skins" flow="hboxwrapped" width="96" height="64" func="skin-changed" />
+					</rect>
+
+					<!-- Scrollbar -->
+					<rect width="3" height="64" offset="96 18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<scrollbar forid="list-skins" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="107" height="3" offset="115 105" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Settings -->
+				<rect width="107" height="105" offset="115 108">
+					<!-- Headline -->
+					<rect width="107" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11.fnt" anchor="0.5 0.5" text=".town.pets.settings" />
+					</rect>
+
+					<!-- Flags list -->
+					<scrollrect id="list-flags" flow="vbox" width="96" height="87" offset="0 18" padding="4 4" spacing="2" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+					<!-- Scrollbar -->
+					<rect width="3" height="87" offset="96 18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<scrollbar forid="list-flags" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="220" height="3" offset="2 213" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Button bar -->
+				<rect width="220" height="18" offset="2 216" flow="hbox">
+					<rect width="77" height="18" spriteset="gui/variable/headline_hor.sval" />
+					<scaleiconbutton id="button" width="66" height="18" spriteset="scalebutton" font="gui/fonts/arial11.fnt" text="0" icon="icon-gold" func="finish" />
+					<rect width="77" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+
+			<!-- Pet template -->
+			<checkbox id="template-pet" visible="false" spriteset="petbutton" disabled-tooltip="true">
+				<sprite id="icon" offset="4 4" />
+				<sprite id="unlocked" visible="false" src="icon-unlock" offset="5 5" />
+			</checkbox>
+
+			<!-- Skin template -->
+			<checkbox id="template-skin" visible="false" spriteset="petbutton">
+				<sprite id="icon" offset="4 4" />
+			</checkbox>
+
+			<!-- Setting template -->
+			<checkbox id="template-flag" visible="false" spriteset="checkbox" font="gui/fonts/arial11.fnt" func="flag-changed" />
+		</group>
+	</doc>
+</gui>

@@ -1,0 +1,25 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="6 4" texture="./bola.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="1.5*(t+l)">
+		
+		<frame time="100">2 2 11 6</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="6 4" texture="./bola.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="1.5*(t+l)">
+		
+		<frame time="100">2 2 11 6</frame>
+	</sprite>
+</effect>

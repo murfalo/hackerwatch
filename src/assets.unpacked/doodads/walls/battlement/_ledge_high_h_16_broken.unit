@@ -1,0 +1,20 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="2 1" texture="gui/minimap.png" frame="0 0 4 2"/>	
+<!-- 			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-8 -4 16 8</rect>
+			</collision> -->
+			<shadow darkness="1">
+				<rect cast-len="8">-8 -4 4 8</rect>
+				<rect cast-len="8">4 -4 4 8</rect>
+			</shadow>
+			<sprite layer="-1" origin="8 12" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>8 48 16 16</frame>
+			</sprite>
+			<sprite layer="-29" origin="8 4" texture="tilesets/battlement.png" material="system/default.mats:floor">
+				<frame>0 0 14 8</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

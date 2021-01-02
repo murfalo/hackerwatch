@@ -1,0 +1,62 @@
+<gui>
+	<sprites>
+		<sprite name="drink-frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- List -->
+			<scrollrect id="list" width="366" height="194" flow="vbox" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<!-- Items header -->
+				<rect width="366" height="18" spriteset="gui/variable/headline_hor.sval">
+					<text text=".itemiary.header.items" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Items list -->
+				<rect id="list-items" width="366" height="22" flow="hboxwrapped" />
+
+				<!-- Drinks header -->
+				<rect width="366" height="18" spriteset="gui/variable/headline_hor.sval">
+					<text text=".itemiary.header.drinks" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Drinks list -->
+				<rect id="list-drinks" width="366" height="38" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#0c120fFF" shadowsize="4" flow="hboxwrapped" padding="5 5" spacing="2" />
+			</scrollrect>
+
+			<!-- Separators -->
+			<rect width="3" height="194" offset="366 0" spriteset="gui/variable/3pxbar_vert.sval" />
+			<rect width="3" height="194" offset="377 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Item template -->
+			<rect id="template-item" visible="false" width="183" height="22" flow="hbox">
+				<!-- Icon -->
+				<rect width="22" height="22" spriteset="gui/variable/headline_borders.sval">
+					<sprite id="icon" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Name -->
+				<rect width="161" height="22" spriteset="gui/variable/headline_borders.sval">
+					<!-- Container -->
+					<rect id="name-container" width="157" height="18" offset="2 2" color="#202a26FF" shadow="#000000af" shadowsize="2">
+						<!-- Text -->
+						<text id="name" font="gui/fonts/arial11.fnt" anchor="0 0.5" offset="4 0" />
+					</rect>
+				</rect>
+			</rect>
+
+			<!-- No item template -->
+			<rect id="template-item-nothing" visible="false" width="183" height="22" spriteset="gui/variable/headline_borders.sval" />
+
+			<!-- Drink template -->
+			<sprite id="template-drink" visible="false" src="drink-frame">
+				<sprite id="icon" offset="2 2" />
+			</sprite>
+		</group>
+	</doc>
+</gui>

@@ -1,0 +1,49 @@
+<unit slot="doodad" layer="-25">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">75</int>
+		<int name="ttl">9999999</int>
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_darkness</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_manableed</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_playerbleed</string>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/mt/bosses/agents/buffs.sval:night_beam_skeletonbleed</string>
+			</dict>
+		</array>
+	</behavior>	
+	<scenes>
+		<scene>
+			<effect ulayer="1" src="./deatharea.effect" />
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" radius="36" sensor="true" />
+			</collision>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="8" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="160" />
+				</sizes>
+				<colors>
+					<color value="200 0 255 0" />
+				</colors>
+			</light>			
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,41 @@
+<effect looping="true">
+	<param name="cR" default="1" />
+	<param name="cG" default="0" />
+	<param name="cB" default="0.8" />
+	
+	<sprite origin="10 14" looping="true" layer="1" texture="./combo.png" material="system/default.mats:bright-noxray"
+		color-a="0.66 + 0.33 * sin(t + l)"
+		
+		color-r="cR"
+		color-g="cG"
+		color-b="cB"
+	>
+		<frame time="250">0 20 19 19</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		%//<length value="150" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="64" />
+			
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

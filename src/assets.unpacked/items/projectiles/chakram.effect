@@ -1,0 +1,38 @@
+<effect looping="true">
+<!-- shadows -->
+	<sprite looping="true" origin="10 10" texture="./chakram.png" material="system/default.mats:shadow"
+		angle="(t+l)*pi"
+		
+		>
+		<frame time="150">2 34 20 20</frame>
+	</sprite>
+	<sprite looping="true" origin="8 8" texture="./chakram.png" material="system/default.mats:shadow"
+		
+		>
+		
+		<frame time="100">16 0 16 16</frame>
+	</sprite>
+	
+	
+	<!-- handle -->
+	<sprite looping="true" origin="10 10" texture="./chakram.png" material="system/default.mats:projectile-player"
+		angle="(t+l)*pi"
+		pos-y="-3"
+		
+		>
+		<frame time="150">2 34 20 20</frame>
+	</sprite>
+	<!-- blade -->
+	<sprite looping="true" origin="8 8" texture="./chakram.png" material="system/default.mats:projectile-player"
+		pos-y="-3"
+		>
+		<frame time="75">0 16 16 16</frame>		
+		<frame time="75">16 0 16 16</frame>
+		<frame time="75">32 0 16 16</frame>
+		<frame time="75">48 0 16 16</frame>
+		<frame time="75">0 16 16 16</frame>
+		<frame time="75">16 16 16 16</frame>
+		<frame time="75">32 16 16 16</frame>
+		<frame time="75">48 16 16 16</frame>
+	</sprite>
+</effect>

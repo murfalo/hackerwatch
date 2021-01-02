@@ -1,0 +1,338 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_64.unit"><vec2>-16 -64</vec2><int>1</int><vec2>-16 0</vec2><int>2</int><vec2>-16 16</vec2><int>3</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>4</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs">
+					<int>5</int>
+					<int>6</int>
+					<int>7</int>
+					<int>13</int>
+					<int>11</int>
+					<int>16</int>
+					<int>17</int>
+					<int>20</int>
+					<int>21</int>
+					<int>26</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>5</int>
+			<vec3>80 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_block.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>6</int>
+			<vec3>80 66 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hidden</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_hidden.pfb</string>
+				<int name="Chance">30</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>80 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hidden_button</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_hidden_button.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>8</int>
+			<vec3>0 -152 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>Start</string>
+			<array>
+				<int>14</int>
+				<int>0</int>
+				<int>9</int>
+				<int>0</int>
+				<int>23</int>
+				<int>0</int>
+				<int>24</int>
+				<int>0</int>
+				<int>12</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>9</int>
+			<vec3>224 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_no_button</string>
+			<dict>
+				<string name="Flag">archives_no_button</string>
+				<array name="OnFalse"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>160 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>11</int>
+			<vec3>80 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block_button</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_block.pfb</string>
+				<int name="Chance">1000</int>
+				<string name="Flag">button</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>12</int>
+			<vec3>0 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>80 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>secret_1</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_secret.pfb</string>
+				<string name="Flag">secret_1</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>14</int>
+			<vec3>80 -152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>button</string>
+			<dict>
+				<string name="Flag">button</string>
+				<array name="OnFalse"><int>15</int><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>144 -152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>16</int>
+			<vec3>80 248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>secret_2</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_secret_2.pfb</string>
+				<string name="Flag">secret_1</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>17</int>
+			<vec3>80 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special_imp</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_secret_imp.pfb</string>
+				<string name="Flag">special_imp</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>18</int>
+			<vec3>224 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_imp</string>
+			<dict>
+				<string name="Flag">archives_imp</string>
+				<array name="OnTrue"><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>19</int>
+			<vec3>224 368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>20</int>
+			<vec3>144 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>secret_1</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_secret.pfb</string>
+				<string name="Flag">secret_2</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>21</int>
+			<vec3>144 248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>secret_2</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_secret_2.pfb</string>
+				<string name="Flag">secret_2</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>22</int>
+			<vec3>144 -104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>5</int><int>6</int><int>7</int><int>13</int><int>20</int><int>21</int><int>16</int><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>23</int>
+			<vec3>272 216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_no_secrets</string>
+			<dict>
+				<string name="Flag">fountain_no_secrets</string>
+				<array name="OnTrue"><int>25</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>24</int>
+			<vec3>296 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_imps_more</string>
+			<dict>
+				<string name="Flag">fountain_imps_more</string>
+				<array name="OnTrue"><int>27</int></array>
+				<array name="OnFalse"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>25</int>
+			<vec3>208 216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>20</int><int>21</int><int>16</int><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>26</int>
+			<vec3>144 304 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special_imp</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/maze_path_v_secret_imp.pfb</string>
+				<string name="Flag">special_imp</string>
+				<int name="Chance">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>27</int>
+			<vec3>296 368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>26</int><int>17</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

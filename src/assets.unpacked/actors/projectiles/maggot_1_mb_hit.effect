@@ -1,0 +1,44 @@
+<effect looping="false" layer="1">
+
+	<param name="angle" default="0" />
+
+<variation>	
+		<sprite origin="9 9" ulayer="0" texture="./maggot_1_mb.png" material="system/default.mats:projectile">
+			<frame time="80">0 48 18 18</frame>
+			<frame time="80">18 48 18 18</frame>
+			<frame time="40">36 48 18 18</frame>
+			<frame time="40">54 48 18 18</frame>
+			<frame time="40">72 48 18 18</frame>
+			<frame time="40">90 48 18 18</frame>
+			<frame time="40">108 48 18 18</frame>
+		</sprite>
+</variation>
+<variation>	
+		<sprite origin="9 9" ulayer="0" texture="./maggot_1_mb.png" material="system/default.mats:projectile"
+		angle="rand(u)*2">
+			<frame time="80">0 48 18 18</frame>
+			<frame time="80">18 48 18 18</frame>
+			<frame time="40">36 48 18 18</frame>
+			<frame time="40">54 48 18 18</frame>
+			<frame time="40">72 48 18 18</frame>
+			<frame time="40">90 48 18 18</frame>
+			<frame time="40">108 48 18 18</frame>
+		</sprite>
+</variation>
+
+		<light pos-x="0" pos-y="0"> 
+			<sprite texture="system/light_concentrated_L.png">
+				<frame time="100">0 0 128 128</frame>
+			</sprite>
+			
+			<length value="100" />
+			<looping value="false" />
+
+			<size value="saturate(sin(t*pi))*64" />
+			
+			<color-r value="0" />
+			<color-g value="2" />
+			<color-b value="0" />
+			<color-a value="0" />
+		</light>
+</effect>

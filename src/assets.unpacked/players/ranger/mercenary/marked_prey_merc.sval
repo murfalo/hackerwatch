@@ -1,0 +1,27 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">ranger</string>
+	<string name="name">.skills.ranger.deadly-aim</string>
+	<string name="description">.skills.ranger.deadly-aim.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 24 24 24</vec4>
+	</array>
+
+	<int name="cost">14</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::CriticalHitTrigger</string>
+				<float name="chance">0.125</float>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs_merc.sval:marked</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</dict>

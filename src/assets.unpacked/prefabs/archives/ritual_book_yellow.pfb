@@ -1,0 +1,377 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">24</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/special/_minimap_objective.unit"><vec2>0 0</vec2><int>3</int></array>
+		<array name="doodads/generic/ritual_book_yellow.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<string name="start">closed</string>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>CheckFlag</string>
+			<int>4</int>
+			<vec3>-272 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_y1</string>
+			<dict>
+				<string name="Flag">archives_y1</string>
+				<array name="OnFalse"><int>5</int></array>
+				<array name="OnTrue"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>5</int>
+			<vec3>-272 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_y2</string>
+			<dict>
+				<string name="Flag">archives_y2</string>
+				<array name="OnFalse"><int>6</int></array>
+				<array name="OnTrue"><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>6</int>
+			<vec3>-272 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_y3</string>
+			<dict>
+				<string name="Flag">archives_y3</string>
+				<array name="OnFalse"><int>7</int></array>
+				<array name="OnTrue"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>7</int>
+			<vec3>-272 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>archives_y4</string>
+			<dict>
+				<string name="Flag">archives_y4</string>
+				<array name="OnTrue"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>8</int>
+			<vec3>-272 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckFlags</string>
+			<array><int>4</int><int>200</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>9</int>
+			<vec3>-208 -112 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<array><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>10</int>
+			<vec3>-208 80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>11</int>
+			<vec3>-208 16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>12</int>
+			<vec3>-208 -48 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>13</int>
+			<vec3>-80 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.ritual.y1</string>
+				<string name="Style">gui/speechbubbles/paper.sval</string>
+				<string name="Title">.meta.info.ritual.headline</string>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>14</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>14</int>
+			<vec3>0 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">7</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array>
+				<int>22</int>
+				<int>0</int>
+				<int>13</int>
+				<int>0</int>
+				<int>19</int>
+				<int>0</int>
+				<int>20</int>
+				<int>0</int>
+				<int>21</int>
+				<int>0</int>
+				<int>25</int>
+				<int>0</int>
+				<int>26</int>
+				<int>0</int>
+				<int>27</int>
+				<int>0</int>
+				<int>28</int>
+				<int>0</int>
+				<int>29</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>-144 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>13</int><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>16</int>
+			<vec3>-144 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>19</int><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>17</int>
+			<vec3>-144 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>20</int><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>18</int>
+			<vec3>-144 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>21</int><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>19</int>
+			<vec3>-80 16 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.ritual.y2</string>
+				<string name="Style">gui/speechbubbles/paper.sval</string>
+				<string name="Title">.meta.info.ritual.headline</string>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>14</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>20</int>
+			<vec3>-80 -48 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.ritual.y3</string>
+				<string name="Style">gui/speechbubbles/paper.sval</string>
+				<string name="Title">.meta.info.ritual.headline</string>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>14</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>21</int>
+			<vec3>-80 -112 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.ritual.y4</string>
+				<string name="Style">gui/speechbubbles/paper.sval</string>
+				<string name="Title">.meta.info.ritual.headline</string>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>14</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>22</int>
+			<vec3>80 80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">open</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>HideAllSpeechBubbles</string>
+			<int>23</int>
+			<vec3>168 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#ForPlayer"><int>14</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>24</int>
+			<vec3>80 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Event">2</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>23</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>25</int>
+			<vec3>168 80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>26</int>
+			<vec3>-96 168 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<int name="Number">1</int>
+				<string name="ID">book-yellow</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>27</int>
+			<vec3>-32 168 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<string name="ID">book-yellow</string>
+				<int name="Number">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>28</int>
+			<vec3>32 168 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<int name="Number">3</int>
+				<string name="ID">book-yellow</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>29</int>
+			<vec3>96 168 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<string name="ID">book-yellow</string>
+				<int name="Number">4</int>
+			</dict>
+		</array>
+	</array>
+</dict>

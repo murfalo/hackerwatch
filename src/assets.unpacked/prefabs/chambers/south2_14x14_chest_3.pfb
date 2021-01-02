@@ -1,0 +1,967 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">MainMenu</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/chambers_1.env</string>
+	</dict>
+	<dict name="units">
+		<array name="doodads/walls/chambers/_ledge_crn_nw.unit"><vec2>48 80</vec2><int>160</int></array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>144 128</vec2>
+				<int>112</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">16 80</vec2>
+				</dict>
+			</array>
+			<array>
+				<vec2>112 128</vec2>
+				<int>201</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">16 80</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/chambers/_ledge_n.unit">
+			<vec2>208 208</vec2>
+			<int>123</int>
+			<vec2>80 80</vec2>
+			<int>133</int>
+			<vec2>152 144</vec2>
+			<int>171</int>
+			<vec2>176 208</vec2>
+			<int>125</int>
+			<vec2>112 208</vec2>
+			<int>130</int>
+			<vec2>48 208</vec2>
+			<int>129</int>
+			<vec2>16 208</vec2>
+			<int>128</int>
+			<vec2>144 208</vec2>
+			<int>127</int>
+			<vec2>152 40</vec2>
+			<int>126</int>
+			<vec2>72 144</vec2>
+			<int>153</int>
+			<vec2>80 208</vec2>
+			<int>132</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_floor_block_v_16.unit"><vec2>52 128</vec2><int>218</int><vec2>204 128</vec2><int>114</int></array>
+		<array name="doodads/walls/chambers/_ledge_crn_sw.unit"><vec2>48 168</vec2><int>202</int></array>
+		<array name="doodads/generic/lamp_torch.unit"><vec2>204 48</vec2><int>108</int><vec2>40 48</vec2><int>264</int></array>
+		<array name="doodads/walls/armory/_deco_floor_block_8.unit"><vec2>52 84</vec2><int>161</int><vec2>52 172</vec2><int>163</int><vec2>204 84</vec2><int>217</int><vec2>204 172</vec2><int>113</int></array>
+		<array name="doodads/walls/armory/_deco_floor_block_h_16.unit"><vec2>128 172</vec2><int>118</int><vec2>128 84</vec2><int>175</int><vec2>144 84</vec2><int>307</int></array>
+		<array name="doodads/generic/glasswalk.unit">
+			<vec2>128 96</vec2>
+			<int>36</int>
+			<vec2>128 112</vec2>
+			<int>28</int>
+			<vec2>128 128</vec2>
+			<int>301</int>
+			<vec2>128 144</vec2>
+			<int>305</int>
+			<vec2>128 160</vec2>
+			<int>306</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_floor_block_v_32.unit">
+			<vec2>204 64</vec2>
+			<int>172</int>
+			<vec2>52 152</vec2>
+			<int>111</int>
+			<vec2>204 152</vec2>
+			<int>110</int>
+			<vec2>148 64</vec2>
+			<int>169</int>
+			<vec2>204 104</vec2>
+			<int>116</int>
+			<vec2>52 104</vec2>
+			<int>117</int>
+		</array>
+		<array name="doodads/walls/chambers/_deco_painting_small_random.unit"><vec2>24 48</vec2><int>105</int></array>
+		<array name="doodads/walls/chambers/crn_nw.unit"><vec2>144 0</vec2><int>106</int><vec2>0 32</vec2><int>107</int></array>
+		<array name="doodads/special/color_chambers_16.unit">
+			<vec2>200 264</vec2>
+			<int>85</int>
+			<vec2>168 264</vec2>
+			<int>86</int>
+			<vec2>248 120</vec2>
+			<int>87</int>
+			<vec2>232 264</vec2>
+			<int>88</int>
+			<vec2>-8 248</vec2>
+			<int>89</int>
+			<vec2>-8 152</vec2>
+			<int>90</int>
+			<vec2>-8 184</vec2>
+			<int>91</int>
+			<vec2>-8 200</vec2>
+			<int>92</int>
+			<vec2>216 264</vec2>
+			<int>93</int>
+			<vec2>-8 216</vec2>
+			<int>94</int>
+			<vec2>-8 232</vec2>
+			<int>95</int>
+			<vec2>8 8</vec2>
+			<int>97</int>
+			<vec2>248 8</vec2>
+			<int>96</int>
+			<vec2>56 8</vec2>
+			<int>75</int>
+			<vec2>72 264</vec2>
+			<int>76</int>
+			<vec2>40 264</vec2>
+			<int>77</int>
+			<vec2>136 264</vec2>
+			<int>78</int>
+			<vec2>88 264</vec2>
+			<int>80</int>
+			<vec2>152 264</vec2>
+			<int>81</int>
+			<vec2>248 104</vec2>
+			<int>104</int>
+			<vec2>-8 168</vec2>
+			<int>103</int>
+			<vec2>248 232</vec2>
+			<int>102</int>
+			<vec2>-8 24</vec2>
+			<int>101</int>
+			<vec2>216 8</vec2>
+			<int>100</int>
+			<vec2>232 8</vec2>
+			<int>99</int>
+			<vec2>24 8</vec2>
+			<int>98</int>
+			<vec2>104 264</vec2>
+			<int>79</int>
+			<vec2>248 88</vec2>
+			<int>42</int>
+			<vec2>248 72</vec2>
+			<int>43</int>
+			<vec2>248 56</vec2>
+			<int>44</int>
+			<vec2>248 40</vec2>
+			<int>45</int>
+			<vec2>-8 72</vec2>
+			<int>46</int>
+			<vec2>-8 56</vec2>
+			<int>47</int>
+			<vec2>-8 40</vec2>
+			<int>48</int>
+			<vec2>168 8</vec2>
+			<int>49</int>
+			<vec2>-8 8</vec2>
+			<int>50</int>
+			<vec2>-8 264</vec2>
+			<int>51</int>
+			<vec2>248 264</vec2>
+			<int>52</int>
+			<vec2>248 24</vec2>
+			<int>53</int>
+			<vec2>248 248</vec2>
+			<int>54</int>
+			<vec2>72 8</vec2>
+			<int>55</int>
+			<vec2>-8 136</vec2>
+			<int>56</int>
+			<vec2>8 264</vec2>
+			<int>57</int>
+			<vec2>-8 120</vec2>
+			<int>58</int>
+			<vec2>152 -8</vec2>
+			<int>74</int>
+			<vec2>88 8</vec2>
+			<int>73</int>
+			<vec2>88 -8</vec2>
+			<int>72</int>
+			<vec2>200 8</vec2>
+			<int>71</int>
+			<vec2>184 264</vec2>
+			<int>70</int>
+			<vec2>120 264</vec2>
+			<int>69</int>
+			<vec2>152 8</vec2>
+			<int>68</int>
+			<vec2>56 264</vec2>
+			<int>82</int>
+			<vec2>184 8</vec2>
+			<int>83</int>
+			<vec2>40 8</vec2>
+			<int>84</int>
+			<vec2>248 136</vec2>
+			<int>67</int>
+			<vec2>248 152</vec2>
+			<int>66</int>
+			<vec2>248 168</vec2>
+			<int>65</int>
+			<vec2>248 184</vec2>
+			<int>64</int>
+			<vec2>-8 104</vec2>
+			<int>59</int>
+			<vec2>24 264</vec2>
+			<int>60</int>
+			<vec2>-8 88</vec2>
+			<int>61</int>
+			<vec2>248 200</vec2>
+			<int>63</int>
+			<vec2>248 216</vec2>
+			<int>62</int>
+		</array>
+		<array name="doodads/walls/chambers/_ledge_n_16.unit"><vec2>64 80</vec2><int>1</int><vec2>184 40</vec2><int>2</int><vec2>120 80</vec2><int>124</int></array>
+		<array name="doodads/generic/trap_spikes_chambers.unit">
+			<array>
+				<vec2>128 192</vec2>
+				<int>6</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>96 192</vec2>
+				<int>7</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>224 192</vec2>
+				<int>8</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 64</vec2>
+				<int>9</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>96 64</vec2>
+				<int>10</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>224 160</vec2>
+				<int>11</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 64</vec2>
+				<int>12</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>224 96</vec2>
+				<int>13</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>128 64</vec2>
+				<int>14</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>192 192</vec2>
+				<int>15</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 96</vec2>
+				<int>16</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>160 192</vec2>
+				<int>17</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>224 128</vec2>
+				<int>19</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 192</vec2>
+				<int>18</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 160</vec2>
+				<int>3</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 128</vec2>
+				<int>4</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 192</vec2>
+				<int>5</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/chambers/_deco_floor_carpet_tile.unit">
+			<vec2>216 48</vec2>
+			<int>258</int>
+			<vec2>208 72</vec2>
+			<int>254</int>
+			<vec2>232 72</vec2>
+			<int>252</int>
+			<vec2>224 48</vec2>
+			<int>259</int>
+			<vec2>232 48</vec2>
+			<int>260</int>
+			<vec2>232 56</vec2>
+			<int>261</int>
+			<vec2>232 64</vec2>
+			<int>262</int>
+			<vec2>224 72</vec2>
+			<int>109</int>
+			<vec2>208 48</vec2>
+			<int>257</int>
+			<vec2>216 72</vec2>
+			<int>253</int>
+			<vec2>208 64</vec2>
+			<int>255</int>
+			<vec2>208 56</vec2>
+			<int>256</int>
+		</array>
+		<array name="doodads/generic/trap_turret_flame.unit"><vec2>88 128</vec2><int>155</int><vec2>168 128</vec2><int>167</int></array>
+		<array name="doodads/walls/chambers/_ledge_s_8.unit"><vec2>136 168</vec2><int>308</int><vec2>112 168</vec2><int>304</int><vec2>56 168</vec2><int>20</int><vec2>192 168</vec2><int>21</int></array>
+		<array name="doodads/walls/armory/_deco_floor_block_h_32.unit">
+			<vec2>160 212</vec2>
+			<int>33</int>
+			<vec2>64 212</vec2>
+			<int>32</int>
+			<vec2>128 212</vec2>
+			<int>31</int>
+			<vec2>96 212</vec2>
+			<int>30</int>
+			<vec2>32 212</vec2>
+			<int>29</int>
+			<vec2>160 212</vec2>
+			<int>22</int>
+			<vec2>184 172</vec2>
+			<int>27</int>
+			<vec2>192 212</vec2>
+			<int>26</int>
+			<vec2>224 212</vec2>
+			<int>25</int>
+			<vec2>72 172</vec2>
+			<int>24</int>
+			<vec2>104 84</vec2>
+			<int>115</int>
+			<vec2>72 84</vec2>
+			<int>23</int>
+			<vec2>104 172</vec2>
+			<int>35</int>
+			<vec2>152 172</vec2>
+			<int>34</int>
+		</array>
+		<array name="doodads/walls/chambers/_deco_floor_tile.unit"><vec2>208 48</vec2><int>134</int></array>
+		<array name="doodads/walls/chambers/_ledge_s.unit"><vec2>152 104</vec2><int>168</int><vec2>72 104</vec2><int>162</int><vec2>144 168</vec2><int>185</int><vec2>80 168</vec2><int>183</int></array>
+		<array name="doodads/walls/chambers/_deco_console_random.unit"><vec2>64 48</vec2><int>180</int></array>
+		<array name="doodads/walls/chambers/crn_sw.unit"><vec2>0 272</vec2><int>182</int><vec2>144 32</vec2><int>181</int></array>
+		<array name="doodads/walls/_ledge_black_32.unit"><vec2>112 152</vec2><int>216</int></array>
+		<array name="doodads/walls/chambers/h_16.unit"><vec2>160 32</vec2><int>211</int><vec2>48 32</vec2><int>212</int></array>
+		<array name="doodads/walls/chambers/_ledge_e.unit">
+			<vec2>144 112</vec2>
+			<int>166</int>
+			<vec2>64 112</vec2>
+			<int>156</int>
+			<vec2>200 48</vec2>
+			<int>215</int>
+			<vec2>200 136</vec2>
+			<int>213</int>
+			<vec2>200 104</vec2>
+			<int>214</int>
+		</array>
+		<array name="doodads/walls/chambers/_ledge_s_16.unit"><vec2>176 168</vec2><int>121</int><vec2>64 168</vec2><int>120</int><vec2>120 168</vec2><int>184</int></array>
+		<array name="doodads/walls/chambers/_ledge_w_16.unit"><vec2>48 88</vec2><int>222</int></array>
+		<array name="doodads/walls/chambers/_ledge_crn_ne_o.unit"><vec2>104 104</vec2><int>157</int><vec2>184 104</vec2><int>165</int></array>
+		<array name="doodads/walls/chambers/_ledge_crn_nw_o.unit"><vec2>64 104</vec2><int>159</int><vec2>144 104</vec2><int>170</int></array>
+		<array name="doodads/walls/chambers/_deco_floor_carpet.unit"><vec2>216 56</vec2><int>263</int></array>
+		<array name="doodads/walls/chambers/_ledge_crn_se_o.unit"><vec2>144 80</vec2><int>119</int><vec2>184 144</vec2><int>173</int><vec2>104 144</vec2><int>152</int></array>
+		<array name="doodads/walls/chambers/_ledge_w.unit">
+			<vec2>104 112</vec2>
+			<int>164</int>
+			<vec2>184 112</vec2>
+			<int>174</int>
+			<vec2>144 48</vec2>
+			<int>206</int>
+			<vec2>48 104</vec2>
+			<int>205</int>
+			<vec2>48 136</vec2>
+			<int>204</int>
+		</array>
+		<array name="doodads/walls/chambers/_ledge_e_16.unit"><vec2>200 88</vec2><int>203</int></array>
+		<array name="doodads/walls/chambers/_deco_painting_round_v1.unit"><vec2>96 48</vec2><int>267</int><vec2>224 48</vec2><int>135</int></array>
+		<array name="doodads/walls/chambers/_ledge_crn_sw_o.unit"><vec2>144 144</vec2><int>176</int><vec2>64 144</vec2><int>151</int></array>
+		<array name="doodads/walls/chambers/_deco_console_purple.unit"><vec2>176 48</vec2><int>210</int></array>
+		<array name="doodads/walls/chambers/v_16.unit"><vec2>96 0</vec2><int>220</int><vec2>144 0</vec2><int>221</int></array>
+		<array name="doodads/walls/_ledge_black_16.unit">
+			<vec2>224 272</vec2>
+			<int>158</int>
+			<vec2>192 264</vec2>
+			<int>278</int>
+			<vec2>176 272</vec2>
+			<int>279</int>
+			<vec2>176 264</vec2>
+			<int>280</int>
+			<vec2>160 272</vec2>
+			<int>281</int>
+			<vec2>160 264</vec2>
+			<int>282</int>
+			<vec2>144 272</vec2>
+			<int>283</int>
+			<vec2>144 264</vec2>
+			<int>284</int>
+			<vec2>128 272</vec2>
+			<int>285</int>
+			<vec2>128 264</vec2>
+			<int>286</int>
+			<vec2>112 272</vec2>
+			<int>287</int>
+			<vec2>112 264</vec2>
+			<int>288</int>
+			<vec2>96 272</vec2>
+			<int>289</int>
+			<vec2>96 264</vec2>
+			<int>290</int>
+			<vec2>80 272</vec2>
+			<int>291</int>
+			<vec2>192 272</vec2>
+			<int>251</int>
+			<vec2>64 272</vec2>
+			<int>293</int>
+			<vec2>64 264</vec2>
+			<int>294</int>
+			<vec2>48 272</vec2>
+			<int>295</int>
+			<vec2>48 264</vec2>
+			<int>296</int>
+			<vec2>32 272</vec2>
+			<int>297</int>
+			<vec2>32 264</vec2>
+			<int>298</int>
+			<vec2>16 272</vec2>
+			<int>299</int>
+			<vec2>16 264</vec2>
+			<int>300</int>
+			<vec2>112 168</vec2>
+			<int>233</int>
+			<vec2>80 264</vec2>
+			<int>292</int>
+			<vec2>128 168</vec2>
+			<int>232</int>
+			<vec2>152 96</vec2>
+			<int>131</int>
+			<vec2>168 96</vec2>
+			<int>122</int>
+			<vec2>184 104</vec2>
+			<int>40</int>
+			<vec2>184 96</vec2>
+			<int>41</int>
+			<vec2>224 264</vec2>
+			<int>179</int>
+			<vec2>168 104</vec2>
+			<int>39</int>
+			<vec2>208 264</vec2>
+			<int>249</int>
+			<vec2>208 272</vec2>
+			<int>250</int>
+			<vec2>152 104</vec2>
+			<int>234</int>
+		</array>
+		<array name="doodads/walls/chambers/h.unit">
+			<vec2>16 272</vec2>
+			<int>140</int>
+			<vec2>80 272</vec2>
+			<int>148</int>
+			<vec2>208 32</vec2>
+			<int>147</int>
+			<vec2>16 32</vec2>
+			<int>146</int>
+			<vec2>112 272</vec2>
+			<int>145</int>
+			<vec2>64 32</vec2>
+			<int>139</int>
+			<vec2>176 32</vec2>
+			<int>144</int>
+			<vec2>208 272</vec2>
+			<int>143</int>
+			<vec2>144 272</vec2>
+			<int>138</int>
+			<vec2>48 272</vec2>
+			<int>142</int>
+			<vec2>176 272</vec2>
+			<int>141</int>
+		</array>
+		<array name="doodads/walls/chambers/_deco_ceiling_support.unit"><vec2>128 28</vec2><int>137</int><vec2>128 -4</vec2><int>136</int></array>
+		<array name="doodads/walls/chambers/crn_ne.unit"><vec2>96 0</vec2><int>223</int><vec2>240 32</vec2><int>224</int></array>
+		<array name="doodads/walls/chambers/_ledge_e_8.unit"><vec2>200 80</vec2><int>219</int></array>
+		<array name="doodads/walls/chambers/_ledge_n_8.unit"><vec2>56 80</vec2><int>207</int><vec2>112 80</vec2><int>303</int><vec2>136 80</vec2><int>302</int></array>
+		<array name="doodads/walls/chambers/v.unit">
+			<vec2>0 160</vec2>
+			<int>186</int>
+			<vec2>240 96</vec2>
+			<int>187</int>
+			<vec2>0 128</vec2>
+			<int>188</int>
+			<vec2>0 224</vec2>
+			<int>189</int>
+			<vec2>240 160</vec2>
+			<int>190</int>
+			<vec2>240 64</vec2>
+			<int>191</int>
+			<vec2>0 96</vec2>
+			<int>192</int>
+			<vec2>0 192</vec2>
+			<int>193</int>
+			<vec2>240 32</vec2>
+			<int>196</int>
+			<vec2>240 128</vec2>
+			<int>195</int>
+			<vec2>240 192</vec2>
+			<int>194</int>
+			<vec2>0 64</vec2>
+			<int>198</int>
+			<vec2>0 32</vec2>
+			<int>199</int>
+			<vec2>240 224</vec2>
+			<int>197</int>
+		</array>
+		<array name="doodads/walls/chambers/crn_se.unit"><vec2>96 32</vec2><int>208</int><vec2>240 272</vec2><int>209</int></array>
+		<array name="doodads/walls/chambers/_ledge_crn_se.unit"><vec2>200 168</vec2><int>200</int></array>
+		<array name="doodads/walls/_ledge_black_8.unit">
+			<vec2>192 112</vec2>
+			<int>240</int>
+			<vec2>192 120</vec2>
+			<int>241</int>
+			<vec2>192 128</vec2>
+			<int>242</int>
+			<vec2>56 144</vec2>
+			<int>238</int>
+			<vec2>160 168</vec2>
+			<int>226</int>
+			<vec2>152 168</vec2>
+			<int>225</int>
+			<vec2>192 168</vec2>
+			<int>247</int>
+			<vec2>192 160</vec2>
+			<int>246</int>
+			<vec2>192 152</vec2>
+			<int>245</int>
+			<vec2>192 144</vec2>
+			<int>244</int>
+			<vec2>56 160</vec2>
+			<int>236</int>
+			<vec2>56 128</vec2>
+			<int>248</int>
+			<vec2>56 168</vec2>
+			<int>235</int>
+			<vec2>192 136</vec2>
+			<int>243</int>
+			<vec2>56 136</vec2>
+			<int>239</int>
+			<vec2>56 152</vec2>
+			<int>237</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SetUnitScene</string>
+			<int>227</int>
+			<vec3>64 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off 1</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>14</int><int>10</int><int>16</int><int>4</int><int>5</int><int>7</int><int>15</int><int>8</int><int>13</int></array>
+			</dict>
+			<array><int>231</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>228</int>
+			<vec3>128 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>229</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>229</int>
+			<vec3>64 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on 1</string>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>14</int><int>10</int><int>16</int><int>4</int><int>5</int><int>7</int><int>15</int><int>8</int><int>13</int></array>
+			</dict>
+			<array><int>227</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>230</int>
+			<vec3>192 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off 2</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>12</int><int>9</int><int>3</int><int>18</int><int>6</int><int>17</int><int>11</int><int>19</int></array>
+			</dict>
+			<array><int>228</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>231</int>
+			<vec3>192 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on 2</string>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>12</int><int>9</int><int>3</int><int>18</int><int>6</int><int>17</int><int>11</int><int>19</int></array>
+			</dict>
+			<array><int>230</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>273</int>
+			<vec3>88 115 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>N</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Direction">270</int>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>177</int>
+			<vec3>288 128 0</vec3>
+			<bool>t</bool>
+			<int>20</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">50</int>
+			</dict>
+			<array><int>268</int><int>0</int><int>265</int><int>0</int><int>270</int><int>0</int><int>269</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>270</int>
+			<vec3>155 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>W</string>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>265</int>
+			<vec3>168 115 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>N</string>
+			<dict>
+				<int name="Direction">270</int>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>277</int>
+			<vec3>75 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>W</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Direction">180</int>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>275</int>
+			<vec3>101 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>E</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>272</int>
+			<vec3>-64 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">2300</int>
+			</dict>
+			<array><int>274</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>276</int>
+			<vec3>88 141 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>S</string>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>271</int>
+			<vec3>-64 160 0</vec3>
+			<bool>t</bool>
+			<int>20</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">50</int>
+			</dict>
+			<array><int>275</int><int>0</int><int>273</int><int>0</int><int>277</int><int>0</int><int>276</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>178</int>
+			<vec3>288 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">2300</int>
+			</dict>
+			<array><int>266</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>274</int>
+			<vec3>-64 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>271</int></array>
+				<int name="TriggerTimes">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>266</int>
+			<vec3>288 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>177</int></array>
+				<int name="TriggerTimes">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>268</int>
+			<vec3>181 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>E</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>269</int>
+			<vec3>168 141 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>S</string>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_turret_flame_projectile_long.unit</string>
+				<int name="Direction">90</int>
+				<int name="Spread">20</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>37</int>
+			<vec3>288 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>178</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>38</int>
+			<vec3>288 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>37</int><int>1150</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>149</int>
+			<vec3>384 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest_2x2_d</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/chest_2x2_d.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>150</int>
+			<vec3>384 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest_2x2_e</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/chest_2x2_e.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>154</int>
+			<vec3>208 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>150</int><int>149</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>309</int>
+			<vec3>128 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>Glasswalk</string>
+			<dict>
+				<string name="Flag">glass_walkways</string>
+				<array name="OnTrue"><int>311</int><int>312</int></array>
+				<array name="OnFalse"><int>310</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>310</int>
+			<vec3>160 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>306</int><int>305</int><int>301</int><int>28</int><int>36</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleCollision</string>
+			<int>311</int>
+			<vec3>96 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">1</int>
+				<array name="Units"><int>124</int><int>184</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>312</int>
+			<vec3>32 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>118</int><int>175</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

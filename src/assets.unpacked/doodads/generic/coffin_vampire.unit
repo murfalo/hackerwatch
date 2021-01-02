@@ -1,0 +1,77 @@
+<unit slot="doodad">
+	<scenes n_off="off" n_on="on" n_open="open" w="w" e="e" s="s">
+		<scene name="on">
+			<collision static="true">
+				<circle offset="0 -7" radius="14" />
+			</collision>
+			<sprite origin="-4 32" texture="./coffin_vampire.png" material="system/default.mats:shadow">
+				<frame>224 0 8 37</frame>
+			</sprite>
+			<sprite looping="false" origin="14 32" ulayer="4" texture="./coffin_vampire.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 28 50</frame>
+				<frame time="80">28 0 28 50</frame>
+				<frame time="80">56 0 28 50</frame>
+				<frame time="80">84 0 28 50</frame>
+				<frame time="80">112 0 28 50</frame>
+				<frame time="80">140 0 28 50</frame>
+				<frame time="80">168 0 28 50</frame>
+				<frame time="80">196 0 28 50</frame>
+			</sprite>			
+		</scene>
+		<scene name="off">
+			<collision static="true">
+				<circle offset="0 -7" radius="14" />
+			</collision>
+			<sprite origin="-4 32" texture="./coffin_vampire.png" material="system/default.mats:shadow">
+				<frame>224 0 8 37</frame>
+			</sprite>
+			<sprite origin="14 32" texture="./coffin_vampire.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 28 50</frame>
+			</sprite>
+		</scene>
+		<scene name="open">
+<!-- 			<collision static="true">
+				<circle offset="0.5 -0.5" radius="6.5" />
+			</collision> -->
+			<sprite origin="-4 32" texture="./coffin_vampire.png" material="system/default.mats:shadow">
+				<frame>224 0 8 37</frame>
+			</sprite>
+			<sprite origin="8 32" texture="./coffin.png" material="system/default.mats:default-noxray">
+				<frame time="150">34 0 16 38</frame>
+			</sprite>
+		</scene>
+		<scene name="w">
+			<collision static="true">
+				<circle offset="-7 0" radius="14" />
+			</collision>
+<!-- 			<sprite origin="-4 32" texture="./coffin_vampire.png" material="system/default.mats:shadow">
+				<frame>224 0 8 37</frame>
+			</sprite> -->
+			<sprite origin="0 35" texture="./coffin.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 9 40</frame>
+			</sprite>
+		</scene>
+		<scene name="e">
+			<collision static="true">
+				<circle offset="7 0" radius="14" />
+			</collision>
+<!-- 			<sprite origin="-4 32" texture="./coffin_vampire.png" material="system/default.mats:shadow">
+				<frame>224 0 8 37</frame>
+			</sprite> -->
+			<sprite origin="9 35" texture="./coffin.png" material="system/default.mats:default-noxray">
+				<frame time="150">9 0 9 40</frame>
+			</sprite>
+		</scene>
+		<scene name="s">
+			<collision static="true">
+				<circle offset="0 7" radius="14" />
+			</collision>
+<!-- 			<sprite origin="-4 32" texture="./coffin_vampire.png" material="system/default.mats:shadow">
+				<frame>224 0 8 37</frame>
+			</sprite> -->
+			<sprite origin="8 38" texture="./coffin.png" material="system/default.mats:default-noxray">
+				<frame time="150">18 0 16 6</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

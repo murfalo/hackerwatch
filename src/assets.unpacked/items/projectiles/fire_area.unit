@@ -1,0 +1,26 @@
+<unit netsync="none" save="false">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">500</int>
+		<int name="ttl">8000</int>
+		<!-- <int name="actor-filter">2</int> -->
+		<float name="team-dmg">0</float>
+		<float name="self-dmg">0</float>
+		
+		<dict name="effect">
+			<string name="class">ApplyBuff</string>
+			<string name="buff">items/buffs.sval:fire-area</string>
+		</dict>
+		
+		<dict name="effect-params">
+            <float name="ttl">5000</float>
+        </dict>
+	</behavior>
+	<scenes>
+		<scene>
+			<collision static="false">
+				<circle offset="0 0" sensor="true" shoot-through="true" aim-through="true" radius="8" />
+			</collision>
+			<effect ulayer="2" pos="0 0" src="items/projectiles/fire_area.effect" />
+		</scene>
+	</scenes>
+</unit>

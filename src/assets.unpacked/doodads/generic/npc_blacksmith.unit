@@ -1,0 +1,83 @@
+<unit slot="doodad">
+	<scenes start="default-1 default-2" hammer="hammer-1 hammer-2">
+		<scene name="shared">
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="3.5" />			
+			</collision>
+		</scene>
+		
+		<scene name="default-1">
+			<scene src="shared" />
+			<sprite origin="8 15" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 19 12 16</frame>
+			</sprite>
+		</scene>
+		<scene name="default-2">
+			<scene src="shared" />
+			<sprite origin="8 15" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 83 12 16</frame>
+			</sprite>
+		</scene>
+		<scene name="hammer-1">
+			<scene src="shared" />
+			<sprite origin="16 19" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="120">12 18 26 20</frame>
+				<frame time="40">38 18 26 20</frame>
+				<frame time="40">64 18 26 20</frame> <!-- 160 slå -->
+				<frame time="40">90 18 26 20</frame>
+				<frame time="40">116 18 26 20</frame>
+				<frame time="40">142 18 26 20</frame>
+				<frame time="40">168 18 26 20</frame>
+				<frame time="1000">194 18 26 20</frame>	<!-- 1360 -->
+				<frame time="120">12 18 26 20</frame>
+				<frame time="40">38 18 26 20</frame>
+				<frame time="40">64 18 26 20</frame>
+				<frame time="40">90 18 26 20</frame>
+				<frame time="40">116 18 26 20</frame>
+				<frame time="40">142 18 26 20</frame>
+				<frame time="40">168 18 26 20</frame>
+				<frame time="1000">194 18 26 20</frame>
+				<frame time="120">12 18 26 20</frame>
+				<frame time="40">38 18 26 20</frame>
+				<frame time="40">64 18 26 20</frame>
+				<frame time="40">90 18 26 20</frame>
+				<frame time="40">116 18 26 20</frame>
+				<frame time="40">142 18 26 20</frame>
+				<frame time="40">168 18 26 20</frame>
+				<frame time="5000">194 18 26 20</frame> <!-- 8080 -->
+			</sprite>
+		</scene>
+		<scene name="hammer-2">
+			<scene src="shared" />
+			<sprite origin="16 19" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="120">12 82 26 20</frame>
+				<frame time="40">38 82 26 20</frame>
+				<frame time="40">64 82 26 20</frame>
+				<frame time="40">90 82 26 20</frame>
+				<frame time="40">116 82 26 20</frame>
+				<frame time="40">142 82 26 20</frame>
+				<frame time="40">168 82 26 20</frame>
+				<frame time="1000">194 82 26 20</frame>
+				<frame time="120">12 82 26 20</frame>
+				<frame time="40">38 82 26 20</frame>
+				<frame time="40">64 82 26 20</frame>
+				<frame time="40">90 82 26 20</frame>
+				<frame time="40">116 82 26 20</frame>
+				<frame time="40">142 82 26 20</frame>
+				<frame time="40">168 82 26 20</frame>
+				<frame time="1000">194 82 26 20</frame>
+				<frame time="120">12 82 26 20</frame>
+				<frame time="40">38 82 26 20</frame>
+				<frame time="40">64 82 26 20</frame>
+				<frame time="40">90 82 26 20</frame>
+				<frame time="40">116 82 26 20</frame>
+				<frame time="40">142 82 26 20</frame>
+				<frame time="40">168 82 26 20</frame>
+				<frame time="5000">194 82 26 20</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

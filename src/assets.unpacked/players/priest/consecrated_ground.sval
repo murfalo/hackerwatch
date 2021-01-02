@@ -1,0 +1,83 @@
+<dict>
+	<string name="name">.skills.priest.consecrated-ground</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 96 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">45</int>
+
+			<string name="unit">players/priest/consecrated_ground_1.unit</string>
+			<int name="max-count">1</int>
+
+			<string name="anim">cast 8</string>
+			<string name="fx">effects/players/slash_240.effect</string>
+			<string name="snd">event:/player/priest/drain_area</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">60</int>
+
+			<string name="unit">players/priest/consecrated_ground_2.unit</string>
+			<int name="max-count">2</int>
+
+			<string name="anim">cast 8</string>
+			<string name="fx">effects/players/slash_240.effect</string>
+			<string name="snd">event:/player/priest/drain_area</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">75</int>
+
+			<string name="unit">players/priest/consecrated_ground_3.unit</string>
+			<int name="max-count">3</int>
+
+			<string name="anim">cast 8</string>
+			<string name="fx">effects/players/slash_240.effect</string>
+			<string name="snd">event:/player/priest/drain_area</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::DropUnit</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">90</int>
+
+			<string name="unit">players/priest/consecrated_ground_4.unit</string>
+			<int name="max-count">4</int>
+
+			<string name="anim">cast 8</string>
+			<string name="fx">effects/players/slash_240.effect</string>
+			<string name="snd">event:/player/priest/drain_area</string>
+			<float name="speed-mul">1</float>
+		</dict>
+	</array>
+</dict>

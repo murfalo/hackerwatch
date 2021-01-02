@@ -1,0 +1,47 @@
+<effect looping="true" layer="1">
+	<sprite origin="4 2" looping="true" texture="./giant_wisp.png" material="system/default.mats:actor"
+	num-sprites="13"
+	pos-x="cos(pi * 2) * (20 + sin(t*pi*2)*5*rand(u+i+101)) * sin(it*pi*-2) - (cos(pi * 2) * sin(pi*2))*rand(u+i+23)"
+	pos-y="cos(pi * 2) * (20 + sin(t*pi*2)*5*rand(u+i+23)) * cos(it*pi*-2) - (cos(pi * 2) * cos(pi*2))*rand(u+i+101)"
+	angle="pi * 2 * it + pi/2"
+	
+	>
+		<frame time="750">180 57 8 4</frame>
+	</sprite>
+	<!-- ball -->
+	
+	<sprite origin="4.5 4.5" looping="true" texture="./giant_wisp.png" material="system/default.mats:actor"
+	num-sprites="7"
+	scale-x="0.25 + rand(u+i + 6373) * 0.5"
+	scale-y="0.25 + rand(u+i + 6373) * 0.5"
+	pos-x="cos(pi * 4) * 20 * sin(it*pi*-4) + (cos(pi * 4) * sin(pi*4))*rand(u+i+23)"
+	pos-y="cos(pi * 4) * 20 * cos(it*pi*-4) + (cos(pi * 4) * cos(pi*4))*rand(u+i+101)"
+	angle="pi * 2 * it + pi/2"
+	
+	>
+		<frame time="750">145 64 9 9</frame>
+	</sprite>
+	<!-- triple -->
+	<sprite origin="4.5 4" looping="true" texture="./giant_wisp.png" material="system/default.mats:actor"
+	num-sprites="4"
+	scale-x="0.25 + rand(u+i + 6373) * 0.5"
+	scale-y="0.25 + rand(u+i + 6373) * 0.5"
+	pos-x="cos(pi * 2) * 20 * sin(it*pi*-2) * rand(u+i+31) + -(cos(pi * 2) * sin(pi*2))"
+	pos-y="cos(pi * 2) * 20 * cos(it*pi*-2) * rand(u+i+79) + -(cos(pi * 2) * cos(pi*2))"
+	angle="pi * 2 * it + pi/2"
+	
+	>
+		<frame time="750">144 48 9 8</frame>
+	</sprite>
+	<sprite origin="4.5 4.5" looping="true" texture="./giant_wisp.png" material="system/default.mats:actor"
+	num-sprites="3"
+	scale-x="0.25 + rand(u+i + 6373) * 0.5"
+	scale-y="0.25 + rand(u+i + 6373) * 0.5"
+	pos-x="cos(pi * 2) * 20 * -sin(it*pi*-2) * rand(u+i+6047) + (cos(pi * 2) * sin(pi*2))"
+	pos-y="cos(pi * 2) * 20 * -cos(it*pi*-2) * rand(u+i+6037) + (cos(pi * 2) * cos(pi*2))"
+	angle="pi * 2 * it + pi/2"
+	
+	>
+		<frame time="750">145 64 9 9</frame>
+	</sprite>
+</effect>

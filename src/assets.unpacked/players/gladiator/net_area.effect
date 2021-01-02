@@ -1,0 +1,151 @@
+<effect layer="-1" looping="false" bounds="160 160">
+	<param name="ttl" default="1000" />
+	<param name="radius" default="22" />
+
+	<sprite origin="16 16" looping="false" texture="./net.png" material="system/default.mats:shadow"
+		num-sprites="radius * radius / 100"
+		angle="rand(i)*pi*4"
+		pos-x="cos(rand(u*i)*2*pi) * radius * pow(rand(u+2*i),0.5)"
+        pos-y="sin(rand(u*i)*2*pi) * radius * pow(rand(u+2*i),0.5)"
+		
+	>
+        <frame time="60">0 64 32 32</frame>
+        <frame time="60">32 64 32 32</frame>
+        <frame time="60">64 64 32 32</frame>
+        <frame time="60">96 64 32 32</frame>
+        <frame time="60">0 96 32 32</frame>
+        <frame time="60">32 96 32 32</frame>
+        <frame time="60">64 96 32 32</frame>
+	</sprite>
+	<sprite origin="16 16" looping="false" texture="./net.png" material="system/default.mats:projectile-player"
+		num-sprites="radius * radius / 100"
+		angle="rand(i)*pi*4"
+		pos-x="cos(rand(u*i)*2*pi) * radius * pow(rand(u+2*i),0.5)"
+        pos-y="sin(rand(u*i)*2*pi) * radius * pow(rand(u+2*i),0.5) - 10*saturate(1-t*t-2*t)"
+		
+	>
+        <frame time="60">0 64 32 32</frame>
+        <frame time="60">32 64 32 32</frame>
+        <frame time="60">64 64 32 32</frame>
+        <frame time="60">96 64 32 32</frame>
+        <frame time="60">0 96 32 32</frame>
+        <frame time="60">32 96 32 32</frame>
+        <frame time="60">64 96 32 32</frame>
+	</sprite>
+	
+	
+	<sprite looping="false" origin="7 15" texture="effects/animations/dust.png" material="system/default.mats:default-noxray"
+	num-sprites="radius * radius / 30"
+	pos-x="cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+7*i),0.5)"
+	pos-y="sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+7*i),0.5)"
+	color-a="saturate(rand(i)*(1-t)*0.8">
+		<frame time="70">0 0 14 17</frame>		
+		<frame time="70">14 0 14 17</frame>		
+		<frame time="70">28 0 14 17</frame>		
+		<frame time="70">42 0 14 17</frame>		
+		<frame time="70">56 0 14 17</frame>		
+		<frame time="70">70 0 14 17</frame>		
+		<frame time="70">84 0 14 17</frame>		
+	</sprite>
+	<sprite looping="false" origin="6 13" texture="effects/animations/dust.png" material="system/default.mats:default-noxray"
+	num-sprites="radius * radius / 30"
+	pos-x="cos(rand(u*i)*31*pi) * radius * pow(rand(u+61*i),0.5)"
+	pos-y="sin(rand(u*i)*31*pi) * radius * pow(rand(u+61*i),0.5"
+	color-a="saturate(rand(i)*(1-t)*0.8">
+		<frame time="70">0 17 11 15</frame>			
+		<frame time="70">11 17 11 15</frame>			
+		<frame time="70">22 17 11 15</frame>			
+		<frame time="70">33 17 11 15</frame>			
+		<frame time="70">44 17 11 15</frame>			
+		<frame time="70">55 17 11 15</frame>			
+		<frame time="70">66 17 11 15</frame>			
+	</sprite>
+	<sprite looping="false" origin="7 11" texture="effects/animations/dust.png" material="system/default.mats:default-noxray"
+	num-sprites="radius * radius / 30"
+	pos-x="cos(rand(u*i)*29*pi) * radius * pow(rand(u+101*i),0.5)"
+	pos-y="sin(rand(u*i)*29*pi) * radius * pow(rand(u+101*i),0.5)"
+	
+	color-a="saturate(rand(i)*(1-t)*0.8"
+	>
+		<frame time="70">0 17 13 13</frame>	
+		<frame time="70">13 32 13 13</frame>	
+		<frame time="70">26 32 13 13</frame>	
+		<frame time="70">39 32 13 13</frame>	
+		<frame time="70">52 32 13 13</frame>	
+		<frame time="70">65 32 13 13</frame>	
+		<frame time="70">78 32 13 13</frame>	
+		
+		
+	</sprite>
+	
+	
+	<!-- 
+	
+	<sprite origin="16 16" looping="false" texture="./net.png" material="system/default.mats:default-noxray"
+		num-sprites="radius * radius / 400"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+51*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+51*i),0.5)"
+		
+	>
+        <frame time="60">0 64 32 32</frame>
+        <frame time="60">32 64 32 32</frame>
+        <frame time="60">64 64 32 32</frame>
+        <frame time="60">96 64 32 32</frame>
+        <frame time="60">0 96 32 32</frame>
+        <frame time="60">32 96 32 32</frame>
+        <frame time="60">64 96 32 32</frame>
+        <frame time="60">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite origin="16 16" looping="false" texture="./net.png" material="system/default.mats:default-noxray"
+		num-sprites="radius * radius / 400"
+
+		pos-x="cos(rand(u+137*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+137*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		
+	>
+        <frame time="60">0 64 32 32</frame>
+        <frame time="60">32 64 32 32</frame>
+        <frame time="60">64 64 32 32</frame>
+        <frame time="60">96 64 32 32</frame>
+        <frame time="60">0 96 32 32</frame>
+        <frame time="60">32 96 32 32</frame>
+        <frame time="60">64 96 32 32</frame>
+        <frame time="60">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="16 16" looping="false" texture="./net.png" material="system/default.mats:default-noxray"
+		num-sprites="radius * radius / 400"
+
+		pos-x="cos(rand(u+151*i)*2*pi) * radius * pow(rand(u+97*i),0.5)"
+        pos-y="sin(rand(u+151*i)*2*pi) * radius * pow(rand(u+97*i),0.5)"
+		
+	>
+        <frame time="60">0 64 32 32</frame>
+        <frame time="60">32 64 32 32</frame>
+        <frame time="60">64 64 32 32</frame>
+        <frame time="60">96 64 32 32</frame>
+        <frame time="60">0 96 32 32</frame>
+        <frame time="60">32 96 32 32</frame>
+        <frame time="60">64 96 32 32</frame>
+        <frame time="60">0 0 0 0</frame>
+	</sprite>
+	 -->
+	<!-- Ring edge -->
+	<!-- <sprite origin="4 4" looping="true" texture="./net.png" material="system/default.mats:default-noxray"
+		num-sprites="radius / 3"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2)"
+		
+		color-a="saturate(t+l) * saturate(ttl / 200)"
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite> -->
+	
+	
+</effect>

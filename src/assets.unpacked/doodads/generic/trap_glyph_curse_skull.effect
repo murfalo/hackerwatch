@@ -1,0 +1,51 @@
+<effect looping="true" layer="-1">
+	<sprite origin="32 32" looping="true" texture="./trap_glyph_curse.png" material="system/default.mats:bright"
+		
+		angle="-pi * (t+l) * 0.1 / 5"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+	>
+		<frame time="200">0 0 64 64</frame>
+	</sprite>	
+	<sprite origin="32 32" looping="true" texture="./trap_glyph_curse.png" material="system/default.mats:bright"
+		
+		angle="pi * (t+l) * 4 / 5"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+	>
+		<frame time="200">64 0 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" looping="true" texture="./trap_glyph_curse.png" material="system/default.mats:bright"
+		
+		angle="pi * (t+l) * 4 / 5"
+
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+	>
+		<frame time="200">192 0 64 64</frame>
+	</sprite>		
+	<sprite origin="32 32" texture="./trap_glyph_curse.png" material="system/default.mats:bright"
+		
+%//		scale-x="saturate(t+l)"
+%//		scale-y="saturate(t+l)"
+		
+		%//angle="-pi * (t+l) * 2 / 20"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="saturate(t+l)"
+	>
+		<frame time="350">128 0 64 64</frame>
+		<frame time="250">64 64 64 64</frame>
+		<frame time="200">128 64 64 64</frame>
+	</sprite>		
+</effect>

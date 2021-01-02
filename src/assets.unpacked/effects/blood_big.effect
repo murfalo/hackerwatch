@@ -1,0 +1,101 @@
+<effect layer="-1" looping="false" >
+
+
+	<variation>
+		<sprite looping="false" origin="13 11" texture="./blood_small.png" material="system/default.mats:actor" 
+			angle="0"
+		>
+			<frame time="50">0 0 27 23</frame>
+			<frame time="50">27 0 27 23</frame>
+			<frame time="50">54 0 27 23</frame>
+			<frame time="50">81 0 27 23</frame>
+			<frame time="50">0 23 27 23</frame>
+			<frame time="50">27 23 27 23</frame>
+		</sprite>
+		<sprite looping="false" layer="-3" delay="400" origin="16 14" texture="./blood_splatter.png" material="effects/effects.mats:blood-decal-vampire"
+		color-a="1-pow(t,2)"
+		color-r="0.8"
+		>				
+			<frame time="5000">0 32 32 31</frame>
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite looping="false" origin="13 11" texture="./blood_small.png" material="system/default.mats:actor" 
+			angle="0"
+		>
+			<frame time="50">54 23 27 23</frame>
+			<frame time="50">81 23 27 23</frame>
+			<frame time="50">0 46 27 23</frame>
+			<frame time="50">27 46 27 23</frame>
+			<frame time="50">54 46 27 23</frame>
+			<frame time="50">81 46 27 23</frame>
+		</sprite>	
+		<sprite looping="false" layer="-3" delay="400" origin="16 14" texture="./blood_splatter.png" material="effects/effects.mats:blood-decal-vampire"
+		color-a="1-pow(t,2)"
+		color-r="0.8"
+		>				
+			<frame time="5000">0 0 32 31</frame>
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite looping="false" origin="18 18" texture="./blood_big.png" material="system/default.mats:actor" 
+			angle="0"
+		>
+			<frame time="50">0 0 33 29</frame>
+			<frame time="50">33 0 33 29</frame>
+			<frame time="50">66 0 33 29</frame>
+			<frame time="50">99 0 33 29</frame>
+			<frame time="50">132 0 33 29</frame>
+			<frame time="50">165 0 33 29</frame>
+			<frame time="50">198 0 33 29</frame>
+			<frame time="50">0 29 33 29</frame>
+			<frame time="50">33 29 33 29</frame>
+		</sprite>
+		<sprite looping="false" layer="-3" delay="400" origin="16 14" texture="./blood_splatter.png" material="effects/effects.mats:blood-decal-vampire"
+		color-a="1-pow(t,2)"
+		color-r="0.8"
+		>				
+			<frame time="5000">0 32 32 31</frame>
+		</sprite>
+	</variation>
+	
+	
+	<variation>
+		<sprite looping="false" origin="13 11" texture="./blood_small.png" material="system/default.mats:actor" 
+			angle="0"
+			
+			pos-x="2"
+			pos-y="1"
+		>
+			<frame time="50">54 23 27 23</frame>
+			<frame time="50">81 23 27 23</frame>
+			<frame time="50">0 46 27 23</frame>
+			<frame time="50">27 46 27 23</frame>
+			<frame time="50">54 46 27 23</frame>
+			<frame time="50">81 46 27 23</frame>
+		</sprite>
+		
+		<sprite looping="false" origin="13 11" texture="./blood_small.png" material="system/default.mats:actor" 
+			angle="0"
+			pos-x="-4"
+			pos-y="3"
+		>
+			<frame time="60">0 0 27 23</frame>
+			<frame time="60">27 0 27 23</frame>
+			<frame time="60">54 0 27 23</frame>
+			<frame time="60">81 0 27 23</frame>
+			<frame time="60">0 23 27 23</frame>
+			<frame time="60">27 23 27 23</frame>
+		</sprite>
+	
+		<sprite looping="false" layer="-3" delay="400" origin="16 14" texture="./blood_splatter.png" material="effects/effects.mats:blood-decal-vampire"
+		color-a="1-pow(t,2)"
+		color-r="0.8"
+		>				
+			<frame time="5000">0 0 32 31</frame>
+		</sprite>
+	</variation>
+	
+</effect>

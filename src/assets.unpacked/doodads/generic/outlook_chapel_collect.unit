@@ -1,0 +1,21 @@
+<unit slot="doodad">
+	<scenes tier-1="1">
+	
+		<scene name="shared">	
+			<collision static="true">
+				<rect>-5 -5 10 10</rect>				
+			</collision>
+		</scene>
+	
+	
+		<scene name="1">		
+			<scene src="shared" />
+			<sprite origin="5 12" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">418 280 10 17</frame>
+			</sprite>		
+			<sprite origin="-5 12" layer="-1" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">428 280 9 17</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

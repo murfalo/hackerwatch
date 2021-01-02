@@ -1,0 +1,26 @@
+<effect looping="true">
+	<sprite looping="true" origin="8 8" texture="./teleport_round_small.png" material="system/default.mats:glow-both"
+		angle="(t+l)*pi"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame time="2000">0 0 16 16</frame>
+	</sprite>		
+	<sprite looping="true" origin="8 8" texture="./teleport_round_small.png" material="system/default.mats:glow-both"
+		angle="(t+l)*pi*0.1"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame>16 0 16 16</frame>
+	</sprite>
+	<sprite looping="true" origin="8 8" texture="./teleport_round_small.png" material="system/default.mats:glow-both"
+		angle="(t+l)*pi*0.5"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame>32 0 16 16</frame>
+	</sprite>	
+</effect>

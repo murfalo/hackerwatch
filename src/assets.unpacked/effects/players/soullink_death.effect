@@ -1,0 +1,85 @@
+<effect looping="false" layer="5">
+	<param name="radius" default="8" />
+	<param name="posy" default="-15" />
+
+	<sprite origin="12 7" looping="false" layer="1" texture="./soullink_break.png" material="system/default.mats:glow-both-bright"
+		pos-y="5"
+		color-g="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+		color-b="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+		color-a="saturate(1-pow(t,4))"
+		>
+		<frame time="1500">0 0 23 13</frame>
+	</sprite>
+	
+<!-- 	<sprite origin="12 10" looping="false" texture="./revive.png" material="system/default.mats:glow-both-bright"
+	pos-y="0"
+	color-r="1+t"
+	color-g="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+	color-b="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+	color-a="cos(t*t+t)"
+	>
+		<frame time="1100">92 30 23 15</frame>
+		<frame time="200">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite origin="12 10" looping="false" texture="./revive.png" material="system/default.mats:bright-noxray"
+	pos-y="0"
+	color-r="1+t"
+	color-g="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+	color-b="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+	color-a="cos(t*t+t)"
+	>
+		<frame time="1100">92 30 23 15</frame>
+		<frame time="200">0 0 0 0</frame>
+	</sprite> -->
+	
+	<sprite origin="2 1" looping="false" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		num-sprites="1"
+		pos-x="cos(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+2693+(i+l)),0.5)"
+        pos-y="sin(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+2693+(i+l)),0.5) + posy *1.5 - posy * t"
+		
+		color-g="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+		color-b="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+		color-a="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+		>
+		<frame time="100">0 48 4 3</frame>
+		<frame time="100">4 48 4 3</frame>
+		<frame time="100">8 48 4 3</frame>
+		<frame time="100">12 48 4 3</frame>
+		<frame time="100">16 48 4 3</frame>
+		<frame time="100">12 48 4 3</frame>
+		<frame time="100">8 48 4 3</frame>
+		<frame time="100">4 48 4 3</frame>
+	</sprite>	
+	
+	<sprite origin="2 1" looping="false" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+		pos-x="cos(rand(u+2647+i+l)*2*pi) * radius * pow(rand(u+73+i+l),0.5)"
+        pos-y="sin(rand(u+2647+i+l)*2*pi) * radius * pow(rand(u+73+i+l),0.5) + posy *1.5- posy * t"
+		
+		color-a="saturate(sin(t*pi))*rand(u+i*2647) - t * saturate(sin(t*pi))*rand(u+i*2647)"
+		>
+		<frame time="100">0 51 4 3</frame>
+		<frame time="100">4 51 4 3</frame>
+		<frame time="100">8 51 4 3</frame>
+		<frame time="100">4 51 4 3</frame>
+	</sprite>
+	
+	<light pos-y="0"	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<length value="1100" />
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="30*(1-t)" />
+
+		<color-r value="1" />
+		<color-g value="0.1" />
+		<color-b value="0.1" />
+		<color-a value="0"/>
+	</light>
+</effect>

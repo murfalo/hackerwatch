@@ -1,0 +1,28 @@
+<unit layer="-1">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">5000</int>
+		
+		<int name="actor-filter">2</int>
+		<float name="self-dmg">1</float>
+		<float name="team-dmg">1</float>
+		<float name="enemy-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:healing-area</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes default="def">
+		<scene name="def" trigger-snd="event:/misc/button_hatch2">
+			<collision static="false">
+				<circle sensor="true" offset="0 0" radius="40" />
+			</collision>
+			<effect src="items/projectiles/dukes_signet_ring.effect" />		
+			<effect src="items/projectiles/dukes_signet_ring_particles.effect" />		
+		</scene>
+	</scenes>
+</unit>

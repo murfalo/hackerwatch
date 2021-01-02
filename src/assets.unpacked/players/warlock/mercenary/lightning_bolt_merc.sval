@@ -1,0 +1,29 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">warlock</string>
+	<string name="name">.skills.warlock.lightning-bolt</string>
+	<string name="description">.skills.warlock.lightning-bolt.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 144 24 24</vec4>
+	</array>
+
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ShootProjectile</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/warlock/attack</string>
+		
+		<int name="cooldown">500</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">true</bool>
+		<float name="speed-mul">0</float>
+		
+		<int name="mana-cost">45</int>
+		
+		<int name="dist">5</int>
+		<string name="projectile">players/warlock/mercenary/bolt_merc.unit</string>
+	</dict>
+</dict>

@@ -1,0 +1,26 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">thief</string>
+	<string name="name">.skills.thief.smoke-bomb</string>
+	<string name="description">.skills.thief.smoke-bomb.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 72 24 24</vec4>
+	</array>
+
+	<int name="cost">25</int>
+
+	<dict name="skill">
+		<string name="class">Skills::DropUnit</string>
+		<string name="anim">cast 8</string>
+
+		<int name="cooldown">7000</int>
+		<int name="castpoint">0</int>
+
+		<int name="mana-cost">60</int>
+
+		<int name="max-count">100</int>
+		<string name="unit">players/thief/mercenary/smoke_bomb_merc.unit</string>
+	</dict>
+</dict>

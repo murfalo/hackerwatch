@@ -1,0 +1,98 @@
+<effect bounds="256 256" looping="true" layer="0">
+	<param name="angle" default="0" />
+	<param name="length" default="100" />
+	
+	<sprite looping="true" origin="0 3.5" texture="./beam.png" material="system/default.mats:glow-both-bright-player"
+		angle="angle"
+		
+	>
+		<frame time="50" x="0" y="0" w="length" h="7" />
+		<frame time="50" x="0" y="7" w="length" h="7" />
+		<frame time="50" x="0" y="14" w="length" h="7" />
+		<frame time="50" x="0" y="21" w="length" h="7" />
+	</sprite>
+	
+	<sprite looping="true" origin="0 3.5" texture="./beam.png" material="system/default.mats:glow-both-bright-player"
+		angle="angle"
+		color-a="1-saturate(sin(t*pi*2 + rand(u+i+101)*2))"
+		
+	>
+		<frame time="50" x="0" y="28" w="length" h="7" />
+		<frame time="50" x="0" y="35" w="length" h="7" />
+		<frame time="50" x="0" y="42" w="length" h="7" />
+		<frame time="50" x="0" y="49" w="length" h="7" />
+		<frame time="50" x="0" y="56" w="length" h="7" />
+		<frame time="50" x="0" y="63" w="length" h="7" />
+		<frame time="50" x="0" y="70" w="length" h="7" />
+		<frame time="50" x="0" y="77" w="length" h="7" />
+		<frame time="50" x="0" y="84" w="length" h="7" />
+		<frame time="50" x="0" y="91" w="length" h="7" />
+		<frame time="50" x="0" y="98" w="length" h="7" />
+		<frame time="50" x="0" y="105" w="length" h="7" />
+	</sprite>
+	
+	<sprite looping="true" origin="4 4" texture="./beam.png" material="system/default.mats:glow-both-bright-player"
+	pos-x="cos(angle)*length"
+	pos-y="sin(angle)*length"
+	angle="sin(t*pi*2)"
+	>
+		<frame time="50">0 120 8 8</frame>
+		<frame time="50">9 120 8 8</frame>
+		<frame time="50">18 120 8 8</frame>
+		<frame time="50">9 120 8 8</frame>
+	</sprite>
+
+	
+
+
+	
+	<!-- Dummy length -->
+	<sprite looping="false" origin="0 0" texture="./beam.png" material="system/default.mats:glow-both-bright">
+		<frame time="500">0 0 0 0</frame>
+	</sprite>
+	
+	
+	<light 
+	
+		
+		pos-x="cos(angle)*3"
+		pos-y="sin(angle)*3">
+		 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<looping value="true" />
+		
+
+		<cast-shadows value="all" />
+		
+		<size value="80" />
+		
+		<color-r value="0" />
+		<color-g value="0.8*2" />
+		<color-b value="1*3" />
+		<color-a value="0" />
+	</light>	
+	
+	<light 
+		
+		pos-x="cos(angle)*length"
+		pos-y="sin(angle)*length">
+		 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="all" />
+		
+		<size value="(sin(t+l * 0.5)+5)/6*50" />
+		
+		<color-r value="0" />
+		<color-g value="0.8*2" />
+		<color-b value="1*3" />
+		<color-a value="0" />
+	</light>		
+</effect>

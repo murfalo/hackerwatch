@@ -1,0 +1,24 @@
+<unit slot="doodad" layer="1">
+	<scenes close="1" open="2">
+		
+		<scene name="1">	
+			<sprite origin="17 13" texture="./bestiary_shelf.png" material="system/default.mats:proj-prop">
+				<frame>0 128 28 21</frame>
+			</sprite>	
+			
+		</scene>
+		<scene name="2">	
+			<sprite origin="17 13" looping="false" texture="./bestiary_shelf.png" material="system/default.mats:proj-prop">
+				<frame time="75">0 128 28 21</frame>
+				<frame time="75">28 128 28 21</frame>
+				<frame time="75">56 128 28 21</frame>
+				<frame time="75">84 128 28 21</frame>
+				<frame time="75">0 149 28 21</frame>
+				<frame time="75">28 149 28 21</frame>
+				<frame time="75">56 149 28 21</frame>
+				<frame time="75">84 149 28 21</frame>
+			</sprite>	
+			
+		</scene>
+	</scenes>
+</unit>

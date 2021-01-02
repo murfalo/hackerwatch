@@ -1,0 +1,858 @@
+<unit netsync="position" slot="actor">
+	<behavior class="BossEye">
+		<string name="beastiary-name">.bestiary.name.bosses.eye</string>
+		<string name="beastiary-scene">portrait</string>
+		<vec2 name="beastiary-offset">0 0</vec2>
+		<string name="quality">epic</string>
+		
+		<string name="scene-disappear">jump</string>
+		<string name="scene-appear">land</string>
+
+		<string name="wisp-unit">actors/bosses/eye/wisp.unit</string>
+		
+		<string name="type">aberration</string>
+		<int name="hp">12000</int>
+		<int name="armor">100</int>
+		<int name="resistance">150</int>
+		<int name="experience-reward">5000</int>
+		<float name="mp-scale-fact">1.25</float>
+		<float name="ngp-scale">1.5</float>
+		
+		<string name="death-snd">event:/enemy/boss_eye/death</string>
+		<string name="gore">effects/gibs/gib_boss_eye.sval</string>
+		<string name="loot">actors/loot.sval:boss_eye</string>
+			
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">false</bool>
+		<int name="aggro-range">1000</int>
+		<int name="unit-height">45</int>
+		<float name="debuff-scale">0.5</float>
+
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_boss.inc"
+		</array>
+
+		<dict name="movement">
+			<string name="class">CirclingMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<float name="speed">1.8</float>
+			<int name="dist">100</int>
+			<int name="stagger-threshold">0</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">jump-start</string>
+				
+				<array name="conditional">
+					<string>flag</string><string>is</string><string>boss_jump</string>
+				</array>
+				
+				<int name="cooldown">50</int>
+				<int name="castpoint">200</int>
+				
+				<int name="range">1000</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">RaiseUnitEvent</string>
+						<string name="name">wisps_clear</string>
+					</dict>
+				</array>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">RaiseUnitEvent</string>
+						<string name="name">jump</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/bosses/eye/eye_death.unit</string>
+					</dict>	
+				</array>	
+			</dict>	
+			
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="start-snd">event:/enemy/boss_eye/attack</string>
+				
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">3000</int>
+				<int name="castpoint">750</int>
+				<int name="min-range">40</int>
+				<int name="range">300</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">false</bool>
+				
+				<string name="offset">shoot-pos</string>
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<int name="projectiles">5</int>
+						<int name="spread">45</int>
+						<string name="projectile">actors/bosses/eye/tooth.unit</string>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">whirlwind</string>
+				
+				<int name="cooldown">7000</int>
+				<int name="castpoint">3190</int>
+				
+				<int name="range">70</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">RaiseUnitEvent</string>
+						<string name="name">wisps_fast</string>
+					</dict>
+				</array>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">RaiseUnitEvent</string>
+						<string name="name">wisps_normal</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+				
+				<string name="start-snd">event:/enemy/boss_eye/glyph</string>
+				
+				<int name="cooldown">12000</int>
+				<int name="castpoint">1500</int>
+				
+				<int name="range">500</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">RaiseUnitEvent</string>
+						<string name="name">spawn_start</string>
+					</dict>
+				</array>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">RaiseUnitEvent</string>
+						<string name="name">spawn_traps</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+3 Spew
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>3</int>
+				</array>
+			
+				<string name="class">SpewSkill</string>
+				<string name="anim">attack 8</string>
+				<!-- <string name="snd">event:/enemy/boss_eye/attack_looping</string> -->
+				<string name="offset">shoot-pos</string>
+				
+				<int name="cooldown">8000</int>
+				<int name="castpoint">850</int>
+				<int name="duration">2000</int>
+				
+				<int name="range">300</int>
+				<int name="min-range">35</int>
+				<int name="spread">25</int>
+				<int name="rate">90</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">false</bool>
+				<bool name="hold-dir">false</bool>
+				
+				<string name="projectile">actors/bosses/eye/tooth_spew.unit</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-2">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 -12" aim-through="true" radius="24" density="100"/>
+			</collision>
+			
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			
+			<sprite origin="23 30" layer="-1" looping="true" texture="./eye.png" material="system/default.mats:shadow">
+				<frame>0 210 46 46</frame>
+			</sprite>
+		</scene>
+
+		<scene name="hidden">
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>0 0 49 49</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="whirlwind">
+			<scene src="shared" />
+			<effect src="effects/animations/spin.effect" />
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+				
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+				
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+				
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+
+				<frame time="50">49 49 49 49</frame>
+				<frame time="50">0 49 49 49</frame>
+				<frame time="50">196 0 49 49</frame>
+				<frame time="50">147 0 49 49</frame>
+				<frame time="50">98 0 49 49</frame>
+				<frame time="50">49 0 49 49</frame>
+				<frame time="50">0 0 49 49</frame>
+				<frame time="50">98 49 49 49</frame>
+			</sprite>
+			
+			<!-- öga 2 -->
+			<sprite origin="8 13" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+				
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+				
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+				
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+				
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+				
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+				
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+				
+				<frame time="50">123 221 16 12</frame>
+				<frame time="350">0 0 0 0</frame>
+			</sprite>
+			
+			
+			<!-- öga 3 -->
+			<sprite origin="17 15" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+				
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+				
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+				
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+				
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+				
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+				
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+				
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">123 209 12 12</frame>
+				<frame time="300">0 0 0 0</frame>
+			</sprite>
+			
+			<!-- öga 4 -->
+			<sprite origin="24 20" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+				
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+				
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+				
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+				
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+				
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+				
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+				
+				<frame time="100">0 0 0 0</frame>
+				<frame time="50">123 233 6 13</frame>
+				<frame time="250">0 0 0 0</frame>
+			</sprite>
+			
+			<!-- öga 0 -->
+			<sprite origin="-18 20" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+			
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="300">0 0 0 0</frame>
+				<frame time="50">165 233 6 13</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			
+			<!-- öga 1 -->
+			<sprite origin="-5 15" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+				
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+				
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+				
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+				
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+				
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+				
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+				
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">171 209 12 12</frame>
+
+			</sprite>
+		</scene>
+		
+		<scene name="spawn">
+			<scene src="shared" />
+			<sprite origin="8 13" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="250">123 221 16 12</frame>
+				<frame time="50">139 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="1500">171 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="50">139 221 16 12</frame>
+			</sprite>
+
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>49 49 49 49</frame>
+			</sprite>
+		</scene>
+
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="-18 20" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">165 233 6 13</frame>
+				<frame time="50">159 233 6 13</frame>
+				<frame time="50">153 233 6 13</frame>
+				<frame time="50">147 233 6 13</frame>
+				<frame time="50">153 233 6 13</frame>
+				<frame time="50">159 233 6 13</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>0 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>49 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>98 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>147 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="24 20" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">123 233 6 13</frame>
+				<frame time="50">129 233 6 13</frame>
+				<frame time="50">135 233 6 13</frame>
+				<frame time="50">141 233 6 13</frame>
+				<frame time="50">135 233 6 13</frame>
+				<frame time="50">129 233 6 13</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>196 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="17 15" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">123 209 12 12</frame>
+				<frame time="50">135 209 12 12</frame>
+				<frame time="50">147 209 12 12</frame>
+				<frame time="50">159 209 12 12</frame>
+				<frame time="50">147 209 12 12</frame>
+				<frame time="50">135 209 12 12</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>0 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="8 13" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">123 221 16 12</frame>
+				<frame time="50">139 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="50">171 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="50">139 221 16 12</frame>
+			</sprite>
+
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>49 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="-5 15" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="1500">171 209 12 12</frame>
+				<frame time="50">183 209 12 12</frame>
+				<frame time="50">195 209 12 12</frame>
+				<frame time="50">207 209 12 12</frame>
+				<frame time="50">195 209 12 12</frame>
+				<frame time="50">183 209 12 12</frame>
+			</sprite>
+			
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>98 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />	
+			<sprite origin="-18 20" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">165 233 6 13</frame>
+				<frame time="50">159 233 6 13</frame>
+				<frame time="50">153 233 6 13</frame>
+				<frame time="50">147 233 6 13</frame>
+				<frame time="50">153 233 6 13</frame>
+				<frame time="50">159 233 6 13</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>0 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>49 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>98 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>147 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="24 20" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">123 233 6 13</frame>
+				<frame time="50">129 233 6 13</frame>
+				<frame time="50">135 233 6 13</frame>
+				<frame time="50">141 233 6 13</frame>
+				<frame time="50">135 233 6 13</frame>
+				<frame time="50">129 233 6 13</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>196 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="17 15" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">123 209 12 12</frame>
+				<frame time="50">135 209 12 12</frame>
+				<frame time="50">147 209 12 12</frame>
+				<frame time="50">159 209 12 12</frame>
+				<frame time="50">147 209 12 12</frame>
+				<frame time="50">135 209 12 12</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>0 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="8 13" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="4500">123 221 16 12</frame>
+				<frame time="50">139 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="50">171 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="50">139 221 16 12</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>49 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="-5 15" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="1500">171 209 12 12</frame>
+				<frame time="50">183 209 12 12</frame>
+				<frame time="50">195 209 12 12</frame>
+				<frame time="50">207 209 12 12</frame>
+				<frame time="50">195 209 12 12</frame>
+				<frame time="50">183 209 12 12</frame>
+			</sprite>
+			<sprite origin="24 40" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>98 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="32 -10" />
+			<sprite origin="-16 24" ulayer="2" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="100">154 98 9 22</frame>
+				<frame time="150">82 98 9 22</frame>
+				<frame time="400">91 98 9 22</frame>
+				<frame time="300">100 98 9 22</frame>
+				<frame time="200">109 98 9 22</frame>
+				<frame time="100">118 98 9 22</frame>
+				<frame time="200">127 98 9 22</frame>
+				<frame time="100">136 98 9 22</frame>
+				<frame time="300">145 98 9 22</frame>
+				<frame time="150">154 98 9 22</frame>
+			</sprite>
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame>0 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="17 -27" />
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="2000">49 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -32" />
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="2000">98 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-17 -27" />
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="2000">147 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-32 -10" />
+			<sprite origin="24 24" ulayer="3" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="100">72 98 9 22</frame>
+				<frame time="100">0 98 9 22</frame>
+				<frame time="100">9 98 9 22</frame>
+				<frame time="100">18 98 9 22</frame>
+				<frame time="100">27 98 9 22</frame>
+				<frame time="100">36 98 9 22</frame>
+				<frame time="100">45 98 9 22</frame>
+				<frame time="100">54 98 9 22</frame>
+				
+				<frame time="50">63 98 9 22</frame>
+				<frame time="50">72 98 9 22</frame>
+			</sprite>
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame>196 0 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-15 -3" />
+			<sprite origin="20 22" ulayer="3" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="100">184 120 23 26</frame>
+				<frame time="100">0 120 23 26</frame>
+				<frame time="100">23 120 23 26</frame>
+				<frame time="100">46 120 23 26</frame>
+				<frame time="100">69 120 23 26</frame>
+				<frame time="100">92 120 23 26</frame>
+				<frame time="100">115 120 23 26</frame>
+				<frame time="100">138 120 23 26</frame>
+				
+				<frame time="50">161 120 23 26</frame>
+				<frame time="50">184 120 23 26</frame>
+			</sprite>
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame>0 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 5" />
+			<sprite origin="13 20" ulayer="3" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="100">208 172 26 26</frame>
+				<frame time="100">0 172 26 26</frame>
+				<frame time="100">26 172 26 26</frame>
+				<frame time="100">52 172 26 26</frame>
+				<frame time="100">78 172 26 26</frame>
+				<frame time="100">104 172 26 26</frame>
+				<frame time="100">130 172 26 26</frame>
+				<frame time="100">156 172 26 26</frame>
+				
+				<frame time="50">182 172 26 26</frame>
+				<frame time="50">208 172 26 26</frame>
+			</sprite>
+
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame>49 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="15 -3" />
+			<sprite origin="3 22" ulayer="3" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="100">184 146 23 26</frame>
+				<frame time="100">0 146 23 26</frame>
+				<frame time="100">23 146 23 26</frame>
+				<frame time="100">46 146 23 26</frame>
+				<frame time="100">69 146 23 26</frame>
+				<frame time="100">92 146 23 26</frame>
+				<frame time="100">115 146 23 26</frame>
+				<frame time="100">138 146 23 26</frame>
+				
+				<frame time="50">161 146 23 26</frame>
+				<frame time="50">184 146 23 26</frame>
+			</sprite>
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame>98 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-start" trigger-snd="event:/enemy/boss_eye/jump">
+			<collision static="false">
+				<circle offset="0 -12" sensor="true" radius="22" />
+			</collision>
+
+			<sprite origin="8 13" ulayer="1" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="50">139 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="50">171 221 16 12</frame>
+				<frame time="50">155 221 16 12</frame>
+				<frame time="50">139 221 16 12</frame>
+			</sprite>
+
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="250">49 49 49 49</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="jump" trigger-snd="event:/enemy/boss_eye/jump">
+			<!-- <collision static="false"> -->
+				<!-- <circle offset="0 -12" sensor="true" radius="22" /> -->
+			<!-- </collision> -->
+			
+			<sprite origin="23 30" layer="-1" looping="false" texture="./eye.png" material="system/default.mats:shadow">
+				<frame time="350">0 210 46 46</frame>
+				<frame time="350">0 0 0 0</frame>
+			</sprite>
+
+			<effect ulayer="1" delay="250" pos="0 0" src="actors/bosses/eye/smoke_impact_eye.effect" />
+			%//<effect ulayer="1" delay="250" pos="0 0" src="actors/bosses/eye/impact_blood.effect" />
+			<effect src="actors/bosses/eye/eye_jump.effect" />
+			<effect src="actors/bosses/eye/eye_bounce_jump.effect" />
+		</scene>
+		
+		<scene name="land">
+			<collision static="false">
+				<circle offset="0 -12" sensor="true" radius="22" />
+			</collision>
+
+			<sprite origin="23 30" layer="-1" looping="false" texture="./eye.png" material="system/default.mats:shadow">
+				<frame time="2500">0 0 0 0</frame>
+				<frame time="350">0 210 46 46</frame>                
+			</sprite>
+
+			<effect ulayer="1" delay="2500" pos="0 0" src="actors/bosses/eye/smoke_impact_eye.effect" />
+			<!-- <effect ulayer="1" delay="2500" pos="0 0" src="actors/bosses/eye/impact_blood.effect" /> -->
+			<effect src="actors/bosses/eye/eye_fall.effect" />
+			<effect delay="2500" src="actors/bosses/eye/eye_bounce_fall.effect" />
+
+			<sprite origin="8 13" ulayer="1" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="30">123 221 16 12</frame>
+			</sprite>
+			
+			<sprite origin="24 40" looping="false" texture="./eye.png" material="system/default.mats:actor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="30">49 49 49 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="portrait">
+			<sprite origin="18 14" ulayer="0" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>1 61 31 31</frame>
+			</sprite>
+			<sprite origin="11 9" ulayer="1" looping="true" texture="./eye.png" material="system/default.mats:actor">
+				<frame>2 125 17 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

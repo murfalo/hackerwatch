@@ -1,0 +1,65 @@
+<unit netsync="none">
+	<behavior class="SteeringRayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">4</float>
+		<int name="ttl">2500</int>
+		
+		<string name="dir-steer">(t*-pi/4)+pi/4</string>
+		<!-- <string name="speed-steer">(-sin(saturate(t*2-2.5)*pi))*4</string> -->
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/wizard/fireball_1_hit.effect</string>
+				<int name="min-radius">6</int>
+				<int name="radius">14</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">40</int>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/high_priest/fireball</string>
+			</dict>			
+		</array>
+		
+		<array name="miss-effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/wizard/fireball_1_hit.effect</string>
+				<int name="min-radius">6</int>
+				<int name="radius">14</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">40</int>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/high_priest/fireball</string>
+			</dict>			
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/pop/projectiles/high_priest_fireball.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

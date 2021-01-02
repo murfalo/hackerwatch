@@ -1,0 +1,18 @@
+<unit slot="doodad" layer="-40">
+	<scenes default="default" broken_1="broken_1">
+		<scene name="shared">
+			<sprite origin="0 0" texture="./_wall.png" material="system/default.mats:floor">
+				<frame>64 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="default">
+			<scene src="shared" />
+		</scene>
+		<scene name="broken_1">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="-9 -5" texture="./_wall.png" material="system/default.mats:floor">
+				<frame>0 163 45 39</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,68 @@
+<effect looping="false" layer="5">
+	
+	
+	<sprite origin="25 22" texture="./first_aid.png" material="system/default.mats:glow-both-bright"
+		pos-y="-4"
+		color-r="0.5+0.5*t"
+		color-g="0.5+0.5*t"
+		color-b="1"
+		color-a="1-t"
+		angle="rand(u+i*101)*pi*2"
+		>
+		<frame time="30">0 0 48 48</frame>
+		<frame time="30">48 0 48 48</frame>
+		<frame time="30">96 0 48 48</frame>
+		<frame time="30">144 0 48 48</frame>
+		<frame time="40">192 0 48 48</frame>
+		<frame time="40">0 48 48 48</frame>
+		<frame time="50">48 48 48 48</frame>
+		<frame time="50">96 48 48 48</frame>
+	</sprite>
+	<sprite origin="25 22" texture="./first_aid.png" material="system/default.mats:bright-noxray"
+		
+		pos-y="-4"
+		color-r="0.5+0.5*t"
+		color-g="0.5+0.5*t"
+		color-b="1"
+		color-a="1-t"
+		angle="rand(u+i*101)*pi*2"
+		>
+		<frame time="30">0 0 48 48</frame>
+		<frame time="30">48 0 48 48</frame>
+		<frame time="30">96 0 48 48</frame>
+		<frame time="30">144 0 48 48</frame>
+		<frame time="40">192 0 48 48</frame>
+		<frame time="40">0 48 48 48</frame>
+		<frame time="50">48 48 48 48</frame>
+		<frame time="50">96 48 48 48</frame>
+	</sprite>
+	
+	<sprite origin="3 3" looping="false" texture="./first_aid.png" material="system/default.mats:bright-noxray"
+		num-sprites="12"
+
+		color-r="1.5-0.5*t"
+		color-g="1-0.5*t"
+		color-b="1-0.5*t"
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 8 * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 8 * pow(rand(u+43*i),0.5) - pow(t,2)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="1000">71 27 1 1</frame>
+	</sprite>
+	
+	<light pos-y="-4"> 
+		<sprite texture="system/light_L.png">
+			<frame time="240">0 0 128 128</frame>
+		</sprite>
+		<looping value="false" />
+		<cast-shadows value="false" />
+		<size value="80*(1-t)" />
+		<length value="240" />
+		<color-r value="0.5+0.5*t" />
+		<color-g value="1" />
+		<color-b value="0.5+0.5*t" />
+		<color-a value="0/255" />
+	</light>
+</effect>

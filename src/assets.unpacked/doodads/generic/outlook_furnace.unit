@@ -1,0 +1,106 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">		
+			<collision static="true">
+				<rect>-22 -8 44 12</rect>
+			</collision>
+		</scene>
+		<scene name="on">	
+			<scene src="shared" />		
+			<sprite origin="22 37" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">86 86 44 41</frame>
+			</sprite>	
+			<sprite origin="6 7" ulayer="1" texture="./outlook_props.png" material="system/default.mats:glow-both">
+				<frame time="180">150 102 12 15</frame>
+				<frame time="180">162 102 12 15</frame>
+			</sprite>
+			<sprite ulayer="2" origin="3 10" texture="./outlook_props.png" material="system/default.mats:bright">
+				<frame time="180">0 121 7 13</frame>
+				<frame time="180">7 121 7 13</frame>
+				<frame time="180">14 121 7 13</frame>
+				<frame time="180">21 121 7 13</frame>
+			</sprite>
+			
+			
+			<light pos="0 -2">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="120" />
+				</sizes>
+				<colors>
+					<color value="230 170 50 0" />
+				</colors>
+			</light>
+			<light pos="0 -2">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="60" />
+				</sizes>
+				<colors>
+					<color value="90 40 0 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 -2">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="30" />
+				</sizes>
+				<colors>
+					<color value="60 20 0 5" />
+					<color value="35 10 0 0" />
+				</colors>
+			</light>				
+			
+			<light pos="0 -2">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="110 40 0 0" />
+				</colors>
+			</light>	
+		</scene>
+		<scene name="off">	
+			<scene src="shared" />		
+			<sprite origin="22 37" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="180">86 86 44 41</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

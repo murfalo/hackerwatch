@@ -1,0 +1,90 @@
+<effect looping="false">
+	<param name="radius" default="32" />
+	
+	<data>
+		<string name="gore">effects/gibs/gib_shatter.sval</string>
+	</data>	
+	
+	<sprite origin="24 24" looping="false" texture="./shatter.png" material="system/default.mats:bright-noxray"
+	angle="rand(u)*pi*2">
+		<frame time="35">0 0 48 48</frame>
+		<frame time="35">48 0 48 48</frame>
+		<frame time="35">96 0 48 48</frame>
+		<frame time="35">144 0 48 48</frame>
+		<frame time="35">192 0 48 48</frame>
+		<frame time="35">0 48 48 48</frame>
+		<frame time="35">48 48 48 48</frame>
+		<frame time="35">96 48 48 48</frame>
+		<frame time="35">144 48 48 48</frame>
+	</sprite>
+	
+	<sprite origin="48 48" looping="false" texture="./shatter_big.png" material="system/default.mats:bright-noxray"
+	angle="rand(u)*pi*2">
+		<frame time="70">0 0 0 0</frame>
+		<frame time="35">192 0 96 96</frame>
+		<frame time="35">288 0 96 96</frame>
+		<frame time="35">384 0 96 96</frame>
+		<frame time="35">0 96 96 96</frame>
+		<frame time="35">96 96 96 96</frame>
+		<frame time="35">192 96 96 96</frame>
+		<frame time="60">288 96 96 96</frame>
+		<frame time="60">384 96 96 96</frame>
+	</sprite>
+	
+	
+	%//Particles
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 80 * t" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0.75" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * 110 * 3) + 10" />
+		
+		<color-r value="1 - t" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+	
+</effect>

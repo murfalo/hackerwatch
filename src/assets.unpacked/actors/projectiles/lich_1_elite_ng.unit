@@ -1,0 +1,49 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/lich/hit</string>
+		<string name="fx">actors/projectiles/lich_1_hit.effect</string>
+		
+		<int name="ttl">3000</int>
+		<float name="speed">3</float>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.07</float>
+		<int name="bounces">3</int>
+		<float name="bounce-speed-mul">1</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">60</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>
+			<sprite origin="4 8" looping="true" texture="./lich_1.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 8 8</frame>
+				<frame time="50">8 0 8 8</frame>
+				<frame time="50">16 0 8 8</frame>
+				<frame time="50">24 0 8 8</frame>
+				<frame time="50">16 0 8 8</frame>
+				<frame time="50">8 0 8 8</frame>
+				<frame time="50">16 0 8 8</frame>
+				<frame time="50">8 0 8 8</frame>
+			</sprite>
+			<sprite origin="4 8" looping="true" texture="./lich_1.png" material="system/default.mats:glow">
+				<frame time="50">0 8 8 8</frame>
+				<frame time="50">8 8 8 8</frame>
+				<frame time="50">16 8 8 8</frame>
+				<frame time="50">24 8 8 8</frame>
+				<frame time="50">16 8 8 8</frame>
+				<frame time="50">8 8 8 8</frame>
+				<frame time="50">16 8 8 8</frame>
+				<frame time="50">8 8 8 8</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,118 @@
+<gui>
+	<sprites>
+		<sprite name="icon-progress-on" texture="gui/icons.png"><frame>91 51 18 18</frame></sprite>
+		<sprite name="icon-progress-off" texture="gui/icons.png"><frame>109 51 18 18</frame></sprite>
+
+		<sprite name="concept" texture="gui/concept.png"><frame>0 152 200 76</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/playermenu/charheader_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="204" height="254" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<!-- Header -->
+				<rect width="200" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="179" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".town.coliseum.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton spriteset="close" func="stop" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="200" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Concept -->
+				<sprite src="concept" offset="2 23" />
+
+				<!-- Separator -->
+				<rect width="200" height="3" offset="2 99" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Description -->
+				<scrollrect id="description" width="186" height="80" offset="2 102" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<text text=".town.coliseum.description" width="178" font="gui/fonts/arial11.fnt" anchor="0.5 0" align="center" />
+				</scrollrect>
+
+				<!-- Scrollbar -->
+				<scrollbar forid="description" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="80" offset="188 102" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="80" offset="199 102" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Separator -->
+				<rect width="200" height="3" offset="2 182" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Rank header -->
+				<rect width="58" height="18" offset="2 185" spriteset="gui/variable/headline_hor.sval">
+					<text anchor="0.5 0.5" font="gui/fonts/arial11.fnt" text=".town.coliseum.rank" />
+				</rect>
+
+				<!-- Progress header -->
+				<rect width="139" height="18" offset="63 185" spriteset="gui/variable/headline_hor.sval">
+					<text anchor="0.5 0.5" font="gui/fonts/arial11.fnt" text=".town.coliseum.progress" />
+				</rect>
+
+				<!-- Vertical separator -->
+				<rect width="3" height="46" offset="60 185" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Gladiator rating -->
+				<rect width="200" height="28" offset="2 203" flow="hbox">
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Left button -->
+					<spritebutton id="g-rating-left" func="g-rating-prev" spriteset="arrow-left" />
+
+					<!-- Frame -->
+					<sprite src="big-frame">
+						<text id="g-rating" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" color="#FFE400FF" />
+						<knobslider width="100%" height="100%" func-increase="g-rating-next" func-decrease="g-rating-prev" />
+					</sprite>
+
+					<!-- Right button -->
+					<spritebutton id="g-rating-right" func="g-rating-next" spriteset="arrow-right" />
+
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Progress -->
+					<rect width="139" height="28" offset="3 0" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="hbox" padding="22 5" spacing="1" tooltip=".town.coliseum.progress.tooltip">
+						<sprite id="progress-1" src="icon-progress-off" />
+						<sprite id="progress-2" src="icon-progress-off" />
+						<sprite id="progress-3" src="icon-progress-off" />
+						<sprite id="progress-4" src="icon-progress-off" />
+						<sprite id="progress-5" src="icon-progress-off" />
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="200" height="3" offset="2 231" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Button bar -->
+				<rect width="200" height="18" offset="2 234" flow="hbox">
+					<rect width="28" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Switches button -->
+					<scalebutton id="switches-button" func="switches" spriteset="scalebutton" width="64" font="gui/fonts/arial11.fnt" text=".town.coliseum.switches" />
+
+					<rect width="16" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Start button -->
+					<scalebutton id="start-button" func="start-trials" spriteset="scalebutton" width="64" font="gui/fonts/arial11.fnt" text=".town.coliseum.start" />
+
+					<rect width="28" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

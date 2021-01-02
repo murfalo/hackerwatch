@@ -1,0 +1,654 @@
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.golem_sand</string>
+		<vec2 name="beastiary-offset">2 9</vec2>
+		<string name="quality">uncommon</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">aberration</string>
+		<int name="hp">420</int>
+		<int name="armor">20</int>
+		<int name="resistance">20</int>
+		<int name="experience-reward">90</int>
+		<float name="mp-scale-fact">0.65</float>
+		
+		<int name="unit-height">14</int>
+		
+		<string name="death-snd">event:/enemy/golem_sand/death</string>
+		<string name="gore">effects/gibs/gib_elemental_sand.sval</string>
+		<string name="loot">actors/loot.sval:golem_sand</string>
+		
+		<int name="aggro-range">200</int>
+		<float name="wind-scale">0</float>
+
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_no_respawn.inc"
+			<string>quicksand</string>
+		</array>
+
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			
+			<float name="speed">1.7</float>
+		</dict>
+
+		<array name="skills">
+			%// Melee attack
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">melee 8</string>
+
+				<int name="cooldown-start">200</int>
+				<int name="cooldown">1000</int>
+				<int name="castpoint">550</int>
+				<int name="range">30</int>			
+				
+				<string name="offset">shoot-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/impact_sand.effect</string>
+						<int name="min-radius">18</int>
+						<int name="radius">18</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">50</int>
+								<float name="armor-mul">0.9</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/golem_sand/hit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Normal ranged
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">ranged 8</string>
+
+				<string name="snd">event:/enemy/golem_sand/throw</string>
+
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">400</int>
+				<int name="min-range">40</int>
+				<int name="range">120</int>
+				<bool name="good-aim">false</bool>
+				
+				<string name="offset">shoot-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/projectiles/golem_sand_rock.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ ranged
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">ranged 8</string>
+
+				<string name="snd">event:/enemy/golem_sand/throw</string>
+
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">400</int>
+				<int name="min-range">40</int>
+				<int name="range">120</int>
+				<bool name="good-aim">false</bool>
+				
+				<string name="offset">shoot-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/projectiles/golem_sand_rock_ng.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Blink strike
+			<dict>
+				<string name="class">BlinkStrikeSkill</string>
+				<int name="cooldown-start">2000</int>
+				<int name="cooldown">5000</int>
+
+				<string name="anim-blink">hidden</string>
+				<string name="anim-melee">blinkmelee 8</string>
+				<string name="anim-hidden">hidden</string>
+
+				<string name="fx-blink-out">actors/pop/golem_sand_despawn.effect</string>
+				<string name="fx-blink-in">effects/animations/dust_big.effect</string>
+
+				<string name="snd-blink-out">event:/enemy/golem_sand/blink-out</string>
+				<string name="snd-blink-in">event:/enemy/golem_sand/blink-in</string>
+
+				<int name="cast-point-melee">500</int>
+
+				<int name="range">150</int>
+				<int name="min-range">50</int>
+
+				<float name="blink-distance">16</float>
+				<int name="blink-delay">1000</int>
+				<int name="blink-delay-random">500</int>
+				
+				<string name="offset">shoot-pos</string>
+				
+				<!-- <array name="blink-effects"> -->
+					<!-- <dict> -->
+						<!-- <string name="class">SpawnUnit</string> -->
+						<!-- <string name="unit">actors/pop/scorpion_1.unit</string> -->
+						<!-- <bool name="safe-spawn">false</bool> -->
+					<!-- </dict> -->
+				<!-- </array> -->
+				
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/impact_sand.effect</string>
+						<int name="min-radius">18</int>
+						<int name="radius">18</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">50</int>
+								<float name="armor-mul">0.9</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/golem_sand/hit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<collision static="false">
+				<circle offset="0 0" radius="6" aim-through="true" charge-through="true" density="20"/>
+				<circle offset="0 -4" radius="12" sensor="true" aim-through="true" charge-through="true" shoot-through="false"  />
+			</collision>
+			<effect src="./golem_sand_dust_bottom.effect"/>
+			<effect src="./golem_sand_dust_top.effect"/>
+		</scene>
+
+		<scene name="ranged-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="20 0"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">0 150 50 50</frame>
+				<frame time="200">0 200 50 50</frame>
+				<frame time="100">0 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="14 11"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">50 150 50 50</frame>
+				<frame time="200">50 200 50 50</frame>
+				<frame time="200">50 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 14"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">100 150 50 50</frame>
+				<frame time="200">100 200 50 50</frame>
+				<frame time="200">100 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-18 1"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">150 150 50 50</frame>
+				<frame time="200">150 200 50 50</frame>
+				<frame time="200">150 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-20 -17"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">200 150 50 50</frame>
+				<frame time="200">200 200 50 50</frame>
+				<frame time="200">200 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-10 -28"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">250 150 50 50</frame>
+				<frame time="200">250 200 50 50</frame>
+				<frame time="200">250 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="10 -27"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">300 150 50 50</frame>
+				<frame time="200">300 200 50 50</frame>
+				<frame time="200">300 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="23 -15"/>
+			<sprite looping="false"  origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">350 150 50 50</frame>
+				<frame time="200">350 200 50 50</frame>
+				<frame time="200">350 250 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="15 -1"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">0 300 50 50</frame>
+				<frame time="500">0 350 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="10 7"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">50 300 50 50</frame>
+				<frame time="500">50 350 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="1 10"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">100 300 50 50</frame>
+				<frame time="500">100 350 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-10 7"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">150 300 50 50</frame>
+				<frame time="500">150 350 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-14 0"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">200 300 50 50</frame>
+				<frame time="500">200 350 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-12 -12"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">250 300 50 50</frame>
+				<frame time="500">250 350 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -17"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">300 300 50 50</frame>
+				<frame time="500">300 350 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="melee-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="12 -12"/>
+			<sprite looping="false"  origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="500">350 300 50 50</frame>
+				<frame time="500">350 350 50 50</frame>
+			</sprite>
+		</scene>
+			
+			
+			
+		<scene name="blinkmelee-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="15 -1"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">0 350 50 50</frame>
+			</sprite>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">0 0 50 50</frame>
+				<frame time="100">0 50 50 50</frame>
+				<frame time="100">0 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="blinkmelee-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="10 7"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">50 350 50 50</frame>
+			</sprite>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">50 0 50 50</frame>
+				<frame time="100">50 50 50 50</frame>
+				<frame time="100">50 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="blinkmelee-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="1 10"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">100 350 50 50</frame>
+			</sprite>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">100 0 50 50</frame>
+				<frame time="100">100 50 50 50</frame>
+				<frame time="100">100 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="blinkmelee-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-10 7"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">150 350 50 50</frame>
+			</sprite>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">150 0 50 50</frame>
+				<frame time="100">150 50 50 50</frame>
+				<frame time="100">150 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="blinkmelee-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-14 0"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">200 350 50 50</frame>
+			</sprite>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">200 0 50 50</frame>
+				<frame time="100">200 50 50 50</frame>
+				<frame time="100">200 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="blinkmelee-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-12 -12"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">250 350 50 50</frame>
+			</sprite>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">250 0 50 50</frame>
+				<frame time="100">250 50 50 50</frame>
+				<frame time="100">250 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="blinkmelee-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -17"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">300 350 50 50</frame>
+			</sprite>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">300 0 50 50</frame>
+				<frame time="100">300 50 50 50</frame>
+				<frame time="100">300 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="blinkmelee-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="12 -12"/>
+			<sprite looping="false" origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="100">100 400 50 50</frame>
+				<frame time="100">150 400 50 50</frame>
+				<frame time="300">0 0 0 0</frame>
+				<frame time="500">350 350 50 50</frame>
+			</sprite>
+			<sprite looping="false"  origin="25 32" texture="actors/pop/golem_sand_spawn.png" material="system/default.mats:actor">
+				<frame time="200">0 0 0 0</frame>
+				<frame time="100">350 0 50 50</frame>
+				<frame time="100">350 50 50 50</frame>
+				<frame time="100">350 100 50 50</frame>
+				<frame time="30">0 0 0 0</frame>
+			</sprite>
+		</scene>	
+	
+		<scene name="walk-0">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">0 50 50 50</frame>
+				<frame time="200">0 0 50 50</frame>
+				<frame time="200">0 100 50 50</frame>
+				<frame time="200">0 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-1">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">50 50 50 50</frame>
+				<frame time="200">50 0 50 50</frame>
+				<frame time="200">50 100 50 50</frame>
+				<frame time="200">50 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-2">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">100 50 50 50</frame>
+				<frame time="200">100 0 50 50</frame>
+				<frame time="200">100 100 50 50</frame>
+				<frame time="200">100 0 50 50</frame>
+			</sprite>             
+		</scene>
+		
+		<scene name="walk-3">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">150 50 50 50</frame>
+				<frame time="200">150 0 50 50</frame>
+				<frame time="200">150 100 50 50</frame>
+				<frame time="200">150 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-4">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">200 50 50 50</frame>
+				<frame time="200">200 0 50 50</frame>
+				<frame time="200">200 100 50 50</frame>
+				<frame time="200">200 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-5">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">250 50 50 50</frame>
+				<frame time="200">250 0 50 50</frame>
+				<frame time="200">250 100 50 50</frame>
+				<frame time="200">250 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-6">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">300 50 50 50</frame>
+				<frame time="200">300 0 50 50</frame>
+				<frame time="200">300 100 50 50</frame>
+				<frame time="200">300 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk-7">
+			<scene src="shared" />
+			
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame time="200">350 50 50 50</frame>
+				<frame time="200">350 0 50 50</frame>
+				<frame time="200">350 100 50 50</frame>
+				<frame time="200">350 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>0 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>50 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>100 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>150 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>200 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>250 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>300 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>350 0 50 50</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="hidden">
+			<collision static="false">
+				<circle offset="0 0" sensor="true" shoot-through="true" aim-through="true" charge-through="true" radius="3" />
+			</collision>
+			<sprite origin="25 32" texture="actors/pop/golem_sand.png" material="system/default.mats:actor">
+				<frame>0 0 0 0</frame>
+			</sprite>			
+		</scene>		
+	</scenes>
+</unit>

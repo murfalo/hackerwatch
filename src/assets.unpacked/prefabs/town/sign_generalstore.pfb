@@ -1,0 +1,52 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<float name="radius">12</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/sign_ground.unit"><vec2>0 0</vec2><int>2</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>3</int>
+			<vec3>64 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Title">.dialogue.sign.general</string>
+				<string name="Style">gui/speechbubbles/sign.sval</string>
+				<int name="HeightOffset">-4</int>
+				<array name="Objects"><int>2</int></array>
+				<array name="#ForPlayer"><int>4</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>4</int>
+			<vec3>64 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">7</int>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+	</array>
+</dict>

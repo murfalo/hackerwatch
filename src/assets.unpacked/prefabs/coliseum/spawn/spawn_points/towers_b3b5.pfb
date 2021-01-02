@@ -1,0 +1,1891 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name="doodads/generic/tower_retractable_arena.unit">
+			<array>
+				<vec2>-96 0</vec2>
+				<int>1</int>
+				<dict>
+					<string name="start">disabled</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>96 0</vec2>
+				<int>2</int>
+				<dict>
+					<string name="start">disabled</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/arena/_deco_floor_ledge_tile.unit">
+			<vec2>72 -8</vec2>
+			<int>3</int>
+			<vec2>-112 -24</vec2>
+			<int>4</int>
+			<vec2>-120 -24</vec2>
+			<int>5</int>
+			<vec2>-120 -16</vec2>
+			<int>6</int>
+			<vec2>-120 -8</vec2>
+			<int>7</int>
+			<vec2>-120 0</vec2>
+			<int>8</int>
+			<vec2>-80 16</vec2>
+			<int>9</int>
+			<vec2>96 -24</vec2>
+			<int>10</int>
+			<vec2>-80 -24</vec2>
+			<int>11</int>
+			<vec2>104 16</vec2>
+			<int>12</int>
+			<vec2>72 0</vec2>
+			<int>13</int>
+			<vec2>-80 8</vec2>
+			<int>14</int>
+			<vec2>72 16</vec2>
+			<int>15</int>
+			<vec2>-120 16</vec2>
+			<int>16</int>
+			<vec2>88 16</vec2>
+			<int>17</int>
+			<vec2>96 16</vec2>
+			<int>18</int>
+			<vec2>112 16</vec2>
+			<int>19</int>
+			<vec2>112 8</vec2>
+			<int>20</int>
+			<vec2>112 -8</vec2>
+			<int>21</int>
+			<vec2>112 -16</vec2>
+			<int>22</int>
+			<vec2>112 -24</vec2>
+			<int>23</int>
+			<vec2>-96 -24</vec2>
+			<int>24</int>
+			<vec2>104 -24</vec2>
+			<int>25</int>
+			<vec2>72 8</vec2>
+			<int>26</int>
+			<vec2>80 -24</vec2>
+			<int>27</int>
+			<vec2>72 -24</vec2>
+			<int>28</int>
+			<vec2>72 -16</vec2>
+			<int>29</int>
+			<vec2>80 16</vec2>
+			<int>30</int>
+			<vec2>-112 16</vec2>
+			<int>31</int>
+			<vec2>-88 16</vec2>
+			<int>32</int>
+			<vec2>112 0</vec2>
+			<int>33</int>
+			<vec2>-80 0</vec2>
+			<int>34</int>
+			<vec2>-80 -8</vec2>
+			<int>35</int>
+			<vec2>88 -24</vec2>
+			<int>36</int>
+			<vec2>-120 8</vec2>
+			<int>37</int>
+			<vec2>-104 16</vec2>
+			<int>38</int>
+			<vec2>-80 -16</vec2>
+			<int>39</int>
+			<vec2>-88 -24</vec2>
+			<int>40</int>
+			<vec2>-96 16</vec2>
+			<int>41</int>
+			<vec2>-104 -24</vec2>
+			<int>42</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>GlobalEvent</string>
+			<int>43</int>
+			<vec3>64 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_b5</string>
+			<dict>
+				<string name="EventName">disable_b5</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>44</int>
+			<vec3>-64 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_b3</string>
+			<dict>
+				<string name="EventName">disable_b3</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>45</int>
+			<vec3>448 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>123</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>46</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_2</string>
+			<dict>
+				<string name="UnitType">actors/tower_nova_2.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>47</int>
+			<vec3>512 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>100</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>48</int>
+			<vec3>704 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off splitshot</string>
+			<dict>
+				<string name="State">off_ballista_splitshot</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>49</int>
+			<vec3>288 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0</string>
+			<dict>
+				<array name="Scripts"><int>158</int><int>77</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>50</int>
+			<vec3>640 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off javelin</string>
+			<dict>
+				<string name="State">off_ballista_javelin</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>51</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock</string>
+			<dict>
+				<string name="UnitType">actors/pop/tower_pyramid_rock.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>52</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_1</string>
+			<dict>
+				<string name="UnitType">actors/tower_nova_1.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>53</int>
+			<vec3>0 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>arena_towers</string>
+			<dict>
+				<string name="EventName">arena_towers</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>54</int>
+			<vec3>-256 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_nova_2</string>
+			<dict>
+				<string name="EventName">activate_tower_nova_2</string>
+			</dict>
+			<array><int>67</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>55</int>
+			<vec3>-384 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_nova_1</string>
+			<dict>
+				<string name="EventName">activate_tower_nova_1</string>
+			</dict>
+			<array><int>60</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>56</int>
+			<vec3>128 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_laser</string>
+			<dict>
+				<string name="EventName">activate_tower_laser</string>
+			</dict>
+			<array><int>78</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>57</int>
+			<vec3>-128 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_beamo</string>
+			<dict>
+				<string name="EventName">activate_tower_beamo</string>
+			</dict>
+			<array><int>69</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>58</int>
+			<vec3>0 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_rock</string>
+			<dict>
+				<string name="EventName">activate_tower_rock</string>
+			</dict>
+			<array><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>59</int>
+			<vec3>0 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_towers</string>
+			<dict>
+				<string name="EventName">spawn_towers</string>
+			</dict>
+			<array><int>82</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>60</int>
+			<vec3>-384 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>106</int><int>156</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>61</int>
+			<vec3>-384 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>106</int><int>156</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>62</int>
+			<vec3>-256 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tower_nova_2</string>
+			<dict>
+				<string name="EventName">deactivate_tower_nova_2</string>
+			</dict>
+			<array><int>68</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>63</int>
+			<vec3>-384 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tower_nova_1</string>
+			<dict>
+				<string name="EventName">deactivate_tower_nova_1</string>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>64</int>
+			<vec3>128 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tower_laser</string>
+			<dict>
+				<string name="EventName">deactivate_tower_laser</string>
+			</dict>
+			<array><int>79</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>65</int>
+			<vec3>-128 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tower_beamo</string>
+			<dict>
+				<string name="EventName">deactivate_tower_beamo</string>
+			</dict>
+			<array><int>70</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>66</int>
+			<vec3>0 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tower_rock</string>
+			<dict>
+				<string name="EventName">deactivate_tower_rock</string>
+			</dict>
+			<array><int>72</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>67</int>
+			<vec3>-256 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>103</int><int>109</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>68</int>
+			<vec3>-256 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>103</int><int>109</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>69</int>
+			<vec3>-128 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>153</int><int>146</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>70</int>
+			<vec3>-128 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>153</int><int>146</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>71</int>
+			<vec3>0 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>145</int><int>129</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>72</int>
+			<vec3>0 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>145</int><int>129</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>73</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>beamo</string>
+			<dict>
+				<string name="UnitType">actors/tower_beamo.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>74</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_2</string>
+			<dict>
+				<string name="UnitType">actors/tower_nova_2.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>75</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_1</string>
+			<dict>
+				<string name="UnitType">actors/tower_nova_1.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>76</int>
+			<vec3>-64 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>106</int><int>103</int><int>146</int><int>145</int><int>144</int><int>143</int><int>148</int></array>
+			</dict>
+			<array><int>165</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>77</int>
+			<vec3>-160 -256 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>75</int>
+					<string>LastSpawned</string>
+					<int>74</int>
+					<string>LastSpawned</string>
+					<int>73</int>
+					<string>LastSpawned</string>
+					<int>51</int>
+					<string>LastSpawned</string>
+					<int>107</int>
+					<string>LastSpawned</string>
+					<int>105</int>
+					<string>LastSpawned</string>
+					<int>104</int>
+					<string>LastSpawned</string>
+				</array>
+			</dict>
+			<array><int>80</int><int>0</int><int>147</int><int>1000</int><int>114</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>78</int>
+			<vec3>128 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>144</int><int>130</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>79</int>
+			<vec3>128 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>144</int><int>130</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CrowdTriggerAction</string>
+			<int>80</int>
+			<vec3>0 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tower-killed</string>
+			<dict>
+				<string name="Id">tower-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>81</int>
+			<vec3>-640 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off nova 2</string>
+			<dict>
+				<string name="State">off_nova_2</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>82</int>
+			<vec3>0 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>76</int><int>110</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>83</int>
+			<vec3>60 4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Filter">burrow</string>
+				<string name="SpawnSound"></string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>84</int>
+			<vec3>63 -33 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>85</int>
+			<vec3>130 4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Filter">burrow</string>
+				<string name="SpawnSound"></string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>86</int>
+			<vec3>130 36 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>87</int>
+			<vec3>97 -36 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Filter">burrow</string>
+				<string name="SpawnSound"></string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>88</int>
+			<vec3>130 -33 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>89</int>
+			<vec3>65 34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>90</int>
+			<vec3>95 37 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<int name="Delay">400</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>91</int>
+			<vec3>-132 4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>92</int>
+			<vec3>-129 -33 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>93</int>
+			<vec3>-62 4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>94</int>
+			<vec3>-62 36 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>95</int>
+			<vec3>-95 -36 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>96</int>
+			<vec3>-62 -33 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>97</int>
+			<vec3>-127 34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>98</int>
+			<vec3>-97 37 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="IntroEffect">effects/animations/burrow_spawn.effect</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">400</int>
+				<string name="SpawnEffect">effects/animations/dust.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnSound"></string>
+				<string name="Filter">burrow</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>99</int>
+			<vec3>352 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>destroy_towers</string>
+			<dict>
+				<string name="EventName">destroy_towers</string>
+			</dict>
+			<array><int>49</int><int>0</int><int>128</int><int>0</int><int>125</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>100</int>
+			<vec3>512 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off rock</string>
+			<dict>
+				<string name="State">off_pyramid_rock</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CrowdTriggerAction</string>
+			<int>101</int>
+			<vec3>480 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tower-not-killed</string>
+			<dict>
+				<string name="Id">tower-not-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>102</int>
+			<vec3>384 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>124</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>103</int>
+			<vec3>-640 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_2</string>
+			<dict>
+				<string name="State">on_nova_2</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>74</int><int>1600</int><int>121</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>104</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>splitshot</string>
+			<dict>
+				<string name="UnitType">actors/tower_ballista_splitshot.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>105</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>javelin</string>
+			<dict>
+				<string name="UnitType">actors/tower_ballista_javelin.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>106</int>
+			<vec3>-704 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_1</string>
+			<dict>
+				<string name="State">on_nova_1</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>75</int><int>1600</int><int>115</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>107</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>laser</string>
+			<dict>
+				<string name="UnitType">actors/pop/tower_pyramid_laser.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>108</int>
+			<vec3>160 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>109</int>
+			<vec3>384 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_2</string>
+			<dict>
+				<string name="State">on_nova_2</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>46</int><int>1600</int><int>102</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>110</int>
+			<vec3>64 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>156</int><int>109</int><int>153</int><int>129</int><int>130</int><int>166</int><int>155</int></array>
+			</dict>
+			<array><int>162</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>111</int>
+			<vec3>-320 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off splitshot</string>
+			<dict>
+				<string name="State">off_ballista_splitshot</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>112</int>
+			<vec3>-384 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>113</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>113</int>
+			<vec3>-384 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off javelin</string>
+			<dict>
+				<string name="State">off_ballista_javelin</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>114</int>
+			<vec3>-256 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0</string>
+			<dict>
+				<array name="Scripts"><int>120</int><int>81</int><int>163</int><int>116</int><int>117</int><int>113</int><int>111</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>115</int>
+			<vec3>-704 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>120</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>116</int>
+			<vec3>-512 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off rock</string>
+			<dict>
+				<string name="State">off_pyramid_rock</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>117</int>
+			<vec3>-448 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off laser</string>
+			<dict>
+				<string name="State">off_pyramid_laser</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>118</int>
+			<vec3>576 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off laser</string>
+			<dict>
+				<string name="State">off_pyramid_laser</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>119</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>beamo</string>
+			<dict>
+				<string name="UnitType">actors/tower_beamo.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>120</int>
+			<vec3>-704 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off nova 1</string>
+			<dict>
+				<string name="State">off_nova_1</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>121</int>
+			<vec3>-640 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>81</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>122</int>
+			<vec3>-576 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>163</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>123</int>
+			<vec3>448 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off beamo</string>
+			<dict>
+				<string name="State">off_beamo</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>124</int>
+			<vec3>384 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off nova 2</string>
+			<dict>
+				<string name="State">off_nova_2</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>125</int>
+			<vec3>384 -544 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>52</int>
+					<string>LastSpawned</string>
+					<int>46</int>
+					<string>LastSpawned</string>
+					<int>119</int>
+					<string>LastSpawned</string>
+					<int>159</int>
+					<string>LastSpawned</string>
+					<int>157</int>
+					<string>LastSpawned</string>
+					<int>152</int>
+					<string>LastSpawned</string>
+					<int>151</int>
+					<string>LastSpawned</string>
+				</array>
+			</dict>
+			<array>
+				<int>127</int>
+				<int>0</int>
+				<int>124</int>
+				<int>0</int>
+				<int>123</int>
+				<int>0</int>
+				<int>100</int>
+				<int>0</int>
+				<int>118</int>
+				<int>0</int>
+				<int>50</int>
+				<int>0</int>
+				<int>48</int>
+				<int>0</int>
+				<int>101</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>126</int>
+			<vec3>-192 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>1</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>127</int>
+			<vec3>320 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off nova 1</string>
+			<dict>
+				<string name="State">off_nova_1</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>128</int>
+			<vec3>320 -544 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>51</int>
+					<string>LastSpawned</string>
+					<int>73</int>
+					<string>LastSpawned</string>
+					<int>74</int>
+					<string>LastSpawned</string>
+					<int>75</int>
+					<string>LastSpawned</string>
+					<int>104</int>
+					<string>LastSpawned</string>
+					<int>105</int>
+					<string>LastSpawned</string>
+					<int>107</int>
+					<string>LastSpawned</string>
+				</array>
+			</dict>
+			<array>
+				<int>120</int>
+				<int>0</int>
+				<int>81</int>
+				<int>0</int>
+				<int>163</int>
+				<int>0</int>
+				<int>116</int>
+				<int>0</int>
+				<int>117</int>
+				<int>0</int>
+				<int>113</int>
+				<int>0</int>
+				<int>111</int>
+				<int>0</int>
+				<int>101</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>129</int>
+			<vec3>512 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock</string>
+			<dict>
+				<string name="State">on_pyramid_rock</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>159</int><int>1600</int><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>130</int>
+			<vec3>576 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>laser</string>
+			<dict>
+				<string name="State">on_pyramid_laser</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>157</int><int>1600</int><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>131</int>
+			<vec3>320 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>127</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>132</int>
+			<vec3>384 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_splitshot</string>
+			<dict>
+				<string name="EventName">activate_tower_splitshot</string>
+			</dict>
+			<array><int>138</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>133</int>
+			<vec3>256 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_javelin</string>
+			<dict>
+				<string name="EventName">activate_tower_javelin</string>
+			</dict>
+			<array><int>136</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>134</int>
+			<vec3>384 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tower_splitshot</string>
+			<dict>
+				<string name="EventName">deactivate_tower_splitshot</string>
+			</dict>
+			<array><int>139</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>135</int>
+			<vec3>256 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tower_javelin</string>
+			<dict>
+				<string name="EventName">deactivate_tower_javelin</string>
+			</dict>
+			<array><int>137</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>136</int>
+			<vec3>256 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>143</int><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>137</int>
+			<vec3>256 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>143</int><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>138</int>
+			<vec3>384 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>148</int><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>139</int>
+			<vec3>384 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>148</int><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>140</int>
+			<vec3>-512 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>116</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>141</int>
+			<vec3>-448 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>117</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>142</int>
+			<vec3>256 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0</string>
+			<dict>
+				<array name="Scripts"><int>127</int><int>124</int><int>123</int><int>100</int><int>118</int><int>50</int><int>48</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>143</int>
+			<vec3>-384 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>javelin</string>
+			<dict>
+				<string name="State">on_ballista_javelin</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>105</int><int>1600</int><int>112</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>144</int>
+			<vec3>-448 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>laser</string>
+			<dict>
+				<string name="State">on_pyramid_laser</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>107</int><int>1600</int><int>141</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>145</int>
+			<vec3>-512 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock</string>
+			<dict>
+				<string name="State">on_pyramid_rock</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>51</int><int>1600</int><int>140</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>146</int>
+			<vec3>-576 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>beamo</string>
+			<dict>
+				<string name="State">on_beamo</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>73</int><int>1600</int><int>122</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>147</int>
+			<vec3>-160 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>148</int>
+			<vec3>-320 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>splitshot</string>
+			<dict>
+				<string name="State">on_ballista_splitshot</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>104</int><int>1600</int><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>149</int>
+			<vec3>-256 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on_empty</string>
+			<dict>
+				<string name="State">on_empty</string>
+				<array name="Units"><int>1</int><int>2</int></array>
+			</dict>
+			<array><int>126</int><int>1600</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>150</int>
+			<vec3>-320 -544 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_obstacles</string>
+			<dict>
+				<string name="EventName">disable_obstacles</string>
+			</dict>
+			<array><int>149</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>151</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>splitshot</string>
+			<dict>
+				<string name="UnitType">actors/tower_ballista_splitshot.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>152</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>javelin</string>
+			<dict>
+				<string name="UnitType">actors/tower_ballista_javelin.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>153</int>
+			<vec3>448 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>beamo</string>
+			<dict>
+				<string name="State">on_beamo</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>119</int><int>1600</int><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>154</int>
+			<vec3>576 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>118</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>155</int>
+			<vec3>704 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>splitshot</string>
+			<dict>
+				<string name="State">on_ballista_splitshot</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>151</int><int>1600</int><int>161</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>156</int>
+			<vec3>320 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>nova_1</string>
+			<dict>
+				<string name="State">on_nova_1</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>52</int><int>1600</int><int>131</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>157</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>laser</string>
+			<dict>
+				<string name="UnitType">actors/pop/tower_pyramid_laser.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>158</int>
+			<vec3>160 -256 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>52</int>
+					<string>LastSpawned</string>
+					<int>46</int>
+					<string>LastSpawned</string>
+					<int>119</int>
+					<string>LastSpawned</string>
+					<int>159</int>
+					<string>LastSpawned</string>
+					<int>157</int>
+					<string>LastSpawned</string>
+					<int>152</int>
+					<string>LastSpawned</string>
+					<int>151</int>
+					<string>LastSpawned</string>
+				</array>
+			</dict>
+			<array><int>80</int><int>0</int><int>108</int><int>1000</int><int>142</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>159</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rock</string>
+			<dict>
+				<string name="UnitType">actors/pop/tower_pyramid_rock.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>160</int>
+			<vec3>640 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>50</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>161</int>
+			<vec3>704 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>48</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>162</int>
+			<vec3>160 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>158</int><int>125</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>163</int>
+			<vec3>-576 -320 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>off beamo</string>
+			<dict>
+				<string name="State">off_beamo</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>164</int>
+			<vec3>-320 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>111</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>165</int>
+			<vec3>-160 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>77</int><int>128</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>166</int>
+			<vec3>640 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>javelin</string>
+			<dict>
+				<string name="State">on_ballista_javelin</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>152</int><int>1600</int><int>160</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

@@ -1,0 +1,17 @@
+<effect looping="true" layer="-1" material="system/default.mats:player-marker">
+	<param name="color_r" default="1" />
+	<param name="color_g" default="1" />
+	<param name="color_b" default="1" />
+	
+
+	<sprite origin="17 16" texture="./marker.png" material="system/default.mats:player-marker" looping="false"
+		%//angle="(t + l) / 20"
+		
+		color-r="color_r"
+		color-g="color_g"
+		color-b="color_b"
+	>
+		<frame time="100"> 0 0 32 32</frame>
+	</sprite>
+</effect>
+

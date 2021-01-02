@@ -1,0 +1,38 @@
+<unit>
+	<behavior class="BombBehavior">
+		<int name="delay">900</int>
+		<int name="delay-random">0</int>
+
+		<string name="gore">effects/gibs/gib_dragon_foot.sval</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+ 				<string name="fx">actors/bosses/dragon/foot_bomb.effect</string>
+				<int name="radius">64</int>
+				<int name="min-radius">64</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">175</int>
+						<float name="armor-mul">0.33</float>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:dragon_stomp_stun</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<dict name="effect-params">
+			<float name="radius">66</float>
+		</dict>
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

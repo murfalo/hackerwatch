@@ -1,0 +1,38 @@
+<unit netsync="position" slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			<sprite layer="-11" origin="10 10" texture="./pentagram_small.png" material="system/default.mats:floor">
+				<frame>0 0 20 20"</frame>
+			</sprite>
+		</scene>
+		<scene name="off">
+			<scene src="shared"/>
+		</scene>
+		<scene name="on">
+			<scene src="shared"/>
+			
+			<sprite layer="-10" ulayer="1" origin="10 10" texture="./pentagram_small.png" material="system/default.mats:glow-both-bright">
+				<frame>20 0 20 20"</frame>
+			</sprite>
+			
+			<light pos="0 0">
+			<sprite texture="system/light_L.png">
+				<frame>0 0 128 128</frame>
+			</sprite>
+			<length value="50" />
+			<overbright value="5" />
+			<looping value="true" />
+			<overlay value="true" />
+			<cast-shadows value="false" />
+			<shadow-cast-pos value="0 0" />
+			<shadow-cast-pos-jitter value="0 0 0 0" />
+			<sizes>
+				<size value="64" />
+			</sizes>
+			<colors>
+				<color value="255 50 50 0" />
+			</colors>
+		</light>
+		</scene>
+	</scenes>
+</unit>

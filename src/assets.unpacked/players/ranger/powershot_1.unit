@@ -1,0 +1,49 @@
+<unit netsync="none">
+	<behavior class="PowershotProjectile">
+		<string name="anim">idle</string>
+
+		<float name="speed-min">8</float>
+		<float name="speed-max">16</float>
+
+		<int name="penetration-min">999</int>
+		<int name="penetration-max">1000</int>
+
+		<float name="range-min">90</float>
+		<float name="range-max">180</float>
+
+		<float name="effect-intensity-min">0.5</float>
+		<float name="effect-intensity-max">1.0</float>
+
+		<int name="ttl">3500</int>
+
+		<string name="shoot-snd">event:/player/ranger/powershot</string>
+		<string name="hit-snd">event:/misc/trap_arrow_hit</string>	
+		
+		<array name="effects">
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">players/ranger/powershot_hit.effect</string>
+			</dict>
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">80</int>
+				<float name="resistance-mul">0.5</float>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">2</float>
+		</dict>
+		<string name="fx">players/ranger/powershot_fade.effect</string>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="players/ranger/powershot.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="1" />
+				<circle projectile="true" radius="16" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

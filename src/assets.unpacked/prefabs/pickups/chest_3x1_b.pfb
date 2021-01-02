@@ -1,0 +1,205 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="items/money_silver_2.unit"><vec2>10 12</vec2><int>3</int><vec2>35 3</vec2><int>4</int></array>
+		<array name="items/money_silver_3.unit"><vec2>5 6</vec2><int>6</int></array>
+		<array name="items/money_silver_1.unit">
+			<vec2>16 12</vec2>
+			<int>7</int>
+			<vec2>5 14</vec2>
+			<int>8</int>
+			<vec2>24 13</vec2>
+			<int>9</int>
+			<vec2>32 7</vec2>
+			<int>10</int>
+			<vec2>36 10</vec2>
+			<int>11</int>
+			<vec2>29 11</vec2>
+			<int>12</int>
+			<vec2>37 6</vec2>
+			<int>13</int>
+			<vec2>33 13</vec2>
+			<int>14</int>
+			<vec2>3 10</vec2>
+			<int>15</int>
+			<vec2>11 2</vec2>
+			<int>16</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>17</int>
+			<vec3>17 68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<float name="ChanceToDestroy">0.35</float>
+				<array name="Units">
+					<int>14</int>
+					<int>9</int>
+					<int>8</int>
+					<int>6</int>
+					<int>12</int>
+					<int>3</int>
+					<int>7</int>
+					<int>10</int>
+					<int>13</int>
+					<int>11</int>
+					<int>4</int>
+					<int>15</int>
+					<int>16</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>25</int>
+			<vec3>56 -271 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_ace_chests</string>
+			<dict>
+				<string name="Flag">fountain_ace_chests</string>
+				<array name="OnTrue"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>26</int>
+			<vec3>20 6 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ace</string>
+			<dict>
+				<string name="UnitType">doodads/generic/chest_ace.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>20 6 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bronze</string>
+			<dict>
+				<string name="UnitType">doodads/generic/chest_bronze.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>28</int>
+			<vec3>20 6 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>silver</string>
+			<dict>
+				<string name="UnitType">doodads/generic/chest_silver.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>29</int>
+			<vec3>40 -111 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>silver</string>
+			<dict>
+				<int name="Chance">15</int>
+			</dict>
+			<array><int>28</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>30</int>
+			<vec3>20 6 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wood</string>
+			<dict>
+				<string name="UnitType">doodads/generic/chest_wood.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>31</int>
+			<vec3>56 -207 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>36</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>32</int>
+			<vec3>-40 -207 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>33</int><int>34</int><int>36</int><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>33</int>
+			<vec3>-88 -111 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wood</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>34</int>
+			<vec3>-24 -111 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>bronze</string>
+			<dict>
+				<int name="Chance">35</int>
+			</dict>
+			<array><int>27</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>35</int>
+			<vec3>-40 -271 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>25</int><int>0</int><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>36</int>
+			<vec3>100 -110 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ace</string>
+			<dict>
+				<int name="Chance">3</int>
+			</dict>
+			<array><int>26</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

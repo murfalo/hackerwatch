@@ -1,0 +1,37 @@
+<unit slot="doodad">
+	<scenes default="default">
+		<scene name="default">
+			<sprite origin="-20 6" texture="./npc.png" material="system/default.mats:shadow">
+				<frame time="100">182 140 17 11</frame>
+			</sprite>
+			<sprite origin="5 15" layer="-1" texture="./npc.png" material="system/default.mats:shadow">
+				<frame>213 132 28 26</frame>
+			</sprite>
+			<sprite origin="-22 29" layer="-1" texture="./npc.png" material="system/default.mats:shadow">
+				<frame>194 272 15 13</frame>
+			</sprite>
+			<collision static="true">
+				<rect jam-through="true">
+					-10 -4 33 15
+				</rect>		
+				<rect jam-through="true">
+					23 -2 8 8
+				</rect>				
+				<circle jam-through="true" radius="4" offset="31 2"/>		
+				<circle jam-through="true" radius="16" offset="12 -11"/>	
+			</collision>
+			<sprite layer="-3" origin="7 26" texture="./npc.png" material="system/default.mats:default-noxray"> <!-- hay -->
+				<frame time="100">125 272 38 28</frame>
+			</sprite>
+			<sprite layer="1" origin="3 40" texture="./npc.png" material="system/default.mats:default-noxray"> <!-- sign -->
+				<frame time="100">163 272 31 25</frame>
+			</sprite>
+			<sprite origin="10 18" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">213 103 33 29</frame>
+			</sprite>
+			<sprite ulayer="1" origin="-15 16" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">187 119 22 21</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

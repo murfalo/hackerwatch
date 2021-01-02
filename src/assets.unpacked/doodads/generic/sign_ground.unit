@@ -1,0 +1,19 @@
+<unit slot="doodad">
+	<scenes defualt="default" desert="desert" mineral="mineral">
+		<scene name="default">
+			<sprite origin="6 11" looping="true" texture="./signs.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 14 12</frame>
+			</sprite>
+		</scene>
+		<scene name="desert">
+			<sprite origin="3 13" looping="true" texture="./signs.png" material="system/default.mats:default-noxray">
+				<frame time="100">14 0 13 14</frame>
+			</sprite>
+		</scene>		
+		<scene name="mineral">
+			<sprite origin="5 15" looping="true" texture="./signs.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 14 17 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

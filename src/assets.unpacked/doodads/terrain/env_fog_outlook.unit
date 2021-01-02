@@ -1,0 +1,40 @@
+<unit layer="100">
+	<scenes 1="1" 2="2" 3="3" 4="4">
+		<scene name="1">
+			%if TIME_NIGHT
+			<sprite origin="0 0" texture="./env_fog_outlook_1.png" material="system/default.mats:default">
+			%else
+			<sprite origin="0 0" texture="./env_fog_outlook_1.png" material="system/default.mats:bright">
+			%endif
+				<frame>0 0 512 512</frame>
+			</sprite>
+		</scene>
+		<scene name="2">
+			%if TIME_NIGHT
+			<sprite origin="0 0" texture="./env_fog_outlook_2.png" material="system/default.mats:default">
+			%else
+			<sprite origin="0 0" texture="./env_fog_outlook_2.png" material="system/default.mats:bright">
+			%endif
+				<frame>0 0 512 512</frame>
+			</sprite>
+		</scene>
+		<scene name="3">
+			%if TIME_NIGHT
+			<sprite origin="0 0" texture="./env_fog_outlook_3.png" material="system/default.mats:default">
+			%else
+			<sprite origin="0 0" texture="./env_fog_outlook_3.png" material="system/default.mats:bright">
+			%endif
+				<frame>0 0 512 512</frame>
+			</sprite>
+		</scene>
+		<scene name="4">
+			%if TIME_NIGHT
+			<sprite origin="0 0" texture="./env_fog_outlook_4.png" material="system/default.mats:default">
+			%else
+			<sprite origin="0 0" texture="./env_fog_outlook_4.png" material="system/default.mats:bright">
+			%endif
+				<frame>0 0 256 512</frame>
+			</sprite>
+		</scene>						
+	</scenes>
+</unit>

@@ -1,0 +1,46 @@
+<unit>
+	<behavior class="BombBehavior">
+	
+		<int name="delay">1000</int>
+		<int name="delay-random">0</int>
+
+		<string name="spawn-sound">event:/item/item_meteor-fall</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">1000</float>
+				<string name="fx">effects/players/ranger_bomb.effect</string>
+				<int name="radius">13</int>
+				<float name="team-dmg">1</float>
+				
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">1000</int>
+					<bool name="true-strike">true</bool>
+					<float name="armor-mul">0</float>
+				</dict>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">13</float>
+			<float name="colorr">1</float>
+			<float name="colorg">0</float>
+			<float name="colorb">0</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="falling">
+			<effect src="doodads/generic/trap_indicator.effect" />
+			<effect src="prefabs/coliseum/arena/events/supplements/indie_ball_falling.effect" />
+			
+			<shadow>
+				<sprite origin="12 12" texture="doodads/special/shadows.png">
+					<frame>66 0 24 24</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

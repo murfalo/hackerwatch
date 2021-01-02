@@ -1,0 +1,60 @@
+<unit netsync="none">
+	<behavior class="BossWormSpewChunk">
+		<string name="fx">actors/bosses/scrapjack/explosion_spew_snapjaw.effect</string>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<shadow>
+				<sprite origin="32 32" looping="false" layer="-1" texture="doodads/special/shadows.png">
+					<frame time="40">0 0 64 64</frame>
+					<frame time="40">64 0 64 64</frame>
+					<frame time="40">128 0 64 64</frame>
+					<frame time="40">192 0 64 64</frame>
+
+					<frame time="40">0 64 64 64</frame>
+					<frame time="40">64 64 64 64</frame>
+					<frame time="40">128 64 64 64</frame>
+					<frame time="40">192 64 64 64</frame>
+
+					<frame time="40">0 128 64 64</frame>
+					<frame time="40">64 128 64 64</frame>
+					<frame time="40">128 128 64 64</frame>
+					<frame time="40">192 128 64 64</frame>
+
+					<frame time="40">0 192 64 64</frame>
+					<frame time="40">64 192 64 64</frame>
+					<frame time="40">128 192 64 64</frame>
+					<frame time="40">192 192 64 64</frame>
+
+					<frame time="40">0 256 64 64</frame>
+					<frame time="40">64 256 64 64</frame>
+					<frame time="40">128 256 64 64</frame>
+					<frame time="40">192 256 64 64</frame>
+
+					<frame time="40">0 320 64 64</frame>
+					<frame time="40">64 320 64 64</frame>
+					<frame time="40">128 320 64 64</frame>
+					<frame time="40">192 320 64 64</frame>
+
+					<frame time="40">0 384 64 64</frame>
+					<frame time="40">64 384 64 64</frame>
+					<frame time="40">128 384 64 64</frame>
+					<frame time="40">192 384 64 64</frame>
+
+					<frame time="40">0 448 64 64</frame>
+					<frame time="40">64 448 64 64</frame>
+					<frame time="40">128 448 64 64</frame>
+					<frame time="40">192 448 64 64</frame>
+				</sprite>
+			</shadow>
+
+			<effect ulayer="-2" pos="0 0" src="effects/mana_shield.effect" />
+
+			<sprite origin="28 39" ulayer="0" texture="./dust_big.png" material="system/default.mats:projectile">
+				<frame time="2000">0 0 56 61</frame>
+			</sprite>
+
+		</scene>
+	</scenes>
+</unit>

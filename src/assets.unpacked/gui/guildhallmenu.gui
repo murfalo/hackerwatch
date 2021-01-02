@@ -1,0 +1,51 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect anchor="0.5 0.5" width="384" height="240" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="380" height="18" offset="2 2" flow="hbox">
+					<!-- Title -->
+					<rect width="359" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text text=".guildhall.title" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton spriteset="close" func="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect offset="2 20" width="380" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Tab buttons -->
+				<rect offset="2 23" width="380" height="18">
+					<checkboxgroup id="tabs-container" width="380" height="18">
+						<clip id="tabs-clip" width="380" height="18" flow="hbox">
+							<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="stats" func="set-tab stats" text=".guildhall.tab.stats" />
+							<scalebutton spriteset="scalebutton" width="130" font="gui/fonts/arial11.fnt" value="accomplishments" func="set-tab accomplishments" text=".guildhall.tab.accomplishments" />
+							<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="beastiary" func="set-tab beastiary" text=".guildhall.tab.beastiary" />
+							<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="itemiary" func="set-tab itemiary" text=".guildhall.tab.itemiary" />
+							<!-- <scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" text="bar" /> -->
+						</clip>
+					</checkboxgroup>
+				</rect>
+
+				<!-- Separator -->
+				<rect offset="2 41" width="380" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect id="tab-stats" width="380" height="194" offset="2 44" />
+				<rect id="tab-accomplishments" width="380" height="194" offset="2 44" />
+				<rect id="tab-beastiary" width="380" height="194" offset="2 44" />
+				<rect id="tab-itemiary" width="380" height="194" offset="2 44" />
+			</rect>
+		</group>
+	</doc>
+</gui>

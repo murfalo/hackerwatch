@@ -1,0 +1,106 @@
+<unit netsync="position">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">undead</string>
+		<int name="hp">99999</int>
+		<int name="armor">1000</int>
+		<int name="resistance">1000</int>
+		<int name="experience-reward">0</int>
+
+		<int name="aggro-range">10000</int>
+		<bool name="impenetrable">false</bool>
+		<bool name="no-buffs">true</bool>
+		<bool name="targetable">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+      
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">empty</string>
+				
+				<int name="charges">1</int>	
+				<int name="cooldown">1800</int>
+				<int name="castpoint">0</int>
+				<int name="range">9000</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<bool name="aggro">true</bool>
+						<string name="unit">actors/bosses/vampire/thrall_leaper.unit</string>
+						<bool name="no-loot">true</bool>
+						<bool name="no-experience">true</bool>
+					</dict>
+
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="idle">
+		<scene name="empty">
+		</scene>
+		<scene name="idle">
+			<sprite origin="16 24" looping="false" ulayer="2" texture="./thrall_effects.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">0 16 32 32</frame>	
+				<frame time="100">32 16 32 32</frame>	
+				<frame time="100">64 16 32 32</frame>	
+				<frame time="100">96 16 32 32</frame>	
+				<frame time="100">128 16 32 32</frame>	
+				<frame time="100">160 16 32 32</frame>	
+				<frame time="100">192 16 32 32</frame>	
+				<frame time="100">224 16 32 32</frame>	
+				<frame time="100">0 48 32 32</frame>	
+				<frame time="100">32 48 32 32</frame>	
+				<frame time="100">64 48 32 32</frame>	
+				<frame time="100">96 48 32 32</frame>	
+				<frame time="100">128 48 32 32</frame>	
+				<frame time="100">160 48 32 32</frame>	
+				<frame time="100">192 48 32 32</frame>	
+				<frame time="100">224 48 32 32</frame>	
+				<frame time="100">0 80 32 32</frame>	
+				<frame time="100">32 80 32 32</frame>	
+				<frame time="100">0 0 0 0</frame>	
+			</sprite>
+			<sprite origin="16 24" looping="false" ulayer="1" texture="./thrall_pale.png" material="system/default.mats:floor">
+				<frame time="1100">160 160 32 32</frame>	
+				<frame time="100">0 192 32 32</frame>	
+				<frame time="100">32 192 32 32</frame>	
+				<frame time="100">64 192 32 32</frame>	
+				<frame time="100">96 192 32 32</frame>	
+				<frame time="100">128 192 32 32</frame>	
+				<frame time="100">160 192 32 32</frame>	
+				<frame time="1000">192 192 32 32</frame>
+			</sprite>
+			<light pos="0 0" delay="0">
+				<sprite texture="system/light_concentrated_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="500" />
+				<overbright value="2" />
+				<looping value="false" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="15" />
+					<size value="48" />
+					<size value="0" />
+				</sizes>
+ 				<colors>
+					<color value="0 0 0 0" />
+					<color value="255 20 100 0" />
+					<color value="0 0 0 0" />
+				</colors> 
+			</light>
+		</scene>
+	</scenes>
+</unit>

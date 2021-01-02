@@ -1,0 +1,33 @@
+<unit netsync="none">
+	<behavior class="SteeringRayProjectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/boss_wisp/ice_break</string>
+		<string name="fx">actors/mt/bosses/giant_wisp/giant_wisp_ice_hit.effect</string>
+
+		<int name="penetration">999</int>
+
+		<float name="speed">1</float>
+		<string name="speed-steer">pow((t*1.2),1)</string>
+		
+		<!-- <string name="dir-steer">(t*pi/1.5)-pi/1.5</string> -->
+		<!-- <string name="dir-steer">t*pi*0.5</string> -->
+		<string name="dir-steer">pow(t,0.5)*4</string>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">20</int>
+				<int name="physical">20</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<effect src="actors/mt/bosses/giant_wisp/giant_wisp_ice_ball.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

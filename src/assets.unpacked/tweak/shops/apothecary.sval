@@ -1,0 +1,389 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::UpgradeShop</string>
+
+	<string name="id">apothecary</string>
+	<string name="name">.shop.apothecary</string>
+
+	<array name="upgrades">
+		<!-- Charges -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">potion-charges</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>96 48 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-gold">500</int>
+
+					<string name="name">.shop.apothecary.charges.name?lvl=I</string>
+					<string name="desc">.shop.apothecary.charges.desc?num=2</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<int name="charges">1</int>
+					</dict>
+				</dict>
+
+				<!-- Level 2 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">1500</int>
+
+					<string name="name">.shop.apothecary.charges.name?lvl=II</string>
+					<string name="desc">.shop.apothecary.charges.desc?num=3</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<int name="charges">2</int>
+					</dict>
+				</dict>
+
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">4500</int>
+
+					<string name="name">.shop.apothecary.charges.name?lvl=III</string>
+					<string name="desc">.shop.apothecary.charges.desc?num=4</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<int name="charges">3</int>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Healing -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">potion-healing</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 48 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-gold">400</int>
+
+					<string name="name">.shop.apothecary.healing.name?lvl=I</string>
+					<string name="desc">.shop.apothecary.healing.desc?from=50&to=100</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="healing">2</float>
+					</dict>
+				</dict>
+
+				<!-- Level 2 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">1200</int>
+
+					<string name="name">.shop.apothecary.healing.name?lvl=II</string>
+					<string name="desc">.shop.apothecary.healing.desc?from=100&to=150</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="healing">3</float>
+					</dict>
+				</dict>
+
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">3600</int>
+
+					<string name="name">.shop.apothecary.healing.name?lvl=III</string>
+					<string name="desc">.shop.apothecary.healing.desc?from=150&to=250</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="healing">5</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">6000</int>
+
+					<string name="name">.shop.apothecary.healing.name?lvl=IV</string>
+					<string name="desc">.shop.apothecary.healing.desc?from=250&to=500</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="healing">10</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">9000</int>
+
+					<string name="name">.shop.apothecary.healing.name?lvl=V</string>
+					<string name="desc">.shop.apothecary.healing.desc?from=500&to=750</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="healing">15</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Mana -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">potion-mana</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>192 48 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="cost-gold">400</int>
+
+					<string name="name">.shop.apothecary.mana.name?lvl=I</string>
+					<string name="desc">.shop.apothecary.mana.desc?from=50&to=100</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="mana">2</float>
+					</dict>
+				</dict>
+
+				<!-- Level 2 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">1200</int>
+
+					<string name="name">.shop.apothecary.mana.name?lvl=II</string>
+					<string name="desc">.shop.apothecary.mana.desc?from=100&to=150</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="mana">3</float>
+					</dict>
+				</dict>
+
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">3600</int>
+
+					<string name="name">.shop.apothecary.mana.name?lvl=III</string>
+					<string name="desc">.shop.apothecary.mana.desc?from=150&to=250</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="mana">5</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">6000</int>
+
+					<string name="name">.shop.apothecary.mana.name?lvl=IV</string>
+					<string name="desc">.shop.apothecary.mana.desc?from=250&to=500</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="mana">10</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 5 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">9000</int>
+
+					<string name="name">.shop.apothecary.mana.name?lvl=V</string>
+					<string name="desc">.shop.apothecary.mana.desc?from=500&to=750</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::Potion</string>
+						<float name="mana">15</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Health gain -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">health-gain</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>120 48 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">750</int>
+
+					<string name="name">.shop.apothecary.heal-pickups.name?lvl=I</string>
+					<string name="desc">.shop.apothecary.heal-pickups.desc?num=50</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::HealthGain</string>
+						<float name="scale">1.5</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.apothecary.heal-pickups.name?lvl=II</string>
+					<string name="desc">.shop.apothecary.heal-pickups.desc?num=100</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::HealthGain</string>
+						<float name="scale">2</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">5000</int>
+
+					<string name="name">.shop.apothecary.heal-pickups.name?lvl=III</string>
+					<string name="desc">.shop.apothecary.heal-pickups.desc?num=200</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::HealthGain</string>
+						<float name="scale">3</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">7500</int>
+
+					<string name="name">.shop.apothecary.heal-pickups.name?lvl=IV</string>
+					<string name="desc">.shop.apothecary.heal-pickups.desc?num=400</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::HealthGain</string>
+						<float name="scale">5</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Mana gain -->
+		<dict>
+			<string name="class">Upgrades::ModifierUpgrade</string>
+			<string name="id">mana-gain</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 48 24 24</vec4>
+			</array>
+			<array name="steps">
+				<!-- Level 1 -->
+				<dict>
+					<int name="restrict-shop-level-min">2</int>
+					<int name="cost-gold">750</int>
+
+					<string name="name">.shop.apothecary.mana-pickups.name?lvl=I</string>
+					<string name="desc">.shop.apothecary.mana-pickups.desc?num=50</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::ManaGain</string>
+						<float name="scale">1.5</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 2 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">1</int>
+%endif
+					<int name="restrict-shop-level-min">3</int>
+					<int name="cost-gold">2500</int>
+
+					<string name="name">.shop.apothecary.mana-pickups.name?lvl=II</string>
+					<string name="desc">.shop.apothecary.mana-pickups.desc?num=100</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::ManaGain</string>
+						<float name="scale">2</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 3 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">2</int>
+%endif
+					<int name="restrict-shop-level-min">4</int>
+					<int name="cost-gold">5000</int>
+
+					<string name="name">.shop.apothecary.mana-pickups.name?lvl=III</string>
+					<string name="desc">.shop.apothecary.mana-pickups.desc?num=200</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::ManaGain</string>
+						<float name="scale">3</float>
+					</dict>
+				</dict>
+				
+				<!-- Level 4 -->
+				<dict>
+%if HARDCORE
+					<int name="restrict-player-title-min">3</int>
+%endif
+					<int name="restrict-shop-level-min">5</int>
+					<int name="cost-gold">7500</int>
+
+					<string name="name">.shop.apothecary.mana-pickups.name?lvl=IV</string>
+					<string name="desc">.shop.apothecary.mana-pickups.desc?num=400</string>
+
+					<dict name="modifier">
+						<string name="class">Modifiers::ManaGain</string>
+						<float name="scale">5</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

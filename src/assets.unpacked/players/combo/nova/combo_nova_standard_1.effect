@@ -1,0 +1,57 @@
+<effect looping="true">
+	<param name="angle" default="2" />
+	<param name="height" default="0" />
+	<param name="cR" default="1" />
+	<param name="cG" default="0" />
+	<param name="cB" default="0.8" />
+	
+	
+	<sprite looping="true" origin="5 5.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+	
+		angle="angle">
+		
+		<frame time="500">0 21 6 11</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="6 5.5" texture="./combo_nova.png" material="system/default.mats:glow"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0.5"
+	
+		angle="angle">
+		
+		<frame time="500">7 21 7 11</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="12" />
+
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+	</light>
+</effect>

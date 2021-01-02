@@ -1,0 +1,37 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="on">
+			%if EDITOR
+			<text layer="101" pos="-16 -16" font="gui/fonts/arial11.fnt" text="Snowing\nBattlements" align="center" material="system/default.mats:bright"/>
+			<sprite origin="64 64" layer="100" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 128 128</frame>
+			</sprite>
+			%endif			
+			<effect src="doodads/terrain/snow_battlements.effect" />
+		</scene>
+		<scene name="off">
+			%if EDITOR 
+			<sprite origin="64 64" layer="100" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 128 128</frame>
+			</sprite>
+			%endif					
+		</scene>	
+		<scene name="wind20">		
+			<effect src="doodads/terrain/snow_battlements_wind20.effect" />
+		</scene>		
+		<scene name="wind40">		
+			<effect src="doodads/terrain/snow_battlements_wind40.effect" />
+		</scene>		
+		<scene name="wind60">		
+			<effect src="doodads/terrain/snow_battlements_wind60.effect" />
+		</scene>		
+		<scene name="wind80">		
+			<effect src="doodads/terrain/snow_battlements_wind80.effect" />
+		</scene>		
+		<scene name="wind100">		
+			<effect src="doodads/terrain/snow_battlements_wind100.effect" />
+		</scene>						
+	</scenes>
+</unit>
+
+

@@ -1,0 +1,141 @@
+<effect layer="-1">
+	
+	<!-- end section -->
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="4500" />
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="(sin(t*2*pi*10)*5+90) * (1-saturate((t-0.98)*1000000))" />
+			
+		<color-r value="0" />
+		<color-g value="1.9" />
+		<color-b value="2.5" />
+		<color-a value="0"/>
+			
+	</light>
+
+	<scene name="visible">
+	<!-- LOOPING -->
+		<sprite origin="32 32" looping="false" texture="./lich_frost_area.png" material="system/default.mats:default">
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">0 0 0 0</frame>
+		</sprite>
+	 
+		<sprite origin="32 34" layer="1" looping="false" texture="./lich_frost_area.png" material="system/default.mats:glow">
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">192 0 64 64</frame>
+			<frame time="100">0 64 64 64</frame>
+			<frame time="100">0 0 64 64</frame>
+			<frame time="100">64 0 64 64</frame>
+			<frame time="100">128 0 64 64</frame>
+			<frame time="100">0 0 0 0</frame>
+		</sprite>
+	
+	<!-- END -->
+		<sprite origin="32 32" looping="false" texture="./lich_frost_area.png" material="system/default.mats:default">			
+			<frame time="4300">0 0 0 0</frame>
+			<frame time="50">0 64 64 64</frame>
+			<frame time="50">192 64 64 64</frame>
+			<frame time="50">128 64 64 64</frame>
+			<frame time="50">64 64 64 64</frame>
+		</sprite>
+	 
+		<sprite origin="32 34" looping="false" texture="./lich_frost_area.png" material="system/default.mats:glow">
+			<frame time="4300">0 0 0 0</frame>
+			<frame time="50">0 64 64 64</frame>
+			<frame time="50">192 64 64 64</frame>
+			<frame time="50">128 64 64 64</frame>
+			<frame time="50">64 64 64 64</frame>
+		</sprite>
+	</scene>
+</effect>

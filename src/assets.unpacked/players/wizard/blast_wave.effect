@@ -1,0 +1,57 @@
+<effect looping="false">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<!-- 
+	<sprite looping="true" origin="4 4" texture="./fireball_2.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle + pi">
+		
+		<frame time="50">0 11 13 7</frame>
+	</sprite> -->
+	
+	<sprite looping="false" origin="64 64" texture="./flame_blastwave.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle + t*0.1">
+		
+		<frame time="50">0 0 128 128</frame>
+		<frame time="50">128 0 128 128</frame>
+		<frame time="50">256 0 128 128</frame>
+		<frame time="50">384 0 128 128</frame>
+		<frame time="50">0 128 128 128</frame>
+		<frame time="50">128 128 128 128</frame>
+		<frame time="50">256 128 128 128</frame>
+		<frame time="60">384 128 128 128</frame>
+		<frame time="60">0 256 128 128</frame>
+		<frame time="60">128 256 128 128</frame>
+		<frame time="50">0 0 0 0</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="140 * (1-t)" />
+
+		<color-r value="4" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	
+</effect>

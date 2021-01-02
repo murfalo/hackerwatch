@@ -1,0 +1,45 @@
+%define TIER4
+%define AGENT_BLAZE
+%replace AGENTNAME .bestiary.name.agent_blaze
+%replace MINIMAPICON "234 250 11 11"
+%replace SPINSKILLTOGGLE blazespinflag
+%replace SWORDBUFF firesword
+%replace AGENTPATH actors/mt/bosses/agents/agent_blaze
+%replace BESTIARYOVERRIDE actors/mt/bosses/agents/agent_blaze/agent_blaze.unit
+
+%replace MOVESPEED 2.9
+%replace HEALTHPOTIONS 1
+%replace IMMORTALITYPOTIONS 5
+
+%replace WHIRLCD 4000
+%replace WHIRLRANGE 40
+%replace WHIRLSPEED 5
+%replace WHIRLACC 10
+%replace WHIRLTURNSPEED 0.25
+%replace WHIRLDUR 2000
+
+%replace AIMINTERCEPTION -1
+%replace SHOOTMINRANGE 24
+%replace SHOOTRANGE 150
+
+%replace SHOOTCD 2000
+%replace SHOOTBURST 3
+%replace SHOOTPROJECTILES 1
+%replace SHOOTSPREAD 0
+
+%replace SHOOTNIGHTCD 1000
+%replace SHOOTNIGHTBURST 5
+%replace SHOOTNIGHTPROJECTILES 2
+%replace SHOOTNIGHTSPREAD 30
+
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+		%include "actors/mt/bosses/agents/_agent_base.inc"
+		<array name="skills">
+			%include "actors/mt/bosses/agents/_agent_skills.inc"
+		</array>
+	</behavior>
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		%include "actors/mt/bosses/agents/_agent_gfx.inc"
+	</scenes>
+</unit>

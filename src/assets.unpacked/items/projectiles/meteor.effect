@@ -1,0 +1,49 @@
+<effect layer="120" looping="false">
+	<param name="fall_angle" default="0" />
+	<param name="fall_dist" default="300" />
+	<param name="radius" default="55" />
+	
+	<sprite origin="7 40" looping="false" texture="./meteor.png" material="system/default.mats:bright-noxray"
+		color-a="saturate(t*5)"
+		
+		pos-x="cos(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+		pos-y="sin(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+		
+		angle="fall_angle"
+	>
+		<frame time="500">0 0 13 43</frame>
+	</sprite>
+	<sprite origin="7 40" looping="false" texture="./meteor.png" material="system/default.mats:glow"
+		color-a="saturate(t*5)"
+		
+		pos-x="cos(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+		pos-y="sin(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+		
+		angle="fall_angle"
+	>
+		<frame time="500">13 0 13 43</frame>
+	</sprite>
+	
+	
+	
+	<light 
+		pos-x="cos(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+		pos-y="sin(fall_angle-pi/2)*fall_dist * saturate(1-(t+l))"
+	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+				
+		<looping value="true" />
+		<length value="500" />
+		
+		<cast-shadows value="false" />
+
+		<size value="saturate(t*5)*64" />
+
+		<color-r value="3" />
+		<color-g value="0.75" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

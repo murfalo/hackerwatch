@@ -1,0 +1,159 @@
+<effect bounds="100 100" >	
+	<param name="old_ttl" default="10000" />
+	<param name="ttl" default="2000" />
+	
+<!--
+%if GFX_VFX_HIGH
+	<data>
+		<string name="gore">effects/gibs/effects/gib_biorifle.sval</string>
+	</data>
+%endif
+-->
+
+	<variation>
+		%// flame burst
+		<sprite looping="false" ulayer="0" origin="9 76" texture="actors/bosses/vampire/fire_area.png" material="effects/effects.mats:fire"
+		
+		pos-y="0"
+		pos-x="0"
+		>
+			<frame time="100">0 52 17 79</frame> 
+			<frame time="100">17 52 17 79</frame> 
+			<frame time="100">34 52 17 79</frame> 
+			<frame time="100">51 52 17 79</frame> 
+			<frame time="100">68 52 17 79</frame> 
+			<frame time="100">85 52 17 79</frame> 
+			<frame time="100">102 52 17 79</frame> 
+		</sprite>
+
+	
+	%// fire standalone	(middle)
+		<sprite looping="true" ulayer="0" origin="16 39" texture="actors/bosses/vampire/fire_area.png" material="effects/effects.mats:fire"
+		
+		pos-y="0"
+		pos-x="0"
+		
+		%//scale-x="((sin(t*4.7*1)/2)+0.5)"
+		%//scale-y="((sin(t*4.7*1)/2)+0.5)"
+		
+		scale-x="max(0, 1-t*0.6)"
+		scale-y="max(0, 1-t*0.6)"
+		>
+			<frame time="60">0 0 31 52</frame> 
+			<frame time="60">31 0 31 52</frame> 
+			<frame time="60">62 0 31 52</frame> 
+			<frame time="60">93 0 31 52</frame> 
+			<frame time="60">124 0 31 52</frame> 
+			<frame time="60">155 0 31 52</frame> 
+		</sprite>
+	</variation>
+	
+	<variation>
+		%// flame burst
+		<sprite looping="false" ulayer="0" origin="9 76" texture="actors/bosses/vampire/fire_area.png" material="effects/effects.mats:fire"
+		
+		pos-y="0"
+		pos-x="0"
+		>
+			<frame time="90">0 52 17 79</frame> 
+			<frame time="90">17 52 17 79</frame> 
+			<frame time="90">34 52 17 79</frame> 
+			<frame time="90">51 52 17 79</frame> 
+			<frame time="90">68 52 17 79</frame> 
+			<frame time="90">85 52 17 79</frame> 
+			<frame time="90">102 52 17 79</frame> 
+		</sprite>
+
+	
+	%// fire standalone	(middle)
+		<sprite looping="true" ulayer="0" origin="16 39" texture="actors/bosses/vampire/fire_area.png" material="effects/effects.mats:fire"
+		
+		pos-y="0"
+		pos-x="0"
+		
+		%//scale-x="((sin(t*4.7*1)/2)+0.5)"
+		%//scale-y="((sin(t*4.7*1)/2)+0.5)"
+		
+		scale-x="max(0, 0.9-t*0.5)"
+		scale-y="max(0, 0.9-t*0.5)"
+		>
+			<frame time="70">93 0 31 52</frame> 
+			<frame time="70">124 0 31 52</frame> 
+			<frame time="70">155 0 31 52</frame> 
+			<frame time="70">0 0 31 52</frame> 
+			<frame time="70">31 0 31 52</frame> 
+			<frame time="70">62 0 31 52</frame> 
+		</sprite>
+	</variation>
+	
+	<variation>
+		
+	%// flame burst
+		<sprite looping="false" ulayer="0" origin="9 76" texture="actors/bosses/vampire/fire_area.png" material="effects/effects.mats:fire"
+		
+		pos-y="0"
+		pos-x="0"
+		>
+			<frame time="85">0 52 17 79</frame> 
+			<frame time="85">17 52 17 79</frame> 
+			<frame time="85">34 52 17 79</frame> 
+			<frame time="85">51 52 17 79</frame> 
+			<frame time="85">68 52 17 79</frame> 
+			<frame time="85">85 52 17 79</frame> 
+			<frame time="85">102 52 17 79</frame> 
+		</sprite>
+		
+	
+	%// fire standalone	(middle)
+		<sprite looping="true" ulayer="0" origin="16 39" texture="actors/bosses/vampire/fire_area.png" material="effects/effects.mats:fire"
+		
+		pos-y="0"
+		pos-x="0"
+		
+		%//scale-x="((sin(t*4.7*1)/2)+0.5)"
+		%//scale-y="((sin(t*4.7*1)/2)+0.5)"
+		
+		scale-x="max(0, 0.7-t*0.3)"
+		scale-y="max(0, 0.7-t*0.3)"
+		>
+			<frame time="65">31 0 31 52</frame> 
+			<frame time="65">62 0 31 52</frame> 
+			<frame time="65">93 0 31 52</frame> 
+			<frame time="65">124 0 31 52</frame> 
+			<frame time="65">155 0 31 52</frame> 
+			<frame time="65">0 0 31 52</frame> 
+
+		</sprite>
+	</variation>
+
+
+	
+	
+	%// longflame
+	<light pos-x="0" pos-y="pow(t, 4) *-15">
+		<sprite texture="system/light_L.png">
+			<frame time="750">0 0 128 128</frame>
+		</sprite>
+			
+		<length value="7500" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 800) * 400" />
+		
+		<size value="max(0,150-t*25)" />
+		
+		<color-r value="max(0,0.8-t*0.8)" />
+		<color-g value="max(0, 0.2-t*0.2)" />
+		<color-b value="max(0, 0.2-t*0.2)" />
+		<color-a value="0" />
+	</light>
+
+</effect>

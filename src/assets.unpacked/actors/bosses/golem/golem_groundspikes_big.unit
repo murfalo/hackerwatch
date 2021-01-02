@@ -1,0 +1,35 @@
+<unit netsync="none">
+	<behavior class="LurkerProjectile">
+		<string name="anim">attack</string>
+		<float name="speed">6</float>
+		<int name="ttl">2000</int>
+		<string name="fx">actors/bosses/golem/golem_lurker_hit.effect</string>
+
+		<int name="spawn-freq">60</int>
+		<bool name="miss-fx">true</bool>
+		
+		<int name="ignore-at-hardness">1</int>
+		<int name="destroy-at-hardness">4</int>
+		
+		<float name="team-dmg">0</float>
+		
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="physical">30</int>
+		</dict>
+
+		<float name="jitter">0.2</float>
+	</behavior>	
+	
+	<scenes default="idle">
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="attack">
+			<effect ulayer="2" src="actors/bosses/golem/projectile_groundspikes_big.effect" />		
+		</scene>
+	</scenes>
+</unit>

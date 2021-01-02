@@ -1,0 +1,52 @@
+<effect looping="false" layer="-1">
+	<sprite origin="32 32" looping="false" texture="./lich_1_mb_glyph.png" material="system/default.mats:bright"
+	
+	
+	color-a="max(1-t*t,0)"
+	>
+		<frame time="325">128 0 64 64</frame>
+	</sprite>
+	<sprite origin="32 32" looping="false" texture="./lich_1_mb_glyph.png" material="system/default.mats:bright"
+	
+	pos-y="-10+(10 * t)"
+	
+	color-a="max(0.75-t*t,0)"
+	>
+		<frame time="325">128 0 64 64</frame>
+	</sprite>
+		
+	<sprite origin="18 18" looping="false" texture="./lich_1_mb_glyph.png" material="system/default.mats:bright"
+	
+	pos-y="-10+(10 * t)"
+	
+	color-a="max(0.75-t*t,0)"
+	
+	>
+		<frame time="325">0 128 36 35</frame>
+	</sprite>
+	
+	<light> 
+		<sprite texture="system/light_square_L_axial.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="325" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		
+		<size value="t*60" />
+		
+		<color-r value="2" />
+		<color-g value="0" />
+		<color-b value="2" />
+		<color-a value="0" />
+	</light>
+</effect>

@@ -1,0 +1,18 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="shared">
+			%if EDITOR 
+			<sprite origin="4 4" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 8 8</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="off">
+			<scene src="shared" />
+		</scene>
+		<scene name="on">
+			<scene src="shared" />
+			<effect src="./night_beam_impact.effect" />
+		</scene>
+	</scenes>
+</unit>

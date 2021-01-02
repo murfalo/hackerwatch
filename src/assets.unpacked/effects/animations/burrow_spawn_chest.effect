@@ -1,0 +1,117 @@
+<effect looping="false" layer="2">
+	<param name="radius" default="13" />
+	<param name="ttl" default="10000" />
+<!-- 
+	<data>
+		<string name="gore">effects/gibs/gib_burrow_spawner.sval</string>
+	</data>	 -->
+
+<!-- particles -->
+
+<sprite origin="3 3" looping="false" texture="effects/animations/dust_desert.png" material="system/default.mats:default-noxray"
+		num-sprites="radius*radius/30*t"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="100">0 48 6 6</frame>
+		<frame time="100">6 48 6 6</frame>
+		<frame time="100">12 48 6 6</frame>
+		<frame time="200">18 48 6 6</frame>
+		<frame time="200">24 48 6 6</frame>
+		<frame time="200">30 48 6 6</frame>
+		<frame time="100">36 48 6 6</frame>
+		<frame time="100">42 48 6 6</frame>
+	</sprite>
+	
+	
+<sprite origin="3 3" looping="false" texture="effects/animations/dust_desert.png" material="system/default.mats:default-noxray"
+		num-sprites="radius*radius/30*t"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5) + sin(t*2*pi)*2"
+		pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -10 * it"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="75">0 48 6 6</frame>
+		<frame time="75">6 48 6 6</frame>
+		<frame time="75">12 48 6 6</frame>
+		<frame time="150">18 48 6 6</frame>
+		<frame time="150">24 48 6 6</frame>
+		<frame time="150">30 48 6 6</frame>
+		<frame time="75">36 48 6 6</frame>
+		<frame time="75">42 48 6 6</frame>
+	</sprite>
+	<sprite origin="3 3" looping="false" texture="effects/animations/dust_desert.png" material="system/default.mats:default-noxray"
+		num-sprites="radius*radius/30*t"
+
+		pos-x="cos(rand(u+89*i)*2*pi) * radius * pow(rand(u+829*i),0.5) + cos(t*2*pi)*2"
+		pos-y="sin(rand(u+89*i)*2*pi) * radius * pow(rand(u+829*i),0.5)  -15 * it"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="50">0 48 6 6</frame>
+		<frame time="50">6 48 6 6</frame>
+		<frame time="100">12 48 6 6</frame>
+		<frame time="50">18 48 6 6</frame>
+		<frame time="50">24 48 6 6</frame>
+		<frame time="50">30 48 6 6</frame>
+		<frame time="100">36 48 6 6</frame>
+		<frame time="50">42 48 6 6</frame>
+	</sprite>
+	
+	
+	
+		<sprite looping="false" origin="7 15" texture="effects/animations/dust_desert.png" material="system/default.mats:default-noxray"
+		num-sprites="radius*radius/30"
+		pos-x="cos(rand(u+97*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		pos-y="sin(rand(u+97*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		color-a="1 - sin(t*t*t*t*t)"
+		
+		>
+			<frame time="70">0 0 14 17</frame>		
+			<frame time="70">14 0 14 17</frame>		
+			<frame time="70">28 0 14 17</frame>		
+			<frame time="70">42 0 14 17</frame>		
+			<frame time="70">56 0 14 17</frame>		
+			<frame time="70">70 0 14 17</frame>		
+			<frame time="70">84 0 14 17</frame>		
+		</sprite>
+		<sprite looping="false" origin="6 13" texture="effects/animations/dust_desert.png" material="system/default.mats:default-noxray"
+		num-sprites="radius*radius/30"
+		pos-x="cos(rand(u+11*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		pos-y="sin(rand(u+11*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		color-a="1 - sin(t*t*t*t*t)"
+		
+		>		
+			<frame time="70">44 17 11 15</frame>			
+			<frame time="70">55 17 11 15</frame>			
+			<frame time="70">66 17 11 15</frame>
+			<frame time="70">0 17 11 15</frame>			
+			<frame time="70">11 17 11 15</frame>			
+			<frame time="70">22 17 11 15</frame>			
+			<frame time="70">33 17 11 15</frame>				
+		</sprite>
+		<sprite looping="false" origin="7 11" texture="effects/animations/dust_desert.png" material="system/default.mats:default-noxray"
+		num-sprites="radius*radius/30"
+		pos-x="cos(rand(u+953*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		pos-y="sin(rand(u+953*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		color-a="1 - sin(t*t*t*t*t)"
+		
+		>
+			<frame time="70">52 32 13 13</frame>	
+			<frame time="70">65 32 13 13</frame>	
+			<frame time="70">78 32 13 13</frame>	
+			<frame time="70">0 17 13 13</frame>	
+			<frame time="70">13 32 13 13</frame>	
+			<frame time="70">26 32 13 13</frame>	
+			<frame time="70">39 32 13 13</frame>	
+			
+			
+		</sprite>
+</effect>

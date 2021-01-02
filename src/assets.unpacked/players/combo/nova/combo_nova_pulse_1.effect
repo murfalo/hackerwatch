@@ -1,0 +1,69 @@
+<effect looping="true" wpos-track="15">
+	<param name="angle" default="2" />
+	<param name="height" default="0" />
+	<param name="cR" default="1" />
+	<param name="cG" default="0" />
+	<param name="cB" default="0.8" />
+	
+		
+	<trail texture="./combo_nova_trail.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="150" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="6 * (1 - i / 6)" />
+		
+		<uv-l-x value="(t+i)*8" />
+		<uv-l-y value="13" />
+		
+		<uv-r-x value="(t+i)*8" />
+		<uv-r-y value="19" />
+		
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="1 * (1 - i / 12)" />
+	</trail>
+	
+	<sprite looping="true" origin="5 3.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+	
+		angle="angle">
+		
+		<frame time="500">0 63 9 7</frame>
+	</sprite>
+	
+	
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="12" />
+
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+	</light>
+</effect>

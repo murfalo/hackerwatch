@@ -1,0 +1,33 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/enemy/bat_mb/shoot</string>
+		<string name="hit-snd">event:/enemy/bat_mb/hit</string>
+		<string name="bounce-snd">event:/enemy/bat_mb/hit</string>
+		<string name="fx">actors/mt/projectiles/bat_mb_sonic_wave_hit.effect</string>
+		
+		<float name="speed">4.2</float>
+		<int name="ttl">3500</int>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">40</int>
+				<float name="resistance-mul">0.8</float>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="idle">
+			<effect src="actors/mt/projectiles/bat_mb_sonic_wave.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

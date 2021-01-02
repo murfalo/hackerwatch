@@ -1,0 +1,26 @@
+<effect looping="false" layer="300">
+<param name="radius" default="12" />
+	<sprite origin="23 24" looping="false" texture="./shade_explosion.png" material="system/default.mats:glow-both-bright"
+		angle="rand(u+i+23)*pi*2">
+		<frame time="50">0 0 48 48</frame>
+		<frame time="50">48 0 48 48</frame>
+		<frame time="50">96 0 48 48</frame>
+		<frame time="50">144 0 48 48</frame>
+		<frame time="50">192 0 48 48</frame>
+		<frame time="50">0 48 48 48</frame>
+		<frame time="50">48 48 48 48</frame>
+		<frame time="50">96 48 48 48</frame>
+		<frame time="50">144 48 48 48</frame>
+	</sprite>
+	<sprite origin="0 10" looping="false" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10+5*saturate((t+l)))"
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		pos-y="-1*it*sin(rand(u+13*i))*2*pi) * radius/2"
+		color-r="1*saturate(5*t+l)"
+		color-g="0"
+		color-b="1*saturate(10*t+l)"
+		color-a="saturate(sin(it*pi))*(1-t)"
+		>
+		<frame time="500">0 0 1 1</frame>
+	</sprite>
+</effect>

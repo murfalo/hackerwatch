@@ -1,0 +1,21 @@
+<effect random-start="true" looping="true" bounds="4096 4096" material="doodads/terrain/terrain.mats:cloud_low">
+	<sprite random-start="true" looping="true" origin="16 2048" texture="./bird_pigeon.png" material="system/default.mats:bright-noxray"
+		num-sprites="10"
+		angle="(t+l)*pi*0.0075+i*0.025+rand(u)*2*pi"
+		
+		pos-x="rand(u+i)   *2000-1000"
+		pos-y="rand(u+i*2) *2000-1000"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+	>
+		<frame time="100">0 0 16 16</frame>
+		<frame time="200">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">32 16 16 16</frame>
+		<frame time="100">48 16 16 16</frame>
+		<frame time="100">32 16 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+	</sprite>
+</effect>

@@ -1,0 +1,20 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="208" height="200" anchor="0.5 0.5">
+				<scrollrect id="stats" width="200" height="200" anchor="0.5 0.5" color="#0000007F" flow="vbox">
+					<systext id="stats-text" offset="10 10" />
+				</scrollrect>
+				<scrollbar forid="stats" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<spritebutton spriteset="close" anchor="1 0" offset="-8 0" func="close" />
+			</rect>
+		</group>
+	</doc>
+</gui>

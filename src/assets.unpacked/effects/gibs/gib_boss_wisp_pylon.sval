@@ -1,0 +1,67 @@
+<dict>
+	<vec3 name="spread">8 8 5</vec3>
+	<vec3 name="offset">0 0 10</vec3>
+	<bool name="gore">true</bool>
+
+	<array name="gib-decal">
+
+	</array>
+	
+	<array name="death-gib">
+		<float>0</float>
+		<dict>
+			<int name="min">8</int>
+			<int name="max">16</int>
+			<float name="force">0.4</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">wisp_pylon_1</string>
+			<string name="decal">gib-decal</string>
+			<bool name="stay">true</bool>
+		</dict>
+		<dict>
+			<int name="min">8</int>
+			<int name="max">16</int>
+			<float name="force">0.5</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">wisp_pylon_2</string>
+			<string name="decal">gib-decal</string>
+			<bool name="stay">true</bool>
+		</dict><!-- 
+		<dict>
+			<int name="min">4</int>
+			<int name="max">8</int>
+			<float name="force">0.4</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">wisp_pylon_3</string>
+			<string name="decal">gib-decal</string>
+			<bool name="stay">true</bool>
+		</dict>
+		<dict>
+			<int name="min">4</int>
+			<int name="max">8</int>
+			<float name="force">0.5</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">wisp_pylon_4</string>
+			<string name="decal">gib-decal</string>
+			<bool name="stay">true</bool>
+		</dict> -->
+	</array>
+	
+	<array name="death-effect">
+		<float>0</float>
+		<dict>
+			<int name="chance">1</int>
+			<string name="effect">effects/animations/impact_magic_blue.effect</string>
+		</dict>
+	</array>
+
+	<array name="hit-decal">
+
+	</array>
+	
+	<array name="death-decal">
+		<float>0.2</float>
+
+		<float>0</float>
+	</array>
+</dict>

@@ -1,0 +1,59 @@
+<gui>
+	<sprites>
+		<sprite name="icon-legacy" texture="gui/icons.png"><frame>233 24 12 13</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+
+		<sprite name="button-frame" texture="gui/shop.png"><frame>0 258 32 32</frame></sprite>
+		<sprite name="button-frame-inner" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="checkbutton" texture="gui/widget.png"><frame>346 0 32 32</frame></sprite>
+		<sprite name="checkbutton-hover" texture="gui/widget.png"><frame>346 32 32 32</frame></sprite>
+		<sprite name="checkbutton-checked" texture="gui/widget.png"><frame>346 64 32 32</frame></sprite>
+		<sprite name="checkbutton-disabled" texture="gui/widget.png"><frame>378 64 32 32</frame></sprite>
+
+%include "gui/dlc_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- List -->
+			<scrollrect id="list" flow="hboxwrapped" width="288" height="203" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="list" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Header template -->
+			<rect id="template-header" visible="false" width="288" height="18" spriteset="gui/variable/headline_hor.sval">
+				<group inner="true" anchor="0.5 0.5" flow="hbox" spacing="3">
+					<!-- Text -->
+					<text id="text" font="gui/fonts/arial11_bold.fnt" />
+				</group>
+			</rect>
+
+			<!-- DLC icon template -->
+			<sprite id="template-dlc" visible="false" anchor="0 0.5" offset="0 1" />
+
+			<!-- Container template -->
+			<grouprect id="template-container" visible="false" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" inner="true" flow="hboxwrapped" width="288" />
+
+			<!-- Item template -->
+			<checkbox id="template-item" visible="false" spriteset="checkbutton" func="check-skin">
+				<!-- Icon -->
+				<sprite id="icon" anchor="0.5 0.5" />
+			</checkbox>
+
+			<!-- Owned template -->
+			<sprite id="template-owned" visible="false" src="button-frame">
+				<!-- Inner frame -->
+				<sprite src="button-frame-inner" offset="2 2" />
+
+				<!-- Icon -->
+				<sprite id="icon" anchor="0.5 0.5" />
+
+				<!-- Checkmark -->
+				<sprite src="icon-check" anchor="1 1" offset="-5 -5" />
+			</sprite>
+		</group>
+	</doc>
+</gui>

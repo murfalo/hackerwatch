@@ -1,0 +1,15 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>	
+			<sprite origin="8 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle offset="-2 0" radius="7" />			
+			</collision>
+			<sprite origin="9 10" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">205 302 20 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,36 @@
+<unit slot="doodad">
+	<scenes closed="closed" open="open">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-26 -10 50 17</rect>
+			</collision>
+			<shadow darkness="1">
+				<rect cast-len="11">-21 -6 42 12</rect>
+			</shadow>
+		</scene>
+		
+		<scene name="closed">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="240 87 12 12" />
+			<scene src="shared" />
+			<sprite origin="22 18" looping="false" ulayer="5" texture="./sarcophagus.png" material="system/default.mats:default-noxray">
+				<frame time="70">0 59 44 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="open">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="240 99 12 12" />
+			<scene src="shared" />
+			<sprite origin="22 26" looping="false" ulayer="5" texture="./sarcophagus.png" material="system/default.mats:default-noxray">
+				<frame time="70">52 74 46 32</frame>
+			</sprite>
+			<collision static="true">
+				<rect>-26 -10 50 17</rect>
+				<polygon>
+					<point>-23 -10</point>
+					<point>-18 -19</point>
+					<point>19 -10</point>
+				</polygon>
+			</collision>
+		</scene>
+	</scenes>
+</unit>

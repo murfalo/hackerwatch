@@ -1,0 +1,153 @@
+<effect looping="false">
+
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<param name="radius" default="24" />
+	
+	
+	<sprite looping="false" origin="32 32" texture="./impact_magic.png" material="system/default.mats:bright-noxray"
+	angle="rand(u)*pi*2"
+	>		
+		<frame time="50">0 0 64 64</frame>	
+		<frame time="50">64 0 64 64</frame>			
+		<frame time="50">128 0 64 64</frame>			
+		<frame time="50">192 0 64 64</frame>	
+		<frame time="50">0 64 64 64</frame>	
+		<frame time="50">64 64 64 64</frame>			
+	</sprite>
+	
+	<sprite looping="false" origin="32 32" texture="./impact_magic.png" material="system/default.mats:glow-both-bright"
+	angle="rand(u)*pi*2"
+	>		
+		<frame time="70">0 0 64 64</frame>				
+		<frame time="70">0 0 0 0</frame>				
+	</sprite>
+	
+	
+	
+	<sprite origin="0 0" looping="false" texture="./impact_magic.png" material="system/default.mats:default-noxray"
+		num-sprites="50"
+
+		pos-x="rand(u+i+23)*it*50*(2-t) - rand(u+i+101)*it*50*(2-t)"
+        pos-y="rand(u+i+149)*it*50*(2-t) - rand(u+i+2)*it*50*(2-t)"
+		
+		color-a="1 - sin(t*t)"
+	>
+        
+		<frame time="100">33 26 1 1</frame>
+		<frame time="100">83 20 1 1</frame>
+		<frame time="100">142 24 1 1</frame>
+		<frame time="100">229 15 1 1</frame>
+		<frame time="100">71 79 1 1</frame>
+	</sprite>
+	
+	
+	
+	<sprite origin="3 3" looping="false" texture="players/ranger/explosion_bomb_ranger.png" material="system/default.mats:glow-both-bright"
+		num-sprites="12"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-r="0.8"
+		color-g="1.5"
+		color-b="3"
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="100">12 112 6 6</frame>
+		<frame time="200">18 112 6 6</frame>
+		<frame time="200">24 112 6 6</frame>
+		<frame time="200">30 112 6 6</frame>
+		<frame time="100">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+	<sprite origin="3 3" looping="false" texture="players/ranger/explosion_bomb_ranger.png" material="system/default.mats:glow-both-bright"
+		num-sprites="11"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * radius * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-r="0.8"
+		color-g="1.5"
+		color-b="3"
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="200">12 112 6 6</frame>
+		<frame time="100">18 112 6 6</frame>
+		<frame time="100">24 112 6 6</frame>
+		<frame time="100">30 112 6 6</frame>
+		<frame time="200">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+	
+	<!-- 
+	<sprite origin="0 0" looping="false" texture="./impact_magic.png" material="system/default.mats:default-noxray"
+		num-sprites="50"
+
+		pos-x="rand(u+i+23)*100 - rand(u+i+101)*it*100"
+        pos-y="-100 + rand(u+i+149)*100 + 100*t"
+		color-r="1"
+		color-g="1"
+		color-b="2"
+		color-a="0.5*saturate(sin(t*pi))"
+	>
+        
+		<frame time="5000">83 20 1 1</frame>
+	</sprite> -->
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="80" />
+			
+		<color-r value="3" />
+		<color-g value="3" />
+		<color-b value="2" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="48*(1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0.5" />
+		<color-a value="0"/>
+		
+	</light>			
+		
+</effect>

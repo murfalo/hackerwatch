@@ -1,0 +1,40 @@
+<unit slot="doodad">
+	<scenes e="e" s="s" w="w" n="n">
+		<scene name="shared">
+			<minimap_sprite origin="6 6" texture="gui/minimap.png" frame="224 176 12 12" />
+			<collision static="true" nav-block="true">
+				<circle offset="0 0" radius="24" />
+				%//<circle sensor="true" radius="12" />
+			</collision>
+			<shadow>
+				<sprite origin="24 62" texture="./boss_agents_floor.png" material="system/default.mats:default">
+					<frame>449 1130 63 79</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="e">
+			<scene src="shared"/>
+			<sprite origin="24 56" texture="./boss_agents_floor.png" material="system/default.mats:proj-wall">
+				<frame>464 192 48 80</frame>
+			</sprite>
+		</scene>
+		<scene name="s">
+			<scene src="shared"/>
+			<sprite origin="24 56" texture="./boss_agents_floor.png" material="system/default.mats:proj-wall">
+					<frame>464 272 48 80</frame>
+				</sprite>
+			</scene>
+		<scene name="w">
+			<scene src="shared"/>
+			<sprite origin="24 56" texture="./boss_agents_floor.png" material="system/default.mats:proj-wall">
+				<frame>464 352 48 80</frame>
+			</sprite>
+		</scene>
+		<scene name="n">
+			<scene src="shared"/>
+			<sprite origin="24 56" texture="./boss_agents_floor.png" material="system/default.mats:proj-wall">
+				<frame>464 432 48 80</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

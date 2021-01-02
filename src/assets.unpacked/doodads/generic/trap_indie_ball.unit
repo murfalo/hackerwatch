@@ -1,0 +1,38 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">2.5</float>
+		<int name="ttl">60000</int>
+		<int name="penetration">1000</int>
+		
+		<string name="fx">doodads/generic/trap_indie_ball_hit.effect</string>
+		%//<string name="shoot-snd">event:/misc/trap_arrow_shoot</string>
+		<string name="loop-snd">event:/misc/trap_indieball-travel</string>
+		
+		<array name="effects">
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">200</int>
+				<bool name="true-strike">true</bool>
+				<float name="armor-mul">0.25</float>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:boulder_stun</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<minimap_sprite origin="3.5 3.5" texture="gui/minimap.png" frame="42 16 7 7" />
+			<collision static="false">
+				<circle projectile="true" shoot-through="false" offset="0 -2" radius="11" />
+			</collision>
+			<sprite origin="13 16" texture="./trap_indie_ball.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 30 29</frame>
+				<frame time="100">32 0 30 29</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

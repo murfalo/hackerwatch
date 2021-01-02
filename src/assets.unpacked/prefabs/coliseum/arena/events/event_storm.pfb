@@ -1,0 +1,1080 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name="doodads/terrain/rain.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>2</int>
+			<vec3>-342 -129 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>3</int>
+			<vec3>7 43 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>4</int>
+			<vec3>-96 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<array><int>35</int><int>30000</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>5</int>
+			<vec3>239 37 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>6</int>
+			<vec3>-96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>7</int>
+			<vec3>-115 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>8</int>
+			<vec3>-320 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>9</int>
+			<vec3>96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>10</int>
+			<vec3>8 126 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>11</int>
+			<vec3>-160 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>22</int>
+					<int>32</int>
+					<int>49</int>
+					<int>38</int>
+					<int>19</int>
+					<int>51</int>
+					<int>75</int>
+					<int>76</int>
+					<int>80</int>
+					<int>67</int>
+					<int>55</int>
+					<int>59</int>
+					<int>16</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>12</int>
+			<vec3>342 -126 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>13</int>
+			<vec3>9 -46 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>14</int>
+			<vec3>-128 768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_event</string>
+			<dict>
+				<string name="EventName">env_event</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>15</int>
+			<vec3>-344 35 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>16</int>
+			<vec3>12 -118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>17</int>
+			<vec3>-256 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Activate</string>
+			<array>
+				<int>6</int>
+				<int>0</int>
+				<int>20</int>
+				<int>0</int>
+				<int>34</int>
+				<int>0</int>
+				<int>28</int>
+				<int>0</int>
+				<int>4</int>
+				<int>0</int>
+				<int>8</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>18</int>
+			<vec3>240 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>19</int>
+			<vec3>-114 123 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>20</int>
+			<vec3>-256 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>52</int><int>35</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>21</int>
+			<vec3>241 -52 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>22</int>
+			<vec3>-333 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>23</int>
+			<vec3>346 -50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>24</int>
+			<vec3>351 27 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>25</int>
+			<vec3>128 768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_default</string>
+			<dict>
+				<string name="EventName">env_default</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>26</int>
+			<vec3>126 44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>27</int>
+			<vec3>128 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>28</int>
+			<vec3>-128 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>arena_storm</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena_storm.env</string>
+			</dict>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>29</int>
+			<vec3>0 480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">250</int>
+			</dict>
+			<array><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>30</int>
+			<vec3>-62 321 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>39</int>
+					<int>15</int>
+					<int>48</int>
+					<int>2</int>
+					<int>7</int>
+					<int>44</int>
+					<int>79</int>
+					<int>60</int>
+					<int>78</int>
+					<int>77</int>
+					<int>65</int>
+					<int>64</int>
+					<int>57</int>
+					<int>13</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>80</int>
+			<vec3>-398 191 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>32</int>
+			<vec3>-352 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>33</int>
+			<vec3>-256 672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">storm activated</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>34</int>
+			<vec3>-96 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="TimeMin">20000</int>
+				<int name="TimeMax">30000</int>
+				<array name="LinkScripts"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>35</int>
+			<vec3>0 608 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Finished</string>
+			<array><int>46</int><int>0</int><int>9</int><int>0</int><int>40</int><int>0</int><int>27</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>36</int>
+			<vec3>256 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>events_deactivate</string>
+			<dict>
+				<string name="EventName">events_deactivate</string>
+			</dict>
+			<array><int>52</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>37</int>
+			<vec3>342 119 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>38</int>
+			<vec3>-234 38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>39</int>
+			<vec3>-226 125 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>40</int>
+			<vec3>128 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal sky</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena.env</string>
+			</dict>
+			<array><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>41</int>
+			<vec3>235 -131 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>42</int>
+			<vec3>127 127 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>43</int>
+			<vec3>128 -45 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>44</int>
+			<vec3>-110 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>45</int>
+			<vec3>-256 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>storm_activate</string>
+			<dict>
+				<string name="EventName">storm_activate</string>
+			</dict>
+			<array><int>33</int><int>0</int><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>46</int>
+			<vec3>0 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>event_finished</string>
+			<dict>
+				<string name="EventName">event_finished</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>47</int>
+			<vec3>0 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">200</int>
+				<array name="LinkScripts"><int>11</int><int>30</int><int>53</int><int>54</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>48</int>
+			<vec3>-237 -49 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>49</int>
+			<vec3>-234 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>50</int>
+			<vec3>131 -117 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>51</int>
+			<vec3>-113 -49 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>52</int>
+			<vec3>256 480 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Deactivate</string>
+			<array><int>9</int><int>0</int><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>53</int>
+			<vec3>64 318 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>42</int>
+					<int>5</int>
+					<int>43</int>
+					<int>41</int>
+					<int>23</int>
+					<int>37</int>
+					<int>56</int>
+					<int>69</int>
+					<int>71</int>
+					<int>74</int>
+					<int>63</int>
+					<int>61</int>
+					<int>62</int>
+					<int>3</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>54</int>
+			<vec3>160 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>26</int>
+					<int>50</int>
+					<int>21</int>
+					<int>12</int>
+					<int>24</int>
+					<int>18</int>
+					<int>66</int>
+					<int>72</int>
+					<int>70</int>
+					<int>73</int>
+					<int>58</int>
+					<int>68</int>
+					<int>10</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>55</int>
+			<vec3>-330 -209 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>56</int>
+			<vec3>335 -215 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>57</int>
+			<vec3>11 -199 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>58</int>
+			<vec3>238 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>59</int>
+			<vec3>-111 -202 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>60</int>
+			<vec3>-235 -202 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>61</int>
+			<vec3>129 -203 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>62</int>
+			<vec3>11 211 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>63</int>
+			<vec3>243 205 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>64</int>
+			<vec3>-111 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>65</int>
+			<vec3>-313 203 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>66</int>
+			<vec3>340 206 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>67</int>
+			<vec3>-220 209 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>68</int>
+			<vec3>130 212 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>69</int>
+			<vec3>453 -115 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>70</int>
+			<vec3>454 -44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>71</int>
+			<vec3>458 30 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>72</int>
+			<vec3>448 105 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>73</int>
+			<vec3>420 -189 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>74</int>
+			<vec3>417 180 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>75</int>
+			<vec3>-458 -121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>76</int>
+			<vec3>-445 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>77</int>
+			<vec3>-437 127 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>78</int>
+			<vec3>-457 -38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>79</int>
+			<vec3>-411 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/lightning.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

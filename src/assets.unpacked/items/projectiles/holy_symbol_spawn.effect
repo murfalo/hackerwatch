@@ -1,0 +1,89 @@
+<effect layer="0" looping="false">
+	
+	
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:glow-both-bright"
+		pos-y="-30+30*t"
+		
+		color-a="t/2"
+	>
+		<frame time="400">0 0 24 24</frame>
+	</sprite>
+	
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:glow-both-bright"
+		pos-y="-20+20*t"
+		
+		color-a="t/2"
+	>
+		<frame time="400">40 40 24 24</frame>
+	</sprite>
+	
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:glow-both-bright"
+		pos-y="-40+40*t"
+		
+		color-a="t/2"
+	>
+		<frame time="400">40 40 24 24</frame>
+	</sprite>
+	
+	
+	<!-- flare -->
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:bright-noxray"
+		pos-y="-10+10*t"
+		pos-x="10-10*t"
+		scale-x="1.1+t*0.2"
+		scale-y="1.1+t*0.2"
+		
+		color-a="t/20"
+	>
+		<frame time="400">0 0 24 24</frame>
+	</sprite>
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:bright-noxray"
+		pos-y="-10+10*t"
+		pos-x="-10+10*t"
+		scale-x="1.2+t*0.2"
+		scale-y="1.2+t*0.2"
+		color-a="t/20"
+	>
+		<frame time="400">0 0 24 24</frame>
+	</sprite>
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:bright-noxray"
+		pos-y="10-10*t"
+		pos-x="10-10*t"
+		scale-x="1.1+t*0.2"
+		scale-y="1.1+t*0.2"
+		
+		color-a="t/20"
+	>
+		<frame time="400">0 0 24 24</frame>
+	</sprite>
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:bright-noxray"
+		pos-y="10-10*t"
+		pos-x="-10+10*t"
+		scale-x="1.2+t*0.2"
+		scale-y="1.2+t*0.2"
+		
+		color-a="t/20"
+	>
+		<frame time="400">0 0 24 24</frame>
+	</sprite>
+	
+	
+		
+	<light>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+				
+		<looping value="true" />
+		<length value="400" />
+		
+		<cast-shadows value="false" />
+
+		<size value="42*t" />
+
+		<color-r value="3*saturate(sin(t*pi))" />
+		<color-g value="2*saturate(sin(t*pi))" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

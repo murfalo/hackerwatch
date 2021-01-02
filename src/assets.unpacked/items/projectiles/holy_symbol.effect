@@ -1,0 +1,51 @@
+<effect layer="0" looping="true">
+	
+<!-- 	<sprite origin="12 12" looping="true" texture="./holy_symbol.png" material="system/default.mats:bright-noxray"
+		color-a="saturate(cos(t*pi*2))+0.2"
+	>
+		<frame time="70">40 40 24 24</frame>
+	</sprite>
+	 -->
+	<sprite origin="12 12" looping="true" texture="./holy_symbol.png" material="system/default.mats:glow-both-bright-player"
+		angle="t*pi"
+		color-a="saturate(sin(t*pi*2)*0.2)+0.2"
+	>
+		<frame time="1200">48 0 24 24</frame>
+	</sprite>
+	<sprite origin="12 12" looping="true" texture="./holy_symbol.png" material="system/default.mats:glow-both-bright-player"
+		color-a="saturate(sin(t*pi*2)*0.2)+0.2"
+	>
+		<frame time="200">0 24 24 24</frame>
+		<frame time="200">24 0 24 24</frame>
+		<frame time="200">0 0 24 24</frame>
+		<frame time="200">24 0 24 24</frame>
+		<frame time="200">0 24 24 24</frame>
+		<frame time="200">24 24 24 24</frame>
+	</sprite>
+	
+	
+	<sprite origin="12 12" looping="false" texture="./holy_symbol.png" material="system/default.mats:bright-noxray"
+		scale-x="1.2+saturate(sin(pi*t))*0.2"
+		scale-y="1.2+saturate(sin(pi*t))*0.2"
+		color-a="t/20"
+	>
+		<frame time="800">0 0 24 24</frame>
+	</sprite>
+	<light>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+				
+		<looping value="true" />
+		<length value="1200" />
+		
+		<cast-shadows value="false" />
+
+		<size value="42*saturate(sin(t*pi*2))" />
+
+		<color-r value="1.5*saturate(cos(t*pi*2))" />
+		<color-g value="1*saturate(cos(t*pi*2))" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

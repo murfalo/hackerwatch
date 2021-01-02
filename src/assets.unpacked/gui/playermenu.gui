@@ -1,0 +1,42 @@
+<gui>
+	<sprites>
+		<sprite name="frame-buttons" texture="gui/playermenu.png"><frame>0 0 332 20</frame></sprite>
+		<sprite name="frame-line" texture="gui/playermenu.png"><frame>0 20 332 3</frame></sprite>
+		<sprite name="frame-bottom" texture="gui/playermenu.png"><frame>0 25 332 2</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="332" height="258" anchor="0.5 0.5">
+				<sprite src="frame-buttons" />
+				<sprite src="frame-line" offset="0 20" />
+				<sprite src="frame-bottom" offset="0 256" />
+
+				<rect offset="0 23" width="2" height="233" spriteset="gui/variable/playermenu_left_vert.sval" />
+				<rect offset="330 23" width="2" height="233" spriteset="gui/variable/playermenu_right_vert.sval" />
+
+				<!-- Tab buttons -->
+				<rect offset="2 2" width="310" height="18">
+					<checkboxgroup id="tabs-container" width="310" height="18">
+						<clip id="tabs-clip" width="310" height="18" flow="hbox">
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="map" func="set-tab map" text=".hud.character.map" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="character" func="set-tab character" text=".hud.character.character" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="effects" func="set-tab effects" text=".hud.character.effects" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="stats" func="set-tab stats" text=".hud.character.stats" />
+						</clip>
+					</checkboxgroup>
+				</rect>
+
+				<spritebutton spriteset="close" offset="312 2" func="close" />
+
+				<rect id="tab-map" width="328" height="233" offset="2 23" />
+				<rect id="tab-character" width="328" height="233" offset="2 23" />
+				<rect id="tab-effects" width="328" height="233" offset="2 23" />
+				<rect id="tab-stats" width="328" height="233" offset="2 23" />
+			</rect>
+		</group>
+	</doc>
+</gui>

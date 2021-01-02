@@ -1,0 +1,80 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">2.5</float>	
+		<int name="ttl">7000</int>
+		
+		<string name="shoot-snd">event:/misc/trap_fireball_shoot</string>
+		<string name="hit-snd">event:/misc/trap_fireball_hit</string>
+		<string name="fx">doodads/generic/trap_shooter_fire_projectile_normal_hit.effect</string>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">40</int>
+			</dict>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:burning</string>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">2</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>
+		
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="34 9 1 1" />
+
+			<effect src="doodads/generic/trap_shooter_fire_projectile_normal.effect" />
+			
+			<light pos="0 3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="3" />
+				<overlay value="true" />				
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="255 150 0 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 3">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<overlay value="true" />				
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="255 150 0 0" />
+				</colors>
+			</light>						
+
+			<shadow>
+				<sprite origin="4 0" texture="doodads/special/shadows.png">
+					<frame>7 10 9 9</frame>
+				</sprite>
+			</shadow>			
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,35 @@
+<effect looping="false" layer="1"
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="false" origin="2 3" texture="./trap_shooters.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="rand(u)*2">
+		
+		<frame time="50">0 50 5 5</frame>
+		<frame time="50">5 50 5 5</frame>
+		<frame time="50">10 50 5 5</frame>
+		<frame time="50">0 55 5 5</frame>
+		<frame time="50">5 55 5 5</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="false" />
+
+		<size value="saturate(sin(t*pi))*32" />
+		
+		<color-r value="2" />
+		<color-g value="0.5" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

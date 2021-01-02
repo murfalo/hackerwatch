@@ -1,0 +1,82 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<sprite looping="true" origin="3 1.5" texture="./archer_arrow.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="50">0 0 9 3</frame>
+		<frame time="50">0 3 9 3</frame>
+		<frame time="50">0 6 9 3</frame>
+	</sprite>
+	<!-- 
+	<trail texture="effects/empty.png" ulayer="1" material="system/default.mats:projectile">
+		
+		<pos-x value="cos(pi+angle)*i*20*saturate(t+l)" />
+		<pos-y value="sin(pi+angle)*i*20*saturate(t+l)-height" />
+		
+		<length value="200" />
+		<looping value="true" />
+		
+		<segments value="4" />
+		<size value="10 - i*6" />
+
+		<uv-x value="0" />
+		<uv-y value="0" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+		
+		
+	</trail> -->
+	<trail texture="effects/empty.png" ulayer="1" material="system/default.mats:bright-noxray">
+		
+		%//<pos-x value="wposx(i)" />
+		%//<pos-y value="wposy(i)-height" />
+		
+		<pos-x value="cos(pi+angle)*i*10*saturate(t+l)" />
+		<pos-y value="sin(pi+angle)*i*10*saturate(t+l) -height" />
+		
+		<length value="200" />
+		<looping value="true" />
+		
+		<segments value="4" />
+		<size value="3-i" />
+
+		<uv-x value="0" />
+		<uv-y value="0" />
+		
+		<color-r value="2" />
+		<color-g value="1" />
+		<color-b value="3" />
+		<color-a value="(9-i)/175" />
+	</trail>
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="12" />
+
+		<color-r value="2" />
+		<color-g value="1" />
+		<color-b value="3" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,49 @@
+<unit>
+	<behavior class="BombBehavior">
+		<!-- <string name="spawn-sound">event:/misc/trap_spikes</string> -->
+		<string name="explode-sound">event:/misc/trap_spikes</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">300</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				
+				<string name="fx">actors/bosses/warden/bear_trap_bomb.effect</string>
+				
+				<int name="radius">18</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">10</int>
+					</dict>
+					
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:bear_trap</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">			
+			<!-- <effect src="actors/bosses/warden/bear_trap_bomb.effect" /> -->
+			
+			<sprite origin="7 7" layer="0" looping="false" texture="./bear_trap.png" material="system/default.mats:default">
+				<frame time="200">15 0 15 15</frame>
+				<frame time="50">30 0 15 15</frame>
+				<frame time="50">0 15 15 15</frame>
+				<!-- <frame time="50">45 0 15 15</frame> -->
+				<!-- <frame time="500">0 15 15 15</frame> -->
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

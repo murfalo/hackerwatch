@@ -1,0 +1,57 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="on">
+			<minimap_sprite origin="6 14" layer="500" texture="gui/minimap.png" frame="10 0 12 14"/>
+			<sprite origin="18 39" texture="./exit.png" material="system/default.mats:proj-wall">
+				<frame>0 0 38 40</frame>
+			</sprite>
+			<sprite origin="14 -1" layer="-10" texture="./../_shared.png" material="system/default.mats:floor">
+				<frame>0 0 30 13</frame>
+			</sprite>
+			<collision static="true">
+				<rect>-16 -16 32 16</rect>
+			</collision>
+			<light pos="0 -40">
+				<sprite texture="../exit_light_cone_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1500" />
+				<overbright value="20"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" /> 
+				
+				<sizes>
+					<size value="150" />
+				</sizes>
+				<colors>
+					<color value="220 200 50 0" />
+					<color value="220 170 50 0" />
+				</colors>
+			</light>	
+			<group pos="-32 0">
+				<effect ulayer="2" pos="4 -30" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-3 -20" src="doodads/walls/exit_moth.effect" />
+				<effect ulayer="2" pos="-5 -10" src="doodads/walls/exit_moth.effect" />	
+				<effect ulayer="2" pos="3 -8" src="doodads/walls/exit_moth.effect" />				
+				<effect ulayer="2" pos="0 0" src="doodads/walls/exit_moth.effect" />	
+				<effect ulayer="2" pos="3 8" src="doodads/walls/exit_moth.effect" />	
+				<effect ulayer="2" pos="5 10" src="doodads/walls/exit_moth.effect" />	
+			</group>
+		</scene>
+		
+		<scene name="off">
+			<minimap_sprite origin="6 14" layer="500" texture="gui/minimap.png" frame="74 32 12 14"/>
+			<collision static="true">
+				<rect>-16 -16 32 16</rect>
+			</collision>
+			<sprite origin="18 39" texture="./exit.png" material="system/default.mats:proj-wall">
+				<frame>0 0 38 40</frame>
+			</sprite>
+			<sprite origin="14 -1" layer="-10" texture="./../_shared.png" material="system/default.mats:floor">
+				<frame>0 0 30 13</frame>
+			</sprite>
+		</scene>				
+	</scenes>
+</unit>

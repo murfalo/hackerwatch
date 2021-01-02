@@ -1,0 +1,19 @@
+<unit slot="doodad">
+	<scenes default="default" cap_up="cap_up" cap_down="cap_down">
+		<scene name="default">
+			<sprite layer="-10" origin="11 12" looping="false" texture="./graveyard_pathway_cobble.png" material="system/default.mats:floor">
+				<frame>0 0 21 24</frame>
+			</sprite>
+		</scene>
+		<scene name="cap_down">
+			<sprite layer="-10" origin="11 12" looping="false" texture="./graveyard_pathway_cobble.png" material="system/default.mats:floor">
+				<frame>21 0 21 24</frame>
+			</sprite>
+		</scene>
+		<scene name="cap_up">
+			<sprite layer="-10" origin="11 12" looping="false" texture="./graveyard_pathway_cobble.png" material="system/default.mats:floor">
+				<frame>42 0 21 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

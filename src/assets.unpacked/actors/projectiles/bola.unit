@@ -1,0 +1,40 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">4</float>	
+		
+		<int name="ttl">2000</int>
+
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.02</float>	
+		
+		<array name="effects">
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/animations/impact_metal_1.effect</string>
+			</dict>
+
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:netted</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/projectiles/bola.effect" />
+			<collision static="false">
+				<circle projectile="true" offset="0 0" radius="4" />
+			</collision>
+			<!-- <shadow>
+				<sprite origin="4 0" texture="doodads/special/shadows.png">
+					<frame>7 10 9 9</frame>
+				</sprite>
+			</shadow>	 -->		
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,885 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">MainMenu</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_16.unit"><vec2>16 -8</vec2><int>9</int><vec2>0 -8</vec2><int>8</int><vec2>-32 -8</vec2><int>7</int><vec2>-16 -8</vec2><int>6</int></array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 6</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">32 12</vec2>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">f</bool>
+					<bool name="aim-through">f</bool>
+					<vec2 name="size">32 16</vec2>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -6</vec2>
+				<int>3</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">32 12</vec2>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -13</vec2>
+				<int>4</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">48 10</vec2>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 13</vec2>
+				<int>5</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">48 10</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/door_mt_teleport_h.unit">
+			<array>
+				<vec2>0 0</vec2>
+				<int>10</int>
+				<dict>
+					<string name="start">disabled</string>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>11</int>
+			<vec3>-640 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EnableDoor</string>
+			<array><int>46</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>12</int>
+			<vec3>0 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnCanceled"><int>19</int></array>
+				<array name="OnAllEntered"><int>13</int></array>
+				<array name="Areas"><int>5</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>13</int>
+			<vec3>64 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>14</int>
+			<vec3>-736 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>54</int><int>73</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>-96 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>16</int>
+			<vec3>-672 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>17</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>17</int>
+			<vec3>-704 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>open</string>
+			<dict>
+				<string name="State">open</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+			<array><int>63</int><int>500</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>18</int>
+			<vec3>96 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>-64 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>20</int>
+			<vec3>-224 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>GoNorth</string>
+			<array><int>21</int><int>0</int><int>51</int><int>0</int><int>34</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>21</int>
+			<vec3>-224 192 0</vec3>
+			<bool>t</bool>
+			<int>2</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>19</int><int>12</int><int>13</int><int>15</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>22</int>
+			<vec3>-64 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>19</int><int>12</int><int>13</int><int>15</int><int>18</int><int>70</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>23</int>
+			<vec3>0 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>FirstTimeTele</string>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+			</dict>
+			<array><int>48</int><int>0</int><int>20</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>24</int>
+			<vec3>0 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_setup</string>
+			<dict>
+				<string name="EventName">room_setup</string>
+			</dict>
+			<array><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>25</int>
+			<vec3>0 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>RoomNorthCleared</string>
+			<dict>
+				<string name="EventName">room_cleared</string>
+			</dict>
+			<array><int>39</int><int>0</int><int>55</int><int>0</int><int>56</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>26</int>
+			<vec3>0 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>RoomSouthCleared</string>
+			<dict>
+				<string name="EventName">room_cleared</string>
+			</dict>
+			<array><int>22</int><int>0</int><int>55</int><int>0</int><int>56</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>27</int>
+			<vec3>448 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ClearScripts</string>
+			<dict>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>28</int>
+			<vec3>-448 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SetupEnableDoor</string>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>29</int>
+			<vec3>0 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnAllEntered"><int>30</int></array>
+				<array name="OnCanceled"><int>36</int></array>
+				<array name="Areas"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>30</int>
+			<vec3>64 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>31</int>
+			<vec3>-704 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleGTScene</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>68</int><int>76</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>-96 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>41</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>33</int>
+			<vec3>-544 -160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat</string>
+			<dict>
+				<string name="EventName">great_threat</string>
+			</dict>
+			<array><int>76</int><int>0</int><int>68</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>34</int>
+			<vec3>-640 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CloseDoor</string>
+			<array><int>54</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>35</int>
+			<vec3>96 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>41</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>36</int>
+			<vec3>-64 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>37</int>
+			<vec3>-224 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>GoSouth</string>
+			<array><int>38</int><int>0</int><int>50</int><int>0</int><int>34</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>38</int>
+			<vec3>-224 -288 0</vec3>
+			<bool>t</bool>
+			<int>2</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>36</int><int>29</int><int>30</int><int>32</int><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>39</int>
+			<vec3>-64 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>36</int><int>29</int><int>30</int><int>32</int><int>35</int><int>69</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>40</int>
+			<vec3>-448 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SetupCloseDoor</string>
+			<array><int>34</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>41</int>
+			<vec3>0 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>FirstTimeTele</string>
+			<dict>
+				<array name="Areas"><int>4</int></array>
+			</dict>
+			<array><int>49</int><int>0</int><int>37</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>42</int>
+			<vec3>192 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>44</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>43</int>
+			<vec3>256 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">2</int>
+				<array name="Variable"><int>44</int></array>
+				<array name="OnTrue"><int>45</int></array>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>44</int><vec3>224 -96 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ScriptLink</string>
+			<int>45</int>
+			<vec3>256 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>BothCleared</string>
+			<array>
+				<int>47</int>
+				<int>0</int>
+				<int>62</int>
+				<int>800</int>
+				<int>64</int>
+				<int>300</int>
+				<int>73</int>
+				<int>0</int>
+				<int>31</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>46</int>
+			<vec3>-704 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enabled</string>
+			<dict>
+				<string name="State">enabled</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>47</int>
+			<vec3>224 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DisableAll</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>23</int><int>41</int><int>14</int><int>16</int></array>
+			</dict>
+			<array><int>21</int><int>0</int><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>48</int>
+			<vec3>0 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>49</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>50</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_activate</string>
+			<dict>
+				<string name="EventName">room_activate</string>
+				<int name="Radius">24</int>
+			</dict>
+			<array><int>52</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>51</int>
+			<vec3>0 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_activate</string>
+			<dict>
+				<string name="EventName">room_activate</string>
+				<int name="Radius">24</int>
+			</dict>
+			<array><int>52</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>52</int>
+			<vec3>64 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0</string>
+			<dict>
+				<array name="Scripts"><int>51</int><int>50</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>53</int>
+			<vec3>-352 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ToggleSetupScene</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>40</int><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>54</int>
+			<vec3>-704 -32 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>close</string>
+			<dict>
+				<string name="State">close</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+			<array><int>58</int><int>500</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>55</int>
+			<vec3>-224 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>FirstClear</string>
+			<array><int>53</int><int>0</int><int>64</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>56</int>
+			<vec3>128 -32 0</vec3>
+			<bool>t</bool>
+			<int>2</int>
+			<bool>f</bool>
+			<string>RoomClear</string>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>57</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_setup</string>
+			<dict>
+				<string name="EventName">room_setup</string>
+			</dict>
+			<array><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>58</int>
+			<vec3>-768 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>17</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+			<array><int>74</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>59</int>
+			<vec3>0 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ClearedTele</string>
+			<dict>
+				<array name="Areas"><int>3</int></array>
+			</dict>
+			<array><int>49</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>60</int>
+			<vec3>0 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ClearedTele</string>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>48</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>61</int>
+			<vec3>448 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EnableTwoWayTele</string>
+			<dict>
+				<array name="Scripts"><int>59</int><int>60</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>62</int>
+			<vec3>352 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>RoomCleared</string>
+			<array><int>61</int><int>0</int><int>27</int><int>0</int><int>65</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>63</int>
+			<vec3>-768 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>54</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>64</int>
+			<vec3>-640 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>OpenDoor</string>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>65</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>open_door</string>
+			<dict>
+				<int name="Radius">24</int>
+				<string name="EventName">open_door</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>66</int>
+			<vec3>-544 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat_done</string>
+			<dict>
+				<string name="EventName">great_threat_done</string>
+			</dict>
+			<array><int>67</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>67</int>
+			<vec3>-640 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>GT-end</string>
+			<dict>
+				<string name="State">GT-end</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+			<array><int>14</int><int>500</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>68</int>
+			<vec3>-640 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>GT-start</string>
+			<dict>
+				<string name="State">GT-start</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>69</int>
+			<vec3>-160 -480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableGT</string>
+			<dict>
+				<array name="Scripts"><int>36</int><int>32</int><int>29</int><int>30</int><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>70</int>
+			<vec3>-128 416 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableGT</string>
+			<dict>
+				<array name="Scripts"><int>19</int><int>12</int><int>13</int><int>15</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>71</int>
+			<vec3>-384 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Setup</string>
+			<array><int>40</int><int>0</int><int>28</int><int>0</int><int>72</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>72</int>
+			<vec3>-448 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EnableGT</string>
+			<dict>
+				<array name="Scripts"><int>33</int><int>66</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>73</int>
+			<vec3>-832 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>opened</string>
+			<dict>
+				<string name="State">opened</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+			<array><int>75</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>74</int>
+			<vec3>-832 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>73</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>75</int>
+			<vec3>-832 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>17</int><int>74</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>76</int>
+			<vec3>-640 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>GT-open</string>
+			<dict>
+				<string name="State">GT-open</string>
+				<array name="Units"><int>10</int></array>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

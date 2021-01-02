@@ -1,0 +1,324 @@
+<effect>
+<!-- origin +21 -->
+
+<!-- smoke -->
+	<sprite looping="false" origin="34 75" ulayer="2" texture="./djinn_spawn.png" material="system/default.mats:glow-both-bright"
+	pos-y="20*t"
+	>
+		
+		<frame time="100">0 0 64 80</frame>
+		<frame time="100">64 0 64 80</frame>
+		<frame time="100">128 0 64 80</frame>
+		<frame time="100">192 0 64 80</frame>
+		
+		<frame time="100">0 80 64 80</frame>
+		<frame time="100">64 80 64 80</frame>
+		<frame time="100">128 80 64 80</frame>
+		<frame time="100">192 80 64 80</frame>
+		
+		<frame time="100">0 160 64 80</frame>
+		<frame time="100">64 160 64 80</frame>
+		<frame time="100">128 160 64 80</frame>
+		<frame time="100">192 160 64 80</frame>
+		
+		<frame time="100">0 240 64 80</frame>
+		<frame time="100">64 240 64 80</frame>
+		<frame time="100">128 240 64 80</frame>
+		<frame time="100">192 240 64 80</frame>
+		
+		<frame time="100">0 320 64 80</frame>
+	</sprite>
+	
+	<!-- djinn -->
+	<sprite looping="false" origin="32 79" ulayer="2" texture="./djinn_spawn.png" material="system/default.mats:actor"
+	pos-y="20">
+		
+		<frame time="1000">0 0 0 0</frame>
+		<frame time="100">256 0 64 80</frame>
+		<frame time="100">320 0 64 80</frame>
+		<frame time="100">384 0 64 80</frame>
+		<frame time="100">448 0 64 80</frame>
+		
+		<frame time="100">256 80 64 80</frame>
+		<frame time="100">320 80 64 80</frame>
+		<frame time="100">384 80 64 80</frame>
+		<frame time="300">448 80 64 80</frame>
+		
+		<frame time="295">256 160 64 80</frame>
+		<frame time="265">320 160 64 80</frame>
+	</sprite>
+	
+	<!-- lamp -->
+	<!-- <sprite looping="true" origin="18 11" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor">
+		
+		<frame time="2560">0 496 32 16</frame>
+	</sprite> -->
+	
+	<light pos-x="0" pos-y="-80*t">
+		<sprite texture="system/light_L.png">
+			<frame time="1000">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="false" />
+		<length value="2800" />
+
+		<cast-shadows value="false" />
+
+		<size value="saturate( sin( t * pi * 2 ) ) * 125" />
+
+		<color-r value="1" />
+		<color-g value="0.25" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+	
+	
+	
+	
+	
+	<sprite mask="1001" origin="16 32" looping="false" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 20 + 5*saturate(t+l) +20"
+	scale-x="i/5+0.4"
+	scale-y="i/10+0.4"
+	>
+		<frame time="2560">352 0 32 32</frame>
+	</sprite>
+	<sprite masked="1001" origin="16 32" looping="false" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 20 + 5*saturate(t+l) +20"
+	scale-x="i/5+0.4"
+	scale-y="i/10+0.4"
+	color-a="saturate(2*t+l)"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+	</sprite>
+	
+	
+	
+	
+	
+	<sprite origin="16 32" looping="false" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 25 +20"
+	pos-x="sin(pi*it*2)*1"
+	num-sprites="1"
+	scale-x="(i/5+0.5)*0.5+(i/5+0.5)*0.5*saturate(t+l)"
+	scale-y="(i/10+0.5)*0.5+(i/10+0.5)*0.5*saturate(t+l)"
+	color-a="saturate(2*t+l)"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+	</sprite>
+	
+<sprite mask="1002" origin="16 32" looping="false" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 5/10*0.4*32*3 - 15 +20"
+	scale-x="0.6"
+	scale-y="0.6"
+	
+	
+	>
+		<frame time="2560">384 0 32 32</frame>
+	</sprite>
+	<sprite masked="1002" origin="16 32" looping="false" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 5/10*0.4*32*3 - 15 +20"
+	scale-x="0.6"
+	scale-y="0.6"
+	
+	color-a="saturate(2*t+l)"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+	</sprite>
+
+	
+</effect>

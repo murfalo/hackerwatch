@@ -1,0 +1,34 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">witch_hunter</string>
+	<string name="name">.skills.witch_hunter.searing-torch</string>
+	<string name="description">.skills.witch_hunter.searing-torch.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 192 24 24</vec4>
+	</array>
+
+	<int name="cost">25</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">castspell</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">500</int>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">ShootRandomEnemy</string>
+						<int name="range">125</int>
+						<string name="projectile">players/witch_hunter/mercenary/searing_torch_merc.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+</dict>

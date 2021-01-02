@@ -1,0 +1,86 @@
+<unit slot="doodad">
+	<scenes open="open" closed="closed" destroyed="destroyed">
+		<scene name="shared">
+			<sprite origin="14 0" layer="-1" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:floor">
+				<frame time="150">0 42 29 13</frame>
+			</sprite>
+	
+			<collision static="true">
+				<circle offset="-9 4" radius="2" aim-through="true"/>
+				<circle offset="9 4" radius="2" aim-through="true"/>
+			</collision>
+	 	</scene>
+
+		<scene name="open">
+			<scene src="shared" />
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="114 32 10 10" />	  
+				<sprite origin="10 34" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:proj-prop">
+				<frame time="150">20 0 20 42</frame>
+				<frame time="150">40 0 20 42</frame>
+				<frame time="150">60 0 20 42</frame>
+				<frame time="150">80 0 20 42</frame>
+			</sprite>
+			<sprite origin="10 34" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">20 59 20 42</frame>
+				<frame time="150">40 59 20 42</frame>
+				<frame time="150">60 59 20 42</frame>
+				<frame time="150">80 59 20 42</frame>
+			</sprite>
+
+
+			<light pos="0 10">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="0 100 150 0" />
+				</colors>
+			</light>
+			
+			<light pos="0 10">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="10" />
+				<looping value="true" />
+				<overlay value="false" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="0 100 150 0" />
+				</colors>
+			</light> 
+		</scene>
+
+		<scene name="closed">
+			<scene src="shared" />
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="124 32 10 10" />	  
+			<sprite origin="10 34" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 0 20 42</frame>
+			</sprite>
+		</scene>
+
+		<scene name="destroyed">
+		 	 <scene src="shared" />
+		 	 <minimap_sprite origin="5 5" texture="gui/minimap.png" frame="124 32 10 10" />	  
+			<sprite origin="10 34" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:proj-prop">
+				<frame time="100">100 0 20 42</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

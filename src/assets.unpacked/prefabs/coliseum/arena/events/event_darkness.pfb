@@ -1,0 +1,179 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/boss_archives_dark.env</string>
+	</dict>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>1</int>
+			<vec3>0 256 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Finished</string>
+			<array><int>6</int><int>0</int><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>2</int>
+			<vec3>-256 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>11</int><int>1</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>3</int>
+			<vec3>-256 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Activate</string>
+			<array><int>2</int><int>0</int><int>7</int><int>0</int><int>4</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>4</int>
+			<vec3>-64 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>dark</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena_darkness.env</string>
+			</dict>
+			<array><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>5</int>
+			<vec3>-256 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>darkness_activate</string>
+			<dict>
+				<string name="EventName">darkness_activate</string>
+			</dict>
+			<array><int>10</int><int>0</int><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>6</int>
+			<vec3>0 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>event_finished</string>
+			<dict>
+				<string name="EventName">event_finished</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>7</int>
+			<vec3>-96 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="TimeMin">20000</int>
+				<int name="TimeMax">30000</int>
+				<array name="LinkScripts"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>8</int>
+			<vec3>64 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena.env</string>
+			</dict>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>9</int>
+			<vec3>256 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>events_deactivate</string>
+			<dict>
+				<string name="EventName">events_deactivate</string>
+			</dict>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>10</int>
+			<vec3>-256 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">darkness activated</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>11</int>
+			<vec3>256 128 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Deactivate</string>
+			<array><int>1</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>12</int>
+			<vec3>-96 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<array><int>1</int><int>30000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>13</int>
+			<vec3>-64 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_event</string>
+			<dict>
+				<string name="EventName">env_event</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>14</int>
+			<vec3>64 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_default</string>
+			<dict>
+				<string name="EventName">env_default</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

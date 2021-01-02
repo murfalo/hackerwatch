@@ -1,0 +1,35 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">ranger</string>
+	<string name="name">.skills.ranger.twinned-arrows</string>
+	<string name="description">.skills.ranger.twinned-arrows.merc</string>
+
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>144 24 24 24</vec4>
+	</array>
+	
+	<int name="cost">25</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hit</string>
+				<bool name="target-self">false</bool>
+				<float name="chance">0.35</float>
+				<!-- <int name="timeout">1</int> -->
+				
+				<int name="weapon-info">1</int>
+				
+				<dict name="effect">
+					<string name="class">ShootRandomEnemy</string>
+					<int name="range">175</int>
+					<bool name="ignore-target">true</bool>
+					<string name="projectile">players/ranger/mercenary/twinned_arrow_merc.unit</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</dict>

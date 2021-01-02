@@ -1,0 +1,25 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+		<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="114 141 10 10" />
+			<collision static="true">
+				<polygon>
+					<point>0 48</point>
+					<point>0 32</point>		
+					<point>20 24</point>					
+					<point>20 48</point>
+				</polygon>
+				<polygon>
+					<point>20 48</point>
+					<point>20 24</point>		
+					<point>32 0</point>					
+					<point>48 0</point>					
+					<point>48 48</point>	
+				</polygon>
+			</collision>
+			<sprite layer="1" ulayer="1" origin="0 32" texture="./_deco.png" material="system/default.mats:wall">
+				<frame>0 183 40 40</frame>
+			</sprite>					
+		</scene>
+	</scenes>
+</unit>

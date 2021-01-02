@@ -1,0 +1,37 @@
+<gui>
+	<sprites>
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="icon-ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+		<sprite name="icon-star" texture="gui/icons.png"><frame>13 24 13 14</frame></sprite>
+		<sprite name="icon-reputation" texture="gui/icons.png"><frame>0 109 12 12</frame></sprite>
+
+		<sprite name="icon-potion" texture="gui/icons_others.png"><frame>0 0 24 24</frame></sprite>
+		<sprite name="icon-combo" texture="gui/icons_others.png"><frame>0 168 24 24</frame></sprite>
+		<sprite name="icon-anvil" texture="gui/icons_others.png"><frame>24 168 24 24</frame></sprite>
+		<sprite name="icon-bestiary" texture="gui/icons_others.png"><frame>48 168 24 24</frame></sprite>
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- Container -->
+			<group id="notifications" />
+
+			<!-- Template -->
+			<rect id="template" visible="false" width="32" height="25" offset="0 -25" spriteset="gui/variable/bigwindow_borders.sval" color="#ff0000ff" anchor="0.5 0">
+				<grouprect offset="4 4" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox">
+					<!-- Text -->
+					<text id="text" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 1" align="center" />
+
+					<!-- Subtexts -->
+					<group id="subtexts" inner="true" anchor="0.5 0" flow="hbox" spacing="2" offset="0 -1" />
+				</grouprect>
+			</rect>
+
+			<!-- Subtext template -->
+			<group id="template-subtext" visible="false" inner="true" flow="hbox" spacing="2">
+				<sprite id="icon" anchor="0 0.5" offset="0 1" />
+				<text id="text" font="gui/fonts/arial11.fnt" />
+			</group>
+		</group>
+	</doc>
+</gui>

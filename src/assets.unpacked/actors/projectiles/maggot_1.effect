@@ -1,0 +1,17 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="10" />
+	
+	<sprite looping="true" origin="6 1" texture="./maggot.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 8 3</frame>
+		<frame time="100">0 3 8 3</frame>
+		<frame time="100">0 6 8 3</frame>
+		<frame time="100">0 9 8 3</frame>
+	</sprite>
+</effect>

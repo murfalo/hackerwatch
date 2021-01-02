@@ -1,0 +1,30 @@
+<!-- <doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d.png</texture>
+		<origin>10 29</origin>
+		<frame>58 181 20 19</frame>				
+	</sprite>
+</doodad> -->
+
+
+<unit slot="doodad" >
+	<scenes off="off" on="on">
+		<scene name="off">
+			<sprite origin="10 28" texture="./_deco.png" material="system/default.mats:proj-prop">
+				<frame>196 65 20 18</frame>
+			</sprite>		
+		</scene>			
+		<scene name="on">
+			<sprite looping="false" origin="10 28" texture="./_deco.png" material="system/default.mats:proj-prop">
+				<frame time="100" >216 65 20 18</frame>
+				<frame time="100" >236 65 20 18</frame>
+				<frame time="80" >196 83 20 18</frame>
+				<frame time="80" >216 83 20 18</frame>
+				<frame time="80" >236 83 20 18</frame>
+				<frame time="80" >196 101 20 18</frame>
+				<frame time="100" >216 101 20 18</frame>
+				<frame time="100" >236 101 20 18</frame>
+			</sprite>		
+		</scene>				
+	</scenes>
+</unit>

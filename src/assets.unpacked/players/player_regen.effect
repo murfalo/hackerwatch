@@ -1,0 +1,32 @@
+<effect looping="true">
+	<param name="hp_regen" default="0" />
+	<param name="mp_regen" default="0" />
+
+	<sprite looping="true" origin="0 0" texture="effects/empty.png" material="system/default.mats:default-noxray" num-sprites="3 * min(5, mp_regen - 1)"
+
+		pos-x="cos(rand(il*21+i*17+7)*2*pi) * (10 - it * 5)"
+		pos-y="sin(rand(il*21+i*17+7)*2*pi) * (10 - it * 5)"
+        
+        color-r="0.1"
+        color-g="0.6"
+        color-b="1"
+		
+		color-a="saturate(1 - pow(it - 1, 8) - it)"		
+        >
+        <frame time="1000">0 0 1 1</frame>
+    </sprite>
+	
+	<sprite looping="true" origin="0 0" texture="effects/empty.png" material="system/default.mats:default-noxray" num-sprites="3 * min(5, hp_regen - 1)"
+
+		pos-x="cos(rand(il*21+i*17+7)*2*pi) * (10 - it * 5)"
+		pos-y="sin(rand(il*21+i*17+7)*2*pi) * (10 - it * 5)"
+        
+        color-r="1"
+		color-g="0.1"
+		color-b="0.1"
+		
+		color-a="saturate(1 - pow(it - 1, 8) - it)"		
+        >
+        <frame time="1000">0 0 1 1</frame>
+    </sprite>
+</effect>

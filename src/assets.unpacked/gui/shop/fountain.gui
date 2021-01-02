@@ -1,0 +1,177 @@
+<gui>
+	<sprites>
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="gold-gain" texture="gui/icons.png"><frame>49 52 11 10</frame></sprite>
+		<sprite name="star" texture="gui/icons.png"><frame>80 55 11 10</frame></sprite>
+		<sprite name="exp" texture="gui/icons.png"><frame>63 17 12 12</frame></sprite>
+
+		<sprite name="scale-balanced" texture="gui/scale.png"><frame>0 0 64 49</frame></sprite>
+		<sprite name="scale-right" texture="gui/scale.png"><frame>64 0 62 49</frame></sprite>
+		<sprite name="scale-left" texture="gui/scale.png"><frame>126 0 62 49</frame></sprite>
+
+		<sprite name="icon-favor-good" texture="gui/icons.png"><frame>89 27 17 12</frame></sprite>
+		<sprite name="icon-favor-bad" texture="gui/icons.png"><frame>89 39 17 12</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scalablebutton_check_sprites.inc"
+
+		<sprite name="check-lockedin-left" texture="gui/widget.png"><frame>128 126 37 26</frame></sprite>
+		<sprite name="check-lockedin-mid" texture="gui/widget.png"><frame>165 126 1 26</frame></sprite>
+		<sprite name="check-lockedin-right" texture="gui/widget.png"><frame>166 126 37 26</frame></sprite>
+
+		<sprite name="save-icon" texture="gui/icons.png"><frame>205 27 11 12</frame></sprite>
+
+		<sprite name="preset-separator" texture="gui/shop.png"><frame>0 322 10 18</frame></sprite>
+	</sprites>
+
+	<doc>
+		<group width="424" inner="true" flow="vbox">
+			<!-- Deposit -->
+			<rect width="424" height="20" spriteset="gui/variable/bigwindow_borders.sval">
+				<rect width="420" height="16" offset="2 2" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<group inner="true" anchor="0.5 0.5" flow="hbox" spacing="2">
+						<text id="deposited-gold" font="gui/fonts/arial11.fnt" />
+						<sprite src="gold" offset="0 3" />
+						<text font="gui/fonts/arial11.fnt" text=".fountain.throwninto" />
+					</group>
+				</rect>
+			</rect>
+
+			<!-- Deposit buttons -->
+			<rect id="deposit-buttons" width="424" height="18" flow="hbox">
+				<scaleiconbutton spriteset="scalebutton" func="deposit" value="50" width="85" font="gui/fonts/arial11.fnt" icon="gold" text="50" />
+				<scaleiconbutton spriteset="scalebutton" func="deposit" value="100" width="85" font="gui/fonts/arial11.fnt" icon="gold" text="100" />
+				<scaleiconbutton spriteset="scalebutton" func="deposit" value="500" width="84" font="gui/fonts/arial11.fnt" icon="gold" text="500" />
+				<scaleiconbutton spriteset="scalebutton" func="deposit" value="1000" width="85" font="gui/fonts/arial11.fnt" icon="gold" text="1 000" />
+				<scaleiconbutton spriteset="scalebutton" func="deposit" value="10000" width="85" font="gui/fonts/arial11.fnt" icon="gold" text="10 000" />
+			</rect>
+
+			<!-- Separator -->
+			<rect width="424" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- Wishes -->
+			<rect width="424" height="161" flow="hbox">
+				<!-- Separator -->
+				<rect width="3" height="161" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Positive -->
+				<rect width="164" height="161">
+					<!-- Header -->
+					<rect width="164" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11.fnt" anchor="0.5 0.5" text=".fountain.positive" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="164" height="3" spriteset="gui/variable/3pxbar_hor.sval" offset="0 18" />
+
+					<!-- List -->
+					<scrollrect id="wishes-good" flow="vbox" offset="0 21" width="153" height="140" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+					<!-- Scrollbar -->
+					<rect width="3" height="140" offset="153 21" spriteset="gui/variable/3pxbar_vert.sval" />
+					<scrollbar forid="wishes-good" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="3" height="161" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Negative -->
+				<rect width="164" height="161">
+					<!-- Header -->
+					<rect width="164" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11.fnt" anchor="0.5 0.5" text=".fountain.negative" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="164" height="3" spriteset="gui/variable/3pxbar_hor.sval" offset="0 18" />
+
+					<!-- List -->
+					<scrollrect id="wishes-bad" flow="vbox" offset="0 21" width="153" height="140" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+					<!-- Scrollbar -->
+					<rect width="3" height="140" offset="153 21" spriteset="gui/variable/3pxbar_vert.sval" />
+					<scrollbar forid="wishes-bad" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="3" height="161" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Favor -->
+				<rect width="84" height="161" flow="vbox">
+					<!-- Header -->
+					<rect width="84" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11.fnt" anchor="0.5 0.5" text=".fountain.favor" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="84" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Content -->
+					<rect width="84" height="137" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<!-- Favor points -->
+						<text id="favor-points" font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 2" text="XX" />
+
+						<!-- Scale -->
+						<sprite id="scale" src="scale-balanced" anchor="0.5 0" offset="0 20" />
+
+						<rect width="42" height="30" offset="0 70" flow="vbox" spacing="2">
+							<!-- Gold gain -->
+							<sprite src="gold-gain" anchor="0.5 0" />
+							<text id="gold-gain" font="gui/fonts/arial11.fnt" text="XX" anchor="0.5 0" />
+						</rect>
+
+						<rect width="42" height="30" offset="0 70" anchor="1 0" flow="vbox" spacing="2">
+							<!-- Experience gain -->
+							<sprite src="exp" offset="-1 -1" anchor="0.5 0" />
+							<text id="exp-mul" font="gui/fonts/arial11.fnt" text="XX" anchor="0.5 0" offset="0 -1" />
+						</rect>
+
+						<!-- Commit button -->
+						<text font="gui/fonts/arial11.fnt" offset="0 97" anchor="0.5 0" text=".fountain.acceptresult" />
+						<scaleiconbutton id="button" spriteset="scalebutton" func="buy" offset="0 115" anchor="0.5 0" width="80" font="gui/fonts/arial11.fnt" icon="gold" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="84" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="3" height="161" spriteset="gui/variable/3pxbar_vert.sval" />
+			</rect>
+
+			<!-- Wish template -->
+			<favorbutton id="wish-template" func="wishes-changed" spriteset="check" width="153" visible="false" textoffset="9 0" />
+
+			<!-- Separator -->
+			<rect width="424" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- Presets -->
+			<rect id="presets" width="424" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="hbox">
+				<!-- Separator -->
+				<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Preset list -->
+				<rect id="preset-list" width="418" height="18" flow="hbox" />
+
+				<!-- Separator -->
+				<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+			</rect>
+
+			<!-- Preset template -->
+			<grouprect id="preset-template" visible="false" inner="true" height="18" flow="hbox">
+				<!-- Separator -->
+				<sprite id="separator" src="preset-separator" visible="false" />
+
+				<!-- Load button -->
+				<scalebutton id="button-load" width="78" height="18" spriteset="scalebutton" font="gui/fonts/arial11.fnt" />
+
+				<!-- Save button -->
+				<scalebutton id="button-save" width="19" height="18" spriteset="scalebutton" tooltip=".fountain.presets.save">
+					<sprite src="save-icon" anchor="0.5 0.5" />
+				</scalebutton>
+			</grouprect>
+
+		</group>
+	</doc>
+</gui>

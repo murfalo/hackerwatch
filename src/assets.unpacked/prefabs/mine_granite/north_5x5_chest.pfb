@@ -1,0 +1,192 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/mine_granite/crn_sw.unit"><vec2>64 128</vec2><int>57</int><vec2>0 80</vec2><int>56</int><vec2>16 96</vec2><int>58</int></array>
+		<array name="doodads/generic/lamp_torch.unit"><vec2>56 48</vec2><int>2</int><vec2>32 16</vec2><int>3</int><vec2>80 16</vec2><int>1</int></array>
+		<array name="doodads/walls/mine_granite/crn_ne.unit"><vec2>32 96</vec2><int>11</int><vec2>16 80</vec2><int>9</int><vec2>96 0</vec2><int>10</int></array>
+		<array name="doodads/special/color_mine_granite_32.unit"><vec2>-8 88</vec2><int>12</int></array>
+		<array name="doodads/walls/mine_granite/crn_nw.unit"><vec2>0 0</vec2><int>54</int><vec2>64 96</vec2><int>55</int></array>
+		<array name="doodads/special/color_mine_granite_16.unit">
+			<vec2>24 104</vec2>
+			<int>42</int>
+			<vec2>8 -24</vec2>
+			<int>41</int>
+			<vec2>104 72</vec2>
+			<int>35</int>
+			<vec2>24 88</vec2>
+			<int>33</int>
+			<vec2>-8 56</vec2>
+			<int>34</int>
+			<vec2>104 24</vec2>
+			<int>40</int>
+			<vec2>104 88</vec2>
+			<int>39</int>
+			<vec2>88 88</vec2>
+			<int>38</int>
+			<vec2>-8 8</vec2>
+			<int>37</int>
+			<vec2>72 88</vec2>
+			<int>36</int>
+			<vec2>24 -24</vec2>
+			<int>18</int>
+			<vec2>-8 24</vec2>
+			<int>20</int>
+			<vec2>-8 40</vec2>
+			<int>21</int>
+			<vec2>104 -24</vec2>
+			<int>22</int>
+			<vec2>104 56</vec2>
+			<int>23</int>
+			<vec2>104 40</vec2>
+			<int>24</int>
+			<vec2>104 8</vec2>
+			<int>25</int>
+			<vec2>104 -8</vec2>
+			<int>26</int>
+			<vec2>72 -24</vec2>
+			<int>27</int>
+			<vec2>88 -24</vec2>
+			<int>28</int>
+			<vec2>-8 -8</vec2>
+			<int>29</int>
+			<vec2>72 104</vec2>
+			<int>30</int>
+			<vec2>40 -24</vec2>
+			<int>31</int>
+			<vec2>56 -24</vec2>
+			<int>32</int>
+			<vec2>-8 -24</vec2>
+			<int>19</int>
+		</array>
+		<array name="doodads/walls/mine_granite/crn_se.unit"><vec2>32 128</vec2><int>5</int><vec2>96 96</vec2><int>4</int></array>
+		<array name="doodads/walls/mine_granite/v_16.unit"><vec2>48 0</vec2><int>17</int><vec2>64 96</vec2><int>16</int><vec2>96 64</vec2><int>15</int><vec2>32 96</vec2><int>14</int></array>
+		<array name="doodads/walls/mine_granite/cap_s.unit"><vec2>48 32</vec2><int>13</int></array>
+		<array name="doodads/walls/mine_granite/h_16.unit"><vec2>80 96</vec2><int>45</int></array>
+		<array name="doodads/walls/mine_granite/_deco_ceiling_support.unit"><vec2>80 0</vec2><int>7</int><vec2>32 0</vec2><int>6</int></array>
+		<array name="doodads/walls/mine_granite/_deco_floor_puddle.unit"><vec2>57 96</vec2><int>8</int></array>
+		<array name="doodads/walls/mine_granite/_deco_floor_support.unit"><vec2>82 30</vec2><int>51</int><vec2>22 32</vec2><int>53</int><vec2>68 92</vec2><int>52</int></array>
+		<array name="doodads/walls/mine_granite/x_n.unit"><vec2>48 0</vec2><int>50</int></array>
+		<array name="doodads/walls/mine_granite/h.unit"><vec2>64 0</vec2><int>43</int><vec2>16 0</vec2><int>44</int></array>
+		<array name="doodads/walls/mine_granite/v.unit"><vec2>96 32</vec2><int>46</int><vec2>0 32</vec2><int>47</int><vec2>0 0</vec2><int>48</int><vec2>96 0</vec2><int>49</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>59</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>61</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>60</int>
+			<vec3>64 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>62</int><int>68</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>61</int>
+			<vec3>176 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest_a</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/chest_2x2_a.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>62</int>
+			<vec3>176 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_b</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_2x2_b.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>63</int>
+			<vec3>-16 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>1</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>64</int>
+			<vec3>112 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>7</int><int>3</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>69</int>
+			<vec3>48 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitCount</string>
+			<int>66</int>
+			<vec3>-64 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>8</int><int>52</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>67</int>
+			<vec3>48 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>64</int><int>63</int><int>69</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>68</int>
+			<vec3>176 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_a</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_2x2_a.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+	</array>
+</dict>

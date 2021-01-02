@@ -1,0 +1,413 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_16.unit">
+			<vec2>96 208</vec2>
+			<int>20</int>
+			<vec2>112 240</vec2>
+			<int>21</int>
+			<vec2>96 240</vec2>
+			<int>23</int>
+			<vec2>96 256</vec2>
+			<int>24</int>
+			<vec2>128 224</vec2>
+			<int>25</int>
+			<vec2>128 256</vec2>
+			<int>26</int>
+			<vec2>96 224</vec2>
+			<int>27</int>
+			<vec2>112 224</vec2>
+			<int>22</int>
+			<vec2>112 208</vec2>
+			<int>28</int>
+			<vec2>128 208</vec2>
+			<int>17</int>
+			<vec2>128 240</vec2>
+			<int>18</int>
+			<vec2>112 256</vec2>
+			<int>19</int>
+		</array>
+		<array name="prefabs/prefab_marker_64.unit">
+			<vec2>0 80</vec2>
+			<int>12</int>
+			<vec2>64 -32</vec2>
+			<int>16</int>
+			<vec2>64 80</vec2>
+			<int>11</int>
+			<vec2>0 32</vec2>
+			<int>10</int>
+			<vec2>64 32</vec2>
+			<int>9</int>
+			<vec2>176 -32</vec2>
+			<int>8</int>
+			<vec2>112 32</vec2>
+			<int>6</int>
+			<vec2>176 80</vec2>
+			<int>5</int>
+			<vec2>176 32</vec2>
+			<int>4</int>
+			<vec2>64 144</vec2>
+			<int>3</int>
+			<vec2>112 80</vec2>
+			<int>2</int>
+			<vec2>176 144</vec2>
+			<int>7</int>
+			<vec2>112 144</vec2>
+			<int>1</int>
+			<vec2>112 -32</vec2>
+			<int>15</int>
+			<vec2>0 -32</vec2>
+			<int>14</int>
+			<vec2>0 144</vec2>
+			<int>13</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>29</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>30</int><int>31</int><int>33</int><int>35</int><int>41</int><int>47</int><int>51</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>30</int>
+			<vec3>32 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>secret_chance</string>
+			<dict>
+				<string name="Prefab">prefabs/mine_granite/north_13x13_secret_chance.pfb</string>
+				<string name="Flag">secret_1</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>31</int>
+			<vec3>224 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>specialchest1</string>
+			<dict>
+				<string name="Prefab">prefabs/mine_granite/north_13x13_chest.pfb</string>
+				<string name="Flag">specialchest</string>
+			</dict>
+			<array><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>32</int>
+			<vec3>120 -136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array>
+				<int>34</int>
+				<int>0</int>
+				<int>39</int>
+				<int>0</int>
+				<int>43</int>
+				<int>0</int>
+				<int>49</int>
+				<int>0</int>
+				<int>53</int>
+				<int>0</int>
+				<int>45</int>
+				<int>0</int>
+				<int>29</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>33</int>
+			<vec3>224 96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>specialchest2</string>
+			<dict>
+				<string name="Prefab">prefabs/mine_granite/north_13x13_chest_2.pfb</string>
+				<string name="Flag">specialchest</string>
+			</dict>
+			<array><int>37</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>34</int>
+			<vec3>312 -304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest1</string>
+			<dict>
+				<string name="Flag">mines_specialchest1</string>
+				<array name="OnFalse"><int>36</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>35</int>
+			<vec3>224 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>empty</string>
+			<dict>
+				<int name="Chance">5</int>
+				<string name="Prefab">prefabs/mine_granite/north_13x13_empty.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>36</int>
+			<vec3>376 -304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>37</int>
+			<vec3>288 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest2</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">mines_specialchest2</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>38</int>
+			<vec3>288 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest1</string>
+			<dict>
+				<string name="Flag">mines_specialchest1</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>39</int>
+			<vec3>312 -248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest2</string>
+			<dict>
+				<string name="Flag">mines_specialchest2</string>
+				<array name="OnFalse"><int>40</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>40</int>
+			<vec3>376 -248 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>41</int>
+			<vec3>224 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>specialchest3</string>
+			<dict>
+				<string name="Prefab">prefabs/mine_granite/north_13x13_chest_3.pfb</string>
+				<string name="Flag">specialchest</string>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>42</int>
+			<vec3>288 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest3</string>
+			<dict>
+				<string name="Flag">mines_specialchest3</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>43</int>
+			<vec3>312 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest3</string>
+			<dict>
+				<string name="Flag">mines_specialchest3</string>
+				<array name="OnFalse"><int>44</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>44</int>
+			<vec3>376 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>41</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>45</int>
+			<vec3>-96 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>fountain_no_secrets</string>
+			<dict>
+				<string name="Flag">fountain_no_secrets</string>
+				<array name="OnTrue"><int>46</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>46</int>
+			<vec3>-32 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>47</int>
+			<vec3>224 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>specialchest4</string>
+			<dict>
+				<string name="Prefab">prefabs/mine_granite/north_13x13_chest_4.pfb</string>
+				<string name="Flag">specialchest</string>
+			</dict>
+			<array><int>48</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>48</int>
+			<vec3>288 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest4</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">mines_specialchest4</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>49</int>
+			<vec3>312 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest4</string>
+			<dict>
+				<string name="Flag">mines_specialchest4</string>
+				<array name="OnFalse"><int>50</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>50</int>
+			<vec3>376 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>47</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>51</int>
+			<vec3>224 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>specialchest6</string>
+			<dict>
+				<string name="Prefab">prefabs/mine_granite/north_13x13_chest_6.pfb</string>
+				<string name="Flag">specialchest</string>
+			</dict>
+			<array><int>52</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>52</int>
+			<vec3>288 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest6</string>
+			<dict>
+				<string name="Flag">mines_specialchest6</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>53</int>
+			<vec3>312 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mines_specialchest6</string>
+			<dict>
+				<string name="Flag">mines_specialchest6</string>
+				<array name="OnFalse"><int>54</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>54</int>
+			<vec3>376 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>51</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

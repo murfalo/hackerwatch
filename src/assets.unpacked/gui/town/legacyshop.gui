@@ -1,0 +1,85 @@
+<gui>
+	<sprites>
+		<sprite name="icon-legacy" texture="gui/icons.png"><frame>233 24 12 13</frame></sprite>
+		<sprite name="icon-legacy-town" texture="gui/icons.png"><frame>229 37 16 12</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="306" height="270" anchor="0.5 0.5" smooth="false" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox" padding="2 2">
+				<!-- Header -->
+				<rect width="302" height="18" flow="hbox">
+					<!-- Text -->
+					<rect width="281" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".town.legacyshop.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="close" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="302" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Tab buttons -->
+				<rect width="302" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<checkboxgroup id="tabs-container" width="302" height="18">
+						<clip id="tabs-clip" width="302" height="18" flow="hbox">
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="dyes" func="set-tab dyes" text=".mainmenu.character.customize.dyes" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="trails" func="set-tab trails" text=".mainmenu.character.customize.trails" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="frames" func="set-tab frames" text=".mainmenu.character.customize.frames" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="petskins" func="set-tab petskins" text=".mainmenu.character.customize.petskins" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="combos" func="set-tab combos" text=".mainmenu.character.customize.combos" />
+							<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" value="gravestones" func="set-tab gravestones" text=".mainmenu.character.customize.gravestones" />
+						</clip>
+					</checkboxgroup>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="302" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Tabs container -->
+				<rect width="302" height="203">
+					<!-- Left and right borders -->
+					<rect width="3" height="224" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect width="3" height="224" offset="299 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Tabs -->
+					<rect id="tab-dyes" width="296" height="224" offset="3 0" />
+					<rect id="tab-trails" width="296" height="224" offset="3 0" />
+					<rect id="tab-frames" width="296" height="224" offset="3 0" />
+					<rect id="tab-petskins" width="296" height="224" offset="3 0" />
+					<rect id="tab-combos" width="296" height="224" offset="3 0" />
+					<rect id="tab-gravestones" width="296" height="224" offset="3 0" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="302" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Button bar -->
+				<rect width="302" height="18" flow="hbox">
+					<rect width="24" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Points -->
+					<rect width="70" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<sprite src="icon-legacy-town" offset="4 3" />
+						<text id="points" font="gui/fonts/arial11.fnt" text="12" offset="22 1" />
+					</rect>
+
+					<rect width="24" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Buy button -->
+					<scaleiconbutton id="buy" func="buy" icon="icon-legacy" width="66" height="18" font="gui/fonts/arial11.fnt" spriteset="scalebutton" />
+
+					<rect width="118" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

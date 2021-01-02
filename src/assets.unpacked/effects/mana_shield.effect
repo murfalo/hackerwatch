@@ -1,0 +1,72 @@
+<effect layer="2">
+	
+	<data>
+		<string name="sound">event:/enemy/lich/manashield</string>
+	</data>		
+	
+	<sprite looping="false" origin="9 12" texture="./mana_shield.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="0.75"
+		color-g="0.75"
+		color-b="1"
+		color-a="1-t"
+	>
+		<frame time="150">0 0 18 18</frame>
+		<frame time="50">18 0 18 18</frame>
+		<frame time="50">36 0 18 18</frame>
+		<frame time="50">0 18 18 18</frame>
+		<frame time="50">18 18 18 18</frame>
+		<frame time="50">36 18 18 18</frame>
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*80" />
+			
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="120*(1-t)" />
+			
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

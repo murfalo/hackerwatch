@@ -1,0 +1,95 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-9 -8 18 16</rect>
+			</collision>
+			<sprite origin="9 13" texture="./shrine.png" material="system/default.mats:default">
+				<frame>16 0 18 21</frame>
+			</sprite>
+			
+			<sprite origin="6 12" layer="-1" texture="./shrine.png" material="system/default.mats:shadow">
+				<frame>238 0 18 20</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="on" trigger-snd="event:/misc/blood-altar">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="244 202 12 12" />
+			<scene src="shared" />
+			
+			<sprite origin="8 13" layer="20" texture="./shrine.png" material="effects/effects.mats:blood-red-big">
+				<frame time="200">96 0 16 16</frame>
+			</sprite>
+			<sprite origin="5 10" looping="false" ulayer="5" texture="./shrine.png" material="system/default.mats:bright">
+				<frame time="500">0 0 0 0</frame>
+				<frame time="70">34 0 10 10</frame>
+				<frame time="70">44 0 10 10</frame>
+				<frame time="70">54 0 10 10</frame>
+				<frame time="70">64 0 10 10</frame>
+				<frame time="70">74 0 10 10</frame>
+				<frame time="70">84 0 10 10</frame>
+			</sprite>
+			<light pos="-1 -36">
+				<sprite texture="system/light_cone_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="50 10 0 0" />
+				</colors>
+			</light>	
+		</scene>
+		
+		<scene name="off">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="232 202 12 12" />
+			<scene src="shared" />
+			
+			<light pos="-1 -36">
+				<sprite texture="system/light_cone_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+					<size value="126" />
+				</sizes>
+				<colors>
+					<color value="30 10 10 0" />
+				</colors>
+			</light>
+			<light pos="-1 -13">
+				<sprite texture="system/light_cone_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="34" />
+				</sizes>
+				<colors>
+					<color value="20 0 0 0" />
+				</colors>
+			</light>	
+		</scene>
+	</scenes>
+</unit>

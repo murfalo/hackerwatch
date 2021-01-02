@@ -1,0 +1,60 @@
+<gui>
+	<sprites>
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="384" height="240" spriteset="gui/variable/bigwindow_borders.sval" anchor="0.5 0.5">
+				<!-- Content -->
+				<rect offset="2 2" width="380" height="236" flow="vbox">
+					<!-- Header -->
+					<rect width="380" height="18" flow="hbox">
+						<!-- Headline -->
+						<rect width="359" height="18" spriteset="gui/variable/headline_hor.sval">
+							<text font="gui/fonts/arial11_bold.fnt" text=".town.mercenaryledger.title" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Separator -->
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Close button -->
+						<spritebutton func="stop" spriteset="close" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="380" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Tab buttons -->
+					<rect width="380" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<checkboxgroup id="tabs-container" width="380" height="18">
+							<clip id="tabs-clip" width="380" height="18" flow="hbox">
+								<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="info" func="set-tab info" text=".town.mercenaryledger.tab.info" />
+								<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="company" func="set-tab company" text=".town.mercenaryledger.tab.company" />
+								<scalebutton spriteset="scalebutton" width="126" font="gui/fonts/arial11.fnt" value="enlisted" func="set-tab enlisted" text=".town.mercenaryledger.tab.enlisted" />
+								<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="deceased" func="set-tab deceased" text=".town.mercenaryledger.tab.deceased" />
+								<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="beastiary" func="set-tab beastiary" text=".guildhall.tab.beastiary" />
+								<scalebutton spriteset="scalebutton" width="125" font="gui/fonts/arial11.fnt" value="itemiary" func="set-tab itemiary" text=".guildhall.tab.itemiary" />
+							</clip>
+						</checkboxgroup>
+					</rect>
+
+					<!-- Separator -->
+					<rect width="380" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Tabs container -->
+					<rect width="380" height="194">
+						<!-- Tabs -->
+						<rect id="tab-info" width="380" height="194" />
+						<rect id="tab-company" width="380" height="194" />
+						<rect id="tab-enlisted" width="380" height="194" />
+						<rect id="tab-deceased" width="380" height="194" />
+						<rect id="tab-itemiary" width="380" height="194" />
+						<rect id="tab-beastiary" width="380" height="194" />
+					</rect>
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

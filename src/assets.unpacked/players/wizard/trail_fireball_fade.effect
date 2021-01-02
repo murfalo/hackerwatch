@@ -1,0 +1,53 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<param name="old_tl" default="0" />
+	
+	
+	%// Trail
+	<trail texture="players/wizard/trail_fireball.png" material="effects/effects.mats:lit">
+		<pos-x value="(rand(u+i+0)*10-5)*t + wposx(i)" />
+		<pos-y value="(rand(u+i+1)*10-5)*t + wposy(i)-height" />
+		
+		<length value="3000" />
+		<looping value="true" />
+		
+		<segments value="20" />
+		<size value="15 * (1 - i / 100)" />
+		
+		<uv-l-x value="i*2 + (old_tl/1000)*-100" />
+		<uv-l-y value="0" />
+		
+		<uv-r-x value="i*2 + (old_tl/1000)*-100" />
+		<uv-r-y value="10" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="max(0, (0.6 - i / 100) * 0.75) * (1 - (t+l))" />
+	</trail>
+
+	
+	<trail texture="players/wizard/trail_fireball.png" material="effects/effects.mats:lit">
+		<pos-x value="(rand(u+i+0)*10-5)*t + wposx(i)" />
+		<pos-y value="(rand(u+i+1)*10-5)*t + wposy(i)-height" />
+		
+		<length value="1500" />
+		<looping value="true" />
+		
+		<segments value="20" />
+		<size value="18 * (1 - i / 35)" />
+		
+		<uv-l-x value="i*2 + (old_tl/1000)*-100" />
+		<uv-l-y value="10" />
+		
+		<uv-r-x value="i*2 + (old_tl/1000)*-100" />
+		<uv-r-y value="20" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0.6" />
+		<color-a value="max(0,0.6 - i / 35) * (1 - (t+l))" />
+	</trail>
+	
+</effect>

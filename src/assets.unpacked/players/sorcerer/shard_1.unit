@@ -1,0 +1,41 @@
+<unit netsync="none">
+	<behavior class="SorcererProjectile">
+		<string name="anim">idle-0</string>
+		<float name="speed">6</float>
+		<int name="penetration">2</int>
+		<float name="penetration-intensity-mul">1.1</float>
+		<float name="bounce-speed-mul">1</float>
+		<int name="bounce-ttl-add">25</int>
+		
+		<string name="bounce-snd">event:/player/sorcerer/shard_hit</string>
+		<string name="fx">effects/animations/impact_ice.effect</string>
+		<int name="ttl">120</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">3</int>
+				<int name="magical">3</int>
+			</dict>
+			
+			
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/animations/impact_ice.effect</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle-0">
+			<effect src="players/sorcerer/shard.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="2" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

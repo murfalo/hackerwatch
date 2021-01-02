@@ -1,0 +1,65 @@
+<unit slot="doodad">
+	<scenes default="on" off="off">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-16 0 32 14</rect>
+			</collision>
+ 			<sprite origin="-16 32" texture="./well_pyramid_slum.png" material="system/default.mats:default">
+				<frame time="100">0 47 7 46</frame>
+			</sprite>	 
+			<sprite origin="16 33" loopback="600" texture="./well_pyramid_slum.png" material="system/default.mats:proj-wall">
+				<frame time="100">0 0 32 47</frame>
+			</sprite>			
+		</scene>		
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="0 0" texture="gui/minimap.png" frame="24 10 9 10" />
+			<sprite ulayer="1" origin="6 19" texture="./well_pyramid_slum.png" material="system/default.mats:proj-wall">
+				<frame time="100">32 0 12 28</frame>
+				<frame time="100">44 0 12 28</frame>
+				<frame time="100">56 0 12 28</frame>
+				<frame time="100">68 0 12 28</frame>
+				<frame time="100">80 0 12 28</frame>
+				<frame time="100">32 28 12 28</frame>
+			</sprite>
+			<light pos="0 -30">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="5"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="0 180 200 0" />
+					<color value="0 170 200 0" />
+				</colors>
+			</light>						
+		</scene>			
+		<scene name="off">
+			<scene src="shared" />
+			<sprite loopback="800" ulayer="1" origin="6 19" texture="./well_pyramid_slum.png" material="system/default.mats:proj-wall">
+				<frame time="100">44 28 12 28</frame>
+				<frame time="100">56 28 12 28</frame>
+				<frame time="100">68 28 12 28</frame>
+				<frame time="100">80 28 12 28</frame>
+				<frame time="100">32 56 12 28</frame>
+				<frame time="100">44 56 12 28</frame>
+				<frame time="100">56 56 12 28</frame>
+				<frame time="100">68 56 12 28</frame>
+				
+				<frame time="1300">80 56 12 28</frame>
+				<frame time="300">32 84 12 28</frame>
+				<frame time="100">44 84 12 28</frame>
+				<frame time="100">56 84 12 28</frame>
+				<frame time="100">68 84 12 28</frame>
+			</sprite>
+			<minimap_sprite layer="150" layer="20" origin="0 0" texture="gui/minimap.png" frame="24 20 9 10" />	
+		</scene>									
+	</scenes>
+</unit>

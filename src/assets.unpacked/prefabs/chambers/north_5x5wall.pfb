@@ -1,0 +1,128 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/prefab_marker_16.unit">
+			<vec2>64 16</vec2>
+			<int>1</int>
+			<vec2>64 32</vec2>
+			<int>2</int>
+			<vec2>64 0</vec2>
+			<int>3</int>
+			<vec2>64 48</vec2>
+			<int>4</int>
+			<vec2>64 64</vec2>
+			<int>5</int>
+			<vec2>48 64</vec2>
+			<int>6</int>
+			<vec2>32 64</vec2>
+			<int>7</int>
+			<vec2>16 64</vec2>
+			<int>8</int>
+			<vec2>0 64</vec2>
+			<int>9</int>
+		</array>
+		<array name="prefabs/prefab_marker_64.unit"><vec2>0 0</vec2><int>10</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>11</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>12</int><int>13</int><int>17</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>12</int>
+			<vec3>96 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/north_5x5wall_loot.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>96 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawner</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/north_5x5wall_spawner.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckSpawnDistance</string>
+			<int>14</int>
+			<vec3>40 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">400</int>
+				<array name="OnTrue"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>15</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>start</string>
+			<array><int>14</int><int>0</int><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>16</int>
+			<vec3>32 112 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>13</int><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>17</int>
+			<vec3>96 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>turret</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/north_5x5wall_tower_turret.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>18</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/north_5x5wall_block.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+	</array>
+</dict>

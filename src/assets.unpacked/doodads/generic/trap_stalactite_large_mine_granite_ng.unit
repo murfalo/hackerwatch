@@ -1,0 +1,48 @@
+<unit>
+	<behavior class="BombBehavior">
+		<int name="delay">0</int>
+		<int name="delay-random">0</int>
+
+		<string name="gore">effects/gibs/gib_stalactite_big.sval</string>
+		%//<string name="spawn-sound">event:/misc/bomb-fall</string>
+		<string name="explode-sound">event:/enemy/tower/death</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">10</float>
+				<string name="fx">doodads/generic/trap_stalactite_explosion_128.effect</string>
+				<int name="radius">60</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+						<float name="armor-mul">0.5</float>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">62</float>
+		</dict>		
+		
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">
+		</scene>
+		<scene name="falling">
+			<sprite layer="120" origin="4 41" texture="./trap_stalactite.png" material="system/default.mats:default">
+				<frame time="50">0 0 9 49</frame>
+			</sprite>
+			<shadow>
+				<sprite layer="-2" origin="6 6" texture="doodads/special/shadows.png">
+					<frame>18 0 12 12</frame>
+				</sprite>
+			</shadow>
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

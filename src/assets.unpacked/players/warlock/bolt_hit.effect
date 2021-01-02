@@ -1,0 +1,79 @@
+<effect looping="false">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	
+	<sprite looping="false" ulayer="0" origin="10 6" texture="players/warlock/bolt.png" material="system/default.mats:bright-noxray">
+		
+		<frame time="50">0 49 20 13</frame>
+		<frame time="50">20 49 20 13</frame>
+		<frame time="50">40 49 20 13</frame>
+		<frame time="50">60 49 20 13</frame>
+		<frame time="50">80 49 20 13</frame>
+	</sprite>
+	<variation>
+		<sprite looping="false" ulayer="1" origin="6 6" texture="./bolt.png" material="system/default.mats:bright-noxray">
+			
+			<frame time="50">0 10 12 13</frame>
+			<frame time="50">12 10 12 13</frame>
+			<frame time="50">24 10 12 13</frame>
+			<frame time="50">36 10 12 13</frame>
+			<frame time="50">48 10 12 13</frame>
+			<frame time="50">60 10 12 13</frame>
+			<frame time="50">72 10 12 13</frame>
+			<frame time="50">84 10 12 13</frame>
+			<frame time="50">96 10 12 13</frame>
+		</sprite>
+	
+	</variation>
+	<variation>
+		<sprite looping="false" ulayer="1" origin="8 6" texture="./bolt.png" material="system/default.mats:bright-noxray"
+			>
+			
+			<frame time="50">0 37 15 12</frame>
+			<frame time="50">15 37 15 12</frame>
+			<frame time="50">30 37 15 12</frame>
+			<frame time="50">45 37 15 12</frame>
+			<frame time="50">60 37 15 12</frame>
+			<frame time="50">75 37 15 12</frame>
+			<frame time="50">90 37 15 12</frame>
+			<frame time="50">105 37 15 12</frame>
+		</sprite> 
+	</variation>
+	<variation>
+		<sprite looping="false" ulayer="1" origin="6 7" texture="./bolt.png" material="system/default.mats:bright-noxray"
+			>
+			
+			<frame time="50">0 23 12 14</frame>
+			<frame time="50">12 23 12 14</frame>
+			<frame time="50">24 23 12 14</frame>
+			<frame time="50">36 23 12 14</frame>
+			<frame time="50">48 23 12 14</frame>
+			<frame time="50">60 23 12 14</frame>
+			<frame time="50">72 23 12 14</frame>
+			<frame time="50">84 23 12 14</frame>
+			<frame time="50">96 23 12 14</frame>
+		</sprite>
+	</variation>
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="false" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="64 * (1-t)" />
+
+		<color-r value="0" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,33 @@
+<unit slot="doodad" layer="-20">
+	<scenes default="1 2" snow="s1 s2">
+		<scene name="shared">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -16 32 8</rect>
+			</collision>	
+		</scene>		
+		<scene name="1">
+			<scene src="shared" />
+			<sprite origin="0 16" texture="./base.png" material="system/default.mats:floor">
+				<frame>64 96 32 16</frame>
+			</sprite>
+		</scene>	
+		<scene name="2">
+			<scene src="shared" />
+			<sprite origin="0 16" texture="./base.png" material="system/default.mats:floor">
+				<frame>64 112 32 16</frame>
+			</sprite>
+		</scene>		
+		<scene name="s1">
+			<scene src="shared" />
+			<sprite origin="0 16" texture="./base.png" material="system/default.mats:floor">
+				<frame>128 176 32 16</frame>
+			</sprite>
+		</scene>	
+		<scene name="s2">
+			<scene src="shared" />
+			<sprite origin="0 16" texture="./base.png" material="system/default.mats:floor">
+				<frame>128 192 32 16</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

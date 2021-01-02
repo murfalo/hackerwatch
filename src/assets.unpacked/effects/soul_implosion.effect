@@ -1,0 +1,73 @@
+<effect>
+	<sprite looping="false" origin="9 9" texture="./soul_implosion.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="0.75"
+		color-g="0.75"
+		color-b="1"
+		angle="rand(u)*2"
+	>
+		<frame time="150">0 0 18 18</frame>
+		<frame time="75">18 0 18 18</frame>
+		<frame time="50">36 0 18 18</frame>
+		<frame time="50">54 0 18 18</frame>
+		<frame time="50">72 0 18 18</frame>
+		<frame time="50">90 0 18 18</frame>
+		<frame time="50">108 0 18 18</frame>
+		<frame time="50">0 18 18 18</frame>
+		<frame time="50">18 18 18 18</frame>
+		<frame time="50">36 18 18 18</frame>
+		<frame time="50">54 18 18 18</frame>
+		<frame time="50">72 18 18 18</frame>
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*80" />
+			
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="3" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="120*(1-t)" />
+			
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="3" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

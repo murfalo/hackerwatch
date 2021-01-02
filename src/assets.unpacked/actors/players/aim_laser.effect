@@ -1,0 +1,29 @@
+<effect looping="true" layer="200" bounds="750 750">
+	<param name="angle" default="0" />
+	<param name="height" default="100" />
+	<param name="aim_length" default="600" />
+	
+	
+	%// Aim
+	<sprite origin="0 0.5" texture="actors/players/player_white_singlepixel_gradient.png" material="effects/effects.mats:lit"
+		
+		angle="angle"
+		
+		pos-x="12 * cos(angle)"
+		pos-y="12 * sin(angle)-height"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="((t*1.2)+5)/20"
+		
+		
+		scale-x="3"
+		scale-y="1+(t * 0.1)"
+		>
+		<frame time="200">0 0 64 1</frame>
+	</sprite>
+	
+
+	
+</effect>

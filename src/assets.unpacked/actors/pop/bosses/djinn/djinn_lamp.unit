@@ -1,0 +1,46 @@
+<unit slot="doodad">
+	<scenes start="off" on="on">
+		
+		<scene name="off">
+			
+			<sprite looping="true" origin="13 13" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor">
+		
+				<frame time="50">0 496 27 16</frame>
+			</sprite>
+			<sprite looping="true" ulayer="2" origin="13 17" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor">
+		
+				<frame time="50">53 488 27 24</frame>
+			</sprite>
+			<shadow>
+				
+				<sprite looping="true" origin="11 17" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor">
+			
+					<frame time="50">80 488 29 24</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="on">
+			<effect layer="1" src="actors/pop/bosses/djinn/djinn_spawn.effect" />
+			<effect layer="1" delay="200" src="actors/pop/bosses/djinn/djinn_spawn_lamp.effect" />
+			
+			<sprite looping="false" origin="13 13" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor">
+		
+				<frame time="250">0 464 28 16</frame>
+				<frame time="250">0 0 0 0</frame>
+			</sprite>
+			<sprite looping="false" ulayer="2" origin="18 18" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor">
+		
+				<frame time="250">109 481 32 31</frame>
+				<frame time="250">0 0 0 0</frame>
+			</sprite>
+			<shadow>
+				
+				<sprite looping="false" origin="14 17" ulayer="0" texture="./djinn_spawn.png" material="system/default.mats:actor">
+			
+					<frame time="250">141 484 34 28</frame>
+					<frame time="250">0 0 0 0</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

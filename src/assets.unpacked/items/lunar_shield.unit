@@ -1,0 +1,32 @@
+<unit slot="item">
+	<behavior class="Pickup">
+		<bool name="bounce">false</bool>
+		<string name="sound">event:/misc/lunar_shield_pickup</string>
+		<bool name="global">false</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">AddMtBlock</string>
+				<int name="amount">1</int>
+			</dict>
+			<dict>
+				<string name="class">ShowFloatingText</string>
+				<string name="text">.item.lunar.shield</string>
+			</dict>
+		</array>
+		<string name="restrict-newgameplus">mt</string>
+		<int name="restrict-newgameplus-value">1</int>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<sprite origin="-2 6" layer="-1" texture="./items_general.png" material="system/default.mats:shadow">
+				<frame>49 20 5 10</frame>
+			</sprite>
+			<minimap_sprite layer="10" origin="6 6" texture="gui/minimap.png" frame="244 226 11 12" />
+			<collision static="true">
+				<circle sensor="true" offset="0 -2" radius="5" />
+			</collision>
+			<effect src="./lunar_shield_charge.effect" />
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,20 @@
+<unit layer="-30">
+	<scenes default="default">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-8 -8 16 16</rect>		
+			</collision>
+			<shadow>
+				<sprite origin="-8 11" texture="./statue.png">
+					<frame>69 103 3 19</frame>
+				</sprite>
+			</shadow>
+		</scene>
+
+		<scene name="default">
+			<sprite origin="11 12" layer="-20" texture="./statue.png" material="system/default.mats:floor">
+				<frame>92 0 23 23</frame>
+			</sprite>
+		</scene>				
+	</scenes>
+</unit>

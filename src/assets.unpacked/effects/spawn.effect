@@ -1,0 +1,44 @@
+<effect>
+	<data>
+		<string name="sound">event:/misc/spawn_tele</string>
+	</data>	
+
+	<sprite looping="false" origin="8 8" texture="./effect_flash.png" material="system/default.mats:bright-noxray-glowing">
+		<frame time="25">0 0 16 16</frame>
+		<frame time="25">16 0 16 16</frame>
+		<frame time="25">32 0 16 16</frame>
+		<frame time="25">48 0 16 16</frame>
+		<frame time="25">64 0 16 16</frame>
+		<frame time="25">80 0 16 16</frame>
+		<frame time="25">96 0 16 16</frame>
+		<frame time="25">112 0 16 16</frame>
+		<frame time="25">128 0 16 16</frame>
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*36" />
+			
+		<color-r value="7" />
+		<color-g value="6" />
+		<color-b value="3" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

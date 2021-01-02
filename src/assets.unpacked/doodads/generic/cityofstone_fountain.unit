@@ -1,0 +1,88 @@
+<unit slot="doodad">
+	<scenes tier-0="1" tier-2="2" tier-4="3">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-22 -22 44 44</rect>
+				<circle offset="0 -22" radius="12" />		
+				<circle offset="22 0" radius="12" />	
+				<circle offset="0 22" radius="12" />
+				<circle offset="-22 0" radius="12" />					
+			</collision>
+			<shadow>
+				<sprite ulayer="2" origin="-4 41" layer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+					<frame>216 0 34 67</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="-20" ulayer="3" origin="36 0" texture="./cityofstone_fountain.png" material="tilesets/grass.mats:desert">
+				<frame time="100">56 144 73 36</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="1">
+			<scene src="shared" />
+			<sprite origin="36 42" ulayer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>0 0 72 76</frame>
+			</sprite> 
+		</scene>
+		<scene name="2">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="6 6" texture="gui/minimap.png" frame="76 20 12 12" />
+			<sprite origin="36 42" ulayer="1" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>72 0 72 76</frame>
+			</sprite> 
+			<sprite origin="34 39" ulayer="-1" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame time="200">0 76 67 68</frame>
+				<frame time="200">67 76 67 68</frame>
+				<frame time="200">134 76 67 68</frame>
+			</sprite> 
+			<sprite origin="6 -11" ulayer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>0 144 14 10</frame>
+				<frame>14 144 14 10</frame>
+				<frame>28 144 14 10</frame>
+				<frame>42 144 14 10</frame>
+			</sprite>
+			<sprite origin="21 3" ulayer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>28 144 14 10</frame>
+				<frame>42 144 14 10</frame>
+				<frame>0 144 14 10</frame>
+				<frame>14 144 14 10</frame>
+			</sprite>
+			<sprite origin="-10 3" ulayer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>14 144 14 10</frame>			
+				<frame>28 144 14 10</frame>
+				<frame>42 144 14 10</frame>
+				<frame>0 144 14 10</frame>
+			</sprite>
+		</scene>
+		<scene name="3" random-start="true">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="6 6" texture="gui/minimap.png" frame="76 20 12 12" />
+			<sprite origin="36 42" ulayer="1" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>144 0 72 76</frame>
+			</sprite> 
+			<sprite origin="34 39" ulayer="-1" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame time="200">0 76 67 68</frame>
+				<frame time="200">67 76 67 68</frame>
+				<frame time="200">134 76 67 68</frame>
+			</sprite> 
+			<sprite origin="6 -11" ulayer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>0 144 14 10</frame>
+				<frame>14 144 14 10</frame>
+				<frame>28 144 14 10</frame>
+				<frame>42 144 14 10</frame>
+			</sprite>
+			<sprite origin="21 3" ulayer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>28 144 14 10</frame>
+				<frame>42 144 14 10</frame>
+				<frame>0 144 14 10</frame>
+				<frame>14 144 14 10</frame>
+			</sprite>
+			<sprite origin="-10 3" ulayer="0" texture="./cityofstone_fountain.png" material="system/default.mats:default-noxray">
+				<frame>14 144 14 10</frame>			
+				<frame>28 144 14 10</frame>
+				<frame>42 144 14 10</frame>
+				<frame>0 144 14 10</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,783 @@
+<unit netsync="position" slot="actor">
+	<behavior class="Miniboss">
+		<string name="beastiary-name">.bestiary.name.bosses.sandworm</string>
+		<string name="beastiary-scene">idle-3</string>
+		<vec2 name="beastiary-offset">28 -14</vec2>
+		<string name="quality">epic</string>
+		
+		<string name="dlc">pop</string>		
+		
+		<string name="type">beast</string>
+		<int name="hp">8000</int>
+		<int name="armor">80</int>
+		<int name="resistance">80</int>
+		<int name="experience-reward">3000</int>
+		<float name="mp-scale-fact">1.25</float>
+		<float name="ngp-scale">1.5</float>
+
+		<int name="unit-height">16</int>
+
+		<string name="gore">effects/gibs/gib_tick_mb.sval</string>
+		<string name="death-snd">event:/enemy/boss_worm/death</string>
+
+		<float name="debuff-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_boss.inc"
+		</array>
+
+		<bool name="ignore-hit-effects">true</bool>
+		<bool name="impenetrable">true</bool>
+		<int name="aggro-range">9999</int>
+		<bool name="must-see-target">false</bool>
+		
+		<dict name="movement">
+			<string name="class">BossWormMovement</string>
+			<string name="anim-walk">walk 8</string>
+			<string name="anim-dig-up">dig_up 8</string>
+			<string name="anim-dig-down">dig_down 8</string>
+
+			<float name="segment-test-distance">64</float>
+			<float name="segment-test-radius">40</float>
+			
+			<bool name="start-underground">true</bool>
+
+			<float name="speed">3.2</float>
+			<float name="turn-speed">1.2</float>
+
+			<vec2 name="dig-up-time">4000 8500</vec2>
+			<vec2 name="dig-down-time">3000 7500</vec2>
+
+			<string name="snd-move">event:/enemy/boss_worm/slithering</string>
+			<string name="snd-stop">event:/enemy/boss_worm/surfacing_attack</string>
+			<string name="snd-dig-up">event:/enemy/boss_worm/surfacing</string>
+			<string name="snd-dig-down">event:/enemy/boss_worm/diving</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">WormBossSpawnCorpse</string>
+				<string name="corpse">actors/pop/bosses/worm/worm_corpse.unit</string>
+				<string name="anim-overground">overground 8</string>
+				<string name="anim-underground">underground</string>
+			</dict>
+		
+			<dict>
+				<string name="class">CompositeActorPeriodicTriggeredSkill</string>
+				<string name="trigger">OnMove</string>
+				<int name="period">16</int>
+
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>bossworm_underground</string>
+				</array>
+
+				<array name="actions">
+					<dict name="action">
+						<string name="class">BossWormSpawnSegment</string>
+
+						<array name="dig-down">
+							<string>actors/pop/bosses/worm/worm_segment_dig_1.unit</string>
+							<string>actors/pop/bosses/worm/worm_segment_dig_2.unit</string>
+							<string>actors/pop/bosses/worm/worm_segment_dig_3.unit</string>
+							<string>actors/pop/bosses/worm/worm_segment_dig_4.unit</string>
+						</array>
+
+						<string name="unit">actors/pop/bosses/worm/worm_segment.unit</string>
+						<int name="spawn-dist">-12</int>
+					</dict>
+
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/worm/dust.effect</string>
+						<bool name="clone-owner-params">true</bool>
+					</dict>
+					
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/worm/dust_big.effect</string>
+					</dict>	
+					
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorPeriodicTriggeredSkill</string>
+				<string name="trigger">OnMove</string>
+				<int name="period">20</int>
+
+				<array name="conditional">
+					<string>flag</string><string>is</string><string>bossworm_underground</string>
+				</array>
+
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/worm/underground_segments.effect</string>
+						<bool name="clone-owner-params">true</bool>
+					</dict>
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/worm/dust_big_underground.effect</string>
+					</dict>	
+					<!-- <dict>
+						
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_worm/slithering</string>
+					</dict> -->
+				</array>
+			</dict>
+			<dict>
+				<string name="class">CompositeActorPeriodicTriggeredSkill</string>
+				<string name="trigger">OnMove</string>
+				<int name="period">16</int>
+
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>bossworm_underground</string>
+				</array>
+
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/worm/underground_segments.effect</string>
+						<bool name="clone-owner-params">true</bool>
+					</dict><!-- 
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">effects/animations/impact_magic_orange.effect</string>
+					</dict>	 -->
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">WerebullChargeHitSkill</string>
+
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>bossworm_underground</string>
+				</array>
+
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">50</int>
+					<float name="armor-mul">0.5</float>
+					<bool name="melee">true</bool>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorPeriodicTriggeredSkill</string>
+				<string name="trigger">OnMove</string>
+				<int name="period">15</int>
+
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>bossworm_underground</string>
+				</array>
+				
+				<string name="offset">shoot-pos</string>
+
+				<dict name="action">
+					<string name="class">ShootRandomProjectile</string>
+					<int name="spread">40</int>
+					
+					<array name="projectile">
+						 <!-- <int>200</int><string name="projectile">actors/pop/bosses/worm/sand_rock.unit</string> -->
+						 <int>750</int><string name="projectile">actors/pop/bosses/worm/sand_rock_shard.unit</string>
+					</array>
+					
+				</dict>
+			</dict>
+
+			%// Normal Spew
+			<dict>
+				<string name="class">BossScatterBurstSkill</string>
+
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+					<string>flag</string><string>is</string><string>bossworm_underground</string>
+					<string>flag</string><string>isnt</string><string>bossworm_blocked</string>
+				</array>
+
+				<int name="cooldown-start">10000</int>
+				<int name="cooldown">3500</int>
+				<int name="range">9999</int>
+				<int name="burst">7</int>
+				<bool name="must-see">false</bool><!-- 
+				<string name="start-snd">event:/enemy/boss_worm/surfacing_attack</string> -->
+
+				<string name="anim-begin">puke-begin</string>
+				<string name="anim-end">puke-end</string>
+				<string name="anim">puke</string>
+
+				<int name="castpoint">600</int>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/worm/dust_big.effect</string>
+					</dict>	
+					<dict>						
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_worm/stone_big_spit</string>
+					</dict>
+				</array>
+
+				<array name="actions">
+					<dict>
+						<string name="class">BossWormSpew</string>
+						<int name="air-time">1000</int>
+						<int name="spread">100</int>
+
+						<array name="clumps">
+							<dict>
+								<int name="chance">2</int>
+								<string name="clump">actors/pop/bosses/worm/stone.unit</string>
+								
+								<array name="effects">
+									<dict>
+										<string name="class">Explode</string>
+										<string name="fx">effects/golem_sand_rock_hit.effect</string>
+										<float name="self-dmg">0</float>
+										<float name="team-dmg">0</float>
+										<int name="radius">32</int>
+										<float name="dist-scaling">1000</float>
+										
+										<dict name="effect">
+											<string name="class">Damage</string>
+											<int name="physical">70</int>
+											<float name="armor-mul">0.8</float>
+										</dict>
+									</dict>
+									
+									<dict>
+										<string name="class">SpawnEffect</string>
+										<string name="effect">actors/pop/bosses/worm/stone_impact_sand.effect</string>
+									</dict>
+									<dict>
+										<string name="class">SpawnEffect</string>
+										<string name="effect">actors/pop/bosses/worm/stone_impact_stone.effect</string>
+									</dict>
+									<dict>
+										<string name="class">SpawnEffect</string>
+										<string name="effect">actors/pop/bosses/worm/dust_big.effect</string>
+									</dict>
+									<dict>
+										<string name="class">PlaySound</string>
+										<string name="sound">event:/enemy/boss_worm/stone_big_impact</string>
+									</dict>
+									
+									<dict>
+										<string name="class">SpawnUnit</string>
+										<array name="units">
+											<int>300</int><string>actors/pop/scorpion_1.unit</string>
+											<int>100</int><string>actors/pop/scorpion_1_elite.unit</string>
+										</array>
+										<bool name="aggro">true</bool>
+										<bool name="safe-spawn">true</bool>
+										<bool name="no-loot">true</bool>
+										<bool name="no-experience">true</bool>
+									</dict>
+									
+									<dict>
+										<string name="class">SpawnUnit</string>
+										<array name="units">
+											<int>200</int><string>doodads/generic/deco_corpse_sink.unit</string>
+										</array>
+										<bool name="safe-spawn">true</bool>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+			 
+			%// NG+ Spew
+			<dict>
+				<string name="class">BossScatterBurstSkill</string>
+
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+					<string>flag</string><string>is</string><string>bossworm_underground</string>
+					<string>flag</string><string>isnt</string><string>bossworm_blocked</string>
+				</array>
+
+				<int name="cooldown-start">10000</int>
+				<int name="cooldown">3500</int>
+				<int name="range">9999</int>
+				<int name="burst">7</int>
+				<bool name="must-see">false</bool>
+
+				<string name="anim-begin">puke-begin</string>
+				<string name="anim-end">puke-end</string>
+				<string name="anim">puke</string>
+
+				<int name="castpoint">600</int>
+				
+				<array name="start-actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/worm/dust_big.effect</string>
+					</dict>
+					<dict>						
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_worm/stone_big_spit</string>
+					</dict>
+				</array>
+
+				<array name="actions">
+					<dict>
+						<string name="class">BossWormSpew</string>
+						<int name="air-time">1000</int>
+						<int name="spread">100</int>
+
+						<array name="clumps">
+							<dict>
+								<int name="chance">2</int>
+								<string name="clump">actors/pop/bosses/worm/stone.unit</string>
+								
+								<array name="effects">
+									<dict>
+										<string name="class">Explode</string>
+										<string name="fx">effects/golem_sand_rock_hit.effect</string>
+										<float name="self-dmg">0</float>
+										<float name="team-dmg">0</float>
+										<int name="radius">32</int>
+										<float name="dist-scaling">1000</float>
+										
+										<dict name="effect">
+											<string name="class">Damage</string>
+											<int name="physical">70</int>
+											<float name="armor-mul">0.8</float>
+										</dict>
+									</dict>
+									
+									<dict>
+										<string name="class">Nova</string>
+										<int name="projectiles">9</int>
+										<float name="proj-dist">8</float>
+										<string name="projectile">actors/pop/bosses/worm/nova_rock_shard.unit</string>
+									</dict>
+									
+									<dict>
+										<string name="class">SpawnEffect</string>
+										<string name="effect">actors/pop/bosses/worm/stone_impact_sand.effect</string>
+									</dict>
+									<dict>
+										<string name="class">SpawnEffect</string>
+										<string name="effect">actors/pop/bosses/worm/stone_impact_stone.effect</string>
+									</dict>
+									<dict>
+										<string name="class">SpawnEffect</string>
+										<string name="effect">actors/pop/bosses/worm/dust_big.effect</string>
+									</dict>
+									<dict>
+										<string name="class">PlaySound</string>
+										<string name="sound">event:/enemy/boss_worm/stone_big_impact</string>
+									</dict>
+									
+									<dict>
+										<string name="class">SpawnUnit</string>
+										<array name="units">
+											<int>300</int><string>actors/pop/scorpion_1.unit</string>
+											<int>100</int><string>actors/pop/scorpion_1_elite.unit</string>
+										</array>
+										<bool name="aggro">true</bool>
+										<bool name="safe-spawn">true</bool>
+										<bool name="no-loot">true</bool>
+										<bool name="no-experience">true</bool>
+									</dict>
+									
+									<dict>
+										<string name="class">SpawnUnit</string>
+										<array name="units">
+											<int>200</int><string>doodads/generic/deco_corpse_sink.unit</string>
+										</array>
+										<bool name="safe-spawn">true</bool>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params" />
+	</behavior>
+
+	<scenes start="underground">
+		<scene name="shared">
+		
+			<effect src="actors/pop/bosses/worm/head_sand.effect" />
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 0" sensor="false" aim-through="true" radius="16" charge-through="false" density="20" ignore-non-player="true" />
+			</collision>
+		</scene>
+
+		<scene name="underground">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			
+			<effect src="actors/pop/bosses/worm/underground.effect" />
+			<collision static="false">
+				<circle offset="0 0" sensor="true" aim-through="true" radius="8" charge-through="true" density="20" ignore-non-player="true" />
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="8 29" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>0 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="14 15" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>64 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="32 10" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>128 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="50 15" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>192 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="56 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>256 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="48 45" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>320 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="33 53" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>384 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="16 43" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>448 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="12 0"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>0 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="6 3"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>64 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 0"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>128 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-6 3"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>192 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-12 0"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>256 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-3 -5"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>320 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -8"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>384 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="3 -5"/>
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>448 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_down-0">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">0 128 64 64</frame>
+				<frame time="110">0 192 64 64</frame>
+				<frame time="110">0 256 64 64</frame>
+				<frame time="110">0 320 64 64</frame>
+				<frame time="110">0 384 64 64</frame>
+				<frame time="110">0 448 64 64</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="dig_down-1">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">64 128 64 64</frame>
+				<frame time="110">64 192 64 64</frame>
+				<frame time="110">64 256 64 64</frame>
+				<frame time="110">64 320 64 64</frame>
+				<frame time="110">64 384 64 64</frame>
+				<frame time="110">64 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_down-2">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">128 128 64 64</frame>
+				<frame time="110">128 192 64 64</frame>
+				<frame time="110">128 256 64 64</frame>
+				<frame time="110">128 320 64 64</frame>
+				<frame time="110">128 384 64 64</frame>
+				<frame time="110">128 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_down-3">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">192 128 64 64</frame>
+				<frame time="110">192 192 64 64</frame>
+				<frame time="110">192 256 64 64</frame>
+				<frame time="110">192 320 64 64</frame>
+				<frame time="110">192 384 64 64</frame>
+				<frame time="110">192 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_down-4">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">256 128 64 64</frame>
+				<frame time="110">256 192 64 64</frame>
+				<frame time="110">256 256 64 64</frame>
+				<frame time="110">256 320 64 64</frame>
+				<frame time="110">256 384 64 64</frame>
+				<frame time="110">256 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_down-5">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">320 128 64 64</frame>
+				<frame time="110">320 192 64 64</frame>
+				<frame time="110">320 256 64 64</frame>
+				<frame time="110">320 320 64 64</frame>
+				<frame time="110">320 384 64 64</frame>
+				<frame time="110">320 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_down-6">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">384 128 64 64</frame>
+				<frame time="110">384 192 64 64</frame>
+				<frame time="110">384 256 64 64</frame>
+				<frame time="110">384 320 64 64</frame>
+				<frame time="110">384 384 64 64</frame>
+				<frame time="110">384 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_down-7">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">448 128 64 64</frame>
+				<frame time="110">448 192 64 64</frame>
+				<frame time="110">448 256 64 64</frame>
+				<frame time="110">448 320 64 64</frame>
+				<frame time="110">448 384 64 64</frame>
+				<frame time="110">448 448 64 64</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="dig_up-0">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">512 128 64 64</frame>
+				<frame time="110">512 192 64 64</frame>
+				<frame time="110">512 256 64 64</frame>
+				<frame time="110">512 320 64 64</frame>
+				<frame time="110">512 384 64 64</frame>
+				<frame time="110">512 448 64 64</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="dig_up-1">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">576 128 64 64</frame>
+				<frame time="110">576 192 64 64</frame>
+				<frame time="110">576 256 64 64</frame>
+				<frame time="110">576 320 64 64</frame>
+				<frame time="110">576 384 64 64</frame>
+				<frame time="110">576 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_up-2">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">640 128 64 64</frame>
+				<frame time="110">640 192 64 64</frame>
+				<frame time="110">640 256 64 64</frame>
+				<frame time="110">640 320 64 64</frame>
+				<frame time="110">640 384 64 64</frame>
+				<frame time="110">640 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_up-3">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">704 128 64 64</frame>
+				<frame time="110">704 192 64 64</frame>
+				<frame time="110">704 256 64 64</frame>
+				<frame time="110">704 320 64 64</frame>
+				<frame time="110">704 384 64 64</frame>
+				<frame time="110">704 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_up-4">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">768 128 64 64</frame>
+				<frame time="110">768 192 64 64</frame>
+				<frame time="110">768 256 64 64</frame>
+				<frame time="110">768 320 64 64</frame>
+				<frame time="110">768 384 64 64</frame>
+				<frame time="110">768 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_up-5">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">832 128 64 64</frame>
+				<frame time="110">832 192 64 64</frame>
+				<frame time="110">832 256 64 64</frame>
+				<frame time="110">832 320 64 64</frame>
+				<frame time="110">832 384 64 64</frame>
+				<frame time="110">832 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_up-6">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">896 128 64 64</frame>
+				<frame time="110">896 192 64 64</frame>
+				<frame time="110">896 256 64 64</frame>
+				<frame time="110">896 320 64 64</frame>
+				<frame time="110">896 384 64 64</frame>
+				<frame time="110">896 448 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="dig_up-7">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">960 128 64 64</frame>
+				<frame time="110">960 192 64 64</frame>
+				<frame time="110">960 256 64 64</frame>
+				<frame time="110">960 320 64 64</frame>
+				<frame time="110">960 384 64 64</frame>
+				<frame time="110">960 448 64 64</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="puke-begin">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 0" sensor="false" aim-through="true" radius="16" charge-through="false" density="20"/>
+			</collision>
+			
+			<sprite origin="32 47" looping="false" ulayer="1" texture="./worm_head.png" material="system/default.mats:default">
+				<frame time="50">0 64 64 64</frame>
+				<frame time="50">64 64 64 64</frame>
+				<frame time="100">128 64 64 64</frame>
+				<frame time="100">192 64 64 64</frame>
+				<frame time="100">256 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="puke-end">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 0" sensor="false" aim-through="true" radius="16" charge-through="false" density="20"/>
+			</collision>
+			
+			<sprite origin="32 47" looping="false" ulayer="1" texture="./worm_head.png" material="system/default.mats:default">
+				<frame time="100">192 64 64 64</frame>
+				<frame time="100">128 64 64 64</frame>
+				<frame time="100">64 64 64 64</frame>
+				<frame time="100">0 64 64 64</frame>
+			</sprite>
+		</scene>	
+	
+		<scene name="puke">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 0" sensor="false" aim-through="true" radius="16" charge-through="false" density="20"/>
+			</collision>
+			
+			<effect pos="2 -2" delay="200" src="./launch.effect" />
+			
+			<sprite origin="32 47" ulayer="1" texture="./worm_head.png" material="system/default.mats:default">
+				<frame time="50">320 64 64 64</frame>
+				<frame time="150">384 64 64 64</frame>
+				<frame time="50">320 64 64 64</frame>
+				<frame time="350">256 64 64 64</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

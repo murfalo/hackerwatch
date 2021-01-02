@@ -1,0 +1,39 @@
+<effect looping="true" layer="2">
+	
+	<sprite origin="16 24" looping="false" ulayer="2" texture="./thrall_leach.png" material="system/default.mats:glow-both-bright">
+		<frame time="100">0 64 32 32</frame>	
+		<frame time="100">32 64 32 32</frame>	
+		<frame time="100">64 64 32 32</frame>	
+		<frame time="100">96 64 32 32</frame>	
+		<frame time="100">128 64 32 32</frame>	
+		<frame time="100">160 64 32 32</frame>	
+		<frame time="100">192 64 32 32</frame>	
+		<frame time="100">224 64 32 32</frame>	
+		<frame time="100">0 96 32 32</frame>	
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="saturate(32*sin(t*pi*2))+32" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

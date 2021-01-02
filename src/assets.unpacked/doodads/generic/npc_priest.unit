@@ -1,0 +1,50 @@
+<unit slot="doodad">
+	<scenes start="1 2 3 4 5 6">
+		<scene random-start="true" name="shared">
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="3.5" />			
+			</collision>
+		</scene>
+		
+		<scene random-start="true" name="1">
+			<scene src="shared" />
+			<sprite origin="5 13" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">156 0 10 15</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="2">
+			<scene src="shared" />
+			<sprite origin="5 13" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">166 0 10 15</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="3">
+			<scene src="shared" />
+			<sprite origin="5 13" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">176 0 10 15</frame>
+			</sprite>
+		</scene>
+		
+		<scene random-start="true" name="4">
+			<scene src="shared" />
+			<sprite origin="5 13" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">156 64 10 15</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="5">
+			<scene src="shared" />
+			<sprite origin="5 13" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">166 64 10 15</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="6">
+			<scene src="shared" />
+			<sprite origin="5 13" texture="./npc.png" material="system/default.mats:default-noxray">
+				<frame time="100">176 64 10 15</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

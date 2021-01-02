@@ -1,0 +1,53 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">4.2</float>
+		<int name="range">50</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">players/warlock/mercenary/lightning_bolt_merc.unit</string>
+			</dict>
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">players/warlock/bolt_hit.effect</string>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/player/warlock/bolt-fail</string>
+			</dict>				
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="players/warlock/bolt_6.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="400" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="16"/>
+				</sizes>
+				<colors>
+					<color value="50 0 250 0"/>
+				</colors>
+			</light>				
+		</scene>
+	</scenes>
+</unit>

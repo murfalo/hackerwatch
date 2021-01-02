@@ -1,0 +1,59 @@
+<effect looping="false" layer="0">
+	<param name="angle" default="0" />
+
+	<variation>	
+		<sprite origin="7 13" ulayer="0" texture="./turret_wall_lurker.png" material="system/default.mats:projectile"
+			pos-x="cos(angle+pi/2)*(rand(u)*6-3)"
+			pos-y="sin(angle+pi/2)*(rand(u)*6-3)"
+			angle="angle"
+		>
+		<frame time="120">112 0 16 15</frame>
+		<frame time="60">96 0 16 15</frame>
+		<frame time="60">80 0 16 15</frame> 
+		<frame time="60">64 0 16 15</frame>
+		<frame time="60">48 0 16 15</frame>
+		<frame time="60">32 0 16 15</frame>
+		<frame time="60">16 0 16 15</frame> 
+		<frame time="60">0 0 16 15</frame>
+		</sprite>	
+	</variation>
+	<variation>	
+		<sprite origin="7 13" ulayer="0" texture="./turret_wall_lurker.png" material="system/default.mats:projectile"
+			pos-x="cos(angle+pi/2)*(rand(u)*6-3)"
+			pos-y="sin(angle+pi/2)*(rand(u)*6-3)"
+			angle="angle"
+		>
+		<frame time="120">112 16 16 15</frame>
+		<frame time="60">96 16 16 15</frame>
+		<frame time="60">80 16 16 15</frame> 
+		<frame time="60">64 16 16 15</frame>
+		<frame time="60">48 16 16 15</frame>
+		<frame time="60">32 16 16 15</frame>
+		<frame time="60">16 16 16 15</frame> 
+		<frame time="60">0 16 16 15</frame>
+		</sprite>	
+	</variation>
+	
+	<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="100" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 40 * t" />
+		
+		<color-r value="0.15" />
+		<color-g value="0.004" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light> 
+</effect>

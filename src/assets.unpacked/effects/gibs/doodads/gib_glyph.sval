@@ -1,0 +1,78 @@
+<dict>
+	<vec3 name="offset">0 0 10</vec3>
+	<vec3 name="spread">25 20 15</vec3>
+	<bool name="gore">false</bool>
+
+	<array name="death-gib">
+		<float>0</float>
+		<dict>
+			<int name="min">10</int>
+			<int name="max">25</int>
+			<float name="force">0.5</float>
+			<string name="unit">effects/gibs/gibs_doodads.unit</string>
+			<string name="anim">particle_glyph</string>
+			<bool name="stay">false</bool>
+		</dict>
+	</array>
+	
+
+
+	<array name="hit-effect">
+		<float>0</float>
+		<dict>
+			<int name="chance">1</int>
+			<string name="effect">actors/bosses/warden/smoke_impact_glyph.effect</string>
+		</dict> 
+	</array>
+	
+	<array name="death-effect">
+		<float>0</float>
+		<dict>
+			<int name="chance">1</int>
+			<string name="effect">actors/bosses/warden/smoke_impact_glyph.effect</string>
+		</dict>
+	</array>
+
+
+	<array name="hit-decal">
+		<!-- <float>0</float>
+		<dict>
+			<int name="chance">0</int>
+		</dict>
+		<dict>
+			<int name="chance">1</int>
+			<string  name="unit">effects/gore/decal_blood_red.unit</string>
+			<string name="anim">mini-a</string>
+			<int name="importance">10</int>
+		</dict> -->
+	</array>
+	
+	<array name="death-decal">
+		<float>0.2</float>
+		<!-- <dict>
+			<int name="chance">1</int>
+			<string  name="unit">effects/gore/decal_blood_red.unit</string>
+			<string name="anim">dir-huge 16</string>
+			<int name="importance">250</int>
+		</dict> -->
+	
+	
+		<float>0</float>
+		<!-- <dict>
+			<int name="chance">1</int>
+			<string name="unit">effects/gore/decal_blood_red.unit</string>
+			<string name="anim">huge-1</string>
+			<int name="importance">250</int>
+		</dict> -->
+	</array>
+</dict>
+
+
+
+
+
+
+
+
+
+

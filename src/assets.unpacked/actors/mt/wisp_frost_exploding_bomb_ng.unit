@@ -1,0 +1,42 @@
+<unit>
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/enemy/wisp/death_explosion</string>
+		<int name="delay">0</int>
+		
+		<array name="actions">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/projectiles/ice_patch.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+
+			<dict name="action">
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/wisp_frost_exploding_bomb.effect</string>
+				
+				<int name="min-radius">36</int>
+				<int name="radius">36</int>
+				<float name="team-dmg">0</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">40</int>
+						<int name="magical">40</int>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:freezing</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			
+		</scene>
+	</scenes>
+</unit>

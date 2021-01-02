@@ -1,0 +1,62 @@
+<gui>
+	<sprites>
+		<sprite name="grids" texture="gui/shop.png"><frame>0 258 96 64</frame></sprite>
+
+		<sprite name="skill-frame" texture="gui/shop.png"><frame>278 20 32 32</frame></sprite>
+		<sprite name="skill-inner-frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="icon-lock" texture="gui/icons.png"><frame>0 100 8 9</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+%include "gui/scalablebutton_big_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group width="209" inner="true" flow="vbox">
+			<!-- Recipies -->
+			<rect id="recipies" width="209" height="131" visible="true">
+				<!-- List -->
+				<scrollrect id="list" scroll-backdrop-sprite="grids" width="192" height="128" offset="3 0" flow="hboxwrapped" />
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="128" offset="0 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="128" offset="195 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="128" offset="206 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="209" height="3" offset="0 128" spriteset="gui/variable/3pxbar_hor.sval" />
+			</rect>
+
+			<!-- Bottom bar -->
+			<rect width="209" height="18" spriteset="gui/variable/headline_hor.sval">
+				<text id="headertext" width="209" align="center" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+			</rect>
+
+			<!-- Button template -->
+			<scalebutton id="template-item" spriteset="scalebutton-big" width="32" visible="false">
+				<!-- Icon -->
+				<sprite id="icon" offset="4 4">
+					<text id="count" anchor="1 0" offset="-1 1" font="gui/fonts/font_hw8.fnt" />
+					<rect visible="false" width="4" height="4" color="#000000FF" anchor="0 1">
+						<rect id="quality" width="2" height="2" offset="1 1" />
+					</rect>
+				</sprite>
+			</scalebutton>
+
+			<!-- Sprite template -->
+			<sprite id="template-sprite" src="skill-frame" visible="false">
+				<sprite src="skill-inner-frame" offset="2 2" />
+				<sprite id="icon" offset="4 4">
+					<sprite id="icon-lock" visible="false" src="icon-lock" anchor="1 1" offset="-1 -1" />
+					<sprite id="icon-check" visible="false" src="icon-check" anchor="1 1" offset="-1 -1" />
+					<text id="count" anchor="1 0" offset="-1 1" font="gui/fonts/font_hw8.fnt" />
+					<rect visible="false" width="4" height="4" color="#000000FF" anchor="0 1">
+						<rect id="quality" width="2" height="2" offset="1 1" />
+					</rect>
+				</sprite>
+			</sprite>
+		</group>
+	</doc>
+</gui>

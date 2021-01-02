@@ -1,0 +1,54 @@
+<gui>
+	<sprites>
+		<sprite name="top-frame" texture="gui/hud.png"><frame>56 0 19 22</frame></sprite>
+		<sprite name="bottom-frame" texture="gui/hud.png"><frame>56 19 19 3</frame></sprite>
+
+		<sprite name="icon-dead" texture="gui/icons.png"><frame>12 110 9 9</frame></sprite>
+		<sprite name="icon-soullink" texture="gui/icons.png"><frame>119 8 9 9</frame></sprite>
+
+		<sprite name="triangle-border" texture="gui/widget.png"><frame>110 109 6 7</frame></sprite>
+		<sprite name="triangle" texture="gui/widget.png"><frame>116 109 4 4</frame></sprite>
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="28" height="143" anchor="0 1" offset="0 -125" flow="vbox" flow-flip="true">
+				<!-- Top frame -->
+				<sprite src="top-frame" />
+
+				<!-- List -->
+				<grouprect id="playerlist" width="28" inner="true" flow="vbox" flow-flip="true" flow-flip-order="true" />
+
+				<!-- Bottom frame -->
+				<sprite src="bottom-frame" />
+			</rect>
+
+			<!-- Player template -->
+			<coop-player id="playerlist-template" visible="false" width="28" height="28">
+				<!-- Portrait -->
+				<portrait id="portrait" />
+
+				<!-- Icons -->
+				<sprite id="dead" visible="false" offset="4 4" src="icon-dead" />
+				<sprite id="soullink" visible="false" offset="4 4" src="icon-soullink" />
+
+				<!-- Triangle -->
+				<sprite src="triangle-border" offset="20 2">
+					<sprite id="triangle" src="triangle" offset="2 0" />
+				</sprite>
+
+				<!-- Stats bars -->
+				<grouprect width="24" inner="true" color="#000000FF" anchor="0 1" offset="2 -2" flow="vbox" padding="1 1" spacing="1">
+					<bar id="health" width="22" height="1" color="#732929FF" value-color="#FF0000FF" value-padding="0 0" />
+					<bar id="mana" visible="false" width="22" height="1" color="#293C72FF" value-color="#00B5FFFF" value-padding="0 0" />
+				</grouprect>
+			</coop-player>
+
+			<!-- Separator template -->
+			<rect id="separator-template" visible="false" width="28" height="6">
+				<rect width="28" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+				<rect width="28" height="3" offset="0 3" spriteset="gui/variable/3pxbar_hor.sval" />
+			</rect>
+		</group>
+	</doc>
+</gui>

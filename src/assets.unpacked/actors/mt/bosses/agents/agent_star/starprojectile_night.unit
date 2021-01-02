@@ -1,0 +1,236 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">7</float>
+		<int name="ttl">3500</int>
+		<bool name="blockable">false</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/bosses/agents/agent_star/starprojectile_night_impact.effect</string>
+				<int name="radius">12</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">20</int>
+						<float name="resistance-mul">0.5</float>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/mt/bosses/agents/buffs.sval:starburst_night</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/boss_agents/starbomb-impact</string>
+			</dict>			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">100</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">200</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">300</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">400</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">500</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">600</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">700</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">800</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">900</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">1000</int>
+			</dict>
+		</array>
+		<array name="miss-effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/bosses/agents/agent_star/starprojectile_impact.effect</string>
+				<int name="radius">12</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">20</int>
+						<float name="resistance-mul">0</float>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/boss_agents/starbomb-impact</string>
+			</dict>			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">100</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">200</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">300</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">400</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">500</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">600</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">700</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">800</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">900</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/agents/agent_star/starprojectile_night_bomb.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<vec2 name="jitter">8 8</vec2>
+				<int name="delay">1000</int>
+			</dict>
+		</array>		
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<collision>
+				<circle projectile="true" radius="4" />
+			</collision>
+			<effect src="./starprojectile_night.effect"/>
+			<effect src="./star_night.effect"/>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="5" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="48" />
+				</sizes>
+				<colors>
+					<color value="200 0 255 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="15" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="200 0 255 0" />
+				</colors>
+			</light>	
+		</scene>
+	</scenes>
+</unit>
+
+

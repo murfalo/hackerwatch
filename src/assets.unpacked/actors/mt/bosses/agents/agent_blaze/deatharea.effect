@@ -1,0 +1,157 @@
+<effect looping="true" layer="1">
+	<param name="radius" default="70" />
+	<param name="ttl" default="1000" />
+	
+	<sprite origin="48 48" looping="true" texture="./deatharea.png" material="system/default.mats:glow-both-bright"
+		scale-x="0.995 + sin(t*pi*4)*0.005"
+		scale-y="0.995 + cos(t*pi*4)*0.005"
+		color-a="0.9"
+		
+		>
+		<frame time="200">0 0 96 96</frame>
+		<frame time="200">96 0 96 96</frame>
+		<frame time="200">0 96 96 96</frame>
+		<frame time="200">96 96 96 96</frame>
+	</sprite>
+	<sprite origin="48 48" looping="true" texture="./deatharea.png" material="system/default.mats:floor"
+		scale-x="0.995 + sin(t*pi*4)*0.005"
+		scale-y="0.995 + cos(t*pi*4)*0.005"
+		
+		>
+		<frame time="200">0 224 96 96</frame>
+	</sprite>
+	
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="effects/effects.mats:fire"
+		num-sprites="2"
+		pos-x="rand(u+il+i*23)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*101)*cos(pi*2)*radius - radius/2"
+		scale-x="0.8+rand(u+i*23)*0.2"
+		scale-y="0.8+rand(u+i*23)*0.2"
+		color-a="0.9"
+		>
+		<frame time="250">0 208 6 6</frame>
+		<frame time="250">6 208 6 6</frame>
+		<frame time="500">12 208 6 6</frame>
+		<frame time="50">18 208 6 6</frame>
+		<frame time="50">24 208 6 6</frame>
+		<frame time="1500">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="effects/effects.mats:fire"
+		num-sprites="3"
+		pos-x="rand(u+il+i*11)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*43+100)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="50">0 208 6 6</frame>
+		<frame time="50">6 208 6 6</frame>
+		<frame time="50">12 208 6 6</frame>
+		<frame time="30">18 208 6 6</frame>
+		<frame time="30">24 208 6 6</frame>
+		<frame time="1500">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="effects/effects.mats:fire"
+		num-sprites="3"
+		pos-x="rand(u+il+i*13)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*127+100)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="80">0 208 6 6</frame>
+		<frame time="80">6 208 6 6</frame>
+		<frame time="1200">12 208 6 6</frame>
+		<frame time="30">18 208 6 6</frame>
+		<frame time="30">24 208 6 6</frame>
+		<frame time="1500">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="effects/effects.mats:fire"
+		num-sprites="3"
+		pos-x="rand(u+il+i*353)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*31+100)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="200">0 208 6 6</frame>
+		<frame time="200">6 208 6 6</frame>
+		<frame time="300">12 208 6 6</frame>
+		<frame time="30">18 208 6 6</frame>
+		<frame time="30">24 208 6 6</frame>
+		<frame time="100">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="3 4" looping="true" texture="./deatharea.png" material="effects/effects.mats:fire"
+		num-sprites="10"
+		pos-x="rand(u+il+i*877)*cos(pi*2)*radius - radius/2"
+		pos-y="rand(u+il+i*1019)*cos(pi*2)*radius - radius/2"
+		scale-x="0.5+rand(u+i+il*23)*0.5"
+		scale-y="0.5+rand(u+i+il*23)*0.5"
+		angle="rand(u+i+79)*pi*2"
+		color-a="0.9"
+		>
+		<frame time="300">0 208 6 6</frame>
+		<frame time="300">6 208 6 6</frame>
+		<frame time="200">12 208 6 6</frame>
+		<frame time="40">18 208 6 6</frame>
+		<frame time="40">24 208 6 6</frame>
+		<frame time="200">0 0 0 0</frame>
+	</sprite>
+
+
+<!-- fire -->
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius / 8"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius/2 * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius/2 * pow(rand(u+37*i),0.5)"
+		
+		color-a="saturate(t+l)"
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite>
+	
+	<!-- Ring edge -->
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius / 8"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius/1.8 - 3, radius/1.8+2)"
+        pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius/1.8 - 3, radius/1.8+2)"
+		
+		color-a="saturate(t+l)"
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite>
+
+
+
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="true" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="140" />
+		
+		<color-r value="0.5" />
+		<color-g value="0.25" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>	
+</effect>

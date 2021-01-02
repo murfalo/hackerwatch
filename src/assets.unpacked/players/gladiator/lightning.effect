@@ -1,0 +1,127 @@
+<effect layer="500">
+
+
+	<data>
+		<string name="gore">effects/gibs/doodads/gib_secutor_spawn.sval</string>
+	</data>	
+	
+<variation>
+	<sprite looping="false" origin="46 191" texture="./lightning.png" material="system/default.mats:bright-noxray"
+	
+	>
+		<frame time="40">0 0 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">90 0 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">180 0 90 206</frame>
+		<frame time="40">270 0 90 206</frame>
+		<frame time="40">360 0 90 206</frame>
+	</sprite>
+</variation>
+<variation>
+	<sprite looping="false" origin="46 191" texture="./lightning.png" material="system/default.mats:bright-noxray"
+	color-r="1+rand(u+i)*2"
+	>
+		<frame time="40">0 206 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">90 206 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">180 206 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">270 206 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">360 206 90 206</frame>
+	</sprite>
+</variation>
+<variation>
+	<sprite looping="false" origin="46 191" texture="./lightning.png" material="system/default.mats:bright-noxray"
+	color-g="1+rand(u+i)*1"
+	>
+		<frame time="40">0 0 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">0 206 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+		<frame time="40">90 0 90 206</frame>
+		<frame time="40">0 0 0 0</frame>
+	</sprite>
+</variation>
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>aw
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="128" />
+		
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="10" />
+		<color-a value="0/255" />
+	</light>	
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="40" />
+		
+		<color-r value="1" />
+		<color-g value="2" />
+		<color-b value="4" />
+		<color-a value="0/255" />
+	</light>	
+
+
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="30" />
+		
+		<color-r value="10" />
+		<color-g value="10" />
+		<color-b value="10" />
+		<color-a value="0/255" />
+	</light>			
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="600" />
+		
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="4" />
+		<color-a value="0/255" />
+	</light>				
+
+</effect>

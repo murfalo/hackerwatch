@@ -1,0 +1,22 @@
+<unit slot="doodad">
+	<scenes default="1">
+		<scene name="shared">
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="0 20 6 6" />
+			<collision static="true">
+				<circle offset="0.5 0" radius="16.5" />
+			</collision>
+		</scene>
+		
+		<scene name="1">
+			<scene src="shared"/>
+			<sprite origin="16 22" texture="./stone_desert_large.png" material="system/default.mats:proj-wall">
+					<frame>0 0 34 38</frame>
+				</sprite> 
+			<shadow darkness="1">
+				<sprite origin="-16 7" texture="./stone_desert_large.png">
+					<frame>34 0 4 12</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

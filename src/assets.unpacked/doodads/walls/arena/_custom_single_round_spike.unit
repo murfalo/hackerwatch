@@ -1,0 +1,66 @@
+<unit slot="doodad">
+	<behavior class="StateAnimations">
+		<string name="default">default</string>
+		<array name="transitions">
+			<dict>
+				<string name="from">off</string>
+				<string name="to">disabled</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes default="default" on="on" off="off" disabled="disabled">	
+		<scene name="default">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true" nav-block="true">
+				<circle offset="8 8" radius="8" />
+				<circle offset="8 8" radius="24" sensor="true"/>
+			</collision>
+			<sprite looping="false" ulayer="-1" origin="-13 32" material="system/default.mats:shadow" texture="./_custom_single_round_spike.png">
+				<frame>32 0 32 51</frame>
+			</sprite> 
+			<sprite origin="8 32" texture="./_custom_single_round_spike.png" material="system/default.mats:proj-wall">
+				<frame>0 0 32 51</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="on">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true" nav-block="true">
+				<circle offset="8 8" radius="8" />
+				<circle offset="8 8" radius="24" sensor="true"/>
+			</collision>
+			<effect ulayer="1" src="./_custom_single_round_spike_on.effect"/> 
+			<effect ulayer="1" src="./_custom_single_round_spawn_dust.effect"/> 
+			<effect ulayer="1" pos="8 -8" delay="2000" src="effects/animations/dust_big.effect"/> 
+			<sprite looping="false" ulayer="-1" origin="-13 32" material="system/default.mats:shadow" texture="./_custom_single_round_spike.png">
+				<frame time="2000">0 0 0 0</frame>
+				<frame>32 0 32 51</frame>
+			</sprite> 
+			<sprite looping="false" origin="8 32" texture="./_custom_single_round_spike.png" material="system/default.mats:proj-wall">
+				<frame time="2000">0 0 0 0</frame>
+				<frame>0 0 32 51</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="off">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<collision static="true">
+				<circle offset="8 8" radius="8" />
+			</collision>
+			<effect ulayer="1" src="./_custom_single_round_spike_off.effect"/> 
+			<effect ulayer="1" src="./_custom_single_round_spawn_dust.effect"/> 
+			<sprite layer="-10" looping="false" origin="0 1" texture="./base.png" material="system/default.mats:floor">
+				<frame time="2000">0 0 0 0</frame>
+				<frame time="30">97 111 16 17</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="disabled">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 4" />
+			<sprite layer="-10"  origin="0 1" texture="./base.png" material="system/default.mats:floor">
+				<frame>97 111 16 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

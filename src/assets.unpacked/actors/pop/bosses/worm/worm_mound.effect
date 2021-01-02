@@ -1,0 +1,18 @@
+<effect layer="-21" looping="true">
+	<sprite layer="-21" origin="21 21" looping="true" texture="./worm_mound.png" material="system/default.mats:floor"
+	scale-x="1"
+	scale-y="1"
+	angle="sin((t+l)*4.3)*0.6"
+	>
+		<frame>0 0 42 42</frame>
+	</sprite>
+	
+	<sprite layer="-21" origin="17 18" looping="true" texture="./worm_mound.png" material="system/default.mats:floor"
+	scale-x="sin((t+l)*3)*0.1+0.9"
+	scale-y="sin((t+l)*3)*0.1+0.9"
+	angle="sin((t+l)*0.6)*0.1"
+	>
+		<frame time="250" >43 0 35 36</frame>
+	</sprite>
+	
+</effect>

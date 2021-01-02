@@ -1,0 +1,115 @@
+<unit netsync="position" slot="actor">
+	<behavior class="Miniboss">
+		<string name="type">aberration</string>
+
+		<int name="hp">2000</int>
+		<int name="armor">100</int>
+		<int name="resistance">100</int>
+
+		<bool name="targetable">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<bool name="must-see-target">false</bool>
+		<bool name="no-buffs">true</bool>
+		<int name="aggro-range">99999</int>
+
+		<dict name="movement">
+			<string name="class">TornadoMovement</string>
+			<string name="anim-idle">idle</string>
+			<string name="anim-walk">walk</string>
+
+			<float name="min-speed">1</float>
+			<float name="max-speed">2</float>
+			<float name="turn-speed">1</float>
+			<float name="time-scaler">7000</float>
+			<int name="max-targeting-cooldown">10000</int>
+			<int name="min-targeting-cooldown">3000</int>
+			<int name="target-offset">750</int>
+			<int name="repulsion-strength">50000</int>
+			<int name="repulsion-radius">500</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">ConstantSoundSkill</string>
+				<bool name="only-walking">false</bool>
+				<string name="sound">event:/misc/trap_sandstorm</string>
+			</dict>
+		
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<!-- <string name="anim">walk</string> -->
+
+				<bool name="must-see">false</bool>
+				<int name="cooldown">4000</int>
+				<int name="range">150</int>
+				<int name="castpoint">0</int>
+
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/pop/elemental_sand_spawn.unit</string>
+						<bool name="aggro">true</bool>
+						<bool name="no-loot">true</bool>
+						<bool name="no-experience">true</bool>
+						<bool name="safe-spawn">false</bool>
+						<int name="spawn-dist">0</int>
+						<vec2 name="jitter">8 8</vec2>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<string name="buff">actors/buffs.sval:quicksand-1</string>
+				<bool name="friendly">false</bool>
+				<int name="freq">250</int>
+				<int name="range">150</int>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<string name="buff">actors/buffs.sval:quicksand-3</string>
+				<bool name="friendly">false</bool>
+				<int name="freq">250</int>
+				<int name="range">40</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="shared">
+			<!-- <minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/> -->
+			
+			<collision static="false">
+				<circle offset="0 0" sensor="true" aim-through="true" shoot-through="true" charge-through="true" radius="4" />
+			</collision>
+		
+			<effect src="doodads/terrain/desert_storm.effect" />
+		</scene>
+		
+		<scene name="idle">
+			<scene src="shared" />
+			<sprite origin="8 16" ulayer="3" looping="true" texture="effects/empty.png" material="system/default.mats:actor">
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="walk">
+			<scene src="shared" />
+			
+			<sprite origin="8 16" ulayer="3" looping="true" texture="effects/empty.png" material="system/default.mats:actor">
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="death">
+			<collision static="false">
+				<circle offset="0 0" sensor="true" aim-through="true" shoot-through="true" charge-through="true" radius="4" />
+			</collision>
+			
+			<effect src="doodads/terrain/desert_storm_end.effect" />
+		</scene>
+	</scenes>
+</unit>

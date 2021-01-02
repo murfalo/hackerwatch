@@ -1,0 +1,38 @@
+<effect looping="false">
+	<data>
+		<string name="sound">event:/player/physical_block</string>
+	</data>
+
+	<sprite origin="9 9" looping="false" texture="effects/players/block.png" material="system/default.mats:bright-noxray"
+	angle="rand(u)*pi*2"
+	>
+        <frame time="40">0 64 18 18</frame>
+        <frame time="40">18 64 18 18</frame>
+        <frame time="40">36 64 18 18</frame>
+        <frame time="40">0 82 18 18</frame>
+        <frame time="40">18 82 18 18</frame>
+        <frame time="40">36 82 18 18</frame>
+	</sprite> 
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="150">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="false" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="saturate(cos(t*pi*1.5))*30" />
+
+		<color-r value="0.5" />
+		<color-g value="0.5" />
+		<color-b value="1" />
+		<color-a value="0"/>
+	</light>
+</effect>

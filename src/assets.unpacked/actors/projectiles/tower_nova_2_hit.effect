@@ -1,0 +1,36 @@
+<effect looping="false" layer="0">
+
+	<param name="angle" default="0" />
+
+	<variation>	
+		<sprite origin="16 16" ulayer="0" texture="actors/projectiles/tower_nova_2_hit.png" material="system/default.mats:projectile"
+			pos-x="cos(angle+pi/2)*(rand(u)*6-3)"
+			pos-y="sin(angle+pi/2)*(rand(u)*6-3)"
+			angle="rand(u) * 2 * pi"
+		>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		</sprite>	
+	</variation>
+
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="true" />
+
+		<size value="saturate(sin(t*pi + 0.5))*64" />
+		
+		<color-r value="0" />
+		<color-g value="0.5" />
+		<color-b value="2" />
+		<color-a value="0" />
+	</light>
+</effect>

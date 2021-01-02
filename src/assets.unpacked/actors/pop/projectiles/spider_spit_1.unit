@@ -1,0 +1,36 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/maggot/hit</string>
+		<string name="fx">actors/pop/projectiles/spider_spit_hit.effect</string>
+
+		<float name="speed">5</float>
+		<int name="ttl">700</int>
+		
+		<bool name="blockable">false</bool>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">45</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:poison</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/pop/projectiles/spider_spit_1.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="3" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

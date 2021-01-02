@@ -1,0 +1,37 @@
+<effect looping="false" layer="1">
+	<light> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="false" />
+
+		<size value="32*(1-t)" />
+		
+		<color-r value="5" />
+		<color-g value="0.5" />
+		<color-b value="0.5" />
+		<color-a value="0" />
+	</light>	
+	
+	<sprite origin="9 14" ulayer="1" looping="false" texture="actors/mt/vampire_1_elite.png" material="system/default.mats:bright-noxray">
+		<frame time="50">240 0 16 16</frame>
+		<frame time="50">240 16 16 16</frame>
+		<frame time="50">240 32 16 16</frame>
+		<frame time="50">240 48 16 16</frame>
+		<frame time="50">240 64 16 16</frame>
+		<frame time="50">240 80 16 16</frame>
+		<frame time="50">240 96 16 16</frame>
+	</sprite>
+	<!-- 
+	<sprite origin="9 14" ulayer="0" looping="false" texture="actors/mt/vampire_1_elite.png" material="system/default.mats:glow">
+		<frame time="50">240 0 16 16</frame>
+		<frame time="50">240 16 16 16</frame>
+		<frame time="50">240 32 16 16</frame>
+		<frame time="50">240 48 16 16</frame>
+		<frame time="50">240 64 16 16</frame>
+		<frame time="50">240 80 16 16</frame>
+		<frame time="50">240 96 16 16</frame>
+	</sprite> -->
+</effect>

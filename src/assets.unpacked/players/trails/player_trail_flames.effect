@@ -1,0 +1,115 @@
+<effect looping="true" wpos-track="15">
+
+	
+	<trail texture="players/witch_hunter/hound_trail.png" material="system/default.mats:bright-noxray">
+		<pos-x value="wposx(i)-3" />
+		<pos-y value="wposyz(i)-2" />
+		
+		<length value="40" />
+		<looping value="true" />
+		
+		<segments value="7" />
+		<size value="5" />
+		
+		
+		<uv-l-x value="45 * (7 - i) / 7" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="45 * (7 - i) / 7" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail>
+	<trail texture="players/witch_hunter/hound_trail.png" material="system/default.mats:bright-noxray">
+		<pos-x value="wposx(i)+2" />
+		<pos-y value="wposyz(i)" />
+		
+		<length value="40" />
+		<looping value="true" />
+		
+		<segments value="8" />
+		<size value="5" />
+		
+		
+		<uv-l-x value="45 * (8 - i) / 8" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="45 * (8 - i) / 8" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail>
+	<trail texture="players/witch_hunter/hound_trail.png" material="system/default.mats:bright-noxray">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposyz(i)-6" />
+		
+		<length value="40" />
+		<looping value="true" />
+		
+		<segments value="7" />
+		<size value="7" />
+		
+		
+		<uv-l-x value="45 * (7 - i) / 7" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="45 * (7 - i) / 7" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail>
+	
+<!-- 	<trail texture="players/witch_hunter/hound_trail_smoke.png" material="system/default.mats:bright-noxray">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposyz(i-1)" />
+		
+		<length value="70" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="20" />
+		
+		
+		<uv-l-x value="45 * (15 - i) / 15" />
+		<uv-l-y value="0 + mod(l,5) * 22" />
+		
+		<uv-r-x value="45 * (15 - i) / 15" />
+		<uv-r-y value="22 + mod(l,5) * 22" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail> -->
+	
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="1100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="(cos(pi * 2 * 0.1 * (t+l) + pi)/2 + 0.5) * 20 + 30" />
+		<length value="70" />
+		<color-r value="1" />
+		<color-g value="0.4" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+</effect>

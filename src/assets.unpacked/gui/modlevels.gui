@@ -1,0 +1,41 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- Window -->
+			<rect width="300" height="200" spriteset="gui/variable/bigwindow_borders.sval" anchor="0.5 0.5">
+				<!-- Header -->
+				<rect width="296" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="275" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".shop.modding" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton spriteset="close" func="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="296" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Level list -->
+				<scrollrect id="button-list" flow="vbox" spacing="3" padding="4 4" width="296" height="175" offset="2 23" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+				<!-- Header template -->
+				<rect id="header-template" visible="false" width="288" height="18">
+					<text id="text" font="gui/fonts/arial11_bold.fnt" anchor="0 0.5" />
+				</rect>
+
+				<!-- Mod button template -->
+				<scalebutton id="button-template" visible="false" spriteset="scalebutton" font="gui/fonts/arial11.fnt" width="288" />
+			</rect>
+		</group>
+	</doc>
+</gui>

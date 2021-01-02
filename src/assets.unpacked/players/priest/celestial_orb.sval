@@ -1,0 +1,49 @@
+<dict>
+	<string name="name">.skills.priest.celestial-orb</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>144 96 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::CelestialOrbs</string>
+
+			<int name="num-orbs">2</int>
+
+			<float name="orb-distance">10</float>
+			<int name="orb-range">40</int>
+			<string name="orb-fx">effects/players/priest_orb.effect</string>
+			<string name="orb-beam-fx">effects/players/priest_orb_beam.effect</string>
+			<string name="orb-snd">event:/player/priest/orb_beam</string>
+
+			<int name="effect-interval">250</int>
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="magical">8</int>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::CelestialOrbs</string>
+
+			<int name="num-orbs">3</int>
+
+			<float name="orb-distance">10</float>
+			<int name="orb-range">40</int>
+			<string name="orb-fx">effects/players/priest_orb.effect</string>
+			<string name="orb-beam-fx">effects/players/priest_orb_beam.effect</string>
+			<string name="orb-snd">event:/player/priest/orb_beam</string>
+
+			<int name="effect-interval">250</int>
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="magical">12</int>
+			</dict>
+		</dict>
+	</array>
+</dict>

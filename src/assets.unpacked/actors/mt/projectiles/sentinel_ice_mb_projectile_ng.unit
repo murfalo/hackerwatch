@@ -1,0 +1,52 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/enemy/sentinel_ice_mb/shoot</string>
+		<string name="hit-snd">event:/enemy/sentinel_ice_mb/hit</string>
+		<string name="bounce-snd">event:/enemy/sentinel_ice_mb/hit</string>
+		
+		<float name="speed">2</float>
+		<float name="speed-delta">0.25</float>
+		<float name="speed-delta-max">4.5</float>
+		
+		<int name="ttl">10000</int>
+		
+		<int name="bounces">1000</int>
+		<float name="bounce-speed-mul">1</float>
+		<bool name="bounce-on-collide">false</bool>
+		
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.02</float>
+		
+		<int name="penetration">100</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">50</int>
+				<float name="resistance-mul">0.75</float>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/mt/projectiles/sentinel_ice_mb_projectile_hit.effect</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+			<float name="range">80</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/mt/projectiles/sentinel_ice_mb_projectile.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="8" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>
+
+

@@ -1,0 +1,97 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			<collision static="true">
+				<polygon>
+					<point>-14 0</point>
+					<point>1 15</point>
+					<point>16 0</point>
+					<point>1 -15</point>
+				</polygon>
+			</collision>
+		</scene>		
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 10 9 10" />
+				<sprite origin="17 15" texture="./well_challenge.png" material="system/default.mats:proj-prop"> <!--shadow-->
+					<frame>172 76 40 31</frame>
+				</sprite>
+				<sprite layer="-30" origin="21 14" texture="./well_challenge.png" material="system/default.mats:proj-prop"> <!--skulls-->
+					<frame>212 76 43 12</frame>
+				</sprite>
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="4"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="200 200 230 0" />
+					<color value="200 200 230 0" />
+				</colors>
+			</light>			
+			<sprite origin="21 22" looping="true" texture="./well_challenge.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 0 43 38</frame>
+				<frame time="100">43 0 43 38</frame>
+				<frame time="100">86 0 43 38</frame>
+				<frame time="100">129 0 43 38</frame>
+				<frame time="100">172 0 43 38</frame>
+				<frame time="100">215 0 43 38</frame>
+				<frame time="100">258 0 43 38</frame>
+				<frame time="100">301 0 43 38</frame>
+			</sprite>								
+		</scene>
+		<scene name="off">
+			<scene src="shared" />	
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 20 9 10" />
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="4"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="200 200 230 0" />
+					<color value="200 200 230 0" />
+				</colors>
+			</light>			
+			<sprite origin="17 15" texture="./well_challenge.png" material="system/default.mats:proj-prop"> <!--shadow-->
+				<frame>172 76 40 31</frame>
+			</sprite>
+			<sprite layer="-30" origin="21 14" texture="./well_challenge.png" material="system/default.mats:proj-prop"> <!--skulls-->
+				<frame>212 76 43 12</frame>
+			</sprite>
+			<sprite origin="21 22" looping="true" loopback="800" texture="./well_challenge.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 38 43 38</frame>
+				<frame time="100">43 38 43 38</frame>
+				<frame time="100">86 38 43 38</frame>
+				<frame time="100">129 38 43 38</frame>
+				<frame time="100">172 38 43 38</frame>
+				<frame time="100">215 38 43 38</frame>
+				<frame time="100">258 38 43 38</frame>
+				<frame time="100">301 38 43 38</frame>
+				<frame time="100">0 76 43 38</frame>
+				<frame time="100">43 76 43 38</frame>
+				<frame time="100">86 76 43 38</frame>
+				<frame time="100">129 76 43 38</frame>
+			</sprite>
+				
+		</scene>
+		
+		
+	</scenes>
+</unit>

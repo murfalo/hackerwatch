@@ -1,0 +1,1014 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>1</int>
+			<vec3>350 108 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>2</int>
+			<vec3>-237 42 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>3</int>
+			<vec3>-231 122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>4</int>
+			<vec3>-128 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>red sky</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena_meteor.env</string>
+			</dict>
+			<array><int>73</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>5</int>
+			<vec3>243 -118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>6</int>
+			<vec3>130 116 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>7</int>
+			<vec3>133 -40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>8</int>
+			<vec3>-111 -115 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>9</int>
+			<vec3>-256 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>meteor_activate</string>
+			<dict>
+				<string name="EventName">meteor_activate</string>
+			</dict>
+			<array><int>19</int><int>0</int><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>10</int>
+			<vec3>0 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>event_finished</string>
+			<dict>
+				<string name="EventName">event_finished</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>11</int>
+			<vec3>0 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">450</int>
+				<array name="LinkScripts"><int>38</int><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>12</int>
+			<vec3>-232 -44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>13</int>
+			<vec3>-235 -115 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>14</int>
+			<vec3>131 -114 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>15</int>
+			<vec3>-108 -44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>16</int>
+			<vec3>256 480 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Deactivate</string>
+			<array><int>44</int><int>0</int><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetEnvironment</string>
+			<int>17</int>
+			<vec3>128 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal sky</string>
+			<dict>
+				<string name="Environment">effects/lighting/arena.env</string>
+			</dict>
+			<array><int>74</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>18</int>
+			<vec3>11 115 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>19</int>
+			<vec3>-256 672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">meteor shower activated</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>20</int>
+			<vec3>256 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>events_deactivate</string>
+			<dict>
+				<string name="EventName">events_deactivate</string>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>StopSound</string>
+			<int>21</int>
+			<vec3>-32 864 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Sounds"><int>25</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>22</int>
+			<vec3>9 45 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>23</int>
+			<vec3>348 38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>24</int>
+			<vec3>64 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>3</int>
+					<int>41</int>
+					<int>12</int>
+					<int>42</int>
+					<int>39</int>
+					<int>32</int>
+					<int>8</int>
+					<int>18</int>
+					<int>31</int>
+					<int>14</int>
+					<int>26</int>
+					<int>29</int>
+					<int>23</int>
+					<int>37</int>
+					<int>55</int>
+					<int>59</int>
+					<int>57</int>
+					<int>70</int>
+					<int>67</int>
+					<int>52</int>
+					<int>54</int>
+					<int>50</int>
+					<int>48</int>
+					<int>65</int>
+					<int>63</int>
+					<int>60</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>25</int>
+			<vec3>32 864 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/ambient/dragon</string>
+				<bool name="Looping">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>26</int>
+			<vec3>246 -47 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>241 39 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>28</int>
+			<vec3>-332 113 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>29</int>
+			<vec3>242 117 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>30</int>
+			<vec3>10 -116 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>31</int>
+			<vec3>128 46 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>32</int>
+			<vec3>14 -41 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>33</int>
+			<vec3>-256 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Activate</string>
+			<array>
+				<int>40</int>
+				<int>0</int>
+				<int>46</int>
+				<int>0</int>
+				<int>47</int>
+				<int>0</int>
+				<int>4</int>
+				<int>0</int>
+				<int>72</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>34</int>
+			<vec3>353 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>35</int>
+			<vec3>0 480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">500</int>
+			</dict>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>36</int>
+			<vec3>-115 124 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>37</int>
+			<vec3>350 -119 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>38</int>
+			<vec3>-64 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute">
+					<int>28</int>
+					<int>43</int>
+					<int>13</int>
+					<int>2</int>
+					<int>36</int>
+					<int>15</int>
+					<int>30</int>
+					<int>22</int>
+					<int>6</int>
+					<int>7</int>
+					<int>5</int>
+					<int>27</int>
+					<int>1</int>
+					<int>34</int>
+					<int>49</int>
+					<int>71</int>
+					<int>68</int>
+					<int>69</int>
+					<int>56</int>
+					<int>61</int>
+					<int>58</int>
+					<int>53</int>
+					<int>51</int>
+					<int>62</int>
+					<int>64</int>
+					<int>66</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>39</int>
+			<vec3>-116 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>40</int>
+			<vec3>-96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>41</int>
+			<vec3>-339 33 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>42</int>
+			<vec3>-341 -118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>43</int>
+			<vec3>-339 -43 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>44</int>
+			<vec3>96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>45</int>
+			<vec3>0 608 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Finished</string>
+			<array><int>10</int><int>0</int><int>44</int><int>0</int><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>46</int>
+			<vec3>-256 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>16</int><int>45</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>47</int>
+			<vec3>-96 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="TimeMax">30000</int>
+				<int name="TimeMin">20000</int>
+				<array name="LinkScripts"><int>45</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>48</int>
+			<vec3>335 203 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>49</int>
+			<vec3>-235 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>50</int>
+			<vec3>130 212 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>51</int>
+			<vec3>11 211 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>52</int>
+			<vec3>-347 202 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>53</int>
+			<vec3>243 205 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>54</int>
+			<vec3>-111 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>55</int>
+			<vec3>243 -214 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>56</int>
+			<vec3>-111 -211 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>57</int>
+			<vec3>-235 -211 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>58</int>
+			<vec3>130 -207 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>59</int>
+			<vec3>11 -208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>60</int>
+			<vec3>350 -215 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>61</int>
+			<vec3>-338 -212 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>62</int>
+			<vec3>417 166 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>63</int>
+			<vec3>442 87 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>64</int>
+			<vec3>457 4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>65</int>
+			<vec3>451 -70 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>66</int>
+			<vec3>432 -158 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>67</int>
+			<vec3>-446 74 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>68</int>
+			<vec3>-445 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>69</int>
+			<vec3>-411 -162 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>70</int>
+			<vec3>-441 -89 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>71</int>
+			<vec3>-426 158 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">prefabs/coliseum/arena/events/supplements/meteor_arena.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>72</int>
+			<vec3>-96 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<array><int>45</int><int>30000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>73</int>
+			<vec3>-128 784 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_event</string>
+			<dict>
+				<string name="EventName">env_event</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>74</int>
+			<vec3>128 784 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>env_default</string>
+			<dict>
+				<string name="EventName">env_default</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

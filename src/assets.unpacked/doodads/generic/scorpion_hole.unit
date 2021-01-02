@@ -1,0 +1,15 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" radius="12"/>
+			</collision>
+			
+			<minimap_sprite layer="1" origin="3 3" texture="gui/minimap.png" frame="133 0 5 5"/>
+			
+			<sprite layer="-20" origin="29 25" texture="./scorpion_hole.png" material="system/default.mats:floor">
+				<frame>0 0 59 48</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

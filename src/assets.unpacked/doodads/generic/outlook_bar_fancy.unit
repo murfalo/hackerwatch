@@ -1,0 +1,112 @@
+<unit slot="doodad">
+	<scenes crn="1" west="2 3" west_cap_up="4" south="5 6" cap_s-left="7" cap_s-right="8" door="9" crn2="1b">
+		<scene name="shared-w">		
+			<collision static="true">
+				<rect>-4 -17 9 21</rect>
+			</collision>
+				
+			<sprite origin="-5 25" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">361 214 8 28</frame>
+			</sprite>	
+		</scene>
+		<scene name="shared-s">		
+			<collision static="true">
+				<rect>-4 -9 21 9</rect>
+			</collision>
+			
+			<sprite origin="-2 17" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">394 214 23 3</frame>
+			</sprite>	
+		</scene>
+		
+		<scene name="1">				
+			<collision static="true">
+				<rect>-4 -3 9 9</rect>
+			</collision>
+			<sprite origin="5 8" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">379 214 10 15</frame>
+			</sprite>				
+		</scene>
+		
+		<scene name="1b">				
+			<collision static="true">
+				<rect>-5 -1 9 9</rect>
+			</collision>
+			<sprite origin="5 8" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">481 17 16 17</frame>
+			</sprite>				
+		</scene>		
+		
+		<scene name="2">			
+			<scene src="shared-w" />	
+			<sprite origin="5 22" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">351 214 10 21</frame>
+			</sprite>		
+		</scene>
+		<scene name="3">		
+			<scene src="shared-w" />		
+			<sprite origin="5 22" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">369 214 10 21</frame>
+			</sprite>		
+		</scene>
+		<scene name="4">	
+			<collision static="true">
+				<rect>-4 -13 9 9</rect>
+			</collision>			
+			<sprite origin="4 24" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">320 214 9 15</frame>
+			</sprite>
+			<sprite origin="-5 24" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">329 214 8 21</frame>
+			</sprite>		
+		</scene>
+		<scene name="5">
+			<scene src="shared-s" />			
+			<sprite origin="4 14" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">389 217 21 15</frame>
+			</sprite>
+		</scene>
+		<scene name="6">
+			<scene src="shared-s" />			
+			<sprite origin="4 14" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame tmime="180">417 214 21 15</frame>
+			</sprite>	
+		</scene>
+		<scene name="7">	
+			<collision static="true">
+				<rect>-4 -9 12 9</rect>
+			</collision>		
+			<sprite origin="4 14" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame tmime="180">457 217 12 14</frame>
+			</sprite>
+			<sprite origin="-5 17" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">465 214 11 3</frame>
+			</sprite>		
+		</scene>
+		<scene name="8">
+			<collision static="true">
+				<rect>-4 -9 12 9</rect>
+			</collision>				
+			<sprite origin="4 14" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame tmime="180">438 217 12 14</frame>
+			</sprite>
+			<sprite origin="-1 17" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">443 214 14 3</frame>
+			</sprite>	
+			<sprite origin="-8 14" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">450 214 7 12</frame>
+			</sprite>		
+		</scene>
+		<scene name="9">
+			<collision static="true">
+				<rect>-3 -7 12 9</rect>
+			</collision>				
+			<sprite origin="4 7" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame tmime="180">337 219 14 7</frame>
+			</sprite>
+			<sprite origin="-4 10" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">345 214 5 5</frame>
+			</sprite>		
+		</scene>
+	</scenes>
+</unit>

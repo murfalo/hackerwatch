@@ -1,0 +1,40 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		
+		<float name="speed">5</float>
+		<int name="ttl">1600</int>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>
+		<bool name="penetrate-all">true</bool>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">45</int>
+			</dict>
+			<dict>
+				<string name="class">Decimate</string>
+				<float name="mana-max">0.1</float>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/ghost/arrow_hit</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/projectiles/ghost_arrow.effect" />
+			
+			<collision static="false">
+				<circle projectile="true" radius="1" />
+			</collision>	
+		</scene>
+	</scenes>
+</unit>

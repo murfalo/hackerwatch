@@ -1,0 +1,115 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/trap_shooter_blade_w.unit"><vec2>96 28</vec2><int>3</int><vec2>96 76</vec2><int>4</int><vec2>96 124</vec2><int>5</int></array>
+		<array name="doodads/generic/trap_shooter_blade_e.unit"><vec2>0 100</vec2><int>1</int><vec2>0 52</vec2><int>2</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ProjectileShooter</string>
+			<int>6</int>
+			<vec3>6 44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>7</int>
+			<vec3>90 116 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>8</int>
+			<vec3>90 68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>9</int>
+			<vec3>6 92 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>10</int>
+			<vec3>48 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array>
+				<int>7</int>
+				<int>0</int>
+				<int>9</int>
+				<int>0</int>
+				<int>8</int>
+				<int>0</int>
+				<int>6</int>
+				<int>0</int>
+				<int>11</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>11</int>
+			<vec3>90 20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>12</int>
+			<vec3>-88 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_no_traps</string>
+			<dict>
+				<string name="Flag">fountain_no_traps</string>
+				<array name="OnTrue"><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>13</int>
+			<vec3>-32 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>10</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

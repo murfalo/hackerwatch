@@ -1,0 +1,16 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="10" />
+	
+	<sprite looping="true" origin="4 3" texture="./maggot_hit.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 5 5</frame>
+		<frame time="100">0 5 5 5</frame>
+		<frame time="100">0 10 5 5</frame>
+	</sprite>
+</effect>

@@ -1,0 +1,82 @@
+<effect layer="-1" looping="false" >
+	<param name="radius" default="0" />
+	<param name="angle" default="0" />
+	
+	<sprite origin="32 32" looping="true" texture="./underground.png" material="system/default.mats:floor"
+	scale-x="saturate(1-pow(t,2))"
+	scale-y="saturate(1-pow(t,2))"
+	color-a="0.6-t*0.6"
+	angle="angle"
+	>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+	</sprite>
+	<sprite origin="48 32" looping="true" texture="./underground.png" material="system/default.mats:floor"
+	scale-x="saturate(0.8-pow(t,2)*0.8)"
+	scale-y="saturate(0.8-pow(t,2)*0.8)"
+	color-a="0.15-t*0.15"
+	
+	
+	angle="angle"
+	>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+	</sprite>
+	<sprite origin="18 32" looping="true" texture="./underground.png" material="system/default.mats:floor"
+	scale-x="saturate(0.8-pow(t,2)*0.8)"
+	scale-y="saturate(0.8-pow(t,2)*0.8)"
+	color-a="0.2-t*0.2"
+	
+	
+	angle="angle"
+	>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+	</sprite>
+	<!-- <sprite origin="32 32" looping="true" texture="./underground.png" material="system/default.mats:floor"
+	
+	angle="angle"
+	>
+		<frame time="500">0 64 64 64</frame>
+	</sprite> -->
+	
+</effect>

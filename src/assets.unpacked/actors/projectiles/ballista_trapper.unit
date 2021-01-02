@@ -1,0 +1,60 @@
+<unit netsync="none" layer="1">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">6</float>
+		<int name="ttl">700</int>
+		
+		<string name="shoot-snd">event:/enemy/tower_ballista/ballista_shoot</string>
+		<string name="hit-snd">event:/enemy/tower_ballista/ballista_hit</string>
+
+		<array name="effects">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/projectiles/ballista_net.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<vec2 name="offset">0 0</vec2>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/projectiles/ballista_net.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<vec2 name="offset">0 22</vec2>
+				<bool name="rotate-offset">true</bool>
+				<vec2 name="jitter">24 0</vec2>
+				<int name="delay">60</int>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/projectiles/ballista_net.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+				<vec2 name="offset">0 -22</vec2>
+				<bool name="rotate-offset">true</bool>
+				<vec2 name="jitter">24 0</vec2>
+				<int name="delay">120</int>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/projectiles/ballista_trapper_break.effect</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/projectiles/ballista_trapper.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="12" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

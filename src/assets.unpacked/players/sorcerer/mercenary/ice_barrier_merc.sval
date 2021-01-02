@@ -1,0 +1,27 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">sorcerer</string>
+	<string name="name">.skills.sorcerer.ice-barrier</string>
+	<string name="description">.skills.sorcerer.ice-barrier.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 48 24 24</vec4>
+	</array>
+
+	<int name="cost">16</int>
+
+	<dict name="skill">
+		<string name="class">Skills::StackProtection</string>
+		<int name="max-stacks">8</int>
+		<float name="dmg-taken-mul">0.33</float>
+		<int name="duration">2500</int>
+		<string name="fx-add-stack">players/sorcerer/ice_barrier_charge.effect</string>
+		<string name="fx-take-stack">players/sorcerer/ice_barrier.effect</string>
+
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>12 24 12 12</vec4>
+		</array>
+	</dict>
+</dict>

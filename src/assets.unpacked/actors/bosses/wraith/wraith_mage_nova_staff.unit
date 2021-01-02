@@ -1,0 +1,40 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<string name="hit-snd">event:/enemy/maggot/hit</string>
+		<float name="speed">5.5</float>
+		<int name="ttl">1250</int>
+
+		<float name="team-dmg">0</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">45</int>
+				<float name="resistance-mul">0.75</float>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/bosses/wraith/wraith_staff_area.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+			
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/bosses/wraith/wraith_mage_nova_hit.effect</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="8" projectile="true" />
+			</collision>
+			
+			<effect pos="0 0" src="actors/bosses/wraith/wraith_mage_nova.effect" />
+		</scene>
+	</scenes>
+</unit>

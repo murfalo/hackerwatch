@@ -1,0 +1,20 @@
+<unit layer="-1">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">3000</int>
+
+		<dict name="effect">
+			<string name="class">Damage</string>
+			<int name="magical">6</int>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene>
+			<collision static="false">
+				<circle sensor="true" offset="0 0" radius="40" />
+			</collision>
+			<effect src="actors/ghost_priest_area.effect" />
+		</scene>
+	</scenes>
+</unit>

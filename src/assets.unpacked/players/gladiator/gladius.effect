@@ -1,0 +1,19 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="2" />
+	
+	<sprite looping="true" random-start="true" origin="5 11" texture="./gladius_spin.png" material="system/default.mats:shadow"
+		angle="angle+pi/2">
+		
+		<frame time="100">0 96 7 25</frame>
+	</sprite>
+	<sprite looping="true" origin="5 11" texture="./gladius_spin.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle+pi/2">
+		
+		<frame time="100">0 96 7 25</frame>
+	</sprite>
+</effect>

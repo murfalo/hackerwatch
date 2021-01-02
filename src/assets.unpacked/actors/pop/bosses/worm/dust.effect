@@ -1,0 +1,53 @@
+<effect looping="false" layer="-1">
+	<param name="angle" default="0" />
+	<param name="width" default="16" />
+	<sprite origin="3 8" looping="false" texture="./dust_worm.png" material="system/default.mats:default-noxray"
+		num-sprites="5+5*t"
+
+		pos-x="(t*16+width) * cos(angle + pi/2) + cos(angle - pi/8 + rand(u+27*i)*0.25) * (t+0.2) * 5 * -i + rand(u+9*i)*15*t"
+        pos-y="(t*16+width) * sin(angle + pi/2) + sin(angle - pi/8 + rand(u+27*i)*0.25) * (t+0.2) * 5 * -i + rand(u+7*i)*15*t"
+		
+		scale-x="1"
+		scale-y="1"
+		
+		color-r="0.392"
+		color-g="0.196"
+		color-b="0.027"
+		color-a="rand(u+13*i)"
+	>
+        
+		<frame time="100">0 48 6 6</frame>
+		<frame time="100">6 48 6 6</frame>
+		<frame time="100">12 48 6 6</frame>
+		<frame time="200">18 48 6 6</frame>
+		<frame time="200">24 48 6 6</frame>
+		<frame time="200">30 48 6 6</frame>
+		<frame time="100">36 48 6 6</frame>
+		<frame time="100">42 48 6 6</frame>
+	</sprite>
+
+	<sprite origin="3 8" looping="false" texture="./dust_worm.png" material="system/default.mats:default-noxray"
+		num-sprites="5+5*t"
+
+		pos-x="(t*16+width) * cos(angle - pi/2) + cos(angle + pi/8 + rand(u+31*i)*0.25) * (t+0.2) * 5 * -i + rand(u+7*i)*15*t"
+        pos-y="(t*16+width) * sin(angle - pi/2) + sin(angle + pi/8 + rand(u+31*i)*0.25) * (t+0.2) * 5 * -i + rand(u+9*i)*15*t"
+		
+		scale-x="1"
+		scale-y="1"
+		
+		color-r="0.392"
+		color-g="0.196"
+		color-b="0.027"
+		color-a="rand(u+17*i)"
+	>
+        
+		<frame time="100">0 48 6 6</frame>
+		<frame time="100">6 48 6 6</frame>
+		<frame time="100">12 48 6 6</frame>
+		<frame time="200">18 48 6 6</frame>
+		<frame time="200">24 48 6 6</frame>
+		<frame time="200">30 48 6 6</frame>
+		<frame time="100">36 48 6 6</frame>
+		<frame time="100">42 48 6 6</frame>
+	</sprite>
+</effect>

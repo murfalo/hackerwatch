@@ -1,0 +1,575 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">24</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">96</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/altar_vampire_cross.unit"><vec2>0 0</vec2><int>3</int></array>
+		<array name="doodads/special/_minimap_objective.unit"><vec2>0 0</vec2><int>4</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PlayAttachedEffect</string>
+			<int>5</int>
+			<vec3>-32 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/bosses/vampire/poof.effect</string>
+				<array name="#Objects"><int>10</int><string>LastSpawned</string></array>
+				<int name="Layer">10</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>6</int>
+			<vec3>16 -288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>vampire_escape</string>
+			<dict>
+				<string name="EventName">vampire_escape</string>
+				<array name="#Units"><int>10</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>36</int><int>0</int><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>7</int>
+			<vec3>64 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>10</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>8</int>
+			<vec3>-232 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>no_spawn</string>
+			<dict>
+				<string name="Sound">event:/enemy/boss_vampire/chuckle_appear</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>9</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/bosses/vampire/poof.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>10</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire</string>
+			<dict>
+				<string name="UnitType">actors/bosses/vampire/vampire_encounter.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>11</int>
+			<vec3>-160 272 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>2</int></array>
+			</dict>
+			<array><int>24</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>12</int>
+			<vec3>-120 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnVampire</string>
+			<array>
+				<int>9</int>
+				<int>0</int>
+				<int>10</int>
+				<int>200</int>
+				<int>25</int>
+				<int>0</int>
+				<int>37</int>
+				<int>0</int>
+				<int>40</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>13</int>
+			<vec3>120 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>14</int><int>0</int><int>16</int><int>0</int><int>46</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>14</int>
+			<vec3>120 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>closed</string>
+			<dict>
+				<string name="State">closed</string>
+				<array name="Units"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>15</int>
+			<vec3>120 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross1</string>
+			<dict>
+				<string name="Flag">vampire_cross1</string>
+				<int name="State">2</int>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>16</int>
+			<vec3>120 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross1</string>
+			<dict>
+				<string name="Flag">vampire_cross1</string>
+				<array name="OnFalse"><int>15</int></array>
+				<array name="OnTrue"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>17</int>
+			<vec3>192 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross2</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">vampire_cross2</string>
+			</dict>
+			<array><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>18</int>
+			<vec3>192 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross2</string>
+			<dict>
+				<string name="Flag">vampire_cross2</string>
+				<array name="OnFalse"><int>17</int></array>
+				<array name="OnTrue"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>19</int>
+			<vec3>264 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross3</string>
+			<dict>
+				<string name="Flag">vampire_cross3</string>
+				<int name="State">2</int>
+			</dict>
+			<array><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>20</int>
+			<vec3>264 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross3</string>
+			<dict>
+				<string name="Flag">vampire_cross3</string>
+				<array name="OnFalse"><int>19</int></array>
+				<array name="OnTrue"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>21</int>
+			<vec3>336 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross4</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">vampire_cross4</string>
+			</dict>
+			<array><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>22</int>
+			<vec3>336 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross4</string>
+			<dict>
+				<string name="Flag">vampire_cross4</string>
+				<array name="OnFalse"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>23</int>
+			<vec3>-96 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_first</string>
+			<dict>
+				<int name="State">5</int>
+				<string name="Flag">vampire_first</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>24</int>
+			<vec3>-160 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_first</string>
+			<dict>
+				<string name="Flag">vampire_first</string>
+				<array name="OnFalse"><int>27</int><int>23</int></array>
+				<array name="OnTrue"><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>25</int>
+			<vec3>-120 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_encounter</string>
+			<dict>
+				<string name="Flag">vampire_encounter</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>26</int>
+			<vec3>-328 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_encounter</string>
+			<dict>
+				<string name="Flag">vampire_encounter</string>
+				<array name="OnTrue"><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>27</int>
+			<vec3>-208 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>NoSpawn</string>
+			<array><int>29</int><int>0</int><int>39</int><int>0</int><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>28</int>
+			<vec3>-160 136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RandomSpawn</string>
+			<array><int>31</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>29</int>
+			<vec3>-208 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_nospawn</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">vampire_nospawn</string>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>30</int>
+			<vec3>-408 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_nospawn</string>
+			<dict>
+				<string name="Flag">vampire_nospawn</string>
+				<array name="OnTrue"><int>34</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>31</int>
+			<vec3>-160 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>27</int><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>32</int>
+			<vec3>-368 168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_check</string>
+			<dict>
+				<string name="EventName">vampire_check</string>
+			</dict>
+			<array><int>30</int><int>0</int><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>33</int>
+			<vec3>-160 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_check</string>
+			<dict>
+				<string name="EventName">vampire_check</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>34</int>
+			<vec3>-408 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>35</int>
+			<vec3>-328 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>36</int>
+			<vec3>16 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>escape</string>
+			<array><int>5</int><int>0</int><int>7</int><int>300</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>37</int>
+			<vec3>-304 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_exit_encounter</string>
+			<dict>
+				<string name="EventName">vampire_exit_encounter</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>38</int>
+			<vec3>-96 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_exit_escape</string>
+			<dict>
+				<string name="EventName">vampire_exit_escape</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>39</int>
+			<vec3>-416 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_exit_nospawn</string>
+			<dict>
+				<string name="EventName">vampire_exit_nospawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>40</int>
+			<vec3>-104 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>appear</string>
+			<dict>
+				<string name="Sound">event:/enemy/boss_vampire/laugh</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>41</int>
+			<vec3>-40 -368 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>death_backup</string>
+			<dict>
+				<array name="#Units"><int>10</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>42</int>
+			<vec3>120 200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Number">1</int>
+				<string name="ID">cross</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>43</int>
+			<vec3>192 200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="ID">cross</string>
+				<int name="Number">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>44</int>
+			<vec3>264 200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Number">3</int>
+				<string name="ID">cross</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>45</int>
+			<vec3>336 200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="ID">cross</string>
+				<int name="Number">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>46</int>
+			<vec3>176 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>4</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

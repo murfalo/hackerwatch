@@ -1,0 +1,174 @@
+<effect looping="true">
+	<param name="radius" default="16" />
+	<param name="ttl" default="3950" />
+	
+<variation>
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius * radius / 50"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+		
+		
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite>
+	
+	<sprite looping="false" origin="17 25" texture="./crowd_fire_area.png" material="effects/effects.mats:fire"
+	
+	color-a="saturate(1-l)"
+	>
+		<frame time="50">0 98 39 49</frame>
+		<frame time="50">39 98 39 49</frame>
+		<frame time="50">78 98 39 49</frame>
+		<frame time="50">117 98 39 49</frame>
+		<frame time="60">156 98 39 49</frame>
+		<frame time="60">195 98 39 49</frame>
+		<frame time="60">0 147 39 49</frame>
+		<frame time="80">39 147 39 49</frame>
+		<frame time="80">78 147 39 49</frame>
+		<frame time="80">117 147 39 49</frame>
+		<frame time="80">156 147 39 49</frame>
+	</sprite>
+</variation>
+
+
+<variation>
+<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius * radius / 100"
+
+		pos-x="cos(rand(u+491*i)*2*pi) * radius * pow(rand(u+47*i),0.5)"
+        pos-y="sin(rand(u+491*i)*2*pi) * radius * pow(rand(u+47*i),0.5)"
+		
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite>
+	
+	<sprite looping="false" origin="17 25" texture="./crowd_fire_area.png" material="effects/effects.mats:fire" color-a="saturate(1-l)">
+		<frame time="50">0 98 39 49</frame>
+		<frame time="50">39 98 39 49</frame>
+		<frame time="60">78 98 39 49</frame>
+		<frame time="60">117 98 39 49</frame>
+		<frame time="60">156 98 39 49</frame>
+		<frame time="60">195 98 39 49</frame>
+		<frame time="60">0 147 39 49</frame>
+		<frame time="80">39 147 39 49</frame>
+		<frame time="80">78 147 39 49</frame>
+		<frame time="80">117 147 39 49</frame>
+		<frame time="80">156 147 39 49</frame>
+	</sprite>
+</variation>
+<variation>
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius * radius / 100"
+
+		pos-x="cos(rand(u+491*i)*2*pi) * radius * pow(rand(u+47*i),0.5)"
+        pos-y="sin(rand(u+491*i)*2*pi) * radius * pow(rand(u+47*i),0.5)"
+		
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite>
+	
+	
+	<sprite looping="false" origin="17 25" texture="./crowd_fire_area.png" material="effects/effects.mats:fire" color-a="saturate(1-l)">
+		<frame time="50">0 0 39 49</frame>
+		<frame time="50">39 0 39 49</frame>
+		<frame time="50">78 0 39 49</frame>
+		<frame time="50">117 0 39 49</frame>
+		<frame time="50">156 0 39 49</frame>
+		<frame time="50">195 0 39 49</frame>
+		<frame time="60">0 49 39 49</frame>
+		<frame time="60">39 49 39 49</frame>
+		<frame time="70">78 49 39 49</frame>
+		<frame time="70">117 49 39 49</frame>
+		<frame time="70">156 49 39 49</frame>
+	</sprite>
+</variation>
+
+<!-- ring edge -->
+<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius / 3"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2)"
+		
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite>
+
+
+	%// Flash
+	<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * radius * t" />
+		
+		<color-r value="3" />
+		<color-g value="0.8" />
+		<color-b value="0.75" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * radius * 3) + 10" />
+		
+		<color-r value="3 - t" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

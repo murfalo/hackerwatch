@@ -1,0 +1,54 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">priest</string>
+	<string name="name">.skills.priest.holy-light</string>
+	<string name="description">.skills.priest.holy-light.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 96 24 24</vec4>
+	</array>
+
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ShootBeam</string>
+		<string name="anim">channeling 8</string>
+		<string name="snd">event:/player/priest/beam</string>
+		<string name="fx">effects/players/priest_beam.effect</string>
+
+		<int name="cooldown">250</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">false</bool>
+		<float name="speed-mul">1</float>
+
+		<int name="mana-cost">8</int>
+
+		<float name="dist">200</float>
+		<int name="interval">200</int>
+		<int name="buildup-time">2000</int>
+		
+		<dict name="effect">
+			<string name="class">Explode</string>
+			
+			<int name="radius">8</int>
+			<float name="dist-scaling">3</float>
+			<float name="team-dmg">0</float>
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="magical">52</int>
+			</dict>
+		</dict>
+
+		<array name="team-effects">
+			<dict>
+				<string name="class">Heal</string>
+				<int name="heal">12</int>
+			</dict>
+			<dict>
+				<string name="class">Decimate</string>
+				<float name="amount-max">-0.02</float>
+			</dict>
+		</array>
+	</dict>
+</dict>

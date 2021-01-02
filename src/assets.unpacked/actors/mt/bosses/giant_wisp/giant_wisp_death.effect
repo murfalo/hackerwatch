@@ -1,0 +1,128 @@
+<effect looping="true">
+	
+	<sprite origin="24 24" looping="true" texture="./giant_wisp.png" material="system/default.mats:glow-both-bright"
+	
+	color-a="0.25 + 0.25 * sin(t * pi)"
+	scale-x="1 + cos(t*pi*8)*0.05"
+	scale-y="(1 + sin(t*pi*8)*0.05+ saturate(min(1.5, max(0,pow(t+l,16)-0.5)))* sin(t*pi*2)) * max(1-floor((t+l)/1.7),0)"
+	>
+		<frame time="525">96 48 48 48</frame>
+	</sprite>
+
+	<sprite origin="24 24" looping="true" texture="./giant_wisp.png" material="system/default.mats:actor"
+	scale-x="(1 + sin(t*pi*8)*0.05 + saturate(min(1.5, max(0,pow(t+l,16)-0.5)))* sin(t*pi*2)) * max(1-floor((t+l)/1.7),0)"
+	scale-y="(1 + cos(t*pi*8)*0.05 + saturate(min(2, max(0,pow(t+l,16)-1)))    * sin(t*pi*2)) * max(1-floor((t+l)/1.7),0)"
+	>
+		<frame time="75">0 0 48 48</frame>
+		<frame time="75">48 0 48 48</frame>
+		<frame time="75">96 0 48 48</frame>
+		<frame time="75">144 0 48 48</frame>
+		<frame time="75">192 0 48 48</frame>
+		<frame time="75">0 48 48 48</frame>
+		<frame time="75">48 48 48 48</frame>
+	</sprite>
+	
+	<sprite origin="13.5 14" looping="false" texture="./giant_wisp_explosion.png" material="system/default.mats:glow-both-bright"
+	num-sprites="1"
+	pos-x="cos(pi * 2) * 24 * rand(u*l+i*31)-12"
+	pos-y="sin(pi * 2) * 24 * rand(u*l+i*79)-12 + (sin(pi * 2) * -24 * rand(u*l+i*23)+12)"
+	scale-x="1-rand(u+i*l*prime(rand(u+i) * 1000))*0.5"
+	scale-y="1-rand(u+i*l*prime(rand(u+i) * 1000))*0.5"
+	angle="rand(u*l+i*119)*pi*2"
+	>
+		<frame time="35">0 0 27 28</frame>
+		<frame time="35">27 0 27 28</frame>
+		<frame time="35">54 0 27 28</frame>
+		<frame time="35">81 0 27 28</frame>
+		<frame time="35">0 28 27 28</frame>
+		<frame time="35">27 28 27 28</frame>
+		<frame time="35">54 28 27 28</frame>
+		<frame time="35">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite origin="13.5 14" looping="false" texture="./giant_wisp_explosion.png" material="system/default.mats:glow-both-bright"
+	num-sprites="1"
+	pos-x="cos(pi * 2) * 24 * rand(u*l+i*31)-12"
+	pos-y="sin(pi * 2) * 24 * rand(u*l+i*79)-12 + (sin(pi * 2) * -24 * rand(u*l+i*23)+12)"
+	scale-x="1-rand(u+i*l*rand(u+i))*0.5"
+	scale-y="1-rand(u+i*l*rand(u+i))*0.5"
+	angle="rand(u*l+i*119)*pi*2"
+	>
+		
+		<frame time="135">0 0 0 0</frame>
+		<frame time="35">0 0 27 28</frame>
+		<frame time="35">27 0 27 28</frame>
+		<frame time="35">54 0 27 28</frame>
+		<frame time="35">81 0 27 28</frame>
+		<frame time="35">0 28 27 28</frame>
+		<frame time="35">27 28 27 28</frame>
+		<frame time="35">54 28 27 28</frame>
+	</sprite>
+	<sprite origin="13.5 14" looping="false" texture="./giant_wisp_explosion.png" material="system/default.mats:glow-both-bright"
+	num-sprites="1"
+	pos-x="cos(pi * 2) * 48 * rand(u*l+i*6353)-24"
+	pos-y="sin(pi * 2) * 48 * rand(u*l+i*6763)-24 + (sin(pi * 2) * -24 * rand(u*l+i*6961)+12)"
+	scale-x="1-rand(u+i*l*rand(u*l+i*6311))*0.5"
+	scale-y="1-rand(u+i*l*rand(u*l+i*6571))*0.5"
+	angle="rand(u*l+i*119)*pi*2"
+	>
+		
+		<frame time="50">0 0 27 28</frame>
+		<frame time="50">27 0 27 28</frame>
+		<frame time="50">54 0 27 28</frame>
+		<frame time="50">81 0 27 28</frame>
+		<frame time="50">0 28 27 28</frame>
+		<frame time="50">27 28 27 28</frame>
+		<frame time="50">54 28 27 28</frame>
+	</sprite>
+	
+	<sprite origin="13.5 14" looping="false" texture="./giant_wisp_explosion.png" material="system/default.mats:glow-both-bright"
+	num-sprites="1"
+	pos-x="cos(pi * 2) * 24 * rand(u+l+i*101)-12"
+	pos-y="cos(pi * 2) * 24 * rand(u*l+i*prime(rand(u*l+i)*1000))-24 + (sin(pi * 2) * -24 * rand(u*l+i*prime(rand(u*l+i)*1000))+12)"
+	>
+		<frame time="150">0 0 0 0</frame>
+		<frame time="25">0 0 27 28</frame>
+		<frame time="25">27 0 27 28</frame>
+		<frame time="25">54 0 27 28</frame>
+		<frame time="25">81 0 27 28</frame>
+		<frame time="25">0 28 27 28</frame>
+		<frame time="25">27 28 27 28</frame>
+		<frame time="25">54 28 27 28</frame>
+		<frame time="25">0 0 0 0</frame>
+	</sprite>
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="42" />
+		<length value="70" />
+		<color-r value="4" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="1100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="(cos(pi * 2 * 0.1 * (t+l) + pi)/2 + 0.5) * 50" />
+		<length value="70" />
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>	 
+</effect>

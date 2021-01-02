@@ -1,0 +1,76 @@
+<unit slot="doodad">
+	<scenes jumping="1" croaking="2">
+	
+		<scene name="shared">	
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="4" />			
+			</collision>
+		</scene>
+	
+	
+		<scene name="1">		
+			<scene src="shared" />
+			<sprite origin="13 7" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="40">480 306 26 9</frame>
+				<frame time="40">480 315 26 9</frame>
+				<frame time="40">480 324 26 9</frame>
+				<frame time="40">480 315 26 9</frame>
+				
+				<frame time="2000">480 306 26 9</frame>
+				
+				<frame time="40">480 333 26 9</frame>
+				<frame time="40">480 342 26 9</frame>
+				<frame time="40">480 351 26 9</frame>
+				<frame time="40">480 360 26 9</frame>
+				<frame time="40">480 369 26 9</frame>
+				
+				<frame time="1000">480 378 26 9</frame>
+				
+				<frame time="60">480 378 26 9</frame>
+				<frame time="60">480 387 26 9</frame>
+				<frame time="60">480 396 26 9</frame>
+				<frame time="60">480 387 26 9</frame>				
+				
+				<frame time="100">480 378 26 9</frame>
+				
+				<frame time="60">480 378 26 9</frame>
+				<frame time="60">480 387 26 9</frame>
+				<frame time="60">480 396 26 9</frame>
+				<frame time="60">480 387 26 9</frame>	
+				
+				<frame time="2000">480 378 26 9</frame>
+				
+				<frame time="40">480 405 26 9</frame>
+				<frame time="40">480 414 26 9</frame>
+				<frame time="40">480 423 26 9</frame>
+				<frame time="40">480 432 26 9</frame>
+				<frame time="40">480 441 26 9</frame>
+				
+				<frame time="1000">480 306 26 9</frame>
+			</sprite>	
+		</scene>
+	
+		<scene name="2">		
+			<scene src="shared" />
+			<sprite origin="13 7" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="80">480 306 26 9</frame>
+				<frame time="80">480 315 26 9</frame>
+				<frame time="120">480 324 26 9</frame>
+				<frame time="80">480 315 26 9</frame>
+				
+				<frame time="2000">480 306 26 9</frame>
+				
+				<frame time="40">480 306 26 9</frame>
+				<frame time="40">480 315 26 9</frame>
+				<frame time="40">480 324 26 9</frame>
+				<frame time="40">480 315 26 9</frame>
+				<frame time="40">480 306 26 9</frame>
+				<frame time="40">480 315 26 9</frame>
+				<frame time="40">480 324 26 9</frame>
+				<frame time="40">480 315 26 9</frame>
+				
+				<frame time="1000">480 306 26 9</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

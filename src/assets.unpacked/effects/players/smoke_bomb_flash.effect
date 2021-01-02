@@ -1,0 +1,51 @@
+<effect looping="false">
+	<param name="radius" default="75" />
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+<!-- 
+	%include "effects/players/smoke_bomb.inc"
+	 -->
+	
+	<sprite looping="false" origin="75 78" texture="./smoke_bomb_flash.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle + t*0.1">
+		
+		<frame time="50">0 0 159 156</frame>
+		<frame time="50">159 0 159 156</frame>
+		<frame time="50">318 0 159 156</frame>
+		<frame time="50">477 0 159 156</frame>
+		<frame time="50">636 0 159 156</frame>
+		<frame time="50">795 0 159 156</frame>
+		<frame time="50">0 156 159 156</frame>
+		<frame time="50">159 156 159 156</frame>
+		<frame time="50">318 156 159 156</frame>
+		<frame time="50">477 156 159 156</frame>
+		<frame time="50">636 156 159 156</frame>
+		<frame time="50">0 0 0 0</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="140 * (1-t)" />
+
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="2" />
+		<color-a value="0"/>
+	</light>
+</effect>

@@ -1,0 +1,16 @@
+<effect looping="false" layer="-1">
+	<sprite looping="false" origin="17 17" texture="./player_effects.png" material="effects/effects.mats:add"
+		
+		scale-x="1 - t * 0.25"
+		scale-y="1 - t * 0.25"
+
+		angle="pi * 0.5 * t"
+		
+		color-r="1"
+		color-g="0.9 + t * 0.1"
+		color-b="0.3 + t * 0.7"
+		color-a="(1 - t)"
+	>
+		<frame time="3000">0 672 34 34</frame>
+	</sprite>
+</effect>

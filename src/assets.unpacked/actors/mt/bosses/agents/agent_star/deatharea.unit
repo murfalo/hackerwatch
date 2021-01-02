@@ -1,0 +1,24 @@
+<unit slot="doodad" layer="-25">
+	<scenes>
+		<scene>
+			<effect ulayer="1" src="./deatharea.effect" />
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="5" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="160" />
+				</sizes>
+				<colors>
+					<color value="225 200 255 0" />
+				</colors>
+			</light>
+		</scene>
+	</scenes>
+</unit>

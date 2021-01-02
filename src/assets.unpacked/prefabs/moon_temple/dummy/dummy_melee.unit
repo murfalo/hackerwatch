@@ -1,0 +1,17 @@
+%if EDITOR
+<unit>
+	<scenes start="vampire thrall">
+		<scene name="vampire">
+			<sprite origin="12 14" looping="true" texture="actors/mt/vampire_1.png" material="system/default.mats:bright">
+				<frame>24 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="thrall">
+			<sprite origin="16 24" looping="true" texture="actors/mt/thrall.png" material="system/default.mats:bright">
+				<frame time="100">224 0 32 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>
+%endif

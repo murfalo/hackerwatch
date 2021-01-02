@@ -1,0 +1,96 @@
+<unit slot="doodad" layer="-10">
+	<scenes disabled="disabled" paladin="paladin" thief="thief" ranger="ranger" priest="priest" warlock="warlock" wizard="wizard" sorcerer="sorcerer" gladiator="gladiator">
+		<scene name="disabled">
+			<sprite origin="16 16" texture="./puzzle_constellation_marker.png" material="system/default.mats:floor">
+				<frame time="50">0 32 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shared-2cuts">
+			<effect src="./puzzle_constellation_marker_cut_1.effect"/>	
+			<effect delay="500" src="./puzzle_constellation_marker_cut_3.effect"/>	
+		</scene>
+
+		<scene name="shared-4cuts">	
+			<effect src="./puzzle_constellation_marker_cut_1.effect"/>	
+			<effect delay="250" src="./puzzle_constellation_marker_cut_2.effect"/>	
+			<effect delay="500" src="./puzzle_constellation_marker_cut_3.effect"/>
+			<effect delay="750" src="./puzzle_constellation_marker_cut_4.effect"/>
+		</scene>		
+	
+		<scene name="paladin">
+			<scene src="shared-4cuts"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="250">0 0 32 32</frame>
+				<frame time="250">0 32 32 32</frame>
+				<frame time="250">0 64 32 32</frame>
+				<frame time="250">0 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="thief">
+			<scene src="shared-2cuts"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="100">32 0 32 32</frame>
+				<frame time="400">32 32 32 32</frame>
+				<frame time="100">32 64 32 32</frame>
+				<frame time="400">32 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="ranger">
+			<scene src="shared-4cuts"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="250">64 0 32 32</frame>
+				<frame time="250">64 32 32 32</frame>
+				<frame time="250">64 64 32 32</frame>
+				<frame time="250">64 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="priest">
+			<scene src="shared-2cuts"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="100">96 0 32 32</frame>
+				<frame time="400">96 32 32 32</frame>
+				<frame time="100">96 64 32 32</frame>
+				<frame time="400">96 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="warlock">
+			<effect delay="0" src="./puzzle_constellation_marker_cut_1.effect"/>	
+			<effect delay="333" src="./puzzle_constellation_marker_cut_2.effect"/>
+			<effect delay="666" src="./puzzle_constellation_marker_cut_3.effect"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="100">128 0 32 32</frame>
+				<frame time="233">128 32 32 32</frame>
+				<frame time="333">128 64 32 32</frame>
+				<frame time="333">128 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="wizard">
+			<scene src="shared-4cuts"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="250">160 0 32 32</frame>
+				<frame time="250">160 32 32 32</frame>
+				<frame time="250">160 64 32 32</frame>
+				<frame time="250">160 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="sorcerer">
+			<scene src="shared-4cuts"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="250">192 0 32 32</frame>
+				<frame time="250">192 32 32 32</frame>
+				<frame time="250">192 64 32 32</frame>
+				<frame time="250">192 96 32 32</frame>
+			</sprite>
+		</scene>		
+		<scene name="gladiator">
+			<scene src="shared-4cuts"/>
+			<sprite looping="false" origin="16 16" texture="./puzzle_constellation_marker_slum.png" material="system/default.mats:floor">
+				<frame time="250">224 0 32 32</frame>
+				<frame time="250">224 32 32 32</frame>
+				<frame time="250">224 64 32 32</frame>
+				<frame time="250">224 96 32 32</frame>
+			</sprite>
+		</scene>			
+	</scenes>
+</unit>

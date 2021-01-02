@@ -1,0 +1,31 @@
+<unit slot="doodad" layer="-10">
+	<scenes start="idle">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="15" />
+				<circle offset="0 -14" sensor="true" shoot-through="false" radius="15" />
+			</collision>
+		
+		</scene>
+		
+		<scene name="idle">
+			<sprite looping="true" origin="32 42" texture="./golem_rock.png" material="system/default.mats:actor">
+				<frame time="100">448 448 64 64</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="spawn">
+			<sprite looping="false" origin="32 42" texture="./golem_rock.png" material="system/default.mats:actor">
+				<frame time="100">448 448 64 64</frame>
+				<frame time="100">384 448 64 64</frame>
+				<frame time="100">320 448 64 64</frame>
+				<frame time="100">256 448 64 64</frame>
+				<frame time="100">128 448 64 64</frame>
+				<frame time="100">0 448 64 64</frame>
+				<frame time="100">64 448 64 64</frame>
+				<frame time="100">0 448 64 64</frame>
+				<frame time="100">384 128 64 64</frame>	
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

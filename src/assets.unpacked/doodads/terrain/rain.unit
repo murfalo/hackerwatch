@@ -1,0 +1,21 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="on" >
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif			
+			<effect src="doodads/terrain/rain.effect" />
+		</scene>
+		<scene name="off">
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+		</scene>
+	</scenes>	
+</unit>
+
+

@@ -1,0 +1,46 @@
+<effect looping="true" bounds="40 40">
+	<param name="radius" default="16" />
+	<param name="ttl" default="4000" />
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="4000" />
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="(sin(t*2*pi*10)*5+30) * (1-saturate((t-0.98)*1000000)) * 1.5 * (1-pow(t,20))" />
+			
+		<color-r value="0" />
+		<color-g value="2-t*1.5" />
+		<color-b value="1-t" />
+		<color-a value="0"/>
+			
+	</light>
+
+
+
+		<sprite origin="16 17" looping="true" texture="./plague_doctor_area.png" material="system/default.mats:default"
+		
+		scale-x="1.2 - sin(t*pi)*0.3"
+		scale-y="1.2 - sin(t*pi)*0.3"
+		angle="(4000/2500)*pi*(t+l) + rand(u+i*101)"
+		color-a="saturate(cos(sin((t+l)*pi)*0.5)-0.85 - pow((t+l),20))"
+		>
+			<frame time="1000">0 0 32 32</frame>
+		</sprite>
+
+
+		<sprite origin="16 17" looping="true" texture="./plague_doctor_area.png" material="system/default.mats:default"
+		scale-x="0.8 + sin(t*pi)*0.1"
+		scale-y="0.8 + sin(t*pi)*0.1"
+		angle="(4000/2500)*-pi*(t+l) + rand(u+i*149)"
+		color-a="saturate(cos(sin((t+l)*pi)*0.5)-0.8 - pow((t+l),20))"
+		>
+			<frame time="1000">0 0 32 32</frame>
+		</sprite>
+	 
+</effect>

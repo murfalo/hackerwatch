@@ -1,0 +1,143 @@
+<effect bounds="256 256" looping="true" layer="0">
+	<param name="angle" default="0" />
+	<param name="length" default="100" />
+	
+	<sprite looping="true" origin="0 2.5" texture="doodads/generic/trap_beam.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		angle="rand(u+i+23)*pi*2 + rand(u+i+23)*pi*(it+il)"
+		color-r="1 * (1-saturate(t+l)*1)"
+		color-g="1 * (1-saturate(t+l)*2)"
+		color-b="1 * (1-saturate(t+l)*1)"
+		color-a="0.5 * (1-saturate(t+l))"
+		scale-y="1*(1-t)"
+		scale-x="t*rand(u+i+23)*1.5"
+		
+	>
+		<frame time="50">0 64 32 5</frame>
+	</sprite>
+
+	<!-- Dummy length -->
+	<sprite looping="false" origin="0 0" texture="doodads/generic/trap_beam.png" material="system/default.mats:glow-both-bright">
+		<frame time="500">0 0 0 0</frame>
+	</sprite>
+
+	<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="400" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="40 - 40*saturate(t+l)" />
+		
+		<color-r value="0.5" />
+		<color-g value="0" />
+		<color-b value="1.5" />
+		<color-a value="0" />
+	</light> 
+	
+	%// Flash
+	<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="400" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="60 - 30 * saturate(t+l) - 10*sin(saturate(t+l)*pi*8)" />
+		
+		<color-r value="1" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0" />
+	</light> 
+	
+	%// Flash
+	<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="400" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="30 - 10 * saturate(t+l) - 5*sin(saturate(t+l)*pi*8)" />
+		
+		<color-r value="0.5" />
+		<color-g value="0.5" />
+		<color-b value="0.8" />
+		<color-a value="0" />
+	</light> 
+
+	<light pos-y="24 + 24*saturate(t+l)" pos-x="24 + 24*saturate(t+l)"> 
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="250" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="(t+l)*pi*2"/>
+		
+		<size value="(48 + 48*saturate(t+l))" />
+		
+		<color-r value="1 * (1-saturate(t+l))" />
+		<color-g value="0" />
+		<color-b value="9 * (1-saturate(t+l))" />
+	</light>
+	<light pos-y="12" pos-x="12"> 
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="250" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="(t+l)*pi*2"/>
+		
+		<size value="24" />
+		
+		<color-r value="1 - saturate(t+l)" />
+		<color-g value="1 - saturate(t+l)" />
+		<color-b value="1 - saturate(t+l)" />
+	</light>
+</effect>

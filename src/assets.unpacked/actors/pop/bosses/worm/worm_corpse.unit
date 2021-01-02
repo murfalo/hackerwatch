@@ -1,0 +1,141 @@
+<unit slot="doodad" netsync="none" layer="0">
+	<behavior class="Breakable">
+		<string name="break-sound">event:/enemy/boss_wolf/gore</string>
+		<string name="hit-sound">event:/misc/gore_hit</string>
+		<string name="gore">effects/gibs/gib_boss_worm_corpse.sval</string>
+		<string name="corpse">actors/pop/bosses/worm/worm_blood.unit</string>
+		<bool name="shoot-through">false</bool>
+		<bool name="always-hit-gore">true</bool>
+	</behavior>
+
+	<scenes start="underground" 
+	0="overground-0" 
+	1="overground-1" 
+	2="overground-2" 
+	3="overground-3"
+	4="overground-4"
+	5="overground-5"
+	6="overground-6"
+	7="overground-7">
+		<scene name="shared">
+			<data name="health"><int>100</int></data>
+			<collision static="true">
+				<circle offset="0 -1" sensor="false" shoot-through="false" radius="20"/>
+			</collision>
+		</scene>
+
+		<scene name="overground-0">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="32 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>512 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="overground-1">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="36 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>576 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="overground-2">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="33 35" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>640 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="overground-3">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="29 34" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>704 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="overground-4">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="32 31" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>768 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="overground-5">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="33 32" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>832 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="overground-6">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="33 33" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>896 64 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="overground-7">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="29 35" looping="true" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame>960 64 64 64</frame>
+			</sprite>
+		</scene>
+
+
+		<scene name="underground">
+			<scene src="shared" />
+			<effect src="./worm_blood.effect"/>
+			<sprite layer="-9" origin="32 32" looping="false" texture="./worm_head.png" material="system/default.mats:floor">
+				<frame time="3000">0 0 0 0</frame>
+				<frame time="100">896 0 64 64</frame>
+			</sprite>	
+			<sprite origin="32 47" looping="false" texture="./worm_head.png" material="system/default.mats:actor">
+				<frame time="110">512 0 64 64</frame>
+				<frame time="110">576 0 64 64</frame>
+				<frame time="110">640 0 64 64</frame>
+				<frame time="110">704 0 64 64</frame>
+				<frame time="110">768 0 64 64</frame>
+				<frame time="110">832 0 64 64</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

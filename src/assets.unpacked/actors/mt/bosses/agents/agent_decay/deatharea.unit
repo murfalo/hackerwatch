@@ -1,0 +1,37 @@
+<unit layer="-25">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">9999999</int>
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:poison_strong</string>
+			</dict>
+		</array>
+	</behavior>
+	<scenes>
+		<scene>
+			<effect ulayer="1" src="./deatharea.effect" />
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" radius="36" sensor="true" />
+			</collision>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="100 255 0 0" />
+				</colors>
+			</light>
+		</scene>
+	</scenes>
+</unit>

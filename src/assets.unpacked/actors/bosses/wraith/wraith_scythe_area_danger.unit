@@ -1,0 +1,52 @@
+<unit layer="0">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">3950</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">30</int>
+			</dict>
+		</array>
+	</behavior>
+
+
+	<scenes start="visible">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="-2 0" shoot-through="true" aim-through="true" radius="30" sensor="true" />
+			</collision>
+		</scene>
+	
+		<scene name="visible">
+			<scene src="shared" />
+			
+			<sprite looping="true" ulayer="0" origin="23 30" texture="actors/bosses/wraith/wraith_staff_area_scythe.png" material="system/default.mats:bright">
+				<frame time="50"> 0 0 55 51</frame>
+				<frame time="50"> 55 0 55 51</frame>
+				<frame time="50"> 110 0 55 51</frame>
+				<frame time="50"> 165 0 55 51</frame>
+				<frame time="50"> 220 0 55 51</frame>
+				<frame time="50"> 55 51 55 51</frame>
+				<frame time="50"> 110 51 55 51</frame>
+				<frame time="50"> 165 51 55 51</frame>
+				<frame time="50"> 220 51 55 51</frame>
+			</sprite>
+			
+			<sprite looping="true" ulayer="0" origin="23 30" texture="actors/bosses/wraith/wraith_staff_area_scythe.png" material="system/default.mats:shadow">
+				<frame time="50"> 0 102 55 51</frame>
+				<frame time="50"> 55 102 55 51</frame>
+				<frame time="50"> 110 102 55 51</frame>
+				<frame time="50"> 165 102 55 51</frame>
+				<frame time="50"> 220 102 55 51</frame>
+				<frame time="50"> 0 153 55 51</frame>
+				<frame time="50"> 55 153 55 51</frame>
+				<frame time="50"> 110 153 55 51</frame>
+				<frame time="50"> 165 153 55 51</frame>
+				<frame time="50"> 220 153 55 51</frame>
+				<frame time="50"> 0 153 55 51</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

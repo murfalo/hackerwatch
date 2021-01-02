@@ -1,0 +1,38 @@
+<effect looping="true" layer="-5" bounds="4096 4096" >
+	<sprite looping="true" origin="1024 1024" texture="./boss_genie_storm.png" material="system/default.mats:default-noxray"
+		color-r="75/255"
+		color-g="0/255"
+		color-b="0/255"
+		color-a="1"
+		%//angle="(t+l) * pi"
+		angle="(t+l) * pi + 0.5 * pi"
+		scale-x="0.6875"
+		scale-y="0.6875"
+		>
+		<frame time="6000">0 0 2048 2048</frame>
+	</sprite>
+ 	<sprite looping="true" origin="1024 1024" texture="./boss_genie_storm.png" material="system/default.mats:default-noxray"
+		color-r="150/255"
+		color-g="0/255"
+		color-b="0/255"
+		color-a="1"
+		angle="(t+l) * pi*  0.75"
+		scale-x="0.75"
+		scale-y="0.75"
+		pos-y="-10"
+		>
+		<frame time="6000">0 0 2048 2048</frame>
+	</sprite>
+	<sprite looping="true" origin="1024 1024" texture="./boss_genie_storm.png" material="system/default.mats:default-noxray"
+		color-r="200/255"
+		color-g="0/255"
+		color-b="0/255"
+		color-a="1"
+		angle="(t+l) * pi * 0.5"
+		scale-x="0.8125"
+		scale-y="0.8125"
+		pos-y="-20"
+		>
+		<frame time="6000">0 0 2048 2048</frame>
+	</sprite>	
+</effect>

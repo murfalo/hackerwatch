@@ -1,0 +1,162 @@
+<effect looping="false">
+
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<!-- crack -->
+	<!-- <sprite looping="true" origin="17 59" texture="./impact_firecrack.png" material="system/default.mats:default-noxray"
+	color-a="saturate(1-pow(t,20))"
+	angle="angle + pi/2"
+	>		
+		<frame time="1000">224 0 32 64</frame>			
+	</sprite> -->
+	
+	<!-- crack light -->
+<!-- 	<sprite looping="false" origin="17 59" texture="./impact_firecrack.png" material="system/default.mats:glow-both-bright"
+	scale-y="saturate(0.8+t*t*23)"
+	color-a="saturate(1-pow(t,10))"
+	angle="angle + pi/2"
+	>		
+		<frame time="500">0 0 32 64</frame>			
+		<frame time="100">32 0 32 64</frame>			
+		<frame time="75">64 0 32 64</frame>			
+		<frame time="75">96 0 32 64</frame>			
+		<frame time="75">128 0 32 64</frame>			
+		<frame time="50">160 0 32 64</frame>			
+		<frame time="50">192 0 32 64</frame>			
+	</sprite>
+	 -->
+	
+	
+	
+	
+	<!-- smoke effect -->
+	<sprite origin="3 3" looping="false" texture="players/ranger/explosion_bomb_ranger.png" material="system/default.mats:default-noxray"
+		num-sprites="12"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 28 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 28 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 28 * pow(rand(u+37*i),0.5) + 30*cos(angle)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 28 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 28 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 28 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15 + 30*sin(angle)"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="100">12 112 6 6</frame>
+		<frame time="200">18 112 6 6</frame>
+		<frame time="200">24 112 6 6</frame>
+		<frame time="200">30 112 6 6</frame>
+		<frame time="100">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+	
+	<sprite origin="3 3" looping="false" texture="players/ranger/explosion_bomb_ranger.png" material="system/default.mats:default-noxray"
+		num-sprites="11"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 28 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 28 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 28 * pow(rand(u+43*i),0.5) + 30*cos(angle)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 28 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 28 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 28 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15 + 30*sin(angle)"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="200">12 112 6 6</frame>
+		<frame time="100">18 112 6 6</frame>
+		<frame time="100">24 112 6 6</frame>
+		<frame time="100">30 112 6 6</frame>
+		<frame time="200">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+	
+	<!-- single pixels -->
+	<sprite origin="0 0" looping="false" texture="./impact_firecrack.png" material="system/default.mats:glow-both-bright"
+		num-sprites="40"
+		
+		pos-x="(rand(u+i+61)*32 - 16 + it * 64)*cos(angle) - (rand(u+i+23)*32 - 16)*sin(angle)"
+        pos-y="(rand(u+i+61)*32 - 16 + it * 64)*sin(angle) + (rand(u+i+23)*32 - 16)*cos(angle)"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">15 4 1 1</frame>
+		<frame time="100">47 7 1 1</frame>
+		<frame time="100">78 7 1 1</frame>
+		<frame time="100">111 6 1 1</frame>
+		<frame time="100">132 7 1 1</frame>
+		<frame time="100">182 15 1 1</frame>
+		<frame time="100">234 14 1 1</frame>
+	</sprite>
+	
+	<!-- flames -->
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+	
+		num-sprites="12"
+		
+		scale-x="saturate(rand(u+i+23) + 0.5)"
+		scale-y="saturate(rand(u+i+23) + 0.5)"
+		pos-x="(rand(u+i+61)*32 - 8 + it * 64 - 32)*cos(angle) - (rand(u+i+23)*32 - 16)*sin(angle)"
+        pos-y="(rand(u+i+61)*32 - 8 + it * 64 - 32)*sin(angle) + (rand(u+i+23)*32 - 16)*cos(angle)"
+		color-a="1-t"
+	
+	>
+		
+		<frame time="50" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="50" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="50" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="50" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="50" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+		
+	</sprite>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="80" />
+			
+		<color-r value="3" />
+		<color-g value="3" />
+		<color-b value="2" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="48*(1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0.5" />
+		<color-a value="0"/>
+		
+	</light>			
+		
+</effect>

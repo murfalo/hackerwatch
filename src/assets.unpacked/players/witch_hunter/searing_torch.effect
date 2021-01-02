@@ -1,0 +1,56 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="5 8" texture="./searing_torch.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle"
+		
+		color-a="saturate(1-floor((angle*2)/pi))"
+		>
+		
+		<frame time="75">0 0 10 12</frame>
+		<frame time="75">10 0 10 12</frame>
+		<frame time="75">20 0 10 12</frame>
+		<frame time="75">0 12 10 12</frame>
+		<frame time="75">10 12 10 12</frame>
+		<frame time="75">20 12 10 12</frame>
+	</sprite>
+	<sprite looping="true" origin="5 8" texture="./searing_torch.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle"
+		color-a="saturate(floor((angle*2)/pi))"
+		>
+		
+		<frame time="75">0 32 10 12</frame>
+		<frame time="75">10 32 10 12</frame>
+		<frame time="75">20 32 10 12</frame>
+		<frame time="75">0 44 10 12</frame>
+		<frame time="75">10 44 10 12</frame>
+		<frame time="75">20 44 10 12</frame>
+	</sprite>
+	
+	<light pos-y="-2"	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<length value="450" />
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="sin(t*pi*2)*5+30" />
+
+		<color-r value="1.5+cos(t*pi*2)*0.5" />
+		<color-g value="1+cos(t*pi*2)*0.2" />
+		<color-b value="0.1" />
+		<color-a value="0"/>
+	</light>
+</effect>

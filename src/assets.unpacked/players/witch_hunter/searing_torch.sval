@@ -1,0 +1,55 @@
+<dict>
+	<string name="name">.skills.witch_hunter.searing-torch</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 192 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">castspell</string>
+					<bool name="target-self">true</bool>
+					<float name="chance">1</float>
+					<int name="timeout">1</int>
+					
+					<array name="effects">
+						<dict>
+							<string name="class">ShootRandomEnemy</string>
+							<int name="range">125</int>
+							<string name="projectile">players/witch_hunter/searing_torch_1.unit</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">castspell</string>
+					<bool name="target-self">true</bool>
+					<float name="chance">1</float>
+					<int name="timeout">1</int>
+					
+					<array name="effects">
+						<dict>
+							<string name="class">ShootRandomEnemy</string>
+							<int name="range">125</int>
+							<string name="projectile">players/witch_hunter/searing_torch_2.unit</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

@@ -1,0 +1,39 @@
+<effect looping="true">
+	
+	<sprite origin="8 8" looping="false" texture="actors/elemental_ice_sword.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="2"
+		
+		scale-x="it - 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5)"
+        pos-y="sin(rand(u+21*i)*2*pi) * 6 * pow(rand(u+73*i),0.5)  -10 * it"
+		color-a="saturate(0.1-(it+l)*0.1)"
+		color-r="0.9"
+		color-g="0.7"
+		color-b="0.7"
+	
+	>
+		
+		<frame time="500">320 0 16 16</frame>
+		
+	</sprite>
+	<sprite origin="8 8" looping="false" texture="actors/elemental_ice_sword.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="3"
+		
+		scale-x="it- 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos(rand(u+27*i)*2*pi) * 5 * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * 7 * pow(rand(u+67*i),0.5)  -10 * it"
+		color-a="saturate(0.1-(it+l)*0.1)"
+		color-r="0.9"
+		color-g="0.7"
+		color-b="0.7"
+	
+	>
+		
+		<frame time="500">320 0 16 16</frame>
+		
+	</sprite>
+</effect>

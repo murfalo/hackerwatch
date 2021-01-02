@@ -1,0 +1,74 @@
+<effect looping="false">
+	<param name="angle"/>
+	<param name="radius" default="5"/>
+
+	<sprite looping="false" origin="12 12" texture="./djinn_impact.png" material="system/default.mats:glow-both-bright"
+		angle="rand(u)*pi*2"
+		>
+		<frame time="40">0 0 24 24</frame>
+		<frame time="40">24 0 24 24</frame>
+		<frame time="40">48 0 24 24</frame>
+		<frame time="40">72 0 24 24</frame>
+		<frame time="40">96 0 24 24</frame>
+		<frame time="40">0 24 24 24</frame>
+		<frame time="40">24 24 24 24</frame>
+		<frame time="40">48 24 24 24</frame>
+	</sprite>
+	
+	<sprite origin="6 6" looping="false" texture="./explosion_djinn.png" material="system/default.mats:default-noxray"
+		num-sprites="6"
+
+		pos-x="(max(0,log(t)-t+2))*cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2 - t*(cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="(max(0,log(t)-t+2))*sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2 - t*(sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2) - pow(t,4)*rand(i)*10"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="50">0 116 12 12</frame>
+		<frame time="50">12 116 12 12</frame>
+		<frame time="100">24 116 12 12</frame>
+		<frame time="100">36 116 12 12</frame>
+		<frame time="100">48 116 12 12</frame>
+		<frame time="100">60 116 12 12</frame>
+		<frame time="100">72 116 12 12</frame>
+		<frame time="100">84 116 12 12</frame>
+	</sprite>
+	<sprite origin="6 6" looping="false" texture="./explosion_djinn.png" material="system/default.mats:default-noxray"
+		num-sprites="6"
+
+		pos-x="(max(0,log(t)+1.5))*(cos(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5))"
+        pos-y="(max(0,log(t)+1.5))*(sin(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5)) - sin(t*t*t*t*t)*rand(i)*5"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="50">0 116 12 12</frame>
+		<frame time="50">12 116 12 12</frame>
+		<frame time="100">24 116 12 12</frame>
+		<frame time="100">36 116 12 12</frame>
+		<frame time="100">48 116 12 12</frame>
+		<frame time="100">60 116 12 12</frame>
+		<frame time="100">72 116 12 12</frame>
+		<frame time="100">84 116 12 12</frame>
+	</sprite>
+	
+
+	<light pos-y="0" pos-x="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+			<frame time="100">0 0 0 0</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		<size value="max(0,t * 24 * 3) + 10" />
+		
+		<color-r value="(15 - t*5)" />
+		<color-g value="0" />
+		<color-b value="(25 - t*5)" />
+		<color-a value="0" />
+	</light>
+</effect>

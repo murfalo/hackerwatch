@@ -1,0 +1,22 @@
+<!-- <doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d.png</texture>
+		<origin>16 30</origin>
+		<frame>160 235 16 21</frame>				
+	</sprite>
+</doodad> -->
+
+<unit slot="doodad" >
+	<scenes default="1 2">
+		<scene name="1">
+			<sprite origin="16 30" texture="./_deco.png" material="system/default.mats:proj-prop">
+				<frame>32 34 16 21</frame>
+			</sprite>		
+		</scene>
+		<scene name="2">
+			<sprite origin="16 30" texture="./_deco.png" material="system/default.mats:proj-prop">
+				<frame>80 34 16 21</frame>
+			</sprite>		
+		</scene>		
+	</scenes>
+</unit>

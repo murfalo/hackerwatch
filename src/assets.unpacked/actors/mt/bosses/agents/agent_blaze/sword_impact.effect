@@ -1,0 +1,51 @@
+<effect looping="false">
+	<sprite origin="28 28" looping="false" texture="actors/ice_troll_club_hit.png" material="system/default.mats:glow-both-bright"
+		scale-x="0.5"
+		scale-y="0.5"
+		color-r="1"
+		color-g="0.15"
+		color-b="0"
+	>
+		<frame time="50">0 0 57 57</frame>
+		<frame time="50">57 0 57 57</frame>
+		<frame time="50">114 0 57 57</frame>
+		<frame time="50">171 0 57 57</frame>
+		<frame time="50">0 57 57 57</frame>
+		<frame time="50">57 57 57 57</frame>
+		<frame time="50">114 57 57 57</frame>
+		<frame time="50">171 57 57 57</frame>
+	</sprite>
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="100" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		<size value="8 * 8 * t" />
+		<color-r value="6" />
+		<color-g value="3" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="300" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		<size value="max(0,t * 8 * 3) + 10" />
+		<color-r value="1-t" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

@@ -1,0 +1,30 @@
+<effect looping="true" wpos-track="20">
+	<param name="angle" default="0" />
+	<param name="height" default="-4" />
+	<param name="old_tl" default="0" />
+	
+
+	%// Trail
+	
+	<trail texture="effects/empty.png" ulayer="1" material="system/default.mats:projectile">
+		
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="10" />
+		<size value="16-i*4" />
+
+		<uv-x value="0" />
+		<uv-y value="0" />
+		
+		<color-r value="max(3,3-i)" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="(9-i)/300" />
+	</trail>
+	
+	
+</effect>

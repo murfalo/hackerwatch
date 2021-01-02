@@ -1,0 +1,161 @@
+<unit netsync="position" slot="doodad" layer="0">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">construct</string>
+		<int name="hp">99999</int>
+		<int name="armor">4000</int>
+		<int name="resistance">1000</int>
+		<int name="experience-reward">0</int>
+
+		<int name="aggro-range">10000</int>
+		<bool name="impenetrable">true</bool>
+		<bool name="no-buffs">true</bool>
+		<bool name="targetable">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="floating-hurt">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+      
+		<array name="skills">
+			%// Normal Arrows
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>3</int>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				
+				<int name="cooldown">2500</int>
+				<int name="castpoint">250</int>
+				<int name="range">175</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<int name="projectiles">3</int>
+						<int name="spread">25</int>
+						<int name="dist">20</int>
+						<string name="projectile">actors/projectiles/turret_arrow.unit</string>
+					</dict>
+				</array>
+			</dict>
+
+			%// NG+3 Arrows
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+				</array>
+			
+				<string name="class">CompositeActorBurstSkill</string>
+				<string name="anim">attack 8</string>
+				
+				<int name="burst">3</int>
+				
+				<int name="cooldown">2500</int>
+				<int name="castpoint">250</int>
+				<int name="range">175</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<int name="projectiles">3</int>
+						<int name="spread">25</int>
+						<int name="dist">20</int>
+						<string name="projectile">actors/projectiles/turret_arrow.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="128 0 5 5"/>
+		</scene>		
+				
+		<scene name="spawn">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big_spawn.png" material="system/default.mats:actor">
+				<frame time="100">0 0 43 49</frame>
+				<frame time="100">43 0 43 49</frame>
+				<frame time="100">86 0 43 49</frame>
+			</sprite>
+		</scene>			
+
+		<scene name="idle">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big_spawn.png" material="system/default.mats:actor">
+				<frame time="250">86 0 43 49</frame>
+			</sprite>		
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">0 0 43 49</frame>
+				<frame time="200">129 49 43 49</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">43 0 43 49</frame>
+				<frame time="200">129 49 43 49</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">86 0 43 49</frame>
+				<frame time="200">129 49 43 49</frame>
+			</sprite>
+		</scene>		
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">129 0 43 49</frame>
+				<frame time="250">129 49 43 49</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">172 0 43 49</frame>
+				<frame time="200">129 49 43 49</frame>
+			</sprite>
+		</scene>		
+		
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">0 49 43 49</frame>
+				<frame time="200">129 49 43 49</frame>
+			</sprite>
+		</scene>		
+		
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">43 49 43 49</frame>
+				<frame time="200">129 49 43 49</frame>
+			</sprite>
+		</scene>	
+		
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite origin="21 28" looping="false" texture="./trap_turret_arrow_big.png" material="system/default.mats:actor">
+				<frame time="250">86 49 43 49</frame>
+				<frame time="200">129 49 43 49</frame>
+			</sprite>
+		</scene>				
+	</scenes>
+</unit>

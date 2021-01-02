@@ -1,0 +1,51 @@
+<gui>
+	<sprites>
+%include "gui/playermenu/charheader_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			%include "gui/playermenu/charheader.inc"
+
+			<!-- Lower contents -->
+			<rect offset="0 31" width="328" height="202">
+				<!-- List -->
+				<scrollrect id="list" flow="vbox" width="317" height="202" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+				<!-- Separator template -->
+				<rect id="template-separator" visible="false" width="317" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Header template -->
+				<rect id="template-header" visible="false" width="317" height="18" flow="hbox">
+					<rect width="173" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text id="category" font="gui/fonts/arial11_bold.fnt" text="xx" anchor="0.5 0.5" />
+					</rect>
+					<rect width="72" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".stats.interface.session" anchor="0.5 0.5" />
+					</rect>
+					<rect width="72" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".stats.interface.total" anchor="0.5 0.5" />
+					</rect>
+				</rect>
+
+				<!-- Template -->
+				<rect id="template" visible="false" width="317" height="15">
+					<text id="name" font="gui/fonts/arial11.fnt" offset="4 0" />
+					<rect width="72" height="15" offset="173 0">
+						<text id="value-session" font="gui/fonts/arial11.fnt" anchor="0.5 0" />
+					</rect>
+					<rect width="72" height="15" offset="245 0">
+						<text id="value" font="gui/fonts/arial11.fnt" anchor="0.5 0" />
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="3" height="202" offset="317 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+			</rect>
+		</group>
+	</doc>
+</gui>

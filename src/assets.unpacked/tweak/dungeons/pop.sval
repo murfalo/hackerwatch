@@ -1,0 +1,62 @@
+<loader>DungeonProperties::LoadSingle</loader>
+<dict>
+	<string name="class">DesertDungeonProperties</string>
+
+	<string name="id">pop</string>
+	<string name="name">.dlc.pop</string>
+
+	<string name="str-char-info-ngp">.charinfo.ngp.desert</string>
+	<string name="str-notify-char-ngp">.hud.newngp.char.desert</string>
+
+	<string name="town-spawn">city_of_stone</string>
+	<bool name="desert">true</bool>
+
+	<array name="flags">
+		<string>dlc_pop</string>
+	</array>
+
+	<string name="dlc-req">pop</string>
+	
+	<array name="area-names">
+		<string>.world.pop.desert</string>
+		<string>.world.pop.pyramid</string>
+		<string>.world.pop.pyramid</string>
+	</array>
+
+	<array name="act-names">
+		<string>.world.pop.acts.0</string>
+		<string>.world.pop.acts.1</string>
+		<string>.world.pop.acts.2</string>
+	</array>
+
+	<string name="status-prefix">pop_</string>
+	<string name="discord-state">In desert</string>
+	<array name="discord-act-images">
+		<string>act_pop_0</string>
+		<string>act_pop_1</string>
+		<string>act_pop_2</string>
+	</array>
+
+	<array name="levels">
+		<array><string>levels/generated.lvl</string><int>0</int><int>0</int><string>desert</string><int>1100</int><int>1200</int></array>
+		<array><string>levels/generated.lvl</string><int>0</int><int>1</int><string>desert</string><int>1200</int><int>1350</int></array>
+		<array><string>levels/generated.lvl</string><int>0</int><int>2</int><string>desert</string><int>1300</int><int>1500</int></array>
+		<array><string>levels/boss_worm.lvl</string><int>0</int><int>3</int></array>
+		<array><string>levels/pyramid_midway.lvl</string><int>0</int><int>4</int></array>
+
+		<array><string>levels/generated.lvl</string><int>1</int><int>0</int><string>pyramid_slum</string><int>3200</int><int>2400</int></array>
+		<array><string>levels/generated.lvl</string><int>1</int><int>1</int><string>pyramid_slum</string><int>3500</int><int>2700</int></array>
+		<array><string>levels/generated.lvl</string><int>1</int><int>2</int><string>pyramid_slum</string><int>3800</int><int>3000</int></array>
+		<array><string>levels/boss_mummy.lvl</string><int>1</int><int>3</int></array>
+		<array><string>levels/pyramid_midway.lvl</string><int>1</int><int>4</int></array>
+
+		<array><string>levels/pyramid_plane.lvl</string><int>2</int><int>0</int></array>
+		<array><string>levels/generated.lvl</string><int>2</int><int>0</int><string>pyramid_fancy</string><int>2800</int><int>2400</int></array>
+		<array><string>levels/pyramid_plane.lvl</string><int>2</int><int>1</int></array>
+		<array><string>levels/generated.lvl</string><int>2</int><int>1</int><string>pyramid_fancy</string><int>3000</int><int>2600</int></array>
+		<array><string>levels/pyramid_plane.lvl</string><int>2</int><int>2</int></array>
+		<array><string>levels/generated.lvl</string><int>2</int><int>2</int><string>pyramid_fancy</string><int>3200</int><int>2800</int></array>
+		<array><string>levels/pyramid_plane.lvl</string><int>2</int><int>3</int></array>
+		<array><string>levels/boss_genie.lvl</string><int>2</int><int>3</int></array>
+	</array>
+</dict>

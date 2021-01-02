@@ -1,0 +1,105 @@
+<unit slot="doodad" layer="-31">
+	<scenes start="default" 1-on="1-on" 1-off="1-off" 2-on="2-on" 2-off="2-off" 3-on="3-on" 3-off="3-off">
+		<scene name="shared">
+			<sprite origin="40 40" texture="./teleport_lock.png" material="system/default.mats:floor">
+				<frame>0 0 80 80</frame>
+			</sprite>
+		</scene>
+
+		<scene name="shared_light">
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="100 20 0 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="80 20 0 0" />
+				</colors>
+			</light>	
+		</scene>
+
+		<scene name="default">
+			<scene src="shared" />
+		</scene>
+		
+		<scene name="1-on">
+			<scene src="shared" />
+			<scene src="shared_light" />
+			<sprite origin="9 11" ulayer="2" texture="./teleport_lock.png" material="system/default.mats:bright">
+				<frame>80 0 19 21</frame>
+			</sprite>			
+			<sprite origin="9 11" ulayer="1" texture="./teleport_lock.png" material="system/default.mats:floor">
+				<frame>80 21 19 21</frame>
+			</sprite>
+		</scene>
+
+		<scene name="1-off">
+			<scene src="shared" />
+			<sprite origin="9 11" ulayer="1" texture="./teleport_lock.png" material="system/default.mats:floor">
+				<frame>80 21 19 21</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="2-on">
+			<scene src="shared" />
+			<scene src="shared_light" />	
+			<sprite origin="9 9" ulayer="2" texture="./teleport_lock.png" material="system/default.mats:bright">
+				<frame>99 0 20 18</frame>
+			</sprite>
+			<sprite origin="9 9" ulayer="1" texture="./teleport_lock.png" material="system/default.mats:floor">
+				<frame>99 19 20 18</frame>
+			</sprite>			
+		</scene>
+
+		<scene name="2-off">
+			<scene src="shared" />
+			<sprite origin="9 9" ulayer="1" texture="./teleport_lock.png" material="system/default.mats:floor">
+				<frame>99 19 20 18</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="3-on">
+			<scene src="shared" />
+			<scene src="shared_light" />			
+			<sprite origin="9 11" ulayer="2" texture="./teleport_lock.png" material="system/default.mats:bright">
+				<frame>80 64 18 19</frame>
+			</sprite>
+			<sprite origin="9 11" ulayer="1" texture="./teleport_lock.png" material="system/default.mats:floor">
+				<frame>80 83 18 19</frame>
+			</sprite>						
+		</scene>
+
+		<scene name="3-off">
+			<scene src="shared" />
+			<sprite origin="9 11" ulayer="1" texture="./teleport_lock.png" material="system/default.mats:floor">
+				<frame>80 83 18 19</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

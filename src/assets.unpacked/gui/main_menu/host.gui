@@ -1,0 +1,140 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/main_menu/checkbox_sprites.inc"
+%include "gui/main_menu/slider_sprites.inc"
+%include "gui/playermenu/charheader_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect width="258" height="235" spriteset="gui/variable/bigwindow_borders.sval" anchor="0.5 0.5" flow="vbox">
+				<!-- Header -->
+				<rect width="254" height="18" offset="2 2" flow="hbox">
+					<rect width="233" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".mainmenu.host.title" anchor="0.5 0.5" />
+					</rect>
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="254" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Options row -->
+				<rect offset="2 0" width="254" height="18" flow="hbox">
+					<!-- Server name -->
+					<rect width="180" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<textinput id="name" align="left" offset="2 1" width="126" height="15" color="#FFDC00FF" font="gui/fonts/arial11.fnt" text="" textlimit="20" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Privacy -->
+					<rect width="71" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<checkbox func="privacy-changed" anchor="0.5 0.5" spriteset="checkbox" font="gui/fonts/arial11.fnt" text=".mainmenu.host.private" color="#FFFFFFFF" />
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="254" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Options row -->
+				<rect offset="2 0" width="254" height="24" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Text -->
+					<text font="gui/fonts/arial11.fnt" text=".mainmenu.host.maxplayers" offset="4 0" anchor="0 0.5" />
+
+					<!-- Slider -->
+					<slider id="max-players" label-type="realvalue" label-font="gui/fonts/arial11.fnt" spriteset="slider" min="2" max="4" width="143" height="18" offset="109 3" float="false" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="254" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Options row -->
+				<rect offset="2 0" width="254" height="48" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Row -->
+					<rect width="254" height="24">
+						<!-- Text -->
+						<text font="gui/fonts/arial11.fnt" text=".mainmenu.host.maxlevel" offset="4 0" anchor="0 0.5" />
+
+						<!-- Slider -->
+						<slider id="max-level" func-on-change="levels-changed" max-string="-" label-type="realvalue" label-font="gui/fonts/arial11.fnt" spriteset="slider" min="1" max="200" value="1" width="143" height="18" offset="109 3" float="false" />
+					</rect>
+
+					<!-- Row -->
+					<rect width="254" height="24" offset="0 24">
+						<!-- Text -->
+						<text font="gui/fonts/arial11.fnt" text=".mainmenu.host.minlevel" offset="4 0" anchor="0 0.5" />
+
+						<!-- Slider -->
+						<slider id="min-level" func-on-change="levels-changed" label-type="realvalue" label-font="gui/fonts/arial11.fnt" spriteset="slider" min="1" max="80" width="143" height="18" offset="109 3" float="false" />
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="254" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Options row -->
+				<rect offset="2 0" width="254" height="28" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Text -->
+					<text id="ngp-label" font="gui/fonts/arial11.fnt" text=".mainmenu.host.ngp" offset="4 0" anchor="0 0.5" />
+
+					<!-- Separator -->
+					<rect width="3" height="28" offset="196 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Left button -->
+					<spritebutton id="ngp-left" func="ngp-prev" spriteset="arrow-left" offset="199 0" />
+
+					<!-- Frame -->
+					<sprite src="big-frame" offset="211 0">
+						<text id="ngp" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" color="#FFC400FF" />
+						<knobslider width="100%" height="100%" func-increase="ngp-next" func-decrease="ngp-prev" />
+					</sprite>
+
+					<!-- Right button -->
+					<spritebutton id="ngp-right" func="ngp-next" spriteset="arrow-right" offset="239 0" />
+
+					<!-- Separator -->
+					<rect width="3" height="28" offset="251 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="254" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Options row -->
+				<rect offset="2 0" width="254" height="28" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Downscaling -->
+					<checkbox id="downscaling" offset="4" anchor="0 0.5" spriteset="checkbox" font="gui/fonts/arial11.fnt" text=".mainmenu.host.downscaling" tooltip=".mainmenu.host.downscaling.description" color="#FFFFFFFF" />
+
+					<!-- Separator -->
+					<rect width="3" height="28" offset="251 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="254" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Options row -->
+				<rect offset="2 0" width="254" height="28" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Modded players -->
+					<checkbox id="allowmodded" offset="4" anchor="0 0.5" spriteset="checkbox" font="gui/fonts/arial11.fnt" text=".mainmenu.host.allowmodded" tooltip=".mainmenu.host.allowmodded.description" color="#FFFFFFFF" />
+
+					<!-- Separator -->
+					<rect width="3" height="28" offset="251 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="254" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Start button -->
+				<rect width="256" height="18" offset="2 0" flow="hbox">
+					<rect width="76" height="18" spriteset="gui/variable/headline_hor.sval" />
+					<scalebutton id="ok" spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" text=".menu.ok" func="host" />
+					<rect width="76" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group></group>
+	</doc>
+</gui>

@@ -1,0 +1,143 @@
+<unit netsync="none" save="false" layer="50">
+	<behavior class="MiniPetFlying">
+		<string name="anim-idle">idle 8</string>
+		<string name="anim-walk">walk 8</string>
+		
+		<float name="speed">4.3</float>
+		<float name="idle-speed">2.7</float>
+		<float name="turn-speed">5</float>
+		
+		<int name="pickup-duration">5000</int>
+		<int name="idle-duration">750</int>
+		
+		<int name="leash-range">300</int>
+		<int name="range-idle">80</int>
+		<int name="range-pickup">200</int>
+
+		<float name="acceleration-duration">250</float>
+		<float name="deceleration-duration">750</float>
+		<float name="turn-speed-boost">50</float>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="idle-0">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">24 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">48 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">72 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">96 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">120 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">144 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">168 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 24 24</frame>
+				<frame time="150">0 24 24 24</frame>
+				<frame time="150">0 48 24 24</frame>
+				<frame time="150">0 72 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">24 0 24 24</frame>
+				<frame time="150">24 24 24 24</frame>
+				<frame time="150">24 48 24 24</frame>
+				<frame time="150">24 72 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">48 0 24 24</frame>
+				<frame time="150">48 24 24 24</frame>
+				<frame time="150">48 48 24 24</frame>
+				<frame time="150">48 72 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">72 0 24 24</frame>
+				<frame time="150">72 24 24 24</frame>
+				<frame time="150">72 48 24 24</frame>
+				<frame time="150">72 72 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">96 0 24 24</frame>
+				<frame time="150">96 24 24 24</frame>
+				<frame time="150">96 48 24 24</frame>
+				<frame time="150">96 72 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">120 0 24 24</frame>
+				<frame time="150">120 24 24 24</frame>
+				<frame time="150">120 48 24 24</frame>
+				<frame time="150">120 72 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">144 0 24 24</frame>
+				<frame time="150">144 24 24 24</frame>
+				<frame time="150">144 48 24 24</frame>
+				<frame time="150">144 72 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<sprite origin="10 9" looping="true" texture="players/pets/wyrm_fire.png" material="system/default.mats:default-noxray">
+				<frame time="150">168 0 24 24</frame>
+				<frame time="150">168 24 24 24</frame>
+				<frame time="150">168 48 24 24</frame>
+				<frame time="150">168 72 24 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

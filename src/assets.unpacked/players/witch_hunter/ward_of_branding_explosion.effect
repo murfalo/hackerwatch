@@ -1,0 +1,123 @@
+<effect looping="false" layer="100" bounds="512 512">
+
+	<data>
+		<string name="gore">effects/gibs/doodads/gib_glyph.sval</string>
+	</data>	
+%// Shockwave
+
+    <sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+		
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0"
+		color-a="max(1-t*t,0)"
+	>
+		<frame time="200">0 0 32 32</frame>
+	</sprite>
+	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+		
+		pos-y="20 * -t"
+		angle="t*pi*8"
+		
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0"
+		color-a="max(1-t*t,0)"
+	>
+		<frame time="200">32 0 32 32</frame>
+	</sprite>	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+		
+		pos-y="20 * -t"
+		scale-x="1+t*0.5"
+		scale-y="1+t*0.5"
+		
+		color-r="1"
+		color-g="0.8-t*0.8"
+		color-b="0"
+		color-a="1-t"
+	>
+		<frame time="300">0 0 32 32</frame>
+	</sprite>	
+	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+		color-r="0"
+		color-g="0"
+		color-b="0"
+		color-a="1-t"
+	>
+		<frame time="1500">0 32 32 32</frame>
+	</sprite>	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+		
+		pos-y="20 * -t"
+		color-r="1"
+		color-g="0.8-t*0.8"
+		color-b="0"
+		color-a="t"
+	>
+		<frame time="200">0 32 32 32</frame>
+	</sprite>	
+      
+	  
+	<sprite origin="4 4" looping="false" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+	num-sprites="8"
+
+	pos-x="cos(rand(u+27*i)*2*pi) * 16 * pow(rand(u+67*i),0.5)"
+	pos-y="sin(rand(u+27*i)*2*pi) * 16 * pow(rand(u+67*i),0.5)  -18 * sin(t*pi/2) + 0.2"
+
+	color-r="1-t"
+	color-g="0"
+	color-b="0"
+	color-a="saturate(1 - t)"
+	>
+		<frame time="400">0 0 1 1</frame>
+	</sprite>	
+
+
+	%// FLASH
+	<light pos="0 15"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="12*(15*t)" />
+		
+		<color-r value="10" />
+		<color-g value="0" />
+		<color-b value="15" />
+		<color-a value="0/255" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="560">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 800) * 400" />
+		
+		<size value="max(0,t*150)+10" />
+		
+		<color-r value="max(0,(1-t*1.2)" />
+		<color-g value="max(0,(1-t*1.2)" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+</effect>

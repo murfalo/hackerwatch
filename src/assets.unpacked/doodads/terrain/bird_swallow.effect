@@ -1,0 +1,87 @@
+<!-- <effect random-start="true" looping="true" bounds="2048 2048" material="doodads/terrain/terrain.mats:cloud_high">
+	<sprite random-start="true" looping="true" origin="16 128" texture="./bird2.png" material="system/default.mats:bright"
+		num-sprites="5"
+		angle="(t+l+i)*pi*0.1+rand(u)*2*pi"
+		
+		pos-x="rand(u+i)   *70-40"
+		pos-y="rand(u+i*2) *70-40"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="saturate((t - rand(u+l) + 0.3) * 10000)"
+	>
+		<frame time="1000">0 0 16 16</frame>
+	</sprite>
+	
+	<sprite random-start="true" looping="true" origin="16 128" texture="./bird2.png" material="system/default.mats:bright"
+		num-sprites="5"
+		angle="(t+l+i)*pi*0.1+rand(u)*2*pi"
+		
+		pos-x="rand(u+i)   *70-40"
+		pos-y="rand(u+i*2) *70-40"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1 - saturate((t - rand(u+l) + 0.3) * 10000)"
+	>
+		<frame time="1000">16 0 16 16</frame>
+	</sprite>
+</effect> -->
+
+<effect looping="true" bounds="2048 2048" material="doodads/terrain/terrain.mats:cloud_low">
+	<sprite layer="10" random-start="true" looping="true" origin="16 128" texture="./bird_swallow.png" material="system/default.mats:bright"
+		num-sprites="10"
+		angle="(t+l+i)*pi*0.6+rand(u)*-1*pi"
+		
+		pos-x="rand(u+i)   *-100-100"
+		pos-y="rand(u+i*2) *-100-100"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+	>
+		<frame time="200">0 0 16 16</frame>
+		
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+		
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+
+		<frame time="500">0 0 16 16</frame>
+		
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+		
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+	</sprite>
+</effect>
+
+<!-- <effect looping="true" bounds="2048 2048" material="doodads/terrain/terrain.mats:shadow">
+	<sprite random-start="true" looping="true" origin="16 128" texture="./bird2.png" material="system/default.mats:shadow"
+		num-sprites="5"
+		angle="(t+l+i)*pi*0.1+rand(u)*2*pi"
+		
+		pos-x="rand(u+i)   *70-40"
+		pos-y="(rand(u+i*2) *70-40)+285"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+	>
+		<frame time="200">0 0 16 16</frame>
+		<frame time="200">16 0 16 16</frame>
+		<frame time="40">32 0 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+		<frame time="150">48 16 16 16</frame>
+		<frame time="150">32 16 16 16</frame>
+		<frame time="150">48 0 16 16</frame>
+	</sprite>
+</effect> -->

@@ -1,0 +1,41 @@
+<effect looping="false" layer="10" >
+	<sprite looping="false" ulayer="0" origin="16 16" texture="./stone.png" material="system/default.mats:default-noxray"
+	pos-y="t*-300"
+	>
+		<frame time="300">0 0 32 32</frame>
+	</sprite>
+	
+	<sprite looping="false" ulayer="0" origin="23.5 131" texture="./launch_sand.png" material="system/default.mats:default-noxray"
+	color-a="0.5-t+0.5">
+		<frame time="35">0 0 47 136</frame>
+		<frame time="35">47 0 47 136</frame>
+		<frame time="35">94 0 47 136</frame>
+		<frame time="35">141 0 47 136</frame>
+		<frame time="35">188 0 47 136</frame>
+		<frame time="35">235 0 47 136</frame>
+		<frame time="35">282 0 47 136</frame>
+		<frame time="35">329 0 47 136</frame>
+		<frame time="35">376 0 47 136</frame>
+	</sprite>
+	<sprite looping="false" ulayer="0" origin="16 88" texture="./launch_sand.png" material="system/default.mats:default-noxray"
+	color-a="0.5-t+0.5">>
+		<frame time="50">0 136 32 72</frame>
+		<frame time="50">32 136 32 72</frame>
+		<frame time="50">64 136 32 72</frame>
+		<frame time="50">96 136 32 72</frame>
+		<frame time="50">128 136 32 72</frame>
+		<frame time="50">160 136 32 72</frame>
+		<frame time="50">192 136 32 72</frame>
+	</sprite>
+	<sprite looping="true" ulayer="4" origin="16 88" texture="./launch_sand.png" material="system/default.mats:default-noxray"
+	color-r="1"
+	color-g="1"
+	color-b="1"
+	color-a="1-t"
+	scale-x="0.7*t+0.5"
+	scale-y="0.7*t+0.5"
+	pos-y="25*t"
+	>
+		<frame time="50">96 136 32 72</frame>
+	</sprite>
+</effect>

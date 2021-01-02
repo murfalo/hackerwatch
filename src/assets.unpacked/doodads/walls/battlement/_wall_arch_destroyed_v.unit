@@ -1,0 +1,66 @@
+<unit slot="doodad" >
+	<scenes default="default" cracked="cracked" destroyed="destroyed">
+		<scene name="default">
+			<minimap_sprite origin="0 32" texture="gui/minimap.png" frame="72 182 32 32" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -128 8 128</rect>
+				<rect shoot-through="true" aim-through="true">120 -128 8 128</rect>
+			</collision>
+			<sprite layer="-30" origin="0 132" texture="./arch.png" material="system/default.mats:floor">
+				<frame>128 512 128 132</frame>
+			</sprite>	
+			<sprite layer="0" origin="0 132" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>32 16 8 16</frame>
+			</sprite>
+			<sprite layer="0" origin="-120 132" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>32 16 8 16</frame>
+			</sprite>			
+		</scene>
+		<scene name="cracked">
+			<minimap_sprite origin="0 32" texture="gui/minimap.png" frame="72 182 32 32" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -88 128 48</rect>
+				<rect shoot-through="true" aim-through="true">0 -40 8 40</rect>
+				<rect shoot-through="true" aim-through="true">120 -40 8 40</rect>
+				<rect shoot-through="true" aim-through="true">0 -128 8 40</rect>
+				<rect shoot-through="true" aim-through="true">120 -128 8 40</rect>
+			</collision>
+			<sprite layer="-29" origin="-8 128" texture="./arch.png" material="system/default.mats:floor">
+				<frame>256 776 112 128</frame>
+			</sprite>	
+			<sprite layer="-30" origin="0 132" texture="./arch.png" material="system/default.mats:floor">
+				<frame>128 512 128 132</frame>
+			</sprite>	
+			<sprite layer="0" origin="0 132" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>32 16 8 16</frame>
+			</sprite>
+			<sprite layer="0" origin="-120 132" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>32 16 8 16</frame>
+			</sprite>			
+		</scene>
+		<scene name="destroyed" trigger-snd="event:/misc/bridge_collapse">
+			<minimap_sprite origin="0 32" texture="gui/minimap.png" frame="104 182 32 32" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -88 128 48</rect>
+				<rect shoot-through="true" aim-through="true">0 -40 8 40</rect>
+				<rect shoot-through="true" aim-through="true">120 -40 8 40</rect>
+				<rect shoot-through="true" aim-through="true">0 -128 8 40</rect>
+				<rect shoot-through="true" aim-through="true">120 -128 8 40</rect>
+			</collision>
+			<effect delay="100" ulayer="1" src="./arch_destroyed_smoke_v.effect"/>
+			<sprite looping="false" layer="-29" origin="0 132" texture="./arch.png" material="system/default.mats:default">
+				<frame time="200" >256 512 128 132</frame>
+				<frame time="100" >384 512 128 132</frame>
+				<frame time="100" >128 644 128 132</frame>
+				<frame time="100" >256 644 128 132</frame>
+				<frame time="100" >384 644 128 132</frame>
+			</sprite>		
+			<sprite layer="0" origin="0 132" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>32 16 8 16</frame>
+			</sprite>
+			<sprite layer="0" origin="-120 132" texture="./_ledge_high.png" material="system/default.mats:default-noxray">
+				<frame>32 16 8 16</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

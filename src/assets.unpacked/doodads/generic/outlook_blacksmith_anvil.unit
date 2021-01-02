@@ -1,0 +1,35 @@
+<unit slot="doodad">
+	<scenes anvil="anvil-empty" anvil-sword="anvil-sword">
+		<scene random-start="true" name="shared">
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="3.5" />			
+			</collision>
+		</scene>
+		
+		<scene random-start="true" name="anvil-empty">
+			<sprite origin="7 8" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="3.5" />			
+			</collision>
+			<sprite origin="6 6" texture="./npc.png" material="system/default.mats:floor">
+				<frame time="100">1 57 11 7</frame>
+			</sprite>
+		</scene>
+		<scene random-start="true" name="anvil-sword">
+			<sprite origin="7 8" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="3.5" />			
+			</collision>
+			<sprite origin="7 6" texture="./npc.png" material="system/default.mats:floor">
+				<frame time="100">12 57 12 7</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

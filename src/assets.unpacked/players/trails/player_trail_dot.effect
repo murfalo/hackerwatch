@@ -1,0 +1,20 @@
+<effect looping="false">
+	
+	<sprite origin="2 2" looping="false" texture="./player_trails.png" material="system/default.mats:bright-noxray"
+	
+		num-sprites="1"
+		scale-x="1"
+		scale-y="1"
+		
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+	
+	>
+		
+		<frame time="10">0 0 0 0</frame>
+		<frame time="650">50 17 4 4</frame>
+		
+	</sprite>
+</effect>

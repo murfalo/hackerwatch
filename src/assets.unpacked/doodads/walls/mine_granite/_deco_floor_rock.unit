@@ -1,0 +1,16 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="0 20 6 6" />
+			<sprite origin="16 22" texture="./_deco.png" material="system/default.mats:default-noxray">
+				<frame>0 176 34 38</frame>
+			</sprite>
+			<sprite layer="-10" origin="-8 18" texture="./_deco.png" material="system/default.mats:floor">
+				<frame>34 176 17 21</frame>
+			</sprite>
+			<collision static="true">
+				<circle offset="0 0" radius="17" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

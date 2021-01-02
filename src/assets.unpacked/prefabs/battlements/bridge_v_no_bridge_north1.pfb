@@ -1,0 +1,188 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/battlement/_wall_e.unit"><vec2>112 32</vec2><int>39</int><vec2>112 64</vec2><int>40</int><vec2>112 0</vec2><int>41</int></array>
+		<array name="doodads/generic/lamp_brazier.unit"><vec2>16 -16</vec2><int>1</int><vec2>112 -16</vec2><int>2</int></array>
+		<array name="doodads/walls/battlement/_custom_floor_tile_16.unit">
+			<vec2>24 -16</vec2>
+			<int>20</int>
+			<vec2>56 -16</vec2>
+			<int>21</int>
+			<vec2>40 -16</vec2>
+			<int>22</int>
+			<vec2>8 -16</vec2>
+			<int>23</int>
+			<vec2>72 -16</vec2>
+			<int>24</int>
+			<vec2>88 -16</vec2>
+			<int>18</int>
+			<vec2>104 -16</vec2>
+			<int>19</int>
+		</array>
+		<array name="doodads/walls/battlement/_deco_window_stone_big.unit">
+			<array>
+				<vec2>40 56</vec2>
+				<int>26</int>
+				<dict>
+					<int name="layer">-39</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>88 56</vec2>
+				<int>25</int>
+				<dict>
+					<int name="layer">-39</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/battlement/_ledge_high_h_16.unit"><vec2>88 -4</vec2><int>6</int><vec2>40 -4</vec2><int>8</int><vec2>24 -4</vec2><int>9</int><vec2>104 -4</vec2><int>7</int></array>
+		<array name="doodads/walls/battlement/_ledge_high_sw.unit"><vec2>4 -4</vec2><int>10</int></array>
+		<array name="doodads/walls/battlement/_wall_32x32.unit">
+			<vec2>24 32</vec2>
+			<int>16</int>
+			<vec2>56 32</vec2>
+			<int>11</int>
+			<vec2>24 0</vec2>
+			<int>12</int>
+			<vec2>24 64</vec2>
+			<int>13</int>
+			<vec2>56 0</vec2>
+			<int>14</int>
+			<vec2>56 64</vec2>
+			<int>15</int>
+		</array>
+		<array name="doodads/walls/battlement/_wall_8x32.unit">
+			<vec2>104 32</vec2>
+			<int>27</int>
+			<vec2>104 0</vec2>
+			<int>28</int>
+			<vec2>16 64</vec2>
+			<int>29</int>
+			<vec2>16 32</vec2>
+			<int>30</int>
+			<vec2>16 0</vec2>
+			<int>31</int>
+			<vec2>104 64</vec2>
+			<int>32</int>
+		</array>
+		<array name="doodads/walls/battlement/_wall_16x32.unit"><vec2>88 32</vec2><int>35</int><vec2>88 0</vec2><int>33</int><vec2>88 64</vec2><int>34</int></array>
+		<array name="doodads/walls/battlement/_ledge_high_se.unit"><vec2>124 -4</vec2><int>17</int></array>
+		<array name="doodads/walls/battlement/_wall_w.unit"><vec2>0 64</vec2><int>36</int><vec2>0 0</vec2><int>37</int><vec2>0 32</vec2><int>38</int></array>
+		<array name="doodads/special/_minimap_dark_48.unit"><vec2>32 48</vec2><int>4</int><vec2>0 48</vec2><int>5</int><vec2>80 48</vec2><int>3</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>RandomCount</string>
+			<int>42</int>
+			<vec3>84 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>48</int><int>47</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>43</int>
+			<vec3>0 216 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NoBridgeLoot</string>
+			<dict>
+				<string name="EventName">NoBridgeLoot</string>
+			</dict>
+			<array><int>50</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>44</int>
+			<vec3>84 216 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NoBridgeGargoyles</string>
+			<dict>
+				<string name="EventName">NoBridgeGargoyles</string>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>45</int>
+			<vec3>-39 -58 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>48</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>46</int>
+			<vec3>40 -28 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>loot_3x1_f</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_3x1_f.pfb</string>
+			</dict>
+			<array><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>47</int>
+			<vec3>64 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gargoyle_n</string>
+			<dict>
+				<string name="Prefab">prefabs/battlements/gargoyle_n.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>48</int>
+			<vec3>64 -4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tower_s</string>
+			<dict>
+				<string name="UnitType">doodads/walls/battlement/_custom_tower_s.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>49</int>
+			<vec3>-64 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>1</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>50</int>
+			<vec3>0 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>51</int><int>46</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>51</int><vec3>-48 128 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

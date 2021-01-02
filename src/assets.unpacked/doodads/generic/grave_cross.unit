@@ -1,0 +1,18 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<shadow>
+				<sprite origin="-2 9" texture="./grave_mercenary.png">
+					<frame time="100">0 30 7 10</frame>
+				</sprite>
+			</shadow>
+			<collision static="true">		
+				<circle radius="3" offset="0 0"/>			
+				<circle sensor="true" offset="0 0" radius="9" />
+			</collision>
+			<sprite origin="5 13" texture="./grave_mercenary.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 0 10 14</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

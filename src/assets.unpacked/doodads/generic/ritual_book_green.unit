@@ -1,0 +1,231 @@
+<unit slot="doodad">
+	<scenes open="on" closed="off" 1="stage-1" 2="stage-2" 3="stage-3" 4="stage-4" 5="stage-5" 6="stage-6" 7="stage-7" 8="stage-8" 9="stage-end">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-8 -6 15 12</rect>
+			</collision>
+		</scene>		
+		<scene name="on" trigger-snd="event:/misc/paper">
+			<scene src="shared" />
+			<!-- <minimap_sprite layer="150" layer="20" origin="0 0" texture="gui/minimap.png" frame="24 10 9 10" /> -->
+			<sprite origin="8 14" texture="./ritual_book.png" material="system/default.mats:default">
+				<frame>0 40 18 20</frame>
+			</sprite>				
+		</scene>			
+		<scene name="off">
+			<scene src="shared" />
+			<!-- <minimap_sprite layer="150" layer="20" origin="0 0" texture="gui/minimap.png" frame="24 10 9 10" /> -->
+			<sprite origin="8 14" texture="./ritual_book.png" material="system/default.mats:default">
+				<frame>18 40 18 20</frame>
+			</sprite>			
+		</scene>
+
+
+
+		
+		<scene name="shared-ritual">	
+			<sprite origin="11 19" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="150">0 74 16 27</frame>
+				<frame time="150">16 74 16 27</frame>
+				<frame time="150">32 74 16 27</frame>
+			</sprite>
+			
+			<light pos="0 -2">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 255 0 1" />
+				</colors>
+			</light>
+			
+			<light pos="0 -30">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 255 0 1" />
+				</colors>
+			</light>
+			
+		</scene>
+
+
+
+<!-- skull -->
+
+
+		<scene name="stage-1">
+			<scene src="shared" />			
+			<scene src="on" />
+			<sprite origin="11 19" loopback="1000" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="1000">0 0 0 0</frame>
+				<frame time="150">0 74 16 27</frame>
+				<frame time="150">16 74 16 27</frame>
+				<frame time="150">32 74 16 27</frame>
+			</sprite>
+			
+			<light pos="0 -2">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 255 0 1" />
+				</colors>
+			</light>
+			
+			<light pos="0 -30">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 255 0 1" />
+				</colors>
+			</light>
+			<sprite origin="13 44" ulayer="3" loopback="1000" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="100">480 128 23 37</frame>
+				<frame time="100">503 128 23 37</frame>
+				<frame time="100">526 128 23 37</frame>
+				<frame time="100">549 128 23 37</frame>
+				<frame time="100">572 128 23 37</frame>
+				<frame time="100">595 128 23 37</frame>
+				<frame time="100">618 128 23 37</frame>
+				<frame time="100">641 128 23 37</frame>
+				<frame time="100">664 128 23 37</frame>
+				<frame time="100">687 128 23 37</frame>
+				<frame time="200">0 0 23 37</frame>
+				<frame time="200">23 0 23 37</frame>
+				<frame time="200">46 0 23 37</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="stage-2">
+			<scene src="shared" />	
+			<scene src="on" />
+			<scene src="shared-ritual" />
+			<sprite origin="13 44" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="200">69 0 23 37</frame>
+				<frame time="200">92 0 23 37</frame>
+				<frame time="200">115 0 23 37</frame>			
+			</sprite>			
+		</scene>
+		
+		<scene name="stage-3">
+			<scene src="shared" />	
+			<scene src="on" />
+			<scene src="shared-ritual" />
+			<sprite origin="13 44" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="200">137 0 23 37</frame>
+				<frame time="200">160 0 23 37</frame>
+				<frame time="200">183 0 23 37</frame>				
+			</sprite>			
+		</scene>
+			
+		<scene name="stage-4">
+			<scene src="shared" />	
+			<scene src="on" />
+			<scene src="shared-ritual" />
+			<sprite origin="13 44" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="200">206 0 23 37</frame>
+				<frame time="200">229 0 23 37</frame>
+				<frame time="200">252 0 23 37</frame>				
+			</sprite>			
+		</scene>
+		
+		<scene name="stage-5">
+			<scene src="shared" />	
+			<scene src="on" />
+			<scene src="shared-ritual" />
+			<sprite origin="13 44" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="200">0 37 23 37</frame>
+				<frame time="200">23 37 23 37</frame>
+				<frame time="200">46 37 23 37</frame>				
+			</sprite>			
+		</scene>
+		
+		<scene name="stage-6">
+			<scene src="shared" />	
+			<scene src="on" />
+			<scene src="shared-ritual" />
+			<sprite origin="13 44" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="200">69 37 23 37</frame>
+				<frame time="200">92 37 23 37</frame>
+				<frame time="200">115 37 23 37</frame>				
+			</sprite>			
+		</scene>
+		
+		<scene name="stage-7">
+			<scene src="shared" />	
+			<scene src="on" />
+			<scene src="shared-ritual" />
+			<sprite origin="13 44" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="200">137 37 23 37</frame>
+				<frame time="200">160 37 23 37</frame>
+				<frame time="200">183 37 23 37</frame>				
+			</sprite>			
+		</scene>
+		
+		<scene name="stage-8">
+			<scene src="shared" />	
+			<scene src="on" />
+			<scene src="shared-ritual" />
+			<sprite origin="13 44" ulayer="3" looping="true" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="200">206 37 23 37</frame>
+				<frame time="200">229 37 23 37</frame>
+				<frame time="200">252 37 23 37</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="stage-end">			
+			<scene src="shared" />
+			<scene src="on" />
+			<sprite origin="11 19" ulayer="3" looping="false" texture="actors/bosses/eye/eye_ritual.png" material="system/default.mats:bright">
+				<frame time="150">48 74 16 27</frame>
+				<frame time="150">64 74 16 27</frame>
+				<frame time="150">80 74 16 27</frame>
+				<frame time="150">96 74 16 27</frame>
+				<frame time="150">112 74 16 27</frame>
+				<frame time="150">128 74 16 27</frame>
+				<frame time="150">144 74 16 27</frame>
+				<frame time="150">0 0 0 0</frame>
+			</sprite>		
+		</scene>
+		
+	</scenes>
+</unit>

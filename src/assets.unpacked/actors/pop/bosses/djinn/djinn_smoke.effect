@@ -1,0 +1,83 @@
+<effect looping="true" bounds="128 2048" layer="1">
+	
+	<sprite mask="1001" origin="16 32" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10))"
+	scale-x="i/5+0.4"
+	scale-y="i/10+0.4"
+	>
+		<frame time="40">352 0 32 32</frame>
+	</sprite>
+	<sprite masked="1001" origin="16 32" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10))"
+	scale-x="i/5+0.4"
+	scale-y="i/10+0.4"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+	</sprite>
+	
+	
+	
+	
+	
+	<sprite origin="16 32" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 10"
+	pos-x="sin(pi*it*2)*1"
+	num-sprites="1"
+	scale-x="i/5+0.5"
+	scale-y="i/10+0.5"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+	</sprite>
+	
+<sprite mask="1002" origin="16 32" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 5/10*0.4*32*3"
+	scale-x="0.6"
+	scale-y="0.6"
+	>
+		<frame time="40">384 0 32 32</frame>
+	</sprite>
+	<sprite masked="1002" origin="16 32" looping="true" texture="./djinn_smoke.png" material="system/default.mats:default-noxray"
+		
+	pos-y="-32 * (0.3 * (i-1) + ((i-1) * i/2 /10)) - 5/10*0.4*32*3"
+	scale-x="0.6"
+	scale-y="0.6"
+	>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+		<frame time="40">224 0 32 32</frame>
+		<frame time="40">256 0 32 32</frame>
+		<frame time="40">288 0 32 32</frame>
+		<frame time="40">320 0 32 32</frame>
+	</sprite>
+	
+	
+</effect>

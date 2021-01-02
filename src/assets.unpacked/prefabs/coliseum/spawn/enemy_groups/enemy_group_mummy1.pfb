@@ -1,0 +1,828 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>1</int>
+			<vec3>352 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mummy_1</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberToSpawnMin">5</int>
+				<int name="NumberPerPlayerMax">4</int>
+				<int name="NumberToSpawnMax">7</int>
+				<int name="NumberPerPlayer">3</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>2</int>
+			<vec3>-64 -448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>kill_everything</string>
+			<dict>
+				<string name="EventName">kill_everything</string>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>3</int>
+			<vec3>288 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_mummy1_hard</string>
+			<dict>
+				<string name="EventName">spawn_mummy1_hard</string>
+			</dict>
+			<array><int>27</int><int>0</int><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>4</int>
+			<vec3>288 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">mummy1_hard</string>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>5</int>
+			<vec3>-64 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Physical">1000000</int>
+				<array name="#Units">
+					<int>1</int>
+					<string>AllSpawned</string>
+					<int>26</int>
+					<string>AllSpawned</string>
+					<int>12</int>
+					<string>AllSpawned</string>
+					<int>9</int>
+					<string>AllSpawned</string>
+					<int>6</int>
+					<string>AllSpawned</string>
+					<int>28</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>6</int>
+			<vec3>-160 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mummy_1</string>
+			<dict>
+				<int name="NumberToSpawnMin">4</int>
+				<int name="NumberPerPlayerMax">3</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayer">2</int>
+				<int name="NumberToSpawnMax">6</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>7</int>
+			<vec3>256 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gate</string>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>8</int>
+			<vec3>-256 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tele</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>20</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>9</int>
+			<vec3>352 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mummy_1</string>
+			<dict>
+				<int name="NumberToSpawnMax">7</int>
+				<int name="NumberToSpawnMin">5</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">4</int>
+				<int name="NumberPerPlayer">3</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>10</int>
+			<vec3>-288 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>8</int><int>32</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>11</int>
+			<vec3>512 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hard gate</string>
+			<array><int>9</int><int>0</int><int>45</int><int>0</int><int>59</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>12</int>
+			<vec3>-672 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mummy_1</string>
+			<dict>
+				<int name="NumberToSpawnMin">2</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>13</int>
+			<vec3>96 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_spawn_tele</string>
+			<dict>
+				<string name="EventName">enable_spawn_tele</string>
+			</dict>
+			<array><int>37</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>14</int>
+			<vec3>-64 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ranged 1</string>
+			<dict>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="NumberToSpawnMin">2</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_ranged_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>-128 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>39</int><int>7</int><int>32</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>16</int>
+			<vec3>-192 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_spawn_gate</string>
+			<dict>
+				<string name="EventName">enable_spawn_gate</string>
+			</dict>
+			<array><int>34</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>17</int>
+			<vec3>0 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_mummy1_medium</string>
+			<dict>
+				<string name="EventName">spawn_mummy1_medium</string>
+			</dict>
+			<array><int>40</int><int>0</int><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>18</int>
+			<vec3>-64 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ranged 1</string>
+			<dict>
+				<int name="NumberPerPlayer">1</int>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberPerPlayerMax">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_ranged_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>medium tele</string>
+			<array><int>26</int><int>0</int><int>47</int><int>0</int><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>20</int>
+			<vec3>-512 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>easy tele</string>
+			<array><int>12</int><int>0</int><int>51</int><int>0</int><int>57</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>21</int>
+			<vec3>-512 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>easy gate</string>
+			<array><int>28</int><int>0</int><int>53</int><int>0</int><int>24</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>22</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>medium gate</string>
+			<array><int>6</int><int>0</int><int>49</int><int>0</int><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>23</int>
+			<vec3>512 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hard tele</string>
+			<array><int>1</int><int>0</int><int>43</int><int>0</int><int>58</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>24</int>
+			<vec3>-576 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ranged 1</string>
+			<dict>
+				<int name="NumberPerPlayerMax">1</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_ranged_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>25</int>
+			<vec3>-288 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_mummy1_easy</string>
+			<dict>
+				<string name="EventName">spawn_mummy1_easy</string>
+			</dict>
+			<array><int>10</int><int>0</int><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>26</int>
+			<vec3>-160 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mummy_1</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">3</int>
+				<int name="NumberToSpawnMin">4</int>
+				<int name="NumberToSpawnMax">6</int>
+				<int name="NumberPerPlayer">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>27</int>
+			<vec3>288 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>38</int><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>28</int>
+			<vec3>-672 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mummy_1</string>
+			<dict>
+				<int name="NumberToSpawnMax">4</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>29</int>
+			<vec3>-288 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">mummy1_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>30</int>
+			<vec3>0 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">mummy1_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>31</int>
+			<vec3>160 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_spawn_tele</string>
+			<dict>
+				<string name="EventName">disable_spawn_tele</string>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>32</int>
+			<vec3>-320 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gate</string>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>33</int>
+			<vec3>-128 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_spawn_gate</string>
+			<dict>
+				<string name="EventName">disable_spawn_gate</string>
+			</dict>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>34</int>
+			<vec3>-192 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>39</int><int>7</int><int>32</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>35</int>
+			<vec3>32 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tele</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>19</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>36</int>
+			<vec3>160 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>35</int><int>8</int><int>38</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>37</int>
+			<vec3>96 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>35</int><int>8</int><int>38</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>38</int>
+			<vec3>320 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tele</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>23</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>39</int>
+			<vec3>-32 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gate</string>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>40</int>
+			<vec3>0 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>35</int><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>41</int>
+			<vec3>64 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy_mb</string>
+			<dict>
+				<string name="EventName">activate_mummy_mb</string>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>42</int>
+			<vec3>64 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>45</int><int>43</int><int>49</int><int>47</int><int>51</int><int>53</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>43</int>
+			<vec3>576 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.8</float>
+				<array name="ToExecute"><int>44</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>44</int>
+			<vec3>640 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="MaxToSpawn">12</int>
+				<string name="UnitType">actors/pop/mummy_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>45</int>
+			<vec3>576 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.8</float>
+				<array name="ToExecute"><int>46</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>46</int>
+			<vec3>640 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<int name="NumberToSpawnMax">4</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="MaxToSpawn">12</int>
+				<string name="UnitType">actors/pop/mummy_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>47</int>
+			<vec3>64 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.6</float>
+				<array name="ToExecute"><int>48</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>48</int>
+			<vec3>128 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="MaxToSpawn">12</int>
+				<string name="UnitType">actors/pop/mummy_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>49</int>
+			<vec3>64 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.6</float>
+				<array name="ToExecute"><int>50</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>50</int>
+			<vec3>128 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="MaxToSpawn">12</int>
+				<string name="UnitType">actors/pop/mummy_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>51</int>
+			<vec3>-448 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.25</float>
+				<array name="ToExecute"><int>52</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>52</int>
+			<vec3>-384 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="MaxToSpawn">12</int>
+				<string name="UnitType">actors/pop/mummy_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>53</int>
+			<vec3>-448 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.25</float>
+				<array name="ToExecute"><int>54</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>54</int>
+			<vec3>-384 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="MaxToSpawn">12</int>
+				<string name="UnitType">actors/pop/mummy_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>55</int>
+			<vec3>192 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>54</int>
+					<string>AllSpawned</string>
+					<int>52</int>
+					<string>AllSpawned</string>
+					<int>50</int>
+					<string>AllSpawned</string>
+					<int>48</int>
+					<string>AllSpawned</string>
+					<int>46</int>
+					<string>AllSpawned</string>
+					<int>44</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+			<array><int>56</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CrowdTriggerAction</string>
+			<int>56</int>
+			<vec3>192 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb-killed</string>
+			<dict>
+				<string name="Id">mb-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>57</int>
+			<vec3>-576 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ranged 1</string>
+			<dict>
+				<int name="NumberPerPlayerMax">1</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_ranged_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>58</int>
+			<vec3>448 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ranged 1</string>
+			<dict>
+				<int name="NumberPerPlayer">2</int>
+				<int name="NumberToSpawnMin">3</int>
+				<int name="NumberPerPlayerMax">3</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_ranged_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>59</int>
+			<vec3>448 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ranged 1</string>
+			<dict>
+				<int name="NumberToSpawnMin">3</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">3</int>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="NumberPerPlayer">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/pop/mummy_ranged_1.unit</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

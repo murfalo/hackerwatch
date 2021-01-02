@@ -1,0 +1,18 @@
+<effect layer="1" looping="true" bounds="1024 1024">
+	<sprite looping="true" origin="13 22" texture="./shield.png" material="system/default.mats:glow-both-bright">
+		<frame time="100">0 0 25 28</frame>
+		<frame time="100">25 0 25 28</frame>
+		<frame time="100">50 0 25 28</frame>
+	</sprite>
+	<light> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="75" />
+		<looping value="true" />
+		<size value="100" />
+		<color-r value="0" />
+		<color-g value="1" />
+		<color-b value="2" />
+	</light>
+</effect>

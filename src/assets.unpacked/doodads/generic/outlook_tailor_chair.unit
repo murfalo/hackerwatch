@@ -1,0 +1,15 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>		
+			<collision static="true">
+				<circle jam-through="true" offset="0 0" radius="4" />			
+			</collision>
+			<sprite origin="8 15" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame time="100">358 96 13 22</frame>
+			</sprite>		
+			<sprite origin="-5 15" layer="-1" texture="./outlook_props.png" material="system/default.mats:default-noxray">
+				<frame time="100">371 96 5 22</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

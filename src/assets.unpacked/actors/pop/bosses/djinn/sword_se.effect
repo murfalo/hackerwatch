@@ -1,0 +1,46 @@
+<effect looping="false">
+	
+	<param name="angle" default="0" />
+	<param name="height" default="20" />
+
+	<sprite looping="false" origin="37 37" texture="./sword.png" material="effects/effects.mats:fire"
+	
+	angle="4 * pi/4"
+	pos-y="-height"
+	
+	>
+		
+		<frame time="40">0 0 75 64</frame>
+		<frame time="40">75 0 75 64</frame>
+		<frame time="40">150 0 75 64</frame>
+		<frame time="40">225 0 75 64</frame>
+		<frame time="40">300 0 75 64</frame>
+		<frame time="40">375 0 75 64</frame>
+		<frame time="40">0 64 75 64</frame>
+		<frame time="40">75 64 75 64</frame>
+		<frame time="40">150 64 75 64</frame>
+		<frame time="40">225 64 75 64</frame>
+	</sprite>
+<!-- 
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="400">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="80" />
+
+		<color-r value="4" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light> -->
+</effect>

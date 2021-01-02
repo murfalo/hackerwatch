@@ -1,0 +1,12 @@
+<unit slot="doodad" layer="-80">
+	<scenes>
+		<scene>
+			%if EDITOR
+			<sprite layer="4" origin="16 16" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 32 32</frame>
+			</sprite>
+			%endif			
+			<effect src="doodads/terrain/cloud_negative-2.effect" />	
+		</scene>			
+	</scenes>
+</unit>		

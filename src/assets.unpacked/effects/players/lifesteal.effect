@@ -1,0 +1,13 @@
+<effect>
+	<sprite looping="false" origin="4 9" texture="./player_effects.png" material="effects/effects.mats:add" num-sprites="4"
+		pos-y="rand(u+i*3+0)*4-2 + t * -13"
+		pos-x="rand(u+i*3+1)*6-3"
+		
+		color-r="0"
+		color-g="rand(u+i*3+2) + 0.3"
+		color-b="0"
+		color-a="1-t * rand(u+i)"
+	>
+		<frame time="200">0 96 8 13</frame>
+	</sprite>
+</effect>

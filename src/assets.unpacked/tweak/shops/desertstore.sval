@@ -1,0 +1,64 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::DungeonShop</string>
+
+	<string name="id">desertstore</string>
+	<string name="name">.shop.desertstore</string>
+	<bool name="stars-visible">false</bool>
+
+	<!-- Item types -->
+	<array name="items">
+		<!-- Level 1 -->
+		<dict>
+			<float name="cost-scale">1.5</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>common</string>
+			</array>
+			<int name="max-items">1</int>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<float name="cost-scale">1.75</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>uncommon</string>
+			</array>
+			<int name="max-items">1</int>
+		</dict>
+
+		<!-- Level 3 -->
+		<dict>
+			<float name="cost-scale">2</float>
+			<array name="qualities">
+				<string>common</string>
+				<string>common</string>
+				<string>uncommon</string>
+			</array>
+			<int name="max-items">1</int>
+		</dict>
+	</array>
+
+	<!-- Upgrades that are always there -->
+	<array name="upgrades">
+		<!-- Map piece -->
+		<dict>
+			<string name="class">Upgrades::DesertMapUpgrade</string>
+			<string name="id">desert-map</string>
+			<bool name="small">true</bool>
+
+			<string name="name">.shop.desertstore.map.name</string>
+			<string name="desc">.shop.desertstore.map.desc</string>
+
+			<array name="costs">
+				<int>500</int>
+				<int>1000</int>
+				<int>2000</int>
+			</array>
+			<array name="icon"><string>gui/icons_others.png</string><int>100</int><vec4>96 24 24 24</vec4></array>
+		</dict>
+	</array>
+</dict>

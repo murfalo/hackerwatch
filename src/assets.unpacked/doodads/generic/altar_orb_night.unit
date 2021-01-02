@@ -1,0 +1,43 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="shared">
+			<minimap_sprite origin="2 2" texture="gui/minimap.png" frame="0 16 4 4" />
+ 			<collision static="true">
+				<circle radius="8" shoot-through="true" aim-through="true" />
+			</collision>
+			<shadow>
+				<sprite origin="-4 23" texture="./altar_orb_night.png" material="system/default.mats:default">
+					<frame>24 0 11 27</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="on">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="5 20" texture="./altar_orb_night.png" material="system/default.mats:default-noxray">
+				<frame time="200">48 44 10 10</frame>
+				<frame time="200">48 54 10 10</frame>
+				<frame time="200">48 64 10 10</frame>
+			</sprite>			
+			<sprite origin="12 21" texture="./altar_orb_night.png" material="system/default.mats:default">
+				<frame>0 0 24 33</frame>
+			</sprite>
+			<sprite origin="25 26" layer="-30" texture="./altar_orb_night.png" material="system/default.mats:floor">
+				<frame>38 74 50 51</frame>
+			</sprite>	
+		</scene>
+		<scene name="off">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="5 20" texture="./altar_orb_night.png" material="system/default.mats:default-noxray">
+				<frame time="200">38 44 10 10</frame>
+				<frame time="200">38 54 10 10</frame>
+				<frame time="200">38 64 10 10</frame>
+			</sprite>			
+			<sprite origin="12 21" texture="./altar_orb_night.png" material="system/default.mats:default">
+				<frame>0 0 24 33</frame>
+			</sprite>
+			<sprite origin="25 26" layer="-30" texture="./altar_orb_night.png" material="system/default.mats:floor">
+				<frame>38 74 50 51</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

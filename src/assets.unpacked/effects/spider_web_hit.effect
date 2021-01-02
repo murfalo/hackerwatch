@@ -1,0 +1,42 @@
+<effect>
+<param name="radius" default="10" />
+	
+	<sprite looping="false" layer="2" origin="12 7" texture="./spider_web_hit.png" material="system/default.mats:default-noxray"
+	num-sprites="radius/3"
+	pos-x="cos( rand(u + i * 149) * pi * 2) * radius + (rand(u+i*101) * 10 - 5 ) * t"
+	pos-y="sin( rand(u + i * 149) * pi * 2) * radius + (rand(u+i*23 ) * 10 - 5 ) * t - sin(t*pi)*4"
+	color-a="0.8 * (1-t)"
+	angle="rand(u+i*7)*pi*2"
+	>
+	
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="0" w="25" h="14" /> 
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="14" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="28" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="42" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="56" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="70" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="84" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="98" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="112" w="25" h="14" />
+	</sprite>
+	<sprite looping="false" layer="2" origin="12 7" texture="./spider_web_hit.png" material="system/default.mats:default-noxray"
+	num-sprites="radius/3"
+	pos-x="cos( rand(u + i * 41) * pi * 2) * radius + (rand(u + i * 31) * 10 - 5 ) * t"
+	pos-y="sin( rand(u + i * 41) * pi * 2) * radius + (rand(u + i * 31 ) * 10 - 5 ) * t - sin( t * pi)*4"
+	color-a="0.8 * (1-t)"
+	>
+	
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="0" w="25" h="14" /> 
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="14" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="28" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="42" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="56" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="70" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="84" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="98" w="25" h="14" />
+		<frame time="75" x="25*floor(rand(u+i*97)*3)" y="112" w="25" h="14" />
+	</sprite>
+</effect>
+
+
+

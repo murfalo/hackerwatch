@@ -1,0 +1,52 @@
+<gui>
+	<sprites>
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<grouprect inner="true" padding="2 2" width="274" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox">
+				<!-- Header -->
+				<rect width="274" height="18" flow="hbox">
+					<!-- Text -->
+					<rect width="249" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mercenarytrainer.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="stop" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="270" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- List -->
+				<group id="list" inner="true" width="270" flow="vbox" />
+
+				<!-- Template -->
+				<rect id="template" visible="false" width="270" height="22" flow="hbox">
+					<!-- Icon -->
+					<rect width="22" height="22" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+						<sprite id="icon" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Level -->
+					<rect width="22" height="22" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+						<text id="level" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" hint="number-low" />
+					</rect>
+
+					<!-- Button -->
+					<rect width="226" height="22" spriteset="gui/variable/bigwindow_borders.sval">
+						<shopitem id="button" with-icon="false" spriteset="scalebutton" width="222" offset="2 2" />
+					</rect>
+				</rect>
+			</grouprect>
+		</group>
+	</doc>
+</gui>

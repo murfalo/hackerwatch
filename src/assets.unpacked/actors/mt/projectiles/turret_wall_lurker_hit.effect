@@ -1,0 +1,70 @@
+<effect looping="false" layer="0">
+
+	<param name="angle" default="0" />
+	<param name="radius" default="18" />
+	<variation>
+		<sprite origin="16 24" ulayer="0" texture="./turret_wall_lurker_hit.png" material="system/default.mats:bright-noxray">
+			<frame time="70">0 0 32 32</frame>
+			<frame time="70">32 0 32 32</frame>
+			<frame time="100">64 0 32 32</frame>
+			<frame time="100">96 0 32 32</frame>
+			<frame time="100"> 0 32 32 32</frame>
+			<frame time="100">32 32 32 32</frame>
+			<frame time="100">64 32 32 32</frame>
+			<frame time="100">96 32 32 32</frame>
+			<frame time="100"> 0 64 32 32</frame>
+			<frame time="100">32 64 32 32</frame>
+			<frame time="100">64 64 32 32</frame>
+		</sprite>
+	</variation>
+	<variation>
+		<sprite origin="16 24" ulayer="0" texture="./turret_wall_lurker_hit.png" material="system/default.mats:bright-noxray">
+			<frame time="70">0 96 32 32</frame>
+			<frame time="70">32 96 32 32</frame>
+			<frame time="70">64 96 32 32</frame>
+			<frame time="100">96 96 32 32</frame>
+			<frame time="100"> 0 128 32 32</frame>
+			<frame time="100">32 128 32 32</frame>
+			<frame time="100">64 128 32 32</frame>
+			<frame time="100">96 128 32 32</frame>
+		</sprite>
+	</variation>
+	
+	
+	<sprite origin="4 4" looping="false" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="5"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -18 * sin(t*pi/2) + 0.2"
+		
+        color-r="1.5"
+        color-g="1-t"
+        color-b="1-t"
+        color-a="saturate(1 - t)"
+	>
+        <frame time="400">0 0 1 1</frame>
+	</sprite>	
+
+		<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="100" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 40 * t" />
+		
+		<color-r value="1.5" />
+		<color-g value="0.04" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light> 
+</effect>

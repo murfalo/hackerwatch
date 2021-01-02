@@ -1,0 +1,102 @@
+<effect looping="false">
+	
+	<data>
+		<string name="sound">event:/player/sorcerer/icebarrier</string>
+	</data>		
+	<sprite looping="false" layer="2" origin="11 14" texture="./ice_barrier_charge.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="1"
+		color-g="1"
+		color-b="0.75"
+		color-a="0.8"
+	>
+		<frame time="60">0 20 20 20</frame>
+	</sprite>
+	
+	<sprite looping="false" layer="2" origin="11 14" texture="./ice_barrier_charge.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="2"
+		color-g="2"
+		color-b="2"
+		color-a="1"
+	>
+		<frame time="60">0 0 0 0</frame>
+		<frame time="60">0 20 20 20</frame>
+	</sprite>
+	<sprite looping="false" layer="2" origin="17 17" texture="./ice_barrier.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="1"
+		color-g="1"
+		color-b="0.75"
+		color-a="0.5-t*0.5"
+	>
+		<frame time="30">0 0 32 24</frame>
+		<frame time="80">32 0 32 24</frame>
+		<frame time="60">64 0 32 24</frame>
+		<frame time="60">96 0 32 24</frame>
+		<frame time="70">0 24 32 24</frame>
+		<frame time="70">32 24 32 24</frame>
+		<frame time="70">64 24 32 24</frame>
+		<frame time="450">0 0 0 0</frame>
+	</sprite>
+	
+	<!-- <sprite looping="false" layer="2" origin="17 17" texture="./ice_barrier.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="0"
+		color-g="1.0 - t"
+		color-b="1.0 - t"
+		color-a="0.2 - t*0.2"
+		scale-x="1 + t/2"
+		scale-y="1 + t/2"
+	>
+		<frame time="450">0 0 32 24</frame>
+	</sprite> -->
+	
+	<light>
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*80" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light>
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="120*(1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

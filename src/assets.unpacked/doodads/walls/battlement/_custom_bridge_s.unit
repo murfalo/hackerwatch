@@ -1,0 +1,123 @@
+<unit slot="doodad">
+	<scenes default="default" on="on" off="off" off_80="off_80" off_60="off_60" off_40="off_40" off_20="off_20">
+		<scene name="shared">
+			<sprite ulayer="-3" looping="false" layer="-20" origin="34 46" texture="./_custom_bridge_v.png" material="system/default.mats:wall">
+				<frame>92 189 2 7</frame>
+			</sprite>
+			<sprite ulayer="-3" looping="false" layer="-20" origin="-32 46" texture="./_custom_bridge_v.png" material="system/default.mats:wall">
+				<frame>94 189 2 7</frame>
+			</sprite>
+		</scene>
+		<scene name="on">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="104 151 20 24"/>	
+			<scene src="shared"/>
+			<collision>
+				<rect shoot-through="true">-40 -48 8 96</rect>
+				<rect shoot-through="true">32 -48 8 96</rect>
+			</collision>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_on_s.effect"/>
+			<sprite ulayer="0" looping="false" layer="-20" origin="32 46" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="6000">0 0 0 0</frame>
+				<frame>0 154 64 94</frame>
+			</sprite>		
+		</scene>			
+		<scene name="off">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="124 151 20 24"/>	
+			<scene src="shared"/>
+			<collision>
+				<rect shoot-through="true">-40 -48 8 96</rect>
+				<rect shoot-through="true">32 -48 8 96</rect>
+			</collision>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_off_s.effect"/>
+			<sprite ulayer="-1" looping="false" layer="-20" origin="32 46" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="1500">0 0 0 0</frame>
+				<frame>0 246 64 10</frame>
+			</sprite>	
+			<sprite ulayer="0" looping="false" layer="-20" origin="3 40" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="1500">0 0 0 0</frame>
+				<frame>83 54 6 88</frame>
+			</sprite>				
+		</scene>	
+		<scene name="off_80">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="124 151 20 24"/>	
+			<scene src="shared"/>
+			<collision>
+				<rect shoot-through="true">-40 -48 8 96</rect>
+				<rect shoot-through="true">32 -48 8 96</rect>
+			</collision>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_off_s_80.effect"/>
+			<sprite ulayer="-1" looping="false" layer="-20" origin="32 46" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="1200">0 0 0 0</frame>
+				<frame>0 246 64 10</frame>
+			</sprite>	
+			<sprite ulayer="0" looping="false" layer="-20" origin="3 40" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="1200">0 0 0 0</frame>
+				<frame>83 54 6 88</frame>
+			</sprite>				
+		</scene>		
+		<scene name="off_60">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="124 151 20 24"/>	
+			<scene src="shared"/>
+			<collision>
+				<rect shoot-through="true">-40 -48 8 96</rect>
+				<rect shoot-through="true">32 -48 8 96</rect>
+			</collision>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_off_s_60.effect"/>
+			<sprite ulayer="-1" looping="false" layer="-20" origin="32 46" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="900">0 0 0 0</frame>
+				<frame>0 246 64 10</frame>
+			</sprite>	
+			<sprite ulayer="0" looping="false" layer="-20" origin="3 40" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="900">0 0 0 0</frame>
+				<frame>83 54 6 88</frame>
+			</sprite>				
+		</scene>	
+		<scene name="off_40">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="124 151 20 24"/>	
+			<scene src="shared"/>
+			<collision>
+				<rect shoot-through="true">-40 -48 8 96</rect>
+				<rect shoot-through="true">32 -48 8 96</rect>
+			</collision>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_off_s_40.effect"/>
+			<sprite ulayer="-1" looping="false" layer="-20" origin="32 46" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="600">0 0 0 0</frame>
+				<frame>0 246 64 10</frame>
+			</sprite>	
+			<sprite ulayer="0" looping="false" layer="-20" origin="3 40" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="600">0 0 0 0</frame>
+				<frame>83 54 6 88</frame>
+			</sprite>				
+		</scene>		
+		<scene name="off_20">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="124 151 20 24"/>	
+			<scene src="shared"/>
+			<collision>
+				<rect shoot-through="true">-40 -48 8 96</rect>
+				<rect shoot-through="true">32 -48 8 96</rect>
+			</collision>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_off_s_20.effect"/>
+			<sprite ulayer="-1" looping="false" layer="-20" origin="32 46" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="300">0 0 0 0</frame>
+				<frame>0 246 64 10</frame>
+			</sprite>	
+			<sprite ulayer="0" looping="false" layer="-20" origin="3 40" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame time="300">0 0 0 0</frame>
+				<frame>83 54 6 88</frame>
+			</sprite>				
+		</scene>			
+		<scene name="default">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="124 151 20 24"/>	
+			<scene src="shared"/>
+			<collision>
+				<rect shoot-through="true">-40 -48 80 96</rect>
+			</collision>
+			<sprite ulayer="-1" layer="-20" origin="32 46" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame>0 246 64 10</frame>
+			</sprite>
+			<sprite ulayer="0" looping="false" layer="-20" origin="3 40" texture="./_custom_bridge_v.png" material="system/default.mats:floor">
+				<frame>83 54 6 88</frame>
+			</sprite>		
+		</scene>								
+	</scenes>
+</unit>

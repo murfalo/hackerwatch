@@ -1,0 +1,101 @@
+<effect looping="false" layer="5" bounds="750 750">
+	<param name="angle" default="0" />
+	<param name="height" default="100" />
+	<param name="length" default="600" />
+	
+
+	
+	%// Aim
+	<sprite origin="0 3.5" texture="actors/projectiles/beamo_beam_aim.png" material="effects/effects.mats:default-glowing"
+		
+		angle="angle"
+		
+		pos-x="cos(angle)"
+		pos-y="sin(angle)-height"
+		
+		color-a="1"
+		
+		
+		scale-x="length/476"
+		scale-y="0.5"
+		>
+		
+		<frame time="50" x="25 * (1 - t)" y="0" w="476" h="7" />
+		<frame time="50" x="25 * (1 - t)" y="7" w="476" h="7" />
+		<frame time="50" x="25 * (1 - t)" y="14" w="476" h="7" />
+		<frame time="50" x="25 * (1 - t)" y="21" w="476" h="7" />
+		<frame time="50" x="25 * (1 - t)" y="28" w="476" h="7" />
+		<frame time="350" x="25 * (1 - t)" y="35" w="476" h="7" />
+		<frame time="30" x="25 * (1 - t)" y="42" w="476" h="7" />
+		<frame time="30" x="25 * (1 - t)" y="49" w="476" h="7" />
+	</sprite> 
+	
+	
+	<light pos-y="-20"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="500" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="60 * t" />
+		
+		<color-r value="2" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light> 
+	
+	<!-- SNIPER LASER -->
+	%// Aim
+	<!-- <sprite origin="0 0.5" texture="effects/white_singlepixel_gradient.png" material="effects/effects.mats:default-glowing"
+		
+		angle="angle"
+		
+		pos-x="cos(angle)"
+		pos-y="sin(angle)-height"
+		
+		color-r="1"
+		color-g="0"
+		color-b="0"
+		color-a="1"
+		
+		
+		scale-x="length/64"
+		scale-y="t*0.8+0.5"
+		>
+		<frame time="475">0 0 64 1</frame>
+	</sprite> -->
+	
+	%// AimGlow
+	<!-- <sprite origin="0 0.5" texture="effects/white_singlepixel_gradient.png" material="effects/effects.mats:default-glow"
+		
+		angle="angle"
+		
+		pos-x="cos(angle)"
+		pos-y="sin(angle)-height"
+		%//pos-y="-height"
+		
+		color-r="1"
+		color-g="0"
+		color-b="0"
+		color-a="1"
+		
+		
+		scale-x="length/64"
+		scale-y="t*2+0.5"
+		>
+		<frame time="475">0 0 64 1</frame>
+	</sprite> -->
+</effect>
+
+

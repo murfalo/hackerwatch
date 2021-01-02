@@ -1,0 +1,28 @@
+<unit layer="-1">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">800</int>
+		<int name="ttl">5000</int>
+		
+		<array name="effects">
+			<!-- <dict> -->
+				<!-- <string name="class">ApplyBuff</string> -->
+				<!-- <string name="buff">players/buffs.sval:gargoyle_stun</string> -->
+			<!-- </dict> -->
+		</array>
+	</behavior>
+
+
+	<scenes start="visible">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="-2 0" shoot-through="true" aim-through="true" radius="28" sensor="true" />
+			</collision>
+		</scene>
+	
+		<scene name="visible">
+			<scene src="shared" />
+			
+			<effect src="effects/players/warlock_gargoyle_area.effect" />
+		</scene>
+	</scenes>
+</unit>

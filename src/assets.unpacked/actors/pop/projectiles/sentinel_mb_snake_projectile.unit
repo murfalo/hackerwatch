@@ -1,0 +1,114 @@
+<unit netsync="none">
+	<behavior class="SteeringRayProjectile">
+		<string name="anim">idle 8</string>
+		<string name="fx">actors/projectiles/lich_1_hit.effect</string>
+		<string name="shoot-snd">event:/enemy/sentinel_mb/shoot</string>
+		
+		<int name="ttl">2000</int>
+		<float name="speed">3.5</float>
+
+		<string name="speed-steer">pow((t*1.5),2)</string>
+		<string name="dir-steer">sin(t*pi*6)</string>
+		
+		<bool name="blockable">false</bool>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">70</int>
+			</dict>
+			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:poison</string>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<array name="units">
+					<int>750</int><string>actors/pop/snake_1.unit</string>
+				</array>
+				<bool name="safe-spawn">true</bool>
+				<bool name="players-in-sight">true</bool>
+				<int name="spawn-dist">0</int>
+				<vec2 name="offset">0 0</vec2>
+				<bool name="aggro">true</bool>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">0 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">9 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">18 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">27 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">36 0 9 9</frame>
+			</sprite>
+			<effect ulayer="-1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">45 0 9 9</frame>
+			</sprite>
+			<effect ulayer="1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">54 0 9 9</frame>
+			</sprite>
+			<effect ulayer="1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="4 4" looping="true" texture="./sentinel_mb_snake_projectile.png" material="system/default.mats:projectile">
+				<frame time="100">63 0 9 9</frame>
+			</sprite>
+			<effect ulayer="1" src="actors/pop/projectiles/sentinel_mb_snake_projectile_trail.effect" />
+		</scene>
+	</scenes>
+</unit>

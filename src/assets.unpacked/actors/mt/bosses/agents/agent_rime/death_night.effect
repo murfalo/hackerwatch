@@ -1,0 +1,60 @@
+<effect looping="false" layer="1">
+	<param name="radius" default="70" />
+	<param name="ttl" default="1000" />
+	
+	<sprite origin="16 24" looping="false" texture="./../death.png" material="system/default.mats:actor"
+		color-a="1-saturate(t+l)"
+		>
+		<frame time="75">0 0 32 32</frame>
+		<frame time="75">32 0 32 32</frame>
+		<frame time="75">64 0 32 32</frame>
+		<frame time="75">96 0 32 32</frame>
+		<frame time="75">128 0 32 32</frame>
+		<frame time="75">160 0 32 32</frame>
+		<frame time="75">192 0 32 32</frame>
+		<frame time="75">224 0 32 32</frame>
+		<frame time="75">256 0 32 32</frame>
+		<frame time="75">288 0 32 32</frame>
+	</sprite>
+	
+	<sprite origin="16 24" looping="false" texture="./../death.png" material="system/default.mats:glow-both-bright"
+		color-a="saturate(2*t+l)"
+		>
+		<frame time="75">0 256 32 32</frame>
+		<frame time="75">32 256 32 32</frame>
+		<frame time="75">64 256 32 32</frame>
+		<frame time="75">96 256 32 32</frame>
+		<frame time="75">128 256 32 32</frame>
+		<frame time="75">160 256 32 32</frame>
+		<frame time="75">192 256 32 32</frame>
+		<frame time="75">224 256 32 32</frame>
+		<frame time="75">256 256 32 32</frame>
+		<frame time="75">288 256 32 32</frame>
+	</sprite>
+
+	<sprite origin="16 24" looping="false" texture="./../death.png" material="system/default.mats:glow-both-bright"
+		color-a="1-saturate(-1+2*t+l)"
+		>
+		<frame time="750">0 0 0 0</frame>
+		<frame time="750">288 256 32 32</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="true" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="64*(1-saturate(-1+2*t+l))" />
+		
+		<color-r value="0.25" /> 
+		<color-g value="0.0" /> 
+		<color-b value="0.75" />
+		<color-a value="0/255" /> 
+	</light>	 
+</effect>

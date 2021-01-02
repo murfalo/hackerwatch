@@ -1,0 +1,46 @@
+<effect looping="false">
+
+    <param name="radius" default="0" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_generic_stone_small.sval</string>
+	</data>	
+	
+	<sprite origin="25 0" looping="false" texture="./turret_wall_crystal.png" material="system/default.mats:default"
+	angle="pi*1.5" 
+	color-a="saturate(1-t*t*t*2)">
+				<frame time="60">0 0 0 0</frame>
+				<frame time="90">64 0 47 16</frame>
+				<frame time="90">64 16 47 16</frame>
+				<frame time="120">64 32 47 16</frame>
+				<frame time="150">64 48 47 16</frame>
+	</sprite>
+	
+	
+	
+	%// Flash
+	<light pos="0 0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<length value="100" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 40 * t" />
+		
+		<color-r value="1.5" />
+		<color-g value="0.04" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light> 
+
+	
+</effect>

@@ -1,0 +1,230 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehaviorNoNGPScale">
+		<string name="beastiary-name">.bestiary.name.scarab</string>
+		<vec2 name="beastiary-offset">0 -2</vec2>
+		<string name="quality">common</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">beast</string>
+		<int name="hp">12</int>
+		<int name="armor">25</int>
+		<!-- <string name="team">civilian</string> -->
+		
+		<int name="unit-height">14</int>
+		
+		<string name="death-snd">event:/enemy/scarab/death-big</string>
+		<string name="gore">effects/gibs/gib_scarab.sval</string>
+		<string name="loot">actors/loot.sval:scarab</string>
+		
+		<int name="aggro-range">130</int>
+		
+		<array name="buffs-immune-tags">
+			<string>respawn_ghost</string>
+		</array>
+		
+		<dict name="movement">
+			<string name="class">FleeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<int name="reaction-rand">500</int>
+			
+			<!-- <int name="dist">25</int> -->
+			<float name="speed">1.45</float>
+			<float name="roaming">0.75</float>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">burrow</string>
+				
+				<int name="charges">1</int>	
+				<int name="cooldown">7000</int>
+				<int name="castpoint">630</int>
+				<int name="range">200</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<!-- <dict name="effect">
+						<string name="class">SpawnEffect</string>
+						<string name="effect">effects/animations/burrow_spawn.effect</string>
+					</dict> -->
+
+					<dict>
+						<string name="class">Suicide</string>
+						<bool name="no-loot">true</bool>
+						<bool name="no-gore">true</bool>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<sprite origin="7 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>53 20 14 14</frame>
+			</sprite>
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" radius="6" />
+			</collision>
+		</scene>
+		<scene name="burrow">
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" radius="6" />
+			</collision>
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			
+			<effect pos="0 3" src="effects/animations/dust.effect" />
+			<sprite origin="10 10" looping="false" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="70">160 0 20 20</frame>
+				<frame time="70">180 0 20 20</frame>
+				<frame time="70">200 0 20 20</frame>
+				<frame time="70">160 20 20 20</frame>
+				<frame time="70">180 20 20 20</frame>
+				<frame time="70">200 20 20 20</frame>
+				<frame time="70">160 40 20 20</frame>
+				<frame time="70">180 40 20 20</frame>
+				<frame time="70">200 40 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-0">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">0 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">20 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">40 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">60 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">80 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">100 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">120 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="150">140 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">0 0 20 20</frame>
+				<frame time="100">0 20 20 20</frame>
+				<frame time="100">0 40 20 20</frame>
+				<frame time="100">0 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">20 0 20 20</frame>
+				<frame time="100">20 20 20 20</frame>
+				<frame time="100">20 40 20 20</frame>
+				<frame time="100">20 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">40 0 20 20</frame>
+				<frame time="100">40 20 20 20</frame>
+				<frame time="100">40 40 20 20</frame>
+				<frame time="100">40 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">60 0 20 20</frame>
+				<frame time="100">60 20 20 20</frame>
+				<frame time="100">60 40 20 20</frame>
+				<frame time="100">60 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">80 0 20 20</frame>
+				<frame time="100">80 20 20 20</frame>
+				<frame time="100">80 40 20 20</frame>
+				<frame time="100">80 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">100 0 20 20</frame>
+				<frame time="100">100 20 20 20</frame>
+				<frame time="100">100 40 20 20</frame>
+				<frame time="100">100 20 20 20</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">120 0 20 20</frame>
+				<frame time="100">120 20 20 20</frame>
+				<frame time="100">120 40 20 20</frame>
+				<frame time="100">120 20 20 20</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-7">
+		<scene src="shared" />
+			<sprite origin="10 10" looping="true" texture="./scarab.png" material="system/default.mats:actor">
+				<frame time="100">140 0 20 20</frame>
+				<frame time="100">140 20 20 20</frame>
+				<frame time="100">140 40 20 20</frame>
+				<frame time="100">140 20 20 20</frame>
+			</sprite>
+		</scene>	
+	</scenes>
+</unit>

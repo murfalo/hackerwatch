@@ -1,0 +1,133 @@
+<unit slot="doodad"  layer="0"> <!-- slot="doodad" -->
+	<scenes>
+		<scene>
+			<minimap_sprite layer="1" origin="87 95" texture="gui/minimap.png" frame="178 286 174 174" />
+			<collision static="true">
+				<polygon decompose="2">
+					<point>0 -224</point>
+					<point>-40 -220</point>
+					<point>-80 -208</point>
+					<point>-112 -192</point>
+					<point>-146 -170</point>
+					<point>-202 -226</point>
+					<point>-280 -336</point>
+					<point>-302 -358</point>
+					<point>-324 -336</point>
+					<point>-302 -314</point>
+					<point>-226 -202</point>
+					<point>-170 -146</point>
+					<point>-192 -112</point>
+					<point>-209 -80</point>
+					<point>-220 -40</point>
+					<point>-224 0</point>
+					<point>-220 40</point>
+					<point>-208 80</point>
+					<point>-192 112</point>
+					<point>-170 146</point>
+					<point>-144 172</point>
+					<point>-116 192</point>
+					<point>-84 208</point>
+					<point>-44 220</point>
+					<point>0 224</point>
+					<point>0 384</point>
+					<point>-400 384</point>
+					<point>-400 -432</point>
+					<point>416 -432</point>
+					<point>416 384</point>
+					<point>0 384</point>
+					<point>0 224</point>
+					<point>44 220</point>
+					<point>84 208</point>
+					<point>116 192</point>
+					<point>144 172</point>
+					<point>170 146</point>
+					<point>192 112</point>
+					<point>208 80</point>
+					<point>220 40</point>
+					<point>224 0</point>
+					<point>220 -40</point>
+					<point>209 -80</point>
+					<point>192 -112</point>
+					<point>170 -146</point>
+					<point>226 -202</point>
+					<point>302 -314</point>
+					<point>324 -336</point>
+					<point>302 -358</point>
+					<point>280 -336</point>
+					<point>202 -226</point>
+					<point>146 -170</point>
+					<point>112 -192</point>
+					<point>80 -208</point>
+					<point>40 -220</point>
+				</polygon>
+			</collision>
+	
+			<shadow>
+				<sprite origin="301 -218" layer="1" texture="./boss_agents_room.png" material="system/default.mats:default">
+					<frame>223 861 44 22</frame>
+				</sprite>
+				<sprite origin="138 -133" layer="1" texture="./boss_agents_room.png">
+					<frame>223 672 206 59</frame>
+				</sprite>
+				<sprite origin="168 -110" layer="1" texture="./boss_agents_room.png">
+					<frame>223 883 40 42</frame>
+				</sprite>
+				<sprite origin="-152 -132" layer="1" texture="./boss_agents_room.png">
+					<frame>223 731 161 130</frame>
+				</sprite>
+				<sprite origin="223 115" layer="1" texture="./boss_agents_room.png">
+					<frame>151 672 72 259</frame>
+				</sprite>
+				<sprite origin="304 369" layer="1" texture="./boss_agents_room.png">
+					<frame>0 672 151 224</frame>
+				</sprite>
+				<sprite origin="-199 258" layer="1" texture="./boss_agents_room.png">
+					<frame>267 861 39 25</frame>
+				</sprite>
+			</shadow>
+	
+			<!-- TOP -->
+  			<sprite origin="336 400" layer="20" texture="./boss_agents_room.png" material="system/default.mats:default">
+				<frame>0 0 672 672</frame>
+			</sprite>
+			
+			<!-- WALLS -->
+			<sprite origin="326 -131" layer="-10" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>672 0 156 123</frame>
+			</sprite>
+			<sprite origin="-170 -131" layer="-10" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>672 123 156 123</frame>
+			</sprite>
+			
+			<sprite origin="326 390" layer="-10" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>672 458 326 220</frame>
+			</sprite>
+			<sprite origin="0 390" layer="-10" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>672 678 326 220</frame>
+			</sprite>
+			
+			<sprite origin="224 161" layer="-10" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>564 672 54 144</frame>
+			</sprite>
+			<sprite origin="-170 161" layer="-10" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>618 672 54 144</frame>
+			</sprite>
+			
+			<!-- FLOOR -->
+			<sprite origin="310 -146" layer="-20" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>828 0 147 116</frame>
+			</sprite>
+			<sprite origin="-163 -146" layer="-20" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>828 116 147 116</frame>
+			</sprite>
+			
+			<sprite origin="-146 358" layer="-20" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>672 246 164 212</frame>
+			</sprite>
+			<sprite origin="310 358" layer="-20" texture="./boss_agents_room.png" material="system/default.mats:floor">
+				<frame>836 246 164 212</frame>
+			</sprite>
+			
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,56 @@
+<gui>
+	<sprites>
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+%include "gui/playermenu/charheader_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="218" height="74" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox">
+				<!-- Header -->
+				<rect width="214" height="18" offset="2 2" flow="hbox">
+					<rect width="193" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".town.dungeonsettings.title" anchor="0.5 0.5" />
+					</rect>
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+					<spritebutton func="close" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="214" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- NG+ -->
+				<rect width="214" height="28" offset="2 0" flow="hbox">
+					<!-- Frame -->
+					<sprite src="big-frame">
+						<text id="ngp" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" color="#FFC400FF" />
+					</sprite>
+
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Description -->
+					<rect width="183" height="28" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<text id="description" font="gui/fonts/arial11.fnt" width="152" align="center" anchor="0.5 0.5" offset="0 -1" tooltip=".town.dungeonsettings.mercenary.description.tooltip" />
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="214" height="3" offset="2 0" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Life insurance -->
+				<rect width="214" height="18" offset="2 0" flow="hbox">
+					<rect width="32" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Button -->
+					<scalebutton func="insurance" id="insurance" spriteset="scalebutton" width="150" font="gui/fonts/arial11.fnt" text=".town.dungeonsettings.mercenary.insurance" tooltip=".town.dungeonsettings.mercenary.insurance.tooltip" />
+
+					<rect width="32" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

@@ -1,0 +1,373 @@
+<loader>Upgrades::LoadShop</loader>
+<dict>
+	<string name="class">Upgrades::UpgradeShop</string>
+
+	<string name="id">oretrader</string>
+	<string name="name">.shop.oretrader</string>
+
+	<array name="upgrades">
+		<!-- Buy Ore I -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-1</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=1</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=1500&ore=1</string>
+
+					<int name="restrict-shop-level-max">1</int>
+
+					<int name="cost-gold">1500</int>
+					<int name="amount-ore">1</int>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-1</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=10</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=15000&ore=10</string>
+
+					<int name="restrict-shop-level-max">1</int>
+
+					<int name="cost-gold">15000</int>
+					<int name="amount-ore">10</int>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Buy Ore II -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-2</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=1</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=1250&ore=1</string>
+
+					<int name="restrict-shop-level-max">2</int>
+					<int name="restrict-shop-level-min">2</int>
+
+					<int name="cost-gold">1250</int>
+					<int name="amount-ore">1</int>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-2</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=10</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=12500&ore=10</string>
+
+					<int name="restrict-shop-level-max">2</int>
+					<int name="restrict-shop-level-min">2</int>
+
+					<int name="cost-gold">12500</int>
+					<int name="amount-ore">10</int>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Buy Ore III -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-3</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=1</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=1000&ore=1</string>
+
+					<int name="restrict-shop-level-max">3</int>
+					<int name="restrict-shop-level-min">3</int>
+
+					<int name="cost-gold">1000</int>
+					<int name="amount-ore">1</int>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-3</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=10</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=10000&ore=10</string>
+
+					<int name="restrict-shop-level-max">3</int>
+					<int name="restrict-shop-level-min">3</int>
+
+					<int name="cost-gold">10000</int>
+					<int name="amount-ore">10</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Buy Ore IV -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-4</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=1</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=800&ore=1</string>
+
+					<int name="restrict-shop-level-max">4</int>
+					<int name="restrict-shop-level-min">4</int>
+
+					<int name="cost-gold">800</int>
+					<int name="amount-ore">1</int>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-4</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=10</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=8000&ore=10</string>
+
+					<int name="restrict-shop-level-max">4</int>
+					<int name="restrict-shop-level-min">4</int>
+
+					<int name="cost-gold">8000</int>
+					<int name="amount-ore">10</int>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore-4</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>144 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.ore-gold.name?ore=100</string>
+					<string name="desc">.shop.oretrader.ore-gold.desc?gold=80000&ore=100</string>
+
+					<int name="restrict-shop-level-max">4</int>
+					<int name="restrict-shop-level-min">4</int>
+
+					<int name="cost-gold">80000</int>
+					<int name="amount-ore">100</int>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Sell Ore I -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=1</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=1&gold=200</string>
+					
+					<int name="restrict-shop-level-max">1</int>
+
+					<int name="cost-ore">1</int>
+					<int name="amount-gold">200</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=10</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=10&gold=2000</string>
+					
+					<int name="restrict-shop-level-max">1</int>
+
+					<int name="cost-ore">10</int>
+					<int name="amount-gold">2000</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Sell Ore II -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=1</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=1&gold=350</string>
+					
+					<int name="restrict-shop-level-max">2</int>
+					<int name="restrict-shop-level-min">2</int>
+
+					<int name="cost-ore">1</int>
+					<int name="amount-gold">350</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=10</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=10&gold=3500</string>
+					
+					<int name="restrict-shop-level-max">2</int>
+					<int name="restrict-shop-level-min">2</int>
+
+					<int name="cost-ore">10</int>
+					<int name="amount-gold">3500</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Sell Ore III -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=1</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=1&gold=500</string>
+					
+					<int name="restrict-shop-level-max">3</int>
+					<int name="restrict-shop-level-min">3</int>
+
+					<int name="cost-ore">1</int>
+					<int name="amount-gold">500</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=10</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=10&gold=5000</string>
+					
+					<int name="restrict-shop-level-max">3</int>
+					<int name="restrict-shop-level-min">3</int>
+
+					<int name="cost-ore">10</int>
+					<int name="amount-gold">5000</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<!-- Sell Ore IV -->
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=1</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=1&gold=700</string>
+					
+					<int name="restrict-shop-level-max">4</int>
+					<int name="restrict-shop-level-min">4</int>
+
+					<int name="cost-ore">1</int>
+					<int name="amount-gold">700</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=10</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=10&gold=7000</string>
+					
+					<int name="restrict-shop-level-max">4</int>
+					<int name="restrict-shop-level-min">4</int>
+
+					<int name="cost-ore">10</int>
+					<int name="amount-gold">7000</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict>
+			<string name="class">Upgrades::OreTraderUpgrade</string>
+			<string name="id">ore</string>
+			<array name="icon">
+				<string>gui/icons_others.png</string><int>100</int><vec4>168 96 24 24</vec4>
+			</array>
+			<array name="steps">
+				<dict>
+					<string name="name">.shop.oretrader.gold-ore.name?ore=100</string>
+					<string name="desc">.shop.oretrader.gold-ore.desc?ore=100&gold=70000</string>
+					
+					<int name="restrict-shop-level-max">4</int>
+					<int name="restrict-shop-level-min">4</int>
+
+					<int name="cost-ore">100</int>
+					<int name="amount-gold">70000</int>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

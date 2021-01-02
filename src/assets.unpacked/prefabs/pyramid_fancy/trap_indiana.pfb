@@ -1,0 +1,63 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>16 144</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">32 256</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/trap_indie_pyramid_fancy_32.unit"><vec2>0 0</vec2><int>2</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ProjectileShooter</string>
+			<int>3</int>
+			<vec3>16 30 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>4</int>
+			<vec3>-48 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>2</int></array>
+			</dict>
+			<array><int>3</int><int>490</int></array>
+		</array>
+		<array>
+			<string>AreaRayTrigger</string>
+			<int>5</int>
+			<vec3>16 16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

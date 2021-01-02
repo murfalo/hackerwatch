@@ -1,0 +1,10 @@
+%define TIER4
+%define WEST
+
+%replace CORPSE actors/mt/spawners/spawner_vampire_1_razed_w.unit
+%replace LOOT actors/loot.sval:spawner_vampire_1_w
+
+%replace SPAWNCD 1250
+%replace SPAWNCHARGES 20
+
+%include "actors/mt/spawners/spawner_vampire_1.inc"

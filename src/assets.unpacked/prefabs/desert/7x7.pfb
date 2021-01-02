@@ -1,0 +1,209 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="system/system.fnt">
+			<array>
+				<vec2>56 56</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">7x7</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>2</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>4</int><int>5</int><int>6</int><int>7</int><int>11</int><int>12</int><int>13</int><int>14</int><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>3</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array><int>8</int><int>0</int><int>2</int><int>0</int><int>10</int><int>100</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>4</int>
+			<vec3>128 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>quicksand</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_quicksand.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>5</int>
+			<vec3>128 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ambush</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_ambush.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>6</int>
+			<vec3>128 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_block.pfb</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>128 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_special.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>8</int>
+			<vec3>-96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shop</string>
+			<dict>
+				<string name="Flag">shop</string>
+				<array name="OnTrue"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>9</int>
+			<vec3>-96 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>7</int><int>6</int><int>5</int><int>4</int><int>11</int><int>12</int><int>13</int><int>14</int><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>10</int>
+			<vec3>64 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units">
+					<int>7</int>
+					<int>6</int>
+					<int>5</int>
+					<int>4</int>
+					<int>3</int>
+					<int>2</int>
+					<int>8</int>
+					<int>9</int>
+					<int>11</int>
+					<int>12</int>
+					<int>13</int>
+					<int>14</int>
+					<int>15</int>
+				</array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>11</int>
+			<vec3>160 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block2</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_block_2.pfb</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>12</int>
+			<vec3>192 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block3</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_block_3.pfb</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>224 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block4</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_block_4.pfb</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>14</int>
+			<vec3>256 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block5</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_block_5.pfb</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>15</int>
+			<vec3>288 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>block6</string>
+			<dict>
+				<string name="Prefab">prefabs/desert/7x7_block_6.pfb</string>
+				<int name="Chance">3</int>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

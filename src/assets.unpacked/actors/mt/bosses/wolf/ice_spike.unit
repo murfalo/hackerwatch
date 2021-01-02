@@ -1,0 +1,174 @@
+<unit slot="doodad">
+	<behavior class="Breakable">
+		<string name="break-sound">event:/misc/ice_break</string>
+		<string name="hit-sound">event:/enemy/elemental_ice/hit</string> 
+		<string name="gore">effects/gibs/gib_boss_wolf_ice_spikes.sval</string>
+		
+		<bool name="shoot-through">false</bool>
+		<bool name="always-hit-gore">true</bool>
+		
+		<bool name="scene-switching">true</bool>
+		<bool name="scene-switching-passthrough">true</bool>
+	</behavior>
+	
+	<scenes random="a-1 b-1 c-1">
+		<scene name="shared">
+			
+			<sprite origin="5 1" layer="-1" texture="./ice_spike.png" material="system/default.mats:floor">
+				<frame>0 57 11 7</frame>
+			</sprite> 
+			
+			<minimap_sprite origin="1 1" texture="gui/minimap.png" frame="1 16 2 2" />
+			
+			<data name="health"><int>20</int></data>
+			
+			<collision static="true">
+				<circle offset="0.5 0" aim-through="true" radius="3" />
+			</collision>
+		</scene>
+	
+		<scene name="a-1">
+			<scene src="shared" />
+			<sprite origin="3 9" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>0 0 7 13</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="-2 5" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>29 25 3 5</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="a-2">
+			<scene src="shared" />
+			<sprite origin="3 9" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>7 0 7 13</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="-2 8" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>29 25 3 5</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="a-3">
+			<scene src="shared" />
+			<sprite origin="3 9" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>14 0 7 13</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="-2 5" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>29 25 3 5</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="a-4">
+			<scene src="shared" />
+			<sprite origin="3 9" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>21 0 7 13</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="-2 5" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>29 25 3 5</frame>
+				</sprite> 
+			</shadow>
+		</scene>	
+		
+		<scene name="b-1">
+			<scene src="shared" />
+			<sprite origin="3 16" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>0 13 7 19</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 9" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>26 14 6 11</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="b-2">
+			<scene src="shared" />
+			<sprite origin="3 16" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>7 13 7 19</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 9" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>26 14 6 11</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="b-3">
+			<scene src="shared" />
+			<sprite origin="3 16" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>14 13 7 19</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 9" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>26 14 6 11</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="b-4">
+			<scene src="shared" />
+			<sprite origin="3 16" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>21 13 7 19</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 9" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>26 14 6 11</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="c-1">
+			<scene src="shared" />
+			<sprite origin="3 21" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>0 32 7 25</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 12" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>24 0 8 14</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="c-2">
+			<scene src="shared" />
+			<sprite origin="3 21" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>7 32 7 25</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 12" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>24 0 8 14</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="c-3">
+			<scene src="shared" />
+			<sprite origin="3 21" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>14 32 7 25</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 12" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>24 0 8 14</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+		
+		<scene name="c-4">
+			<scene src="shared" />
+			<sprite origin="3 21" texture="./ice_spike.png" material="system/default.mats:proj-wall">
+				<frame>21 32 7 25</frame>
+			</sprite> 
+			<shadow>
+				<sprite origin="0 12" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>24 0 8 14</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

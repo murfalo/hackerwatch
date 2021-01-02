@@ -1,0 +1,29 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">ranger</string>
+	<string name="name">.skills.ranger.on-the-prowl</string>
+	<string name="description">.skills.ranger.on-the-prowl.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 24 24 24</vec4>
+	</array>
+
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">castspell</string>
+			<bool name="target-self">true</bool>
+			<float name="chance">1</float>
+			<int name="timeout">0</int>
+
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs_merc.sval:on-the-prowl</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>

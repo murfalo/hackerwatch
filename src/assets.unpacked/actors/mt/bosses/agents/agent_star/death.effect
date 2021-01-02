@@ -1,0 +1,66 @@
+<effect looping="false">
+	<param name="radius" default="70" />
+	<param name="ttl" default="1000" />
+	
+	<sprite origin="16 24" looping="false" texture="./../death.png" material="system/default.mats:actor"
+		color-a="1-saturate(t+l)"
+		scale-x="1-saturate(t+l)*0.5"
+		scale-y="1-saturate(t+l)*0.5"
+		>
+		<frame time="75">0 64 32 32</frame>
+		<frame time="75">32 64 32 32</frame>
+		<frame time="75">64 64 32 32</frame>
+		<frame time="75">96 64 32 32</frame>
+		<frame time="75">128 64 32 32</frame>
+		<frame time="75">160 64 32 32</frame>
+		<frame time="75">192 64 32 32</frame>
+		<frame time="75">224 64 32 32</frame>
+		<frame time="75">256 64 32 32</frame>
+		<frame time="75">288 64 32 32</frame>
+	</sprite>
+
+	<sprite origin="16 24" looping="false" texture="./../death.png" material="system/default.mats:actor"
+		color-a="saturate(2*t+l)"
+		scale-x="1-saturate(t+l)*0.5"
+		scale-y="1-saturate(t+l)*0.5"
+		>
+		<frame time="75">0 96 32 32</frame>
+		<frame time="75">32 96 32 32</frame>
+		<frame time="75">64 96 32 32</frame>
+		<frame time="75">96 96 32 32</frame>
+		<frame time="75">128 96 32 32</frame>
+		<frame time="75">160 96 32 32</frame>
+		<frame time="75">192 96 32 32</frame>
+		<frame time="75">224 96 32 32</frame>
+		<frame time="75">256 96 32 32</frame>
+		<frame time="75">288 96 32 32</frame>
+	</sprite>
+
+	<sprite origin="16 24" looping="false" texture="./../death.png" material="system/default.mats:actor"
+		color-a="1-saturate(-1+2*t+l)"
+		scale-x="0.5-saturate(-1+2*t+l)*0.5"
+		scale-y="0.5-saturate(-1+2*t+l)*0.5"
+		>
+		<frame time="750">0 0 0 0</frame>
+		<frame time="750">288 96 32 32</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="true" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="48 *(1-saturate(-1+2*t+l))" />
+		
+		<color-r value="0.05" />
+		<color-g value="0" />
+		<color-b value="2.5" />
+		<color-a value="0/255" /> 
+	</light>	 
+</effect>

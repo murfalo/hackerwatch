@@ -1,0 +1,274 @@
+<effect looping="true" bounds="50 50">
+	
+	<data>
+		<string name="sound">event:/player/priest/aura</string>
+	</data>		
+	
+	<param name="radius" default="70" />
+	<param name="ttl" default="1000" />
+	<!-- circles -->
+	<!-- <sprite origin="70 70" looping="true" layer="1" texture="./priest_aura_of_purification.png" material="system/default.mats:glow"
+	
+        color-a="sin(t*pi)*0.1"
+	>
+		
+		<frame time="100">0 140 140 140</frame>
+		<frame time="100">140 140 140 140</frame>
+		<frame time="100">280 140 140 140</frame>
+		<frame time="100">140 140 140 140</frame>
+	</sprite>
+	<sprite origin="70 70" looping="true" layer="1" texture="./priest_aura_of_purification.png" material="system/default.mats:bright"
+	
+        color-a="sin(t*pi)*0.2 +0.1"
+	>
+		
+		<frame time="100">0 140 140 140</frame>
+		<frame time="100">140 140 140 140</frame>
+		<frame time="100">280 140 140 140</frame>
+		<frame time="100">140 140 140 140</frame>
+	</sprite> -->
+	
+	<!-- single pixels -->
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -10 * it"
+		
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.5 - mod(it+l+rand(u*i), 1)"
+        color-a="(1 - mod(it+l+rand(u*i), 1)) * saturate(ttl / 200)"
+	>
+        <frame time="600">0 0 1 1</frame>
+	</sprite>
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="radius / 3"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2) -10 * it"
+		
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.5 - mod(it+l+rand(u*i), 1)"
+        color-a="(1 - mod(it+l+rand(u*i), 1)) * saturate(ttl / 200)"
+	>
+        <frame time="600">0 0 1 1</frame>
+	</sprite>
+
+	<!-- variation 1 -->
+	
+	
+	<!-- <sprite origin="1 13" looping="true" texture="./priest_aura_of_purification.png" material="effects/effects.mats:fire"
+		num-sprites="radius / 30"
+
+		pos-x="cos(i / (radius / 30) * pi*2) * lerp(rand(u+101*i), radius - 30, radius+2)"
+        pos-y="sin(i / (radius / 30) * pi*2) * lerp(rand(u+141*i), radius - 30, radius+2)"
+		
+		color-a="min(rand(u+i*47),(it+il)/2) * saturate(ttl / 200)"
+	>
+        <frame time="130">0 297 3 14</frame>
+        <frame time="130">3 297 3 14</frame>
+        <frame time="130">6 297 3 14</frame>
+        <frame time="130">9 297 3 14</frame>
+        <frame time="130">12 297 3 14</frame>
+        <frame time="130">15 297 3 14</frame>
+        <frame time="130">18 297 3 14</frame>
+	</sprite> -->
+	
+	<!-- variation 2 -->
+	
+	<!-- <sprite origin="5 14" looping="true" texture="./priest_aura_of_purification.png" material="effects/effects.mats:fire"
+		num-sprites="radius / 20"
+
+		pos-x="cos(i / (radius / 20) * pi*2) * lerp(rand(u+27*i), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 20) * pi*2) * lerp(rand(u+13*i), radius - 3, radius+2)"
+		
+		color-a="min(rand(u+i*47),(it+il)/2) * saturate(ttl / 200)"
+	>
+        <frame time="110">0 311 10 14</frame>
+        <frame time="110">10 311 10 14</frame>
+        <frame time="110">20 311 10 14</frame>
+        <frame time="110">30 311 10 14</frame>
+        <frame time="110">40 311 10 14</frame>
+        <frame time="110">50 311 10 14</frame>
+        <frame time="110">60 311 10 14</frame>
+        <frame time="250">0 0 0 0</frame>
+	</sprite> -->
+
+	<!-- from priest -->
+	
+	<sprite origin="1 13" looping="true" texture="./player_effects.png" material="system/default.mats:glow"
+		num-sprites="30"
+
+		pos-x="cos(2*pi*rand(u+il+i*13))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+        pos-y="sin(2*pi*rand(u+il+i*13))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+		scale-x="0.8"
+        scale-y="1"
+		angle="2*pi*rand(u+il+i*13)+pi/2"
+		color-a="0.5*saturate(sin(it*pi*2))"
+	>
+        <frame time="80">48 46 3 14</frame>
+	</sprite>
+	<!-- small -->
+	<sprite origin="1 13" looping="true" texture="./player_effects.png" material="system/default.mats:glow-both"
+		num-sprites="30"
+
+		pos-x="cos(2*pi*rand(u+il+i*27))*((rand(u+i+il)*15)+it*16-rand(u+i+il)*15)"
+        pos-y="sin(2*pi*rand(u+il+i*27))*((rand(u+i+il)*15)+it*16-rand(u+i+il)*15)"
+		scale-x="0.5"
+        scale-y="0.5"
+		angle="2*pi*rand(u+il+i*27)+pi/2"
+		color-a="0.5*saturate(sin(it*pi*2))"
+	>
+        <frame time="80">48 46 3 14</frame>
+	</sprite>	
+	<sprite origin="1 13" looping="true" texture="./player_effects.png" material="system/default.mats:glow"
+		num-sprites="30"
+
+		pos-x="cos(2*pi*rand(u+il+i*27))*((rand(u+i+il)*15)+it*16-rand(u+i+il)*15)"
+        pos-y="sin(2*pi*rand(u+il+i*27))*((rand(u+i+il)*15)+it*16-rand(u+i+il)*15)"
+		scale-x="0.8"
+        scale-y="1"
+		angle="2*pi*rand(u+il+i*27)+pi/2"
+		color-a="0.5*saturate(sin(it*pi*2))"
+	>
+        <frame time="80">48 46 3 14</frame>
+	</sprite>
+	
+	
+	<sprite origin="1 13" looping="true" texture="./player_effects.png" material="system/default.mats:glow-both"
+		num-sprites="30"
+
+		pos-x="cos(2*pi*rand(u+il+i*13))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+        pos-y="sin(2*pi*rand(u+il+i*13))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+		scale-x="0.5"
+        scale-y="0.5"
+		angle="2*pi*rand(u+il+i*13)+pi/2"
+		color-a="0.5*saturate(sin(it*pi*2))"
+	>
+        <frame time="80">48 46 3 14</frame>
+	</sprite>	
+	
+	<sprite origin="1 1" looping="false" texture="effects/empty.png" material="system/default.mats:glow"
+		num-sprites="20"
+
+		pos-x="cos(2*pi*rand(u+il+i*37))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+        pos-y="sin(2*pi*rand(u+il+i*37))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+		scale-x="0.5+t*2"
+        scale-y="0.5+t*2"
+		
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.8 - mod(it+l+rand(u*i), 1)"
+        color-a="1-t"
+	>
+        <frame time="2000">0 0 1 1</frame>
+	</sprite>
+	<sprite origin="1 1" looping="false" texture="effects/empty.png" material="system/default.mats:glow-both"
+		num-sprites="20"
+
+		pos-x="cos(2*pi*rand(u+il+i*37))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+        pos-y="sin(2*pi*rand(u+il+i*37))*((rand(u+i+il)*15)+it*radius-rand(u+i+il)*15)"
+		scale-x="0+t*2"
+        scale-y="0+t*2"
+		
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.8 - mod(it+l+rand(u*i), 1)"
+        color-a="1-t"
+	>
+        <frame time="2000">0 0 1 1</frame>
+	</sprite>
+	<!-- 
+	<sprite origin="1 13" looping="false" texture="./priest_aura_of_purification.png" material="effects/effects.mats:fire"
+		num-sprites="2"
+
+		pos-x="cos(2*pi*rand(u+il+i*21))*((rand(u+i+il)*15)+it/2*radius-rand(u+i+il)*15)"
+        pos-y="sin(2*pi*rand(u+il+i*21))*((rand(u+i+il)*15)+it/2*radius-rand(u+i+il)*15)"
+		
+		angle="2*pi*rand(u+il+i*21)+pi/2"
+		color-a="min(rand(u+i*47),(it+il)/2) * saturate(ttl / 200)"
+	>
+        <frame time="60">0 0 0 0</frame>
+        <frame time="60">0 297 3 14</frame>
+        <frame time="60">3 297 3 14</frame>
+        <frame time="60">6 297 3 14</frame>
+        <frame time="60">9 297 3 14</frame>
+        <frame time="60">12 297 3 14</frame>
+        <frame time="60">15 297 3 14</frame>
+        <frame time="60">18 297 3 14</frame>
+        <frame time="150">0 0 0 0</frame>
+	</sprite> -->
+	
+	<!-- 
+	
+	<sprite origin="1 1" looping="true" texture="effects/empty.png" material="system/default.mats:glow"
+		num-sprites="2"
+
+		pos-x="cos(2*pi*rand(u+l+i*23))*((rand(u+i+l)*2)+t*radius-rand(u+i+l)*2)"
+        pos-y="sin(2*pi*rand(u+l+i*23))*((rand(u+i+l)*2)+t*radius-rand(u+i+l)*2)"
+		
+		scale-x="1+t*2"
+        scale-y="1+t*2"
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.8 - mod(it+l+rand(u*i), 1)"
+        color-a="1-t"
+	>
+        <frame time="800">0 0 1 1</frame>
+	</sprite>
+	<sprite origin="1 1" looping="false" texture="effects/empty.png" material="system/default.mats:glow"
+		num-sprites="2"
+
+		pos-x="cos(2*pi*rand(u+l+i*29))*((rand(u+i+l)*4)+t*radius-rand(u+i+l)*4)"
+        pos-y="sin(2*pi*rand(u+l+i*29))*((rand(u+i+l)*4)+t*radius-rand(u+i+l)*4)"
+		
+		scale-x="1+t*2"
+        scale-y="1+t*2"
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.8 - mod(it+l+rand(u*i), 1)"
+        color-a="1-t"
+	>
+        <frame time="1600">0 0 1 1</frame>
+	</sprite>
+	<sprite origin="1 1" looping="true" texture="effects/empty.png" material="system/default.mats:glow"
+		num-sprites="2"
+
+		pos-x="cos(2*pi*rand(u+l+i*83))*((rand(u+i+l)*5)+t*radius-rand(u+i+l)*5)"
+        pos-y="sin(2*pi*rand(u+l+i*83))*((rand(u+i+l)*5)+t*radius-rand(u+i+l)*5)"
+		
+		scale-x="1+t*2"
+        scale-y="1+t*2"
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.8 - mod(it+l+rand(u*i), 1)"
+        color-a="1-t"
+	>
+        <frame time="400">0 0 1 1</frame>
+	</sprite> -->
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(t*10, radius * 3 + 10)" />
+
+		<color-r value="2.5" />
+		<color-g value="2.5 * saturate(ttl / 200)" />
+		<color-b value="2 * saturate(ttl / 200)" />
+		<color-a value="0"/>
+	</light>
+</effect>

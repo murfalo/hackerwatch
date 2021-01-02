@@ -1,0 +1,31 @@
+<unit layer="1">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">250</int>
+		<int name="ttl">7000</int>
+		<int name="actor-filter">2</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">50</int>
+				<float name="resistance-mul">0.9</float>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:darkness</string>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes default="idle">
+		<scene name="idle">
+			<effect layer="1" src="./sentinel_ice_mb_beams_node_intro.effect" />
+			<effect src="doodads/generic/trap_beam_node.effect" />
+			<collision static="true">
+				<circle radius="8" shoot-through="true" aim-through="true" sensor="true"/>
+			</collision>
+		</scene>
+	</scenes>
+</unit>
+
+

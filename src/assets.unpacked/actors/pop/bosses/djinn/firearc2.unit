@@ -1,0 +1,118 @@
+<unit netsync="none">
+	<behavior class="SteeringRayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed-delta">0.7</float>
+		<float name="speed-delta-max">8</float>
+		<int name="ttl">3000</int>
+		<int name="penetration">1000</int>
+
+		<string name="dir-steer">saturate((t-1.5)*5)*pi*-1</string>
+
+		<string name="fx">players/wizard/trail_fireball_fade.effect</string>
+		<string name="shoot-snd">event:/enemy/boss_genie/arc</string>
+		<string name="loop-snd">event:/enemy/boss_genie/arc-travel</string>
+
+		<array name="miss-effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/wizard/fireball_5_hit.effect</string>
+				<int name="radius">32</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">80</int>
+						<float name="resistance-mul">0.75</float>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/player/wizard/fireball</string>
+			</dict>
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/pop/bosses/djinn/fire_area.unit</string>
+				<int name="spawn-dist">0</int>
+			</dict>			
+		</array>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/wizard/fireball_5_hit.effect</string>
+				<int name="radius">32</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">80</int>
+						<float name="resistance-mul">0.75</float>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/player/wizard/fireball</string>
+			</dict>
+%//			<dict>
+%//				<string name="class">SpawnUnit</string>
+%//				<string name="unit">actors/pop/bosses/djinn/fire_area.unit</string>
+%//				<int name="spawn-dist">0</int>
+%//			</dict>
+		</array>
+		
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+			<float name="range">80</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/pop/bosses/djinn/firearc.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="10" />
+			</collision>
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="3" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="255 100 0 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="255 50 0 0" />
+				</colors>
+			</light> 				
+		</scene>
+	</scenes>
+</unit>
+
+

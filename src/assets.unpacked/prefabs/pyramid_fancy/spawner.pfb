@@ -1,0 +1,132 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>1</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/pop/spawners/mummy_2.unit</string>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>2</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>razed</string>
+			<dict>
+				<string name="UnitType">actors/pop/spawners/mummy_2_razed.unit</string>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>3</int>
+			<vec3>-198 -26 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_no_spawners</string>
+			<dict>
+				<string name="Flag">fountain_no_spawners</string>
+				<array name="OnTrue"><int>8</int></array>
+				<array name="OnFalse"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>4</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ranged</string>
+			<dict>
+				<string name="UnitType">actors/pop/spawners/mummy_2_ranged.unit</string>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>5</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>r_razed</string>
+			<dict>
+				<string name="UnitType">actors/pop/spawners/mummy_2_ranged_razed.unit</string>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>6</int>
+			<vec3>-70 -26 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<array name="ToExecute"><int>1</int><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>7</int>
+			<vec3>-70 38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>razed</string>
+			<dict>
+				<array name="ToExecute"><int>5</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>8</int>
+			<vec3>-134 38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>razed</string>
+			<array><int>7</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>9</int>
+			<vec3>-134 -26 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<array><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyScripts</string>
+			<int>10</int>
+			<vec3>0 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>3</int><int>8</int><int>9</int><int>7</int><int>6</int><int>2</int><int>1</int><int>4</int><int>5</int></array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

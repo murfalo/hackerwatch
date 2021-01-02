@@ -1,0 +1,64 @@
+<effect looping="true" 
+%if !GFX_VFX_LOW
+wpos-track="50"
+%endif
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+
+%if !GFX_VFX_LOW	
+	%// Trail
+	<trail texture="items/projectiles/trail_magic_missile.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="50" />
+		<size value="15 * (1 - i / 100)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-100" />
+		<uv-l-y value="0" />
+		
+		<uv-r-x value="i*2 + (t+l)*-100" />
+		<uv-r-y value="10" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="max(0, (0.6 - i / 100) * 0.75)" />
+	</trail>
+
+	
+	<trail texture="items/projectiles/trail_magic_missile.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="35" />
+		<size value="18 * (1 - i / 35)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-100" />
+		<uv-l-y value="10" />
+		
+		<uv-r-x value="i*2 + (t+l)*-100" />
+		<uv-r-y value="20" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0.6" />
+		<color-a value="max(0,0.6 - i / 35)" />
+	</trail>
+%endif
+
+	
+	
+<!-- 	%// Rocket
+	<sprite looping="true" origin="16 16" texture="./projectiles.png" material="effects/effects.mats:lit">
+		<frame time="50">0 0 32 32</frame>
+		<frame time="50">32 0 32 32</frame>
+	</sprite> -->
+</effect>

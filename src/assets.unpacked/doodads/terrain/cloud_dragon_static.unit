@@ -1,0 +1,43 @@
+%if !EDITOR_SCREENSHOT
+<unit slot="doodad" layer="-65">
+	<scenes default="off" on="on">
+		<scene name="off" random-start="true">
+			<sprite origin="138 138" texture="./clouds_storm.png" material="./terrain.mats:cloud_dragon_static"> 
+				<frame time="350">0 0 202 157</frame>
+				<frame time="350">201 0 202 157</frame>
+				<frame time="350">-2 157 202 157</frame>
+				<frame time="350">201 0 202 157</frame>
+				
+				<frame time="350">0 0 202 157</frame>
+				<frame time="350">203 0 202 157</frame>
+				<frame time="350">2 157 202 157</frame>
+				<frame time="350">203 0 202 157</frame>
+			</sprite>				
+		</scene>	
+		<scene name="on" random-start="true">
+			<sprite origin="138 138" ulayer="0" texture="./clouds_storm.png" material="./terrain.mats:cloud_dragon_static"> 
+				<frame time="350">0 0 202 157</frame>
+				<frame time="350">201 0 202 157</frame>
+				<frame time="350">-2 157 202 157</frame>
+				<frame time="350">201 0 202 157</frame>
+
+				<frame time="350">0 0 202 157</frame>
+				<frame time="350">203 0 202 157</frame>
+				<frame time="350">2 157 202 157</frame>
+				<frame time="350">203 0 202 157</frame>
+			</sprite>
+			<sprite origin="138 138" ulayer="1" texture="./clouds_storm_lightning.png" material="system/default.mats:bright"> 
+				<frame time="350">0 0 0 0</frame>
+				<frame time="50">0 0 202 157</frame>
+				<frame time="50">0 0 0 0</frame>
+				<frame time="50">201 0 202 157</frame>
+				<frame time="50">0 0 202 157</frame>
+				<frame time="50">-1 157 202 157</frame>
+				<frame time="50">201 157 202 157</frame>
+				
+				<frame time="6000">0 0 0 0</frame>
+			</sprite>				
+		</scene>			
+	</scenes>
+</unit>		
+%endif

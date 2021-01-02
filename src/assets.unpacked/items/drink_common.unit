@@ -1,0 +1,21 @@
+<unit slot="doodad" netsync="none">
+	<behavior class="ConsumableDrink">
+		<string name="quality">common</string>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<minimap_sprite layer="150" layer="20" origin="6 6" texture="gui/minimap.png" frame="140 9 12 12" />			
+			<collision static="true">
+				<circle sensor="true" offset="0 0" radius="7" />
+			</collision>	
+			
+			<sprite origin="7 11" ulayer="1" texture="./barrel.png" material="system/default.mats:proj-prop">
+				<frame>0 18 13 13</frame>
+			</sprite>
+			<sprite origin="-2 10" ulayer="0" texture="./barrel.png" material="system/default.mats:shadow">
+				<frame>56 19 7 13</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,42 @@
+<effect looping="true">		
+	<sprite looping="true" origin="128 128" texture="./segment_active.png" material="system/default.mats:bright"
+		color-r="1"
+		color-g="0"
+		color-b="0"
+		color-a="0.5+saturate(cos(t*pi*2)*0.5)"
+		angle="pi+pi/4"
+	>
+		<frame time="500">0 0 256 256</frame>
+	</sprite>
+
+	<sprite looping="false"  origin="128 128" texture="./segment_start.png" material="system/default.mats:bright"
+		color-r="1"
+		color-g="0"
+		color-b="0"
+		color-a="0.5+saturate(cos(t*pi*2)*0.5)"
+		angle="pi+pi/4"
+	>
+		<frame time="500">0 0 256 256</frame>
+	</sprite>	
+
+    <light pos-x="128" pos-y="128">
+        <sprite texture="./segment_L.png">
+            <frame>0 0 256 256</frame>
+        </sprite>
+
+        <length value="500" />
+        
+        <looping value="true" />
+        
+        <cast-shadows value="false" />
+        
+        <angle value="pi+pi/4"/>
+        
+        <size value="256" />
+        
+        <color-r value="1" />
+        <color-g value="0" />
+        <color-b value="0" />
+    </light>
+	
+</effect>

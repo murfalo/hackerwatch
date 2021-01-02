@@ -1,0 +1,67 @@
+<gui>
+	<sprites>
+		<sprite name="icon-frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+		<sprite name="icon" texture="gui/icons_others.png"><frame>72 144 24 24</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="218" height="182" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Content -->
+				<rect width="214" height="178" offset="2 2" flow="vbox">
+					<!-- Header -->
+					<rect width="214" height="18" flow="hbox">
+						<!-- Headline -->
+						<rect width="193" height="18" spriteset="gui/variable/headline_hor.sval">
+							<text font="gui/fonts/arial11_bold.fnt" text=".bloodaltar.title" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Separator -->
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Close button -->
+						<spritebutton func="close" spriteset="close" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="214" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Info -->
+					<rect width="214" height="136" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+						<sprite src="icon-frame" anchor="0.5 0" offset="0 8">
+							<sprite src="icon" offset="2 2" />
+						</sprite>
+
+						<text font="gui/fonts/arial11.fnt" anchor="0.5 0" offset="0 40" width="206" align="center" text=".bloodaltar.prompt" />
+
+						<!-- Reward box -->
+						<rect width="194" height="40" anchor="0.5 1" offset="0 -6" spriteset="gui/variable/headline_borders.sval">
+							<text id="reward" anchor="0.5 0.5" font="gui/fonts/arial11.fnt" text="?" width="180" align="center" />
+						</rect>
+					</rect>
+
+					<!-- Separator -->
+					<rect width="214" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Button bar -->
+					<rect width="214" height="18" flow="hbox">
+						<rect width="30" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+						<!-- Yes button -->
+						<scalebutton id="yes" spriteset="scalebutton" func="yes" font="gui/fonts/arial11.fnt" text=".bloodaltar.yes" width="70" />
+
+						<rect width="14" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+						<!-- No button -->
+						<scalebutton id="no" spriteset="scalebutton" func="no" font="gui/fonts/arial11.fnt" text=".bloodaltar.no" width="70" />
+
+						<rect width="30" height="18" spriteset="gui/variable/headline_hor.sval" />
+					</rect>
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

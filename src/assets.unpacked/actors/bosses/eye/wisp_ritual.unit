@@ -1,0 +1,143 @@
+<unit layer="20" netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="type">aberration</string>
+		<int name="hp">5000</int>
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+		<int name="armor">500</int>
+		<int name="resistance">500</int>
+
+		<int name="aggro-range">1000</int>
+		<bool name="must-see-target">false</bool>		
+		<bool name="no-buffs">true</bool>
+
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle</string>
+			<string name="anim-walk">idle</string>
+			
+			<bool name="flying">true</bool>
+			<float name="speed">1.5</float>
+			<int name="dist">1</int>
+			<int name="stagger-threshold">0</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">idle</string>
+
+				<int name="cooldown">100</int>
+				<int name="castpoint">0</int>
+				<int name="range">10</int>
+	
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<int name="min-radius">10</int>
+						<int name="radius">10</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="magical">40</int>
+								<float name="armor-mul">0.75</float>
+							</dict>
+
+							<dict>
+								<string name="class">ApplyBuff</string>
+								<string name="buff">actors/buffs.sval:burning_strong</string>
+							</dict>
+							
+							<dict>
+								<string name="class">ApplyBuff</string>
+								<string name="buff">actors/buffs.sval:confusion</string>
+							</dict>
+							
+							<dict>
+								<string name="class">PlaySound</string>
+								<string name="sound">event:/enemy/boss_eye/wisp</string>
+							</dict>	
+							<dict>
+								<string name="class">SpawnEffect</string>
+								<string name="effect">actors/bosses/eye/eye_ball_hit.effect</string>
+							</dict>			
+						</array>
+					</dict>
+				</array>				
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			
+			<collision static="false">
+				<circle sensor="true" aim-through="true" radius="0.5" charge-through="true" />
+			</collision>
+		</scene>
+
+		<scene name="intro">
+			<scene src="shared" />
+			
+			<effect src="actors/bosses/eye/eye_magic_intro.effect" />
+		</scene>
+
+		<scene name="idle">
+			<scene src="shared" />
+
+			<effect src="actors/bosses/eye/eye_magic.effect" />
+			
+		<!-- outline -->
+			<sprite origin="11 11" ulayer="2" looping="true" texture="actors/bosses/eye/eye_magic.png" material="system/default.mats:effect">
+				<frame time="80">0 0 22 22</frame>
+				<frame time="80">22 0 22 22</frame>
+				<frame time="80">44 0 22 22</frame>
+				<frame time="80">66 0 22 22</frame>
+				<frame time="80">88 0 22 22</frame>
+				<frame time="80">110 0 22 22</frame>
+				<frame time="80">132 0 22 22</frame>
+				<frame time="80">154 0 22 22</frame>
+				<frame time="80">176 0 22 22</frame>
+				<frame time="80">198 0 22 22</frame>
+				<frame time="80">220 0 22 22</frame>
+			</sprite>
+		<!-- orb -->
+			<sprite origin="11 11" ulayer="1" looping="true" texture="actors/bosses/eye/eye_magic.png" material="system/default.mats:default-noxray">
+				<frame time="75">0 22 22 22</frame>
+				<frame time="75">22 22 22 22</frame>
+				<frame time="75">44 22 22 22</frame>
+				<frame time="500">66 22 22 22</frame>
+				<frame time="75">88 22 22 22</frame>
+				<frame time="75">110 22 22 22</frame>
+				<frame time="75">132 22 22 22</frame>
+				<frame time="75">154 22 22 22</frame>
+				<frame time="75">176 22 22 22</frame>
+			</sprite>
+			
+		<!-- flame -->
+			<sprite origin="11 11" ulayer="3" looping="true" texture="actors/bosses/eye/eye_magic.png" material="system/default.mats:effect">
+				<frame time="500">0 0 0 0</frame>
+				<frame time="100">0 44 22 22</frame>
+				<frame time="100">22 44 22 22</frame>
+				<frame time="100">44 44 22 22</frame>
+				<frame time="100">66 44 22 22</frame>
+				<frame time="100">88 44 22 22</frame>
+				<frame time="100">110 44 22 22</frame>
+				<frame time="100">132 44 22 22</frame>
+				<frame time="100">154 44 22 22</frame>
+				<frame time="100">176 44 22 22</frame>
+				<frame time="100">198 44 22 22</frame>
+				<frame time="100">220 44 22 22</frame>
+			</sprite>
+		</scene>
+
+		<scene name="outro">
+			<scene src="shared" />
+
+			<effect src="actors/bosses/eye/eye_magic_outro.effect" />
+		</scene>
+	</scenes>
+</unit>

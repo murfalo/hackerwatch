@@ -1,0 +1,85 @@
+<unit slot="doodads">
+	<scenes>
+		<scene name="intro" trigger-snd="event:/enemy/boss_wraith/spawn">
+		
+			<collision static="false">
+				<circle offset="-2 0" radius="18" sensor="false" density="100"/>
+			</collision>
+		
+		<!-- intro -->
+			<sprite origin="47 42" looping="false" texture="./intro_wraith_scythe.png" material="system/default.mats:actor">
+				<frame time="60">0 0 0 0</frame>
+				<frame time="60">0 0 79 60</frame>
+				<frame time="60">79 0 79 60</frame>
+				<frame time="60">158 0 79 60</frame>
+				<frame time="60">237 0 79 60</frame>
+				<frame time="60">316 0 79 60</frame>
+				<frame time="60">395 0 79 60</frame>
+				<frame time="60">0 60 79 60</frame>
+				<frame time="60">79 60 79 60</frame>
+				<frame time="60">158 60 79 60</frame>
+				<frame time="60">237 60 79 60</frame>
+				<frame time="60">316 60 79 60</frame>
+				<frame time="60">395 60 79 60</frame>
+				<frame time="60">0 120 79 60</frame>
+				<frame time="60">79 120 79 60</frame>
+				<frame time="60">158 120 79 60</frame>
+				<frame time="60">237 120 79 60</frame>
+				<frame time="60">316 120 79 60</frame>
+				<frame time="60">395 120 79 60</frame>
+				<frame time="60">0 180 79 60</frame>
+				<frame time="60">79 180 79 60</frame>
+				<frame time="60">158 180 79 60</frame>
+				<frame time="60">237 180 79 60</frame>
+			</sprite> 
+			
+			<sprite origin="47 42" looping="false" texture="./intro_wraith_scythe.png" material="system/default.mats:bright-noxray">
+				<frame time="60">0 0 0 0</frame>
+				<frame time="60">0 256 79 60</frame>
+				<frame time="60">79 256 79 60</frame>
+				<frame time="60">158 256 79 60</frame>
+				<frame time="60">237 256 79 60</frame>
+				<frame time="60">316 256 79 60</frame>
+				<frame time="60">395 256 79 60</frame>
+				<frame time="60">0 316 79 60</frame>
+				<frame time="60">79 316 79 60</frame>
+				<frame time="60">158 316 79 60</frame>
+				<frame time="60">237 316 79 60</frame>
+				<frame time="60">316 316 79 60</frame>
+				<frame time="60">395 316 79 60</frame>
+				<frame time="60">0 376 79 60</frame>
+				<frame time="60">79 376 79 60</frame>
+				<frame time="60">158 376 79 60</frame>
+				<frame time="60">237 376 79 60</frame>
+				<frame time="60">316 376 79 60</frame>
+				<frame time="60">395 376 79 60</frame>
+				<frame time="60">0 436 79 60</frame>
+				<frame time="60">79 436 79 60</frame>
+				<frame time="60">158 436 79 60</frame>
+				<frame time="60">237 436 79 60</frame>
+			</sprite>             
+                                  
+			<light pos="0 -25" delay="0">
+				<sprite texture="system/light_concentrated_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="10" />
+				<looping value="false" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="0" />
+					<size value="150" />
+					<size value="0" />
+				</sizes>
+ 				<colors>
+					<color value="0 0 0 0" />
+					<color value="255 255 255 0" />
+					<color value="0 0 0 0" />
+				</colors> 
+			</light>
+		</scene>
+	</scenes>
+</unit>

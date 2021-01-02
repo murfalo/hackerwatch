@@ -1,0 +1,26 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="43 0" texture="gui/minimap.png" frame="361 350 47 16"/>
+			<sprite layer="20" origin="94 115" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame>1184 322 39 80</frame>
+			</sprite>
+			<sprite layer="19" origin="80 64" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame>1184 734 36 72</frame>
+			</sprite>
+			<collision static="true">
+				<rect>0 0 16 64</rect>
+			</collision>
+			<shadow>
+				<rect>0 0 16 64</rect>
+			</shadow>
+			
+<!-- 			<sprite layer="19" origin="128 96" texture="./_custom_arena_walls.png" material="system/default.mats:proj-wall">
+				<frame>1759 0 120 64</frame>
+			</sprite> -->
+			<sprite origin="168 115" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame>816 564 184 147</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

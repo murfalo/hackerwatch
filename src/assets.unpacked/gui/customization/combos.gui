@@ -1,0 +1,30 @@
+<gui>
+	<sprites>
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+		<sprite name="button-frames" texture="gui/shop.png"><frame>0 258 96 64</frame></sprite>
+
+		<sprite name="checkbutton" texture="gui/widget.png"><frame>346 0 32 32</frame></sprite>
+		<sprite name="checkbutton-hover" texture="gui/widget.png"><frame>346 32 32 32</frame></sprite>
+		<sprite name="checkbutton-checked" texture="gui/widget.png"><frame>346 64 32 32</frame></sprite>
+		<sprite name="checkbutton-disabled" texture="gui/widget.png"><frame>378 64 32 32</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- List -->
+			<checkboxgroup id="list" flow="hboxwrapped" width="288" height="168" dynamic-size="false" clipping="true" scroll-backdrop-sprite="button-frames" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="list" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Template -->
+			<checkbox id="template" visible="false" spriteset="checkbutton" func="set-combo">
+				<!-- Icon -->
+				<sprite id="icon" anchor="0.5 0.5" />
+			</checkbox>
+		</group>
+	</doc>
+</gui>

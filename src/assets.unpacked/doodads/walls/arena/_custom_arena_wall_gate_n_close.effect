@@ -1,0 +1,23 @@
+<effect looping="false">
+			
+	<sprite mask="1001" looping="true" layer="20" origin="0 264" texture="doodads/walls/arena/_custom_arena_walls.png" material="system/default.mats:shadow" 
+	
+	pos-y="164"
+	>
+		<frame time="2000">912 380 96 79</frame>
+	</sprite>	
+	<sprite masked="1001" layer="0" origin="0 84" looping="true" texture="./_custom_arena_walls.png" material="system/default.mats:shadow"
+	pos-x="28 - t*28"
+	>
+		<frame time="2000" x="912" y="367 - (t*28)" w="60 + (t*28)" h="12 + (t*28)" />
+	</sprite>	
+	
+	
+	<sprite layer="-1" origin="0 104" looping="true" texture="./_custom_arena_walls.png" material="system/default.mats:default"
+	
+	>
+		<frame time="2000" x="912" y="330 - (t * 50)" w="88" h="8 + (t * 50)" />
+	</sprite>	
+	
+		
+</effect>

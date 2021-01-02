@@ -1,0 +1,28 @@
+<unit slot="doodad" layer="25">
+	<scenes on="on" unlock="unlock" used="used">
+		<scene name="on">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="144 32 12 12" />
+			%if EDITOR
+			<sprite origin="6 6" texture="gui/minimap.png" material="system/default.mats:bright">
+				<frame>144 32 12 12</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="unlock">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="156 32 12 12" />
+			%if EDITOR
+			<sprite origin="6 6" texture="gui/minimap.png" material="system/default.mats:bright">
+				<frame>156 32 12 12</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="used">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="168 32 12 12" />
+			%if EDITOR
+			<sprite origin="6 6" texture="gui/minimap.png" material="system/default.mats:bright">
+				<frame>168 32 12 12</frame>
+			</sprite>
+			%endif
+		</scene>			
+	</scenes>
+</unit>

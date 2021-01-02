@@ -1,0 +1,32 @@
+<unit slot="item">
+	<behavior class="Pickup">
+		<bool name="bounce">true</bool>
+		<string name="sound">event:/item/key_silver</string>
+		<string name="pickup-trigger">pickup-key</string>
+		<bool name="global">true</bool>
+		<bool name="secure">true</bool>
+		<array name="effects">
+			<dict>
+				<string name="class">GiveKey</string>
+				<int name="lock">1</int>
+				<int name="amount">1</int>
+				<bool name="pickup">true</bool>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<sprite origin="4 5" layer="-1" texture="./items_general.png" material="system/default.mats:shadow">
+				<frame>0 51 8 8</frame>
+			</sprite>
+			<minimap_sprite layer="10" origin="4 6" texture="gui/minimap.png" frame="57 8 8 12" />
+			<collision static="true">
+				<rect sensor="true">-5 -10 10 12</rect>
+			</collision>
+			<sprite origin="4 11" texture="./items_general.png" material="items/items.mats:money">
+				<frame time="200">21 19 8 10</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

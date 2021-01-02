@@ -1,0 +1,85 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle 1</string>
+		<float name="speed">4</float>
+		<int name="ttl">2500</int>
+		<string name="fx">actors/special/hellcube/projectile_hit.effect</string>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">45</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="1 2 3 4">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>			 
+			<light pos="0 0">
+				<sprite texture="./flare2_L.png">
+					<frame>0 0 256 256</frame>
+				</sprite>
+				<length value="500" />
+				<overbright value="5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="255 100 0 0" />
+					<color value="150 0 0 0" />
+				</colors>
+			</light>	
+		</scene>
+		<scene random-start="true" name="1">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./projectile.png" material="system/default.mats:default">
+				<frame time="30">0 0 8 13</frame>
+				<frame time="30">8 0 8 13</frame>
+				<frame time="30">16 0 8 13</frame>
+				<frame time="30">24 0 8 13</frame>
+				<frame time="30">0 13 8 13</frame>
+				<frame time="30">8 13 8 13</frame>
+			</sprite>		
+		</scene>	
+		<scene random-start="true" name="2">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./projectile.png" material="system/default.mats:default">
+				<frame time="35">8 13 8 13</frame>
+				<frame time="35">0 13 8 13</frame>
+				<frame time="35">24 0 8 13</frame>
+				<frame time="35">16 0 8 13</frame>
+				<frame time="35">8 0 8 13</frame>
+				<frame time="35">0 0 8 13</frame>
+			</sprite>		
+		</scene>		
+		<scene random-start="true" name="3">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./projectile.png" material="system/default.mats:default">
+				<frame time="50">0 0 8 13</frame>
+				<frame time="50">8 0 8 13</frame>
+				<frame time="50">16 0 8 13</frame>
+				<frame time="50">24 0 8 13</frame>
+				<frame time="50">0 13 8 13</frame>
+				<frame time="50">8 13 8 13</frame>
+			</sprite>		
+		</scene>	
+		<scene random-start="true" name="4">	
+			<scene src="shared" />
+			<sprite  origin="4 7" looping="true" texture="./projectile.png" material="system/default.mats:default">
+				<frame time="65">8 13 8 13</frame>
+				<frame time="65">0 13 8 13</frame>
+				<frame time="65">24 0 8 13</frame>
+				<frame time="65">16 0 8 13</frame>
+				<frame time="65">8 0 8 13</frame>
+				<frame time="65">0 0 8 13</frame>
+			</sprite>		
+		</scene>	
+	</scenes>
+</unit>

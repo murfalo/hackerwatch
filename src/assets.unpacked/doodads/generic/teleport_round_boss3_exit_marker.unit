@@ -1,0 +1,18 @@
+<unit layer="-11" slot="doodad">
+  <scenes open="open" closed="closed">
+	<scene name="open">
+		<sprite origin="128 128" texture="./teleport_round_boss3_exit_marker.png" material="system/default.mats:glow-both">
+			<frame>0 0 256 256</frame>
+		</sprite>
+	</scene>
+	<scene name="closed">
+		%if EDITOR
+		<text layer="10" pos="-16 -16" font="gui/fonts/arial11.fnt" text="Teleport\nClosed" align="center" material="system/default.mats:bright"/>	
+		<sprite layer="4" origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+			<frame>0 0 64 64</frame>
+		</sprite>
+		%endif
+	</scene>
+
+  </scenes>
+</unit>

@@ -1,0 +1,632 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<float name="radius">12</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 8</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">24 40</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/npc_mayor.unit"><vec2>0 0</vec2><int>3</int></array>
+		<array name="doodads/generic/speech_bubble_generic.unit"><vec2>0 0</vec2><int>4</int></array>
+		<array name="gui/fonts/arial11.fnt">
+			<array>
+				<vec2>-184 -64</vec2>
+				<int>5</int>
+				<dict>
+					<string name="text">start</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-184 -192</vec2>
+				<int>6</int>
+				<dict>
+					<string name="text">mines_enter</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-184 -288</vec2>
+				<int>7</int>
+				<dict>
+					<string name="text">boss1_killed</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>8</int>
+			<vec3>0 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.1a</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+			<array><int>10</int><int>1</int></array>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>9</int>
+			<vec3>320 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Icon">5</int>
+				<array name="Areas"><int>1</int><int>2</int></array>
+			</dict>
+			<array>
+				<int>24</int>
+				<int>0</int>
+				<int>15</int>
+				<int>0</int>
+				<int>30</int>
+				<int>0</int>
+				<int>38</int>
+				<int>0</int>
+				<int>45</int>
+				<int>0</int>
+				<int>52</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>64 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>8</int><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>11</int>
+			<vec3>128 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.1c</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+			<array><int>16</int><int>1</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>12</int>
+			<vec3>128 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>13</int><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>13</int>
+			<vec3>64 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.1b</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+			<array><int>12</int><int>1</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>14</int>
+			<vec3>0 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>25</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>15</int>
+			<vec3>320 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>8</int><int>0</int><int>13</int><int>0</int><int>11</int><int>0</int><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>16</int>
+			<vec3>192 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>11</int><int>25</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>17</int>
+			<vec3>384 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>18</int>
+			<vec3>384 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>512 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>28</int><int>10</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>20</int>
+			<vec3>608 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>mines_enter</string>
+			<dict>
+				<string name="Flag">mines_enter</string>
+				<array name="OnTrue"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>21</int>
+			<vec3>0 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.mines_enter.1Ra</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>22</int>
+			<vec3>448 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>15</int></array>
+			</dict>
+			<array><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>23</int>
+			<vec3>64 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.mines_enter.1Rb</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>24</int>
+			<vec3>320 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>23</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>25</int>
+			<vec3>192 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.1d</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+			<array><int>14</int><int>1</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>26</int>
+			<vec3>608 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>boss1_killed</string>
+			<dict>
+				<string name="Flag">boss1_killed</string>
+				<array name="OnTrue"><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>27</int>
+			<vec3>0 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss1_killed.1Ra</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>28</int>
+			<vec3>448 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>15</int><int>24</int></array>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>29</int>
+			<vec3>64 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss1_killed.1Rb</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>30</int>
+			<vec3>320 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>29</int><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>31</int>
+			<vec3>512 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>384 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>38</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>33</int>
+			<vec3>512 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>36</int><int>10</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>34</int>
+			<vec3>608 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>boss2_killed</string>
+			<dict>
+				<string name="Flag">boss2_killed</string>
+				<array name="OnTrue"><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>35</int>
+			<vec3>0 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss2_killed.1Ra</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>36</int>
+			<vec3>448 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>15</int><int>24</int><int>30</int></array>
+			</dict>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>37</int>
+			<vec3>64 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss2_killed.1Rb</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>38</int>
+			<vec3>320 -416 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>37</int><int>35</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>39</int>
+			<vec3>384 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>45</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>40</int>
+			<vec3>512 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>43</int><int>10</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>41</int>
+			<vec3>608 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>boss3_killed</string>
+			<dict>
+				<string name="Flag">boss3_killed</string>
+				<array name="OnTrue"><int>40</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>42</int>
+			<vec3>0 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss3_killed.1Ra</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>43</int>
+			<vec3>448 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>15</int><int>24</int><int>30</int><int>38</int></array>
+			</dict>
+			<array><int>39</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>44</int>
+			<vec3>64 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss3_killed.1Rb</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>45</int>
+			<vec3>320 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>44</int><int>42</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>46</int>
+			<vec3>384 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>52</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>47</int>
+			<vec3>512 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>50</int><int>10</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>48</int>
+			<vec3>608 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>boss4_killed</string>
+			<dict>
+				<string name="Flag">boss4_killed</string>
+				<array name="OnTrue"><int>47</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>49</int>
+			<vec3>0 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss4_killed.1Ra</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>50</int>
+			<vec3>448 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>15</int><int>24</int><int>30</int><int>38</int><int>45</int></array>
+			</dict>
+			<array><int>46</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>51</int>
+			<vec3>64 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.dialogue.town.npc.mayor.boss4_killed.1Rb</string>
+				<string name="Title">.dialogue.town.npc.mayor.name</string>
+				<array name="Objects"><int>3</int></array>
+				<array name="#ForPlayer"><int>9</int><string>User</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>52</int>
+			<vec3>320 -672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>51</int><int>49</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

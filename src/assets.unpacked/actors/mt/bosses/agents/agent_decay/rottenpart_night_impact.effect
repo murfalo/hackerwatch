@@ -1,0 +1,33 @@
+<effect looping="false">
+	<sprite origin="2.5 2" looping="false" texture="./rottenpart_impact.png" material="system/default.mats:bright-noxray"
+		num-sprites="rand(u+i*101)*5"
+		angle="floor(sin(t*pi*2))*pi"
+		pos-x="rand(u+i*23)*10 - 5 + t*(rand(u+i*23)*10 - 5)"
+		pos-y="(t*rand(u+i*11)*-50 + pow(t,4)*rand(u+i*11)*25)"
+		>
+		<frame time="50">0 224 5 4</frame>
+		<frame time="50">5 224 5 4</frame>
+		<frame time="50">10 224 5 4</frame>
+		<frame time="50">15 224 5 4</frame>
+		<frame time="50">20 224 5 4</frame>
+		<frame time="50">25 224 5 4</frame>
+		<frame time="50">30 224 5 4</frame>
+		<frame time="50">35 224 5 4</frame>
+	</sprite>
+	<sprite origin="2.5 2" looping="false" texture="./rottenpart_impact.png" material="system/default.mats:glow-both-bright"
+		num-sprites="rand(u+i*101)*5"
+		angle="floor(sin(t*pi*2))*pi"
+		pos-x="rand(u+i*23)*10 - 5 + t*(rand(u+i*23)*10 - 5)"
+		pos-y="(t*rand(u+i*11)*-50 + pow(t,4)*rand(u+i*11)*25)"
+		color-a="0.5"
+		>
+		<frame time="50">0 224 5 4</frame>
+		<frame time="50">5 224 5 4</frame>
+		<frame time="50">10 224 5 4</frame>
+		<frame time="50">15 224 5 4</frame>
+		<frame time="50">20 224 5 4</frame>
+		<frame time="50">25 224 5 4</frame>
+		<frame time="50">30 224 5 4</frame>
+		<frame time="50">35 224 5 4</frame>
+	</sprite>
+</effect>

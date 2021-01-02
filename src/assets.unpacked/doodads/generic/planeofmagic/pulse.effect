@@ -1,0 +1,17 @@
+<effect layer="-9" looping="false">
+
+	<data>
+		<string name="sound">event:/misc/plane_pulse</string>
+	</data>		
+	
+	<sprite looping="false" origin="256 256" texture="./plane_electricity.png" material="system/default.mats:default"
+		angle="(t+l)*pi"		
+		scale-x="saturate(t*2+l)"
+		scale-y="saturate(t*2+l)"
+		color-r="1+t*200"
+		color-g="1+t*200"
+		color-b="1+t*200"
+		color-a="saturate(1-t*1.5)">
+		<frame time="1000">0 0 512 512</frame>
+	</sprite>		
+</effect>

@@ -1,0 +1,287 @@
+<unit netsync="position" slot="doodad" layer="0">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">construct</string>
+		<int name="hp">100000</int>
+		<int name="armor">400</int>
+		<int name="resistance">400</int>
+		
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+
+		<int name="aggro-range">10000</int>
+		<bool name="impenetrable">true</bool>
+		<bool name="no-buffs">true</bool>
+		<bool name="targetable">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<bool name="floating-hurt">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>
+      
+		<array name="skills">
+			%// Normal
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>0</int>
+					<string>ngp</string><string>lt</string><int>3</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_scythe</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+				
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-scythe</string>
+					</dict>
+		
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="dist">20</int>					
+						<int name="spread">0</int>				
+						<string name="projectile">actors/bosses/wraith/wraith_scythe_lurker.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_scythe</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+3
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>isnt</string><string>wraith_mage_dead</string>
+					<string>flag</string><string>isnt</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+				
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-scythe</string>
+					</dict>
+		
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="dist">20</int>					
+						<int name="spread">0</int>				
+						<string name="projectile">actors/bosses/wraith/wraith_scythe_lurker.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_scythe</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Mage Dead
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>is</string><string>wraith_mage_dead</string>
+					<string>flag</string><string>isnt</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+				
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-scythe</string>
+					</dict>
+		
+					<dict>
+						<string name="class">Nova</string>
+						
+						<int name="projectiles">3</int>
+						<string name="projectile">actors/bosses/wraith/wraith_scythe_lurker_mage.unit</string>
+						<int name="dist">30</int>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_scythe</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Staff Dead
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>isnt</string><string>wraith_mage_dead</string>
+					<string>flag</string><string>is</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+				
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-scythe</string>
+					</dict>
+		
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="dist">20</int>					
+						<int name="spread">0</int>				
+						<string name="projectile">actors/bosses/wraith/wraith_scythe_lurker_staff.unit</string>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_scythe</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Both Dead
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>2</int>
+					<string>flag</string><string>is</string><string>spawn_ghost_mage</string>
+					<string>flag</string><string>is</string><string>wraith_mage_dead</string>
+					<string>flag</string><string>is</string><string>wraith_staff_dead</string>
+				</array>
+				
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">spawn</string>
+				
+				<int name="cooldown">0</int>
+				<int name="castpoint">1300</int>
+				<int name="range">600</int>
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_wraith/attack-scythe</string>
+					</dict>
+		
+					<dict>
+						<string name="class">Nova</string>
+						
+						<int name="projectiles">3</int>
+						<string name="projectile">actors/bosses/wraith/wraith_scythe_lurker_both.unit</string>
+						<int name="dist">30</int>
+					</dict>
+				
+					<dict>
+						<string name="class">SetFlag</string>
+						<bool name="value">false</bool>
+						<string name="flag">spawn_ghost_scythe</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="default" spawn="spawn">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="123 0 5 5"/>
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-10 -11 20 20</rect>
+			</collision>
+			<sprite ulayer="-5" origin="-8 15" texture="actors/bosses/wraith/statue_wraith_razed.png" material="system/default.mats:shadow">
+				<frame>114 15 5 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="default">
+			<scene src="shared" />
+			<sprite origin="13 20" looping="true" texture="actors/bosses/wraith/statue_wraith_razed.png" material="system/default.mats:wall">
+				<frame>64 0 32 32</frame>
+			</sprite>
+		</scene>
+			
+		<scene name="spawn">
+			<scene src="shared" />
+			<light pos="5 0">0
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="4"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="20" />
+				</sizes>
+				<colors>
+					<color value="200 200 230 0" />
+				</colors>
+			</light>
+			
+			<sprite ulayer="-5" origin="13 20" texture="actors/bosses/wraith/statue_wraith_razed.png" material="system/default.mats:wall">
+				<frame>64 0 32 32</frame>
+			</sprite>
+			
+			<sprite origin="1 5" looping="false" texture="actors/bosses/wraith/statue_wraith.png" material="system/default.mats:glow-both-bright">
+				<frame time="150">96 42 8 8</frame>
+				<frame time="150">104 42 8 8</frame>
+				<frame time="150">96 42 8 8</frame>
+				<frame time="150">0 0 0 0</frame>
+				
+				<frame time="100">96 42 8 8</frame>
+				<frame time="100">104 42 8 8</frame>
+				<frame time="100">96 42 8 8</frame>
+				<frame time="100">0 0 0 0</frame>
+				
+				<frame time="50">96 42 8 8</frame>
+				<frame time="50">104 42 8 8</frame>
+				<frame time="50">96 42 8 8</frame>
+				<frame time="50">0 0 0 0</frame>
+				
+				<frame time="50">96 42 8 8</frame>
+				<frame time="1500">104 42 8 8</frame>
+				<frame time="50">96 42 8 8</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

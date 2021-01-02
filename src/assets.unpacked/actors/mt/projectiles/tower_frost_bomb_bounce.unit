@@ -1,0 +1,65 @@
+<unit netsync="none">
+	<behavior class="BounceProjectile">
+	<string name="anim">idle</string>
+		<float name="speed">4</float>
+		<int name="ttl">300</int>
+		<int name="floor-bounces">1</int>
+		<float name="floor-bounce-intensity-mul">1</float>
+		<int name="floor-bounce-height">10</int>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>
+
+		<array name="miss-effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/mt/projectiles/explosion_snow.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">18</int>
+				<float name="dist-scaling">1000</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">30</int>
+						<int name="magical">30</int>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">PlaySound</string>
+				<string name="sound">event:/enemy/tower_bomb/shoot</string>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/projectiles/ice_patch.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="0.05" projectile="true" />
+			</collision>
+			<sprite origin="3.5 3.5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>0 8 7 7</frame>
+			</sprite>
+
+			<sprite origin="6 6" looping="true" texture="./tower_frost_bomb.png" material="system/default.mats:projectile">
+				<frame time="150">0 0 12 12</frame>
+				<frame time="150">12 0 12 12</frame>
+				<frame time="150">0 12 12 12</frame>
+				<frame time="150">12 12 12 12</frame>
+			</sprite>
+		</scene>	
+	</scenes>
+</unit>

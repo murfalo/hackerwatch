@@ -1,0 +1,30 @@
+<effect looping="true" layer="-10">
+	<sprite looping="true" origin="64 64" texture="./quicksand.png" material="system/default.mats:floor"
+		angle="(t+l)*pi/8"
+		scale-x="saturate(pow(t+l,0.5)*2)"
+		scale-y="saturate(pow(t+l,0.5)*2)"
+		>
+		<frame time="10000">384 0 128 128</frame>
+	</sprite>		
+	<sprite looping="true" origin="64 64" texture="./quicksand.png" material="system/default.mats:floor"
+		angle="(t+l)*pi/4"
+		scale-x="saturate(pow(t+l,0.5)*2)"
+		scale-y="saturate(pow(t+l,0.5)*2)"
+		>
+		<frame time="10000">256 0 128 128</frame>
+	</sprite>	
+	<sprite looping="true" origin="64 64" texture="./quicksand.png" material="system/default.mats:floor"
+		angle="(t+l)*pi/2"
+		scale-x="saturate(pow(t+l,0.5)*2)"
+		scale-y="saturate(pow(t+l,0.5)*2)"
+		>
+		<frame time="10000">128 0 128 128</frame>
+	</sprite>
+	<sprite looping="true" origin="64 64" texture="./quicksand.png" material="system/default.mats:floor"
+		angle="(t+l)*pi"
+		scale-x="saturate(pow(t+l,0.5)*2)"
+		scale-y="saturate(pow(t+l,0.5)*2)"
+		>
+		<frame time="10000">0 0 128 128</frame>
+	</sprite>	
+</effect>

@@ -1,0 +1,89 @@
+<unit slot="doodad">
+	<scenes outlook="outlook" desert="desert">
+		<scene name="outlook">
+			<minimap_sprite layer="150" layer="20" origin="-8 5" texture="gui/minimap.png" frame="240 64 10 11" />
+			<collision static="true">
+				<rect shoot-through="false">-11 -25 20 33</rect>
+				
+				<rect shoot-through="true">33 -47 31 32</rect>
+				<rect shoot-through="true">33 7 31 32</rect>
+				<rect shoot-through="true">64 -47 32 86</rect>
+			</collision>
+			<sprite origin="13 55" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>0 0 32 66</frame>
+			</sprite>
+			<sprite layer="20" origin="-19 55" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>32 0 32 66</frame>
+			</sprite>
+			<sprite layer="-10" origin="-33 47" texture="./exit_elevator.png" material="system/default.mats:default">
+				<frame time="3000">64 0 31 61</frame>
+				<frame time="3000">65 0 30 61</frame>
+			</sprite>
+			<sprite layer="19" origin="-33 47" texture="./exit_elevator.png" material="system/default.mats:default">
+				<frame time="3000">95 0 31 61</frame>
+				<frame time="3000">96 0 30 61</frame>
+			</sprite>
+		</scene>
+		<scene name="desert">
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="240 64 10 11" />
+			<collision static="true">
+				<rect shoot-through="true">-14 -14 3 29</rect>
+				<rect shoot-through="true">11 -14 3 29</rect>
+			</collision>
+			<sprite layer="20" origin="1 194" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="20" origin="1 182" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 170" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 158" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 146" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 134" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 122" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 110" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 98" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 86" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 74" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 62" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="1 50" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>79 61 2 12</frame>
+			</sprite>
+			<sprite layer="1" origin="14 45" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>97 0 28 50</frame>
+			</sprite>
+			<sprite layer="0" origin="14 23" texture="./exit_elevator.png" material="system/default.mats:default-noxray">
+				<frame>94 88 28 36</frame>
+			</sprite>
+			<sprite layer="-1" origin="-14 23" texture="./exit_elevator.png" material="system/default.mats:shadow">
+				<frame>122 88 5 40</frame>
+			</sprite>
+			<sprite layer="-1" origin="12 20" texture="./exit_elevator.png" material="system/default.mats:shadow">
+				<frame>96 82 24 6</frame>
+			</sprite>
+			<sprite layer="-19" origin="14 50" texture="./exit_elevator.png" material="system/default.mats:floor">
+				<frame>66 61 28 67</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

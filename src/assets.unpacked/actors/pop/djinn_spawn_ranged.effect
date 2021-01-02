@@ -1,0 +1,88 @@
+<effect>
+	<data>
+		<string name="sound">event:/enemy/djinn/spawn</string>		
+		<string name="fx">actors/pop/djinn_spawn_dust.effect</string>
+	</data>
+	<sprite ulayer="-1" origin="9 26" looping="false" texture="./djinn_spawn.png" material="system/default.mats:glow-both">
+		<frame time="100">0 64 18 32</frame>
+		<frame time="100">18 64 18 32</frame>
+		<frame time="100">36 64 18 32</frame>
+		<frame time="100">54 64 18 32</frame>
+		<frame time="100">72 64 18 32</frame>
+		<frame time="100">90 64 18 32</frame>
+		<frame time="100">108 64 18 32</frame>
+		<frame time="100">0 96 18 32</frame>
+	</sprite>
+	
+	<sprite origin="9 26"  looping="false" texture="./djinn_spawn.png" material="system/default.mats:actor-genie">
+		<frame time="100">0 0 18 32</frame>
+		<frame time="100">18 0 18 32</frame>
+		<frame time="100">36 0 18 32</frame>
+		<frame time="100">54 0 18 32</frame>
+		<frame time="100">72 0 18 32</frame>
+		<frame time="100">18 32 18 32</frame>
+		<frame time="100">36 32 18 32</frame>
+		<frame time="100">54 32 18 32</frame>
+	</sprite>
+	
+			
+	<!-- <light pos-y="0" pos-x="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="700"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="100*t" />
+			
+		<color-r value="2.15" />
+		<color-g value="0.39" />
+		<color-b value="5" />
+		<color-a value="0"/>
+		
+	</light> -->	
+	<light pos-y="0" pos-x="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="700"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="150 * (1-t)" />
+			
+		<color-r value="0.86" />
+		<color-g value="0.15" />
+		<color-b value="1.17" />
+		<color-a value="0"/>
+		
+	</light>	
+	<light pos-y="0" pos-x="0">
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="25">0 0 256 256</frame>
+		</sprite>
+		
+		<length value="700"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="72 * t" />
+
+		<color-r value="10.78" />
+		<color-g value="1.9" />
+		<color-b value="25" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

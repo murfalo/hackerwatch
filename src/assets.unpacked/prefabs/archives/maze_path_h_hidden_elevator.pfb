@@ -1,0 +1,71 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/archives/crn_se.unit"><vec2>48 0</vec2><int>10</int></array>
+		<array name="doodads/walls/archives/crn_sw.unit"><vec2>-32 0</vec2><int>7</int></array>
+		<array name="doodads/walls/archives/v_16.unit"><vec2>-32 -32</vec2><int>8</int><vec2>48 -32</vec2><int>9</int></array>
+		<array name="doodads/special/color_archives_16.unit"><vec2>40 -24</vec2><int>1</int><vec2>40 -40</vec2><int>2</int><vec2>-24 -24</vec2><int>3</int><vec2>-24 -40</vec2><int>4</int></array>
+		<array name="doodads/walls/archives/cap_n.unit"><vec2>48 48</vec2><int>5</int><vec2>-32 48</vec2><int>6</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnPrefab</string>
+			<int>15</int>
+			<vec3>16 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Prefab">prefabs/archives/elevator.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>16</int>
+			<vec3>96 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco2_torch</string>
+			<dict>
+				<string name="Prefab">prefabs/archives/deco_2_wall_torch.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>17</int>
+			<vec3>48 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>18</int>
+			<vec3>-16 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedPrefabs"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>19</int>
+			<vec3>16 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>17</int><int>18</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

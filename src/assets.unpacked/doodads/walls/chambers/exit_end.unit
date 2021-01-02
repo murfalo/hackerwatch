@@ -1,0 +1,69 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="4 -4" texture="gui/minimap.png" frame="104 47 84 84" />
+			<collision static="true">
+				<rect>0 27 16 289</rect>
+				<rect>16 27 64 16</rect>
+				<rect>224 37 64 16</rect>
+				<rect>288 37 16 299</rect>
+				<rect>208 116 16 220</rect>
+				<rect>80 108 16 110</rect>
+				<rect>112 132 16 84</rect>
+				<rect>128 132 64 16</rect>
+				<rect>192 132 16 180</rect>
+				<rect>128 296 64 16</rect>
+				<rect>16 300 64 16</rect>
+				<polygon>
+					<point>80 27</point>
+					<point>80 43</point>
+					<point>224 37</point>
+					<point>224 53</point>
+				</polygon>
+				<polygon>
+					<point>96 108</point>
+					<point>208 116</point>
+					<point>208 132</point>
+					<point>96 124</point>
+				</polygon>
+				<polygon>
+					<point>80 300</point>
+					<point>128 296</point>
+					<point>128 312</point>
+					<point>80 316</point>
+				</polygon>
+				<polygon>
+					<point>80 218</point>
+					<point>128 216</point>
+					<point>128 232</point>
+					<point>80 234</point>
+				</polygon>
+			</collision>
+			<shadow>
+				<sprite layer="100" origin="-16 -12" looping="true" texture="./exit_shadow.png" material="system/default.mats:shadow">
+					<frame>0 0 284 292</frame>
+				</sprite>
+			</shadow>
+ 			<sprite ulayer="1" layer="10" origin="0 0" texture="./exit_special.png" material="system/default.mats:wall">
+				<frame>272 0 224 304</frame>
+			</sprite>		
+			<sprite layer="-3" origin="-128 -108" texture="./exit_special.png" material="system/default.mats:wall">
+				<frame>272 304 64 40</frame>
+			</sprite>		
+			<sprite layer="-3" origin="-16 0" texture="./exit_special.png" material="system/default.mats:wall">
+				<frame>0 309 272 53</frame>
+			</sprite>	
+			<sprite layer="-3" origin="-80 -191" texture="./exit_special.png" material="system/default.mats:wall">
+				<frame>336 304 48 43</frame>
+			</sprite>	
+			<sprite layer="10" origin="-288 0" texture="./exit_special.png" material="system/default.mats:wall">
+				<frame>496 0 16 304</frame>
+			</sprite>
+			<sprite layer="-10" origin="-16 -43" texture="./exit_special.png" material="system/default.mats:floor">
+				<frame>0 0 272 309</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>
+
+<!-- %include "doodads/walls/exit_up.inc" -->

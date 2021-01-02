@@ -1,0 +1,35 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">10</float>	
+		<int name="ttl">500</int>
+		
+		<bool name="blockable">false</bool>
+
+		<string name="shoot-snd">event:/item/blowgun</string>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">5</int>
+			</dict>
+			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:poison</string>
+			</dict>
+		</array>
+
+		<dict name="effect-params">
+			<float name="height">2</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="doodads/generic/trap_shooter_arrow_projectile_poison.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>		
+		</scene>
+	</scenes>
+</unit>

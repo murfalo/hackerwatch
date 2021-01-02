@@ -1,0 +1,199 @@
+<unit netsync="none" save="false">
+	<behavior class="MiniPetWalking">
+		<string name="anim-idle">idle 8</string>
+		<string name="anim-walk">walk 8</string>
+	
+		<float name="speed">5.5</float>
+		<float name="idle-speed">4</float>
+		
+		<int name="range-idle">50</int>
+		<int name="range-min-idle">20</int>
+		<int name="range-pickup">160</int>
+
+		<int name="pickup-duration">5000</int>
+		<int name="idle-duration">2000</int>
+
+		<int name="idle-delay">100</int>
+		<int name="pickup-delay">30</int>
+
+		<int name="leash-range">180</int>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<light pos="-1 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="200" />
+				<overbright value="10" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="80 60 0 0" />
+				</colors>
+			</light>			
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="15" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="80 60 0 0" />
+				</colors>
+			</light>
+		</scene>
+	
+		<scene name="idle-0">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>0 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>24 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>48 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>72 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>96 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>120 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>144 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame>168 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">0 0 24 24</frame>
+				<frame time="50">0 24 24 24</frame>
+				<frame time="50">0 0 24 24</frame>
+				<frame time="50">0 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">24 0 24 24</frame>
+				<frame time="50">24 24 24 24</frame>
+				<frame time="50">24 0 24 24</frame>
+				<frame time="50">24 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">48 0 24 24</frame>
+				<frame time="50">48 24 24 24</frame>
+				<frame time="50">48 0 24 24</frame>
+				<frame time="50">48 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">72 0 24 24</frame>
+				<frame time="50">72 24 24 24</frame>
+				<frame time="50">72 0 24 24</frame>
+				<frame time="50">72 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">96 0 24 24</frame>
+				<frame time="50">96 24 24 24</frame>
+				<frame time="50">96 0 24 24</frame>
+				<frame time="50">96 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">120 0 24 24</frame>
+				<frame time="50">120 24 24 24</frame>
+				<frame time="50">120 0 24 24</frame>
+				<frame time="50">120 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">144 0 24 24</frame>
+				<frame time="50">144 24 24 24</frame>
+				<frame time="50">144 0 24 24</frame>
+				<frame time="50">144 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared"/>
+			<sprite origin="12 12" looping="true" texture="players/pets/scarab_glowing.png" material="system/default.mats:default-noxray">
+				<frame time="50">168 0 24 24</frame>
+				<frame time="50">168 24 24 24</frame>
+				<frame time="50">168 0 24 24</frame>
+				<frame time="50">168 48 24 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

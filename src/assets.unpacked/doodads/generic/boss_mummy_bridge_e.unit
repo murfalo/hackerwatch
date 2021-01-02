@@ -1,0 +1,84 @@
+<unit slot="doodad" layer="-5">
+	<scenes up="up" down="down" initial-up="initial-up" initial-down="initial-down">
+		<scene name="up">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="236 194 20 8" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-32 -56 64 8</rect>
+				<rect shoot-through="true" aim-through="true">-32 -16 64 8</rect>
+			</collision>
+			<sprite origin="32 51" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="150">144 384 64 3</frame>
+				<frame time="350">144 387 64 3</frame>
+				<frame time="350">144 390 64 3</frame>
+				<frame time="250">144 393 64 3</frame>
+			</sprite>
+			<sprite origin="32 48" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="50">0 128 64 64</frame>
+				<frame time="50">64 128 64 64</frame>
+				<frame time="50">128 128 64 64</frame>
+				<frame time="250">192 128 64 64</frame>
+				<frame time="50">256 128 64 64</frame>
+				<frame time="50">320 128 64 64</frame>
+				<frame time="250">384 128 64 64</frame>
+				<frame time="50">448 128 64 64</frame>
+				<frame time="50">0 192 64 64</frame>
+				<frame time="250">64 192 64 64</frame>
+				<frame time="50">128 192 64 64</frame>
+				<frame time="50">192 192 64 64</frame>
+				<frame time="50">256 192 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="initial-up">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="236 194 20 8" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-32 -56 64 8</rect>
+				<rect shoot-through="true" aim-through="true">-32 -16 64 8</rect>
+			</collision>
+			<sprite origin="32 51" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="250">144 393 64 3</frame>
+			</sprite>
+			<sprite origin="32 48" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="50">256 192 64 64</frame>
+			</sprite>
+		</scene>		
+		<scene name="down">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="236 186 20 8" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-32 -56 64 48</rect>
+			</collision>
+			<sprite origin="32 51" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="100">144 393 64 3</frame>
+				<frame time="150">144 390 64 3</frame>
+				<frame time="150">144 387 64 3</frame>
+				<frame time="150">144 384 64 3</frame>
+			</sprite>
+			<sprite origin="32 48" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="50">256 192 64 64</frame>
+				<frame time="50">192 192 64 64</frame>
+				<frame time="50">128 192 64 64</frame>
+				<frame time="50">64 192 64 64</frame>
+				<frame time="50">0 192 64 64</frame>
+				<frame time="50">448 128 64 64</frame>
+				<frame time="50">384 128 64 64</frame>
+				<frame time="50">320 128 64 64</frame>
+				<frame time="50">256 128 64 64</frame>
+				<frame time="50">192 128 64 64</frame>
+				<frame time="50">128 128 64 64</frame>
+				<frame time="50">64 128 64 64</frame>
+				<frame time="50">0 128 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="initial-down">
+			<minimap_sprite origin="10 12" texture="gui/minimap.png" frame="236 186 20 8" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-32 -56 64 48</rect>
+			</collision>
+			<sprite origin="32 51" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="150">144 384 64 3</frame>
+			</sprite>
+			<sprite origin="32 48" looping="false" texture="./boss_mummy_bridge.png" material="system/default.mats:floor">
+				<frame time="50">0 128 64 64</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

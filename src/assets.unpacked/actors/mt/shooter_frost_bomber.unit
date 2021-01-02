@@ -1,0 +1,77 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="type">construct</string>
+		<int name="hp">500</int>
+		<int name="armor">40</int>
+		<int name="resistance">40</int>
+		<int name="experience-reward">150</int>
+		
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+
+		<bool name="counts-as-kill">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="targetable">false</bool>
+		<bool name="must-see-target">true</bool>
+		<int name="aggro-range">150</int>
+		<bool name="impenetrable">true</bool>
+		<bool name="no-buffs">true</bool>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack</string>
+
+				<int name="cooldown-start">250</int>
+				<int name="cooldown">2000</int>
+				<int name="castpoint">0</int>
+				<int name="range">150</int>
+				<bool name="must-see">true</bool>
+				<bool name="good-aim">true</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="spread">20</int>
+						<string name="projectile">actors/mt/projectiles/tower_frost_bomb.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>		
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="128 0 5 5"/>
+			<sprite layer="-30" origin="16 16" looping="true" texture="doodads/generic/markers.png" material="system/default.mats:floor">
+				<frame time="100">64 64 32 32</frame>
+			</sprite>	
+		</scene>
+		<scene name="idle">
+			<scene src="shared" />
+			<sprite layer="-5" origin="8 9" looping="false" texture="./shooter_frost_bomber.png" material="system/default.mats:floor">
+				<frame>0 0 16 17</frame>
+			</sprite>
+		</scene>
+		<scene name="attack">
+			<scene src="shared" />
+			<sprite layer="0" origin="4 10" looping="false" texture="./shooter_frost_bomber.png" material="system/default.mats:floor">
+				<frame time="100">16 0 8 11</frame>
+				<frame time="100">24 0 8 11</frame>
+				<frame time="100">16 11 8 11</frame>
+				<frame time="100">24 11 8 11</frame>
+				<frame time="100">16 22 8 11</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite layer="-5" origin="8 9" looping="false" texture="./shooter_frost_bomber.png" material="system/default.mats:floor">
+				<frame>0 0 16 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

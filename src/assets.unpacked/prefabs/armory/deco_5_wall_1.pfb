@@ -1,0 +1,312 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/armory/_deco_wall_flag.unit">
+			<vec2>-16 0</vec2>
+			<int>7</int>
+			<vec2>0 0</vec2>
+			<int>6</int>
+			<vec2>32 0</vec2>
+			<int>8</int>
+			<vec2>-32 0</vec2>
+			<int>9</int>
+			<vec2>16 0</vec2>
+			<int>10</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_wall_shield.unit">
+			<vec2>21 4</vec2>
+			<int>13</int>
+			<vec2>-11 -8</vec2>
+			<int>11</int>
+			<vec2>16 0</vec2>
+			<int>12</int>
+			<vec2>21 -8</vec2>
+			<int>14</int>
+			<vec2>11 4</vec2>
+			<int>15</int>
+			<vec2>11 -8</vec2>
+			<int>16</int>
+			<vec2>-21 4</vec2>
+			<int>17</int>
+			<vec2>-21 -8</vec2>
+			<int>18</int>
+			<vec2>-16 0</vec2>
+			<int>19</int>
+			<vec2>-11 4</vec2>
+			<int>20</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_wall_support.unit"><vec2>0 0</vec2><int>21</int><vec2>32 0</vec2><int>22</int><vec2>-32 0</vec2><int>23</int></array>
+		<array name="doodads/walls/armory/_deco_wall_stone_s.unit"><vec2>32 0</vec2><int>2</int><vec2>0 0</vec2><int>3</int><vec2>-32 0</vec2><int>1</int></array>
+		<array name="doodads/walls/armory/_deco_wall_weapon.unit"><vec2>16 0</vec2><int>4</int><vec2>-16 0</vec2><int>5</int></array>
+		<array name="doodads/generic/lamp_torch.unit"><vec2>16 0</vec2><int>24</int><vec2>-16 0</vec2><int>25</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyUnits</string>
+			<int>26</int>
+			<vec3>192 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>10</int><int>24</int><int>4</int><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>27</int>
+			<vec3>-160 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>28</int><int>29</int><int>30</int><int>31</int><int>42</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>28</int>
+			<vec3>-64 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>7</int><int>5</int><int>25</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>29</int>
+			<vec3>-112 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>20</int><int>17</int><int>11</int><int>18</int><int>5</int><int>25</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>30</int>
+			<vec3>-160 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>20</int><int>17</int><int>11</int><int>18</int><int>7</int><int>25</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>31</int>
+			<vec3>-208 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>20</int><int>17</int><int>11</int><int>18</int><int>7</int><int>5</int><int>19</int><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>32</int>
+			<vec3>96 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>26</int><int>33</int><int>41</int><int>40</int><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>33</int>
+			<vec3>144 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>10</int><int>24</int><int>4</int><int>15</int><int>13</int><int>14</int><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>34</int>
+			<vec3>202 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>22</int><int>8</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>35</int>
+			<vec3>154 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>22</int><int>2</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>36</int>
+			<vec3>48 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>21</int><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>37</int>
+			<vec3>138 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>35</int><int>38</int><int>34</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>38</int>
+			<vec3>112 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>39</int>
+			<vec3>0 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>24</int><int>4</int><int>12</int><int>15</int><int>13</int><int>14</int><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>40</int>
+			<vec3>48 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>10</int><int>4</int><int>12</int><int>15</int><int>13</int><int>14</int><int>16</int><int>25</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>41</int>
+			<vec3>96 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>24</int><int>10</int><int>12</int><int>15</int><int>13</int><int>14</int><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>42</int>
+			<vec3>-256 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>25</int><int>5</int><int>7</int><int>17</int><int>20</int><int>11</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>43</int>
+			<vec3>-192 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>44</int><int>45</int><int>49</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>44</int>
+			<vec3>-176 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>23</int><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>45</int>
+			<vec3>-224 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>9</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>46</int>
+			<vec3>-48 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>47</int>
+			<vec3>-16 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>48</int><int>46</int><int>36</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>48</int>
+			<vec3>0 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>21</int><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>49</int>
+			<vec3>-128 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>9</int><int>23</int><int>1</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

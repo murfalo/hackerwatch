@@ -1,0 +1,56 @@
+<unit slot="doodad" netsync="none">
+	<behavior class="DyeBucket">
+	</behavior>
+
+	<scenes common="c1 c2" uncommon="u1 u2" rare="r1 r2">
+		<scene name="shared">
+			<minimap_sprite layer="150" layer="20" origin="6 6" texture="gui/minimap.png" frame="163 9 12 12" />			
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="0 0" radius="12" />
+				<circle sensor="false" shoot-through="true" aim-through="true" offset="0 0" radius="6" />
+			</collision>	
+			<sprite origin="12 14" ulayer="0" texture="./dye_bucket.tif" material="system/default.mats:shadow">
+				<frame>24 24 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="c1">			
+			<scene src="shared" />
+			<sprite origin="12 14" ulayer="1" texture="./dye_bucket.tif" material="system/default.mats:proj-prop">
+				<frame>0 0 24 24</frame>
+			</sprite>
+		</scene>
+		<scene name="c2">			
+			<scene src="shared" />
+			<sprite origin="12 14" ulayer="1" texture="./dye_bucket.tif" material="system/default.mats:proj-prop">
+				<frame>24 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="u1">
+			<scene src="shared" />
+			<sprite origin="12 14" ulayer="1" texture="./dye_bucket.tif" material="system/default.mats:proj-prop">
+				<frame>48 0 24 24</frame>
+			</sprite>
+		</scene>
+		<scene name="u2">
+			<scene src="shared" />
+			<sprite origin="12 14" ulayer="1" texture="./dye_bucket.tif" material="system/default.mats:proj-prop">
+				<frame>72 0 24 24</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="r1">
+			<scene src="shared" />
+			<sprite origin="12 14" ulayer="1" texture="./dye_bucket.tif" material="system/default.mats:proj-prop">
+				<frame>96 0 24 24</frame>
+			</sprite>
+		</scene>
+		<scene name="r2">
+			<scene src="shared" />
+			<sprite origin="12 14" ulayer="1" texture="./dye_bucket.tif" material="system/default.mats:proj-prop">
+				<frame>0 24 24 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

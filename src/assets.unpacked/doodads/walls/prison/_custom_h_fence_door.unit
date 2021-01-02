@@ -1,0 +1,23 @@
+<unit slot="doodad">
+	<scenes close="close" open="open">
+		<scene name="close">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 12 8 4" />
+			<collision static="true">
+				<rect shoot-through="false" aim-through="true">0 2 32 12</rect>
+			</collision>
+			<sprite origin="0 28" texture="./base.png" material="system/default.mats:proj-wall">
+				<frame>96 87 32 39</frame>
+			</sprite>
+		</scene>	
+		<scene name="open">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 8 8 4" />
+			<collision static="true">
+				<rect>0 2 7 12</rect>
+				<rect>25 2 7 12</rect>
+			</collision>
+			<sprite origin="0 28" texture="./base.png" material="system/default.mats:proj-wall">
+				<frame>96 126 32 39</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

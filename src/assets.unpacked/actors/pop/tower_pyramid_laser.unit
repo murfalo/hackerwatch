@@ -1,0 +1,531 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.tower_pyramid_laser</string>
+		<string name="beastiary-scene">idle-0</string>
+		<vec2 name="beastiary-offset">0 15</vec2>
+		<string name="quality">uncommon</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">construct</string>
+		<int name="hp">2000</int>
+		<int name="armor">75</int>
+		<int name="resistance">75</int>
+		<int name="experience-reward">400</int>
+		<float name="mp-scale-fact">0.75</float>
+		
+		<string name="gore">effects/gibs/gib_tower_laser.sval</string>
+		<string name="death-snd">event:/enemy/tower/death</string>
+		<string name="loot">actors/loot.sval:tower_pyramid_laser</string>
+
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">true</bool>
+		<bool name="hold-angle-on-cast">true</bool>
+		<int name="aggro-range">250</int>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_static.inc"
+		</array>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle 16</string>
+		</dict>
+
+		<array name="skills">
+			%// Normal beam
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 16</string>
+				<string name="start-snd">event:/enemy/tower_sun/shoot</string>
+				<string name="offset">shoot-pos</string>
+
+				<int name="cooldown-start">100</int>
+				<int name="cooldown">1200</int>
+				<int name="castpoint">400</int>
+				<int name="min-range">0</int>
+				<int name="range">250</int>
+				<bool name="good-aim">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/projectiles/tower_laser.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ beam
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 16</string>
+				<string name="start-snd">event:/enemy/tower_sun/shoot</string>
+				<string name="offset">shoot-pos</string>
+
+				<int name="cooldown-start">100</int>
+				<int name="cooldown">300</int>
+				<int name="castpoint">400</int>
+				<int name="min-range">0</int>
+				<int name="range">250</int>
+				<bool name="good-aim">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/projectiles/tower_laser.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">overload</string>
+				<string name="start-snd">event:/enemy/tower_sun/overload</string>
+				<int name="cooldown">8400</int>
+				<int name="castpoint">750</int>
+				<int name="min-range">0</int>
+				<int name="range">250</int>
+				<bool name="good-aim">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<int name="projectiles">17</int>
+						<int name="spread">360</int>
+						<string name="projectile">actors/pop/projectiles/tower_laser_long.unit</string>
+					</dict>
+				</array>
+			</dict>			
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="123 0 5 5"/>
+			<sprite origin="11 6" layer="-1" looping="false" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>100 44 22 17</frame>
+			</sprite>				
+			<collision static="true">
+				<circle radius="11" />
+			</collision>
+			<shadow>
+				<sprite origin="-5 12" looping="true" ulayer="20" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+					<frame>122 44 8 11</frame>
+				</sprite>
+			</shadow>		
+		</scene>
+		
+		<scene name="shared_pyramid">
+			<sprite origin="6 24" looping="true" ulayer="1" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>154 0 12 24</frame>
+			</sprite>
+		</scene>	
+		
+		<scene name="shared_attack">
+			<light pos="0 -17">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1350" />
+				<overbright value="2" />
+				<looping value="false"/>
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="200 125 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -17">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1350" />
+				<overbright value="2" />
+				<looping value="false"/>
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="200 125 0 0" />
+				</colors>
+			</light>
+			<sprite origin="4 24" looping="false" ulayer="2" texture="./tower_pyramid_laser.png" material="system/default.mats:glow-both-bright">
+				<frame time="50">0 44 8 16</frame>
+				<frame time="50">8 44 8 16</frame>
+				<frame time="50">16 44 8 16</frame>
+				<frame time="50">24 44 8 16</frame>
+				<frame time="1000">32 44 8 16</frame>
+				<frame>24 44 8 16</frame>
+				<frame>16 44 8 16</frame>
+				<frame>8 44 8 16</frame>
+				<frame>0 44 8 16</frame>
+				<frame>0 0 0 0</frame>
+			</sprite>
+		</scene>					
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>0 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-1">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>22 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-2">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>44 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-3">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>66 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-4">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-5">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>110 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-6">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>132 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-7">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>0 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-8">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>22 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-9">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>44 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-10">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>66 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-11">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-12">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-13">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-14">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>110 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="idle-15">
+ 			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>132 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="9 1" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>0 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-1">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="7 5" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>22 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-2">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="5 7"/>
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>44 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-3">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="3 6"/>
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>66 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-4">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-1 8" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-5">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-4 6"/>
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>110 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-6">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-5 4"/>
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>132 0 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-7">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-7 3" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>0 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-8">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-8 -1" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>22 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-9">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-7 -3" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>44 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-10">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-4 -5" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>66 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-11">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="-2 -7" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-12">
+ 			<scene src="shared_pyramid" />
+ 			<scene src="shared" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="1 -7" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-13">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="5 -6" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>88 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-14">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="6 -4" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>110 22 22 22</frame>
+			</sprite>
+		</scene>
+		
+ 		<scene name="attack-15">
+ 			<scene src="shared" />
+ 			<scene src="shared_pyramid" />
+			<scene src="shared_attack" />
+			<locator name="shoot-pos" pos="8 -3" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame>132 22 22 22</frame>
+			</sprite>
+		</scene>
+				
+ 		<scene name="overload">
+ 			<scene src="shared" />
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="5750" />
+				<overbright value="4" />
+				<looping value="false"/>
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="200 150 0 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="5750" />
+				<overbright value="4" />
+				<looping value="false"/>
+				<sizes>
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="200 125 0 0" />
+				</colors>
+			</light>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="5750" />
+				<overbright value="2" />
+				<looping value="false"/>
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="200 100 0 0" />
+				</colors>
+			</light>
+			<sprite origin="6 24" ulayer="1" looping="false" texture="./tower_pyramid_laser.png" material="system/default.mats:actor">
+				<frame time="25">166 0 12 29</frame>
+				<frame time="25">178 0 12 29</frame>
+				<frame time="5700">190 0 12 29</frame>
+				<frame time="750">190 0 12 29</frame>
+				<frame time="25">178 0 12 29</frame>
+				<frame time="25">166 0 12 29</frame>
+			</sprite>
+			<sprite origin="6 7" ulayer="2" looping="false" texture="./tower_pyramid_laser.png" material="system/default.mats:glow-both-bright">
+				<frame time="250">0 0 0 0</frame>
+				<frame time="50">40 44 12 11</frame>
+				<frame time="50">52 44 12 11</frame>
+				<frame time="50">64 44 12 11</frame>
+				<frame time="50">76 44 12 11</frame>
+				<frame time="5350">88 44 12 11</frame>
+				<frame time="50">76 44 12 11</frame>
+				<frame time="50">64 44 12 11</frame>
+				<frame time="50">52 44 12 11</frame>
+				<frame time="50">40 44 12 11</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

@@ -1,0 +1,27 @@
+<unit slot="doodad" layer="-2">
+	<scenes off="off" 1="1" 2="2">
+		<scene name="off">
+			%if EDITOR
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="1">
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+			<effect pos="136 77"  src="./segment_3_start.effect"/>
+		</scene>
+		<scene name="2">
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif
+			<effect pos="136 77" src="./segment_3_active.effect"/>
+		</scene>				
+	</scenes>
+</unit>

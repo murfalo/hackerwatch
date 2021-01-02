@@ -1,0 +1,128 @@
+<effect looping="false">
+	<param name="radius" default="0" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_player_bomb_holy.sval</string>
+	</data>	
+	
+	<sprite origin="20 28" looping="false" texture="./explosion_bomb_holy.png" material="system/default.mats:bright-noxray"
+	angle="rand(u)*2">
+		<frame time="50">0 0 43 53</frame>
+		<frame time="50">43 0 43 53</frame>
+		<frame time="50">86 0 43 53</frame>
+		<frame time="50">129 0 43 53</frame>
+		<frame time="50">172 0 43 53</frame>
+		<frame time="50">0 53 43 53</frame>
+		<frame time="50">43 53 43 53</frame>
+		<frame time="50">86 53 43 53</frame>
+		<frame time="50">129 53 43 53</frame>
+		<frame time="50">172 53 43 53</frame>
+	</sprite>
+	<!-- holy particles -->
+	<sprite origin="3 3" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="12"
+
+		pos-x="(cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)) - (cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5))*t"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -35 * it"
+		
+        color-r="1 - mod(it+l+rand(u*i), 1)"
+        color-g="1 - mod(it+l+rand(u*i), 1)"
+        color-b="0.5 - mod(it+l+rand(u*i), 0.5)"
+        color-a="saturate(0.5 - mod(it+l+rand(u*i), 0.5) -t/2)"
+	>
+        <frame time="200">0 0 1 1</frame>
+	</sprite>	
+	
+	%//Particles
+	
+	<sprite origin="3 3" looping="false" texture="./explosion_bomb_holy.png" material="system/default.mats:default-noxray"
+		num-sprites="6"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="100">12 112 6 6</frame>
+		<frame time="200">18 112 6 6</frame>
+		<frame time="200">24 112 6 6</frame>
+		<frame time="200">30 112 6 6</frame>
+		<frame time="100">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+	<sprite origin="3 3" looping="false" texture="./explosion_bomb_holy.png" material="system/default.mats:default-noxray"
+		num-sprites="6"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">0 112 6 6</frame>
+		<frame time="100">6 112 6 6</frame>
+		<frame time="200">12 112 6 6</frame>
+		<frame time="100">18 112 6 6</frame>
+		<frame time="100">24 112 6 6</frame>
+		<frame time="100">30 112 6 6</frame>
+		<frame time="200">36 112 6 6</frame>
+		<frame time="100">42 112 6 6</frame>
+	</sprite>
+	
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 40 * t" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0.75" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * 40 * 3) + 10" />
+		
+		<color-r value="1 - t" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

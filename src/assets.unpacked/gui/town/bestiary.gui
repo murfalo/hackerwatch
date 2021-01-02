@@ -1,0 +1,131 @@
+<gui>
+	<sprites>
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+		<sprite name="icon-health" texture="gui/icons.png"><frame>51 12 12 13</frame></sprite>
+		<sprite name="icon-armor" texture="gui/icons.png"><frame>61 42 12 13</frame></sprite>
+		<sprite name="icon-resistance" texture="gui/icons.png"><frame>62 29 13 13</frame></sprite>
+
+		<sprite name="skill-points" texture="gui/icons.png"><frame>13 24 13 14</frame></sprite>
+		<sprite name="skill-points-worth" texture="gui/icons.png"><frame>49 87 15 14</frame></sprite>
+
+		<sprite name="icon-kills" texture="gui/icons.png"><frame>90 91 11 11</frame></sprite>
+		<sprite name="icon-attune" texture="gui/icons.png"><frame>51 102 15 10</frame></sprite>
+		<sprite name="icon-attune-disabled" texture="gui/icons.png"><frame>83 102 15 10</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/dlc_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect anchor="0.5 0.5" width="384" height="219" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="380" height="18" offset="2 2" flow="hbox">
+					<!-- Title -->
+					<rect width="359" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text text=".town.bestiary.title" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton spriteset="close" func="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="380" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect width="380" height="173" offset="2 23" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- List -->
+					<scrollrect id="list" flow="vbox" width="366" height="173" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+					<!-- Separator template -->
+					<rect id="template-separator" visible="false" width="366" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Header template -->
+					<rect id="template-header" visible="false" width="366" height="18" spriteset="gui/variable/headline_hor.sval">
+						<rect width="219" height="18" offset="22 0">
+							<text id="type" font="gui/fonts/arial11_bold.fnt" text="xx" anchor="0.5 0.5" />
+						</rect>
+						<rect width="70" height="18" offset="219 0">
+							<sprite src="icon-kills" offset="0 1" anchor="0.5 0.5" />
+						</rect>
+						<rect width="38" height="18" offset="295 0">
+							<sprite src="icon-attune" anchor="0.5 0.5" />
+						</rect>
+					</rect>
+
+					<!-- Template -->
+					<rect id="template" visible="false" width="366" height="22" flow="hbox">
+						<!-- Unit -->
+						<rect width="22" height="22" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+							<clip width="18" height="18" offset="2 2">
+								<unit id="unit" width="18" height="18" anchor="0.5 0.5" />
+							</clip>
+						</rect>
+
+						<!-- Name -->
+						<rect id="name-container" width="197" height="22" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4" flow="hbox" spacing="3">
+							<text id="name" font="gui/fonts/arial11.fnt" offset="7 0" anchor="0 0.5" />
+							<sprite id="dlc" visible="false" anchor="0 0.5" offset="0 1" />
+						</rect>
+
+						<!-- Count -->
+						<rect width="70" height="22" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+							<text id="kills" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Separators -->
+						<rect width="3" height="22" spriteset="gui/variable/3pxbar_vert.sval" />
+						<rect width="3" height="22" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Attune amount -->
+						<rect width="38" height="22" spriteset="gui/variable/headline_borders.sval">
+							<text id="attune-level" visible="false" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Attune -->
+						<rect width="33" height="22" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+							<scalebutton id="button-attune" spriteset="scalebutton" width="29" offset="2 2">
+								<sprite src="icon-attune" anchor="0.5 0.5" />
+							</scalebutton>
+						</rect>
+					</rect>
+
+					<!-- Separators -->
+					<rect width="3" height="173" offset="366 0" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect width="3" height="173" offset="377 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Scrollbar -->
+					<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="380" height="3" offset="2 196" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Button bar -->
+				<rect width="380" height="18" offset="2 199" flow="hbox">
+					<rect width="40" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Skillpoints worth -->
+					<rect width="60" height="18" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" tooltip=".town.bestiary.spent">
+						<sprite src="skill-points-worth" offset="6 2" />
+						<text id="skillpoints-worth" font="gui/fonts/arial11.fnt" offset="28 1" />
+					</rect>
+
+					<rect width="40" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Respec button -->
+					<scalebutton id="respec" spriteset="scalebutton" width="100" func="retrain" font="gui/fonts/arial11.fnt" text=".town.bestiary.respec" />
+
+					<rect width="140" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

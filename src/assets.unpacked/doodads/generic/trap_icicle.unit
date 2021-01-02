@@ -1,0 +1,43 @@
+<unit>
+	<behavior class="BombBehavior">
+		<int name="delay">900</int>
+		<int name="delay-random">0</int>
+
+		<string name="gore">effects/gibs/gib_ice_rain.sval</string>
+		<string name="explode-sound">event:/player/sorcerer/shatter</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">4</float>
+				<string name="fx">actors/bosses/dragon/ice_rain_explosion.effect</string>
+				<int name="radius">24</int>
+				<float name="team-dmg">1</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">90</int>
+						<float name="armor-mul">0.75</float>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">24</float>
+		</dict>		
+	</behavior>
+
+	<scenes>
+		<scene>
+			<shadow>
+				<sprite layer="-2" origin="6 6" texture="doodads/special/shadows.png">
+					<frame>18 0 12 12</frame>
+				</sprite>
+			</shadow>
+			<effect src="./trap_icicle.effect" />
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

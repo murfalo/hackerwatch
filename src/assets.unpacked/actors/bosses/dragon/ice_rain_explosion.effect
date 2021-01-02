@@ -1,0 +1,32 @@
+<effect layer="1" bounds="512 512">
+	
+	%// FLASH
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="4*(15*t)" />
+		
+		<color-r value="1" />
+		<color-g value="3" />
+		<color-b value="4" />
+		<color-a value="0/255" />
+	</light>
+	
+	
+	
+</effect>

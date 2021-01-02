@@ -1,0 +1,47 @@
+<unit slot="doodad">
+	<scenes off="grindstone" on="on">
+	
+		<scene name="shared">	
+			<collision static="true">
+				<rect>-7 -5 13 8</rect>
+			</collision>
+		</scene>
+		<scene name="grindstone">		
+			<scene src="shared" />
+			<sprite origin="7 9" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">191 27 13 12</frame>
+			</sprite>
+			<sprite origin="-6 9" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">204 27 7 12</frame>
+			</sprite>
+		</scene>
+		<scene name="on" random-start="true">		
+			<scene src="shared" />
+			<sprite origin="2 8" ulayer="3" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">0 0 0 0</frame>
+				<frame time="100">196 23 6 4</frame>
+				<frame time="100">190 23 6 4</frame>
+			</sprite>
+			<sprite origin="8 10" ulayer="5" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="120">0 0 0 0</frame>
+				<frame time="40">227 17 6 3</frame>
+				<frame time="40">221 17 6 3</frame>
+				<frame time="40">215 17 6 3</frame>
+				<frame time="40">209 17 6 3</frame>
+				<frame time="40">203 17 6 3</frame>
+			</sprite>
+			<sprite origin="7 8" ulayer="5" texture="./outlook_props.png" material="system/default.mats:bright-noxray">
+				<frame time="120">0 0 0 0</frame>
+				<frame time="35">215 17 6 3</frame>
+				<frame time="35">209 17 6 3</frame>
+				<frame time="35">203 17 6 3</frame>
+			</sprite>
+			<sprite origin="7 9" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">191 27 13 12</frame>
+			</sprite>
+			<sprite origin="-6 9" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">204 27 7 12</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

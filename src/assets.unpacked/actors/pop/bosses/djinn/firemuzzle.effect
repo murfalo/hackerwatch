@@ -1,0 +1,98 @@
+<effect looping="false" wpos-track="15">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<param name="speed" default="0" />
+	
+	
+	<variation>
+		<sprite looping="false" origin="23 62" texture="./firemuzzle.png" material="system/default.mats:glow-both-bright"
+
+			pos-x="0"
+			pos-y="0"
+		
+			angle="angle + pi/2">
+			
+			<frame time="33">0 0 46 50</frame>
+			<frame time="33">46 0 46 50</frame>
+			<frame time="33">92 0 46 50</frame>
+			<frame time="33">138 0 46 50</frame>
+			<frame time="33">184 0 46 50</frame>
+			<frame time="33">230 0 46 50</frame>
+			<frame time="33">276 0 46 50</frame>
+			<frame time="33">322 0 46 50</frame>
+			<frame time="33">368 0 46 50</frame>
+			<frame time="33">414 0 46 50</frame>
+			<frame time="33">460 0 46 50</frame>
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite looping="false" origin="23 62" texture="./firemuzzle.png" material="system/default.mats:glow-both-bright"
+
+			pos-x="0"
+			pos-y="0"
+		
+			angle="angle + pi/2">
+			
+			<frame time="33">0 50 46 50</frame>
+			<frame time="33">46 50 46 50</frame>
+			<frame time="33">92 50 46 50</frame>
+			<frame time="33">138 50 46 50</frame>
+			<frame time="33">184 50 46 50</frame>
+			<frame time="33">230 50 46 50</frame>
+			<frame time="33">276 50 46 50</frame>
+			<frame time="33">322 50 46 50</frame>
+			<frame time="33">368 50 46 50</frame>
+			<frame time="33">414 50 46 50</frame>
+			<frame time="33">460 50 46 50</frame>
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite looping="false" origin="23 62" texture="./firemuzzle.png" material="system/default.mats:glow-both-bright"
+
+			pos-x="0"
+			pos-y="0"
+		
+			angle="angle + pi/2">
+			
+			<frame time="33">0 100 46 50</frame>
+			<frame time="33">46 100 46 50</frame>
+			<frame time="33">92 100 46 50</frame>
+			<frame time="33">138 100 46 50</frame>
+			<frame time="33">184 100 46 50</frame>
+			<frame time="33">230 100 46 50</frame>
+			<frame time="33">276 100 46 50</frame>
+			<frame time="33">322 100 46 50</frame>
+			<frame time="33">368 100 46 50</frame>
+			<frame time="33">414 100 46 50</frame>
+			<frame time="33">460 100 46 50</frame>
+		</sprite>
+	</variation>
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="64*(1-t)" />
+			
+		<color-r value="2-t" />
+		<color-g value="2-t*2" />
+		<color-b value="2-t*2" />
+		<color-a value="0"/>
+		
+	</light>
+</effect>

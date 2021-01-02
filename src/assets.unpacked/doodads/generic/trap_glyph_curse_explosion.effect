@@ -1,0 +1,94 @@
+<effect looping="false" bounds="512 512">
+
+	<data>
+		<string name="gore">effects/gibs/doodads/gib_curse.sval</string>
+	</data>	
+ %// Shockwave
+
+    <sprite origin="32 32" texture="./trap_glyph_curse.png" material="system/default.mats:glow-both-bright"
+		
+		angle="-pi * (t+l) * 0.1 / 20"
+		
+		scale-x="1+t/4"
+		scale-y="1+t/4"
+
+		color-a="max(1-t*t,0)"
+	>
+		<frame time="200">0 0 64 64</frame>
+	</sprite>
+	
+	<sprite origin="32 32" texture="./trap_glyph_curse.png" material="system/default.mats:glow-both-bright"
+		
+		pos-y="((10 * -t)*t*t*t*t)*2"
+		
+		color-a="max(1-t*t,0)"
+	>
+		<frame time="200">192 64 64 64</frame>
+	</sprite>	
+	<sprite origin="32 32" texture="./trap_glyph_curse.png" material="system/default.mats:glow-both-bright">
+		<frame time="50">0 64 64 64</frame>
+		<frame time="50">0 0 0 0</frame>
+	</sprite>	
+
+
+
+
+	%// FLASH
+	<light pos="0 15"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="12*(15*t)" />
+		
+		<color-r value="7" />
+		<color-g value="7" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="560">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 800) * 400" />
+		
+		<size value="max(0,t*150)+10" />
+		
+		<color-r value="max(0,(1-t*1.2)" />
+		<color-g value="max(0,(1-t*1.2)" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+	
+
+	
+	
+</effect>

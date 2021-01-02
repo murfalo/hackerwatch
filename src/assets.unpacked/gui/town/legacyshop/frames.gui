@@ -1,0 +1,40 @@
+<gui>
+	<sprites>
+		<sprite name="icon-legacy" texture="gui/icons.png"><frame>233 24 12 13</frame></sprite>
+		<sprite name="icon-check" texture="gui/icons.png"><frame>8 100 8 8</frame></sprite>
+
+		<sprite name="button-frames" texture="gui/shop.png"><frame>0 340 108 72</frame></sprite>
+		<sprite name="button-frame" texture="gui/shop.png"><frame>0 340 36 36</frame></sprite>
+
+		<sprite name="checkbutton" texture="gui/widget.png"><frame>461 96 36 36</frame></sprite>
+		<sprite name="checkbutton-hover" texture="gui/widget.png"><frame>461 132 36 36</frame></sprite>
+		<sprite name="checkbutton-checked" texture="gui/widget.png"><frame>461 168 36 36</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- List -->
+			<scrollrect id="list" flow="hboxwrapped" width="288" height="203" scroll-backdrop-sprite="button-frames" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="list" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Template -->
+			<checkbox id="template" visible="false" spriteset="checkbutton" func="check-frame">
+				<!-- Portrait -->
+				<portrait id="portrait" offset="4 4" />
+			</checkbox>
+
+			<!-- Owned template -->
+			<sprite id="template-owned" visible="false" src="button-frame">
+				<!-- Portrait -->
+				<portrait id="portrait" offset="4 4" />
+
+				<!-- Checkmark -->
+				<sprite src="icon-check" anchor="1 1" offset="-5 -5" />
+			</sprite>
+		</group>
+	</doc>
+</gui>

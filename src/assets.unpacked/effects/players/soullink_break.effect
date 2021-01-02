@@ -1,0 +1,69 @@
+<effect looping="false" layer="5">
+	<param name="radius" default="8" />
+	<param name="posy" default="8" />
+	
+	<sprite origin="12 7" looping="false" layer="1" texture="./soullink_break.png" material="system/default.mats:glow-both-bright"
+		pos-y="5"
+		color-a="saturate(1-pow(t,4))"
+		>
+		<frame time="500">0 0 23 13</frame>
+		<frame time="50">0 13 23 13</frame>
+		<frame time="50">0 26 23 13</frame>
+		<frame time="500">0 39 23 13</frame>
+	</sprite>
+	
+	
+	
+	<sprite origin="0 0" looping="false" layer="1" texture="./soullink_break.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+		pos-x="(rand(u+i+23) * 20 - 10) * t"
+        pos-y="rand(u+i+101) * 6  - 30*pow(t,2) + 20"
+		color-a="saturate(sin(pow(t,8)*pi))"
+		>
+		<frame time="650">0 0 0 0</frame>
+		<frame time="120">12 18 1 1</frame>
+		<frame time="50">11 11 1 1</frame>
+		<frame time="25">12 11 1 1</frame>
+	</sprite>
+	
+	<sprite origin="16 16" texture="effects/impact_hit_blank.png" material="system/default.mats:projectile"
+		color-r="2"
+		color-g="1.8"
+		color-b="saturate(sin(pow(t,8)*pi))"
+		angle="rand(u+i) * 2 * pi"
+		>
+		
+		<frame time="550">0 0 0 0</frame>
+		<frame time="40">0 0 32 32</frame>
+		<frame time="40">32 0 32 32</frame>
+		<frame time="40">64 0 32 32</frame>
+		<frame time="40">96 0 32 32</frame>
+		<frame time="40">128 0 32 32</frame>
+		<frame time="40">160 0 32 32</frame>
+		<frame time="40">192 0 32 32</frame>
+	</sprite>	
+	
+	
+	
+	<!-- 
+		<frame time="60">8 8 8 8</frame>
+		<frame time="60">16 8 8 8</frame>
+		<frame time="60">24 8 8 8</frame> -->
+	<light pos-y="posy"	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<length value="1100" />
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="30*(1-t)" />
+
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

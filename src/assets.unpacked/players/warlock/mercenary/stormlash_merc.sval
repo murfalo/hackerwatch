@@ -1,0 +1,38 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">warlock</string>
+	<string name="name">.skills.warlock.stormlash</string>
+	<string name="description">.skills.warlock.stormlash.merc</string>
+
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>144 144 24 24</vec4>
+	</array>
+
+	<int name="cost">22</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">spellhit</string>
+				<bool name="target-self">false</bool>
+				<float name="chance">0.3</float>
+				<int name="timeout">1</int>
+				
+				<dict name="effect">
+					<string name="class">HitscanRandomEnemy</string>
+					<int name="range">80</int>
+
+					<string name="shoot-fx">effects/players/lightning_bolt.effect</string>
+
+					<dict name="effect">
+						<string name="class">Damage</string>
+						<int name="magical">20</int>
+					</dict>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</dict>

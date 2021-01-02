@@ -1,0 +1,46 @@
+<unit slot="doodad">
+	<scenes idle="idle" flap="flap" look="look">
+		<scene name="idle">
+			<collision static="true">
+				<circle offset="1 -6" radius="16" />
+			</collision>
+			<sprite origin="32 41" texture="./griffin.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 50 53</frame>
+			</sprite>
+			<sprite origin="25 14" layer="-5" texture="./griffin.png" material="system/default.mats:floor">
+				<frame>200 53 16 11</frame>
+			</sprite>
+		</scene>
+		<scene name="flap">
+			<collision static="true">
+				<circle offset="1 -6" radius="16" />
+			</collision>
+			<sprite looping="false" origin="32 41" texture="./griffin.png" material="system/default.mats:default-noxray">
+				<frame time="100">50 0 50 53</frame>
+				<frame time="200">100 0 50 53</frame>
+				<frame time="200">150 0 50 53</frame>
+				<frame time="500">200 0 50 53</frame>
+				<frame time="200">0 53 50 53</frame>
+				<frame time="100">0 0 50 53</frame>
+			</sprite>
+			<sprite origin="25 14" layer="-5" texture="./griffin.png" material="system/default.mats:floor">
+				<frame>200 53 16 11</frame>
+			</sprite>
+		</scene>
+		<scene name="look">
+			<collision static="true">
+				<circle offset="1 -6" radius="16" />
+			</collision>
+			<sprite looping="false" origin="32 41" texture="./griffin.png" material="system/default.mats:default-noxray">
+				<frame time="100">50 53 50 53</frame>
+				<frame time="100">100 53 50 53</frame>
+				<frame time="500">150 53 50 53</frame>
+				<frame time="100">100 53 50 53</frame>
+				<frame time="100">0 0 50 53</frame>
+			</sprite>
+			<sprite origin="25 14" layer="-5" texture="./griffin.png" material="system/default.mats:floor">
+				<frame>200 53 16 11</frame>
+			</sprite>
+		</scene>
+  </scenes>
+</unit>

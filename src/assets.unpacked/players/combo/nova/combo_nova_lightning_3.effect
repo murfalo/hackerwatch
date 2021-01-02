@@ -1,0 +1,106 @@
+<effect looping="true">
+	<param name="angle" default="2" />
+	<param name="height" default="0" />
+	<param name="radius" default="5" />
+	<param name="cR" default="1" />
+	<param name="cG" default="0" />
+	<param name="cB" default="0.8" />
+	
+	
+	<sprite looping="true" origin="3.5 3.5" texture="./combo_nova.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		color-r="cR - sin(t*pi*2)*0.5"
+		color-g="cG - sin(t*pi*2)*0.5"
+		color-b="cB - sin(t*pi*2)*0.5"
+	
+		angle="0">
+		
+		<frame time="500">16 11 7 7</frame>
+	</sprite>
+	
+	
+	<sprite origin="8 8" looping="false" texture="./combo_nova.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="3+rand(u+i)*5"
+		scale-x="saturate(0.6-it*0.6)"
+		scale-y="saturate(0.6-it*0.6)"		
+		
+		pos-x="it*(cos(angle)*-25) + 
+		cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+673*i),0.5) - 
+		it*cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+673*i),0.5)"
+        
+		pos-y="it*(sin(angle)*-25) + 
+		sin(rand(u+49*i)*2*pi) * radius * pow(rand(u+3581*i),0.5) - 
+		it*sin(rand(u+49*i)*2*pi) * radius * pow(rand(u+3581*i),0.5)"
+		
+		color-a="saturate(sin(pow(it,1.5)*pi*1.2))"
+		color-r="cR/10"
+		color-g="cG/10"
+		color-b="cB/10"
+	
+	>
+		
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="499">32 112 16 16</frame>
+		
+	</sprite>
+	
+	<sprite origin="8 8" looping="false" texture="./combo_nova.png" material="system/default.mats:bright-noxray"
+		
+		num-sprites="4"
+		scale-x="saturate(0.8-it*0.6)"
+		scale-y="saturate(0.8-it*0.6)"
+		angle="rand(u+i+l)*pi*2"
+		pos-x="it*(cos(angle)*-25)*it"
+		pos-y="it*(sin(angle)*-25)*it-height"
+		color-a="saturate(sin(pow(it,1.5)*pi*1.2))"
+		color-r="0.5+cR"
+		color-g="0.5+cG"
+		color-b="0.5+cB"
+	
+	>
+		
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="50">32 64 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">48 64 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">32 80 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">48 80 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">32 96 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">48 96 16 16</frame>
+		
+	</sprite>
+	
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		
+		<length value="200" />
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="12" />
+
+		<color-r value="cR" />
+		<color-g value="cG" />
+		<color-b value="cB" />
+		<color-a value="0"/>
+	</light>
+</effect>

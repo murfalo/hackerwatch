@@ -1,0 +1,43 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">sorcerer</string>
+	<string name="name">.skills.sorcerer.comet</string>
+	<string name="description">.skills.sorcerer.comet.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 48 24 24</vec4>
+	</array>
+
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::DropEffect</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/sorcerer/comet_summon</string>
+		<string name="drop-fx">effects/players/comet.effect</string>
+		<string name="dropped-fx">effects/players/comet_hit.effect</string>
+		
+		<int name="cooldown">400</int>
+		<int name="castpoint">200</int>
+		<float name="speed-mul">0</float>
+		
+		<int name="mana-cost">50</int>
+		
+		<int name="drop-dist">50</int>
+		<int name="radius">28</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs_merc.sval:freeze</string>
+				<bool name="ignore-intensity">true</bool>
+			</dict>
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">120</int>
+				<int name="magical">120</int>
+			</dict>
+		</array>
+	</dict>
+</dict>

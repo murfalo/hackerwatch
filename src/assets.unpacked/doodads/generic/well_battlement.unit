@@ -1,0 +1,58 @@
+<unit slot="doodad">
+	<scenes default="on" off="off">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-11 -11 22 22</rect>
+			</collision>
+			<shadow>
+				<sprite origin="-8 26" texture="./well_battlement.png">
+					<frame>52 53 16 36</frame>
+				</sprite>
+			</shadow>
+		</scene>		
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 10 9 10" />
+			<sprite origin="13 42" looping="true" texture="./well_battlement.png" material="system/default.mats:default">
+				<frame time="100">0 0 26 53</frame>
+				<frame time="100">26 0 26 53</frame>
+				<frame time="100">52 0 26 53</frame>
+				<frame time="100">78 0 26 53</frame>
+			</sprite>		
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="4"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="20 160 180 0" />
+					<color value="20 160 180 0" />
+				</colors>
+			</light>						
+		</scene>
+		<scene name="off">
+			<scene src="shared" />	
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 20 9 10" />
+			<sprite origin="13 42" looping="true" loopback="300" texture="./well_battlement.png" material="system/default.mats:default">
+				<frame time="100">104 0 26 53</frame>
+				<frame time="100">130 0 26 53</frame>
+				<frame time="100">156 0 26 53</frame>
+				<frame time="100">182 0 26 53</frame>
+				<frame time="100">208 0 26 53</frame>
+				<frame time="100">0 53 26 53</frame>
+				<frame time="100">26 53 26 53</frame>
+			</sprite>
+				
+		</scene>
+		
+		
+	</scenes>
+</unit>

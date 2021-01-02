@@ -1,0 +1,90 @@
+<unit netsync="none">
+	<behavior class="GargoyleSpawner">
+		<int name="delay">630</int>
+
+		<string name="unit-bolt">players/warlock/gargoyle_3_bolt.unit</string>
+		<string name="unit-area">players/warlock/gargoyle_3_area.unit</string>
+	</behavior>
+	
+	<scenes>
+		<scene>
+			<sprite ulayer="0" origin="8 16" texture="./gargoyle.png" material="system/default.mats:player">
+				<frame time="140">0 0 0 0</frame>
+				<frame time="490">65 0 18 16</frame>
+			</sprite>
+			<sprite ulayer="1" looping="false" origin="8 58" texture="./gargoyle_spawn.png" material="system/default.mats:bright-noxray">
+				<frame time="70">0 0 19 59</frame>
+				<frame time="70">19 0 19 59</frame>
+				<frame time="70">38 0 19 59</frame>
+				<frame time="70">57 0 19 59</frame>
+				<frame time="70">76 0 19 59</frame>
+				<frame time="70">95 0 19 59</frame>
+				<frame time="70">0 59 19 59</frame>
+				<frame time="50">19 59 19 59</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+			
+			<light pos="0 -50">
+				<sprite texture="doodads/generic/well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="300" />
+				<overbright value="5"/>
+				<looping value="false" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+					<size value="0" />
+					<size value="200" />
+					<size value="0" />
+					<size value="100" />
+					<size value="50" />
+				</sizes>
+				<colors>
+					<color value="0 180 200 0" />
+					<color value="0 170 200 0" />
+				</colors>
+			</light>
+			<light pos="0 -2">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="100" />
+				<looping value="false" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="256" />
+					<size value="0" />
+					<size value="128" />
+					<size value="0" />
+				</sizes>
+				<colors>
+					<color value="255 255 255 0" />
+				</colors>
+			</light>
+			<light pos="0 -2">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<overbright value="3" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+					<size value="48" />
+				</sizes>
+				<colors>
+					<color value="0 180 200 0" />
+				</colors>
+			</light>
+		</scene>
+	</scenes>
+</unit>

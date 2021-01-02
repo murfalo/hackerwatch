@@ -1,0 +1,86 @@
+<effect >
+	
+	<data>
+		<string name="sound">event:/enemy/boss_dragon/foot</string>
+		<string name="gore">effects/gibs/doodads/gib_warden_club.sval</string>
+	</data>
+
+	<sprite origin="64 64" looping="false" texture="./dragon_foot_hit.png" material="system/default.mats:bright-noxray"
+	
+	scale-x="1"
+	scale-y="1"
+	>
+		<frame time="50">0 0 128 128</frame>
+		<frame time="50">128 0 128 128</frame>
+		<frame time="50">256 0 128 128</frame>
+		<frame time="50">384 0 128 128</frame>
+		<frame time="50">0 128 128 128</frame>
+		<frame time="50">128 128 128 128</frame>
+		<frame time="50">256 128 128 128</frame>
+	</sprite>
+	<!-- 
+	<sprite origin="48 48" looping="false" texture="./foot_splash.png" material="system/default.mats:bright-noxray"
+	
+	scale-x="1.5"
+	scale-y="1.5"
+	angle="(t+l)*pi"
+	>
+		<frame time="50">0 0 96 96</frame>
+		<frame time="50">96 0 96 96</frame>
+		<frame time="50">192 0 96 96</frame>
+		<frame time="50">288 0 96 96</frame>
+		<frame time="60">384 0 96 96</frame>
+		<frame time="60">0 96 96 96</frame>
+	</sprite>	
+		 -->
+
+	<sprite origin="48 48" looping="false" texture="./foot_splash.png" material="system/default.mats:bright-noxray"
+	
+	scale-x="1"
+	scale-y="1"
+	>
+		<frame time="50">0 0 96 96</frame>
+		<frame time="50">96 0 96 96</frame>
+		<frame time="50">192 0 96 96</frame>
+		<frame time="50">288 0 96 96</frame>
+		<frame time="60">384 0 96 96</frame>
+		<frame time="60">0 96 96 96</frame>
+	</sprite>	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="250" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="180" />
+		
+		<color-r value="0" />
+		<color-g value="5" />
+		<color-b value="8" />
+		<color-a value="0/255" />
+	</light>
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="260" />
+		
+		<color-r value="0" />
+		<color-g value="5" />
+		<color-b value="8" />
+		<color-a value="0/255" />
+	</light>			
+
+</effect>

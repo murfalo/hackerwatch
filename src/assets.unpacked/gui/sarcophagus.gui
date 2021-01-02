@@ -1,0 +1,93 @@
+<gui>
+	<sprites>
+		<sprite name="checkbutton" texture="gui/widget.png"><frame>346 0 32 32</frame></sprite>
+		<sprite name="checkbutton-hover" texture="gui/widget.png"><frame>346 32 32 32</frame></sprite>
+		<sprite name="checkbutton-checked" texture="gui/widget.png"><frame>346 64 32 32</frame></sprite>
+
+		<sprite name="buttonfill" texture="gui/widget.png"><frame>378 0 24 24</frame></sprite>
+
+		<sprite name="icon-curse" texture="gui/icons.png"><frame>193 32 11 13</frame></sprite>
+
+		<sprite name="item-dot" texture="gui/icons.png"><frame>63 0 4 4</frame></sprite>
+		<sprite name="item-plus" texture="gui/icons.png"><frame>59 112 5 5</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="182" height="149" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="178" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="157" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".sarcophagus.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton spriteset="close" func="stop" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="178" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Content -->
+				<rect width="178" height="103" offset="2 23" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Text -->
+					<text font="gui/fonts/arial11.fnt" width="178" align="center" text=".sarcophagus.line1" anchor="0.5 0" offset="0 0" />
+					<text font="gui/fonts/arial11.fnt" width="178" align="center" text=".sarcophagus.line2" anchor="0.5 0" offset="0 14" />
+
+					<!-- Separator -->
+					<rect width="178" height="3" offset="0 44" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Item list -->
+					<rect id="item-list" width="175" height="32" offset="3 47" flow="hbox" />
+					<rect width="3" height="32" offset="0 47" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Item template -->
+					<checkbox id="template-item" visible="false" spriteset="checkbutton" func="selection-changed">
+						<sprite src="buttonfill" offset="4 4">
+							<!-- Icon -->
+							<sprite id="item-icon" anchor="0.5 0.5" />
+
+							<!-- Attuned plus -->
+							<sprite id="item-attuned" visible="false" src="item-plus" />
+
+							<!-- Set and quality dots -->
+							<group inner="true" anchor="1 1" flow="hbox">
+								<sprite id="item-set" visible="false" src="item-dot" />
+								<sprite id="item-quality" visible="false" src="item-dot" />
+							</group>
+						</sprite>
+					</checkbox>
+
+					<!-- Separator template -->
+					<rect id="template-separator" visible="false" width="3" height="32" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Separator -->
+					<rect width="178" height="3" offset="0 79" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Curse value -->
+					<group id="curse-container" inner="true" anchor="0.5 0" offset="0 86" flow="hbox" spacing="2" tooltip=".sarcophagus.cursehelp">
+						<sprite src="icon-curse" />
+						<text id="curse-value" font="gui/fonts/arial11.fnt" offset="0 -1" text="+0" />
+					</group>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="178" height="3" offset="2 126" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Accept -->
+				<rect width="178" height="18" offset="2 129" flow="hbox">
+					<rect width="39" height="18" spriteset="gui/variable/headline_hor.sval" />
+					<scalebutton id="button-accept" spriteset="scalebutton" func="accept" width="100" text=".sarcophagus.accept" font="gui/fonts/arial11.fnt" />
+					<rect width="39" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

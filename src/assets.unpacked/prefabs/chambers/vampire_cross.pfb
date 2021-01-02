@@ -1,0 +1,223 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="active">t</bool>
+					<float name="radius">24</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/altar_vampire_cross.unit"><vec2>0 0</vec2><int>3</int></array>
+		<array name="doodads/special/_minimap_objective.unit"><vec2>0 0</vec2><int>4</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SetTopNumber</string>
+			<int>44</int>
+			<vec3>256 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="ID">cross</string>
+				<int name="Number">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>21</int>
+			<vec3>320 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross4</string>
+			<dict>
+				<string name="Flag">vampire_cross4</string>
+				<int name="State">2</int>
+			</dict>
+			<array><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>46</int>
+			<vec3>192 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>22</int>
+			<vec3>320 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross4</string>
+			<dict>
+				<string name="Flag">vampire_cross4</string>
+				<array name="OnFalse"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>42</int>
+			<vec3>128 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="ID">cross</string>
+				<int name="Number">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>20</int>
+			<vec3>256 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross3</string>
+			<dict>
+				<string name="Flag">vampire_cross3</string>
+				<array name="OnFalse"><int>19</int></array>
+				<array name="OnTrue"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>43</int>
+			<vec3>192 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Number">2</int>
+				<string name="ID">cross</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTopNumber</string>
+			<int>45</int>
+			<vec3>320 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Number">4</int>
+				<string name="ID">cross</string>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>13</int>
+			<vec3>128 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>2</int></array>
+			</dict>
+			<array><int>14</int><int>0</int><int>16</int><int>0</int><int>46</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>14</int>
+			<vec3>128 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>closed</string>
+			<dict>
+				<string name="State">closed</string>
+				<array name="Units"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>15</int>
+			<vec3>128 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross1</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">vampire_cross1</string>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>16</int>
+			<vec3>128 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross1</string>
+			<dict>
+				<string name="Flag">vampire_cross1</string>
+				<array name="OnFalse"><int>15</int></array>
+				<array name="OnTrue"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>17</int>
+			<vec3>192 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross2</string>
+			<dict>
+				<string name="Flag">vampire_cross2</string>
+				<int name="State">2</int>
+			</dict>
+			<array><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>18</int>
+			<vec3>192 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross2</string>
+			<dict>
+				<string name="Flag">vampire_cross2</string>
+				<array name="OnFalse"><int>17</int></array>
+				<array name="OnTrue"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>19</int>
+			<vec3>256 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>vampire_cross3</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">vampire_cross3</string>
+			</dict>
+			<array><int>44</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

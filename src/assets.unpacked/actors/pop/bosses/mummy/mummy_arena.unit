@@ -1,0 +1,1282 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-override">actors/pop/bosses/mummy/mummy.unit</string>
+		
+		<string name="type">undead</string>
+		<int name="hp">7500</int>
+		<int name="armor">45</int>
+		<int name="resistance">45</int>
+		<float name="mp-scale-fact">1.25</float>
+		
+		<string name="death-snd">event:/enemy/boss_mummy/death</string>
+		
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">false</bool>
+		<int name="aggro-range">999</int>
+		<int name="unit-height">32</int>
+		<float name="debuff-scale">0.5</float>
+		<float name="wind-scale">0</float>
+		
+		<array name="buffs-immune-tags">
+			<string>bleeding</string>
+			<string>confusion</string>
+			<string>debuff</string>
+			<string>disarm</string>
+			<string>root</string>
+			<string>stun</string>
+			<string>slow</string>
+			<string>buff</string>
+		</array>
+		
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<float name="speed">2.0</float>
+			<int name="dist">20</int>
+			<int name="stagger-threshold">0</int>
+		</dict>
+		
+		<array name="skills">
+			%// Death
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<dict name="action">
+					<string name="class">SpawnUnit</string>
+					<string name="unit">actors/pop/bosses/mummy/mummy_corpse.unit</string>
+				</dict>
+			</dict>
+			
+			% // Fly swarm
+			<dict>
+				<string name="class">SpewSkill</string>
+				<string name="anim">spit 8</string>
+				
+				<string name="start-snd">event:/enemy/boss_mummy/flies-start</string>
+				<string name="snd">event:/enemy/boss_mummy/flies</string>
+				
+				<string name="offset">attack-pos</string>
+				<bool name="must-see">false</bool>
+				<bool name="hold-dir">false</bool>
+				<int name="cooldown-start">30000</int>
+				<int name="cooldown">30000</int>
+				<int name="castpoint">2200</int>
+				<int name="duration">4000</int>
+				<int name="range">999</int>
+				<int name="spread">20</int>
+				<int name="rate">20</int>
+				<string name="projectile">actors/pop/bosses/mummy/fly_projectile.unit</string>
+			</dict>
+			
+			%// Stomp
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">stomp 8</string>
+				
+				<int name="cooldown">500</int>
+				<int name="castpoint">600</int>
+				<int name="range">60</int>
+				<string name="offset">attack-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/animations/impact_smash.effect</string>
+						<int name="min-radius">16</int>
+						<int name="radius">16</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">100</int>
+								<float name="armor-mul">0.35</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_mummy/stomp</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Short Charge
+			<dict>
+				<string name="class">ChargeStrike</string>
+
+				<string name="anim">charge 8</string>
+				<string name="anim-stop">charge_finish 8</string>
+				<string name="start-snd">event:/enemy/boss_mummy/charge</string>
+				
+				<bool name="must-see">false</bool>
+				<int name="cooldown-start">2000</int>
+				<int name="cooldown">1000</int>
+				<int name="range">120</int>
+				<int name="min-range">60</int>
+				<float name="speed">10</float>
+				<int name="air-time">390</int>
+				<int name="hold-frame">500</int>
+				<int name="jump-height">0</int>
+				<string name="offset">attack-pos</string>
+				
+				<int name="ray-num">6</int>
+				<int name="ray-width">18</int>
+				<float name="ray-length">5</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">100</int>
+					</dict>
+				</array>
+
+				<array name="finish-effects">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/animations/impact_smash.effect</string>
+						<int name="min-radius">20</int>
+						<int name="radius">20</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">100</int>
+								<float name="armor-mul">0.35</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_mummy/stomp</string>
+					</dict>
+					<dict name="effect">
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/mummy/dust_large.effect</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Long Charge
+			<dict>
+				<string name="class">ChargeStrike</string>
+
+				<string name="anim">charge 8</string>
+				<string name="anim-stop">charge_finish 8</string>
+				<string name="start-snd">event:/enemy/boss_mummy/charge-long</string>
+				
+				<bool name="must-see">false</bool>
+				<int name="cooldown-start">2000</int>
+				<int name="cooldown">2000</int>
+				<int name="range">999</int>
+				<int name="min-range">120</int>
+				<float name="speed">10</float>
+				<int name="air-time">780</int>
+				<int name="hold-frame">500</int>
+				<int name="jump-height">0</int>
+				<string name="offset">attack-pos</string>
+				
+				<int name="ray-num">6</int>
+				<int name="ray-width">18</int>
+				<float name="ray-length">5</float>
+
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">100</int>
+					</dict>
+				</array>
+
+				<array name="finish-effects">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/animations/impact_smash.effect</string>
+						<int name="min-radius">20</int>
+						<int name="radius">20</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">100</int>
+								<float name="armor-mul">0.35</float>
+								<bool name="melee">true</bool>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/boss_mummy/stomp</string>
+					</dict>
+					<dict name="effect">
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/pop/bosses/mummy/dust_large.effect</string>
+					</dict>					
+				</array>
+			</dict>
+			
+			%// Curseballs
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				
+				<string name="anim">curse</string>
+				<string name="start-snd">event:/enemy/boss_mummy/curse</string>
+				
+				<int name="cooldown-start">10000</int>
+				<int name="cooldown">45000</int>
+				<int name="castpoint">1750</int>
+				<int name="range">999</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/bosses/mummy/curseball_stable.unit</string>
+						<vec2 name="offset">12 -10</vec2>
+					</dict>
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/bosses/mummy/curseball_twitch.unit</string>
+						<vec2 name="offset">-12 -10</vec2>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0">
+		
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="11" density="999"/>
+			</collision>
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+		</scene>
+		
+		<scene name="shared-charge">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>			
+			<collision static="false">
+				<circle offset="0 0" radius="11" charging="true" density="999" />
+			</collision>
+		</scene>
+		
+		<scene name="shared-charge-light">
+			<light pos="0 -25">
+				<sprite texture="system/light2_L.png">
+				<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="2"/>
+				<looping value="false" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+				<size value="64" />
+				</sizes>
+				<colors>
+				<color value="0 0 0 0" />
+				<color value="200 250 0 0" />
+				</colors>
+			</light>
+		</scene>		
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>0 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>64 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>128 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>192 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>256 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>320 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>384 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame>448 0 64 64</frame>
+			</sprite>
+		</scene>
+		
+		
+		
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">0 0 64 64</frame>
+				<frame time="200">0 64 64 64</frame>
+				<frame time="200">0 0 64 64</frame>
+				<frame time="200">0 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">448 0 64 64</frame>
+				<frame time="200">448 64 64 64</frame>
+				<frame time="200">448 0 64 64</frame>
+				<frame time="200">448 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">384 0 64 64</frame>
+				<frame time="200">384 64 64 64</frame>
+				<frame time="200">384 0 64 64</frame>
+				<frame time="200">384 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">320 0 64 64</frame>
+				<frame time="200">320 64 64 64</frame>
+				<frame time="200">320 0 64 64</frame>
+				<frame time="200">320 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">256 0 64 64</frame>
+				<frame time="200">256 64 64 64</frame>
+				<frame time="200">256 0 64 64</frame>
+				<frame time="200">256 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">192 0 64 64</frame>
+				<frame time="200">192 64 64 64</frame>
+				<frame time="200">192 0 64 64</frame>
+				<frame time="200">192 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">128 0 64 64</frame>
+				<frame time="200">128 64 64 64</frame>
+				<frame time="200">128 0 64 64</frame>
+				<frame time="200">128 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="200">64 0 64 64</frame>
+				<frame time="200">64 64 64 64</frame>
+				<frame time="200">64 0 64 64</frame>
+				<frame time="200">64 128 64 64</frame>
+			</sprite>
+		</scene>
+
+		
+		<scene name="stomp-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="8 0"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 192 64 64</frame>
+				<frame time="100">0 256 64 64</frame>
+				<frame time="200">0 320 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="stomp-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="7 7"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">64 192 64 64</frame>
+				<frame time="100">64 256 64 64</frame>
+				<frame time="200">64 320 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="stomp-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 8"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">128 192 64 64</frame>
+				<frame time="100">128 256 64 64</frame>
+				<frame time="200">128 320 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="stomp-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-7 7"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">192 192 64 64</frame>
+				<frame time="100">192 256 64 64</frame>
+				<frame time="200">192 320 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="stomp-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-8 0"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">256 192 64 64</frame>
+				<frame time="100">256 256 64 64</frame>
+				<frame time="200">256 320 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="stomp-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-7 -7"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">320 192 64 64</frame>
+				<frame time="100">320 256 64 64</frame>
+				<frame time="200">320 320 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="stomp-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -8"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">384 192 64 64</frame>
+				<frame time="100">384 256 64 64</frame>
+				<frame time="200">384 320 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="stomp-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="7 -7"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">448 192 64 64</frame>
+				<frame time="100">448 256 64 64</frame>
+				<frame time="200">448 320 64 64</frame>
+			</sprite>
+		</scene>
+
+
+		<scene name="spit-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="14 -16"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">512 0 64 64</frame>
+				<frame time="400">512 64 64 64</frame>
+				<frame time="200">512 0 64 64</frame>
+				<frame time="200">512 64 64 64</frame>
+				
+				<frame time="100">512 0 64 64</frame>
+				<frame time="100">512 64 64 64</frame>
+				<frame time="100">512 0 64 64</frame>
+				<frame time="100">512 64 64 64</frame>
+				<frame time="100">512 0 64 64</frame>
+				<frame time="100">512 64 64 64</frame>
+				<frame time="100">512 0 64 64</frame>
+				<frame time="100">512 64 64 64</frame>
+				<frame time="100">512 0 64 64</frame>
+				<frame time="100">512 64 64 64</frame>
+
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+				<frame time="200">512 128 64 64</frame>
+				<frame time="200">512 192 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="spit-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="10 -14"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">576 0 64 64</frame>
+				<frame time="400">576 64 64 64</frame>
+				<frame time="200">576 0 64 64</frame>
+				<frame time="200">576 64 64 64</frame>
+				
+				<frame time="100">576 0 64 64</frame>
+				<frame time="100">576 64 64 64</frame>
+				<frame time="100">576 0 64 64</frame>
+				<frame time="100">576 64 64 64</frame>
+				<frame time="100">576 0 64 64</frame>
+				<frame time="100">576 64 64 64</frame>
+				<frame time="100">576 0 64 64</frame>
+				<frame time="100">576 64 64 64</frame>
+				<frame time="100">576 0 64 64</frame>
+				<frame time="100">576 64 64 64</frame>
+							
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+				<frame time="200">576 128 64 64</frame>
+				<frame time="200">576 192 64 64</frame>
+			</sprite>
+		</scene>		
+		
+		<scene name="spit-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -11"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">640 0 64 64</frame>
+				<frame time="400">640  64 64 64</frame>
+				<frame time="200">640  0 64 64</frame>
+				<frame time="200">640  64 64 64</frame>
+				
+				<frame time="100">640  0 64 64</frame>
+				<frame time="100">640  64 64 64</frame>
+				<frame time="100">640  0 64 64</frame>
+				<frame time="100">640  64 64 64</frame>
+				<frame time="100">640  0 64 64</frame>
+				<frame time="100">640  64 64 64</frame>
+				<frame time="100">640  0 64 64</frame>
+				<frame time="100">640  64 64 64</frame>
+				<frame time="100">640  0 64 64</frame>
+				<frame time="100">640  64 64 64</frame>
+				
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+				<frame time="200">640  128 64 64</frame>
+				<frame time="200">640  192 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="spit-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-10 -14"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">704 0 64 64</frame>
+				<frame time="400">704  64 64 64</frame>
+				<frame time="200">704  0 64 64</frame>
+				<frame time="200">704  64 64 64</frame>
+				
+				<frame time="100">704  0 64 64</frame>
+				<frame time="100">704  64 64 64</frame>
+				<frame time="100">704  0 64 64</frame>
+				<frame time="100">704  64 64 64</frame>
+				<frame time="100">704  0 64 64</frame>
+				<frame time="100">704  64 64 64</frame>
+				<frame time="100">704  0 64 64</frame>
+				<frame time="100">704  64 64 64</frame>
+				<frame time="100">704  0 64 64</frame>
+				<frame time="100">704  64 64 64</frame>
+				
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+				<frame time="200">704  128 64 64</frame>
+				<frame time="200">704  192 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="spit-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-16 -16"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">768 0 64 64</frame>
+				<frame time="400">768  64 64 64</frame>
+				<frame time="200">768  0 64 64</frame>
+				<frame time="200">768  64 64 64</frame>
+				
+				<frame time="100">768  0 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+				<frame time="100">768  0 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+				<frame time="100">768  64 64 64</frame>
+
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+				<frame time="200">768  128 64 64</frame>
+				<frame time="200">768  192 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="spit-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-10 -22"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">832 0 64 64</frame>
+				<frame time="400">832  64 64 64</frame>
+				<frame time="200">832  0 64 64</frame>
+				<frame time="200">832  64 64 64</frame>
+				
+				<frame time="100">832  0 64 64</frame>
+				<frame time="100">832  64 64 64</frame>
+				<frame time="100">832  0 64 64</frame>
+				<frame time="100">832  64 64 64</frame>
+				<frame time="100">832  0 64 64</frame>
+				<frame time="100">832  64 64 64</frame>
+				<frame time="100">832  0 64 64</frame>
+				<frame time="100">832  64 64 64</frame>
+				<frame time="100">832  0 64 64</frame>
+				<frame time="100">832  64 64 64</frame>
+				
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+				<frame time="200">832  128 64 64</frame>
+				<frame time="200">832  192 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="spit-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -22"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">896 0 64 64</frame>
+				<frame time="400">896  64 64 64</frame>
+				<frame time="200">896  0 64 64</frame>
+				<frame time="200">896  64 64 64</frame>
+				
+				<frame time="100">896  0 64 64</frame>
+				<frame time="100">896  64 64 64</frame>
+				<frame time="100">896  0 64 64</frame>
+				<frame time="100">896  64 64 64</frame>
+				<frame time="100">896  0 64 64</frame>
+				<frame time="100">896  64 64 64</frame>
+				<frame time="100">896  0 64 64</frame>
+				<frame time="100">896  64 64 64</frame>
+				<frame time="100">896  0 64 64</frame>
+				<frame time="100">896  64 64 64</frame>
+				
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+				<frame time="200">896  128 64 64</frame>
+				<frame time="200">896  192 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="spit-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="10 -22"/>
+			<sprite origin="33 46" looping="false" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="400">960 0 64 64</frame>
+				<frame time="400">960  64 64 64</frame>
+				<frame time="200">960  0 64 64</frame>
+				<frame time="200">960  64 64 64</frame>
+				
+				<frame time="100">960  0 64 64</frame>
+				<frame time="100">960  64 64 64</frame>
+				<frame time="100">960  0 64 64</frame>
+				<frame time="100">960  64 64 64</frame>
+				<frame time="100">960  0 64 64</frame>
+				<frame time="100">960  64 64 64</frame>
+				<frame time="100">960  0 64 64</frame>
+				<frame time="100">960  64 64 64</frame>
+				<frame time="100">960  0 64 64</frame>
+				<frame time="100">960  64 64 64</frame>
+				
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+				<frame time="200">960  128 64 64</frame>
+				<frame time="200">960  192 64 64</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="charge-0">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="24 0"/>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="250">512  128 64 64</frame>
+				<frame time="250">512  192 64 64</frame>
+	
+				<frame time="100">512 256 64 64</frame>
+				<frame time="100">512 320 64 64</frame>
+				<frame time="100">512 384 64 64</frame>
+				<frame time="100">512 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-0.effect"/>			
+		</scene>
+		
+		<scene name="charge-0">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="24 0"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">0 0 64 64</frame>
+				<frame time="300">0 64 64 64</frame>
+				<frame time="100">0 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+	
+				<frame time="100">512 256 64 64</frame>
+				<frame time="100">512 320 64 64</frame>
+				<frame time="100">512 384 64 64</frame>
+				<frame time="100">512 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-0.effect"/>			
+		</scene>
+		
+		<scene name="charge-1">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="16 16"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">64 0 64 64</frame>
+				<frame time="300">64 64 64 64</frame>
+				<frame time="100">64 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+				
+				<frame time="100">576 256 64 64</frame>
+				<frame time="100">576 320 64 64</frame>
+				<frame time="100">576 384 64 64</frame>
+				<frame time="100">576 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-1.effect"/>			
+		</scene>
+
+		<scene name="charge-2">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="0 24"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">128 0 64 64</frame>
+				<frame time="300">128 64 64 64</frame>
+				<frame time="100">128 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+	
+				<frame time="100">640 256 64 64</frame>
+				<frame time="100">640 320 64 64</frame>
+				<frame time="100">640 384 64 64</frame>
+				<frame time="100">640 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-2.effect"/>			
+		</scene>
+
+		<scene name="charge-3">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="-16 16"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">192 0 64 64</frame>
+				<frame time="300">192 64 64 64</frame>
+				<frame time="100">192 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+	
+				<frame time="100">704 256 64 64</frame>
+				<frame time="100">704 320 64 64</frame>
+				<frame time="100">704 384 64 64</frame>
+				<frame time="100">704 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-3.effect"/>			
+		</scene>
+
+		<scene name="charge-4">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="-24 0"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">256 0 64 64</frame>
+				<frame time="300">256 64 64 64</frame>
+				<frame time="100">256 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+	
+				<frame time="100">768 256 64 64</frame>
+				<frame time="100">768 320 64 64</frame>
+				<frame time="100">768 384 64 64</frame>
+				<frame time="100">768 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-4.effect"/>
+		</scene>
+
+		<scene name="charge-5">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="-16 -16"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">320 0 64 64</frame>
+				<frame time="300">320 64 64 64</frame>
+				<frame time="100">320 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+	
+				<frame time="100">832 256 64 64</frame>
+				<frame time="100">832 320 64 64</frame>
+				<frame time="100">832 384 64 64</frame>
+				<frame time="100">832 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-5.effect"/>
+		</scene>
+
+		<scene name="charge-6">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="0 -24"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">384 0 64 64</frame>
+				<frame time="300">384 64 64 64</frame>
+				<frame time="100">384 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+			
+				<frame time="100">896 256 64 64</frame>
+				<frame time="100">896 320 64 64</frame>
+				<frame time="100">896 384 64 64</frame>
+				<frame time="100">896 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-6.effect"/>
+		</scene>
+
+		<scene name="charge-7">
+			<scene src="shared-charge-light" />
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="16 -16"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_intro.png" material="system/default.mats:actor">
+				<frame time="100">448 0 64 64</frame>
+				<frame time="300">448 64 64 64</frame>
+				<frame time="100">448 0 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite loopback="500" origin="33 46" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="500">0 0 0 0</frame>
+
+				<frame time="100">960 256 64 64</frame>
+				<frame time="100">960 320 64 64</frame>
+				<frame time="100">960 384 64 64</frame>
+				<frame time="100">960 448 64 64</frame>
+			</sprite>
+			<effect delay="500"src="./charge-7.effect"/>
+		</scene>
+	
+		<scene name="charge_finish-0">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="8 0"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">0 0 64 64</frame>
+				<frame time="200">0 64 64 64</frame>
+				<frame time="150">0 128 64 64</frame>
+				<frame time="150">0 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">0 0 64 64</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="charge_finish-1">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="7 7"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">64 0 64 64</frame>
+				<frame time="200">64 64 64 64</frame>
+				<frame time="150">64 128 64 64</frame>
+				<frame time="150">64 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">64 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge_finish-2">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="0 8"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">128 0 64 64</frame>
+				<frame time="200">128 64 64 64</frame>
+				<frame time="150">128 128 64 64</frame>
+				<frame time="150">128 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">128 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge_finish-3">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="-7 7"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">192 0 64 64</frame>
+				<frame time="200">192 64 64 64</frame>
+				<frame time="150">192 128 64 64</frame>
+				<frame time="150">192 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">192 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge_finish-4">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="-8 0"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">256 0 64 64</frame>
+				<frame time="200">256 64 64 64</frame>
+				<frame time="150">256 128 64 64</frame>
+				<frame time="150">256 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">256 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge_finish-5">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="-7 -7"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">320 0 64 64</frame>
+				<frame time="200">320 64 64 64</frame>
+				<frame time="150">320 128 64 64</frame>
+				<frame time="150">320 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">320 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge_finish-6">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="0 -8"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">384 0 64 64</frame>
+				<frame time="200">384 64 64 64</frame>
+				<frame time="150">384 128 64 64</frame>
+				<frame time="150">384 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">384 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="charge_finish-7">
+			<scene src="shared-charge" />
+			<locator name="attack-pos" pos="7 -7"/>
+			<sprite looping="false" origin="33 46" texture="./mummy_charge_finish.png" material="system/default.mats:actor">				
+				<frame time="100">448 0 64 64</frame>
+				<frame time="200">448 64 64 64</frame>
+				<frame time="150">448 128 64 64</frame>
+				<frame time="150">448 192 64 64</frame>
+				<frame time="100">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy.png" material="system/default.mats:actor">
+				<frame time="600">0 0 0 0</frame>
+				<frame time="100">448 0 64 64</frame>
+			</sprite>
+		</scene>
+		
+		
+	<scene name="curse">
+		<scene src="shared" />
+			<light pos="12 -8">
+				<sprite texture="system/light2_L.png">
+				<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+				<size value="42" />
+				</sizes>
+				<colors>
+				<color value="200 250 0 0" />
+				</colors>
+			</light>
+			<light pos="-13 -8">
+				<sprite texture="system/light2_L.png">
+				<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+				<size value="42" />
+				</sizes>
+				<colors>
+				<color value="200 250 0 0" />
+				</colors>
+			</light>
+			<effect ulayer="3" pos="12 -8" ulayer="1" src="actors/pop/bosses/mummy/skull_projectile_swirl.effect" />
+			<effect ulayer="3" pos="-13 -8" ulayer="1" src="actors/pop/bosses/mummy/skull_projectile_swirl.effect" />
+			<sprite ulayer="2" origin="17 12" looping="true" texture="./skull_projectile.png" material="system/default.mats:actor">
+				<frame time="250">0 9 9 9</frame>
+				<frame time="300">9 9 9 9</frame>
+				<frame time="300">18 9 9 9</frame>
+				<frame time="300">27 9 9 9</frame>
+				<frame time="300">36 9 9 9</frame>
+				<frame time="300">45 9 9 9</frame>
+			</sprite>
+			<sprite ulayer="2" origin="-8 12" looping="true" texture="./skull_projectile.png" material="system/default.mats:actor">
+				<frame time="250">0 9 9 9</frame>
+				<frame time="300">9 9 9 9</frame>
+				<frame time="300">18 9 9 9</frame>
+				<frame time="300">27 9 9 9</frame>
+				<frame time="300">36 9 9 9</frame>
+				<frame time="300">45 9 9 9</frame>
+			</sprite>
+			<sprite origin="33 46" looping="true" texture="./mummy_curse.png" material="system/default.mats:actor">
+				<frame time="100">0 0 64 64</frame>
+				<frame time="100">64 0 64 64</frame>
+				<frame time="100">128 0 64 64</frame>
+				<frame time="100">192 0 64 64</frame>
+				<frame time="100">0 0 64 64</frame>
+				<frame time="100">64 0 64 64</frame>
+				<frame time="100">128 0 64 64</frame>
+				<frame time="100">192 0 64 64</frame>
+				<frame time="100">0 0 64 64</frame>
+				<frame time="100">64 0 64 64</frame>
+				<frame time="100">128 0 64 64</frame>
+				<frame time="100">192 0 64 64</frame>
+				<frame time="100">0 0 64 64</frame>
+				<frame time="100">64 0 64 64</frame>
+				<frame time="100">128 0 64 64</frame>
+				<frame time="100">192 0 64 64</frame>
+				<frame time="100">0 0 64 64</frame>
+				<frame time="100">64 0 64 64</frame>
+				<frame time="100">128 0 64 64</frame>
+				<frame time="100">192 0 64 64</frame>
+			</sprite>
+		</scene>	
+	</scenes>
+</unit>

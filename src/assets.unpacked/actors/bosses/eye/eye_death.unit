@@ -1,0 +1,53 @@
+<unit slot="doodad" netsync="position">
+	<scenes start="default">
+		<scene name="shared">
+			<sprite origin="23 30" layer="-1" looping="false" texture="./eye.png" material="system/default.mats:shadow">
+				<frame time="1000">0 210 46 46</frame>
+				<frame time="50">0 0 0 0</frame>
+			</sprite>
+		</scene>
+
+		<scene name="default">
+			<scene src="shared" />
+			<scene src="blood" />
+			
+			<effect src="actors/bosses/eye/eye_death.effect" />			
+			<effect delay="1000" src="actors/bosses/eye/eye_death_explosion.effect" />
+		</scene>
+		
+		
+		
+		<scene name="blood">			
+			<effect pos="-15 -15" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="0 -35" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="0 10" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-5 -15" delay="250" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-15 -45" delay="500" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="15 0" delay="750" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-15 -15" delay="1250" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-12 0" delay="1350" src="actors/bosses/eye/eye_death_blood.effect" />
+			
+			<effect pos="15 -25" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="15 -5" delay="1250" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="15 -25" delay="450" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="15 -15" delay="350" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="15 -25" delay="300" src="actors/bosses/eye/eye_death_blood.effect" />
+			
+			<effect pos="-2 5" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-25 5" delay="1350" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-25 5" delay="1200" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-15 0" delay="1350" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="25 5" delay="150" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-25 0" delay="850" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-25 5" delay="400" src="actors/bosses/eye/eye_death_blood.effect" />
+			
+			<effect pos="-15 -15" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="-15 -35" delay="1500" src="actors/bosses/eye/eye_death_blood.effect" />
+			
+			<effect pos="15 -25" src="actors/bosses/eye/eye_death_blood.effect" />
+			
+			<effect pos="-2 5" src="actors/bosses/eye/eye_death_blood.effect" />
+			<effect pos="25 5" delay="1150" src="actors/bosses/eye/eye_death_blood.effect" />
+		</scene>
+	</scenes>
+</unit>

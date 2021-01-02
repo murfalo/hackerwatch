@@ -1,0 +1,39 @@
+<unit netsync="none">
+	<behavior class="PlayerCorpse">
+	</behavior>
+
+	<scenes start="death">
+		<scene name="shared">
+			<minimap_sprite layer="100" origin="4 4" texture="gui/minimap.png" frame="99 0 8 8"/>
+
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="2000" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="175" />
+				</sizes>
+				<colors>
+					<color value="100 100 100 0" />
+				</colors>
+			</light>
+
+			<collision static="true">
+				<circle sensor="true" offset="0 0" radius="6" />
+			</collision>
+		</scene>
+
+		<scene name="death">
+			<scene src="shared" />
+
+			<sprite origin="6 5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>16 12 11 11</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

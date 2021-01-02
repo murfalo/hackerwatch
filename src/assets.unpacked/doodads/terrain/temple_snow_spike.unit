@@ -1,0 +1,53 @@
+<unit slot="doodad">
+	<scenes default="1 1 2 2 2 3">
+		<scene name="shared">
+			<sprite origin="8 8" layer="-24" texture="./temple_snow_spike.png" material="system/default.mats:floor">
+				<frame>7 13 16 16</frame>
+			</sprite> 
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="0 20 6 6" />
+		</scene>
+		
+		<scene name="1">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="2 14" layer="-24" texture="./temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>24 0 8 14</frame>
+				</sprite> 
+			</shadow>
+			<collision static="true">
+				<circle offset="0.5 0" radius="3.5" />
+			</collision>
+			<sprite origin="3 16" texture="./temple_snow_spike.png" material="system/default.mats:proj-wall">
+				<frame>0 0 7 19</frame>
+			</sprite> 
+		</scene>
+		<scene name="2">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="2 10" layer="-24" texture="./temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>26 14 6 11</frame>
+				</sprite> 
+			</shadow>
+			<collision static="true">
+				<circle offset="0.5 0" radius="2.5" />
+			</collision>
+			<sprite origin="2 12" texture="./temple_snow_spike.png" material="system/default.mats:proj-wall">
+					<frame>7 0 5 13</frame>
+			</sprite> 
+		</scene>
+		<scene name="3">
+			<scene src="shared"/>
+			<shadow>
+				<sprite origin="1 5" layer="-24" texture="./temple_snow_spike.png" material="system/default.mats:floor">
+					<frame>29 25 3 5</frame>
+				</sprite> 
+			</shadow>
+			<collision static="true">
+				<circle offset="0.5 0" radius="2.5" />
+			</collision>
+			<sprite origin="2 5" texture="./temple_snow_spike.png" material="system/default.mats:proj-wall">
+					<frame>12 0 4 7</frame>
+			</sprite> 
+		</scene>
+	</scenes>
+</unit>

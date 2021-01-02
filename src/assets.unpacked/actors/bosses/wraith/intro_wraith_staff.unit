@@ -1,0 +1,97 @@
+<unit slot="doodads">
+	<scenes>
+		<scene name="intro" trigger-snd="event:/enemy/boss_wraith/spawn">
+		
+			<collision static="false">
+				<circle offset="-2 0" radius="18" sensor="false" density="100"/>
+			</collision>
+		
+		<!-- intro -->
+			<sprite origin="32 63" ulayer="0" looping="false" texture="./intro_wraith_staff.png" material="system/default.mats:actor">
+				<frame time="120">0 0 62 88</frame>
+				<frame time="90">62 0 62 88</frame>
+				<frame time="90">124 0 62 88</frame>
+				<frame time="90">186 0 62 88</frame>
+				<frame time="90">248 0 62 88</frame>
+				<frame time="90">310 0 62 88</frame>
+				<frame time="90">372 0 62 88</frame>
+				<frame time="90">434 0 62 88</frame>
+				<frame time="60">0 88 62 88</frame>
+				<frame time="60">62 88 62 88</frame>
+				<frame time="60">124 88 62 88</frame>
+				<frame time="60">186 88 62 88</frame>
+				<frame time="60">248 88 62 88</frame>
+				<frame time="60">310 88 62 88</frame>
+				<frame time="60">372 88 62 88</frame>
+				<frame time="60">434 88 62 88</frame>
+				<frame time="60">0 176 62 88</frame>
+				<frame time="60">62 176 62 88</frame>
+				<frame time="60">124 176 62 88</frame>
+			</sprite>
+			<sprite origin="32 63" ulayer="1" looping="false" texture="./intro_wraith_staff.png" material="system/default.mats:bright-noxray">
+				<frame time="120">0 264 62 88</frame>
+				<frame time="90">62 264 62 88</frame>
+				<frame time="90">124 264 62 88</frame>
+				<frame time="90">186 264 62 88</frame>
+				<frame time="90">248 264 62 88</frame>
+				<frame time="90">310 264 62 88</frame>
+				<frame time="90">372 264 62 88</frame>
+				<frame time="90">434 264 62 88</frame>
+				<frame time="60">0 352 62 88</frame>
+				<frame time="60">62 352 62 88</frame>
+				<frame time="60">124 352 62 88</frame>
+				<frame time="60">186 352 62 88</frame>
+				<frame time="60">248 352 62 88</frame>
+				<frame time="60">310 352 62 88</frame>
+				<frame time="60">372 352 62 88</frame>
+				<frame time="60">434 352 62 88</frame>
+				<frame time="60">0 440 62 88</frame>
+				<frame time="60">62 440 62 88</frame>
+				<frame time="60">124 440 62 88</frame>
+			</sprite>
+			
+<!-- intro area -->
+			<!-- <light pos="-3 15" delay="100"> -->
+				<!-- <sprite texture="system/light_concentrated_L.png"> -->
+					<!-- <frame>0 0 128 128</frame> -->
+				<!-- </sprite> -->
+				<!-- <length value="100" /> -->
+				<!-- <overbright value="10" /> -->
+				<!-- <looping value="false" /> -->
+				<!-- <cast-shadows value="false" /> -->
+				<!-- <shadow-cast-pos value="0 0" /> -->
+				<!-- <shadow-cast-pos-jitter value="0 0 0 0" /> -->
+				<!-- <sizes> -->
+					<!-- <size value="0" /> -->
+					<!-- <size value="75" /> -->
+				<!-- </sizes> -->
+ 				<!-- <colors> -->
+					<!-- <color value="0 0 0 0" /> -->
+					<!-- <color value="100 255 100 0" /> -->
+					<!-- <color value="0 0 0 0" /> -->
+				<!-- </colors>  -->
+			<!-- </light> -->
+			
+			<!-- <sprite origin="32 32" pos="-3 15" looping="false" texture="./wraith_staff_area.png" material="system/default.mats:bright"> -->
+				<!-- <frame time="50">64 64 64 64</frame> -->
+				<!-- <frame time="50">128 64 64 64</frame> -->
+				<!-- <frame time="50">192 64 64 64</frame>				 -->
+				<!-- <frame time="50">0 64 64 64</frame> -->
+				<!-- <frame time="50">0 0 0 0</frame> -->
+			<!-- </sprite> -->
+		 
+			<!-- <sprite origin="32 34" pos="-3 15" looping="false" texture="./wraith_staff_area.png" material="system/default.mats:glow"> -->
+				<!-- <frame time="50">64 64 64 64</frame> -->
+				<!-- <frame time="50">128 64 64 64</frame> -->
+				<!-- <frame time="50">192 64 64 64</frame>				 -->
+				<!-- <frame time="50">0 64 64 64</frame> -->
+				<!-- <frame time="50">0 0 0 0</frame> -->
+			<!-- </sprite> -->
+		
+		
+<!-- area -->
+			
+			<!-- <effect delay="350" pos="-3 10" src="actors/bosses/wraith/wraith_staff_area_slow_end.effect" /> -->
+		</scene>
+	</scenes>
+</unit>

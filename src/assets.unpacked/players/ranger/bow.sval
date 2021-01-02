@@ -1,0 +1,124 @@
+<dict>
+	<string name="name">.skills.ranger.bow</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>0 24 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">300</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/ranger/bow_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			<float name="idle-cooldown-mul">1.5</float>			
+
+			<int name="dist">5</int>
+			<string name="projectile">players/ranger/arrow_1.unit</string>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">300</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/ranger/bow_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.55</float>
+			<float name="idle-cooldown-mul">1.5</float>
+
+			<int name="dist">5</int>
+			<string name="projectile">players/ranger/arrow_2.unit</string>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">300</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/ranger/bow_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.6</float>
+			<float name="idle-cooldown-mul">1.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/ranger/arrow_3.unit</string>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">300</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/ranger/bow_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.65</float>
+			<float name="idle-cooldown-mul">1.5</float>
+
+			<int name="dist">5</int>
+			<string name="projectile">players/ranger/arrow_4.unit</string>
+		</dict>
+		
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">300</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/ranger/bow_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.7</float>
+			<float name="idle-cooldown-mul">1.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/ranger/arrow_5.unit</string>
+		</dict>
+		
+		<!-- Level 6 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">300</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/ranger/bow_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.75</float>
+			<float name="idle-cooldown-mul">1.5</float>
+
+			<int name="dist">5</int>
+			<string name="projectile">players/ranger/arrow_6.unit</string>
+		</dict>
+	</array>
+	
+	<!-- Mercenary primary -->
+	<string name="mercenary-primary-description">.skills.ranger.bow.merc</string>
+	<dict name="mercenary-primary">
+		<string name="class">Skills::ShootProjectile</string>
+		
+		<int name="cooldown">300</int>
+		<int name="castpoint">0</int>
+		
+		<string name="snd">event:/player/ranger/bow_shoot</string>
+		<string name="anim">attack 8</string>
+		<float name="speed-mul">0.75</float>
+		<float name="idle-cooldown-mul">1.5</float>
+
+		<int name="dist">5</int>
+		<string name="projectile">players/ranger/arrow_6.unit</string>
+	</dict>
+</dict>

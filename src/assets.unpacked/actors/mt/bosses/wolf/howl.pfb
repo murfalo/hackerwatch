@@ -1,0 +1,1400 @@
+<dict>
+	<array name="tiles">
+		<dict>
+			<vec2 name="pos">0 0</vec2>
+			<array name="datasets">
+				<dict>
+					<string name="tileset">tilesets/______dev_16.tileset</string>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000055767630261018636b4266507e38117a501c0e69224025173f30446f2a3b1106487c164903711c1f151712732073784f426b1b09193468787e555a19490d6a68447b7645080f0e1e79763951767d3d474f2f3d015c115e104a3665444325382d4f07546424584028663c3c446c120c34734c46123962171534296468626a440b1506472653297571791b6601262729732346362b7163485b4467571e392858686f376d1a261d3f3f11243214381c2519472c106f380d6237073f791a596d26314d7807794e1a38680e1a206933013b272f6a1f541a2f3b0f2659034928433b51167a1f5f13524c24222e3074673e04444f02127d23216717752d2f0d65792a1c76381f161e24785b51606f17615805551e1f6a74554b59227209580d30182b797777030a40266822744026790c2552117c5e367e06144237574e20453f201b19621a0f3b183a3e665b36667c4f05377133193f4d49313e413210180623364d4254482e6323456f10453a5c063050560a076c182d083a2655791e500c2b4f4b6c2f5a13721459325e692b4560173d426d775b615c610b7e316d6348050110792a52297873177d775849215d33416d56630b727471504f5f1847303244326313774228725355714c7c4b547c5770233f58072815324736346a397769154d3a773316257b6a06510a2f2d306a5e307b1e1b5758485a124a47101763211953673d0b5c7a0d2610257d4f3b4d1a6d164a4a531516070a2f7d2f67686626243e516a3b7e2760364c7277381407616872027c3d07086c686c095b39106045737d5d517132670e1b47083c6934226f632f51706e7e35721e0f556944435f0a595d204f065d6d0375146c740d50043e7152306d3b5c7e123d2b3b1b313d6d1c54543e4f363b3b512d105340300f0809791774457d0c32712b244610772e132b68117c2d5275307071263017656b075701532c0b644c59345d411a4441521d29295063516d4d022552305a1a205c5a604c1c506c45542b49546b786c321e10224849273446231601662c1d23771e64445314692f444142105519445e5a4e0c450c5e7a0f560a30520e4c5509725e696a0b37133b36724837293b1b574e25643934680f0b410717316b720a6b77102a5172790e040423070978391e7e2460295d2c51465f510d266e066f613202020363483463691d393b19300e47233e0c6a3e554e40435e664c6235495e570b361b79024a4225382f461c2c2d4835557e1b52180f0b5e412761206115344b195e5a7d593642485a370f2a3a5406574b1676643b5a7a3d0675612910057c1876072a323c54626164395e2d093367200d78483d172b206e6b</bytes>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">448 448</vec2>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>2</int>
+			<vec3>-205 -132 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>3</int>
+			<vec3>6 -10 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>4</int>
+			<vec3>121 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>5</int>
+			<vec3>-96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>6</int>
+			<vec3>-57 31 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>7</int>
+			<vec3>96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>8</int>
+			<vec3>3 172 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>9</int>
+			<vec3>-64 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>19</int><int>33</int><int>32</int><int>12</int><int>6</int><int>16</int><int>59</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>10</int>
+			<vec3>198 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>11</int>
+			<vec3>7 -97 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>12</int>
+			<vec3>-174 26 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>13</int>
+			<vec3>11 -186 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>14</int>
+			<vec3>-256 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Activate</string>
+			<array><int>5</int><int>0</int><int>17</int><int>0</int><int>28</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>15</int>
+			<vec3>104 191 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>16</int>
+			<vec3>-63 121 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>17</int>
+			<vec3>-256 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>40</int><int>29</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>18</int>
+			<vec3>134 -11 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>19</int>
+			<vec3>-196 109 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>20</int>
+			<vec3>200 -63 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>21</int>
+			<vec3>192 27 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>22</int>
+			<vec3>72 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>23</int>
+			<vec3>64 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>15</int><int>36</int><int>4</int><int>31</int><int>21</int><int>22</int><int>58</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>24</int>
+			<vec3>0 480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">600</int>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>25</int>
+			<vec3>-64 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>2</int><int>43</int><int>26</int><int>42</int><int>45</int><int>38</int><int>60</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>26</int>
+			<vec3>-183 -56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>27</int>
+			<vec3>-256 672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">ice rain activated</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>28</int>
+			<vec3>-96 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="TimeMax">20000</int>
+				<int name="TimeMin">15000</int>
+				<array name="LinkScripts"><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>29</int>
+			<vec3>0 608 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Finished</string>
+			<array><int>7</int><int>0</int><int>51</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>30</int>
+			<vec3>256 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>howl_stop</string>
+			<dict>
+				<string name="EventName">howl_stop</string>
+			</dict>
+			<array><int>40</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>31</int>
+			<vec3>197 107 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>32</int>
+			<vec3>-120 75 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>33</int>
+			<vec3>-83 189 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>34</int>
+			<vec3>64 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>44</int><int>37</int><int>35</int><int>18</int><int>20</int><int>10</int><int>61</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>35</int>
+			<vec3>141 -102 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>36</int>
+			<vec3>62 130 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>37</int>
+			<vec3>72 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>38</int>
+			<vec3>-58 -156 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>39</int>
+			<vec3>-256 608 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<string>howl</string>
+			<dict>
+				<string name="EventName">howl</string>
+			</dict>
+			<array><int>27</int><int>0</int><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>40</int>
+			<vec3>256 480 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>Deactivate</string>
+			<array><int>7</int><int>0</int><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>41</int>
+			<vec3>0 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">300</int>
+				<array name="LinkScripts"><int>9</int><int>25</int><int>34</int><int>23</int><int>47</int><int>56</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>42</int>
+			<vec3>-113 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>43</int>
+			<vec3>-127 -105 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>44</int>
+			<vec3>71 -143 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>45</int>
+			<vec3>-59 -68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>AddScreenShake</string>
+			<int>46</int>
+			<vec3>288 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="Amount">1.5</float>
+				<int name="Time">750</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>47</int>
+			<vec3>360 216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>46</int><int>48</int><int>49</int><int>50</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AddScreenShake</string>
+			<int>48</int>
+			<vec3>336 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="Amount">2</float>
+				<int name="Time">750</int>
+			</dict>
+		</array>
+		<array>
+			<string>AddScreenShake</string>
+			<int>49</int>
+			<vec3>384 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="Amount">2.5</float>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>50</int><vec3>432 128 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SetFlag</string>
+			<int>51</int>
+			<vec3>0 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>howl</string>
+			<dict>
+				<string name="Flag">howl</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>52</int>
+			<vec3>-352 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>400</string>
+			<dict>
+				<int name="Parameter">3</int>
+				<int name="Value">400</int>
+				<array name="TimerTriggers"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>53</int>
+			<vec3>-416 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>howl3</string>
+			<dict>
+				<string name="EventName">howl3</string>
+			</dict>
+			<array><int>55</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>54</int>
+			<vec3>-416 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>howl2</string>
+			<dict>
+				<string name="EventName">howl2</string>
+			</dict>
+			<array><int>52</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>55</int>
+			<vec3>-352 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>200</string>
+			<dict>
+				<int name="Parameter">3</int>
+				<int name="Value">200</int>
+				<array name="TimerTriggers"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>56</int>
+			<vec3>0 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>8</int><int>3</int><int>11</int><int>13</int><int>57</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>57</int>
+			<vec3>6 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>58</int>
+			<vec3>181 182 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>59</int>
+			<vec3>-172 183 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>60</int>
+			<vec3>-137 -182 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>61</int>
+			<vec3>136 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<int>500</int>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_icicle.unit</string>
+				<float name="JitterX">64</float>
+				<float name="JitterY">64</float>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>62</int>
+			<vec3>-137 -180 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>60</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>100</int>
+			<vec3>-512 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG+1</string>
+			<dict>
+				<array name="OnTrue"><int>101</int></array>
+				<string name="Id">mt</string>
+				<int name="Function">4</int>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>64</int>
+			<vec3>-512 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckNG+</string>
+			<array><int>100</int><int>100</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>65</int>
+			<vec3>-59 -156 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>66</int>
+			<vec3>11 -185 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>67</int>
+			<vec3>71 -144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>68</int>
+			<vec3>136 -183 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>69</int>
+			<vec3>196 -143 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>10</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>70</int>
+			<vec3>-204 -131 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>2</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>71</int>
+			<vec3>5 -96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>72</int>
+			<vec3>142 -99 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>73</int>
+			<vec3>202 -60 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>20</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>74</int>
+			<vec3>-83 185 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>75</int>
+			<vec3>-61 118 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>76</int>
+			<vec3>-56 33 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>77</int>
+			<vec3>-118 74 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>78</int>
+			<vec3>-113 -15 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>79</int>
+			<vec3>-60 -67 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>80</int>
+			<vec3>5 -7 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>81</int>
+			<vec3>73 25 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>82</int>
+			<vec3>73 -71 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>37</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>83</int>
+			<vec3>187 26 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>84</int>
+			<vec3>-170 179 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>59</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>85</int>
+			<vec3>-195 109 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>19</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>86</int>
+			<vec3>-172 27 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>87</int>
+			<vec3>-182 -55 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>88</int>
+			<vec3>-125 -104 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>43</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>89</int>
+			<vec3>6 87 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>57</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>90</int>
+			<vec3>2 170 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>91</int>
+			<vec3>62 129 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>92</int>
+			<vec3>180 181 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>58</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>93</int>
+			<vec3>134 -12 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>94</int>
+			<vec3>106 191 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>95</int>
+			<vec3>195 105 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>31</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>96</int>
+			<vec3>120 88 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>raise_spikes</string>
+			<dict>
+				<string name="EventName">raise_spikes</string>
+				<float name="ChanceToExecute">0.75</float>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>97</int>
+			<vec3>-320 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts">
+					<int>62</int>
+					<int>74</int>
+					<int>84</int>
+					<int>85</int>
+					<int>75</int>
+					<int>65</int>
+					<int>66</int>
+					<int>76</int>
+					<int>86</int>
+					<int>87</int>
+					<int>77</int>
+					<int>67</int>
+					<int>68</int>
+					<int>78</int>
+					<int>88</int>
+					<int>89</int>
+					<int>79</int>
+					<int>69</int>
+					<int>70</int>
+					<int>80</int>
+					<int>90</int>
+					<int>91</int>
+					<int>81</int>
+					<int>71</int>
+					<int>72</int>
+					<int>82</int>
+					<int>92</int>
+					<int>94</int>
+					<int>95</int>
+					<int>96</int>
+					<int>93</int>
+					<int>83</int>
+					<int>73</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>98</int>
+			<vec3>-320 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>62</int>
+					<int>74</int>
+					<int>84</int>
+					<int>85</int>
+					<int>75</int>
+					<int>65</int>
+					<int>66</int>
+					<int>76</int>
+					<int>86</int>
+					<int>87</int>
+					<int>77</int>
+					<int>67</int>
+					<int>68</int>
+					<int>78</int>
+					<int>88</int>
+					<int>89</int>
+					<int>79</int>
+					<int>69</int>
+					<int>70</int>
+					<int>80</int>
+					<int>90</int>
+					<int>91</int>
+					<int>81</int>
+					<int>71</int>
+					<int>72</int>
+					<int>82</int>
+					<int>92</int>
+					<int>94</int>
+					<int>95</int>
+					<int>96</int>
+					<int>93</int>
+					<int>83</int>
+					<int>73</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>101</int>
+			<vec3>-448 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>true</string>
+			<array><int>97</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

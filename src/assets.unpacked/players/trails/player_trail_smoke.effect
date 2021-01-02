@@ -1,0 +1,51 @@
+<effect looping="true" wpos-track="50">
+
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+
+	<trail texture="./player_trail_smoke.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="50" />
+		<size value="15 * (1 - i / 100)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-100" />
+		<uv-l-y value="0" />
+		
+		<uv-r-x value="i*2 + (t+l)*-100" />
+		<uv-r-y value="10" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="max(0, (0.6 - i / 100) * 0.75)" />
+	</trail>
+
+	
+	<trail texture="./player_trail_smoke.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="35" />
+		<size value="18 * (1 - i / 35)" />
+		
+		<uv-l-x value="i*2 + (t+l)*-100" />
+		<uv-l-y value="10" />
+		
+		<uv-r-x value="i*2 + (t+l)*-100" />
+		<uv-r-y value="20" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0.6" />
+		<color-a value="max(0,0.6 - i / 35)" />
+	</trail>
+	
+</effect>

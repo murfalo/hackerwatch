@@ -1,0 +1,14 @@
+<effect looping="true" layer="-1">
+	<sprite origin="15 16" looping="false" texture="./chambers_safe_area_light.png" material="system/default.mats:bright-noxray"
+	
+	pos-y="40 * -t"
+	
+	color-a="saturate(sin(t*2*pi))*0.3"
+	>
+		<frame time="100">0 0 30 33</frame>
+		<frame time="100">30 0 30 33</frame>
+		<frame time="200">60 0 30 33</frame>
+		<frame time="200">90 0 30 33</frame>
+		<frame time="400">120 0 30 33</frame>
+	</sprite>
+</effect>

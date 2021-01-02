@@ -1,0 +1,58 @@
+<unit slot="doodad" layer="1">
+	<scenes 
+	bowl="bowl" 
+	meat="meat" 
+	meat_small-1="meat_small-1" 
+	meat_small-2="meat_small-2" 
+	apple="apple" 
+	orange="orange"
+	ball="magic-ball"
+	skull="skull"
+	>
+		<scene name="bowl">		
+			<sprite origin="3 5" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">71 128 9 7</frame>
+			</sprite>	
+		</scene>
+		<scene name="meat" layer="1">		
+			<sprite origin="4 6" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">107 127 9 6</frame>
+			</sprite>	
+		</scene>
+		<scene name="apple" layer="1">		
+			<sprite origin="2 5" ulayer="2" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">162 129 5 5</frame>
+			</sprite>	
+		</scene>
+		<scene name="orange" layer="1">		
+			
+			<sprite origin="2 5" ulayer="2" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">162 124 5 5</frame>
+			</sprite>	
+		</scene>
+		<scene name="meat_small-1" layer="1">		
+			
+			<sprite origin="3 4" ulayer="2" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">162 120 6 4</frame>
+			</sprite>	
+		</scene>
+		<scene name="meat_small-2" layer="1">		
+			
+			<sprite origin="2 4" ulayer="2" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="100">168 120 5 4</frame>
+			</sprite>	
+		</scene>
+		<scene name="magic-ball" layer="3">		
+			
+			<sprite origin="4 6" layer="3" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">273 49 9 8</frame>
+			</sprite>	
+		</scene>
+		<scene name="skull" layer="3">		
+			
+			<sprite origin="2 6" layer="3" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">295 0 7 8</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

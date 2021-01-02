@@ -1,0 +1,27 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="on">
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="88 40 6 6" />
+			<effect delay="300" pos="0 -40" src="doodads/generic/trap_crushblock_down.effect"/>
+			<effect pos="0 -40" src="doodads/generic/trap_crushblock_shake.effect"/>
+			<sprite origin="12 36" looping="false" texture="./trap_crushblock.png" material="system/default.mats:default">
+				<frame time="500">0 0 0 0</frame>
+				<frame time="1000">0 0 24 48</frame>
+			</sprite>
+			<!-- <sprite origin="12 12" layer="-1" texture="./trap_crushblock.png" material="system/default.mats:shadow"> -->
+				<!-- <frame>36 0 24 24</frame> -->
+			<!-- </sprite> -->
+		</scene>
+		<scene name="off">
+			<minimap_sprite origin="3 3" texture="gui/minimap.png" frame="94 40 6 6" />
+			<effect pos="0 -40" src="doodads/generic/trap_crushblock_up.effect"/>
+			<sprite origin="12 76" looping="false" texture="./trap_crushblock.png" material="system/default.mats:default">
+				<frame time="800">0 0 0 0</frame>
+				<frame time="1000">0 0 24 48</frame>
+			</sprite>
+			<!-- <sprite origin="12 12" layer="-1" texture="./trap_crushblock.png" material="system/default.mats:shadow"> -->
+				<!-- <frame>36 0 24 24</frame> -->
+			<!-- </sprite> -->
+		</scene>
+	</scenes>
+</unit>

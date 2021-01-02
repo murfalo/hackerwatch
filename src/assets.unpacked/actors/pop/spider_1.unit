@@ -1,0 +1,536 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.spider_1</string>
+		<vec2 name="beastiary-offset">1 -1</vec2>
+		<string name="quality">common</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">beast</string>
+		<int name="hp">200</int>
+		<int name="armor">30</int>
+		<int name="resistance">20</int>
+		<int name="experience-reward">110</int>
+		
+		<int name="unit-height">14</int>
+		
+		<string name="death-snd">event:/enemy/spider/death</string>
+		<string name="gore">effects/gibs/gib_spider_1.sval</string>
+		<string name="loot">actors/loot.sval:spider</string>
+		
+		<int name="aggro-range">130</int>
+		
+		<array name="buffs-immune-tags">
+			<string>respawn_ghost</string>
+			<string>web</string>
+			<string>poison</string>
+		</array>
+
+		<dict name="movement">
+			<string name="class">CirclingMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			
+			<float name="speed">2.1</float>
+			<float name="roaming">0.75</float>
+		</dict>
+
+		<array name="skills">
+			%// Normal attack
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+				
+				<string name="class">EnemyMeleeStrike</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown">100</int>
+				<int name="castpoint">450</int>
+				<int name="range">20</int>
+				<int name="arc">90</int>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">60</int>
+						<bool name="melee">true</bool>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:poison</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ attack
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+				
+				<string name="class">EnemyMeleeStrike</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown">100</int>
+				<int name="castpoint">450</int>
+				<int name="range">20</int>
+				<int name="arc">90</int>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">60</int>
+						<bool name="melee">true</bool>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:poison_strong</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// Normal Spit
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>2</int>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">ranged 8</string>
+				<string name="snd">event:/enemy/spider/shoot_acid</string>
+				<int name="cooldown-start">200</int>
+				<int name="cooldown">1200</int>
+				<int name="castpoint">600</int>
+				<int name="range">100</int>
+				<bool name="good-aim">false</bool>
+				
+				<string name="offset">shoot-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<string name="projectile">actors/pop/projectiles/spider_spit_1.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+2 Spit
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>2</int>
+				</array>
+				<string name="snd">event:/enemy/spider/shoot_acid</string>
+				<string name="class">CompositeActorBurstSkill</string>
+				<string name="anim">ranged-fast 8</string>
+
+				<int name="burst">2</int>
+				<int name="cooldown-start">200</int>
+				<int name="cooldown">1200</int>
+				<int name="castpoint">600</int>
+				<int name="range">100</int>
+				<bool name="good-aim">false</bool>
+				<float name="aim-interception">10</float>
+				
+				<string name="offset">shoot-pos</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ShootProjectile</string>
+						<int name="spread">10</int>
+						<string name="projectile">actors/pop/projectiles/spider_spit_1.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" charge-through="true" radius="5" />
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 32 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 32 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+		<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 128 32 32</frame>
+				<frame time="150">160 128 32 32</frame>
+				<frame time="150">256 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 96 32 32</frame>
+				<frame time="150">160 96 32 32</frame>
+				<frame time="150">256 96 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 96 32 32</frame>
+				<frame time="150">128 96 32 32</frame>
+				<frame time="150">224 96 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 96 32 32</frame>
+				<frame time="150">96 96 32 32</frame>	
+				<frame time="150">192 96 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 128 32 32</frame>
+				<frame time="150">96 128 32 32</frame>
+				<frame time="150">192 128 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 160 32 32</frame>
+				<frame time="150">96 160 32 32</frame>
+				<frame time="150">192 160 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 160 32 32</frame>
+				<frame time="150">128 160 32 32</frame>
+				<frame time="150">224 160 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 160 32 32</frame>
+				<frame time="150">160 160 32 32</frame>		
+				<frame time="150">256 160 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="10 0"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 224 32 32</frame>
+				<frame time="150">160 224 32 32</frame>
+				<frame time="150">256 224 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 -7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 192 32 32</frame>
+				<frame time="150">160 192 32 32</frame>
+				<frame time="150">256 192 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -10"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 192 32 32</frame>
+				<frame time="150">128 192 32 32</frame>
+				<frame time="150">224 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 -7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 192 32 32</frame>
+				<frame time="150">96 192 32 32</frame>	
+				<frame time="150">192 192 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-10 0"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 224 32 32</frame>
+				<frame time="150">96 224 32 32</frame>
+				<frame time="150">192 224 32 32</frame>		
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 256 32 32</frame>
+				<frame time="150">96 256 32 32</frame>
+				<frame time="150">192 256 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 10"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 256 32 32</frame>
+				<frame time="150">128 256 32 32</frame>
+				<frame time="150">224 256 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 256 32 32</frame>
+				<frame time="150">160 256 32 32</frame>		
+				<frame time="150">256 256 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="10 0"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">64 224 32 32</frame>
+				<frame time="300">160 224 32 32</frame>
+				<frame time="300">256 224 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 -7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">64 192 32 32</frame>
+				<frame time="300">160 192 32 32</frame>
+				<frame time="300">256 192 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="ranged-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -10"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">32 192 32 32</frame>
+				<frame time="300">128 192 32 32</frame>
+				<frame time="300">224 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 -7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">0 192 32 32</frame>
+				<frame time="300">96 192 32 32</frame>	
+				<frame time="300">192 192 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="ranged-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-10 0"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">0 224 32 32</frame>
+				<frame time="300">96 224 32 32</frame>
+				<frame time="300">192 224 32 32</frame>		
+			</sprite>
+		</scene>
+
+		<scene name="ranged-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">0 256 32 32</frame>
+				<frame time="300">96 256 32 32</frame>
+				<frame time="300">192 256 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 10"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">32 256 32 32</frame>
+				<frame time="300">128 256 32 32</frame>
+				<frame time="300">224 256 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="300">64 256 32 32</frame>
+				<frame time="300">160 256 32 32</frame>		
+				<frame time="300">256 256 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="ranged-fast-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="10 0"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 224 32 32</frame>
+				<frame time="150">160 224 32 32</frame>
+				<frame time="150">256 224 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-fast-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 -7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 192 32 32</frame>
+				<frame time="150">160 192 32 32</frame>
+				<frame time="150">256 192 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="ranged-fast-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -10"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 192 32 32</frame>
+				<frame time="150">128 192 32 32</frame>
+				<frame time="150">224 192 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-fast-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 -7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 192 32 32</frame>
+				<frame time="150">96 192 32 32</frame>	
+				<frame time="150">192 192 32 32</frame>	
+			</sprite>
+		</scene>
+
+		<scene name="ranged-fast-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-10 0"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 224 32 32</frame>
+				<frame time="150">96 224 32 32</frame>
+				<frame time="150">192 224 32 32</frame>		
+			</sprite>
+		</scene>
+
+		<scene name="ranged-fast-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">0 256 32 32</frame>
+				<frame time="150">96 256 32 32</frame>
+				<frame time="150">192 256 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-fast-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 10"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 256 32 32</frame>
+				<frame time="150">128 256 32 32</frame>
+				<frame time="150">224 256 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="ranged-fast-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 7"/>
+			<sprite origin="16 16" looping="false" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">64 256 32 32</frame>
+				<frame time="150">160 256 32 32</frame>		
+				<frame time="150">256 256 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="falling">
+			<scene src="shared" />
+			<sprite origin="16 16" layer="20" looping="true" texture="./spider_1.png" material="system/default.mats:actor">
+				<frame time="150">32 256 32 32</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="10 10" layer="-1" texture="doodads/special/shadows.png">
+					<frame>46 0 20 20</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

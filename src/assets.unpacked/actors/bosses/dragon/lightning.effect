@@ -1,0 +1,85 @@
+<effect layer="500">
+
+	<sprite looping="false" origin="32 512" texture="./lightning.png" material="system/default.mats:bright-noxray">
+		<frame time="75">0 0 64 512</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="128" />
+		
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="10" />
+		<color-a value="0/255" />
+	</light>	
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="40" />
+		
+		<color-r value="1" />
+		<color-g value="2" />
+		<color-b value="4" />
+		<color-a value="0/255" />
+	</light>	
+
+
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="30" />
+		
+		<color-r value="10" />
+		<color-g value="10" />
+		<color-b value="10" />
+		<color-a value="0/255" />
+	</light>			
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="600" />
+		
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="4" />
+		<color-a value="0/255" />
+	</light>				
+
+</effect>

@@ -1,0 +1,67 @@
+<effect bounds="100 100" layer="-1" >	
+	<param name="old_ttl" default="10000" />
+	<param name="ttl" default="2000" />
+	<param name="radius" default="10" />
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="radius * radius / 30/10"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -10 * it"
+		
+        color-r="1 - mod(it+l+rand(u*i), 0.5)"
+        color-g="0.5 - mod(it+l+rand(u*i), 1)"
+        color-b="0"
+        color-a="(1 - mod(it+l+rand(u*i), 1)) * saturate(ttl / 200)"
+	>
+        <frame time="600">0 0 1 1</frame>
+	</sprite>
+
+	<sprite origin="4 4" looping="true" texture="players/wizard/scorchedearth.png" material="effects/effects.mats:fire"
+		num-sprites="radius * radius / 50"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+		color-a="min(rand(u+i*47),(it+il)/2) * saturate(ttl / 200)"
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite>
+	
+
+	
+	
+	
+	%// longflame
+	<light pos-x="0" pos-y="pow(t, 4) *-15">
+		<sprite texture="system/light_L.png">
+			<frame time="750">0 0 128 128</frame>
+		</sprite>
+			
+		<length value="500" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 800) * 400" />
+		
+		<size value="max(t*10, radius * 3 + 10)" />
+		
+		<color-r value="max(0,0.8-t*0.8)" />
+		<color-g value="max(0, 0.2-t*0.2)" />
+		<color-b value="max(0, 0.2-t*0.2)" />
+		<color-a value="0" />
+	</light>
+
+
+</effect>

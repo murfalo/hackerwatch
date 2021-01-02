@@ -1,0 +1,70 @@
+<effect looping="true">
+
+	<param name="angle" default="0" />
+
+
+<variation>	
+	<sprite origin="8 8" looping="true" texture="./mummy_mb_spray.png" material="system/default.mats:projectile"
+	
+		num-sprites="5"
+		
+		scale-x="saturate(t+l)"
+        scale-y="saturate(t+l)"
+		angle="rand(u + i) * 2 * pi"
+		pos-x="(rand(29*u+67*i)-0.5)*14* saturate(t*2+0.33) +2"
+		pos-y="(rand(23*u+97*i)-0.5)*14* saturate(t*2+0.33) - 7"
+	
+	>
+		<frame time="200">0 0 16 16</frame>
+		<frame time="200">0 16 16 16</frame>
+		<frame time="200">0 32 16 16</frame>
+		
+	</sprite>
+
+</variation>
+
+
+
+<variation>	
+	<sprite origin="8 8" looping="true" texture="./mummy_mb_spray.png" material="system/default.mats:projectile"
+	
+		num-sprites="5"
+		
+		scale-x="saturate(t+l)"
+        scale-y="saturate(t+l)"
+		angle="rand(u + i) * 2 * pi"
+		pos-x="(rand(29*u+67*i)-0.5)*14* saturate(t*2+0.33) + 2"
+		pos-y="(rand(23*u+97*i)-0.5)*14* saturate(t*2+0.33) - 7"
+	
+	>
+		<frame time="200">0 0 16 16</frame>
+		<frame time="200">0 16 16 16</frame>
+		<frame time="200">0 32 16 16</frame>
+		
+	</sprite>
+
+</variation>
+
+	
+<!-- 	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="saturate(t*4+0.33)*25" />
+
+		<color-r value="t*2 + 0.33" />
+		<color-g value="t*2 + 0.33" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light> -->
+</effect>

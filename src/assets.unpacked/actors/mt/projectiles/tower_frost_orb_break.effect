@@ -1,0 +1,64 @@
+<effect looping="false">	
+	<light pos-y="24 + 24*t" pos-x="24 + 24*t"> 
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="1000" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="(t+l)*pi*-2"/>
+		
+		<size value="48 + 48*t" />
+		
+		<color-r value="2.5- 2.5*t" />
+		<color-g value="2.5- 2.5*t" />
+		<color-b value="6- 6*t" />
+	</light>
+	<sprite looping="false" origin="24 28" texture="./tower_frost_orb_break.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="0">
+
+		<frame time="50">0 0 46 55</frame>
+		<frame time="50">46 0 46 55</frame>
+		<frame time="50">92 0 46 55</frame>
+		<frame time="50">138 0 46 55</frame>
+		<frame time="50">184 0 46 55</frame>
+		<frame time="50">0 55 46 55</frame>
+		<frame time="50">46 55 46 55</frame>
+		<frame time="50">92 55 46 55</frame>
+		<frame time="50">138 55 46 55</frame>
+		<frame time="100">0 0 0 0</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="23+5*saturate(sin(t*pi*2)) + 23*t" />
+		
+		<color-r value="0.2 - t*0.2" />
+		<color-g value="0.2 - t*0.2" />
+		<color-b value="2 - t*2" />
+		<color-a value="0"/>
+	</light>
+</effect>

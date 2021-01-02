@@ -1,0 +1,27 @@
+<effect looping="true" wpos-track="15">
+
+	<trail texture="./player_trail_flag.png" material="system/default.mats:default-noxray">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposyz(i)" />
+		
+		<length value="70" />
+		<looping value="true" />
+		
+		<segments value="15" />
+		<size value="10" />
+		
+		
+		<uv-l-x value="45 * (15 - i) / 15" />
+		<uv-l-y value="167" />
+		
+		<uv-r-x value="45 * (15 - i) / 15" />
+		<uv-r-y value="177" />
+	
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="saturate(1-(i/15))" />
+	</trail>
+	
+</effect>

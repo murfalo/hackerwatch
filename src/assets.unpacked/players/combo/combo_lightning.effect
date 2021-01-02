@@ -1,0 +1,149 @@
+<effect looping="true" layer="5">
+	<param name="radius" default="8" />
+	<param name="posy" default="-6" />
+	<param name="posx" default="5" />
+	<param name="cR" default="0" />
+	<param name="cG" default="1" />
+	<param name="cB" default="1" />
+	
+	
+	<sprite origin="8 8" looping="false" texture="./combo.png" material="system/default.mats:bright-noxray"
+	
+		num-sprites="3-rand(u+i+l+51)"
+		scale-x="saturate(0.9-t*0.5)"
+		scale-y="saturate(0.9-t*0.5)"
+		angle="rand(u+i+l*72)*pi*2"
+		pos-x="t*(rand(i+u+l*4507)*18-9)/2 + (rand(i+u+l*4507)*18-9)/2"
+		pos-y="posy+t*(5+rand(i+u+l*249)*18-9)/2 + (5+rand(i+u+l*249)*18-9)/2"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		color-r="1+cR"
+		color-g="1+cG"
+		color-b="1+cB"
+	
+	>
+		
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="50">0 96 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">16 96 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">32 96 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">48 96 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">0 112 16 16</frame>
+		<frame time="20">0 0 0 0</frame>
+		<frame time="50">16 112 16 16</frame>
+		<frame time="427">0 0 0 0</frame>
+		
+		
+	</sprite>
+	<sprite origin="8 8" looping="false" texture="./combo.png" material="system/default.mats:bright-noxray"
+	
+		num-sprites="4"
+		scale-x="0.5"
+		scale-y="0.5"
+		angle="rand(i+u+l*31)*pi*2"
+		pos-x="t*(rand(i+u+l*101)*18-9)/2 + (rand(i+u+l*101)*18-9)/2"
+		pos-y="posy+t*(5+rand(i+u+l*149)*18-9)/2 + (5+rand(i+u+l*149)*18-9)/2"
+		color-a="saturate(sin(pow(t,1.5)*pi*1.2))"
+		color-r="1+cR"
+		color-g="1+cG"
+		color-b="1+cB"
+	
+	>
+		
+		
+		<frame time="1">0 0 0 0</frame>
+		<frame time="40">0 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">16 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">32 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">48 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">0 112 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">16 112 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">0 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="50">16 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="60">32 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="60">48 96 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="60">0 112 16 16</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="60">16 112 16 16</frame>
+		
+	</sprite>
+	
+	
+	<sprite origin="10 14" looping="true" layer="1" texture="./combo.png" material="system/default.mats:bright-noxray"
+		
+		color-r="cR+saturate(0.3*(1-35*pow(t,2.7)))"
+		color-g="cG+saturate(0.3*(1-35*pow(t,2.7)))"
+		color-b="cB+saturate(0.3*(1-35*pow(t,2.7)))"
+		color-a="saturate(0.3*(1-35*pow(t,2.7)))"
+	>
+		<frame time="824">0 20 19 19</frame>
+		<frame time="100">0 0 0 0</frame>
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*80" />
+			
+		<color-r value="(1+cR*2)/3" />
+		<color-g value="(1+cG*2)/3" />
+		<color-b value="(1+cB*2)/3" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="120*(1-t)" />
+			
+		<color-r value="(1+cR*2)/3" />
+		<color-g value="(1+cG*2)/3" />
+		<color-b value="(1+cB*2)/3" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

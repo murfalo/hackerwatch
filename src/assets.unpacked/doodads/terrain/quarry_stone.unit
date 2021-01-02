@@ -1,0 +1,74 @@
+<unit slot="doodad">
+	<scenes 1="1" 2="2" 3="3" 4="4">
+		<scene name="1">
+			<collision static="true">
+				<polygon shoot-through="false" decompose="2">
+					<point>-11 0</point>			
+					<point>-4 -11</point>
+					<point>9 -1</point>
+					<point>2 10</point>				
+				</polygon>
+			</collision>	
+			<sprite origin="11 20" texture="./quarry_stone.png" material="system/default.mats:default-noxray">
+				<frame>0 0 21 29</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="6 9" texture="./quarry_stone.png" material="system/default.mats:default-noxray">
+					<frame>48 18 19 16</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="2">
+			<collision static="true">
+				<polygon shoot-through="false" decompose="2">
+					<point>-12 0</point>			
+					<point>0 -9</point>
+					<point>10 4</point>
+					<point>0 12</point>				
+				</polygon>
+			</collision>	
+			<sprite origin="17 23" texture="./quarry_stone.png" material="system/default.mats:default-noxray">
+				<frame>22 0 26 33</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="14 13" texture="./quarry_stone.png" material="system/default.mats:default-noxray">
+					<frame>48 0 28 18</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="3">
+			<collision static="true">
+				<polygon shoot-through="false" decompose="2">
+					<point>-11 -5</point>			
+					<point>9 -5</point>
+					<point>9 8</point>
+					<point>-7 11</point>
+					<point>-11 6</point>						
+				</polygon>
+			</collision>	
+			<sprite origin="14 16" texture="./quarry_stone.png" material="system/default.mats:default-noxray">
+				<frame>0 29 22 27</frame>
+			</sprite>
+			<shadow>
+				<sprite origin="6 10" texture="./quarry_stone.png" material="system/default.mats:default-noxray">
+					<frame>43 34 18 20</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="4">
+			<collision static="true">
+				<polygon shoot-through="true" decompose="2">
+					<point>-6 -11</point>			
+					<point>0 -11</point>
+					<point>10 -5</point>
+					<point>10 4</point>		
+					<point>0 12</point>		
+					<point>-12 2</point>							
+				</polygon>
+			</collision>	
+			<sprite layer="-20" origin="12 12" texture="./quarry_stone.png" material="system/default.mats:floor">
+				<frame>22 33 21 22</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

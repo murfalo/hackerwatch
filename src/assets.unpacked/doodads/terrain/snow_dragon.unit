@@ -1,0 +1,25 @@
+<unit slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="on">
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif			
+			<effect src="doodads/terrain/snow_dragon_intro.effect" />
+			<effect delay="750" src="doodads/terrain/snow_dragon_wind.effect" />
+		</scene>
+		<scene name="off">
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif			
+			<!-- <effect delay="250" src="doodads/terrain/snow_dragon_wind_intro.effect" /> -->
+			<!-- <effect delay="3250" src="doodads/terrain/snow_dragon_wind.effect" /> -->
+			<effect src="doodads/terrain/snow_dragon_wind_outro.effect" />			
+		</scene>		
+	</scenes>
+</unit>
+
+

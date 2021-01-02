@@ -1,0 +1,29 @@
+<effect>
+	
+	<sprite origin="0 0"  looping="true" texture="./potion_djinn_teleport.png" material="system/default.mats:glow-both-bright"
+	num-sprites="15"
+	pos-y="rand(u+i+23) * 30 * t - rand(u+i+149) * 30 * t - 8"
+	color-r="saturate(2-t*1.8)"
+	color-g="2"
+	color-b="saturate(2-t)"
+	color-a="saturate(1-pow(t,4))"
+	
+	>
+		<frame time="500">15 12 1 1</frame>
+	</sprite>
+	
+	
+	<sprite origin="0 0"  looping="true" texture="./potion_djinn_teleport.png" material="system/default.mats:glow-both-bright"
+	num-sprites="6"
+	pos-x="rand(u+i+47) * 10 * t - rand(u+i+101) * 10 * t"
+	pos-y="rand(u+i+149) * 10 * t - rand(u+i+23) * 10 * t -8"
+	color-r="saturate(2-t*1.8)"
+	color-g="2"
+	color-b="saturate(2-t)"
+	color-a="saturate(1-pow(t,4))"
+	
+	>
+		<frame time="500">15 12 1 1</frame>
+	</sprite>
+	
+</effect>

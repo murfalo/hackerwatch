@@ -1,0 +1,40 @@
+<effect>
+	
+	<data>
+		<string name="sound">event:/enemy/wisp/death_explosion</string>
+		<string name="fx">players/summons/potion_djinn_teleport_particles.effect</string>
+	</data>		
+	
+	<sprite origin="16 16" looping="true" texture="./potion_djinn_teleport.png" material="system/default.mats:glow-both-bright"
+	scale-x="t * sin( 1.5 * t * pi) + 0.7"
+	scale-y="1+pow(t,4)"
+	pos-y="-8"
+	color-r="saturate(1-t*1)"
+	color-g="3"
+	color-b="saturate(2.5-t*1.8)"
+	
+	>
+		<frame time="100">0 0 32 32</frame>
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="200"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="100 * (1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

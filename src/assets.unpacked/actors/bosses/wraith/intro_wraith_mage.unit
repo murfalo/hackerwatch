@@ -1,0 +1,51 @@
+<unit slot="doodads">
+	<scenes>
+		<scene name="intro" trigger-snd="event:/enemy/boss_wraith/spawn">
+		
+			<collision static="false">
+				<circle offset="-2 0" radius="18" sensor="false" density="100"/>
+			</collision>
+		
+		<!-- intro -->
+			<sprite origin="35 56" ulayer="0" looping="false" texture="./intro_wraith_mage.png" material="system/default.mats:actor">
+				<frame time="60">0 0 67 63</frame>
+				<frame time="60">67 0 67 63</frame>
+				<frame time="60">134 0 67 63</frame>
+				<frame time="60">201 0 67 63</frame>
+				<frame time="60">268 0 67 63</frame>
+				<frame time="60">335 0 67 63</frame>
+				<frame time="60">402 0 67 63</frame>
+				<frame time="60">0 63 67 63</frame>
+				<frame time="60">67 63 67 63</frame>
+				<frame time="60">134 63 67 63</frame>
+				<frame time="60">201 63 67 63</frame>
+				<frame time="60">268 63 67 63</frame>
+				<frame time="60">335 63 67 63</frame>
+				<frame time="60">402 63 67 63</frame>
+				<frame time="60">0 126 67 63</frame>
+				<frame time="60">67 126 67 63</frame>
+				<frame time="60">134 126 67 63</frame>
+			</sprite> 
+			
+			<sprite origin="35 56" ulayer="1" looping="false" texture="./intro_wraith_mage.png" material="system/default.mats:bright-noxray">
+				<frame time="60">0 190 67 63</frame>
+				<frame time="60">67 190 67 63</frame>
+				<frame time="60">134 190 67 63</frame>
+				<frame time="60">201 190 67 63</frame>
+				<frame time="60">268 190 67 63</frame>
+				<frame time="60">335 190 67 63</frame>
+				<frame time="60">402 190 67 63</frame>
+				<frame time="60">0 253 67 63</frame>
+				<frame time="60">67 253 67 63</frame>
+				<frame time="60">134 253 67 63</frame>
+				<frame time="60">201 253 67 63</frame>
+				<frame time="60">268 253 67 63</frame>
+				<frame time="60">335 253 67 63</frame>
+				<frame time="60">402 253 67 63</frame>
+				<frame time="60">0 316 67 63</frame>
+				<frame time="60">67 316 67 63</frame>
+				<frame time="60">134 316 67 63</frame>
+			</sprite>             
+		</scene>
+	</scenes>
+</unit>

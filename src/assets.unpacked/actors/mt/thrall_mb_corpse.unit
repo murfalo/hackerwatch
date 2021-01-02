@@ -1,0 +1,71 @@
+<unit netsync="position">
+	<behavior class="CompositeActorBehavior">
+		<string name="type">undead</string>
+		<int name="hp">99999</int>
+		<int name="armor">1000</int>
+		<int name="resistance">1000</int>
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+
+		<int name="aggro-range">10000</int>
+		<bool name="no-buffs">true</bool>
+		<bool name="targetable">false</bool>
+		<bool name="counts-as-kill">true</bool>
+		<bool name="floating-hurt">false</bool>
+		<bool name="crosshair-colors">false</bool>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+      
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">respawn</string>
+				<string name="start-snd">event:/enemy/thrall_mb/revive</string>
+				
+				<int name="charges">1</int>
+				<int name="cooldown">0</int>
+				<int name="castpoint">2750</int>
+				<int name="range">9000</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/mt/thrall_mb_pale.unit</string>
+						<bool name="aggro">true</bool>
+					</dict>
+
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="idle">
+		<scene name="idle">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="119 3 4 5"/>
+			<sprite origin="16 25" texture="./thrall_mb_pale.png" material="system/default.mats:actor">
+				<frame>0   192 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="respawn">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="119 3 4 5"/>
+			<sprite origin="16 25"  looping="false" texture="./thrall_mb_pale.png" material="system/default.mats:actor">
+				<frame time="1500">0   192 32 32</frame>
+				<frame time="100">32  192 32 32</frame>
+				<frame time="100">64  192 32 32</frame>
+				<frame time="150">96  192 32 32</frame>
+				<frame time="150">128 192 32 32</frame>
+				<frame time="200">160 192 32 32</frame>
+				<frame time="250">192 192 32 32</frame>
+				<frame time="300">224 192 32 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

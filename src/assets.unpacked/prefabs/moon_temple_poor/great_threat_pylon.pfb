@@ -1,0 +1,1030 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="actors/mt/bosses/giant_wisp/nav_collision_small.unit"><vec2>0 0</vec2><int>3</int></array>
+		<array name="system/system.fnt">
+			<array>
+				<vec2>0 0</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">GT</string>
+					<bool name="editor">f</bool>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="prefabs/prefab_marker_64.unit"><vec2>-32 -32</vec2><int>2</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ToggleImmortality</string>
+			<int>4</int>
+			<vec3>-320 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="#Units"><int>11</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>5</int>
+			<vec3>-96 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>6</int>
+			<vec3>-320 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnWisps</string>
+			<array><int>51</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>7</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_room_setup</string>
+			<dict>
+				<string name="EventName">great_threat_room_setup</string>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>8</int>
+			<vec3>-384 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>21</int>
+					<string>LastSpawned</string>
+					<int>19</int>
+					<string>LastSpawned</string>
+					<int>37</int>
+					<string>LastSpawned</string>
+					<int>33</int>
+					<string>LastSpawned</string>
+					<int>43</int>
+					<string>LastSpawned</string>
+					<int>30</int>
+					<string>LastSpawned</string>
+					<int>34</int>
+					<string>LastSpawned</string>
+					<int>42</int>
+					<string>LastSpawned</string>
+					<int>27</int>
+					<string>LastSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>9</int>
+			<vec3>0 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>10</int><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>10</int>
+			<vec3>-192 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat</string>
+			<dict>
+				<string name="EventName">great_threat</string>
+			</dict>
+			<array><int>11</int><int>0</int><int>22</int><int>0</int><int>6</int><int>0</int><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>11</int>
+			<vec3>0 -8 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pylon_gt</string>
+			<dict>
+				<string name="UnitType">actors/mt/bosses/giant_wisp/pylon_gt.unit</string>
+				<string name="SceneName">spawn</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>12</int>
+			<vec3>96 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_room_disabled</string>
+			<dict>
+				<string name="EventName">great_threat_room_disabled</string>
+			</dict>
+			<array><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>13</int>
+			<vec3>96 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>11</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>12</int><int>0</int><int>53</int><int>0</int><int>68</int><int>0</int><int>56</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>14</int>
+			<vec3>-384 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/buffs.sval:cancel-skills</string>
+				<bool name="CanKill">f</bool>
+				<array name="#Units"><int>11</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>15</int>
+			<vec3>-320 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat_done</string>
+			<dict>
+				<string name="EventName">great_threat_done</string>
+			</dict>
+			<array><int>4</int><int>0</int><int>14</int><int>1000</int><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>16</int>
+			<vec3>-256 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>15</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>17</int>
+			<vec3>224 32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<array><int>18</int><int>0</int><int>67</int><int>3000</int><int>19</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>18</int>
+			<vec3>-3 -45 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>73</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>19</int>
+			<vec3>-3 -45 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>20</int>
+			<vec3>-320 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>7</string>
+			<dict>
+				<int name="NumToExecute">7</int>
+				<array name="ToExecute">
+					<int>47</int>
+					<int>46</int>
+					<int>42</int>
+					<int>34</int>
+					<int>30</int>
+					<int>43</int>
+					<int>33</int>
+					<int>37</int>
+					<int>19</int>
+					<int>21</int>
+					<int>27</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>21</int>
+			<vec3>-33 -34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost_exploding.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>22</int>
+			<vec3>-192 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="#Units"><int>11</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>23</int>
+			<vec3>191 49 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<array><int>24</int><int>0</int><int>66</int><int>3000</int><int>21</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>24</int>
+			<vec3>-33 -34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>74</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>25</int>
+			<vec3>170 79 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<array><int>26</int><int>0</int><int>65</int><int>3000</int><int>27</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>26</int>
+			<vec3>-42 -10 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>75</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>-42 -10 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>28</int>
+			<vec3>234 144 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<array><int>29</int><int>0</int><int>62</int><int>3000</int><int>30</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>29</int>
+			<vec3>8 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>78</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>30</int>
+			<vec3>8 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>31</int>
+			<vec3>277 93 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<array><int>32</int><int>0</int><int>60</int><int>3000</int><int>33</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>32</int>
+			<vec3>37 -5 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>71</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>33</int>
+			<vec3>37 -5 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>34</int>
+			<vec3>-21 35 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost_exploding.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>35</int>
+			<vec3>201 139 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<array><int>36</int><int>0</int><int>63</int><int>3000</int><int>34</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>36</int>
+			<vec3>-21 35 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>77</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>37</int>
+			<vec3>27 -34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost_exploding.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>38</int>
+			<vec3>261 57 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<array><int>39</int><int>0</int><int>57</int><int>3000</int><int>37</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>39</int>
+			<vec3>27 -34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>72</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>40</int>
+			<vec3>174 115 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<array><int>41</int><int>0</int><int>64</int><int>3000</int><int>42</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>41</int>
+			<vec3>-38 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>76</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>42</int>
+			<vec3>-38 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>frost</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>43</int>
+			<vec3>32 23 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<dict>
+				<string name="UnitType">actors/mt/wisp_frost_exploding.unit</string>
+				<bool name="AggroEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>44</int>
+			<vec3>265 126 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>expl</string>
+			<array><int>45</int><int>0</int><int>61</int><int>3000</int><int>43</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>45</int>
+			<vec3>32 23 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>70</int><int>0</int></array>
+		</array>
+		<array><string>ScriptLink</string><int>46</int><vec3>-288 160 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>none</string></array>
+		<array><string>ScriptLink</string><int>47</int><vec3>-224 160 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>none</string></array>
+		<array>
+			<string>RandomCount</string>
+			<int>48</int>
+			<vec3>-256 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<int name="NumToExecute">5</int>
+				<array name="ToExecute">
+					<int>47</int>
+					<int>46</int>
+					<int>42</int>
+					<int>34</int>
+					<int>30</int>
+					<int>43</int>
+					<int>33</int>
+					<int>37</int>
+					<int>19</int>
+					<int>21</int>
+					<int>27</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalVariable</string>
+			<int>49</int>
+			<vec3>-256 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_pylons</string>
+			<dict>
+				<string name="Name">gt_pylons</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>50</int>
+			<vec3>-256 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<int name="Value">2</int>
+				<array name="Variable"><int>49</int></array>
+				<array name="OnTrue"><int>48</int></array>
+				<array name="OnFalse"><int>52</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>51</int>
+			<vec3>-320 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="OnFalse"><int>50</int></array>
+				<array name="Variable"><int>49</int></array>
+				<array name="OnTrue"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>52</int>
+			<vec3>-192 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<int name="NumToExecute">4</int>
+				<array name="ToExecute">
+					<int>47</int>
+					<int>46</int>
+					<int>42</int>
+					<int>34</int>
+					<int>30</int>
+					<int>43</int>
+					<int>33</int>
+					<int>37</int>
+					<int>19</int>
+					<int>21</int>
+					<int>27</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventRanged</string>
+			<int>53</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat_killed</string>
+			<dict>
+				<string name="EventName">great_threat_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>54</int>
+			<vec3>256 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>17</int><int>23</int><int>25</int><int>35</int><int>40</int><int>28</int><int>44</int><int>31</int><int>38</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>55</int>
+			<vec3>256 -128 0</vec3>
+			<bool>f</bool>
+			<int>20</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">3500</int>
+			</dict>
+			<array><int>54</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>56</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Physical">0</int>
+				<bool name="TrueStrike">t</bool>
+				<string name="Buff">actors/buffs.sval:suicide</string>
+				<array name="#Units">
+					<int>19</int>
+					<string>AllSpawned</string>
+					<int>37</int>
+					<string>AllSpawned</string>
+					<int>33</int>
+					<string>AllSpawned</string>
+					<int>43</int>
+					<string>AllSpawned</string>
+					<int>30</int>
+					<string>AllSpawned</string>
+					<int>34</int>
+					<string>AllSpawned</string>
+					<int>42</int>
+					<string>AllSpawned</string>
+					<int>27</int>
+					<string>AllSpawned</string>
+					<int>21</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>57</int>
+			<vec3>320 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>38</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>58</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_enemy</string>
+			<dict>
+				<string name="EventName">spawn_enemy</string>
+			</dict>
+			<array><int>69</int><int>250</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>59</int>
+			<vec3>160 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>55</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>60</int>
+			<vec3>320 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>31</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>61</int>
+			<vec3>320 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>44</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>62</int>
+			<vec3>288 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>28</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>63</int>
+			<vec3>192 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>35</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>64</int>
+			<vec3>128 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>40</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>65</int>
+			<vec3>128 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>25</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>66</int>
+			<vec3>160 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>23</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>67</int>
+			<vec3>224 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>17</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>68</int>
+			<vec3>192 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts">
+					<int>55</int>
+					<int>54</int>
+					<int>17</int>
+					<int>23</int>
+					<int>25</int>
+					<int>40</int>
+					<int>35</int>
+					<int>28</int>
+					<int>44</int>
+					<int>31</int>
+					<int>38</int>
+					<int>67</int>
+					<int>66</int>
+					<int>65</int>
+					<int>64</int>
+					<int>63</int>
+					<int>62</int>
+					<int>61</int>
+					<int>57</int>
+					<int>60</int>
+					<int>30</int>
+					<int>43</int>
+					<int>33</int>
+					<int>37</int>
+					<int>19</int>
+					<int>21</int>
+					<int>27</int>
+					<int>34</int>
+					<int>42</int>
+					<int>39</int>
+					<int>18</int>
+					<int>24</int>
+					<int>26</int>
+					<int>41</int>
+					<int>36</int>
+					<int>29</int>
+					<int>45</int>
+					<int>32</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>69</int>
+			<vec3>96 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>RoomActivate</string>
+			<array><int>59</int><int>0</int><int>55</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>70</int>
+			<vec3>35 26 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>71</int>
+			<vec3>40 -5 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>72</int>
+			<vec3>30 -35 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>73</int>
+			<vec3>-4 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>74</int>
+			<vec3>-35 -34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>75</int>
+			<vec3>-45 -10 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>76</int>
+			<vec3>-39 18 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>77</int>
+			<vec3>-24 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>78</int>
+			<vec3>8 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

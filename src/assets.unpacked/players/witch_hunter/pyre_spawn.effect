@@ -1,0 +1,121 @@
+<effect layer="0">
+
+	<param name="radius" default="13" />
+	<param name="posy" default="-5" />
+	<param name="posx" default="3.5" />
+
+	<data>
+		<string name="gore">effects/gibs/doodads/gib_secutor_spawn.sval</string>
+	</data>	
+	<sprite origin="16 20" looping="false" texture="./pyre.png" material="system/default.mats:bright-noxray"
+	
+	>
+		<frame time="100">32 32 32 32</frame>
+		<frame time="100">64 32 32 32</frame>
+		<frame time="100">96 32 32 32</frame>
+		<frame time="100">0 64 32 32</frame>
+	</sprite>
+	<sprite origin="16 20" looping="false" texture="./pyre.png" material="system/default.mats:glow-both-bright"
+	
+	color-a="0.2"
+	>
+		<frame time="100">32 32 32 32</frame>
+		<frame time="100">64 32 32 32</frame>
+		<frame time="100">96 32 32 32</frame>
+		<frame time="100">0 64 32 32</frame>
+	</sprite>
+	
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="40"
+
+		pos-x="it*it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + posx"
+		pos-y="it*it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(it*it*it*it*it)*rand(i)*45"
+		
+		color-r="2"
+		color-g="1-it"
+		color-b="0"
+		color-a="saturate(1 - pow(it,2)"
+	>
+		<frame time="400">0 0 1 1</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>aw
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="128*(1-t)" />
+		
+		<color-r value="2" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>	
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="40" />
+		
+		<color-r value="4" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>	
+
+
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="30" />
+		
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>			
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="75" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="300*(1-t)" />
+		
+		<color-r value="1-t*0.5" />
+		<color-g value="saturate(0.5-t)" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>				
+
+</effect>

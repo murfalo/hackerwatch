@@ -1,0 +1,65 @@
+<effect looping="true" bounds="1024 1024">
+	<param name="angle"/>
+	<param name="height"/>
+	<param name="length"/>
+	<param name="width" default="2"/>
+	
+	<sprite looping="true" origin="0 1" texture="effects/empty.png" material="system/default.mats:bright-noxray"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle"
+		scale-x="length/5"
+		scale-y="0.5 * width"
+		
+		color-r="255/255"
+		color-g="211/255"
+		color-b="0/255"
+		>
+		<frame>55 58 5 2</frame>
+	</sprite>
+
+	<sprite looping="true" origin="0 1" texture="effects/empty.png" material="system/default.mats:bright-noxray"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle"
+		scale-x="length/5"
+		scale-y="0.5 * saturate(width * cos(sin(t*pi)))"
+		
+		color-r="255/255"
+		color-g="255/255"
+		color-b="211/255"
+		color-a="0.5 * saturate(width * cos(sin(t*pi)))"
+		>
+		<frame>55 58 5 2</frame>
+	</sprite>
+
+	
+	<sprite looping="true" origin="0 2.5" texture=".././tower_pyramid_laser.png" material="system/default.mats:glow"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle"
+		scale-x="length/5"
+		scale-y="2 * saturate(width)"
+		color-g="255/255 * saturate(cos(sin(t*pi)) * 0.5 + 0.5)"
+		>
+		<frame>42 57 5 5</frame>
+	</sprite>
+	<sprite looping="true" origin="1 2.5" texture=".././tower_pyramid_laser.png" material="system/default.mats:glow"
+		pos-x="0"
+		pos-y="-height"
+		angle="angle"
+		scale-y="1 * saturate(width)"
+		scale-x="1 * saturate(width)"
+		>
+		<frame time="50">49 57 3 5</frame>
+	</sprite>
+	<sprite looping="true" origin="1 2.5" texture=".././tower_pyramid_laser.png" material="system/default.mats:glow"
+		pos-x="cos(angle)*length"
+		pos-y="sin(angle)*length - height"
+		angle="angle+2*pi"
+		scale-y="1 * saturate(width)"
+		scale-x="1 * saturate(width)"
+		>
+		<frame time="50">49 57 3 5</frame>
+	</sprite>
+</effect>

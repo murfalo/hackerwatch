@@ -1,0 +1,167 @@
+<dict>
+	<string name="name">.skills.wizard.blast-wave</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 120 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">2500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">players/wizard/blast_wave.effect</string>
+			<string name="snd">event:/player/wizard/wave</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			
+			<int name="mana-cost">35</int>
+			
+			<int name="min-radius">64</int>
+			<float name="dist-scaling">1000</float>
+			
+			<float name="self-dmg">0</float>
+			<float name="team-dmg">0</float>
+			<float name="enemy-dmg">1</float>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="self-effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">60</string>
+				<int name="duration">3000</int>
+			</dict>
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="magical">6</int>
+				</dict>
+				<dict>
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:blast-1</string>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">2500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">players/wizard/blast_wave.effect</string>
+			<string name="snd">event:/player/wizard/wave</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			
+			<int name="mana-cost">40</int>
+			
+			<int name="min-radius">64</int>
+			<float name="dist-scaling">1000</float>
+			
+			<float name="self-dmg">0</float>
+			<float name="team-dmg">0</float>
+			<float name="enemy-dmg">1</float>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="self-effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">60</string>
+				<int name="duration">4000</int>
+			</dict>
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="magical">12</int>
+				</dict>
+				<dict>
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:blast-2</string>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">2500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">players/wizard/blast_wave.effect</string>
+			<string name="snd">event:/player/wizard/wave</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			
+			<int name="mana-cost">45</int>
+			
+			<int name="min-radius">64</int>
+			<float name="dist-scaling">1000</float>
+			
+			<float name="self-dmg">0</float>
+			<float name="team-dmg">0</float>
+			<float name="enemy-dmg">1</float>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="self-effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">60</string>
+				<int name="duration">5000</int>
+			</dict>
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="magical">20</int>
+				</dict>
+				<dict>
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:blast-3</string>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">2500</int>
+			<int name="castpoint">0</int>
+			
+			<string name="fx">players/wizard/blast_wave.effect</string>
+			<string name="snd">event:/player/wizard/wave</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			
+			<int name="mana-cost">50</int>
+			
+			<int name="min-radius">64</int>
+			<float name="dist-scaling">1000</float>
+			
+			<float name="self-dmg">0</float>
+			<float name="team-dmg">0</float>
+			<float name="enemy-dmg">1</float>
+			<bool name="destroy-projectiles">true</bool>
+			
+			<dict name="self-effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">60</string>
+				<int name="duration">6000</int>
+			</dict>
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="magical">30</int>
+				</dict>
+				<dict>
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs.sval:blast-4</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

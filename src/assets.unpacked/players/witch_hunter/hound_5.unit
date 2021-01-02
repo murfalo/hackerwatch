@@ -1,0 +1,290 @@
+<unit netsync="none">
+	<behavior class="BounceProjectile">
+	<string name="anim">idle 8</string>
+		<float name="speed">2.2</float>
+		<int name="ttl">490</int>
+		
+		<int name="penetration">1000</int>
+		<int name="bounces">1000</int>
+		<float name="bounce-speed-mul">0.25</float>
+		<bool name="bounce-on-collide">false</bool>
+		
+		<int name="floor-bounces">5</int>
+		<float name="floor-bounce-intensity-mul">1.5</float>
+		<int name="floor-bounce-height">20</int>
+		
+		<array name="miss-effects">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">players/witch_hunter/hound_hit.effect</string>
+				<float name="self-dmg">0</float>
+				<float name="team-dmg">0</float>
+				<int name="radius">20</int>
+				<float name="dist-scaling">1000</float>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">30</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>
+			<sprite origin="3.5 3.5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>0 8 7 7</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				
+				<frame time="25">0 144 14 18</frame>
+				<frame time="100">0 0 14 18</frame>
+				<frame time="45">0 18 14 18</frame>
+				<frame time="45">0 36 14 18</frame>
+				<frame time="45">0 54 14 18</frame>
+				<frame time="45">0 72 14 18</frame>
+				<frame time="45">0 90 14 18</frame>
+				<frame time="45">0 108 14 18</frame>
+				<frame time="45">0 126 14 18</frame>
+				<frame time="50">0 144 14 18</frame>
+			</sprite>
+			
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">112 144 14 18</frame>
+				<frame time="100">112 0 14 18</frame>
+				<frame time="45">112 18 14 18</frame>
+				<frame time="45">112 36 14 18</frame>
+				<frame time="45">112 54 14 18</frame>
+				<frame time="45">112 72 14 18</frame>
+				<frame time="45">112 90 14 18</frame>
+				<frame time="45">112 108 14 18</frame>
+				<frame time="45">112 126 14 18</frame>
+				<frame time="50">112 144 14 18</frame>
+			</sprite>
+			<effect ulayer="-1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				<frame time="25">14 144 14 18</frame>
+				<frame time="100">14 0 14 18</frame>
+				<frame time="45">14 18 14 18</frame>
+				<frame time="45">14 36 14 18</frame>
+				<frame time="45">14 54 14 18</frame>
+				<frame time="45">14 72 14 18</frame>
+				<frame time="45">14 90 14 18</frame>
+				<frame time="45">14 108 14 18</frame>
+				<frame time="45">14 126 14 18</frame>
+				<frame time="50">14 144 14 18</frame>
+			</sprite>
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">126 144 14 18</frame>
+				<frame time="100">126 0 14 18</frame>
+				<frame time="45">126 18 14 18</frame>
+				<frame time="45">126 36 14 18</frame>
+				<frame time="45">126 54 14 18</frame>
+				<frame time="45">126 72 14 18</frame>
+				<frame time="45">126 90 14 18</frame>
+				<frame time="45">126 108 14 18</frame>
+				<frame time="45">126 126 14 18</frame>
+				<frame time="50">126 144 14 18</frame>
+			</sprite>
+			<effect ulayer="-1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				<frame time="25">28 144 14 18</frame>
+				<frame time="100">28 0 14 18</frame>
+				<frame time="45">28 18 14 18</frame>
+				<frame time="45">28 36 14 18</frame>
+				<frame time="45">28 54 14 18</frame>
+				<frame time="45">28 72 14 18</frame>
+				<frame time="45">28 90 14 18</frame>
+				<frame time="45">28 108 14 18</frame>
+				<frame time="45">28 126 14 18</frame>
+				<frame time="50">28 144 14 18</frame>
+			</sprite>
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">140 144 14 18</frame>
+				<frame time="100">140 0 14 18</frame>
+				<frame time="45">140 18 14 18</frame>
+				<frame time="45">140 36 14 18</frame>
+				<frame time="45">140 54 14 18</frame>
+				<frame time="45">140 72 14 18</frame>
+				<frame time="45">140 90 14 18</frame>
+				<frame time="45">140 108 14 18</frame>
+				<frame time="45">140 126 14 18</frame>
+				<frame time="50">140 144 14 18</frame>
+			</sprite>
+			<effect ulayer="-1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				<frame time="25">42 144 14 18</frame>
+				<frame time="100">42 0 14 18</frame>
+				<frame time="45">42 18 14 18</frame>
+				<frame time="45">42 36 14 18</frame>
+				<frame time="45">42 54 14 18</frame>
+				<frame time="45">42 72 14 18</frame>
+				<frame time="45">42 90 14 18</frame>
+				<frame time="45">42 108 14 18</frame>
+				<frame time="45">42 126 14 18</frame>
+				<frame time="50">42 144 14 18</frame>
+			</sprite>
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">154 144 14 18</frame>
+				<frame time="100">154 0 14 18</frame>
+				<frame time="45">154 18 14 18</frame>
+				<frame time="45">154 36 14 18</frame>
+				<frame time="45">154 54 14 18</frame>
+				<frame time="45">154 72 14 18</frame>
+				<frame time="45">154 90 14 18</frame>
+				<frame time="45">154 108 14 18</frame>
+				<frame time="45">154 126 14 18</frame>
+				<frame time="50">154 144 14 18</frame>
+			</sprite>
+			<effect ulayer="-1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				<frame time="25">56 144 14 18</frame>
+				<frame time="100">56 0 14 18</frame>
+				<frame time="45">56 18 14 18</frame>
+				<frame time="45">56 36 14 18</frame>
+				<frame time="45">56 54 14 18</frame>
+				<frame time="45">56 72 14 18</frame>
+				<frame time="45">56 90 14 18</frame>
+				<frame time="45">56 108 14 18</frame>
+				<frame time="45">56 126 14 18</frame>
+				<frame time="50">56 144 14 18</frame>
+			</sprite>
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">168 144 14 18</frame>
+				<frame time="100">168 0 14 18</frame>
+				<frame time="45">168 18 14 18</frame>
+				<frame time="45">168 36 14 18</frame>
+				<frame time="45">168 54 14 18</frame>
+				<frame time="45">168 72 14 18</frame>
+				<frame time="45">168 90 14 18</frame>
+				<frame time="45">168 108 14 18</frame>
+				<frame time="45">168 126 14 18</frame>
+				<frame time="50">168 144 14 18</frame>
+			</sprite>
+			<effect ulayer="-1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				<frame time="25">70 144 14 18</frame>
+				<frame time="100">70 0 14 18</frame>
+				<frame time="45">70 18 14 18</frame>
+				<frame time="45">70 36 14 18</frame>
+				<frame time="45">70 54 14 18</frame>
+				<frame time="45">70 72 14 18</frame>
+				<frame time="45">70 90 14 18</frame>
+				<frame time="45">70 108 14 18</frame>
+				<frame time="45">70 126 14 18</frame>
+				<frame time="50">70 144 14 18</frame>
+			</sprite>
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">182 144 14 18</frame>
+				<frame time="100">182 0 14 18</frame>
+				<frame time="45">182 18 14 18</frame>
+				<frame time="45">182 36 14 18</frame>
+				<frame time="45">182 54 14 18</frame>
+				<frame time="45">182 72 14 18</frame>
+				<frame time="45">182 90 14 18</frame>
+				<frame time="45">182 108 14 18</frame>
+				<frame time="45">182 126 14 18</frame>
+				<frame time="50">182 144 14 18</frame>
+			</sprite>
+			<effect ulayer="1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				<frame time="25">84 144 14 18</frame>
+				<frame time="100">84 0 14 18</frame>
+				<frame time="45">84 18 14 18</frame>
+				<frame time="45">84 36 14 18</frame>
+				<frame time="45">84 54 14 18</frame>
+				<frame time="45">84 72 14 18</frame>
+				<frame time="45">84 90 14 18</frame>
+				<frame time="45">84 108 14 18</frame>
+				<frame time="45">84 126 14 18</frame>
+				<frame time="50">84 144 14 18</frame>
+			</sprite>
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">196 144 14 18</frame>
+				<frame time="100">196 0 14 18</frame>
+				<frame time="45">196 18 14 18</frame>
+				<frame time="45">196 36 14 18</frame>
+				<frame time="45">196 54 14 18</frame>
+				<frame time="45">196 72 14 18</frame>
+				<frame time="45">196 90 14 18</frame>
+				<frame time="45">196 108 14 18</frame>
+				<frame time="45">196 126 14 18</frame>
+				<frame time="50">196 144 14 18</frame>
+			</sprite>
+			<effect ulayer="1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="7 9" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:projectile">
+				<frame time="25">98 144 14 18</frame>
+				<frame time="100">98 0 14 18</frame>
+				<frame time="45">98 18 14 18</frame>
+				<frame time="45">98 36 14 18</frame>
+				<frame time="45">98 54 14 18</frame>
+				<frame time="45">98 72 14 18</frame>
+				<frame time="45">98 90 14 18</frame>
+				<frame time="45">98 108 14 18</frame>
+				<frame time="45">98 126 14 18</frame>
+				<frame time="50">98 144 14 18</frame>
+			</sprite>
+			<sprite origin="7 9" layer="1" looping="true" texture="players/witch_hunter/hound.png" material="system/default.mats:glow-both-bright">
+				
+				<frame time="25">210 144 14 18</frame>
+				<frame time="100">210 0 14 18</frame>
+				<frame time="45">210 18 14 18</frame>
+				<frame time="45">210 36 14 18</frame>
+				<frame time="45">210 54 14 18</frame>
+				<frame time="45">210 72 14 18</frame>
+				<frame time="45">210 90 14 18</frame>
+				<frame time="45">210 108 14 18</frame>
+				<frame time="45">210 126 14 18</frame>
+				<frame time="50">210 144 14 18</frame>
+			</sprite>
+			<effect ulayer="1" src="players/witch_hunter/hound_trail.effect" />
+		</scene>
+	</scenes>
+</unit>

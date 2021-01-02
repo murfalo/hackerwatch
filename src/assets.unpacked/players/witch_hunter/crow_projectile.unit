@@ -1,0 +1,137 @@
+<unit netsync="none">
+	<behavior class="CrowProjectile">
+		<string name="anim">walk 8</string>
+		<float name="speed">1</float>
+		<float name="speed-delta">0.5</float>
+		<float name="speed-delta-max">5</float>
+		<int name="ttl">500</int>
+
+		<!-- <string name="hit-snd">event:/enemy/boss_mummy/flies-hit</string> -->
+
+		<array name="effects">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<array name="units">
+					<int>1000</int><string>players/witch_hunter/crow.unit</string>
+				</array>
+				<bool name="safe-spawn">true</bool>
+				<int name="spawn-dist">0</int>
+				<bool name="aggro">false</bool>
+			</dict>
+		</array>
+		
+		<array name="miss-effects">
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<array name="units">
+					<int>1000</int><string>players/witch_hunter/crow.unit</string>
+				</array>
+				<bool name="safe-spawn">true</bool>
+				<!-- <bool name="players-in-sight">true</bool> -->
+				<int name="spawn-dist">0</int>
+				<bool name="aggro">false</bool>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			<sprite origin="3 -5" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow-player">
+				<frame>0 8 7 7</frame>
+			</sprite>
+			<collision static="false">
+				<circle offset="0 0" radius="4" projectile="true" />
+			</collision>
+			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="350" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="100 100 100 0" />
+				</colors>
+			</light>
+		</scene>
+
+		<scene name="walk-0">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">0 0 13 13</frame>
+				<frame time="100">0 13 13 13</frame>
+				<frame time="100">0 26 13 13</frame>
+			</sprite>
+		</scene>
+
+
+		<scene name="walk-1">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">13 0 13 13</frame>
+				<frame time="100">13 13 13 13</frame>
+				<frame time="100">13 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">26 0 13 13</frame>
+				<frame time="100">26 13 13 13</frame>
+				<frame time="100">26 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">39 0 13 13</frame>
+				<frame time="100">39 13 13 13</frame>
+				<frame time="100">39 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">52 0 13 13</frame>
+				<frame time="100">52 13 13 13</frame>
+				<frame time="100">52 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">65 0 13 13</frame>
+				<frame time="100">65 13 13 13</frame>
+				<frame time="100">65 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">78 0 13 13</frame>
+				<frame time="100">78 13 13 13</frame>
+				<frame time="100">78 26 13 13</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+		<scene src="shared" />
+			<sprite origin="6 6" looping="true" texture="players/witch_hunter/crow.png" material="system/default.mats:actor">
+				<frame time="100">91 0 13 13</frame>
+				<frame time="100">91 13 13 13</frame>
+				<frame time="100">91 26 13 13</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

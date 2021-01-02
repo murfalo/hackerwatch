@@ -1,0 +1,89 @@
+<effect looping="false">
+
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<param name="radius" default="16" />
+	
+	
+	<sprite looping="false" origin="32 32" texture="effects/animations/impact_smash_2.png" material="system/default.mats:bright-noxray"
+	angle="rand(u)*pi*2"
+	scale-x="0.5"
+	scale-y="0.5"
+	color-r="2"
+	color-g="0.1"
+	color-b="2"
+	>		
+		<frame time="40">0 0 64 64</frame>	
+		<frame time="40">64 0 64 64</frame>			
+		<frame time="40">128 0 64 64</frame>			
+		<frame time="40">192 0 64 64</frame>	
+		<frame time="40">0 64 64 64</frame>	
+		<frame time="40">64 64 64 64</frame>			
+	</sprite>
+	
+	<sprite looping="false" origin="32 32" texture="effects/animations/impact_smash_2.png" material="system/default.mats:glow-both-bright"
+	angle="rand(u)*pi*2"
+	scale-x="(1+t)/2"
+	scale-y="(1+t)/2"
+	color-r="2"
+	color-g="0.1"
+	color-b="2"
+	>		
+		<frame time="70">0 0 64 64</frame>				
+		<frame time="70">0 0 0 0</frame>				
+	</sprite>
+	
+	
+
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="80" />
+			
+		<color-r value="3" />
+		<color-g value="1.5" />
+		<color-b value="0" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="48*(1-t)" />
+			
+		<color-r value="2.5" />
+		<color-g value="0.2" />
+		<color-b value="0.2" />
+		<color-a value="0"/>
+		
+	</light>			
+		
+</effect>

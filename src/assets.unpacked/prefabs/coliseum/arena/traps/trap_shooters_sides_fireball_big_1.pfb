@@ -1,0 +1,674 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name="doodads/generic/trap_shooter_blade_e.unit">
+			<vec2>416 80</vec2>
+			<int>11</int>
+			<vec2>400 128</vec2>
+			<int>12</int>
+			<vec2>416 -64</vec2>
+			<int>13</int>
+			<vec2>424 -16</vec2>
+			<int>14</int>
+			<vec2>424 32</vec2>
+			<int>15</int>
+			<vec2>400 -112</vec2>
+			<int>16</int>
+		</array>
+		<array name="doodads/generic/marker_target_16.unit">
+			<vec2>416 0</vec2>
+			<int>1</int>
+			<vec2>412 -48</vec2>
+			<int>2</int>
+			<vec2>400 -96</vec2>
+			<int>3</int>
+			<vec2>-400 -96</vec2>
+			<int>4</int>
+			<vec2>-400 96</vec2>
+			<int>5</int>
+			<vec2>-412 -48</vec2>
+			<int>6</int>
+			<vec2>-416 0</vec2>
+			<int>7</int>
+			<vec2>-412 48</vec2>
+			<int>8</int>
+			<vec2>400 96</vec2>
+			<int>9</int>
+			<vec2>412 48</vec2>
+			<int>10</int>
+		</array>
+		<array name="doodads/generic/trap_shooter_blade_w.unit">
+			<vec2>-416 -64</vec2>
+			<int>17</int>
+			<vec2>-424 -16</vec2>
+			<int>18</int>
+			<vec2>-424 32</vec2>
+			<int>19</int>
+			<vec2>-400 -112</vec2>
+			<int>20</int>
+			<vec2>-416 80</vec2>
+			<int>21</int>
+			<vec2>-400 128</vec2>
+			<int>22</int>
+		</array>
+		<array name="doodads/walls/arena/_custom_single_round.unit">
+			<vec2>400 64</vec2>
+			<int>23</int>
+			<vec2>408 16</vec2>
+			<int>24</int>
+			<vec2>384 112</vec2>
+			<int>25</int>
+			<vec2>-416 64</vec2>
+			<int>26</int>
+			<vec2>-400 -128</vec2>
+			<int>27</int>
+			<vec2>-416 -80</vec2>
+			<int>28</int>
+			<vec2>-424 -32</vec2>
+			<int>29</int>
+			<vec2>-424 16</vec2>
+			<int>30</int>
+			<vec2>-400 112</vec2>
+			<int>31</int>
+			<vec2>408 -32</vec2>
+			<int>32</int>
+			<vec2>384 -128</vec2>
+			<int>33</int>
+			<vec2>400 -80</vec2>
+			<int>34</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>RandomPicker</string>
+			<int>35</int>
+			<vec3>0 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>49</int><int>51</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>36</int>
+			<vec3>-404 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>37</int>
+			<vec3>64 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_e</string>
+			<dict>
+				<string name="EventName">disable_e</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>38</int>
+			<vec3>-420 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>39</int>
+			<vec3>404 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>40</int>
+			<vec3>80 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate all</string>
+			<dict>
+				<string name="EventName">all_traps_activate</string>
+			</dict>
+			<array><int>58</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>41</int>
+			<vec3>-80 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate all</string>
+			<dict>
+				<string name="EventName">all_traps_deactivate</string>
+			</dict>
+			<array><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>42</int>
+			<vec3>0 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>= 1</string>
+			<dict>
+				<array name="Scripts"><int>47</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>43</int>
+			<vec3>-64 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>disable_w</string>
+			<dict>
+				<string name="EventName">disable_w</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>44</int>
+			<vec3>-32 368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>phase 1</string>
+			<array>
+				<int>59</int>
+				<int>1000</int>
+				<int>36</int>
+				<int>0</int>
+				<int>60</int>
+				<int>0</int>
+				<int>38</int>
+				<int>0</int>
+				<int>46</int>
+				<int>0</int>
+				<int>48</int>
+				<int>0</int>
+				<int>62</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>45</int>
+			<vec3>-428 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>46</int>
+			<vec3>404 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>47</int>
+			<vec3>-80 624 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>deactivate</string>
+			<array><int>57</int><int>0</int><int>61</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>48</int>
+			<vec3>428 24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>49</int>
+			<vec3>32 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>59</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>50</int>
+			<vec3>428 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>51</int>
+			<vec3>-32 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>52</int>
+			<vec3>420 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>53</int>
+			<vec3>0 -384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="Text">trap_shooters_sides_fireball_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>54</int>
+			<vec3>-404 120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+				<int name="Direction">180</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>55</int>
+			<vec3>-420 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>56</int>
+			<vec3>112 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_timer</string>
+			<dict>
+				<array name="Scripts"><int>44</int><int>59</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>57</int>
+			<vec3>-96 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_timer</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>59</int><int>44</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>58</int>
+			<vec3>80 624 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>activate</string>
+			<array><int>56</int><int>0</int><int>35</int><int>10</int><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>59</int>
+			<vec3>32 368 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>phase 2</string>
+			<array>
+				<int>44</int>
+				<int>1000</int>
+				<int>55</int>
+				<int>0</int>
+				<int>45</int>
+				<int>0</int>
+				<int>54</int>
+				<int>0</int>
+				<int>39</int>
+				<int>0</int>
+				<int>50</int>
+				<int>0</int>
+				<int>52</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>60</int>
+			<vec3>-428 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">180</int>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>61</int>
+			<vec3>0 656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>= 1</string>
+			<dict>
+				<array name="Scripts"><int>58</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>62</int>
+			<vec3>420 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_shooter_fire_projectile_big.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>63</int>
+			<vec3>-400 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="Filter">teleporting</string>
+				<int name="Delay">1000</int>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>64</int>
+			<vec3>-412 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Filter">teleporting</string>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<int name="Delay">1000</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>65</int>
+			<vec3>-416 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="Filter">teleporting</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">1000</int>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>66</int>
+			<vec3>-412 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Filter">teleporting</string>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">1000</int>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>67</int>
+			<vec3>-400 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="Filter">teleporting</string>
+				<int name="Delay">1000</int>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>68</int>
+			<vec3>400 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="Filter">teleporting</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">1000</int>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>69</int>
+			<vec3>412 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Filter">teleporting</string>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">1000</int>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>70</int>
+			<vec3>416 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="Filter">teleporting</string>
+				<int name="Delay">1000</int>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>71</int>
+			<vec3>412 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Filter">teleporting</string>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<int name="Delay">1000</int>
+				<bool name="NoLootEnemy">t</bool>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawnPoint</string>
+			<int>72</int>
+			<vec3>400 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="SpawnSound">event:/misc/spawn_tele</string>
+				<string name="Filter">teleporting</string>
+				<bool name="NoLootEnemy">t</bool>
+				<int name="Delay">1000</int>
+				<string name="SpawnEffect">effects/spawn.effect</string>
+				<bool name="NoExperienceEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>73</int>
+			<vec3>-320 432 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable_obstacles</string>
+			<dict>
+				<string name="EventName">disable_obstacles</string>
+			</dict>
+			<array><int>74</int><int>0</int><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>74</int>
+			<vec3>-320 368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">off</string>
+				<array name="Units">
+					<int>31</int>
+					<int>26</int>
+					<int>30</int>
+					<int>29</int>
+					<int>28</int>
+					<int>27</int>
+					<int>25</int>
+					<int>23</int>
+					<int>24</int>
+					<int>32</int>
+					<int>34</int>
+					<int>33</int>
+				</array>
+			</dict>
+			<array><int>75</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>75</int>
+			<vec3>-256 368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units">
+					<int>22</int>
+					<int>21</int>
+					<int>19</int>
+					<int>18</int>
+					<int>17</int>
+					<int>20</int>
+					<int>12</int>
+					<int>11</int>
+					<int>15</int>
+					<int>14</int>
+					<int>13</int>
+					<int>16</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>76</int>
+			<vec3>0 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>teleports</string>
+			<dict>
+				<string name="Flag">teleports</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

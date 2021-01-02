@@ -1,0 +1,38 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">5.5</float>	
+		<int name="ttl">2000</int>
+		<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="physical">100</int>
+				</dict>
+				
+				<dict name="effect">
+					<string name="class">SpawnEffect</string>
+					<string name="effect">actors/bosses/warden/ballista_break.effect</string>
+				</dict>
+				<!-- <dict name="effect"> -->
+					<!-- <string name="class">SpawnUnit</string> -->
+					<!-- <string name="unit">actors/bosses/warden/arrow_ground.unit</int> -->
+				<!-- </dict> -->
+		</array>
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/bosses/warden/arrow.effect" />
+			<collision static="false">
+				<circle projectile="true" offset="0 0" radius="4" />
+			</collision>
+			<shadow>
+				<sprite origin="4 0" texture="doodads/special/shadows.png">
+					<frame>7 10 9 9</frame>
+				</sprite>
+			</shadow>			
+		</scene>
+	</scenes>
+</unit>

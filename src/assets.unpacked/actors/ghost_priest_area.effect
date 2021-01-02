@@ -1,0 +1,91 @@
+<effect looping="true" layer="-5">
+	<param name="radius" default="0" />
+
+	<!-- glow -->
+	
+	<!-- outter ring -->
+	<sprite origin="40 40" looping="true" texture="./ghost_priest_area.png" material="system/default.mats:glow-both-bright"
+		
+		angle="0"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="0.2"
+	>
+		<frame time="200">0 0 80 80</frame>
+	</sprite>		
+	
+	<!-- center symbol -->
+	<sprite origin="16 16" looping="true" texture="./ghost_priest_area.png" material="system/default.mats:glow-both-bright"
+		
+		angle="-pi * (t+l) * 2 / 20"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="0.2"
+	>
+		<frame time="200">112 16 32 32</frame>
+	</sprite>	
+	
+	<!-- mid circle -->
+	<sprite origin="40 40" looping="true" texture="./ghost_priest_area.png" material="system/default.mats:glow-both-bright"
+		
+		angle="pi * (t+l) / 20"
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="0.2"
+	>
+		<frame time="200">160 4 80 80</frame>
+	</sprite>
+
+	
+	<!-- ring effect -->
+	<sprite origin="32 32" looping="true" texture="./ghost_priest_area.png" material="system/default.mats:glow-both-bright"
+		
+		
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="0.2"
+	>
+		<frame time="50">0 96 64 64</frame>
+		<frame time="50">64 96 64 64</frame>
+		<frame time="50">128 96 64 64</frame>
+		<frame time="50">192 96 64 64</frame>
+		<frame time="50">256 96 64 64</frame>
+		<frame time="75">320 96 64 64</frame>
+		<frame time="75">384 96 64 64</frame>
+		<frame time="500">0 0 0 0</frame>
+	</sprite>	
+	
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="sin(pi * t/2)/8 +1 *140" />
+		
+		<color-r value="0" />
+		<color-g value="2" />
+		<color-b value="1.5" />
+		<color-a value="0/255" />
+	</light>
+</effect>

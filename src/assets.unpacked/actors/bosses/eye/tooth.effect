@@ -1,0 +1,23 @@
+<effect looping="true" 
+%if !GFX_VFX_LOW
+wpos-track="50"
+%endif
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+
+
+	
+	%// Rocket
+	<sprite looping="true" origin="11 2" texture="./eye.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="50">147 49 16 5</frame>
+		<frame time="50">163 49 16 5</frame>
+		<frame time="50">179 49 16 5</frame>
+	</sprite>
+</effect>

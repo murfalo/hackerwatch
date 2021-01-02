@@ -1,0 +1,39 @@
+<unit slot="doodad" layer="0">
+
+	<behavior class="Breakable">
+		<!-- <string name="hit-sound">event:/misc/wall_hit</string>	 -->
+		<string name="break-sound">event:/item/break_crate</string>
+		
+		<bool name="scene-switching">true</bool>
+		<bool name="scene-switching-passthrough">false</bool>
+		<!-- 
+		<string name="corpse">doodads/walls/mine_granite/h_secret_dst_corpse.unit</string> -->
+		<string name="gore">effects/gibs/doodads/gib_shelf.sval</string>
+
+		<bool name="impenetrable">true</bool>
+	</behavior>
+	
+	<scenes>
+		
+		<scene>	
+			<shadow darkness="1">
+				<rect cast-len="28">-16 -4 32 8</rect>
+			</shadow>
+			<collision static="true">
+				<rect>-16 -4 32 8</rect>
+			</collision>
+			<sprite origin="16 38" texture="./bestiary_shelf.png" material="system/default.mats:proj-prop">
+				<frame>0 0 32 42</frame>
+			</sprite>	
+			<sprite ulayer="1" origin="7 7" pos="0 -30" texture="./bestiary_shelf.png" material="system/default.mats:glow-both-bright">
+				<frame time="50">0 42 14 14</frame>
+				<frame time="50">0 56 14 14</frame>
+				<frame time="50">0 70 14 14</frame>
+				<frame time="50">0 84 14 14</frame>
+				<frame time="50">0 98 14 14</frame>
+				<frame time="5000">0 0 0 0</frame>
+			</sprite>	
+			
+		</scene>
+	</scenes>
+</unit>

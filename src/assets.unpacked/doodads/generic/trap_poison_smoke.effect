@@ -1,0 +1,20 @@
+<effect looping="true">
+	<sprite origin="0 15" texture="./trap_poison_smoke.png" material="system/default.mats:glow-both-bright"
+	num-sprites="1"
+	
+	scale-x="1.5"
+	scale-y="1.5"
+
+	pos-x="rand(u+i+floor(t+l+rand(u*i))) * 3"
+	pos-y="25 * (1 - t)"
+
+	color-r="0.025"
+	color-g="0.15"
+	color-b="0"
+	color-a="sin(t*pi)"
+	
+	>
+	<frame time="1000">0 0 32 32</frame>
+</sprite>  	
+	
+</effect>

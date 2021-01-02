@@ -1,0 +1,52 @@
+<effect looping="false" layer="10" bounds="230 230">
+	<sprite looping="false" origin="64 64" texture="./dust_large.png" material="effects/effects.mats:add"
+		pos-x="(rand(u+0)*80-40)*t"
+		pos-y="(rand(u+1)*80-40)*t"
+		color-r="0.5"
+		color-g="0"
+		color-b="2"
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.5"
+		>
+		<frame time="11000">0 0 128 128</frame> 
+	</sprite>
+	<sprite looping="false" origin="64 64" texture="./dust_large.png" material="effects/effects.mats:add"
+		pos-x="(rand(u+10)*80-40)*t"
+		pos-y="(rand(u+10)*80-40)*t"
+		color-r="0.5"
+		color-g="0"
+		color-b="2"
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.0"
+		>
+		<frame time="12000">128 0 128 128</frame> 
+	</sprite>
+	<sprite looping="false" origin="64 64" texture="./dust_large.png" material="effects/effects.mats:add"
+		pos-x="(rand(u-14)*80-40)*t"
+		pos-y="(rand(u-15)*80-40)*t"
+		color-r="0.5"
+		color-g="0"
+		color-b="2"
+		color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.5"
+		>
+		<frame time="15000">0 128 128 128</frame> 
+	</sprite>
+		<sprite looping="false" origin="64 64" texture="./dust_large.png" material="effects/effects.mats:add"
+			pos-x="(rand(u+6)*80-40)*t"
+			pos-y="(rand(u+7)*80-40)*t"
+		color-r="0.5"
+		color-g="0"
+		color-b="2"
+			color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.0"
+			>
+			<frame time="12000">128 128 128 128</frame> 
+		</sprite>
+		<sprite looping="false" origin="64 64" texture="./dust_large.png" material="effects/effects.mats:add"
+			pos-x="(rand(u-8)*80-40)*t"
+			pos-y="(rand(u-9)*80-40)*t"
+		color-r="0.5"
+		color-g="0"
+		color-b="2"
+			color-a="(sin(t*pi)*(1-pow(t, 0.1))*1.5"
+			>
+			<frame time="11000">0 128 128 128</frame> 
+		</sprite>
+</effect>

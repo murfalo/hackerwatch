@@ -1,0 +1,50 @@
+<unit slot="doodad">
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/misc/ice_grow</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">400</int>
+
+		<array name="actions">
+			<!-- <dict> -->
+				<!-- <string name="class">Explode</string> -->
+				<!-- <string name="fx">actors/pop/projectiles/high_priest_ice_bomb.effect</string> -->
+				
+				<!-- <int name="radius">8</int> -->
+				<!-- <float name="dist-scaling">5</float> -->
+				<!-- <float name="team-dmg">0</float> -->
+				<!-- <array name="effects"> -->
+					<!-- <dict> -->
+						<!-- <string name="class">Damage</string> -->
+						<!-- <int name="physical">35</int> -->
+					<!-- </dict> -->
+				<!-- </array> -->
+			<!-- </dict> -->
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/mt/bosses/wolf/ice_spike.unit</string>
+				<bool name="safe-spawn">true</bool>
+				<vec2 name="offset">0 0</vec2>
+			</dict>
+		</array>
+		
+		<!-- <dict name="effect-params"> -->
+			<!-- <float name="radius">32</float> -->
+		<!-- </dict> -->
+		
+	</behavior>
+
+	<scenes>
+		<scene>
+			<sprite origin="8 8" looping="false" layer="-24" texture="doodads/terrain/temple_snow_spike.png" material="system/default.mats:floor">
+				<frame time="400">7 13 16 16</frame>
+			</sprite> 
+			<sprite origin="3 16" looping="false" texture="./ice_spike_spawn.png" material="system/default.mats:proj-wall">
+				<frame time="100">0 0 7 19</frame>
+				<frame time="100">7 0 7 19</frame>
+				<frame time="100">14 0 7 19</frame>
+				<frame time="100">21 0 7 19</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

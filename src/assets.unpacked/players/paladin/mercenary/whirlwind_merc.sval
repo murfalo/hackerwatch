@@ -1,0 +1,41 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">paladin</string>
+	<string name="name">.skills.paladin.whirlwind</string>
+	<string name="description">.skills.paladin.whirlwind.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 0 24 24</vec4>
+	</array>
+
+	<int name="cost">22</int>
+
+	<dict name="skill">
+		<string name="class">Skills::Whirlwind</string>
+		<string name="anim">whirlwind</string>
+		<string name="snd">event:/player/paladin/spin</string>
+		
+		<int name="cooldown">9000</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">false</bool>
+		<float name="speed-mul">1.2</float>
+		
+		<int name="mana-cost">70</int>
+		
+		<int name="duration">5000</int>
+		<int name="freq">250</int>
+		
+		<dict name="effect">
+			<string name="class">Explode</string>
+			<int name="min-radius">16</int>
+			<int name="radius">16</int>
+			<float name="dist-scaling">1000</float>
+			
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">50</int>
+			</dict>
+		</dict>
+	</dict>
+</dict>

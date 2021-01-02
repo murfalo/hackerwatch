@@ -1,0 +1,33 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">priest</string>
+	<string name="name">.skills.priest.aura-of-purification</string>
+	<string name="description">.skills.priest.aura-of-purification.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 96 24 24</vec4>
+	</array>
+	
+	<int name="cost">20</int>
+
+	<dict name="skill">
+		<string name="class">Skills::TempBuffAoe</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/priest/aura</string>
+		<string name="aura-fx">effects/players/aura_of_purification.effect</string>
+		
+		<int name="cooldown">12000</int>
+		<int name="castpoint">0</int>
+		<float name="speed-mul">1</float>
+		
+		<int name="mana-cost">70</int>
+		
+		<int name="active-time">8000</int>
+		<int name="interval">250</int>
+		<int name="range">70</int>
+		
+		<string name="buff">players/buffs_merc.sval:aura-debuff</string>
+		<string name="buff-team">players/buffs_merc.sval:aura-buff</string>
+	</dict>
+</dict>

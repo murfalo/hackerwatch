@@ -1,0 +1,20 @@
+<effect looping="false">
+	<sprite looping="false" origin="12 36" texture="./trap_crushblock.png" material="system/default.mats:default"
+		pos-x="0"
+		pos-y="40*t">
+		%//pos-y="max(0,-320+360*t)">
+		<frame time="200">0 0 24 48</frame>
+	</sprite>
+	<sprite looping="false" origin="5 29" texture="./trap_crushblock.png" material="system/default.mats:bright"
+		pos-x="0"
+		pos-y="40*t">
+		<frame time="200">25 1 10 10</frame>
+	</sprite>
+%//	<sprite looping="false" origin="12 36" texture="./trap_crushblock.png" material="system/default.mats:default">
+%//		<frame time="2000">0 0 24 48</frame>
+%//	</sprite>
+%//	<sprite looping="false" origin="5 29" texture="./trap_crushblock.png" material="system/default.mats:bright"
+%//		color-a="t">
+%//		<frame time="2000">25 1 10 10</frame>
+%//	</sprite>
+</effect>

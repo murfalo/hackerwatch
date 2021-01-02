@@ -1,0 +1,11 @@
+<effect looping="true" bounds="600 1500" >
+	<sprite  ulayer="0" origin="128 128" texture="./fog_blood.png" material="effects/effects.mats:add"
+		color-r="3"	
+		color-g="0"	
+		color-b="0"	
+		color-a="(sin(rand(u+i+13) * pi + t+l)/3+0.66)/16"		
+		
+		>
+		<frame time="5000">0 0 256 256</frame> 
+	</sprite>
+</effect>

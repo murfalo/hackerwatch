@@ -1,0 +1,15 @@
+<unit netsync="none" slot="doodad">
+	<behavior class="EffectBehavior">
+		
+	</behavior>
+	<scenes>
+		<scene>
+			<effect src="actors/bosses/vampire/fog_blood_event.effect" />
+			<effect delay="4200" src="actors/bosses/vampire/fog_bat_event.effect" />
+			
+			<sprite origin="0 0" looping="false" texture="effects/empty.png" material="system/default.mats:default">			
+				<frame time="9000">0 0 0 0</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

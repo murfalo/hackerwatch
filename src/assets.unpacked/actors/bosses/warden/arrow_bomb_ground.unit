@@ -1,0 +1,75 @@
+<unit layer="0" slot="actor">
+	<behavior class="TripMine">
+		<string name="team">mine</string>
+		<string name="netricsa-message">gui/netricsa/data.sval:mine</string>	
+		<int name="hp">1</int>
+
+		<string name="gore">effects/gibs/gib_player_bomb.sval</string>
+		<string name="death-sound">event:/player/ranger/bomb_explode</string>
+
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+		<bool name="must-see-target">false</bool>
+		<string name="anim-visible"></string>
+		<string name="anim-invisible"></string>
+		<string name="anim-appear"></string>
+		<string name="anim-disappear"></string>
+		
+		<int name="dist-visible">256</int>
+		<int name="dist-trigger">16</int>	
+		
+		
+		<dict name="movement">
+			<string name="class">EmptyMovement</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/players/ranger_bomb.effect</string>
+						<int name="radius">44</int>
+						<float name="team-dmg">0</float>
+						<dict name="effect">
+							<string name="class">Damage</string>
+							<int name="dmg">25</int>
+							<string name="dmg-type">pierce</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+	</behavior>
+	<scenes default="1 2 3">
+		<scene name="shared">
+			<collision static="false">
+				<circle projectile="true" offset="0 0" radius="4" />
+			</collision>
+			<sprite origin="6 7" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+				<frame>18 0 12 12</frame>
+			</sprite>	
+		</scene>
+		<scene name="1">
+			<scene src="shared" />
+			<sprite looping="true" origin="5 17" texture="./arrow_bomb.png" material="effects/effects.mats:lit">
+				<frame time="100">0 30 10 20</frame>
+			</sprite>		
+		</scene>
+		<scene name="2">
+			<scene src="shared" />
+			<sprite looping="true" origin="5 17" texture="./arrow_bomb.png" material="effects/effects.mats:lit">
+				<frame time="100">10 30 10 20</frame>
+			</sprite>		
+		</scene>
+		<scene name="3">
+			<scene src="shared" />
+			<sprite looping="true" origin="5 11" texture="./arrow_bomb.png" material="effects/effects.mats:lit">
+				<frame time="100">0 50 19 14</frame>
+			</sprite>		
+		</scene>
+	</scenes>
+</unit>

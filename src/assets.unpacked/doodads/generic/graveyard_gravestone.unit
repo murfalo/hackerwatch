@@ -1,0 +1,35 @@
+<unit slot="doodad">
+	<scenes random="1 2 3 4">
+		<scene name="shared">
+			<collision static="true">
+				<rect> -5 -2 9 4 </rect>			
+			</collision>
+		</scene>
+		
+		<scene name="1">
+			<scene src="shared" />
+			<sprite origin="6 11" texture="./graveyard_gravestone.png" material="system/default.mats:default-noxray">
+				<frame>0 0 16 13</frame>
+			</sprite>
+		</scene>
+		<scene name="2">
+			<scene src="shared" />
+			<sprite origin="4 11" texture="./graveyard_gravestone.png" material="system/default.mats:default-noxray">
+				<frame>16 0 13 13</frame>
+			</sprite>
+		</scene>
+		<scene name="3">
+			<scene src="shared" />
+			<sprite origin="5 11" texture="./graveyard_gravestone.png" material="system/default.mats:default-noxray">
+				<frame>29 0 15 13</frame>
+			</sprite>
+		</scene>
+		<scene name="4">
+			<scene src="shared" />
+			<sprite origin="5 11" texture="./graveyard_gravestone.png" material="system/default.mats:default-noxray">
+				<frame>44 0 15 13</frame>
+			</sprite>
+		</scene>
+		
+	</scenes>
+</unit>

@@ -1,0 +1,41 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">sorcerer</string>
+	<string name="name">.skills.sorcerer.shatter</string>
+	<string name="description">.skills.sorcerer.shatter.merc</string>
+
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>144 48 24 24</vec4>
+	</array>
+
+	<int name="cost">20</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">kill</string>
+			<float name="chance">0.2</float>
+
+			<dict name="effect">
+				<string name="class">ExplodeChainLimit</string>
+				<string name="fx">players/sorcerer/shatter.effect</string>
+				<int name="radius">32</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">40</int>
+						<int name="magical">40</int>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/player/sorcerer/shatter</string>
+					</dict>	
+				</array>
+			</dict>
+		</dict>
+	</dict>
+</dict>

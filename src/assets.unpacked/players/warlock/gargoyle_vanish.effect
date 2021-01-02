@@ -1,0 +1,36 @@
+<effect looping="false">
+	
+	
+	<sprite looping="false" ulayer="0" origin="8 58" texture="./gargoyle_spawn.png" material="system/default.mats:bright-noxray">
+		
+		<frame time="50">0 128 19 59</frame>
+		<frame time="50">19 128 19 59</frame>
+		<frame time="50">38 128 19 59</frame>
+		<frame time="50">57 128 19 59</frame>
+		<frame time="50">76 128 19 59</frame>
+		<frame time="50">95 128 19 59</frame>
+		<frame time="50">0 187 19 59</frame>
+		<frame time="50">0 0 0 0</frame>
+	</sprite>
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="180 * (1-t)" />
+
+		<color-r value="0" />
+		<color-g value="1" />
+		<color-b value="2" />
+		<color-a value="0"/>
+	</light>
+</effect>

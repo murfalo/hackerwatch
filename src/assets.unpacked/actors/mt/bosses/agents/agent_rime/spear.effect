@@ -1,0 +1,54 @@
+<effect looping="true"  wpos-track="50"
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<trail texture="effects/empty.png" ulayer="1" material="system/default.mats:projectile">
+		
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)-height" />
+		
+		<length value="1000" />
+		<looping value="true" />
+		
+		<segments value="10" />
+		<size value="8-i/2" />
+
+		<uv-x value="0" />
+		<uv-y value="0" />
+		
+		<color-r value="1" />
+		<color-g value="max(3,3-i)" />
+		<color-b value="max(3,3-i)" />
+		<color-a value="(9-i)/250" />
+	</trail>
+	
+	<sprite looping="true" origin="16 15" texture="./spear.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 32 32</frame>
+		<frame time="100">32 0 32 32</frame>
+		<frame time="100">64 0 32 32</frame>
+		<frame time="100">96 0 32 32</frame>
+		<frame time="100">0 32 32 32</frame>
+	</sprite>	
+	
+	<sprite looping="true" origin="16 15" texture="./spear.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">0 0 32 32</frame>
+		<frame time="100">32 0 32 32</frame>
+		<frame time="100">64 0 32 32</frame>
+		<frame time="100">96 0 32 32</frame>
+		<frame time="100">0 32 32 32</frame>
+	</sprite>
+	
+</effect>

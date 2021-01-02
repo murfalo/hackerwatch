@@ -1,0 +1,193 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnDropUnit</string>
+			<int>1</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/ice_rain.unit</string>
+				<float name="MaxFallSpeed">0.5</float>
+				<float name="InitialFallSpeed">0.5</float>
+				<array name="DropTrigger"><int>5</int></array>
+				<float name="FallSpeedMultiplier">2</float>
+				<string name="SceneName">falling</string>
+				<float name="Height">512</float>
+			</dict>
+			<array><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>2</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sword</string>
+			<dict>
+				<string name="UnitType">actors/elemental_ice_sword.unit</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>3</int>
+			<vec3>-40 -152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>none</string>
+			<dict>
+				<int name="Chance">90</int>
+			</dict>
+			<array><int>9</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>4</int>
+			<vec3>-184 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>5</int>
+			<vec3>-88 -152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>8</int><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>6</int>
+			<vec3>-184 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">rain</string>
+			</dict>
+			<array><int>7</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>7</int>
+			<vec3>-184 72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>8</int>
+			<vec3>0 -152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>element</string>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>9</int>
+			<vec3>-40 -208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>10</int>
+			<vec3>-80 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">5000</int>
+				<array name="LinkScripts"><int>1</int></array>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>11</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spear</string>
+			<dict>
+				<string name="UnitType">actors/elemental_ice_ranged.unit</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>12</int>
+			<vec3>104 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>13</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/misc/icerain</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>14</int>
+			<vec3>104 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>2</int><string>AllSpawned</string><int>11</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>15</int>
+			<vec3>0 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>2</int><int>11</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

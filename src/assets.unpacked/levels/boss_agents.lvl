@@ -1,0 +1,3611 @@
+<dict>
+	<array name="prefabs">
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-56 48 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-88 -168 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>56 -32 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>80 -160 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>72 72 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-96 80 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-96 136 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-152 -112 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>96 -96 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>152 72 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>64 24 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-96 -120 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>32 -72 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>160 -96 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-64 -48 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-160 72 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>-48 -96 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night_smoke.pfb</string>
+		<vec3>88 136 0</vec3>
+		<string>actors/mt/bosses/agents/orb_of_night.pfb</string>
+		<vec3>0 0 0</vec3>
+	</array>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>93</int>
+			<vec3>-976 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>94</int>
+			<vec3>-14 -13 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>star</string>
+			<dict>
+				<string name="UnitType">actors/mt/bosses/agents/agent_star/agent_star.unit</string>
+			</dict>
+			<array><int>107</int><int>0</int><int>234</int><int>0</int><int>137</int><int>0</int><int>220</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>95</int>
+			<vec3>13 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>decay</string>
+			<dict>
+				<string name="UnitType">actors/mt/bosses/agents/agent_decay/agent_decay.unit</string>
+			</dict>
+			<array><int>103</int><int>0</int><int>233</int><int>0</int><int>167</int><int>0</int><int>220</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>96</int>
+			<vec3>18 10 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>rime</string>
+			<dict>
+				<string name="UnitType">actors/mt/bosses/agents/agent_rime/agent_rime.unit</string>
+			</dict>
+			<array><int>102</int><int>0</int><int>256</int><int>0</int><int>228</int><int>0</int><int>220</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>97</int>
+			<vec3>64 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>98</int><int>500</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>98</int>
+			<vec3>64 400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>94</int><int>96</int><int>95</int><int>119</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>99</int>
+			<vec3>-32 640 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.65</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>100</int>
+			<vec3>-80 640 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.65</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>101</int>
+			<vec3>16 640 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.65</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>102</int>
+			<vec3>32 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>96</int><string>AllSpawned</string></array>
+				<int name="SpriteVariation">2</int>
+				<vec4 name="TextColor">0 1 1 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>103</int>
+			<vec3>80 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>95</int><string>AllSpawned</string></array>
+				<int name="SpriteVariation">3</int>
+				<vec4 name="TextColor">1 1 0 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>104</int>
+			<vec3>16 576 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.75</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>105</int>
+			<vec3>-80 576 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.75</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>106</int>
+			<vec3>-32 576 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.75</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>107</int>
+			<vec3>-16 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>94</int><string>AllSpawned</string></array>
+				<int name="SpriteVariation">4</int>
+				<vec4 name="TextColor">1 1 1 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>108</int>
+			<vec3>-1008 -184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>epic</string>
+			<dict>
+				<string name="UnitType">items/item_epic.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>109</int>
+			<vec3>-144 -712 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_shield</string>
+			<dict>
+				<string name="Flag">enable_shield</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>110</int>
+			<vec3>-240 -912 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<array>
+				<int>109</int>
+				<int>0</int>
+				<int>165</int>
+				<int>0</int>
+				<int>182</int>
+				<int>0</int>
+				<int>164</int>
+				<int>0</int>
+				<int>168</int>
+				<int>0</int>
+				<int>126</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>111</int>
+			<vec3>-944 -216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>112</int>
+			<vec3>832 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>133</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>113</int>
+			<vec3>-544 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>175</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>114</int>
+			<vec3>1248 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_blaze_hp</string>
+			<dict>
+				<string name="Flag">potion_blaze_hp</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>135</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>115</int>
+			<vec3>704 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>224</int><int>15000</int><int>223</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>116</int>
+			<vec3>832 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>225</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>117</int>
+			<vec3>1152 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_star_hp</string>
+			<dict>
+				<string name="Flag">potion_star_hp</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>151</int><int>0</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>118</int>
+			<vec3>1088 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.2</string>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>119</int>
+			<vec3>-16 8 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>blaze</string>
+			<dict>
+				<string name="UnitType">actors/mt/bosses/agents/agent_blaze/agent_blaze.unit</string>
+			</dict>
+			<array><int>122</int><int>0</int><int>255</int><int>0</int><int>136</int><int>0</int><int>220</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>120</int>
+			<vec3>64 640 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.65</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>121</int>
+			<vec3>64 576 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.75</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>122</int>
+			<vec3>-64 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>119</int><string>AllSpawned</string></array>
+				<int name="SpriteVariation">1</int>
+				<vec4 name="TextColor">1 0.0392157 0 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>123</int>
+			<vec3>832 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>204</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>124</int>
+			<vec3>1616 -624 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>&lt;=1</string>
+			<dict>
+				<array name="OnTrue"><int>169</int></array>
+				<array name="Variable"><int>283</int></array>
+				<int name="Value">1</int>
+				<int name="Function">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>125</int>
+			<vec3>176 400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>237</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>231</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>126</int>
+			<vec3>-288 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_charge</string>
+			<dict>
+				<string name="Flag">enable_charge</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>127</int>
+			<vec3>-32 704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>128</int>
+			<vec3>-80 704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>129</int>
+			<vec3>16 704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>130</int>
+			<vec3>64 704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<int name="Function">4</int>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>131</int>
+			<vec3>1088 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.2</string>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>132</int>
+			<vec3>704 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>154</int><int>15000</int><int>153</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>133</int>
+			<vec3>768 352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionImmortal</string>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<string name="EventName">potionImmortal</string>
+			</dict>
+			<array><int>193</int><int>0</int><int>132</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>134</int>
+			<vec3>1152 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionHP</string>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<string name="EventName">potionHP</string>
+			</dict>
+			<array><int>131</int><int>2000</int><int>207</int><int>0</int><int>141</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>135</int>
+			<vec3>1216 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>134</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>136</int>
+			<vec3>432 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>215</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>137</int>
+			<vec3>432 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>147</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>138</int>
+			<vec3>128 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>146</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>185</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>139</int>
+			<vec3>432 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>last guard</string>
+			<dict>
+				<array name="Objects"><int>91</int></array>
+				<string name="Title">.bestiary.name.agent_decay</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.charade</string>
+			</dict>
+			<array><int>95</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>140</int>
+			<vec3>1088 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.3</string>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>141</int>
+			<vec3>1088 416 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.3</string>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>142</int>
+			<vec3>1056 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_rime_hp</string>
+			<dict>
+				<string name="Flag">potion_rime_hp</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>152</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>143</int>
+			<vec3>864 -640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Random</string>
+			<array>
+				<int>300</int>
+				<int>0</int>
+				<int>181</int>
+				<int>0</int>
+				<int>301</int>
+				<int>0</int>
+				<int>299</int>
+				<int>0</int>
+				<int>303</int>
+				<int>0</int>
+				<int>302</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>144</int>
+			<vec3>1152 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionHP</string>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<string name="EventName">potionHP</string>
+			</dict>
+			<array><int>145</int><int>2000</int><int>194</int><int>0</int><int>257</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>145</int>
+			<vec3>1088 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.2</string>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>Variable</string>
+			<int>146</int>
+			<vec3>192 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>agents</string>
+			<dict>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>147</int>
+			<vec3>432 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>last guard</string>
+			<dict>
+				<array name="Objects"><int>90</int></array>
+				<string name="Title">.bestiary.name.agent_star</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.charade</string>
+			</dict>
+			<array><int>94</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>148</int>
+			<vec3>608 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>193</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>149</int>
+			<vec3>608 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>216</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>150</int>
+			<vec3>-1120 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>226</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>227</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>151</int>
+			<vec3>1216 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>229</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>152</int>
+			<vec3>1216 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>162</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>153</int>
+			<vec3>672 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionimmortal</string>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:potionimmortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>154</int>
+			<vec3>736 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>155</int>
+			<vec3>80 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>blaze</string>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+			</dict>
+			<array>
+				<int>138</int>
+				<int>0</int>
+				<int>209</int>
+				<int>0</int>
+				<int>148</int>
+				<int>0</int>
+				<int>247</int>
+				<int>0</int>
+				<int>279</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>156</int>
+			<vec3>32 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>star</string>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+			</dict>
+			<array>
+				<int>138</int>
+				<int>0</int>
+				<int>208</int>
+				<int>0</int>
+				<int>149</int>
+				<int>0</int>
+				<int>247</int>
+				<int>0</int>
+				<int>279</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>157</int>
+			<vec3>-16 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>rime</string>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+			</dict>
+			<array>
+				<int>138</int>
+				<int>0</int>
+				<int>186</int>
+				<int>0</int>
+				<int>213</int>
+				<int>0</int>
+				<int>247</int>
+				<int>0</int>
+				<int>279</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>158</int>
+			<vec3>-64 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>decay</string>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+			</dict>
+			<array>
+				<int>138</int>
+				<int>0</int>
+				<int>180</int>
+				<int>0</int>
+				<int>238</int>
+				<int>0</int>
+				<int>247</int>
+				<int>0</int>
+				<int>279</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>159</int>
+			<vec3>-704 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">90000</int>
+			</dict>
+			<array><int>179</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>160</int>
+			<vec3>-704 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>159</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>161</int>
+			<vec3>704 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>immortal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>95</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.immortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>162</int>
+			<vec3>1152 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionHP</string>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<string name="EventName">potionHP</string>
+			</dict>
+			<array><int>118</int><int>2000</int><int>253</int><int>0</int><int>177</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>163</int>
+			<vec3>1216 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>144</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>164</int>
+			<vec3>-384 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_sword</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">enable_sword</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>165</int>
+			<vec3>-192 -728 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_pray</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">enable_pray</string>
+			</dict>
+		</array>
+		<array><string>LevelStart</string><int>166</int><vec3>302 -334 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>167</int>
+			<vec3>432 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>139</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>168</int>
+			<vec3>-336 -784 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_whirl</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">enable_whirl</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>169</int>
+			<vec3>1680 -624 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>274</int><int>0</int><int>211</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>170</int>
+			<vec3>-448 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>20</int><int>18</int><int>23</int><int>21</int><int>22</int><int>24</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>171</int>
+			<vec3>-880 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>173</int><int>0</int><int>268</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>172</int>
+			<vec3>-448 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>178</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>173</int>
+			<vec3>-784 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableNightOrb</string>
+			<array><int>160</int><int>0</int><int>179</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>174</int>
+			<vec3>832 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>195</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>175</int>
+			<vec3>-320 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>192</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>176</int>
+			<vec3>160 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>10</int></array>
+			</dict>
+			<array><int>235</int><int>0</int><int>320</int><int>0</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>177</int>
+			<vec3>1088 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.3</string>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>178</int>
+			<vec3>-384 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>192</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>179</int>
+			<vec3>-640 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>272</int><int>3000</int><int>289</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>180</int>
+			<vec3>960 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>194</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>181</int>
+			<vec3>832 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rime</string>
+			<dict>
+				<array name="ToExecute"><int>218</int><int>142</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>182</int>
+			<vec3>-240 -752 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_shoot</string>
+			<dict>
+				<string name="Flag">enable_shoot</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>183</int>
+			<vec3>0 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Objects"><int>119</int><string>AllSpawned</string></array>
+				<string name="Text">I pray for\nmy friends!</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>184</int>
+			<vec3>-912 -232 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>185</int>
+			<vec3>256 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>212</int></array>
+				<array name="Variable"><int>146</int></array>
+				<int name="Function">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>186</int>
+			<vec3>960 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>253</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>187</int>
+			<vec3>-256 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:walk</string>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>188</int>
+			<vec3>-256 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:walk</string>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>189</int>
+			<vec3>-256 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:walk</string>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>190</int>
+			<vec3>-256 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:walk</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>191</int>
+			<vec3>-352 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>188</int><int>189</int><int>190</int><int>187</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>192</int>
+			<vec3>-352 -448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>walk</string>
+			<dict>
+				<int name="Frequency">3500</int>
+			</dict>
+			<array><int>315</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>193</int>
+			<vec3>704 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>immortal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>119</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.immortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>194</int>
+			<vec3>1024 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>heal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>95</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.ointment</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>195</int>
+			<vec3>768 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionImmortal</string>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<string name="EventName">potionImmortal</string>
+			</dict>
+			<array><int>115</int><int>2000</int><int>161</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>196</int>
+			<vec3>672 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionimmortal</string>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:potionimmortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>197</int>
+			<vec3>736 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>198</int>
+			<vec3>160 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_agents</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>199</int>
+			<vec3>800 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>SetupPotions</string>
+			<array><int>143</int><int>200</int><int>322</int><int>200</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>200</int>
+			<vec3>512 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_decay_immortal</string>
+			<dict>
+				<string name="Flag">potion_decay_immortal</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>174</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>201</int>
+			<vec3>704 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_star_immortal</string>
+			<dict>
+				<string name="Flag">potion_star_immortal</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>116</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>202</int>
+			<vec3>960 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_decay_hp</string>
+			<dict>
+				<string name="Flag">potion_decay_hp</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>163</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>203</int>
+			<vec3>-976 -232 0</vec3>
+			<bool>f</bool>
+			<int>5</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">100</int>
+			</dict>
+			<array><int>93</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>204</int>
+			<vec3>768 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionImmortal</string>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<string name="EventName">potionImmortal</string>
+			</dict>
+			<array><int>222</int><int>2000</int><int>217</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>205</int>
+			<vec3>672 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionimmortal</string>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:potionimmortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>206</int>
+			<vec3>736 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>207</int>
+			<vec3>1024 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>heal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>119</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.ointment</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>208</int>
+			<vec3>960 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>248</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>209</int>
+			<vec3>960 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>207</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>210</int>
+			<vec3>-944 -248 0</vec3>
+			<bool>f</bool>
+			<int>15</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">100</int>
+			</dict>
+			<array><int>111</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>211</int>
+			<vec3>1680 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potion_blaze_domain</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">potion_blaze_domain</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>212</int>
+			<vec3>352 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>295</int><int>0</int><int>298</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>213</int>
+			<vec3>608 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>217</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>214</int>
+			<vec3>-912 -264 0</vec3>
+			<bool>f</bool>
+			<int>10</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">100</int>
+			</dict>
+			<array><int>184</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>215</int>
+			<vec3>432 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>last guard</string>
+			<dict>
+				<array name="Objects"><int>92</int></array>
+				<string name="Title">.bestiary.name.agent_blaze</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.charade</string>
+			</dict>
+			<array><int>119</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>216</int>
+			<vec3>704 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>immortal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>94</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.immortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>217</int>
+			<vec3>704 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>immortal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>96</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.immortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>218</int>
+			<vec3>608 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_rime_immortal</string>
+			<dict>
+				<string name="Flag">potion_rime_immortal</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>123</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>219</int>
+			<vec3>704 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>206</int><int>15000</int><int>205</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>220</int>
+			<vec3>0 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>all spawn</string>
+			<array><int>125</int><int>0</int><int>265</int><int>0</int><int>150</int><int>0</int><int>269</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>221</int>
+			<vec3>800 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>potion_blaze_immortal</string>
+			<dict>
+				<string name="Flag">potion_blaze_immortal</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>112</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>222</int>
+			<vec3>704 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>197</int><int>15000</int><int>196</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>223</int>
+			<vec3>672 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionimmortal</string>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<bool name="TrueStrike">t</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/mt/bosses/agents/buffs.sval:potionimmortal</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>224</int>
+			<vec3>736 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>225</int>
+			<vec3>768 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionImmortal</string>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<string name="EventName">potionImmortal</string>
+			</dict>
+			<array><int>219</int><int>2000</int><int>216</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>226</int><vec3>-1040 -32 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>CheckVariables</string>
+			<int>227</int>
+			<vec3>-960 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>171</int></array>
+				<array name="Variable"><int>226</int></array>
+				<int name="Function">4</int>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>228</int>
+			<vec3>432 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>251</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>229</int>
+			<vec3>1152 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potionHP</string>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<string name="EventName">potionHP</string>
+			</dict>
+			<array><int>230</int><int>2000</int><int>248</int><int>0</int><int>140</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>230</int>
+			<vec3>1088 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.2</string>
+			<dict>
+				<array name="#Units"><int>94</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>231</int>
+			<vec3>304 400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>240</int></array>
+				<array name="Variable"><int>237</int></array>
+				<int name="Value">1</int>
+				<int name="Function">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>232</int>
+			<vec3>304 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>98</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>233</int>
+			<vec3>72 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>91</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>234</int>
+			<vec3>-64 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>90</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>235</int>
+			<vec3>160 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>245</int><int>243</int><int>236</int><int>244</int></array>
+			</dict>
+			<array><int>198</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>236</int>
+			<vec3>368 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>decay intro</string>
+			<dict>
+				<array name="Objects"><int>91</int></array>
+				<string name="Title">.bestiary.name.agent_decay</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.interrupt</string>
+			</dict>
+			<array><int>95</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>Variable</string>
+			<int>237</int>
+			<vec3>240 400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>238</int>
+			<vec3>608 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>161</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>239</int>
+			<vec3>368 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>215</int><int>0</int><int>147</int><int>0</int><int>251</int><int>0</int><int>139</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>240</int>
+			<vec3>368 400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>239</int><int>2000</int><int>232</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetLight</string>
+			<int>241</int>
+			<vec3>-544 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>20</int><int>18</int><int>23</int><int>21</int><int>22</int><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>242</int>
+			<vec3>-1008 -216 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">100</int>
+			</dict>
+			<array><int>108</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>243</int>
+			<vec3>368 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>star intro</string>
+			<dict>
+				<array name="Objects"><int>90</int></array>
+				<string name="Title">.bestiary.name.agent_star</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.interrupt</string>
+			</dict>
+			<array><int>94</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>244</int>
+			<vec3>368 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rime intro</string>
+			<dict>
+				<array name="Objects"><int>1</int></array>
+				<string name="Title">.bestiary.name.agent_rime</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.interrupt</string>
+			</dict>
+			<array><int>96</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>245</int>
+			<vec3>368 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>blaze intro</string>
+			<dict>
+				<array name="Objects"><int>92</int></array>
+				<string name="Title">.bestiary.name.agent_blaze</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.interrupt</string>
+			</dict>
+			<array><int>119</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>246</int>
+			<vec3>-448 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>orb_stable</string>
+			<dict>
+				<string name="EventName">orb_stable</string>
+			</dict>
+			<array><int>170</int><int>0</int><int>172</int><int>0</int><int>276</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>247</int>
+			<vec3>1488 -624 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>283</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>124</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>248</int>
+			<vec3>1024 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>heal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>94</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.ointment</string>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>249</int>
+			<vec3>-88 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Objects"><int>95</int><string>AllSpawned</string></array>
+				<string name="Text">I pray for\nmy friends!</string>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>250</int>
+			<vec3>0 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Objects"><int>96</int><string>AllSpawned</string></array>
+				<string name="Text">I pray for\nmy friends!</string>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>251</int>
+			<vec3>432 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>last guard</string>
+			<dict>
+				<array name="Objects"><int>1</int></array>
+				<string name="Title">.bestiary.name.agent_rime</string>
+				<int name="HeightOffset">5</int>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.charade</string>
+			</dict>
+			<array><int>96</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>252</int>
+			<vec3>88 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Objects"><int>94</int><string>AllSpawned</string></array>
+				<string name="Text">I pray for\nmy friends!</string>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>253</int>
+			<vec3>1024 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>heal</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>96</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">.dialogue.boss.agent.ointment</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>254</int>
+			<vec3>512 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss12_killed</string>
+			<dict>
+				<string name="Flag">boss12_killed</string>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>255</int>
+			<vec3>-64 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>92</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>256</int>
+			<vec3>64 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>HealUnits</string>
+			<int>257</int>
+			<vec3>1088 -160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.3</string>
+			<dict>
+				<array name="#Units"><int>95</int><string>AllSpawned</string></array>
+				<int name="Amount">0</int>
+				<float name="AmountFactor">0.3</float>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>258</int>
+			<vec3>-544 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>260</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>259</int>
+			<vec3>-384 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<array name="Units">
+					<int>77</int>
+					<int>81</int>
+					<int>88</int>
+					<int>82</int>
+					<int>55</int>
+					<int>60</int>
+					<int>86</int>
+					<int>59</int>
+					<int>68</int>
+					<int>54</int>
+					<int>53</int>
+					<int>87</int>
+					<int>89</int>
+					<int>71</int>
+					<int>57</int>
+					<int>51</int>
+					<int>52</int>
+					<int>63</int>
+					<int>75</int>
+					<int>80</int>
+					<int>76</int>
+					<int>67</int>
+					<int>65</int>
+					<int>61</int>
+					<int>56</int>
+					<int>66</int>
+					<int>85</int>
+					<int>79</int>
+					<int>62</int>
+					<int>74</int>
+					<int>72</int>
+					<int>73</int>
+					<int>58</int>
+					<int>70</int>
+					<int>84</int>
+					<int>83</int>
+					<int>64</int>
+					<int>69</int>
+					<int>78</int>
+				</array>
+				<string name="State">off</string>
+			</dict>
+			<array><int>260</int><int>3200</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>260</int>
+			<vec3>-448 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<array name="Units">
+					<int>77</int>
+					<int>81</int>
+					<int>88</int>
+					<int>82</int>
+					<int>55</int>
+					<int>60</int>
+					<int>86</int>
+					<int>59</int>
+					<int>68</int>
+					<int>54</int>
+					<int>53</int>
+					<int>87</int>
+					<int>89</int>
+					<int>71</int>
+					<int>57</int>
+					<int>51</int>
+					<int>52</int>
+					<int>63</int>
+					<int>75</int>
+					<int>80</int>
+					<int>76</int>
+					<int>67</int>
+					<int>65</int>
+					<int>61</int>
+					<int>56</int>
+					<int>66</int>
+					<int>85</int>
+					<int>79</int>
+					<int>62</int>
+					<int>74</int>
+					<int>72</int>
+					<int>73</int>
+					<int>83</int>
+					<int>64</int>
+					<int>69</int>
+					<int>84</int>
+					<int>70</int>
+					<int>58</int>
+					<int>78</int>
+				</array>
+				<string name="State">on</string>
+			</dict>
+			<array><int>259</int><int>2800</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>261</int>
+			<vec3>-664 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>262</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>263</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Variable</string>
+			<int>262</int>
+			<vec3>-600 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>263</int>
+			<vec3>-536 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>264</int></array>
+				<array name="Variable"><int>262</int></array>
+				<int name="Value">2</int>
+				<int name="Function">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>264</int>
+			<vec3>-472 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>192</int><int>178</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+			<array><int>175</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>265</int>
+			<vec3>-664 -424 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>267</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>266</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>266</int>
+			<vec3>-536 -424 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>178</int></array>
+				<array name="Variable"><int>267</int></array>
+				<int name="Function">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>Variable</string>
+			<int>267</int>
+			<vec3>-600 -424 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>268</int>
+			<vec3>-48 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<array name="Scripts"><int>270</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>269</int>
+			<vec3>-96 432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>270</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>270</int>
+			<vec3>-72 480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">3000</int>
+			</dict>
+			<array><int>97</int><int>0</int></array>
+		</array>
+		<array>
+			<string>OpenInterface</string>
+			<int>271</int>
+			<vec3>544 -800 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EndOfGame</string>
+			<dict>
+				<bool name="MakeRoot">t</bool>
+				<string name="Class">EndOfGame</string>
+				<string name="Filename">gui/endofgamemt.gui</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>272</int>
+			<vec3>-544 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>orb_overflow</string>
+			<dict>
+				<string name="EventName">orb_overflow</string>
+			</dict>
+			<array><int>246</int><int>30000</int><int>241</int><int>0</int><int>113</int><int>0</int><int>258</int><int>2250</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>273</int>
+			<vec3>1688 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>277</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>274</int>
+			<vec3>1680 -432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potion_rime_domain</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">potion_rime_domain</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>275</int>
+			<vec3>1744 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>AllSpawned</string></array>
+				<string name="EventName">domain</string>
+			</dict>
+			<array><int>282</int><int>0</int><int>273</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ClearDelayedTriggers</string>
+			<int>276</int>
+			<vec3>-448 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>260</int><int>259</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>277</int>
+			<vec3>-544 352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rime domain</string>
+			<dict>
+				<float name="JitterX">200</float>
+				<float name="JitterY">200</float>
+				<bool name="SafeSpawn">t</bool>
+				<string name="UnitType">actors/projectiles/snowball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetBossKilled</string>
+			<int>278</int>
+			<vec3>384 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="BossNumber">12</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>279</int>
+			<vec3>16 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>all dead</string>
+			<array><int>261</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>280</int>
+			<vec3>-544 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>blaze domain</string>
+			<dict>
+				<float name="JitterX">200</float>
+				<string name="UnitType">items/projectiles/meteor.unit</string>
+				<float name="JitterY">200</float>
+				<bool name="SafeSpawn">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>281</int>
+			<vec3>-704 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">50</int>
+			</dict>
+			<array><int>277</int><int>0</int><int>280</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>282</int>
+			<vec3>1632 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>domain</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>96</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">Potion\nof the\nMaster!</string>
+			</dict>
+		</array>
+		<array>
+			<string>Variable</string>
+			<int>283</int>
+			<vec3>1552 -624 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>284</int>
+			<vec3>1680 -384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potion_decay_hp</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">potion_decay_hp</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>285</int>
+			<vec3>-704 416 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">domain</string>
+			</dict>
+			<array><int>286</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>286</int>
+			<vec3>-704 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>281</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>287</int>
+			<vec3>1680 -336 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>potion_star_hp</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">potion_star_hp</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetStat</string>
+			<int>288</int>
+			<vec3>448 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="ValueInt">1</int>
+				<int name="ActionType">1</int>
+				<string name="Name">boss-12-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>289</int>
+			<vec3>-640 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.meta.info.orbofnight.on</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>290</int>
+			<vec3>1688 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>280</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>291</int>
+			<vec3>1744 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>119</int><string>AllSpawned</string></array>
+				<string name="EventName">domain</string>
+			</dict>
+			<array><int>292</int><int>0</int><int>290</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>292</int>
+			<vec3>1632 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>domain</string>
+			<dict>
+				<int name="HeightOffset">2</int>
+				<array name="#Objects"><int>119</int><string>AllSpawned</string></array>
+				<string name="Style">gui/speechbubbles/simple.sval</string>
+				<bool name="HideOthers">f</bool>
+				<string name="Text">Potion\nof the\nMaster!</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>293</int>
+			<vec3>448 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="EventName">win</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>294</int>
+			<vec3>384 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>246</int><int>272</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>ClearProjectiles</string>
+			<int>295</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="OnlyTrapProjectiles">f</bool>
+				<int name="Radius">500</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>296</int>
+			<vec3>176 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>297</int>
+			<vec3>416 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>296</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>298</int>
+			<vec3>416 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>BossesKilled</string>
+			<array>
+				<int>293</int>
+				<int>0</int>
+				<int>294</int>
+				<int>0</int>
+				<int>297</int>
+				<int>0</int>
+				<int>278</int>
+				<int>0</int>
+				<int>288</int>
+				<int>0</int>
+				<int>254</int>
+				<int>0</int>
+				<int>271</int>
+				<int>3000</int>
+				<int>316</int>
+				<int>0</int>
+				<int>323</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>299</int>
+			<vec3>960 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>blaze</string>
+			<dict>
+				<array name="ToExecute"><int>114</int><int>221</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>300</int>
+			<vec3>768 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>decay</string>
+			<dict>
+				<array name="ToExecute"><int>200</int><int>202</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>301</int>
+			<vec3>896 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>star</string>
+			<dict>
+				<array name="ToExecute"><int>117</int><int>201</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>302</int>
+			<vec3>1120 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>extra 2</string>
+			<dict>
+				<array name="ToExecute"><int>202</int><int>142</int><int>117</int><int>114</int><int>221</int><int>201</int><int>218</int><int>200</int></array>
+				<int name="NumToExecute">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>303</int>
+			<vec3>1056 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>extra 1</string>
+			<dict>
+				<array name="ToExecute"><int>202</int><int>142</int><int>117</int><int>114</int><int>221</int><int>201</int><int>218</int><int>200</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>304</int>
+			<vec3>864 -960 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>X &gt; 0</string>
+			<dict>
+				<array name="OnTrue"><int>306</int></array>
+				<string name="Id">mt</string>
+				<int name="Function">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>305</int>
+			<vec3>736 -960 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckNG</string>
+			<array><int>314</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>306</int>
+			<vec3>928 -960 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>308</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>307</int>
+			<vec3>928 -896 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>312</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>308</int>
+			<vec3>992 -960 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>TogglePotionHealth</string>
+			<dict>
+				<array name="Scripts"><int>145</int><int>257</int><int>118</int><int>177</int><int>230</int><int>140</int><int>131</int><int>141</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>309</int>
+			<vec3>864 -896 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>X = 2</string>
+			<dict>
+				<array name="OnTrue"><int>307</int></array>
+				<string name="Id">mt</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>310</int>
+			<vec3>928 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>313</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>311</int>
+			<vec3>864 -832 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>X &gt; 3</string>
+			<dict>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>310</int></array>
+				<string name="Id">mt</string>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>312</int>
+			<vec3>992 -896 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>303</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>313</int>
+			<vec3>992 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>302</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>314</int>
+			<vec3>800 -960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>304</int><int>0</int><int>309</int><int>0</int><int>311</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>315</int>
+			<vec3>-352 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="ToExecute"><int>191</int></array>
+				<float name="ChanceToExecute">0.8</float>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>316</int>
+			<vec3>320 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>317</int>
+			<vec3>368 -1312 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>11</int></array>
+				<int name="Event">2</int>
+			</dict>
+			<array><int>318</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>318</int>
+			<vec3>264 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>13</int></array>
+				<string name="State">close</string>
+			</dict>
+			<array><int>321</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>319</int>
+			<vec3>136 -136 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>320</int>
+			<vec3>160 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>319</int></array>
+			</dict>
+			<array><int>318</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>321</int>
+			<vec3>162 -168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/misc/bridge_stone</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>322</int>
+			<vec3>704 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>All</string>
+			<array>
+				<int>200</int>
+				<int>0</int>
+				<int>202</int>
+				<int>0</int>
+				<int>114</int>
+				<int>0</int>
+				<int>117</int>
+				<int>0</int>
+				<int>142</int>
+				<int>0</int>
+				<int>201</int>
+				<int>0</int>
+				<int>218</int>
+				<int>0</int>
+				<int>221</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>323</int>
+			<vec3>192 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>player immortality</string>
+			<dict>
+				<array name="#Units"><int>324</int><string>AllInside</string></array>
+				<bool name="CanKill">f</bool>
+				<int name="Physical">0</int>
+				<string name="Buff">players/buffs.sval:immortality</string>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>324</int>
+			<vec3>128 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="system/light_L.png">
+			<array>
+				<vec2>52 43</vec2>
+				<int>20</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0703601 0 0.982251 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>1 -8</vec2>
+				<int>19</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0703601 0 0.982251 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-120 90</vec2>
+				<int>18</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.093059 0.0368894 0.376262 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-124 -131</vec2>
+				<int>23</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.093059 0.0368894 0.376262 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-48 -64</vec2>
+				<int>24</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0703601 0 0.982251 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>126 111</vec2>
+				<int>22</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.093059 0.0368894 0.376262 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>119 -137</vec2>
+				<int>21</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.093059 0.0368894 0.376262 0</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="gui/fonts/arial14.fnt">
+			<array>
+				<vec2>280 32</vec2>
+				<int>4</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">t</bool>
+					<int name="layer">1000</int>
+					<string name="text">Shaden (star)</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>280 144</vec2>
+				<int>5</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">t</bool>
+					<int name="layer">1000</int>
+					<string name="text">Erris (blaze)</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>280 -192</vec2>
+				<int>6</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">t</bool>
+					<int name="layer">1000</int>
+					<string name="text">Lisard (decay)</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>280 -80</vec2>
+				<int>7</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">t</bool>
+					<int name="layer">1000</int>
+					<string name="text">Isadora (rime)</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_agents_door_e.unit">
+			<array>
+				<vec2>160 -160</vec2>
+				<int>13</int>
+				<dict>
+					<string name="start">opened</string>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>232 -1256</vec2>
+				<int>11</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">200</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 16</vec2>
+				<int>9</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">400</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>10</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">100</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_agents_floor.unit"><vec2>0 0</vec2><int>12</int></array>
+		<array name="system/system.fnt">
+			<array>
+				<vec2>1568 -704</vec2>
+				<int>3</int>
+				<dict>
+					<bool name="debug">t</bool>
+					<bool name="editor">f</bool>
+					<int name="layer">1000</int>
+					<string name="text">DOMAIN</string>
+				</dict>
+			</array>
+		</array>
+		<array name=":Physics_Freeform">
+			<array>
+				<vec2>200 -200</vec2>
+				<int>8</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points"><vec2>-56 -16</vec2><vec2>72 -272</vec2><vec2>216 -128</vec2><vec2>24 56</vec2><vec2>-16 48</vec2><vec2>-48 16</vec2></array>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/special/color_temple_rich_512.unit">
+			<vec2>768 -768</vec2>
+			<int>41</int>
+			<vec2>-256 -768</vec2>
+			<int>29</int>
+			<vec2>-1280 -768</vec2>
+			<int>27</int>
+			<vec2>-176 -400</vec2>
+			<int>26</int>
+			<vec2>-848 -256</vec2>
+			<int>50</int>
+			<vec2>768 256</vec2>
+			<int>49</int>
+			<vec2>768 1280</vec2>
+			<int>48</int>
+			<vec2>336 -256</vec2>
+			<int>47</int>
+			<vec2>256 -768</vec2>
+			<int>46</int>
+			<vec2>-688 -400</vec2>
+			<int>45</int>
+			<vec2>-256 1280</vec2>
+			<int>44</int>
+			<vec2>768 768</vec2>
+			<int>43</int>
+			<vec2>-1280 -256</vec2>
+			<int>34</int>
+			<vec2>-848 256</vec2>
+			<int>40</int>
+			<vec2>-768 -768</vec2>
+			<int>39</int>
+			<vec2>-1280 768</vec2>
+			<int>38</int>
+			<vec2>-1280 256</vec2>
+			<int>37</int>
+			<vec2>336 256</vec2>
+			<int>36</int>
+			<vec2>-256 768</vec2>
+			<int>35</int>
+			<vec2>256 768</vec2>
+			<int>28</int>
+			<vec2>-768 1280</vec2>
+			<int>33</int>
+			<vec2>768 -256</vec2>
+			<int>32</int>
+			<vec2>-1280 1280</vec2>
+			<int>42</int>
+			<vec2>-768 768</vec2>
+			<int>31</int>
+			<vec2>256 1280</vec2>
+			<int>30</int>
+		</array>
+		<array name="actors/mt/bosses/agents/agent_star/ritual.unit"><vec2>-14 -13</vec2><int>90</int></array>
+		<array name="actors/mt/bosses/agents/agent_decay/ritual.unit">
+			<array>
+				<vec2>13 -16</vec2>
+				<int>91</int>
+				<dict>
+					<string name="start">ritual_sw</string>
+				</dict>
+			</array>
+		</array>
+		<array name="actors/mt/bosses/agents/night_beam_impact.unit">
+			<vec2>192 -116</vec2>
+			<int>65</int>
+			<vec2>-186 -123</vec2>
+			<int>82</int>
+			<vec2>-93 13</vec2>
+			<int>64</int>
+			<vec2>221 -42</vec2>
+			<int>63</int>
+			<vec2>11 -92</vec2>
+			<int>51</int>
+			<vec2>20 -99</vec2>
+			<int>52</int>
+			<vec2>-68 -212</vec2>
+			<int>53</int>
+			<vec2>-92 -205</vec2>
+			<int>54</int>
+			<vec2>-176 -136</vec2>
+			<int>55</int>
+			<vec2>171 -142</vec2>
+			<int>56</int>
+			<vec2>0 -89</vec2>
+			<int>57</int>
+			<vec2>102 21</vec2>
+			<int>58</int>
+			<vec2>-136 -176</vec2>
+			<int>59</int>
+			<vec2>-165 -151</vec2>
+			<int>60</int>
+			<vec2>184 -128</vec2>
+			<int>61</int>
+			<vec2>157 -158</vec2>
+			<int>66</int>
+			<vec2>-19 -100</vec2>
+			<int>89</int>
+			<vec2>-198 -105</vec2>
+			<int>88</int>
+			<vec2>-48 -218</vec2>
+			<int>87</int>
+			<vec2>-151 -165</vec2>
+			<int>86</int>
+			<vec2>140 -173</vec2>
+			<int>85</int>
+			<vec2>87 2</vec2>
+			<int>84</int>
+			<vec2>-103 21</vec2>
+			<int>83</int>
+			<vec2>-207 -84</vec2>
+			<int>81</int>
+			<vec2>210 -77</vec2>
+			<int>80</int>
+			<vec2>125 -185</vec2>
+			<int>79</int>
+			<vec2>-220 -48</vec2>
+			<int>78</int>
+			<vec2>-212 -71</vec2>
+			<int>77</int>
+			<vec2>206 -90</vec2>
+			<int>76</int>
+			<vec2>217 -57</vec2>
+			<int>75</int>
+			<vec2>91 -203</vec2>
+			<int>74</int>
+			<vec2>52 -217</vec2>
+			<int>73</int>
+			<vec2>72 -211</vec2>
+			<int>72</int>
+			<vec2>107 -195</vec2>
+			<int>62</int>
+			<vec2>-10 -92</vec2>
+			<int>71</int>
+			<vec2>93 13</vec2>
+			<int>70</int>
+			<vec2>-88 1</vec2>
+			<int>69</int>
+			<vec2>-116 -192</vec2>
+			<int>68</int>
+			<vec2>200 -101</vec2>
+			<int>67</int>
+		</array>
+		<array name="actors/mt/bosses/agents/agent_blaze/ritual.unit">
+			<array>
+				<vec2>-16 8</vec2>
+				<int>92</int>
+				<dict>
+					<string name="start">ritual_ne</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_agents_room.unit"><vec2>0 0</vec2><int>2</int></array>
+		<array name="actors/mt/bosses/agents/agent_rime/ritual.unit">
+			<array>
+				<vec2>17 11</vec2>
+				<int>1</int>
+				<dict>
+					<string name="start">ritual_nw</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_agents_door_w.unit">
+			<array>
+				<vec2>-160 -160</vec2>
+				<int>25</int>
+				<dict>
+					<string name="start">closed</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/boss_agents_column.unit">
+			<array>
+				<vec2>0 112</vec2>
+				<int>15</int>
+				<dict>
+					<string name="start">n</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -112</vec2>
+				<int>14</int>
+				<dict>
+					<string name="start">s</string>
+				</dict>
+			</array>
+			<vec2>-112 0</vec2>
+			<int>16</int>
+			<array>
+				<vec2>112 0</vec2>
+				<int>17</int>
+				<dict>
+					<string name="start">w</string>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/prison_3.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="LevelName">.level.boss.agents</string>
+		<string name="LevelNameShort">.level.boss.agents.short</string>
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b10702058283b4d0000000000000000000000000000000000000000006f0b1b180d110362361b4f5904277b123e000000000000000000000000002b30025b494f61721d2f772f352763200f533d4908040000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_rich.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003660000000000000000000000000000000000000000000000000000000000082508000000000000000000000000000000000000000000000000000000002334206e0000000000000000000000000000000000000000000000000000004145433f68000000000000000000000000000000000000000000000000000000493e6a0e1b00000000000000000000000000000000000000000000000000003c490e5f071d00000000000000000000000000000000000000000000000000005b0479393f6f00000000000000000000000000000000000000000000000000394a7c17664e32000000000000000000000000000000000000000000000000000635122226433b000000000000000000000000000000000000000000000000000f085830584d5c00000000000000000000000000000000000000000000000001115d586813081f000000000000000000000000000000000000000000000000246d54373e0d58130000000000000000000000000000000000000000000000006a727d015d516464000000000000000000000000000000000000000000000000340c6a58391e6a1800000000000000000000000000000000000000000000000000696f10046d38140000000000000000000000000000000000000000000000000076705b476b323b000000000000000000000000000000000000000000000000004326794c704465000000000000000000000000000000000000000000000000000017262b17154f0000000000000000000000000000000000000000000000000000244b6a0e615c0000000000000000000000000000000000000000000000000000007c4a4b15630000000000000000000000000000000000000000000000000000001967240c290000000000000000000000000000000000000000000000000000004e66664e170000000000000000000000000000000000000000000000000000000027740732000000000000000000000000000000000000000000000000000000003a586a730000000000000000000000000000000000000000000000000000000000610b140000000000000000000000000000000000000000000000000000000000006a59000000000000000000000000000000000000000000000000000000000000006f0000000000000000000000000000000000000000000000000000000000000078000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_rich.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">1641670c49473367414f405d623e7c6e0d1c4a503855585427567000000000004d353f224e6b1f6a070921693c344a422166214f2c4d26133a5d360e78000000581326342803532a482d010a6e43772813402e21441f196827794d0161790000080b4d5a276e705066513776456f6204513b692a0b1d613574043966064838007d20505b4b05713b517a551e4c460c66362d3f7d3e04427c52235b4030685f2422730871354740495501197c09495706080f62235423022c5f601467497236494f4f4b492d4502110439415979081c6443742f133f5e6e03473304353744596b3e646961091e4c3d64064c670f7e6c277e39122c2f42570e274a0b2e62283643125c323d3f317517043c7c1b4c112a7e5658017d331060272a5f2820491434132d0304363b4a2b47332d63152f39197c790516533e6f594808510d56016535715e326c6c46675c4c104177273b5843775310373a6c20424624370e2d1d093025286075754d5313524778331e69363e057e74541852090a75673c32692d37315067454c266207154e4c021d6827576e7b62412733373256185778177d19164475794e6b6c285e1c07790561172c1a5d176f26153e76575965374d1b3e7601345d7372754806102e413762124e41100c4c7d107e68065d22614b572b4d5e1d440c766214775e0c0d03474472302c4f482f407c5c15630d15736464027a7e3a1139633478241b3e507b3a1b4267591448532b166a28186a4a6f0e7c4a73421c572e417458180147230a4b782e706b767a7d2a2a605236171b0b066c0a016b7d720f514377756c353709676236241d21556f721e460845656243360b6d193f78086c7a545a625d761562432674594d1a7b0d540977681f0f0208115b6611133459392e755c660734581f7a6d23455d161414571847677b336a25724d3d1979404f0c12473172235f3b020a272e321f17764b650a1f57613f1744656d150652684922555a1b1e1d22437c3757364d5a5e2e65754641245540741c634e1c307b602c6a3655193f1d706660282e1e2b43661112574143614363467125174c7516672865225c766b70684a701306771a7340325f25355b57603a076718084418625c3f78153b5a7d170b1b02281f1c61314516785751682357162b2152395f2a2740767b58105d1a2d5a426e1940164714684a2f0744241b4a7d3e3a5e037b043f70235b0b2e22141f142a3c7d254e0c350e2b714c7e54434476520f5c0b2a6176425b22313b794b5a6b0e30197e3c16100f35760162291221550641507404685a43773f121b1b0a4e3271402e1a7e6f0a564c212672786f457c18606b290e0a1d0c4a1400005f336d7b4e4571765b6c1715223d2b546f3b096c4a28216043641a1a06000000004d221c40423c6d213c203f6b160f7a305e3a0667365d18390f532c0000</bytes>
+					<string name="tileset">tilesets/temples_tiles_rich.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000570000000000000000000000000000000000000000000000000000000000000072160000000000000000000000000000000000000000000000000000000000007060000000000000000000000000000000000000000000000000000000000000080b360000000000000000000000000000000000000000000000000000000000222c137a0000000000000000000000000000000000000000000000000000000040174c1f000000000000000000000000000000000000000000000000000000004b2e5868000000000000000000000000000000000000000000000000000000003664792354000000000000000000000000000000000000000000000000000000574d505c2100000000000000000000000000000000000000000000000000000072483e422500000000000000000000000000000000000000000000000000000049764e5a630000000000000000000000000000000000000000000000000000000313191b6400000000000000000000000000000000000000000000000000000024593c0324000000000000000000000000000000000000000000000000000000045c2a382c000000000000000000000000000000000000000000000000000000111c660e320000000000000000000000000000000000000000000000000000006f6a347b1a00000000000000000000000000000000000000000000000000000024333f48000000000000000000000000000000000000000000000000000000004a6a2f5a000000000000000000000000000000000000000000000000000000003a41455b000000000000000000000000000000000000000000000000000000005f61250000000000000000000000000000000000000000000000000000000000477c0e00000000000000000000000000000000000000000000000000000000001a2c0000000000000000000000000000000000000000000000000000000000001d450000000000000000000000000000000000000000000000000000000000004500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_rich.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000007e21715019121503077a7d710b76712d4837791e01742c00000000000000000000005673015e53377c57154069565021016d4a334c3d0000000000000000000000000000694238373174407737690a4f3f5453740000000000000000000000000000000000000000797342593306213400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_rich.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+	</array>
+</dict>

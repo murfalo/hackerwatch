@@ -1,0 +1,83 @@
+<dict>
+	<string name="name">.skills.warlock.summon-gargoyle</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 144 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::DropUnitWarlock</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">45</int>
+
+			<string name="unit">players/warlock/gargoyle_1.unit</string>
+			
+			<int name="max-count">2</int>
+
+			<string name="anim">cast 8</string>
+			<string name="snd">event:/player/warlock/gargoyle</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::DropUnitWarlock</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">60</int>
+
+			<string name="unit">players/warlock/gargoyle_2.unit</string>
+			
+			<int name="max-count">3</int>
+
+			<string name="anim">cast 8</string>
+			<string name="snd">event:/player/warlock/gargoyle</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::DropUnitWarlock</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">75</int>
+
+			<string name="unit">players/warlock/gargoyle_3.unit</string>
+			
+			<int name="max-count">4</int>
+
+			<string name="anim">cast 8</string>
+			<string name="snd">event:/player/warlock/gargoyle</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::DropUnitWarlock</string>
+
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">90</int>
+
+			<string name="unit">players/warlock/gargoyle_4.unit</string>
+			
+			<int name="max-count">5</int>
+
+			<string name="anim">cast 8</string>
+			<string name="snd">event:/player/warlock/gargoyle</string>
+			<float name="speed-mul">1</float>
+		</dict>
+	</array>
+</dict>

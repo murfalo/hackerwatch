@@ -1,0 +1,1750 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>1</int>
+			<vec3>-96 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spear</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_spear.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>2</int>
+			<vec3>-1120 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>small</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_small.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>3</int>
+			<vec3>-1056 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="NumberToSpawnMin">2</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>4</int>
+			<vec3>-928 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elite</string>
+			<dict>
+				<int name="NumberToSpawnMin">0</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_elite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>5</int>
+			<vec3>-992 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spear</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<int name="NumberToSpawnMin">0</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_spear.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>6</int>
+			<vec3>768 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<int name="NumberToSpawnMax">5</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMin">4</int>
+				<int name="NumberPerPlayerMax">3</int>
+				<int name="NumberPerPlayer">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>7</int>
+			<vec3>896 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elite</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_elite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>8</int>
+			<vec3>-32 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elite</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_elite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>9</int>
+			<vec3>-928 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elite</string>
+			<dict>
+				<int name="NumberToSpawnMin">0</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_elite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>10</int>
+			<vec3>832 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spear</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_spear.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>11</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>medium gate</string>
+			<array>
+				<int>26</int>
+				<int>0</int>
+				<int>27</int>
+				<int>0</int>
+				<int>30</int>
+				<int>0</int>
+				<int>1</int>
+				<int>0</int>
+				<int>83</int>
+				<int>0</int>
+				<int>85</int>
+				<int>0</int>
+				<int>87</int>
+				<int>0</int>
+				<int>89</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>12</int>
+			<vec3>-96 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spear</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_spear.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>13</int>
+			<vec3>704 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>small</string>
+			<dict>
+				<int name="NumberToSpawnMax">4</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMin">3</int>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_small.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>14</int>
+			<vec3>-160 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>15</int>
+			<vec3>832 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spear</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_spear.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>16</int>
+			<vec3>-992 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spear</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<int name="NumberToSpawnMin">0</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_spear.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>17</int>
+			<vec3>-288 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_skeleton1_easy</string>
+			<dict>
+				<string name="EventName">spawn_skeleton1_easy</string>
+			</dict>
+			<array><int>40</int><int>0</int><int>111</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>18</int>
+			<vec3>-320 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gate</string>
+			<array><int>23</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>-896 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>easy tele</string>
+			<array>
+				<int>4</int>
+				<int>0</int>
+				<int>3</int>
+				<int>0</int>
+				<int>2</int>
+				<int>0</int>
+				<int>5</int>
+				<int>0</int>
+				<int>91</int>
+				<int>0</int>
+				<int>93</int>
+				<int>0</int>
+				<int>95</int>
+				<int>0</int>
+				<int>97</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>20</int>
+			<vec3>704 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>small</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberToSpawnMin">3</int>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_small.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>21</int>
+			<vec3>928 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hard gate</string>
+			<array>
+				<int>25</int>
+				<int>0</int>
+				<int>6</int>
+				<int>0</int>
+				<int>13</int>
+				<int>0</int>
+				<int>15</int>
+				<int>0</int>
+				<int>67</int>
+				<int>0</int>
+				<int>69</int>
+				<int>0</int>
+				<int>71</int>
+				<int>0</int>
+				<int>73</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>22</int>
+			<vec3>96 544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_spawn_tele</string>
+			<dict>
+				<string name="EventName">enable_spawn_tele</string>
+			</dict>
+			<array><int>42</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>23</int>
+			<vec3>-896 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>easy gate</string>
+			<array>
+				<int>9</int>
+				<int>0</int>
+				<int>29</int>
+				<int>0</int>
+				<int>28</int>
+				<int>0</int>
+				<int>16</int>
+				<int>0</int>
+				<int>99</int>
+				<int>0</int>
+				<int>101</int>
+				<int>0</int>
+				<int>103</int>
+				<int>0</int>
+				<int>105</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>24</int>
+			<vec3>-224 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>small</string>
+			<dict>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="NumberToSpawnMin">3</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">3</int>
+				<int name="NumberPerPlayer">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_small.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>25</int>
+			<vec3>896 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elite</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_elite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>26</int>
+			<vec3>-32 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elite</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_elite.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>27</int>
+			<vec3>-160 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>28</int>
+			<vec3>-1120 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>small</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="NumberToSpawnMin">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">2</int>
+				<int name="NumberPerPlayer">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_small.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>29</int>
+			<vec3>-1056 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<int name="NumberToSpawnMax">3</int>
+				<int name="NumberToSpawnMin">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">1</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>30</int>
+			<vec3>-224 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>small</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberPerPlayerMax">3</int>
+				<int name="NumberToSpawnMin">3</int>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="NumberPerPlayer">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1_small.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>31</int>
+			<vec3>-192 -480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>kill_everything</string>
+			<dict>
+				<string name="EventName">kill_everything</string>
+			</dict>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>32</int>
+			<vec3>-192 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Physical">1000000</int>
+				<array name="#Units">
+					<int>7</int>
+					<string>AllSpawned</string>
+					<int>8</int>
+					<string>AllSpawned</string>
+					<int>4</int>
+					<string>AllSpawned</string>
+					<int>34</int>
+					<string>AllSpawned</string>
+					<int>14</int>
+					<string>AllSpawned</string>
+					<int>3</int>
+					<string>AllSpawned</string>
+					<int>20</int>
+					<string>AllSpawned</string>
+					<int>24</int>
+					<string>AllSpawned</string>
+					<int>2</int>
+					<string>AllSpawned</string>
+					<int>13</int>
+					<string>AllSpawned</string>
+					<int>30</int>
+					<string>AllSpawned</string>
+					<int>28</int>
+					<string>AllSpawned</string>
+					<int>6</int>
+					<string>AllSpawned</string>
+					<int>27</int>
+					<string>AllSpawned</string>
+					<int>29</int>
+					<string>AllSpawned</string>
+					<int>25</int>
+					<string>AllSpawned</string>
+					<int>26</int>
+					<string>AllSpawned</string>
+					<int>9</int>
+					<string>AllSpawned</string>
+					<int>15</int>
+					<string>AllSpawned</string>
+					<int>10</int>
+					<string>AllSpawned</string>
+					<int>1</int>
+					<string>AllSpawned</string>
+					<int>12</int>
+					<string>AllSpawned</string>
+					<int>16</int>
+					<string>AllSpawned</string>
+					<int>5</int>
+					<string>AllSpawned</string>
+					<int>100</int>
+					<string>AllSpawned</string>
+					<int>102</int>
+					<string>AllSpawned</string>
+					<int>104</int>
+					<string>AllSpawned</string>
+					<int>106</int>
+					<string>AllSpawned</string>
+					<int>98</int>
+					<string>AllSpawned</string>
+					<int>96</int>
+					<string>AllSpawned</string>
+					<int>94</int>
+					<string>AllSpawned</string>
+					<int>92</int>
+					<string>AllSpawned</string>
+					<int>84</int>
+					<string>AllSpawned</string>
+					<int>86</int>
+					<string>AllSpawned</string>
+					<int>88</int>
+					<string>AllSpawned</string>
+					<int>90</int>
+					<string>AllSpawned</string>
+					<int>82</int>
+					<string>AllSpawned</string>
+					<int>80</int>
+					<string>AllSpawned</string>
+					<int>78</int>
+					<string>AllSpawned</string>
+					<int>76</int>
+					<string>AllSpawned</string>
+					<int>68</int>
+					<string>AllSpawned</string>
+					<int>70</int>
+					<string>AllSpawned</string>
+					<int>72</int>
+					<string>AllSpawned</string>
+					<int>74</int>
+					<string>AllSpawned</string>
+					<int>66</int>
+					<string>AllSpawned</string>
+					<int>64</int>
+					<string>AllSpawned</string>
+					<int>62</int>
+					<string>AllSpawned</string>
+					<int>60</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>33</int>
+			<vec3>288 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_skeleton1_hard</string>
+			<dict>
+				<string name="EventName">spawn_skeleton1_hard</string>
+			</dict>
+			<array><int>48</int><int>0</int><int>109</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>34</int>
+			<vec3>768 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberPerPlayerMax">3</int>
+				<int name="NumberToSpawnMin">4</int>
+				<int name="NumberToSpawnMax">5</int>
+				<int name="NumberPerPlayer">2</int>
+				<int name="MaxToSpawn">40</int>
+				<string name="UnitType">actors/skeleton_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>35</int>
+			<vec3>0 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_skeleton1_medium</string>
+			<dict>
+				<string name="EventName">spawn_skeleton1_medium</string>
+			</dict>
+			<array><int>45</int><int>0</int><int>110</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>36</int>
+			<vec3>928 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hard tele</string>
+			<array>
+				<int>7</int>
+				<int>0</int>
+				<int>34</int>
+				<int>0</int>
+				<int>20</int>
+				<int>0</int>
+				<int>10</int>
+				<int>0</int>
+				<int>58</int>
+				<int>0</int>
+				<int>61</int>
+				<int>0</int>
+				<int>63</int>
+				<int>0</int>
+				<int>65</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>37</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>medium tele</string>
+			<array>
+				<int>8</int>
+				<int>0</int>
+				<int>24</int>
+				<int>0</int>
+				<int>14</int>
+				<int>0</int>
+				<int>12</int>
+				<int>0</int>
+				<int>75</int>
+				<int>0</int>
+				<int>77</int>
+				<int>0</int>
+				<int>79</int>
+				<int>0</int>
+				<int>81</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>38</int>
+			<vec3>-128 544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_spawn_gate</string>
+			<dict>
+				<string name="EventName">disable_spawn_gate</string>
+			</dict>
+			<array><int>50</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>39</int>
+			<vec3>-192 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>44</int><int>49</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>40</int>
+			<vec3>-288 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>46</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>41</int>
+			<vec3>160 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>47</int><int>46</int><int>43</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>42</int>
+			<vec3>96 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>47</int><int>46</int><int>43</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>43</int>
+			<vec3>320 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tele</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>44</int>
+			<vec3>-32 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gate</string>
+			<array><int>11</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>45</int>
+			<vec3>0 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>47</int><int>44</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>46</int>
+			<vec3>-256 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tele</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>19</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>47</int>
+			<vec3>32 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>tele</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>37</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>48</int>
+			<vec3>288 272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>43</int><int>49</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>49</int>
+			<vec3>256 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gate</string>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>50</int>
+			<vec3>-128 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>44</int><int>49</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>51</int>
+			<vec3>160 544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable_spawn_tele</string>
+			<dict>
+				<string name="EventName">disable_spawn_tele</string>
+			</dict>
+			<array><int>41</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>52</int>
+			<vec3>-192 544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable_spawn_gate</string>
+			<dict>
+				<string name="EventName">enable_spawn_gate</string>
+			</dict>
+			<array><int>39</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>53</int>
+			<vec3>-64 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_banner</string>
+			<dict>
+				<string name="EventName">activate_skeleton_banner</string>
+			</dict>
+			<array><int>55</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>54</int>
+			<vec3>192 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_summoner</string>
+			<dict>
+				<string name="EventName">activate_lich_summoner</string>
+			</dict>
+			<array><int>56</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>55</int>
+			<vec3>-64 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>61</int>
+					<int>58</int>
+					<int>67</int>
+					<int>69</int>
+					<int>85</int>
+					<int>83</int>
+					<int>75</int>
+					<int>77</int>
+					<int>101</int>
+					<int>99</int>
+					<int>91</int>
+					<int>93</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>56</int>
+			<vec3>192 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>65</int><int>73</int><int>81</int><int>89</int><int>97</int><int>105</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>57</int>
+			<vec3>64 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>63</int><int>71</int><int>79</int><int>87</int><int>95</int><int>103</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>58</int>
+			<vec3>992 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<float name="ChanceToExecute">0.9</float>
+				<array name="ToExecute"><int>60</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>59</int>
+			<vec3>64 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_mb</string>
+			<dict>
+				<string name="EventName">activate_skeleton_mb</string>
+			</dict>
+			<array><int>57</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>60</int>
+			<vec3>1056 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberToSpawnMax">3</int>
+				<string name="UnitType">actors/bannerman_bloodlust.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>61</int>
+			<vec3>1120 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<float name="ChanceToExecute">0.9</float>
+				<array name="ToExecute"><int>62</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>62</int>
+			<vec3>1184 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<string name="UnitType">actors/bannerman_protection.unit</string>
+				<int name="NumberToSpawnMax">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>63</int>
+			<vec3>1248 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.7</float>
+				<array name="ToExecute"><int>64</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>64</int>
+			<vec3>1312 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<int name="NumberToSpawnMax">4</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberToSpawnMin">2</int>
+				<int name="MaxToSpawn">15</int>
+				<string name="UnitType">actors/skeleton_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>65</int>
+			<vec3>1376 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<float name="ChanceToExecute">0.4</float>
+				<array name="ToExecute"><int>66</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>66</int>
+			<vec3>1440 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<string name="UnitType">actors/lich_summ_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>67</int>
+			<vec3>992 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<float name="ChanceToExecute">0.9</float>
+				<array name="ToExecute"><int>68</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>68</int>
+			<vec3>1056 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMax">3</int>
+				<string name="UnitType">actors/bannerman_bloodlust.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>69</int>
+			<vec3>1120 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<float name="ChanceToExecute">0.9</float>
+				<array name="ToExecute"><int>70</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>70</int>
+			<vec3>1184 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<string name="UnitType">actors/bannerman_protection.unit</string>
+				<int name="NumberToSpawnMax">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>71</int>
+			<vec3>1248 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.7</float>
+				<array name="ToExecute"><int>72</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>72</int>
+			<vec3>1312 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<int name="NumberToSpawnMax">4</int>
+				<int name="NumberToSpawnMin">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="MaxToSpawn">15</int>
+				<string name="UnitType">actors/skeleton_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>73</int>
+			<vec3>1376 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<float name="ChanceToExecute">0.4</float>
+				<array name="ToExecute"><int>74</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>74</int>
+			<vec3>1440 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<string name="UnitType">actors/lich_summ_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>75</int>
+			<vec3>64 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<float name="ChanceToExecute">0.6</float>
+				<array name="ToExecute"><int>76</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>76</int>
+			<vec3>128 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="UnitType">actors/bannerman_bloodlust.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>77</int>
+			<vec3>192 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<array name="ToExecute"><int>78</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>78</int>
+			<vec3>256 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<string name="UnitType">actors/bannerman_protection.unit</string>
+				<int name="NumberToSpawnMax">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>79</int>
+			<vec3>320 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.3</float>
+				<array name="ToExecute"><int>80</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>80</int>
+			<vec3>384 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="MaxToSpawn">15</int>
+				<string name="UnitType">actors/skeleton_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>81</int>
+			<vec3>448 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<float name="ChanceToExecute">0.2</float>
+				<array name="ToExecute"><int>82</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>82</int>
+			<vec3>512 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<string name="UnitType">actors/lich_summ_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>83</int>
+			<vec3>64 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<float name="ChanceToExecute">0.6</float>
+				<array name="ToExecute"><int>84</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>84</int>
+			<vec3>128 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="UnitType">actors/bannerman_bloodlust.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>85</int>
+			<vec3>192 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<array name="ToExecute"><int>86</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>86</int>
+			<vec3>256 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<string name="UnitType">actors/bannerman_protection.unit</string>
+				<int name="NumberToSpawnMax">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>87</int>
+			<vec3>320 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.3</float>
+				<array name="ToExecute"><int>88</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>88</int>
+			<vec3>384 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<int name="NumberToSpawnMax">2</int>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="MaxToSpawn">15</int>
+				<string name="UnitType">actors/skeleton_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>89</int>
+			<vec3>448 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<float name="ChanceToExecute">0.2</float>
+				<array name="ToExecute"><int>90</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>90</int>
+			<vec3>512 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<string name="UnitType">actors/lich_summ_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>91</int>
+			<vec3>-832 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<float name="ChanceToExecute">0.3</float>
+				<array name="ToExecute"><int>92</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>92</int>
+			<vec3>-768 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<string name="UnitType">actors/bannerman_bloodlust.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>93</int>
+			<vec3>-704 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<float name="ChanceToExecute">0.2</float>
+				<array name="ToExecute"><int>94</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>94</int>
+			<vec3>-640 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<string name="UnitType">actors/bannerman_protection.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>95</int>
+			<vec3>-576 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.1</float>
+				<array name="ToExecute"><int>96</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>96</int>
+			<vec3>-512 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<int name="MaxToSpawn">15</int>
+				<string name="UnitType">actors/skeleton_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>97</int>
+			<vec3>-448 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<float name="ChanceToExecute">0.1</float>
+				<array name="ToExecute"><int>98</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>98</int>
+			<vec3>-384 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<string name="SpawnPointFilter">teleporting</string>
+				<string name="UnitType">actors/lich_summ_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>99</int>
+			<vec3>-832 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<float name="ChanceToExecute">0.3</float>
+				<array name="ToExecute"><int>100</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>100</int>
+			<vec3>-768 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_blood</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<string name="UnitType">actors/bannerman_bloodlust.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>101</int>
+			<vec3>-704 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<float name="ChanceToExecute">0.2</float>
+				<array name="ToExecute"><int>102</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>102</int>
+			<vec3>-640 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>banner_prot</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<string name="UnitType">actors/bannerman_protection.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>103</int>
+			<vec3>-576 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<float name="ChanceToExecute">0.1</float>
+				<array name="ToExecute"><int>104</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>104</int>
+			<vec3>-512 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<int name="MaxToSpawn">15</int>
+				<string name="UnitType">actors/skeleton_1_mb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>105</int>
+			<vec3>-448 -224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<float name="ChanceToExecute">0.1</float>
+				<array name="ToExecute"><int>106</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalEnemySpawn</string>
+			<int>106</int>
+			<vec3>-384 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lich_summ</string>
+			<dict>
+				<string name="SpawnPointFilter">gate</string>
+				<string name="UnitType">actors/lich_summ_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>107</int>
+			<vec3>320 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>104</int>
+					<string>AllSpawned</string>
+					<int>96</int>
+					<string>AllSpawned</string>
+					<int>88</int>
+					<string>AllSpawned</string>
+					<int>80</int>
+					<string>AllSpawned</string>
+					<int>72</int>
+					<string>AllSpawned</string>
+					<int>64</int>
+					<string>AllSpawned</string>
+				</array>
+			</dict>
+			<array><int>108</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CrowdTriggerAction</string>
+			<int>108</int>
+			<vec3>320 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mb-killed</string>
+			<dict>
+				<string name="Id">mb-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>109</int>
+			<vec3>288 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">skeleton_1_hard</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>110</int>
+			<vec3>0 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">skeleton_1_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>111</int>
+			<vec3>-288 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">skeleton_1_easy</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

@@ -1,0 +1,70 @@
+<unit slot="doodad">
+	<scenes default="on" off="off">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-11 -9 23 23</rect>
+			</collision>
+		</scene>		
+		<scene name="on">
+			<scene src="shared" />
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 10 9 10" />
+			<shadow>
+				<sprite origin="-9 15" texture="./well_archives.png">
+					<frame>167 0 7 28</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="11 25" looping="true" texture="./well_archives.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 76 23 38</frame>
+				<frame time="100">23 76 23 38</frame>
+				<frame time="100">46 76 23 38</frame>
+				<frame time="100">69 76 23 38</frame>
+			</sprite>		
+			<sprite origin="14 12" layer="-30" texture="./well_archives.png" material="system/default.mats:floor">
+				<frame>138 0 29 29</frame>
+			</sprite>
+			<light pos="0 -50">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="5"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="0 180 200 0" />
+					<color value="0 170 200 0" />
+				</colors>
+			</light>						
+		</scene>
+		<scene name="off">
+			<scene src="shared" />	
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="24 20 9 10" />
+			<shadow>
+				<sprite origin="-9 15" texture="./well_archives.png">
+					<frame>167 0 7 28</frame>
+				</sprite>
+			</shadow>
+			<sprite origin="11 25" looping="true" loopback="900" texture="./well_archives.png" material="system/default.mats:proj-prop">
+				<frame time="100">0 0 23 38</frame>
+				<frame time="100">23 0 23 38</frame>
+				<frame time="100">46 0 23 38</frame>
+				<frame time="100">69 0 23 38</frame>
+				<frame time="100">92 0 23 38</frame>
+				<frame time="100">115 0 23 38</frame>
+				<frame time="100">0 38 23 38</frame>
+				<frame time="100">23 38 23 38</frame>
+				<frame time="100">46 38 23 38</frame>
+				<frame time="100">69 38 23 38</frame>
+				<frame time="100">92 38 23 38</frame>
+			</sprite>
+				
+		</scene>
+		
+		
+	</scenes>
+</unit>

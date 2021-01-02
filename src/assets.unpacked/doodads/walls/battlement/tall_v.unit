@@ -1,0 +1,18 @@
+<unit slot="doodad" layer="-39">
+	<scenes default="1">
+	<scene name="shared">
+			%if EDITOR
+				<sprite layer="12" origin="0 0" texture="doodads/special/editor.png" material="system/default.mats:floor">
+					<frame>0 0 16 32</frame>
+				</sprite>
+			%endif
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 4 8" />
+			<collision static="true">
+				<rect>0 0 16 32</rect>
+			</collision>
+		</scene>		
+		<scene name="1">
+			<scene src="shared" />			
+		</scene>			
+	</scenes>
+</unit>

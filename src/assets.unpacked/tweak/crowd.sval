@@ -1,0 +1,292 @@
+<array>
+	<!--
+	Crowd::TriggerAction Example:
+		amount-negative = -3 (default 0)
+		amount-neutral = 0 (default 0)
+		amount-positive = 2 (default 0)
+
+		threshold-negative = 3 (default 0)
+		threshold-positive = 8 (default 1)
+
+		 Negative (-3 pts)           | Neutral (0 pts)             | Positive (2 pts)
+		<============================|=============================|=========================>
+		 0      1      2       3     | 4      5      6       7     | 8      9      10      11
+
+	For player scaling and rate scaling:
+		amount-negative-playeradd = default 0
+		amount-negative-ratingadd = default 0
+
+		amount-neutral-playeradd = default 0
+		amount-neutral-ratingadd = default 0
+
+		amount-positive-playeradd = default 0
+		amount-positive-ratingadd = default 0
+
+		threshold-negative-playeradd = default 0
+		threshold-negative-ratingadd = default 0
+
+		threshold-positive-playeradd = default 0
+		threshold-positive-ratingadd = default 0
+	-->
+
+	<!-- Kills -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">enemies-killed</string>
+
+		<float name="amount-negative">-3</float>
+		<float name="amount-positive">2</float>
+
+		<int name="threshold-negative">0</int>
+		<int name="threshold-positive">5</int>
+	</dict>
+	
+	<!-- Miniboss Kills -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">mb-killed</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">3</float>
+		
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Tower Kills -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">tower-killed</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">5</float>
+		
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Tower NOT Killed	-->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">tower-not-killed</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">-3</float>
+		
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Boss Damaged -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">boss-damaged</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">7</float>
+		
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Boss Killed -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">boss-killed</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">10</float>
+		
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Subwave early finish -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">subwave-fast</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">7</float>
+		
+		<int name="threshold-positive">1</int>
+	</dict>
+
+	<!-- Damage dealt -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">damage-dealt</string>
+
+		<float name="amount-negative">-4</float>
+		<float name="amount-positive">2</float>
+
+		<int name="threshold-negative">0</int>
+		<int name="threshold-positive">250</int>
+		<float name="threshold-positive-ratingadd">500</float>
+	</dict>
+
+	<!-- Damage taken -->
+ 	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">damage-taken</string>
+
+		<float name="amount-negative">2</float>
+		<int name="threshold-negative">0</int>
+	</dict>
+
+	<!-- Movement -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">units-traveled</string>
+
+		<float name="amount-negative">-1</float>
+		<float name="amount-positive">1</float>
+
+		<int name="threshold-negative">200</int>
+		<int name="threshold-positive">800</int>
+	</dict>
+
+	<!-- Mana spent -->
+<!-- 	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">spent-mana</string>
+
+		<float name="amount-negative">-1</float>
+		<float name="amount-positive">1</float>
+
+		<int name="threshold-negative">0</int>
+		<int name="threshold-positive">50</int>
+		<float name="threshold-positive-ratingadd">10</float>
+	</dict> -->
+
+	<!-- Potions -->
+<!-- 	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">potion-charges-used</string>
+
+		<float name="amount-positive">-1</float>
+		<int name="threshold-positive">1</int>
+	</dict> -->
+	
+	<!-- Drinks -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">drinks-consumed</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">3</float>
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+
+	<!-- Critical hits -->
+	<!-- <dict> -->
+		<!-- <string name="class">Crowd::TriggerAction</string> -->
+		<!-- <string name="stat">crit-count</string> -->
+
+		<!-- <float name="amount-positive">1</float> -->
+		<!-- <int name="threshold-positive">10</int> -->
+	<!-- </dict> -->
+
+	<!-- Evading attacks -->
+	<!-- <dict> -->
+		<!-- <string name="class">Crowd::TriggerAction</string> -->
+		<!-- <string name="stat">evade-amount</string> -->
+
+		<!-- <float name="amount-positive">1</float> -->
+		<!-- <int name="threshold-positive">10</int> -->
+	<!-- </dict> -->
+
+	<!-- Health -->
+	<dict>
+		<string name="class">Crowd::HealthAction</string>
+		<string name="id">health</string>
+
+		<float name="amount-negative">3</float>
+		<float name="threshold-negative">0.3</float>
+	</dict>
+	
+	<!-- Player Death -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="stat">death-count</string>
+
+		<bool name="use-average">false</bool>
+
+		<float name="amount-positive">5</float>
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Wave finished -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">wave-finished</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">5</float>
+		
+		<int name="threshold-positive">1</int>
+	</dict>
+
+	<!-- Time -->
+	<dict>
+		<string name="class">Crowd::TimeAction</string>
+		<string name="id">time</string>
+
+		<float name="start-amount">-4</float>
+		<float name="amount">-1</float>
+		<float name="min-amount">-8</float>
+		<float name="max-amount">-1</float>
+
+		<int name="time-divider">10000</int>
+		<int name="delay">7</int>
+		
+		<!-- <int name="time-divider">5000</int> -->
+		<!-- <int name="delay">4</int> -->
+	</dict>
+
+	<!-- Combo -->
+	<dict>
+		<string name="class">Crowd::ComboAction</string>
+		<string name="id">combo</string>
+
+		<float name="amount-positive">3</float>
+		<int name="threshold-positive">10</int>
+	</dict>
+	
+	<!-- Altar Buff -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">altar-buff</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">1</float>
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Altar event finished -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">altar-event-finished</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">5</float>
+		<int name="threshold-positive">1</int>
+	</dict>
+	
+	<!-- Altar event canceled -->
+	<dict>
+		<string name="class">Crowd::TriggerAction</string>
+		<string name="id">altar-event-cancel</string>
+
+		<bool name="use-average">false</bool>
+		
+		<float name="amount-positive">-3</float>
+		<int name="threshold-positive">1</int>
+	</dict>
+</array>

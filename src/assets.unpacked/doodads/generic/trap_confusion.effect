@@ -1,0 +1,16 @@
+<effect looping="true">
+	
+	<sprite looping="true" origin="15 15" texture="./trap_confusion.png" mask="1" material="system/default.mats:floor">
+		<frame time="2000">160 0 30 30</frame>
+	</sprite>	 
+	
+	<sprite looping="true" origin="16 16" texture="./trap_confusion.png" masked="1" material="system/default.mats:floor"
+		angle="sign(rand(u)-0.5)* (t+l+rand(u*2))*pi*(rand(u*3)+0.75)"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1">
+		<frame time="1000">160 0 32 32</frame>
+	</sprite>
+      
+</effect>

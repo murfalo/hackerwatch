@@ -1,0 +1,86 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="on">
+			<minimap_sprite layer="150" layer="20" origin="5 5" texture="gui/minimap.png" frame="240 0 10 10" />
+			<collision static="true">
+				<circle offset="0.5 -0.5" radius="6.5" />
+			</collision>
+			<sprite origin="-6 8" texture="./combo_sphere.png" material="system/default.mats:shadow">
+				<frame>98 44 2 14</frame>
+			</sprite>
+			<sprite origin="6 17" ulayer="5" texture="./combo_sphere.png" material="system/default.mats:glow-both-bright">
+				<frame time="70">0 0 11 11</frame>
+				<frame time="70">11 0 11 11</frame>
+				<frame time="70">22 0 11 11</frame>
+				<frame time="70">33 0 11 11</frame>
+				<frame time="70">44 0 11 11</frame>
+				<frame time="70">55 0 11 11</frame>
+				<frame time="70">0 11 11 11</frame>
+				<frame time="70">11 11 11 11</frame>
+				<frame time="70">22 11 11 11</frame>
+				<frame time="70">33 11 11 11</frame>
+				<frame time="70">44 11 11 11</frame>
+				<frame time="70">55 11 11 11</frame>
+			</sprite>
+			<sprite origin="6 17" ulayer="4" texture="./combo_sphere.png" material="system/default.mats:glow-both-bright">
+				<frame time="50">0 22 11 11</frame>
+				<frame time="50">11 22 11 11</frame>
+				<frame time="50">22 22 11 11</frame>
+				<frame time="50">33 22 11 11</frame>
+				<frame time="50">44 22 11 11</frame>
+				<frame time="50">55 22 11 11</frame>
+				<frame time="50">0 33 11 11</frame>
+				<frame time="50">11 33 11 11</frame>
+				<frame time="50">22 33 11 11</frame>
+				<frame time="50">33 33 11 11</frame>
+				<frame time="50">44 33 11 11</frame>
+				<frame time="50">55 33 11 11</frame>
+			</sprite>
+			<sprite origin="4 16" ulayer="3" texture="./combo_sphere.png" material="system/default.mats:bright-noxray">
+				<frame time="60">35 44 9 9</frame>
+				<frame time="60">44 44 9 9</frame>
+				<frame time="50">53 44 9 9</frame>
+				<frame time="40">62 44 9 9</frame>
+				<frame time="50">71 44 9 9</frame>
+				<frame time="60">80 44 9 9</frame>
+				<frame time="60">89 44 9 9</frame>
+				<frame time="1300">0 0 0 0</frame>
+			</sprite>
+			<sprite origin="4 16" ulayer="2" texture="./combo_sphere.png" material="system/default.mats:bright-noxray">
+				<frame time="50">26 44 9 9</frame>
+			</sprite>
+			<sprite origin="6 11" texture="./combo_sphere.png" material="system/default.mats:default-noxray">
+				<frame time="50">0 44 13 17</frame>
+			</sprite>
+			<light pos="0 -11">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1250" />
+				<overbright value="3" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="34" />
+					<size value="31" />
+				</sizes>
+				<colors>
+					<color value="255 0 255 10" />
+				</colors>
+			</light>			
+		</scene>
+		<scene name="off">
+			<collision static="true">
+				<circle offset="0.5 -0.5" radius="6.5" />
+			</collision>
+			<sprite origin="-6 8" texture="./combo_sphere.png" material="system/default.mats:shadow">
+				<frame>98 44 2 14</frame>
+			</sprite>
+			<sprite origin="6 11" texture="./combo_sphere.png" material="system/default.mats:default-noxray">
+				<frame time="50">13 44 13 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

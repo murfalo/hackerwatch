@@ -1,0 +1,94 @@
+<gui>
+	<sprites>
+		<sprite name="icon-ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+		<sprite name="icon-scroll" texture="items/statue_blueprint.png"><frame>34 40 17 20</frame></sprite>
+
+		<sprite name="statue-check" texture="gui/widget.png"><frame>203 96 258 36</frame></sprite>
+		<sprite name="statue-check-hover" texture="gui/widget.png"><frame>203 132 258 36</frame></sprite>
+		<sprite name="statue-check-checked" texture="gui/widget.png"><frame>203 168 258 36</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="276" height="210" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="272" height="18" offset="2 2" flow="hbox">
+					<!-- Text -->
+					<rect width="251" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text=".shop.statues.select.title" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton spriteset="close" func="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="272" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- List -->
+				<rect offset="2 23" width="258" height="164" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<checkboxgroup id="list" dynamic-size="false" width="258" height="164" autoscroll="true" clipping="true" flow="vbox" func-double="set-statue" />
+				</rect>
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="164" offset="260 23" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="164" offset="271 23" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Template -->
+				<rect id="template" visible="false" width="258" height="39">
+					<!-- Checkbox -->
+					<checkbox id="check" disabled-tooltip="true" spriteset="statue-check" candoubleclick="true">
+						<!-- Preview -->
+						<rect width="24" height="24" offset="6 6">
+							<clip width="24" height="24">
+								<unit id="preview" width="24" height="24" hint="resource" hint-resource="doodads/generic/desert_statues.unit" />
+							</clip>
+						</rect>
+
+						<!-- Level -->
+						<rect width="24" height="24" offset="34 6">
+							<text id="level" hint="number-low" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Blueprints -->
+						<rect width="24" height="24" offset="62 6">
+							<sprite src="icon-scroll" anchor="0.5 0.5" offset="1 0" />
+							<text id="blueprints" hint="number-low" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Name -->
+						<rect width="166" height="24" offset="86 6">
+							<text id="name" hint="name" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+						</rect>
+					</checkbox>
+
+					<!-- Separator -->
+					<rect width="258" height="3" offset="0 36" spriteset="gui/variable/3pxbar_hor.sval" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="272" height="3" offset="2 187" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Button bar -->
+				<rect width="162" height="18" offset="2 190" flow="hbox">
+					<rect width="106" height="18" spriteset="gui/variable/headline_hor.sval" />
+
+					<!-- Start button -->
+					<scalebutton func="set-statue" spriteset="scalebutton" width="60" font="gui/fonts/arial11.fnt" text=".menu.ok" />
+
+					<rect width="106" height="18" spriteset="gui/variable/headline_hor.sval" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

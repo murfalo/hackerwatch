@@ -1,0 +1,64 @@
+<effect looping="true">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	
+	
+	<variation>
+		<sprite looping="true" ulayer="0" origin="8 8" texture="./bolt.png" material="system/default.mats:projectile-player"
+	
+			pos-x="0"
+			pos-y="-height">
+			
+			<frame time="70">0 64 16 16</frame>
+			<frame time="70">16 64 16 16</frame>
+			<frame time="70">32 64 16 16</frame>
+			<frame time="70">48 64 16 16</frame>
+			<frame time="70">64 64 16 16</frame>
+			<frame time="70">80 64 16 16</frame>
+			<frame time="70">96 64 16 16</frame>
+			<frame time="70">112 64 16 16</frame>
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite looping="true" ulayer="0" origin="8 8" texture="./bolt.png" material="system/default.mats:bright-noxray"
+	
+			pos-x="0"
+			pos-y="-height">
+			
+			<frame time="70">0 80 16 16</frame>
+			<frame time="70">16 80 16 16</frame>
+			<frame time="70">32 80 16 16</frame>
+			<frame time="70">48 80 16 16</frame>
+			<frame time="70">64 80 16 16</frame>
+			<frame time="70">80 80 16 16</frame>
+			<frame time="70">96 80 16 16</frame>
+			<frame time="70">112 80 16 16</frame>
+		</sprite>
+	</variation>
+	
+	
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="18 * (sin((t+l) *5)/4 + 1.0 + rand(t)/5)" />
+
+		<color-r value="0" />
+		<color-g value="0.5" />
+		<color-b value="1" />
+		<color-a value="0"/>
+	</light>
+</effect>

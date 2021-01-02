@@ -1,0 +1,64 @@
+<!-- <doodad aobias="0.4" minimap="menus/minimap.xml:round_crn_l_up">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d.png</texture>
+		<origin>0 32</origin>
+		<frame>128 0 48 80</frame>
+	</sprite>	
+	
+	<polygon collision="false" shadow="true">
+		<point>0 0</point>
+		<point>16 0</point>
+		<point>16 48</point>
+		<point>0 48</point>
+	</polygon>		
+
+	<polygon collision="true" shadow="false">
+		<point>0 40</point>
+		<point>0 -24</point>		
+		<point>26 -24</point>					
+		<point>30 22</point>			
+		<point>16 40</point>
+	</polygon>		
+
+	<polygon collision="true" shadow="false">
+		<point>30 22</point>
+		<point>26 -24</point> 	
+		<point>48 -24</point>					
+		<point>48 16</point>
+	</polygon>	
+
+</doodad> -->
+
+
+<unit slot="doodad">
+
+	<scenes>
+		<scene>
+		<minimap_sprite origin="-2 -2" texture="gui/minimap.png" frame="104 131 10 10" />
+			<collision static="true">
+				<!-- <polygon>
+					<point>0 0</point>
+					<point>16 0</point>
+					<point>16 48</point>
+					<point>0 48</point>
+				</polygon> -->
+				<polygon>
+					<point>0 48</point>
+					<point>0 0</point>		
+					<point>26 0</point>					
+					<point>30 22</point>			
+					<point>16 48</point>	
+				</polygon>
+				<polygon>
+					<point>30 22</point>
+					<point>26 0</point> 	
+					<point>48 0</point>					
+					<point>48 16</point>	
+				</polygon>
+			</collision>
+			<sprite ulayer="1" origin="0 32" texture="./_deco.png" material="system/default.mats:proj-wall">
+				<frame>0 103 48 80</frame>
+			</sprite>					
+		</scene>
+	</scenes>
+</unit>

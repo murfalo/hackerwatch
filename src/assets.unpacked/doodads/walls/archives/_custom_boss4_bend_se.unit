@@ -1,0 +1,22 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<minimap_sprite origin="0 48" texture="gui/minimap.png" frame="52 130 52 52" />
+			<collision static="true">
+				<polygon decompose="2">
+					<point>190 -192</point> <!-- NW -->
+					<point>208 -192</point> <!-- NE -->
+					<point>208 16</point>
+					<point>0 16</point>
+					<point>0 -2</point>
+					<point>68 -24</point> <!-- S-MID -->
+					<point>126 -66</point> <!-- MID -->
+					<point>168 -124</point> <!-- N-MID -->
+				</polygon>
+			</collision>		
+			<sprite origin="0 224" texture="./_custom_boss4walls.png" material="system/default.mats:default">
+				<frame>208 240 208 208</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

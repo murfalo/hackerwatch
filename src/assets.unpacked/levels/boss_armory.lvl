@@ -1,0 +1,7069 @@
+<dict>
+	<array name="prefabs"></array>
+	<array name="scripts">
+		<array><string>LevelStart</string><int>650</int><vec3>-80 480 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>BossLichNode</string>
+			<int>651</int>
+			<vec3>0 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>729</int><int>674</int><int>668</int><int>676</int><int>672</int><int>730</int><int>669</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>652</int>
+			<vec3>-1024 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area_both</string>
+			<array><int>919</int><int>0</int><int>917</int><int>0</int><int>817</int><int>0</int><int>818</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>653</int>
+			<vec3>0 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>654</int>
+			<vec3>688 -768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss3_killed</string>
+			<dict>
+				<string name="Flag">boss3_killed</string>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>655</int>
+			<vec3>688 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetStat</string>
+			<int>656</int>
+			<vec3>688 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="ValueInt">1</int>
+				<int name="ActionType">1</int>
+				<string name="Name">boss-3-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>GiveCharacterTitle</string>
+			<int>657</int>
+			<vec3>688 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Targets"><int>662</int><string>AllInside</string></array>
+				<int name="TitleIndex">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>658</int>
+			<vec3>-32 -1568 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/spawn.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>659</int>
+			<vec3>304 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>682</int></array>
+				<array name="Variable"><int>686</int></array>
+				<int name="Value">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>660</int>
+			<vec3>608 -880 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>951</int><int>0</int><int>952</int><int>0</int><int>1019</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>661</int>
+			<vec3>608 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DisableStuff</string>
+			<dict>
+				<array name="Scripts"><int>995</int><int>992</int><int>993</int><int>1066</int><int>1062</int><int>1046</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>662</int>
+			<vec3>768 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ExploreMinimap</string>
+			<int>663</int>
+			<vec3>-16 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Radius">1024</int>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>664</int>
+			<vec3>608 -400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff</string>
+			<dict>
+				<array name="#Actors"><int>721</int><string>LastSpawned</string></array>
+				<int name="SpriteVariation">6</int>
+				<vec4 name="TextColor">0 0.784314 1 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>665</int>
+			<vec3>64 -448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>933</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>721</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>666</int>
+			<vec3>544 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ActivateBoss</string>
+			<array>
+				<int>663</int>
+				<int>0</int>
+				<int>932</int>
+				<int>500</int>
+				<int>933</int>
+				<int>11000</int>
+				<int>934</int>
+				<int>5500</int>
+				<int>936</int>
+				<int>15000</int>
+				<int>967</int>
+				<int>15000</int>
+				<int>1023</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>667</int>
+			<vec3>-64 -448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>932</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>715</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>668</int>
+			<vec3>128 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>671</int><int>670</int><int>673</int><int>727</int><int>728</int><int>675</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>669</int>
+			<vec3>-272 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>728</int><int>675</int><int>671</int><int>729</int><int>674</int><int>668</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>670</int>
+			<vec3>-96 -336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>668</int><int>674</int><int>672</int><int>676</int><int>730</int><int>729</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>671</int>
+			<vec3>224 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>673</int><int>669</int><int>670</int><int>672</int><int>727</int><int>730</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>672</int>
+			<vec3>-128 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>671</int><int>670</int><int>728</int><int>675</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>673</int>
+			<vec3>-160 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>668</int><int>674</int><int>671</int><int>676</int><int>672</int><int>729</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>674</int>
+			<vec3>272 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>670</int><int>673</int><int>669</int><int>727</int><int>728</int><int>651</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>675</int>
+			<vec3>160 -272 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>668</int><int>672</int><int>669</int><int>676</int><int>730</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>676</int>
+			<vec3>0 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>671</int><int>675</int><int>728</int><int>651</int><int>670</int><int>673</int><int>727</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>677</int>
+			<vec3>-25 -263 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>678</int>
+			<vec3>416 -512 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<string>Wraith_Killed</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string><int>715</int><string>LastSpawned</string><int>718</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>688</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1023</int>
+			<vec3>-120 312 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>680</int>
+			<vec3>72 -1568 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>931</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>681</int>
+			<vec3>304 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnFalse"><int>659</int></array>
+				<array name="Variable"><int>686</int></array>
+				<int name="Value">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>682</int>
+			<vec3>608 -704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss Dead</string>
+			<array>
+				<int>654</int>
+				<int>0</int>
+				<int>657</int>
+				<int>0</int>
+				<int>656</int>
+				<int>0</int>
+				<int>655</int>
+				<int>0</int>
+				<int>661</int>
+				<int>0</int>
+				<int>660</int>
+				<int>2000</int>
+				<int>1030</int>
+				<int>0</int>
+				<int>1039</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>683</int>
+			<vec3>-2080 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string></array>
+				<string name="EventName">staff_area</string>
+			</dict>
+			<array><int>702</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>684</int>
+			<vec3>-5 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>685</int>
+			<vec3>416 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Variables"><int>686</int></array>
+				<int name="Value">1</int>
+				<int name="Function">2</int>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>686</int><vec3>368 -640 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>CheckVariables</string>
+			<int>687</int>
+			<vec3>304 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnFalse"><int>681</int></array>
+				<array name="Variable"><int>686</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>688</int>
+			<vec3>416 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>685</int><int>0</int><int>687</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1063</int>
+			<vec3>-1856 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>12000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1062</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">12000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>690</int>
+			<vec3>-2016 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>716</int>
+					<int>759</int>
+					<int>734</int>
+					<int>731</int>
+					<int>776</int>
+					<int>752</int>
+					<int>743</int>
+					<int>741</int>
+					<int>742</int>
+					<int>735</int>
+					<int>758</int>
+					<int>769</int>
+					<int>748</int>
+					<int>751</int>
+					<int>720</int>
+					<int>781</int>
+					<int>768</int>
+					<int>765</int>
+					<int>711</int>
+					<int>712</int>
+					<int>713</int>
+					<int>714</int>
+					<int>684</int>
+					<int>708</int>
+					<int>710</int>
+					<int>707</int>
+					<int>739</int>
+					<int>755</int>
+					<int>706</int>
+					<int>709</int>
+					<int>738</int>
+					<int>764</int>
+					<int>773</int>
+					<int>772</int>
+					<int>756</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>691</int>
+			<vec3>-1952 -960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Areas</string>
+			<dict>
+				<array name="ToExecute">
+					<int>716</int>
+					<int>759</int>
+					<int>734</int>
+					<int>731</int>
+					<int>776</int>
+					<int>752</int>
+					<int>743</int>
+					<int>741</int>
+					<int>742</int>
+					<int>735</int>
+					<int>758</int>
+					<int>769</int>
+					<int>748</int>
+					<int>751</int>
+					<int>720</int>
+					<int>781</int>
+					<int>768</int>
+					<int>765</int>
+					<int>711</int>
+					<int>712</int>
+					<int>713</int>
+					<int>714</int>
+					<int>708</int>
+					<int>684</int>
+					<int>739</int>
+					<int>707</int>
+					<int>710</int>
+					<int>706</int>
+					<int>755</int>
+					<int>709</int>
+					<int>738</int>
+					<int>756</int>
+					<int>772</int>
+					<int>773</int>
+					<int>764</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>692</int>
+			<vec3>-2176 -896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<array name="Scripts"><int>699</int></array>
+				<int name="TriggerTimes">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>1070</int>
+			<vec3>-1952 -1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RandomDelay</string>
+			<dict>
+				<array name="LinkScripts"><int>691</int></array>
+				<int name="TimeMax">150</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1059</int>
+			<vec3>-1088 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>957</int><int>973</int><int>1069</int><int>1048</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1062</int>
+			<vec3>-1920 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="Frequency">20000</int>
+			</dict>
+			<array>
+				<int>981</int>
+				<int>0</int>
+				<int>980</int>
+				<int>0</int>
+				<int>979</int>
+				<int>0</int>
+				<int>770</int>
+				<int>0</int>
+				<int>971</int>
+				<int>0</int>
+				<int>968</int>
+				<int>0</int>
+				<int>1061</int>
+				<int>0</int>
+				<int>1064</int>
+				<int>0</int>
+				<int>1063</int>
+				<int>0</int>
+				<int>1006</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1061</int>
+			<vec3>-1984 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>20000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1062</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">20000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1064</int>
+			<vec3>-1920 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>16000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1062</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">16000</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1060</int>
+			<vec3>-1008 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>973</int><int>970</int><int>1048</int><int>1047</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>699</int>
+			<vec3>-2080 -1024 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">200</int>
+			</dict>
+			<array><int>1070</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1067</int>
+			<vec3>-1312 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>12000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1066</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">12000</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1066</int>
+			<vec3>-1376 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="Frequency">20000</int>
+			</dict>
+			<array>
+				<int>987</int>
+				<int>0</int>
+				<int>986</int>
+				<int>0</int>
+				<int>985</int>
+				<int>0</int>
+				<int>955</int>
+				<int>0</int>
+				<int>972</int>
+				<int>0</int>
+				<int>969</int>
+				<int>0</int>
+				<int>1065</int>
+				<int>0</int>
+				<int>1068</int>
+				<int>0</int>
+				<int>1067</int>
+				<int>0</int>
+				<int>1004</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>702</int>
+			<vec3>-2080 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area</string>
+			<array><int>692</int><int>0</int><int>690</int><int>0</int><int>679</int><int>0</int><int>695</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1068</int>
+			<vec3>-1376 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>16000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1066</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">16000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1069</int>
+			<vec3>-976 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>20000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1046</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">20000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1065</int>
+			<vec3>-1440 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>20000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1066</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">20000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>706</int>
+			<vec3>64 -80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>707</int>
+			<vec3>16 -78 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>708</int>
+			<vec3>-23 -97 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>709</int>
+			<vec3>64 -135 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>710</int>
+			<vec3>21 -137 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>711</int>
+			<vec3>-154 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>712</int>
+			<vec3>-101 -45 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>713</int>
+			<vec3>-53 -51 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>714</int>
+			<vec3>-64 -115 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>715</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wraith_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_scythe.unit</string>
+			</dict>
+			<array><int>722</int><int>0</int><int>780</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>716</int>
+			<vec3>-155 -141 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>717</int>
+			<vec3>0 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>5</int></array>
+			</dict>
+			<array><int>666</int><int>0</int><int>653</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>718</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wraith_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_mage.unit</string>
+			</dict>
+			<array><int>723</int><int>0</int><int>740</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BossLichRoom</string>
+			<int>719</int>
+			<vec3>0 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Height">224</int>
+				<int name="Width">288</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>720</int>
+			<vec3>-112 -129 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnitWithEffect</string>
+			<int>721</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wraith_staff</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff.unit</string>
+			</dict>
+			<array><int>664</int><int>0</int><int>733</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>722</int>
+			<vec3>544 -400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>scythe</string>
+			<dict>
+				<array name="#Actors"><int>715</int><string>LastSpawned</string></array>
+				<int name="SpriteVariation">5</int>
+				<vec4 name="TextColor">1 0.196078 0 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>723</int>
+			<vec3>480 -400 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mage</string>
+			<dict>
+				<array name="#Actors"><int>718</int><string>LastSpawned</string></array>
+				<int name="SpriteVariation">7</int>
+				<vec4 name="TextColor">1 0 1 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>724</int>
+			<vec3>-1728 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area_mage</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string></array>
+				<string name="EventName">staff_area_mage</string>
+			</dict>
+			<array><int>823</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>725</int>
+			<vec3>-1376 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area_scythe</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string></array>
+				<string name="EventName">staff_area_scythe</string>
+			</dict>
+			<array><int>876</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitEventTrigger</string>
+			<int>726</int>
+			<vec3>-1024 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area_both</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string></array>
+				<string name="EventName">staff_area_both</string>
+			</dict>
+			<array><int>652</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>727</int>
+			<vec3>-224 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>674</int><int>671</int><int>668</int><int>729</int><int>676</int><int>675</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>728</int>
+			<vec3>96 -336 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>668</int><int>672</int><int>669</int><int>671</int><int>674</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>729</int>
+			<vec3>272 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>673</int><int>669</int><int>670</int><int>727</int><int>672</int><int>730</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BossLichNode</string>
+			<int>730</int>
+			<vec3>-272 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNodes"><int>670</int><int>728</int><int>675</int><int>671</int><int>729</int><int>651</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>731</int>
+			<vec3>-25 -263 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDamagedTrigger</string>
+			<int>732</int>
+			<vec3>-1072 0 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>staff</string>
+			<dict>
+				<array name="Units"><int>13</int></array>
+			</dict>
+			<array>
+				<int>957</int>
+				<int>0</int>
+				<int>973</int>
+				<int>0</int>
+				<int>970</int>
+				<int>0</int>
+				<int>982</int>
+				<int>0</int>
+				<int>984</int>
+				<int>0</int>
+				<int>983</int>
+				<int>0</int>
+				<int>1069</int>
+				<int>0</int>
+				<int>1048</int>
+				<int>0</int>
+				<int>1047</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetDamageTransfer</string>
+			<int>733</int>
+			<vec3>-1088 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_staff</string>
+			<dict>
+				<array name="#TargetUnits"><int>721</int><string>LastSpawned</string></array>
+				<array name="SourceUnits"><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>734</int>
+			<vec3>-71 -227 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>735</int>
+			<vec3>108 -145 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDamagedTrigger</string>
+			<int>736</int>
+			<vec3>-2080 0 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>scythe</string>
+			<dict>
+				<array name="Units"><int>52</int></array>
+			</dict>
+			<array>
+				<int>770</int>
+				<int>0</int>
+				<int>971</int>
+				<int>0</int>
+				<int>968</int>
+				<int>0</int>
+				<int>980</int>
+				<int>0</int>
+				<int>979</int>
+				<int>0</int>
+				<int>981</int>
+				<int>0</int>
+				<int>1061</int>
+				<int>0</int>
+				<int>1064</int>
+				<int>0</int>
+				<int>1063</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>737</int>
+			<vec3>480 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnStaff</string>
+			<array><int>721</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>738</int>
+			<vec3>134 -92 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>739</int>
+			<vec3>51 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetDamageTransfer</string>
+			<int>740</int>
+			<vec3>-1520 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_mage</string>
+			<dict>
+				<array name="#TargetUnits"><int>718</int><string>LastSpawned</string></array>
+				<array name="SourceUnits"><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>741</int>
+			<vec3>106 -194 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>742</int>
+			<vec3>150 -150 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>743</int>
+			<vec3>61 -186 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>744</int>
+			<vec3>608 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wraith_mage_dead</string>
+			<dict>
+				<string name="Flag">wraith_mage_dead</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>745</int>
+			<vec3>480 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnScythe</string>
+			<array><int>715</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>746</int>
+			<vec3>608 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wraith_staff_dead</string>
+			<dict>
+				<string name="Flag">wraith_staff_dead</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>747</int>
+			<vec3>21 -137 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>748</int>
+			<vec3>-21 -156 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>749</int>
+			<vec3>-1472 416 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>732</int><int>962</int><int>964</int><int>736</int><int>966</int><int>775</int><int>1062</int><int>1066</int><int>1046</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>750</int>
+			<vec3>-2064 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Scythe_Killed</string>
+			<dict>
+				<array name="#Units"><int>715</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>767</int><int>0</int><int>989</int><int>0</int><int>1007</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>751</int>
+			<vec3>-63 -171 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>752</int>
+			<vec3>65 -233 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>753</int>
+			<vec3>-1424 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mage</string>
+			<dict>
+				<array name="Units"><int>20</int></array>
+			</dict>
+			<array><int>976</int><int>0</int><int>999</int><int>0</int><int>1011</int><int>0</int><int>1003</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>754</int>
+			<vec3>240 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>1036</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>755</int>
+			<vec3>107 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>756</int>
+			<vec3>156 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>757</int>
+			<vec3>208 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>1034</int><int>0</int><int>754</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>758</int>
+			<vec3>21 -196 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>759</int>
+			<vec3>-108 -180 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>760</int>
+			<vec3>-101 -45 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>761</int>
+			<vec3>-53 -51 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>762</int>
+			<vec3>-154 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>763</int>
+			<vec3>-112 -129 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>764</int>
+			<vec3>179 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>765</int>
+			<vec3>-140 -86 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>766</int>
+			<vec3>272 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>12</int></array>
+				<array name="OnAllEntered"><int>1035</int></array>
+				<array name="OnCanceled"><int>757</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>767</int>
+			<vec3>-1968 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>scythe</string>
+			<dict>
+				<array name="Units"><int>52</int></array>
+			</dict>
+			<array><int>977</int><int>0</int><int>1000</int><int>0</int><int>1012</int><int>0</int><int>1001</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>768</int>
+			<vec3>-206 -52 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>769</int>
+			<vec3>-25 -210 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>770</int>
+			<vec3>-2208 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10000</string>
+			<dict>
+				<array name="TimerTriggers"><int>964</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">10000</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>771</int>
+			<vec3>-1520 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Mage_Killed</string>
+			<dict>
+				<array name="#Units"><int>718</int><string>AllSpawned</string></array>
+			</dict>
+			<array><int>753</int><int>0</int><int>990</int><int>0</int><int>1009</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>772</int>
+			<vec3>201 -33 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>773</int>
+			<vec3>214 -74 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>774</int>
+			<vec3>480 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnMage</string>
+			<array><int>718</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitDamagedTrigger</string>
+			<int>775</int>
+			<vec3>-1520 0 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>mage</string>
+			<dict>
+				<array name="Units"><int>20</int></array>
+			</dict>
+			<array>
+				<int>955</int>
+				<int>0</int>
+				<int>972</int>
+				<int>0</int>
+				<int>969</int>
+				<int>0</int>
+				<int>987</int>
+				<int>0</int>
+				<int>986</int>
+				<int>0</int>
+				<int>985</int>
+				<int>0</int>
+				<int>1065</int>
+				<int>0</int>
+				<int>1068</int>
+				<int>0</int>
+				<int>1067</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>776</int>
+			<vec3>21 -258 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>777</int>
+			<vec3>-64 -115 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>778</int>
+			<vec3>608 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wraith_scythe_dead</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">wraith_scythe_dead</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>779</int>
+			<vec3>156 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetDamageTransfer</string>
+			<int>780</int>
+			<vec3>-2064 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_scythe</string>
+			<dict>
+				<array name="#TargetUnits"><int>715</int><string>LastSpawned</string></array>
+				<array name="SourceUnits"><int>52</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>781</int>
+			<vec3>-186 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>782</int>
+			<vec3>-23 -97 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>783</int>
+			<vec3>16 -78 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>784</int>
+			<vec3>64 -80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>1027</int>
+			<vec3>-64 -512 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_scythe</string>
+			<dict>
+				<string name="Flag">spawn_ghost_scythe</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnlockShortcut</string>
+			<int>1030</int>
+			<vec3>728 -744 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Targets"><int>662</int><string>AllInside</string></array>
+				<int name="Shortcut">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>1029</int>
+			<vec3>12 -1602 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<string name="UnitType">items/item_common.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>788</int>
+			<vec3>106 -194 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>789</int>
+			<vec3>65 -233 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>790</int>
+			<vec3>-63 -171 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>791</int>
+			<vec3>179 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>792</int>
+			<vec3>201 -33 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>793</int>
+			<vec3>-21 -156 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>794</int>
+			<vec3>-71 -227 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>795</int>
+			<vec3>51 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>796</int>
+			<vec3>61 -186 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>797</int>
+			<vec3>134 -92 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>798</int>
+			<vec3>150 -150 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>799</int>
+			<vec3>-25 -210 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>800</int>
+			<vec3>21 -196 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>801</int>
+			<vec3>107 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>802</int>
+			<vec3>-206 -52 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>803</int>
+			<vec3>-108 -180 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>804</int>
+			<vec3>-140 -86 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>805</int>
+			<vec3>108 -145 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>806</int>
+			<vec3>64 -135 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>807</int>
+			<vec3>-155 -141 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>808</int>
+			<vec3>-186 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>809</int>
+			<vec3>-5 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1049</int>
+			<vec3>-1984 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.33</string>
+			<dict>
+				<array name="#Units"><int>715</int><string>LastSpawned</string></array>
+				<float name="Value">0.33</float>
+			</dict>
+			<array><int>1052</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>811</int>
+			<vec3>-1664 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>836</int>
+					<int>852</int>
+					<int>839</int>
+					<int>838</int>
+					<int>859</int>
+					<int>848</int>
+					<int>845</int>
+					<int>843</int>
+					<int>844</int>
+					<int>840</int>
+					<int>851</int>
+					<int>856</int>
+					<int>846</int>
+					<int>847</int>
+					<int>837</int>
+					<int>860</int>
+					<int>855</int>
+					<int>854</int>
+					<int>832</int>
+					<int>833</int>
+					<int>834</int>
+					<int>835</int>
+					<int>809</int>
+					<int>829</int>
+					<int>831</int>
+					<int>828</int>
+					<int>842</int>
+					<int>849</int>
+					<int>827</int>
+					<int>830</int>
+					<int>841</int>
+					<int>853</int>
+					<int>858</int>
+					<int>857</int>
+					<int>850</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>812</int>
+			<vec3>-1600 -960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Areas</string>
+			<dict>
+				<array name="ToExecute">
+					<int>836</int>
+					<int>852</int>
+					<int>839</int>
+					<int>838</int>
+					<int>859</int>
+					<int>848</int>
+					<int>845</int>
+					<int>843</int>
+					<int>844</int>
+					<int>840</int>
+					<int>851</int>
+					<int>856</int>
+					<int>846</int>
+					<int>847</int>
+					<int>837</int>
+					<int>860</int>
+					<int>855</int>
+					<int>854</int>
+					<int>832</int>
+					<int>833</int>
+					<int>834</int>
+					<int>835</int>
+					<int>829</int>
+					<int>809</int>
+					<int>842</int>
+					<int>828</int>
+					<int>831</int>
+					<int>827</int>
+					<int>849</int>
+					<int>830</int>
+					<int>841</int>
+					<int>850</int>
+					<int>857</int>
+					<int>858</int>
+					<int>853</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>813</int>
+			<vec3>-1824 -896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>6</string>
+			<dict>
+				<array name="Scripts"><int>820</int></array>
+				<int name="TriggerTimes">6</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1055</int>
+			<vec3>-1520 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>955</int><int>972</int><int>1065</int><int>1068</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1058</int>
+			<vec3>-1088 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.66</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string></array>
+				<float name="Value">0.66</float>
+			</dict>
+			<array><int>1059</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1051</int>
+			<vec3>-2064 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>770</int><int>971</int><int>1061</int><int>1064</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1048</int>
+			<vec3>-912 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>16000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1046</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">16000</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1050</int>
+			<vec3>-2064 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.66</string>
+			<dict>
+				<array name="#Units"><int>715</int><string>LastSpawned</string></array>
+				<float name="Value">0.66</float>
+			</dict>
+			<array><int>1051</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>1047</int>
+			<vec3>-848 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>12000</string>
+			<dict>
+				<array name="TimerTriggers"><int>1046</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">12000</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>820</int>
+			<vec3>-1728 -1024 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">200</int>
+			</dict>
+			<array><int>693</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1054</int>
+			<vec3>-1520 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.66</string>
+			<dict>
+				<array name="#Units"><int>718</int><string>LastSpawned</string></array>
+				<float name="Value">0.66</float>
+			</dict>
+			<array><int>1055</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1053</int>
+			<vec3>-1440 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.33</string>
+			<dict>
+				<array name="#Units"><int>718</int><string>LastSpawned</string></array>
+				<float name="Value">0.33</float>
+			</dict>
+			<array><int>1056</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>823</int>
+			<vec3>-1728 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area_mage</string>
+			<array><int>813</int><int>0</int><int>811</int><int>0</int><int>810</int><int>0</int><int>814</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1056</int>
+			<vec3>-1440 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>972</int><int>969</int><int>1068</int><int>1067</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>1057</int>
+			<vec3>-1008 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.33</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string></array>
+				<float name="Value">0.33</float>
+			</dict>
+			<array><int>1060</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1052</int>
+			<vec3>-1984 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>971</int><int>968</int><int>1064</int><int>1063</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>827</int>
+			<vec3>64 -80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>828</int>
+			<vec3>16 -78 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>829</int>
+			<vec3>-23 -97 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>830</int>
+			<vec3>64 -135 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>831</int>
+			<vec3>21 -137 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>832</int>
+			<vec3>-154 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>833</int>
+			<vec3>-101 -45 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>834</int>
+			<vec3>-53 -51 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>835</int>
+			<vec3>-64 -115 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>836</int>
+			<vec3>-155 -141 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>837</int>
+			<vec3>-112 -129 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>838</int>
+			<vec3>-25 -263 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>839</int>
+			<vec3>-71 -227 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>840</int>
+			<vec3>108 -145 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>841</int>
+			<vec3>134 -92 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>842</int>
+			<vec3>51 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>843</int>
+			<vec3>106 -194 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>844</int>
+			<vec3>150 -150 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>845</int>
+			<vec3>61 -186 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>846</int>
+			<vec3>-21 -156 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>847</int>
+			<vec3>-63 -171 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>848</int>
+			<vec3>65 -233 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>849</int>
+			<vec3>107 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>850</int>
+			<vec3>156 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>851</int>
+			<vec3>21 -196 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>852</int>
+			<vec3>-108 -180 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>853</int>
+			<vec3>179 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>854</int>
+			<vec3>-140 -86 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>855</int>
+			<vec3>-206 -52 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>856</int>
+			<vec3>-25 -210 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>857</int>
+			<vec3>201 -33 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>858</int>
+			<vec3>214 -74 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>859</int>
+			<vec3>21 -258 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>860</int>
+			<vec3>-186 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_mage</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_mage.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>861</int>
+			<vec3>21 -258 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>862</int>
+			<vec3>-5 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetBossKilled</string>
+			<int>1039</int>
+			<vec3>688 -824 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="BossNumber">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>864</int>
+			<vec3>-1312 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>889</int>
+					<int>905</int>
+					<int>892</int>
+					<int>891</int>
+					<int>912</int>
+					<int>901</int>
+					<int>898</int>
+					<int>896</int>
+					<int>897</int>
+					<int>893</int>
+					<int>904</int>
+					<int>909</int>
+					<int>899</int>
+					<int>900</int>
+					<int>890</int>
+					<int>913</int>
+					<int>908</int>
+					<int>907</int>
+					<int>885</int>
+					<int>886</int>
+					<int>887</int>
+					<int>888</int>
+					<int>862</int>
+					<int>882</int>
+					<int>884</int>
+					<int>881</int>
+					<int>895</int>
+					<int>902</int>
+					<int>880</int>
+					<int>883</int>
+					<int>894</int>
+					<int>906</int>
+					<int>911</int>
+					<int>910</int>
+					<int>903</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>865</int>
+			<vec3>-1248 -960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Areas</string>
+			<dict>
+				<array name="ToExecute">
+					<int>889</int>
+					<int>905</int>
+					<int>892</int>
+					<int>891</int>
+					<int>912</int>
+					<int>901</int>
+					<int>898</int>
+					<int>896</int>
+					<int>897</int>
+					<int>893</int>
+					<int>904</int>
+					<int>909</int>
+					<int>899</int>
+					<int>900</int>
+					<int>890</int>
+					<int>913</int>
+					<int>908</int>
+					<int>907</int>
+					<int>885</int>
+					<int>886</int>
+					<int>887</int>
+					<int>888</int>
+					<int>882</int>
+					<int>862</int>
+					<int>895</int>
+					<int>881</int>
+					<int>884</int>
+					<int>880</int>
+					<int>902</int>
+					<int>883</int>
+					<int>894</int>
+					<int>903</int>
+					<int>910</int>
+					<int>911</int>
+					<int>906</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>866</int>
+			<vec3>-1472 -896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>7</string>
+			<dict>
+				<array name="Scripts"><int>873</int></array>
+				<int name="TriggerTimes">7</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>1046</int>
+			<vec3>-912 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Timer</string>
+			<dict>
+				<int name="Frequency">20000</int>
+			</dict>
+			<array>
+				<int>984</int>
+				<int>0</int>
+				<int>983</int>
+				<int>0</int>
+				<int>982</int>
+				<int>0</int>
+				<int>957</int>
+				<int>0</int>
+				<int>973</int>
+				<int>0</int>
+				<int>970</int>
+				<int>0</int>
+				<int>1069</int>
+				<int>0</int>
+				<int>1048</int>
+				<int>0</int>
+				<int>1047</int>
+				<int>0</int>
+				<int>1005</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>693</int>
+			<vec3>-1600 -1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RandomDelay</string>
+			<dict>
+				<array name="LinkScripts"><int>812</int></array>
+				<int name="TimeMax">150</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>689</int>
+			<vec3>-1248 -1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RandomDelay</string>
+			<dict>
+				<array name="LinkScripts"><int>865</int></array>
+				<int name="TimeMax">150</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>1038</int>
+			<vec3>-96 -1952 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_no_loot</string>
+			<dict>
+				<array name="OnFalse"><int>956</int></array>
+				<string name="Flag">fountain_no_loot</string>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>1040</int>
+			<vec3>216 -1856 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>16</int></array>
+				<int name="IconDisabled">6</int>
+				<int name="Icon">6</int>
+			</dict>
+			<array><int>1041</int><int>0</int><int>1043</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1037</int>
+			<vec3>368 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>930</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>873</int>
+			<vec3>-1376 -1024 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">200</int>
+			</dict>
+			<array><int>689</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>1043</int>
+			<vec3>168 -1808 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+				<string name="Text">.meta.info.gatherparty</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1042</int>
+			<vec3>120 -1744 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>1041</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>876</int>
+			<vec3>-1376 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff_area_scythe</string>
+			<array><int>866</int><int>0</int><int>864</int><int>0</int><int>815</int><int>0</int><int>816</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1044</int>
+			<vec3>184 -1744 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>1043</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1045</int>
+			<vec3>248 -1744 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>1043</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array><string>LevelExitNext</string><int>1041</int><vec3>264 -1808 0</vec3><bool>f</bool><int>1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>880</int>
+			<vec3>64 -80 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>881</int>
+			<vec3>16 -78 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>882</int>
+			<vec3>-23 -97 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>883</int>
+			<vec3>64 -135 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>884</int>
+			<vec3>21 -137 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>885</int>
+			<vec3>-154 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>886</int>
+			<vec3>-101 -45 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>887</int>
+			<vec3>-53 -51 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>888</int>
+			<vec3>-64 -115 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>889</int>
+			<vec3>-155 -141 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>890</int>
+			<vec3>-112 -129 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>891</int>
+			<vec3>-25 -263 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>892</int>
+			<vec3>-71 -227 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>893</int>
+			<vec3>108 -145 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>894</int>
+			<vec3>134 -92 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>895</int>
+			<vec3>51 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>896</int>
+			<vec3>106 -194 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>897</int>
+			<vec3>150 -150 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>898</int>
+			<vec3>61 -186 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>899</int>
+			<vec3>-21 -156 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>900</int>
+			<vec3>-63 -171 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>901</int>
+			<vec3>65 -233 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>902</int>
+			<vec3>107 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>903</int>
+			<vec3>156 -42 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>904</int>
+			<vec3>21 -196 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>905</int>
+			<vec3>-108 -180 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>906</int>
+			<vec3>179 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>907</int>
+			<vec3>-140 -86 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>908</int>
+			<vec3>-206 -52 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>909</int>
+			<vec3>-25 -210 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>910</int>
+			<vec3>201 -33 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>911</int>
+			<vec3>214 -74 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>912</int>
+			<vec3>21 -258 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>913</int>
+			<vec3>-186 -102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_scythe</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_scythe.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>914</int>
+			<vec3>214 -74 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>915</int>
+			<vec3>-5 -36 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>area_both</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/wraith_staff_area_both.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>1036</int>
+			<vec3>224 464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<string name="Text">.meta.info.gatherparty</string>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>917</int>
+			<vec3>-960 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>807</int>
+					<int>803</int>
+					<int>794</int>
+					<int>677</int>
+					<int>861</int>
+					<int>789</int>
+					<int>796</int>
+					<int>788</int>
+					<int>798</int>
+					<int>805</int>
+					<int>800</int>
+					<int>799</int>
+					<int>793</int>
+					<int>790</int>
+					<int>763</int>
+					<int>808</int>
+					<int>802</int>
+					<int>804</int>
+					<int>762</int>
+					<int>760</int>
+					<int>761</int>
+					<int>777</int>
+					<int>915</int>
+					<int>782</int>
+					<int>747</int>
+					<int>783</int>
+					<int>795</int>
+					<int>801</int>
+					<int>784</int>
+					<int>806</int>
+					<int>797</int>
+					<int>791</int>
+					<int>914</int>
+					<int>792</int>
+					<int>779</int>
+				</array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>918</int>
+			<vec3>-896 -960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Areas</string>
+			<dict>
+				<array name="ToExecute">
+					<int>807</int>
+					<int>803</int>
+					<int>794</int>
+					<int>677</int>
+					<int>861</int>
+					<int>789</int>
+					<int>796</int>
+					<int>788</int>
+					<int>798</int>
+					<int>805</int>
+					<int>800</int>
+					<int>799</int>
+					<int>793</int>
+					<int>790</int>
+					<int>763</int>
+					<int>808</int>
+					<int>802</int>
+					<int>804</int>
+					<int>762</int>
+					<int>760</int>
+					<int>761</int>
+					<int>777</int>
+					<int>782</int>
+					<int>915</int>
+					<int>795</int>
+					<int>783</int>
+					<int>747</int>
+					<int>784</int>
+					<int>801</int>
+					<int>806</int>
+					<int>797</int>
+					<int>779</int>
+					<int>792</int>
+					<int>914</int>
+					<int>791</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>919</int>
+			<vec3>-1120 -896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8</string>
+			<dict>
+				<array name="Scripts"><int>926</int></array>
+				<int name="TriggerTimes">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>1028</int>
+			<vec3>-304 -1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>common</string>
+			<dict>
+				<int name="Chance">50</int>
+			</dict>
+			<array><int>1029</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1021</int>
+			<vec3>152 -1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>1042</int><int>0</int><int>1044</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1035</int>
+			<vec3>336 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>1033</int><int>0</int><int>1037</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1033</int>
+			<vec3>304 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>1036</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>1020</int>
+			<vec3>280 -1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>1045</int><int>0</int><int>1017</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1034</int>
+			<vec3>176 528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>930</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>926</int>
+			<vec3>-1024 -1024 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">200</int>
+			</dict>
+			<array><int>694</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>1025</int>
+			<vec3>0 -512 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_mage</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">spawn_ghost_mage</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>1026</int>
+			<vec3>64 -512 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_staff</string>
+			<dict>
+				<string name="Flag">spawn_ghost_staff</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>929</int>
+			<vec3>0 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>elevator</string>
+			<dict>
+				<string name="Prefab">prefabs/armory/elevator.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>930</int>
+			<vec3>336 464 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>717</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>931</int>
+			<vec3>-32 -1568 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>7</int></array>
+			</dict>
+			<array><int>658</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>932</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>intro_scythe</string>
+			<dict>
+				<string name="SceneName">intro</string>
+				<string name="UnitType">actors/bosses/wraith/intro_wraith_scythe.unit</string>
+			</dict>
+			<array><int>667</int><int>1380</int><int>1027</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>933</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>intro_staff</string>
+			<dict>
+				<string name="SceneName">intro</string>
+				<string name="UnitType">actors/bosses/wraith/intro_wraith_staff.unit</string>
+			</dict>
+			<array><int>665</int><int>1410</int><int>1026</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>934</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>intro_mage</string>
+			<dict>
+				<string name="SceneName">intro</string>
+				<string name="UnitType">actors/bosses/wraith/intro_wraith_mage.unit</string>
+			</dict>
+			<array><int>935</int><int>1020</int><int>1025</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>935</int>
+			<vec3>0 -448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>934</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>718</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>936</int>
+			<vec3>544 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wraiths_activate</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">wraiths_activate</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>937</int>
+			<vec3>-88 -1816 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnItem1</string>
+			<dict>
+				<array name="PickedRandoms"><int>939</int><int>938</int><int>941</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>938</int>
+			<vec3>-88 -1752 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>943</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>939</int>
+			<vec3>-152 -1752 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">70</int>
+			</dict>
+			<array><int>940</int><int>0</int><int>944</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>940</int>
+			<vec3>-75 -1581 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>941</int>
+			<vec3>-24 -1752 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<int name="Chance">2</int>
+			</dict>
+			<array><int>942</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>942</int>
+			<vec3>-75 -1581 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>legendary</string>
+			<dict>
+				<string name="UnitType">items/item_legendary.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>943</int>
+			<vec3>-75 -1581 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>944</int>
+			<vec3>-240 -1752 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnItem2</string>
+			<dict>
+				<array name="PickedRandoms"><int>946</int><int>945</int><int>1028</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>945</int>
+			<vec3>-176 -1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>948</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>946</int>
+			<vec3>-240 -1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<int name="Chance">45</int>
+			</dict>
+			<array><int>947</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>947</int>
+			<vec3>12 -1602 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>uncommon</string>
+			<dict>
+				<string name="UnitType">items/item_uncommon.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>948</int>
+			<vec3>12 -1602 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>rare</string>
+			<dict>
+				<string name="UnitType">items/item_rare.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>949</int>
+			<vec3>928 -832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>2</int><int>3</int><int>7</int></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>950</int>
+			<vec3>928 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="Units"><int>219</int><int>178</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>HideUnit</string>
+			<int>951</int>
+			<vec3>880 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>219</int><int>178</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>952</int>
+			<vec3>880 -832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>2</int><int>3</int><int>7</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>953</int>
+			<vec3>72 -1504 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>3</int></array>
+				<int name="Icon">6</int>
+			</dict>
+			<array><int>680</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>1022</int>
+			<vec3>272 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>12</int></array>
+			</dict>
+			<array><int>1036</int><int>0</int><int>930</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>955</int>
+			<vec3>-1664 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10000</string>
+			<dict>
+				<array name="TimerTriggers"><int>966</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">10000</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>956</int>
+			<vec3>-88 -1896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>937</int><int>100</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>957</int>
+			<vec3>-1184 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10000</string>
+			<dict>
+				<array name="TimerTriggers"><int>962</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">10000</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>958</int>
+			<vec3>-1088 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Staff_Killed</string>
+			<dict>
+				<array name="#Units"><int>721</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>960</int><int>0</int><int>988</int><int>0</int><int>1008</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>959</int>
+			<vec3>-1600 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>775</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>960</int>
+			<vec3>-992 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>staff</string>
+			<dict>
+				<array name="Units"><int>13</int></array>
+			</dict>
+			<array><int>978</int><int>0</int><int>998</int><int>0</int><int>1010</int><int>0</int><int>1002</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>961</int>
+			<vec3>544 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>TestBosses</string>
+			<array>
+				<int>936</int>
+				<int>0</int>
+				<int>774</int>
+				<int>0</int>
+				<int>745</int>
+				<int>0</int>
+				<int>737</int>
+				<int>0</int>
+				<int>744</int>
+				<int>0</int>
+				<int>778</int>
+				<int>0</int>
+				<int>746</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>962</int>
+			<vec3>-1120 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DamagedTimer</string>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>963</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>963</int>
+			<vec3>-1120 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>732</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>964</int>
+			<vec3>-2144 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DamagedTimer</string>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>965</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>965</int>
+			<vec3>-2144 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>736</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>966</int>
+			<vec3>-1600 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DamagedTimer</string>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>959</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>967</int>
+			<vec3>-1472 512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EnableStatueSkills</string>
+			<array><int>749</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>968</int>
+			<vec3>-2080 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>6000</string>
+			<dict>
+				<array name="TimerTriggers"><int>964</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">6000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>969</int>
+			<vec3>-1536 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>6000</string>
+			<dict>
+				<array name="TimerTriggers"><int>966</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">6000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>970</int>
+			<vec3>-1056 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>6000</string>
+			<dict>
+				<array name="TimerTriggers"><int>962</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">6000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>971</int>
+			<vec3>-2144 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8000</string>
+			<dict>
+				<array name="TimerTriggers"><int>964</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">8000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>972</int>
+			<vec3>-1600 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8000</string>
+			<dict>
+				<array name="TimerTriggers"><int>966</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">8000</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>973</int>
+			<vec3>-1120 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8000</string>
+			<dict>
+				<array name="TimerTriggers"><int>962</int></array>
+				<int name="Parameter">3</int>
+				<int name="Value">8000</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>694</int>
+			<vec3>-896 -1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RandomDelay</string>
+			<dict>
+				<array name="LinkScripts"><int>918</int></array>
+				<int name="TimeMax">150</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>1024</int>
+			<vec3>-72 312 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/armory</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>976</int>
+			<vec3>-1424 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_collider</string>
+			<dict>
+				<array name="Units"><int>18</int></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>977</int>
+			<vec3>-1968 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_collider</string>
+			<dict>
+				<array name="Units"><int>15</int></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>978</int>
+			<vec3>-992 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_collider</string>
+			<dict>
+				<array name="Units"><int>17</int></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>979</int>
+			<vec3>-1968 144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_staff</string>
+			<array><int>993</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>980</int>
+			<vec3>-2064 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_scythe</string>
+			<array><int>995</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>981</int>
+			<vec3>-2016 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_mage</string>
+			<array><int>992</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>982</int>
+			<vec3>-976 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_staff</string>
+			<array><int>993</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>983</int>
+			<vec3>-1072 144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_scythe</string>
+			<array><int>995</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>984</int>
+			<vec3>-1024 80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_mage</string>
+			<array><int>992</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>985</int>
+			<vec3>-1424 144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_staff</string>
+			<array><int>993</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>986</int>
+			<vec3>-1536 144 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_scythe</string>
+			<array><int>995</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>987</int>
+			<vec3>-1472 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_mage</string>
+			<array><int>992</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>988</int>
+			<vec3>-1088 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableGhostsStaff</string>
+			<dict>
+				<array name="Scripts"><int>979</int><int>985</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>989</int>
+			<vec3>-2064 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableGhostsScythe</string>
+			<dict>
+				<array name="Scripts"><int>986</int><int>983</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>990</int>
+			<vec3>-1520 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableGhostsMage</string>
+			<dict>
+				<array name="Scripts"><int>981</int><int>984</int></array>
+			</dict>
+		</array>
+		<array><string>UnitEventTrigger</string><int>991</int><vec3>248 -256 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SetFlag</string>
+			<int>992</int>
+			<vec3>-1472 240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_mage</string>
+			<dict>
+				<string name="Flag">spawn_ghost_mage</string>
+				<int name="State">1</int>
+			</dict>
+			<array><int>994</int><int>2800</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>993</int>
+			<vec3>-1024 240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_staff</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">spawn_ghost_staff</string>
+			</dict>
+			<array><int>997</int><int>2800</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>994</int>
+			<vec3>-1392 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>992</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>995</int>
+			<vec3>-2016 240 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>spawn_ghost_scythe</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">spawn_ghost_scythe</string>
+			</dict>
+			<array><int>996</int><int>2800</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>996</int>
+			<vec3>-1952 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>995</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>997</int>
+			<vec3>-960 240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>993</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>998</int>
+			<vec3>96 -96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>staff_razed</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/statue_wraith_staff_razed.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>999</int>
+			<vec3>0 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>mage_razed</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/statue_wraith_mage_razed.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>1000</int>
+			<vec3>-96 -96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>scythe_razed</string>
+			<dict>
+				<string name="UnitType">actors/bosses/wraith/statue_wraith_scythe_razed.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1001</int>
+			<vec3>-96 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gib_scythe</string>
+			<dict>
+				<string name="Path">effects/gibs/gib_statue_wraith_scythe.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1002</int>
+			<vec3>96 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gib_staff</string>
+			<dict>
+				<string name="Path">effects/gibs/gib_statue_wraith_staff.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnGore</string>
+			<int>1003</int>
+			<vec3>0 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gib_mage</string>
+			<dict>
+				<string name="Path">effects/gibs/gib_statue_wraith_mage.sval</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1004</int>
+			<vec3>-1440 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>775</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1005</int>
+			<vec3>-992 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>732</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>1006</int>
+			<vec3>-2000 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>736</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1007</int>
+			<vec3>-2144 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>1062</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1008</int>
+			<vec3>-1168 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>1046</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1009</int>
+			<vec3>-1600 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>1066</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1010</int>
+			<vec3>96 -104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_death_sfx</string>
+			<dict>
+				<string name="Sound">event:/enemy/tower/death</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1011</int>
+			<vec3>0 -232 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_death_sfx</string>
+			<dict>
+				<string name="Sound">event:/enemy/tower/death</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>1012</int>
+			<vec3>-96 -104 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>statue_death_sfx</string>
+			<dict>
+				<string name="Sound">event:/enemy/tower/death</string>
+			</dict>
+		</array>
+		<array>
+			<string>ShowSpeechBubble</string>
+			<int>1013</int>
+			<vec3>-96 -1472 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="HeightOffset">-1</int>
+				<array name="#ForPlayer"><int>1014</int><string>User</string></array>
+				<array name="#Objects"><int>1014</int><string>User</string></array>
+				<string name="Text">.dialogue.player.painting.2</string>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>1014</int>
+			<vec3>-176 -1472 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>6</int></array>
+				<int name="Icon">7</int>
+			</dict>
+			<array><int>1013</int><int>0</int></array>
+		</array>
+		<array><string>HideAllSpeechBubbles</string><int>1015</int><vec3>-144 -1408 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>1016</int>
+			<vec3>-64 -1408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>6</int></array>
+				<int name="Event">2</int>
+			</dict>
+			<array><int>1015</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1017</int>
+			<vec3>312 -1744 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>1041</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>1018</int>
+			<vec3>216 -1680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>16</int></array>
+				<array name="OnCanceled"><int>1021</int></array>
+				<array name="OnAllEntered"><int>1020</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>1019</int>
+			<vec3>544 -880 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>953</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>679</int>
+			<vec3>-2176 -960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>7</string>
+			<dict>
+				<array name="Scripts"><int>699</int></array>
+				<int name="TriggerTimes">7</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>695</int>
+			<vec3>-2176 -1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>9</string>
+			<dict>
+				<array name="Scripts"><int>699</int></array>
+				<int name="TriggerTimes">9</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>696</int>
+			<vec3>-2432 -704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>X &gt;= 1?</string>
+			<dict>
+				<array name="OnFalse"><int>698</int></array>
+				<array name="OnTrue"><int>700</int></array>
+				<int name="Value">1</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>697</int>
+			<vec3>-2496 -704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckNG+</string>
+			<array><int>696</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>698</int>
+			<vec3>-2368 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG0</string>
+			<array><int>785</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>700</int>
+			<vec3>-2432 -768 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>X &gt;= 5?</string>
+			<dict>
+				<array name="OnFalse"><int>701</int></array>
+				<array name="OnTrue"><int>704</int></array>
+				<int name="Value">5</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>701</int>
+			<vec3>-2368 -736 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG1-4</string>
+			<array><int>786</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>703</int>
+			<vec3>-2368 -800 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG5-9</string>
+			<array><int>787</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>704</int>
+			<vec3>-2432 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>X &gt;= 10?</string>
+			<dict>
+				<array name="OnFalse"><int>703</int></array>
+				<array name="OnTrue"><int>705</int></array>
+				<int name="Value">10</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>705</int>
+			<vec3>-2368 -864 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG10+</string>
+			<array><int>787</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>785</int>
+			<vec3>-2304 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>692</int><int>813</int><int>866</int><int>919</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>786</int>
+			<vec3>-2304 -736 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>679</int><int>810</int><int>815</int><int>817</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>787</int>
+			<vec3>-2304 -832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>695</int><int>814</int><int>816</int><int>818</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>810</int>
+			<vec3>-1824 -960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8</string>
+			<dict>
+				<array name="Scripts"><int>820</int></array>
+				<int name="TriggerTimes">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>814</int>
+			<vec3>-1824 -1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10</string>
+			<dict>
+				<array name="Scripts"><int>820</int></array>
+				<int name="TriggerTimes">10</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>815</int>
+			<vec3>-1472 -960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>9</string>
+			<dict>
+				<array name="Scripts"><int>873</int></array>
+				<int name="TriggerTimes">9</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>816</int>
+			<vec3>-1472 -1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>11</string>
+			<dict>
+				<array name="Scripts"><int>873</int></array>
+				<int name="TriggerTimes">11</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>817</int>
+			<vec3>-1120 -960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10</string>
+			<dict>
+				<array name="Scripts"><int>926</int></array>
+				<int name="TriggerTimes">10</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>818</int>
+			<vec3>-1120 -1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>12</string>
+			<dict>
+				<array name="Scripts"><int>926</int></array>
+				<int name="TriggerTimes">12</int>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="system/light_L.png">
+			<array>
+				<vec2>-7 -1602</vec2>
+				<int>563</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.38643 0.198069 0.0307134 0.0784314</vec4>
+					<float name="size">300</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-1785 -161</vec2>
+				<int>562</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0761854 0.783538 0.564712 0.0431373</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-80 504</vec2>
+				<int>561</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.38643 0.205079 0.0331048 0.0313726</vec4>
+					<float name="size">300</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-1912 -40</vec2>
+				<int>560</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0761854 0.783538 0.564712 0.0431373</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-96 -112</vec2>
+				<int>559</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.238398 0.0343398 0.0382044 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-89 -1581</vec2>
+				<int>558</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.53948 0.00802319 0.737911 0.0745098</vec4>
+					<float name="size">50</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-1596 -197</vec2>
+				<int>557</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0761854 0.783538 0.564712 0.0431373</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-140 -2</vec2>
+				<int>565</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.238398 0.0343398 0.0382044 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>96 -112</vec2>
+				<int>564</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0356013 0.238398 0.152926 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 632</vec2>
+				<int>572</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.38643 0.205079 0.0331048 0.0313726</vec4>
+					<float name="size">300</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-1724 -46</vec2>
+				<int>575</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0761854 0.783538 0.564712 0.0431373</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-1873 -255</vec2>
+				<int>574</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0761854 0.783538 0.564712 0.0431373</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 -319</vec2>
+				<int>573</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.158961 0.0382044 0.238398 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -240</vec2>
+				<int>571</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.158961 0.0382044 0.238398 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 529</vec2>
+				<int>570</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0761854 0.783538 0.564712 0.0431373</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-234 -166</vec2>
+				<int>569</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.238398 0.0343398 0.0382044 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>196 -7</vec2>
+				<int>568</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0356013 0.238398 0.152926 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>231 -127</vec2>
+				<int>567</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.0356013 0.238398 0.152926 0.0392157</vec4>
+					<float name="size">400</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>96 480</vec2>
+				<int>566</int>
+				<dict>
+					<bool name="overlay">t</bool>
+					<vec4 name="color">0.806952 0.00477695 0.00477695 0.0627451</vec4>
+					<float name="size">300</float>
+					<float name="overbright">2</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/armory/_deco_wall_support.unit">
+			<vec2>-104 480</vec2>
+			<int>602</int>
+			<vec2>-56 -272</vec2>
+			<int>603</int>
+			<vec2>-152 -176</vec2>
+			<int>604</int>
+			<vec2>-136 -192</vec2>
+			<int>605</int>
+			<vec2>104 -224</vec2>
+			<int>606</int>
+			<vec2>120 -208</vec2>
+			<int>607</int>
+			<vec2>216 -112</vec2>
+			<int>609</int>
+			<vec2>-40 -288</vec2>
+			<int>596</int>
+			<vec2>72 -256</vec2>
+			<int>608</int>
+			<vec2>-232 -96</vec2>
+			<int>601</int>
+			<vec2>56 -272</vec2>
+			<int>576</int>
+			<vec2>-104 -224</vec2>
+			<int>577</int>
+			<vec2>40 -288</vec2>
+			<int>578</int>
+			<vec2>184 -144</vec2>
+			<int>579</int>
+			<vec2>88 -240</vec2>
+			<int>580</int>
+			<vec2>104 480</vec2>
+			<int>581</int>
+			<vec2>200 -128</vec2>
+			<int>582</int>
+			<vec2>-120 -208</vec2>
+			<int>583</int>
+			<vec2>152 -176</vec2>
+			<int>584</int>
+			<vec2>232 -96</vec2>
+			<int>585</int>
+			<vec2>-72 -256</vec2>
+			<int>586</int>
+			<vec2>56 480</vec2>
+			<int>587</int>
+			<vec2>-216 -112</vec2>
+			<int>588</int>
+			<vec2>-56 480</vec2>
+			<int>589</int>
+			<vec2>8 -288</vec2>
+			<int>590</int>
+			<vec2>-8 -288</vec2>
+			<int>591</int>
+			<vec2>-168 -160</vec2>
+			<int>592</int>
+			<vec2>168 -160</vec2>
+			<int>593</int>
+			<vec2>-184 -144</vec2>
+			<int>594</int>
+			<vec2>-88 -240</vec2>
+			<int>595</int>
+			<vec2>136 -192</vec2>
+			<int>600</int>
+			<vec2>-24 -288</vec2>
+			<int>597</int>
+			<vec2>24 -288</vec2>
+			<int>598</int>
+			<vec2>-200 -128</vec2>
+			<int>599</int>
+		</array>
+		<array name="doodads/walls/chambers/_deco_painting_medium_v7.unit"><vec2>-83 -1615</vec2><int>649</int></array>
+		<array name="doodads/special/color_armory_256.unit">
+			<vec2>-248 232</vec2>
+			<int>297</int>
+			<vec2>8 232</vec2>
+			<int>298</int>
+			<vec2>104 440</vec2>
+			<int>299</int>
+			<vec2>-360 440</vec2>
+			<int>300</int>
+			<vec2>144 568</vec2>
+			<int>301</int>
+			<vec2>-120 400</vec2>
+			<int>296</int>
+			<vec2>120 464</vec2>
+			<int>302</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_wall_stone_n.unit">
+			<vec2>56 0</vec2>
+			<int>188</int>
+			<vec2>-24 0</vec2>
+			<int>189</int>
+			<vec2>-168 0</vec2>
+			<int>190</int>
+			<vec2>24 0</vec2>
+			<int>191</int>
+			<vec2>104 0</vec2>
+			<int>192</int>
+			<vec2>216 0</vec2>
+			<int>193</int>
+			<vec2>-104 0</vec2>
+			<int>194</int>
+			<vec2>-152 0</vec2>
+			<int>195</int>
+			<vec2>136 0</vec2>
+			<int>196</int>
+			<vec2>88 0</vec2>
+			<int>197</int>
+			<vec2>-136 0</vec2>
+			<int>198</int>
+			<vec2>-216 0</vec2>
+			<int>199</int>
+			<vec2>8 0</vec2>
+			<int>200</int>
+			<vec2>152 0</vec2>
+			<int>201</int>
+			<vec2>168 0</vec2>
+			<int>202</int>
+			<vec2>-200 0</vec2>
+			<int>203</int>
+			<vec2>200 0</vec2>
+			<int>204</int>
+			<vec2>-72 0</vec2>
+			<int>205</int>
+			<vec2>232 0</vec2>
+			<int>206</int>
+			<vec2>-184 0</vec2>
+			<int>207</int>
+			<vec2>184 0</vec2>
+			<int>208</int>
+			<vec2>72 0</vec2>
+			<int>180</int>
+			<vec2>-40 0</vec2>
+			<int>181</int>
+			<vec2>120 0</vec2>
+			<int>182</int>
+			<vec2>-88 0</vec2>
+			<int>183</int>
+			<vec2>-120 0</vec2>
+			<int>184</int>
+			<vec2>40 0</vec2>
+			<int>185</int>
+			<vec2>-232 0</vec2>
+			<int>186</int>
+			<vec2>-8 0</vec2>
+			<int>187</int>
+			<vec2>-56 0</vec2>
+			<int>179</int>
+		</array>
+		<array name="doodads/generic/outlook_candle.unit">
+			<array>
+				<vec2>-2 -1636</vec2>
+				<int>177</int>
+				<dict>
+					<string name="start">single</string>
+				</dict>
+			</array>
+			<vec2>-10 -1636</vec2>
+			<int>176</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_floor_tile_red.unit">
+			<vec2>48 592</vec2>
+			<int>544</int>
+			<vec2>48 624</vec2>
+			<int>545</int>
+			<vec2>-112 496</vec2>
+			<int>546</int>
+			<vec2>-56 480</vec2>
+			<int>547</int>
+			<vec2>-112 584</vec2>
+			<int>548</int>
+			<vec2>-104 480</vec2>
+			<int>549</int>
+			<vec2>-56 560</vec2>
+			<int>550</int>
+			<vec2>-56 584</vec2>
+			<int>551</int>
+			<vec2>-112 592</vec2>
+			<int>552</int>
+			<vec2>104 568</vec2>
+			<int>553</int>
+			<vec2>-24 624</vec2>
+			<int>554</int>
+			<vec2>104 624</vec2>
+			<int>555</int>
+			<vec2>-56 552</vec2>
+			<int>556</int>
+			<vec2>-72 480</vec2>
+			<int>513</int>
+			<vec2>-56 616</vec2>
+			<int>512</int>
+			<vec2>-112 488</vec2>
+			<int>511</int>
+			<vec2>-112 624</vec2>
+			<int>510</int>
+			<vec2>-88 464</vec2>
+			<int>509</int>
+			<vec2>-56 528</vec2>
+			<int>508</int>
+			<vec2>-72 464</vec2>
+			<int>507</int>
+			<vec2>-56 568</vec2>
+			<int>506</int>
+			<vec2>-56 488</vec2>
+			<int>505</int>
+			<vec2>-112 512</vec2>
+			<int>504</int>
+			<vec2>-40 624</vec2>
+			<int>503</int>
+			<vec2>104 592</vec2>
+			<int>502</int>
+			<vec2>-56 512</vec2>
+			<int>501</int>
+			<vec2>-112 632</vec2>
+			<int>500</int>
+			<vec2>-48 624</vec2>
+			<int>499</int>
+			<vec2>-72 472</vec2>
+			<int>479</int>
+			<vec2>-56 520</vec2>
+			<int>520</int>
+			<vec2>-112 640</vec2>
+			<int>516</int>
+			<vec2>104 584</vec2>
+			<int>519</int>
+			<vec2>0 624</vec2>
+			<int>518</int>
+			<vec2>-112 480</vec2>
+			<int>517</int>
+			<vec2>-56 576</vec2>
+			<int>498</int>
+			<vec2>104 560</vec2>
+			<int>515</int>
+			<vec2>104 608</vec2>
+			<int>514</int>
+			<vec2>48 552</vec2>
+			<int>471</int>
+			<vec2>104 640</vec2>
+			<int>472</int>
+			<vec2>-80 464</vec2>
+			<int>473</int>
+			<vec2>16 624</vec2>
+			<int>474</int>
+			<vec2>-112 536</vec2>
+			<int>475</int>
+			<vec2>-56 600</vec2>
+			<int>476</int>
+			<vec2>-56 536</vec2>
+			<int>477</int>
+			<vec2>-112 648</vec2>
+			<int>478</int>
+			<vec2>-112 568</vec2>
+			<int>480</int>
+			<vec2>104 576</vec2>
+			<int>481</int>
+			<vec2>-112 560</vec2>
+			<int>482</int>
+			<vec2>8 624</vec2>
+			<int>483</int>
+			<vec2>-56 624</vec2>
+			<int>484</int>
+			<vec2>-112 504</vec2>
+			<int>485</int>
+			<vec2>-8 624</vec2>
+			<int>486</int>
+			<vec2>32 624</vec2>
+			<int>487</int>
+			<vec2>-112 608</vec2>
+			<int>488</int>
+			<vec2>-112 576</vec2>
+			<int>489</int>
+			<vec2>-56 592</vec2>
+			<int>490</int>
+			<vec2>104 632</vec2>
+			<int>491</int>
+			<vec2>-64 480</vec2>
+			<int>492</int>
+			<vec2>104 552</vec2>
+			<int>493</int>
+			<vec2>-56 504</vec2>
+			<int>494</int>
+			<vec2>48 608</vec2>
+			<int>495</int>
+			<vec2>-96 472</vec2>
+			<int>496</int>
+			<vec2>104 648</vec2>
+			<int>497</int>
+			<vec2>-112 552</vec2>
+			<int>521</int>
+			<vec2>-56 608</vec2>
+			<int>522</int>
+			<vec2>-112 616</vec2>
+			<int>523</int>
+			<vec2>104 600</vec2>
+			<int>524</int>
+			<vec2>-96 464</vec2>
+			<int>525</int>
+			<vec2>48 616</vec2>
+			<int>526</int>
+			<vec2>48 576</vec2>
+			<int>527</int>
+			<vec2>-56 496</vec2>
+			<int>528</int>
+			<vec2>40 624</vec2>
+			<int>529</int>
+			<vec2>-16 624</vec2>
+			<int>530</int>
+			<vec2>-112 520</vec2>
+			<int>531</int>
+			<vec2>48 560</vec2>
+			<int>532</int>
+			<vec2>-32 624</vec2>
+			<int>533</int>
+			<vec2>24 624</vec2>
+			<int>534</int>
+			<vec2>-112 544</vec2>
+			<int>535</int>
+			<vec2>-112 528</vec2>
+			<int>536</int>
+			<vec2>-56 544</vec2>
+			<int>537</int>
+			<vec2>-112 600</vec2>
+			<int>538</int>
+			<vec2>-96 480</vec2>
+			<int>539</int>
+			<vec2>104 616</vec2>
+			<int>540</int>
+			<vec2>48 600</vec2>
+			<int>541</int>
+			<vec2>48 568</vec2>
+			<int>542</int>
+			<vec2>48 584</vec2>
+			<int>543</int>
+		</array>
+		<array name="doodads/generic/boss_armory_bookshelf.unit"><vec2>-82 -1514</vec2><int>57</int><vec2>-2 -1614</vec2><int>56</int><vec2>-54 -1514</vec2><int>55</int></array>
+		<array name="doodads/special/color_armory_32.unit">
+			<vec2>-184 -216</vec2>
+			<int>282</int>
+			<vec2>56 -312</vec2>
+			<int>276</int>
+			<vec2>-120 -280</vec2>
+			<int>284</int>
+			<vec2>200 -168</vec2>
+			<int>285</int>
+			<vec2>232 -136</vec2>
+			<int>286</int>
+			<vec2>-88 -312</vec2>
+			<int>287</int>
+			<vec2>-104 -296</vec2>
+			<int>288</int>
+			<vec2>136 -296</vec2>
+			<int>289</int>
+			<vec2>-136 -296</vec2>
+			<int>290</int>
+			<vec2>-136 -264</vec2>
+			<int>291</int>
+			<vec2>72 -296</vec2>
+			<int>292</int>
+			<vec2>168 -248</vec2>
+			<int>293</int>
+			<vec2>152 -216</vec2>
+			<int>294</int>
+			<vec2>-232 -168</vec2>
+			<int>295</int>
+			<vec2>184 -184</vec2>
+			<int>277</int>
+			<vec2>-152 -296</vec2>
+			<int>278</int>
+			<vec2>124 528</vec2>
+			<int>279</int>
+			<vec2>136 -232</vec2>
+			<int>280</int>
+			<vec2>136 -264</vec2>
+			<int>274</int>
+			<vec2>-264 -136</vec2>
+			<int>258</int>
+			<vec2>104 -264</vec2>
+			<int>281</int>
+			<vec2>-200 -200</vec2>
+			<int>259</int>
+			<vec2>-184 -248</vec2>
+			<int>260</int>
+			<vec2>-168 -232</vec2>
+			<int>261</int>
+			<vec2>124 496</vec2>
+			<int>262</int>
+			<vec2>168 -296</vec2>
+			<int>263</int>
+			<vec2>88 -280</vec2>
+			<int>264</int>
+			<vec2>-152 -280</vec2>
+			<int>265</int>
+			<vec2>104 -296</vec2>
+			<int>266</int>
+			<vec2>-184 -296</vec2>
+			<int>267</int>
+			<vec2>216 -152</vec2>
+			<int>268</int>
+			<vec2>-248 -152</vec2>
+			<int>269</int>
+			<vec2>168 -200</vec2>
+			<int>270</int>
+			<vec2>-184 -280</vec2>
+			<int>271</int>
+			<vec2>120 -248</vec2>
+			<int>272</int>
+			<vec2>168 -280</vec2>
+			<int>273</int>
+			<vec2>-152 -248</vec2>
+			<int>283</int>
+			<vec2>-216 -184</vec2>
+			<int>275</int>
+		</array>
+		<array name="doodads/generic/boss_armory_scrolls.unit"><vec2>-92 -1582</vec2><int>159</int></array>
+		<array name="doodads/walls/armory/_deco_wall_stone_w.unit">
+			<vec2>240 -24</vec2>
+			<int>644</int>
+			<vec2>-48 544</vec2>
+			<int>640</int>
+			<vec2>240 -56</vec2>
+			<int>641</int>
+			<vec2>240 -40</vec2>
+			<int>642</int>
+			<vec2>240 -8</vec2>
+			<int>648</int>
+			<vec2>240 -72</vec2>
+			<int>647</int>
+			<vec2>-48 528</vec2>
+			<int>646</int>
+			<vec2>112 496</vec2>
+			<int>645</int>
+			<vec2>-48 496</vec2>
+			<int>643</int>
+		</array>
+		<array name="doodads/walls/armory/exit_end.unit"><vec2>-64 -1648</vec2><int>160</int></array>
+		<array name="doodads/walls/armory/_deco_wall_stone_e.unit">
+			<vec2>-112 512</vec2>
+			<int>224</int>
+			<vec2>-240 -40</vec2>
+			<int>225</int>
+			<vec2>-240 -8</vec2>
+			<int>226</int>
+			<vec2>-112 544</vec2>
+			<int>227</int>
+			<vec2>-240 -56</vec2>
+			<int>228</int>
+			<vec2>-112 496</vec2>
+			<int>229</int>
+			<vec2>-240 -24</vec2>
+			<int>230</int>
+			<vec2>-240 -72</vec2>
+			<int>231</int>
+		</array>
+		<array name="doodads/special/color_armory_64.unit">
+			<vec2>-8 -1656</vec2>
+			<int>168</int>
+			<vec2>-40 464</vec2>
+			<int>167</int>
+			<vec2>-8 440</vec2>
+			<int>166</int>
+			<vec2>-40 520</vec2>
+			<int>163</int>
+			<vec2>-40 552</vec2>
+			<int>164</int>
+			<vec2>-56 440</vec2>
+			<int>162</int>
+			<vec2>-24 464</vec2>
+			<int>165</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_ceiling_wood_h.unit"><vec2>64 528</vec2><int>220</int><vec2>-96 528</vec2><int>223</int><vec2>-64 528</vec2><int>222</int><vec2>96 528</vec2><int>221</int></array>
+		<array name="doodads/walls/armory/_deco_ceiling_grate_16.unit">
+			<vec2>-64 592</vec2>
+			<int>356</int>
+			<vec2>64 592</vec2>
+			<int>357</int>
+			<vec2>-64 608</vec2>
+			<int>358</int>
+			<vec2>80 576</vec2>
+			<int>384</int>
+			<vec2>-96 544</vec2>
+			<int>359</int>
+			<vec2>96 624</vec2>
+			<int>360</int>
+			<vec2>-96 576</vec2>
+			<int>385</int>
+			<vec2>96 576</vec2>
+			<int>346</int>
+			<vec2>80 608</vec2>
+			<int>338</int>
+			<vec2>-80 560</vec2>
+			<int>347</int>
+			<vec2>80 640</vec2>
+			<int>341</int>
+			<vec2>96 608</vec2>
+			<int>348</int>
+			<vec2>-80 576</vec2>
+			<int>349</int>
+			<vec2>64 608</vec2>
+			<int>350</int>
+			<vec2>48 640</vec2>
+			<int>351</int>
+			<vec2>-64 544</vec2>
+			<int>352</int>
+			<vec2>48 608</vec2>
+			<int>361</int>
+			<vec2>64 640</vec2>
+			<int>362</int>
+			<vec2>64 576</vec2>
+			<int>363</int>
+			<vec2>-80 544</vec2>
+			<int>364</int>
+			<vec2>-96 592</vec2>
+			<int>365</int>
+			<vec2>64 544</vec2>
+			<int>366</int>
+			<vec2>-64 624</vec2>
+			<int>367</int>
+			<vec2>64 624</vec2>
+			<int>368</int>
+			<vec2>-96 624</vec2>
+			<int>379</int>
+			<vec2>-96 560</vec2>
+			<int>369</int>
+			<vec2>-64 560</vec2>
+			<int>370</int>
+			<vec2>64 560</vec2>
+			<int>353</int>
+			<vec2>-96 608</vec2>
+			<int>372</int>
+			<vec2>80 560</vec2>
+			<int>373</int>
+			<vec2>-80 640</vec2>
+			<int>374</int>
+			<vec2>80 592</vec2>
+			<int>375</int>
+			<vec2>-96 640</vec2>
+			<int>376</int>
+			<vec2>-80 608</vec2>
+			<int>377</int>
+			<vec2>96 640</vec2>
+			<int>378</int>
+			<vec2>-80 624</vec2>
+			<int>380</int>
+			<vec2>-48 640</vec2>
+			<int>381</int>
+			<vec2>48 624</vec2>
+			<int>371</int>
+			<vec2>96 560</vec2>
+			<int>383</int>
+			<vec2>96 592</vec2>
+			<int>339</int>
+			<vec2>-48 608</vec2>
+			<int>340</int>
+			<vec2>80 544</vec2>
+			<int>354</int>
+			<vec2>-48 624</vec2>
+			<int>342</int>
+			<vec2>-80 592</vec2>
+			<int>343</int>
+			<vec2>80 624</vec2>
+			<int>344</int>
+			<vec2>96 544</vec2>
+			<int>345</int>
+			<vec2>-64 640</vec2>
+			<int>355</int>
+			<vec2>-64 576</vec2>
+			<int>382</int>
+		</array>
+		<array name="doodads/generic/lamp_torch.unit"><vec2>-60 -1620</vec2><int>161</int></array>
+		<array name="doodads/walls/armory/crn_se.unit">
+			<vec2>-112 -240</vec2>
+			<int>320</int>
+			<vec2>-192 -160</vec2>
+			<int>337</int>
+			<vec2>-144 -208</vec2>
+			<int>321</int>
+			<vec2>32 -1504</vec2>
+			<int>319</int>
+			<vec2>-128 -224</vec2>
+			<int>331</int>
+			<vec2>-64 -288</vec2>
+			<int>332</int>
+			<vec2>-80 -272</vec2>
+			<int>333</int>
+			<vec2>-160 -192</vec2>
+			<int>334</int>
+			<vec2>32 608</vec2>
+			<int>335</int>
+			<vec2>-112 464</vec2>
+			<int>322</int>
+			<vec2>48 464</vec2>
+			<int>323</int>
+			<vec2>-208 -144</vec2>
+			<int>324</int>
+			<vec2>-96 -256</vec2>
+			<int>325</int>
+			<vec2>-224 -128</vec2>
+			<int>326</int>
+			<vec2>112 688</vec2>
+			<int>327</int>
+			<vec2>240 0</vec2>
+			<int>328</int>
+			<vec2>-240 -112</vec2>
+			<int>329</int>
+			<vec2>-176 -176</vec2>
+			<int>330</int>
+			<vec2>-64 -1632</vec2>
+			<int>336</int>
+		</array>
+		<array name="doodads/walls/armory/v.unit">
+			<vec2>-128 624</vec2>
+			<int>408</int>
+			<vec2>-128 464</vec2>
+			<int>415</int>
+			<vec2>-128 560</vec2>
+			<int>413</int>
+			<vec2>32 -1632</vec2>
+			<int>423</int>
+			<vec2>-48 528</vec2>
+			<int>429</int>
+			<vec2>-112 -1568</vec2>
+			<int>428</int>
+			<vec2>32 -1568</vec2>
+			<int>427</int>
+			<vec2>240 -48</vec2>
+			<int>426</int>
+			<vec2>240 -80</vec2>
+			<int>438</int>
+			<array>
+				<vec2>112 560</vec2>
+				<int>425</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<vec2>-112 -1600</vec2>
+			<int>407</int>
+			<vec2>-48 464</vec2>
+			<int>424</int>
+			<vec2>32 -1600</vec2>
+			<int>422</int>
+			<array>
+				<vec2>112 480</vec2>
+				<int>421</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 512</vec2>
+				<int>420</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>112 512</vec2>
+				<int>419</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>112 544</vec2>
+				<int>418</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<vec2>-256 -112</vec2>
+			<int>417</int>
+			<vec2>-48 496</vec2>
+			<int>416</int>
+			<vec2>240 -112</vec2>
+			<int>414</int>
+			<vec2>-128 528</vec2>
+			<int>412</int>
+			<vec2>-256 -48</vec2>
+			<int>411</int>
+			<vec2>-112 -1632</vec2>
+			<int>410</int>
+			<vec2>-128 592</vec2>
+			<int>409</int>
+			<vec2>112 624</vec2>
+			<int>430</int>
+			<vec2>-48 560</vec2>
+			<int>431</int>
+			<vec2>112 592</vec2>
+			<int>432</int>
+			<array>
+				<vec2>32 544</vec2>
+				<int>433</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<vec2>-128 496</vec2>
+			<int>434</int>
+			<array>
+				<vec2>32 560</vec2>
+				<int>435</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 480</vec2>
+				<int>436</int>
+				<dict>
+					<int name="layer">-100</int>
+				</dict>
+			</array>
+			<vec2>-256 -80</vec2>
+			<int>437</int>
+		</array>
+		<array name="doodads/walls/armory/crn_nw.unit">
+			<vec2>-192 -176</vec2>
+			<int>245</int>
+			<vec2>-64 -304</vec2>
+			<int>257</int>
+			<vec2>-256 -112</vec2>
+			<int>246</int>
+			<vec2>-80 -288</vec2>
+			<int>247</int>
+			<vec2>-112 -256</vec2>
+			<int>248</int>
+			<vec2>-208 -160</vec2>
+			<int>249</int>
+			<vec2>-96 -272</vec2>
+			<int>250</int>
+			<vec2>32 464</vec2>
+			<int>251</int>
+			<vec2>-128 -240</vec2>
+			<int>252</int>
+			<vec2>-176 -192</vec2>
+			<int>253</int>
+			<vec2>-160 -208</vec2>
+			<int>254</int>
+			<vec2>-128 464</vec2>
+			<int>255</int>
+			<vec2>-112 -1632</vec2>
+			<int>256</int>
+			<vec2>-240 -128</vec2>
+			<int>243</int>
+			<vec2>-224 -144</vec2>
+			<int>244</int>
+			<vec2>-144 -224</vec2>
+			<int>242</int>
+		</array>
+		<array name="doodads/generic/boss_armory_table.unit"><vec2>25 -1577</vec2><int>53</int></array>
+		<array name="doodads/generic/outlook_church_chalice.unit">
+			<array>
+				<vec2>-90 -1570</vec2>
+				<int>175</int>
+				<dict>
+					<string name="start">flame-purple</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/armory/_deco_ceiling_wood_v.unit"><vec2>28 624</vec2><int>155</int><vec2>-32 656</vec2><int>156</int><vec2>-32 624</vec2><int>157</int><vec2>28 656</vec2><int>158</int></array>
+		<array name="actors/bosses/wraith/statue_wraith_staff.unit"><vec2>96 -96</vec2><int>13</int></array>
+		<array name="doodads/walls/armory/exit_up.unit"><vec2>48 464</vec2><int>386</int></array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>1560 -32</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -128</vec2>
+				<int>2</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">22</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -128</vec2>
+				<int>3</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">28</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 528</vec2>
+				<int>4</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">22</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 528</vec2>
+				<int>5</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">48</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-63 -1602</vec2>
+				<int>6</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">12</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -128</vec2>
+				<int>7</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>16 320</vec2>
+				<int>8</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">1024</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>1384 -32</vec2>
+				<int>9</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>1560 -136</vec2>
+				<int>10</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>1384 -136</vec2>
+				<int>11</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 528</vec2>
+				<int>12</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">36</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/lamp_brazier.unit">
+			<vec2>104 608</vec2>
+			<int>170</int>
+			<vec2>-104 528</vec2>
+			<int>174</int>
+			<vec2>56 608</vec2>
+			<int>173</int>
+			<vec2>-56 608</vec2>
+			<int>172</int>
+			<vec2>-104 608</vec2>
+			<int>169</int>
+			<vec2>-56 528</vec2>
+			<int>171</int>
+		</array>
+		<array name="doodads/walls/armory/exit_dn.unit"><vec2>-112 464</vec2><int>470</int></array>
+		<array name="doodads/special/color_armory_512.unit">
+			<vec2>248 -328</vec2>
+			<int>45</int>
+			<vec2>184 -328</vec2>
+			<int>40</int>
+			<vec2>-760 1176</vec2>
+			<int>41</int>
+			<vec2>-616 -1312</vec2>
+			<int>35</int>
+			<vec2>248 608</vec2>
+			<int>34</int>
+			<vec2>-688 -216</vec2>
+			<int>33</int>
+			<vec2>184 -224</vec2>
+			<int>32</int>
+			<vec2>-760 288</vec2>
+			<int>31</int>
+			<vec2>-696 -328</vec2>
+			<int>30</int>
+			<vec2>-264 -328</vec2>
+			<int>29</int>
+			<vec2>-312 1176</vec2>
+			<int>28</int>
+			<vec2>40 -1208</vec2>
+			<int>27</int>
+			<vec2>40 -1016</vec2>
+			<int>26</int>
+			<vec2>-616 -1016</vec2>
+			<int>25</int>
+			<vec2>248 136</vec2>
+			<int>24</int>
+			<vec2>248 1000</vec2>
+			<int>23</int>
+			<vec2>248 1176</vec2>
+			<int>22</int>
+			<vec2>40 -1720</vec2>
+			<int>21</int>
+			<vec2>200 -184</vec2>
+			<int>39</int>
+			<vec2>120 1036</vec2>
+			<int>36</int>
+			<vec2>200 1176</vec2>
+			<int>42</int>
+			<vec2>-112 -1720</vec2>
+			<int>43</int>
+			<vec2>-760 592</vec2>
+			<int>44</int>
+			<vec2>-760 -224</vec2>
+			<int>46</int>
+			<vec2>-632 928</vec2>
+			<int>47</int>
+			<vec2>-728 -184</vec2>
+			<int>48</int>
+			<vec2>-272 -1016</vec2>
+			<int>49</int>
+			<vec2>-616 -1720</vec2>
+			<int>50</int>
+			<vec2>-568 -1656</vec2>
+			<int>51</int>
+			<vec2>-760 -328</vec2>
+			<int>38</int>
+			<vec2>-760 1104</vec2>
+			<int>37</int>
+		</array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>-96 -97</vec2>
+				<int>15</int>
+				<dict>
+					<vec2 name="size">16 16</vec2>
+					<bool name="shot-through">f</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-32 -1648</vec2>
+				<int>16</int>
+				<dict>
+					<vec2 name="size">32 32</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>96 -97</vec2>
+				<int>17</int>
+				<dict>
+					<vec2 name="size">16 16</vec2>
+					<bool name="shot-through">f</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -225</vec2>
+				<int>18</int>
+				<dict>
+					<vec2 name="size">16 16</vec2>
+					<bool name="shot-through">f</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 448</vec2>
+				<int>19</int>
+				<dict>
+					<vec2 name="size">192 192</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/armory/crn_sw.unit">
+			<vec2>-112 -1504</vec2>
+			<int>390</int>
+			<vec2>-16 -1632</vec2>
+			<int>389</int>
+			<vec2>-48 608</vec2>
+			<int>394</int>
+			<vec2>-64 464</vec2>
+			<int>388</int>
+			<vec2>96 -240</vec2>
+			<int>395</int>
+			<vec2>64 -272</vec2>
+			<int>392</int>
+			<vec2>208 -128</vec2>
+			<int>393</int>
+			<vec2>144 -192</vec2>
+			<int>396</int>
+			<vec2>224 -112</vec2>
+			<int>398</int>
+			<vec2>112 -224</vec2>
+			<int>399</int>
+			<vec2>192 -144</vec2>
+			<int>400</int>
+			<vec2>176 -160</vec2>
+			<int>401</int>
+			<vec2>160 -176</vec2>
+			<int>402</int>
+			<vec2>-256 0</vec2>
+			<int>403</int>
+			<vec2>128 -208</vec2>
+			<int>404</int>
+			<vec2>96 464</vec2>
+			<int>405</int>
+			<vec2>48 -288</vec2>
+			<int>406</int>
+			<vec2>-128 688</vec2>
+			<int>391</int>
+			<vec2>80 -256</vec2>
+			<int>397</int>
+		</array>
+		<array name="doodads/generic/boss_armory_bed.unit"><vec2>-82 -1606</vec2><int>54</int></array>
+		<array name="doodads/generic/teleport_round.unit"><vec2>80 528</vec2><int>218</int><vec2>0 -128</vec2><int>219</int></array>
+		<array name="actors/bosses/wraith/statue_wraith_scythe.unit"><vec2>-96 -96</vec2><int>52</int></array>
+		<array name="doodads/special/color_armory_16.unit">
+			<vec2>24 552</vec2>
+			<int>233</int>
+			<vec2>-40 568</vec2>
+			<int>232</int>
+			<vec2>24 568</vec2>
+			<int>240</int>
+			<vec2>24 472</vec2>
+			<int>239</int>
+			<vec2>20 504</vec2>
+			<int>238</int>
+			<vec2>20 488</vec2>
+			<int>236</int>
+			<vec2>-40 584</vec2>
+			<int>237</int>
+			<vec2>24 584</vec2>
+			<int>235</int>
+			<vec2>20 520</vec2>
+			<int>234</int>
+			<vec2>24 536</vec2>
+			<int>241</int>
+		</array>
+		<array name="actors/bosses/wraith/statue_wraith_mage.unit"><vec2>0 -224</vec2><int>20</int></array>
+		<array name="doodads/walls/armory/_deco_wall_stone_s.unit">
+			<vec2>232 -96</vec2>
+			<int>617</int>
+			<vec2>184 -144</vec2>
+			<int>627</int>
+			<vec2>216 -112</vec2>
+			<int>639</int>
+			<vec2>24 -288</vec2>
+			<int>628</int>
+			<vec2>-184 -144</vec2>
+			<int>629</int>
+			<vec2>-104 -224</vec2>
+			<int>630</int>
+			<vec2>-56 -272</vec2>
+			<int>631</int>
+			<vec2>104 -224</vec2>
+			<int>632</int>
+			<vec2>-152 -176</vec2>
+			<int>633</int>
+			<vec2>-120 -208</vec2>
+			<int>636</int>
+			<vec2>168 -160</vec2>
+			<int>634</int>
+			<vec2>88 -240</vec2>
+			<int>610</int>
+			<vec2>200 -128</vec2>
+			<int>611</int>
+			<vec2>-200 -128</vec2>
+			<int>612</int>
+			<vec2>-40 -288</vec2>
+			<int>613</int>
+			<vec2>72 -256</vec2>
+			<int>614</int>
+			<vec2>152 -176</vec2>
+			<int>615</int>
+			<vec2>-72 -256</vec2>
+			<int>616</int>
+			<vec2>-24 -288</vec2>
+			<int>635</int>
+			<vec2>-136 -192</vec2>
+			<int>618</int>
+			<vec2>-168 -160</vec2>
+			<int>619</int>
+			<vec2>120 -208</vec2>
+			<int>620</int>
+			<vec2>-232 -96</vec2>
+			<int>621</int>
+			<vec2>56 -272</vec2>
+			<int>622</int>
+			<vec2>-88 -240</vec2>
+			<int>623</int>
+			<vec2>-216 -112</vec2>
+			<int>624</int>
+			<vec2>136 -192</vec2>
+			<int>625</int>
+			<vec2>8 -288</vec2>
+			<int>626</int>
+			<vec2>40 -288</vec2>
+			<int>637</int>
+			<vec2>-8 -288</vec2>
+			<int>638</int>
+		</array>
+		<array name="doodads/walls/armory/h.unit">
+			<vec2>-16 688</vec2>
+			<int>456</int>
+			<vec2>16 -304</vec2>
+			<int>455</int>
+			<vec2>-96 -1504</vec2>
+			<int>454</int>
+			<vec2>-48 -304</vec2>
+			<int>447</int>
+			<array>
+				<vec2>176 0</vec2>
+				<int>446</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>-64 -1504</vec2>
+			<int>445</int>
+			<vec2>0 -1632</vec2>
+			<int>444</int>
+			<array>
+				<vec2>48 0</vec2>
+				<int>443</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>112 0</vec2>
+				<int>442</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>0 -1504</vec2>
+			<int>441</int>
+			<array>
+				<vec2>-208 0</vec2>
+				<int>440</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>-80 688</vec2>
+			<int>439</int>
+			<array>
+				<vec2>-112 0</vec2>
+				<int>453</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>144 0</vec2>
+				<int>458</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>80 688</vec2>
+			<int>457</int>
+			<array>
+				<vec2>-80 0</vec2>
+				<int>448</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>48 688</vec2>
+			<int>451</int>
+			<array>
+				<vec2>-16 0</vec2>
+				<int>452</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>-32 -1504</vec2>
+			<int>450</int>
+			<array>
+				<vec2>-48 0</vec2>
+				<int>449</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>-48 688</vec2>
+			<int>469</int>
+			<array>
+				<vec2>16 0</vec2>
+				<int>468</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-240 0</vec2>
+				<int>467</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>208 0</vec2>
+				<int>466</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>-112 688</vec2>
+			<int>465</int>
+			<vec2>-96 -1632</vec2>
+			<int>464</int>
+			<vec2>-16 -304</vec2>
+			<int>463</int>
+			<array>
+				<vec2>80 0</vec2>
+				<int>462</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-176 0</vec2>
+				<int>461</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-144 0</vec2>
+				<int>460</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+			<vec2>16 688</vec2>
+			<int>459</int>
+		</array>
+		<array name="doodads/generic/boss_armory_table_candles.unit"><vec2>-58 -1610</vec2><int>14</int></array>
+		<array name="doodads/generic/teleport_round_boss3_entrance_marker.unit"><vec2>80 576</vec2><int>209</int></array>
+		<array name="doodads/generic/teleport_round_boss3_exit_marker.unit"><vec2>0 -128</vec2><int>178</int></array>
+		<array name="doodads/walls/armory/crn_ne.unit">
+			<vec2>176 -176</vec2>
+			<int>305</int>
+			<vec2>64 -288</vec2>
+			<int>311</int>
+			<vec2>192 -160</vec2>
+			<int>312</int>
+			<vec2>80 -272</vec2>
+			<int>313</int>
+			<vec2>240 -112</vec2>
+			<int>315</int>
+			<vec2>32 -1632</vec2>
+			<int>317</int>
+			<vec2>96 -256</vec2>
+			<int>318</int>
+			<vec2>128 -224</vec2>
+			<int>316</int>
+			<vec2>160 -192</vec2>
+			<int>303</int>
+			<vec2>144 -208</vec2>
+			<int>304</int>
+			<vec2>224 -128</vec2>
+			<int>314</int>
+			<vec2>112 464</vec2>
+			<int>306</int>
+			<vec2>112 -240</vec2>
+			<int>307</int>
+			<vec2>48 -304</vec2>
+			<int>308</int>
+			<vec2>208 -144</vec2>
+			<int>309</int>
+			<vec2>-48 464</vec2>
+			<int>310</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_ceiling_grate_8.unit">
+			<vec2>52 556</vec2>
+			<int>112</int>
+			<vec2>108 652</vec2>
+			<int>114</int>
+			<vec2>36 652</vec2>
+			<int>115</int>
+			<vec2>-92 652</vec2>
+			<int>116</int>
+			<vec2>36 612</vec2>
+			<int>117</int>
+			<vec2>-36 620</vec2>
+			<int>118</int>
+			<vec2>36 604</vec2>
+			<int>119</int>
+			<vec2>-76 652</vec2>
+			<int>120</int>
+			<vec2>108 612</vec2>
+			<int>121</int>
+			<vec2>36 628</vec2>
+			<int>122</int>
+			<vec2>52 588</vec2>
+			<int>123</int>
+			<vec2>108 548</vec2>
+			<int>124</int>
+			<vec2>-100 652</vec2>
+			<int>125</int>
+			<vec2>-60 532</vec2>
+			<int>126</int>
+			<vec2>36 620</vec2>
+			<int>127</int>
+			<vec2>36 636</vec2>
+			<int>128</int>
+			<vec2>60 652</vec2>
+			<int>129</int>
+			<vec2>108 636</vec2>
+			<int>130</int>
+			<vec2>108 596</vec2>
+			<int>131</int>
+			<vec2>-52 652</vec2>
+			<int>132</int>
+			<vec2>-84 652</vec2>
+			<int>133</int>
+			<vec2>-108 644</vec2>
+			<int>134</int>
+			<vec2>-60 652</vec2>
+			<int>135</int>
+			<vec2>-108 540</vec2>
+			<int>136</int>
+			<vec2>52 564</vec2>
+			<int>137</int>
+			<vec2>84 532</vec2>
+			<int>138</int>
+			<vec2>36 644</vec2>
+			<int>139</int>
+			<vec2>-52 596</vec2>
+			<int>140</int>
+			<vec2>100 652</vec2>
+			<int>141</int>
+			<vec2>-108 620</vec2>
+			<int>142</int>
+			<vec2>-108 580</vec2>
+			<int>143</int>
+			<vec2>-68 652</vec2>
+			<int>144</int>
+			<vec2>52 540</vec2>
+			<int>145</int>
+			<vec2>-36 652</vec2>
+			<int>146</int>
+			<vec2>-36 644</vec2>
+			<int>147</int>
+			<vec2>52 532</vec2>
+			<int>148</int>
+			<vec2>92 532</vec2>
+			<int>149</int>
+			<vec2>108 588</vec2>
+			<int>150</int>
+			<vec2>-108 636</vec2>
+			<int>151</int>
+			<vec2>-36 612</vec2>
+			<int>152</int>
+			<vec2>76 532</vec2>
+			<int>153</int>
+			<vec2>-76 532</vec2>
+			<int>154</int>
+			<vec2>36 596</vec2>
+			<int>113</int>
+			<vec2>-36 604</vec2>
+			<int>59</int>
+			<vec2>-52 580</vec2>
+			<int>60</int>
+			<vec2>60 532</vec2>
+			<int>61</int>
+			<vec2>-108 556</vec2>
+			<int>62</int>
+			<vec2>-52 564</vec2>
+			<int>63</int>
+			<vec2>-52 532</vec2>
+			<int>64</int>
+			<vec2>-84 532</vec2>
+			<int>65</int>
+			<vec2>-52 540</vec2>
+			<int>66</int>
+			<vec2>84 652</vec2>
+			<int>67</int>
+			<vec2>-108 596</vec2>
+			<int>68</int>
+			<vec2>92 652</vec2>
+			<int>69</int>
+			<vec2>108 628</vec2>
+			<int>70</int>
+			<vec2>44 596</vec2>
+			<int>71</int>
+			<vec2>-68 532</vec2>
+			<int>72</int>
+			<vec2>108 604</vec2>
+			<int>73</int>
+			<vec2>-52 572</vec2>
+			<int>74</int>
+			<vec2>-44 596</vec2>
+			<int>75</int>
+			<vec2>108 644</vec2>
+			<int>76</int>
+			<vec2>-108 588</vec2>
+			<int>77</int>
+			<vec2>-92 532</vec2>
+			<int>78</int>
+			<vec2>68 652</vec2>
+			<int>79</int>
+			<vec2>-108 548</vec2>
+			<int>80</int>
+			<vec2>52 572</vec2>
+			<int>81</int>
+			<vec2>-108 652</vec2>
+			<int>82</int>
+			<vec2>68 532</vec2>
+			<int>83</int>
+			<vec2>-52 588</vec2>
+			<int>84</int>
+			<vec2>44 652</vec2>
+			<int>85</int>
+			<vec2>108 580</vec2>
+			<int>86</int>
+			<vec2>100 532</vec2>
+			<int>87</int>
+			<vec2>-100 532</vec2>
+			<int>88</int>
+			<vec2>108 532</vec2>
+			<int>89</int>
+			<vec2>52 596</vec2>
+			<int>90</int>
+			<vec2>108 572</vec2>
+			<int>91</int>
+			<vec2>52 548</vec2>
+			<int>92</int>
+			<vec2>108 564</vec2>
+			<int>93</int>
+			<vec2>-108 532</vec2>
+			<int>94</int>
+			<vec2>-52 556</vec2>
+			<int>95</int>
+			<vec2>-108 604</vec2>
+			<int>96</int>
+			<vec2>52 652</vec2>
+			<int>97</int>
+			<vec2>108 620</vec2>
+			<int>98</int>
+			<vec2>-108 572</vec2>
+			<int>99</int>
+			<vec2>108 556</vec2>
+			<int>100</int>
+			<vec2>-36 628</vec2>
+			<int>101</int>
+			<vec2>52 580</vec2>
+			<int>102</int>
+			<vec2>108 540</vec2>
+			<int>103</int>
+			<vec2>76 652</vec2>
+			<int>104</int>
+			<vec2>-108 628</vec2>
+			<int>105</int>
+			<vec2>-44 652</vec2>
+			<int>106</int>
+			<vec2>-52 548</vec2>
+			<int>107</int>
+			<vec2>-36 596</vec2>
+			<int>108</int>
+			<vec2>-108 564</vec2>
+			<int>109</int>
+			<vec2>-108 612</vec2>
+			<int>110</int>
+			<vec2>-36 636</vec2>
+			<int>111</int>
+		</array>
+		<array name="doodads/walls/armory/_deco_floor_star.unit"><vec2>-32 -1568</vec2><int>387</int></array>
+		<array name="doodads/generic/boss_armory_kettle.unit"><vec2>20 -1614</vec2><int>58</int></array>
+		<array name="doodads/walls/armory/v_16.unit">
+			<vec2>32 -1536</vec2>
+			<int>210</int>
+			<vec2>-64 -1664</vec2>
+			<int>211</int>
+			<vec2>-16 -1664</vec2>
+			<int>212</int>
+			<vec2>-128 656</vec2>
+			<int>213</int>
+			<vec2>32 464</vec2>
+			<int>214</int>
+			<vec2>-112 -1536</vec2>
+			<int>216</int>
+			<vec2>112 464</vec2>
+			<int>217</int>
+			<vec2>112 656</vec2>
+			<int>215</int>
+		</array>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000546e27316762487600000000000022647e3f05394c036c2530340000000616124655692c322a0d704b57080000094c3d664b402e1a5224293b643a0050287a661161164b54402b714c2e2a673d5256391709330a61225f7e3033714502704742715e1c105757364d0a523e1a0e1835523a042c15716c10421955552523494741560920421d785c68457e4200006d3b480b0f5c42132e612a30567100000002570f46393644746918423c0000000000440a026c58257d165e3a640000000000007b174c6a524d742a0000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007674000000000000000000000000000000000000000000000000000000000062241c5300000000000000000000000000000000000000000000000000000000187e577600000369000000000000000000000000000000000000000000000000000b2100002e482d000000000000000000000000000000000000000000000000005f780000000000000000000000000000000000000000000000000000000000000f1e3300000040000000000000000000000000000000000000000000000000000e0a1600000a2933000000000000000000000000000000000000000000000000007c00000000106e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown_moss.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000001200000000005b0000000000000000000000000000000000000000000000004331362f00000000000000000000000000000000000000000000000000000000006c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_grass_tall.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000513f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006a7207000000df003b60000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000770700650000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_skulls.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000360122000000000000000000000000000000000000000000000000000000000000774e4a6a0b000000000000000000000000000000000000000000000053000000007c2e3b5f100000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown_moss.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004e000000000000000000000000000000000000000000000000000000000000000c11140000000000000000000000000000000000000000000000000000000000006c4103000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_grass_tall.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_skulls.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">270300000000491e0000002400000000666000000000650d0000001a0000000000000000000000000000003b0000000000000000000000000000001f350000000d000000000000000000007e00000000300000006700000000006d460f00002c7c0000000000000000006c210000004e00000000000000000000000000000000000000000000000000000000000000006c0000000000000000000000000000006a6a580000000000000000000000000009594e2e34090c1c7b0e355b5b1a79003c2978092b013c582923285d0c123d0078391c6c6061036d281036692729492f4468372b25332b6c5c191a3e7413354b413c5f49035951171066446f02477c4a</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000001d45001044441100000000000000007800107d1500615f00001a5f00000042004b4f001a1000160400043300000d21520032313100004e006c353c7d00002b186918002d4e534800263201236f0e46003f0000673330000070004e0000362f2f6b000438007700663715650078110052496100365d004b16006d0000000000000000000000571b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_skulls.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000006a207658601d13552900730000005c2966487900005100525700240000000068511d003852026a0c6e6b000000000000001f7034603200403378085900000000006d43100000006552560000000000000000006235000000000007400000000000005c4d0000000054370000000000000040310000000000721700000000000000000072000000001a23795a0000000f752d695f4f0000002865440000000000000000000000000f40301d5e00000f5f3c44342500000000400e5f0c00000000657d0000004400001f356f1e006c0000135b0b0f002500006d7b130000000000001805750035196b0000567e49560a00221228115a3100004c1600160000000000003a7b000000112763000e136c773d0d3900000000000000003d1600000000000000547333004e565e000a320047005d00000000640c000000000600000000520000000e1000001a21430f000000000000000000011f000000002b53000025320000003462000000004900000000004655000058005b7b000026512200007d040000000c6b00000000000000450000001f0f00755e000f000000021b000077315a025768001d5d7800000000115800301b01436f5b0000005901300700000002130d22320900764933785f3b62480f4a5833000b530000704914615b000000000000000000000051004d6a00004869396000001600000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown_moss.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000052050000000000000000710000000000000000000000000000000000000026000a4000000000000000000000000000000000000000000000001825730000392e00460075000000000000000000000000000000000000000000006e0000000000003b7a1a0000000000000000000000000000000000000000000000000000000000024500000000000000000000000000700000005c5d00000000000000000000000000005c00000000000000000000006c1c00006b000000000000000000000000000000420000000000000000000000152d5e537617000000000000000000006900000000000000000000000000000000474d4300470000000000000000003e00000000001a41000000000000000000672a230000000000000000000049590f000000006071365e00000000000000650000610000000000000000000000250000000000000000280000000000000000510000000000000000000000000038230000000000000000000000000000000000000000003b66000000000000004e00000000000000000000000000006f000000000000796d00000000000061300000000000000000000000006515653100385700002e1b0000000000000000547a000000000000000000000044334a3a0017203d002e0600000000000000000000000000000000000000000000005a260000102400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_grass_tall.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000006128124b6c000000000000000000000004520425680000000000000000000000697e6a7d420000000000000000000000050a301d7a000000000000000000000006710e42080000000000000000000000445e64092500000000000000000000004850747a2400000000000000000000003f7353734100000000000000000000006d3d2c5f250000000000000000000000777a231d7e000000000000000000000027703e2940</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00784a75275c331535250b0f1156077e00105d3603593027292032514e60700e004d616732665742625e4b0f78591c147140747440365c54793a6813674757074a34423a7e39146a72704056102c2137024e42746c097a606b44567e0632394316134d2d3e273c6876700a741b7e357c3265034d69571c6d594332643a312f432b24712e630c531e754e46744179062f4c2f434b775e5d551b05494116746d64102009173d274b4f100b793a0749665c33496936164156263144123c0b0e695c473a023142621b405b0e37181329465666705403680b03115778305a267d3a1d53774b4b366f4c66323f09674a6a0f7603455f5422634b1532613b7a40727b62</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006c5200000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_skulls.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000204f0000000000000000000000000000000000000700092800000000000000000000000000000000000000000000000000000039000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d0000040000000000000000000000000000000000000000000000000000004a390000160000000000000000563500000000000000000000000000000000007a00000000000000000000002d00610000000000000000000000000000000000000000000000000000000000410000000000000000000000000000000000000000000000000000000000003c25000000000000000000000000000000000000000000000062000a350000264c00000000000000000000000000000000000000002e50020065530000000000003300000000000000000000000000000000000000526956001248000078775700616d35000000000000000000000000000000000000000000000e3b1300000000000032000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown_moss.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007e4f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000750000000000000000000000000000000000000000000000000000003b7d00587700000000003d6e6d590000000000000000000000000000000000000f06000000000000000b53000026000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_grass_tall.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000003600000000000000000000000000000057000000000000000000000000000000270000000000000000000000000000003a6b2f00000000000000000000000000270e1a00000000000000000000000000633115620000000000000000000000004f6d7a0a000000000000000000000000783c72366600000000000000000000004d0d142243220000000000000000000038266a7c0432310000000000000000006d136d0b60702f0000000000000000004b097c0d691b06000000000000000000190a120f2238220000000000000000003415306b154f40000000000000000000170d0d36254844000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000062a7c4b1a0000000000000000000000232f04295f0000000000000000000000056f5701760000000000000000000000364e21045f0000000000000000000000095b235e5700000000000000000000000d6b1125760000000000000000000000421b62127e0000000000000000000000580d5035410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">796c6b301234324611795e6a354568272a055933734622340555037a1828044a76517102462b603079603b6228111746076249491244145b1458394a304670771715443772060d6b52760e1772520c77283e2b2a145a6030211c4c3c3c394c2a4e2c22110a231e072e632a7a312f6d031b3c68332244070a753d53036764132a0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3e652177560f0f000000000000000000382f076e400277000000000000000000793c5c6e6c451c0000000000000000003c58263e77052c0000000000000000001a44551441363a0000000000000000002e52366256632c00000000000000000069744d566d693a00000000000000000073643d3f60662e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/armory_tiles_brown.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 1024</vec2>
+		</dict>
+	</array>
+</dict>

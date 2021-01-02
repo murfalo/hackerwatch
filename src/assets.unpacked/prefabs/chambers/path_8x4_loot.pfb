@@ -1,0 +1,225 @@
+<dict>
+	<array name="tiles">
+		<dict>
+			<vec2 name="pos">0 0</vec2>
+			<array name="datasets">
+				<dict>
+					<string name="tileset">tilesets/chambers_tiles.tileset</string>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006d2f3477000000000000000000000000307d5f4e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/generic/container_vase.unit">
+			<vec2>56 5</vec2>
+			<int>21</int>
+			<vec2>69 11</vec2>
+			<int>23</int>
+			<vec2>75 5</vec2>
+			<int>24</int>
+			<vec2>121 7</vec2>
+			<int>25</int>
+			<vec2>114 5</vec2>
+			<int>26</int>
+			<vec2>7 6</vec2>
+			<int>27</int>
+		</array>
+		<array name="doodads/generic/container_barrel_b.unit"><vec2>63 5</vec2><int>22</int></array>
+		<array name="doodads/walls/chambers/_deco_carpet_h_v1.unit"><vec2>32 24</vec2><int>1</int><vec2>104 24</vec2><int>2</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>3</int>
+			<vec3>64 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco8</string>
+			<dict>
+				<array name="PickedPrefabs"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>4</int>
+			<vec3>32 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco4</string>
+			<dict>
+				<array name="PickedPrefabs"><int>10</int><int>9</int><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>5</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco4</string>
+			<dict>
+				<array name="PickedPrefabs"><int>10</int><int>9</int><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>6</int>
+			<vec3>48 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>8</int><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>7</int>
+			<vec3>16 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>8</int>
+			<vec3>80 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>4</int><int>0</int><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>9</int>
+			<vec3>224 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco4_wall</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/deco_4_wall_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>10</int>
+			<vec3>224 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco4_torch</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/deco_4_wall_torch.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>11</int>
+			<vec3>224 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco4_shelves</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/deco_4_wall_shelves.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>12</int>
+			<vec3>272 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deco8</string>
+			<dict>
+				<string name="Prefab">prefabs/chambers/deco_8_wall_1.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>13</int>
+			<vec3>160 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_3x1_d</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_3x1_d.pfb</string>
+				<int name="Chance">15</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>14</int>
+			<vec3>160 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot_3x1_e</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/loot_3x1_e.pfb</string>
+				<int name="Chance">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>15</int>
+			<vec3>48 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>17</int><int>16</int><int>19</int><int>18</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>16</int><vec3>80 -64 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>ScriptLink</string><int>17</int><vec3>16 -64 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>18</int>
+			<vec3>16 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot</string>
+			<dict>
+				<array name="PickedPrefabs"><int>13</int><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PrefabPicker</string>
+			<int>19</int>
+			<vec3>80 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>loot</string>
+			<dict>
+				<array name="PickedPrefabs"><int>13</int><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>20</int>
+			<vec3>-30 21 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>DestroyCrates</string>
+			<dict>
+				<float name="ChanceToDestroy">0.35</float>
+				<array name="Units"><int>27</int><int>21</int><int>22</int><int>23</int><int>24</int><int>26</int><int>25</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

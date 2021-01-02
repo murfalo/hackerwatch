@@ -1,0 +1,40 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/enemy/vampire/rapier_throw</string>
+		<string name="hit-snd">event:/enemy/vampire/rapier_hit</string>
+
+		<int name="ttl">2000</int>
+		<float name="speed">2</float>
+		<float name="speed-delta">0.25</float>
+		<float name="speed-delta-max">9</float>
+		
+		<bool name="blockable">true</bool>
+
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">80</int>
+				<float name="armor-mul">0.9</float>
+			</dict>
+			
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">actors/mt/projectiles/vampire_rapier_hit.effect</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/mt/projectiles/vampire_rapier_2.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>	
+		</scene>
+	</scenes>
+</unit>

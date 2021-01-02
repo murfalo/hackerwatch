@@ -1,0 +1,60 @@
+%if GAME
+<unit>
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/enemy/glyph/attack_curse</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">750</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">doodads/generic/trap_glyph_curse_explosion.effect</string>
+				
+				<int name="radius">30</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">40</int>
+					</dict>
+					
+					<dict>
+						<string name="class">AddCurse</string>
+						<int name="amount">1</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">			
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="110" />
+				</sizes>
+				<colors>
+					<color value="120 120 0 0" />
+				</colors>
+			</light>
+			<effect src="doodads/generic/trap_glyph_curse_skull.effect" />
+	
+		</scene>
+	</scenes>
+</unit>
+%endif

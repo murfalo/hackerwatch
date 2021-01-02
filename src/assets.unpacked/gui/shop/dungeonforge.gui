@@ -1,0 +1,82 @@
+<gui>
+	<sprites>
+		<sprite name="frame" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+		<sprite name="frame-scroll" texture="gui/shop.png"><frame>96 286 23 22</frame></sprite>
+
+		<sprite name="buttons-container" texture="gui/shop.png"><frame>119 286 37 28</frame></sprite>
+
+		<sprite name="icon-craft" texture="gui/icons.png"><frame>66 102 17 10</frame></sprite>
+
+		<sprite name="icon-plus" texture="gui/icons.png"><frame>59 112 5 5</frame></sprite>
+
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+		<sprite name="skill-points" texture="gui/icons.png"><frame>13 24 13 14</frame></sprite>
+		<sprite name="skill-points-attunements" texture="gui/icons.png"><frame>49 87 15 14</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<rect width="286" height="198" inner="true">
+			<!-- List -->
+			<scrollrect id="list" width="272" height="196" flow="vbox" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Separators -->
+			<rect width="3" height="196" offset="272 0" spriteset="gui/variable/3pxbar_vert.sval" />
+			<rect width="3" height="196" offset="283 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+			<!-- Separator -->
+			<rect width="286" height="3" offset="0 196" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- Template -->
+			<rect id="template" visible="false" width="272" height="31" flow="vbox">
+				<!-- Content -->
+				<rect width="272" height="28" flow="hbox">
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Image -->
+					<sprite src="frame">
+						<rect offset="2 2" width="24" height="24" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<!-- Frame -->
+							<sprite src="frame-scroll" offset="1 2" />
+
+							<!-- Icon -->
+							<sprite id="icon" offset="5 8" />
+
+							<!-- Plus icon -->
+							<sprite id="plus" src="icon-plus" offset="3 4" visible="false" />
+						</rect>
+					</sprite>
+
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Name -->
+					<rect id="name-container" width="198" height="28" spriteset="gui/variable/bigwindow_borders.sval" color="#202a26FF" shadow="#000000af" shadowsize="4">
+						<text id="name" anchor="0 0.5" offset="8 0" font="gui/fonts/arial11.fnt" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Buttons -->
+					<sprite src="buttons-container">
+						<!-- Craft -->
+						<scalebutton id="button-craft" spriteset="scalebutton" width="27" offset="5 5">
+							<sprite src="icon-craft" anchor="0.5 0.5" />
+						</scalebutton>
+					</sprite>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="272" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+			</rect>
+		</rect>
+	</doc>
+</gui>

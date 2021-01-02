@@ -1,0 +1,439 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>PrefabPicker</string>
+			<int>1</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="IncludeTilesets">t</bool>
+				<array name="PickedPrefabs">
+					<int>16</int>
+					<int>19</int>
+					<int>22</int>
+					<int>27</int>
+					<int>2</int>
+					<int>7</int>
+					<int>28</int>
+					<int>31</int>
+					<int>3</int>
+					<int>8</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>2</int>
+			<vec3>-32 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chance_small</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_chance_small.pfb</string>
+				<int name="Chance">5</int>
+				<string name="Flag">chance</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>3</int>
+			<vec3>0 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>special_backup</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_backup.pfb</string>
+				<int name="Chance">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>4</int>
+			<vec3>128 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>IsHardcore</string>
+			<int>5</int>
+			<vec3>64 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnFalse"><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>6</int>
+			<vec3>-192 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_0</string>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnFalse"><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>7</int>
+			<vec3>-96 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chance</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_chance.pfb</string>
+				<int name="Chance">5</int>
+				<string name="Flag">chance</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>8</int>
+			<vec3>32 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bullsandcows</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_puzzle_bullsandcows.pfb</string>
+				<int name="Chance">5</int>
+				<string name="Flag">bullsandcows</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>9</int>
+			<vec3>128 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mt_rich_item_gambler</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">mt_rich_item_gambler</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>10</int>
+			<vec3>-64 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>19</int><int>22</int><int>27</int><int>28</int><int>7</int><int>2</int><int>31</int><int>3</int><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>11</int>
+			<vec3>-128 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>12</int>
+			<vec3>0 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>start</string>
+			<array>
+				<int>5</int>
+				<int>0</int>
+				<int>25</int>
+				<int>0</int>
+				<int>30</int>
+				<int>0</int>
+				<int>13</int>
+				<int>0</int>
+				<int>1</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>13</int>
+			<vec3>-192 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mt_rich_shop</string>
+			<dict>
+				<string name="Flag">mt_rich_shop</string>
+				<array name="OnFalse"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>14</int>
+			<vec3>-128 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_1</string>
+			<dict>
+				<string name="Flag">lvl_1</string>
+				<array name="OnTrue"><int>11</int><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>15</int>
+			<vec3>-128 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mt_rich_shop</string>
+			<dict>
+				<int name="State">2</int>
+				<string name="Flag">mt_rich_shop</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>16</int>
+			<vec3>-128 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shop_lvl1</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_shop.pfb</string>
+				<string name="Flag">shop</string>
+				<int name="Chance">1000</int>
+			</dict>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>17</int>
+			<vec3>128 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mt_rich_elevator</string>
+			<dict>
+				<string name="Flag">mt_rich_elevator</string>
+				<array name="OnTrue"><int>20</int></array>
+				<array name="OnFalse"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>18</int>
+			<vec3>192 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_1</string>
+			<dict>
+				<string name="Flag">lvl_1</string>
+				<array name="OnTrue"><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>19</int>
+			<vec3>128 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elevator_lvl0</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_elevator.pfb</string>
+				<string name="Flag">elevator</string>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>20</int>
+			<vec3>256 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>21</int>
+			<vec3>224 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mt_rich_elevator</string>
+			<dict>
+				<string name="Flag">mt_rich_elevator</string>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>22</int>
+			<vec3>192 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elevator_lvl1</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_elevator.pfb</string>
+				<string name="Flag">elevator</string>
+				<int name="Chance">100</int>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>23</int>
+			<vec3>192 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>31</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>24</int>
+			<vec3>128 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lvl_0</string>
+			<dict>
+				<string name="Flag">lvl_0</string>
+				<array name="OnTrue"><int>4</int></array>
+				<array name="OnFalse"><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>25</int>
+			<vec3>128 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>mt_rich_item_gambler</string>
+			<dict>
+				<string name="Flag">mt_rich_item_gambler</string>
+				<array name="OnFalse"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>26</int>
+			<vec3>192 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>27</int>
+			<vec3>256 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>elevator_2</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_elevator.pfb</string>
+				<string name="Flag">elevator</string>
+				<int name="Chance">7</int>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>28</int>
+			<vec3>-192 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>graveyard</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_graveyard.pfb</string>
+				<int name="Chance">5</int>
+				<string name="Flag">graveyard</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>29</int>
+			<vec3>-256 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>28</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>30</int>
+			<vec3>-192 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>allow_graveyard</string>
+			<dict>
+				<string name="Flag">allow_graveyard</string>
+				<array name="OnTrue"><int>29</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedPrefab</string>
+			<int>31</int>
+			<vec3>192 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>secret_item_gambler</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple_rich/special_big_item_gambler.pfb</string>
+				<string name="Flag">item_gambler</string>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>9</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

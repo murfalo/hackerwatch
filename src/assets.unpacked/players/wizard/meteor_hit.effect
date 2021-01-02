@@ -1,0 +1,131 @@
+<effect looping="false">
+	<param name="radius" default="32" />
+
+	<data>
+		<string name="gore">effects/gibs/gib_meteor.sval</string>
+		<string name="sound">event:/item/item_meteor</string>
+	</data>	
+	
+	<sprite origin="8 8" looping="false" texture="effects/players/flames.png" material="effects/effects.mats:fire"
+	
+		num-sprites="radius * radius / 200"
+		pos-x="cos(rand(u+67*i)*2*pi) * radius * pow(rand(u+79*i),0.5)"
+        pos-y="sin(rand(u+67*i)*2*pi) * radius * pow(rand(u+79*i),0.5)"
+	
+	>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">16 54 16 16</frame>
+		<frame time="25">32 54 16 16</frame>
+		<frame time="50">48 54 16 16</frame>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">16 54 16 16</frame>		
+		<frame time="25">0 70 16 16</frame>
+		<frame time="25">16 70 16 16</frame>
+		<frame time="25">32 70 16 16</frame>
+		<frame time="25">48 70 16 16</frame>
+		
+	</sprite>
+	<sprite origin="8 8" looping="false" texture="effects/players/flames.png" material="effects/effects.mats:fire"
+	
+		num-sprites="radius * radius / 200"
+		pos-x="cos(rand(u+67*i)*2*pi) * radius * pow(rand(u+79*i),0.5)"
+        pos-y="sin(rand(u+67*i)*2*pi) * radius * pow(rand(u+79*i),0.5)"
+	
+	>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">0 54 16 16</frame>
+		<frame time="25">16 54 16 16</frame>
+		<frame time="50">32 54 16 16</frame>
+		<frame time="50">48 54 16 16</frame>
+		<frame time="35">0 54 16 16</frame>
+		<frame time="35">16 54 16 16</frame>		
+		<frame time="35">0 70 16 16</frame>
+		<frame time="35">16 70 16 16</frame>
+		<frame time="35">32 70 16 16</frame>
+		<frame time="25">48 70 16 16</frame>
+		
+	</sprite>
+		
+	
+	<sprite layer="0" origin="16 16" looping="false" texture="players/wizard/meteor_impact.png" material="system/default.mats:bright-noxray"
+		num-sprites="radius * radius / 200"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius/2 * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius/2 * pow(rand(u+37*i),0.5)"
+		
+	>
+        <frame time="floor(rand(u+i))*500" x="0" y="0" w="0" h="0" />
+        <frame time="40" x="0" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="32" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="64" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="96" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="128" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="160" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="192" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="224" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="256" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="288" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="320" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="352" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="384" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="416" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+		<frame time="40" x="448" y="32 * floor(rand(u+i*97)*2)" w="32" h="32" />
+	</sprite>
+	
+	
+	<sprite layer="-1" looping="false" origin="16 16" texture="players/wizard/fire_cracks.png" material="effects/effects.mats:fire">
+		<frame time="250">0 0 0 0</frame>
+		<frame time="200">0 0 32 32</frame>
+		<frame time="175">0 32 32 32</frame>
+		<frame time="150">0 64 32 32</frame>
+		<frame time="140">0 96 32 32</frame>
+		<frame time="130">0 128 32 32</frame>
+		<frame time="120">0 160 32 32</frame>
+		<frame time="100">0 192 32 32</frame>
+	</sprite>
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * radius * t" />
+		
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0.75" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		<size value="max(0,t * radius * 3) + 10" />
+		
+		<color-r value="1 - t" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+	
+</effect>

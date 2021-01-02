@@ -1,0 +1,38 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/main_menu/checkbox_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="140" height="108" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" border="0 0 0 191" borderwidth="512" bordertype="outer">
+				<rect width="136" height="104" offset="2 2" flow="vbox">
+					<!-- Header -->
+					<rect width="136" height="18" flow="hbox">
+						<!-- Headline -->
+						<rect width="115" height="18" spriteset="gui/variable/headline_hor.sval">
+							<text font="gui/fonts/arial11_bold.fnt" text=".town.coliseum.switches.title" anchor="0.5 0.5" />
+						</rect>
+
+						<!-- Separator -->
+						<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+						<!-- Close button -->
+						<spritebutton func="back" spriteset="close" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="136" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- List -->
+					<scrollrect id="list" width="136" height="83" flow="vbox" color="#202a26FF" shadow="#0c120fFF" shadowsize="2"></scrollrect>
+
+					<!-- Template -->
+					<checkbox id="template" hint="name" visible="false" spriteset="checkbox" offset="4 0" font="gui/fonts/arial11.fnt" color="#FFFFFFFF" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

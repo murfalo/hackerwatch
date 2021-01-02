@@ -1,0 +1,28 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">witch_hunter</string>
+	<string name="name">.skills.witch_hunter.flaming-hound</string>
+	<string name="description">.skills.witch_hunter.flaming-hound.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>144 192 24 24</vec4>
+	</array>
+
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ShootProjectile</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/witch_hunter/hound_shoot</string>
+		
+		<int name="cooldown">1500</int>
+		<int name="castpoint">0</int>
+		<float name="speed-mul">0.5</float>
+		
+		<int name="mana-cost">45</int>
+		
+		<int name="dist">5</int>
+		<string name="projectile">players/witch_hunter/mercenary/hound_merc.unit</string>
+	</dict>
+</dict>

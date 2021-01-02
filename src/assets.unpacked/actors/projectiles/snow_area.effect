@@ -1,0 +1,58 @@
+<effect layer="-1" looping="true">
+	
+	<!-- end section -->
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="4500" />
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="40" />
+			
+		<color-r value="0.5" />
+		<color-g value="0.5" />
+		<color-b value="0.5" />
+		<color-a value="0"/>
+			
+	</light>
+<!-- 
+	<sprite origin="32 32" looping="true" texture="./snow_area.png" material="system/default.mats:default"
+	color-r="2"
+	color-g="2"
+	color-b="2"
+	color-a="0.5"
+	>
+		<frame time="100">0 0 64 64</frame>
+		<frame time="100">64 0 64 64</frame>
+		<frame time="100">128 0 64 64</frame>
+		<frame time="100">192 0 64 64</frame>
+		<frame time="100">0 64 64 64</frame>
+	</sprite> -->
+ 
+	<sprite origin="32 32" layer="1" looping="true" texture="./snow_area.png" material="system/default.mats:glow"
+	
+	color-r="2"
+	color-g="2"
+	color-b="2"
+	color-a="saturate(sin(t*pi*2)*0.05)+0.05"
+	scale-x="0.8"
+	scale-y="0.8"
+	
+	>
+		<frame time="100">0 0 64 64</frame>
+		<frame time="100">0 64 64 64</frame>
+		<frame time="100">192 0 64 64</frame>
+		<frame time="100">128 0 64 64</frame>
+		<frame time="100">64 0 64 64</frame>
+	</sprite>
+	
+</effect>

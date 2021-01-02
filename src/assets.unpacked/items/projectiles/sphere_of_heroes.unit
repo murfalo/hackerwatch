@@ -1,0 +1,32 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">8</float>
+		<int name="ttl">1000</int>
+		
+		
+		<string name="shoot-snd">event:/item/sphere_of_heroes</string>
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">48</int>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="idle">
+			<effect src="items/projectiles/sphere_of_heroes_attack.effect" />
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+			<effect src="items/projectiles/sphere_of_heroes_trail.effect" />
+		</scene>
+
+	</scenes>
+</unit>
+

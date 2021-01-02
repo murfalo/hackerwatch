@@ -1,0 +1,28 @@
+<gui>
+	<sprites>
+	</sprites>
+
+	<doc>
+		<transform scale="2.0">
+			<group>
+				<!-- Container -->
+				<rect id="container" width="120" height="214" anchor="1 0.5" spacing="2" color="#0000007F" border="#000000FF" borderwidth="2" bordertype="outer">
+					<!-- Total time -->
+					<text id="total-time" font="gui/fonts/arial11.fnt" text="-" anchor="0.5 0" />
+
+					<!-- Splits list -->
+					<clip id="splits" width="120" height="200" offset="0 14" flow="vbox" />
+				</rect>
+
+				<!-- Split template -->
+				<rect id="split-template" visible="false" width="120" height="16">
+					<!-- Name -->
+					<text id="name" font="gui/fonts/arial11.fnt" anchor="0 0" offset="2 0" />
+
+					<!-- Time -->
+					<text id="time" font="gui/fonts/arial11.fnt" anchor="1 0" offset="-4 0" />
+				</rect>
+			</group>
+		</transform>
+	</doc>
+</gui>

@@ -1,0 +1,26 @@
+<gui>
+	<doc>
+		<group>
+			<!-- Map -->
+			<rect id="map" width="328" height="217" color="#322d1cff" />
+
+			<!-- Separator -->
+			<rect width="328" height="2" offset="0 217" spriteset="gui/variable/2pxbar_hor.sval" />
+
+			<!-- Info -->
+			<rect width="328" height="14" offset="0 219" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<!-- Info text -->
+				<text id="info" font="gui/fonts/arial11.fnt" color="#30A275FF" offset="4 0" anchor="0 0.5" />
+
+				<!-- NG+ container -->
+				<rect id="info-ng" width="58" height="14" offset="270 0">
+					<!-- Separator -->
+					<rect width="3" height="14" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Text -->
+					<text id="text" font="gui/fonts/arial11.fnt" color="#FFFF00FF" offset="1 0" anchor="0.5 0.5" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

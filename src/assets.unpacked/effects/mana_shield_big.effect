@@ -1,0 +1,67 @@
+<effect layer="2">
+	<sprite looping="false" origin="12 16" texture="./mana_shield.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="0.75"
+		color-g="0.75"
+		color-b="1"
+		color-a="1-t"
+	>
+		<frame time="150">0 36 24 24</frame>
+		<frame time="50">24 36 24 24</frame>
+		<frame time="50">48 36 24 24</frame>
+		<frame time="50">72 36 24 24</frame>
+		<frame time="50">96 36 24 24</frame>		
+		<frame time="50">0 60 24 24</frame>
+	</sprite>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*100" />
+			
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="160*(1-t)" />
+			
+		<color-r value="0" />
+		<color-g value="0" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

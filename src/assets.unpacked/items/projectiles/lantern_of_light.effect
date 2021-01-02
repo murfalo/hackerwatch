@@ -1,0 +1,61 @@
+<effect looping="true">
+	<param name="aim_angle" default="0" />
+	
+	
+	<!-- bright inner -->
+	<sprite looping="true" origin="0 128" texture="./lantern_of_light.png" material="system/default.mats:glow-both-bright"
+		
+		color-r="0.5 - saturate(sin(t*pi)*0.05)"
+		color-g="0.25"
+		color-b="0.0"
+		color-a="0.02"
+		
+		scale-x="1-sin(t*pi)*0.02"
+		scale-y="1-sin(t*pi)*0.02"
+		
+		
+		angle="aim_angle"
+	>
+        <frame time="100">0 0 128 256</frame>
+	</sprite>
+	
+	
+	<sprite looping="true" origin="0 128" texture="./lantern_of_light.png" material="system/default.mats:glow-both-bright"
+		
+		color-r="1"
+		color-g="1"
+		color-b="0.5 - saturate(sin(t*pi)*0.5)"
+		color-a="0.02"
+		
+		scale-x="0.5 + sin(t*pi*2)*0.01"
+		scale-y="0.5 + cos(t*pi*2)*0.01"
+		
+		
+		angle="aim_angle"
+	>
+        <frame time="100">0 0 128 256</frame>
+	</sprite>
+
+	<light >
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="50+sin(t*pi*2)*0.55" />
+
+		<color-r value="1" />
+		<color-g value="0.8" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

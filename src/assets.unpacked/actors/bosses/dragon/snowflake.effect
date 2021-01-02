@@ -1,0 +1,16 @@
+<effect layer="1000">	
+	
+	<param name="angle" default="0" />
+	<param name="height" default="0" />	
+	
+	<sprite origin="7 7" looping="false" texture="./snowflake.png" material="system/default.mats:glow-both-bright"
+		
+	pos-x="0"
+	pos-y="-height"		
+		
+	angle="(t+l)*pi*80*-1"
+	>
+		<frame time="100000">0 0 15 15</frame>
+	</sprite>	
+
+</effect>

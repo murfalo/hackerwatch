@@ -1,0 +1,68 @@
+<effect looping="false" layer="1"
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<variation>
+		<sprite looping="false" origin="8 8" texture="doodads/generic/trap_fireball_big_hit.png" material="effects/effects.mats:lit"
+		
+			pos-x="0"
+			pos-y="-height"
+		
+			angle="rand(u)*2">
+			
+			<frame time="50">0 0 16 16</frame>
+			<frame time="50">16 0 16 16</frame>
+			<frame time="50">32 0 16 16</frame>
+			<frame time="50">48 0 16 16</frame>
+			<frame time="50">64 0 16 16</frame>
+			<frame time="50">80 0 16 16</frame>
+		</sprite>
+	</variation>
+	<variation>
+		<sprite looping="false" origin="8 8" texture="doodads/generic/trap_fireball_big_hit.png" material="effects/effects.mats:lit"
+		
+			pos-x="0"
+			pos-y="-height"
+		
+			angle="rand(u)*2">
+			
+			<frame time="50">0 16 16 16</frame>
+			<frame time="50">16 16 16 16</frame>
+			<frame time="50">32 16 16 16</frame>
+			<frame time="50">48 16 16 16</frame>
+			<frame time="50">64 16 16 16</frame>
+			<frame time="50">80 16 16 16</frame>
+		</sprite>
+	</variation>
+	<sprite origin="3 3" looping="false" texture="./flame_arc.png" material="effects/effects.mats:fire"
+		num-sprites="2"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">0 18 6 6</frame>
+		<frame time="100">6 18 6 6</frame>
+		<frame time="100">12 18 6 6</frame>
+		<frame time="100">18 18 6 6</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="200" />
+		<looping value="false" />
+
+		<size value="saturate(sin(t*pi))*80" />
+		
+		<color-r value="2" />
+		<color-g value="0.5" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

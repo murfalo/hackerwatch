@@ -1,0 +1,117 @@
+<dict>
+	<string name="name">.skills.sorcerer.frost-shard</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>0 48 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">350</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/sorcerer/shard_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/shard_1.unit</string>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">350</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/sorcerer/shard_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/shard_2.unit</string>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">350</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/sorcerer/shard_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/shard_3.unit</string>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">350</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/sorcerer/shard_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/shard_4.unit</string>
+		</dict>
+		
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">350</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/sorcerer/shard_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/shard_5.unit</string>
+		</dict>
+		
+		<!-- Level 6 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">350</int>
+			<int name="castpoint">0</int>
+			
+			<string name="snd">event:/player/sorcerer/shard_shoot</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0.5</float>
+			
+			<int name="dist">5</int>
+			<string name="projectile">players/sorcerer/shard_6.unit</string>
+		</dict>
+	</array>
+
+	<!-- Mercenary primary -->
+	<string name="mercenary-primary-description">.skills.sorcerer.frost-shard.merc</string>
+	<dict name="mercenary-primary">
+		<string name="class">Skills::ShootProjectile</string>
+
+		<int name="cooldown">350</int>
+		<int name="castpoint">0</int>
+
+		<string name="snd">event:/player/sorcerer/shard_shoot</string>
+		<string name="anim">attack 8</string>
+		<float name="speed-mul">0.5</float>
+
+		<int name="dist">5</int>
+		<string name="projectile">players/sorcerer/shard_6.unit</string>
+	</dict>
+</dict>

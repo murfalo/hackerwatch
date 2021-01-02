@@ -1,0 +1,55 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle 1</string>
+		<string name="fx">actors/projectiles/wisp_1_hit.effect</string>
+		<float name="speed">3</float>
+		<int name="ttl">2500</int>
+		<int name="bounces">3</int>
+		<float name="bounce-speed-mul">1</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">40</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:freezing</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0">
+		<scene name="idle-0">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>			
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="24" />
+				</sizes>
+				<colors>
+					<color value="0 255 255 0" />
+				</colors>
+			</light>				
+			<sprite origin="4 8" looping="true" texture="actors/projectiles/iceball.png" material="system/default.mats:projectile">
+				<frame time="50">0 0 8 8</frame>
+				<frame time="50">8 0 8 8</frame>
+				<frame time="50">16 0 8 8</frame>
+				<frame time="50">24 0 8 8</frame>
+				<frame time="50">16 0 8 8</frame>
+				<frame time="50">8 0 8 8</frame>
+			</sprite>		
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,145 @@
+<effect layer="0" looping="true">
+
+	<param name="height" default="4" />
+	<param name="ttl" default="1000" />
+	
+	<sprite origin="16 21" looping="true" texture="./snowball.png" material="system/default.mats:shadow"
+		color-a="1"
+	>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	<sprite origin="16 21" looping="true" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		color-a="1"
+		pos-y="-height"
+	>
+		<frame time="900">0 0 32 32</frame>
+	</sprite>
+	<sprite origin="16 21" looping="true" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		pos-y="-height"
+	>
+		<frame time="90">0 64 32 32</frame>
+		<frame time="90">32 64 32 32</frame>
+		<frame time="90">64 64 32 32</frame>
+		<frame time="90">96 64 32 32</frame>
+	</sprite>
+	
+	<sprite origin="16 21" ulayer="2" looping="true" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		pos-y="-height"
+	>
+		<frame time="810">0 0 0 0</frame>
+		
+		<frame time="90">32 96 32 32</frame>
+		<frame time="90">64 96 32 32</frame>
+		<frame time="90">96 96 32 32</frame>
+	</sprite>
+	
+	<!-- dust -->
+	<sprite origin="8 8" looping="true" texture="actors/elemental_ice_sword.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="lerp(it, 0.3, 1)"
+		scale-y="lerp(it, 0.3, 1)"
+		pos-x="cos((rand(i*13+27*il) * 0.2 + 1.15) * pi) * 20 * it"
+		pos-y="(sin((rand(i*13+27*il) * 0.2 + 1.15) * pi) * 20 * it)+5"
+		color-a="saturate(0.8-it)"
+	
+	>
+		
+		<frame time="200">320 0 16 16</frame>
+		
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="actors/elemental_ice_sword.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="lerp(it, 0.3, 1)"
+		scale-y="lerp(it, 0.3, 1)"
+		pos-x="cos((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it"
+		pos-y="(sin((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it)+5"
+		color-a="saturate(0.8-it)"
+	
+	>
+		
+		<frame time="200">320 0 16 16</frame>
+		
+	</sprite>
+	<!-- 
+	<sprite origin="8 8" looping="true" texture="actors/elemental_ice_sword.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it- 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos((rand(i*17+27*il) * 0.2 + 1.15) * pi) * 20 * it"
+		pos-y="(sin((rand(i*17+27*il) * 0.2 + 1.15) * pi) * 20 * it)"
+		color-a="saturate(0.8-it - 0.2)"
+	
+	>
+		
+		<frame time="400">336 0 16 16</frame>
+		
+	</sprite>
+	<sprite origin="8 8" looping="true" texture="actors/elemental_ice_sword.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos((rand(i*13+27*il) * 0.2 + 1.65) * pi) * 20 * it"
+		pos-y="(sin((rand(i*13+27*il) * 0.2 + 1.65) * pi) * 20 * it) + 15"
+		color-a="saturate(0.8-it - 0.2)"
+	
+	>
+		
+		<frame time="400">336 0 16 16</frame>
+		
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" texture="actors/elemental_ice_sword.png" material="system/default.mats:default-noxray"
+	
+		num-sprites="10"
+		
+		scale-x="it - 0.3"
+		scale-y="it- 0.3"
+		pos-x="cos((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it"
+		pos-y="(sin((rand(i*17+27*il) * 0.2 + 1.65) * pi) * 20 * it) + 10"
+		color-a="saturate(0.8-it - 0.2)"
+	
+	>
+		
+		<frame time="400">320 0 16 16</frame>
+		
+	</sprite>
+	 -->
+	<light pos-x="0" pos-y="-5">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+				
+		<looping value="true" />
+		<length value="100" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="64*sin(t*2*pi)+28" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="3" />
+		<color-a value="0"/>
+	</light> 
+</effect>

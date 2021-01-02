@@ -1,0 +1,115 @@
+<gui>
+	<sprites>
+		<sprite name="gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+
+		<sprite name="char-shadow" texture="gui/widget.png"><frame>99 118 12 12</frame></sprite>
+
+		<sprite name="color-ball" texture="gui/tailor_color.tif"><frame>5 5 10 10</frame></sprite>
+		<sprite name="color-star" texture="gui/tailor_color_star.tif"><frame>4 4 11 12</frame></sprite>
+
+		<sprite name="material-1" texture="gui/materials.png"><frame>5 3 72 16</frame></sprite>
+		<sprite name="material-2" texture="gui/materials.png"><frame>88 3 72 16</frame></sprite>
+		<sprite name="material-3" texture="gui/materials.png"><frame>5 24 72 16</frame></sprite>
+		<sprite name="material-4" texture="gui/materials.png"><frame>171 24 72 16</frame></sprite>
+		<sprite name="material-5" texture="gui/materials.png"><frame>171 3 72 16</frame></sprite>
+		<sprite name="material-6" texture="gui/materials.png"><frame>88 24 72 16</frame></sprite>
+
+		<sprite name="color-button" texture="gui/widget.png"><frame>245 20 83 20</frame></sprite>
+		<sprite name="color-button-hover" texture="gui/widget.png"><frame>245 40 83 20</frame></sprite>
+		<sprite name="color-button-down" texture="gui/widget.png"><frame>245 60 83 20</frame></sprite>
+
+		<sprite name="color-ball-button" texture="gui/widget.png"><frame>402 36 20 20</frame></sprite>
+		<sprite name="color-ball-button-hover" texture="gui/widget.png"><frame>422 36 20 20</frame></sprite>
+		<sprite name="color-ball-button-checked" texture="gui/widget.png"><frame>442 36 20 20</frame></sprite>
+
+		<sprite name="color-star-button" texture="gui/widget.png"><frame>478 0 20 20</frame></sprite>
+		<sprite name="color-star-button-hover" texture="gui/widget.png"><frame>478 20 20 20</frame></sprite>
+		<sprite name="color-star-button-checked" texture="gui/widget.png"><frame>478 40 20 20</frame></sprite>
+
+		<sprite name="material-button" texture="gui/shop.png"><frame>291 258 132 28</frame></sprite>
+		<sprite name="material-button-hover" texture="gui/shop.png"><frame>291 286 132 28</frame></sprite>
+		<sprite name="material-button-checked" texture="gui/shop.png"><frame>291 314 132 28</frame></sprite>
+
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- Materials -->
+			<rect width="132" height="168" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<checkboxgroup id="list-material" func="change-material" dynamic-size="false" width="132" height="168" flow="vbox" />
+			</rect>
+			<!-- Scrollbar -->
+			<scrollbar forid="list-material" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Material template -->
+			<checkbox id="template-material" visible="false" spriteset="material-button">
+				<rect width="72" height="16" offset="6 6">
+					<!-- Texture -->
+					<sprite id="texture" anchor="0.5 0.5" />
+
+					<!-- Name -->
+					<text id="name" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+				</rect>
+
+				<!-- Colors -->
+				<dyeshades id="shades" width="44" height="16" offset="82 6">
+					<!-- Cost -->
+					<group id="cost" inner="true" anchor="0.5 0.5" flow="hbox" spacing="2" visible="false">
+						<sprite src="gold" offset="0 3" />
+						<text id="amount" font="gui/fonts/arial11.fnt" />
+					</group>
+				</dyeshades>
+			</checkbox>
+
+			<!-- Separator -->
+			<rect width="3" height="168" offset="140 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+			<!-- Preview units -->
+			<rect id="previews" width="153" height="30" offset="143 0" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<sprite src="char-shadow" offset="3 13" />
+				<sprite src="char-shadow" offset="23 13" />
+				<sprite src="char-shadow" offset="42 13" />
+				<sprite src="char-shadow" offset="60 13" />
+				<sprite src="char-shadow" offset="79 13" />
+				<sprite src="char-shadow" offset="99 13" />
+				<sprite src="char-shadow" offset="118 13" />
+				<sprite src="char-shadow" offset="137 13" />
+
+				<unit width="16" height="16" offset="2 10" />
+				<unit width="16" height="16" offset="22 10" />
+				<unit width="16" height="16" offset="41 10" />
+				<unit width="16" height="16" offset="60 10" />
+				<unit width="16" height="16" offset="79 10" />
+				<unit width="16" height="16" offset="98 10" />
+				<unit width="16" height="16" offset="117 10" />
+				<unit width="16" height="16" offset="136 10" />
+			</rect>
+
+			<!-- Separator -->
+			<rect width="153" height="3" offset="143 30" spriteset="gui/variable/3pxbar_hor.sval" />
+
+			<!-- Colors list -->
+			<scrollrect id="list-colors" width="145" height="135" flow="hboxwrapped" offset="143 33" padding="2 2" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+			<!-- Scrollbar -->
+			<scrollbar forid="list-colors" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+
+			<!-- Counter
+
+				TODO: Put this back again somewhere!
+
+				<rect width="91" height="18" offset="2 235" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<text id="dye-count" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+				</rect>
+
+			-->
+
+			<!-- Color selection template -->
+			<checkbox id="template-color" spriteset="color-ball-button" visible="false">
+				<!-- Ball sprite -->
+				<dyesprite id="ball" src="color-ball" anchor="0.5 0.5" />
+			</checkbox>
+		</group>
+	</doc>
+</gui>

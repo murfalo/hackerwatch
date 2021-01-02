@@ -1,0 +1,32 @@
+<unit slot="doodad">
+	<scenes open="open" close="close">
+		<scene name="open">
+			%if EDITOR 
+			<sprite origin="5 5" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 10 10</frame>
+			</sprite>
+			%endif
+			<sprite origin="4 6" looping="false" layer="-16" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>120 28 8 12</frame>
+				<frame>120 16 8 12 </frame>
+			</sprite>
+		</scene>		
+		<scene name="close">
+			<sprite origin="4 6" looping="false" layer="-16" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>120 16 8 12 </frame>
+				<frame>120 28 8 12</frame>
+				<frame>0 0 0 0</frame>
+			</sprite>
+			<sprite origin="4 8" looping="false" layer="-16" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>0 0 0 0</frame>
+				<frame>0 0 0 0</frame>
+				<frame>120 40 8 16</frame>
+			</sprite>
+			<sprite origin="5 6" looping="false" layer="-14" texture="./_furrow.png" material="system/default.mats:floor">
+				<frame>0 0 0 0</frame>
+				<frame>0 0 0 0</frame>
+				<frame>88 60 10 12</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,280 @@
+<unit slot="doodad">
+	<scenes default="default" open="open" close="close">
+		
+		<scene name="shared">	
+			<minimap_sprite layer="1" origin="2 44" texture="gui/minimap.png" frame="380 286 28 48" />
+			
+			<sprite layer="1" origin="0 384" pos="8 120" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame>920 0 80 189</frame>
+			</sprite>	
+			
+			<sprite layer="-1" ulayer="1" origin="0 264" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame>912 0 96 280</frame>
+			</sprite>	
+			
+			<sprite layer="-10" ulayer="1"  pos="0 164" origin="0 264" texture="./_custom_arena_walls.png" material="system/default.mats:shadow">
+				<frame>912 380 96 79</frame>
+			</sprite>	
+		<!-- lever bottom -->
+			<sprite layer="2" ulayer="-3" pos="71 -201" looping="false" origin="5 3" texture="./_custom_arena_walls.png" material="system/default.mats:default">				
+				<frame time="50">1037 277 11 7</frame>
+			</sprite>
+		<!-- gatekeeper + wheel shadows -->
+			<sprite layer="2" ulayer="-2" pos="78 -202" looping="false" origin="5 5" texture="./_custom_arena_walls.png" material="system/default.mats:shadow">
+				<frame time="2000">1028 287 10 10</frame>				
+			</sprite>
+			
+			<sprite layer="3" pos="59 -205" looping="false" origin="7 9" texture="./_custom_arena_walls.png" material="system/default.mats:shadow">
+				<frame time="2000">1008 280 13 18</frame>				
+			</sprite>
+		</scene>
+		
+		<scene name="open" trigger-snd="event:/misc/arena_gate_open">
+			<scene src="shared" />
+			
+			<collision static="true">
+				<rect>0 -80 8 96</rect>
+				<rect>88 -80 8 96</rect>
+				<rect>0 -124 16 80</rect>
+				<rect>80 -124 16 80</rect>
+			</collision> 
+			
+			<effect layer="-1" src="doodads/walls/arena/_custom_arena_wall_gate_n_open.effect" />
+			<effect layer="0" delay="0" pos="30 8" src="effects/animations/arena_dust_door.effect" />
+			<effect layer="0" delay="150" pos="65 10" src="effects/animations/arena_dust_door.effect" />
+			
+		<!-- gatekeeper -->
+			<sprite layer="2" pos="80 -202" looping="false" origin="14 14" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="2000">1037 220 16 19</frame>
+				<frame time="50">1037 239 16 19</frame>
+			</sprite>
+		<!-- hole -->
+			<sprite layer="2" pos="47 -159" looping="false" origin="15 13" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>			
+				<frame time="50">1053 272 31 26</frame>
+			</sprite>
+		<!-- wheel -->
+			<sprite layer="2" pos="48 -200" looping="false" origin="14 14" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="close" trigger-snd="event:/misc/arena_gate_close">
+			<scene src="shared" />
+			<collision static="true">
+				<rect>0 -80 8 96</rect>
+				<rect>88 -80 8 96</rect>
+				<!-- <rect>0 -60 96 16</rect> -->
+				<rect>0 -124 16 80</rect>
+				<rect>80 -124 16 80</rect>
+			</collision> 
+			
+			<effect layer="-1" src="doodads/walls/arena/_custom_arena_wall_gate_n_close.effect" />
+			<effect layer="0" delay="0" pos="30 8" src="effects/animations/arena_dust_door.effect" />
+			<effect layer="0" delay="150" pos="65 10" src="effects/animations/arena_dust_door.effect" />					
+			<effect layer="0" delay="2000" pos="26 -43" src="effects/animations/dust.effect" />					
+			<effect layer="0" delay="2020" pos="40 -44" src="effects/animations/dust.effect" />					
+			<effect layer="0" delay="1980" pos="57 -42" src="effects/animations/dust.effect" />					
+			<effect layer="0" delay="2100" pos="72 -40" src="effects/animations/dust.effect" />	
+		<!-- gatekeeper -->
+			<sprite layer="2" pos="80 -202" looping="false" origin="14 14" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="2000">1037 258 16 19</frame>
+				<frame time="50">1037 239 16 19</frame>
+			</sprite>
+		<!-- hole -->
+			<sprite layer="2" pos="47 -159" looping="false" origin="15 13" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+				<frame time="50">1053 246 31 26</frame>
+				<frame time="50">1053 272 31 26</frame>
+				<frame time="50">1053 220 31 26</frame>
+			</sprite>
+		<!-- wheel -->
+			<sprite layer="2" pos="48 -200" looping="false" origin="14 14" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+				<frame time="50">1008 260 29 20</frame>
+				<frame time="50">1008 240 29 20</frame>
+				<frame time="50">1008 220 29 20</frame>
+			</sprite>	
+		</scene>
+		
+		<scene name="default">
+			<scene src="shared" />
+			<collision static="true">
+				<rect>0 -80 8 96</rect>
+				<rect>88 -80 8 96</rect>
+				<!-- <rect>0 -60 96 16</rect> -->
+				<rect>0 -124 16 80</rect>
+				<rect>80 -124 16 80</rect>
+			</collision> 
+			
+			<sprite layer="-1" ulayer="-1" origin="0 84" looping="true" texture="./_custom_arena_walls.png" material="system/default.mats:shadow">
+				<frame time="2000">912 339 88 40</frame>
+			</sprite>	
+
+			<sprite layer="-1" origin="0 104" looping="true" texture="./_custom_arena_walls.png" material="system/default.mats:default">
+				<frame time="2000"> 912 280 88 58 </frame>
+			</sprite>	
+	<!-- hole -->
+			<sprite layer="2" pos="47 -159" looping="false" origin="15 13" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="50">1053 220 31 26</frame>
+			</sprite>	
+	<!-- wheel -->
+			<sprite layer="2" pos="80 -202" looping="false" origin="14 14" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="50">1037 239 16 19</frame>
+			</sprite>
+			
+			<sprite layer="2" pos="49 -201" looping="false" origin="15 13" texture="./_custom_arena_walls.png" material="system/default.mats:wall">
+				<frame time="50">1008 220 29 20</frame>
+			</sprite>	
+		</scene>		
+	</scenes>
+</unit>

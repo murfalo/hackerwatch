@@ -1,0 +1,37 @@
+<effect looping="false" layer="1">
+	<light> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="false" />
+
+		<size value="saturate(sin((t+0.5)*pi))*32" />
+		
+		<color-r value="0.5" />
+		<color-g value="5" />
+		<color-b value="0.5" />
+		<color-a value="0" />
+	</light>	
+	
+	<sprite origin="9 14" ulayer="1" looping="false" texture="./bat_mb_sonic_wave_hit.png" material="system/default.mats:bright">
+		<frame time="50">0 0 16 16</frame>
+		<frame time="50">16 0 16 16</frame>
+		<frame time="50">32 0 16 16</frame>
+		<frame time="50">48 0 16 16</frame>
+		
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">48 16 16 16</frame>
+	</sprite>
+	<sprite origin="9 14" ulayer="0" looping="false" texture="./bat_mb_sonic_wave_hit.png" material="system/default.mats:glow">
+		<frame time="50">0 0 16 16</frame>
+		<frame time="50">16 0 16 16</frame>
+		<frame time="50">32 0 16 16</frame>
+		<frame time="50">48 0 16 16</frame>
+		<frame time="50">0 16 16 16</frame>
+		<frame time="50">16 16 16 16</frame>
+		<frame time="50">32 16 16 16</frame>
+	</sprite>
+</effect>

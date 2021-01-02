@@ -1,0 +1,33 @@
+<unit slot="doodad" layer="0">
+	
+	<scenes on="1" off="2">
+		<scene name="shared">	
+			<collision static="true">
+				<rect>-16 -4 32 8</rect>
+			</collision>
+		</scene>
+		<scene name="1">	
+			<scene src="shared" />
+			<sprite origin="16 38" texture="./bestiary_shelf.png" material="system/default.mats:proj-prop">
+				<frame>16 80 32 42</frame>
+			</sprite>	
+			<sprite ulayer="1" looping="false" origin="7 7" pos="0 -24" texture="./bestiary_shelf.png" material="system/default.mats:default">
+				<frame time="50">32 0 19 38</frame>
+				<frame time="50">51 0 19 38</frame>
+				<frame time="50">70 0 19 38</frame>
+				<frame time="50">32 38 19 38</frame>
+				<frame time="50">51 38 19 38</frame>
+				<frame time="50">70 38 19 38</frame>
+			</sprite>	
+			<effect delay="250" src="effects/animations/dust.effect" />
+			
+		</scene>
+		<scene name="2">	
+			<scene src="shared" />
+			<sprite origin="16 38" texture="./bestiary_shelf.png" material="system/default.mats:proj-prop">
+				<frame>16 80 32 42</frame>
+			</sprite>	
+			
+		</scene>
+	</scenes>
+</unit>

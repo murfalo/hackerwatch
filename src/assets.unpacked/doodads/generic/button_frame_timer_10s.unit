@@ -1,0 +1,65 @@
+<unit slot="doodad" layer="-30">
+	<behavior class="StateAnimations">
+		<string name="default">off</string>
+		<array name="transitions">
+			<dict>
+				<string name="from">on</string>
+				<string name="to">off</string>
+			</dict>
+		</array>
+	</behavior>
+	<scenes off="off" on="on">
+		<scene name="shared">
+			<sprite origin="16 16" texture="./buttons.png" material="system/default.mats:floor">
+				<frame time="50">0 176 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="off">
+			<scene src="shared" />
+		</scene>
+		<scene name="on">
+			<scene src="shared" />
+			<sprite looping="false" ulayer="1" origin="16 16" texture="./buttons.png" material="system/default.mats:glow-both-bright">
+				
+				%// 3sec
+				<frame time="800">32 176 32 32</frame>
+				<frame time="800">64 176 32 32</frame>
+				<frame time="800">96 176 32 32</frame>
+				<frame time="800">0 208 32 32</frame>
+				<frame time="800">32 208 32 32</frame>
+				<frame time="800">64 208 32 32</frame>
+				<frame time="800">96 208 32 32</frame>
+				<frame time="800">0 240 32 32</frame>
+				<frame time="800">32 240 32 32</frame>
+				<frame time="800">64 240 32 32</frame>
+				
+				%// 2sec
+				<frame time="250">96 240 32 32</frame>
+				<frame time="250">64 240 32 32</frame>
+				<frame time="250">96 240 32 32</frame>
+				<frame time="250">64 240 32 32</frame>
+				<frame time="250">96 240 32 32</frame>
+				<frame time="250">64 240 32 32</frame>
+				<frame time="250">96 240 32 32</frame>
+				<frame time="250">64 240 32 32</frame>
+			</sprite>
+	
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="0 255 255 0 0" />
+				</colors>
+			</light>
+		</scene>	
+	</scenes>
+</unit>

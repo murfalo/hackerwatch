@@ -1,0 +1,292 @@
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-override">actors/bosses/vampire/vampire.unit</string>
+		<bool name="counts-as-kill">false</bool>
+		<string name="type">undead</string>
+		<int name="hp">14000</int>
+		<int name="armor">100</int>
+		<int name="resistance">100</int>
+		<int name="experience-reward">7500</int>
+		<float name="mp-scale-fact">1.25</float>
+		<float name="ngp-scale">1.5</float>
+		
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">false</bool>
+		<int name="aggro-range">1000</int>
+		<int name="unit-height">28</int>
+		<float name="debuff-scale">0.5</float>
+
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_boss.inc"
+		</array>
+		
+		<dict name="movement">
+			<string name="class">RangedMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">bat 8</string>
+
+			<bool name="strafing">false</bool>
+			<float name="speed">6</float>
+			<int name="dist">100</int>
+		</dict>
+		
+		<array name="skills">
+
+			%// Escape Health
+			<dict>
+				<array name="conditional">
+					<string>hp</string><string>lt</string><float>0.80</float>
+				</array>
+
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">escape</string>
+				
+				<string name="start-snd">event:/enemy/boss_vampire/chuckle_disappear</string>
+				
+				<int name="charges">1</int>
+				
+				<bool name="must-see">false</bool>
+				<int name="cooldown">0</int>	
+				<int name="castpoint">500</int>
+				<int name="range">1000</int>
+
+				<array name="actions">
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+
+			%// Escape Time
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">escape</string>
+				
+				<string name="start-snd">event:/enemy/boss_vampire/chuckle_disappear</string>
+				
+				<int name="charges">1</int>
+				
+				<bool name="must-see">false</bool>
+				<int name="cooldown">45000</int>
+				<int name="castpoint">500</int>
+				<int name="range">1000</int>
+
+				<array name="actions">
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+
+			%// First Blink
+			<dict>
+				<string name="class">BlinkStrikeSkill</string>
+				<string name="anim-blink">hidden</string>
+				<string name="anim-melee">spawn</string>
+				<string name="anim-hidden">hidden</string>
+
+				<int name="charges">1</int>
+
+				<string name="fx-blink-out">actors/bosses/vampire/poof.effect</string>
+				<string name="fx-blink-in">actors/bosses/vampire/poof.effect</string>
+				<string name="snd-blink-in">event:/enemy/boss_vampire/chuckle_appear</string>
+
+				<!-- <int name="cooldown-start">0</int> -->
+				<int name="cooldown">2000</int>
+				<int name="cast-point-melee">950</int>
+				<bool name="must-see">false</bool>
+
+				<int name="range">9999</int>
+
+				<float name="blink-distance">40</float>
+				<int name="blink-delay">1000</int>
+				<int name="blink-delay-random">500</int>
+
+				<array name="actions">
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:vampire-blink</string>
+						<bool name="target-self">true</bool>
+					</dict>
+				</array>
+			</dict>
+
+			%// Bat Spray
+			<dict>
+				<string name="class">SpewSkill</string>
+				<string name="anim">attack-hand 8</string>
+				<string name="first-fire-snd">event:/enemy/boss_vampire/bat_spray</string>
+				<string name="offset">shoot-pos</string>
+				
+				<int name="charges">1</int>
+				
+				<int name="cooldown-start">200</int>
+				<int name="cooldown">14000</int>
+				<int name="castpoint">850</int>
+				<int name="duration">600</int>
+
+				<int name="range">120</int>
+				<int name="min-range">0</int>
+				<int name="spread">30</int>
+				<int name="rate">50</int>
+				<bool name="must-see">true</bool>
+				<bool name="hold-dir">false</bool>
+
+				<string name="projectile">actors/bosses/vampire/bat_projectile_spawn.unit</string>
+			</dict>
+
+			%// Rapier Spew
+			<dict>
+				<string name="class">SpewSkill</string>
+				<string name="anim">attack-sword 8</string>
+				<string name="start-snd">event:/enemy/boss_vampire/attack-rapiers</string>
+				<string name="snd">event:/enemy/boss_vampire/rapier</string>
+				<!-- <string name="offset">shoot-pos</string> -->
+				
+				<int name="cooldown">2500</int>
+				<int name="castpoint">850</int>
+				<int name="duration">600</int>
+				
+				<int name="range">150</int>
+				<int name="min-range">0</int>
+				<int name="spread">15</int>
+				<int name="rate">90</int>
+				<bool name="good-aim">false</bool>
+				<bool name="must-see">true</bool>
+				<bool name="hold-dir">false</bool>
+				
+				<string name="projectile">actors/bosses/vampire/rapier_projectile.unit</string>
+			</dict>
+
+			%// Blades
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">sword</string>
+				
+				<string name="start-snd">event:/enemy/boss_vampire/attack-blades</string>
+				
+				<bool name="must-see">false</bool>
+				<int name="cooldown">4000</int>	
+				<int name="castpoint">950</int>
+				<int name="range">200</int>
+				<bool name="good-aim">true</bool>
+
+				<array name="actions">
+					<dict>
+						<string name="class">DummyHitscan</string>
+
+						<array name="effects">
+							<dict>
+								<string name="class">SpawnUnit</string>
+								<string name="unit">actors/bosses/vampire/blade_bomb.unit</string>
+								<bool name="safe-spawn">false</bool>
+								<bool name="players-in-sight">true</bool>
+								<vec2 name="jitter">16 16</vec2>
+							</dict>
+							<dict>
+								<string name="class">SpawnUnit</string>
+								<string name="unit">actors/bosses/vampire/blade_bomb.unit</string>
+								<bool name="safe-spawn">false</bool>
+								<bool name="players-in-sight">true</bool>
+								<vec2 name="jitter">16 16</vec2>
+								<int name="delay">400</int>
+							</dict>
+							<dict>
+								<string name="class">SpawnUnit</string>
+								<string name="unit">actors/bosses/vampire/blade_bomb.unit</string>
+								<bool name="safe-spawn">false</bool>
+								<bool name="players-in-sight">true</bool>
+								<vec2 name="jitter">16 16</vec2>
+								<int name="delay">800</int>
+							</dict>
+						</array>
+						
+						<dict name="range">
+							<int name="min">200</int>
+							<int name="max">200</int>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+
+			%// Blink
+			<dict>
+				<string name="class">BlinkStrikeSkill</string>
+				<string name="anim-blink">hidden</string>
+				<string name="anim-melee">idle 8</string>
+				<string name="anim-hidden">hidden</string>
+
+				<string name="fx-blink-out">actors/bosses/vampire/poof.effect</string>
+				<string name="fx-blink-in">actors/bosses/vampire/poof.effect</string>
+
+				<int name="cooldown">7500</int>
+				<int name="cast-point-melee">50</int>
+				<bool name="must-see">false</bool>
+
+				<int name="range">9999</int>
+				<int name="min-range">100</int>
+
+				<float name="blink-distance">40</float>
+				<int name="blink-delay">500</int>
+				<int name="blink-delay-random">200</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:vampire-blink</string>
+						<bool name="target-self">true</bool>
+					</dict>
+				</array>
+			</dict>
+
+			%// Death
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/bosses/vampire/poof.effect</string>
+					</dict>	
+				</array>	
+			</dict>	
+		</array>	
+		
+		<dict name="effect-params"></dict>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 -2" radius="8" aim-through="true" density="100"/>
+			</collision>
+			<sprite origin="9 10" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+                <frame>85 32 19 19</frame>
+            </sprite>
+		</scene>
+		
+		<scene name="shared-bat">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 -2" radius="3" sensor="false" shoot-through="true" aim-through="true" density="100"/>
+			</collision>
+			<sprite origin="9 10" layer="-1" texture="doodads/special/shadows.png" material="system/default.mats:shadow">
+                <frame>85 32 19 19</frame>
+            </sprite>
+		</scene>
+
+		<scene name="hidden">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<collision static="false">
+				<circle offset="0 -2" radius="3" sensor="true" shoot-through="true" aim-through="true" density="100"/>
+			</collision>
+			<sprite origin="25 32" texture="./vampire.png" material="system/default.mats:actor">
+				<frame>0 0 0 0</frame>
+			</sprite>			
+		</scene>
+
+%include "actors/bosses/vampire/vampire_scenes.inc"
+
+	</scenes>
+</unit>

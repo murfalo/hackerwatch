@@ -1,0 +1,59 @@
+<effect looping="true" wpos-track="50">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	
+	<sprite origin="4 4" looping="true" texture="./high_priest_green_ball.png" material="system/default.mats:projectile">
+		<frame time="50">0 0 8 8</frame>
+		<frame time="50">8 0 8 8</frame>
+		<frame time="50">16 0 8 8</frame>
+		<frame time="50">24 0 8 8</frame>
+		<frame time="50">16 0 8 8</frame>
+		<frame time="50">8 0 8 8</frame>
+		<frame time="50">16 0 8 8</frame>
+		<frame time="50">8 0 8 8</frame>
+	</sprite>
+	<sprite origin="4 4" looping="true" texture="./high_priest_green_ball.png" material="system/default.mats:glow">
+		<frame time="50">0 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>
+		<frame time="50">16 8 8 8</frame>
+		<frame time="50">24 8 8 8</frame>
+		<frame time="50">16 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>
+		<frame time="50">16 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>
+	</sprite>
+	<sprite origin="4 4" looping="true" texture="./high_priest_green_ball.png" material="system/default.mats:glow-both-bright"
+	size-x="0.9"
+	size-y="0.9"
+	angle="rand(u+i)*pi*2"
+	>
+		<frame time="40">32 0 8 8</frame>
+		<frame time="40">40 0 8 8</frame>
+		<frame time="40">48 0 8 8</frame>
+		<frame time="40">56 0 8 8</frame>
+		<frame time="40">64 0 8 8</frame>
+	</sprite>
+
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="28" />
+
+		<color-r value="0" />
+		<color-g value="4" />
+		<color-b value="1" />
+		<color-a value="0"/>
+	</light>
+</effect>

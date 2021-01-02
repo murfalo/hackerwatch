@@ -1,0 +1,33 @@
+<unit netsync="none">
+	<behavior class="Projectile">
+		<string name="anim">idle</string>
+		<float name="speed">5.5</float>
+		<int name="ttl">600</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">8</int>
+			</dict>
+			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:mummy-mb-vomit</string>
+			</dict>
+			
+		</array>
+				
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>
+			<effect src="actors/pop/projectiles/mummy_mb_spray.effect" />
+		</scene>
+	</scenes>
+</unit>

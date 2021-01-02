@@ -1,0 +1,70 @@
+<effect looping="true" layer="0"
+>
+	<param name="angle" default="0" />
+	<param name="height" default="4" />
+	
+	<sprite looping="true" origin="5 11" texture="./gladius_spin.png" material="system/default.mats:shadow"
+	
+		angle="angle+pi*t*2">
+		
+		<frame time="100">0 96 7 25</frame>
+	</sprite>
+	
+	<sprite looping="true" origin="5 11" texture="./gladius_spin.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle+pi*t*2">
+		
+		<frame time="100">0 96 7 25</frame>
+	</sprite>
+	
+	<variation>
+		<sprite looping="true" random-start="true" origin="24 24" texture="./gladius_spin.png" material="effects/effects.mats:add"
+			pos-y="-height"
+			color-a="0.5"
+			
+			>
+			
+			<frame time="40">0 0 48 48</frame>
+			<frame time="40">48 0 48 48</frame>
+			<frame time="40">96 0 48 48</frame>
+			<frame time="40">144 0 48 48</frame>
+			<frame time="40">192 0 48 48</frame>
+			<frame time="40">0 48 48 48</frame>
+		</sprite>
+	</variation>
+	
+	<variation>
+		<sprite looping="true" random-start="true" origin="24 24" texture="./gladius_spin.png" material="effects/effects.mats:add"
+			pos-y="-height"
+			color-a="0.5">
+			
+			<frame time="45">0 0 48 48</frame>
+			<frame time="45">48 0 48 48</frame>
+			<frame time="45">96 0 48 48</frame>
+			<frame time="45">144 0 48 48</frame>
+			<frame time="45">192 0 48 48</frame>
+			<frame time="45">0 48 48 48</frame>
+		</sprite>
+		
+	
+	</variation>
+	
+	<variation>
+		<sprite looping="true" random-start="true" origin="24 24" texture="./gladius_spin.png" material="effects/effects.mats:add"
+			pos-y="-height"
+			color-a="0.5">
+			
+			<frame time="35">0 0 48 48</frame>
+			<frame time="35">48 0 48 48</frame>
+			<frame time="35">96 0 48 48</frame>
+			<frame time="35">144 0 48 48</frame>
+			<frame time="35">192 0 48 48</frame>
+			<frame time="35">0 48 48 48</frame>
+		</sprite>
+	
+	</variation>
+	
+</effect>

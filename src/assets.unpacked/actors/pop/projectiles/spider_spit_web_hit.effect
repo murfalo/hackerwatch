@@ -1,0 +1,21 @@
+<effect looping="false">
+	<param name="angle" default="0" />
+	<param name="height" default="10" />
+	
+	%// Spiderspit
+	<sprite looping="false" origin="8 8" texture="./spider_spit_hit.png" material="effects/effects.mats:lit"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="rand(u+i)*pi*2">
+		
+		<frame time="50">0 32 16 16</frame>
+		<frame time="50">16 32 16 16</frame>
+		<frame time="50">32 32 16 16</frame>
+		<frame time="50">48 32 16 16</frame>
+		<frame time="50">0 48 16 16</frame>
+	</sprite>
+	
+	
+</effect>

@@ -1,0 +1,93 @@
+<dict>
+	<string name="name">.skills.paladin.shield</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 0 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::BlockProjectile</string>
+				<int name="arc">60</int>
+			</dict>
+		</dict>
+	
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::BlockProjectile</string>
+					<int name="arc">80</int>
+				</dict>
+				<dict >
+					<string name="class">Modifiers::Block</string>
+					<float name="chance">0.25</float>
+					<int name="physical">5</int>
+				</dict>
+			</array>
+		</dict>
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::BlockProjectile</string>
+					<int name="arc">100</int>
+				</dict>
+				<dict >
+					<string name="class">Modifiers::Block</string>
+					<float name="chance">0.25</float>
+					<int name="physical">10</int>
+				</dict>
+			</array>
+		</dict>
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::BlockProjectile</string>
+					<int name="arc">120</int>
+				</dict>
+				<dict >
+					<string name="class">Modifiers::Block</string>
+					<float name="chance">0.25</float>
+					<int name="physical">15</int>
+				</dict>
+			</array>
+		</dict>
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::BlockProjectile</string>
+					<int name="arc">140</int>
+				</dict>
+				<dict >
+					<string name="class">Modifiers::Block</string>
+					<float name="chance">0.25</float>
+					<int name="physical">20</int>
+				</dict>
+			</array>
+		</dict>
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::BlockProjectile</string>
+					<int name="arc">160</int>
+				</dict>
+				<dict >
+					<string name="class">Modifiers::Block</string>
+					<float name="chance">0.25</float>
+					<int name="physical">25</int>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>

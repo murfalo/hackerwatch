@@ -1,0 +1,40 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle-0</string>			
+		<float name="speed">2.5</float>
+		<bool name="blockable">false</bool>
+		<int name="penetration">1000</int>		
+		<bool name="penetrate-all">true</bool>
+		<string name="team-override">enemy</string>			
+				
+		<string name="fx">effects/animations/impact_ice.effect</string>
+		<int name="ttl">30000</int>
+		
+		<array name="effects">			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:snowflake_resistance</string>
+			</dict>	
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:snowflake_armor</string>
+			</dict>					
+			<dict name="effect">
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/animations/impact_ice.effect</string>
+			</dict>
+		</array>
+		<dict name="effect-params">
+			<float name="height">4</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle-0">
+			<effect src="actors/bosses/dragon/snowflake.effect" />
+			<collision static="false">
+				<circle offset="-0.5 0" radius="7" projectile="true" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

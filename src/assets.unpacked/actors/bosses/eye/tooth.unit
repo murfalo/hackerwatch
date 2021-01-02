@@ -1,0 +1,58 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<int name="bounces">2</int>
+		<float name="bounce-speed-mul">1</float>	
+		<float name="speed">6</float>
+		<int name="ttl">3000</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">60</int>
+			</dict>
+			<dict>
+				<string name="class">Nova</string>
+				<int name="projectiles">5</int>
+				<float name="proj-dist">8</float>
+				<string name="projectile">actors/bosses/eye/tooth_shard.unit</string>
+			</dict>	
+		</array>		
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/bosses/eye/tooth.effect" />
+			
+			<collision static="false">
+				<circle projectile="true" radius="2" />
+			</collision>
+			<shadow>
+				<sprite origin="5 -3" texture="doodads/special/shadows.png">
+					<frame>8 0 10 10</frame>
+				</sprite>
+			</shadow>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="400" />
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="20" />
+					<size value="32" />
+				</sizes>
+ 				<colors>
+					<color value="320 80 0 0" />
+					<color value="300 50 0 5" />
+				</colors> 
+			</light>				
+		</scene>
+	</scenes>
+</unit>

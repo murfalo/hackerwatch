@@ -1,0 +1,36 @@
+<unit slot="doodad" netsync="none">
+	<behavior class="TavernBarrel">
+	</behavior>
+	<scenes>
+		<scene name="shared">
+			<minimap_sprite layer="150" layer="20" origin="6 6" texture="gui/minimap.png" frame="140 9 12 12" />			
+			<collision static="true">
+				<circle sensor="true" shoot-through="true" aim-through="true" offset="0 0" radius="12" />
+				<circle sensor="false" shoot-through="true" aim-through="true" offset="0 0" radius="6" />
+			</collision>	
+			<sprite origin="0 12" ulayer="0" texture="./barrel.png" material="system/default.mats:shadow">
+				<frame>36 0 12 18</frame>
+			</sprite>
+		</scene>
+
+		<scene name="common">			
+			<scene src="shared" />
+			<sprite origin="6 12" ulayer="1" texture="./barrel.png" material="system/default.mats:proj-prop">
+				<frame>0 0 12 18</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="uncommon">
+			<scene src="shared" />
+			<sprite origin="6 12" ulayer="1" texture="./barrel.png" material="system/default.mats:proj-prop">
+				<frame>12 0 12 18</frame>
+			</sprite>
+		</scene>
+		<scene name="rare">
+			<scene src="shared" />
+			<sprite origin="6 12" ulayer="1" texture="./barrel.png" material="system/default.mats:proj-prop">
+				<frame>24 0 12 18</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

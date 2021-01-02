@@ -1,0 +1,71 @@
+<effect random-start="false" looping="false" layer="1">
+	
+	<data>
+		<string name="sound">event:/item/conflagration</string>
+	</data>		
+   	  
+		<sprite origin="8 8" looping="false" texture="effects/players/flames.png" material="effects/effects.mats:fire"
+		
+			num-sprites="10"
+			
+			scale-x="max(t - max((t - 0.8) * 5, 0),0)"
+			scale-y="max(t - max((t - 0.8) * 5, 0),0) - t/10"
+			angle="rand(u + i) * 2 * pi"
+			pos-x="(rand(29*u+67*i)-0.5)*10* saturate(t*2+0.33)"
+			pos-y="(rand(23*u+97*i)-0.5)*10* saturate(t*2+0.33) - 10*t"
+		
+		>
+			<frame time="25">0 54 16 16</frame>
+			<frame time="25">0 54 16 16</frame>
+			<frame time="25">16 54 16 16</frame>
+			<frame time="25">32 54 16 16</frame>
+			<frame time="25">48 54 16 16</frame>
+			<frame time="25">0 0 15 19</frame>
+			<frame time="25">15 0 15 19</frame>
+			<frame time="25">30 0 15 19</frame>
+			<frame time="25">45 0 15 19</frame>
+			<frame time="25">0 19 15 19</frame>
+			<frame time="25">15 19 15 19</frame>
+			<frame time="25">30 19 15 19</frame>
+			<frame time="25">45 19 15 19</frame>
+			<frame time="25">0 54 16 16</frame>
+			<frame time="25">16 54 16 16</frame>		
+			<frame time="25">0 70 16 16</frame>
+			<frame time="25">16 70 16 16</frame>
+			<frame time="25">32 70 16 16</frame>
+			<frame time="25">48 70 16 16</frame>
+			<frame time="25">0 0 0 0</frame>
+			<frame time="25">0 0 0 0</frame>
+			
+		</sprite>
+		<sprite origin="12 13" looping="false" texture="./conflagration.png" material="effects/effects.mats:fire"
+		
+			angle="rand(u + i) * 2 * pi"
+			>
+			<frame time="25">0 0 25 26</frame>
+			<frame time="25">25 0 25 26</frame>
+			<frame time="25">50 0 25 26</frame>
+			<frame time="25">75 0 25 26</frame>
+			<frame time="25">100 0 25 26</frame>
+			<frame time="25">0 26 25 26</frame>
+			<frame time="25">25 26 25 26</frame>
+			<frame time="25">50 26 25 26</frame>
+			
+		</sprite>
+		
+		<light pos-x="0" pos-y="0"> 
+			<sprite texture="system/light_concentrated_L.png">
+				<frame time="100">0 0 128 128</frame>
+			</sprite>
+			
+			<length value="100" />
+			<looping value="false" />
+
+			<size value="saturate(sin(t*pi))*32" />
+			
+			<color-r value="1" />
+			<color-g value="0.25" />
+			<color-b value="0" />
+			<color-a value="0" />
+		</light>
+</effect>

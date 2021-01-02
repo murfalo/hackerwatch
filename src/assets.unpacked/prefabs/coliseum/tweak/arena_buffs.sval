@@ -1,0 +1,204 @@
+<svals>
+	%// Temp buffs
+	<dict name="arena_armor">
+		<string name="name">.buff.armor.name</string>
+		<string name="description">.buff.armor.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+		
+		<float name="dmg-taken-mul">0.5</float>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>12 12 12 12</vec4>
+		</array>
+	</dict>
+
+	<dict name="arena_damage">
+		<string name="name">.buff.damage.name</string>
+		<string name="description">.buff.damage.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+		
+		<float name="dmg-mul">2.0</float>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>36 0 12 12</vec4>
+		</array>
+	</dict>
+
+	<dict name="arena_heal">
+		<string name="name">.buff.heal.name</string>
+		<string name="description">.buff.heal.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+		
+		<dict name="tick">
+			<int name="freq">500</int>
+			<dict name="effect">
+				<string name="class">Heal</string>
+				<int name="heal">10</int>
+			</dict>
+		</dict>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>12 0 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="arena_mana">
+		<string name="name">.buff.mana.name</string>
+		<string name="description">.buff.mana.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+		
+		<bool name="free-mana">true</bool>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>24 0 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="arena_move_speed">
+		<string name="name">.buff.movespeed.name</string>
+		<string name="description">.buff.movespeed.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+		
+		<float name="speed-mul">1.5</float>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>36 36 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="arena_attack_speed">
+		<string name="name">.buff.attackspeed.name</string>
+		<string name="description">.buff.attackspeed.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Speed</string>
+			<float name="attack-mul">1.5</float>
+		</dict>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>12 36 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="arena_luck">
+		<string name="name">.buff.luck.name</string>
+		<string name="description">.buff.luck.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Luck</string>
+			<float name="add">5</float>
+		</dict>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>48 36 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="arena_sundering">
+		<string name="name">.buff.sundering.name</string>
+		<string name="description">.buff.sundering.desc</string>
+		<array name="effect-icon">
+			<string>gui/icons_others.png</string>
+			<int>100</int><vec4>24 144 24 24</vec4>
+		</array>
+
+		<int name="duration">30000</int>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::ArmorPierce</string>
+			<float name="resistance">0.5</float>
+			<float name="armor">0.5</float>
+		</dict>
+		
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>0 60 12 12</vec4>
+		</array>
+	</dict>
+	
+	%// Immortality
+	<dict name="arena_player_immortality">
+		<int name="duration">30000</int>
+		
+		<float name="dmg-taken-mul">0.0</float>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::UnlethalDamage</string>
+		</dict>
+	</dict>
+	
+	
+	%// Enemies
+	<dict name="arena_enemy_move_speed">
+		<array name="tags">
+			<string>arena_speed</string>
+		</array>
+	
+		<bool name="debuff">false</bool>
+		<int name="duration">2000</int>
+
+		<float name="set-speed">4</float>
+		<!-- <float name="speed-mul">1.5</float> -->
+	</dict>
+	
+	
+	%// Spectacular
+	<dict name="you-move-you-die">
+		<int name="duration">250</int>
+		
+		<dict name="move">
+			<int name="freq">1</int>
+			<dict name="effect">
+				<string name="class">Damage</string>
+
+				<int name="magical">9999</int>
+
+				<bool name="true-strike">true</bool>
+			</dict>
+		</dict>
+	</dict>
+</svals>

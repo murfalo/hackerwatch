@@ -1,0 +1,123 @@
+<dict>
+	<string name="name">.skills.paladin.lay-on-hands</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 0 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">8000</int>
+			<int name="castpoint">0</int>
+
+			<string name="fx">players/paladin/lay_on_hands.effect</string>
+			<string name="snd">event:/player/paladin/heal</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="mana-cost">30</int>
+			
+			<int name="min-radius">48</int>
+			<int name="radius">48</int>
+			
+			<float name="self-dmg">1</float>
+			<float name="team-dmg">1</float>
+			<float name="enemy-dmg">0</float>
+			
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:lay-on-hands-1</string>
+			</dict>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">8000</int>
+			<int name="castpoint">0</int>
+
+			<string name="fx">players/paladin/lay_on_hands.effect</string>
+			<string name="snd">event:/player/paladin/heal</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="mana-cost">40</int>
+			
+			<int name="min-radius">48</int>
+			<int name="radius">48</int>
+			
+			<float name="self-dmg">1</float>
+			<float name="team-dmg">1</float>
+			<float name="enemy-dmg">0</float>
+			
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:lay-on-hands-2</string>
+			</dict>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">8000</int>
+			<int name="castpoint">0</int>
+
+			<string name="fx">players/paladin/lay_on_hands.effect</string>
+			<string name="snd">event:/player/paladin/heal</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="mana-cost">50</int>
+			
+			<int name="min-radius">48</int>
+			<int name="radius">48</int>
+			
+			<float name="self-dmg">1</float>
+			<float name="team-dmg">1</float>
+			<float name="enemy-dmg">0</float>
+			
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:lay-on-hands-3</string>
+			</dict>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::Explode</string>
+			
+			<int name="cooldown">8000</int>
+			<int name="castpoint">0</int>
+
+			<string name="fx">players/paladin/lay_on_hands.effect</string>
+			<string name="snd">event:/player/paladin/heal</string>
+			<string name="anim">cast 8</string>
+			<float name="speed-mul">1</float>
+			<bool name="blocking">false</bool>
+			
+			<int name="mana-cost">60</int>
+			
+			<int name="min-radius">48</int>
+			<int name="radius">48</int>
+			
+			<float name="self-dmg">1</float>
+			<float name="team-dmg">1</float>
+			<float name="enemy-dmg">0</float>
+			
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">players/buffs.sval:lay-on-hands-4</string>
+			</dict>
+		</dict>
+	</array>
+</dict>

@@ -1,0 +1,286 @@
+<unit slot="doodad">
+	<scenes green="green" yellow="yellow" red="red" off="off">
+		<scene name="shared">
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" offset="-.5 -2" radius="6" />			
+			</collision>
+		</scene>
+		<scene name="green" trigger-snd="event:/misc/torch" >
+			<scene src="shared"/>
+			<sprite looping="false" origin="7 8" ulayer="2" texture="./lamp_brazier_green.png" material="system/default.mats:proj-prop">
+				<frame time="350">0 13 13 12</frame>
+			</sprite>
+			<sprite looping="false" ulayer="3" origin="4 20" texture="./puzzle_lamp_flare.png" material="system/default.mats:bright-noxray">
+				<frame time="80">0 40 7 20</frame>
+				<frame time="80">7 40 7 20</frame>
+				<frame time="80">14 40 7 20</frame>
+				<frame time="80">21 40 7 20</frame>
+				<frame time="80">0 0 0 0</frame>
+			</sprite>
+			<sprite ulayer="3" origin="4 13" texture="./lamp_brazier_green.png" material="system/default.mats:bright-noxray">
+				<frame time="120">0 0 7 13</frame>
+				<frame time="120">7 0 7 13</frame>
+				<frame time="120">14 0 7 13</frame>
+				<frame time="120">21 0 7 13</frame>
+			</sprite>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="120" />
+				</sizes>
+				<colors>
+					<color value="108 255 9 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="34 85 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="22" />
+				</sizes>
+				<colors>
+					<color value="25 56 0 5" />
+					<color value="20 33 0 0" />
+				</colors>
+			</light>				
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="12" />
+				</sizes>
+				<colors>
+					<color value="45 104 0 0" />
+				</colors>
+			</light>
+		</scene>
+		<scene name="yellow" trigger-snd="event:/misc/torch" >
+			<scene src="shared"/>
+			<sprite looping="false" ulayer="3" origin="4 20" texture="./puzzle_lamp_flare.png" material="system/default.mats:bright-noxray">
+				<frame time="80">0 20 7 20</frame>
+				<frame time="80">7 20 7 20</frame>
+				<frame time="80">14 20 7 20</frame>
+				<frame time="80">21 20 7 20</frame>
+				<frame time="80">0 0 0 0</frame>
+			</sprite>
+			<sprite looping="false" origin="7 8" ulayer="2" texture="./lamp_brazier_yellow.png" material="system/default.mats:proj-prop">
+				<frame time="350">0 13 13 12</frame>
+			</sprite>
+			<sprite ulayer="3" origin="4 13" texture="./lamp_brazier_yellow.png" material="system/default.mats:bright-noxray">
+				<frame time="120">0 0 7 13</frame>
+				<frame time="120">7 0 7 13</frame>
+				<frame time="120">14 0 7 13</frame>
+				<frame time="120">21 0 7 13</frame>
+			</sprite>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="120" />
+				</sizes>
+				<colors>
+					<color value="255 201 9 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="85 67 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="22" />
+				</sizes>
+				<colors>
+					<color value="56 41 0 5" />
+					<color value="33 19 0 0" />
+				</colors>
+			</light>				
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="12" />
+				</sizes>
+				<colors>
+					<color value="104 78 0 0" />
+				</colors>
+			</light>			
+		</scene>
+		
+		<scene name="red">		
+			<scene src="shared"/>		
+			<sprite looping="false" ulayer="3" origin="4 20" texture="./puzzle_lamp_flare.png" material="system/default.mats:bright-noxray">
+				<frame time="80">0 0 7 20</frame>
+				<frame time="80">7 0 7 20</frame>
+				<frame time="80">14 0 7 20</frame>
+				<frame time="80">21 0 7 20</frame>
+				<frame time="80">0 0 0 0</frame>
+			</sprite>
+			<sprite looping="false" origin="7 8" ulayer="2" texture="./lamp_brazier_red.png" material="system/default.mats:proj-prop">
+				<frame time="350">0 13 13 12</frame>
+			</sprite>
+			<sprite ulayer="3" origin="4 13" texture="./lamp_brazier_red.png" material="system/default.mats:bright-noxray">
+				<frame time="120">0 0 7 13</frame>
+				<frame time="120">7 0 7 13</frame>
+				<frame time="120">14 0 7 13</frame>
+				<frame time="120">21 0 7 13</frame>
+			</sprite>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="true" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="120" />
+				</sizes>
+				<colors>
+					<color value="255 75 25 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="90 20 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="22" />
+				</sizes>
+				<colors>
+					<color value="60 10 0 5" />
+					<color value="35 0 0 0" />
+				</colors>
+			</light>				
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="12" />
+				</sizes>
+				<colors>
+					<color value="110 20 0 0" />
+				</colors>
+			</light>				
+		</scene>				
+		<scene name="off">		
+			<scene src="shared"/>		
+			<sprite looping="false" origin="7 8" ulayer="2" texture="./lamp_brazier_red.png" material="system/default.mats:proj-prop">
+				<frame time="350">0 13 13 12</frame>
+			</sprite>	
+		</scene>		
+	</scenes>
+</unit>

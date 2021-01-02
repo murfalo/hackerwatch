@@ -1,0 +1,16 @@
+<unit slot="doodad" layer="-39">
+	<scenes default="1">
+	<scene name="shared">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="0 0 8 4" />
+			<collision static="true">
+				<rect>0 0 32 16</rect>
+			</collision>
+			<sprite origin="0 -11" texture="./base.png" material="system/default.mats:floor">
+				<frame>0 43 32 5</frame>
+			</sprite>
+		</scene>		
+		<scene name="1">
+			<scene src="shared" />			
+		</scene>			
+	</scenes>
+</unit>

@@ -1,0 +1,58 @@
+<unit layer="-5">
+	<behavior class="BombBehavior">
+		<string name="explode-sound">event:/enemy/boss_genie/bomb-explode</string>
+		<string name="spawn-sound">event:/enemy/boss_genie/bomb-spawn</string>
+		<int name="delay-random">0</int>
+		<int name="delay">1000</int>
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">actors/pop/bosses/djinn/riftbomb_explosion.effect</string>
+				<int name="radius">28</int>
+				<float name="dist-scaling">1000</float>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Decimate</string>
+						<float name="amount">0.5</float>
+					</dict>
+				</array>
+			</dict>	
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<array name="units">
+					<int>100</int><string>actors/pop/bosses/djinn/spawner_sent.unit</string>
+				</array>
+				<bool name="safe-spawn">true</bool>
+			</dict>
+		</array>
+	</behavior>
+	<scenes start="visible">
+		<scene name="visible">
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="10" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="160" />
+				</sizes>
+				<colors>
+					<color value="175 0 255 0" />
+				</colors>
+			</light>
+			
+			<!-- <effect delay="0" pos="0 0" src="actors/pop/bosses/djinn/djinn_spin_rift.effect" /> -->
+			<effect delay="0" pos="0 0" src="actors/pop/bosses/djinn/rift_puddle.effect" />
+			<effect delay="0" pos="0 0" src="actors/pop/bosses/djinn/rift_ring.effect" />
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,44 @@
+<effect looping="true">
+	<param name="radius" default="3" />
+
+	
+	<sprite origin="0 0" looping="true" texture="./artifacts.png" material="system/default.mats:glow-both-bright"
+		num-sprites="1"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5) - (cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5))*pow(it,0.3)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -10 * sin(it*pi/2) - 2"
+		
+		color-r="0.5"
+		color-g="0.5"
+		color-b="0.8"
+        color-a="saturate(1 - it)"
+	>	
+        <frame time="2000">26 0 1 1</frame>
+	</sprite>	
+	<sprite origin="0 0" looping="true" texture="./artifacts.png" material="system/default.mats:bright-noxray"
+		num-sprites="1"
+
+		pos-x="cos(rand(u+433*i)*2*pi) * radius * pow(rand(u+2707*i),0.5) - (cos(rand(u+433*i)*2*pi) * radius * pow(rand(u+2707*i),0.5))*pow(it,0.3)"
+        pos-y="sin(rand(u+433*i)*2*pi) * radius * pow(rand(u+2707*i),0.5)  -12 * sin(it*pi/2) - 2"
+		
+		color-r="0.5"
+		color-g="0.8"
+		color-b="0.8"
+		color-a="saturate(1 - pow(it,2)"
+	>
+		<frame time="2000">26 0 1 1</frame>
+	</sprite>
+	<sprite origin="0 0" looping="true" texture="./artifacts.png" material="system/default.mats:bright-noxray"
+		num-sprites="2"
+
+		pos-x="cos((it*2.4)*pi*3-0.6) * radius * saturate((1-(it*2.4)/2))-1"
+		pos-y="sin((it*2.4)*pi*3-0.6) * radius * saturate((1-(it*2.4)/2)) - (it*2.4)*6*rand(i)- 5"
+		
+		color-r="0.5"
+		color-g="0.8"
+		color-b="0.8"
+		color-a="saturate(1 - pow(it,2)"
+	>
+		<frame time="2000">26 0 1 1</frame>
+	</sprite>
+</effect>

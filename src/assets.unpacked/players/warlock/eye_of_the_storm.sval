@@ -1,0 +1,65 @@
+<dict>
+	<string name="name">.skills.warlock.eye-of-the-storm</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 144 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::DropUnitWarlock</string>
+
+			<int name="cooldown">12000</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">100</int>
+
+			<string name="unit">players/warlock/storm_1.unit</string>
+			<int name="max-count">1</int>
+
+			<string name="anim">cast 8</string>
+			<string name="fx">effects/players/slash_240.effect</string>
+			<string name="snd">event:/player/warlock/storm-hit</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::DropUnitWarlock</string>
+
+			<int name="cooldown">12000</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">140</int>
+
+			<string name="unit">players/warlock/storm_2.unit</string>
+			<int name="max-count">1</int>
+
+			<string name="anim">cast 8</string>
+			<string name="fx">effects/players/slash_240.effect</string>
+			<string name="snd">event:/player/warlock/storm-hit</string>
+			<float name="speed-mul">1</float>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::DropUnitWarlock</string>
+
+			<int name="cooldown">12000</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">180</int>
+
+			<string name="unit">players/warlock/storm_3.unit</string>
+			<int name="max-count">1</int>
+
+			<string name="anim">cast 8</string>
+			<string name="fx">effects/players/slash_240.effect</string>
+			<string name="snd">event:/player/warlock/storm-hit</string>
+			<float name="speed-mul">1</float>
+		</dict>
+	</array>
+</dict>

@@ -1,0 +1,453 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="doodads/walls/temple_common/v.unit"><vec2>-8 -32</vec2><int>3</int></array>
+		<array name="doodads/walls/temple_common/x_s.unit">
+			<array>
+				<vec2>-8 32</vec2>
+				<int>2</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_common/x_n.unit">
+			<array>
+				<vec2>-8 -48</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_common/v_16.unit">
+			<vec2>-8 0</vec2>
+			<int>4</int>
+			<array>
+				<vec2>-8 -48</vec2>
+				<int>5</int>
+				<dict>
+					<int name="layer">1</int>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyScripts</string>
+			<int>6</int>
+			<vec3>192 -64 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ClearScripts</string>
+			<dict>
+				<array name="Units"><int>7</int><int>8</int></array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>7</int>
+			<vec3>192 0 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>open_door</string>
+			<dict>
+				<string name="EventName">open_door</string>
+			</dict>
+			<array><int>13</int><int>0</int><int>8</int><int>0</int><int>6</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleCollision</string>
+			<int>8</int>
+			<vec3>-96 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">1</int>
+				<array name="Units"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleCollision</string>
+			<int>9</int>
+			<vec3>-96 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Units"><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>10</int>
+			<vec3>32 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_door</string>
+			<dict>
+				<string name="EventName">great_threat_door</string>
+			</dict>
+			<array><int>8</int><int>0</int><int>24</int><int>0</int><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>11</int>
+			<vec3>-32 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>great_threat_door</string>
+			<dict>
+				<string name="EventName">great_threat_door</string>
+			</dict>
+			<array><int>8</int><int>0</int><int>14</int><int>0</int><int>31</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>12</int>
+			<vec3>-160 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat_done</string>
+			<dict>
+				<string name="EventName">great_threat_done</string>
+			</dict>
+			<array><int>16</int><int>0</int><int>9</int><int>0</int><int>32</int><int>0</int><int>25</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>13</int>
+			<vec3>192 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>12</int><int>11</int><int>10</int><int>9</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>14</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>collision</string>
+			<dict>
+				<string name="UnitType">doodads/special/door_mt_teleport_v_collision.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>15</int>
+			<vec3>-160 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat</string>
+			<dict>
+				<string name="EventName">great_threat</string>
+			</dict>
+			<array><int>8</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>16</int>
+			<vec3>-224 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>14</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>17</int>
+			<vec3>-24 4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>18</int>
+			<vec3>-24 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>24 -8 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>37</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>20</int>
+			<vec3>24 4 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>36</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>21</int>
+			<vec3>24 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>35</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>22</int>
+			<vec3>24 -4 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>34</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>23</int>
+			<vec3>24 8 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>24</int>
+			<vec3>96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>19</int><int>20</int><int>21</int><int>22</int><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>25</int>
+			<vec3>64 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>19</int><int>20</int><int>21</int><int>22</int><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>26</int>
+			<vec3>-24 8 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>27</int>
+			<vec3>-24 4 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>28</int>
+			<vec3>-24 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>40</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>29</int>
+			<vec3>-24 -4 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>39</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>30</int>
+			<vec3>-24 -8 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gt_tele</string>
+			<array><int>38</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>31</int>
+			<vec3>-64 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>26</int><int>27</int><int>28</int><int>29</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>32</int>
+			<vec3>-96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>26</int><int>27</int><int>28</int><int>29</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>33</int>
+			<vec3>24 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>34</int>
+			<vec3>24 -4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>35</int>
+			<vec3>24 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>36</int>
+			<vec3>24 4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>37</int>
+			<vec3>24 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>38</int>
+			<vec3>-24 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>39</int>
+			<vec3>-24 -4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>40</int>
+			<vec3>-24 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">effects/animations/player_teleport_mt.effect</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>41</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat_open_door</string>
+			<dict>
+				<string name="EventName">great_threat_open_door</string>
+			</dict>
+			<array><int>8</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

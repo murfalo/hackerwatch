@@ -1,0 +1,326 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="actors/pop/spawners/spawner_spider.unit"><vec2>0 0</vec2><int>1</int></array>
+	</dict>
+	<array name="scripts">
+		<array><string>ScriptLink</string><int>2</int><vec3>192 -96 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>3</int>
+			<vec3>96 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+			</dict>
+			<array><int>4</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>4</int>
+			<vec3>96 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>14</int><int>19</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>5</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="NumToExecute">3</int>
+				<array name="ToExecute"><int>7</int><int>9</int><int>11</int><int>13</int><int>2</int><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>6</int>
+			<vec3>-22 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_1</string>
+			<dict>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/pop/spider_1.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>7</int>
+			<vec3>-128 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_1</string>
+			<dict>
+				<int name="TimeMax">200</int>
+				<array name="LinkScripts"><int>6</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>8</int>
+			<vec3>19 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_1</string>
+			<dict>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/pop/spider_1.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>9</int>
+			<vec3>-64 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_1</string>
+			<dict>
+				<int name="TimeMax">200</int>
+				<array name="LinkScripts"><int>8</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>10</int>
+			<vec3>5 22 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_1</string>
+			<dict>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/pop/spider_1.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>11</int>
+			<vec3>0 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_1</string>
+			<dict>
+				<int name="TimeMax">200</int>
+				<array name="LinkScripts"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>12</int>
+			<vec3>-11 20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_2</string>
+			<dict>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/pop/spider_2.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>13</int>
+			<vec3>64 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_2</string>
+			<dict>
+				<int name="TimeMax">200</int>
+				<array name="LinkScripts"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>14</int>
+			<vec3>0 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>great_threat</string>
+			<dict>
+				<string name="EventName">great_threat</string>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>15</int>
+			<vec3>-128 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>19</int></array>
+			</dict>
+			<array><int>17</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>16</int>
+			<vec3>-128 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>19</int></array>
+			</dict>
+			<array><int>15</int><int>15000</int><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>17</int>
+			<vec3>-64 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>19</int></array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>18</int>
+			<vec3>-64 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>19</int></array>
+				<int name="TriggerTimes">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>19</int>
+			<vec3>0 -224 0</vec3>
+			<bool>f</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">250</int>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>20</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>razed</string>
+			<dict>
+				<string name="UnitType">actors/pop/spawners/spawner_spider_razed.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>21</int>
+			<vec3>192 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_no_spawners</string>
+			<dict>
+				<string name="Flag">fountain_no_spawners</string>
+				<array name="OnTrue"><int>4</int><int>22</int><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>22</int>
+			<vec3>192 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>23</int>
+			<vec3>128 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>fountain_more_elites</string>
+			<dict>
+				<string name="Flag">fountain_more_elites</string>
+				<array name="OnTrue"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>24</int>
+			<vec3>128 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>26</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>25</int>
+			<vec3>17 17 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_2</string>
+			<dict>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/pop/spider_2.unit</string>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>26</int>
+			<vec3>128 -96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spider_2</string>
+			<dict>
+				<int name="TimeMax">200</int>
+				<array name="LinkScripts"><int>25</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

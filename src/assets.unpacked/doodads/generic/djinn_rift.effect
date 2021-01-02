@@ -1,0 +1,75 @@
+<effect looping="true" layer="0">
+	<data>
+		<string name="sound">event:/misc/rift-open</string>
+	</data>		
+	<sprite looping="true" origin="17.5 17.5" texture="./djinn_rift.png" material="system/default.mats:glow-both-bright"
+		angle="(t+l)*pi*1.15"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		pos-x="0"
+		pos-y="-18">
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+		<frame time="200">0 35 35 35</frame>
+		<frame time="200">0 70 35 35</frame>
+	</sprite>		
+	
+	<sprite looping="true" origin="18 18" texture="./djinn_rift.png" material="system/default.mats:glow-both-bright"
+		angle="(t+l)*pi*0.5"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		pos-x="0"
+		pos-y="-18">
+		<frame time="5000">70 28 36 36</frame>
+	</sprite>		
+
+	<sprite looping="true" origin="14 14" texture="./djinn_rift.png" material="system/default.mats:glow-both-bright"
+		angle="(t+l)*pi"
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+		pos-x="0"
+		pos-y="-18">
+		<frame time="5000">70 0 28 28</frame>
+	</sprite>		
+	
+	<light pos-x="0" pos-y="-18">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="2600" />
+		<cast-shadows value="false" />
+
+		<size value="70" />
+		
+		<color-r value="100/255*40*saturate(sin(t*pi))" />
+		<color-g value="40/255*5*saturate(sin(t*pi))" />
+		<color-b value="255/255*40*saturate(sin(t*pi))" />
+		<color-a value="0" />
+	</light>	
+</effect>

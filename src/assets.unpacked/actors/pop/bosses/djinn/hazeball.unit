@@ -1,0 +1,33 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">2</float>
+		<int name="ttl">2000</int>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.5</float>		
+
+		<array name="effects">
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:snowflake_resistance</string>
+			</dict>			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:snowflake_armor</string>
+			</dict>		
+		</array>	
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle offset="0 0" radius="3" projectile="true" />
+			</collision>	
+			<effect src="./skull_projectile_trail.effect" />			
+		</scene>				
+	</scenes>
+</unit>

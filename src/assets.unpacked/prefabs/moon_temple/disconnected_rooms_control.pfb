@@ -1,0 +1,385 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>LogText</string>
+			<int>1</int>
+			<vec3>-288 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">normal_room_teleport</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>2</int>
+			<vec3>-160 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>add</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>5</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>3</int>
+			<vec3>-288 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">disconnected_room_add</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>4</int>
+			<vec3>-288 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">disconnected_room_sub</string>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>5</int><vec3>-64 128 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>disconnected rooms</string></array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>6</int>
+			<vec3>-160 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>sub</string>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>5</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>28</int><int>0</int><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>7</int>
+			<vec3>-256 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnected_room_sub</string>
+			<dict>
+				<string name="EventName">disconnected_room_sub</string>
+			</dict>
+			<array><int>6</int><int>0</int><int>4</int><int>0</int><int>24</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>8</int>
+			<vec3>-256 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnected_room_add</string>
+			<dict>
+				<string name="EventName">disconnected_room_add</string>
+			</dict>
+			<array><int>2</int><int>0</int><int>3</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>9</int>
+			<vec3>96 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.1</string>
+			<dict>
+				<float name="ChanceToExecute">0.1</float>
+				<array name="ToExecute"><int>13</int></array>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>10</int><vec3>64 -96 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>room cleared count</string></array>
+		<array>
+			<string>CheckVariables</string>
+			<int>11</int>
+			<vec3>0 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>x &gt; 2 ?</string>
+			<dict>
+				<int name="Function">2</int>
+				<int name="Value">2</int>
+				<array name="OnTrue"><int>9</int></array>
+				<array name="Variable"><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>12</int>
+			<vec3>-64 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnected rooms &gt; 0 ?</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variable"><int>5</int></array>
+				<array name="OnTrue"><int>19</int></array>
+				<array name="OnFalse"><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>13</int>
+			<vec3>224 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disconnected_room_teleport</string>
+			<dict>
+				<string name="EventName">disconnected_room_teleport</string>
+			</dict>
+			<array><int>20</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>14</int>
+			<vec3>224 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>room_count</string>
+			<dict>
+				<string name="EventName">room_count</string>
+			</dict>
+			<array><int>25</int><int>0</int><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>15</int>
+			<vec3>96 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.3</string>
+			<dict>
+				<float name="ChanceToExecute">0.3</float>
+				<array name="ToExecute"><int>13</int></array>
+			</dict>
+			<array><int>23</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>16</int>
+			<vec3>0 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>x &gt; 5 ?</string>
+			<dict>
+				<int name="Function">2</int>
+				<int name="Value">5</int>
+				<array name="OnTrue"><int>15</int></array>
+				<array name="Variable"><int>10</int></array>
+				<array name="OnFalse"><int>11</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>17</int>
+			<vec3>96 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>0.5</string>
+			<dict>
+				<array name="ToExecute"><int>13</int></array>
+			</dict>
+			<array><int>22</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>18</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>x &gt; 9 ?</string>
+			<dict>
+				<int name="Function">2</int>
+				<int name="Value">9</int>
+				<array name="OnTrue"><int>17</int></array>
+				<array name="Variable"><int>10</int></array>
+				<array name="OnFalse"><int>16</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>19</int>
+			<vec3>-64 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>20</int>
+			<vec3>256 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">disconnected_room_teleport</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>21</int>
+			<vec3>128 -320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">disconnected 0.1</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>22</int>
+			<vec3>128 -192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">disconnected 0.5</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>23</int>
+			<vec3>128 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">disconnected 0.3</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>24</int>
+			<vec3>-256 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>normal_room_teleport</string>
+			<dict>
+				<string name="EventName">normal_room_teleport</string>
+			</dict>
+			<array><int>1</int><int>0</int><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>25</int>
+			<vec3>128 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>add</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>10</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>26</int>
+			<vec3>256 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">room_count</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>27</int>
+			<vec3>-128 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">no disconnected rooms</string>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>28</int>
+			<vec3>64 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>-5</string>
+			<dict>
+				<int name="Function">3</int>
+				<array name="Variables"><int>10</int></array>
+				<int name="Value">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>29</int>
+			<vec3>-64 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnected_room_setup off</string>
+			<dict>
+				<string name="Flag">disconnected_room_setup</string>
+			</dict>
+			<array><int>31</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>30</int>
+			<vec3>-256 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnected_exit_setup off</string>
+			<dict>
+				<string name="Flag">disconnected_exit_setup</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>31</int>
+			<vec3>0 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>13</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

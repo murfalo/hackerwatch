@@ -1,0 +1,24 @@
+<unit slot="doodad">
+	<scenes default="default">
+		<scene name="default">
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="81 10 10 10" />
+			<minimap_sprite origin="2 -4" texture="gui/minimap.png" frame="84 18 4 2" />
+			<collision>
+				<rect>-8 16 16 9</rect>
+				<circle radius="20"/>
+			</collision>
+			<shadow>
+				<sprite ulayer="0" origin="6 23" texture="./dungeonvendor_moontemple_igloo.png" material="system/default.mats:default-noxray">
+					<frame time="100">40 0 29 48</frame>
+				</sprite>
+			</shadow>
+			<sprite ulayer="0" origin="20 21" texture="./dungeonvendor_moontemple_igloo.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 0 40 46</frame>
+			</sprite>
+			<sprite layer="-10" origin="26 26" texture="./dungeonvendor_moontemple_igloo.png" material="system/default.mats:floor">
+				<frame time="100">69 0 52 52</frame>
+			</sprite>
+
+		</scene>
+	</scenes>
+</unit>

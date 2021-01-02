@@ -1,0 +1,50 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="prefabs/moon_temple/dummy/dummy_chest.unit"><vec2>0 0</vec2><int>2</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyScripts</string>
+			<int>3</int>
+			<vec3>64 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>4</int><int>5</int></array>
+				<bool name="DeleteSelf">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>4</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>room_setup</string>
+			<dict>
+				<string name="EventName">room_setup</string>
+			</dict>
+			<array><int>5</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>5</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>chest</string>
+			<dict>
+				<string name="Prefab">prefabs/moon_temple/pickups/chest_common.pfb</string>
+			</dict>
+			<array><int>3</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

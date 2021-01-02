@@ -1,0 +1,33 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">gladiator</string>
+	<string name="name">.skills.gladiator.net</string>
+	<string name="description">.skills.gladiator.net.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 168 24 24</vec4>
+	</array>
+	
+	<int name="cost">14</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ChargeUnit</string>
+		<string name="anim">channeling 8</string>
+		<string name="snd-hold">event:/player/gladiator/net_charge</string>
+		<string name="fx">players/gladiator/net_aim.effect</string>
+		<string name="fx-charged">players/gladiator/net_aim_attack.effect</string>
+
+		<int name="cooldown">200</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">false</bool>
+		<float name="speed-mul">1</float>
+
+		<int name="mana-cost">30</int>
+		
+		<int name="hold-frame">30</int>
+		<int name="charge-max">700</int>
+		<float name="dist">4</float>
+		<string name="unit">players/gladiator/mercenary/net_merc.unit</string>
+	</dict>
+</dict>

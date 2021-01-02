@@ -1,0 +1,10 @@
+<effect looping="true" bounds="230 230">
+	<sprite looping="true" origin="6 6" texture="./skull_projectile.png" material="system/default.mats:default-noxray"
+		scale-x="1+sin((t+l)*2)*0.1"
+		scale-y="1+sin((t+l)*2)*0.1"
+		pos-x="0"
+		pos-y="0"
+		angle="(t+l)*pi*0.25+pi*rand(u*13)">
+		<frame time="250">72 1 12 12</frame>
+	</sprite>
+</effect>

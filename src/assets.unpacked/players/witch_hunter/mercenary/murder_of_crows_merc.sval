@@ -1,0 +1,44 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">witch_hunter</string>
+	<string name="name">.skills.witch_hunter.murder-of-crows</string>
+	<string name="description">.skills.witch_hunter.murder-of-crows.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>48 192 24 24</vec4>
+	</array>
+
+	<int name="cost">12</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PassiveSkill</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hurt</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">7000</int>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>12 60 12 12</vec4>
+				</array>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Nova</string>
+						<int name="projectiles">11</int>
+						<float name="proj-dist">6</float>
+						<string name="projectile">players/witch_hunter/crow_projectile.unit</string>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/player/witch_hunter/crows</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+</dict>

@@ -1,0 +1,72 @@
+<effect looping="true">
+	
+	<sprite origin="24 24" ulayer="1" looping="true" texture="./giant_wisp.png" material="system/default.mats:glow-both-bright"
+	
+	color-a="0.25 + 0.25 * sin(t * pi)"
+	scale-x="1 + sin(t*pi*2)*0.05"
+	scale-y="1 + cos(t*pi*2)*0.05"
+	>
+		<frame time="525">96 48 48 48</frame>
+	</sprite>
+
+	<sprite origin="24 24" looping="true" texture="./giant_wisp.png" material="system/default.mats:actor"
+	
+	
+	>
+		<frame time="60">0 256 48 48</frame>
+		<frame time="60">48 256 48 48</frame>
+		<frame time="60">96 256 48 48</frame>
+		<frame time="60">144 256 48 48</frame>
+		<frame time="60">192 256 48 48</frame>
+		<frame time="60">0 304 48 48</frame>
+	</sprite>
+	
+	<!-- 
+	<sprite origin="4 2" looping="true" texture="./giant_wisp.png" material="system/default.mats:actor"
+	num-sprites="25"
+	pos-x="cos(pi * 2) * 22 * sin(it*pi*2) + sin((it + rand(u+i+23) * pi * 2)"
+	pos-y="cos(pi * 2) * 22 * cos(it*pi*2) + cos((it + rand(u+i+101) * pi * 2)"
+	angle="pi*-2*it + pi/2"
+	
+	color-a="1-it"
+	
+	>
+		<frame time="1500">180 57 8 4</frame>
+	</sprite> -->
+	
+	
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="42" />
+		<length value="70" />
+		<color-r value="4" />
+		<color-g value="0" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>
+	
+	<light pos="0 15"> 
+		<sprite texture="system/light_L.png">
+			<frame time="1100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />		
+		<size value="(cos(pi * 2 * 0.1 * (t+l) + pi)/2 + 0.5) * 50" />
+		<length value="70" />
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>	 
+</effect>

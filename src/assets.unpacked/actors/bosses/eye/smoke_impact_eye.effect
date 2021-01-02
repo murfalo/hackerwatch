@@ -1,0 +1,29 @@
+<effect>
+%// Shockwave
+<!--	
+	<sprite looping="false" origin="64 64" texture="effects/explosions/dismap_shockwave.png" material="effects/effects.mats:displace" 
+		color-a="(1 - pow(t, 1)) * 0.15"
+		scale-x="1 * t"
+		scale-y="1 * t"
+		>
+		<frame time="200" x="0" y="0" w="128" h="128" />
+	</sprite>-->
+
+	%//Dust Explosion
+	<sprite looping="false" ulayer="1" origin="41 50" texture="actors/bosses/eye/smoke_impact_eye.png" material="effects/effects.mats:lit">
+		<frame time="80"> 0 0 82 91</frame>
+		<frame time="80"> 82 0 82 91</frame>
+		<frame time="80"> 164 0 82 91</frame>
+		<frame time="80"> 246 0 82 91</frame>
+		<frame time="80"> 328 0 82 91</frame>
+		<frame time="80"> 410 0 82 91</frame>
+		<frame time="80"> 0 91 82 91</frame>
+		<frame time="80"> 82 91 82 91</frame>
+		<frame time="80"> 164 91 82 91</frame>
+		<frame time="80"> 246 91 82 91</frame>
+		<frame time="80"> 328 91 82 91</frame>
+		<frame time="80"> 410 91 82 91</frame>
+	</sprite>
+	
+	
+</effect>

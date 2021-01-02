@@ -1,0 +1,35 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">5.5</float>
+		<int name="ttl">900</int>
+		
+		<int name="penetration">4</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">15</int>
+			</dict>
+			
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:freezing</string>
+			</dict>
+			
+		</array>
+				
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>
+			<effect src="./frost_breath.effect" />
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,146 @@
+<loader>MercenaryUpgradeDef::LoadMultiple</loader>
+<array>
+	<dict>
+		<string name="id">stars</string>
+		<string name="name">.mercenarytrainer.skillpoints.name</string>
+		<string name="description">.mercenarytrainer.skillpoints.desc?num=+3</string>
+
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>13 24 13 14</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Skillpoints</string>
+			<int name="num">3</int>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">attack-power</string>
+		<string name="name">.mercenarytrainer.attackpower.name</string>
+		<string name="description">.mercenarytrainer.attackpower.desc?num=+5</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>0 38 17 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::Damage</string>
+			<int name="attack-power">5</int>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">skill-power</string>
+		<string name="name">.mercenarytrainer.skillpower.name</string>
+		<string name="description">.mercenarytrainer.skillpower.desc?num=+5</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>29 38 16 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Damage</string>
+			<int name="spell-power">5</int>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">armor</string>
+		<string name="name">.mercenarytrainer.armor.name</string>
+		<string name="description">.mercenarytrainer.armor.desc?num=+5</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>73 42 13 13</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Armor</string>
+			<float name="armor">5</float>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">resistance</string>
+		<string name="name">.mercenarytrainer.resistance.name</string>
+		<string name="description">.mercenarytrainer.resistance.desc?num=+5</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>75 29 14 13</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Armor</string>
+			<float name="resistance">5</float>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">health-regen</string>
+		<string name="name">.mercenarytrainer.healthregen.name</string>
+		<string name="description">.mercenarytrainer.healthregen.desc?num=+0.3</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>63 4 14 13</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Regen</string>
+			<float name="health">0.3</float>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">mana-regen</string>
+		<string name="name">.mercenarytrainer.manaregen.name</string>
+		<string name="description">.mercenarytrainer.manaregen.desc?num=+0.4</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>35 24 11 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Regen</string>
+			<float name="mana">0.4</float>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">crit-damage</string>
+		<string name="name">.mercenarytrainer.critdamage.name</string>
+		<string name="description">.mercenarytrainer.critdamage.desc?num=+10</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>193 45 12 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::CriticalMul</string>
+			<float name="mul-add">0.1</float>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="id">skill-crit-damage</string>
+		<string name="name">.mercenarytrainer.skillcritdamage.name</string>
+		<string name="description">.mercenarytrainer.skillcritdamage.desc?num=+10</string>
+		
+		<array name="sprite">
+			<string>gui/icons.png</string>
+			<int>100</int><vec4>205 45 12 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::CriticalMul</string>
+			<float name="spell-mul-add">0.1</float>
+		</dict>
+	</dict>
+</array>

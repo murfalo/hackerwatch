@@ -1,0 +1,55 @@
+<effect looping="false" layer="1"
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<variation>
+		<sprite looping="false" origin="8 8" texture="./trap_fireball_big_hit.png" material="effects/effects.mats:lit"
+		
+			pos-x="0"
+			pos-y="-height"
+		
+			angle="rand(u)*2">
+			
+			<frame time="50">0 0 16 16</frame>
+			<frame time="50">16 0 16 16</frame>
+			<frame time="50">32 0 16 16</frame>
+			<frame time="50">48 0 16 16</frame>
+			<frame time="50">64 0 16 16</frame>
+			<frame time="50">80 0 16 16</frame>
+		</sprite>
+	</variation>
+	<variation>
+		<sprite looping="false" origin="8 8" texture="./trap_fireball_big_hit.png" material="effects/effects.mats:lit"
+		
+			pos-x="0"
+			pos-y="-height"
+		
+			angle="rand(u)*2">
+			
+			<frame time="50">0 16 16 16</frame>
+			<frame time="50">16 16 16 16</frame>
+			<frame time="50">32 16 16 16</frame>
+			<frame time="50">48 16 16 16</frame>
+			<frame time="50">64 16 16 16</frame>
+			<frame time="50">80 16 16 16</frame>
+		</sprite>
+	</variation>
+	
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="200" />
+		<looping value="false" />
+
+		<size value="saturate(sin(t*pi))*80" />
+		
+		<color-r value="2" />
+		<color-g value="0.5" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

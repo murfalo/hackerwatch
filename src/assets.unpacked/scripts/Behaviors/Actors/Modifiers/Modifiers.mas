@@ -1,0 +1,361 @@
+enum ModifierType
+{
+	Vec2Mul,
+	Vec2Add,
+	Vec2SumMul,
+	IVec2Add,
+	IVec3Add,
+	FloatMul,
+	FloatAdd,
+	FloatSumMul,
+	IntAdd,
+	Void,
+	Bool,
+	EffectArray,
+	UInt64Flags
+}
+string g_cModifier = """class Modifier
+{
+	int m_cloned = 0; // for debugging
+
+	void Initialize(SyncVerb verb, uint id, uint modId) {}
+
+	Modifier@ Instance() { return this; }
+
+	float CritChance(bool spell) { return 0; }
+	float EvadeChance() { return 0; }""";
+string g_cModifierList = """class ModifierList : Modifier
+{
+	string m_id;
+	string m_name;
+	array<Modifier@> m_modifiers;
+
+	ModifierList() { }
+	ModifierList(string id) { m_id = id; }
+	ModifierList(array<Modifier@> modifiers)
+	{
+		for (uint i = 0; i < modifiers.length(); i++)
+			Add(modifiers[i]);
+	}""";
+string g_cModifierFilter = """class FilterModifier : Modifier
+{
+	SValue@ m_params;
+
+	Modifiers::SyncVerb m_syncVerb;
+	uint m_syncId;
+
+	FilterModifier(UnitPtr unit, SValue& params)
+	{
+		@m_params = params;
+	}
+
+	void Initialize(SyncVerb verb, uint id, uint modId) override
+	{
+		m_syncVerb = verb;
+		m_syncId = id;
+
+		auto mods = LoadModifiers(UnitPtr(), m_params, "", m_syncVerb, m_syncId, modId << 8);
+		for (uint i = 0; i < mods.length(); i++)
+			Add(mods[i]);
+	}
+
+	bool Filter(PlayerBase@ player, Actor@ enemy = null) { return false; }""";
+string g_cModifierListAdd = "";
+string g_modsListList = "";
+string g_modsConstClear = "";
+
+void AddModifier(string name, array<string> params, ModifierType type)
+{
+	string funcDef = name + "(";
+	string funcCall = name + "(";
+	
+	for (uint i = 0; i < params.length(); i++)
+	{
+		funcDef += params[i] + " p" + i + ((i < params.length() - 1) ? ", " : "");
+		funcCall += "p" + i + ((i < params.length() - 1) ? ", " : "");
+	}
+	
+	funcDef += ")";
+	funcCall += ")";
+
+	string modConst = "m_mods" + name + "Const";
+	string modifiers = "m_mods" + name;
+	g_modsListList += modifiers + ", ";
+	
+	string typeStr, listStr, listStrStart, initVal, combineStr;
+	bool precompConst = false;
+
+	switch(type)
+	{
+	case ModifierType::Vec2Mul:
+		typeStr = "vec2";
+		initVal = "vec2(1, 1)";
+		listStrStart = "vec2 ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret *= "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " *= val";
+		break;
+	case ModifierType::Vec2Add:
+		typeStr = "vec2";
+		initVal = "vec2()";
+		listStrStart = "vec2 ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret += "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " += val";
+		break;
+	case ModifierType::Vec2SumMul:
+		typeStr = "vec2";
+		initVal = "vec2(1, 1)";
+		listStrStart = "vec2 ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret += "+modifiers+"[i]."+funcCall+" - vec2(1,1); } return ret;";
+		combineStr = modConst + " += val - vec2(1,1)";
+		break;
+	case ModifierType::IVec2Add:
+		typeStr = "ivec2";
+		initVal = "ivec2()";
+		listStrStart = "ivec2 ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret += "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " += val";
+		break;
+	case ModifierType::IVec3Add:
+		typeStr = "ivec3";
+		initVal = "ivec3()";
+		listStrStart = "ivec3 ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret += "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " += val";
+		break;
+	case ModifierType::FloatMul:
+		typeStr = "float";
+		initVal = "1";
+		listStrStart = "float ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret *= "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " *= val";
+		break;
+	case ModifierType::FloatAdd:
+		typeStr = "float";
+		initVal = "0";
+		listStrStart = "float ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret += "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " += val";
+		break;
+	case ModifierType::FloatSumMul:
+		typeStr = "float";
+		initVal = "1";
+		listStrStart = "float ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret += "+modifiers+"[i]."+funcCall+" - 1; } return ret;";
+		combineStr = modConst + " += val - 1";
+		break;
+	case ModifierType::IntAdd:
+		typeStr = "int";
+		initVal = "0";
+		listStrStart = "int ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret += "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " += val";
+		break;
+	case ModifierType::Void:
+		typeStr = "void";
+		listStrStart = "";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { "+modifiers+"[i]."+funcCall+"; }";
+		break;
+	case ModifierType::Bool:
+		typeStr = "bool";
+		initVal = "false";
+		listStrStart = "bool ret = false;";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { if ("+modifiers+"[i]."+funcCall+") return true; } return ret;";
+		combineStr = modConst + " = " + modConst + " || val";
+		break;
+	
+	case ModifierType::EffectArray:
+		typeStr = "array<IEffect@>@";
+		initVal = "null";
+		listStrStart = "array<IEffect@> ret;";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { auto arr = "+modifiers+"[i]."+funcCall+"; if (arr !is null && arr.length() > 0) ret.insertAt(ret.length(), arr); } return ret;";
+		break;	
+
+	case ModifierType::UInt64Flags:
+		typeStr = "uint64";
+		initVal = "0";
+		listStrStart = "uint64 ret = "+modConst+";";
+		listStr = "for (uint i = 0; i < "+modifiers+".length(); i++) { ret |= "+modifiers+"[i]."+funcCall+"; } return ret;";
+		combineStr = modConst + " |= val";
+		break;
+		
+	}
+	
+	g_cModifierListAdd += "if (modifier.Has" + name + "()) " + modifiers + ".insertLast(modifier);\n";
+	if (combineStr != "")
+	{
+		string defCall = name + "(";
+		for (uint i = 0; i < params.length(); i++)
+		{
+			if (params[i] == "DamageInfo&")
+				defCall += "DamageInfo()";
+			else if (params[i] == "bool")
+				defCall += "false";
+			else if (params[i].findLast("@") == int(params[i].length()) - 1)
+				defCall += "null";
+			else
+				defCall += "0";
+			
+			defCall += ((i < params.length() - 1) ? ", " : "");
+		}
+		
+		g_cModifierListAdd += "else { auto val = modifier." + defCall + ");\n" + combineStr + ";}\n";
+	}
+	
+	g_cModifier += "bool Has" + name + "() { return false; }\n";
+	g_cModifier += typeStr + " " + funcDef + " { return " + initVal + "; }\n";
+	
+	if (typeStr != "" && combineStr != "")
+	{
+		g_cModifierList += typeStr + " " + modConst + " = " + initVal + ";\n";
+		g_cModifierFilter += typeStr + " " + modConst + " = " + initVal + ";\n";
+		g_modsConstClear += modConst + " = " + initVal + ";\n";
+	}
+	g_cModifierList += "array<Modifier@> " + modifiers + ";\n";
+	g_cModifierList += typeStr + " " + funcDef + " override { " + listStrStart + " " + listStr + " }\n";
+	g_cModifierList += "bool Has" + name + "() override { return true; }\n\n";
+	
+	
+	
+	string filter;
+	
+	if (params.length() >= 1 && params[0] == "PlayerBase@")
+	{
+		if (params.length() >= 2 && params[1] == "Actor@")
+			filter = "if (!Filter(p0, p1))";
+		else
+			filter = "if (!Filter(p0))";
+		
+		if (listStrStart != "")
+			filter += "return "+initVal+";";
+		else
+			filter += "return;";
+	}
+	
+	g_cModifierFilter += "array<Modifier@> " + modifiers + ";\n";
+	g_cModifierFilter += typeStr + " " + funcDef + " override { " + filter + " " + listStrStart + " " + listStr + " }\n\n";
+	g_cModifierFilter += "bool Has" + name + "() override { return true; }\n\n";
+}
+
+void Execute()
+{
+	AddModifier("ArmorAdd", { "PlayerBase@", "Actor@" }, ModifierType::Vec2Add);
+	AddModifier("ArmorMul", { "PlayerBase@", "Actor@" }, ModifierType::Vec2Mul);
+	AddModifier("DamageTakenMul", { "PlayerBase@", "DamageInfo&" }, ModifierType::FloatMul);
+	AddModifier("ManaDamageTakenMul", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("DamageBlock", { "PlayerBase@", "Actor@" }, ModifierType::IVec2Add);
+	AddModifier("DamageBlockMul", { "PlayerBase@", "Actor@" }, ModifierType::Vec2Mul);
+	AddModifier("Evasion", { "PlayerBase@", "Actor@" }, ModifierType::Bool);
+	AddModifier("ProjectileBlock", { "PlayerBase@", "IProjectile@" }, ModifierType::Bool);
+	AddModifier("NonLethalDamage", { "PlayerBase@", "DamageInfo&" }, ModifierType::Bool);
+	AddModifier("DamagePower", { "PlayerBase@", "Actor@" }, ModifierType::IVec2Add);
+	AddModifier("AttackDamageAdd", { "PlayerBase@", "Actor@", "DamageInfo@" }, ModifierType::IVec2Add);
+	AddModifier("SpellDamageAdd", { "PlayerBase@", "Actor@", "DamageInfo@" }, ModifierType::IVec2Add);
+	AddModifier("DamageMul", { "PlayerBase@", "Actor@" }, ModifierType::Vec2SumMul);
+	AddModifier("SpellCostMul", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("Crit", { "PlayerBase@", "Actor@", "bool" }, ModifierType::IntAdd);
+	AddModifier("CritMul", { "PlayerBase@", "Actor@", "bool" }, ModifierType::FloatSumMul);
+	AddModifier("CritMulAdd", { "PlayerBase@", "Actor@", "bool" }, ModifierType::FloatAdd);
+	AddModifier("ArmorIgnore", { "PlayerBase@", "Actor@", "bool" }, ModifierType::Vec2Mul);
+	AddModifier("Lifesteal", { "PlayerBase@", "Actor@", "bool", "int" }, ModifierType::FloatAdd);
+	AddModifier("StatsAdd", { "PlayerBase@" }, ModifierType::IVec2Add);
+	AddModifier("MaxHealthMul", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("MoveSpeedAdd", { "PlayerBase@", "float" }, ModifierType::FloatAdd);
+	AddModifier("MoveSpeedMul", { "PlayerBase@", "float" }, ModifierType::FloatMul);
+	AddModifier("SkillMoveSpeedMul", { "PlayerBase@", "float" }, ModifierType::FloatMul);
+	AddModifier("SkillMoveSpeedClear", { "PlayerBase@", "float" }, ModifierType::Bool);
+	AddModifier("RegenAdd", { "PlayerBase@" }, ModifierType::Vec2Add);
+	AddModifier("RegenMul", { "PlayerBase@" }, ModifierType::Vec2Mul);
+	AddModifier("ExpMul", { "PlayerBase@", "Actor@" }, ModifierType::FloatSumMul);
+	AddModifier("ExpMulAdd", { "PlayerBase@", "Actor@" }, ModifierType::FloatAdd);
+	AddModifier("PotionCharges", {}, ModifierType::IntAdd);
+	AddModifier("PotionHealMul", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("PotionManaMul", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("TaxMidpoint", {}, ModifierType::IntAdd);
+	AddModifier("TaxMidpointMul", {}, ModifierType::FloatMul);
+	AddModifier("GoldGainScale", { "PlayerBase@" }, ModifierType::FloatSumMul);
+	AddModifier("GoldGainScaleAdd", { "PlayerBase@" }, ModifierType::FloatAdd);
+	AddModifier("OreGainScale", { "PlayerBase@" }, ModifierType::FloatSumMul);
+	AddModifier("KeyGainScale", { "PlayerBase@" }, ModifierType::FloatSumMul);
+	AddModifier("AllHealthGainScale", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("HealthGainScale", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("ManaGainScale", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("ManaFromDamage", { "PlayerBase@", "int" }, ModifierType::IntAdd);
+	AddModifier("SkillTimeMul", { "PlayerBase@" }, ModifierType::FloatSumMul);
+	AddModifier("AttackTimeMul", { "PlayerBase@" }, ModifierType::FloatSumMul);
+	AddModifier("DamageTaken", { "PlayerBase@", "Actor@", "int" }, ModifierType::Void);
+	AddModifier("TriggerEffects", { "PlayerBase@", "Actor@", "EffectTrigger" }, ModifierType::Void);
+	AddModifier("Update", { "PlayerBase@", "int" }, ModifierType::Void);
+	AddModifier("ComboEffects", { "PlayerBase@" }, ModifierType::EffectArray);
+	AddModifier("ComboProps", { "PlayerBase@" }, ModifierType::IVec3Add);
+	AddModifier("ComboDisabled", { "PlayerBase@" }, ModifierType::Bool);
+	AddModifier("CleaveRangeMul", { "PlayerBase@", "Actor@" }, ModifierType::FloatMul);
+	AddModifier("WindScale", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("BuffScale", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("DebuffScale", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("ImmuneBuffs", { "PlayerBase@" }, ModifierType::UInt64Flags);
+	AddModifier("SlowScale", { "PlayerBase@" }, ModifierType::FloatMul);
+	AddModifier("CooldownClear", { "PlayerBase@", "Skills::ActiveSkill@" }, ModifierType::Bool);
+	AddModifier("LuckAdd", { "PlayerBase@" }, ModifierType::FloatAdd);
+	AddModifier("CursesAdd", { "PlayerBase@" }, ModifierType::IntAdd);
+	AddModifier("SkillpointsAdd", { "PlayerBase@" }, ModifierType::IntAdd);
+	AddModifier("ShopCostMul", { "PlayerBase@", "Upgrades::UpgradeStep@" }, ModifierType::FloatMul);
+	AddModifier("DungeonStoreItemsAdd", {}, ModifierType::IntAdd);
+	
+	g_modsListList = g_modsListList.substr(0, g_modsListList.length() - 2);
+	
+	g_cModifier += "}\n\n";
+	
+
+	g_cModifierList += "array<Modifier@>@ GetAllModifiers() { return m_modifiers; }\n";
+	
+	g_cModifierList += "void Clear()\n{\narray<array<Modifier@>@> modListList = { " + g_modsListList + ", m_modifiers }; "+g_modsConstClear+"\n";
+	g_cModifierList += "for (uint i = 0; i < modListList.length(); i++) modListList[i].removeRange(0, modListList[i].length());\n";
+	g_cModifierList += "}\n\n\n";
+	
+	g_cModifierList += "void Remove(Modifier@ toRemove) {\n";
+	g_cModifierList += "array<array<Modifier@>@> modListList = { " + g_modsListList + " }; "+g_modsConstClear+"\n";
+	g_cModifierList += "for (uint i = 0; i < modListList.length(); i++) modListList[i].removeRange(0, modListList[i].length());\n";
+	g_cModifierList += "for (uint i = 0; i < m_modifiers.length(); i++) { auto modifier = m_modifiers[i];\n";
+	g_cModifierList += "if (modifier is toRemove) continue; " + g_cModifierListAdd + "}\n";
+	g_cModifierList += "}\n\n\n";
+	
+/*
+	g_cModifierList += "void Remove(Modifier@ modifier)\n";
+	g_cModifierList += "{\narray<array<Modifier@>@> modListList = { " + g_modsListList + ", m_modifiers };\n";
+	g_cModifierList += "for (uint i = 0; i < modListList.length(); i++) {\n";
+	g_cModifierList += "for (int j = modListList[i].length() - 1; j >= 0; j--) {\n";
+	g_cModifierList += "if ((modListList[i])[j] is modifier) modListList[i].removeAt(j);\n";
+	g_cModifierList += "}}}\n\n\n";
+*/
+
+	g_cModifierList += """
+		Modifier@ Add(Modifier@ modifier)
+		{
+			@modifier = modifier.Instance();
+			m_modifiers.insertAt(m_modifiers.length(), modifier);
+			""" + g_cModifierListAdd + """
+			return modifier;
+		}
+
+		bool Has(Modifier@ modifier)
+		{
+			return (m_modifiers.findByRef(modifier) != -1);
+		}
+	}""";
+	g_cModifierFilter += """
+		Modifier@ Add(Modifier@ modifier)
+		{
+			@modifier = modifier.Instance();
+			""" + g_cModifierListAdd + """
+			return modifier;
+		}
+	}""";
+	
+	//print("g_cModifierList:\n" + g_cModifierList);
+	//print("g_cModifierFilter:\n" + g_cModifierFilter);
+	
+	
+	Resources::AddGeneratedFile("generated/Modifiers.as", "namespace Modifiers {" + g_cModifier + "}");
+	Resources::AddGeneratedFile("generated/ModifierList.as", "namespace Modifiers {" + g_cModifierList + "}");
+	Resources::AddGeneratedFile("generated/ModifierFilter.as", "namespace Modifiers {" + g_cModifierFilter + "}");
+}

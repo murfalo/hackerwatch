@@ -1,0 +1,21 @@
+<unit slot="doodad" layer="-30">
+	<scenes off="off" on="on">
+		<scene name="off" trigger-snd="event:/misc/button_metal">
+			<sprite looping="false" origin="8 8" texture="./puzzle_chance.png" material="system/default.mats:floor">
+				<frame time="50">48 16 16 16</frame>
+				<frame time="50">32 16 16 16</frame>
+				<frame time="50">16 16 16 16</frame>
+				<frame time="50">0 16 16 16</frame>				
+				<frame time="50">0 0 16 16</frame>
+			</sprite>
+		</scene>
+		<scene name="on" trigger-snd="event:/misc/button_metal">
+			<sprite looping="false" origin="8 8" texture="./puzzle_chance.png" material="system/default.mats:floor">
+				<frame time="50">0 16 16 16</frame>
+				<frame time="50">16 16 16 16</frame>
+				<frame time="50">32 16 16 16</frame>
+				<frame time="50">48 16 16 16</frame>
+			</sprite>
+		</scene>					
+	</scenes>
+</unit>

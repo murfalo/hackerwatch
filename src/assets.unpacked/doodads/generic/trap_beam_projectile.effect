@@ -1,0 +1,176 @@
+<effect looping="true">	
+	<param name="angle" default="0" />
+	<param name="length" default="100" />
+	<light pos-y="24" pos-x="24"> 
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="1000" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="(t+l)*pi*2"/>
+		
+		<size value="48" />
+		
+		<color-r value="saturate(t+l)*1" />
+		<color-g value="0" />
+		<color-b value="5 + saturate(t+l)*4" />
+	</light>
+	
+	<sprite origin="6 8" looping="true" texture="./trap_beam_node.png" material="system/default.mats:projectile"
+		color-a="0.8">
+		<frame time="70">0 16 12 16</frame>
+		<frame time="70">12 16 12 16</frame>
+		<frame time="70">24 16 12 16</frame>
+		<frame time="70">36 16 12 16</frame>
+	</sprite>
+
+<!-- ball high light -->
+	<sprite origin="6 8" looping="true" texture="./trap_beam_node.png" material="system/default.mats:bright-noxray"
+		color-r="2"
+		color-g="1"
+		color-b="3.8"
+		color-a="0.8"
+		angle="pi/2">
+		<frame time="70">24 16 12 16</frame>
+		<frame time="70">36 16 12 16</frame>
+		<frame time="70">0 16 12 16</frame>
+		<frame time="70">12 16 12 16</frame>
+	</sprite>
+
+
+	<sprite origin="6 8" looping="true" texture="./trap_beam_node.png" material="system/default.mats:glow-both-bright"
+		scale-x="0.8"
+		scale-y="0.8"
+		color-a="0.2">
+		<frame time="70">48 16 12 16</frame>
+		<frame time="70">60 16 12 16</frame>
+		<frame time="70">72 16 12 16</frame>
+		<frame time="70">84 16 12 16</frame>
+	</sprite>
+
+	<light 
+		pos-x="0"
+		pos-y="0">
+		 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<looping value="true" />
+		
+
+		<cast-shadows value="all" />
+		
+		<size value="24" />
+		
+		<color-r value="1+1*saturate(sin(t*pi*2))" />
+		<color-g value="0" />
+		<color-b value="2+1*saturate(sin(t*pi*2))" />
+		<color-a value="0" />
+	</light>
+
+
+	<light pos-y="12" pos-x="12"> 
+		<sprite texture="items/projectiles/magic_missile_L.png">
+			<frame time="100">0 0 256 256</frame>
+		</sprite>
+
+		<length value="1000" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<angle value="(t+l)*pi*2"/>
+		
+		<size value="24" />
+		
+		<color-r value="saturate(t+l)" />
+		<color-g value="saturate(t+l)" />
+		<color-b value="saturate(t+l)" />
+	</light>
+
+	<sprite looping="true" ulayer="1" origin="6 7" texture="effects/bolt_night.png" material="system/default.mats:bright-noxray"
+		color-r="0.5"
+		color-g="0.5"
+		color-b="1"
+		color-a="0.2"
+		pos-x="0"
+		pos-y="0">
+		
+		<frame time="40">12 13 12 14</frame>
+		<frame time="40">24 13 12 14</frame>
+		<frame time="40">36 13 12 14</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">48 13 12 14</frame>
+		<frame time="40">60 13 12 14</frame>
+		<frame time="40">72 13 12 14</frame>
+		<frame time="40">84 13 12 14</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="40">96 13 12 14</frame>
+		<frame time="45">0 27 15 12</frame>
+		<frame time="45">15 27 15 12</frame>
+		<frame time="45">30 27 15 12</frame>
+		<frame time="45">45 27 15 12</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="45">60 27 15 12</frame>
+		<frame time="45">75 27 15 12</frame>
+		<frame time="45">90 27 15 12</frame>
+		<frame time="45">105 27 15 12</frame>
+	</sprite>
+	<sprite looping="true" ulayer="0" origin="10 6" texture="effects/bolt_night.png" material="system/default.mats:bright-noxray"
+		color-r="0.5"
+		color-g="0.5"
+		color-b="1"
+		color-a="0.2"
+		pos-x="0"
+		pos-y="0"
+		angle="rand(u+i+l)*pi*2"
+		scale-x="0.8"
+		scale-y="0.8"
+		>
+		
+		<frame time="50">0 39 20 13</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="50">20 39 20 13</frame>
+		<frame time="50">40 39 20 13</frame>
+		<frame time="10">0 0 0 0</frame>
+		<frame time="50">60 39 20 13</frame>
+		<frame time="50">80 39 20 13</frame>
+		<frame time="500">0 0 0 0</frame>
+	</sprite>
+	<sprite looping="true" ulayer="1" origin="6 6" texture="effects/bolt_night.png" material="system/default.mats:bright-noxray"
+		color-r="0.5"
+		color-g="0.5"
+		color-b="1"
+		color-a="0.2"
+		pos-x="0"
+		pos-y="0"
+		>
+		
+		<frame time="80">0 0 12 13</frame>
+		<frame time="80">12 0 12 13</frame>
+		<frame time="80">24 0 12 13</frame>
+		<frame time="80">36 0 12 13</frame>
+		<frame time="80">48 0 12 13</frame>
+		<frame time="80">60 0 12 13</frame>
+		<frame time="80">72 0 12 13</frame>
+		<frame time="80">84 0 12 13</frame>
+		<frame time="80">96 0 12 13</frame>
+	</sprite>
+</effect>

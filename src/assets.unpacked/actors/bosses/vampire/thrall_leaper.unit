@@ -1,0 +1,457 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.thrall_leaper</string>
+		<vec2 name="beastiary-offset">0 5</vec2>
+		<string name="quality">common</string>
+	
+		<string name="type">undead</string>
+		<int name="hp">350</int>
+		<int name="armor">10</int>
+		<int name="resistance">10</int>
+		<float name="mp-scale-fact">0.8</float>
+		
+		<string name="death-snd">event:/enemy/thrall/death</string>
+		<string name="gore">effects/gibs/gib_skeleton_2.sval</string>
+		
+		<int name="aggro-range">500</int>
+		
+		<array name="buffs-immune">
+			<string>actors/buffs.sval:respawn_ghost_ranger</string>
+			<string>actors/buffs.sval:respawn_ghost_sorcerer</string>
+		</array>
+
+		<dict name="movement">
+			<string name="class">MeleeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+
+			<float name="speed">2.1</float>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<array name="conditional">
+					<string>flag</string><string>is</string><string>vampire_dead</string>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">idle-2</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">10</int>
+				
+				<int name="range">1000</int>
+				<bool name="must-see">false</bool>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+		
+			<dict>
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>vampire_dead</string>
+					<string>flag</string><string>is</string><string>vampire_feed</string>
+				</array>
+			
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">feeding</string>
+
+				<int name="cooldown">0</int>
+				<int name="castpoint">3250</int>
+				
+				<int name="range">1000</int>
+				<bool name="must-see">false</bool>
+
+				<array name="actions">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">effects/players/ranger_bomb.effect</string>
+						<int name="radius">20</int>
+						
+						<float name="dist-scaling">4</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="magical">20</int>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/thrall/explosion</string>
+					</dict>
+					<dict>
+						<string name="class">Suicide</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">EnemyMeleeStrike</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown">200</int>
+				<int name="castpoint">400</int>
+				<int name="range">20</int>
+				<int name="arc">120</int>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">60</int>
+						<bool name="melee">true</bool>
+					</dict>
+
+					<dict name="effect">
+						<string name="class">SpawnEffect</string>
+						<string name="effect">actors/bosses/vampire/thrall_slash.effect</string>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/enemy/thrall/slash</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">JumpStrike</string>
+				<string name="anim">jump 8</string>
+				<int name="hold-frame">90</int>
+				
+				<bool name="must-see">true</bool>
+				<int name="cooldown">300</int>
+				<int name="range">40</int>
+				<int name="min-range">0</int>
+				<float name="speed">6</float>
+				<int name="air-time">200</int>
+				<int name="jump-height">0</int>
+				<bool name="glide">false</bool>
+				
+				<string name="offset">attack-pos</string>
+				
+				<array name="finish-effects">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">actors/bosses/vampire/thrall_slash.effect</string>
+						<int name="min-radius">16</int>
+						<int name="radius">16</int>
+						<float name="dist-scaling">1000</float>
+						<float name="team-dmg">0</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+								<int name="physical">50</int>
+								<bool name="melee">true</bool>
+							</dict>
+							<dict>
+								<string name="class">PlaySound</string>
+								<string name="sound">event:/enemy/thrall/slash</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				
+				<array name="conditional">
+					<string>flag</string><string>isnt</string><string>vampire_dead</string>
+				</array>
+				
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/bosses/vampire/thrall_leaper_corpse.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+		  <collision static="false">
+			<circle offset="0 0" aim-through="true" radius="3.5" />
+			<circle offset="0 -5.25" sensor="true" shoot-through="false" aim-through="true" radius="3.5" />
+		  </collision>
+		</scene>
+		
+		<scene name="feeding">
+			<scene src="shared" />
+			<effect src="actors/bosses/vampire/thrall_leach.effect" />
+			<sprite origin="16 24" looping="true" texture="./thrall_leach.png" material="system/default.mats:actor">
+				<frame time="100">0 0 32 32</frame>
+				<frame time="100">32 0 32 32</frame>
+				<frame time="100">64 0 32 32</frame>
+				<frame time="100">96 0 32 32</frame>
+				<frame time="100">128 0 32 32</frame>
+				<frame time="100">160 0 32 32</frame>
+				<frame time="100">192 0 32 32</frame>
+				<frame time="100">224 0 32 32</frame>
+				<frame time="2500">0 32 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="100">0 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="100">32 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="100">64 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="100">96 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="100">128 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="100">160 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="250">192 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="100">224 0 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">0 32 32 32</frame>
+				<frame time="150">0 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">32 32 32 32</frame>
+				<frame time="150">32 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">64 32 32 32</frame>
+				<frame time="150">64 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">96 32 32 32</frame>
+				<frame time="150">96 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">128 32 32 32</frame>
+				<frame time="150">128 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">160 32 32 32</frame>
+				<frame time="150">160 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">192 32 32 32</frame>
+				<frame time="150">192 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="true" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="150">224 32 32 32</frame>
+				<frame time="150">224 64 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">0 96 32 32</frame>
+				<frame time="200">0 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">32 96 32 32</frame>
+				<frame time="200">32 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">64 96 32 32</frame>
+				<frame time="200">64 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">96 96 32 32</frame>
+				<frame time="200">96 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">128 96 32 32</frame>
+				<frame time="200">128 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">160 96 32 32</frame>
+				<frame time="200">160 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">192 96 32 32</frame>
+				<frame time="200">192 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="400">224 96 32 32</frame>
+				<frame time="200">224 128 32 32</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="jump-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="6 0"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">0 96 32 32</frame>
+				<frame time="120">0 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="3 -3"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">32 96 32 32</frame>
+				<frame time="120">32 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 -6"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">64 96 32 32</frame>
+				<frame time="120">64 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-3 -3"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">96 96 32 32</frame>
+				<frame time="120">96 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-6 0"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">128 96 32 32</frame>
+				<frame time="120">128 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-3 3"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">160 96 32 32</frame>
+				<frame time="120">160 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 6"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">192 96 32 32</frame>
+				<frame time="120">192 128 32 32</frame>
+			</sprite>
+		</scene>
+
+		<scene name="jump-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="3 3"/>
+			<sprite origin="16 24" looping="false" texture="./thrall_pale.png" material="system/default.mats:actor">
+				<frame time="120">224 96 32 32</frame>
+				<frame time="120">224 128 32 32</frame>
+			</sprite>
+		</scene>
+  </scenes>
+</unit>

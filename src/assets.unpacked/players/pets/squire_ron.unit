@@ -1,0 +1,143 @@
+<unit netsync="none" save="false">
+	<behavior class="MiniPetWalking">
+		<string name="anim-idle">idle 8</string>
+		<string name="anim-walk">walk 8</string>
+	
+		<float name="speed">4.7</float>
+		<float name="idle-speed">3.2</float>
+		
+		<int name="range-idle">40</int>
+		<int name="range-min-idle">16</int>
+		<int name="range-pickup">200</int>
+
+		<int name="pickup-duration">5000</int>
+		<int name="idle-duration">1000</int>
+
+		<int name="idle-delay">100</int>
+		<int name="pickup-delay">30</int>
+
+		<int name="leash-range">225</int>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="idle-0">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">0 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-1">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">24 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">48 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">72 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">96 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">120 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">144 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<sprite origin="12 17" looping="false" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="1000">168 0 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-0">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">0 0 24 24</frame>
+				<frame time="90">0 24 24 24</frame>
+				<frame time="90">0 0 24 24</frame>
+				<frame time="90">0 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-1">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">24 0 24 24</frame>
+				<frame time="90">24 24 24 24</frame>
+				<frame time="90">24 0 24 24</frame>
+				<frame time="90">24 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">48 0 24 24</frame>
+				<frame time="90">48 24 24 24</frame>
+				<frame time="90">48 0 24 24</frame>
+				<frame time="90">48 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">72 0 24 24</frame>
+				<frame time="90">72 24 24 24</frame>
+				<frame time="90">72 0 24 24</frame>
+				<frame time="90">72 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">96 0 24 24</frame>
+				<frame time="90">96 24 24 24</frame>
+				<frame time="90">96 0 24 24</frame>
+				<frame time="90">96 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">120 0 24 24</frame>
+				<frame time="90">120 24 24 24</frame>
+				<frame time="90">120 0 24 24</frame>
+				<frame time="90">120 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">144 0 24 24</frame>
+				<frame time="90">144 24 24 24</frame>
+				<frame time="90">144 0 24 24</frame>
+				<frame time="90">144 48 24 24</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<sprite origin="12 17" looping="true" texture="players/pets/squire_ron.png" material="system/default.mats:default-noxray">
+				<frame time="90">168 0 24 24</frame>
+				<frame time="90">168 24 24 24</frame>
+				<frame time="90">168 0 24 24</frame>
+				<frame time="90">168 48 24 24</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

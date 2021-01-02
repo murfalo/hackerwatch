@@ -1,0 +1,56 @@
+<effect looping="true" layer="-1">
+	<sprite origin="17 31" looping="false" texture="./chambers_safe_area_light.png" material="system/default.mats:bright-noxray"
+	
+	
+	color-a="saturate(sin(t*2*pi))*0.3+0.1"
+	>
+		<frame time="100">136 33 34 49</frame>
+		<frame time="100">0 33 34 49</frame>
+		<frame time="100">34 33 34 49</frame>
+		<frame time="100">68 33 34 49</frame>
+		<frame time="100">102 33 34 49</frame>
+	</sprite>
+	<!-- 
+	<sprite origin="15 16" looping="false" texture="./chambers_safe_area.png" material="system/default.mats:glow-both-bright"
+	
+	pos-y="40 * -t"
+	
+	color-a="saturate(sin(t*2*pi))*0.3"
+	>
+		<frame time="800">60 55 30 33</frame>
+	</sprite>
+	<sprite origin="15 16" looping="false" texture="./chambers_safe_area.png" material="system/default.mats:glow-both-bright"
+	
+	pos-y="40 * -t"
+	
+	color-a="saturate(sin(t*2*pi))*0.3"
+	>
+		<frame time="600">60 55 30 33</frame>
+	</sprite>
+	 -->
+	
+	<light> 
+		<sprite texture="system/light_square_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="500" />
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		
+		<size value="(1-t)*90" />
+		
+		<color-r value="1" />
+		<color-g value="0.5" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+</effect>

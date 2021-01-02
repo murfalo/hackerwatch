@@ -1,0 +1,27 @@
+<unit slot="doodad">
+	<scenes tier-4="1" tier-5="2">
+		<scene name="shared">	
+			<collision static="true">
+				<rect>-18 -6 36 14</rect>		
+			</collision>
+		</scene>
+		<scene name="1">	
+			<scene src="shared" />	
+			<sprite origin="27 18" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">409 128 55 37</frame>
+			</sprite>
+		</scene>
+		<scene name="2">	
+			<scene src="shared" />	
+			<sprite origin="27 18" layer="-1" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">409 165 55 37</frame>
+			</sprite>
+			<sprite origin="27 15" ulayer="1" pos="7 -3" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">464 128 48 16</frame>
+			</sprite>
+			<sprite origin="27 14" ulayer="2" pos="7 9" texture="./outlook_props.png" material="system/default.mats:floor">
+				<frame time="180">464 144 48 17</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

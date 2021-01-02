@@ -1,0 +1,413 @@
+<svals>
+	<!-- Mercenary -->
+	<dict name="company-banner">
+		<int name="duration">500</int>
+		<bool name="debuff">false</bool>
+
+		<string name="fx">players/mercenary/company_banner_buff.effect</string>
+		
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="attack-mul">1.25</float>
+				<float name="skill-mul">1.25</float>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Regen</string>
+				<float name="mana-mul">1.5</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="ballista">
+		<array name="tags">
+			<string>players</string>
+		</array>
+	
+		<int name="duration">100</int>
+		<bool name="debuff">false</bool>
+		
+		<dict name="tick">
+			<bool name="immediate">true</bool>
+			<int name="freq">100</int>
+			
+			<dict name="effect">
+				<string name="class">Explode</string>
+				<int name="radius">34</int>
+				<int name="min-radius">34</int>
+				<float name="dist-scaling">1000</float>
+				
+				<float name="self-dmg">1</float>
+				<float name="team-dmg">1</float>
+				<float name="enemy-dmg">0</float>
+
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">players/buffs_merc.sval:ballista-manned</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="ballista-manned">
+		<array name="tags">
+			<string>ballista-manned</string>
+		</array>
+		
+		<int name="duration">100</int>
+		<bool name="debuff">false</bool>
+	</dict>
+
+
+	<!-- Paladin -->
+	<dict name="bash">
+		<array name="tags">
+			<string>stun</string>
+		</array>
+		<int name="duration">2500</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/stun.unit</string>
+		<float name="speed-mul">0</float>
+		<bool name="disarm">true</bool>
+	</dict>
+	
+	<dict name="lay-on-hands">
+		<int name="duration">4500</int>
+		<bool name="debuff">false</bool>
+		
+		<string name="fx">effects/players/lay_on_hands_buff.effect</string>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Block</string>
+				<float name="chance">0.25</float>
+				<int name="magical">20</int>
+			</dict>
+		</array>
+		
+		<dict name="tick">
+			<int name="freq">500</int>
+			<array name="effects">
+				<dict>
+					<string name="class">Heal</string>
+					<int name="heal">9</int>
+				</dict>
+				<dict>
+					<string name="class">Decimate</string>
+					<float name="amount-max">-0.02</float>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	
+	<!-- Priest -->
+	<dict name="aura-buff">
+		<int name="duration">1000</int>
+		<bool name="debuff">false</bool>
+		
+		<string name="fx">effects/players/aura_of_purification_buff.effect</string>
+		
+		<float name="dmg-taken-mul">0.7</float>
+	</dict>
+	
+	<dict name="aura-debuff">
+		<array name="tags">
+			<string>slow</string>
+			<string>debuff</string>
+		</array>
+		<int name="duration">1000</int>
+		<bool name="debuff">true</bool>
+		<float name="speed-mul">0.6</float>
+		<float name="resistance-mul">0.6</float>
+		
+		<array name="colors">
+			<vec4>0.2 0.2 0.1 0.5</vec4>
+			<vec4>0.4 0.4 0.2 0.5</vec4>
+			<vec4>0.8 0.8 0.4 0.5</vec4>
+		</array>
+	</dict>
+
+	
+	<!-- Ranger -->
+	<dict name="entangled">
+		<array name="tags">
+			<string>root</string>
+		</array>
+		
+		<int name="duration">4000</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="sound">event:/player/ranger/snare_growth</string>	
+		<float name="speed-mul">0</float>
+		<float name="armor-mul">0.75</float>
+		<string name="fx">effects/players/entangle.effect</string>
+	</dict>
+	
+	<dict name="on-the-prowl">
+		<int name="duration">4500</int>
+		<bool name="debuff">false</bool>
+		
+		<string name="fx">effects/players/ranger_dodge.effect</string>
+		<string name="walk-fx">effects/players/ranger_dust.effect</string>
+		<int name="walk-fx-time">100</int>
+		
+		<float name="speed-mul">1.25</float>
+		
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.15</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="marked">
+		<int name="duration">2500</int>
+		<float name="receive-crit-chance">0.125</float>
+		<string name="icon">doodads/special/icons/target.unit</string>
+	</dict>
+	
+	
+	<!-- Sorcerer -->
+	<dict name="freeze">
+		<array name="tags">
+			<string>stun</string>
+		</array>
+		
+		<int name="duration">2000</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/freeze.unit</string>
+		<float name="speed-mul">0</float>
+		<bool name="disarm">true</bool>
+		<bool name="shatterable">true</bool>
+		
+		<array name="colors">
+			<vec4>0 0 0.025 1</vec4>
+			<vec4>0 0 1 1</vec4>
+			<vec4>0.9 0.9 1 1</vec4>
+		</array>
+	</dict>
+	
+	<dict name="chill">
+		<array name="tags">
+			<string>freezing</string>
+			<string>slow</string>
+		</array>
+	
+		<int name="duration">4000</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/frost.unit</string>
+		<float name="speed-mul">0.7</float>
+		
+		<array name="colors">
+			<vec4>0 0 0.025 0.33</vec4>
+			<vec4>0 0 1 0.33</vec4>
+			<vec4>0.9 0.9 1 0.33</vec4>
+		</array>
+	</dict>
+	
+	
+	<!-- Thief -->
+	<dict name="grapple">
+		<array name="tags">
+			<string>stun</string>
+		</array>
+		
+		<int name="duration">500</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/stun.unit</string>
+		<float name="speed-mul">0</float>
+		<bool name="disarm">true</bool>
+	</dict>
+	
+	<dict name="smoke-bomb">
+		<array name="tags">
+			<string>stun</string>
+		</array>
+		
+		<int name="duration">3500</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/stun.unit</string>
+		<float name="speed-mul">0</float>
+		<bool name="disarm">true</bool>
+	</dict>
+	
+	<dict name="smoke-cloud">
+		<int name="duration">500</int>
+		<bool name="debuff">false</bool>
+
+		<string name="fx">effects/players/smoke_bomb_dust_new.effect</string>
+		
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.15</float>
+			</dict>
+		</array>
+	</dict>
+	
+	
+	<!-- Warlock -->
+	<dict name="soul-dagger">
+		<int name="duration">5000</int>
+		<bool name="debuff">true</bool>
+
+		<string name="fx">effects/soul_take.effect</string>
+		<array name="colors">
+			<vec4>0 0.05 0.05 1</vec4>
+			<vec4>0.35 0.85 0.45 1</vec4>
+			<vec4>0.55 0.8 0.65 1</vec4>
+		</array>
+
+		<dict name="tick">
+			<int name="freq">1000</int>
+			<bool name="immediate">true</bool>
+			<bool name="on-reapply">false</bool>
+			
+			<array name="effects">
+				<dict>
+					<string name="class">SpawnEffect</string>
+					<string name="effect">effects/soul_take.effect</string>
+				</dict>
+				<dict>
+					<string name="class">LifestealDamage</string>
+					<int name="magical">20</int>
+					<bool name="can-kill">true</bool>
+					<float name="lifesteal">0.05</float>
+					<float name="manasteal">0.1</float>
+					<string name="lifesteal-attacker-effect">effects/soul_gain.effect</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict name="soul-dagger-hit">
+		<int name="duration">5000</int>
+
+		<dict name="tick">
+			<int name="freq">100000</int>
+			<bool name="immediate">false</bool>
+			<bool name="on-reapply">true</bool>
+			
+			<array name="effects">
+				<dict>
+					<string name="class">Damage</string>
+					<int name="magical">20</int>
+					<bool name="can-kill">true</bool>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict name="gargoyle_stun">
+		<array name="tags">
+			<string>stun</string>
+		</array>
+		
+		<int name="duration">200</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/stun.unit</string>
+		<float name="speed-mul">0</float>
+		<bool name="disarm">true</bool>
+	</dict>
+	
+	
+	<!-- Wizard -->
+	<dict name="combust">
+		<array name="tags">
+			<string>burning</string>
+		</array>
+		
+		<int name="duration">4000</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/burn.unit</string>
+		
+		<dict name="tick">
+			<int name="freq">500</int>
+			<dict name="effect">
+				<string name="class">CombustionDamage</string>
+				<int name="magical">10</int>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="blast">
+		<array name="tags">
+			<string>confusion</string>
+			<string>slow</string>
+		</array>
+		<int name="duration">4000</int>
+		<bool name="debuff">true</bool>
+		
+		<bool name="confuse">true</bool>
+		
+		<string name="icon">doodads/special/icons/confusion.unit</string>
+		<float name="speed-mul">-0.4</float>
+	</dict>
+
+	
+	<!-- Gladiator -->
+	<dict name="net">
+		<array name="tags">
+			<string>disarm</string>
+		</array>
+		
+		<int name="duration">3000</int>
+		<bool name="debuff">true</bool>
+		<bool name="disarm">true</bool>
+		<string name="icon">doodads/special/icons/disarm.unit</string>
+		<float name="speed-mul">0.2</float>
+		<float name="dmg-taken-mul">1.5</float>
+		<string name="fx">players/gladiator/netted.effect</string>
+	</dict>
+	
+	
+	<!-- Witch Hunter -->
+	<dict name="brand">
+		<array name="tags">
+			<string>debuff</string>
+		</array>
+		
+		<int name="duration">6000</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/weakness.unit</string>
+		<float name="dmg-taken-mul">2</float>
+	</dict>
+	
+	<dict name="brand-slow">
+		<array name="tags">
+			<string>slow</string>
+		</array>
+		
+		<int name="duration">250</int>
+		<bool name="debuff">true</bool>
+		
+		<float name="speed-mul">0.5</float>
+	</dict>
+	
+	<dict name="pyre">
+		<string name="tag">burning</string>
+		<int name="duration">500</int>
+		<bool name="debuff">true</bool>
+		
+		<string name="icon">doodads/special/icons/burn.unit</string>
+	
+		<dict name="tick">
+			<int name="freq">500</int>
+			<bool name="immediate">true</bool>
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="magical">10</int>
+			</dict>
+		</dict>
+	</dict>
+</svals>

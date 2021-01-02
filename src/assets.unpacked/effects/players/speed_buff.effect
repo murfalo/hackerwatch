@@ -1,0 +1,17 @@
+<effect looping="true" layer="0" wpos-track="9">
+	<trail texture="effects/empty.png" material="effects/effects.mats:lit">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)" />
+		
+		<length value="5000" />
+		<looping value="true" />
+		
+		<segments value="9" />
+		<size value="10 * (1 - i / 14)" />
+		
+		<color-r value="0.6" />
+		<color-g value="0.6" />
+		<color-b value="1" />
+		<color-a value="min(1, i) * max(0, (0.7 - i / 6) * 0.33)" />
+	</trail>
+</effect>

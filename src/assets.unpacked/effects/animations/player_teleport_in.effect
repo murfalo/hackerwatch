@@ -1,0 +1,52 @@
+<effect layer="10">
+	
+	<data>
+		<string name="sound">event:/enemy/djinn/teleport</string>
+		<string name="fx">effects/animations/player_teleport_particles.effect</string>
+	</data>		
+	
+	<sprite origin="16 16"  looping="false" texture="./player_teleport.png" material="system/default.mats:glow-both-bright"
+	scale-x="(t * sin( 1.5 * t * pi) + 0.7)+0.1"
+	scale-y="(1+pow(t,4))"
+	pos-y="-8"
+	color-r="3"
+	color-g="saturate(1-t*1)"
+	color-b="saturate(2.5-t*1.8)"
+	
+	>
+		<frame time="250">0 0 32 32</frame>
+	</sprite>
+	<!-- 
+	<sprite origin="16 16"  looping="true" texture="./player_teleport.png" material="system/default.mats:glow-both-bright"
+	
+	color-r="1-t*0.2"
+	color-g="1-t*0.8"
+	color-b="1"
+	color-a="1"
+	pos-y="-8"
+	
+	>
+		<frame time="50">0 0 32 32</frame>
+	</sprite> -->
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="200">0 0 128 128</frame>
+			<frame time="200">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="200"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<size value="100 * (1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

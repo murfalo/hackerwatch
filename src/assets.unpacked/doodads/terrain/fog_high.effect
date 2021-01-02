@@ -1,0 +1,12 @@
+<effect looping="true" bounds="900 900" material="doodads/terrain/terrain.mats:cloud_high">
+		%if TIME_DAY
+		<sprite origin="128 128" texture="./fog.png" material="effects/effects.mats:add" num-sprites="5"
+		%else
+		<sprite origin="128 128" texture="./fog.png" material="system/default.mats:default" num-sprites="5"
+		%endif	
+		pos-x="sin((rand(u+i) * pi + t+l)*3)*10"
+		color-a="(sin(rand(u+i+13) * pi + t+l)/3+0.66)/20"		
+		>
+		<frame time="5000">0 0 256 256</frame> 
+	</sprite>
+</effect>

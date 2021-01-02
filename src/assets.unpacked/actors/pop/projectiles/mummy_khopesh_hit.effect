@@ -1,0 +1,43 @@
+<effect looping="false">	
+	<sprite looping="false" origin="8 8" texture="./mummy_khopesh_hit.png" material="system/default.mats:bright-noxray"
+		angle="rand(u+i)*pi"
+		pos-x="0"
+		pos-y="-4"
+		
+		color-r="saturate(1-pow(t,3))"
+		color-g="saturate(1-pow(t,3))"
+		>
+		<frame time="50">0 0 16 16</frame>
+		<frame time="50">16 0 16 16</frame>
+		<frame time="50">32 0 16 16</frame>
+		<frame time="50">48 0 16 16</frame>
+		<frame time="50">0 16 16 16</frame>
+	</sprite>
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="150" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="32*(1-t)" />
+			
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+	
+</effect>

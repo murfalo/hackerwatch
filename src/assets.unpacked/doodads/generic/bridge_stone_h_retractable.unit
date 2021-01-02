@@ -1,0 +1,44 @@
+<unit slot="doodad" layer="-6">
+	<scenes open="open" close="close">
+		<scene name="open" trigger-snd="event:/misc/bridge_stone">
+			<minimap_sprite origin="-2 8" layer="110" texture="gui/minimap.png" frame="32 0 2 6" />
+			<minimap_sprite origin="4 8" layer="110" texture="gui/minimap.png" frame="32 0 2 6" />
+			<minimap_sprite origin="-2 2" layer="110" texture="gui/minimap.png" frame="32 0 2 8" />
+			<minimap_sprite origin="4 2" layer="110" texture="gui/minimap.png" frame="32 0 2 8" />
+			<minimap_sprite origin="-2 -6" layer="110" texture="gui/minimap.png" frame="32 0 2 2" />
+			<minimap_sprite origin="4 -6" layer="110" texture="gui/minimap.png" frame="32 0 2 2" />
+			<minimap_sprite origin="2 10" layer="110" texture="gui/minimap.png" frame="24 2 4 8" />
+			<minimap_sprite origin="2 2" layer="110" texture="gui/minimap.png" frame="24 2 4 8" />
+			<minimap_sprite origin="2 -6" layer="110" texture="gui/minimap.png" frame="24 2 4 2" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-16 -36 32 68</rect>
+			</collision>
+			<sprite origin="28 36" looping="false" texture="./bridge_stone.png" material="system/default.mats:floor">
+				<frame time="75">336 68 56 73</frame>
+				<frame time="200">280 68 56 73</frame>
+				<frame time="75">224 68 56 73</frame>
+				<frame time="75">168 68 56 73</frame>
+				<frame time="75">112 68 56 73</frame>
+				<frame time="75">56 68 56 73</frame>
+				<frame time="75">0 68 56 73</frame>
+			</sprite>
+		</scene>
+		<scene name="close" trigger-snd="event:/misc/bridge_stone">
+			<minimap_sprite origin="4 8" layer="110" texture="gui/minimap.png" frame="24 0 8 2" />
+			<minimap_sprite origin="4 -6" layer="110" texture="gui/minimap.png" frame="24 0 8 2" />
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-16 -36 32 8</rect>
+				<rect shoot-through="true" aim-through="true">-16 24 32 8</rect>
+			</collision>
+			<sprite origin="28 36" looping="false" texture="./bridge_stone.png" material="system/default.mats:floor">
+				<frame time="75">56 68 56 73</frame>
+				<frame time="75">112 68 56 73</frame>
+				<frame time="75">168 68 56 73</frame>
+				<frame time="75">224 68 56 73</frame>
+				<frame time="200">280 68 56 73</frame>
+				<frame time="75">336 68 56 73</frame>
+				<frame time="75">392 68 56 73</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

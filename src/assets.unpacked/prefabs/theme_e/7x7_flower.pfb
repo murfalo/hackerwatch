@@ -1,0 +1,145 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">HW2Campaign</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/env/anatolia_outside.env</string>
+	</dict>
+	<dict name="units">
+		<array name="hw/doodads/theme_e/e_crn_r_up.unit"><vec2>16 80</vec2><int>10</int></array>
+		<array name="hw/doodads/theme_e/e_crn_l_dn.unit"><vec2>0 96</vec2><int>23</int></array>
+		<array name="hw/doodads/theme_e/e_crn_l_up.unit"><vec2>0 80</vec2><int>11</int></array>
+		<array name="hw/actors/tower_flower_1_small.unit">
+			<vec2>8 36</vec2>
+			<int>5</int>
+			<vec2>54 55</vec2>
+			<int>1</int>
+			<vec2>40 97</vec2>
+			<int>2</int>
+			<vec2>72 97</vec2>
+			<int>3</int>
+			<vec2>89 31</vec2>
+			<int>4</int>
+		</array>
+		<array name="actors/tower_flower_1.unit"><vec2>33 44</vec2><int>6</int><vec2>54 76</vec2><int>7</int><vec2>78 51</vec2><int>8</int></array>
+		<array name="hw/doodads/theme_e/e_crn_r_dn.unit"><vec2>16 96</vec2><int>9</int></array>
+		<array name="hw/doodads/special/color_theme_e_16.unit"><vec2>8 56</vec2><int>14</int></array>
+		<array name="hw/doodads/theme_e/e_special_pillar.unit"><vec2>80 80</vec2><int>13</int><vec2>48 32</vec2><int>12</int></array>
+		<array name="hw/items/vgt_plant.unit">
+			<vec2>98 102</vec2>
+			<int>22</int>
+			<vec2>57 104</vec2>
+			<int>17</int>
+			<vec2>30 71</vec2>
+			<int>16</int>
+			<vec2>2 52</vec2>
+			<int>15</int>
+			<vec2>72 31</vec2>
+			<int>19</int>
+			<vec2>21 20</vec2>
+			<int>20</int>
+			<vec2>40 24</vec2>
+			<int>21</int>
+			<vec2>101 69</vec2>
+			<int>18</int>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyUnits</string>
+			<int>24</int>
+			<vec3>-56 168 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>11</int><int>23</int><int>9</int><int>14</int><int>10</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>25</int>
+			<vec3>16 176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>26</int>
+			<vec3>-112 136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>27</int>
+			<vec3>112 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>6</int><int>5</int><int>20</int><int>15</int><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>28</int>
+			<vec3>160 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>8</int><int>19</int><int>4</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>29</int>
+			<vec3>200 40 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>7</int><int>1</int><int>16</int><int>2</int><int>17</int><int>3</int><int>22</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>30</int><vec3>232 88 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>ScriptLink</string><int>31</int><vec3>72 184 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>ScriptLink</string><int>32</int><vec3>128 208 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>ScriptLink</string><int>33</int><vec3>280 120 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>RandomCount</string>
+			<int>34</int>
+			<vec3>264 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="NumToExecute">3</int>
+				<array name="ToExecute"><int>27</int><int>28</int><int>29</int><int>30</int><int>33</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>35</int>
+			<vec3>-32 280 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="NumToExecute">3</int>
+				<array name="ToExecute"><int>26</int><int>24</int><int>25</int><int>31</int><int>32</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

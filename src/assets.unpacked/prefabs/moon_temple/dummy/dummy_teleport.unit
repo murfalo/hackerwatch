@@ -1,0 +1,24 @@
+%if EDITOR
+<unit>
+  <scenes>
+    <scene>
+	   <sprite origin="14 0" layer="-1" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:floor">
+        <frame time="150">0 42 29 13</frame>
+      </sprite>  
+  
+      <sprite origin="10 34" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:proj-prop">
+        <frame time="150">20 0 20 42</frame>
+        <frame time="150">40 0 20 42</frame>
+        <frame time="150">60 0 20 42</frame>
+        <frame time="150">80 0 20 42</frame>
+      </sprite>
+      <sprite origin="10 34" looping="true" texture="doodads/generic/teleport.png" material="system/default.mats:glow-both-bright">
+        <frame time="150">20 59 20 42</frame>
+        <frame time="150">40 59 20 42</frame>
+        <frame time="150">60 59 20 42</frame>
+        <frame time="150">80 59 20 42</frame>
+      </sprite>
+    </scene>
+  </scenes>
+</unit>
+%endif

@@ -1,0 +1,78 @@
+<unit netsync="position" slot="doodad">
+	<scenes loop="loop" dead="dead" >
+		<scene name="loop" random-start="false">
+			
+			<collision static="true">
+				<circle offset="0 -65" radius="30" />
+				<circle offset="0 -32" radius="28" />
+				
+				<circle offset="-30 -26" radius="14" />
+				<circle offset="30 -18" radius="20" />			
+			</collision>			
+			
+			<sprite origin="98 111" looping="true" layer="100" looping="false" texture="./dragon_death.png" material="system/default.mats:actor">
+				<frame time="75">0 0 186 132</frame>
+				<frame time="75">186 0 186 132</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="88 100" looping="true"  layer="100" looping="false" texture="./dragon_death.png" material="system/default.mats:actor">
+					<frame time="75">0 264 189 119</frame>
+					<frame time="75">189 264 189 119</frame>
+				</sprite>
+			</shadow>
+			
+			<effect pos="-15 -15" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="0 -35" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="20 0" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="25 -20" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="0 -80" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="20 -70" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="-30 -50" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="30 -40" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="60 -70" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			<effect pos="-70 -60" src="actors/bosses/dragon/dragon_death_blood.effect" />
+			
+			
+			
+		</scene>
+		<scene name="dead" random-start="false">
+			
+			<collision static="true">
+				<circle offset="0 -65" radius="30" />
+				<circle offset="0 -32" radius="28" />
+				
+				<circle offset="-30 -26" radius="14" />
+				<circle offset="30 -18" radius="20" />		
+				
+				<circle offset="16 0" radius="20" />
+					
+			</collision>			
+		
+			<effect pos="-15 -15" src="actors/bosses/dragon/smoke_impact_dragon.effect" />
+			<effect pos="15 -15" src="actors/bosses/dragon/smoke_impact_dragon.effect" />
+			<effect pos="-25 -40" src="actors/bosses/dragon/smoke_impact_dragon.effect" />
+			<effect pos="60 -80" src="actors/bosses/dragon/smoke_impact_dragon.effect" />
+			<effect pos="-40 -60" src="actors/bosses/dragon/smoke_impact_dragon.effect" />
+		
+		
+			<sprite origin="98 111" layer="-1" looping="false" texture="./dragon_death.png" material="system/default.mats:actor">´
+				<frame time="100">372 0 186 132</frame>
+				<frame time="100">558 0 186 132</frame>
+				<frame time="150">744 0 186 132</frame>
+				<frame time="150">0 132 186 132</frame>
+				<frame time="150">186 132 186 132</frame>
+				<frame time="150">372 132 186 132</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="88 100" layer="-1" looping="false" texture="./dragon_death.png" material="system/default.mats:actor">
+					<frame time="100">378 264 189 119</frame>
+					<frame time="100">567 264 189 119</frame>
+					<frame time="150">756 264 189 119</frame>
+					<frame time="150">0 383 189 119</frame>
+					<frame time="150">189 383 189 119</frame>
+					<frame time="150">378 383 189 119</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,148 @@
+<effect looping="false" layer="0">
+
+	<param name="angle" default="0" />
+
+%//three spikes
+<variation>	
+		<sprite origin="9 12" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:projectile"		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"	
+		>
+			<frame time="40">0 35 22 18</frame>
+			<frame time="40">22 35 22 18</frame>
+			<frame time="80">44 35 22 18</frame>
+			<frame time="80">66 35 22 18</frame>
+			<frame time="80">88 35 22 18</frame>
+			<frame time="80">110 35 22 18</frame>
+			<frame time="80">132 35 22 18</frame>
+			<frame time="80">154 35 22 18</frame>
+			<frame time="80">176 35 22 18</frame>
+			<frame time="80">198 35 22 18</frame>
+		</sprite>
+		<sprite origin="9 12" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:shadow"		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"	
+		>
+			<frame time="40">0 104 22 18</frame>
+			<frame time="40">22 104 22 18</frame>
+			<frame time="80">44 104 22 18</frame>
+			<frame time="80">66 104 22 18</frame>
+			<frame time="80">88 104 22 18</frame>
+			<frame time="80">110 104 22 18</frame>
+			<frame time="80">132 104 22 18</frame>
+			<frame time="80">154 104 22 18</frame>
+			<frame time="80">176 104 22 18</frame>
+			<frame time="80">198 104 22 18</frame>
+		</sprite>
+</variation>
+
+%//two spikes
+<variation>	
+		<sprite origin="7 12" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:projectile"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			<frame time="40">0 53 22 16</frame>
+			<frame time="40">22 53 22 16</frame>
+			<frame time="60">44 53 22 16</frame>
+			<frame time="60">66 53 22 16</frame>
+			<frame time="60">88 53 22 16</frame>
+			<frame time="60">110 53 22 16</frame>
+			<frame time="60">132 53 22 16</frame>
+			<frame time="60">154 53 22 16</frame>
+			<frame time="60">176 53 22 16</frame>
+		</sprite>
+		<sprite origin="7 12" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:shadow"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			<frame time="40">0 122 22 16</frame>
+			<frame time="40">22 122 22 16</frame>
+			<frame time="60">44 122 22 16</frame>
+			<frame time="60">66 122 22 16</frame>
+			<frame time="60">88 122 22 16</frame>
+			<frame time="60">110 122 22 16</frame>
+			<frame time="60">132 122 22 16</frame>
+			<frame time="60">154 122 22 16</frame>
+			<frame time="60">176 122 22 16</frame>
+		</sprite>
+		
+	
+</variation>
+
+%//one spikes 1
+<variation>	
+		<sprite origin="3 14" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:projectile"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			
+			<frame time="40">0 20 22 15</frame>
+			<frame time="40">22 20 22 15</frame>
+			<frame time="60">44 20 22 15</frame>
+			<frame time="60">66 20 22 15</frame>
+			<frame time="60">88 20 22 15</frame>
+			<frame time="60">110 20 22 15</frame>
+			<frame time="60">132 20 22 15</frame>
+			<frame time="60">154 20 22 15</frame>
+			<frame time="60">176 20 22 15</frame>
+		</sprite>
+		<sprite origin="3 14" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:shadow"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			
+			<frame time="40">0 89 22 15</frame>
+			<frame time="40">22 89 22 15</frame>
+			<frame time="60">44 89 22 15</frame>
+			<frame time="60">66 89 22 15</frame>
+			<frame time="60">88 89 22 15</frame>
+			<frame time="60">110 89 22 15</frame>
+			<frame time="60">132 89 22 15</frame>
+			<frame time="60">154 89 22 15</frame>
+			<frame time="60">176 89 22 15</frame>
+		</sprite>
+		
+</variation>
+%//one spikes 2
+<variation>	
+		<sprite origin="3 14" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:projectile"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			
+			<frame time="40">0 0 18 20</frame>
+			<frame time="40">18 0 18 20</frame>
+			<frame time="60">36 0 18 20</frame>
+			<frame time="60">54 0 18 20</frame>
+			<frame time="60">72 0 18 20</frame>
+			<frame time="60">90 0 18 20</frame>
+			<frame time="60">108 0 18 20</frame>
+			<frame time="60">126 0 18 20</frame>
+			<frame time="60">144 0 18 20</frame>
+		</sprite>
+		<sprite origin="3 14" ulayer="0" texture="./wraith_scythe_lurker.png" material="system/default.mats:shadow"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			
+			<frame time="40">0 69 18 20</frame>
+			<frame time="40">18 69 18 20</frame>
+			<frame time="60">36 69 18 20</frame>
+			<frame time="60">54 69 18 20</frame>
+			<frame time="60">72 69 18 20</frame>
+			<frame time="60">90 69 18 20</frame>
+			<frame time="60">108 69 18 20</frame>
+			<frame time="60">126 69 18 20</frame>
+			<frame time="60">144 69 18 20</frame>
+		</sprite>
+		
+</variation>
+
+</effect>

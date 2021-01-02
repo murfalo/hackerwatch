@@ -1,0 +1,96 @@
+<unit netsync="none" save="false">
+	<behavior class="MiniPetWalking">
+		%//<string name="anim-idle">idle 8</string>
+		%//<string name="anim-walk">walk 8</string>
+		
+		<float name="speed">6</float>
+		<float name="idle-speed">4</float>
+		
+		<int name="range-idle">100</int>
+		<int name="range-pickup">200</int>
+
+		<int name="pickup-duration">2000</int>
+		<int name="idle-duration">750</int>
+	</behavior>
+	<scenes>
+		<scene random-start="true">	
+			<sprite origin="4 13" texture="doodads/generic/outlook_props.png" material="system/default.mats:glow-both-bright">
+				<frame time="120">0 121 7 13</frame>
+				<frame time="120">7 121 7 13</frame>
+				<frame time="120">14 121 7 13</frame>
+				<frame time="120">21 121 7 13</frame>
+			</sprite>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="120" />
+				</sizes>
+				<colors>
+					<color value="230 170 50 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+				</sizes>
+				<colors>
+					<color value="90 40 0 0" />
+				</colors>
+			</light>
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="800" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="22" />
+				</sizes>
+				<colors>
+					<color value="60 20 0 5" />
+					<color value="35 10 0 0" />
+				</colors>
+			</light>				
+			<light pos="0 -6">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="450" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="12" />
+				</sizes>
+				<colors>
+					<color value="110 40 0 0" />
+				</colors>
+			</light>				
+		</scene>
+	</scenes>
+</unit>

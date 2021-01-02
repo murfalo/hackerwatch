@@ -1,0 +1,37 @@
+<effect layer="120" looping="true">
+	<sprite origin="16 21" looping="true" texture="./snowball.png" material="system/default.mats:bright-noxray"
+		color-a="1"
+		pos-y="-300 * saturate(1-(t+l))"
+	>
+		<frame time="600">0 0 32 32</frame>
+	</sprite><!-- 
+	<sprite origin="16 21" looping="true" texture="./snowball.png" material="system/default.mats:glow"
+		color-a="1"
+		pos-y="-300 * saturate(1-(t+l))"
+	>
+		<frame time="900">0 0 32 32</frame>
+	</sprite> -->
+	<!-- 
+	<light pos-x="0" pos-y="-300 * saturate(1-(t+l))">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+				
+		<looping value="true" />
+		<length value="900" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="64" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="3" />
+		<color-a value="0"/>
+	</light> -->
+</effect>

@@ -1,0 +1,122 @@
+<effect looping="true" layer="5">
+	<param name="radius" default="8" />
+	<param name="posy" default="-5" />
+	<param name="posx" default="5" />
+	
+	<sprite origin="8 8" looping="true" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		pos-y="posy" 
+		color-r="1"
+		color-g="0.8"
+        color-b="0.3"
+		color-a="0.1+saturate(cos(t*pi*2))*0.1"
+		>
+		<frame time="50">18 48 16 16</frame>
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		pos-y="posy" 
+		>
+		<frame time="50">34 48 16 16</frame>
+	</sprite>
+	
+	<sprite origin="8 8" looping="true" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		pos-y="posy"
+		angle="t*pi*4"		
+		>
+		<frame time="500">51 48 16 16</frame>
+	</sprite>
+	
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="4"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5) + posx"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -18 * sin(it*pi/2) + 0.2"
+		
+        color-r="1-it*0.8"
+		color-g="0.8-it*0.8"
+        color-b="0"
+        color-a="saturate(0.2 - it)"
+	>
+        <frame time="1400">0 0 1 1</frame>
+	</sprite>	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="5"
+
+		pos-x="it*it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) + posx"
+		pos-y="it*it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - it*sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+37*i),0.5) - sin(it*it*it*it*it)*rand(i)*15"
+		
+		color-r="1-it*0.8"
+		color-g="0.8-it*0.8"
+		color-b="0"
+		color-a="saturate(0.2 - pow(it,2)"
+	>
+		<frame time="1500">0 0 1 1</frame>
+	</sprite>	
+		
+	<sprite origin="2 1" looping="false" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+		pos-x="cos(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+61+(i+l)),0.5)"
+        pos-y="sin(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+61+(i+l)),0.5) - 10 - posy * t"
+		
+		color-a="saturate(sin(t*pi))*rand(u+i+467) - t * saturate(sin(t*pi))*rand(u+i+467)"
+		>
+		<frame time="220">0 0 0 0</frame>
+		<frame time="120">0 48 4 3</frame>
+		<frame time="120">4 48 4 3</frame>
+		<frame time="120">8 48 4 3</frame>
+		<frame time="120">12 48 4 3</frame>
+		<frame time="120">16 48 4 3</frame>
+		<frame time="120">12 48 4 3</frame>
+		<frame time="120">8 48 4 3</frame>
+		<frame time="120">4 48 4 3</frame>
+		<frame time="200">0 0 0 0</frame>
+	</sprite>	
+	<sprite origin="2 1" looping="false" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		num-sprites="1"
+		pos-x="cos(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+2693+(i+l)),0.5)"
+        pos-y="sin(rand(u+239+(i+l))*2*pi) * radius * pow(rand(u+2693+(i+l)),0.5) - 10 - posy * t"
+		
+		color-a="saturate(sin(t*pi))*rand(u+i*239) - t * saturate(sin(t*pi))*rand(u+i*239)"
+		>
+		<frame time="100">0 48 4 3</frame>
+		<frame time="100">4 48 4 3</frame>
+		<frame time="100">8 48 4 3</frame>
+		<frame time="100">12 48 4 3</frame>
+		<frame time="100">16 48 4 3</frame>
+		<frame time="100">12 48 4 3</frame>
+		<frame time="100">8 48 4 3</frame>
+		<frame time="100">4 48 4 3</frame>
+	</sprite>	
+	
+	<sprite origin="2 1" looping="false" layer="1" texture="./revive.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+		pos-x="cos(rand(u+2647+i+l)*2*pi) * radius * pow(rand(u+73+i+l),0.5)"
+        pos-y="sin(rand(u+2647+i+l)*2*pi) * radius * pow(rand(u+73+i+l),0.5) - 10 - posy * t"
+		
+		color-a="saturate(sin(t*pi))*rand(u+i*2647) - t * saturate(sin(t*pi))*rand(u+i*2647)"
+		>
+		<frame time="100">0 51 4 3</frame>
+		<frame time="100">4 51 4 3</frame>
+		<frame time="100">8 51 4 3</frame>
+		<frame time="100">4 51 4 3</frame>
+	</sprite>
+	
+	<light pos-y="posy"	>
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<length value="1100" />
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<size value="30*(1-t)" />
+
+		<color-r value="1" />
+		<color-g value="0.6" />
+		<color-b value="0" />
+		<color-a value="0"/>
+	</light>
+</effect>

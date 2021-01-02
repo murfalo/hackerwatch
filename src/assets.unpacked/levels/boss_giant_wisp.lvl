@@ -1,0 +1,6050 @@
+<dict>
+	<array name="prefabs"></array>
+	<array name="scripts">
+		<array><string>LevelStart</string><int>565</int><vec3>0 664 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>566</int>
+			<vec3>-256 -288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>10</int></array>
+			</dict>
+			<array><int>569</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>567</int>
+			<vec3>-480 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Channel">1</int>
+				<string name="Music">event:/ambient/archives</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>568</int>
+			<vec3>-544 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnBoss</string>
+			<array><int>571</int><int>0</int><int>598</int><int>0</int><int>570</int><int>0</int><int>730</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>569</int>
+			<vec3>-544 -288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ActivateBoss</string>
+			<array>
+				<int>568</int>
+				<int>0</int>
+				<int>693</int>
+				<int>0</int>
+				<int>821</int>
+				<int>0</int>
+				<int>823</int>
+				<int>500</int>
+				<int>831</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CreateBossBar</string>
+			<int>570</int>
+			<vec3>-480 -480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Actors"><int>598</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>571</int>
+			<vec3>-544 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_elderwisp</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>572</int>
+			<vec3>-128 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enter</string>
+			<array><int>575</int><int>0</int><int>578</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>573</int>
+			<vec3>-256 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>exit</string>
+			<array><int>576</int><int>0</int><int>581</int><int>0</int></array>
+		</array>
+		<array>
+			<string>AnnounceText</string>
+			<int>574</int>
+			<vec3>-256 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<bool name="Override">t</bool>
+				<string name="Text">.meta.info.gatherparty</string>
+				<int name="Time">2000</int>
+				<float name="AnchorY">0.2</float>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>575</int>
+			<vec3>-160 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>574</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>576</int>
+			<vec3>-288 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>579</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>AllPlayersAreaTrigger</string>
+			<int>577</int>
+			<vec3>-192 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>12</int></array>
+				<array name="OnAllEntered"><int>572</int></array>
+				<array name="OnCanceled"><int>573</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>578</int>
+			<vec3>-96 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>579</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>LevelExitNext</string>
+			<int>579</int>
+			<vec3>-128 -704 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="StartID">1</string>
+			</dict>
+		</array>
+		<array>
+			<string>UseTrigger</string>
+			<int>580</int>
+			<vec3>-192 -768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>12</int></array>
+				<int name="Icon">6</int>
+			</dict>
+			<array><int>574</int><int>0</int><int>579</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>581</int>
+			<vec3>-224 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>574</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetStat</string>
+			<int>582</int>
+			<vec3>288 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="ValueInt">1</int>
+				<int name="ActionType">1</int>
+				<string name="Name">boss-10-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlayMusic</string>
+			<int>583</int>
+			<vec3>416 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Music">event:/music/boss_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>584</int>
+			<vec3>320 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>598</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>585</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>585</int>
+			<vec3>320 -576 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>BossKilled</string>
+			<array>
+				<int>586</int>
+				<int>0</int>
+				<int>582</int>
+				<int>0</int>
+				<int>587</int>
+				<int>0</int>
+				<int>583</int>
+				<int>0</int>
+				<int>602</int>
+				<int>0</int>
+				<int>677</int>
+				<int>0</int>
+				<int>676</int>
+				<int>0</int>
+				<int>825</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetBossKilled</string>
+			<int>586</int>
+			<vec3>224 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="BossNumber">10</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>587</int>
+			<vec3>352 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss10_killed</string>
+			<dict>
+				<int name="State">3</int>
+				<string name="Flag">boss10_killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>BeamLink</string>
+			<int>588</int>
+			<vec3>-768 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_5</string>
+			<dict>
+				<array name="#Connected">
+					<int>598</int>
+					<string>LastSpawned</string>
+					<int>622</int>
+					<string>LastSpawned</string>
+					<int>726</int>
+					<string>LastSpawned</string>
+					<int>711</int>
+					<string>LastSpawned</string>
+					<int>607</int>
+					<string>LastSpawned</string>
+					<int>720</int>
+					<string>LastSpawned</string>
+				</array>
+				<int name="PhysicalDamage">0</int>
+				<array name="#Source"><int>830</int><string>LastSpawned</string></array>
+				<float name="Range">140</float>
+				<string name="Effect">actors/mt/bosses/giant_wisp/beam.effect</string>
+				<int name="MagicalDamage">12</int>
+				<string name="Buff">actors/buffs.sval:freezing</string>
+			</dict>
+			<array><int>678</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>589</int>
+			<vec3>-704 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>609</int><int>729</int><int>795</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>590</int>
+			<vec3>608 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>FreezeActors</string>
+			<int>591</int>
+			<vec3>-256 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>freeze</string>
+			<dict>
+				<array name="#Units"><int>598</int><string>LastSpawned</string></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>592</int>
+			<vec3>-1216 -352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wisp4</string>
+			<array><int>637</int><int>0</int><int>607</int><int>2000</int><int>645</int><int>2000</int><int>683</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>593</int>
+			<vec3>-960 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_4</string>
+			<dict>
+				<string name="EventName">link_4</string>
+			</dict>
+			<array><int>662</int><int>0</int><int>659</int><int>0</int><int>646</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>594</int>
+			<vec3>608 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.1</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>595</int>
+			<vec3>608 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.3</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BeamLinkDisconnect</string>
+			<int>596</int>
+			<vec3>-768 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_5</string>
+			<dict>
+				<array name="Link"><int>588</int></array>
+			</dict>
+			<array><int>682</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BeamLinkDisconnect</string>
+			<int>597</int>
+			<vec3>-768 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_4</string>
+			<dict>
+				<array name="Link"><int>606</int></array>
+			</dict>
+			<array><int>608</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>598</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>giant_wisp</string>
+			<dict>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/mt/bosses/giant_wisp/giant_wisp.unit</string>
+			</dict>
+			<array><int>591</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BeamLink</string>
+			<int>599</int>
+			<vec3>-768 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_1</string>
+			<dict>
+				<array name="#Connected">
+					<int>622</int>
+					<string>AllSpawned</string>
+					<int>598</int>
+					<string>LastSpawned</string>
+					<int>726</int>
+					<string>LastSpawned</string>
+					<int>711</int>
+					<string>LastSpawned</string>
+					<int>607</int>
+					<string>LastSpawned</string>
+					<int>720</int>
+					<string>LastSpawned</string>
+				</array>
+				<int name="PhysicalDamage">0</int>
+				<array name="#Source"><int>826</int><string>LastSpawned</string></array>
+				<float name="Range">140</float>
+				<string name="Effect">actors/mt/bosses/giant_wisp/beam.effect</string>
+				<int name="MagicalDamage">12</int>
+				<string name="Buff">actors/buffs.sval:freezing</string>
+			</dict>
+			<array><int>687</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BeamLink</string>
+			<int>600</int>
+			<vec3>-768 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_2</string>
+			<dict>
+				<array name="#Connected">
+					<int>622</int>
+					<string>AllSpawned</string>
+					<int>598</int>
+					<string>LastSpawned</string>
+					<int>726</int>
+					<string>LastSpawned</string>
+					<int>711</int>
+					<string>LastSpawned</string>
+					<int>607</int>
+					<string>LastSpawned</string>
+					<int>720</int>
+					<string>LastSpawned</string>
+				</array>
+				<int name="PhysicalDamage">0</int>
+				<array name="#Source"><int>827</int><string>LastSpawned</string></array>
+				<float name="Range">140</float>
+				<string name="Effect">actors/mt/bosses/giant_wisp/beam.effect</string>
+				<int name="MagicalDamage">12</int>
+				<string name="Buff">actors/buffs.sval:freezing</string>
+			</dict>
+			<array><int>625</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>601</int>
+			<vec3>-1120 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>722</int><int>719</int><int>629</int><int>600</int><int>625</int><int>689</int></array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>616</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>602</int>
+			<vec3>224 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableExit</string>
+			<dict>
+				<array name="Scripts"><int>580</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BeamLinkDisconnect</string>
+			<int>603</int>
+			<vec3>-768 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_2</string>
+			<dict>
+				<array name="Link"><int>600</int></array>
+			</dict>
+			<array><int>717</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BeamLinkDisconnect</string>
+			<int>604</int>
+			<vec3>-768 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_1</string>
+			<dict>
+				<array name="Link"><int>599</int></array>
+			</dict>
+			<array><int>651</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>605</int>
+			<vec3>-832 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>connect</string>
+			<array><int>588</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BeamLink</string>
+			<int>606</int>
+			<vec3>-768 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_4</string>
+			<dict>
+				<array name="#Connected">
+					<int>622</int>
+					<string>AllSpawned</string>
+					<int>598</int>
+					<string>LastSpawned</string>
+					<int>726</int>
+					<string>LastSpawned</string>
+					<int>711</int>
+					<string>LastSpawned</string>
+					<int>607</int>
+					<string>LastSpawned</string>
+					<int>720</int>
+					<string>LastSpawned</string>
+				</array>
+				<int name="PhysicalDamage">0</int>
+				<array name="#Source"><int>829</int><string>LastSpawned</string></array>
+				<float name="Range">140</float>
+				<string name="Effect">actors/mt/bosses/giant_wisp/beam.effect</string>
+				<int name="MagicalDamage">12</int>
+				<string name="Buff">actors/buffs.sval:freezing</string>
+			</dict>
+			<array><int>670</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>607</int>
+			<vec3>-96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp4</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>608</int>
+			<vec3>-704 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>615</int><int>592</int><int>796</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>609</int>
+			<vec3>-640 256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_3</string>
+			<array><int>704</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>610</int>
+			<vec3>-1056 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp3</string>
+			<dict>
+				<array name="Scripts"><int>729</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>611</int>
+			<vec3>-960 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_3</string>
+			<dict>
+				<string name="EventName">link_3</string>
+			</dict>
+			<array><int>644</int><int>0</int><int>619</int><int>0</int><int>646</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>612</int>
+			<vec3>-192 832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>BreakAllLinks</string>
+			<array>
+				<int>645</int>
+				<int>0</int>
+				<int>666</int>
+				<int>0</int>
+				<int>732</int>
+				<int>0</int>
+				<int>731</int>
+				<int>0</int>
+				<int>685</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>613</int>
+			<vec3>-832 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>connect</string>
+			<array><int>599</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>614</int>
+			<vec3>-1280 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wisp5</string>
+			<array><int>669</int><int>0</int><int>720</int><int>2000</int><int>645</int><int>2000</int><int>683</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>615</int>
+			<vec3>-640 416 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_4</string>
+			<array><int>704</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>616</int>
+			<vec3>-832 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnect</string>
+			<array><int>603</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>617</int>
+			<vec3>-832 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnect</string>
+			<array><int>596</int><int>0</int></array>
+		</array>
+		<array>
+			<string>BeamLink</string>
+			<int>618</int>
+			<vec3>-768 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_3</string>
+			<dict>
+				<array name="#Connected">
+					<int>622</int>
+					<string>AllSpawned</string>
+					<int>598</int>
+					<string>LastSpawned</string>
+					<int>726</int>
+					<string>LastSpawned</string>
+					<int>711</int>
+					<string>LastSpawned</string>
+					<int>607</int>
+					<string>LastSpawned</string>
+					<int>720</int>
+					<string>LastSpawned</string>
+				</array>
+				<int name="PhysicalDamage">0</int>
+				<array name="#Source"><int>828</int><string>LastSpawned</string></array>
+				<float name="Range">140</float>
+				<string name="Effect">actors/mt/bosses/giant_wisp/beam.effect</string>
+				<int name="MagicalDamage">12</int>
+				<string name="Buff">actors/buffs.sval:freezing</string>
+			</dict>
+			<array><int>620</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>619</int>
+			<vec3>-896 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_3</string>
+			<dict>
+				<array name="OnFalse"><int>630</int></array>
+				<array name="OnTrue"><int>633</int></array>
+				<string name="Flag">link_3</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>620</int>
+			<vec3>-704 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>609</int><int>729</int><int>795</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>621</int>
+			<vec3>-992 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wisp2</string>
+			<array><int>656</int><int>0</int><int>726</int><int>2000</int><int>645</int><int>2000</int><int>683</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>622</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp1</string>
+			<dict>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>623</int>
+			<vec3>-1120 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>619</int><int>611</int><int>633</int><int>618</int><int>620</int><int>609</int></array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>630</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>624</int>
+			<vec3>608 -96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.4</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>625</int>
+			<vec3>-704 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>689</int><int>621</int><int>794</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>BeamLinkDisconnect</string>
+			<int>626</int>
+			<vec3>-768 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_3</string>
+			<dict>
+				<array name="Link"><int>618</int></array>
+			</dict>
+			<array><int>589</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>627</int>
+			<vec3>160 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>791</int><int>658</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>628</int>
+			<vec3>-832 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnect</string>
+			<array><int>597</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>629</int>
+			<vec3>-832 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>connect</string>
+			<array><int>600</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>630</int>
+			<vec3>-832 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnect</string>
+			<array><int>626</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>631</int>
+			<vec3>-832 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disconnect</string>
+			<array><int>604</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>632</int>
+			<vec3>-832 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>connect</string>
+			<array><int>606</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>633</int>
+			<vec3>-832 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>connect</string>
+			<array><int>618</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>634</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>817</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>635</int>
+			<vec3>608 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.2</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>636</int>
+			<vec3>608 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.6</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>637</int>
+			<vec3>-96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>820</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>638</int>
+			<vec3>-992 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp3</string>
+			<dict>
+				<array name="#Units"><int>711</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>610</int><int>0</int></array>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>639</int>
+			<vec3>-1184 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp4</string>
+			<dict>
+				<array name="#Units"><int>607</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>721</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>640</int>
+			<vec3>-1120 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>593</int><int>659</int><int>632</int><int>606</int><int>670</int><int>615</int></array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>628</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>641</int>
+			<vec3>-896 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_5</string>
+			<dict>
+				<array name="OnFalse"><int>617</int></array>
+				<array name="OnTrue"><int>605</int></array>
+				<string name="Flag">link_5</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>642</int>
+			<vec3>-960 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_5</string>
+			<dict>
+				<string name="EventName">link_5</string>
+			</dict>
+			<array><int>702</int><int>0</int><int>641</int><int>0</int><int>646</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>643</int>
+			<vec3>-1472 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableTimer</string>
+			<dict>
+				<array name="Scripts"><int>712</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>644</int>
+			<vec3>-992 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>645</int>
+			<vec3>-832 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DisconnectAll</string>
+			<array>
+				<int>604</int>
+				<int>0</int>
+				<int>603</int>
+				<int>0</int>
+				<int>626</int>
+				<int>0</int>
+				<int>597</int>
+				<int>0</int>
+				<int>596</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>646</int>
+			<vec3>-480 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CheckLinksAll</string>
+			<array>
+				<int>789</int>
+				<int>0</int>
+				<int>713</int>
+				<int>0</int>
+				<int>714</int>
+				<int>0</int>
+				<int>715</int>
+				<int>0</int>
+				<int>716</int>
+				<int>0</int>
+				<int>649</int>
+				<int>0</int>
+				<int>788</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>647</int>
+			<vec3>704 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_5</string>
+			<dict>
+				<string name="Flag">hunkerdown_5</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>648</int>
+			<vec3>32 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>791</int></array>
+			</dict>
+			<array><int>792</int><int>1000</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>649</int>
+			<vec3>-416 768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_5</string>
+			<dict>
+				<array name="OnFalse"><int>688</int><int>790</int></array>
+				<string name="Flag">link_5</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>650</int>
+			<vec3>-1248 608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_5_dest</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>651</int>
+			<vec3>-704 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>690</int><int>728</int><int>793</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>652</int>
+			<vec3>-1024 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp2</string>
+			<dict>
+				<array name="Scripts"><int>621</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>653</int>
+			<vec3>512 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_5</string>
+			<dict>
+				<string name="EventName">hunkerdown_5</string>
+			</dict>
+			<array><int>681</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>654</int>
+			<vec3>-1184 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>link_2_dest</string>
+			<dict>
+				<string name="EventName">link_2_dest</string>
+			</dict>
+			<array><int>664</int><int>0</int><int>701</int><int>0</int><int>601</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>655</int>
+			<vec3>96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>819</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>656</int>
+			<vec3>144 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>818</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>657</int>
+			<vec3>-1184 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>link_1_dest</string>
+			<dict>
+				<string name="EventName">link_1_dest</string>
+			</dict>
+			<array><int>664</int><int>0</int><int>698</int><int>0</int><int>692</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>658</int>
+			<vec3>96 -736 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>suicide</string>
+			<dict>
+				<array name="Areas"><int>13</int></array>
+				<string name="Buff">actors/buffs.sval:suicide</string>
+				<int name="Damage">0</int>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>659</int>
+			<vec3>-896 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_4</string>
+			<dict>
+				<array name="OnFalse"><int>628</int></array>
+				<array name="OnTrue"><int>632</int></array>
+				<string name="Flag">link_4</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>660</int>
+			<vec3>-992 -96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>661</int>
+			<vec3>-896 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_1</string>
+			<dict>
+				<array name="OnFalse"><int>631</int></array>
+				<array name="OnTrue"><int>613</int></array>
+				<string name="Flag">link_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>662</int>
+			<vec3>-992 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>663</int>
+			<vec3>-1184 288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>link_3_dest</string>
+			<dict>
+				<string name="EventName">link_3_dest</string>
+			</dict>
+			<array><int>664</int><int>0</int><int>699</int><int>0</int><int>623</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>664</int>
+			<vec3>-1440 256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Variables"><int>673</int></array>
+				<int name="Value">1</int>
+				<int name="Function">2</int>
+			</dict>
+			<array><int>691</int><int>0</int><int>667</int><int>0</int><int>672</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>665</int>
+			<vec3>-768 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_5</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">link_5</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>666</int>
+			<vec3>-192 896 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>DisableAllLinks</string>
+			<dict>
+				<array name="Scripts">
+					<int>712</int>
+					<int>703</int>
+					<int>709</int>
+					<int>690</int>
+					<int>689</int>
+					<int>609</int>
+					<int>615</int>
+					<int>708</int>
+					<int>684</int>
+					<int>722</int>
+					<int>611</int>
+					<int>593</int>
+					<int>642</int>
+					<int>641</int>
+					<int>659</int>
+					<int>619</int>
+					<int>719</int>
+					<int>661</int>
+					<int>613</int>
+					<int>629</int>
+					<int>600</int>
+					<int>625</int>
+					<int>599</int>
+					<int>687</int>
+					<int>633</int>
+					<int>618</int>
+					<int>620</int>
+					<int>632</int>
+					<int>670</int>
+					<int>606</int>
+					<int>605</int>
+					<int>588</int>
+					<int>678</int>
+					<int>723</int>
+					<int>592</int>
+					<int>721</int>
+					<int>639</int>
+					<int>610</int>
+					<int>638</int>
+					<int>729</int>
+					<int>621</int>
+					<int>652</int>
+					<int>727</int>
+					<int>728</int>
+					<int>724</int>
+					<int>725</int>
+					<int>675</int>
+					<int>674</int>
+					<int>614</int>
+					<int>710</int>
+					<int>705</int>
+					<int>707</int>
+					<int>643</int>
+				</array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>667</int>
+			<vec3>-1376 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<array name="Variable"><int>673</int></array>
+				<int name="Value">4</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>668</int>
+			<vec3>-1248 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_4_dest</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnEffect</string>
+			<int>669</int>
+			<vec3>-144 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Effect">actors/mt/bosses/giant_wisp/wisp_spawn.effect</string>
+			</dict>
+			<array><int>816</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>670</int>
+			<vec3>-704 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>615</int><int>592</int><int>796</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>671</int>
+			<vec3>384 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>15</int><int>18</int><int>19</int><int>17</int><int>16</int><int>20</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>672</int>
+			<vec3>-1376 256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<array name="Variable"><int>673</int></array>
+				<int name="Value">5</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array><string>Variable</string><int>673</int><vec3>-1440 192 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>pylons_destroyed</string></array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>674</int>
+			<vec3>-1312 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp5</string>
+			<dict>
+				<array name="Scripts"><int>614</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>675</int>
+			<vec3>-1248 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp5</string>
+			<dict>
+				<array name="#Units"><int>720</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>674</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>676</int>
+			<vec3>96 -864 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>KillEverything</string>
+			<array><int>648</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>677</int>
+			<vec3>-288 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>links_broken</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">links_broken</string>
+			</dict>
+			<array><int>612</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>678</int>
+			<vec3>-704 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>708</int><int>614</int><int>797</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>679</int>
+			<vec3>-640 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EnableTimer</string>
+			<array><int>643</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>680</int>
+			<vec3>-1120 608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>642</int><int>641</int><int>605</int><int>588</int><int>678</int><int>708</int></array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>617</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>681</int>
+			<vec3>512 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleImmortality</string>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>682</int>
+			<vec3>-704 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>708</int><int>614</int><int>797</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>683</int>
+			<vec3>-768 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CheckAll</string>
+			<array>
+				<int>661</int>
+				<int>0</int>
+				<int>719</int>
+				<int>0</int>
+				<int>619</int>
+				<int>0</int>
+				<int>659</int>
+				<int>0</int>
+				<int>641</int>
+				<int>0</int>
+				<int>646</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>684</int>
+			<vec3>-960 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_1</string>
+			<dict>
+				<string name="EventName">link_1</string>
+			</dict>
+			<array><int>660</int><int>0</int><int>661</int><int>0</int><int>646</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>685</int>
+			<vec3>320 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>UnleashWisp</string>
+			<array><int>735</int><int>0</int><int>798</int><int>0</int><int>671</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>686</int>
+			<vec3>-1184 448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>link_4_dest</string>
+			<dict>
+				<string name="EventName">link_4_dest</string>
+			</dict>
+			<array><int>664</int><int>0</int><int>668</int><int>0</int><int>640</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>687</int>
+			<vec3>-704 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>690</int><int>728</int><int>793</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>688</int>
+			<vec3>-288 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<array><int>677</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>689</int>
+			<vec3>-640 96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_2</string>
+			<array><int>704</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>690</int>
+			<vec3>-640 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_1</string>
+			<array><int>704</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>691</int>
+			<vec3>-1376 192 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<array name="Variable"><int>673</int></array>
+				<int name="Value">3</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>692</int>
+			<vec3>-1120 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>684</int><int>661</int><int>613</int><int>599</int><int>687</int><int>690</int></array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>631</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>693</int>
+			<vec3>-704 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SetFlags</string>
+			<array>
+				<int>694</int>
+				<int>0</int>
+				<int>695</int>
+				<int>0</int>
+				<int>696</int>
+				<int>0</int>
+				<int>697</int>
+				<int>0</int>
+				<int>665</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>694</int>
+			<vec3>-768 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_1</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">link_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>695</int>
+			<vec3>-768 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_2</string>
+			<dict>
+				<string name="Flag">link_2</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>696</int>
+			<vec3>-768 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_3</string>
+			<dict>
+				<string name="Flag">link_3</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>697</int>
+			<vec3>-768 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_4</string>
+			<dict>
+				<string name="Flag">link_4</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>698</int>
+			<vec3>-1248 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_1_dest</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>699</int>
+			<vec3>-1248 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_3_dest</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>700</int>
+			<vec3>-1184 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>link_5_dest</string>
+			<dict>
+				<string name="EventName">link_5_dest</string>
+			</dict>
+			<array><int>664</int><int>0</int><int>650</int><int>0</int><int>680</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>701</int>
+			<vec3>-1248 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_2_dest</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>702</int>
+			<vec3>-992 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>703</int>
+			<vec3>-1408 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnWisp</string>
+			<array>
+				<int>709</int>
+				<int>1000</int>
+				<int>723</int>
+				<int>0</int>
+				<int>799</int>
+				<int>0</int>
+				<int>800</int>
+				<int>0</int>
+				<int>801</int>
+				<int>0</int>
+				<int>807</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>704</int>
+			<vec3>-1408 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>+1</string>
+			<dict>
+				<array name="Variables"><int>706</int></array>
+				<int name="Value">1</int>
+				<int name="Function">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>705</int>
+			<vec3>-1344 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>? &gt; 40</string>
+			<dict>
+				<array name="OnTrue"><int>703</int></array>
+				<array name="Variable"><int>706</int></array>
+				<int name="Value">40</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>Variable</string>
+			<int>706</int>
+			<vec3>-320 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>WISP COUNTER</string>
+			<dict>
+				<int name="Value">30</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>707</int>
+			<vec3>-1536 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>reset</string>
+			<dict>
+				<array name="Variables"><int>706</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>708</int>
+			<vec3>-640 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_5</string>
+			<array><int>704</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>709</int>
+			<vec3>-1536 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Cooldown</string>
+			<array><int>707</int><int>0</int><int>710</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>710</int>
+			<vec3>-1472 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>703</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>711</int>
+			<vec3>96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp3</string>
+			<dict>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>712</int>
+			<vec3>-1472 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp_timer</string>
+			<array><int>705</int><int>0</int><int>844</int><int>0</int><int>850</int><int>0</int><int>851</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>713</int>
+			<vec3>-416 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_1</string>
+			<dict>
+				<array name="OnFalse"><int>790</int></array>
+				<string name="Flag">link_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>714</int>
+			<vec3>-416 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_2</string>
+			<dict>
+				<array name="OnFalse"><int>790</int></array>
+				<string name="Flag">link_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>715</int>
+			<vec3>-416 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_3</string>
+			<dict>
+				<array name="OnFalse"><int>790</int></array>
+				<string name="Flag">link_3</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>716</int>
+			<vec3>-416 736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_4</string>
+			<dict>
+				<array name="OnFalse"><int>790</int></array>
+				<string name="Flag">link_4</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>717</int>
+			<vec3>-704 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>621</int><int>689</int><int>794</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>718</int>
+			<vec3>-992 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">link_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>719</int>
+			<vec3>-896 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_2</string>
+			<dict>
+				<array name="OnFalse"><int>616</int></array>
+				<array name="OnTrue"><int>629</int></array>
+				<string name="Flag">link_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>720</int>
+			<vec3>-144 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp5</string>
+			<dict>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>721</int>
+			<vec3>-1248 -416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp4</string>
+			<dict>
+				<array name="Scripts"><int>592</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>722</int>
+			<vec3>-960 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>link_2</string>
+			<dict>
+				<string name="EventName">link_2</string>
+			</dict>
+			<array><int>718</int><int>0</int><int>719</int><int>0</int><int>646</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>723</int>
+			<vec3>-1248 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="ToExecute"><int>728</int><int>621</int><int>729</int><int>592</int><int>614</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>724</int>
+			<vec3>-1088 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp1</string>
+			<dict>
+				<array name="#Units"><int>622</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>725</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>725</int>
+			<vec3>-1152 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp1</string>
+			<dict>
+				<array name="Scripts"><int>728</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>726</int>
+			<vec3>144 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp2</string>
+			<dict>
+				<bool name="NoLootEnemy">t</bool>
+				<bool name="NoExperienceEnemy">t</bool>
+				<bool name="AggroEnemy">t</bool>
+				<string name="UnitType">actors/mt/wisp_frost.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>727</int>
+			<vec3>-960 -576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wisp2</string>
+			<dict>
+				<array name="#Units"><int>726</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>652</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>728</int>
+			<vec3>-1120 -608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wisp1</string>
+			<array><int>634</int><int>0</int><int>622</int><int>2000</int><int>645</int><int>2000</int><int>683</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>729</int>
+			<vec3>-1024 -352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wisp3</string>
+			<array><int>655</int><int>0</int><int>711</int><int>2000</int><int>645</int><int>2000</int><int>683</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>FreezeActors</string>
+			<int>730</int>
+			<vec3>-320 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>unfreeze</string>
+			<dict>
+				<array name="#Units"><int>598</int><string>LastSpawned</string></array>
+			</dict>
+		</array>
+		<array>
+			<string>AddScreenShake</string>
+			<int>731</int>
+			<vec3>320 672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<float name="Amount">3.5</float>
+				<int name="Time">1000</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>732</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetCollider</string>
+			<int>733</int>
+			<vec3>224 -448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>1</int></array>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>734</int>
+			<vec3>448 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>lock</string>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+				<int name="Filter">4</int>
+				<int name="Frequency">100</int>
+				<int name="Damage">0</int>
+				<string name="Buff">actors/buffs.sval:wisp-lock</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>735</int>
+			<vec3>448 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>disable</string>
+			<dict>
+				<array name="Scripts"><int>734</int><int>793</int><int>795</int><int>794</int><int>796</int><int>797</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>736</int>
+			<vec3>896 -416 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.9</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>737</int>
+			<vec3>896 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.8</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>738</int>
+			<vec3>896 -352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.7</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>739</int>
+			<vec3>896 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.6</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>740</int>
+			<vec3>896 -288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>741</int>
+			<vec3>896 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.4</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>742</int>
+			<vec3>896 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.3</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>743</int>
+			<vec3>896 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.2</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>744</int>
+			<vec3>896 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<float name="Value">0.1</float>
+			</dict>
+			<array><int>747</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>745</int>
+			<vec3>800 -224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleImmortality</string>
+			<dict>
+				<array name="#Units"><int>826</int><string>LastSpawned</string></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>746</int>
+			<vec3>800 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_1</string>
+			<dict>
+				<string name="EventName">hunkerdown_1</string>
+			</dict>
+			<array><int>745</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>747</int>
+			<vec3>992 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_1</string>
+			<dict>
+				<string name="Flag">hunkerdown_1</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>748</int>
+			<vec3>1216 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.9</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>749</int>
+			<vec3>1216 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.8</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>750</int>
+			<vec3>1216 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.7</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>751</int>
+			<vec3>1216 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.6</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>752</int>
+			<vec3>1216 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>753</int>
+			<vec3>1216 -96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.4</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>754</int>
+			<vec3>1216 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.3</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>755</int>
+			<vec3>1216 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.2</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>756</int>
+			<vec3>1216 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<float name="Value">0.1</float>
+			</dict>
+			<array><int>759</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>757</int>
+			<vec3>1120 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleImmortality</string>
+			<dict>
+				<array name="#Units"><int>827</int><string>LastSpawned</string></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>758</int>
+			<vec3>1120 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_2</string>
+			<dict>
+				<string name="EventName">hunkerdown_2</string>
+			</dict>
+			<array><int>757</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>759</int>
+			<vec3>1312 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_2</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">hunkerdown_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>760</int>
+			<vec3>1088 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.9</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>761</int>
+			<vec3>1088 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.8</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>762</int>
+			<vec3>1088 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.7</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>763</int>
+			<vec3>1088 192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.6</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>764</int>
+			<vec3>1088 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>765</int>
+			<vec3>1088 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.4</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>766</int>
+			<vec3>1088 288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.3</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>767</int>
+			<vec3>1088 320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.2</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>768</int>
+			<vec3>1088 352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<float name="Value">0.1</float>
+			</dict>
+			<array><int>771</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>769</int>
+			<vec3>992 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleImmortality</string>
+			<dict>
+				<array name="#Units"><int>828</int><string>LastSpawned</string></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>770</int>
+			<vec3>992 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_3</string>
+			<dict>
+				<string name="EventName">hunkerdown_3</string>
+			</dict>
+			<array><int>769</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>771</int>
+			<vec3>1184 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_3</string>
+			<dict>
+				<string name="Flag">hunkerdown_3</string>
+				<int name="State">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>772</int>
+			<vec3>736 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.9</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>773</int>
+			<vec3>736 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.8</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>774</int>
+			<vec3>736 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.7</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>775</int>
+			<vec3>736 192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.6</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>776</int>
+			<vec3>736 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>777</int>
+			<vec3>736 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.4</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>778</int>
+			<vec3>736 288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.3</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>779</int>
+			<vec3>736 320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.2</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>780</int>
+			<vec3>736 352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<float name="Value">0.1</float>
+			</dict>
+			<array><int>783</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>781</int>
+			<vec3>640 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleImmortality</string>
+			<dict>
+				<array name="#Units"><int>829</int><string>LastSpawned</string></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>782</int>
+			<vec3>640 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_4</string>
+			<dict>
+				<string name="EventName">hunkerdown_4</string>
+			</dict>
+			<array><int>781</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetFlag</string>
+			<int>783</int>
+			<vec3>832 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>hunkerdown_4</string>
+			<dict>
+				<int name="State">1</int>
+				<string name="Flag">hunkerdown_4</string>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>784</int>
+			<vec3>608 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.9</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>785</int>
+			<vec3>608 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.8</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>786</int>
+			<vec3>608 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>830</int><string>LastSpawned</string></array>
+				<float name="Value">0.7</float>
+			</dict>
+			<array><int>647</int><int>0</int></array>
+		</array>
+		<array>
+			<string>Variable</string>
+			<int>787</int>
+			<vec3>-320 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>LINKS</string>
+			<dict>
+				<int name="Value">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>788</int>
+			<vec3>-416 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>? &lt; X</string>
+			<dict>
+				<array name="OnTrue"><int>677</int></array>
+				<array name="Variable"><int>787</int></array>
+				<int name="Function">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>789</int>
+			<vec3>-480 624 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Variables"><int>787</int></array>
+				<int name="Value">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>790</int>
+			<vec3>-352 624 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>-1</string>
+			<dict>
+				<array name="Variables"><int>787</int></array>
+				<int name="Value">1</int>
+				<int name="Function">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>791</int>
+			<vec3>32 -736 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>cancel-skills</string>
+			<dict>
+				<array name="Areas"><int>13</int></array>
+				<string name="Buff">actors/buffs.sval:cancel-skills</string>
+				<int name="Damage">0</int>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>792</int>
+			<vec3>96 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>enable</string>
+			<dict>
+				<array name="Scripts"><int>658</int></array>
+			</dict>
+			<array><int>627</int><int>1000</int><int>824</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>793</int>
+			<vec3>-640 0 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shield-1</string>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+				<string name="Buff">actors/buffs.sval:wisp-shield-1</string>
+				<int name="Frequency">200</int>
+				<int name="Damage">0</int>
+				<bool name="CanKill">f</bool>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>794</int>
+			<vec3>-640 160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shield-2</string>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+				<string name="Buff">actors/buffs.sval:wisp-shield-2</string>
+				<int name="Damage">0</int>
+				<int name="Frequency">200</int>
+				<bool name="CanKill">f</bool>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>795</int>
+			<vec3>-640 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shield-3</string>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+				<string name="Buff">actors/buffs.sval:wisp-shield-3</string>
+				<int name="Damage">0</int>
+				<int name="Frequency">200</int>
+				<bool name="CanKill">f</bool>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>796</int>
+			<vec3>-640 480 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shield-4</string>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+				<string name="Buff">actors/buffs.sval:wisp-shield-4</string>
+				<int name="Frequency">200</int>
+				<int name="Damage">0</int>
+				<bool name="CanKill">f</bool>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>DangerArea</string>
+			<int>797</int>
+			<vec3>-640 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>shield-5</string>
+			<dict>
+				<array name="Areas"><int>9</int></array>
+				<string name="Buff">actors/buffs.sval:wisp-shield-5</string>
+				<int name="Damage">0</int>
+				<int name="Frequency">200</int>
+				<bool name="CanKill">f</bool>
+				<int name="Filter">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleImmortality</string>
+			<int>798</int>
+			<vec3>320 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>828</int>
+					<string>LastSpawned</string>
+					<int>827</int>
+					<string>LastSpawned</string>
+					<int>826</int>
+					<string>LastSpawned</string>
+					<int>830</int>
+					<string>LastSpawned</string>
+					<int>829</int>
+					<string>LastSpawned</string>
+				</array>
+				<int name="State">2</int>
+			</dict>
+			<array><int>839</int><int>0</int><int>838</int><int>200</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>799</int>
+			<vec3>-1184 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<array name="ToExecute"><int>728</int><int>621</int><int>729</int><int>592</int><int>614</int></array>
+				<int name="NumToExecute">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>800</int>
+			<vec3>-1120 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<array name="ToExecute"><int>728</int><int>621</int><int>729</int><int>592</int><int>614</int></array>
+				<int name="NumToExecute">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>801</int>
+			<vec3>-1056 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<array name="ToExecute"><int>728</int><int>621</int><int>729</int><int>592</int><int>614</int></array>
+				<int name="NumToExecute">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>802</int>
+			<vec3>-1600 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<array name="OnTrue"><int>809</int></array>
+				<int name="Value">2</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>803</int>
+			<vec3>-1664 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckPlayers</string>
+			<array><int>802</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>804</int>
+			<vec3>-1536 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<array><int>812</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>805</int>
+			<vec3>-1536 -544 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<array><int>813</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>806</int>
+			<vec3>-1536 -608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<array><int>814</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>807</int>
+			<vec3>-992 -256 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<array name="ToExecute"><int>728</int><int>621</int><int>729</int><int>592</int><int>614</int></array>
+				<int name="NumToExecute">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>808</int>
+			<vec3>-1536 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>5+</string>
+			<array><int>815</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>809</int>
+			<vec3>-1600 -544 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<array name="OnTrue"><int>810</int></array>
+				<array name="OnFalse"><int>804</int></array>
+				<int name="Function">4</int>
+				<int name="Value">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>810</int>
+			<vec3>-1600 -608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<array name="OnTrue"><int>811</int></array>
+				<array name="OnFalse"><int>805</int></array>
+				<int name="Function">4</int>
+				<int name="Value">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckPlayerCount</string>
+			<int>811</int>
+			<vec3>-1600 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>5+</string>
+			<dict>
+				<array name="OnFalse"><int>806</int></array>
+				<array name="OnTrue"><int>808</int></array>
+				<int name="Value">5</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>812</int>
+			<vec3>-1472 -480 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<array name="Scripts"><int>799</int><int>723</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>813</int>
+			<vec3>-1472 -544 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<array name="Scripts"><int>800</int><int>723</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>814</int>
+			<vec3>-1472 -608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<array name="Scripts"><int>801</int><int>723</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>815</int>
+			<vec3>-1472 -672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<array name="Scripts"><int>807</int><int>723</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>816</int>
+			<vec3>-144 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>817</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>818</int>
+			<vec3>144 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>819</int>
+			<vec3>96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>820</int>
+			<vec3>-96 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/enemy/ice_shaman_troll/snow_bomb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>821</int>
+			<vec3>-448 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<array name="Units"><int>502</int><int>494</int><int>508</int><int>503</int><int>509</int><int>506</int><int>510</int><int>505</int><int>499</int></array>
+				<string name="State">on</string>
+			</dict>
+		</array>
+		<array>
+			<string>Teleport</string>
+			<int>822</int>
+			<vec3>0 200 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>14</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>823</int>
+			<vec3>-384 -224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>EnableTele</string>
+			<dict>
+				<array name="Scripts"><int>822</int></array>
+			</dict>
+		</array>
+		<array><string>DestroyUnits</string><int>824</int><vec3>160 -736 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>825</int>
+			<vec3>224 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<array name="Units"><int>497</int><int>500</int><int>504</int><int>495</int><int>496</int><int>498</int><int>501</int><int>511</int><int>507</int></array>
+				<string name="State">off</string>
+			</dict>
+			<array><int>733</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>826</int>
+			<vec3>0 -136 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pylon1</string>
+			<dict>
+				<string name="SceneName">0</string>
+				<string name="UnitType">actors/mt/bosses/giant_wisp/pylon1.unit</string>
+			</dict>
+			<array><int>835</int><int>0</int><int>661</int><int>500</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>827</int>
+			<vec3>120 -48 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pylon2</string>
+			<dict>
+				<string name="SceneName">0</string>
+				<string name="UnitType">actors/mt/bosses/giant_wisp/pylon2.unit</string>
+			</dict>
+			<array><int>834</int><int>0</int><int>719</int><int>500</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>828</int>
+			<vec3>72 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pylon3</string>
+			<dict>
+				<string name="SceneName">0</string>
+				<string name="UnitType">actors/mt/bosses/giant_wisp/pylon3.unit</string>
+			</dict>
+			<array><int>832</int><int>0</int><int>619</int><int>500</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>829</int>
+			<vec3>-72 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pylon4</string>
+			<dict>
+				<string name="SceneName">0</string>
+				<string name="UnitType">actors/mt/bosses/giant_wisp/pylon4.unit</string>
+			</dict>
+			<array><int>837</int><int>0</int><int>659</int><int>500</int></array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>830</int>
+			<vec3>-120 -48 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>pylon5</string>
+			<dict>
+				<string name="SceneName">0</string>
+				<string name="UnitType">actors/mt/bosses/giant_wisp/pylon5.unit</string>
+			</dict>
+			<array><int>836</int><int>0</int><int>641</int><int>500</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>831</int>
+			<vec3>-544 -192 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SpawnPylons</string>
+			<array>
+				<int>826</int>
+				<int>1250</int>
+				<int>827</int>
+				<int>750</int>
+				<int>828</int>
+				<int>500</int>
+				<int>829</int>
+				<int>1000</int>
+				<int>830</int>
+				<int>250</int>
+				<int>679</int>
+				<int>1500</int>
+			</array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>832</int>
+			<vec3>128 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>22</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDamagedTrigger</string>
+			<int>833</int>
+			<vec3>-256 -352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>598</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>569</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>834</int>
+			<vec3>160 -32 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>835</int>
+			<vec3>32 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>25</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>836</int>
+			<vec3>-96 -96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>837</int>
+			<vec3>-128 96 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>21</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DamageUnits</string>
+			<int>838</int>
+			<vec3>256 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>829</int>
+					<string>LastSpawned</string>
+					<int>828</int>
+					<string>LastSpawned</string>
+					<int>827</int>
+					<string>LastSpawned</string>
+					<int>826</int>
+					<string>LastSpawned</string>
+					<int>830</int>
+					<string>LastSpawned</string>
+				</array>
+				<int name="Physical">0</int>
+				<string name="Buff">actors/buffs.sval:suicide</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>839</int>
+			<vec3>320 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>781</int>
+					<int>782</int>
+					<int>681</int>
+					<int>653</int>
+					<int>745</int>
+					<int>746</int>
+					<int>757</int>
+					<int>758</int>
+					<int>770</int>
+					<int>769</int>
+				</array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ExploreMinimapRect</string>
+			<int>840</int>
+			<vec3>0 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="Height">1400</int>
+				<int name="Width">1100</int>
+			</dict>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>841</int>
+			<vec3>-736 -704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>0.75</string>
+			<dict>
+				<array name="#Units"><int>598</int><string>LastSpawned</string></array>
+				<float name="Value">0.75</float>
+			</dict>
+			<array><int>847</int><int>0</int><int>848</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>842</int>
+			<vec3>-736 -640 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>0.5</string>
+			<dict>
+				<array name="#Units"><int>598</int><string>LastSpawned</string></array>
+				<float name="Value">0.5</float>
+			</dict>
+			<array><int>846</int><int>0</int><int>849</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ActorHealthTrigger</string>
+			<int>843</int>
+			<vec3>-736 -576 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>0.25</string>
+			<dict>
+				<array name="#Units"><int>598</int><string>LastSpawned</string></array>
+				<float name="Value">0.25</float>
+			</dict>
+			<array><int>845</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>844</int>
+			<vec3>-1344 -128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>? &gt; 30</string>
+			<dict>
+				<array name="OnTrue"><int>703</int></array>
+				<array name="Variable"><int>706</int></array>
+				<int name="Value">30</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>845</int>
+			<vec3>-800 -576 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<array name="Scripts"><int>850</int><int>851</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>846</int>
+			<vec3>-800 -640 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<array name="Scripts"><int>844</int><int>850</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>847</int>
+			<vec3>-800 -704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<array name="Scripts"><int>705</int><int>844</int></array>
+				<int name="State">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>848</int>
+			<vec3>-704 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>842</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>849</int>
+			<vec3>-704 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>843</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>850</int>
+			<vec3>-1344 -96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>? &gt; 20</string>
+			<dict>
+				<array name="OnTrue"><int>703</int></array>
+				<array name="Variable"><int>706</int></array>
+				<int name="Value">20</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>851</int>
+			<vec3>-1344 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>? &gt; 10</string>
+			<dict>
+				<array name="OnTrue"><int>703</int></array>
+				<array name="Variable"><int>706</int></array>
+				<int name="Value">10</int>
+				<int name="Function">4</int>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="doodads/generic/boss_wisp_room.unit"><vec2>0 0</vec2><int>82</int></array>
+		<array name="doodads/walls/_ledge_ice_16_nominimap.unit">
+			<vec2>-240 24</vec2>
+			<int>99</int>
+			<vec2>-208 168</vec2>
+			<int>100</int>
+			<vec2>-80 248</vec2>
+			<int>101</int>
+			<vec2>-256 40</vec2>
+			<int>102</int>
+			<vec2>208 152</vec2>
+			<int>103</int>
+			<vec2>-192 168</vec2>
+			<int>104</int>
+			<vec2>-208 152</vec2>
+			<int>105</int>
+			<vec2>64 248</vec2>
+			<int>106</int>
+			<vec2>192 168</vec2>
+			<int>107</int>
+			<vec2>-224 88</vec2>
+			<int>108</int>
+			<vec2>-224 104</vec2>
+			<int>109</int>
+			<vec2>240 40</vec2>
+			<int>110</int>
+			<vec2>-208 136</vec2>
+			<int>111</int>
+			<vec2>128 528</vec2>
+			<int>112</int>
+			<vec2>96 480</vec2>
+			<int>113</int>
+			<vec2>128 544</vec2>
+			<int>114</int>
+			<vec2>-144 544</vec2>
+			<int>115</int>
+			<vec2>112 560</vec2>
+			<int>116</int>
+			<vec2>-256 24</vec2>
+			<int>117</int>
+			<vec2>-144 560</vec2>
+			<int>118</int>
+			<vec2>-160 200</vec2>
+			<int>119</int>
+			<vec2>80 464</vec2>
+			<int>120</int>
+			<vec2>80 232</vec2>
+			<int>121</int>
+			<vec2>80 496</vec2>
+			<int>122</int>
+			<vec2>240 88</vec2>
+			<int>123</int>
+			<vec2>112 544</vec2>
+			<int>124</int>
+			<vec2>64 480</vec2>
+			<int>125</int>
+			<vec2>160 200</vec2>
+			<int>126</int>
+			<vec2>-240 88</vec2>
+			<int>127</int>
+			<vec2>-112 216</vec2>
+			<int>128</int>
+			<vec2>-176 184</vec2>
+			<int>129</int>
+			<vec2>96 512</vec2>
+			<int>130</int>
+			<vec2>-144 232</vec2>
+			<int>131</int>
+			<vec2>176 184</vec2>
+			<int>132</int>
+			<vec2>112 240</vec2>
+			<int>133</int>
+			<vec2>-96 480</vec2>
+			<int>134</int>
+			<vec2>-224 152</vec2>
+			<int>135</int>
+			<vec2>-112 232</vec2>
+			<int>136</int>
+			<vec2>192 152</vec2>
+			<int>137</int>
+			<vec2>80 480</vec2>
+			<int>138</int>
+			<vec2>48 248</vec2>
+			<int>139</int>
+			<vec2>-240 72</vec2>
+			<int>140</int>
+			<vec2>-256 56</vec2>
+			<int>141</int>
+			<vec2>-112 512</vec2>
+			<int>142</int>
+			<vec2>224 88</vec2>
+			<int>143</int>
+			<vec2>96 248</vec2>
+			<int>144</int>
+			<vec2>-96 248</vec2>
+			<int>145</int>
+			<vec2>64 232</vec2>
+			<int>146</int>
+			<vec2>128 216</vec2>
+			<int>147</int>
+			<vec2>128 232</vec2>
+			<int>148</int>
+			<vec2>-240 104</vec2>
+			<int>149</int>
+			<vec2>224 56</vec2>
+			<int>150</int>
+			<vec2>160 184</vec2>
+			<int>151</int>
+			<vec2>48 464</vec2>
+			<int>152</int>
+			<vec2>64 464</vec2>
+			<int>153</int>
+			<vec2>112 496</vec2>
+			<int>154</int>
+			<vec2>208 136</vec2>
+			<int>155</int>
+			<vec2>-256 72</vec2>
+			<int>156</int>
+			<vec2>-64 464</vec2>
+			<int>157</int>
+			<vec2>-128 544</vec2>
+			<int>158</int>
+			<vec2>176 168</vec2>
+			<int>159</int>
+			<vec2>208 120</vec2>
+			<int>160</int>
+			<vec2>-128 512</vec2>
+			<int>161</int>
+			<vec2>-112 496</vec2>
+			<int>162</int>
+			<vec2>-240 56</vec2>
+			<int>163</int>
+			<vec2>240 72</vec2>
+			<int>164</int>
+			<vec2>-80 480</vec2>
+			<int>165</int>
+			<vec2>128 576</vec2>
+			<int>166</int>
+			<vec2>224 104</vec2>
+			<int>167</int>
+			<vec2>128 560</vec2>
+			<int>168</int>
+			<vec2>-80 232</vec2>
+			<int>169</int>
+			<vec2>-64 248</vec2>
+			<int>170</int>
+			<vec2>112 528</vec2>
+			<int>171</int>
+			<vec2>240 24</vec2>
+			<int>172</int>
+			<vec2>-240 120</vec2>
+			<int>173</int>
+			<vec2>-240 40</vec2>
+			<int>174</int>
+			<vec2>96 496</vec2>
+			<int>175</int>
+			<vec2>112 224</vec2>
+			<int>176</int>
+			<vec2>112 512</vec2>
+			<int>177</int>
+			<vec2>80 248</vec2>
+			<int>178</int>
+			<vec2>-144 216</vec2>
+			<int>179</int>
+			<vec2>-224 136</vec2>
+			<int>180</int>
+			<vec2>-96 232</vec2>
+			<int>181</int>
+			<vec2>144 200</vec2>
+			<int>182</int>
+			<vec2>-176 200</vec2>
+			<int>183</int>
+			<vec2>-128 232</vec2>
+			<int>184</int>
+			<vec2>192 144</vec2>
+			<int>87</int>
+			<vec2>224 72</vec2>
+			<int>83</int>
+			<vec2>-80 464</vec2>
+			<int>84</int>
+			<vec2>144 216</vec2>
+			<int>85</int>
+			<vec2>-224 120</vec2>
+			<int>86</int>
+			<vec2>240 56</vec2>
+			<int>88</int>
+			<vec2>96 232</vec2>
+			<int>89</int>
+			<vec2>-160 216</vec2>
+			<int>90</int>
+			<vec2>-128 528</vec2>
+			<int>91</int>
+			<vec2>-208 120</vec2>
+			<int>92</int>
+			<vec2>224 120</vec2>
+			<int>93</int>
+			<vec2>-192 184</vec2>
+			<int>94</int>
+			<vec2>200 136</vec2>
+			<int>95</int>
+			<vec2>216 104</vec2>
+			<int>96</int>
+			<vec2>-128 216</vec2>
+			<int>97</int>
+			<vec2>224 40</vec2>
+			<int>98</int>
+		</array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>0 0</vec2>
+				<int>9</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">16</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 0</vec2>
+				<int>10</int>
+				<dict>
+					<bool name="shot-through">t</bool>
+					<float name="radius">80</float>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/exit_start.unit"><vec2>-32 712</vec2><int>389</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_crn_sw.unit"><vec2>40 256</vec2><int>492</int><vec2>40 320</vec2><int>490</int><vec2>40 384</vec2><int>491</int></array>
+		<array name="doodads/walls/temple_poor/h.unit">
+			<vec2>784 -48</vec2>
+			<int>852</int>
+			<vec2>-592 -48</vec2>
+			<int>287</int>
+			<vec2>816 -48</vec2>
+			<int>856</int>
+			<vec2>752 -48</vec2>
+			<int>288</int>
+			<vec2>-616 576</vec2>
+			<int>289</int>
+			<vec2>-784 -48</vec2>
+			<int>290</int>
+			<vec2>616 576</vec2>
+			<int>291</int>
+			<vec2>-392 576</vec2>
+			<int>292</int>
+			<vec2>200 576</vec2>
+			<int>293</int>
+			<vec2>328 576</vec2>
+			<int>294</int>
+			<vec2>-752 -48</vec2>
+			<int>295</int>
+			<vec2>624 -48</vec2>
+			<int>296</int>
+			<vec2>-232 576</vec2>
+			<int>297</int>
+			<vec2>-168 576</vec2>
+			<int>298</int>
+			<vec2>592 -48</vec2>
+			<int>299</int>
+			<vec2>-776 576</vec2>
+			<int>300</int>
+			<vec2>-488 576</vec2>
+			<int>259</int>
+			<vec2>872 576</vec2>
+			<int>870</int>
+			<vec2>232 576</vec2>
+			<int>237</int>
+			<vec2>-880 -48</vec2>
+			<int>871</int>
+			<vec2>-912 -48</vec2>
+			<int>875</int>
+			<vec2>-904 576</vec2>
+			<int>879</int>
+			<vec2>848 -48</vec2>
+			<int>860</int>
+			<vec2>880 -48</vec2>
+			<int>864</int>
+			<vec2>808 576</vec2>
+			<int>868</int>
+			<vec2>840 576</vec2>
+			<int>869</int>
+			<vec2>-840 576</vec2>
+			<int>230</int>
+			<vec2>-528 -48</vec2>
+			<int>231</int>
+			<vec2>-200 576</vec2>
+			<int>232</int>
+			<vec2>-744 576</vec2>
+			<int>233</int>
+			<vec2>720 -48</vec2>
+			<int>234</int>
+			<vec2>-360 576</vec2>
+			<int>235</int>
+			<vec2>-560 -48</vec2>
+			<int>236</int>
+			<vec2>-624 -48</vec2>
+			<int>238</int>
+			<vec2>-496 -48</vec2>
+			<int>239</int>
+			<vec2>456 576</vec2>
+			<int>240</int>
+			<vec2>680 576</vec2>
+			<int>241</int>
+			<vec2>-872 576</vec2>
+			<int>242</int>
+			<vec2>-432 -48</vec2>
+			<int>243</int>
+			<vec2>-648 576</vec2>
+			<int>244</int>
+			<vec2>712 576</vec2>
+			<int>245</int>
+			<vec2>360 576</vec2>
+			<int>246</int>
+			<vec2>464 -48</vec2>
+			<int>247</int>
+			<vec2>-328 576</vec2>
+			<int>248</int>
+			<vec2>-848 -48</vec2>
+			<int>249</int>
+			<vec2>-296 576</vec2>
+			<int>250</int>
+			<vec2>400 -48</vec2>
+			<int>251</int>
+			<vec2>296 576</vec2>
+			<int>252</int>
+			<vec2>432 -48</vec2>
+			<int>253</int>
+			<vec2>552 576</vec2>
+			<int>254</int>
+			<vec2>496 -48</vec2>
+			<int>255</int>
+			<vec2>520 576</vec2>
+			<int>256</int>
+			<vec2>688 -48</vec2>
+			<int>257</int>
+			<vec2>-264 576</vec2>
+			<int>258</int>
+			<vec2>488 576</vec2>
+			<int>260</int>
+			<vec2>-720 -48</vec2>
+			<int>261</int>
+			<vec2>528 -48</vec2>
+			<int>262</int>
+			<vec2>-712 576</vec2>
+			<int>263</int>
+			<vec2>-656 -48</vec2>
+			<int>264</int>
+			<vec2>392 576</vec2>
+			<int>265</int>
+			<vec2>744 576</vec2>
+			<int>266</int>
+			<vec2>656 -48</vec2>
+			<int>267</int>
+			<vec2>-520 576</vec2>
+			<int>268</int>
+			<vec2>424 576</vec2>
+			<int>269</int>
+			<vec2>168 576</vec2>
+			<int>270</int>
+			<vec2>136 576</vec2>
+			<int>271</int>
+			<vec2>-584 576</vec2>
+			<int>272</int>
+			<vec2>-464 -48</vec2>
+			<int>273</int>
+			<vec2>-16 736</vec2>
+			<int>274</int>
+			<vec2>776 576</vec2>
+			<int>275</int>
+			<vec2>-424 576</vec2>
+			<int>276</int>
+			<vec2>-552 576</vec2>
+			<int>277</int>
+			<vec2>-808 576</vec2>
+			<int>278</int>
+			<vec2>560 -48</vec2>
+			<int>279</int>
+			<vec2>648 576</vec2>
+			<int>280</int>
+			<vec2>584 576</vec2>
+			<int>281</int>
+			<vec2>-456 576</vec2>
+			<int>282</int>
+			<vec2>-688 -48</vec2>
+			<int>283</int>
+			<vec2>-680 576</vec2>
+			<int>284</int>
+			<vec2>264 576</vec2>
+			<int>285</int>
+			<vec2>-816 -48</vec2>
+			<int>286</int>
+		</array>
+		<array name="doodads/walls/temple_rich/_ledge_crn_nw.unit"><vec2>40 344</vec2><int>227</int><vec2>40 408</vec2><int>229</int><vec2>40 280</vec2><int>228</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_crn_ne.unit"><vec2>-48 408</vec2><int>486</int><vec2>-48 280</vec2><int>484</int><vec2>-48 344</vec2><int>485</int></array>
+		<array name="doodads/generic/trap_spike_large_ice.unit">
+			<array>
+				<vec2>0 226</vec2>
+				<int>509</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<vec2>-30 -229</vec2>
+			<int>511</int>
+			<vec2>30 -229</vec2>
+			<int>500</int>
+			<array>
+				<vec2>-20 225</vec2>
+				<int>510</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<vec2>40 -228</vec2>
+			<int>497</int>
+			<array>
+				<vec2>30 224</vec2>
+				<int>494</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<vec2>10 -231</vec2>
+			<int>495</int>
+			<vec2>0 -231</vec2>
+			<int>496</int>
+			<array>
+				<vec2>-10 226</vec2>
+				<int>506</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<vec2>-10 -231</vec2>
+			<int>498</int>
+			<array>
+				<vec2>-40 223</vec2>
+				<int>499</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<vec2>-20 -230</vec2>
+			<int>501</int>
+			<vec2>20 -230</vec2>
+			<int>504</int>
+			<array>
+				<vec2>40 223</vec2>
+				<int>502</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>10 226</vec2>
+				<int>503</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-30 224</vec2>
+				<int>505</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+			<vec2>-40 -228</vec2>
+			<int>507</int>
+			<array>
+				<vec2>20 225</vec2>
+				<int>508</int>
+				<dict>
+					<string name="start">off</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/_ledge_crn_sw_o.unit">
+			<array>
+				<vec2>-72 280</vec2>
+				<int>224</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 408</vec2>
+				<int>225</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-72 344</vec2>
+				<int>226</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/lamp_brazier.unit">
+			<vec2>-124 552</vec2>
+			<int>204</int>
+			<vec2>-56 272</vec2>
+			<int>196</int>
+			<vec2>56 216</vec2>
+			<int>195</int>
+			<vec2>100 500</vec2>
+			<int>203</int>
+			<vec2>233 0</vec2>
+			<int>197</int>
+			<vec2>56 464</vec2>
+			<int>198</int>
+			<vec2>-56 464</vec2>
+			<int>194</int>
+			<vec2>56 272</vec2>
+			<int>191</int>
+			<vec2>56 336</vec2>
+			<int>199</int>
+			<vec2>-144 176</vec2>
+			<int>193</int>
+			<vec2>209 97</vec2>
+			<int>192</int>
+			<vec2>144 176</vec2>
+			<int>186</int>
+			<vec2>-209 97</vec2>
+			<int>190</int>
+			<vec2>-56 216</vec2>
+			<int>189</int>
+			<vec2>-231 0</vec2>
+			<int>188</int>
+			<vec2>-56 400</vec2>
+			<int>187</int>
+			<vec2>-56 336</vec2>
+			<int>185</int>
+			<vec2>-100 500</vec2>
+			<int>200</int>
+			<vec2>124 552</vec2>
+			<int>201</int>
+			<vec2>56 400</vec2>
+			<int>202</int>
+		</array>
+		<array name="doodads/walls/temple_poor/_ledge_e_8.unit">
+			<array>
+				<vec2>-48 216</vec2>
+				<int>11</int>
+				<dict>
+					<bool name="physics-active">f</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/_deco_floor_block_h_32.unit">
+			<vec2>-672 -28</vec2>
+			<int>416</int>
+			<vec2>384 -28</vec2>
+			<int>415</int>
+			<vec2>-608 -28</vec2>
+			<int>414</int>
+			<vec2>704 -28</vec2>
+			<int>413</int>
+			<vec2>640 -28</vec2>
+			<int>412</int>
+			<vec2>-288 -28</vec2>
+			<int>411</int>
+			<vec2>576 -28</vec2>
+			<int>410</int>
+			<vec2>-576 -28</vec2>
+			<int>409</int>
+			<vec2>-320 -28</vec2>
+			<int>408</int>
+			<vec2>256 -28</vec2>
+			<int>407</int>
+			<vec2>512 -28</vec2>
+			<int>406</int>
+			<vec2>-768 -28</vec2>
+			<int>405</int>
+			<vec2>352 -28</vec2>
+			<int>404</int>
+			<vec2>768 -28</vec2>
+			<int>403</int>
+			<vec2>416 -28</vec2>
+			<int>402</int>
+			<vec2>-448 -28</vec2>
+			<int>401</int>
+			<vec2>288 -28</vec2>
+			<int>400</int>
+			<vec2>-512 -28</vec2>
+			<int>399</int>
+			<vec2>448 -28</vec2>
+			<int>398</int>
+			<vec2>-416 -28</vec2>
+			<int>397</int>
+			<vec2>-640 -28</vec2>
+			<int>396</int>
+			<vec2>-704 -28</vec2>
+			<int>393</int>
+			<vec2>-352 -28</vec2>
+			<int>394</int>
+			<vec2>608 -28</vec2>
+			<int>395</int>
+			<vec2>800 -28</vec2>
+			<int>855</int>
+			<vec2>-384 -28</vec2>
+			<int>425</int>
+			<vec2>-256 -28</vec2>
+			<int>428</int>
+			<vec2>864 -28</vec2>
+			<int>863</int>
+			<vec2>-736 -28</vec2>
+			<int>427</int>
+			<vec2>-832 -28</vec2>
+			<int>426</int>
+			<vec2>480 -28</vec2>
+			<int>424</int>
+			<vec2>896 -28</vec2>
+			<int>867</int>
+			<vec2>320 -28</vec2>
+			<int>423</int>
+			<vec2>832 -28</vec2>
+			<int>859</int>
+			<vec2>-800 -28</vec2>
+			<int>422</int>
+			<vec2>736 -28</vec2>
+			<int>421</int>
+			<vec2>544 -28</vec2>
+			<int>420</int>
+			<vec2>-864 -28</vec2>
+			<int>874</int>
+			<vec2>-544 -28</vec2>
+			<int>419</int>
+			<vec2>672 -28</vec2>
+			<int>418</int>
+			<vec2>-480 -28</vec2>
+			<int>417</int>
+			<vec2>-896 -28</vec2>
+			<int>878</int>
+		</array>
+		<array name=":Physics_Freeform">
+			<array>
+				<vec2>0 -248</vec2>
+				<int>1</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points"><vec2>-48 8</vec2><vec2>48 8</vec2><vec2>48 24</vec2><vec2>40 25</vec2><vec2>15 22</vec2><vec2>-15 22</vec2><vec2>-37 25</vec2><vec2>-48 24</vec2></array>
+					<bool name="shot-through">f</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">f</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-144 448</vec2>
+				<int>2</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points">
+						<vec2>88 -8</vec2>
+						<vec2>96 0</vec2>
+						<vec2>69 14</vec2>
+						<vec2>47 32</vec2>
+						<vec2>29 54</vec2>
+						<vec2>17 79</vec2>
+						<vec2>8 105</vec2>
+						<vec2>8 128</vec2>
+						<vec2>-16 128</vec2>
+						<vec2>-16 -8</vec2>
+					</array>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>104 664</vec2>
+				<int>3</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points"><vec2>-27 21</vec2><vec2>1 -5</vec2><vec2>20 -42</vec2><vec2>28 -84</vec2><vec2>56 -84</vec2><vec2>56 88</vec2><vec2>-72 88</vec2><vec2>-72 40</vec2></array>
+					<bool name="shot-through">f</bool>
+					<bool name="jam-through">f</bool>
+					<bool name="aim-through">f</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-112 656</vec2>
+				<int>4</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points"><vec2>-24 -80</vec2><vec2>-16 -35</vec2><vec2>1 -2</vec2><vec2>35 28</vec2><vec2>80 48</vec2><vec2>80 96</vec2><vec2>-48 96</vec2><vec2>-48 -80</vec2></array>
+					<bool name="shot-through">f</bool>
+					<bool name="jam-through">f</bool>
+					<bool name="aim-through">f</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>144 448</vec2>
+				<int>5</int>
+				<dict>
+					<int name="decompose">2</int>
+					<array name="points">
+						<vec2>-88 -8</vec2>
+						<vec2>16 -8</vec2>
+						<vec2>16 136</vec2>
+						<vec2>-12 136</vec2>
+						<vec2>-12 103</vec2>
+						<vec2>-16 84</vec2>
+						<vec2>-24 65</vec2>
+						<vec2>-39 44</vec2>
+						<vec2>-54 27</vec2>
+						<vec2>-73 13</vec2>
+						<vec2>-96 0</vec2>
+					</array>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/crn_se.unit"><vec2>16 736</vec2><int>386</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_crn_se.unit"><vec2>-48 320</vec2><int>489</int><vec2>-48 384</vec2><int>488</int><vec2>-48 256</vec2><int>487</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_e_16.unit">
+			<vec2>-72 328</vec2>
+			<int>430</int>
+			<vec2>-72 392</vec2>
+			<int>431</int>
+			<vec2>-72 392</vec2>
+			<int>432</int>
+			<vec2>-72 328</vec2>
+			<int>433</int>
+			<vec2>-72 264</vec2>
+			<int>429</int>
+		</array>
+		<array name="doodads/walls/temple_poor/_deco_lamp.unit">
+			<vec2>448 -32</vec2>
+			<int>219</int>
+			<vec2>-384 -32</vec2>
+			<int>212</int>
+			<vec2>-288 -32</vec2>
+			<int>220</int>
+			<vec2>288 -32</vec2>
+			<int>221</int>
+			<vec2>-352 -32</vec2>
+			<int>222</int>
+			<vec2>-416 -32</vec2>
+			<int>223</int>
+			<vec2>512 -32</vec2>
+			<int>206</int>
+			<vec2>320 -32</vec2>
+			<int>218</int>
+			<vec2>-256 -32</vec2>
+			<int>217</int>
+			<vec2>-544 -32</vec2>
+			<int>216</int>
+			<vec2>480 -32</vec2>
+			<int>215</int>
+			<vec2>352 -32</vec2>
+			<int>214</int>
+			<vec2>416 -32</vec2>
+			<int>213</int>
+			<vec2>-448 -32</vec2>
+			<int>211</int>
+			<vec2>-320 -32</vec2>
+			<int>210</int>
+			<vec2>-480 -32</vec2>
+			<int>209</int>
+			<vec2>256 -32</vec2>
+			<int>208</int>
+			<vec2>384 -32</vec2>
+			<int>207</int>
+			<vec2>-512 -32</vec2>
+			<int>205</int>
+		</array>
+		<array name="actors/mt/bosses/giant_wisp/nav_collision_small.unit">
+			<vec2>120 -38</vec2>
+			<int>19</int>
+			<vec2>-120 -38</vec2>
+			<int>20</int>
+			<vec2>72 106</vec2>
+			<int>17</int>
+			<vec2>0 -126</vec2>
+			<int>18</int>
+			<vec2>-72 106</vec2>
+			<int>16</int>
+		</array>
+		<array name="doodads/walls/temple_poor/_ledge_w.unit"><vec2>40 416</vec2><int>450</int><vec2>40 352</vec2><int>447</int><vec2>40 288</vec2><int>448</int><vec2>40 224</vec2><int>449</int></array>
+		<array name="doodads/walls/_ledge_ice_8.unit">
+			<vec2>-80 384</vec2>
+			<int>52</int>
+			<vec2>-80 304</vec2>
+			<int>73</int>
+			<vec2>72 408</vec2>
+			<int>74</int>
+			<vec2>72 296</vec2>
+			<int>75</int>
+			<vec2>72 448</vec2>
+			<int>76</int>
+			<vec2>72 304</vec2>
+			<int>77</int>
+			<vec2>72 432</vec2>
+			<int>78</int>
+			<vec2>72 344</vec2>
+			<int>79</int>
+			<vec2>72 360</vec2>
+			<int>80</int>
+			<vec2>-80 424</vec2>
+			<int>26</int>
+			<vec2>72 424</vec2>
+			<int>27</int>
+			<vec2>72 376</vec2>
+			<int>28</int>
+			<vec2>-80 400</vec2>
+			<int>29</int>
+			<vec2>72 312</vec2>
+			<int>30</int>
+			<vec2>-80 312</vec2>
+			<int>31</int>
+			<vec2>-80 392</vec2>
+			<int>32</int>
+			<vec2>-80 368</vec2>
+			<int>33</int>
+			<vec2>72 256</vec2>
+			<int>34</int>
+			<vec2>72 384</vec2>
+			<int>35</int>
+			<vec2>-80 256</vec2>
+			<int>36</int>
+			<vec2>-80 296</vec2>
+			<int>37</int>
+			<vec2>-80 416</vec2>
+			<int>38</int>
+			<vec2>-80 288</vec2>
+			<int>39</int>
+			<vec2>-56 256</vec2>
+			<int>40</int>
+			<vec2>72 320</vec2>
+			<int>41</int>
+			<vec2>72 336</vec2>
+			<int>42</int>
+			<vec2>-80 408</vec2>
+			<int>43</int>
+			<vec2>-80 448</vec2>
+			<int>44</int>
+			<vec2>72 368</vec2>
+			<int>45</int>
+			<vec2>72 328</vec2>
+			<int>46</int>
+			<vec2>-80 352</vec2>
+			<int>47</int>
+			<vec2>72 400</vec2>
+			<int>48</int>
+			<vec2>-80 328</vec2>
+			<int>49</int>
+			<vec2>-80 272</vec2>
+			<int>50</int>
+			<vec2>72 440</vec2>
+			<int>51</int>
+			<vec2>72 352</vec2>
+			<int>81</int>
+			<vec2>-80 336</vec2>
+			<int>53</int>
+			<vec2>-80 432</vec2>
+			<int>54</int>
+			<vec2>-72 256</vec2>
+			<int>55</int>
+			<vec2>72 272</vec2>
+			<int>56</int>
+			<vec2>72 264</vec2>
+			<int>57</int>
+			<vec2>-80 320</vec2>
+			<int>58</int>
+			<vec2>72 416</vec2>
+			<int>59</int>
+			<vec2>-80 440</vec2>
+			<int>60</int>
+			<vec2>72 392</vec2>
+			<int>61</int>
+			<vec2>48 256</vec2>
+			<int>62</int>
+			<vec2>-80 264</vec2>
+			<int>63</int>
+			<vec2>56 256</vec2>
+			<int>64</int>
+			<vec2>-80 280</vec2>
+			<int>65</int>
+			<vec2>72 288</vec2>
+			<int>66</int>
+			<vec2>64 256</vec2>
+			<int>67</int>
+			<vec2>-80 376</vec2>
+			<int>68</int>
+			<vec2>-80 360</vec2>
+			<int>69</int>
+			<vec2>-80 344</vec2>
+			<int>70</int>
+			<vec2>-64 256</vec2>
+			<int>71</int>
+			<vec2>72 280</vec2>
+			<int>72</int>
+		</array>
+		<array name="doodads/cliffs/granite/___shadow.unit">
+			<vec2>72 256</vec2>
+			<int>332</int>
+			<array>
+				<vec2>64 252</vec2>
+				<int>333</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<vec2>72 400</vec2>
+			<int>331</int>
+			<array>
+				<vec2>48 316</vec2>
+				<int>330</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<vec2>48 236</vec2>
+			<int>328</int>
+			<array>
+				<vec2>-68 252</vec2>
+				<int>327</int>
+				<dict>
+					<string name="start">nw_slim</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>72 288</vec2>
+				<int>326</int>
+				<dict>
+					<string name="start">se</string>
+				</dict>
+			</array>
+			<vec2>72 336</vec2>
+			<int>335</int>
+			<array>
+				<vec2>48 220</vec2>
+				<int>329</int>
+				<dict>
+					<string name="start">ne</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 380</vec2>
+				<int>343</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>72 416</vec2>
+				<int>344</int>
+				<dict>
+					<string name="start">se</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-68 380</vec2>
+				<int>342</int>
+				<dict>
+					<string name="start">nw_slim</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 252</vec2>
+				<int>325</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<vec2>72 272</vec2>
+			<int>334</int>
+			<vec2>48 368</vec2>
+			<int>324</int>
+			<vec2>48 304</vec2>
+			<int>323</int>
+			<array>
+				<vec2>48 380</vec2>
+				<int>322</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<vec2>72 320</vec2>
+			<int>321</int>
+			<array>
+				<vec2>-68 316</vec2>
+				<int>341</int>
+				<dict>
+					<string name="start">nw_slim</string>
+				</dict>
+			</array>
+			<vec2>48 432</vec2>
+			<int>320</int>
+			<array>
+				<vec2>64 316</vec2>
+				<int>319</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 252</vec2>
+				<int>318</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<vec2>72 384</vec2>
+			<int>317</int>
+			<array>
+				<vec2>-64 316</vec2>
+				<int>316</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 352</vec2>
+				<int>340</int>
+				<dict>
+					<string name="start">ne</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 288</vec2>
+				<int>339</int>
+				<dict>
+					<string name="start">ne</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>72 352</vec2>
+				<int>338</int>
+				<dict>
+					<string name="start">se</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 380</vec2>
+				<int>337</int>
+				<dict>
+					<string name="start">h_slim</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 416</vec2>
+				<int>336</int>
+				<dict>
+					<string name="start">ne</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/crn_ne.unit"><vec2>-32 704</vec2><int>387</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_w_8.unit">
+			<array>
+				<vec2>40 216</vec2>
+				<int>443</int>
+				<dict>
+					<bool name="physics-active">f</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/snow_wall_heavy.unit">
+			<vec2>-912 -32</vec2>
+			<int>876</int>
+			<vec2>-560 -32</vec2>
+			<int>356</int>
+			<vec2>-464 -32</vec2>
+			<int>357</int>
+			<vec2>-880 -32</vec2>
+			<int>872</int>
+			<vec2>-624 -32</vec2>
+			<int>346</int>
+			<vec2>720 -32</vec2>
+			<int>358</int>
+			<vec2>-816 -32</vec2>
+			<int>345</int>
+			<vec2>-528 -32</vec2>
+			<int>349</int>
+			<vec2>-784 -32</vec2>
+			<int>359</int>
+			<vec2>560 -32</vec2>
+			<int>360</int>
+			<vec2>656 -32</vec2>
+			<int>361</int>
+			<vec2>464 -32</vec2>
+			<int>362</int>
+			<vec2>624 -32</vec2>
+			<int>366</int>
+			<vec2>528 -32</vec2>
+			<int>363</int>
+			<vec2>784 -32</vec2>
+			<int>853</int>
+			<vec2>752 -32</vec2>
+			<int>364</int>
+			<vec2>880 -32</vec2>
+			<int>865</int>
+			<vec2>848 -32</vec2>
+			<int>861</int>
+			<vec2>496 -32</vec2>
+			<int>365</int>
+			<vec2>816 -32</vec2>
+			<int>857</int>
+			<vec2>400 -32</vec2>
+			<int>367</int>
+			<vec2>-656 -32</vec2>
+			<int>368</int>
+			<vec2>-848 -32</vec2>
+			<int>369</int>
+			<vec2>432 -32</vec2>
+			<int>350</int>
+			<vec2>-496 -32</vec2>
+			<int>347</int>
+			<vec2>688 -32</vec2>
+			<int>351</int>
+			<vec2>-432 -32</vec2>
+			<int>352</int>
+			<vec2>-688 -32</vec2>
+			<int>353</int>
+			<vec2>-720 -32</vec2>
+			<int>354</int>
+			<vec2>592 -32</vec2>
+			<int>355</int>
+			<vec2>-752 -32</vec2>
+			<int>370</int>
+			<vec2>-592 -32</vec2>
+			<int>348</int>
+		</array>
+		<array name="system/light_L.png">
+			<array>
+				<vec2>317 423</vec2>
+				<int>547</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>1 373</vec2>
+				<int>540</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">200</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-247 -250</vec2>
+				<int>541</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>136 112</vec2>
+				<int>542</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-162 629</vec2>
+				<int>543</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>150 647</vec2>
+				<int>564</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-341 417</vec2>
+				<int>544</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-96 -136</vec2>
+				<int>545</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>136 -16</vec2>
+				<int>546</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-275 -59</vec2>
+				<int>563</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>241 233</vec2>
+				<int>548</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 288</vec2>
+				<int>549</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-112 -8</vec2>
+				<int>550</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>224 -320</vec2>
+				<int>551</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-187 248</vec2>
+				<int>552</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-290 111</vec2>
+				<int>553</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 160</vec2>
+				<int>554</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>104 -96</vec2>
+				<int>555</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>2 505</vec2>
+				<int>556</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>88 80</vec2>
+				<int>557</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 448</vec2>
+				<int>558</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>315 59</vec2>
+				<int>559</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -72</vec2>
+				<int>560</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>11 -304</vec2>
+				<int>561</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-80 -64</vec2>
+				<int>562</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 256</vec2>
+				<int>539</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">200</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -216</vec2>
+				<int>538</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">200</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-46 63</vec2>
+				<int>537</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>114 -143</vec2>
+				<int>536</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-119 69</vec2>
+				<int>535</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>255 -122</vec2>
+				<int>534</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0.0595112 0.0481718 0.0307134 0</vec4>
+					<float name="size">600</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 612</vec2>
+				<int>533</int>
+				<dict>
+					<bool name="overlay">f</bool>
+					<vec4 name="color">0 0.730461 0.973445 0</vec4>
+					<float name="size">300</float>
+					<float name="overbright">1</float>
+					<int name="cast-shadows">0</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/_ledge_black_128.unit">
+			<array>
+				<vec2>-400 576</vec2>
+				<int>308</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 448</vec2>
+				<int>309</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 448</vec2>
+				<int>310</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-272 352</vec2>
+				<int>311</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-208 352</vec2>
+				<int>312</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-208 448</vec2>
+				<int>313</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-272 448</vec2>
+				<int>314</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 352</vec2>
+				<int>301</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-392 576</vec2>
+				<int>315</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>136 576</vec2>
+				<int>306</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-400 448</vec2>
+				<int>307</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>176 576</vec2>
+				<int>303</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-400 352</vec2>
+				<int>304</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-264 576</vec2>
+				<int>302</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>80 352</vec2>
+				<int>305</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/special/color_temple_poor_128.unit"><vec2>-152 808</vec2><int>512</int><vec2>24 808</vec2><int>513</int></array>
+		<array name="doodads/special/color_temple_poor_512.unit">
+			<vec2>-88 -584</vec2>
+			<int>522</int>
+			<vec2>392 1576</vec2>
+			<int>521</int>
+			<vec2>400 -72</vec2>
+			<int>519</int>
+			<vec2>-568 -368</vec2>
+			<int>518</int>
+			<vec2>-272 -384</vec2>
+			<int>517</int>
+			<vec2>392 1064</vec2>
+			<int>516</int>
+			<vec2>-904 1576</vec2>
+			<int>515</int>
+			<vec2>400 -584</vec2>
+			<int>514</int>
+			<vec2>-648 1064</vec2>
+			<int>528</int>
+			<vec2>-912 -584</vec2>
+			<int>532</int>
+			<vec2>-904 1064</vec2>
+			<int>531</int>
+			<vec2>-912 -72</vec2>
+			<int>530</int>
+			<vec2>64 -368</vec2>
+			<int>529</int>
+			<vec2>136 1576</vec2>
+			<int>520</int>
+			<vec2>-376 1576</vec2>
+			<int>527</int>
+			<vec2>-200 1288</vec2>
+			<int>526</int>
+			<vec2>-800 1576</vec2>
+			<int>525</int>
+			<vec2>136 1064</vec2>
+			<int>524</int>
+			<vec2>-480 -584</vec2>
+			<int>523</int>
+		</array>
+		<array name="doodads/walls/temple_poor/crn_sw.unit"><vec2>-32 736</vec2><int>377</int></array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>0 -336</vec2>
+				<int>12</int>
+				<dict>
+					<vec2 name="size">192 192</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -8</vec2>
+				<int>13</int>
+				<dict>
+					<vec2 name="size">480 464</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 480</vec2>
+				<int>14</int>
+				<dict>
+					<vec2 name="size">292 512</vec2>
+					<bool name="shot-through">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="active">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/_ledge_e.unit"><vec2>-48 416</vec2><int>453</int><vec2>-48 288</vec2><int>454</int><vec2>-48 352</vec2><int>456</int><vec2>-48 224</vec2><int>455</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_crn_se_o.unit">
+			<array>
+				<vec2>64 408</vec2>
+				<int>442</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 280</vec2>
+				<int>440</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>64 344</vec2>
+				<int>441</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/_ledge_w_16.unit"><vec2>64 264</vec2><int>6</int><vec2>64 328</vec2><int>7</int><vec2>64 392</vec2><int>8</int></array>
+		<array name="doodads/walls/temple_poor/crn_nw.unit"><vec2>16 704</vec2><int>388</int></array>
+		<array name="doodads/special/color_temple_poor_64.unit"><vec2>-32 772</vec2><int>451</int><vec2>-32 808</vec2><int>452</int></array>
+		<array name="doodads/generic/boss_wisp_room_bridge.unit"><vec2>0 336</vec2><int>493</int></array>
+		<array name="doodads/generic/boss_wisp_room_spawn.unit"><vec2>0 576</vec2><int>457</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_s_16.unit">
+			<vec2>-64 320</vec2>
+			<int>380</int>
+			<vec2>-64 256</vec2>
+			<int>381</int>
+			<vec2>48 384</vec2>
+			<int>382</int>
+			<vec2>-64 384</vec2>
+			<int>383</int>
+			<vec2>48 256</vec2>
+			<int>384</int>
+			<vec2>48 320</vec2>
+			<int>385</int>
+		</array>
+		<array name="doodads/walls/temple_poor/_ledge_crn_ne_o.unit"><vec2>64 256</vec2><int>392</int><vec2>64 320</vec2><int>390</int><vec2>64 384</vec2><int>391</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_n.unit">
+			<array>
+				<vec2>-464 -32</vec2>
+				<int>469</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>400 -32</vec2>
+				<int>468</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>432 -32</vec2>
+				<int>467</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>560 -32</vec2>
+				<int>466</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-720 -32</vec2>
+				<int>465</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>496 -32</vec2>
+				<int>464</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-848 -32</vec2>
+				<int>463</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-688 -32</vec2>
+				<int>461</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-592 -32</vec2>
+				<int>460</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-496 -32</vec2>
+				<int>459</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>528 -32</vec2>
+				<int>471</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>784 -32</vec2>
+				<int>854</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-880 -32</vec2>
+				<int>873</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>816 -32</vec2>
+				<int>858</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-912 -32</vec2>
+				<int>877</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-432 -32</vec2>
+				<int>476</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-560 -32</vec2>
+				<int>475</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-656 -32</vec2>
+				<int>462</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-624 -32</vec2>
+				<int>477</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>464 -32</vec2>
+				<int>478</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-816 -32</vec2>
+				<int>479</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>656 -32</vec2>
+				<int>480</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>688 -32</vec2>
+				<int>481</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>592 -32</vec2>
+				<int>482</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>720 -32</vec2>
+				<int>483</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>880 -32</vec2>
+				<int>866</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>848 -32</vec2>
+				<int>862</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-528 -32</vec2>
+				<int>458</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>752 -32</vec2>
+				<int>474</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-784 -32</vec2>
+				<int>473</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>624 -32</vec2>
+				<int>472</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-752 -32</vec2>
+				<int>470</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/_ledge_black_512.unit">
+			<array>
+				<vec2>-912 520</vec2>
+				<int>373</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>400 520</vec2>
+				<int>376</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>304 576</vec2>
+				<int>375</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-912 576</vec2>
+				<int>374</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/v_16.unit"><vec2>16 704</vec2><int>378</int><vec2>-32 704</vec2><int>379</int></array>
+		<array name="doodads/walls/temple_poor/_ledge_n_16.unit">
+			<array>
+				<vec2>48 408</vec2>
+				<int>435</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 408</vec2>
+				<int>434</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 280</vec2>
+				<int>438</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>-64 344</vec2>
+				<int>436</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 344</vec2>
+				<int>437</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+			<array>
+				<vec2>48 280</vec2>
+				<int>439</int>
+				<dict>
+					<string name="start">ice</string>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/_ledge_black_32.unit">
+			<array>
+				<vec2>48 256</vec2>
+				<int>372</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+			<array>
+				<vec2>-80 256</vec2>
+				<int>371</int>
+				<dict>
+					<int name="layer">-200</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/walls/temple_poor/_ledge_crn_nw_o.unit"><vec2>-72 320</vec2><int>446</int><vec2>-72 384</vec2><int>445</int><vec2>-72 256</vec2><int>444</int></array>
+		<array name="actors/mt/bosses/giant_wisp/pylon_deactivated.unit">
+			<vec2>-72 96</vec2>
+			<int>21</int>
+			<vec2>72 96</vec2>
+			<int>22</int>
+			<vec2>120 -48</vec2>
+			<int>23</int>
+			<vec2>-120 -48</vec2>
+			<int>24</int>
+			<vec2>0 -136</vec2>
+			<int>25</int>
+		</array>
+		<array name="actors/mt/bosses/giant_wisp/nav_collision.unit"><vec2>0 0</vec2><int>15</int></array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/moon_temple_black.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<string name="Class">BossLevel</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003c3710000000000000000000000000000000000000000000000000000000006520247c2600000000000000000000000000000000000000000000000000001a4113420d4032000000000000000000000000000000000000000000000000005d3d0975276e5900000000000000000000000000000000000000000000000000296e6b606b101e6c000000000000000000000000000000000000000000102a3950360a6d1c6b0700000000000000000000000000000000000000000000284f624b0b145b284d6a0000000000000000000000000000000000000000000006433246202d7e3545711400000000000000000000000000000000000000000012772510090a784d131f084c23000000000000000000000000000000000000007e3277062d741e2174327a144d0000000000000000000000000000000000003012410428297a47723b551e036f0000000000000000000000000000000000002d0c1f0726016f495150263a266251000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_poor_offset.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004c0e1e444555532b1200000000000000000000000000000000000000000000005960665410741b25210000000000000000000000000000000000000000000000374e77270d451903780000000000000000000000000000000000000000000000474925315f3c452c4500000000000000000000000000000000000000000000006c06725c2677082c62000000000000000000000000000000000000000000000045054b5e194702175d0000000000000000000000000000000000000000000000111827180d7603054a0000000000000000000000000000000000000000000000193b65722074330e1300000000000000000000000000000000000000000000007c2265316e282f03240000000000000000000000000000000000000000000000500b5a3d526c3d351a0000000000000000000000000000000000000000000000154662061e704c264100000000000000000000000000000000000000000000007814104c71152a5b5c00000000000000000000000000000000000000000000005c300a506c5410437100000000000000000000000000000000000000000000007e6804083b28386844000000000000000000000000000000000000000000000039013c720c706345330000000000000000000000000000000000000000000000377c2f0a7b0b017015</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_poor_offset.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000481f3636362e7542385c683468027e45192f6979544520771d7e3f13616a2f1846412b5f6f264509650968662f485d603e46713f504179252a2b7269226d1f57510a461d21763f442e404a3a2e337a2d605720034a173373424a63784917022b525d0a43026332165b392e2b35690c2c7d2604284206562f144c525a4e663a331f20607a6f4169332f413e436d5b614c0669012a1f71032029460b39462e0218462e1a18061b1c087e6b262f4a262e5d73052855532f3a0f5d13327660225b2d6d213e3c164829411822272b7640747740463748170e33597b07157b7d1e655b706377702670330f103a1858715576741662520345651d5d7633366169694209291e1443157a6a47620d547602347028302e6b0135621a32255e1d31697622515f6b7740413c13285e4a755a3034706f063959453f03386e74185d0131177a53507a066e3c513e2159505009505a0b282d080a1f3e5f4144231661576e2e112a3063150c7569531c5c64366e690c4059560734794e5b63694c102a6273133b79555e01316e633b500903482110135a690805594d217543582e5e7b7e4a391c1d1d7b757c71351c72496a7c6c232e23032c081f6e1058504f1f6d1f374c7b463b1a626132745f5467454c4c5803082d354032084b496a38413075026b231832556b35252e252a2c7c2d743b5678265c5e601f42404e2b7a487b352d0740261216</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000176602790d2363594f7b750f435b1e58000000000000000000000000000000763666354c5a4b5d695961571a2e02155875000000000000000000000000002427172f552c2c15274a5c0f626b684224732c4100000000000000000000002a03512d783a057952577c6b12030b745641302c6405000000000000000000242c09487369397a7a6946343b556f027425275868653043000000000000003a5437506d596b0928073e394f0711545b025b317c2e7109010000000000000d751a1d7e086e466c135d37780e2a202f07430245115e47147a56000000001c5740792c296a51183d5368217144111b0a68584d0f6e5b4f6428116100000035122d3a4e3b5322046b05493159516779673e40030318012d3e7258492700005e6c1546362d603c06354e224019717c163e22564048161327070b2d19550000373369472d0a7a09371079580e4b3a680c137943611d7c48246e4008123400001e1a473314325e3d560851442e30643c5626125e2b1f0124457070455360000008495b654559022079464b175e150b2f226f3b10511744215e3c1f6a165400000076681f33445d624b4514342a3a28351437296b1b540a2c42157a2e636b000000187d295a724b3571175a673763193e5d50375a27594e771557653912445700001c7d5d557e367603153e05627b7469706f465f202463362f1e6f7865671300006766191a52174468752b3a0756436975014e0b07743a6d6e482e237452450000005d6f586e5f652715277208013377331f70514d3b2b39693d757a7b3413000000224f5927163601623d51483a421c505b0f50735d7e5a05282f4a703c41000000074f163c60233e71177e5025647e34357b285c57767b3610721f411a000000003920776d12125533457c57546c20342b3a3c574a3f0d1c784c4f6050000000002d77466e451f395602542d6b2519524a4f66390424766628785d6d0000000000004e2a6b4436312877215b542472775e1a1902000e3b26423e0a1e0000000000007b60453d03712a19081a4014665d693f3176001d0a6855583200000000000000002e4d704e50630b042e542b25200b47614b393965672a0d040000000000000000001a7705091764735c6d4f2135043c416258533a52554900000000000000000000004c5c431f290e5e5a036c326014645b022e4e6a5c130000000000000000000000006f46615d397d44234e2e1f4310393e6162286a00000000000000000000000000002b415d21380b4e4a405519443239500e4f0000000000000000000000000000000000000000223a5e0f5f0000000000000000000000000000000000000000000000000000000f1e38023c0000000000000000000000000000000000000000000000000000000d2e094e710000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_poor_offset.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005100000000000000000000000000000000000000000000000000000000000000500000000000000000000000000000000000000000000000000000000000000066000000000000000000000000000000000000000000000000000000000000745f000000000000000000000000000000000000000000000000000000000000186d13000000000000000000000000000000000000000000000000000000001d276e0b2000000000000000000000000000000000000000000000000000000009547d2c440000000000000000000000000000000000000000000000000000645c72150b2733000000000000000000000000000000000000000000000000103468410b36576c4300000000000000000000000000000000000000000000297a63272b02586d47342a000000000000000000000000000000000000000077604d246936623f221b6d255900000000000000000000000000000000000021786f603170533e4e70234a685d726a7e00000000000000000000000041073742290f0914513c6018604a540c1e747e497c000000000000000000004a364c112c2c794c365052</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005d596d556f23683f5f081b3e687b7e1e47703b6a745c35474f14327952180b552f797e58445c7d07470176450b31776b377b1a4b3a1a1c662241491c74017334270e3f2b2f2c030450101a184e0343090f095f0a1b3c06185e224d106c20204c30783b1228592323582f1f364b2674384d3446310f4a5d2562462e4020185e520120445d622624341c4622231f066a571a3e5e655a305d3c5f597a3374010f7b38406605085e336a0a5f08793801480f10313b12456d355a620236715d7544682f790a0f7b7d304c1605092c0948741d54634c206f246d3b50171037502e51430b467a1f5d2864573d751b64692b34485279494e5d366b632975373f634b2725757d113637283f1b4851686d10634a2a1a611669553942610d750c1d2b177c6b6f23774324766762515f1a61332b3575785947542e636779364172142e221d2a354a692d44436e3c6963495e354b4a16361e261a75726d0c4d7601776c015e22226e60215335346b343e0569552b681369543055350b680f593e6032537e630843291769293f113b1a067c2d3d5d7d2b3070355b7d110355786a49453b7b6964406c607a472a766f28647533744f161851562453120c4014485e153d78317d172a360e3f4f796d72027443340b012626442677733823214121267a6b015138303d69225f4c2262557004753e360e6f700c252a753920144e6f63464f17077018</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000058522b183a4211582f0000000000000000000000000000000000000000000000253250023b0b2d5a4a00000000000000000000000000000000000000000000004302724b342d5c503f00000000000000000000000000000000000000000000006e18432d140b4a241800000000000000000000000000000000000000000000001f053360744e4c1b060000000000000000000000000000000000000000000000630226046d264f3d26000000000000000000000000000000000000000000000054745d742f3577281a0000000000000000000000000000000000000000000000347d052f0e2474155900000000000000000000000000000000000000000000003b4d476f0a18183a50000000000000000000000000000000000000000000000018786c270f386c351200000000000000000000000000000000000000000000003a3106465c33272d4b0000000000000000000000000000000000000000000000792b256f336b5e1d7d00000000000000000000000000000000000000000000007524512d794a3f044f00000000000000000000000000000000000000000000000232222a512a6d702a000000000000000000000000000000000000000000000077357d7566034f5a10000000000000000000000000000000000000000000000010726c051a686723560000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000436b7d4d1f241c1b0f00000000000000000000000000000000000000000000002c603e07086e6b1555000000000000000000000000000000000000000000000055564a360a490305420000000000000000000000000000000000000000000000737c54721574225e2d000000000000000000000000000000000000000000000037390b047b456d6f5a0000000000000000000000000000000000000000000000405e0e7504470b080b0000000000000000000000000000000000000000000000147a702564194b522200000000000000000000000000000000000000000000002a2836304e5f6c1f0b000000000000000000000000000000000000000000000055270a386814630c58000000000000000000000000000000000000000000000019332c13066f5b33520000000000000000000000000000000000000000000000157c521e3e096c3e5b00000000000000000000000000000000000000000000002b1044372a227d10200000000000000000000000000000000000000000000000131e400a746c40075900000000000000000000000000000000000000000000004220644217766c412f0000000000000000000000000000000000000000000000470971264301226c0600000000000000000000000000000000000000000000000f06083a0c1a3f29200000000000000000000000000000000000000000000000791d1f306e597476580000000000000000000000000000000000000000000000222a062d541219266b00000000000000000000000000000000000000000000003b1075621f4f0d213200000000000000000000000000000000000000000000004115271475355f687e000000000000000000000000000000000000000000000000000000003c03793000000000000000000000000000000000000000000000000000000000005c2f510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0261365c5612014e4a292227025d55185d2f4e371049763f314538294a437c053272612041226d7e613f2b772a0c325e0a4b2a656855355806593e6077592e5c43250110244d681967043d55385f61717b6e760a7e114c410b3c1041104c475a741d55297155473a79453c32763e0e27100e0d131e4079037920252656144c371228300e5c777a5c0d1b673466022062411168434f631e486d413f68145b01113e6d7c3c2f594921203765415d217c33533405180a341328684f37593103345e20442a02206c1c14133931582770502c09403e2b7608743b14511e7359352501703e2f0b201e2a332c07076008320f732c5a7b7e407e06327c345c0238646e79236a703c67195877041e1603172e30042038484174030e0a32521b5b6e0e5422710a6836320b324160571b1b3156562f3e11326c1c531e3569467a5e47596d64771802141946682131656d473c473a5520416812701a5a3b68725926137e121e0e1f283114333c360443252066555b556b180734560f7b7c0938301537372a561b011452693a553c4a5a5e3c083d6d4b5c53687231132701320b185316144a233c284b5f1e4a2c3c6a11047d4b435d143d191b6d2026377065311e34296969147752162633253251097c1b76476f7807345a0f614d1c12502571594c73460f56672d57706c48097a1a0d5e7d16354d397008147230026542085c615c22727259484d36393568665538694e435356395e032438732262504245560c0e32082f7939143b17125e0c2f32542e253c691d49781c4d6e0a590278661e5453386748617b381610220f5e145d592e0477487219311b5140512b3c1f0304354734757b2f2b5b656c143355105d40066b3b2050054b0106422a69365d69667e18121c26017478533b3b50693b063c1e074a205337470917237a0d33360e1c07303f62057a0f74212d2f2d2e4f343403567e6b08556220091526394b456f213a567b1f19530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000002400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f000000000000000000000000000000000000000000000000000000000000006f00000000000000000000000000000000000000000000000000000000000000380000000000000000000000000000000000000000000000000000000000006f60420900000000000000000000000000000000000000000000000000000061345860200000000000000000000000000000000000000000000000000000003a4d7d2411000000000000000000000000000000000000000000000000000000134c22441d0000000000000000000000000000000000000000000000000034320d146a015c6e00000000000000000000000000000000000000000000005a543017691c2a584f0778000000000000000000000000000000000000000044385464252f583701211444360000000000000000000000000000000000001d43190b08221b6739491c5a320200000000000000000000000000000000000003185f364c291971427709575765450000000000000000000000000000000000441c137a2838745108455a777c04570a0000000000000000000000000000005105293b676c1e5d4c015f5e7c097e72380000000000000000000000000000005a75717a753d68017938432b5c324a35740000000000000000000000000000004a0a306b4f6069225530063c25373813090000000000000000000000000000000d3678397e2d2c4d1417170d4e0c6578090000000000000000000000000000004737530a115f164e78491c4b3f4870500b000000000000000000000000000000006f5f680a306040760e4a5a4f4c217400000000000000000000000000000000003a517d4f4c1126315a312b5e780b000000000000000000000000000000000000005f5a205a4d1f686757494c0500000000000000000000000000000000000000004f2c1928451141457b5b000000000000000000000000000000000000000000000000794f321b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_poor_offset.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000471c7724000000000000000000002802281000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007d624f0000000000000000000016015c570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000069000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062c7e0000000000000000002b57657000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010433b0000000000000000005e2e5e13000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184f7100000000000000000050217c510700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004a603f0000000000000000007475390c700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/temples_tiles_poor_8.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">5d4317764f1e5d040f2876000000000000000000002c470f2e4013323d6b2c011a0f1634476a6934177777000000000000000000003c2402245b072c67284154787e2f6a7272533e3f2c5f000000000000000000004e486e6f3a503a382a76336722542c23522d2f2f1d4d00000000000000000000416e317d4d2b3360503e557210460d78226307476e1300000000000000000000321b236e684c4b542d0d036a79366477194a21020662000000000000000000006b716557540f37774e016659514974245d584e116c350000000000000000000005503040026d4356701739654d4c49314b531f3d29630000000000000000000050433f780f1c39012f7a1357327c2a196234790d3d15000000000000000000002a7b256d1c577b03353c2c5e0c471a2167272c134378000000000000000000003719440d72501763476f6c78302e1904454861196663000000000000000000004e72507e123e57092b0b04020e1f69184e485666711f000000000000000000004b1c3658271d68414e0c2023273c3b047d45681e563100000000000000000000000b56614a084d12506e23533e5b701e297a590808000000000000000000000000001a59662415361b026f1d552b0c32252674680000000000000000000000000000006c46526c304c7d7b6271226d387a0b62000000000000000000000000000000006b7c0d6778627a17564a5b780a69077300000000000000000000000000000000000c5849621b2b453d37185a7a204e00000000000000000000000000000000000051752e1f090f74081f26341e39000000000000000000000000000000000000000b514a7071741a136c485b1a2e0000000000000000000000000000000000000019167e1a686a69241d0a33473c0000000000000000000000000000000000000000644d087248452f0a1d033a1900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">56225849034336596a5570792b761a20277c6714131b0101250d50665d6a0a34025477516113552873657926251a2d180c76230f73256329044c1e0e7b453d1a332b61657154617a5e765e31507c0b3c74412e13470c5e27427b117341410d1b62625f2d370c3b307d2263266917452b5e0e220c750560700c661c06614f7d7e1611755b7e03162e26117635015d5f19647a4312701145352b54776f2706576314356c6f1c37433c192f3a7065075c126c154c412a1e4f50385836683635463b332e435a472f05275565695e4f09661557724c42247966544214247d063261425f374e452c4d402a41590241241b572c4903196b5d1411172e66343f0277767d546a5a433618552a4073306d321f4227571b515a3539584e295b5c671e5e645d2b021a40724f7934375c0373294b1b4528404e2a3a5d4b3a36675758272d2c0c394015106817340a583a0f3217427c507154644b2026237b5520043960415c7708771f5b7a384c3372716e356c3d0329184c6d3d0b222e6d187b551870160f7c3f4a5e726f1b1b587c6401106803192c20392a595c714c4b6d690a26071e5e04645574653e556314211e541931344e3c18380d7253602b0e5a3935010a23734516631b6d1f6773551613040d0959525e2f127437177274377742123a283e29237b6f017c07477b6823351d08692b240835024925653d5823124f3e3c767446425c1d414555274e2c4375485b09140f230e572b24225c2e0d540d2e55620c2d16295547747d5d02190d194f5368521e0c193315415e273b682c5c7b0313650f64133c2f521b6760470b0f623b386f415f69142d284a38337506526501373a76554a1d25087622401d2808512b1d587d0373025e6c7b6c3c174b577555346e341351182f764502635542693f68102d184e6d374b2f046d1d392c7e077e0d3f413400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3108184c44087c3e140000000000000000000000000000000000000000000000055d52334b666f7a62000000000000000000000000000000000000000000000035365d7354413259510000000000000000000000000000000000000000000000736622103a4668055e000000000000000000000000000000000000000000000053320e1b40041a791f00000000000000000000000000000000000000000000006a0f48043a642f1b2a0000000000000000000000000000000000000000000000663356251130235c6700000000000000000000000000000000000000000000002e2c0579730b3c5442000000000000000000000000000000000000000000000036573116636965225c0000000000000000000000000000000000000000000000572f294d225c3c7c130000000000000000000000000000000000000000000000712354712b06046543000000000000000000000000000000000000000000000011297a5a57114d2a4e000000000000000000000000000000000000000000000074134f21656e27514900000000000000000000000000000000000000000000002c195a6f40131c524d0000000000000000000000000000000000000000000000742b1e076f2b761f480000000000000000000000000000000000000000000000741e6a382b7106475800000000000000000000000000000000000000000000002f6d093a511003032600000000000000000000000000000000000000000000000d50136e06115707130000000000000000000000000000000000000000000000400d28274f5563015400000000000000000000000000000000000000000000005b05110133416a5c0e0000000000000000000000000000000000000000000000164656030000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/ice.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 512</vec2>
+		</dict>
+	</array>
+</dict>

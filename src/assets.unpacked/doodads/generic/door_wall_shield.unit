@@ -1,0 +1,20 @@
+<unit slot="doodad">
+  <scenes close="close" open="open">
+		<scene name="close">
+			<sprite origin="15 31" looping="true" texture="./door_wall.png" material="system/default.mats:proj-wall">
+				<frame>60 0 30 33</frame>
+			</sprite>
+			<sprite origin="16 3" layer="-20" looping="true" texture="./door_wall.png" material="system/default.mats:floor">
+				<frame>0 33 32 6</frame>
+			</sprite>
+			<collision static="true">
+				<rect>-16 -4 32 8</rect>
+			</collision>			
+		</scene>
+		<scene name="open">
+			<sprite origin="16 3" layer="-20" looping="true" texture="./door_wall.png" material="system/default.mats:floor">
+				<frame>0 33 32 6</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

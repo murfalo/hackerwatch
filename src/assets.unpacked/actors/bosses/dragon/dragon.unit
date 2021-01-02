@@ -1,0 +1,1024 @@
+<unit netsync="position" slot="actor" layer="-1">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.bosses.dragon</string>
+		<string name="beastiary-scene">portrait</string>
+		<vec2 name="beastiary-offset">0 -1</vec2>
+		<string name="quality">legendary</string>
+		
+		<string name="type">beast</string>
+		<int name="hp">22000</int>
+		<int name="armor">175</int>
+		<int name="resistance">175</int>
+		<int name="experience-reward">10000</int>
+		<float name="mp-scale-fact">1.35</float>
+		<float name="ngp-scale">1.5</float>
+		
+		<bool name="impenetrable">true</bool>
+		<bool name="must-see-target">false</bool>
+		<int name="aggro-range">999</int>
+		<int name="unit-height">40</int>
+		<float name="debuff-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_boss.inc"
+		</array>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle 9 0 180</string>
+		</dict>
+
+		<array name="skills">
+			
+			%include "actors/bosses/dragon/dragon_skills_base.inc"
+			
+		</array>
+	</behavior>
+
+	<scenes start="idle-0">
+		<scene name="shared">
+			<minimap_sprite origin="5 5" texture="gui/minimap.png" frame="117 13 11 11" />
+			<sprite origin="46 104" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">0 336 91 105</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite project="false" origin="43 89" texture="./dragon_shadow.png">
+					<frame>935 167 89 89</frame>
+				</sprite> 
+			</shadow>
+		</scene>
+
+		<scene name="idle-0" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle0" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+				
+				<circle offset="9 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="24 -5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="37 0" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 0 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>0 0 101 84</frame>
+			</sprite>	
+		</scene>
+		
+		
+		<scene name="idle-1" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle1" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />		
+				
+				<circle offset="7 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="22 1" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="33 8" sensor="true" shoot-through="false" aim-through="true" radius="12" />			
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 56 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>101 0 101 84</frame>
+			</sprite>		
+		</scene>
+		
+		
+		<scene name="idle-2" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle2" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+				
+				<circle offset="5 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="12 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="20 20" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>					
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 112 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>202 0 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="idle-3" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle3" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="2 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="6 7" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="10 22" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 168 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>303 0 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		
+		<scene name="idle-4" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle4" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />				
+				
+				<circle offset="0 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-1 10" sensor="true" shoot-through="false"  aim-through="true" radius="15" />
+				<circle offset="-1 26" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 224 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>404 0 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		
+		<scene name="idle-5" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle5" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />		
+				
+				<circle offset="-4 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-8 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-12 22" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>			
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 280 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>505 0 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		
+		<scene name="idle-6" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle6" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="-7 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-14 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-23 20" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 336 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>606 0 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		
+		<scene name="idle-7" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle7" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="-10 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-25 2" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-34 10" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 392 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>707 0 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		
+		<scene name="idle-8" random-start="true">
+			<scene src="shared" />
+			
+			%if EDITOR
+			<text layer="500" origin="0 0" font="system/system.fnt" text="idle8" align="center" material="system/default.mats:bright"/>
+			%endif				
+			
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+
+				<circle offset="-10 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-25 -5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-39 0" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame>0 448 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="true" texture="./dragon.png" material="system/default.mats:actor">
+				<frame>808 0 101 84</frame>
+			</sprite>
+		</scene>
+		
+		
+		
+		
+		<scene name="shard-0" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="44 9" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+				
+				<circle offset="9 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="24 -5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="37 0" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 0 100 56</frame>
+					<frame time="300">200 0 100 56</frame>
+					<frame time="600">300 0 100 56</frame>
+					<frame time="100">200 0 100 56</frame>
+					<frame time="100">100 0 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">0 84 101 84</frame>
+				<frame time="300">0 168 101 84</frame>
+				<frame time="600">0 252 101 84</frame>
+				<frame time="100">0 168 101 84</frame>
+				<frame time="100">0 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">0 84 101 84</frame>
+				<frame time="300">0 168 101 84</frame>
+				<frame time="600">0 252 101 84</frame>
+				<frame time="100">0 168 101 84</frame>
+				<frame time="100">0 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="shard-1" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="40 20" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />		
+				
+				<circle offset="7 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="22 1" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="33 8" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 56 100 56</frame>
+					<frame time="300">200 56 100 56</frame>
+					<frame time="600">300 56 100 56</frame>
+					<frame time="100">200 56 100 56</frame>
+					<frame time="100">100 56 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">101 84 101 84</frame>
+				<frame time="300">101 168 101 84</frame>
+				<frame time="600">101 252 101 84</frame>
+				<frame time="100">101 168 101 84</frame>
+				<frame time="100">101 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">101 84 101 84</frame>
+				<frame time="300">101 168 101 84</frame>
+				<frame time="600">101 252 101 84</frame>
+				<frame time="100">101 168 101 84</frame>
+				<frame time="100">101 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="shard-2" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="27 27" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+				
+				<circle offset="5 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="12 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="20 20" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>		
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 112 100 56</frame>
+					<frame time="300">200 112 100 56</frame>
+					<frame time="600">300 112 100 56</frame>
+					<frame time="100">200 112 100 56</frame>
+					<frame time="100">100 112 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">202 84 101 84</frame>
+				<frame time="300">202 168 101 84</frame>
+				<frame time="600">202 252 101 84</frame>
+				<frame time="100">202 168 101 84</frame>
+				<frame time="100">202 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">202 84 101 84</frame>
+				<frame time="300">202 168 101 84</frame>
+				<frame time="600">202 252 101 84</frame>
+				<frame time="100">202 168 101 84</frame>
+				<frame time="100">202 84 101 84</frame>
+			</sprite>						
+		</scene>
+		
+		<scene name="shard-3" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="12 33" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="2 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="6 7" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="10 22" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 168 100 56</frame>
+					<frame time="300">200 168 100 56</frame>
+					<frame time="600">300 168 100 56</frame>
+					<frame time="100">200 168 100 56</frame>
+					<frame time="100">100 168 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">303 84 101 84</frame>
+				<frame time="300">303 168 101 84</frame>
+				<frame time="600">303 252 101 84</frame>
+				<frame time="100">303 168 101 84</frame>
+				<frame time="100">303 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">303 84 101 84</frame>
+				<frame time="300">303 168 101 84</frame>
+				<frame time="600">303 252 101 84</frame>
+				<frame time="100">303 168 101 84</frame>
+				<frame time="100">303 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="shard-4" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-2 37" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />				
+				
+				<circle offset="0 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-1 10" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-1 26" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>		
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 224 100 56</frame>
+					<frame time="300">200 224 100 56</frame>
+					<frame time="600">300 224 100 56</frame>
+					<frame time="100">200 224 100 56</frame>
+					<frame time="100">100 224 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">404 84 101 84</frame>
+				<frame time="300">404 168 101 84</frame>
+				<frame time="600">404 252 101 84</frame>
+				<frame time="100">404 168 101 84</frame>
+				<frame time="100">404 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">404 84 101 84</frame>
+				<frame time="300">404 168 101 84</frame>
+				<frame time="600">404 252 101 84</frame>
+				<frame time="100">404 168 101 84</frame>
+				<frame time="100">404 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="shard-5" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-16 32" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />		
+				
+				<circle offset="-4 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-8 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-12 22" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>		
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 280 100 56</frame>
+					<frame time="300">200 280 100 56</frame>
+					<frame time="600">300 280 100 56</frame>
+					<frame time="100">200 280 100 56</frame>
+					<frame time="100">100 280 100 56</frame>					
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">505 84 101 84</frame>
+				<frame time="300">505 168 101 84</frame>
+				<frame time="600">505 252 101 84</frame>
+				<frame time="100">505 168 101 84</frame>
+				<frame time="100">505 84 101 84</frame>				
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">505 84 101 84</frame>
+				<frame time="300">505 168 101 84</frame>
+				<frame time="600">505 252 101 84</frame>
+				<frame time="100">505 168 101 84</frame>
+				<frame time="100">505 84 101 84</frame>
+			</sprite>						
+		</scene>
+		
+		<scene name="shard-6" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-29 38" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="-7 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-14 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-23 20" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>			
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 336 100 56</frame>
+					<frame time="300">200 336 100 56</frame>
+					<frame time="600">300 336 100 56</frame>
+					<frame time="100">200 336 100 56</frame>
+					<frame time="100">100 336 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">606 84 101 84</frame>
+				<frame time="300">606 168 101 84</frame>
+				<frame time="600">606 252 101 84</frame>
+				<frame time="100">606 168 101 84</frame>
+				<frame time="100">606 84 101 84</frame>
+			</sprite>	
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">606 84 101 84</frame>
+				<frame time="300">606 168 101 84</frame>
+				<frame time="600">606 252 101 84</frame>
+				<frame time="100">606 168 101 84</frame>
+				<frame time="100">606 84 101 84</frame>
+			</sprite>				
+		</scene>
+		
+		<scene name="shard-7" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-42 16" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="-10 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-25 2" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-34 10" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>					
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 392 100 56</frame>
+					<frame time="300">200 392 100 56</frame>
+					<frame time="600">300 392 100 56</frame>
+					<frame time="100">200 392 100 56</frame>
+					<frame time="100">100 392 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">707 84 101 84</frame>
+				<frame time="300">707 168 101 84</frame>
+				<frame time="600">707 252 101 84</frame>
+				<frame time="100">707 168 101 84</frame>
+				<frame time="100">707 84 101 84</frame>
+			</sprite>	
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">707 84 101 84</frame>
+				<frame time="300">707 168 101 84</frame>
+				<frame time="600">707 252 101 84</frame>
+				<frame time="100">707 168 101 84</frame>
+				<frame time="100">707 84 101 84</frame>
+			</sprite>						
+		</scene>
+		
+		<scene name="shard-8" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-48 7" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+
+				<circle offset="-10 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-25 -5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-39 0" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>			
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="100">100 448 100 56</frame>
+					<frame time="300">200 448 100 56</frame>
+					<frame time="600">300 448 100 56</frame>
+					<frame time="100">200 448 100 56</frame>
+					<frame time="100">100 448 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="100">808 84 101 84</frame>
+				<frame time="300">808 168 101 84</frame>
+				<frame time="600">808 252 101 84</frame>
+				<frame time="100">808 168 101 84</frame>
+				<frame time="100">808 84 101 84</frame>
+			</sprite>	
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="100">808 84 101 84</frame>
+				<frame time="300">808 168 101 84</frame>
+				<frame time="600">808 252 101 84</frame>
+				<frame time="100">808 168 101 84</frame>
+				<frame time="100">808 84 101 84</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="wave-0" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="44 9" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+				
+				<circle offset="9 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="24 -5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="37 0" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 0 100 56</frame>
+					<frame time="550">200 0 100 56</frame>
+					<frame time="4500">300 0 100 56</frame>
+					<frame time="150">200 0 100 56</frame>
+					<frame time="150">100 0 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">0 84 101 84</frame>
+				<frame time="550">0 168 101 84</frame>
+				<frame time="4500">0 252 101 84</frame>
+				<frame time="150">0 168 101 84</frame>
+				<frame time="150">0 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">0 84 101 84</frame>
+				<frame time="550">0 168 101 84</frame>
+				<frame time="4500">0 252 101 84</frame>
+				<frame time="150">0 168 101 84</frame>
+				<frame time="150">0 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="wave-1" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="40 20" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />		
+				
+				<circle offset="7 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="22 1" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="33 8" sensor="true" shoot-through="false" aim-through="true" radius="12" />			
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 56 100 56</frame>
+					<frame time="550">200 56 100 56</frame>
+					<frame time="4500">300 56 100 56</frame>
+					<frame time="150">200 56 100 56</frame>
+					<frame time="150">100 56 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">101 84 101 84</frame>
+				<frame time="550">101 168 101 84</frame>
+				<frame time="4500">101 252 101 84</frame>
+				<frame time="150">101 168 101 84</frame>
+				<frame time="150">101 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">101 84 101 84</frame>
+				<frame time="550">101 168 101 84</frame>
+				<frame time="4500">101 252 101 84</frame>
+				<frame time="150">101 168 101 84</frame>
+				<frame time="150">101 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="wave-2" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="27 27" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+				
+				<circle offset="5 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="12 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="20 20" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>		
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 112 100 56</frame>
+					<frame time="550">200 112 100 56</frame>
+					<frame time="4500">300 112 100 56</frame>
+					<frame time="150">200 112 100 56</frame>
+					<frame time="150">100 112 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">202 84 101 84</frame>
+				<frame time="550">202 168 101 84</frame>
+				<frame time="4500">202 252 101 84</frame>
+				<frame time="150">202 168 101 84</frame>
+				<frame time="150">202 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">202 84 101 84</frame>
+				<frame time="550">202 168 101 84</frame>
+				<frame time="4500">202 252 101 84</frame>
+				<frame time="150">202 168 101 84</frame>
+				<frame time="150">202 84 101 84</frame>
+			</sprite>						
+		</scene>
+		
+		<scene name="wave-3" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="12 33" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="2 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="6 7" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="10 22" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>				
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 168 100 56</frame>
+					<frame time="550">200 168 100 56</frame>
+					<frame time="4500">300 168 100 56</frame>
+					<frame time="150">200 168 100 56</frame>
+					<frame time="150">100 168 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">303 84 101 84</frame>
+				<frame time="550">303 168 101 84</frame>
+				<frame time="4500">303 252 101 84</frame>
+				<frame time="150">303 168 101 84</frame>
+				<frame time="150">303 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">303 84 101 84</frame>
+				<frame time="550">303 168 101 84</frame>
+				<frame time="4500">303 252 101 84</frame>
+				<frame time="150">303 168 101 84</frame>
+				<frame time="150">303 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="wave-4" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-2 37" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />				
+				
+				<circle offset="0 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-1 10" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-1 26" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>		
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 224 100 56</frame>
+					<frame time="550">200 224 100 56</frame>
+					<frame time="4500">300 224 100 56</frame>
+					<frame time="150">200 224 100 56</frame>
+					<frame time="150">100 224 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">404 84 101 84</frame>
+				<frame time="550">404 168 101 84</frame>
+				<frame time="4500">404 252 101 84</frame>
+				<frame time="150">404 168 101 84</frame>
+				<frame time="150">404 84 101 84</frame>
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">404 84 101 84</frame>
+				<frame time="550">404 168 101 84</frame>
+				<frame time="4500">404 252 101 84</frame>
+				<frame time="150">404 168 101 84</frame>
+				<frame time="150">404 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="wave-5" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-16 32" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />		
+				
+				<circle offset="-4 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-8 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-12 22" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>		
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 280 100 56</frame>
+					<frame time="550">200 280 100 56</frame>
+					<frame time="4500">300 280 100 56</frame>
+					<frame time="150">200 280 100 56</frame>
+					<frame time="150">100 280 100 56</frame>					
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">505 84 101 84</frame>
+				<frame time="550">505 168 101 84</frame>
+				<frame time="4500">505 252 101 84</frame>
+				<frame time="150">505 168 101 84</frame>
+				<frame time="150">505 84 101 84</frame>				
+			</sprite>
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">505 84 101 84</frame>
+				<frame time="550">505 168 101 84</frame>
+				<frame time="4500">505 252 101 84</frame>
+				<frame time="150">505 168 101 84</frame>
+				<frame time="150">505 84 101 84</frame>
+			</sprite>						
+		</scene>
+		
+		<scene name="wave-6" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-29 38" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="-7 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-14 5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-23 20" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>			
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 336 100 56</frame>
+					<frame time="550">200 336 100 56</frame>
+					<frame time="4500">300 336 100 56</frame>
+					<frame time="150">200 336 100 56</frame>
+					<frame time="150">100 336 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">606 84 101 84</frame>
+				<frame time="550">606 168 101 84</frame>
+				<frame time="4500">606 252 101 84</frame>
+				<frame time="150">606 168 101 84</frame>
+				<frame time="150">606 84 101 84</frame>
+			</sprite>	
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">606 84 101 84</frame>
+				<frame time="550">606 168 101 84</frame>
+				<frame time="4500">606 252 101 84</frame>
+				<frame time="150">606 168 101 84</frame>
+				<frame time="150">606 84 101 84</frame>
+			</sprite>				
+		</scene>
+		
+		<scene name="wave-7" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-42 16" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />			
+				
+				<circle offset="-10 -10" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-25 2" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-34 10" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>					
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 392 100 56</frame>
+					<frame time="550">200 392 100 56</frame>
+					<frame time="4500">300 392 100 56</frame>
+					<frame time="150">200 392 100 56</frame>
+					<frame time="150">100 392 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">707 84 101 84</frame>
+				<frame time="550">707 168 101 84</frame>
+				<frame time="4500">707 252 101 84</frame>
+				<frame time="150">707 168 101 84</frame>
+				<frame time="150">707 84 101 84</frame>
+			</sprite>	
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">707 84 101 84</frame>
+				<frame time="550">707 168 101 84</frame>
+				<frame time="4500">707 252 101 84</frame>
+				<frame time="150">707 168 101 84</frame>
+				<frame time="150">707 84 101 84</frame>
+			</sprite>			
+		</scene>
+		
+		<scene name="wave-8" random-start="false">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-48 7" />
+			<collision static="true">
+				<circle offset="0 -65" aim-through="true" radius="30" />
+				<circle offset="0 -38" aim-through="true" radius="28" />
+				
+				<circle offset="-30 -26" aim-through="true" radius="14" />
+				<circle offset="30 -18" aim-through="true" radius="20" />
+
+				<circle offset="-10 -11" sensor="true" shoot-through="false" aim-through="true" radius="17" />
+				<circle offset="-25 -5" sensor="true" shoot-through="false" aim-through="true" radius="15" />
+				<circle offset="-39 0" sensor="true" shoot-through="false" aim-through="true" radius="12" />
+			</collision>			
+			<shadow darkness="1">
+				<sprite project="false" origin="44 17" texture="./dragon_shadow.png">
+					<frame time="200">100 448 100 56</frame>
+					<frame time="550">200 448 100 56</frame>
+					<frame time="4500">300 448 100 56</frame>
+					<frame time="150">200 448 100 56</frame>
+					<frame time="150">100 448 100 56</frame>
+				</sprite> 
+			</shadow>
+			<sprite origin="52 42" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">808 84 101 84</frame>
+				<frame time="550">808 168 101 84</frame>
+				<frame time="4500">808 252 101 84</frame>
+				<frame time="150">808 168 101 84</frame>
+				<frame time="150">808 84 101 84</frame>
+			</sprite>	
+			<sprite origin="52 42" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:glow-both-bright">
+				<frame time="200">808 84 101 84</frame>
+				<frame time="550">808 168 101 84</frame>
+				<frame time="4500">808 252 101 84</frame>
+				<frame time="150">808 168 101 84</frame>
+				<frame time="150">808 84 101 84</frame>
+			</sprite>
+		</scene>
+
+		<scene name="portrait" random-start="false">		
+			<sprite origin="10 10" layer="100" looping="false" texture="./dragon.png" material="system/default.mats:actor">
+				<frame time="200">724 36 20 20</frame>
+			</sprite>	
+			<sprite origin="10 10" layer="101" looping="false" texture="./dragon_eyes.png" material="system/default.mats:actor">
+				<frame time="200">724 36 20 20</frame>
+			</sprite>						
+		</scene>
+	</scenes>
+</unit>

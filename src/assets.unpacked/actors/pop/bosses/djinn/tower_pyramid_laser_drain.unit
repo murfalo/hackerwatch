@@ -1,0 +1,104 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+	
+		<string name="type">construct</string>
+		<int name="hp">999999</int>
+		<int name="armor">999</int>
+		<int name="resistance">999</int>
+		
+		<bool name="targetable">false</bool>
+		
+		<bool name="must-see-target">false</bool>
+		
+		<bool name="crosshair-colors">false</bool>
+		
+		<int name="aggro-range">999</int>
+		
+		<array name="buffs-immune-tags">
+			<string>poison</string>
+			<string>confusion</string>
+			<string>debuff</string>
+			<string>disarm</string>
+			<string>root</string>
+			<string>stun</string>
+			<string>slow</string>
+			<string>buff</string>
+			<string>bleeding</string>
+			<string>respawn_ghost</string>
+			<string>freezing</string>
+		</array>
+		
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+%//				<array name="conditional">
+%//					<string>flag</string><string>is</string><string>100</string>
+%//					<string>flag</string><string>isnt</string><string>75</string>
+%//				</array>
+				<string name="anim">idle</string>
+				<int name="cooldown">500</int>
+				<int name="castpoint">0</int>
+				<int name="min-range">0</int>
+				<int name="range">100</int>
+				<bool name="good-aim">false</bool>
+				<array name="actions">
+					<dict>
+						<string name="class">ShootRandomProjectile</string>
+						<array name="projectile">
+							<int>250</int><string>actors/pop/bosses/djinn/hazeball.unit</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			%if EDITOR 
+			<sprite origin="32 32" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 64 64</frame>
+			</sprite>
+			%endif						
+			<collision static="true">
+				<circle shoot-through="true" radius="11" />
+			</collision>	
+		</scene>
+
+		<scene name="idle">
+			<scene src="shared" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser2.png" material="system/default.mats:actor">
+				<frame>0 0 22 22</frame>
+			</sprite>		
+		</scene>	
+		<scene name="100">
+			<scene src="shared" />
+			<sprite origin="11 11" looping="true" texture="./tower_pyramid_laser2.png" material="system/default.mats:actor">
+				<frame>0 0 22 22</frame>
+			</sprite>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="20" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="32" />
+				</sizes>
+				<colors>
+					<color value="0 0 255 100" />
+				</colors>
+			</light> 			
+		</scene>			
+	</scenes>
+</unit>

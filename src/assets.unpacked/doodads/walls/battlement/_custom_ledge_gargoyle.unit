@@ -1,0 +1,58 @@
+<unit slot="doodad">
+		<scenes n="n" s="s" e="e" w="w">
+		<scene name="n">
+			<minimap_sprite origin="4 3" texture="gui/minimap.png" frame="0 190 8 4"/>	
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-16 -4 32 8</rect>
+			</collision>
+			<shadow darkness="1">
+				<rect cast-len="8">-16 -4 32 8</rect>
+			</shadow>
+			<sprite origin="16 17" texture="./_ledge_high.png" material="system/default.mats:wall-noxray">
+				<frame>90 0 32 21</frame>
+			</sprite>
+		</scene>	
+		<scene name="s">
+			<minimap_sprite origin="4 1" texture="gui/minimap.png" frame="0 194 8 4"/>	
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-16 -4 32 8</rect>
+			</collision>
+			<shadow darkness="1">
+				<rect cast-len="8">-16 -4 32 8</rect>
+			</shadow>
+			<sprite origin="16 8" texture="./_ledge_high.png" material="system/default.mats:wall-noxray">
+				<frame>90 21 32 38</frame>
+			</sprite>
+		</scene>
+		<scene name="w">
+			<minimap_sprite origin="3 4" texture="gui/minimap.png" frame="0 198 4 8"/>	
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-4 -16 8 32</rect>
+			</collision>
+			<shadow darkness="1">
+				<rect cast-len="8">-4 -16 8 32</rect>
+			</shadow>
+			<sprite ulayer="1" origin="4 24" texture="./_ledge_high.png" material="system/default.mats:wall-noxray">
+				<frame>0 44 8 10</frame>
+			</sprite>
+			<sprite origin="13 20" texture="./_ledge_high.png" material="system/default.mats:wall-noxray">
+				<frame>73 16 17 46</frame>
+			</sprite>
+		</scene>	
+		<scene name="e">
+			<minimap_sprite origin="1 4" texture="gui/minimap.png" frame="4 198 4 8"/>	
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">-4 -16 8 32</rect>
+			</collision>
+			<shadow darkness="1">
+				<rect cast-len="8">-4 -16 8 32</rect>
+			</shadow>
+			<sprite ulayer="1" origin="4 24" texture="./_ledge_high.png" material="system/default.mats:wall-noxray">
+				<frame>0 44 8 10</frame>
+			</sprite>
+			<sprite origin="4 20" texture="./_ledge_high.png" material="system/default.mats:wall-noxray">
+				<frame>56 16 17 46</frame>
+			</sprite>
+		</scene>	
+	</scenes>
+</unit>

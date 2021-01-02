@@ -1,0 +1,103 @@
+<effect looping="true">
+	<param name="length" default="500"/>
+	<param name="angle" default="0"/>
+	<variation>
+		<sprite origin="16 31" looping="true" texture="./night_beam_impact.png" material="system/default.mats:default"
+			scale-x="1*saturate(2*t+l)"
+			scale-y="1*saturate(2*t+l)"
+			angle="rand(u+i+l+23)*pi/8 - pi/16"
+			>
+			<frame time="30">0 0 32 32</frame>
+			<frame time="30">32 0 32 32</frame>
+			<frame time="30">64 0 32 32</frame>
+			<frame time="30">96 0 32 32</frame>
+			<frame time="30">128 0 32 32</frame>
+		</sprite>
+		<sprite origin="16 31" looping="true" texture="./night_beam_impact.png" material="system/default.mats:default"
+			scale-x="1*saturate(2*t+l)"
+			scale-y="1*saturate(2*t+l)"
+			angle="rand(u+i+l)*pi/8 - pi/16"
+			>
+			<frame time="30">0 32 32 32</frame>
+			<frame time="30">32 32 32 32</frame>
+			<frame time="30">64 32 32 32</frame>
+			<frame time="30">96 32 32 32</frame>
+			<frame time="30">128 32 32 32</frame>
+		</sprite>
+	</variation>
+	<variation>
+		<sprite origin="16 31" looping="true" texture="./night_beam_impact.png" material="system/default.mats:default"
+			scale-x="1*saturate(2*t+l)"
+			scale-y="1*saturate(2*t+l)"
+			angle="rand(u+i+l+23)*pi/8 - pi/16"
+			>
+			<frame time="50">0 0 32 32</frame>
+			<frame time="50">32 0 32 32</frame>
+			<frame time="30">128 0 32 32</frame>
+		</sprite>
+		<sprite origin="16 31" looping="true" texture="./night_beam_impact.png" material="system/default.mats:default"
+			scale-x="1*saturate(2*t+l)"
+			scale-y="1*saturate(2*t+l)"
+			angle="rand(u+i+l+23)*pi/8 - pi/16"
+			>
+			<frame time="30">0 0 32 32</frame>
+			<frame time="30">32 0 32 32</frame>
+			<frame time="30">0 32 32 32</frame>
+			<frame time="30">32 32 32 32</frame>
+			<frame time="30">64 32 32 32</frame>
+			<frame time="30">96 32 32 32</frame>
+			<frame time="30">128 32 32 32</frame>
+		</sprite>
+	</variation>
+	<sprite origin="16 31" looping="true" texture="./night_beam_impact.png" material="system/default.mats:default"
+	num-sprites="rand(u+l)*5"
+	pos-x="rand(u+i+l+3)*18 - 9"
+	pos-y="rand(u+i+l+61)*3"
+	scale-x="0.2*rand(u+i+l+123) + 0.3*saturate(t+l)"
+	scale-y="0.2*rand(u+i+l+123) + 0.3*saturate(t+l)"
+	angle="rand(u+i+l+28)*pi/8 - pi/16"
+	>
+		<frame time="20">0 32 32 32</frame>
+		<frame time="20">32 32 32 32</frame>
+		<frame time="20">64 32 32 32</frame>
+		<frame time="20">96 32 32 32</frame>
+		<frame time="20">128 32 32 32</frame>
+		<frame time="20">0 0 32 32</frame>
+		<frame time="20">32 0 32 32</frame>
+		<frame time="20">64 0 32 32</frame>
+		<frame time="20">96 0 32 32</frame>
+		<frame time="20">128 0 32 32</frame>
+	</sprite>
+	<light pos-x="0" pos-y="-5">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<length value="100" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		<size value="64*saturate(t+l) + 1*sin(t*pi*16)" />
+		<color-r value="3" />
+		<color-g value="0" />
+		<color-b value="4" />
+		<color-a value="0"/>
+	</light>
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		<looping value="true" />
+		<length value="100" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		<size value="32 * saturate(t+l) + 1*cos(t*pi*4)" />
+		<color-r value="2" />
+		<color-g value="0" />
+		<color-b value="4" />
+		<color-a value="0"/>
+	</light>
+</effect>

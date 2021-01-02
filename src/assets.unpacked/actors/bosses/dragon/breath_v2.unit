@@ -1,0 +1,49 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<float name="speed">3</float>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.015</float>
+		<int name="ttl">5000</int>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">13</int>
+			</dict>
+		</array>
+				
+		<dict name="effect-params">
+			<float name="height">3</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<minimap_sprite origin="0 0" texture="gui/minimap.png" frame="34 9 1 1" />		
+			<collision static="false">
+				<circle projectile="true" radius="3" />
+			</collision>
+			<sprite origin="4 4" looping="true" texture="./breath_v2.png" material="system/default.mats:default-noxray">
+				<frame>0 0 8 8</frame>
+			</sprite>
+		<light pos="0 0">
+			<sprite texture="system/light_L.png">
+				<frame>0 0 128 128</frame>
+			</sprite>
+			<length value="2000" />
+			<overbright value="3" />
+			<looping value="true" />
+			<cast-shadows value="false" />
+			<shadow-cast-pos value="0 0" />
+			<shadow-cast-pos-jitter value="0 0 0 0" />
+			<sizes>
+				<size value="24" />
+			</sizes>
+			<colors>
+				<color value="128 50 255 0" />
+			</colors> 
+		</light>					
+		</scene>
+	</scenes>
+</unit>

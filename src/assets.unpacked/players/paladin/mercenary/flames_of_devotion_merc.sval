@@ -1,0 +1,25 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">paladin</string>
+	<string name="name">.skills.paladin.flames-of-devotion</string>
+	<string name="description">.skills.paladin.flames-of-devotion.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>168 0 24 24</vec4>
+	</array>
+
+	<int name="cost">25</int>
+
+	<dict name="skill">
+		<string name="class">Skills::StackDamage</string>
+		<int name="max-stacks">12</int>
+		<int name="duration">1000</int>
+		<int name="magic-damage">1</int>
+
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>0 24 12 12</vec4>
+		</array>
+	</dict>
+</dict>

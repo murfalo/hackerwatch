@@ -1,0 +1,31 @@
+<effect layer="120" looping="true">
+	<sprite origin="7 20" looping="true" texture="./comet.png" material="system/default.mats:bright-noxray"
+		color-a="1"
+	>
+		<frame>0 0 13 30</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+				
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="64" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="3" />
+		<color-a value="0"/>
+		
+	</light>
+	
+</effect>

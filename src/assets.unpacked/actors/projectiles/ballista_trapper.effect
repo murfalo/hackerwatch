@@ -1,0 +1,30 @@
+<effect looping="true" 
+>
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	
+	<sprite looping="true" origin="25 4" ulayer="-1" texture="actors/tower_ballista_javelin.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle">
+		
+		<frame time="100">384 130 27 9</frame>
+		<frame time="100">384 139 27 9</frame>
+		<frame time="100">384 148 27 9</frame>
+	</sprite>	
+	<sprite looping="true" origin="25 4" texture="actors/tower_ballista_javelin.png" material="system/default.mats:projectile"
+	
+		pos-x="0"
+		pos-y="-height"
+	
+		angle="angle">
+		
+		<frame time="100">384 130 27 9</frame>
+		<frame time="100">384 139 27 9</frame>
+		<frame time="100">384 148 27 9</frame>
+	</sprite>
+	
+	
+</effect>

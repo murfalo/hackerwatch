@@ -1,0 +1,74 @@
+<effect looping="false">
+	<variation>
+		<sprite origin="8 34" looping="false" texture="players/warlock/eye_of_the_storm.png" material="system/default.mats:default-noxray"
+			color-a="1-t"
+		>
+			<frame time="75">0 0 16 16</frame>
+			<frame time="75">16 0 16 16</frame>
+			<frame time="75">32 0 16 16</frame>
+			<frame time="75">48 0 16 16</frame>
+			<frame time="75">64 0 16 16</frame>
+		</sprite>
+		
+		<sprite origin="8 34" looping="false" texture="players/warlock/eye_of_the_storm.png" material="system/default.mats:default-noxray"
+			
+			color-a="(1-t) * floor( max( -1 * pow(t+rand(u)*16, 2) + (t+rand(u)*16)*2.01,0 ) )"
+		>
+			<frame time="75">0 16 16 16</frame>
+			<frame time="75">16 16 16 16</frame>
+			<frame time="75">32 16 16 16</frame>
+			<frame time="75">48 16 16 16</frame>
+			<frame time="75">64 16 16 16</frame>
+		</sprite>
+		
+		<sprite origin="8 34" looping="false" texture="players/warlock/eye_of_the_storm.png" material="system/default.mats:default-noxray"
+			
+			color-a="(1-t) * floor( max( -1 * pow(t+rand(u)*15, 2) + (t+rand(u)*15)*2.01,0 ) )"
+		>
+			<frame time="75">0 32 16 16</frame>
+			<frame time="75">16 32 16 16</frame>
+			<frame time="75">32 32 16 16</frame>
+			<frame time="75">48 32 16 16</frame>
+			<frame time="75">64 32 16 16</frame>
+		</sprite>
+		
+		<sprite origin="8 34" looping="false" texture="players/warlock/eye_of_the_storm.png" material="system/default.mats:default-noxray"
+			
+			color-a="(1-t) * floor( max( -1 * pow(t+rand(u)*11, 2) + (t+rand(u)*11)*2.01,0 ) )"
+		>
+			<frame time="75">0 48 16 16</frame>
+			<frame time="75">16 48 16 16</frame>
+			<frame time="75">32 48 16 16</frame>
+			<frame time="75">48 48 16 16</frame>
+			<frame time="75">64 48 16 16</frame>
+		</sprite>
+		
+		<sprite origin="8 34" looping="false" texture="players/warlock/eye_of_the_storm.png" material="system/default.mats:default-noxray"
+			
+			color-a="(1-t) * floor( max( -1 * pow(t+rand(u)*10, 2) + (t+rand(u)*10)*2.01,0 ) )"
+		>
+			<frame time="75">0 64 16 16</frame>
+			<frame time="75">16 64 16 16</frame>
+			<frame time="75">32 64 16 16</frame>
+			<frame time="75">48 64 16 16</frame>
+			<frame time="75">64 64 16 16</frame>
+		</sprite>
+	</variation>
+	
+	<light pos-x="floor(rand(u)*-1) * rand(u)*35" pos-y="(floor(rand(u)*-1) * rand(u)*15) - 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		<looping value="false" />
+
+		<size value="2 * 20 * floor( max( -1 * pow(t+rand(u)*10, 2) + (t+rand(u)*10)*2.01,0 ) )" />
+		
+		<color-r value="1.5" />
+		<color-g value="0.5" />
+		<color-b value="2.5" />
+		<color-a value="0" />
+	</light>
+
+</effect>

@@ -1,0 +1,136 @@
+<effect looping="true">
+	<param name="radius" default="12" />
+	<param name="ttl" default="1900" />
+	
+
+<variation>
+
+	<sprite origin="8 15" looping="true" texture="actors/pop/bosses/djinn/firewall_area_flames.png" material="system/default.mats:bright-noxray"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+23*i)*2*pi) * radius * pow(rand(u+673*i),0.5)"
+        pos-y="sin(rand(u+49*i)*2*pi) * radius * pow(rand(u+3581*i),0.5)"
+		
+		scale-x="saturate(1-pow(t,7))"
+		scale-y="saturate(1-pow(t,7))"
+		
+	>
+        <frame time="100">0 0 16 16</frame>
+        <frame time="100">16 0 16 16</frame>
+        <frame time="100">32 0 16 16</frame>
+        <frame time="100">48 0 16 16</frame>
+        <frame time="100">0 16 16 16</frame>
+        <frame time="100">16 16 16 16</frame>
+        <frame time="100">32 16 16 16</frame>
+	</sprite>
+	
+	
+	<sprite origin="7 13" looping="true" texture="actors/pop/bosses/djinn/firewall_area_flames.png" material="system/default.mats:bright-noxray"
+		num-sprites="6"
+
+		pos-x="cos(rand(u+193*i)*2*pi) * radius * pow(rand(u+5*i),0.5)"
+        pos-y="sin(rand(u+257*i)*2*pi) * radius * pow(rand(u+71*i),0.5)"
+		
+		scale-x="saturate(1-pow(t,7))"
+		scale-y="saturate(1-pow(t,7))"
+	>
+        <frame time="100">0 32 16 16</frame>
+        <frame time="100">16 32 16 16</frame>
+        <frame time="100">32 32 16 16</frame>
+        <frame time="100">48 32 16 16</frame>
+        <frame time="100">0 48 16 16</frame>
+        <frame time="100">16 48 16 16</frame>
+        <frame time="100">32 48 16 16</frame>
+	</sprite>
+	<sprite origin="16 41" loopback="600" looping="true" texture="./djinn_firewall.png" material="system/default.mats:bright-noxray">
+       
+		<frame time="100">160 0 32 64</frame>
+		<frame time="100">192 0 32 64</frame>
+		<frame time="100">224 0 32 64</frame>
+		<frame time="100">0 64 32 64</frame>   	
+		<frame time="100">32 64 32 64</frame>
+		<frame time="100">64 64 32 64</frame>
+        <frame time="100">96 64 32 64</frame>
+        <frame time="100">128 64 32 64</frame>
+        <frame time="100">160 64 32 64</frame>
+        <frame time="100">192 64 32 64</frame>
+        <frame time="100">224 64 32 64</frame>
+        <frame time="100">0 128 32 64</frame>
+		<frame time="100">32 128 32 64</frame>
+        <frame time="100">64 128 32 64</frame>
+        <frame time="100">96 128 32 64</frame>
+        <frame time="100">128 128 32 64</frame>
+        <frame time="100">160 128 32 64</frame>
+        <frame time="100">192 128 32 64</frame>
+        <frame time="100">224 128 32 64</frame>
+        <frame time="100">0 0 0 0</frame>
+	</sprite>
+	
+	
+</variation>
+<variation>
+
+	<sprite origin="7 13" looping="true" texture="actors/pop/bosses/djinn/firewall_area_flames.png" material="system/default.mats:bright-noxray"
+		num-sprites="5"
+
+		pos-x="cos(rand(u+239*i)*2*pi) * radius * pow(rand(u+139*i),0.5)"
+        pos-y="sin(rand(u+191*i)*2*pi) * radius * pow(rand(u+2377*i),0.5)"
+		
+		scale-x="saturate(1-pow(t,7))"
+		scale-y="saturate(1-pow(t,7))"
+	>
+        <frame time="100">0 32 16 16</frame>
+        <frame time="100">16 32 16 16</frame>
+        <frame time="100">32 32 16 16</frame>
+        <frame time="100">48 32 16 16</frame>
+        <frame time="100">0 48 16 16</frame>
+        <frame time="100">16 48 16 16</frame>
+        <frame time="100">32 48 16 16</frame>
+	</sprite>
+	<sprite origin="8 15" looping="true" texture="actors/pop/bosses/djinn/firewall_area_flames.png" material="system/default.mats:bright-noxray"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+1021*i)*2*pi) * radius * pow(rand(u+359*i),0.5)"
+        pos-y="sin(rand(u+709*i)*2*pi) * radius * pow(rand(u+179*i),0.5)"
+		
+		color-a="1-t"
+	>
+        <frame time="100">0 0 16 16</frame>
+        <frame time="100">16 0 16 16</frame>
+        <frame time="100">32 0 16 16</frame>
+        <frame time="100">48 0 16 16</frame>
+        <frame time="100">0 16 16 16</frame>
+        <frame time="100">16 16 16 16</frame>
+        <frame time="100">32 16 16 16</frame>
+	</sprite>
+	<sprite origin="16 41" loopback="600" looping="true" texture="./djinn_firewall.png" material="system/default.mats:bright-noxray">
+       
+		<frame time="100">160 0 32 64</frame>
+		<frame time="100">192 0 32 64</frame>
+		<frame time="100">224 0 32 64</frame>
+		<frame time="100">0 64 32 64</frame>   	
+		<frame time="100">32 64 32 64</frame>
+		<frame time="100">64 64 32 64</frame>
+        <frame time="75">0 128 32 64</frame>
+        <frame time="75">96 64 32 64</frame>
+        <frame time="75">128 64 32 64</frame>
+        <frame time="75">160 64 32 64</frame>
+        <frame time="75">192 64 32 64</frame>
+        <frame time="75">224 64 32 64</frame>
+        <frame time="75">0 128 32 64</frame>
+        <frame time="75">96 64 32 64</frame>
+		
+		<frame time="100">32 128 32 64</frame>
+        <frame time="100">64 128 32 64</frame>
+        <frame time="100">96 128 32 64</frame>
+        <frame time="100">128 128 32 64</frame>
+        <frame time="100">160 128 32 64</frame>
+        <frame time="100">192 128 32 64</frame>
+        <frame time="100">224 128 32 64</frame>
+        <frame time="100">0 0 0 0</frame>
+	</sprite>
+	
+	
+</variation>
+
+</effect>

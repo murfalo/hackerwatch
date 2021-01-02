@@ -1,0 +1,3099 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SpawnUnit</string>
+			<int>1</int>
+			<vec3>69 -146 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>2</int>
+			<vec3>16 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_glyphs</string>
+			<dict>
+				<string name="EventName">spawn_glyphs</string>
+			</dict>
+			<array>
+				<int>212</int>
+				<int>0</int>
+				<int>211</int>
+				<int>0</int>
+				<int>210</int>
+				<int>0</int>
+				<int>3</int>
+				<int>0</int>
+				<int>213</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>3</int>
+			<vec3>56 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>8</string>
+			<dict>
+				<int name="NumToExecute">8</int>
+				<array name="ToExecute">
+					<int>72</int>
+					<int>69</int>
+					<int>9</int>
+					<int>12</int>
+					<int>1</int>
+					<int>66</int>
+					<int>75</int>
+					<int>93</int>
+					<int>90</int>
+					<int>78</int>
+					<int>63</int>
+					<int>60</int>
+					<int>6</int>
+					<int>15</int>
+					<int>18</int>
+					<int>24</int>
+					<int>21</int>
+					<int>57</int>
+					<int>84</int>
+					<int>81</int>
+					<int>117</int>
+					<int>87</int>
+					<int>99</int>
+					<int>96</int>
+					<int>153</int>
+					<int>102</int>
+					<int>105</int>
+					<int>147</int>
+					<int>150</int>
+					<int>156</int>
+					<int>159</int>
+					<int>162</int>
+					<int>108</int>
+					<int>144</int>
+					<int>165</int>
+					<int>168</int>
+					<int>171</int>
+					<int>174</int>
+					<int>177</int>
+					<int>138</int>
+					<int>135</int>
+					<int>141</int>
+					<int>111</int>
+					<int>120</int>
+					<int>180</int>
+					<int>48</int>
+					<int>123</int>
+					<int>132</int>
+					<int>129</int>
+					<int>126</int>
+					<int>39</int>
+					<int>51</int>
+					<int>42</int>
+					<int>33</int>
+					<int>54</int>
+					<int>114</int>
+					<int>27</int>
+					<int>30</int>
+					<int>36</int>
+					<int>45</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>4</int>
+			<vec3>653 -146 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>1</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>5</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>5</int>
+			<vec3>621 -210 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>1</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>6</int>
+			<vec3>89 -98 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>7</int>
+			<vec3>673 -98 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>6</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>8</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>8</int>
+			<vec3>641 -162 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>6</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>9</int>
+			<vec3>108 -174 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>10</int>
+			<vec3>692 -174 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>9</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>11</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>11</int>
+			<vec3>660 -238 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>9</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>12</int>
+			<vec3>153 -141 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>13</int>
+			<vec3>737 -141 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>12</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>14</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>14</int>
+			<vec3>705 -205 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>12</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>15</int>
+			<vec3>134 -91 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>16</int>
+			<vec3>718 -91 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>15</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>17</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>17</int>
+			<vec3>686 -155 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>15</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>18</int>
+			<vec3>178 -81 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>19</int>
+			<vec3>762 -81 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>18</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>20</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>20</int>
+			<vec3>730 -145 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>18</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>21</int>
+			<vec3>113 -39 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>22</int>
+			<vec3>697 -39 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>21</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>23</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>23</int>
+			<vec3>665 -103 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>21</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>24</int>
+			<vec3>181 -24 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>25</int>
+			<vec3>765 -24 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>24</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>26</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>26</int>
+			<vec3>733 -88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>24</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>130 7 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>28</int>
+			<vec3>714 7 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>27</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>29</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>29</int>
+			<vec3>682 -57 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>27</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>30</int>
+			<vec3>189 44 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>31</int>
+			<vec3>773 44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>30</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>32</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>32</int>
+			<vec3>741 -20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>30</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>33</int>
+			<vec3>99 55 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>34</int>
+			<vec3>683 55 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>33</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>35</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>35</int>
+			<vec3>651 -9 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>33</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>36</int>
+			<vec3>145 77 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>37</int>
+			<vec3>729 77 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>36</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>38</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>38</int>
+			<vec3>697 13 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>36</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>39</int>
+			<vec3>81 102 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>40</int>
+			<vec3>665 102 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>39</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>41</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>41</int>
+			<vec3>633 38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>39</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>42</int>
+			<vec3>100 152 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>43</int>
+			<vec3>684 152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>42</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>44</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>44</int>
+			<vec3>652 88 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>42</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>45</int>
+			<vec3>157 127 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>46</int>
+			<vec3>741 127 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>45</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>47</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>47</int>
+			<vec3>709 63 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>45</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>48</int>
+			<vec3>34 89 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>49</int>
+			<vec3>618 89 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>48</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>50</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>50</int>
+			<vec3>586 25 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>48</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>51</int>
+			<vec3>56 44 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>52</int>
+			<vec3>640 44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>51</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>53</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>53</int>
+			<vec3>608 -20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>51</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>54</int>
+			<vec3>81 2 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>55</int>
+			<vec3>665 2 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>54</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>56</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>56</int>
+			<vec3>633 -62 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>54</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>57</int>
+			<vec3>60 -52 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>58</int>
+			<vec3>644 -52 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>57</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>59</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>59</int>
+			<vec3>612 -116 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>57</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>60</int>
+			<vec3>38 -105 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>61</int>
+			<vec3>622 -105 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>60</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>62</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>62</int>
+			<vec3>590 -169 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>60</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>63</int>
+			<vec3>0 -134 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>64</int>
+			<vec3>584 -134 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>63</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>65</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>65</int>
+			<vec3>552 -198 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>63</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>66</int>
+			<vec3>11 -176 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>67</int>
+			<vec3>595 -176 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>66</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>68</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>68</int>
+			<vec3>563 -240 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>66</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>69</int>
+			<vec3>55 -193 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>70</int>
+			<vec3>639 -193 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>69</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>71</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>71</int>
+			<vec3>607 -257 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>69</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>72</int>
+			<vec3>-33 -200 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>73</int>
+			<vec3>551 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>72</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>74</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>74</int>
+			<vec3>519 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>72</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>75</int>
+			<vec3>-75 -179 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>76</int>
+			<vec3>509 -179 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>75</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>77</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>77</int>
+			<vec3>477 -243 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>75</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>78</int>
+			<vec3>-52 -122 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>79</int>
+			<vec3>532 -122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>78</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>80</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>80</int>
+			<vec3>500 -186 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>78</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>81</int>
+			<vec3>-6 -86 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>82</int>
+			<vec3>578 -86 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>81</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>83</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>83</int>
+			<vec3>546 -150 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>81</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>84</int>
+			<vec3>18 -48 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>85</int>
+			<vec3>602 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>84</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>86</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>86</int>
+			<vec3>570 -112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>84</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>87</int>
+			<vec3>-56 -71 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>88</int>
+			<vec3>528 -71 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>87</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>89</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>89</int>
+			<vec3>496 -135 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>87</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>90</int>
+			<vec3>-99 -122 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>91</int>
+			<vec3>485 -122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>90</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>92</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>92</int>
+			<vec3>453 -186 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>90</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>93</int>
+			<vec3>-136 -171 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>94</int>
+			<vec3>448 -171 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>93</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>95</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>95</int>
+			<vec3>416 -235 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>93</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>96</int>
+			<vec3>-170 -122 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>97</int>
+			<vec3>414 -122 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>96</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>98</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>98</int>
+			<vec3>382 -186 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>96</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>99</int>
+			<vec3>-134 -84 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>100</int>
+			<vec3>450 -84 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>99</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>101</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>101</int>
+			<vec3>418 -148 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>99</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>102</int>
+			<vec3>-97 -51 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>103</int>
+			<vec3>487 -51 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>102</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>104</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>104</int>
+			<vec3>455 -115 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>102</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>105</int>
+			<vec3>-51 -26 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>106</int>
+			<vec3>533 -26 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>105</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>107</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>107</int>
+			<vec3>501 -90 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>105</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>108</int>
+			<vec3>-52 27 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>109</int>
+			<vec3>532 27 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>108</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>110</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>110</int>
+			<vec3>500 -37 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>108</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>111</int>
+			<vec3>-16 56 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>112</int>
+			<vec3>568 56 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>111</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>113</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>113</int>
+			<vec3>536 -8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>111</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>114</int>
+			<vec3>46 -4 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>115</int>
+			<vec3>630 -4 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>114</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>116</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>116</int>
+			<vec3>598 -68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>114</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>117</int>
+			<vec3>-23 -49 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>118</int>
+			<vec3>561 -49 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>117</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>119</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>119</int>
+			<vec3>529 -113 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>117</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>120</int>
+			<vec3>-6 99 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>121</int>
+			<vec3>578 99 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>120</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>122</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>122</int>
+			<vec3>546 35 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>120</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>123</int>
+			<vec3>6 143 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>124</int>
+			<vec3>590 143 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>123</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>125</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>125</int>
+			<vec3>558 79 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>123</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>126</int>
+			<vec3>63 148 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>127</int>
+			<vec3>647 148 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>126</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>128</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>128</int>
+			<vec3>615 84 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>126</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>129</int>
+			<vec3>24 182 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>130</int>
+			<vec3>608 182 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>129</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>131</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>131</int>
+			<vec3>576 118 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>129</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>132</int>
+			<vec3>-29 183 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>133</int>
+			<vec3>555 183 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>132</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>134</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>134</int>
+			<vec3>523 119 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>132</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>135</int>
+			<vec3>-71 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>136</int>
+			<vec3>513 160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>135</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>137</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>137</int>
+			<vec3>481 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>135</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>138</int>
+			<vec3>-68 114 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>139</int>
+			<vec3>516 114 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>138</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>140</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>140</int>
+			<vec3>484 50 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>138</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>141</int>
+			<vec3>-40 85 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>142</int>
+			<vec3>544 85 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>141</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>143</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>143</int>
+			<vec3>512 21 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>141</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>144</int>
+			<vec3>-76 62 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>145</int>
+			<vec3>508 62 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>144</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>146</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>146</int>
+			<vec3>476 -2 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>144</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>147</int>
+			<vec3>-89 -2 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>148</int>
+			<vec3>495 -2 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>147</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>149</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>149</int>
+			<vec3>463 -66 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>147</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>150</int>
+			<vec3>-130 -23 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>151</int>
+			<vec3>454 -23 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>150</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>152</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>152</int>
+			<vec3>422 -87 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>150</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>153</int>
+			<vec3>-184 -74 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>154</int>
+			<vec3>400 -74 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>153</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>155</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>155</int>
+			<vec3>368 -138 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>153</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>156</int>
+			<vec3>-177 -22 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>157</int>
+			<vec3>407 -22 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>156</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>158</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>158</int>
+			<vec3>375 -86 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>156</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>159</int>
+			<vec3>-188 26 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>160</int>
+			<vec3>396 26 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>159</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>161</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>161</int>
+			<vec3>364 -38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>159</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>162</int>
+			<vec3>-119 27 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>163</int>
+			<vec3>465 27 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>162</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>164</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>164</int>
+			<vec3>433 -37 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>162</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>165</int>
+			<vec3>-114 70 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>166</int>
+			<vec3>470 70 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>165</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>167</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>167</int>
+			<vec3>438 6 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>165</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>168</int>
+			<vec3>-158 69 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>169</int>
+			<vec3>426 69 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>168</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>170</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>170</int>
+			<vec3>394 5 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>168</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>171</int>
+			<vec3>-173 98 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>172</int>
+			<vec3>411 98 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>171</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>173</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>173</int>
+			<vec3>379 34 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>171</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>174</int>
+			<vec3>-150 132 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>175</int>
+			<vec3>434 132 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>174</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>176</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>176</int>
+			<vec3>402 68 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>174</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>177</int>
+			<vec3>-112 155 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>178</int>
+			<vec3>472 155 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>177</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>179</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>179</int>
+			<vec3>440 91 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>177</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>180</int>
+			<vec3>20 44 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+				<string name="SceneName">spawn</string>
+				<bool name="AggroEnemy">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>181</int>
+			<vec3>604 44 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>180</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>182</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>182</int>
+			<vec3>572 -20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>180</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>183</int>
+			<vec3>208 -496 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>trap_glyph</string>
+			<dict>
+				<string name="UnitType">doodads/generic/trap_glyph.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>UnitDestroyedTrigger</string>
+			<int>184</int>
+			<vec3>767 -498 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units"><int>183</int><string>LastSpawned</string></array>
+			</dict>
+			<array><int>185</int><int>1200</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>185</int>
+			<vec3>735 -562 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>183</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>186</int>
+			<vec3>-688 -320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpawnTraps</string>
+			<array><int>193</int><int>0</int><int>187</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>187</int>
+			<vec3>-838 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>188</int>
+			<vec3>-736 -592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Variables"><int>201</int></array>
+				<int name="Value">1</int>
+				<int name="Function">2</int>
+			</dict>
+			<array><int>202</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>189</int>
+			<vec3>-736 -528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>188</int><int>0</int></array>
+		</array>
+		<array><string>ScriptLink</string><int>190</int><vec3>-448 -448 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>150</string></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>191</int>
+			<vec3>-608 -592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>200</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>192</int><vec3>-400 -448 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>200</string></array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>193</int>
+			<vec3>-768 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>200</int></array>
+				<int name="TriggerTimes">50</int>
+			</dict>
+			<array><int>194</int><int>0</int><int>195</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>194</int>
+			<vec3>-800 -592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Variables"><int>201</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>195</int>
+			<vec3>-704 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>200</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>196</int>
+			<vec3>-496 -528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>RandomDelay</string>
+			<dict>
+				<array name="ToExecute"><int>199</int><int>197</int><int>198</int><int>190</int><int>192</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>197</int><vec3>-544 -448 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>50</string></array>
+		<array><string>ScriptLink</string><int>198</int><vec3>-496 -448 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>100</string></array>
+		<array><string>ScriptLink</string><int>199</int><vec3>-592 -448 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>0</string></array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>200</int>
+			<vec3>-672 -528 0</vec3>
+			<bool>f</bool>
+			<int>50</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">400</int>
+			</dict>
+			<array><int>189</int><int>0</int><int>196</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>201</int><vec3>-672 -592 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>CheckVariables</string>
+			<int>202</int>
+			<vec3>-672 -656 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">50</int>
+				<array name="Variable"><int>201</int></array>
+				<array name="OnTrue"><int>191</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>203</int>
+			<vec3>184 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>clear_glyphs</string>
+			<dict>
+				<string name="EventName">clear_glyphs</string>
+			</dict>
+			<array><int>204</int><int>0</int></array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>204</int>
+			<vec3>184 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="#Units">
+					<int>9</int>
+					<string>LastSpawned</string>
+					<int>69</int>
+					<string>LastSpawned</string>
+					<int>72</int>
+					<string>LastSpawned</string>
+					<int>75</int>
+					<string>LastSpawned</string>
+					<int>93</int>
+					<string>LastSpawned</string>
+					<int>96</int>
+					<string>LastSpawned</string>
+					<int>90</int>
+					<string>LastSpawned</string>
+					<int>78</int>
+					<string>LastSpawned</string>
+					<int>63</int>
+					<string>LastSpawned</string>
+					<int>66</int>
+					<string>LastSpawned</string>
+					<int>1</int>
+					<string>LastSpawned</string>
+					<int>12</int>
+					<string>LastSpawned</string>
+					<int>18</int>
+					<string>LastSpawned</string>
+					<int>15</int>
+					<string>LastSpawned</string>
+					<int>6</int>
+					<string>LastSpawned</string>
+					<int>60</int>
+					<string>LastSpawned</string>
+					<int>81</int>
+					<string>LastSpawned</string>
+					<int>87</int>
+					<string>LastSpawned</string>
+					<int>99</int>
+					<string>LastSpawned</string>
+					<int>153</int>
+					<string>LastSpawned</string>
+					<int>156</int>
+					<string>LastSpawned</string>
+					<int>150</int>
+					<string>LastSpawned</string>
+					<int>102</int>
+					<string>LastSpawned</string>
+					<int>105</int>
+					<string>LastSpawned</string>
+					<int>117</int>
+					<string>LastSpawned</string>
+					<int>84</int>
+					<string>LastSpawned</string>
+					<int>57</int>
+					<string>LastSpawned</string>
+					<int>21</int>
+					<string>LastSpawned</string>
+					<int>24</int>
+					<string>LastSpawned</string>
+					<int>27</int>
+					<string>LastSpawned</string>
+					<int>54</int>
+					<string>LastSpawned</string>
+					<int>114</int>
+					<string>LastSpawned</string>
+					<int>180</int>
+					<string>LastSpawned</string>
+					<int>51</int>
+					<string>LastSpawned</string>
+					<int>33</int>
+					<string>LastSpawned</string>
+					<int>36</int>
+					<string>LastSpawned</string>
+					<int>30</int>
+					<string>LastSpawned</string>
+					<int>45</int>
+					<string>LastSpawned</string>
+					<int>42</int>
+					<string>LastSpawned</string>
+					<int>39</int>
+					<string>LastSpawned</string>
+					<int>126</int>
+					<string>LastSpawned</string>
+					<int>48</int>
+					<string>LastSpawned</string>
+					<int>111</int>
+					<string>LastSpawned</string>
+					<int>120</int>
+					<string>LastSpawned</string>
+					<int>123</int>
+					<string>LastSpawned</string>
+					<int>129</int>
+					<string>LastSpawned</string>
+					<int>132</int>
+					<string>LastSpawned</string>
+					<int>135</int>
+					<string>LastSpawned</string>
+					<int>138</int>
+					<string>LastSpawned</string>
+					<int>141</int>
+					<string>LastSpawned</string>
+					<int>144</int>
+					<string>LastSpawned</string>
+					<int>108</int>
+					<string>LastSpawned</string>
+					<int>147</int>
+					<string>LastSpawned</string>
+					<int>162</int>
+					<string>LastSpawned</string>
+					<int>165</int>
+					<string>LastSpawned</string>
+					<int>168</int>
+					<string>LastSpawned</string>
+					<int>171</int>
+					<string>LastSpawned</string>
+					<int>174</int>
+					<string>LastSpawned</string>
+					<int>159</int>
+					<string>LastSpawned</string>
+					<int>177</int>
+					<string>LastSpawned</string>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>205</int>
+			<vec3>112 -520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_stage5</string>
+			<dict>
+				<string name="EventName">boss_stage5</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>206</int>
+			<vec3>-176 -520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_stage2</string>
+			<dict>
+				<string name="EventName">boss_stage2</string>
+			</dict>
+			<array><int>209</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>207</int>
+			<vec3>-80 -520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_stage3</string>
+			<dict>
+				<string name="EventName">boss_stage3</string>
+			</dict>
+			<array><int>214</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>208</int>
+			<vec3>16 -520 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_stage4</string>
+			<dict>
+				<string name="EventName">boss_stage4</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>209</int>
+			<vec3>-176 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>212</int><int>211</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>210</int>
+			<vec3>0 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>7</string>
+			<dict>
+				<int name="NumToExecute">7</int>
+				<array name="ToExecute">
+					<int>72</int>
+					<int>69</int>
+					<int>9</int>
+					<int>12</int>
+					<int>1</int>
+					<int>66</int>
+					<int>75</int>
+					<int>93</int>
+					<int>90</int>
+					<int>78</int>
+					<int>63</int>
+					<int>60</int>
+					<int>6</int>
+					<int>15</int>
+					<int>18</int>
+					<int>24</int>
+					<int>21</int>
+					<int>57</int>
+					<int>84</int>
+					<int>81</int>
+					<int>117</int>
+					<int>87</int>
+					<int>99</int>
+					<int>96</int>
+					<int>153</int>
+					<int>102</int>
+					<int>105</int>
+					<int>147</int>
+					<int>150</int>
+					<int>156</int>
+					<int>159</int>
+					<int>162</int>
+					<int>108</int>
+					<int>144</int>
+					<int>165</int>
+					<int>168</int>
+					<int>171</int>
+					<int>174</int>
+					<int>177</int>
+					<int>138</int>
+					<int>135</int>
+					<int>141</int>
+					<int>111</int>
+					<int>120</int>
+					<int>180</int>
+					<int>48</int>
+					<int>123</int>
+					<int>132</int>
+					<int>129</int>
+					<int>126</int>
+					<int>39</int>
+					<int>51</int>
+					<int>42</int>
+					<int>33</int>
+					<int>54</int>
+					<int>114</int>
+					<int>27</int>
+					<int>30</int>
+					<int>36</int>
+					<int>45</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>211</int>
+			<vec3>-56 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>6</string>
+			<dict>
+				<int name="NumToExecute">6</int>
+				<array name="ToExecute">
+					<int>72</int>
+					<int>69</int>
+					<int>9</int>
+					<int>12</int>
+					<int>1</int>
+					<int>66</int>
+					<int>75</int>
+					<int>93</int>
+					<int>90</int>
+					<int>78</int>
+					<int>63</int>
+					<int>60</int>
+					<int>6</int>
+					<int>15</int>
+					<int>18</int>
+					<int>24</int>
+					<int>21</int>
+					<int>57</int>
+					<int>84</int>
+					<int>81</int>
+					<int>117</int>
+					<int>87</int>
+					<int>99</int>
+					<int>96</int>
+					<int>153</int>
+					<int>102</int>
+					<int>105</int>
+					<int>147</int>
+					<int>150</int>
+					<int>156</int>
+					<int>159</int>
+					<int>162</int>
+					<int>108</int>
+					<int>144</int>
+					<int>165</int>
+					<int>168</int>
+					<int>171</int>
+					<int>174</int>
+					<int>177</int>
+					<int>138</int>
+					<int>135</int>
+					<int>141</int>
+					<int>111</int>
+					<int>120</int>
+					<int>180</int>
+					<int>48</int>
+					<int>123</int>
+					<int>132</int>
+					<int>129</int>
+					<int>126</int>
+					<int>39</int>
+					<int>51</int>
+					<int>42</int>
+					<int>33</int>
+					<int>54</int>
+					<int>114</int>
+					<int>27</int>
+					<int>30</int>
+					<int>36</int>
+					<int>45</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>212</int>
+			<vec3>-112 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<int name="NumToExecute">5</int>
+				<array name="ToExecute">
+					<int>72</int>
+					<int>69</int>
+					<int>9</int>
+					<int>12</int>
+					<int>1</int>
+					<int>66</int>
+					<int>75</int>
+					<int>93</int>
+					<int>90</int>
+					<int>78</int>
+					<int>63</int>
+					<int>60</int>
+					<int>6</int>
+					<int>15</int>
+					<int>18</int>
+					<int>24</int>
+					<int>21</int>
+					<int>57</int>
+					<int>84</int>
+					<int>81</int>
+					<int>117</int>
+					<int>87</int>
+					<int>99</int>
+					<int>96</int>
+					<int>153</int>
+					<int>102</int>
+					<int>105</int>
+					<int>147</int>
+					<int>150</int>
+					<int>156</int>
+					<int>159</int>
+					<int>162</int>
+					<int>108</int>
+					<int>144</int>
+					<int>165</int>
+					<int>168</int>
+					<int>171</int>
+					<int>174</int>
+					<int>177</int>
+					<int>138</int>
+					<int>135</int>
+					<int>141</int>
+					<int>111</int>
+					<int>120</int>
+					<int>180</int>
+					<int>48</int>
+					<int>123</int>
+					<int>132</int>
+					<int>129</int>
+					<int>126</int>
+					<int>39</int>
+					<int>51</int>
+					<int>42</int>
+					<int>33</int>
+					<int>54</int>
+					<int>114</int>
+					<int>27</int>
+					<int>30</int>
+					<int>36</int>
+					<int>45</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>213</int>
+			<vec3>112 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>9</string>
+			<dict>
+				<int name="NumToExecute">9</int>
+				<array name="ToExecute">
+					<int>72</int>
+					<int>69</int>
+					<int>9</int>
+					<int>12</int>
+					<int>1</int>
+					<int>66</int>
+					<int>75</int>
+					<int>93</int>
+					<int>90</int>
+					<int>78</int>
+					<int>63</int>
+					<int>60</int>
+					<int>6</int>
+					<int>15</int>
+					<int>18</int>
+					<int>24</int>
+					<int>21</int>
+					<int>57</int>
+					<int>84</int>
+					<int>81</int>
+					<int>117</int>
+					<int>87</int>
+					<int>99</int>
+					<int>96</int>
+					<int>153</int>
+					<int>102</int>
+					<int>105</int>
+					<int>147</int>
+					<int>150</int>
+					<int>156</int>
+					<int>159</int>
+					<int>162</int>
+					<int>108</int>
+					<int>144</int>
+					<int>165</int>
+					<int>168</int>
+					<int>171</int>
+					<int>174</int>
+					<int>177</int>
+					<int>138</int>
+					<int>135</int>
+					<int>141</int>
+					<int>111</int>
+					<int>120</int>
+					<int>180</int>
+					<int>48</int>
+					<int>123</int>
+					<int>132</int>
+					<int>129</int>
+					<int>126</int>
+					<int>39</int>
+					<int>51</int>
+					<int>42</int>
+					<int>33</int>
+					<int>54</int>
+					<int>114</int>
+					<int>27</int>
+					<int>30</int>
+					<int>36</int>
+					<int>45</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>214</int>
+			<vec3>-80 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>211</int><int>210</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>215</int>
+			<vec3>16 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>210</int><int>3</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>216</int>
+			<vec3>112 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>3</int><int>213</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

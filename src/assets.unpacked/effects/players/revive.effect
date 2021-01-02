@@ -1,0 +1,81 @@
+<effect looping="false">
+	<param name="radius" default="0" />
+	
+	<sprite origin="12 10" looping="false" texture="./revive.png" material="system/default.mats:bright"
+	pos-y="t*-5"
+	color-a="cos(t*t+t)"
+	>
+		<frame time="150">0 0 23 15</frame>
+		<frame time="50">23 0 23 15</frame>
+		<frame time="50">46 0 23 15</frame>
+		<frame time="50">69 0 23 15</frame>
+		<frame time="50">92 0 23 15</frame>
+		<frame time="50">0 15 23 15</frame>
+		<frame time="50">23 15 23 15</frame>
+		<frame time="50">46 15 23 15</frame>
+		<frame time="50">69 15 23 15</frame>
+		<frame time="50">92 15 23 15</frame>
+		<frame time="50">0 30 23 15</frame>
+		<frame time="50">23 30 23 15</frame>
+		<frame time="50">46 30 23 15</frame>
+		<frame time="50">69 30 23 15</frame>
+		<frame time="200">92 30 23 15</frame>
+	</sprite>
+	
+	<sprite origin="12 10" looping="false" texture="./revive.png" material="effects/effects.mats:fire"
+	pos-y="t*-5"
+	
+	color-a="1.25-t"
+	>
+		<frame time="150">0 0 0 0</frame>
+		<frame time="50">0 0 0 0</frame>
+		<frame time="50">0 0 0 0</frame>
+		<frame time="50">0 0 0 0</frame>
+		<frame time="50">0 0 0 0</frame>
+		<frame time="50">0 0 0 0</frame>
+		<frame time="50">23 15 23 15</frame>
+		<frame time="50">46 15 23 15</frame>
+		<frame time="50">69 15 23 15</frame>
+		<frame time="50">92 15 23 15</frame>
+		<frame time="50">0 30 23 15</frame>
+		<frame time="50">23 30 23 15</frame>
+		<frame time="50">46 30 23 15</frame>
+		<frame time="50">69 30 23 15</frame>
+		<frame time="200">92 30 23 15</frame>
+	</sprite>
+	
+	<light pos-y="-15*t">
+		<sprite texture="system/light_cone_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="500"/>
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="t*60" />
+			
+		<color-r value="3-t*3" />
+		<color-g value="3-t*3" />
+		<color-b value="2-t*2" />
+		<color-a value="0"/>
+		
+	</light>
+	<!-- 
+	<sprite origin="16 16" looping="false" texture="./revive.png" material="effects/effects.mats:default-glow">
+		<frame time="75">0 64 32 32</frame>
+		<frame time="75">32 64 32 32</frame>
+		<frame time="75">64 64 32 32</frame>
+		<frame time="75">96 64 32 32</frame>
+		<frame time="75">128 64 32 32</frame>
+		<frame time="75">160 64 32 32</frame>
+	</sprite> -->
+</effect>

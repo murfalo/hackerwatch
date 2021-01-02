@@ -1,0 +1,349 @@
+<unit slot="doodad" layer="20">
+	<scenes close="close" open="open" opened="opened" disabled="disabled" enabled="enabled" GT-open="GT-open" GT-start="GT-start" GT-end="GT-end" no-minimap="no-minimap">
+		<scene name="shared">
+			%if EDITOR
+ 			<sprite layer="4" origin="8 48" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 16 32</frame>
+			</sprite>
+			%endif	
+		</scene>
+
+		<scene name="close" trigger-snd="event:/misc/door_mt_teleport_close">
+			%//<text origin="0 26" layer="2" font="system/system.fnt" text="5" material="system/default.mats:default"/>
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+			<minimap_sprite origin="4 4" layer="151" texture="gui/minimap.png" frame="62 44 8 8" />
+			<scene src="shared"/>
+			<sprite origin="8 56" looping="false" texture="./door_mt_teleport.png" material="system/default.mats:default">
+				<frame time="100">96 101  16 48</frame>
+				<frame time="100">80 101 16 48</frame>
+				<frame time="100">64 101 16 48</frame>
+				<frame time="100">48 101 16 48</frame>
+				<frame time="100">32 101 16 48</frame>
+				<frame time="100">16 101 16 48</frame>
+			</sprite>		
+ 			<light pos="0 -32">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="60" />
+					<size value="70" />
+				</sizes>
+				<colors>
+					<color value="65 80 255 0" />
+					<color value="85 90 255 0" />
+				</colors>
+			</light>
+		</scene>
+
+		<scene name="open" trigger-snd="event:/misc/door_mt_teleport_open">
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+
+			<effect src="./door_mt_teleport_v_particles.effect" />
+			<scene src="shared"/>
+ 			<light pos="0 -33">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="11"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+					<size value="42" />
+				</sizes>
+				<colors>
+					<color value="95 80 255 0" />
+					<color value="105 90 255 0" />
+				</colors>
+			</light>
+ 			<light pos="0 -32">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="2"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="70" />
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="65 80 255 0" />
+					<color value="85 90 255 0" />
+				</colors>
+			</light>
+			<sprite origin="8 56" looping="false" texture="./door_mt_teleport.png" material="system/default.mats:default">
+				<frame time="100">16 101 16 48</frame>
+				<frame time="100">32 101 16 48</frame>
+				<frame time="100">48 101 16 48</frame>
+				<frame time="100">64 101 16 48</frame>
+				<frame time="100">80 101 16 48</frame>
+				<frame time="100">96 101  16 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="opened">
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+
+			<effect src="./door_mt_teleport_v_particles.effect" />
+
+			<scene src="shared"/>
+ 			<light pos="0 -33">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="9"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+					<size value="42" />
+				</sizes>
+				<colors>
+					<color value="95 80 255 0" />
+					<color value="105 90 255 0" />
+				</colors>
+			</light>
+ 			<light pos="0 -32">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="70" />
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="65 80 255 0" />
+					<color value="85 90 255 0" />
+				</colors>
+			</light>
+			<sprite origin="8 56" looping="false" texture="./door_mt_teleport.png" material="system/default.mats:default">
+				<frame time="100">96 101  16 48</frame>
+			</sprite>
+		</scene>	
+
+		<scene name="GT-start">
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+			<minimap_sprite origin="4 4" layer="151" texture="gui/minimap.png" frame="62 44 8 8" />
+
+			<effect src="./door_mt_teleport_v_GT_opened.effect" />
+
+			<scene src="shared"/>
+ 			<light pos="0 -33">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="9"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+					<size value="42" />
+				</sizes>
+				<colors>
+					<color value="95 80 255 0" />
+					<color value="105 90 255 0" />
+				</colors>
+			</light>
+ 			<light pos="0 -32">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="70" />
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="65 80 255 0" />
+					<color value="85 90 255 0" />
+				</colors>
+			</light>
+			<sprite origin="8 56" looping="false" texture="./door_mt_teleport.png" material="system/default.mats:default">
+				<frame time="100">96 101  16 48</frame>
+			</sprite>
+		</scene>	
+
+		<scene name="GT-open" trigger-snd="event:/misc/door_mt_teleport_open">
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+			<minimap_sprite origin="4 4" layer="151" texture="gui/minimap.png" frame="62 44 8 8" />
+
+			<effect src="./door_mt_teleport_v_GT_closed.effect" />
+			<scene src="shared"/>
+ 			<light pos="0 -33">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="11"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+					<size value="42" />
+				</sizes>
+				<colors>
+					<color value="95 80 255 0" />
+					<color value="105 90 255 0" />
+				</colors>
+			</light>
+ 			<light pos="0 -32">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="2"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="70" />
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="65 80 255 0" />
+					<color value="85 90 255 0" />
+				</colors>
+			</light>
+			<sprite origin="8 56" looping="false" texture="./door_mt_teleport.png" material="system/default.mats:default">
+				<frame time="100">16 101 16 48</frame>
+				<frame time="100">32 101 16 48</frame>
+				<frame time="100">48 101 16 48</frame>
+				<frame time="100">64 101 16 48</frame>
+				<frame time="100">80 101 16 48</frame>
+				<frame time="100">96 101  16 48</frame>
+			</sprite>
+		</scene>
+		<scene name="GT-end">
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+			<effect src="./door_mt_teleport_v_particles.effect" />
+			<effect src="./door_mt_teleport_v_GT_end.effect" />
+
+			<scene src="shared"/>
+ 			<light pos="0 -33">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="9"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="40" />
+					<size value="42" />
+				</sizes>
+				<colors>
+					<color value="95 80 255 0" />
+					<color value="105 90 255 0" />
+				</colors>
+			</light>
+ 			<light pos="0 -32">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="70" />
+					<size value="80" />
+				</sizes>
+				<colors>
+					<color value="65 80 255 0" />
+					<color value="85 90 255 0" />
+				</colors>
+			</light>
+			<sprite origin="8 56" looping="false" texture="./door_mt_teleport.png" material="system/default.mats:default">
+				<frame time="100">96 101  16 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="disabled">
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+			<minimap_sprite origin="4 4" layer="151" texture="gui/minimap.png" frame="62 44 8 8" />
+			<scene src="shared"/>	
+		</scene>
+		
+		<scene name="enabled">
+			<minimap_sprite layer="150" origin="2 4" texture="gui/minimap.png" frame="232 32 4 8" />
+			<minimap_sprite origin="4 4" layer="151" texture="gui/minimap.png" frame="62 44 8 8" />
+			<scene src="shared"/>	
+ 			<light pos="0 -32">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="1000" />
+				<overbright value="1"/>
+				<overlay value="false"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="60" />
+					<size value="70" />
+				</sizes>
+				<colors>
+					<color value="65 80 255 0" />
+					<color value="85 90 255 0" />
+				</colors>
+			</light>
+			<sprite origin="8 56" looping="false" texture="./door_mt_teleport.png" material="system/default.mats:default">
+				<frame time="100">16 101 16 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="no-minimap">
+			<scene src="shared"/>
+		</scene>
+	</scenes>
+</unit>

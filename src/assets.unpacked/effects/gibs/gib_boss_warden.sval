@@ -1,0 +1,55 @@
+<dict>
+	<vec3 name="spread">16 16 0</vec3>
+	<bool name="gore">true</bool>
+
+	<array name="gib-decal">
+
+	</array>
+	
+	<array name="death-gib">
+		<float>0</float>
+		<dict>
+			<int name="min">10</int>
+			<int name="max">12</int>
+			<float name="force">0.5</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">particle_undead</string>
+			<bool name="stay">true</bool>
+		</dict>
+		<dict>
+			<int name="min">10</int>
+			<int name="max">12</int>
+			<float name="force">0.5</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">bone_guard</string>
+			<bool name="stay">true</bool>
+		</dict>
+		<dict>
+			<int name="min">4</int>
+			<int name="max">8</int>
+			<float name="force">0.4</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">skeleton_skull_gray</string>
+			<string name="decal">gib-decal</string>
+			<bool name="stay">true</bool>
+		</dict>
+	</array>
+	
+	<array name="death-effect">
+		<float>0</float>
+		<dict>
+			<int name="chance">1</int>
+			<string name="effect">actors/bosses/warden/smoke_impact_warden.effect</string>
+		</dict>
+	</array>
+
+	<array name="hit-decal">
+
+	</array>
+	
+	<array name="death-decal">
+		<float>0.2</float>
+
+		<float>0</float>
+	</array>
+</dict>

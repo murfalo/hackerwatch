@@ -1,0 +1,57 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle</string>
+		<string name="shoot-snd">event:/enemy/sentinel_ice/ranged_shoot</string>
+		<string name="hit-snd">event:/enemy/sentinel_ice/ranged_hit</string>
+		
+		<float name="speed">0</float>
+		<float name="speed-delta">0.2</float>
+		<float name="speed-delta-max">4</float>
+		
+		<bool name="blockable">false</bool>
+		
+		<int name="ttl">2000</int>
+		<bool name="seeking">true</bool>
+		<float name="seek-turnspeed">0.11</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Explode</string>
+				<bool name="miss-fx">true</bool>
+				<string name="fx">actors/mt/projectiles/impact_sentinel.effect</string>
+				<int name="radius">10</int>
+				<int name="min-radius">10</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+						<float name="armor-mul">0.8</float>
+					</dict>
+				</array>
+			</dict>
+		</array>
+
+		<array name="miss-effects">
+			<dict name="effect">
+				<string name="class">ShootRandomEnemy</string>
+				<int name="range">80</int>
+				<string name="projectile">actors/mt/projectiles/sentinel_ice_slash.unit</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">4</float>
+			<float name="range">80</float>
+		</dict>	
+	</behavior>
+	
+	<scenes>
+		<scene name="idle">
+			<effect src="actors/mt/projectiles/sentinel_ice_slash.effect" />
+			<collision static="false">
+				<circle projectile="true" radius="4" />
+			</collision>
+		</scene>
+	</scenes>
+</unit>

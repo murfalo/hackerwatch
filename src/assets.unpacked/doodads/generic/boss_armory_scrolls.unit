@@ -1,0 +1,16 @@
+<unit slot="doodad">
+	<scenes>
+		<scene name="shared">		
+			<collision static="true">
+				<circle offset="-0.5 0.5" radius="2.5"/>		
+			</collision>
+		</scene>
+		
+		<scene>				
+			<scene src="shared" />
+			<sprite origin="4 15" texture="./outlook_props.png" material="system/default.mats:proj-prop">
+				<frame>405 43 10 18</frame>
+			</sprite>			
+		</scene>
+	</scenes>
+</unit>

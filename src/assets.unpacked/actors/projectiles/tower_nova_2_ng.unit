@@ -1,0 +1,54 @@
+<unit netsync="none">
+	<behavior class="RayProjectile">
+		<string name="anim">idle 1</string>
+		<string name="fx">actors/projectiles/tower_nova_2_hit.effect</string>
+		<float name="speed">1.5</float>
+		<int name="ttl">5000</int>
+		<int name="bounces">3</int>
+		<float name="bounce-speed-mul">1</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="magical">90</int>
+			</dict>
+			<dict>
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:freezing_strong</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0">
+		<scene name="idle-0">
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+			<light pos="0 0">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="250" />
+				<overbright value="1" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+					<size value="48" />
+				</sizes>
+				<colors>
+					<color value="0 127 255 0" />
+				</colors>
+			</light>				
+			<sprite origin="8 8" looping="true" texture="actors/projectiles/iceball_large.png" material="system/default.mats:projectile">
+				<frame time="75">0 0 16 16</frame>
+				<frame time="75">16 0 16 16</frame>
+				<frame time="75">32 0 16 16</frame>
+				<frame time="75">48 0 16 16</frame>
+			</sprite>		
+		</scene>
+	</scenes>
+</unit>

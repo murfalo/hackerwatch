@@ -1,0 +1,300 @@
+<gui>
+	<sprites>
+		<sprite name="frame-line-vertical" texture="gui/playermenu.png"><frame>4 27 3 192</frame></sprite>
+
+		<sprite name="icon-health" texture="gui/icons.png"><frame>51 12 12 13</frame></sprite>
+		<sprite name="icon-health-regen" texture="gui/icons.png"><frame>63 4 14 13</frame></sprite>
+		<sprite name="icon-mana" texture="gui/icons.png"><frame>26 24 9 13</frame></sprite>
+		<sprite name="icon-mana-regen" texture="gui/icons.png"><frame>35 24 11 12</frame></sprite>
+
+		<sprite name="icon-speed" texture="gui/icons.png"><frame>46 25 16 12</frame></sprite>
+		<sprite name="icon-exp" texture="gui/icons.png"><frame>63 17 12 12</frame></sprite>
+
+		<sprite name="icon-attack-power" texture="gui/icons.png"><frame>0 38 17 12</frame></sprite>
+		<sprite name="icon-attack-add" texture="gui/icons.png"><frame>17 38 12 12</frame></sprite>
+		<sprite name="icon-spell-power" texture="gui/icons.png"><frame>29 38 16 12</frame></sprite>
+		<sprite name="icon-spell-add" texture="gui/icons.png"><frame>45 38 16 12</frame></sprite>
+
+		<sprite name="icon-armor" texture="gui/icons.png"><frame>61 42 12 13</frame></sprite>
+		<sprite name="icon-resistance" texture="gui/icons.png"><frame>62 29 13 13</frame></sprite>
+		<sprite name="icon-crit" texture="gui/icons.png"><frame>68 55 12 12</frame></sprite>
+		<sprite name="icon-evade" texture="gui/icons.png"><frame>64 90 15 12</frame></sprite>
+		<sprite name="icon-luck" texture="gui/icons.png"><frame>111 101 13 13</frame></sprite>
+
+		<sprite name="icon-gold" texture="gui/icons.png"><frame>0 11 9 10</frame></sprite>
+		<sprite name="icon-gold-town" texture="gui/icons.png"><frame>36 0 16 12</frame></sprite>
+		<sprite name="icon-ore" texture="gui/icons.png"><frame>8 0 10 10</frame></sprite>
+		<sprite name="icon-ore-town" texture="gui/icons.png"><frame>36 12 15 12</frame></sprite>
+
+		<sprite name="icon-key-0" texture="gui/icons.png"><frame>18 0 7 11</frame></sprite>
+		<sprite name="icon-key-1" texture="gui/icons.png"><frame>9 11 10 11</frame></sprite>
+		<sprite name="icon-key-2" texture="gui/icons.png"><frame>19 11 8 13</frame></sprite>
+		<sprite name="icon-key-3" texture="gui/icons.png"><frame>27 0 9 15</frame></sprite>
+
+		<sprite name="inventory-item-frames" texture="gui/playermenu.png"><frame>335 32 64 32</frame></sprite>
+		<sprite name="inventory-item-dot" texture="gui/icons.png"><frame>63 0 4 4</frame></sprite>
+		<sprite name="inventory-item-plus" texture="gui/icons.png"><frame>59 112 5 5</frame></sprite>
+
+		<sprite name="potion-4" texture="gui/icons_others.png"><frame>0 0 24 24</frame></sprite>
+		<sprite name="potion-3" texture="gui/icons_others.png"><frame>24 0 24 24</frame></sprite>
+		<sprite name="potion-2" texture="gui/icons_others.png"><frame>48 0 24 24</frame></sprite>
+		<sprite name="potion-1" texture="gui/icons_others.png"><frame>72 0 24 24</frame></sprite>
+		<sprite name="potion-0" texture="gui/icons_others.png"><frame>96 0 24 24</frame></sprite>
+
+		<sprite name="djinn-potion-4" texture="gui/icons_others.png">
+			<frame time="5000">0 192 24 24</frame>
+			<frame time="100">24 192 24 24</frame>
+			<frame time="100">48 192 24 24</frame>
+			<frame time="100">24 192 24 24</frame>
+		</sprite>
+		<sprite name="djinn-potion-3" texture="gui/icons_others.png">
+			<frame time="5000">0 216 24 24</frame>
+			<frame time="100">24 216 24 24</frame>
+			<frame time="100">48 216 24 24</frame>
+			<frame time="100">24 216 24 24</frame>
+		</sprite>
+		<sprite name="djinn-potion-2" texture="gui/icons_others.png">
+			<frame time="5000">72 192 24 24</frame>
+			<frame time="100">96 192 24 24</frame>
+			<frame time="100">120 192 24 24</frame>
+			<frame time="100">96 192 24 24</frame>
+		</sprite>
+		<sprite name="djinn-potion-1" texture="gui/icons_others.png">
+			<frame time="5000">72 216 24 24</frame>
+			<frame time="100">96 216 24 24</frame>
+			<frame time="100">120 216 24 24</frame>
+			<frame time="100">96 216 24 24</frame>
+		</sprite>
+		<sprite name="djinn-potion-0" texture="gui/icons_others.png">
+			<frame time="5000">144 192 24 24</frame>
+			<frame time="100">168 192 24 24</frame>
+			<frame time="100">192 192 24 24</frame>
+			<frame time="100">168 192 24 24</frame>
+		</sprite>
+
+%include "gui/playermenu/charheader_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+%include "gui/playermenu/charheader.inc"
+
+			<!-- Lower contents when dead -->
+			<rect id="player-dead" offset="0 31" width="328" height="202" visible="false" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+				<text id="player-dead-text" font="gui/fonts/arial11.fnt" anchor="0.5 0.5" />
+			</rect>
+
+			<!-- Lower contents -->
+			<rect id="player-info" offset="0 31" width="328" height="202">
+				<!-- Character info -->
+				<rect width="247" height="156">
+					<!-- Vertical separators -->
+					<rect offset="122 0" width="3" height="49" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect offset="122 104" width="3" height="49" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Horizontal separators -->
+					<rect offset="0 49" width="247" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+					<rect offset="0 101" width="247" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+					<rect offset="0 153" width="247" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Vitality -->
+					<rect width="122" height="49" offset="0 0">
+						<rect width="122" height="18" spriteset="gui/variable/headline_borders.sval">
+							<text font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".playermenu.character.vitality" />
+						</rect>
+
+						<rect offset="0 18" width="122" height="31" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<group inner="true" offset="12 0">
+								<sprite src="icon-health" offset="0 2" />
+								<text id="info_health" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+
+							<group inner="true" offset="12 15">
+								<sprite src="icon-health-regen" offset="0 2" />
+								<text id="info_health_regen" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+
+							<group inner="true" offset="72 0">
+								<sprite src="icon-mana" offset="0 2" />
+								<text id="info_mana" font="gui/fonts/arial11.fnt" offset="15 0" />
+							</group>
+
+							<group inner="true" offset="72 15">
+								<sprite src="icon-mana-regen" offset="0 2" />
+								<text id="info_mana_regen" font="gui/fonts/arial11.fnt" offset="15 0" />
+							</group>
+						</rect>
+					</rect>
+
+					<!-- Speed / exp -->
+					<rect width="122" height="49" offset="125 0">
+						<rect width="122" height="18" spriteset="gui/variable/headline_borders.sval">
+							<text font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".playermenu.character.speedexp" />
+						</rect>
+
+						<rect offset="0 18" width="122" height="31" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<group inner="true" offset="12 8">
+								<sprite src="icon-speed" offset="0 2" />
+								<text id="info_move_speed" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+
+							<group inner="true" offset="64 8">
+								<sprite src="icon-exp" offset="0 2" />
+								<text id="info_exp" font="gui/fonts/arial11.fnt" offset="16 0" />
+							</group>
+						</rect>
+					</rect>
+
+					<!-- Combat -->
+					<rect width="247" height="49" offset="0 52">
+						<rect width="247" height="18" spriteset="gui/variable/headline_borders.sval">
+							<text font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".playermenu.character.combat" />
+						</rect>
+
+						<rect offset="0 18" width="247" height="31" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<group inner="true" offset="10 0">
+								<sprite src="icon-attack-power" offset="0 2" />
+								<text id="info_damage_power_attack" font="gui/fonts/arial11.fnt" offset="20 0" />
+							</group>
+
+							<group inner="true" offset="70 0">
+								<sprite src="icon-spell-power" offset="0 2" />
+								<text id="info_damage_power_spell" font="gui/fonts/arial11.fnt" offset="21 0" />
+							</group>
+
+							<group inner="true" offset="10 15">
+								<sprite src="icon-armor" offset="0 2" />
+								<text id="info_armor" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+
+							<group inner="true" offset="70 15">
+								<sprite src="icon-resistance" offset="0 2" />
+								<text id="info_resistance" font="gui/fonts/arial11.fnt" offset="16 0" />
+							</group>
+
+							<group inner="true" offset="134 0">
+								<sprite src="icon-crit" offset="0 2" />
+								<text id="info_crit" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+
+							<group inner="true" offset="192 0">
+								<sprite src="icon-evade" offset="0 2" />
+								<text id="info_evade" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+
+							<group inner="true" offset="192 15">
+								<sprite src="icon-luck" offset="0 2" />
+								<text id="info_luck" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+						</rect>
+					</rect>
+
+					<!-- Resources -->
+					<rect width="122" height="49" offset="0 104">
+						<rect width="122" height="18" spriteset="gui/variable/headline_borders.sval">
+							<text font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".playermenu.character.resources" />
+						</rect>
+
+						<rect offset="0 18" width="122" height="31" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<group inner="true" offset="6 0">
+								<sprite src="icon-gold" offset="0 3" />
+								<text id="info_gold" font="gui/fonts/arial11.fnt" offset="16 0" />
+							</group>
+
+							<group inner="true" offset="4 16">
+								<sprite src="icon-gold-town" offset="0 1" />
+								<text id="info_gold_town" font="gui/fonts/arial11.fnt" offset="18 0" />
+							</group>
+
+							<group inner="true" offset="76 0">
+								<sprite src="icon-ore" offset="0 3" />
+								<text id="info_ore" font="gui/fonts/arial11.fnt" offset="15 0" />
+							</group>
+
+							<group inner="true" offset="74 16">
+								<sprite src="icon-ore-town" offset="0 1" />
+								<text id="info_ore_town" font="gui/fonts/arial11.fnt" offset="17 0" />
+							</group>
+						</rect>
+					</rect>
+
+					<!-- Keys -->
+					<rect width="122" height="49" offset="125 104">
+						<rect width="122" height="18" spriteset="gui/variable/headline_borders.sval">
+							<text font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".playermenu.character.keys" />
+						</rect>
+
+						<rect offset="0 18" width="122" height="31" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+							<rect width="30" height="31">
+								<sprite src="icon-key-0" anchor="0.5 0.2" />
+								<text id="keys-0" font="gui/fonts/arial11.fnt" anchor="0.5 0.95" />
+							</rect>
+							<rect width="31" height="31" offset="30 0">
+								<sprite src="icon-key-1" anchor="0.5 0.2" />
+								<text id="keys-1" font="gui/fonts/arial11.fnt" anchor="0.5 0.95" />
+							</rect>
+							<rect width="31" height="31" offset="61 0">
+								<sprite src="icon-key-2" anchor="0.5 0.2" />
+								<text id="keys-2" font="gui/fonts/arial11.fnt" anchor="0.5 0.95" />
+							</rect>
+							<rect width="30" height="31" offset="91 0">
+								<sprite src="icon-key-3" anchor="0.5 0.2" offset="0 -1" />
+								<text id="keys-3" font="gui/fonts/arial11.fnt" anchor="0.5 0.95" />
+							</rect>
+						</rect>
+					</rect>
+				</rect>
+
+				<!-- Potion & skills -->
+				<rect offset="0 156" width="247" height="46">
+					<rect width="247" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".playermenu.character.potionskills" />
+					</rect>
+
+					<rect offset="0 18" width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect offset="3 18" width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Potion -->
+					<sprite src="big-frame" offset="6 18">
+						<sprite id="potion" src="potion-4" offset="2 2" canfocus="true">
+							<dotbar id="potion-bar" offset="0 21" width="24" height="3" />
+						</sprite>
+					</sprite>
+
+					<rect offset="34 18" width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect offset="37 18" width="8" height="28" spriteset="gui/variable/headline_borders.sval" />
+					<rect offset="45 18" width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Skills -->
+					<sprite id="skill-0" src="big-frame" offset="48 18"><sprite id="icon" offset="2 2" canfocus="true" /></sprite>
+					<sprite id="skill-1" src="big-frame" offset="76 18"><sprite id="icon" offset="2 2" canfocus="true" /></sprite>
+					<sprite id="skill-2" src="big-frame" offset="104 18"><sprite id="icon" offset="2 2" canfocus="true" /></sprite>
+					<sprite id="skill-3" src="big-frame" offset="132 18"><sprite id="icon" offset="2 2" canfocus="true" /></sprite>
+					<sprite id="skill-4" src="big-frame" offset="160 18"><sprite id="icon" offset="2 2" canfocus="true" /></sprite>
+					<sprite id="skill-5" src="big-frame" offset="188 18"><sprite id="icon" offset="2 2" canfocus="true" /></sprite>
+					<sprite id="skill-6" src="big-frame" offset="216 18"><sprite id="icon" offset="2 2" canfocus="true" /></sprite>
+
+					<rect offset="244 18" width="3" height="28" spriteset="gui/variable/3pxbar_vert.sval" />
+				</rect>
+
+				<!-- Inventory -->
+				<rect offset="247 0" width="81" height="202">
+					<rect width="3" height="194" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect offset="3 0" width="3" height="194" spriteset="gui/variable/3pxbar_vert.sval" />
+					<rect offset="78 0" width="3" height="194" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<rect offset="6 0" width="72" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text id="items-text" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" text=".playermenu.character.items" />
+					</rect>
+
+					<rect offset="0 194" width="81" height="8" spriteset="gui/variable/headline_borders.sval" />
+
+					<inventoryitem id="inventory-template" width="16" height="16" visible="false" />
+					<inventory id="inventory" offset="6 18" width="64" height="176" scroll-backdrop-sprite="inventory-item-frames" flow="hboxwrapped" />
+					<scrollbar forid="inventory" spriteset="scrollbar" outside="true" buttons-size="14" trough-offset="18" handle-border="2" />
+				</rect>
+			</rect>
+		</group>
+	</doc>
+</gui>

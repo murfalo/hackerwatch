@@ -1,0 +1,517 @@
+<unit netsync="position" slot="actor">
+	<behavior class="Miniboss">
+		<string name="beastiary-name">.bestiary.name.sentinel_mb</string>
+		<vec2 name="beastiary-offset">0 12</vec2>
+		<string name="quality">rare</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">construct</string>
+		<int name="hp">2000</int>
+		<int name="armor">120</int>
+		<int name="resistance">50</int>
+		<int name="experience-reward">500</int>
+		<float name="mp-scale-fact">0.85</float>
+		
+		<int name="overhead-bossbar-width">16</int>
+		<int name="unit-height">22</int>
+		
+		<string name="death-snd">event:/enemy/lich/death</string>
+		<string name="gore">effects/gibs/gib_sentinel.sval</string>
+		<string name="loot">actors/loot.sval:sentinel_mb</string>
+		
+		<float name="debuff-scale">0.66</float>
+		<float name="wind-scale">0.5</float>
+		<bool name="ignore-hit-effects">true</bool>
+		<bool name="impenetrable">true</bool>
+		<int name="aggro-range">5000</int>
+
+		<array name="buffs-immune-tags">
+			<string>respawn_ghost</string>
+			<string>bleeding</string>
+		</array>
+
+		<dict name="movement">
+			<string name="class">RangedMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">walk 8</string>
+			
+			<float name="speed">1.8</float>
+			<int name="min-dist">50</int>
+			<int name="dist">120</int>
+		</dict>
+
+		<array name="skills">
+			%// Normal Spew
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+			
+				<string name="class">SpewSkill</string>
+				<string name="anim">shoot 8</string>
+				<string name="offset">shoot-pos</string>
+				
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">5000</int>
+				<int name="castpoint">850</int>
+				<int name="duration">1350</int>
+				
+				<int name="range">150</int>
+				<int name="spread">45</int>
+				<int name="rate">90</int>
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">true</bool>
+				<bool name="hold-dir">false</bool>
+				
+				<string name="projectile">actors/pop/projectiles/sentinel_mb_snake_projectile.unit</string>
+			</dict>
+			
+			%// Normal Nova
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+				
+				<string name="class">NovaSkill</string>
+				<string name="anim">attack 8</string>
+				<string name="fire-snd">event:/enemy/sentinel_mb/nova</string>
+
+				<int name="cooldown-start">2500</int>
+				<int name="cooldown">5000</int>
+				<int name="castpoint">850</int>
+				<int name="range">150</int>
+				
+				<int name="proj-count">16</int>
+				<float name="proj-dist">12</float>
+				<string name="projectile">actors/pop/projectiles/sentinel_mb_snake_projectile.unit</string>
+			</dict>
+			
+			%// NG+ Spew
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+			
+				<string name="class">SpewSkill</string>
+				<string name="anim">shoot 8</string>
+				<string name="offset">shoot-pos</string>
+				
+				<int name="cooldown-start">500</int>
+				<int name="cooldown">5000</int>
+				<int name="castpoint">850</int>
+				<int name="duration">1350</int>
+				
+				<int name="range">150</int>
+				<int name="spread">45</int>
+				<int name="rate">90</int>
+				<bool name="good-aim">true</bool>
+				<bool name="must-see">true</bool>
+				<bool name="hold-dir">false</bool>
+				
+				<string name="projectile">actors/pop/projectiles/sentinel_mb_snake_projectile_ng.unit</string>
+			</dict>
+			
+			%// NG+ Nova
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+				</array>
+				
+				<string name="class">NovaSkill</string>
+				<string name="anim">attack 8</string>
+
+				<int name="cooldown-start">2500</int>
+				<int name="cooldown">5000</int>
+				<int name="castpoint">850</int>
+				<int name="range">150</int>
+				
+				<int name="proj-count">16</int>
+				<float name="proj-dist">12</float>
+				<string name="projectile">actors/pop/projectiles/sentinel_mb_snake_projectile_ng.unit</string>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="2 2" texture="gui/minimap.png" frame="119 3 4 5"/>
+			
+			<collision static="false">
+				<circle offset="0 0" aim-through="true" radius="6" charge-through="true" density="20"/>
+				<circle offset="0 -10" sensor="true" shoot-through="false" aim-through="true" radius="6" />
+			</collision>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">0 0 48 48</frame>
+			</sprite>
+		</scene>	
+		
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">48 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">96 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">144 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">192 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">240 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">288 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">336 0 48 48</frame>
+			</sprite>
+		</scene>
+
+		
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">0 48 48 48</frame>
+				<frame time="150">0 96 48 48</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">48 48 48 48</frame>
+				<frame time="150">48 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">96 48 48 48</frame>
+				<frame time="150">96 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">144 48 48 48</frame>
+				<frame time="150">144 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">192 48 48 48</frame>
+				<frame time="150">192 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">240 48 48 48</frame>
+				<frame time="150">240 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">288 48 48 48</frame>
+				<frame time="150">288 96 48 48</frame>
+			</sprite>
+		</scene>
+
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="true" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="150">336 48 48 48</frame>
+				<frame time="150">336 96 48 48</frame>
+			</sprite>
+		</scene>
+		
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="4 26"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 0 144 48 48</frame>
+				<frame time="80"> 0 192 48 48</frame>
+				<frame time="80"> 0 240 48 48</frame>
+				<frame time="80"> 0 288 48 48</frame>
+				<frame time="500"> 0 336 48 48</frame>
+				<frame time="80"> 0 384 48 48</frame>
+				<frame time="500"> 0 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="0 29"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 48 144 48 48</frame>
+				<frame time="80"> 48 192 48 48</frame>
+				<frame time="80"> 48 240 48 48</frame>
+				<frame time="80"> 48 288 48 48</frame>
+				<frame time="500"> 48 336 48 48</frame>
+				<frame time="80"> 48 384 48 48</frame>
+				<frame time="500"> 48 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-4 27"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 96 144 48 48</frame>
+				<frame time="80"> 96 192 48 48</frame>
+				<frame time="80"> 96 240 48 48</frame>
+				<frame time="80"> 96 288 48 48</frame>
+				<frame time="500"> 96 336 48 48</frame>
+				<frame time="80"> 96 384 48 48</frame>
+				<frame time="500"> 96 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-7 24"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 144 144 48 48</frame>
+				<frame time="80"> 144 192 48 48</frame>
+				<frame time="80"> 144 240 48 48</frame>
+				<frame time="80"> 144 288 48 48</frame>
+				<frame time="500"> 144 336 48 48</frame>
+				<frame time="80"> 144 384 48 48</frame>
+				<frame time="500"> 144 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-5 22"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 192 144 48 48</frame>
+				<frame time="80"> 192 192 48 48</frame>
+				<frame time="80"> 192 240 48 48</frame>
+				<frame time="80"> 192 288 48 48</frame>
+				<frame time="500"> 192 336 48 48</frame>
+				<frame time="80"> 192 384 48 48</frame>
+				<frame time="500"> 192 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="2 18"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 240 144 48 48</frame>
+				<frame time="80"> 240 192 48 48</frame>
+				<frame time="80"> 240 240 48 48</frame>
+				<frame time="80"> 240 288 48 48</frame>
+				<frame time="500"> 240 336 48 48</frame>
+				<frame time="80"> 240 384 48 48</frame>
+				<frame time="500"> 240 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="-2 21"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 288 144 48 48</frame>
+				<frame time="80"> 288 192 48 48</frame>
+				<frame time="80"> 288 240 48 48</frame>
+				<frame time="80"> 288 288 48 48</frame>
+				<frame time="500"> 288 336 48 48</frame>
+				<frame time="80"> 288 384 48 48</frame>
+				<frame time="500"> 288 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="attack-pos" pos="8 22"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500"> 336 144 48 48</frame>
+				<frame time="80"> 336 192 48 48</frame>
+				<frame time="80"> 336 240 48 48</frame>
+				<frame time="80"> 336 288 48 48</frame>
+				<frame time="500"> 336 336 48 48</frame>
+				<frame time="80"> 336 384 48 48</frame>
+				<frame time="500"> 336 0 48 48</frame>
+			</sprite>
+		</scene>
+		
+
+		<scene name="throw-0">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">0 144 48 48</frame>
+				<frame time="500">0 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="throw-1">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">48 144 48 48</frame>
+				<frame time="500">48 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="throw-2">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">96 144 48 48</frame>
+				<frame time="500">96 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="throw-3">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">144 144 48 48</frame>
+				<frame time="500">144 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="throw-4">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">192 144 48 48</frame>
+				<frame time="500">192 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="throw-5">
+			<scene src="shared" />
+			<sprite origin="24 30" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">240 144 48 48</frame>
+				<frame time="500">240 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="throw-6">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">288 144 48 48</frame>
+				<frame time="500">288 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="throw-7">
+			<scene src="shared" />
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">336 144 48 48</frame>
+				<frame time="500">336 192 48 48</frame>
+			</sprite>
+		</scene>
+		
+
+		<scene name="shoot-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="18 -4"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">0 432 48 48</frame>
+				<frame time="500">0 480 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shoot-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="12 2"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">48 432 48 48</frame>
+				<frame time="500">48 480 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shoot-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-5 8"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">96 432 48 48</frame>
+				<frame time="500">96 480 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shoot-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-20 -2"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">144 432 48 48</frame>
+				<frame time="500">144 480 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shoot-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-22 -10"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">192 432 48 48</frame>
+				<frame time="500">192 480 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shoot-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-13 -22"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">240 432 48 48</frame>
+				<frame time="500">240 480 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shoot-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 -24"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">288 432 48 48</frame>
+				<frame time="500">288 480 48 48</frame>
+			</sprite>
+		</scene>
+		
+		<scene name="shoot-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="18 -14"/>
+			<sprite origin="24 36" looping="false" texture="./sentinel_mb.png" material="system/default.mats:actor">
+				<frame time="500">336 432 48 48</frame>
+				<frame time="500">336 480 48 48</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

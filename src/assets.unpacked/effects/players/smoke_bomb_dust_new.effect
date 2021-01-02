@@ -1,0 +1,49 @@
+<effect looping="true" layer="1">
+	<sprite origin="5 4" looping="true" texture="effects/players/player_effects.png" material="effects/effects.mats:lit"
+		pos-x="rand(u+l+0)*8-4"
+		pos-y="-t*10"
+		
+		color-a="0.3"
+		
+		scale-x="rand(u+l+2)/2 + 0.75"
+		scale-y="rand(u+l+2)/2 + 0.75"
+	>
+		<frame time="100">10 71 10 9</frame>
+		<frame time="100">26 71 9 9</frame>
+		<frame time="100">17 71 10 9</frame>
+		<frame time="100">9 71 10 9</frame>
+		<frame time="100">0 71 10 9</frame>
+	</sprite>
+	
+	<sprite origin="5 4" looping="true" texture="effects/players/player_effects.png" material="effects/effects.mats:lit"
+		pos-x="rand(u+l+3)*8-4"
+		pos-y="-(l+t+0.33-floor(l+t+0.33))*10"
+		
+		color-a="0.2"
+		
+		scale-x="rand(u+l+5)/2 + 0.75"
+		scale-y="rand(u+l+5)/2 + 0.75"
+	>
+		<frame time="100">9 71 10 9</frame>
+		<frame time="100">0 71 10 9</frame>
+		<frame time="100">10 71 10 9</frame>
+		<frame time="100">26 71 9 9</frame>
+		<frame time="100">17 71 10 9</frame>
+	</sprite>
+	
+	<sprite origin="5 4" looping="true" texture="effects/players/player_effects.png" material="effects/effects.mats:lit"
+		pos-x="rand(u+l+6)*8-4"
+		pos-y="-(l+t+0.66-floor(l+t+0.66))*10"
+		
+		color-a="0.3"
+		
+		scale-x="rand(u+l+8)/2 + 0.75"
+		scale-y="rand(u+l+8)/2 + 0.75"
+	>
+		<frame time="100">26 71 9 9</frame>
+		<frame time="100">17 71 10 9</frame>
+		<frame time="100">9 71 10 9</frame>
+		<frame time="100">0 71 10 9</frame>
+		<frame time="100">10 71 10 9</frame>
+	</sprite>
+</effect>

@@ -1,0 +1,17 @@
+<unit>
+	<behavior class="BombBehavior">
+		<!-- <string name="explode-sound">event:/player/ranger/bomb_explode</string> -->
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>	
+		<int name="delay">1200</int>
+		<dict name="action">
+			<string name="class">SpawnEffect</string>
+			<string name="effect">actors/mt/bosses/wolf/wolf_head.effect</string>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene>
+		</scene>
+	</scenes>
+</unit>

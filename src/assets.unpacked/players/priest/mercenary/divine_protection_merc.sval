@@ -1,0 +1,19 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">priest</string>
+	<string name="name">.skills.priest.divine-protection</string>
+	<string name="description">.skills.priest.divine-protection.merc?amount=30</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>72 96 24 24</vec4>
+	</array>
+
+	<int name="cost">17</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ManaShield</string>
+		<float name="shield-distr">0.3</float>
+		<float name="shield-dmg-per-mana">1</float>
+	</dict>
+</dict>

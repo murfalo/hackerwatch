@@ -1,0 +1,117 @@
+<effect looping="false" layer="-1">
+
+
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:bright"
+				
+		color-r="1-t*0.9"
+		color-g="0"
+		color-b="0+t*0.1"
+		color-a="1-t"
+	>
+		<frame time="1500">0 0 32 32</frame>
+	</sprite>
+	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+				
+		color-r="1-t*0.9"
+		color-g="0"
+		color-b="0+t*0.1"
+		color-a="1-t"
+	>
+		<frame time="1500">32 0 32 32</frame>
+	</sprite>	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+				
+		color-r="1-t*0.9"
+		color-g="0"
+		color-b="0+t*0.1"
+		color-a="1-t"
+	>
+		<frame time="1500">0 32 32 32</frame>
+	</sprite>
+	
+	
+	
+	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+				
+		color-a="1-t"
+	>
+		<frame time="500">0 64 32 32</frame>
+	</sprite>
+	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+				
+		color-a="1-t"
+	>
+		<frame time="500">32 64 32 32</frame>
+	</sprite>	
+	<sprite origin="16 16" texture="./ward_of_branding.png" material="system/default.mats:glow-both-bright"
+				
+		color-a="1-t"
+	>
+		<frame time="500">0 96 32 32</frame>
+	</sprite>	
+	
+	
+	
+	
+	
+	<sprite origin="3 3" looping="false" texture="./ward_of_branding.png" material="system/default.mats:default-noxray"
+		num-sprites="21"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) + t*40"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 16 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15 - t*40"
+		
+		color-a="0.2 - sin(t*t*t*t*t)*0.2"
+	>
+        
+		<frame time="200">32 32 6 6</frame>
+		<frame time="200">38 32 6 6</frame>
+		<frame time="200">44 32 6 6</frame>
+		<frame time="300">50 32 6 6</frame>
+		<frame time="300">56 32 6 6</frame>
+		<frame time="300">32 48 6 6</frame>
+		<frame time="200">38 48 6 6</frame>
+		<frame time="200">44 48 6 6</frame>
+	</sprite>
+	
+	<sprite origin="3 3" looping="false" texture="./ward_of_branding.png" material="system/default.mats:default-noxray"
+		num-sprites="18"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) + t*10"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 16 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15 - t*10"
+		
+		color-a="0.2 - sin(t*t*t*t)*0.2"
+	>
+        
+		<frame time="100">32 32 6 6</frame>
+		<frame time="100">38 32 6 6</frame>
+		<frame time="100">44 32 6 6</frame>
+		<frame time="200">50 32 6 6</frame>
+		<frame time="200">56 32 6 6</frame>
+		<frame time="200">32 48 6 6</frame>
+		<frame time="100">38 48 6 6</frame>
+		<frame time="100">44 48 6 6</frame>
+	</sprite>
+	
+	
+	<light pos-x="0" pos-y="0"> 
+		<sprite texture="system/light2_L.png">
+			<frame time="100">0 0 128 128</frame>aw
+		</sprite>
+		
+		<length value="1000" />
+		
+		<looping value="false" />
+	
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="128-t*128" />
+		
+		<color-r value="saturate(8-t*16)" />
+		<color-g value="saturate(3-t*6)" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light>	
+</effect>

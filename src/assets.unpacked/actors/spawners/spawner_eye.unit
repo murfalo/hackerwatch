@@ -1,0 +1,189 @@
+<unit netsync="position" slot="actor">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.spawner_eye</string>
+		<string name="beastiary-scene">portrait</string>
+		<vec2 name="beastiary-offset">-1 0</vec2>
+		<string name="quality">uncommon</string>
+	
+		<string name="type">construct</string>
+		<int name="hp">275</int>
+		<int name="armor">40</int>
+		<int name="resistance">50</int>
+		<int name="experience-reward">110</int>
+		<float name="mp-scale-fact">1</float>
+		
+		<string name="gore">effects/gibs/gib_skeleton_1.sval</string>
+		<string name="death-snd">event:/enemy/eye/death_spawner</string>
+		<string name="loot">actors/loot.sval:spawner_eye</string>
+		
+		<bool name="impenetrable">true</bool>
+		<int name="aggro-range">130</int>
+		<float name="debuff-scale">0.5</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_static.inc"
+		</array>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">default</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">default</string>
+				
+				<array name="conditional">
+					<string>hp</string><string>gt</string><float>0.5</float>
+				</array>
+				
+				<int name="charges">15</int>
+				<bool name="must-see">true</bool>
+				<int name="cooldown">800</int>
+				<int name="range">210</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>750</int><string>actors/eye_1_small.unit</string>
+							<int>250</int><string>actors/eye_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">default</string>
+				
+				<array name="conditional">
+					<string>hp</string><string>lt</string><float>0.5</float>
+				</array>
+				
+				<int name="charges">15</int>
+				<bool name="must-see">true</bool>
+				<int name="cooldown">400</int>
+				<int name="range">210</int>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<array name="units">
+							<int>750</int><string>actors/eye_1_small.unit</string>
+							<int>250</int><string>actors/eye_1.unit</string>
+						</array>
+						<bool name="aggro">true</bool>
+						<bool name="safe-spawn">true</bool>
+						<int name="spawn-dist">16</int>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+ On hit spawn
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>gt</string><int>0</int>
+				</array>
+			
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDamaged</string>
+				<int name="charges">15</int>
+				<int name="cooldown">2000</int>
+				
+				<dict name="action">
+					<string name="class">SpawnUnit</string>
+					<array name="units">
+						<int>750</int><string>actors/eye_1_small.unit</string>
+						<int>250</int><string>actors/eye_1.unit</string>
+					</array>
+					<bool name="aggro">true</bool>
+					<bool name="safe-spawn">true</bool>
+					<int name="spawn-dist">16</int>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/spawners/spawner_eye_razed.unit</string>
+					</dict>
+				</array>
+			</dict>
+			
+			<dict>
+				<string name="class">CompositeActorAuraSkill</string>
+				<string name="buff">actors/buffs.sval:bloodlust</string>
+				<int name="freq">250</int>
+				<int name="range">80</int>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="color_r">1</float>
+			<float name="color_g">0</float>
+			<float name="color_b">0</float>
+		</dict>	
+	</behavior>
+
+	<scenes start="default">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="3 3" texture="gui/minimap.png" frame="123 5 5 5"/>
+					
+			<collision static="true">
+				<circle offset="0 0" radius="10" />
+			</collision>
+			
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="50" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="100" />
+				</sizes>
+				<colors>
+					<color value="80 25 10 0" />
+				</colors>
+			</light>			
+			
+			<effect src="effects/buff_circle_32.effect" />			
+			
+		</scene>
+
+		<scene name="default">
+			<scene src="shared" />
+			<sprite origin="16 16" looping="true" texture="actors/spawners/spawner_eye.png" material="system/default.mats:actor">
+				<frame time="1000">0 0 32 32</frame>
+				<frame time="200">32 0 32 32</frame>
+				<frame time="500">0 0 32 32</frame>
+				<frame time="200">64 0 32 32</frame>
+				<frame time="200">96 0 32 32</frame>
+				<frame time="200">64 0 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="portrait">
+			<sprite origin="16 16" looping="true" texture="actors/spawners/spawner_eye.png" material="system/default.mats:actor">
+				<frame time="1000">0 0 32 32</frame>
+				<frame time="200">32 0 32 32</frame>
+				<frame time="500">0 0 32 32</frame>
+				<frame time="200">64 0 32 32</frame>
+				<frame time="200">96 0 32 32</frame>
+				<frame time="200">64 0 32 32</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

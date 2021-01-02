@@ -1,0 +1,36 @@
+<unit netsync="position" slot="doodad">
+	<scenes on="on" off="off">
+		<scene name="off" random-start="false">
+			<sprite origin="108 115" layer="100" looping="true" texture="./dragon_intro.png" material="system/default.mats:actor">
+				<frame time="150">0 0 207 154</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="74 96" layer="100" looping="true" texture="./dragon_intro_shadow.png" material="system/default.mats:actor">
+					<frame time="150">0 0 183 135</frame>
+				</sprite>
+			</shadow>
+		</scene>
+		<scene name="on" random-start="false">
+			<sprite origin="108 115" layer="100" looping="false" texture="./dragon_intro.png" material="system/default.mats:actor">
+				<frame time="150">0 0 207 154</frame>
+				<frame time="150">207 0 207 154</frame>
+				<frame time="150">414 0 207 154</frame>
+				<frame time="150">621 0 207 154</frame>
+				<frame time="150">0 154 207 154</frame>
+				<frame time="150">207 154 207 154</frame>
+				<frame time="150">414 154 207 154</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="74 96" layer="100" looping="false" texture="./dragon_intro_shadow.png" material="system/default.mats:actor">
+					<frame time="150">0 0 183 135</frame>
+					<frame time="150">183 0 183 135</frame>
+					<frame time="150">366 0 183 135</frame>
+					<frame time="150">549 0 183 135</frame>
+					<frame time="150">732 0 183 135</frame>	
+					<frame time="150">0 135 183 135</frame>
+					<frame time="150">183 135 183 135</frame>
+				</sprite>
+			</shadow>
+		</scene>
+	</scenes>
+</unit>

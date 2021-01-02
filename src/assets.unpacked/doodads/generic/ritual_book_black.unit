@@ -1,0 +1,23 @@
+<unit slot="doodad">
+	<scenes open="on" closed="off">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-8 -6 15 12</rect>
+			</collision>
+		</scene>		
+		<scene name="on" trigger-snd="event:/misc/paper">
+			<scene src="shared" />
+			<!-- <minimap_sprite layer="150" layer="20" origin="0 0" texture="gui/minimap.png" frame="24 10 9 10" /> -->
+			<sprite origin="8 14" texture="./ritual_book.png" material="system/default.mats:default">
+				<frame>0 80 18 20</frame>
+			</sprite>				
+		</scene>			
+		<scene name="off">
+			<scene src="shared" />
+			<!-- <minimap_sprite layer="150" layer="20" origin="0 0" texture="gui/minimap.png" frame="24 10 9 10" /> -->
+			<sprite origin="8 14" texture="./ritual_book.png" material="system/default.mats:default">
+				<frame>18 80 18 20</frame>
+			</sprite>			
+		</scene>									
+	</scenes>
+</unit>

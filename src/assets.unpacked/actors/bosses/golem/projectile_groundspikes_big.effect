@@ -1,0 +1,62 @@
+<effect looping="false" layer="-1">
+
+	<param name="angle" default="0" />
+
+%//three spikes
+<variation>	
+		<sprite origin="11 13" ulayer="0" texture="./projectile_groundspikes_big.png" material="system/default.mats:floor-nodecals"		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"	
+		>
+			<frame time="80">0 0 21 17</frame>
+			<frame time="80">21 0 21 17</frame>
+			<frame time="80">42 0 21 17</frame>
+			<frame time="80">63 0 21 17</frame>
+			<frame time="80">84 0 21 17</frame>
+			<frame time="80">105 0 21 17</frame>
+			<frame time="80">0 17 21 17</frame>
+		</sprite>
+</variation>
+
+%//two spikes
+<variation>	
+		<sprite origin="7 10" ulayer="0" texture="./projectile_groundspikes_big.png" material="system/default.mats:floor-nodecals"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			<frame time="50">0 34 25 19</frame>
+			<frame time="75">25 34 25 19</frame>
+			<frame time="50">50 34 25 19</frame>
+			<frame time="50">75 34 25 19</frame>
+			<frame time="50">100 34 25 19</frame>
+			<frame time="50">0 56 25 19</frame>
+			<frame time="50">25 56 25 19</frame>
+			<frame time="50">50 56 25 19v</frame>
+		</sprite>
+		
+	
+</variation>
+
+%//one spikes
+<variation>	
+		<sprite origin="3 14" ulayer="0" texture="./projectile_groundspikes_big.png" material="system/default.mats:floor-nodecals"
+		
+			pos-x="cos(angle+pi/2)*(rand(u)*18-9)"
+			pos-y="sin(angle+pi/2)*(rand(u)*18-9)"
+			>
+			
+			<frame time="40">60 76 15 18</frame>
+			<frame time="80">0 76 15 18</frame>
+			<frame time="60">15 76 15 18</frame>
+			<frame time="40">30 76 15 18</frame>
+			<frame time="40">45 76 15 18</frame>
+			<frame time="40">60 76 15 18</frame>
+			<frame time="40">75 76 15 18</frame>
+			<frame time="40">90 76 15 18</frame>
+			<frame time="40">105 76 15 18</frame>
+		</sprite>
+		
+</variation>
+
+</effect>

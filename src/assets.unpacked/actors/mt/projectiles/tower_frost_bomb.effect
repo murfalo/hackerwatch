@@ -1,0 +1,39 @@
+<effect layer="120" looping="false">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+
+	<sprite origin="6 6" looping="true" texture="./tower_frost_bomb.png" material="system/default.mats:projectile" 
+	color-a="1"
+	
+	pos-x="0"
+	pos-y="-height"
+	
+	scale-x="saturate(2*t)"
+	scale-y="saturate(2*t)"
+	
+	>
+	
+		<frame time="150">0 0 12 12</frame>
+		<frame time="150">12 0 12 12</frame>
+		<frame time="150">0 12 12 12</frame>
+		<frame time="150">12 12 12 12</frame>
+	</sprite>
+	
+	<light pos-x="0" pos-y="0 * saturate(1-(t*1.5+l))">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+		
+
+		<overbright value="1"/>
+		<looping value="true" />
+		<length value="900" />
+		
+		<size value="32" />
+			
+		<color-r value="0" />
+		<color-g value="0.75" />
+		<color-b value="2" />
+		<color-a value="0"/>
+	</light>
+</effect>

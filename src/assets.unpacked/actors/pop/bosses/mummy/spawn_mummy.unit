@@ -1,0 +1,62 @@
+<unit slot="doodad">
+	<behavior class="StateAnimations">
+		<string name="default">default</string>
+		<array name="transitions">
+			<dict>
+				<string name="from">spawn</string>
+				<string name="to">destroyed</string>
+			</dict>
+		</array>
+	</behavior>
+	<scenes default="default">
+		<scene name="default">
+			<minimap_sprite layer="1" origin="5 5" texture="gui/minimap.png" frame="117 13 11 11"/>
+			<shadow darkness="1">
+				<rect cast-len="3">-25 -8 50 16</rect>
+				<rect cast-len="18">-24 -7 48 14</rect>
+			</shadow>
+			<collision static="true">
+				<rect>-26 -12 50 19</rect>
+			</collision>
+		  <sprite origin="26 31" looping="true" texture="./mummy_spawn.png" material="system/default.mats:default">
+			<frame>0 0 52 42</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="spawn">
+			<shadow darkness="1">
+				<rect cast-len="3">-25 -8 50 16</rect>
+				<rect cast-len="18">-24 -7 48 14</rect>
+			</shadow>
+			<collision static="true">
+				<rect>-26 -12 50 19</rect>
+			</collision>
+		  <sprite origin="26 31" looping="false" texture="./mummy_spawn.png" material="system/default.mats:default">
+			<frame time="100">52 0 52 42</frame>
+			<frame time="100">104 0 52 42</frame>
+			<frame time="100">156 0 52 42</frame>
+			<frame time="100">0 42 52 42</frame>
+			<frame time="100">52 42 52 42</frame>
+			<frame time="100">104 42 52 42</frame>
+		  </sprite>
+
+		</scene>
+		
+		<scene name="destroyed">
+		 	<effect src="effects/animations/dust_big.effect"/>
+			<effect delay="100" src="./dust.effect" pos="-10 10"/>
+			<effect delay="150" src="./dust.effect" pos="10 -10"/>
+			<effect delay="0" src="./dust_large.effect"/>
+		  <sprite layer="0" origin="13 28" looping="false" texture="./mummy_spawn.png" material="system/default.mats:actor"> 
+			<frame time="200">208 0 25 33</frame>
+			<frame time="100">0 0 0 0</frame>	 
+		  </sprite>
+		  <sprite layer="-21" origin="26 14" looping="false" texture="./mummy_spawn.png" material="system/default.mats:floor">
+			<frame time="150">156 44 52 25</frame>
+			<frame time="150">156 69 52 25</frame>
+			<frame time="150">156 94 52 25</frame>
+		  </sprite>
+		</scene>
+		
+	</scenes>
+</unit>

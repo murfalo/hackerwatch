@@ -1,0 +1,158 @@
+<gui>
+	<sprites>
+		<sprite name="classbutton" texture="gui/widget.png"><frame>33 130 24 24</frame></sprite>
+		<sprite name="classbutton-hover" texture="gui/widget.png"><frame>57 130 24 24</frame></sprite>
+		<sprite name="classbutton-checked" texture="gui/widget.png"><frame>81 130 24 24</frame></sprite>
+		<sprite name="classbutton-disabled" texture="gui/widget.png"><frame>0 162 24 24</frame></sprite>
+
+		<sprite name="sep" texture="gui/widget.png"><frame>104 182 3 28</frame></sprite>
+		<sprite name="frame-button-sep" texture="gui/widget.png"><frame>76 182 31 28</frame></sprite>
+		<sprite name="frame-button" texture="gui/widget.png"><frame>76 182 28 28</frame></sprite>
+
+		<sprite name="char-shadow" texture="gui/widget.png"><frame>99 118 12 12</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+%include "gui/main_menu/checkbox_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<grouprect inner="true" width="280" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval" flow="vbox" padding="2 2">
+				<!-- Header -->
+				<rect width="276" height="18" flow="hbox">
+					<!-- Text -->
+					<rect width="255" height="18" spriteset="gui/variable/headline_borders.sval">
+						<text anchor="0.5 0.5" font="gui/fonts/arial11_bold.fnt" text=".mainmenu.character.create.title" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="276" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Classes -->
+				<rect width="275" height="59">
+					<!-- Buttons -->
+					<rect width="275" height="28" flow="hbox">
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button-sep" />
+						<sprite src="frame-button" />
+					</rect>
+
+					<checkboxgroup id="group-class" flow="hbox" spacing="7" func="class-changed" offset="2 2" dynamic-size="false" width="275" height="24">
+						<checkbox enabled="false" spriteset="classbutton" value="paladin" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="ranger" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="sorcerer" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="warlock" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="thief" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="priest" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="wizard" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="gladiator" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+						<checkbox enabled="false" spriteset="classbutton" value="witch_hunter" disabled-tooltip="true">
+							<sprite id="shadow" src="char-shadow" offset="8 9" />
+							<unit id="preview" width="24" height="24" />
+						</checkbox>
+					</checkboxgroup>
+
+					<!-- Separator -->
+					<rect width="276" height="3" offset="0 28" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Regular skills -->
+					<rect id="skills-regular" visible="false" width="276" height="28" offset="0 31" flow="hbox">
+						<rect width="31" height="28" spriteset="gui/variable/headline_borders.sval" />
+						<sprite src="frame-button-sep">
+							<sprite id="skill-0" offset="2 2" />
+						</sprite>
+						<sprite src="frame-button-sep">
+							<sprite id="skill-1" offset="2 2" />
+						</sprite>
+						<sprite src="frame-button-sep">
+							<sprite id="skill-2" offset="2 2" />
+						</sprite>
+						<sprite src="frame-button-sep">
+							<sprite id="skill-3" offset="2 2" />
+						</sprite>
+						<sprite src="frame-button-sep">
+							<sprite id="skill-4" offset="2 2" />
+						</sprite>
+						<sprite src="frame-button-sep">
+							<sprite id="skill-5" offset="2 2" />
+						</sprite>
+						<sprite src="frame-button">
+							<sprite id="skill-6" offset="2 2" />
+						</sprite>
+						<rect width="31" height="28" spriteset="gui/variable/headline_borders.sval" />
+					</rect>
+
+					<!-- Mercenary skill -->
+					<rect id="skills-mercenary" visible="false" width="276" height="28" offset="0 31" flow="hbox">
+						<rect width="124" height="28" spriteset="gui/variable/headline_borders.sval" />
+						<sprite src="frame-button">
+							<sprite id="skill-0" offset="2 2" />
+						</sprite>
+						<rect width="124" height="28" spriteset="gui/variable/headline_borders.sval" />
+					</rect>
+				</rect>
+
+				<!-- Options -->
+				<rect id="options" width="276" height="28" flow="vbox">
+					<!-- Separator -->
+					<rect width="276" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+					<rect width="276" height="25" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="hbox" spacing="6" padding="7 1">
+						<!-- Mercenary -->
+						<checkbox id="mercenary" disabled-tooltip="true" anchor="0 0.5" enabled="false" func="mercenary-changed" font="gui/fonts/arial11.fnt" text=".mainmenu.character.create.mercenary" tooltip=".mainmenu.character.create.mercenary.tooltip" spriteset="checkbox" />
+
+						<!-- Mercenary help button -->
+						<scalebutton spriteset="scalebutton" anchor="0 0.5" width="20" font="gui/fonts/arial11.fnt" text="?" func="mercenary-help" />
+					</rect>
+				</rect>
+
+				<!-- Separator -->
+				<rect width="276" height="3" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- Play button -->
+				<rect width="276" height="18" flow="hbox">
+					<rect width="87" height="18" spriteset="gui/variable/headline_borders.sval" />
+					<scalebutton spriteset="scalebutton" width="102" font="gui/fonts/arial11.fnt" text=".mainmenu.character.create.next" func="next" />
+					<rect width="87" height="18" spriteset="gui/variable/headline_borders.sval" />
+				</rect>
+			</grouprect>
+		</group></group>
+	</doc>
+</gui>

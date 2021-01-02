@@ -1,0 +1,103 @@
+<effect layer="-1" looping="false" bounds="160 160">
+	<param name="ttl" default="1000" />
+	<param name="radius" default="100" />
+
+	<sprite origin="8 8" looping="false" texture="./entangle_area.png" material="system/default.mats:default-noxray"
+		num-sprites="radius * radius / 400"
+
+		pos-x="cos(rand(u+21*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+        pos-y="sin(rand(u+21*i)*2*pi) * radius * pow(rand(u+37*i),0.5)"
+		
+	>
+        <frame time="60">0 0 16 16</frame>
+        <frame time="60">0 16 16 16</frame>
+        <frame time="60">0 32 16 16</frame>
+        <frame time="60">0 64 16 16</frame>
+        <frame time="60">0 96 16 16</frame>
+        <frame time="60">0 112 16 16</frame>
+        <frame time="60">0 128 16 16</frame>
+        <frame time="60">0 144 16 16</frame>
+        <frame time="60">0 160 16 16</frame>
+        <frame time="60">0 176 16 16</frame>
+        <frame time="60">0 192 16 16</frame>
+        <frame time="60">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite origin="8 8" looping="false" texture="./entangle_area.png" material="system/default.mats:default-noxray"
+		num-sprites="radius * radius / 400"
+
+		pos-x="cos(rand(u+13*i)*2*pi) * radius * pow(rand(u+51*i),0.5)"
+        pos-y="sin(rand(u+13*i)*2*pi) * radius * pow(rand(u+51*i),0.5)"
+		
+	>
+        <frame time="60">16 0 16 16</frame>
+        <frame time="60">16 16 16 16</frame>
+        <frame time="60">16 32 16 16</frame>
+        <frame time="60">16 64 16 16</frame>
+        <frame time="60">16 96 16 16</frame>
+        <frame time="60">16 112 16 16</frame>
+        <frame time="60">16 128 16 16</frame>
+        <frame time="60">16 144 16 16</frame>
+        <frame time="60">16 160 16 16</frame>
+        <frame time="60">16 176 16 16</frame>
+        <frame time="60">16 192 16 16</frame>
+        <frame time="60">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite origin="8 8" looping="false" texture="./entangle_area.png" material="system/default.mats:default-noxray"
+		num-sprites="radius * radius / 400"
+
+		pos-x="cos(rand(u+137*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+137*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+		
+	>
+        <frame time="60">32 0 16 16</frame>
+        <frame time="60">32 16 16 16</frame>
+        <frame time="60">32 32 16 16</frame>
+        <frame time="60">32 64 16 16</frame>
+        <frame time="60">32 96 16 16</frame>
+        <frame time="60">32 112 16 16</frame>
+        <frame time="60">32 128 16 16</frame>
+        <frame time="60">32 144 16 16</frame>
+        <frame time="60">32 160 16 16</frame>
+        <frame time="60">32 176 16 16</frame>
+        <frame time="60">32 192 16 16</frame>
+        <frame time="60">0 0 0 0</frame>
+	</sprite>
+	<sprite origin="8 8" looping="false" texture="./entangle_area.png" material="system/default.mats:default-noxray"
+		num-sprites="radius * radius / 400"
+
+		pos-x="cos(rand(u+151*i)*2*pi) * radius * pow(rand(u+97*i),0.5)"
+        pos-y="sin(rand(u+151*i)*2*pi) * radius * pow(rand(u+97*i),0.5)"
+		
+	>
+        <frame time="60">48 0 16 16</frame>
+        <frame time="60">48 16 16 16</frame>
+        <frame time="60">48 32 16 16</frame>
+        <frame time="60">48 64 16 16</frame>
+        <frame time="60">48 96 16 16</frame>
+        <frame time="60">48 112 16 16</frame>
+        <frame time="60">48 128 16 16</frame>
+        <frame time="60">48 144 16 16</frame>
+        <frame time="60">48 160 16 16</frame>
+        <frame time="60">0 0 0 0</frame>
+	</sprite>
+	
+	<!-- Ring edge -->
+	<!-- <sprite origin="4 4" looping="true" texture="./entangle_area.png" material="system/default.mats:default-noxray"
+		num-sprites="radius / 3"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2)"
+		
+		color-a="saturate(t+l) * saturate(ttl / 200)"
+	>
+        <frame time="100" x="0" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="8" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="16" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="24" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+        <frame time="100" x="32" y="7 * floor(rand(u+i*97)*4)" w="8" h="7" />
+	</sprite> -->
+	
+	
+</effect>

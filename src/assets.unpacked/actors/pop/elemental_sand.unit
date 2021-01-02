@@ -1,0 +1,297 @@
+<unit netsync="position" slot="actor" layer="20">
+	<behavior class="CompositeActorBehavior">
+		<string name="beastiary-name">.bestiary.name.elemental_sand</string>
+		<string name="beastiary-scene">attack-3</string>
+		<vec2 name="beastiary-offset">1 14</vec2>
+		<string name="quality">uncommon</string>
+		
+		<string name="dlc">pop</string>		
+	
+		<string name="type">aberration</string>
+		<int name="hp">300</int>
+		<int name="armor">20</int>
+		<int name="resistance">20</int>
+		<int name="experience-reward">80</int>
+		<float name="mp-scale-fact">0.65</float>
+		
+		<int name="unit-height">24</int>
+		
+		<string name="death-snd">event:/enemy/elemental_stone/death</string>
+		<string name="gore">effects/gibs/gib_elemental_sand.sval</string>
+
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">false</bool>
+		<float name="debuff-scale">0.66</float>
+		<float name="wind-scale">0</float>
+		
+		<array name="buffs-immune-tags">
+%include "actors/extra/buffs_immune_flying.inc"
+		</array>
+
+		<dict name="movement">
+			<string name="class">ChargeMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">attack 8</string>
+
+			<bool name="flying">true</bool>
+			<bool name="search-while-breaking">false</bool>
+
+			<float name="speed">5</float>
+			<float name="turnspeed">4.5</float>
+
+			<int name="acceleration-timer">750</int>
+			<int name="deceleration-timer">1000</int>
+			<float name="crashangle">1</float>
+			<int name="wait-after-lost">500</int>
+			<int name="wait-sight-time">1500</int>
+			<int name="sight-arc">160</int>
+		</dict>
+
+		<array name="skills">
+			%// Normal
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>lt</string><int>1</int>
+				</array>
+			
+				<string name="class">WerebullChargeHitSkill</string>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">40</int>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+1 
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>1</int>
+					<string>ngp</string><string>lt</string><int>2</int>
+				</array>
+			
+				<string name="class">WerebullChargeHitSkill</string>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+						<float name="armor-mul">0.75</float>
+					</dict>
+				</array>
+			</dict>
+			
+			%// NG+2
+			<dict>
+				<array name="conditional">
+					<string>ngp</string><string>ge</string><int>2</int>
+				</array>
+			
+				<string name="class">WerebullChargeHitSkill</string>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">50</int>
+						<float name="armor-mul">0.75</float>
+					</dict>
+					<dict>
+						<string name="class">ApplyBuff</string>
+						<string name="buff">actors/buffs.sval:boulder_stun</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="idle-0 idle-7 idle-6 idle-5 idle-4 idle-3 idle-2 idle-1">
+		<scene name="shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<collision static="false">
+				<circle offset="0 -8" sensor="true" aim-through="true" shoot-through="false" charge-through="true" radius="10" />
+			</collision>
+			
+			<effect pos="0 -10" src="./elemental_sand_dust.effect" />
+
+			<effect layer="-1" pos="0 -10" src="./elemental_sand_idle.effect" />
+			
+			<sprite origin="8 16" ulayer="3" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+				<frame time="50">56 0 13 14</frame>
+				<frame time="50">69 0 13 14</frame>
+				<frame time="50">82 0 13 14</frame>
+				<frame time="50">95 0 13 14</frame>
+				<frame time="50">56 14 13 14</frame>
+				<frame time="50">69 14 13 14</frame>
+				<frame time="50">82 14 13 14</frame>
+			</sprite>
+		  
+			<light pos="0 -12">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="1.5" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="60" />
+				</sizes>
+				<colors>
+					<color value="235 201 73 0" />
+				</colors>
+			</light>
+		</scene>
+		
+		<scene name="attack-shared">
+			<minimap_sprite layer="1" origin="1 1" texture="gui/minimap.png" frame="118 0 2 2"/>
+			<collision static="false">
+				<circle offset="0 -8" sensor="true" aim-through="true" shoot-through="false" charge-through="true" radius="24" />
+			</collision>
+			
+			<effect pos="0 -10" src="./elemental_sand_dust.effect" />
+			<effect layer="-1" pos="0 -10" src="./elemental_sand_whirlwind.effect" />
+		  
+			<sprite origin="8 16" ulayer="3" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+				<frame time="50">56 0 13 14</frame>
+				<frame time="50">69 0 13 14</frame>
+				<frame time="50">82 0 13 14</frame>
+				<frame time="50">95 0 13 14</frame>
+				<frame time="50">56 14 13 14</frame>
+				<frame time="50">69 14 13 14</frame>
+				<frame time="50">82 14 13 14</frame>
+			</sprite>
+		  
+			<light pos="0 -12">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="2" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="64" />
+				</sizes>
+				<colors>
+					<color value="235 201 73 0" />
+				</colors>
+			</light>
+		</scene>
+		
+		<scene name="idle-0">
+		  <scene src="shared" />
+		  <sprite origin="8 28" ulayer="0" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">0 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="idle-1">
+		  <scene src="shared" />
+		  <sprite origin="8 28" ulayer="0" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">14 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="idle-2">
+		  <scene src="shared" />
+		  <sprite origin="8 28" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">28 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="idle-3">
+		  <scene src="shared" />
+		  <sprite origin="8 28" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">42 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="idle-4">
+		  <scene src="shared" />
+		  <sprite origin="8 28" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">0 20 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="idle-5">
+		  <scene src="shared" />
+		  <sprite origin="8 28" ulayer="0" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">14 20 14 20</frame>
+		  </sprite>
+		</scene>
+		
+		<scene name="idle-6">
+		  <scene src="shared" />
+		  <sprite origin="8 28" ulayer="2" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">28 20 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="idle-7">
+		  <scene src="shared" />
+		  <sprite origin="8 28" ulayer="2" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">42 20 14 20</frame>
+		  </sprite>
+		</scene>
+		
+		<scene name="attack-0">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" ulayer="0" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">0 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="attack-1">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" ulayer="0" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">14 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="attack-2">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">28 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="attack-3">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">42 0 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="attack-4">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">0 20 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="attack-5">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" ulayer="0" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">14 20 14 20</frame>
+		  </sprite>
+		</scene>
+		
+		<scene name="attack-6">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" ulayer="2" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">28 20 14 20</frame>
+		  </sprite>
+		</scene>
+
+		<scene name="attack-7">
+		  <scene src="attack-shared" />
+		  <sprite origin="8 28" ulayer="2" looping="true" texture="./elemental_sand.png" material="system/default.mats:actor">
+			<frame time="75">42 20 14 20</frame>
+		  </sprite>
+		</scene>
+	</scenes>
+</unit>

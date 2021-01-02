@@ -1,0 +1,25 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">gladiator</string>
+	<string name="name">.skills.gladiator.planned-attack</string>
+	<string name="description">.skills.gladiator.planned-attack.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 168 24 24</vec4>
+	</array>
+
+	<int name="cost">14</int>
+
+	<dict name="skill">
+		<string name="class">Skills::PlannedAttack</string>
+
+		<int name="duration">1000</int>
+		<int name="max-stacks">7</int>
+
+		<array name="hud">
+			<string>gui/icons_buffs.png</string>
+			<int>100</int><vec4>48 12 12 12</vec4>
+		</array>
+	</dict>
+</dict>

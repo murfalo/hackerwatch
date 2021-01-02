@@ -1,0 +1,141 @@
+<effect looping="true" bounds="50 50">
+	<!-- 
+	<data>
+		<string name="sound">event:/player/priest/aura</string>
+	</data>		
+	 -->
+	<param name="radius" default="40" />
+	<param name="ttl" default="1000" />
+	
+	<!-- single pixels -->
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="10"
+
+		pos-x="cos(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)"
+        pos-y="sin(rand(u+27*i)*2*pi) * radius * pow(rand(u+67*i),0.5)  -10 * it"
+		
+        color-r="0"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.5 - mod(it+l+rand(u*i), 1)"
+        color-a="(1 - mod(it+l+rand(u*i), 1)) * saturate(ttl / 200)"
+	>
+        <frame time="500">0 0 1 1</frame>
+	</sprite>
+	
+	<sprite origin="4 4" looping="true" texture="effects/empty.png" material="system/default.mats:glow-both-bright"
+		num-sprites="radius"
+
+		pos-x="cos(i / (radius / 3) * pi*2) * lerp(rand(u+101*i), radius - 3, radius+2)"
+        pos-y="sin(i / (radius / 3) * pi*2) * lerp(rand(u+141*i), radius - 3, radius+2)"
+		
+        color-r="0"
+        color-g="1 - mod(it+l+rand(u*i), 0.5)"
+        color-b="0.5 - mod(it+l+rand(u*i), 1)"
+        color-a="(1 - mod(it+l+rand(u*i), 1)) * saturate(ttl / 200)"
+	>
+        <frame time="500">0 0 1 1</frame>
+	</sprite>
+
+
+	
+	<!-- symbols -->
+	
+	<sprite origin="2 2" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+27)*2*pi) * radius * pow(rand(u+67),0.5)"
+        pos-y="sin(rand(u+27)*2*pi) * radius * pow(rand(u+67),0.5)"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*2))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="800">83 83 5 5</frame>
+	</sprite>
+	
+	<sprite origin="2 2" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+43)*2*pi) * radius * pow(rand(u+113),0.5)"
+        pos-y="sin(rand(u+43)*2*pi) * radius * pow(rand(u+113),0.5)"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*2))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="800">90 83 5 6</frame>
+	</sprite>
+
+	<sprite origin="2 3" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+1481)*2*pi) * radius * pow(rand(u+1697),0.5)"
+        pos-y="sin(rand(u+1481)*2*pi) * radius * pow(rand(u+1697),0.5)"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*2))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="800">102 83 5 6</frame>
+	</sprite>
+	<sprite origin="2 2" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+2251)*2*pi) * radius * pow(rand(u+313),0.5)"
+        pos-y="sin(rand(u+2251)*2*pi) * radius * pow(rand(u+313),0.5)"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*2))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="800">109 83 5 5</frame>
+	</sprite>
+	<sprite origin="2 2" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+179)*2*pi) * radius * pow(rand(u+3467),0.5)"
+        pos-y="sin(rand(u+179)*2*pi) * radius * pow(rand(u+3467),0.5)"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*2))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="800">115 83 6 6</frame>
+	</sprite>
+	<sprite origin="2 3" looping="true" texture="./dukes_signet_ring.png" material="system/default.mats:glow-both-bright"
+		num-sprites="2"
+
+		pos-x="cos(rand(u+1759)*2*pi) * radius * pow(rand(u+3079),0.5)"
+        pos-y="sin(rand(u+1759)*2*pi) * radius * pow(rand(u+3079),0.5)"
+		
+        color-r="0.5"
+        color-g="0.5+saturate(cos(t*pi*2))"
+        color-b="saturate(sin(t*pi*16+0.5))"
+	>
+        <frame time="800">96 83 4 4</frame>
+	</sprite>
+	
+	
+	
+	<light pos-x="0" pos-y="0">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(t*10, radius * 3 + 10)" />
+
+		<color-r value="2.5" />
+		<color-g value="2.5 * saturate(ttl / 200)" />
+		<color-b value="2 * saturate(ttl / 200)" />
+		<color-a value="0"/>
+	</light>
+</effect>

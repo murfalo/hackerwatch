@@ -1,0 +1,56 @@
+<unit slot="doodad" layer="-20">
+	<scenes default="default" ext="ext" desert="d1" snow="s1" snow_ground="sg1">
+		<scene name="collision">
+			<collision static="true">
+				<rect shoot-through="true" aim-through="true">0 -40 16 40</rect>
+				<rect shoot-through="true" aim-through="true">8 -48 8 8</rect>				
+%//				<polygon shoot-through="true" aim-through="true" decompose="2">
+%//					<point>0 -40</point>
+%//					<point>8 -48</point>
+%//					<point>8 -40</point>
+%//				</polygon>
+			</collision>
+		</scene>		
+		<scene name="default">
+			<scene src="collision"/>
+			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>16 96 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>16 112 16 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="ext">
+			<sprite origin="0 32" layer="100" texture="./base.png" material="system/default.mats:default">
+				<frame>16 112 16 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="d1">
+			<scene src="collision"/>
+ 			<sprite origin="0 48" layer="-52" texture="./base.png" material="system/default.mats:floor">
+				<frame>16 96 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>208 16 16 32</frame>
+			</sprite>
+		</scene>	
+		<scene name="s1">
+			<scene src="collision"/>
+ 			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>112 176 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>112 192 16 32</frame>
+			</sprite>
+		</scene>		
+		<scene name="sg1">
+			<scene src="collision"/>
+ 			<sprite origin="0 48" layer="-1" texture="./base.png" material="system/default.mats:floor">
+				<frame>80 176 16 16</frame>
+			</sprite>
+			<sprite origin="0 32" texture="./base.png" material="system/default.mats:floor">
+				<frame>80 192 16 32</frame>
+			</sprite>
+		</scene>			
+	</scenes>
+</unit>

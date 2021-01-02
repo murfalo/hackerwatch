@@ -1,0 +1,27 @@
+<unit slot="doodad">
+	<scenes off="off" on="on">
+		<scene name="on">
+			<collision static="true">
+				<rect aim-through="false" shoot-through="false">-5 -3 10 6</rect>
+			</collision>	
+			<effect pos="8 0" src="./anvil.effect" />
+			<sprite origin="9 7" texture="./anvil.png" material="system/default.mats:default-noxray">
+				<frame time="150">0 0 17 10</frame>
+				<frame time="150">0 10 17 10</frame>
+				<frame time="150">0 20 17 10</frame>
+				<frame time="150">0 30 17 10</frame>
+			</sprite>
+			<sprite origin="-4 7" layer="-9" texture="./anvil.png" material="system/default.mats:floor">
+				<frame time="150">17 0 6 10</frame>
+			</sprite>
+			<sprite origin="7 6" layer="-10" texture="./anvil.png" material="system/default.mats:floor">
+				<frame time="150">0 40 14 12</frame>
+			</sprite>
+		</scene>
+		<scene name="off">
+			<sprite origin="7 6" layer="-10" texture="./anvil.png" material="system/default.mats:floor">
+				<frame time="150">0 40 14 12</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

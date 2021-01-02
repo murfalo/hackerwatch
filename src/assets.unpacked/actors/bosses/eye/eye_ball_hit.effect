@@ -1,0 +1,143 @@
+<effect looping="false" layer="1">
+	<param name="radius" default="0" />
+
+	
+	<sprite origin="9 9" looping="false" texture="./eye_ball_hit.png" material="system/default.mats:default-noxray"
+	angle="rand(u)*2">
+		<frame time="50">0 16 18 18</frame>
+		<frame time="50">18 16 18 18</frame>
+		<frame time="50">36 16 18 18</frame>
+		<frame time="50">54 16 18 18</frame>
+		<frame time="50">72 16 18 18</frame>
+	</sprite>
+	
+	
+	%//Particles
+	
+	<sprite origin="3 3" looping="false" texture="./eye_ball_hit.png" material="system/default.mats:default-noxray"
+		num-sprites="3"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 12 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        <frame time="100">0 7 7 7</frame>
+		<frame time="100">7 7 7 7</frame>
+		<frame time="100">14 7 7 7</frame>
+		<frame time="100">21 7 7 7</frame>
+		<frame time="100">28 7 7 7</frame>
+		<frame time="100">35 7 7 7</frame>
+		<frame time="100">42 7 7 7</frame>
+	</sprite>	
+	<sprite origin="3 3" looping="false" texture="./eye_ball_hit.png" material="system/default.mats:default-noxray"
+		num-sprites="3"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 12 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 12 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 12 * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 12 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 12 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 12 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t*t)"
+	>
+        <frame time="100">0 7 7 7</frame>
+		<frame time="100">7 7 7 7</frame>
+		<frame time="100">14 7 7 7</frame>
+		<frame time="100">21 7 7 7</frame>
+		<frame time="100">28 7 7 7</frame>
+		<frame time="100">35 7 7 7</frame>
+		<frame time="100">42 7 7 7</frame>
+	</sprite>
+	
+	
+	
+	<sprite origin="3 4" looping="false" texture="./eye_ball_hit.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+
+		pos-x="t*t*cos(rand(u+23*i)*2*pi) * 6 * pow(rand(u+43*i),0.5) - cos(rand(u+23*i)*2*pi) * 6 * pow(rand(u+43*i),0.5) - t*cos(rand(u+23*i)*2*pi) * 6 * pow(rand(u+43*i),0.5)"
+        pos-y="t*t*sin(rand(u+23*i)*2*pi) * 6 * pow(rand(u+43*i),0.5) - sin(rand(u+23*i)*2*pi) * 6 * pow(rand(u+43*i),0.5) - t*sin(rand(u+23*i)*2*pi) * 6 * pow(rand(u+43*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">0 0 7 8</frame>
+		<frame time="100">7 0 7 8</frame>
+		<frame time="100">14 0 7 8</frame>
+		<frame time="100">21 0 7 8</frame>
+		<frame time="100">28 0 7 8</frame>
+		<frame time="100">35 0 7 8</frame>
+		<frame time="100">42 0 7 8</frame>
+		<frame time="100">49 0 7 8</frame>
+	</sprite>
+	<sprite origin="3 4" looping="false" texture="./eye_ball_hit.png" material="system/default.mats:default-noxray"
+		num-sprites="2"
+
+		pos-x="t*t*cos(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - cos(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - t*cos(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5)"
+        pos-y="t*t*sin(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - sin(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - t*sin(rand(u+13*i)*2*pi) * 6 * pow(rand(u+37*i),0.5) - sin(t*t*t*t*t)*rand(i)*15"
+		
+		color-a="1 - sin(t*t*t*t)"
+	>
+        
+		<frame time="100">0 0 7 8</frame>
+		<frame time="100">7 0 7 8</frame>
+		<frame time="100">14 0 7 8</frame>
+		<frame time="100">21 0 7 8</frame>
+		<frame time="100">28 0 7 8</frame>
+		<frame time="100">35 0 7 8</frame>
+		<frame time="100">42 0 7 8</frame>
+		<frame time="100">49 0 7 8</frame>
+	</sprite>
+	
+	
+	%// Flash
+	<light pos="0 15"> 
+		<sprite texture="system/light_concentrated_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.1))+1)), 100) * 100" />
+		
+		<size value="2 * 60 * t" />
+		
+		<color-r value="1" />
+		<color-g value="0.4" />
+		<color-b value="1" />
+		<color-a value="0.05" />
+	</light>
+
+	%// Fade
+	<light pos="0 15">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		<size value="max(0,t * 40 * 3) + 10" />
+		
+		<color-r value="1 - t" />
+		<color-g value="(1 - t) * 0.8" />
+		<color-b value="0" />
+		<color-a value="0" />
+	</light>
+	
+</effect>

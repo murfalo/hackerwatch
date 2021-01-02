@@ -1,0 +1,71 @@
+<unit slot="doodad" layer="-20">
+	<scenes default="1 1 1 1 2 2 2 2 3 3 3 4 4">
+		<scene name="shared">
+			%if EDITOR 
+			<sprite origin="12 14" texture="doodads/special/editor.png" material="system/default.mats:bright">
+				<frame>0 0 24 28</frame>
+			</sprite>
+			%endif
+		</scene>
+		<scene name="1" random-start="true">
+			<scene src="shared"/>
+			<sprite origin="10 7" texture="./boss_mummy_snakes.png" material="system/default.mats:floor">
+				<frame time="120">0 0 20 14</frame>
+				<frame time="120">20 0 20 14</frame>
+				<frame time="120">40 0 20 14</frame>
+				<frame time="120">60 0 20 14</frame>
+				<frame time="120">80 0 20 14</frame>
+				<frame time="120">0 14 20 14</frame>
+				<frame time="120">20 14 20 14</frame>
+				<frame time="120">40 14 20 14</frame>
+				<frame time="120">60 14 20 14</frame>
+				<frame time="120">80 14 20 14</frame>
+			</sprite>
+		</scene>
+		<scene name="2" random-start="true">
+			<scene src="shared"/>
+			<sprite origin="10 8" texture="./boss_mummy_snakes.png" material="system/default.mats:floor">
+				<frame time="150">0 28 20 17</frame>
+				<frame time="150">20 28 20 17</frame>
+				<frame time="150">40 28 20 17</frame>
+				<frame time="150">60 28 20 17</frame>
+				<frame time="150">80 28 20 17</frame>
+				<frame time="150">0 45 20 17</frame>
+				<frame time="150">20 45 20 17</frame>
+				<frame time="150">40 45 20 17</frame>
+				<frame time="150">60 45 20 17</frame>
+				<frame time="150">80 45 20 17</frame>
+			</sprite>
+		</scene>
+		<scene name="3" random-start="true">
+			<scene src="shared"/>
+			<sprite origin="12 8" texture="./boss_mummy_snakes.png" material="system/default.mats:floor">
+				<frame time="150">0 118 24 16</frame>
+				<frame time="150">24 118 24 16</frame>
+				<frame time="150">48 118 24 16</frame>
+				<frame time="150">72 118 24 16</frame>
+				<frame time="150">96 118 24 16</frame>
+				<frame time="150">0 134 24 16</frame>
+				<frame time="150">24 134 24 16</frame>
+				<frame time="150">48 134 24 16</frame>
+				<frame time="150">72 134 24 16</frame>
+				<frame time="150">96 134 24 16</frame>
+			</sprite>
+		</scene>
+		<scene name="4" random-start="true">
+			<scene src="shared"/>
+			<sprite origin="12 14" texture="./boss_mummy_snakes.png" material="system/default.mats:floor">
+				<frame time="200">0 62 24 28</frame>
+				<frame time="200">24 62 24 28</frame>
+				<frame time="200">48 62 24 28</frame>
+				<frame time="200">72 62 24 28</frame>
+				<frame time="200">96 62 24 28</frame>
+				<frame time="200">0 90 24 28</frame>
+				<frame time="200">24 90 24 28</frame>
+				<frame time="200">48 90 24 28</frame>
+				<frame time="200">72 90 24 28</frame>
+				<frame time="200">96 90 24 28</frame>
+			</sprite>		
+		</scene>
+	</scenes>	
+</unit>

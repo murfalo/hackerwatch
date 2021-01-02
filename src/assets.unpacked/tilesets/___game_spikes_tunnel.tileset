@@ -1,0 +1,15 @@
+%if EDITOR
+<tileset texture="./___game_spikes_tunnel.png" layer="-1" size="16" material="system/default.mats:bright">
+	<data>
+		<int name="hardness">2</int>
+	</data>	
+	<tile>0 0 16 16</tile>
+</tileset>
+%else
+<tileset texture="./___game_spikes_tunnel.png" layer="-5000" size="16" material="system/default.mats:bright">
+	<data>
+		<int name="hardness">2</int>
+	</data>	
+	<tile>0 0 16 16</tile>
+</tileset>
+%endif

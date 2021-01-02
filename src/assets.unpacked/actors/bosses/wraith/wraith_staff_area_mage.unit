@@ -1,0 +1,97 @@
+<unit>
+	<behavior class="BombBehavior">
+		<!-- <string name="explode-sound">event:/player/ranger/bomb_explode</string> -->
+		
+		<int name="delay-random">0</int>
+		<int name="delay">1000</int>
+
+		<array name="actions">
+			<!-- <dict> -->
+				<!-- <string name="class">Explode</string> -->
+				
+				<!-- <int name="radius">30</int> -->
+				<!-- <float name="dist-scaling">5</float> -->
+				<!-- <float name="team-dmg">0</float> -->
+				<!-- <array name="effects"> -->
+
+				<!-- </array> -->
+			<!-- </dict> -->
+			
+			<dict>
+				<string name="class">Nova</string>
+				<int name="projectiles">3</int>
+				<string name="projectile">actors/bosses/wraith/wraith_staff_area_mage_nova.unit</string>
+			</dict>
+			
+			<dict>
+				<string name="class">SpawnUnit</string>
+				<string name="unit">actors/bosses/wraith/wraith_staff_area_slow.unit</string>
+				<bool name="safe-spawn">false</bool>
+				<int name="spawn-dist">0</int>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="shared">
+			<light pos="0 -1">
+				<sprite texture="system/light_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="75" />
+				</sizes>
+				<colors>
+					<color value="0 255 0 0" />
+				</colors>
+			</light>
+
+			<light pos="0 0" delay="900">
+				<sprite texture="system/light_concentrated_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="100" />
+				<overbright value="10" />
+				<looping value="false" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="0" />
+					<size value="75" />
+				</sizes>
+ 				<colors>
+					<color value="0 0 0 0" />
+					<color value="0 255 0 0" />
+					<color value="0 0 0 0" />
+				</colors> 
+			</light>
+		</scene>
+	
+		<scene name="visible">
+			<scene src="shared" />
+			<sprite origin="32 32" looping="false" texture="./wraith_staff_area.png" material="system/default.mats:bright">
+				<frame time="800">0 0 0 0</frame>
+				<frame time="50">64 64 64 64</frame>
+				<frame time="50">128 64 64 64</frame>
+				<frame time="50">192 64 64 64</frame>				
+				<frame time="50">0 64 64 64</frame>
+			</sprite>
+		 
+			<sprite origin="32 34" looping="false" texture="./wraith_staff_area.png" material="system/default.mats:glow">
+				<frame time="800">0 0 0 0</frame>
+				<frame time="50">64 64 64 64</frame>
+				<frame time="50">128 64 64 64</frame>
+				<frame time="50">192 64 64 64</frame>				
+				<frame time="50">0 64 64 64</frame>
+			</sprite>
+		  
+			<effect src="actors/bosses/wraith/area_indicator_64.effect" />
+		</scene>
+	</scenes>
+</unit>

@@ -1,0 +1,82 @@
+<dict>
+	<vec3 name="offset">0 0 0</vec3>
+	<vec3 name="spread">15 15 0</vec3>
+	<bool name="gore">true</bool>
+
+	<array name="gib-decal">
+	
+		
+	</array>
+	
+	
+	<array name="death-gib">
+		<float>0</float>
+		<dict>
+			<int name="min">10</int>
+			<int name="max">20</int>
+			<float name="force">0.7</float>
+			<string name="unit">effects/gibs/gibs_doodads.unit</string>
+			<string name="anim">particle_stone</string>
+			<bool name="stay">false</bool>
+		</dict>
+		<dict>
+			<int name="min">8</int>
+			<int name="max">12</int>
+			<float name="force">0.6</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">stalactite</string>
+			<bool name="stay">false</bool>
+			<string name="decal">gib-decal</string>
+		</dict>
+		<dict>
+			<int name="min">8</int>
+			<int name="max">18</int>
+			<float name="force">0.7</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">stalactite_small</string>
+			<bool name="stay">false</bool>
+			<string name="decal">gib-decal</string>
+		</dict>
+	</array>
+	
+
+	
+	<array name="death-effect">
+		<float>0</float><!-- 
+		<dict>
+			<int name="chance">1</int>
+			<string name="effect" pos="0 100">effects/animations/dust.effect</string>
+		</dict> -->
+	</array>
+	<array name="hit-gib">
+		<float>0</float>
+		<dict>
+			<int name="min">1</int>
+			<int name="max">5</int>
+			<float name="force">0.7</float>
+			<string name="unit">effects/gibs/gibs_doodads.unit</string>
+			<string name="anim">particle_stone</string>
+			<bool name="stay">false</bool>
+		</dict>
+		<dict>
+			<int name="min">0</int>
+			<int name="max">3</int>
+			<float name="force">0.7</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">stalactite_small</string>
+			<bool name="stay">false</bool>
+			<string name="decal">gib-decal</string>
+		</dict>
+		<dict>
+			<int name="min">0</int>
+			<int name="max">1</int>
+			<float name="force">0.6</float>
+			<string name="unit">effects/gibs/gibs_actors.unit</string>
+			<string name="anim">stalactite</string>
+			<bool name="stay">false</bool>
+			<string name="decal">gib-decal</string>
+		</dict>
+	</array>
+
+
+</dict>

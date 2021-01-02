@@ -1,0 +1,995 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">MainMenu</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec2>64 112</vec2>
+				<int>1</int>
+				<dict>
+					<bool name="active">t</bool>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<vec2 name="size">128 64</vec2>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/generic/lamp_torch.unit"><vec2>40 96</vec2><int>63</int><vec2>280 96</vec2><int>64</int></array>
+		<array name="doodads/special/color_pyramid_slum_16.unit">
+			<vec2>280 56</vec2>
+			<int>95</int>
+			<vec2>296 120</vec2>
+			<int>96</int>
+			<vec2>280 168</vec2>
+			<int>97</int>
+			<vec2>296 168</vec2>
+			<int>98</int>
+			<vec2>8 136</vec2>
+			<int>99</int>
+			<vec2>280 184</vec2>
+			<int>100</int>
+			<vec2>56 24</vec2>
+			<int>101</int>
+			<vec2>56 40</vec2>
+			<int>102</int>
+			<vec2>88 216</vec2>
+			<int>103</int>
+			<vec2>200 216</vec2>
+			<int>104</int>
+			<vec2>184 216</vec2>
+			<int>105</int>
+			<vec2>56 136</vec2>
+			<int>106</int>
+			<vec2>216 216</vec2>
+			<int>107</int>
+			<vec2>248 216</vec2>
+			<int>108</int>
+			<vec2>104 216</vec2>
+			<int>109</int>
+			<vec2>296 152</vec2>
+			<int>110</int>
+			<vec2>168 216</vec2>
+			<int>111</int>
+			<vec2>136 216</vec2>
+			<int>112</int>
+			<vec2>40 56</vec2>
+			<int>113</int>
+			<vec2>264 -8</vec2>
+			<int>114</int>
+			<vec2>56 168</vec2>
+			<int>115</int>
+			<vec2>56 200</vec2>
+			<int>78</int>
+			<vec2>56 216</vec2>
+			<int>90</int>
+			<vec2>120 216</vec2>
+			<int>91</int>
+			<vec2>56 152</vec2>
+			<int>92</int>
+			<vec2>8 56</vec2>
+			<int>93</int>
+			<vec2>56 56</vec2>
+			<int>79</int>
+			<vec2>40 136</vec2>
+			<int>71</int>
+			<vec2>24 136</vec2>
+			<int>72</int>
+			<vec2>272 8</vec2>
+			<int>73</int>
+			<vec2>24 56</vec2>
+			<int>74</int>
+			<vec2>296 136</vec2>
+			<int>75</int>
+			<vec2>296 184</vec2>
+			<int>76</int>
+			<vec2>152 216</vec2>
+			<int>77</int>
+			<vec2>296 88</vec2>
+			<int>94</int>
+			<vec2>56 184</vec2>
+			<int>80</int>
+			<vec2>296 72</vec2>
+			<int>81</int>
+			<vec2>232 216</vec2>
+			<int>82</int>
+			<vec2>72 8</vec2>
+			<int>83</int>
+			<vec2>296 104</vec2>
+			<int>84</int>
+			<vec2>264 216</vec2>
+			<int>85</int>
+			<vec2>72 216</vec2>
+			<int>86</int>
+			<vec2>56 8</vec2>
+			<int>87</int>
+			<vec2>296 56</vec2>
+			<int>88</int>
+			<vec2>264 -24</vec2>
+			<int>89</int>
+		</array>
+		<array name="doodads/special/color_pyramid_slum_32.unit">
+			<vec2>280 40</vec2>
+			<int>69</int>
+			<vec2>280 216</vec2>
+			<int>70</int>
+			<vec2>280 -8</vec2>
+			<int>66</int>
+			<vec2>56 -8</vec2>
+			<int>67</int>
+			<vec2>280 8</vec2>
+			<int>68</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/crn_nw.unit"><vec2>0 144</vec2><int>267</int><vec2>64 32</vec2><int>268</int><vec2>272 176</vec2><int>269</int></array>
+		<array name="doodads/walls/pyramid_slum/_deco_floor_16.unit">
+			<vec2>168 104</vec2>
+			<int>27</int>
+			<vec2>136 120</vec2>
+			<int>26</int>
+			<vec2>168 136</vec2>
+			<int>25</int>
+			<vec2>104 56</vec2>
+			<int>24</int>
+			<vec2>104 88</vec2>
+			<int>23</int>
+			<vec2>64 120</vec2>
+			<int>22</int>
+			<vec2>200 56</vec2>
+			<int>21</int>
+			<vec2>232 88</vec2>
+			<int>20</int>
+			<vec2>232 72</vec2>
+			<int>19</int>
+			<vec2>104 168</vec2>
+			<int>18</int>
+			<vec2>136 168</vec2>
+			<int>17</int>
+			<vec2>168 168</vec2>
+			<int>16</int>
+			<vec2>200 168</vec2>
+			<int>15</int>
+			<vec2>168 88</vec2>
+			<int>14</int>
+			<vec2>272 136</vec2>
+			<int>13</int>
+			<vec2>16 104</vec2>
+			<int>12</int>
+			<vec2>272 104</vec2>
+			<int>11</int>
+			<vec2>200 184</vec2>
+			<int>9</int>
+			<vec2>232 184</vec2>
+			<int>8</int>
+			<vec2>32 104</vec2>
+			<int>7</int>
+			<vec2>168 56</vec2>
+			<int>6</int>
+			<vec2>136 56</vec2>
+			<int>31</int>
+			<vec2>200 72</vec2>
+			<int>5</int>
+			<vec2>232 136</vec2>
+			<int>4</int>
+			<vec2>136 136</vec2>
+			<int>3</int>
+			<vec2>200 88</vec2>
+			<int>2</int>
+			<vec2>232 120</vec2>
+			<int>40</int>
+			<vec2>200 120</vec2>
+			<int>29</int>
+			<vec2>232 104</vec2>
+			<int>56</int>
+			<vec2>168 120</vec2>
+			<int>55</int>
+			<vec2>136 104</vec2>
+			<int>54</int>
+			<vec2>104 72</vec2>
+			<int>53</int>
+			<vec2>168 184</vec2>
+			<int>52</int>
+			<vec2>48 104</vec2>
+			<int>51</int>
+			<vec2>272 120</vec2>
+			<int>50</int>
+			<vec2>168 72</vec2>
+			<int>49</int>
+			<vec2>0 104</vec2>
+			<int>48</int>
+			<vec2>136 72</vec2>
+			<int>47</int>
+			<vec2>200 152</vec2>
+			<int>46</int>
+			<vec2>232 168</vec2>
+			<int>45</int>
+			<vec2>64 104</vec2>
+			<int>44</int>
+			<vec2>232 56</vec2>
+			<int>43</int>
+			<vec2>104 184</vec2>
+			<int>42</int>
+			<vec2>104 136</vec2>
+			<int>41</int>
+			<vec2>200 104</vec2>
+			<int>30</int>
+			<vec2>232 152</vec2>
+			<int>39</int>
+			<vec2>168 152</vec2>
+			<int>38</int>
+			<vec2>136 152</vec2>
+			<int>37</int>
+			<vec2>104 152</vec2>
+			<int>36</int>
+			<vec2>136 184</vec2>
+			<int>35</int>
+			<vec2>200 136</vec2>
+			<int>28</int>
+			<vec2>104 120</vec2>
+			<int>34</int>
+			<vec2>104 104</vec2>
+			<int>33</int>
+			<vec2>136 88</vec2>
+			<int>32</int>
+		</array>
+		<array name="doodads/generic/trap_indie_repeat_pyramid_slum_32.unit">
+			<vec2>176 32</vec2>
+			<int>58</int>
+			<vec2>80 32</vec2>
+			<int>57</int>
+			<vec2>112 32</vec2>
+			<int>59</int>
+			<vec2>144 32</vec2>
+			<int>60</int>
+			<vec2>240 32</vec2>
+			<int>61</int>
+			<vec2>208 32</vec2>
+			<int>62</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/h_16.unit"><vec2>16 144</vec2><int>127</int><vec2>16 80</vec2><int>126</int></array>
+		<array name="doodads/walls/pyramid_slum/crn_sw.unit"><vec2>64 224</vec2><int>270</int><vec2>0 80</vec2><int>271</int><vec2>272 80</vec2><int>272</int></array>
+		<array name="doodads/walls/pyramid_slum/v.unit">
+			<vec2>64 176</vec2>
+			<int>201</int>
+			<vec2>64 144</vec2>
+			<int>202</int>
+			<vec2>272 32</vec2>
+			<int>203</int>
+			<vec2>288 128</vec2>
+			<int>200</int>
+			<vec2>288 80</vec2>
+			<int>198</int>
+			<vec2>272 176</vec2>
+			<int>199</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/crn_ne.unit"><vec2>64 144</vec2><int>276</int><vec2>288 80</vec2><int>274</int><vec2>272 32</vec2><int>275</int></array>
+		<array name="doodads/walls/pyramid_slum/crn_se.unit"><vec2>272 224</vec2><int>118</int><vec2>64 80</vec2><int>119</int><vec2>288 176</vec2><int>120</int></array>
+		<array name="doodads/walls/pyramid_slum/v_16.unit"><vec2>288 112</vec2><int>124</int><vec2>64 32</vec2><int>123</int><vec2>64 48</vec2><int>125</int></array>
+		<array name="doodads/walls/pyramid_slum/h.unit">
+			<vec2>112 224</vec2>
+			<int>262</int>
+			<vec2>32 80</vec2>
+			<int>261</int>
+			<vec2>32 144</vec2>
+			<int>260</int>
+			<vec2>176 224</vec2>
+			<int>259</int>
+			<vec2>208 224</vec2>
+			<int>263</int>
+			<vec2>240 224</vec2>
+			<int>264</int>
+			<vec2>144 224</vec2>
+			<int>265</int>
+			<vec2>80 224</vec2>
+			<int>266</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_deco_floor_16_color.unit">
+			<vec2>88 184</vec2>
+			<int>244</int>
+			<vec2>88 168</vec2>
+			<int>243</int>
+			<vec2>88 152</vec2>
+			<int>242</int>
+			<vec2>88 136</vec2>
+			<int>241</int>
+			<vec2>216 72</vec2>
+			<int>240</int>
+			<vec2>216 120</vec2>
+			<int>239</int>
+			<vec2>216 152</vec2>
+			<int>238</int>
+			<vec2>216 168</vec2>
+			<int>237</int>
+			<vec2>216 56</vec2>
+			<int>236</int>
+			<vec2>248 88</vec2>
+			<int>235</int>
+			<vec2>216 184</vec2>
+			<int>234</int>
+			<vec2>216 88</vec2>
+			<int>233</int>
+			<vec2>216 136</vec2>
+			<int>232</int>
+			<vec2>184 184</vec2>
+			<int>231</int>
+			<vec2>120 136</vec2>
+			<int>230</int>
+			<vec2>248 184</vec2>
+			<int>228</int>
+			<vec2>248 56</vec2>
+			<int>227</int>
+			<vec2>184 104</vec2>
+			<int>226</int>
+			<vec2>184 120</vec2>
+			<int>225</int>
+			<vec2>184 88</vec2>
+			<int>252</int>
+			<vec2>88 88</vec2>
+			<int>223</int>
+			<vec2>184 152</vec2>
+			<int>222</int>
+			<vec2>216 104</vec2>
+			<int>221</int>
+			<vec2>248 120</vec2>
+			<int>220</int>
+			<vec2>248 168</vec2>
+			<int>219</int>
+			<vec2>152 152</vec2>
+			<int>218</int>
+			<vec2>248 152</vec2>
+			<int>217</int>
+			<vec2>184 56</vec2>
+			<int>216</int>
+			<vec2>152 88</vec2>
+			<int>215</int>
+			<vec2>152 104</vec2>
+			<int>214</int>
+			<vec2>248 104</vec2>
+			<int>213</int>
+			<vec2>248 72</vec2>
+			<int>212</int>
+			<vec2>152 184</vec2>
+			<int>211</int>
+			<vec2>88 120</vec2>
+			<int>210</int>
+			<vec2>88 56</vec2>
+			<int>209</int>
+			<vec2>152 72</vec2>
+			<int>208</int>
+			<vec2>88 72</vec2>
+			<int>207</int>
+			<vec2>152 120</vec2>
+			<int>257</int>
+			<vec2>184 168</vec2>
+			<int>205</int>
+			<vec2>88 104</vec2>
+			<int>204</int>
+			<vec2>120 152</vec2>
+			<int>256</int>
+			<vec2>152 168</vec2>
+			<int>255</int>
+			<vec2>152 56</vec2>
+			<int>254</int>
+			<vec2>120 72</vec2>
+			<int>253</int>
+			<vec2>184 136</vec2>
+			<int>224</int>
+			<vec2>184 72</vec2>
+			<int>251</int>
+			<vec2>152 136</vec2>
+			<int>229</int>
+			<vec2>120 184</vec2>
+			<int>250</int>
+			<vec2>120 168</vec2>
+			<int>249</int>
+			<vec2>120 120</vec2>
+			<int>248</int>
+			<vec2>120 104</vec2>
+			<int>247</int>
+			<vec2>120 88</vec2>
+			<int>246</int>
+			<vec2>120 56</vec2>
+			<int>245</int>
+			<vec2>248 136</vec2>
+			<int>206</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_deco_h_pillar_small.unit"><vec2>64 96</vec2><int>122</int><vec2>16 96</vec2><int>121</int></array>
+		<array name="doodads/walls/pyramid_slum/_deco_floor_8_color.unit">
+			<vec2>264 48</vec2>
+			<int>166</int>
+			<vec2>64 96</vec2>
+			<int>167</int>
+			<vec2>56 96</vec2>
+			<int>168</int>
+			<vec2>80 136</vec2>
+			<int>169</int>
+			<vec2>256 48</vec2>
+			<int>170</int>
+			<vec2>248 48</vec2>
+			<int>171</int>
+			<vec2>240 48</vec2>
+			<int>172</int>
+			<vec2>104 48</vec2>
+			<int>173</int>
+			<vec2>24 96</vec2>
+			<int>174</int>
+			<vec2>88 48</vec2>
+			<int>176</int>
+			<vec2>80 184</vec2>
+			<int>177</int>
+			<vec2>48 96</vec2>
+			<int>178</int>
+			<vec2>16 96</vec2>
+			<int>179</int>
+			<vec2>32 96</vec2>
+			<int>180</int>
+			<vec2>72 96</vec2>
+			<int>181</int>
+			<vec2>80 64</vec2>
+			<int>182</int>
+			<vec2>120 48</vec2>
+			<int>183</int>
+			<vec2>80 104</vec2>
+			<int>184</int>
+			<vec2>128 48</vec2>
+			<int>185</int>
+			<vec2>136 48</vec2>
+			<int>186</int>
+			<vec2>144 48</vec2>
+			<int>187</int>
+			<vec2>152 48</vec2>
+			<int>188</int>
+			<vec2>160 48</vec2>
+			<int>189</int>
+			<vec2>168 48</vec2>
+			<int>190</int>
+			<vec2>176 48</vec2>
+			<int>191</int>
+			<vec2>112 48</vec2>
+			<int>192</int>
+			<vec2>184 48</vec2>
+			<int>193</int>
+			<vec2>192 48</vec2>
+			<int>194</int>
+			<vec2>200 48</vec2>
+			<int>195</int>
+			<vec2>208 48</vec2>
+			<int>196</int>
+			<vec2>216 48</vec2>
+			<int>197</int>
+			<vec2>0 96</vec2>
+			<int>155</int>
+			<vec2>80 80</vec2>
+			<int>154</int>
+			<vec2>8 96</vec2>
+			<int>153</int>
+			<vec2>264 168</vec2>
+			<int>152</int>
+			<vec2>96 48</vec2>
+			<int>175</int>
+			<vec2>264 176</vec2>
+			<int>150</int>
+			<vec2>264 184</vec2>
+			<int>151</int>
+			<vec2>264 80</vec2>
+			<int>149</int>
+			<vec2>80 128</vec2>
+			<int>159</int>
+			<vec2>80 48</vec2>
+			<int>160</int>
+			<vec2>80 168</vec2>
+			<int>161</int>
+			<vec2>264 96</vec2>
+			<int>162</int>
+			<vec2>280 96</vec2>
+			<int>148</int>
+			<vec2>80 160</vec2>
+			<int>147</int>
+			<vec2>80 144</vec2>
+			<int>146</int>
+			<vec2>80 112</vec2>
+			<int>157</int>
+			<vec2>80 120</vec2>
+			<int>158</int>
+			<vec2>264 104</vec2>
+			<int>156</int>
+			<vec2>264 72</vec2>
+			<int>163</int>
+			<vec2>264 64</vec2>
+			<int>164</int>
+			<vec2>264 56</vec2>
+			<int>165</int>
+			<vec2>80 88</vec2>
+			<int>145</int>
+			<vec2>80 96</vec2>
+			<int>144</int>
+			<vec2>232 48</vec2>
+			<int>143</int>
+			<vec2>40 96</vec2>
+			<int>142</int>
+			<vec2>264 152</vec2>
+			<int>141</int>
+			<vec2>264 136</vec2>
+			<int>139</int>
+			<vec2>264 128</vec2>
+			<int>138</int>
+			<vec2>264 120</vec2>
+			<int>137</int>
+			<vec2>264 112</vec2>
+			<int>136</int>
+			<vec2>272 96</vec2>
+			<int>135</int>
+			<vec2>264 160</vec2>
+			<int>134</int>
+			<vec2>80 152</vec2>
+			<int>133</int>
+			<vec2>264 88</vec2>
+			<int>132</int>
+			<vec2>80 176</vec2>
+			<int>131</int>
+			<vec2>80 56</vec2>
+			<int>130</int>
+			<vec2>224 48</vec2>
+			<int>129</int>
+			<vec2>80 72</vec2>
+			<int>128</int>
+			<vec2>264 144</vec2>
+			<int>140</int>
+		</array>
+		<array name="doodads/walls/pyramid_slum/_deco_h_crack_1.unit"><vec2>8 96</vec2><int>273</int></array>
+		<array name="doodads/walls/pyramid_slum/_deco_h_crack_2.unit"><vec2>56 96</vec2><int>258</int></array>
+		<array name="doodads/terrain/desert_patch_crn_ne.unit">
+			<array>
+				<vec2>272 48</vec2>
+				<int>65</int>
+				<dict>
+					<int name="layer">-1</int>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/terrain/desert_patch_small.unit"><vec2>56 96</vec2><int>117</int><vec2>288 120</vec2><int>116</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>TimedScriptLink</string>
+			<int>277</int>
+			<vec3>352 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">150</int>
+				<array name="LinkScripts"><int>300</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>278</int>
+			<vec3>0 -136 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1200</int>
+			</dict>
+			<array><int>279</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>279</int>
+			<vec3>0 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">150</int>
+				<array name="LinkScripts"><int>287</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>280</int>
+			<vec3>128 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>60</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>281</int>
+			<vec3>64 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">1000</int>
+				<array name="TimerTriggers"><int>308</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>282</int>
+			<vec3>288 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">150</int>
+				<array name="LinkScripts"><int>305</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>283</int>
+			<vec3>64 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">150</int>
+				<array name="LinkScripts"><int>288</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>284</int>
+			<vec3>128 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">150</int>
+				<array name="LinkScripts"><int>296</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>285</int>
+			<vec3>224 -72 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="TimeMax">150</int>
+				<array name="LinkScripts"><int>297</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>286</int>
+			<vec3>64 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>59</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>287</int>
+			<vec3>96 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>288</int>
+			<vec3>128 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnPrefab</string>
+			<int>289</int>
+			<vec3>280 136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>chest</string>
+			<dict>
+				<string name="Prefab">prefabs/pickups/chest_slum.pfb</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>290</int>
+			<vec3>288 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>62</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>291</int>
+			<vec3>352 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">1000</int>
+				<array name="TimerTriggers"><int>304</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>292</int>
+			<vec3>352 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>61</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>293</int>
+			<vec3>224 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">1000</int>
+				<array name="TimerTriggers"><int>306</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>294</int>
+			<vec3>224 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>58</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>295</int>
+			<vec3>288 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">400</int>
+				<array name="TimerTriggers"><int>301</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>296</int>
+			<vec3>160 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>297</int>
+			<vec3>192 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>298</int>
+			<vec3>-96 -304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array>
+				<int>307</int>
+				<int>0</int>
+				<int>302</int>
+				<int>0</int>
+				<int>286</int>
+				<int>200</int>
+				<int>280</int>
+				<int>0</int>
+				<int>294</int>
+				<int>200</int>
+				<int>290</int>
+				<int>0</int>
+				<int>292</int>
+				<int>200</int>
+			</array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>299</int>
+			<vec3>128 -136 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1200</int>
+			</dict>
+			<array><int>284</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>300</int>
+			<vec3>256 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>301</int>
+			<vec3>288 -136 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1200</int>
+			</dict>
+			<array><int>282</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>302</int>
+			<vec3>0 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>57</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>303</int>
+			<vec3>0 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">400</int>
+				<array name="TimerTriggers"><int>278</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>304</int>
+			<vec3>352 -136 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1200</int>
+			</dict>
+			<array><int>277</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>305</int>
+			<vec3>224 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">doodads/generic/trap_indie_ball.unit</string>
+				<int name="Direction">90</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>306</int>
+			<vec3>224 -136 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1200</int>
+			</dict>
+			<array><int>285</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>307</int>
+			<vec3>-96 -232 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>299</int><int>308</int><int>278</int><int>306</int><int>301</int><int>304</int></array>
+			</dict>
+			<array>
+				<int>309</int>
+				<int>0</int>
+				<int>303</int>
+				<int>0</int>
+				<int>281</int>
+				<int>0</int>
+				<int>293</int>
+				<int>0</int>
+				<int>295</int>
+				<int>0</int>
+				<int>291</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>308</int>
+			<vec3>64 -136 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">1200</int>
+			</dict>
+			<array><int>283</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>309</int>
+			<vec3>128 -200 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Value">400</int>
+				<array name="TimerTriggers"><int>299</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnitChance</string>
+			<int>310</int>
+			<vec3>-8 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>DestroyPropsChance</string>
+			<dict>
+				<float name="ChanceToDestroy">0.35</float>
+				<array name="Units"><int>258</int><int>117</int><int>273</int><int>65</int></array>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

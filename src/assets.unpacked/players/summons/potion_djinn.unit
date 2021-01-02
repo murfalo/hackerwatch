@@ -1,0 +1,236 @@
+<unit netsync="position" save="false" slot="actor">
+	<behavior class="PlayerOwnedDjinn">
+		<string name="team">player</string>
+		<int name="ttl">28000</int>
+		
+		<bool name="targetable">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="floating-hurt">false</bool>
+		
+		<float name="evade-physical">1</float>
+		<float name="evade-magical">1</float>
+		<int name="hp">9999</int>
+		<int name="armor">999</int>
+		<int name="resistance">999</int>
+
+		<int name="unit-height">24</int>
+
+		<string name="death-snd">event:/enemy/djinn/death</string>
+		<string name="gore">effects/gibs/gib_potion_djinn.sval</string>
+
+		<int name="aggro-range">999</int>
+		<bool name="must-see-target">true</bool>
+		<bool name="no-buffs">true</bool>
+		<float name="wind-scale">0.5</float>
+
+		<dict name="movement">
+			<string name="class">DjinnFollowerMovement</string>
+			<string name="anim-idle">idle 8</string>
+			<string name="anim-walk">idle 8</string>
+			
+			<string name="blink-fx">players/summons/potion_djinn_teleport.effect</string>
+
+			<bool name="flying">false</bool>
+			<float name="speed">4</float>
+			<int name="min-dist">20</int>
+			<int name="dist">80</int>
+			<float name="roaming">1</float>
+			<int name="roaming-distance">10</int>
+			<int name="blink-back-distance">170</int>
+			<int name="max-blink-dis">80</int>
+			<int name="min-blink-dis">20</int>
+			<bool name="strafing">true</bool>
+			<int name="blink-cooldown">1500</int>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorSkill</string>
+				<string name="anim">attack 8</string>
+				
+				<bool name="must-see">true</bool>
+				<int name="cooldown">150</int>	
+				<int name="castpoint">0</int>
+				<int name="range">120</int>
+				<bool name="good-aim">true</bool>
+				
+				<string name="offset">shoot-pos</string>
+				<dict name="action">
+					<string name="class">Hitscan</string>
+					<int name="penetrating">0</int>
+					<float name="team-dmg">0</float>
+					<int name="rays">1</int>
+					<int name="spread">0</int>
+					<bool name="miss-fx">false</bool>
+					<string name="shoot-fx">players/summons/impact_beam.effect</string>
+					
+					<array name="effects">
+						<dict name="effect">
+							<string name="class">Explode</string>
+							<string name="fx">players/summons/impact_fire.effect</string>
+							<bool name="clone-owner-params">true</bool>
+							
+							<int name="radius">24</int>
+							<float name="dist-scaling">1000</float>
+							<float name="team-dmg">0</float>
+							
+							<dict name="effect">
+								<string name="class">Damage</string>
+								<int name="magical">50</int>
+							</dict>
+						</dict>
+						<dict>
+							<string name="class">PlaySound</string>
+							<string name="sound">event:/player/nimbus/explosion</string>
+						</dict>
+					</array>
+
+					<dict name="range">
+						<int name="min">120</int>
+						<int name="max">120</int>
+					</dict>
+				</dict>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="size">48</float>
+			<float name="length">120</float>
+			<float name="angle">0</float>
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<minimap_sprite layer="100" origin="3 3" texture="gui/minimap.png" frame="240 148 6 6"/>
+			<collision static="false">
+				<circle offset="0 0" sensor="false" aim-through="true" shoot-through="true" charge-through="true" radius="4" />
+			</collision>
+			
+			<effect src="players/summons/potion_djinn_smoke.effect" />
+			
+			<light pos="0 -3">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="4" />
+				<looping value="true" />
+				<overlay value="true" />
+				<sizes>
+					<size value="100" />
+				</sizes>
+				<colors>
+					<color value="0 160 200 10" />
+				</colors>
+			</light>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">0 0 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">31 0 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">62 0 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">93 0 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">124 0 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">155 0 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">186 0 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="15 28"  looping="true" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="50">217 0 31 31</frame>
+			</sprite>
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="7 -14"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">0 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-1">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="5 -10"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">31 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-2">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -8"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">62 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-3">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-5 -11"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">93 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-4">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-7 -13"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">124 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-5">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="-5 -16"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">155 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-6">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="0 -20"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">186 31 31 31</frame>
+			</sprite>
+		</scene>
+		<scene name="attack-7">
+			<scene src="shared" />
+			<locator name="shoot-pos" pos="5 -16"/>
+			<sprite origin="15 28"  looping="false" texture="./potion_djinn.tif" material="system/default.mats:actor-genie">
+				<frame time="250">217 31 31 31</frame>
+			</sprite>
+		</scene>		
+	</scenes>
+</unit>

@@ -1,0 +1,66 @@
+<unit>
+	<behavior class="BombBehavior">
+		%//<string name="spawn-sound">event:/misc/bomb-fall</string>
+		<string name="explode-sound">event:/player/ranger/bomb_explode</string>
+		
+		<int name="delay-random">0</int>
+		<int name="delay">1125</int>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Explode</string>
+				<string name="fx">doodads/generic/trap_bomb_explosion_64_red.effect</string>
+				
+				<int name="radius">30</int>
+				<float name="dist-scaling">5</float>
+				<float name="team-dmg">1</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">35</int>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="radius">32</float>
+		</dict>		
+		
+	</behavior>
+
+	<scenes start="visible">
+		<scene name="visible">
+			<sprite looping="false" origin="16 20" texture="./trap_bomb_exploding.png"  material="system/default.mats:default">
+				<frame time="125">0 0 32 32</frame>
+				<frame time="125">32 0 32 32</frame>
+				<frame time="125">64 0 32 32</frame>
+				<frame time="125">96 0 32 32</frame>
+				<frame time="125">128 0 32 32</frame>
+				<frame time="125">160 0 32 32</frame>
+				<frame time="75">192 0 32 32</frame>
+				<frame time="75">224 0 32 32</frame>
+				<frame time="75">256 0 32 32</frame>
+				<frame time="75">288 0 32 32</frame>
+				<frame time="75">320 0 32 32</frame>
+			</sprite>
+			<shadow>
+				<sprite layer="-2" origin="5 7" texture="doodads/special/shadows.png">
+					<frame>16 12 11 11</frame>
+				</sprite>
+			</shadow>
+			<effect src="doodads/generic/trap_indicator.effect" />					
+		</scene>
+		<scene name="falling">
+			<sprite origin="3 10" texture="./trap_bomb.png" material="system/default.mats:default">
+				<frame time="200">0 0 10 16</frame>
+				<frame time="200">10 0 10 16</frame>
+			</sprite>		
+			<shadow>
+				<sprite layer="-2" origin="5 7" texture="doodads/special/shadows.png">
+					<frame>16 12 11 11</frame>
+				</sprite>
+			</shadow>			
+		</scene>
+	</scenes>
+</unit>

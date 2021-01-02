@@ -1,0 +1,67 @@
+<unit layer="0">
+	<behavior class="TripMine">
+		<int name="hp">1</int>
+		
+		<int name="ttl">10000</int>
+
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+		<bool name="must-see-target">false</bool>
+		<string name="anim-visible">visible</string>
+		<string name="anim-invisible">invisible</string>
+		
+		<!-- <string name="appear-snd">event:/enemy/glyph/visible</string> -->
+		
+		<int name="dist-visible">250</int>
+		<int name="dist-trigger">16</int>
+		
+		<dict name="movement">
+			<string name="class">EmptyMovement</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">actors/bosses/warden/bear_trap_bomb.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</behavior>
+	
+	<scenes default="spawn">
+		<scene name="shared">
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" radius="6" sensor="true" />
+			</collision>		
+		</scene>
+		
+		<scene name="invisible">
+			<scene src="shared" />
+			<sprite origin="7 7" layer="0" texture="./bear_trap.png" material="system/default.mats:default">
+				<frame>0 0 15 15</frame>
+			</sprite>		
+		</scene>
+
+		<scene name="visible">
+			<scene src="shared" />
+			<sprite origin="7 7" layer="0" texture="./bear_trap.png" material="system/default.mats:default">
+				<frame>15 0 15 15</frame>
+			</sprite>						
+		</scene>
+		
+		<scene name="spawn">
+			<scene src="shared" />
+			<sprite origin="7 7" layer="0" texture="./bear_trap.png" material="system/default.mats:default">
+				<frame time="50">30 0 15 15</frame>
+				<frame time="50">15 0 15 15</frame>
+				<frame time="50">0 0 15 15</frame>
+			</sprite>	
+		</scene>
+	</scenes>
+</unit>

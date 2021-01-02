@@ -1,0 +1,29 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">priest</string>
+	<string name="name">.skills.priest.consecrated-ground</string>
+	<string name="description">.skills.priest.consecrated-ground.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 96 24 24</vec4>
+	</array>
+
+	<int name="cost">17</int>
+
+	<dict name="skill">
+		<string name="class">Skills::DropUnit</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/priest/drain_area</string>
+
+		<int name="cooldown">500</int>
+		<int name="castpoint">0</int>
+		<bool name="blocking">false</bool>
+		<float name="speed-mul">1</float>
+
+		<int name="mana-cost">75</int>
+
+		<int name="max-count">4</int>
+		<string name="unit">players/priest/mercenary/consecrated_ground_merc.unit</string>
+	</dict>
+</dict>

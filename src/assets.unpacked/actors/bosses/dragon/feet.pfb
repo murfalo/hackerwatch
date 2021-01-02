@@ -1,0 +1,696 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/lighting/outlook.env</string>
+	</dict>
+	<dict name="units">
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>-40 -524</vec2>
+				<int>1</int>
+				<dict>
+					<float name="radius">76</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>0 -562</vec2>
+				<int>2</int>
+				<dict>
+					<float name="radius">120</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>32 -516</vec2>
+				<int>3</int>
+				<dict>
+					<float name="radius">76</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="actors/bosses/dragon/foot_r.unit"><vec2>0 0</vec2><int>4</int></array>
+		<array name="actors/bosses/dragon/foot_l.unit"><vec2>0 0</vec2><int>5</int></array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>SetUnitScene</string>
+			<int>6</int>
+			<vec3>192 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>5</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>7</int>
+			<vec3>272 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Wing Left</string>
+			<dict>
+				<string name="EventName">footwingl</string>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>8</int>
+			<vec3>-41 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>110</string>
+			<dict>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Direction">110</int>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>9</int>
+			<vec3>30 -1 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bomb</string>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/foot_bomb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>10</int>
+			<vec3>-32 -12 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bomb</string>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/foot_bomb.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>11</int>
+			<vec3>-208 144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="State">on</string>
+				<array name="Units"><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>12</int>
+			<vec3>-288 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Wing Right</string>
+			<dict>
+				<string name="EventName">footwingr</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>13</int>
+			<vec3>-208 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Right Stomp</string>
+			<array>
+				<int>25</int>
+				<int>1000</int>
+				<int>11</int>
+				<int>500</int>
+				<int>12</int>
+				<int>0</int>
+				<int>10</int>
+				<int>100</int>
+				<int>52</int>
+				<int>100</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>14</int>
+			<vec3>192 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Left Stomp</string>
+			<array>
+				<int>24</int>
+				<int>1000</int>
+				<int>7</int>
+				<int>0</int>
+				<int>6</int>
+				<int>500</int>
+				<int>9</int>
+				<int>100</int>
+				<int>51</int>
+				<int>100</int>
+			</array>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>15</int>
+			<vec3>160 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>5</int><int>4</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>16</int>
+			<vec3>80 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>7</int>
+					<int>12</int>
+					<int>20</int>
+					<int>22</int>
+					<int>21</int>
+					<int>23</int>
+					<int>11</int>
+					<int>6</int>
+					<int>30</int>
+					<int>32</int>
+					<int>33</int>
+					<int>29</int>
+					<int>14</int>
+					<int>13</int>
+				</array>
+				<int name="TriggerTimes">0</int>
+			</dict>
+			<array><int>15</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>17</int>
+			<vec3>-26 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>80</string>
+			<dict>
+				<int name="Direction">80</int>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>18</int>
+			<vec3>44 15 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">60</int>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>19</int>
+			<vec3>0 592 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>dead</string>
+			<dict>
+				<string name="EventName">dead</string>
+			</dict>
+			<array><int>16</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>20</int>
+			<vec3>0 -354 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>on</string>
+			<dict>
+				<string name="EventName">on</string>
+			</dict>
+			<array><int>21</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>21</int>
+			<vec3>0 -290 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>d</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>7</int><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>22</int>
+			<vec3>0 526 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>off</string>
+			<dict>
+				<string name="EventName">off</string>
+			</dict>
+			<array><int>23</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>23</int>
+			<vec3>0 462 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>e</string>
+			<dict>
+				<array name="Scripts"><int>7</int><int>12</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>24</int>
+			<vec3>192 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spikes</string>
+			<array><int>37</int><int>0</int><int>49</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>25</int>
+			<vec3>-208 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spikes</string>
+			<array><int>38</int><int>0</int><int>48</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>26</int>
+			<vec3>21 15 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">110</int>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>27</int>
+			<vec3>-22 8 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>70</string>
+			<dict>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Direction">70</int>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>28</int>
+			<vec3>25 17 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Direction">100</int>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>29</int>
+			<vec3>-96 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5s</string>
+			<dict>
+				<int name="Frequency">5000</int>
+			</dict>
+			<array><int>31</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>30</int>
+			<vec3>-64 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1 Random</string>
+			<dict>
+				<array name="ToExecute"><int>14</int><int>13</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>31</int>
+			<vec3>0 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>34</int><int>35</int><int>36</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>32</int>
+			<vec3>0 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Left Right</string>
+			<array><int>14</int><int>0</int><int>13</int><int>1100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>33</int>
+			<vec3>64 112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Right Left</string>
+			<array><int>14</int><int>1100</int><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>34</int>
+			<vec3>-64 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">30</int>
+			</dict>
+			<array><int>30</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>35</int>
+			<vec3>0 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>36</int>
+			<vec3>64 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>33</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>37</int>
+			<vec3>192 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<int name="NumToExecute">3</int>
+				<array name="ToExecute"><int>26</int><int>28</int><int>42</int><int>43</int><int>44</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>38</int>
+			<vec3>-240 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<int name="NumToExecute">3</int>
+				<array name="ToExecute"><int>8</int><int>39</int><int>40</int><int>17</int><int>41</int><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>39</int>
+			<vec3>-38 9 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>120</string>
+			<dict>
+				<int name="Direction">120</int>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>40</int>
+			<vec3>-35 11 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>100</string>
+			<dict>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Direction">100</int>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>41</int>
+			<vec3>-29 11 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>90</string>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>42</int>
+			<vec3>28 20 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">90</int>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>43</int>
+			<vec3>37 21 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Direction">80</int>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>ProjectileShooter</string>
+			<int>44</int>
+			<vec3>40 16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Direction">70</int>
+				<string name="Projectile">actors/bosses/dragon/foot_groundspikes.unit</string>
+				<int name="Spread">8</int>
+			</dict>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>45</int>
+			<vec3>-320 384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG1</string>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">1</int>
+				<array name="OnTrue"><int>53</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>46</int>
+			<vec3>-400 384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG1</string>
+			<array><int>50</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>47</int>
+			<vec3>-320 464 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>CheckNG</string>
+			<array><int>45</int><int>100</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>48</int>
+			<vec3>-176 -80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<int name="NumToExecute">4</int>
+				<array name="ToExecute"><int>8</int><int>39</int><int>40</int><int>17</int><int>41</int><int>27</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>49</int>
+			<vec3>232 -80 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<int name="NumToExecute">4</int>
+				<array name="ToExecute"><int>26</int><int>28</int><int>42</int><int>43</int><int>44</int><int>18</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>50</int>
+			<vec3>-480 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleSpikes</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>38</int><int>48</int><int>37</int><int>49</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>51</int>
+			<vec3>30 -1 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bomb_ng</string>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/foot_bomb_ng.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>52</int>
+			<vec3>-32 -12 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>bomb_ng</string>
+			<dict>
+				<string name="UnitType">actors/bosses/dragon/foot_bomb_ng.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckNewGamePlus</string>
+			<int>53</int>
+			<vec3>-320 304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG3</string>
+			<dict>
+				<int name="Function">4</int>
+				<int name="Value">3</int>
+				<array name="OnTrue"><int>54</int></array>
+				<array name="OnFalse"><int>46</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>54</int>
+			<vec3>-400 304 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NG3</string>
+			<array><int>55</int><int>0</int><int>50</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>55</int>
+			<vec3>-480 304 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ToggleStomp</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>9</int><int>10</int><int>52</int><int>51</int></array>
+			</dict>
+		</array>
+	</array>
+</dict>

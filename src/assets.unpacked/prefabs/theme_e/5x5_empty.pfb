@@ -1,0 +1,206 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/env/anatolia_outside.env</string>
+	</dict>
+	<dict name="units">
+		<array name="items/money_copper_2.unit"><vec2>68 30</vec2><int>11</int><vec2>62 20</vec2><int>12</int><vec2>22 66</vec2><int>13</int></array>
+		<array name="items/money_copper_1.unit">
+			<vec2>60 26</vec2>
+			<int>2</int>
+			<vec2>54 20</vec2>
+			<int>3</int>
+			<vec2>66 12</vec2>
+			<int>4</int>
+			<vec2>80 20</vec2>
+			<int>5</int>
+			<vec2>22 72</vec2>
+			<int>6</int>
+			<vec2>30 68</vec2>
+			<int>7</int>
+			<vec2>12 60</vec2>
+			<int>8</int>
+			<vec2>2 72</vec2>
+			<int>9</int>
+			<vec2>12 78</vec2>
+			<int>10</int>
+		</array>
+		<array name="items/pickups/health_1.unit"><vec2>40 40</vec2><int>14</int></array>
+		<array name="items/money_copper_3.unit"><vec2>72 24</vec2><int>15</int><vec2>14 72</vec2><int>16</int></array>
+		<array name=":Physics_Circle">
+			<array>
+				<vec2>40 40</vec2>
+				<int>1</int>
+				<dict>
+					<float name="radius">32</float>
+					<bool name="jam-through">t</bool>
+					<bool name="sensor">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>DestroyUnits</string>
+			<int>17</int>
+			<vec3>14 -38 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>4</int><int>12</int><int>3</int><int>2</int><int>15</int><int>11</int><int>5</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>18</int>
+			<vec3>-56 62 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>9</int><int>10</int><int>16</int><int>8</int><int>6</int><int>13</int><int>7</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>DestroyUnits</string>
+			<int>19</int>
+			<vec3>-32 6 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>14</int></array>
+			</dict>
+		</array>
+		<array><string>ScriptLink</string><int>20</int><vec3>-136 -84 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>ScriptLink</string><int>21</int><vec3>-130 -36 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>RandomCount</string>
+			<int>22</int>
+			<vec3>-36 -134 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<int name="NumToExecute">2</int>
+				<array name="ToExecute"><int>20</int><int>21</int><int>18</int><int>19</int><int>17</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>23</int>
+			<vec3>144 -16 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>1</int></array>
+			</dict>
+			<array><int>26</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>24</int>
+			<vec3>128 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>23</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>25</int>
+			<vec3>176 -144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="ToExecute"><int>24</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>26</int>
+			<vec3>160 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array>
+				<int>31</int>
+				<int>0</int>
+				<int>27</int>
+				<int>0</int>
+				<int>30</int>
+				<int>0</int>
+				<int>29</int>
+				<int>0</int>
+				<int>28</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>27</int>
+			<vec3>32 80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/tick_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>28</int>
+			<vec3>0 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/tick_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>29</int>
+			<vec3>48 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/tick_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>30</int>
+			<vec3>80 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/tick_1.unit</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnUnit</string>
+			<int>31</int>
+			<vec3>64 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="UnitType">actors/tick_1.unit</string>
+			</dict>
+		</array>
+	</array>
+</dict>

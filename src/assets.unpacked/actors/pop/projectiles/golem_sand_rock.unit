@@ -1,0 +1,50 @@
+<unit netsync="none">
+	<behavior class="TossProjectile">
+		<string name="anim">idle</string>
+		<int name="anim-num">1</int>
+		<string name="hit-snd">event:/enemy/golem_sand/hit_rock</string>
+
+		<float name="speed">3.2</float>
+		<int name="ttl">600</int>
+		
+		<bool name="blockable">false</bool>
+		<float name="arc-height">8</float>
+		<bool name="on-target">false</bool>
+		
+		<array name="effects">
+			<dict name="effect">
+				<string name="class">Damage</string>
+				<int name="physical">40</int>
+			</dict>
+			<dict>
+				<string name="class">SpawnEffect</string>
+				<string name="effect">effects/golem_sand_rock_hit.effect</string>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="height">0</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 0" radius="5" projectile="true" />
+			</collision>
+			<sprite origin="8 7" texture="./golem_sand_rock.png" material="system/default.mats:shadow">
+				<frame time="125">0 0 13 13</frame>
+			</sprite>
+		</scene>
+	
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="8 8" layer="1" texture="./golem_sand_rock.png" material="system/default.mats:actor">
+				<frame time="125">0 0 13 13</frame>
+				<frame time="125">13 0 13 13</frame>
+				<frame time="125">26 0 13 13</frame>
+				<frame time="125">39 0 13 13</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

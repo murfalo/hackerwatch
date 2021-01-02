@@ -1,0 +1,79 @@
+<gui>
+	<sprites>
+		<sprite name="classbutton" texture="gui/widget.png"><frame>33 130 24 24</frame></sprite>
+		<sprite name="classbutton-hover" texture="gui/widget.png"><frame>57 130 24 24</frame></sprite>
+		<sprite name="classbutton-checked" texture="gui/widget.png"><frame>81 130 24 24</frame></sprite>
+		<sprite name="classbutton-disabled" texture="gui/widget.png"><frame>0 162 24 24</frame></sprite>
+
+		<sprite name="icon-profile" texture="gui/icons.png"><frame>26 101 11 16</frame></sprite>
+		<sprite name="icon-kick" texture="gui/icons.png"><frame>37 101 14 11</frame></sprite>
+
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/closebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group><group id="menu">
+			<rect id="player-window" visible="false" width="300" height="201" anchor="0.5 0.5" spriteset="gui/variable/bigwindow_borders.sval">
+				<!-- Header -->
+				<rect width="296" height="18" offset="2 2" flow="hbox">
+					<!-- Headline -->
+					<rect width="275" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text id="title" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton func="back" spriteset="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="296" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- List -->
+				<scrollrect id="player-list" width="282" height="176" offset="2 23" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="player-list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="176" offset="284 23" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="176" offset="295 23" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Template -->
+				<rect id="player-template" visible="false" width="282" height="27" color="#202a26FF" shadow="#0c120fFF" shadowsize="2">
+					<!-- Name -->
+					<text id="name" font="gui/fonts/arial11.fnt" offset="4 1" />
+
+					<!-- Ping -->
+					<text id="ping" font="system/system_small.fnt" offset="5 15" />
+
+					<!-- Separator -->
+					<rect width="3" height="24" offset="225 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Profile button -->
+					<spritebutton id="profile-button" spriteset="classbutton" offset="228 0" tooltip=".mainmenu.lobbyplayers.profile.tooltip">
+						<sprite src="icon-profile" anchor="0.5 0.5" />
+					</spritebutton>
+
+					<!-- Separator -->
+					<rect width="3" height="24" offset="252 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Kick button -->
+					<spritebutton id="kick-button" spriteset="classbutton" offset="255 0" tooltip=".mainmenu.lobbyplayers.kick.tooltip">
+						<sprite src="icon-kick" anchor="0.5 0.5" />
+					</spritebutton>
+
+					<!-- Separator -->
+					<rect width="3" height="24" offset="279 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Separator -->
+					<rect width="296" height="3" offset="0 24" spriteset="gui/variable/3pxbar_hor.sval" />
+				</rect>
+			</rect>
+		</group></group>
+	</doc>
+</gui>

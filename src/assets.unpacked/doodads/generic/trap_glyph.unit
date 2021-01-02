@@ -1,0 +1,98 @@
+<unit layer="0">
+	<behavior class="TripMine">
+		<int name="hp">1</int>
+		<bool name="targetable">false</bool>
+		<bool name="targeting">false</bool>
+		<bool name="must-see-target">false</bool>
+		<bool name="crosshair-colors">false</bool>
+		<bool name="counts-as-kill">false</bool>
+		<bool name="floating-hurt">false</bool>
+		<string name="anim-visible">visible</string>
+		<string name="anim-invisible">invisible</string>
+		
+		<string name="appear-snd">event:/enemy/glyph/visible</string>
+		
+		<int name="dist-visible">40</int>
+		<int name="dist-trigger">30</int>	
+		
+		<dict name="movement">
+			<string name="class">EmptyMovement</string>
+		</dict>
+
+		<array name="skills">
+			<dict>
+				<string name="class">CompositeActorTriggeredSkill</string>
+				<string name="trigger">OnDeath</string>
+				
+				<array name="actions">
+					<dict>
+						<string name="class">SpawnUnit</string>
+						<string name="unit">doodads/generic/trap_glyph_bomb.unit</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+	</behavior>
+	
+	<scenes default="spawn">
+		<scene name="shared">
+			<collision static="true">
+				<circle shoot-through="true" aim-through="true" radius="6" sensor="true" />
+			</collision>		
+		</scene>
+		
+		<scene name="invisible">
+			<scene src="shared" />
+		</scene>
+
+		<scene name="visible">
+			<scene src="shared" />
+			<effect src="doodads/generic/trap_glyph_rotating.effect" />
+			
+			<light pos="0 0">
+				<sprite texture="system/light2_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="10" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="160" />
+				</sizes>
+				<colors>
+					<color value="80 20 0 0" />
+				</colors>
+			</light>				
+
+			<light pos="0 0">
+				<sprite texture="system/light_circle_L.png">
+					<frame>0 0 128 128</frame>
+				</sprite>
+				<length value="50" />
+				<overbright value="25" />
+				<looping value="true" />
+				<overlay value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="128" />
+				</sizes>
+				<colors>
+					<color value="80 20 0 0" />
+				</colors>
+			</light>
+
+		</scene>
+		
+		<scene name="spawn" trigger-snd="event:/enemy/glyph/spawn">
+			<effect src="doodads/generic/trap_glyph_spawn.effect" />
+		</scene>
+		
+	</scenes>
+</unit>

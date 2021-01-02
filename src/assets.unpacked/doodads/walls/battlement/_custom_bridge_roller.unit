@@ -1,0 +1,63 @@
+<unit slot="doodad">
+	<scenes default="default" on="on" off="off" off_80="off_80" off_60="off_60" off_40="off_40" off_20="off_20">
+		<scene name="shared">
+			<sprite ulayer="1" layer="-20" origin="17 17" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame>67 88 33 34</frame>
+			</sprite>
+		</scene>
+		<scene name="on" trigger-snd="event:/misc/bridge_roller_on">
+			<scene src="shared"/>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_roller_on.effect"/>
+			<sprite ulayer="0" looping="false" layer="-20" origin="13 13" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame time="6000">0 0 0 0</frame>
+				<frame>100 88 26 26</frame>
+			</sprite>		
+		</scene>			
+		<scene name="off" trigger-snd="event:/misc/bridge_roller_off">
+			<scene src="shared"/>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_roller_off.effect"/>
+			<sprite ulayer="0" looping="false" layer="-20" origin="13 13" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame time="1500">0 0 0 0</frame>
+				<frame>100 88 26 26</frame>
+			</sprite>		
+		</scene>		
+		<scene name="off_80" trigger-snd="event:/misc/bridge_roller_off">
+			<scene src="shared"/>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_roller_off_80.effect"/>
+			<sprite ulayer="0" looping="false" layer="-20" origin="13 13" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame time="1200">0 0 0 0</frame>
+				<frame>100 88 26 26</frame>
+			</sprite>		
+		</scene>	
+		<scene name="off_60" trigger-snd="event:/misc/bridge_roller_off">
+			<scene src="shared"/>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_roller_off_60.effect"/>
+			<sprite ulayer="0" looping="false" layer="-20" origin="13 13" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame time="900">0 0 0 0</frame>
+				<frame>100 88 26 26</frame>
+			</sprite>		
+		</scene>	
+		<scene name="off_40" trigger-snd="event:/misc/bridge_roller_off">
+			<scene src="shared"/>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_roller_off_40.effect"/>
+			<sprite ulayer="0" looping="false" layer="-20" origin="13 13" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame time="600">0 0 0 0</frame>
+				<frame>100 88 26 26</frame>
+			</sprite>		
+		</scene>
+		<scene name="off_20" trigger-snd="event:/misc/bridge_roller_off">
+			<scene src="shared"/>
+			<effect ulayer="-1" layer="-20" src="./_custom_bridge_roller_off_20.effect"/>
+			<sprite ulayer="0" looping="false" layer="-20" origin="13 13" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame time="300">0 0 0 0</frame>
+				<frame>100 88 26 26</frame>
+			</sprite>		
+		</scene>
+		<scene name="default">
+			<scene src="shared"/>
+			<sprite ulayer="-1" layer="-20" origin="13 13" texture="./_custom_bridge_h.png" material="system/default.mats:floor">
+				<frame>100 88 26 26</frame>
+			</sprite>
+		</scene>								
+	</scenes>
+</unit>

@@ -1,0 +1,26 @@
+<unit slot="doodad">
+	<scenes>
+		<scene>
+			<collision static="true">
+				<rect>-32 -32 64 16</rect>
+				<rect>16 -16 16 16</rect>
+				<rect>-32 -16 16 16</rect>
+				<rect>-5 -16 13 9</rect>
+			</collision>
+			<shadow>
+				<sprite ulayer="10" origin="21 149" looping="true" texture="./outlook_ore_shaft.png" material="system/default.mats:shadow">
+					<frame time="100">64 359 39 153</frame>
+				</sprite>
+			</shadow>
+			<sprite layer="1" origin="5 22" looping="true" texture="./outlook_ore_shaft.png" material="system/default.mats:default-noxray">
+				<frame time="100">64 340 13 16</frame>
+			</sprite>			
+			<sprite ulayer="0" origin="32 256" looping="true" texture="./outlook_ore_shaft.png" material="system/default.mats:floor">
+				<frame time="100">0 252 64 260</frame>
+			</sprite>
+			<sprite layer="0" origin="32 128" looping="true" texture="./outlook_ore_shaft.png" material="system/default.mats:default-noxray">
+				<frame time="100">0 380 16 128</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

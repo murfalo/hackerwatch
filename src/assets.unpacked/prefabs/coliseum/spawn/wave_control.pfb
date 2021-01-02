@@ -1,0 +1,6575 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">MainMenu</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="units">
+		<array name="system/system.fnt">
+			<array>
+				<vec2>0 -320</vec2>
+				<int>1</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">FAST</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="system/system_large.fnt">
+			<array>
+				<vec2>-1200 160</vec2>
+				<int>9</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 1-2</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-640 -512</vec2>
+				<int>8</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 7-11</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-640 -128</vec2>
+				<int>7</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 0</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-944 160</vec2>
+				<int>6</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 3-6</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-688 160</vec2>
+				<int>5</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 7-11</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-1456 160</vec2>
+				<int>11</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 0</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-640 -384</vec2>
+				<int>4</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 3-6</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-640 -256</vec2>
+				<int>3</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 1-2</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-432 160</vec2>
+				<int>2</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 12-16</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec2>-640 -640</vec2>
+				<int>10</int>
+				<dict>
+					<int name="layer">1000</int>
+					<string name="text">Rating 12-16</string>
+					<bool name="debug">t</bool>
+				</dict>
+			</array>
+		</array>
+	</dict>
+	<array name="scripts">
+		<array>
+			<string>ScriptLink</string>
+			<int>12</int>
+			<vec3>480 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>WaveCompleted</string>
+			<array><int>201</int><int>0</int><int>427</int><int>0</int><int>452</int><int>0</int><int>424</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>13</int>
+			<vec3>864 -1120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>delay</string>
+			<dict>
+				<int name="TimeMax">1000</int>
+				<int name="TimeMin">100</int>
+				<array name="LinkScripts"><int>75</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>14</int>
+			<vec3>64 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable 1grp</string>
+			<dict>
+				<array name="Scripts"><int>271</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>15</int>
+			<vec3>480 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_scorpion</string>
+			<dict>
+				<string name="EventName">activate_scorpion</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>16</int>
+			<vec3>64 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 1</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">10000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="OnFinished"><int>168</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>17</int>
+			<vec3>288 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 2</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">10000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="OnFinished"><int>153</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="SubWave3"><int>274</int><int>413</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>18</int>
+			<vec3>-64 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>71</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>19</int>
+			<vec3>1664 -320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>No Boss</string>
+			<array><int>101</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>20</int>
+			<vec3>864 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>new_subwave</string>
+			<dict>
+				<string name="EventName">new_subwave</string>
+			</dict>
+			<array><int>429</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>21</int>
+			<vec3>288 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_no_items</string>
+			<dict>
+				<string name="EventName">crowd_no_items</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>22</int>
+			<vec3>-992 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy_mb</string>
+			<dict>
+				<string name="EventName">activate_mummy_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>23</int>
+			<vec3>864 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_mb</string>
+			<dict>
+				<string name="EventName">activate_skeleton_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>24</int>
+			<vec3>1504 352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>warden</string>
+			<array><int>128</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>25</int>
+			<vec3>-736 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_gargoyle_easy</string>
+			<dict>
+				<string name="EventName">activate_gargoyle_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>26</int>
+			<vec3>352 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NextWave</string>
+			<array><int>69</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>27</int>
+			<vec3>672 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tick_mb</string>
+			<dict>
+				<string name="EventName">activate_tick_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>28</int>
+			<vec3>576 800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Minibosses</string>
+			<array>
+				<int>78</int>
+				<int>0</int>
+				<int>46</int>
+				<int>0</int>
+				<int>23</int>
+				<int>0</int>
+				<int>31</int>
+				<int>0</int>
+				<int>27</int>
+				<int>0</int>
+				<int>266</int>
+				<int>0</int>
+				<int>198</int>
+				<int>0</int>
+				<int>215</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>29</int>
+			<vec3>864 -832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<int name="NumToExecute">2</int>
+				<array name="ToExecute"><int>277</int><int>281</int><int>276</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>30</int>
+			<vec3>832 -928 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Easy - Medium</string>
+			<dict>
+				<array name="PickedRandoms"><int>42</int><int>272</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>31</int>
+			<vec3>768 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_maggot_mb</string>
+			<dict>
+				<string name="EventName">activate_maggot_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>32</int>
+			<vec3>768 -1120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>delay</string>
+			<dict>
+				<int name="TimeMax">1000</int>
+				<int name="TimeMin">100</int>
+				<array name="LinkScripts"><int>57</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>33</int>
+			<vec3>1248 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_gargoyle</string>
+			<dict>
+				<string name="EventName">activate_gargoyle</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>34</int>
+			<vec3>576 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NextWave</string>
+			<array><int>70</int><int>3000</int><int>303</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>35</int>
+			<vec3>800 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NextWave</string>
+			<array><int>103</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>36</int>
+			<vec3>-1504 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tick_mb</string>
+			<dict>
+				<string name="EventName">activate_tick_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>37</int>
+			<vec3>2464 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>survival_accomplished</string>
+			<dict>
+				<string name="EventName">survival_accomplished</string>
+			</dict>
+			<array><int>435</int><int>0</int><int>449</int><int>0</int><int>203</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>38</int>
+			<vec3>-672 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts">
+					<int>149</int>
+					<int>113</int>
+					<int>114</int>
+					<int>115</int>
+					<int>340</int>
+					<int>341</int>
+					<int>116</int>
+					<int>117</int>
+					<int>126</int>
+					<int>121</int>
+					<int>109</int>
+					<int>143</int>
+					<int>150</int>
+					<int>15</int>
+					<int>65</int>
+					<int>102</int>
+					<int>217</int>
+					<int>27</int>
+					<int>31</int>
+					<int>23</int>
+					<int>266</int>
+					<int>198</int>
+					<int>178</int>
+					<int>135</int>
+					<int>134</int>
+					<int>72</int>
+					<int>345</int>
+					<int>66</int>
+					<int>25</int>
+					<int>133</int>
+					<int>131</int>
+					<int>132</int>
+					<int>185</int>
+					<int>173</int>
+					<int>347</int>
+					<int>351</int>
+					<int>145</int>
+					<int>186</int>
+					<int>48</int>
+					<int>223</int>
+					<int>229</int>
+					<int>371</int>
+					<int>98</int>
+					<int>182</int>
+					<int>411</int>
+					<int>408</int>
+					<int>410</int>
+					<int>409</int>
+					<int>412</int>
+					<int>425</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>39</int>
+			<vec3>1984 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3 Bosses</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>77</int><int>0</int><int>380</int><int>2000</int><int>473</int><int>4000</int><int>471</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>40</int>
+			<vec3>-896 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable1grp</string>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>41</int>
+			<vec3>1664 -32 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss Low Chance</string>
+			<array><int>155</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>42</int>
+			<vec3>768 -1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Easy</string>
+			<array><int>32</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>43</int>
+			<vec3>0 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>Start</string>
+			<array>
+				<int>71</int>
+				<int>5000</int>
+				<int>262</int>
+				<int>10</int>
+				<int>220</int>
+				<int>4000</int>
+				<int>169</int>
+				<int>0</int>
+				<int>227</int>
+				<int>0</int>
+				<int>201</int>
+				<int>10</int>
+				<int>224</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>44</int>
+			<vec3>2912 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>365</int><int>167</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>45</int>
+			<vec3>1440 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_golem</string>
+			<dict>
+				<string name="EventName">activate_golem</string>
+			</dict>
+			<array><int>465</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>46</int>
+			<vec3>1056 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_mb</string>
+			<dict>
+				<string name="EventName">activate_lich_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>47</int>
+			<vec3>1792 288 0</vec3>
+			<bool>t</bool>
+			<int>3</int>
+			<bool>f</bool>
+			<string>RandomBoss</string>
+			<dict>
+				<array name="PickedRandoms"><int>233</int><int>232</int><int>366</int><int>24</int><int>177</int><int>403</int><int>63</int><int>464</int><int>462</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>48</int>
+			<vec3>-736 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_troll_easy</string>
+			<dict>
+				<string name="EventName">activate_troll_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>49</int>
+			<vec3>2912 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_spawns</string>
+			<dict>
+				<string name="EventName">boss_spawns</string>
+			</dict>
+			<array><int>383</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>50</int>
+			<vec3>512 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 3</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">10000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="OnFinished"><int>152</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="SubWave3"><int>274</int><int>413</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>51</int>
+			<vec3>736 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 4</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">10000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="OnFinished"><int>105</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="SubWave3"><int>274</int><int>413</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>52</int>
+			<vec3>1024 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NextWave</string>
+			<array><int>99</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>53</int>
+			<vec3>960 -832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<int name="NumToExecute">3</int>
+				<array name="ToExecute"><int>277</int><int>281</int><int>276</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>54</int>
+			<vec3>-944 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts">
+					<int>340</int>
+					<int>341</int>
+					<int>113</int>
+					<int>114</int>
+					<int>115</int>
+					<int>116</int>
+					<int>117</int>
+					<int>121</int>
+					<int>109</int>
+					<int>15</int>
+					<int>65</int>
+					<int>102</int>
+					<int>266</int>
+					<int>27</int>
+					<int>31</int>
+					<int>23</int>
+					<int>178</int>
+					<int>217</int>
+					<int>360</int>
+					<int>361</int>
+					<int>22</int>
+					<int>40</int>
+					<int>353</int>
+					<int>354</int>
+					<int>209</int>
+					<int>350</int>
+					<int>355</int>
+					<int>362</int>
+					<int>359</int>
+					<int>358</int>
+					<int>356</int>
+					<int>357</int>
+					<int>239</int>
+					<int>229</int>
+					<int>370</int>
+					<int>386</int>
+					<int>391</int>
+					<int>411</int>
+					<int>408</int>
+					<int>421</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>55</int>
+			<vec3>-1200 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts">
+					<int>113</int>
+					<int>114</int>
+					<int>115</int>
+					<int>116</int>
+					<int>117</int>
+					<int>15</int>
+					<int>27</int>
+					<int>178</int>
+					<int>341</int>
+					<int>340</int>
+					<int>335</int>
+					<int>338</int>
+					<int>339</int>
+					<int>334</int>
+					<int>337</int>
+					<int>336</int>
+					<int>333</int>
+					<int>342</int>
+					<int>343</int>
+					<int>344</int>
+					<int>351</int>
+					<int>41</int>
+					<int>127</int>
+					<int>100</int>
+					<int>225</int>
+					<int>241</int>
+					<int>242</int>
+					<int>156</int>
+					<int>222</int>
+					<int>389</int>
+					<int>419</int>
+					<int>420</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>56</int>
+			<vec3>2624 64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>kill_everything</string>
+			<dict>
+				<string name="EventName">kill_everything</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>57</int>
+			<vec3>768 -1216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_enemies_easy</string>
+			<dict>
+				<string name="EventName">spawn_enemies_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>58</int>
+			<vec3>576 960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SupportUnits</string>
+			<array><int>182</int><int>0</int><int>180</int><int>0</int><int>178</int><int>0</int><int>407</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>59</int>
+			<vec3>-1472 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts">
+					<int>304</int>
+					<int>305</int>
+					<int>36</int>
+					<int>267</int>
+					<int>83</int>
+					<int>265</int>
+					<int>280</int>
+					<int>64</int>
+					<int>97</int>
+					<int>113</int>
+					<int>114</int>
+					<int>115</int>
+					<int>325</int>
+					<int>326</int>
+					<int>327</int>
+					<int>195</int>
+					<int>230</int>
+					<int>226</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>60</int>
+			<vec3>1888 672 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>boss7_killed</string>
+			<dict>
+				<string name="Flag">boss7_killed</string>
+				<array name="OnTrue"><int>93</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>61</int>
+			<vec3>1952 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>63</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>62</int>
+			<vec3>1952 672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>boss8_killed</string>
+			<dict>
+				<string name="Flag">boss8_killed</string>
+				<array name="OnTrue"><int>61</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>63</int>
+			<vec3>1952 352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>mummy</string>
+			<array><int>90</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>64</int>
+			<vec3>-1504 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_scorpion</string>
+			<dict>
+				<string name="EventName">activate_scorpion</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>65</int>
+			<vec3>384 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_snake</string>
+			<dict>
+				<string name="EventName">activate_snake</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>66</int>
+			<vec3>-640 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_troll_medium</string>
+			<dict>
+				<string name="EventName">activate_troll_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>67</int>
+			<vec3>800 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>new_wave</string>
+			<dict>
+				<string name="EventName">new_wave</string>
+			</dict>
+			<array>
+				<int>238</int>
+				<int>0</int>
+				<int>171</int>
+				<int>0</int>
+				<int>231</int>
+				<int>0</int>
+				<int>428</int>
+				<int>0</int>
+				<int>426</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>68</int>
+			<vec3>224 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>StartWave</string>
+			<array><int>17</int><int>100</int><int>67</int><int>0</int><int>348</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>69</int>
+			<vec3>448 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>StartWave</string>
+			<array><int>50</int><int>100</int><int>67</int><int>0</int><int>269</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>70</int>
+			<vec3>672 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>StartWave</string>
+			<array><int>51</int><int>100</int><int>67</int><int>0</int><int>136</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>71</int>
+			<vec3>0 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>StartWave</string>
+			<array><int>16</int><int>100</int><int>67</int><int>0</int><int>165</int><int>0</int><int>349</int><int>100</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>72</int>
+			<vec3>-736 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental_easy</string>
+			<dict>
+				<string name="EventName">activate_elemental_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>73</int>
+			<vec3>864 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>271</int><int>278</int><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>74</int>
+			<vec3>1536 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>FinalWave</string>
+			<dict>
+				<array name="PickedRandoms"><int>19</int><int>41</int><int>239</int><int>149</int><int>388</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>75</int>
+			<vec3>864 -1216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_enemies_medium</string>
+			<dict>
+				<string name="EventName">spawn_enemies_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>76</int>
+			<vec3>1184 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>WaveComplete</string>
+			<array><int>81</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>77</int>
+			<vec3>1792 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ActivateBoss</string>
+			<array><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>78</int>
+			<vec3>960 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_eye_mb</string>
+			<dict>
+				<string name="EventName">activate_eye_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>79</int>
+			<vec3>864 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>73</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>80</int>
+			<vec3>960 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>WaveComplete</string>
+			<array><int>52</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>81</int>
+			<vec3>1248 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NextWave</string>
+			<array><int>364</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>82</int>
+			<vec3>-1952 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>94</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>83</int>
+			<vec3>-1504 1152 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_scorpion_mb</string>
+			<dict>
+				<string name="EventName">activate_scorpion_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>84</int>
+			<vec3>192 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable Hard</string>
+			<dict>
+				<array name="Scripts"><int>264</int><int>276</int><int>281</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>85</int>
+			<vec3>192 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable 3grps</string>
+			<dict>
+				<array name="Scripts"><int>166</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckGladiatorRating</string>
+			<int>86</int>
+			<vec3>-512 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<int name="Value">12</int>
+				<array name="OnFalse"><int>261</int></array>
+				<array name="OnTrue"><int>261</int></array>
+			</dict>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimedScriptLink</string>
+			<int>87</int>
+			<vec3>960 -1120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>delay</string>
+			<dict>
+				<int name="TimeMax">1000</int>
+				<int name="TimeMin">100</int>
+				<array name="LinkScripts"><int>273</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>88</int>
+			<vec3>960 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 5</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">10000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="OnFinished"><int>80</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="SubWave3"><int>274</int><int>413</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>89</int>
+			<vec3>1184 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 6</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">10000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="OnFinished"><int>76</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="SubWave3"><int>274</int><int>413</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>90</int>
+			<vec3>1952 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy</string>
+			<dict>
+				<string name="EventName">activate_mummy</string>
+			</dict>
+			<array><int>470</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>91</int>
+			<vec3>-1248 512 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_snake</string>
+			<dict>
+				<string name="EventName">activate_snake</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>92</int>
+			<vec3>1888 -288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Wave Final</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">6000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave6"><int>274</int></array>
+				<array name="OnFinished"><int>250</int></array>
+				<array name="SubWave3"><int>274</int><int>413</int></array>
+				<array name="SubWave7"><int>274</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="SubWave8"><int>274</int></array>
+				<array name="SubWave9"><int>274</int><int>210</int><int>395</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>93</int>
+			<vec3>1888 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>403</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>94</int>
+			<vec3>-1856 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>275</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>95</int>
+			<vec3>-1952 1408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>249</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>96</int>
+			<vec3>-480 960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_mb</string>
+			<dict>
+				<string name="EventName">activate_lich_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>97</int>
+			<vec3>-1504 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_snake</string>
+			<dict>
+				<string name="EventName">activate_snake</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>98</int>
+			<vec3>-736 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy2</string>
+			<dict>
+				<string name="EventName">activate_mummy2</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>99</int>
+			<vec3>1120 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>StartWave</string>
+			<array><int>89</int><int>100</int><int>67</int><int>0</int><int>236</int><int>100</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>100</int>
+			<vec3>-1248 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_maggot_mb</string>
+			<dict>
+				<string name="EventName">activate_maggot_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>101</int>
+			<vec3>1792 -288 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>StartWave</string>
+			<array><int>92</int><int>100</int><int>67</int><int>0</int><int>219</int><int>100</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>102</int>
+			<vec3>480 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_spider</string>
+			<dict>
+				<string name="EventName">activate_spider</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>103</int>
+			<vec3>896 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>StartWave</string>
+			<array><int>67</int><int>0</int><int>88</int><int>100</int><int>282</int><int>100</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>104</int>
+			<vec3>576 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnemyGroups</string>
+			<array>
+				<int>157</int>
+				<int>0</int>
+				<int>150</int>
+				<int>0</int>
+				<int>143</int>
+				<int>0</int>
+				<int>109</int>
+				<int>0</int>
+				<int>121</int>
+				<int>0</int>
+				<int>126</int>
+				<int>0</int>
+				<int>117</int>
+				<int>0</int>
+				<int>116</int>
+				<int>0</int>
+				<int>115</int>
+				<int>0</int>
+				<int>114</int>
+				<int>0</int>
+				<int>113</int>
+				<int>0</int>
+				<int>151</int>
+				<int>0</int>
+				<int>33</int>
+				<int>0</int>
+				<int>15</int>
+				<int>0</int>
+				<int>65</int>
+				<int>0</int>
+				<int>102</int>
+				<int>0</int>
+				<int>340</int>
+				<int>0</int>
+				<int>341</int>
+				<int>0</int>
+				<int>217</int>
+				<int>0</int>
+				<int>246</int>
+				<int>0</int>
+				<int>205</int>
+				<int>0</int>
+				<int>229</int>
+				<int>0</int>
+				<int>369</int>
+				<int>0</int>
+				<int>384</int>
+				<int>0</int>
+				<int>387</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>105</int>
+			<vec3>736 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>WaveComplete</string>
+			<array><int>35</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckGladiatorRating</string>
+			<int>106</int>
+			<vec3>-512 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<int name="Value">11</int>
+				<array name="OnFalse"><int>260</int></array>
+				<array name="OnTrue"><int>86</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalVariable</string>
+			<int>107</int>
+			<vec3>-1856 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave</string>
+			<dict>
+				<string name="Name">wave</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalVariable</string>
+			<int>108</int>
+			<vec3>-1792 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave</string>
+			<dict>
+				<string name="Name">subwave</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>109</int>
+			<vec3>768 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich</string>
+			<dict>
+				<string name="EventName">activate_lich</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>110</int>
+			<vec3>-1952 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>122</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>111</int>
+			<vec3>-384 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_maggot</string>
+			<dict>
+				<string name="EventName">deactivate_maggot</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>112</int>
+			<vec3>-2080 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>new_subwave</string>
+			<dict>
+				<string name="EventName">new_subwave</string>
+			</dict>
+			<array><int>244</int><int>10</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>113</int>
+			<vec3>672 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tick</string>
+			<dict>
+				<string name="EventName">activate_tick</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>114</int>
+			<vec3>768 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_maggot</string>
+			<dict>
+				<string name="EventName">activate_maggot</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>115</int>
+			<vec3>864 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_bat</string>
+			<dict>
+				<string name="EventName">activate_bat</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>116</int>
+			<vec3>960 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton1</string>
+			<dict>
+				<string name="EventName">activate_skeleton1</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>117</int>
+			<vec3>1056 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_archer</string>
+			<dict>
+				<string name="EventName">activate_skeleton_archer</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>118</int>
+			<vec3>-1792 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>307</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>119</int>
+			<vec3>-1632 1152 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wave4</string>
+			<array><int>315</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>120</int>
+			<vec3>-384 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tick</string>
+			<dict>
+				<string name="EventName">deactivate_tick</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>121</int>
+			<vec3>672 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_ghost</string>
+			<dict>
+				<string name="EventName">activate_ghost</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>122</int>
+			<vec3>-1856 448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 2</string>
+			<dict>
+				<int name="Value">2</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>118</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>123</int>
+			<vec3>-1952 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>125</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>124</int>
+			<vec3>-1792 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>306</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>125</int>
+			<vec3>-1856 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>124</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>126</int>
+			<vec3>1152 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton2</string>
+			<dict>
+				<string name="EventName">activate_skeleton2</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>127</int>
+			<vec3>-1248 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy1</string>
+			<dict>
+				<string name="EventName">activate_mummy1</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>128</int>
+			<vec3>1504 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_warden</string>
+			<dict>
+				<string name="EventName">activate_warden</string>
+			</dict>
+			<array><int>466</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>129</int>
+			<vec3>2784 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DisableSpawns</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>202</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>130</int>
+			<vec3>576 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>altar_unpause</string>
+			<dict>
+				<string name="EventName">altar_unpause</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>131</int>
+			<vec3>-736 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_high_priest</string>
+			<dict>
+				<string name="EventName">activate_high_priest</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>132</int>
+			<vec3>-736 960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_mb</string>
+			<dict>
+				<string name="EventName">activate_lich_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>133</int>
+			<vec3>-736 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_eye_mb</string>
+			<dict>
+				<string name="EventName">activate_eye_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>134</int>
+			<vec3>-640 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_maggot</string>
+			<dict>
+				<string name="EventName">deactivate_maggot</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>135</int>
+			<vec3>-640 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tick</string>
+			<dict>
+				<string name="EventName">deactivate_tick</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>136</int>
+			<vec3>736 -320 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 4</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">5000</int>
+				<array name="SubWave1"><int>274</int><int>413</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="OnFinished"><int>105</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>137</int>
+			<vec3>1824 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_vampire</string>
+			<dict>
+				<string name="EventName">activate_vampire</string>
+			</dict>
+			<array><int>469</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>138</int>
+			<vec3>-1952 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>141</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>139</int>
+			<vec3>-384 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable3grps</string>
+			<array><int>85</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>140</int>
+			<vec3>-1792 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>310</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>141</int>
+			<vec3>-1856 640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 3</string>
+			<dict>
+				<int name="Value">3</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>140</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>142</int>
+			<vec3>480 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>altar_pause</string>
+			<dict>
+				<string name="EventName">altar_pause</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>143</int>
+			<vec3>864 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_eye</string>
+			<dict>
+				<string name="EventName">activate_eye</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>144</int>
+			<vec3>-1952 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>147</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>145</int>
+			<vec3>-640 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableHard</string>
+			<array><int>84</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>146</int>
+			<vec3>-1792 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>308</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>147</int>
+			<vec3>-1856 512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 2</string>
+			<dict>
+				<int name="Value">2</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>146</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>148</int>
+			<vec3>2272 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>player_immortality</string>
+			<dict>
+				<string name="EventName">player_immortality</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>149</int>
+			<vec3>1664 -160 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss High Chance</string>
+			<dict>
+				<int name="Chance">1000</int>
+			</dict>
+			<array><int>155</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>150</int>
+			<vec3>960 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_wisp</string>
+			<dict>
+				<string name="EventName">activate_wisp</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>151</int>
+			<vec3>1152 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_troll</string>
+			<dict>
+				<string name="EventName">activate_troll</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>152</int>
+			<vec3>512 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>WaveComplete</string>
+			<array><int>34</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>153</int>
+			<vec3>288 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>WaveComplete</string>
+			<array><int>26</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>154</int>
+			<vec3>2848 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_enemies_easy</string>
+			<dict>
+				<string name="EventName">spawn_enemies_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>155</int>
+			<vec3>1792 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>BossWave</string>
+			<array><int>67</int><int>0</int><int>406</int><int>0</int><int>243</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>156</int>
+			<vec3>-1248 1152 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy_mb</string>
+			<dict>
+				<string name="EventName">activate_mummy_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>157</int>
+			<vec3>1056 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental</string>
+			<dict>
+				<string name="EventName">activate_elemental</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>158</int>
+			<vec3>-1952 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>161</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>159</int>
+			<vec3>288 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>altar_disabled</string>
+			<dict>
+				<string name="EventName">altar_disabled</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>160</int>
+			<vec3>-1792 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>311</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>161</int>
+			<vec3>-1856 704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 3</string>
+			<dict>
+				<int name="Value">3</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>160</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>162</int>
+			<vec3>-1952 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>164</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>163</int>
+			<vec3>-1792 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>313</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>164</int>
+			<vec3>-1856 832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>163</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>165</int>
+			<vec3>192 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>altar_enabled</string>
+			<dict>
+				<string name="EventName">altar_enabled</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>166</int>
+			<vec3>960 -736 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3 grps</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>53</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>167</int>
+			<vec3>2976 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>368</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>168</int>
+			<vec3>64 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>WaveComplete</string>
+			<array><int>279</int><int>0</int><int>12</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>169</int>
+			<vec3>-96 64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>TEST ALL</string>
+			<dict>
+				<array name="Scripts">
+					<int>143</int>
+					<int>109</int>
+					<int>121</int>
+					<int>126</int>
+					<int>117</int>
+					<int>116</int>
+					<int>115</int>
+					<int>114</int>
+					<int>113</int>
+					<int>15</int>
+					<int>65</int>
+					<int>102</int>
+					<int>217</int>
+					<int>246</int>
+					<int>205</int>
+					<int>215</int>
+					<int>198</int>
+					<int>266</int>
+					<int>27</int>
+					<int>31</int>
+					<int>23</int>
+					<int>78</int>
+					<int>46</int>
+					<int>180</int>
+					<int>178</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>170</int>
+			<vec3>1568 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_wraith</string>
+			<dict>
+				<string name="EventName">activate_wraith</string>
+			</dict>
+			<array><int>467</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>171</int>
+			<vec3>576 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_unpause</string>
+			<dict>
+				<string name="EventName">crowd_unpause</string>
+			</dict>
+			<array><int>130</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>172</int>
+			<vec3>-480 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_troll</string>
+			<dict>
+				<string name="EventName">activate_troll</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>173</int>
+			<vec3>-736 1152 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel_mb</string>
+			<dict>
+				<string name="EventName">activate_sentinel_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>174</int>
+			<vec3>-480 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_gargoyle</string>
+			<dict>
+				<string name="EventName">activate_gargoyle</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>175</int>
+			<vec3>-480 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental</string>
+			<dict>
+				<string name="EventName">activate_elemental</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>176</int>
+			<vec3>-480 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_high_priest</string>
+			<dict>
+				<string name="EventName">activate_high_priest</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>177</int>
+			<vec3>1824 352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>vampire</string>
+			<array><int>137</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>178</int>
+			<vec3>672 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_banner</string>
+			<dict>
+				<string name="EventName">activate_skeleton_banner</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>179</int>
+			<vec3>-480 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel</string>
+			<dict>
+				<string name="EventName">activate_sentinel</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>180</int>
+			<vec3>800 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_summoner</string>
+			<dict>
+				<string name="EventName">activate_lich_summoner</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>181</int>
+			<vec3>-480 1152 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel_mb</string>
+			<dict>
+				<string name="EventName">activate_sentinel_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>182</int>
+			<vec3>928 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_trapper</string>
+			<dict>
+				<string name="EventName">activate_trapper</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>183</int>
+			<vec3>-480 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_eye_mb</string>
+			<dict>
+				<string name="EventName">activate_eye_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>184</int>
+			<vec3>-992 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel_easy</string>
+			<dict>
+				<string name="EventName">activate_sentinel_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>185</int>
+			<vec3>-736 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel_easy</string>
+			<dict>
+				<string name="EventName">activate_sentinel_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>186</int>
+			<vec3>-640 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental_medium</string>
+			<dict>
+				<string name="EventName">activate_elemental_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>187</int>
+			<vec3>-432 224 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts">
+					<int>113</int>
+					<int>114</int>
+					<int>115</int>
+					<int>340</int>
+					<int>341</int>
+					<int>116</int>
+					<int>117</int>
+					<int>126</int>
+					<int>121</int>
+					<int>109</int>
+					<int>143</int>
+					<int>150</int>
+					<int>15</int>
+					<int>65</int>
+					<int>102</int>
+					<int>217</int>
+					<int>27</int>
+					<int>31</int>
+					<int>23</int>
+					<int>266</int>
+					<int>198</int>
+					<int>178</int>
+					<int>180</int>
+					<int>120</int>
+					<int>111</int>
+					<int>175</int>
+					<int>172</int>
+					<int>183</int>
+					<int>139</int>
+					<int>176</int>
+					<int>179</int>
+					<int>96</int>
+					<int>174</int>
+					<int>181</int>
+					<int>229</int>
+					<int>369</int>
+					<int>384</int>
+					<int>390</int>
+					<int>182</int>
+					<int>411</int>
+					<int>410</int>
+					<int>388</int>
+					<int>409</int>
+					<int>447</int>
+					<int>423</int>
+					<int>412</int>
+					<int>425</int>
+					<int>39</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>188</int>
+			<vec3>-1856 1472 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="OnTrue"><int>191</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>189</int>
+			<vec3>1888 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>372</int><int>425</int><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>190</int>
+			<vec3>-128 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>232</int><int>233</int><int>177</int><int>63</int><int>425</int><int>39</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>191</int>
+			<vec3>-1792 1472 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>323</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>192</int>
+			<vec3>-1952 896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>194</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>193</int>
+			<vec3>-1792 896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>314</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>194</int>
+			<vec3>-1856 896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="OnTrue"><int>193</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>195</int>
+			<vec3>-1504 1408 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy1</string>
+			<dict>
+				<string name="EventName">activate_mummy1</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>196</int>
+			<vec3>-1856 1280 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 6</string>
+			<dict>
+				<int name="Value">6</int>
+				<array name="OnTrue"><int>199</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>197</int>
+			<vec3>-1952 1472 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>188</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>198</int>
+			<vec3>384 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy_mb</string>
+			<dict>
+				<string name="EventName">activate_mummy_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>199</int>
+			<vec3>-1792 1280 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>320</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>200</int>
+			<vec3>-1792 1408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>322</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>201</int>
+			<vec3>480 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_pause</string>
+			<dict>
+				<string name="EventName">crowd_pause</string>
+			</dict>
+			<array><int>142</int><int>0</int></array>
+		</array>
+		<array>
+			<string>TimerTrigger</string>
+			<int>202</int>
+			<vec3>2912 128 0</vec3>
+			<bool>f</bool>
+			<int>4</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Frequency">10000</int>
+			</dict>
+			<array><int>44</int><int>0</int></array>
+		</array>
+		<array>
+			<string>OpenInterface</string>
+			<int>203</int>
+			<vec3>2560 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EndOfTrials</string>
+			<dict>
+				<string name="Filename">gui/survival/trialsend.gui</string>
+				<bool name="MakeRoot">t</bool>
+				<string name="Class">EndOfTrials</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>204</int>
+			<vec3>-1792 1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>316</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>205</int>
+			<vec3>192 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_high_priest</string>
+			<dict>
+				<string name="EventName">activate_high_priest</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>206</int>
+			<vec3>-1856 1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 5</string>
+			<dict>
+				<int name="Value">5</int>
+				<array name="OnTrue"><int>204</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>207</int>
+			<vec3>-1952 1024 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>206</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>208</int>
+			<vec3>2784 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableSpawns</string>
+			<dict>
+				<array name="Scripts"><int>202</int></array>
+			</dict>
+			<array><int>383</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>209</int>
+			<vec3>-992 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_summoner</string>
+			<dict>
+				<string name="EventName">activate_lich_summoner</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>210</int>
+			<vec3>384 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_bombs</string>
+			<dict>
+				<string name="EventName">crowd_bombs</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>211</int>
+			<vec3>2208 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss_death</string>
+			<dict>
+				<string name="EventName">boss_death</string>
+			</dict>
+			<array>
+				<int>373</int>
+				<int>0</int>
+				<int>381</int>
+				<int>0</int>
+				<int>448</int>
+				<int>0</int>
+				<int>451</int>
+				<int>0</int>
+				<int>453</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>212</int>
+			<vec3>-1952 1216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>214</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>213</int>
+			<vec3>-1792 1216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 1</string>
+			<dict>
+				<int name="Value">1</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>319</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>214</int>
+			<vec3>-1856 1216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 6</string>
+			<dict>
+				<int name="Value">6</int>
+				<array name="OnTrue"><int>213</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>215</int>
+			<vec3>288 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel_mb</string>
+			<dict>
+				<string name="EventName">activate_sentinel_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>216</int>
+			<vec3>-1952 1280 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>196</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>217</int>
+			<vec3>288 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy1</string>
+			<dict>
+				<string name="EventName">activate_mummy1</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>218</int>
+			<vec3>-1632 704 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wave2</string>
+			<array><int>308</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>219</int>
+			<vec3>1888 -352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Wave Final</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">3000</int>
+				<array name="SubWave1"><int>274</int><int>413</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="OnFinished"><int>250</int></array>
+				<array name="SubWave6"><int>274</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave7"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="SubWave8"><int>274</int></array>
+				<array name="SubWave9"><int>274</int><int>210</int><int>395</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>220</int>
+			<vec3>-96 -64 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>TestBoss</string>
+			<array><int>190</int><int>0</int><int>155</int><int>0</int><int>18</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>221</int>
+			<vec3>224 -96 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SkipWave</string>
+			<array><int>432</int><int>0</int><int>69</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>222</int>
+			<vec3>-1248 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_golem_sand</string>
+			<dict>
+				<string name="EventName">activate_golem_sand</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>223</int>
+			<vec3>-640 1088 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel_medium</string>
+			<dict>
+				<string name="EventName">activate_sentinel_medium</string>
+			</dict>
+		</array>
+		<array><string>ToggleScripts</string><int>224</int><vec3>-96 128 0</vec3><bool>f</bool><int>-1</int><bool>f</bool><string>TEST</string></array>
+		<array>
+			<string>ScriptLink</string>
+			<int>225</int>
+			<vec3>-1152 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable1grp</string>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>226</int>
+			<vec3>-1504 1280 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_golem_sand</string>
+			<dict>
+				<string name="EventName">activate_golem_sand</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>227</int>
+			<vec3>544 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ActivateStart</string>
+			<array><int>104</int><int>20</int><int>58</int><int>20</int><int>28</int><int>20</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>228</int>
+			<vec3>480 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>events_disabled</string>
+			<dict>
+				<string name="EventName">events_disabled</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>229</int>
+			<vec3>288 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_golem_sand</string>
+			<dict>
+				<string name="EventName">activate_golem_sand</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>230</int>
+			<vec3>-1408 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable1grp</string>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>231</int>
+			<vec3>800 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>OpenGates</string>
+			<array><int>393</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>232</int>
+			<vec3>1568 352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wraith</string>
+			<array><int>170</int><int>0</int><int>475</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>233</int>
+			<vec3>1760 352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>watcher</string>
+			<array><int>367</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>234</int>
+			<vec3>192 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>all_traps_deactivate</string>
+			<dict>
+				<string name="EventName">all_traps_deactivate</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>235</int>
+			<vec3>-1632 640 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wave2</string>
+			<array><int>307</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>236</int>
+			<vec3>1184 -320 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 6</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">5000</int>
+				<array name="SubWave1"><int>274</int><int>413</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="OnFinished"><int>76</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>237</int>
+			<vec3>-1632 768 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wave2</string>
+			<array><int>309</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>238</int>
+			<vec3>96 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>next_wave</string>
+			<dict>
+				<string name="Sound">event:/arena/next_wave</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>239</int>
+			<vec3>1664 -96 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss Med Chance</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>155</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>240</int>
+			<vec3>-1696 384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>100</int><int>0</int><int>134</int><int>0</int><int>111</int><int>0</int><int>325</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>241</int>
+			<vec3>-1152 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tick_easy</string>
+			<dict>
+				<string name="EventName">deactivate_tick_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>242</int>
+			<vec3>-1152 512 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_maggot_easy</string>
+			<dict>
+				<string name="EventName">deactivate_maggot_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>243</int>
+			<vec3>384 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>events_enabled</string>
+			<dict>
+				<string name="EventName">events_enabled</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>244</int>
+			<vec3>-2080 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CheckWave</string>
+			<array>
+				<int>138</int>
+				<int>0</int>
+				<int>110</int>
+				<int>0</int>
+				<int>123</int>
+				<int>0</int>
+				<int>144</int>
+				<int>0</int>
+				<int>283</int>
+				<int>0</int>
+				<int>212</int>
+				<int>0</int>
+				<int>248</int>
+				<int>0</int>
+				<int>207</int>
+				<int>0</int>
+				<int>197</int>
+				<int>0</int>
+				<int>95</int>
+				<int>0</int>
+				<int>158</int>
+				<int>0</int>
+				<int>162</int>
+				<int>0</int>
+				<int>192</int>
+				<int>0</int>
+				<int>286</int>
+				<int>0</int>
+				<int>289</int>
+				<int>0</int>
+				<int>216</int>
+				<int>0</int>
+				<int>294</int>
+				<int>0</int>
+				<int>297</int>
+				<int>0</int>
+				<int>300</int>
+				<int>0</int>
+				<int>82</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>245</int>
+			<vec3>-1792 1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>317</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>246</int>
+			<vec3>96 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sentinel</string>
+			<dict>
+				<string name="EventName">activate_sentinel</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>247</int>
+			<vec3>-1856 1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 5</string>
+			<dict>
+				<int name="Value">5</int>
+				<array name="OnTrue"><int>245</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>248</int>
+			<vec3>-1952 1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>247</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>249</int>
+			<vec3>-1856 1408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="OnTrue"><int>200</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>250</int>
+			<vec3>2368 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Completed</string>
+			<array>
+				<int>37</int>
+				<int>500</int>
+				<int>201</int>
+				<int>0</int>
+				<int>159</int>
+				<int>0</int>
+				<int>228</int>
+				<int>0</int>
+				<int>437</int>
+				<int>0</int>
+				<int>148</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>251</int>
+			<vec3>2848 320 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ResetSpawns 4</string>
+			<dict>
+				<array name="Scripts"><int>202</int></array>
+				<int name="TriggerTimes">4</int>
+			</dict>
+			<array><int>493</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckGladiatorRating</string>
+			<int>252</int>
+			<vec3>-512 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<int name="Value">2</int>
+				<array name="OnFalse"><int>258</int></array>
+				<array name="OnTrue"><int>268</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckGladiatorRating</string>
+			<int>253</int>
+			<vec3>-512 -128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="OnTrue"><int>257</int></array>
+				<array name="OnFalse"><int>252</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>254</int>
+			<vec3>128 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable Medium</string>
+			<dict>
+				<array name="Scripts"><int>272</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>255</int>
+			<vec3>128 -672 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable 2grps</string>
+			<dict>
+				<array name="Scripts"><int>278</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>256</int>
+			<vec3>64 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable Easy</string>
+			<dict>
+				<int name="State">2</int>
+				<array name="Scripts"><int>42</int><int>277</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>257</int>
+			<vec3>-416 -128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>59</int><int>0</int><int>328</int><int>0</int><int>255</int><int>0</int><int>254</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>258</int>
+			<vec3>-416 -256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>55</int>
+				<int>0</int>
+				<int>255</int>
+				<int>0</int>
+				<int>254</int>
+				<int>0</int>
+				<int>329</int>
+				<int>0</int>
+				<int>418</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>259</int>
+			<vec3>-416 -384 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>330</int>
+				<int>0</int>
+				<int>255</int>
+				<int>0</int>
+				<int>254</int>
+				<int>0</int>
+				<int>54</int>
+				<int>0</int>
+				<int>441</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>260</int>
+			<vec3>-416 -512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>331</int>
+				<int>0</int>
+				<int>38</int>
+				<int>0</int>
+				<int>255</int>
+				<int>0</int>
+				<int>254</int>
+				<int>0</int>
+				<int>385</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>261</int>
+			<vec3>-416 -640 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>332</int>
+				<int>0</int>
+				<int>254</int>
+				<int>0</int>
+				<int>84</int>
+				<int>0</int>
+				<int>255</int>
+				<int>0</int>
+				<int>187</int>
+				<int>0</int>
+				<int>14</int>
+				<int>0</int>
+				<int>440</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>262</int>
+			<vec3>-512 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CheckRating</string>
+			<array><int>253</int><int>0</int></array>
+		</array>
+		<array>
+			<string>RandomCount</string>
+			<int>263</int>
+			<vec3>768 -832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="ToExecute"><int>277</int><int>281</int><int>276</int><int>30</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>264</int>
+			<vec3>960 -1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Hard</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>87</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>265</int>
+			<vec3>-1504 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_banner</string>
+			<dict>
+				<string name="EventName">activate_skeleton_banner</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>266</int>
+			<vec3>480 864 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_scorpion_mb</string>
+			<dict>
+				<string name="EventName">activate_scorpion_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>267</int>
+			<vec3>-1504 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_maggot_mb</string>
+			<dict>
+				<string name="EventName">activate_maggot_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckGladiatorRating</string>
+			<int>268</int>
+			<vec3>-512 -384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<int name="Function">2</int>
+				<int name="Value">6</int>
+				<array name="OnTrue"><int>106</int></array>
+				<array name="OnFalse"><int>259</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>269</int>
+			<vec3>512 -320 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 3</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">5000</int>
+				<array name="SubWave1"><int>274</int><int>413</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="OnFinished"><int>152</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>270</int>
+			<vec3>192 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_items</string>
+			<dict>
+				<string name="EventName">crowd_items</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>271</int>
+			<vec3>768 -736 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1 grp</string>
+			<array><int>263</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>272</int>
+			<vec3>864 -1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Medium</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>13</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>273</int>
+			<vec3>960 -1216 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_enemies_hard</string>
+			<dict>
+				<string name="EventName">spawn_enemies_hard</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>274</int>
+			<vec3>864 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="PickedRandoms"><int>79</int></array>
+			</dict>
+			<array><int>20</int><int>0</int><int>458</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>275</int>
+			<vec3>-1792 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>240</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>276</int>
+			<vec3>960 -928 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Medium - Hard</string>
+			<dict>
+				<array name="PickedRandoms"><int>272</int><int>264</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>277</int>
+			<vec3>768 -928 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Easy</string>
+			<dict>
+				<array name="PickedRandoms"><int>42</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>278</int>
+			<vec3>864 -736 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2 grps</string>
+			<dict>
+				<int name="Chance">20</int>
+			</dict>
+			<array><int>29</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>279</int>
+			<vec3>128 -160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>NextWave</string>
+			<array><int>68</int><int>3000</int><int>221</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>280</int>
+			<vec3>-1504 960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_mb</string>
+			<dict>
+				<string name="EventName">activate_skeleton_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomPicker</string>
+			<int>281</int>
+			<vec3>896 -928 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Random</string>
+			<dict>
+				<array name="PickedRandoms"><int>272</int><int>264</int><int>42</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>282</int>
+			<vec3>960 -320 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 5</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">5000</int>
+				<array name="SubWave1"><int>274</int><int>413</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="OnFinished"><int>80</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>283</int>
+			<vec3>-1952 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>285</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>284</int>
+			<vec3>-1792 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>309</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>285</int>
+			<vec3>-1856 576 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 2</string>
+			<dict>
+				<int name="Value">2</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>284</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>286</int>
+			<vec3>-1952 768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>288</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>287</int>
+			<vec3>-1792 768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>312</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>288</int>
+			<vec3>-1856 768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 3</string>
+			<dict>
+				<int name="Value">3</int>
+				<array name="Variable"><int>107</int></array>
+				<array name="OnTrue"><int>287</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>289</int>
+			<vec3>-1952 960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>291</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>290</int>
+			<vec3>-1792 960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>315</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>291</int>
+			<vec3>-1856 960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 4</string>
+			<dict>
+				<int name="Value">4</int>
+				<array name="OnTrue"><int>290</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>292</int>
+			<vec3>-1792 1152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>318</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>293</int>
+			<vec3>-1856 1152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 5</string>
+			<dict>
+				<int name="Value">5</int>
+				<array name="OnTrue"><int>292</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>294</int>
+			<vec3>-1952 1152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>293</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>295</int>
+			<vec3>-1856 1344 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 6</string>
+			<dict>
+				<int name="Value">6</int>
+				<array name="OnTrue"><int>296</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>296</int>
+			<vec3>-1792 1344 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>321</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>297</int>
+			<vec3>-1952 1344 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>295</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>298</int>
+			<vec3>-1856 1536 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="OnTrue"><int>299</int></array>
+				<array name="Variable"><int>107</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>299</int>
+			<vec3>-1792 1536 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave = 7</string>
+			<dict>
+				<int name="Value">7</int>
+				<array name="Variable"><int>108</int></array>
+				<array name="OnTrue"><int>324</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>300</int>
+			<vec3>-1952 1536 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>298</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>301</int>
+			<vec3>-1632 1088 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wave4</string>
+			<array><int>314</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>302</int>
+			<vec3>-1632 1024 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wave4</string>
+			<array><int>313</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>303</int>
+			<vec3>672 -96 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>SkipWave</string>
+			<array><int>432</int><int>0</int><int>103</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>304</int>
+			<vec3>-1504 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton1</string>
+			<dict>
+				<string name="EventName">activate_skeleton1</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>305</int>
+			<vec3>-1504 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_archer</string>
+			<dict>
+				<string name="EventName">activate_skeleton_archer</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>306</int>
+			<vec3>-1696 320 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>135</int><int>0</int><int>120</int><int>0</int><int>304</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>307</int>
+			<vec3>-1696 448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>360</int><int>0</int><int>351</int><int>0</int><int>241</int><int>0</int><int>305</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>308</int>
+			<vec3>-1696 512 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>361</int><int>0</int><int>91</int><int>0</int><int>242</int><int>0</int><int>345</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>309</int>
+			<vec3>-1696 576 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>334</int>
+				<int>0</int>
+				<int>36</int>
+				<int>0</int>
+				<int>22</int>
+				<int>0</int>
+				<int>145</int>
+				<int>0</int>
+				<int>371</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>310</int>
+			<vec3>-1696 640 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>64</int>
+				<int>0</int>
+				<int>353</int>
+				<int>0</int>
+				<int>72</int>
+				<int>0</int>
+				<int>175</int>
+				<int>0</int>
+				<int>326</int>
+				<int>0</int>
+				<int>40</int>
+				<int>0</int>
+				<int>419</int>
+				<int>0</int>
+				<int>235</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>311</int>
+			<vec3>-1696 704 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>265</int>
+				<int>0</int>
+				<int>354</int>
+				<int>0</int>
+				<int>335</int>
+				<int>0</int>
+				<int>48</int>
+				<int>0</int>
+				<int>172</int>
+				<int>0</int>
+				<int>327</int>
+				<int>0</int>
+				<int>338</int>
+				<int>0</int>
+				<int>218</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>312</int>
+			<vec3>-1696 768 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>337</int>
+				<int>0</int>
+				<int>267</int>
+				<int>0</int>
+				<int>209</int>
+				<int>0</int>
+				<int>133</int>
+				<int>0</int>
+				<int>183</int>
+				<int>0</int>
+				<int>339</int>
+				<int>0</int>
+				<int>391</int>
+				<int>0</int>
+				<int>237</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>313</int>
+			<vec3>-1696 832 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>127</int>
+				<int>0</int>
+				<int>131</int>
+				<int>0</int>
+				<int>362</int>
+				<int>0</int>
+				<int>176</int>
+				<int>0</int>
+				<int>139</int>
+				<int>0</int>
+				<int>186</int>
+				<int>0</int>
+				<int>225</int>
+				<int>0</int>
+				<int>97</int>
+				<int>0</int>
+				<int>421</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>314</int>
+			<vec3>-1696 896 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>185</int>
+				<int>0</int>
+				<int>179</int>
+				<int>0</int>
+				<int>66</int>
+				<int>0</int>
+				<int>333</int>
+				<int>0</int>
+				<int>370</int>
+				<int>0</int>
+				<int>386</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>315</int>
+			<vec3>-1696 960 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>280</int>
+				<int>0</int>
+				<int>355</int>
+				<int>0</int>
+				<int>132</int>
+				<int>0</int>
+				<int>96</int>
+				<int>0</int>
+				<int>336</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>316</int>
+			<vec3>-1696 1024 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>350</int>
+				<int>0</int>
+				<int>25</int>
+				<int>0</int>
+				<int>184</int>
+				<int>0</int>
+				<int>174</int>
+				<int>0</int>
+				<int>222</int>
+				<int>0</int>
+				<int>420</int>
+				<int>0</int>
+				<int>302</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>317</int>
+			<vec3>-1696 1088 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>358</int><int>0</int><int>223</int><int>0</int><int>390</int><int>0</int><int>301</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>318</int>
+			<vec3>-1696 1152 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array>
+				<int>83</int>
+				<int>0</int>
+				<int>156</int>
+				<int>0</int>
+				<int>359</int>
+				<int>0</int>
+				<int>173</int>
+				<int>0</int>
+				<int>181</int>
+				<int>0</int>
+				<int>119</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>319</int>
+			<vec3>-1696 1216 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>343</int><int>0</int><int>347</int><int>0</int><int>357</int><int>0</int><int>230</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>320</int>
+			<vec3>-1696 1280 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>344</int><int>0</int><int>356</int><int>0</int><int>226</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>321</int>
+			<vec3>-1696 1344 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>342</int><int>0</int><int>389</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>322</int>
+			<vec3>-1696 1408 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<array><int>195</int><int>0</int></array>
+		</array>
+		<array><string>ScriptLink</string><int>323</int><vec3>-1696 1472 0</vec3><bool>t</bool><int>1</int><bool>f</bool></array>
+		<array><string>ScriptLink</string><int>324</int><vec3>-1696 1536 0</vec3><bool>t</bool><int>1</int><bool>f</bool></array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>325</int>
+			<vec3>-1408 384 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_bat</string>
+			<dict>
+				<string name="EventName">deactivate_bat</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>326</int>
+			<vec3>-1408 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tick_easy</string>
+			<dict>
+				<string name="EventName">deactivate_tick_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>327</int>
+			<vec3>-1408 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_maggot_easy</string>
+			<dict>
+				<string name="EventName">deactivate_maggot_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>328</int>
+			<vec3>-384 -160 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Rating 0</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>329</int>
+			<vec3>-384 -288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Rating 1-2</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>330</int>
+			<vec3>-384 -416 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Rating 3-6</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>331</int>
+			<vec3>-384 -544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Rating 7-11</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>332</int>
+			<vec3>-383 -671 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Rating 12-16</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>333</int>
+			<vec3>-1248 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich</string>
+			<dict>
+				<string name="EventName">activate_lich</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>334</int>
+			<vec3>-1248 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_scorpion_mb</string>
+			<dict>
+				<string name="EventName">activate_scorpion_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>335</int>
+			<vec3>-1248 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_spider</string>
+			<dict>
+				<string name="EventName">activate_spider</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>336</int>
+			<vec3>-1248 960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_ghost</string>
+			<dict>
+				<string name="EventName">activate_ghost</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>337</int>
+			<vec3>-1248 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton_mb</string>
+			<dict>
+				<string name="EventName">activate_skeleton_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>338</int>
+			<vec3>-1152 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tick</string>
+			<dict>
+				<string name="EventName">deactivate_tick</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>339</int>
+			<vec3>-1152 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_maggot</string>
+			<dict>
+				<string name="EventName">deactivate_maggot</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>340</int>
+			<vec3>832 608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_bat_easy</string>
+			<dict>
+				<string name="EventName">deactivate_bat_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>341</int>
+			<vec3>896 608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_bat_medium</string>
+			<dict>
+				<string name="EventName">deactivate_bat_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>342</int>
+			<vec3>-1248 1344 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_summoner</string>
+			<dict>
+				<string name="EventName">activate_lich_summoner</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>343</int>
+			<vec3>-1248 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_eye</string>
+			<dict>
+				<string name="EventName">activate_eye</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>344</int>
+			<vec3>-1248 1280 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_wisp</string>
+			<dict>
+				<string name="EventName">activate_wisp</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>345</int>
+			<vec3>-736 512 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_summoner</string>
+			<dict>
+				<string name="EventName">activate_lich_summoner</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>346</int>
+			<vec3>2144 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">2 Bosses</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>347</int>
+			<vec3>-736 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable3grps</string>
+			<array><int>85</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>348</int>
+			<vec3>288 -320 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 2</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">5000</int>
+				<array name="SubWave1"><int>274</int><int>413</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int><int>243</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="OnFinished"><int>153</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>349</int>
+			<vec3>64 -320 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Wave 1</string>
+			<dict>
+				<array name="SubWave5"><int>274</int></array>
+				<int name="SubWaveDelay">5000</int>
+				<array name="SubWave1"><int>274</int><int>243</int></array>
+				<array name="SubWave0"><int>274</int><int>270</int></array>
+				<array name="SubWave2"><int>274</int></array>
+				<array name="SubWave6"><int>274</int><int>21</int><int>210</int><int>395</int></array>
+				<array name="OnFinished"><int>168</int></array>
+				<array name="SubWave3"><int>274</int></array>
+				<array name="SubWave4"><int>274</int></array>
+				<array name="OnSubWaveEarlyFinish"><int>405</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>350</int>
+			<vec3>-896 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>EnableHard</string>
+			<array><int>84</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>351</int>
+			<vec3>-640 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Disable1grp</string>
+			<array><int>14</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>352</int>
+			<vec3>2464 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_cheer_override</string>
+			<dict>
+				<string name="EventName">crowd_cheer_override</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>353</int>
+			<vec3>-992 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_eye</string>
+			<dict>
+				<string name="EventName">activate_eye</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>354</int>
+			<vec3>-992 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_wisp</string>
+			<dict>
+				<string name="EventName">activate_wisp</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>355</int>
+			<vec3>-992 960 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_eye_mb</string>
+			<dict>
+				<string name="EventName">activate_eye_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>356</int>
+			<vec3>-992 1280 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_gargoyle_easy</string>
+			<dict>
+				<string name="EventName">activate_gargoyle_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>357</int>
+			<vec3>-992 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_troll_easy</string>
+			<dict>
+				<string name="EventName">activate_troll_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>358</int>
+			<vec3>-992 1088 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental_easy</string>
+			<dict>
+				<string name="EventName">activate_elemental_easy</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>359</int>
+			<vec3>-992 1152 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_lich_mb</string>
+			<dict>
+				<string name="EventName">activate_lich_mb</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>360</int>
+			<vec3>-896 448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_tick</string>
+			<dict>
+				<string name="EventName">deactivate_tick</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>361</int>
+			<vec3>-896 512 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>deactivate_maggot</string>
+			<dict>
+				<string name="EventName">deactivate_maggot</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>362</int>
+			<vec3>-992 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_skeleton2</string>
+			<dict>
+				<string name="EventName">activate_skeleton2</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>363</int>
+			<vec3>1888 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_sandworm</string>
+			<dict>
+				<string name="EventName">activate_sandworm</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>364</int>
+			<vec3>1440 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>FinalWave</string>
+			<array><int>74</int><int>3000</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>365</int>
+			<vec3>2848 -32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>154</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>366</int>
+			<vec3>1440 352 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>golem</string>
+			<array><int>45</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>367</int>
+			<vec3>1760 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_watcher</string>
+			<dict>
+				<string name="EventName">activate_watcher</string>
+			</dict>
+			<array><int>468</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>368</int>
+			<vec3>2976 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_enemies_medium</string>
+			<dict>
+				<string name="EventName">spawn_enemies_medium</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>369</int>
+			<vec3>192 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental_sand</string>
+			<dict>
+				<string name="EventName">activate_elemental_sand</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>370</int>
+			<vec3>-992 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental_sand</string>
+			<dict>
+				<string name="EventName">activate_elemental_sand</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>371</int>
+			<vec3>-736 576 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_elemental_sand</string>
+			<dict>
+				<string name="EventName">activate_elemental_sand</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>372</int>
+			<vec3>1792 32 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1 Boss</string>
+			<dict>
+				<int name="Chance">60</int>
+			</dict>
+			<array><int>77</int><int>0</int><int>377</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>373</int>
+			<vec3>2304 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>BossKilled</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>374</int></array>
+				<int name="Value">1</int>
+			</dict>
+			<array><int>375</int><int>0</int><int>478</int><int>0</int></array>
+		</array>
+		<array><string>Variable</string><int>374</int><vec3>2368 480 0</vec3><bool>t</bool><int>-1</int><bool>f</bool><string>Bosses Killed</string></array>
+		<array>
+			<string>CheckVariables</string>
+			<int>375</int>
+			<vec3>2432 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<int name="Value">2</int>
+				<array name="Variable"><int>374</int></array>
+				<array name="OnTrue"><int>382</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>376</int>
+			<vec3>2880 224 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5s</string>
+			<dict>
+				<int name="Value">5000</int>
+				<array name="TimerTriggers"><int>202</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>377</int>
+			<vec3>2112 -64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>1 Boss</string>
+			<array><int>208</int><int>0</int><int>496</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>378</int>
+			<vec3>2112 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>2 Bosses</string>
+			<array><int>379</int><int>0</int><int>346</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>379</int>
+			<vec3>2208 0 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>472</int><int>251</int><int>487</int><int>488</int><int>491</int></array>
+			</dict>
+			<array><int>208</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>380</int>
+			<vec3>1888 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ActivateBoss2</string>
+			<array><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>381</int>
+			<vec3>2304 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss 1 Killed</string>
+			<array><int>491</int><int>0</int><int>490</int><int>0</int><int>497</int><int>0</int><int>487</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>382</int>
+			<vec3>2432 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss 2 Killed</string>
+			<array><int>492</int><int>0</int><int>498</int><int>0</int><int>488</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>383</int>
+			<vec3>2912 384 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ResetSpawns</string>
+			<array>
+				<int>251</int>
+				<int>0</int>
+				<int>472</int>
+				<int>0</int>
+				<int>202</int>
+				<int>0</int>
+				<int>376</int>
+				<int>0</int>
+				<int>495</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>384</int>
+			<vec3>384 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy2</string>
+			<dict>
+				<string name="EventName">activate_mummy2</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>385</int>
+			<vec3>288 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<array name="Scripts"><int>415</int></array>
+				<int name="TriggerTimes">3</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>386</int>
+			<vec3>-896 896 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_mummy2</string>
+			<dict>
+				<string name="EventName">activate_mummy2</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>387</int>
+			<vec3>0 704 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_djinn</string>
+			<dict>
+				<string name="EventName">activate_djinn</string>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>388</int>
+			<vec3>1664 -224 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss Very High Chance</string>
+			<dict>
+				<int name="Chance">1000</int>
+			</dict>
+			<array><int>155</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>389</int>
+			<vec3>-1152 1344 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_trapper</string>
+			<dict>
+				<string name="EventName">activate_trapper</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>390</int>
+			<vec3>-480 1088 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_djinn</string>
+			<dict>
+				<string name="EventName">activate_djinn</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>391</int>
+			<vec3>-896 768 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_trapper</string>
+			<dict>
+				<string name="EventName">activate_trapper</string>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWaveCount</string>
+			<int>392</int>
+			<vec3>-224 -800 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>5</string>
+			<dict>
+				<int name="Count">5</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>393</int>
+			<vec3>800 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gates_open</string>
+			<dict>
+				<string name="EventName">gates_open</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>394</int>
+			<vec3>864 288 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>gates_close</string>
+			<dict>
+				<string name="EventName">gates_close</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>395</int>
+			<vec3>864 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>CloseGates</string>
+			<array><int>394</int><int>5000</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>396</int>
+			<vec3>1760 672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>boss4_killed</string>
+			<dict>
+				<string name="Flag">boss4_killed</string>
+				<array name="OnTrue"><int>397</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>397</int>
+			<vec3>1760 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>233</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>398</int>
+			<vec3>1696 768 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>SetupBosses</string>
+			<array>
+				<int>399</int>
+				<int>0</int>
+				<int>396</int>
+				<int>0</int>
+				<int>401</int>
+				<int>0</int>
+				<int>60</int>
+				<int>0</int>
+				<int>62</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>399</int>
+			<vec3>1568 672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>boss3_killed</string>
+			<dict>
+				<string name="Flag">boss3_killed</string>
+				<array name="OnTrue"><int>400</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>400</int>
+			<vec3>1568 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>232</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>401</int>
+			<vec3>1824 672 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>boss6_killed</string>
+			<dict>
+				<string name="Flag">boss6_killed</string>
+				<array name="OnTrue"><int>402</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>402</int>
+			<vec3>1824 608 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>177</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>403</int>
+			<vec3>1888 352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>sandworm</string>
+			<array><int>363</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CrowdTriggerAction</string>
+			<int>404</int>
+			<vec3>672 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave-fast</string>
+			<dict>
+				<string name="Id">subwave-fast</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>405</int>
+			<vec3>672 96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave_fast</string>
+			<dict>
+				<string name="EventName">subwave_fast</string>
+			</dict>
+			<array><int>404</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SurvivalWave</string>
+			<int>406</int>
+			<vec3>1792 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Boss Wave</string>
+			<dict>
+				<bool name="SubWaveWait">t</bool>
+				<array name="SubWave0"><int>270</int><int>189</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>407</int>
+			<vec3>576 1152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Towers</string>
+			<array>
+				<int>408</int>
+				<int>0</int>
+				<int>409</int>
+				<int>0</int>
+				<int>410</int>
+				<int>0</int>
+				<int>411</int>
+				<int>0</int>
+				<int>412</int>
+				<int>0</int>
+				<int>447</int>
+				<int>0</int>
+				<int>423</int>
+				<int>0</int>
+			</array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>408</int>
+			<vec3>672 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_nova_1</string>
+			<dict>
+				<string name="EventName">activate_tower_nova_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>409</int>
+			<vec3>800 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_nova_2</string>
+			<dict>
+				<string name="EventName">activate_tower_nova_2</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>410</int>
+			<vec3>928 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_beamo</string>
+			<dict>
+				<string name="EventName">activate_tower_beamo</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>411</int>
+			<vec3>480 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_rock</string>
+			<dict>
+				<string name="EventName">activate_tower_rock</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>412</int>
+			<vec3>384 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_laser</string>
+			<dict>
+				<string name="EventName">activate_tower_laser</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>413</int>
+			<vec3>448 -448 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>TowerChance</string>
+			<dict>
+				<float name="ChanceToExecute">0.75</float>
+				<array name="ToExecute"><int>415</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>414</int>
+			<vec3>352 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>Enable</string>
+			<dict>
+				<array name="Scripts"><int>413</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>415</int>
+			<vec3>448 -544 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>SpawnTowers</string>
+			<array><int>417</int><int>0</int><int>422</int><int>60000</int><int>460</int><int>30000</int></array>
+		</array>
+		<array>
+			<string>GlobalEventTrigger</string>
+			<int>416</int>
+			<vec3>256 -448 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>arena_towers</string>
+			<dict>
+				<string name="EventName">arena_towers</string>
+			</dict>
+			<array><int>414</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>417</int>
+			<vec3>448 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_towers</string>
+			<dict>
+				<string name="EventName">spawn_towers</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>418</int>
+			<vec3>160 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>415</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>419</int>
+			<vec3>-1152 640 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_nova_1</string>
+			<dict>
+				<string name="EventName">activate_tower_nova_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>420</int>
+			<vec3>-1152 1024 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_rock</string>
+			<dict>
+				<string name="EventName">activate_tower_rock</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>421</int>
+			<vec3>-896 832 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_beamo</string>
+			<dict>
+				<string name="EventName">activate_tower_beamo</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>422</int>
+			<vec3>544 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DestroyTimer</string>
+			<array><int>456</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>423</int>
+			<vec3>1152 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_splitshot</string>
+			<dict>
+				<string name="EventName">activate_tower_splitshot</string>
+			</dict>
+		</array>
+		<array>
+			<string>ClearDelayedTriggers</string>
+			<int>424</int>
+			<vec3>544 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>415</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>425</int>
+			<vec3>1888 32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2 Bosses</string>
+			<dict>
+				<int name="Chance">40</int>
+			</dict>
+			<array><int>77</int><int>0</int><int>380</int><int>2000</int><int>378</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>426</int>
+			<vec3>736 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>1</string>
+			<dict>
+				<array name="Scripts"><int>459</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>AddNotification</string>
+			<int>427</int>
+			<vec3>544 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.arena.wavecompleted</string>
+				<vec4 name="ColorFrom">0 1 0 1</vec4>
+				<vec4 name="ColorTo">0 1 0 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>428</int>
+			<vec3>1088 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave count</string>
+			<array><int>432</int><int>0</int><int>436</int><int>0</int><int>430</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>429</int>
+			<vec3>1280 128 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave count</string>
+			<array><int>431</int><int>0</int><int>438</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>430</int>
+			<vec3>1024 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">New wave:</string>
+				<array name="Variables"><int>439</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>431</int>
+			<vec3>1280 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave++</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>434</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>432</int>
+			<vec3>1088 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave++</string>
+			<dict>
+				<int name="Function">2</int>
+				<array name="Variables"><int>439</int></array>
+				<int name="Value">1</int>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>433</int>
+			<vec3>1024 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>wave = 0</string>
+			<dict>
+				<array name="Variables"><int>439</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalVariable</string>
+			<int>434</int>
+			<vec3>1280 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>subwave</string>
+			<dict>
+				<string name="Name">subwave</string>
+			</dict>
+		</array>
+		<array>
+			<string>AddNotification</string>
+			<int>435</int>
+			<vec3>2464 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">.arena.victory</string>
+				<vec4 name="ColorFrom">0 1 0 1</vec4>
+				<vec4 name="ColorTo">0 1 0 1</vec4>
+			</dict>
+		</array>
+		<array>
+			<string>ChangeVariables</string>
+			<int>436</int>
+			<vec3>1216 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<string>subwave = 0</string>
+			<dict>
+				<array name="Variables"><int>434</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>437</int>
+			<vec3>2368 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>all_traps_deactivate</string>
+			<dict>
+				<string name="EventName">all_traps_deactivate</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>438</int>
+			<vec3>1216 128 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">New subwave:</string>
+				<array name="Variables"><int>434</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalVariable</string>
+			<int>439</int>
+			<vec3>1088 256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>wave</string>
+			<dict>
+				<string name="Name">wave</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>440</int>
+			<vec3>352 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>4</string>
+			<dict>
+				<array name="Scripts"><int>415</int></array>
+				<int name="TriggerTimes">4</int>
+			</dict>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>441</int>
+			<vec3>224 -544 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>2</string>
+			<dict>
+				<array name="Scripts"><int>415</int></array>
+				<int name="TriggerTimes">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>442</int>
+			<vec3>-320 -1088 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>faster_waves</string>
+			<array><int>443</int><int>0</int><int>446</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>443</int>
+			<vec3>-224 -1088 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts">
+					<int>349</int>
+					<int>16</int>
+					<int>348</int>
+					<int>17</int>
+					<int>269</int>
+					<int>50</int>
+					<int>136</int>
+					<int>51</int>
+					<int>282</int>
+					<int>88</int>
+					<int>236</int>
+					<int>89</int>
+					<int>219</int>
+					<int>92</int>
+					<int>460</int>
+					<int>422</int>
+					<int>495</int>
+					<int>376</int>
+				</array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>444</int>
+			<vec3>-512 -928 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>5 Waves?</string>
+			<array><int>500</int><int>10</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>445</int>
+			<vec3>-224 -928 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts">
+					<int>68</int>
+					<int>221</int>
+					<int>70</int>
+					<int>303</int>
+					<int>235</int>
+					<int>218</int>
+					<int>237</int>
+					<int>302</int>
+					<int>301</int>
+					<int>119</int>
+					<int>501</int>
+					<int>392</int>
+				</array>
+			</dict>
+			<array><int>392</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>446</int>
+			<vec3>-320 -1184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>SpeedModeBossWaves</string>
+			<dict>
+				<int name="Parameter">2</int>
+				<int name="Value">5000</int>
+				<array name="TimerTriggers"><int>202</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>447</int>
+			<vec3>1040 1216 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>activate_tower_javelin</string>
+			<dict>
+				<string name="EventName">activate_tower_javelin</string>
+			</dict>
+		</array>
+		<array>
+			<string>CrowdTriggerAction</string>
+			<int>448</int>
+			<vec3>2208 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>boss-killed</string>
+			<dict>
+				<string name="Id">boss-killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>449</int>
+			<vec3>2464 -160 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_time_reset</string>
+			<dict>
+				<string name="EventName">crowd_time_reset</string>
+			</dict>
+			<array><int>450</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>450</int>
+			<vec3>2464 -96 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_update</string>
+			<dict>
+				<string name="EventName">crowd_update</string>
+			</dict>
+			<array><int>352</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>451</int>
+			<vec3>2144 416 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_time_reset</string>
+			<dict>
+				<string name="EventName">crowd_time_reset</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>452</int>
+			<vec3>384 192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>crowd_cheer</string>
+			<dict>
+				<string name="EventName">crowd_cheer</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>453</int>
+			<vec3>2144 480 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>crowd_cheer</string>
+			<array><int>452</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>454</int>
+			<vec3>-416 -1088 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>arena_faster_waves</string>
+			<dict>
+				<string name="Flag">arena_faster_waves</string>
+				<array name="OnTrue"><int>442</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>455</int>
+			<vec3>-512 -1088 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>t</bool>
+			<string>SpeedMode?</string>
+			<array><int>454</int><int>10</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>456</int>
+			<vec3>544 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>destroy_towers</string>
+			<dict>
+				<string name="EventName">destroy_towers</string>
+			</dict>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>457</int>
+			<vec3>640 -704 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_trappers</string>
+			<dict>
+				<string name="EventName">spawn_trappers</string>
+			</dict>
+		</array>
+		<array>
+			<string>RandomChance</string>
+			<int>458</int>
+			<vec3>640 -448 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>TrapperChance</string>
+			<dict>
+				<float name="ChanceToExecute">0.15</float>
+				<array name="ToExecute"><int>459</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>459</int>
+			<vec3>640 -544 0</vec3>
+			<bool>t</bool>
+			<int>0</int>
+			<bool>f</bool>
+			<string>SpawnTrappers</string>
+			<array><int>457</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>460</int>
+			<vec3>544 -608 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>DestroyTimerFast</string>
+			<array><int>456</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>461</int>
+			<vec3>1632 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_wraith</string>
+			<dict>
+				<string name="EventName">spawn_wraith</string>
+			</dict>
+			<array><int>482</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>462</int>
+			<vec3>1632 352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wraith2</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>461</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>463</int>
+			<vec3>1696 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_wraith</string>
+			<dict>
+				<string name="EventName">spawn_wraith</string>
+			</dict>
+			<array><int>483</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PickedRandom</string>
+			<int>464</int>
+			<vec3>1696 352 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>wraith3</string>
+			<dict>
+				<int name="Chance">5</int>
+			</dict>
+			<array><int>463</int><int>2000</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>465</int>
+			<vec3>1440 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_golem</string>
+			<dict>
+				<string name="EventName">spawn_golem</string>
+			</dict>
+			<array><int>479</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>466</int>
+			<vec3>1504 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_warden</string>
+			<dict>
+				<string name="EventName">spawn_warden</string>
+			</dict>
+			<array><int>480</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>467</int>
+			<vec3>1568 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_wraith</string>
+			<dict>
+				<string name="EventName">spawn_wraith</string>
+			</dict>
+			<array><int>481</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>468</int>
+			<vec3>1760 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_watcher</string>
+			<dict>
+				<string name="EventName">spawn_watcher</string>
+			</dict>
+			<array><int>484</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>469</int>
+			<vec3>1824 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_vampire</string>
+			<dict>
+				<string name="EventName">spawn_vampire</string>
+			</dict>
+			<array><int>485</int><int>0</int></array>
+		</array>
+		<array>
+			<string>GlobalEvent</string>
+			<int>470</int>
+			<vec3>1952 480 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>spawn_mummy</string>
+			<dict>
+				<string name="EventName">spawn_mummy</string>
+			</dict>
+			<array><int>486</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>471</int>
+			<vec3>2112 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>3 Bosses</string>
+			<array><int>474</int><int>0</int><int>476</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetTriggerTimes</string>
+			<int>472</int>
+			<vec3>2976 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>ResetSpawns 1</string>
+			<dict>
+				<array name="Scripts"><int>202</int></array>
+				<int name="TriggerTimes">1</int>
+			</dict>
+			<array><int>494</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>473</int>
+			<vec3>1984 128 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>ActivateBoss3</string>
+			<array><int>47</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>474</int>
+			<vec3>2208 64 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Toggle</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>472</int><int>251</int><int>487</int><int>489</int><int>490</int><int>492</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>475</int>
+			<vec3>1600 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>462</int><int>464</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>476</int>
+			<vec3>2144 96 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">3 Bosses</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>477</int>
+			<vec3>2560 256 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Boss 3 Killed</string>
+			<array><int>489</int><int>0</int><int>499</int><int>0</int></array>
+		</array>
+		<array>
+			<string>CheckVariables</string>
+			<int>478</int>
+			<vec3>2560 352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>3</string>
+			<dict>
+				<int name="Value">3</int>
+				<array name="Variable"><int>374</int></array>
+				<array name="OnTrue"><int>477</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>479</int>
+			<vec3>1440 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">golem</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>480</int>
+			<vec3>1504 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">warden</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>481</int>
+			<vec3>1568 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">wraith</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>482</int>
+			<vec3>1632 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">wraith 2</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>483</int>
+			<vec3>1696 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">wraith 3</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>484</int>
+			<vec3>1760 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">watcher</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>485</int>
+			<vec3>1824 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">vampire</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>486</int>
+			<vec3>1952 544 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">mummy</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>487</int>
+			<vec3>2304 160 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>completed</string>
+			<array><int>129</int><int>0</int><int>250</int><int>0</int><int>56</int><int>200</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>488</int>
+			<vec3>2432 160 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>completed</string>
+			<array><int>129</int><int>0</int><int>250</int><int>0</int><int>56</int><int>200</int></array>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>489</int>
+			<vec3>2560 160 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>completed</string>
+			<array><int>129</int><int>0</int><int>250</int><int>0</int><int>56</int><int>200</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>490</int>
+			<vec3>2336 224 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Toggle 3</string>
+			<dict>
+				<int name="State">3</int>
+			</dict>
+			<array><int>208</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>491</int>
+			<vec3>2272 224 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Toggle 2</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>251</int><int>472</int></array>
+			</dict>
+			<array><int>383</int><int>0</int></array>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>492</int>
+			<vec3>2464 224 0</vec3>
+			<bool>f</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>Toggle 3</string>
+			<dict>
+				<int name="State">3</int>
+				<array name="Scripts"><int>251</int><int>472</int></array>
+			</dict>
+			<array><int>383</int><int>0</int></array>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>493</int>
+			<vec3>2784 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">spawns 4</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>494</int>
+			<vec3>3040 320 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">spawns 1</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetTimerTrigger</string>
+			<int>495</int>
+			<vec3>2944 224 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>10s</string>
+			<dict>
+				<int name="Value">10000</int>
+				<array name="TimerTriggers"><int>202</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>496</int>
+			<vec3>2144 -32 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">1 Boss</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>497</int>
+			<vec3>2336 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Boss 1 Killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>498</int>
+			<vec3>2464 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Boss 2 Killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>LogText</string>
+			<int>499</int>
+			<vec3>2592 288 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Text">Boss 3 Killed</string>
+			</dict>
+		</array>
+		<array>
+			<string>CheckFlag</string>
+			<int>500</int>
+			<vec3>-416 -928 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>arena_five_waves</string>
+			<dict>
+				<string name="Flag">arena_five_waves</string>
+				<array name="OnTrue"><int>503</int></array>
+				<array name="OnFalse"><int>501</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>SurvivalWaveCount</string>
+			<int>501</int>
+			<vec3>-416 -800 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<string>7</string>
+			<dict>
+				<int name="Count">7</int>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>503</int>
+			<vec3>-320 -928 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<string>five_waves</string>
+			<array><int>445</int><int>0</int></array>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>

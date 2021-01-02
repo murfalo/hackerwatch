@@ -1,0 +1,335 @@
+<materials>
+	<material name="fog_low">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		%if TIME_NIGHT
+		<color value="50 50 100 50" />
+		%else
+		<color value="255 255 255 50" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="fog_dragon_low">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<color value="150 150 200 30" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>		
+	
+
+	<material name="world-top-tower">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.35 -0.35" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="world-top">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.55 -0.55" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="world-top_dragon">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="-0.55 -0.55" />
+		<color value="125 125 150 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>		
+	
+	<material name="world">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.65 -0.65" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="world_dragon">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="-0.65 -0.65" />
+		<color value="125 125 150 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+
+
+	<material name="world-bottom">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.8 -0.8" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>		
+	
+	<material name="world-bottom_dragon">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="-0.8 -0.8" />
+		<color value="25 25 75 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="world-battlement_above">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0.25 0.50" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="world-pyramid">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.55 -0.55" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="shaftlocke_filler">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>		
+	
+	<material name="world-midway">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.25 -0.25" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	
+	
+	<material name="cloud_negative-1">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.15 -0.15" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="cloud_negative-2">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="-0.4 -0.4" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="cloud_static">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="cloud_dragon_static">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<color value="225 225 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="cloud_dragon_negative-1">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<color value="150 150 190 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="cloud_dragon_negative-1_lightning">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<color value="255 255 255 100" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>	
+	
+	<material name="cloud_dragon_negative-2">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<color value="125 125 140 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>		
+	
+	<material name="cloud_dragon_negative-2_lightning">	
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<color value="255 255 255 35" />
+		<xray-mask value="true" />
+		<glow-mode value="block" />
+	</material>		
+	
+	<material name="cloud_low">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0.25 0.25" />
+		%if TIME_NIGHT
+		<color value="50 50 100 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+
+	<material name="cloud_high">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="1 1" />
+		%if TIME_NIGHT
+		<color value="40 40 90 255" />
+		%else
+		<color value="255 255 255 255" />
+		%endif
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="cloud_high-shade">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<decal-mode value="false" />
+		<environment-mask value="effects/lighting/cloud_day_shade.env" />
+	</material>
+	
+	<material name="cloud_desert_high-shade">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 255 255 255" />
+		<xray-mask value="true" />
+		<decal-mode value="false" />
+		<environment-mask value="effects/lighting/cloud_desert_day_shade.env" />
+	</material>
+	
+	<material name="cloud_arena_day">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="1 1" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="cloud_arena">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<parallax value="1 1" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+
+	<material name="parallax-godray">
+		<blend-mode value="add" />
+		<shadow-mode value="none" />
+		<parallax value="0.25 0.25" />
+		<color value="255 255 255 50" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	<material name="parallax-godray-mask">
+		<blend-mode value="add" />
+		<shadow-mode value="none" />
+		<parallax value="0.40 0.40" />
+		<color value="255 255 255 50" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>
+	
+	<material name="snow">
+		<blend-mode value="blend" />
+		%if TIME_NIGHT
+		<shadow-mode value="lit" />
+		%else
+		<shadow-mode value="none" />
+		%endif		
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>	
+	
+	<material name="snow_boss">
+		<blend-mode value="blend" />
+		<shadow-mode value="lit" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="false" />
+	</material>			
+	
+	<material name="snow_parallax">
+		<parallax value="0.25 0" />
+	</material>		
+	
+	<material name="rainbow">
+		<blend-mode value="add" />
+		<shadow-mode value="none" />
+		<parallax value="0.25 0.25" />
+		<color value="255 255 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="none" />
+	</material>		
+</materials>

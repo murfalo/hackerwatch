@@ -1,0 +1,30 @@
+<effect layer="-20" looping="true" wpos-track="64">
+	<trail layer="-20" texture="actors/pop/bosses/worm/worm_underground_trail.png" material="system/default.mats:floor">
+		<pos-x value="wposx(i)" />
+		<pos-y value="wposy(i)" />
+		
+		<length value="100" />
+		<looping value="true" />
+		
+		<segments value="64" />
+		<size value="32" />
+		
+		<uv-l-x value="128 * (64 - i) / 64" />
+		<uv-l-y value="0" />
+		
+		<uv-r-x value="128 * (64 - i) / 64" />
+		<uv-r-y value="32" />
+
+<!--    ANIMATION:
+		<uv-l-x value="128 * (40 - i) / 40" />
+		<uv-l-y value="0 + mod(l,8) * 32" />
+		
+		<uv-r-x value="128 * (40 - i) / 40" />
+		<uv-r-y value="32 + mod(l,8) * 32" />
+		-->
+		<color-r value="1" />
+		<color-g value="1" />
+		<color-b value="1" />
+		<color-a value="1" />
+	</trail> 
+</effect>

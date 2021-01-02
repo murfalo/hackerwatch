@@ -1,0 +1,30 @@
+<loader>LoadHardcoreSkill</loader>
+<dict>
+	<string name="charclass">sorcerer</string>
+	<string name="name">.skills.sorcerer.frost-nova</string>
+	<string name="description">.skills.sorcerer.frost-nova.merc</string>
+	
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>96 48 24 24</vec4>
+	</array>
+
+	<int name="cost">17</int>
+
+	<dict name="skill">
+		<string name="class">Skills::ShootProjectileFan</string>
+		<string name="anim">cast 8</string>
+		<string name="snd">event:/player/sorcerer/nova</string>
+		
+		<int name="cooldown">500</int>
+		<int name="castpoint">0</int>
+		<float name="speed-mul">0.5</float>
+		
+		<int name="mana-cost">65</int>
+		
+		<int name="dist">5</int>
+		<int name="spread">360</int>
+		<int name="projectiles">19</int>
+		<string name="projectile">players/sorcerer/mercenary/nova_merc.unit</string>
+	</dict>
+</dict>

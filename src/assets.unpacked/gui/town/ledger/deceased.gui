@@ -1,0 +1,26 @@
+%define LEDGER_BUTTON
+<gui>
+	<sprites>
+%include "gui/guildhall_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<!-- List container -->
+			<rect width="380" height="194">
+				<!-- List -->
+				<scrollrect id="list" width="366" height="194" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" flow="vbox" />
+
+				<!-- Separators -->
+				<rect width="3" height="194" offset="366 0" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="194" offset="377 0" spriteset="gui/variable/3pxbar_vert.sval" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+			</rect>
+
+%include "gui/guildhall_templates.inc"
+		</group>
+	</doc>
+</gui>

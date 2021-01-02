@@ -1,0 +1,48 @@
+<gui>
+	<sprites>
+		<sprite name="frame-level-start" texture="gui/shop.png"><frame>278 0 22 20</frame></sprite>
+		<sprite name="frame-level-end" texture="gui/shop.png"><frame>330 0 22 20</frame></sprite>
+
+		<sprite name="shop-level-1" texture="gui/icons.png"><frame>13 62 11 14</frame></sprite>
+		<sprite name="shop-level-2" texture="gui/icons.png"><frame>24 62 11 14</frame></sprite>
+		<sprite name="shop-level-3" texture="gui/icons.png"><frame>35 62 11 14</frame></sprite>
+		<sprite name="shop-level-4" texture="gui/icons.png"><frame>46 62 11 14</frame></sprite>
+		<sprite name="shop-level-5" texture="gui/icons.png"><frame>57 62 11 14</frame></sprite>
+		<sprite name="shop-level-6" texture="gui/icons.png"><frame>111 114 11 14</frame></sprite>
+
+		<sprite name="frame-top" texture="gui/shop.png"><frame>0 0 274 23</frame></sprite>
+		<sprite name="frame-left" texture="gui/shop.png"><frame>274 0 2 25</frame></sprite>
+		<sprite name="frame-right" texture="gui/shop.png"><frame>276 0 2 25</frame></sprite>
+		<sprite name="frame-bottom" texture="gui/shop.png"><frame>0 23 274 2</frame></sprite>
+
+%include "gui/closebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<group inner="true" anchor="0.5 0.5" smooth="false">
+				<!-- Stars -->
+				<group id="stars" inner="true" anchor="0.5 0" flow="hbox">
+					<sprite src="frame-level-start" />
+					<grouprect id="level-list" inner="true" height="20" spriteset="gui/variable/shoplevel_hor.sval" flow="hbox" spacing="1" padding="3 3" />
+					<sprite id="level-template" src="shop-level-1" visible="false" />
+					<sprite src="frame-level-end" />
+				</group>
+
+				<!-- Shop box -->
+				<rect id="inner-frame" width="274" height="32" offset="0 20" spriteset="gui/variable/bigwindow_borders.sval">
+					<!-- Title -->
+					<rect id="title" width="249" height="18" offset="2 2" spriteset="gui/variable/headline_hor.sval">
+						<text id="name" font="gui/fonts/arial11_bold.fnt" anchor="0.5 0.5" />
+					</rect>
+					<rect width="3" height="18" anchor="1 0" offset="-20 2" spriteset="gui/variable/3pxbar_vert.sval" />
+					<spritebutton spriteset="close" anchor="1 0" offset="-2 2" func="close" />
+					<rect id="title-separator" width="270" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+					<!-- Content -->
+					<group id="content" inner="true" offset="2 23" />
+				</rect>
+			</group>
+		</group>
+	</doc>
+</gui>

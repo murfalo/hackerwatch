@@ -1,0 +1,78 @@
+<unit slot="doodad">
+	<scenes off="off" on="on" disabled="disabled">
+		<scene name="shared">
+			<collision static="true">
+				<rect>-8 -5 16 7</rect>
+			</collision>
+			<sprite origin="8 26" texture="./graveyard_shrine.png" material="system/default.mats:default"> <!-- shrine -->
+				<frame>0 0 16 28</frame>
+			</sprite>
+			<sprite layer="-10" origin="10 5" texture="./graveyard_shrine.png" material="system/default.mats:floor"> <!-- baseplate -->
+				<frame>0 28 20 14</frame>
+			</sprite>
+			<shadow darkness="1">
+				<sprite origin="-7 15" texture="./graveyard_shrine.png" material="system/default.mats:default">
+					<frame>20 28 11 24</frame>
+				</sprite>
+			</shadow>
+		</scene>
+				
+		<scene name="on" trigger-snd="event:/misc/shrine">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="240 30 10 10" />
+			<light pos="0 -45">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="100" />
+				<overbright value="3"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="255 249 180 0" />
+					<color value="255 249 180 0" />
+				</colors>
+			</light>
+			<scene src="shared" />
+			<sprite origin="5 17" looping="false" ulayer="5" texture="./graveyard_shrine.png" material="effects/effects.mats:fire">
+				<frame time="50">31 28 10 13</frame>
+				<frame time="50">41 28 10 13</frame>
+				<frame time="25">51 28 10 13</frame>
+				<frame time="25">31 41 10 13</frame>
+			</sprite>
+			<effect delay="200" ulayer="1" src="effects/players/revive.effect"/>
+		</scene>
+		
+		<scene name="off">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="240 20 10 10" />
+			<light pos="0 -45">
+				<sprite texture="./well_light_L.png">
+					<frame>0 0 64 64</frame>
+				</sprite>
+				<length value="100" />
+				<overbright value="3"/>
+				<looping value="true" />
+				<cast-shadows value="false" />
+				<shadow-cast-pos value="0 0" />
+				<shadow-cast-pos-jitter value="0 0 0 0" />
+				<sizes>
+					<size value="200" />
+				</sizes>
+				<colors>
+					<color value="255 249 180 0" />
+					<color value="255 249 180 0" />
+				</colors>
+			</light>
+			<scene src="shared" />
+		</scene>
+
+		<scene name="disabled">
+			<minimap_sprite origin="6 6" layer="120" texture="gui/minimap.png" frame="240 20 10 10" />
+			<scene src="shared" />
+		</scene>
+	</scenes>
+</unit>
