@@ -27,4 +27,6 @@ Only the modified scripts are kept in the repo.  The other resource files and th
 3. `xxd -r <exe>.hex ><exe>`
 4. `readelf -S <exe>` (to acquire `<sections>`)
 5. `readelf -x <section> <exe>`
+6. `packager.sh -r <unpacked_resources>`
+7. `packager.sh -u <packed_resources> -d <unpacked_resources`
 
