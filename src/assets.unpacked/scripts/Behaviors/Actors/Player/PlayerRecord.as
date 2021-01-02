@@ -346,6 +346,7 @@ class PlayerRecord
 		modifiersMercenaryUpgrades.m_name = Resources::GetString(".modifier.list.player.mercenary");
 
 		AddVar("hx_armor", 1.3f);
+		AddVar("hx_res", 1.3f);
 	}
 
 	bool IsLocalPlayer()
@@ -1010,7 +1011,8 @@ class PlayerRecord
 	}
 
 	float Resistance() {
-		return classStats.base_resistance + float(EffectiveLevel() -1) * classStats.level_resistance;
+		auto res_mod = IsLocalPlayer() ? GetVarFloat("hx_res") : 1.0f;
+		return (classStats.base_resistance + float(EffectiveLevel() -1) * classStats.level_resistance) * res_mod;
 	}
 
 	int GetFreeLives() { return 0; }
