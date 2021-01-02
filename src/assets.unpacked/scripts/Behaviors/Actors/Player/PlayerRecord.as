@@ -344,6 +344,13 @@ class PlayerRecord
 		modifiersStatues.m_name = Resources::GetString(".modifier.list.player.statues");
 		modifiersBloodAltar.m_name = Resources::GetString(".modifier.list.player.bloodaltar");
 		modifiersMercenaryUpgrades.m_name = Resources::GetString(".modifier.list.player.mercenary");
+
+		AddVar("hx_armor", 1.3f);
+	}
+
+	bool IsLocalPlayer()
+	{
+		return this is GetLocalPlayerRecord();
 	}
 
 	bool HasInsurance(const string &in campaignId)
@@ -996,8 +1003,15 @@ class PlayerRecord
 	int MaxMana() { return int(classStats.base_mana + float(EffectiveLevel() -1) * classStats.level_mana); }
 	float HealthRegen() { return classStats.base_health_regen + float(EffectiveLevel() -1) * classStats.level_health_regen; }
 	float ManaRegen() { return classStats.base_mana_regen + float(EffectiveLevel() -1) * classStats.level_mana_regen; }
-	float Armor() { return classStats.base_armor + float(EffectiveLevel() -1) * classStats.level_armor; }
-	float Resistance() { return classStats.base_resistance + float(EffectiveLevel() -1) * classStats.level_resistance; }
+
+	float Armor() {
+		auto armor_mod = IsLocalPlayer() ? GetVarFloat("hx_armor") : 1.0f;
+		return (classStats.base_armor + float(EffectiveLevel() -1) * classStats.level_armor) * armor_mod;
+	}
+
+	float Resistance() {
+		return classStats.base_resistance + float(EffectiveLevel() -1) * classStats.level_resistance;
+	}
 
 	int GetFreeLives() { return 0; }
 
