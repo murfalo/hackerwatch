@@ -736,6 +736,8 @@ class PlayerBase : Actor, IPlayerActorDamager, IPreRenderable
 
 		di.PhysicalDamage = damage_round(((di.PhysicalDamage + dmgAddV.x) * (50.0 + dmgPower) / 50.0) * dmgMul);
 		di.MagicalDamage = damage_round(((di.MagicalDamage + dmgAddV.y) * (50.0 + dmgPower) / 50.0) * dmgMul);
+		di.PhysicalDamage = int32(di.PhysicalDamage * GetVarFloat("hx_dmg_dealt"));
+		di.MagicalDamage = int32(di.MagicalDamage * GetVarFloat("hx_dmg_dealt"));
 		di.Crit = crit;
 		di.ArmorMul *= armorIg;
 

@@ -354,6 +354,9 @@ class PlayerRecord
 		AddVar("hx_hp_regen", 2.0f);
 		AddVar("hx_mana_regen", 2.0f);
 		AddVar("hx_dmg_taken", 0.7f);
+		AddVar("hx_dmg_dealt", 1.3f);
+		AddVar("hx_crit_mod", 1.6f);
+		AddVar("hx_luck_mod", 3.0f);
 	}
 
 	bool IsLocalPlayer()
@@ -1114,7 +1117,7 @@ class PlayerRecord
 		}
 %endif
 
-		return ret;
+		return IsLocalPlayer() ? 0 : ret;
 	}
 
 	int GetAvailableSkillpoints()
