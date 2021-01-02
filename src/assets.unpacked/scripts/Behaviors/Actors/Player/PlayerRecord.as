@@ -353,6 +353,7 @@ class PlayerRecord
 		AddVar("hx_mana", 1.3f);
 		AddVar("hx_hp_regen", 2.0f);
 		AddVar("hx_mana_regen", 2.0f);
+		AddVar("hx_dmg_taken", 0.7f);
 	}
 
 	bool IsLocalPlayer()
