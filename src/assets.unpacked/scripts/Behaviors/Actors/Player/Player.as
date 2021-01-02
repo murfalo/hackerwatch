@@ -54,81 +54,81 @@ class Player : PlayerBase
 		//TODO: Replace check with something so that on splitscreen, only the first player can use cheats
 		//if (Network::IsServer())
 		{
-			AddVar("noclip", false, SetNoClipCVar, cvar_flags::Cheat);
-			AddVar("god", false, SetGodmodeCVar, cvar_flags::Cheat);
-			AddVar("clientfollowshost", false, null, cvar_flags::Cheat);
-			AddVar("show_all_accomplishments", false, null, cvar_flags::Cheat);
-			AddVar("g_merc_all_skills", false, null, cvar_flags::Cheat);
+			AddVar("noclip", false, SetNoClipCVar, 0);
+			AddVar("god", false, SetGodmodeCVar, 0);
+			AddVar("clientfollowshost", false, null, 0);
+			AddVar("show_all_accomplishments", false, null, 0);
+			AddVar("g_merc_all_skills", false, null, 0);
 
 			{
 				array<cvar_type> cfuncParams = { cvar_type::String };
-				AddFunction("give_item", cfuncParams, GiveItemCFunc, cvar_flags::Cheat);
-				AddFunction("take_item", cfuncParams, TakeItemCFunc, cvar_flags::Cheat);
-				AddFunction("give_drink", cfuncParams, GiveDrinkCFunc, cvar_flags::Cheat,
+				AddFunction("give_item", cfuncParams, GiveItemCFunc, 0);
+				AddFunction("take_item", cfuncParams, TakeItemCFunc, 0);
+				AddFunction("give_drink", cfuncParams, GiveDrinkCFunc, 0,
 					"Consumes a drink. (give_drink <id>)");
-				AddFunction("give_blueprint", cfuncParams, GiveBlueprintCFunc, cvar_flags::Cheat);
-				AddFunction("give_statue", { cvar_type::String, cvar_type::Int }, GiveStatueCFunc, cvar_flags::Cheat,
+				AddFunction("give_blueprint", cfuncParams, GiveBlueprintCFunc, 0);
+				AddFunction("give_statue", { cvar_type::String, cvar_type::Int }, GiveStatueCFunc, 0,
 					"Gives a statue. (give_statue <id> <level>)");
-				AddFunction("give_statue_blueprint", cfuncParams, GiveStatueBlueprintCFunc, cvar_flags::Cheat);
-				AddFunction("set_trail", cfuncParams, SetTrailCFunc, cvar_flags::Cheat);
-				AddFunction("set_frame", cfuncParams, SetFrameCFunc, cvar_flags::Cheat);
-				AddFunction("set_combo", cfuncParams, SetComboCFunc, cvar_flags::Cheat,
+				AddFunction("give_statue_blueprint", cfuncParams, GiveStatueBlueprintCFunc, 0);
+				AddFunction("set_trail", cfuncParams, SetTrailCFunc, 0);
+				AddFunction("set_frame", cfuncParams, SetFrameCFunc, 0);
+				AddFunction("set_combo", cfuncParams, SetComboCFunc, 0,
 					"Sets the combo style. (set_combo <id>)");
-				AddFunction("set_gravestone", cfuncParams, SetGravestoneCFunc, cvar_flags::Cheat,
+				AddFunction("set_gravestone", cfuncParams, SetGravestoneCFunc, 0,
 					"Sets the player corpse gravestone. (set_gravestone <id>)");
-				AddFunction("give_insurance", cfuncParams, GiveInsuranceCFunc, cvar_flags::Cheat,
+				AddFunction("give_insurance", cfuncParams, GiveInsuranceCFunc, 0,
 					"Gives the player a mercenary life insurance. (give_insurance <campaign id>)");
 			}
 
 			{
 				array<cvar_type> cfuncParams = { cvar_type::Int, cvar_type::Int, cvar_type::Int, cvar_type::Int, cvar_type::Int };
-				AddFunction("give_items", cfuncParams, GiveItemsCFunc, cvar_flags::Cheat,
+				AddFunction("give_items", cfuncParams, GiveItemsCFunc, 0,
 					"Gives multiple random items. (give_items <common> <uncommon> <rare> <epic> <legendary>)");
-				AddFunction("give_drinks", cfuncParams, GiveDrinksCFunc, cvar_flags::Cheat,
+				AddFunction("give_drinks", cfuncParams, GiveDrinksCFunc, 0,
 					"Gives multiple random drinks. (give_drinks <common> <uncommon> <rare> <epic> <legendary>)");
 			}
 
-			AddFunction("clear_items", ClearItemsCfunc, cvar_flags::Cheat);
-			AddFunction("clear_mtblocks", ClearMtBlocksCfunc, cvar_flags::Cheat);
-			AddFunction("give_combo", GiveComboCfunc, cvar_flags::Cheat);
-			AddFunction("next_level", NextLevelCfunc, cvar_flags::Cheat);
-			AddFunction("unlock_merc", UnlockMercCfunc, cvar_flags::Cheat);
+			AddFunction("clear_items", ClearItemsCfunc, 0);
+			AddFunction("clear_mtblocks", ClearMtBlocksCfunc, 0);
+			AddFunction("give_combo", GiveComboCfunc, 0);
+			AddFunction("next_level", NextLevelCfunc, 0);
+			AddFunction("unlock_merc", UnlockMercCfunc, 0);
 
 			{
 				array<cvar_type> cfuncParams = { cvar_type::Int };
-				AddFunction("give_title", cfuncParams, GiveTitleCFunc, cvar_flags::Cheat);
-				AddFunction("give_experience", cfuncParams, GiveExperienceCFunc, cvar_flags::Cheat);
-				AddFunction("give_health", cfuncParams, GiveHealthCFunc, cvar_flags::Cheat);
-				AddFunction("give_mana", cfuncParams, GiveManaCFunc, cvar_flags::Cheat);
-				AddFunction("give_armor", cfuncParams, GiveArmorCFunc, cvar_flags::Cheat);
-				AddFunction("give_key", cfuncParams, GiveKeyCFunc, cvar_flags::Cheat);
-				AddFunction("give_curse", cfuncParams, GiveCurseCFunc, cvar_flags::Cheat);
-				AddFunction("levelup", cfuncParams, LevelupCFunc, cvar_flags::Cheat);
-				AddFunction("set_ngp", cfuncParams, SetNgpCFunc, cvar_flags::Cheat,
+				AddFunction("give_title", cfuncParams, GiveTitleCFunc, 0);
+				AddFunction("give_experience", cfuncParams, GiveExperienceCFunc, 0);
+				AddFunction("give_health", cfuncParams, GiveHealthCFunc, 0);
+				AddFunction("give_mana", cfuncParams, GiveManaCFunc, 0);
+				AddFunction("give_armor", cfuncParams, GiveArmorCFunc, 0);
+				AddFunction("give_key", cfuncParams, GiveKeyCFunc, 0);
+				AddFunction("give_curse", cfuncParams, GiveCurseCFunc, 0);
+				AddFunction("levelup", cfuncParams, LevelupCFunc, 0);
+				AddFunction("set_ngp", cfuncParams, SetNgpCFunc, 0,
 					"Sets the NG+ value currently being played. (set_ngp <value>)");
-				AddFunction("set_char_gladiator", cfuncParams, SetCharGladiatorCFunc, cvar_flags::Cheat);
+				AddFunction("set_char_gladiator", cfuncParams, SetCharGladiatorCFunc, 0);
 
-				AddFunction("give_gold", cfuncParams, GiveGoldCFunc, cvar_flags::Cheat);
-				AddFunction("give_ore", cfuncParams, GiveOreCFunc, cvar_flags::Cheat);
-				AddFunction("give_legacy", cfuncParams, GiveLegacyCFunc, cvar_flags::Cheat,
+				AddFunction("give_gold", cfuncParams, GiveGoldCFunc, 0);
+				AddFunction("give_ore", cfuncParams, GiveOreCFunc, 0);
+				AddFunction("give_legacy", cfuncParams, GiveLegacyCFunc, 0,
 					"Gives legacy points to use in the shop. (give_legacy <amount>)");
 			}
 
-			AddFunction("set_stat", { cvar_type::String, cvar_type::Int }, SetStatCFunc, cvar_flags::Cheat,
+			AddFunction("set_stat", { cvar_type::String, cvar_type::Int }, SetStatCFunc, 0,
 				"Sets a stat to an absolute value. (set_stat <name> <value>)");
 
-			AddFunction("set_char_ngp", { cvar_type::String, cvar_type::Int }, SetCharNgpCFunc, cvar_flags::Cheat,
+			AddFunction("set_char_ngp", { cvar_type::String, cvar_type::Int }, SetCharNgpCFunc, 0,
 				"Sets the character's NG+ level. (set_char_ngp <name> <level>)");
 
-			AddFunction("set_flag", { cvar_type::String, cvar_type::Bool, cvar_type::Bool }, SetFlagCFunc, cvar_flags::Cheat,
+			AddFunction("set_flag", { cvar_type::String, cvar_type::Bool, cvar_type::Bool }, SetFlagCFunc, 0,
 				"Sets a flag. (set_flag <flag> <value> <persistent>)");
 
-			AddFunction("set_town_flag", { cvar_type::String, cvar_type::Bool }, SetTownFlagCFunc, cvar_flags::Cheat,
+			AddFunction("set_town_flag", { cvar_type::String, cvar_type::Bool }, SetTownFlagCFunc, 0,
 				"Sets a flag on the town persistence level. (set_town_flag <flag> <value>)");
 
-			AddFunction("killall", KillAllCFunc, cvar_flags::Cheat);
-			AddFunction("revive", ReviveCFunc, cvar_flags::Cheat);
-			AddFunction("listenemies", ListEnemiesCFunc, cvar_flags::Cheat);
+			AddFunction("killall", KillAllCFunc, 0);
+			AddFunction("revive", ReviveCFunc, 0);
+			AddFunction("listenemies", ListEnemiesCFunc, 0);
 
 			AddFunction("kill", KillCFunc);
 			AddFunction("listmodifiers", ListModifiersCFunc);

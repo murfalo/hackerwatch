@@ -56,7 +56,7 @@ class MainMenu : BaseGameMode
 		if (!VarExists("g_debug_menu"))
 			AddVar("g_debug_menu", false);
 		if (!VarExists("g_multi_test"))
-			AddVar("g_multi_test", false, null, cvar_flags::Cheat);
+			AddVar("g_multi_test", false, null, 0);
 
 		if (!VarExists("ui_show_chat"))
 			AddVar("ui_show_chat", true);

@@ -42,9 +42,9 @@ class Survival : Campaign
 	{
 		super(scene);
 
-		AddVar("g_debug_crowd", false, null, cvar_flags::Cheat);
+		AddVar("g_debug_crowd", false, null, 0);
 
-		AddFunction("set_crowd_value", { cvar_type::Int }, SetCrowdValueCfunc, cvar_flags::Cheat);
+		AddFunction("set_crowd_value", { cvar_type::Int }, SetCrowdValueCfunc, 0);
 
 		Crowd::LoadActions("tweak/crowd.sval");
 

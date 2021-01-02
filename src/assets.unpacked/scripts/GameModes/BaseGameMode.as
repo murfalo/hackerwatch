@@ -255,11 +255,11 @@ class BaseGameMode : AGameMode
 		
 		InitializeFloatingText();
 
-		AddVar("ui_hide_fog", false, null, cvar_flags::Cheat);
+		AddVar("ui_hide_fog", false, null, 0);
 
 		AddVar("ui_debug_handicap", false, CvarDebugHandicap);
 
-		AddVar("g_town_level", "", null, cvar_flags::Cheat);
+		AddVar("g_town_level", "", null, 0);
 
 		AddVar("g_screenshake", 1.0f);
 		AddVar("g_gore", true);
@@ -270,7 +270,7 @@ class BaseGameMode : AGameMode
 
 		AddVar("debug_widgets", false, CvarDebugWidgets);
 		AddVar("inspect_widget", false, CvarInspectWidget);
-		AddVar("g_start_level", 0, null, cvar_flags::Cheat);
+		AddVar("g_start_level", 0, null, 0);
 
 		AddVar("g_autoswitch_pickup", false);
 		AddVar("g_autoswitch_empty", true);
@@ -354,10 +354,10 @@ class BaseGameMode : AGameMode
 		@m_safeGore = LoadGore("effects/gibs/no_gore.sval");
 		
 
-		AddVar("debug_dungeon_prefabs", false, null, cvar_flags::Cheat);
-		AddFunction("list_flags", ListFlagsCFunc, cvar_flags::Cheat);
-		AddFunction("give_all_dyes", GiveAllDyesCFunc, cvar_flags::Cheat);
-		AddFunction("take_all_dyes", TakeAllDyesCFunc, cvar_flags::Cheat);
+		AddVar("debug_dungeon_prefabs", false, null, 0);
+		AddFunction("list_flags", ListFlagsCFunc, 0);
+		AddFunction("give_all_dyes", GiveAllDyesCFunc, 0);
+		AddFunction("take_all_dyes", TakeAllDyesCFunc, 0);
 	}
 
 	OverheadBossBar@ AddBossBarActor(Actor@ actor, int barCount, int barOffset)

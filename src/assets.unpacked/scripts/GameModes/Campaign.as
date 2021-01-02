@@ -72,15 +72,15 @@ class Campaign : BaseGameMode
 
 		AddVar("g_show_pings", true);
 		AddVar("ui_speedrun", 0);
-		AddVar("ui_flags", 0, null, cvar_flags::Cheat);
+		AddVar("ui_flags", 0, null, 0);
 		AddVar("ui_notifications", true);
-		AddVar("g_gameover", true, null, cvar_flags::Cheat);
+		AddVar("g_gameover", true, null, 0);
 
-		AddFunction("open_interface", { cvar_type::String, cvar_type::String }, OpenInterfaceCFunc, cvar_flags::Cheat);
+		AddFunction("open_interface", { cvar_type::String, cvar_type::String }, OpenInterfaceCFunc, 0);
 
-		AddFunction("reveal_desert_exit", RevealDesertExitCFunc, cvar_flags::Cheat);
+		AddFunction("reveal_desert_exit", RevealDesertExitCFunc, 0);
 
-		AddFunction("set_last_gladiator_rank", { cvar_type::Int }, SetLastGladiatorRankCFunc, cvar_flags::Cheat);
+		AddFunction("set_last_gladiator_rank", { cvar_type::Int }, SetLastGladiatorRankCFunc, 0);
 
 		Hooks::Call("GameModeConstructor", @this);
 
