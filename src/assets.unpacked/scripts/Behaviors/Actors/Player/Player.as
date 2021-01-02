@@ -658,17 +658,23 @@ class Player : PlayerBase
 			g_allModifiers.DamageTaken(this, dmg.Attacker, dmgAmnt);
 			m_returningDamage = false;
 
-			int testHealth = m_record.CurrentHealth() - dmgAmnt;
-			while (testHealth <= 0)
-			{
-				int charges = 1 + g_allModifiers.PotionCharges();
-				int availableCharges = charges - m_record.potionChargesUsed;
-				if (availableCharges <= 0)
-					break;
+			auto local_player = GetLocalPlayerRecord();
 
-				int healed = ForceDrinkPotion();
-				testHealth += healed;
-				dmgAmnt -= healed;
+			if ((local_player !is null && m_record.actor is @local_player.actor)
+				|| (m_record.items.find("phoenix-feather") != -1))
+			{
+				int testHealth = m_record.CurrentHealth() - dmgAmnt;
+				while (testHealth <= 0)
+				{
+					int charges = 1 + g_allModifiers.PotionCharges();
+					int availableCharges = charges - m_record.potionChargesUsed;
+					if (availableCharges <= 0)
+						break;
+
+					int healed = ForceDrinkPotion();
+					testHealth += healed;
+					dmgAmnt -= healed;
+				}
 			}
 		
 			if (evadable && dmg.Attacker.IsDead())

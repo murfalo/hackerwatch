@@ -20,6 +20,8 @@ For some reason, the addresses in the `xxd` hexdump are shifted relative to the 
 
 Only the modified scripts are kept in the repo.  The other resource files and the original packed assets file are much too large and aren't modified.
 
+`packager.sh` requires hard paths for arguments.
+
 ## Useful commands
 
 1. `objdump -D <exe> ><exe>.obj`
