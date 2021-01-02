@@ -348,6 +348,11 @@ class PlayerRecord
 		AddVar("hx_armor", 1.3f);
 		AddVar("hx_res", 1.3f);
 		AddVar("hx_exp", 1.2f);
+		AddVar("hx_gold", 1.2f);
+		AddVar("hx_hp", 1.3f);
+		AddVar("hx_mana", 1.3f);
+		AddVar("hx_hp_regen", 2.0f);
+		AddVar("hx_mana_regen", 2.0f);
 	}
 
 	bool IsLocalPlayer()
@@ -999,12 +1004,24 @@ class PlayerRecord
 		if (oneHealth)
 			return 1;
 
-		return int(classStats.base_health + float(EffectiveLevel() -1) * classStats.level_health);
+		auto hp_mod = IsLocalPlayer() ? GetVarFloat("hx_hp") : 1.0f;
+		return int((classStats.base_health + float(EffectiveLevel() -1) * classStats.level_health) * hp_mod);
 	}
 
-	int MaxMana() { return int(classStats.base_mana + float(EffectiveLevel() -1) * classStats.level_mana); }
-	float HealthRegen() { return classStats.base_health_regen + float(EffectiveLevel() -1) * classStats.level_health_regen; }
-	float ManaRegen() { return classStats.base_mana_regen + float(EffectiveLevel() -1) * classStats.level_mana_regen; }
+	int MaxMana() {
+		auto mana_mod = IsLocalPlayer() ? GetVarFloat("hx_mana") : 1.0f;
+		return int((classStats.base_mana + float(EffectiveLevel() -1) * classStats.level_mana) * mana_mod;
+	}
+
+	float HealthRegen() {
+		auto hp_regen_mod = IsLocalPlayer() ? GetVarFloat("hx_hp_regen") : 1.0f;
+		return (classStats.base_health_regen + float(EffectiveLevel() -1) * classStats.level_health_regen) * hp_regen_mod;
+	}
+
+	float ManaRegen() {
+		auto mana_regen_mod = IsLocalPlayer() ? GetVarFloat("hx_mana_regen") : 1.0f;
+		return (classStats.base_mana_regen + float(EffectiveLevel() -1) * classStats.level_mana_regen) * mana_regen_mod;
+	}
 
 	float Armor() {
 		auto armor_mod = IsLocalPlayer() ? GetVarFloat("hx_armor") : 1.0f;

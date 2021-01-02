@@ -46,6 +46,9 @@ namespace Currency
 	void Give(int gold, int ore = 0) { Give(GetLocalPlayerRecord(), gold, ore); }
 	void Give(PlayerRecord@ record, int gold, int ore = 0)
 	{
+		if (record.IsLocalPlayer())
+			gold = int(gold * GetVarFloat("hx_gold"));
+
 		if (g_isTown)
 			GiveHome(record, gold, ore);
 		else
