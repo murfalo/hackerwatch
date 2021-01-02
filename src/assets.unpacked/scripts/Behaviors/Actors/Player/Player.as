@@ -54,6 +54,7 @@ class Player : PlayerBase
 		//TODO: Replace check with something so that on splitscreen, only the first player can use cheats
 		//if (Network::IsServer())
 		{
+			AddVar("hx_dmg", 0.7f);
 			AddVar("noclip", false, SetNoClipCVar, 0);
 			AddVar("god", false, SetGodmodeCVar, 0);
 			AddVar("clientfollowshost", false, null, 0);
@@ -638,8 +639,10 @@ class Player : PlayerBase
 			dmgTakenMul *= 2.0f + 0.01f * m_cachedCurses;
 		}
 		
+		dmgTakenMul *= GetVarFloat("hx_dmg");
 		vec2 armorMul = g_allModifiers.ArmorMul(this, null) * m_buffs.ArmorMul();
 		int dmgAmnt = ApplyArmor(dmg, armorMul * armor * dmg.ArmorMul - Tweak::NewGamePlusNegArmor(g_ngp), dmgTakenMul);
+
 		if (dmgAmnt > 0)
 		{
 			if (!dmg.CanKill || g_isTown)
