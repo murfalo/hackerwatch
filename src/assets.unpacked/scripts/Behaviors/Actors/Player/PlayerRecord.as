@@ -347,6 +347,7 @@ class PlayerRecord
 
 		AddVar("hx_armor", 1.3f);
 		AddVar("hx_res", 1.3f);
+		AddVar("hx_exp", 1.2f);
 	}
 
 	bool IsLocalPlayer()
@@ -1136,6 +1137,9 @@ class PlayerRecord
 	{
 		if (amount <= 0)
 			return;
+
+		if (IsLocalPLayer())
+			amount = int64(amount * GetVarFloat("hx_exp"));
 
 		int64 xpNeeded = 0;
 		int64 xpAdded = amount;
