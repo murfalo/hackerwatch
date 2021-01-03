@@ -355,9 +355,9 @@ class PlayerRecord
 		AddVar("hx_mana_regen", 1.2f);
 		AddVar("hx_dmg_taken", 0.5f);
 		AddVar("hx_dmg_dealt", 1.5f);
-		AddVar("hx_roll_chance", 2.0f);
-		AddVar("hx_luck", 3.0f);
-		AddVar("hx_ms", 1.1f);
+		AddVar("hx_roll_chance", 1.5f);
+		AddVar("hx_luck", 1.5f);
+		AddVar("hx_ms", 1.2f);
 	}
 
 	bool IsLocalPlayer()
