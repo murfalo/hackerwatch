@@ -1351,6 +1351,10 @@ class Player : PlayerBase
 		moveSpeed *= g_allModifiers.MoveSpeedMul(this, slowScale);
 		moveSpeed *= m_buffs.MoveSpeedMul(slowScale);
 
+		if (m_record.IsLocalPlayer()) {
+			moveSpeed *= GetVarFloat("hx_ms");
+		}
+
 		float buffSetSpeed = m_buffs.SetSpeed();
 		if (buffSetSpeed >= 0.0f)
 			moveSpeed = buffSetSpeed;
