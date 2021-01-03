@@ -345,19 +345,18 @@ class PlayerRecord
 		modifiersBloodAltar.m_name = Resources::GetString(".modifier.list.player.bloodaltar");
 		modifiersMercenaryUpgrades.m_name = Resources::GetString(".modifier.list.player.mercenary");
 
-		AddVar("hx_armor", 1.3f);
-		AddVar("hx_res", 1.3f);
-		AddVar("hx_exp", 1.2f);
-		AddVar("hx_gold", 1.2f);
-		AddVar("hx_hp", 1.3f);
-		AddVar("hx_mana", 1.3f);
-		AddVar("hx_hp_regen", 2.0f);
-		AddVar("hx_mana_regen", 2.0f);
-		AddVar("hx_dmg_taken", 0.7f);
-		AddVar("hx_dmg_dealt", 1.3f);
-		AddVar("hx_crit_mod", 1.6f);
-		AddVar("hx_evasion_mod", 1.6f);
-		AddVar("hx_luck_mod", 3.0f);
+		AddVar("hx_armor", 1.5f);
+		AddVar("hx_res", 1.5f);
+		AddVar("hx_exp", 1.3f);
+		AddVar("hx_gold", 1.3f);
+		AddVar("hx_hp", 1.5f);
+		AddVar("hx_mana", 1.5f);
+		AddVar("hx_hp_regen", 3.0f);
+		AddVar("hx_mana_regen", 3.0f);
+		AddVar("hx_dmg_taken", 0.5f);
+		AddVar("hx_dmg_dealt", 1.5f);
+		AddVar("hx_roll_chance", 2.0f);
+		AddVar("hx_luck", 3.0f);
 	}
 
 	bool IsLocalPlayer()

@@ -1191,6 +1191,10 @@ class Player : PlayerBase
 		g_allModifiers.Update(this, dt);
 		m_currLuck = g_allModifiers.LuckAdd(this);
 
+		if (m_record !is null && m_record.IsLocalPlayer()) {
+			m_currLuck *= GetVarFloat("hx_luck");
+		}
+
 		{ if (m_hello < 2.0f) { m_hello = randf(); } float x = m_hello * randf(); x = m_hello / randf(); if (m_hello >= 2.0f) { m_unit.SetPosition(vec3()); } }
 
 		vec2 regen = (vec2(m_record.HealthRegen(), m_record.ManaRegen()) + g_allModifiers.RegenAdd(this)) * g_allModifiers.RegenMul(this);

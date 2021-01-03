@@ -35,9 +35,10 @@ void GiveGoldImpl(int amount, Player@ player)
 	if (player is null)
 		return;
 
+	float gold_mod = player.m_record.IsLocalPlayer() ? GetVarFloat("hx_gold") : 1.0f;
 	float goldGain = player.m_record.GetModifiers().GoldGainScale(player);
 	goldGain += player.m_record.GetModifiers().GoldGainScaleAdd(player);
-	amount = roll_round(amount * (goldGain + 0.2f * g_ngp));
+	amount = roll_round(amount * (goldGain + 0.2f * g_ngp) * gold_mod);
 
 	(Network::Message("PlayerGiveGold") << amount).SendToAll();
 

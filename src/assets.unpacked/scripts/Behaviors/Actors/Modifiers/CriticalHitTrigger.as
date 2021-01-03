@@ -40,17 +40,10 @@ namespace Modifiers
 		
 		bool RollCrit(PlayerBase@ player, bool spell)
 		{
-			auto critChance = m_critChance;
-			auto spellChance = m_spellChance;
-			if (player !is null && player.m_record !is null && player.m_record.IsLocalPlayer()) {
-				critChance *= GetVarFloat("hx_crit_mod");
-				spellChance *= GetVarFloat("hx_crit_mod");
-			}
-
 			if (spell)
-				return roll_chance(player, critChance);
+				return roll_chance(player, m_spellChance);
 				
-			return roll_chance(player, spellChance);
+			return roll_chance(player, m_critChance);
 		}
 	}
 }

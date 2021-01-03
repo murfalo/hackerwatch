@@ -211,6 +211,10 @@ namespace Modifiers
 
 bool roll_chance(PlayerBase@ player, float chance, bool flipLuck = false)
 {
+	if (player !is null && player.m_record !is null && player.m_record.IsLocalPlayer()) {
+		chance *= GetVarFloat("hx_roll_chance");
+	}
+
 	float c = clamp(chance, 0.0f, 1.0f);
 	if (player !is null && player.m_currLuck != 0)
 	{
