@@ -33,9 +33,9 @@ namespace RandomLootManager
 		int total = 0;
 
 		// Increase the likelihood of better rolls
-		for (int i = chances.length() - 1;  i >= 0; --i)
+		for (uint i = 0; i < chances.length(); ++i)
 		{
-			chances[i] = chances[i] * (1 << i);
+			chances[i] <<= i;
 		}
 
 		for (uint i = 0; i < chances.length(); i++)
