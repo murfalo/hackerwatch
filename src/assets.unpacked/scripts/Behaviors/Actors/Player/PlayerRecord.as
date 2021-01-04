@@ -1047,23 +1047,19 @@ class PlayerRecord
 	}
 
 	float HealthRegen() {
-		auto hp_regen_mod = IsLocalPlayer() ? GetVarFloat("hx_hp_regen") : 1.0f;
-		return (classStats.base_health_regen + float(EffectiveLevel() -1) * classStats.level_health_regen) * hp_regen_mod;
+		return classStats.base_health_regen + float(EffectiveLevel() -1) * classStats.level_health_regen;
 	}
 
 	float ManaRegen() {
-		auto mana_regen_mod = IsLocalPlayer() ? GetVarFloat("hx_mana_regen") : 1.0f;
-		return (classStats.base_mana_regen + float(EffectiveLevel() -1) * classStats.level_mana_regen) * mana_regen_mod;
+		return classStats.base_mana_regen + float(EffectiveLevel() -1) * classStats.level_mana_regen;
 	}
 
 	float Armor() {
-		auto armor_mod = IsLocalPlayer() ? GetVarFloat("hx_armor") : 1.0f;
-		return (classStats.base_armor + float(EffectiveLevel() -1) * classStats.level_armor) * armor_mod;
+		return classStats.base_armor + float(EffectiveLevel() -1) * classStats.level_armor;
 	}
 
 	float Resistance() {
-		auto res_mod = IsLocalPlayer() ? GetVarFloat("hx_res") : 1.0f;
-		return (classStats.base_resistance + float(EffectiveLevel() -1) * classStats.level_resistance) * res_mod;
+		return classStats.base_resistance + float(EffectiveLevel() -1) * classStats.level_resistance;
 	}
 
 	int GetFreeLives() { return 0; }

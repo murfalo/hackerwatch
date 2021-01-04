@@ -547,8 +547,10 @@ class Player : PlayerBase
 			selfDmg = true;
 		}
 
-		int maxHp = m_record.MaxHealth();		
-		vec2 armor(m_record.Armor(), m_record.Resistance());
+		int maxHp = m_record.MaxHealth();
+		auto hx_armor_mod = m_record.IsLocalPlayer() ? GetVarFloat("hx_armor") : 1.0f;
+		auto hx_res_mod = m_record.IsLocalPlayer() ? GetVarFloat("hx_res") : 1.0f;
+		vec2 armor(m_record.Armor() * hx_armor_mod, m_record.Resistance() * hx_res_mod);
 		ivec2 block;
 		float dmgTakenMul = 1.0f;
 
@@ -638,7 +640,7 @@ class Player : PlayerBase
 			dmgTakenMul *= 2.0f + 0.01f * m_cachedCurses;
 		}
 		
-		dmgTakenMul *= GetVarFloat("hx_dmg_taken");
+		dmgTakenMul *= m_record.IsLocalPlayer() ? GetVarFloat("hx_dmg_taken") : 1.0f;
 		vec2 armorMul = g_allModifiers.ArmorMul(this, null) * m_buffs.ArmorMul();
 		int dmgAmnt = ApplyArmor(dmg, armorMul * armor * dmg.ArmorMul - Tweak::NewGamePlusNegArmor(g_ngp), dmgTakenMul);
 
@@ -1201,7 +1203,15 @@ class Player : PlayerBase
 
 		{ if (m_hello < 2.0f) { m_hello = randf(); } float x = m_hello * randf(); x = m_hello / randf(); if (m_hello >= 2.0f) { m_unit.SetPosition(vec3()); } }
 
-		vec2 regen = (vec2(m_record.HealthRegen(), m_record.ManaRegen()) + g_allModifiers.RegenAdd(this)) * g_allModifiers.RegenMul(this);
+		auto hx_regen_mod = vec2(
+			m_record.IsLocalPlayer() ? GetVarFloat("hx_hp_regen") : 1.0f,
+			m_record.IsLocalPlayer() ? GetVarFloat("hx_mana_regen") : 1.0f
+		);
+
+		vec2 regen = vec2(m_record.HealthRegen(), m_record.ManaRegen());
+		regen += g_allModifiers.RegenAdd(this);
+		regen *= g_allModifiers.RegenMul(this);
+		regen *= hx_regen_mod;
 		ivec2 stats = g_allModifiers.StatsAdd(this);
 		
 		m_effectParams.Set("hp_regen", (m_record.hp < 1.0f) ? regen.x : 0.f);
