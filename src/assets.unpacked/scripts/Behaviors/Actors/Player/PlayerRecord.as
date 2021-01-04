@@ -357,13 +357,13 @@ class PlayerRecord
 		AddVar("hx_dmg_dealt", 1.2f);
 		AddVar("hx_roll_chance", 1.2f);
 		AddVar("hx_luck", 1.2f);
-		AddVar("hx_ms", 1.0f);
+		AddVar("hx_ms", 1.1f);
 		AddVar("hx_confuse", false);
 		AddVar("hx_darkness", false);
 		AddVar("hx_fog", false);
 		AddVar("hx_auto_pot", true);
 
-		// Also update this function when adding or removing hx cvars
+		// Also update these functions when adding or removing hx cvars
 		AddFunction("hx_load", LoadHxCfunc, 0);
 		AddFunction("hx_unload", UnloadHxCfunc, 0);
 
