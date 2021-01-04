@@ -362,53 +362,12 @@ class PlayerRecord
 		AddVar("hx_darkness", false);
 		AddVar("hx_fog", false);
 		AddVar("hx_auto_pot", true);
+		AddVar("hx_imp_item_only", true);
 
 		// Also update these functions when adding or removing hx cvars
 		AddFunction("hx_load", LoadHxCfunc, 0);
 		AddFunction("hx_unload", UnloadHxCfunc, 0);
 
-	}
-
-	// Loads modified values
-	void LoadHxCfunc() {
-		SetVar("hx_armor", GetVarFloatDefault("hx_armor"));
-		SetVar("hx_res", GetVarFloatDefault("hx_res"));
-		SetVar("hx_exp", GetVarFloatDefault("hx_exp"));
-		SetVar("hx_gold", GetVarFloatDefault("hx_gold"));
-		SetVar("hx_hp", GetVarFloatDefault("hx_hp"));
-		SetVar("hx_mana", GetVarFloatDefault("hx_mana"));
-		SetVar("hx_hp_regen", GetVarFloatDefault("hx_hp_regen"));
-		SetVar("hx_mana_regen", GetVarFloatDefault("hx_mana_regen"));
-		SetVar("hx_dmg_taken", GetVarFloatDefault("hx_dmg_taken"));
-		SetVar("hx_dmg_dealt", GetVarFloatDefault("hx_dmg_dealt"));
-		SetVar("hx_roll_chance", GetVarFloatDefault("hx_roll_chance"));
-		SetVar("hx_luck", GetVarFloatDefault("hx_luck"));
-		SetVar("hx_ms", GetVarFloatDefault("hx_ms"));
-		SetVar("hx_confuse", GetVarBoolDefault("hx_confuse"));
-		SetVar("hx_darkness", GetVarBoolDefault("hx_darkness"));
-		SetVar("hx_fog", GetVarBoolDefault("hx_fog"));
-		SetVar("hx_auto_pot", GetVarBoolDefault("hx_auto_pot"));
-	}
-
-	// Returns everything to normal
-	void UnloadHxCfunc() {
-		SetVar("hx_armor", 1.0f);
-		SetVar("hx_res", 1.0f);
-		SetVar("hx_exp", 1.0f);
-		SetVar("hx_gold", 1.0f);
-		SetVar("hx_hp", 1.0f);
-		SetVar("hx_mana", 1.0f);
-		SetVar("hx_hp_regen", 1.0f);
-		SetVar("hx_mana_regen", 1.0f);
-		SetVar("hx_dmg_taken", 1.0f);
-		SetVar("hx_dmg_dealt", 1.0f);
-		SetVar("hx_roll_chance", 1.0f);
-		SetVar("hx_luck", 1.0f);
-		SetVar("hx_ms", 1.0f);
-		SetVar("hx_confuse", true);
-		SetVar("hx_darkness", true);
-		SetVar("hx_fog", true);
-		SetVar("hx_auto_pot", false);
 	}
 
 	bool IsLocalPlayer()
@@ -1365,4 +1324,49 @@ class PlayerRecord
 		}
 		return null;
 	}
+}
+
+
+// Loads modified values
+void LoadHxCfunc() {
+	SetVar("hx_armor", GetVarFloatDefault("hx_armor"));
+	SetVar("hx_res", GetVarFloatDefault("hx_res"));
+	SetVar("hx_exp", GetVarFloatDefault("hx_exp"));
+	SetVar("hx_gold", GetVarFloatDefault("hx_gold"));
+	SetVar("hx_hp", GetVarFloatDefault("hx_hp"));
+	SetVar("hx_mana", GetVarFloatDefault("hx_mana"));
+	SetVar("hx_hp_regen", GetVarFloatDefault("hx_hp_regen"));
+	SetVar("hx_mana_regen", GetVarFloatDefault("hx_mana_regen"));
+	SetVar("hx_dmg_taken", GetVarFloatDefault("hx_dmg_taken"));
+	SetVar("hx_dmg_dealt", GetVarFloatDefault("hx_dmg_dealt"));
+	SetVar("hx_roll_chance", GetVarFloatDefault("hx_roll_chance"));
+	SetVar("hx_luck", GetVarFloatDefault("hx_luck"));
+	SetVar("hx_ms", GetVarFloatDefault("hx_ms"));
+	SetVar("hx_confuse", GetVarBoolDefault("hx_confuse"));
+	SetVar("hx_darkness", GetVarBoolDefault("hx_darkness"));
+	SetVar("hx_fog", GetVarBoolDefault("hx_fog"));
+	SetVar("hx_auto_pot", GetVarBoolDefault("hx_auto_pot"));
+	SetVar("hx_imp_item_only", GetVarBoolDefault("hx_imp_item_only"));
+}
+
+// Returns everything to normal
+void UnloadHxCfunc() {
+	SetVar("hx_armor", 1.0f);
+	SetVar("hx_res", 1.0f);
+	SetVar("hx_exp", 1.0f);
+	SetVar("hx_gold", 1.0f);
+	SetVar("hx_hp", 1.0f);
+	SetVar("hx_mana", 1.0f);
+	SetVar("hx_hp_regen", 1.0f);
+	SetVar("hx_mana_regen", 1.0f);
+	SetVar("hx_dmg_taken", 1.0f);
+	SetVar("hx_dmg_dealt", 1.0f);
+	SetVar("hx_roll_chance", 1.0f);
+	SetVar("hx_luck", 1.0f);
+	SetVar("hx_ms", 1.0f);
+	SetVar("hx_confuse", true);
+	SetVar("hx_darkness", true);
+	SetVar("hx_fog", true);
+	SetVar("hx_auto_pot", false);
+	SetVar("hx_imp_item_only", false);
 }

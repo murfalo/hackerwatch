@@ -218,6 +218,10 @@ namespace WorldScript
 			
 				m_activeEffect = possible[randi(possible.length())];
 			}
+
+			if (player.m_record.IsLocalPlayer() && GetVarBool("hx_imp_item_only")) {
+				m_activeEffect = RandomStuffEffect::GiveItem;
+			}
 			
 			bool handled = true;
 			switch(m_activeEffect)
