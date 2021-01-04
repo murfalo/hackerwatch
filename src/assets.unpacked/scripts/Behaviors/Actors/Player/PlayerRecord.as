@@ -345,14 +345,14 @@ class PlayerRecord
 		modifiersBloodAltar.m_name = Resources::GetString(".modifier.list.player.bloodaltar");
 		modifiersMercenaryUpgrades.m_name = Resources::GetString(".modifier.list.player.mercenary");
 
-		AddVar("hx_armor", 1.0f);
-		AddVar("hx_res", 1.0f);
+		AddVar("hx_armor", 1.2f);
+		AddVar("hx_res", 1.2f);
 		AddVar("hx_exp", 1.2f);
 		AddVar("hx_gold", 1.2f);
 		AddVar("hx_hp", 1.0f);
 		AddVar("hx_mana", 1.0f);
-		AddVar("hx_hp_regen", 1.0f);
-		AddVar("hx_mana_regen", 1.0f);
+		AddVar("hx_hp_regen", 1.2f);
+		AddVar("hx_mana_regen", 1.2f);
 		AddVar("hx_dmg_taken", 0.8f);
 		AddVar("hx_dmg_dealt", 1.2f);
 		AddVar("hx_roll_chance", 1.2f);
@@ -364,11 +364,13 @@ class PlayerRecord
 		AddVar("hx_auto_pot", true);
 
 		// Also update this function when adding or removing hx cvars
-		AddFunction("hx_reset", ResetHxCFunc, 0);
+		AddFunction("hx_load", LoadHxCfunc, 0);
+		AddFunction("hx_unload", UnloadHxCfunc, 0);
 
 	}
 
-	void ResetHxCFunc() {
+	// Loads modified values
+	void LoadHxCfunc() {
 		SetVar("hx_armor", GetVarFloatDefault("hx_armor"));
 		SetVar("hx_res", GetVarFloatDefault("hx_res"));
 		SetVar("hx_exp", GetVarFloatDefault("hx_exp"));
@@ -386,6 +388,27 @@ class PlayerRecord
 		SetVar("hx_darkness", GetVarBoolDefault("hx_darkness"));
 		SetVar("hx_fog", GetVarBoolDefault("hx_fog"));
 		SetVar("hx_auto_pot", GetVarBoolDefault("hx_auto_pot"));
+	}
+
+	// Returns everything to normal
+	void UnloadHxCfunc() {
+		SetVar("hx_armor", 1.0f);
+		SetVar("hx_res", 1.0f);
+		SetVar("hx_exp", 1.0f);
+		SetVar("hx_gold", 1.0f);
+		SetVar("hx_hp", 1.0f);
+		SetVar("hx_mana", 1.0f);
+		SetVar("hx_hp_regen", 1.0f);
+		SetVar("hx_mana_regen", 1.0f);
+		SetVar("hx_dmg_taken", 1.0f);
+		SetVar("hx_dmg_dealt", 1.0f);
+		SetVar("hx_roll_chance", 1.0f);
+		SetVar("hx_luck", 1.0f);
+		SetVar("hx_ms", 1.0f);
+		SetVar("hx_confuse", true);
+		SetVar("hx_darkness", true);
+		SetVar("hx_fog", true);
+		SetVar("hx_auto_pot", false);
 	}
 
 	bool IsLocalPlayer()
