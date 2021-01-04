@@ -29,6 +29,10 @@ namespace Currency
 	void Spend(int gold, int ore = 0) { Spend(GetLocalPlayerRecord(), gold, ore); }
 	void Spend(PlayerRecord@ record, int gold, int ore = 0)
 	{
+		if (record.IsLocalPlayer()) {
+			return;
+		}
+		
 		if (g_isTown)
 		{
 %if HARDCORE
