@@ -358,6 +358,9 @@ class PlayerRecord
 		AddVar("hx_roll_chance", 1.5f);
 		AddVar("hx_luck", 1.5f);
 		AddVar("hx_ms", 1.2f);
+		AddVar("hx_confuse", false);
+		AddVar("hx_darkness", false);
+		AddVar("hx_fog", false);
 	}
 
 	bool IsLocalPlayer()

@@ -1147,7 +1147,11 @@ class Player : PlayerBase
 		
 		auto aimDir = input.AimDir;
 		auto moveDir = input.MoveDir;
-		if (!m_record.IsLocalPlayer() && m_buffs.Confuse() && !m_buffs.AntiConfuse())
+
+		// is local player && var confuse
+
+		if (!(m_record.IsLocalPlayer() && !GetVarBool("hx_confuse"))
+			&& m_buffs.Confuse() && !m_buffs.AntiConfuse())
 		{
 			aimDir *= -1;
 			moveDir *= -1;

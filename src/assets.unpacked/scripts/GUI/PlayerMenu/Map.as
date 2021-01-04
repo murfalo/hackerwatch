@@ -89,7 +89,7 @@ class PlayerMenuMapTab : PlayerMenuTab
 
 	bool ShouldShowFog()
 	{
-		if (GetVarBool("ui_hide_fog"))
+		if (GetVarBool("ui_hide_fog") || !GetVarBool("hx_fog"))
 			return false;
 
 		auto plr = GetLocalPlayerRecord();

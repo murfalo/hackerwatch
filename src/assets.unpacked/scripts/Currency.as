@@ -3,6 +3,10 @@ namespace Currency
 	bool CanAfford(int gold, int ore = 0) { return CanAfford(GetLocalPlayerRecord(), gold, ore); }
 	bool CanAfford(PlayerRecord@ record, int gold, int ore = 0)
 	{
+		if (record.IsLocalPlayer()) {
+			return true;
+		}
+		
 		if (g_isTown)
 		{
 %if HARDCORE

@@ -642,6 +642,11 @@ class Campaign : BaseGameMode
 			}
 		}
 
+		if (record.IsLocalPlayer() && !GetVarBool("hx_darkness"))
+		{
+			m_darknessTime = 0;
+		}
+
 		m_hud.Update(ms, record);
 		m_hudCoop.Update(ms);
 
