@@ -130,6 +130,55 @@ namespace Upgrades
 			Stats::Add("spent-gold", costGold, record);
 			Stats::Add("spent-ore", costOre, record);
 			Stats::Add("spent-skillpoints", m_costSkillPoints, record);
+
+			print("purchasing upgrade");
+
+			if (record.IsLocalPlayer() && record.statistics !is null && record.statisticsSession !is null)
+			{
+				auto spent_gold = record.statistics.GetStat("spent-gold");
+				auto stored_gold = record.statistics.GetStat("gold-stored");
+				auto spent_ore = record.statistics.GetStat("spent-ore");
+				auto stored_ore = record.statistics.GetStat("ores-stored");
+				auto available_skill_points = record.GetAvailableSkillpoints();
+				auto spent_skill_points = record.statistics.GetStat("spent-skillpoints");
+
+				if (spent_skill_points !is null)
+				{
+					print("reducing skill points spent");
+					auto diff = spent_skill_points.ValueInt() - available_skill_points;
+					if (diff > 0)
+						Stats::Add("spent-skillpoints", -diff, record);
+				}
+
+				if (spent_gold !is null && stored_gold !is null)
+				{
+					print("reducing gold spent");
+					auto diff = spent_gold.ValueInt() - stored_gold.ValueInt();
+					if (diff > 0)
+						Stats::Add("spent-gold", -diff, record);
+				}
+
+				if (spent_ore !is null && stored_ore !is null)
+				{
+					print("reducing ore spent");
+					auto diff = spent_ore.ValueInt() - stored_ore.ValueInt();
+					if (diff > 0)
+						Stats::Add("spent-ore", -diff, record);
+				}
+
+				auto session_gold = record.statisticsSession.GetStat("spent-gold");
+				auto session_ore = record.statisticsSession.GetStat("spent-ore");
+				auto session_skillpoints = record.statisticsSession.GetStat("spent-skillpoints");
+
+				if (session_gold !is null && session_gold.ValueInt() < 0)
+					session_gold.Add(-session_gold.ValueInt(), false);
+
+				if (session_ore !is null && session_ore.ValueInt() < 0)
+					session_ore.Add(-session_ore.ValueInt(), false);
+
+				if (session_skillpoints !is null && session_skillpoints.ValueInt() < 0)
+					session_skillpoints.Add(-session_skillpoints.ValueInt(), false);
+			}
 		}
 
 		bool BuyNow(PlayerRecord@ record)
