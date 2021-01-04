@@ -361,6 +361,31 @@ class PlayerRecord
 		AddVar("hx_confuse", false);
 		AddVar("hx_darkness", false);
 		AddVar("hx_fog", false);
+		AddVar("hx_auto_pot", true);
+
+		// Also update this function when adding or removing hx cvars
+		AddFunction("hx_reset", ResetHxCFunc, 0);
+
+	}
+
+	void ResetHxCFunc() {
+		SetVar("hx_armor", GetVarFloatDefault("hx_armor"));
+		SetVar("hx_res", GetVarFloatDefault("hx_res"));
+		SetVar("hx_exp", GetVarFloatDefault("hx_exp"));
+		SetVar("hx_gold", GetVarFloatDefault("hx_gold"));
+		SetVar("hx_hp", GetVarFloatDefault("hx_hp"));
+		SetVar("hx_mana", GetVarFloatDefault("hx_mana"));
+		SetVar("hx_hp_regen", GetVarFloatDefault("hx_hp_regen"));
+		SetVar("hx_mana_regen", GetVarFloatDefault("hx_mana_regen"));
+		SetVar("hx_dmg_taken", GetVarFloatDefault("hx_dmg_taken"));
+		SetVar("hx_dmg_dealt", GetVarFloatDefault("hx_dmg_dealt"));
+		SetVar("hx_roll_chance", GetVarFloatDefault("hx_roll_chance"));
+		SetVar("hx_luck", GetVarFloatDefault("hx_luck"));
+		SetVar("hx_ms", GetVarFloatDefault("hx_ms"));
+		SetVar("hx_confuse", GetVarBoolDefault("hx_confuse"));
+		SetVar("hx_darkness", GetVarBoolDefault("hx_darkness"));
+		SetVar("hx_fog", GetVarBoolDefault("hx_fog"));
+		SetVar("hx_auto_pot", GetVarBoolDefault("hx_auto_pot"));
 	}
 
 	bool IsLocalPlayer()
